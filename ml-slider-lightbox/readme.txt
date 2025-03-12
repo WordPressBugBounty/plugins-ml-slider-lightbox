@@ -3,7 +3,7 @@ Contributors: matchalabs, DavidAnderson, dnutbourne, kbat82
 Tags: wordpress slideshow lightbox,meta slider,metaslider,metaslider lightbox,slideshow lightbox,lightbox,slideshow,slider,wordpress lightbox
 Requires at least: 3.5
 Tested up to: 6.5.5
-Stable tag: 1.13.2
+Stable tag: 1.13.3
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -28,11 +28,11 @@ We also support the following WordPress plugins, although they haven't had recen
 
 <ul>
 <li><a href="https://wordpress.org/plugins/responsive-lightbox/">Responsive Lightbox by dFactory</a> <small>(200,000+ active installations)<br>Note: Some users are reporting errors with Responsive Lightbox by dFactory (<a href="https://wordpress.org/support/topic/conflict-with-metaslider-2/">see here</a>).</small></li>
-<li><a href="https://wordpress.org/plugins/wp-lightbox-2/">WP Lightbox 2</a> <small>(60,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/wp-jquery-lightbox/">WP jQuery Lightbox</a> <small>(50,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/jquery-colorbox/">jQuery Colorbox</a> <small>(30,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/fancy-lightbox/">Fancy Lightbox</a> <small>(1,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/imagelightbox/">imageLightbox</a> <small>(800+ active installations)</small></li>
+<li><a href="https://wordpress.org/plugins/wp-lightbox-2/">WP Lightbox 2</a></li>
+<li><a href="https://wordpress.org/plugins/wp-jquery-lightbox/">WP jQuery Lightbox</a></li>
+<li><a href="https://wordpress.org/plugins/jquery-colorbox/">jQuery Colorbox</a</li>
+<li><a href="https://wordpress.org/plugins/fancy-lightbox/">Fancy Lightbox</a></li>
+<li><a href="https://wordpress.org/plugins/imagelightbox/">imageLightbox</a></li>
 <li><a href="https://www.tipsandtricks-hq.com/wordpress-lightbox-ultimate-plugin-display-media-in-a-fancy-lightbox-overlay-3163">WP Lightbox Ultimate</a></li>
 <li><a href="https://23systems.net/wordpress-plugins/lightbox-plus-for-wordpress/">Lightbox Plus</a></li>
 </ul>
@@ -128,6 +128,10 @@ The not so easy way:
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [1.13.3] - 13 Mar, 2025 =
+
+* CHANGED: Remove active installation stats on readme;
 
 = [1.13.2] - 10 Jul, 2024 =
 

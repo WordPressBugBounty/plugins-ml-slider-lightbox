@@ -15,7 +15,7 @@ class MetaSliderLightboxPlugin
      *
      * @var string
      */
-    public $version = '1.13.2';
+    public $version = '1.13.3';
 
     /**
      * Instance object

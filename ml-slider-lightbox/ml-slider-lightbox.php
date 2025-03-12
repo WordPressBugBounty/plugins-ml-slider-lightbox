@@ -4,7 +4,7 @@
  * Plugin Name: MetaSlider Lightbox
  * Plugin URI: https://www.metaslider.com
  * Description: Adds lightbox plugin integration to MetaSlider. Requires MetaSlider and one compatible lightbox plugin to be installed and activated.
- * Version: 1.13.2
+ * Version: 1.13.3
  * Author: MetaSlider
  * Author URI: https://www.metaslider.com
  * License: GPL-2.0+
