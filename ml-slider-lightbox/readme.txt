@@ -2,8 +2,8 @@
 Contributors: matchalabs, DavidAnderson, dnutbourne, kbat82
 Tags: wordpress slideshow lightbox,meta slider,metaslider,metaslider lightbox,slideshow lightbox,lightbox,slideshow,slider,wordpress lightbox
 Requires at least: 3.5
-Tested up to: 6.5.5
-Stable tag: 1.13.3
+Tested up to: 6.7.2
+Stable tag: 1.13.4
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -15,22 +15,20 @@ Extends MetaSlider allowing slides to be opened in a lightbox.
 For use with the popular WordPress plugin <a href="https://wordpress.org/plugins/ml-slider/">MetaSlider</a> allowing slides to be opened in a lightbox, using one of the following supported lightbox plugins:<br>
 
 <ul>
-<li><a href="https://wordpress.org/plugins/easy-fancybox/">Easy FancyBox</a> <small>(300,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/simple-lightbox/">Simple Lightbox</a> <small>(200,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/foobox-image-lightbox/">FooBox Image Lightbox</a> <small>(100,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/wp-featherlight/">WP Featherlight</a> <small>(70,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/wp-colorbox/">WP Colorbox Lightbox</a> <small>(10,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/ari-fancy-lightbox/">ARI Fancy Lightbox</a> <small>(10,000+ active installations)</small></li>
-<li><a href="https://wordpress.org/plugins/fancy-gallery/">Gallery Manager</a> <small>(6,000+ active installations)</small></li>
+<li><a href="https://wordpress.org/plugins/easy-fancybox/">Easy FancyBox</a></li>
+<li><a href="https://wordpress.org/plugins/simple-lightbox/">Simple Lightbox</a></li>
+<li><a href="https://wordpress.org/plugins/foobox-image-lightbox/">FooBox Image Lightbox</a> </li>
+<li><a href="https://wordpress.org/plugins/wp-colorbox/">WP Colorbox Lightbox</a> </li>
+<li><a href="https://wordpress.org/plugins/ari-fancy-lightbox/">ARI Fancy Lightbox</a></li>
 </ul>
 
 We also support the following WordPress plugins, although they haven't had recent updates, or sometimes go long periods without the authors fixing issues:<br>
 
 <ul>
-<li><a href="https://wordpress.org/plugins/responsive-lightbox/">Responsive Lightbox by dFactory</a> <small>(200,000+ active installations)<br>Note: Some users are reporting errors with Responsive Lightbox by dFactory (<a href="https://wordpress.org/support/topic/conflict-with-metaslider-2/">see here</a>).</small></li>
+<li><a href="https://wordpress.org/plugins/responsive-lightbox/">Responsive Lightbox by dFactory</a></li>
 <li><a href="https://wordpress.org/plugins/wp-lightbox-2/">WP Lightbox 2</a></li>
 <li><a href="https://wordpress.org/plugins/wp-jquery-lightbox/">WP jQuery Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/jquery-colorbox/">jQuery Colorbox</a</li>
+<li><a href="https://wordpress.org/plugins/jquery-colorbox/">jQuery Colorbox</a></li>
 <li><a href="https://wordpress.org/plugins/fancy-lightbox/">Fancy Lightbox</a></li>
 <li><a href="https://wordpress.org/plugins/imagelightbox/">imageLightbox</a></li>
 <li><a href="https://www.tipsandtricks-hq.com/wordpress-lightbox-ultimate-plugin-display-media-in-a-fancy-lightbox-overlay-3163">WP Lightbox Ultimate</a></li>
@@ -39,26 +37,7 @@ We also support the following WordPress plugins, although they haven't had recen
 
 If you would like to use a lightbox plugin that isn't supported you can add support by hooking into the `metaslider_lightbox_supported_plugins` filter. If you need assistance, please open an issue.
 
-## Template and Pattern Library
 
-MetaSlider Lightbox now includes access to the Extendify template and pattern library that can be accessed by clicking the “Library” button in the menu bar of the editor. We provide a variety of templates and patterns to serve different use cases and are adding more templates every week.
-
-Note: Templates and patterns rely on blocks and styling applied by the Editor Plus plugin. The Editor Plus plugin is required when importing a template or pattern. If you uninstall Editor Plus, the templates and patterns will still display on your site, but the styling may be affected. Additionally, stock images included in the templates are hosted on GutenbergHub.com. We recommend replacing the images or adding them to your media library directly.
-
-## Privacy
-
-MetaSlider Lightbox uses a custom API to fetch templates and patterns from the Extendify template and pattern library. To improve the service and stability we store logs which may contain the following:
-
-* browser type
-* referring site
-* date and time of request
-* category selection or search term
-* anonymized IP address
-
-API requests are only made when a user clicks on the Library button.
-
-For more details on our privacy policy: https://www.metaslider.com/privacy-policy/
-For more details on our terms of service: https://www.metaslider.com/terms-of-use/
 
 == Screenshots ==
 
@@ -82,7 +61,7 @@ and one of the following lightbox plugins:
 <li><a href="https://wordpress.org/plugins/wp-featherlight/">WP Featherlight</a></li>
 <li><a href="https://wordpress.org/plugins/wp-colorbox/">WP ColorBox Lightbox</a></li>
 <li><a href="https://wordpress.org/plugins/fancy-gallery/">Gallery Manager</a></li>
-<li><a href="https://wordpress.org/plugins/ari-fancy-lightbox/">ARI Fancy Lightbox – WordPress Popup</a></li>
+<li><a href="https://wordpress.org/plugins/ari-fancy-lightbox/">ARI Fancy Lightbox â€“ WordPress Popup</a></li>
 <li><a href="https://wordpress.org/plugins/wp-lightbox-2/">WP Lightbox 2</a></li>
 <li><a href="https://wordpress.org/plugins/wp-jquery-lightbox/">WP jQuery Lightbox</a></li>
 <li><a href="https://wordpress.org/plugins/jquery-colorbox/">jQuery Colorbox</a></li>
@@ -128,6 +107,10 @@ The not so easy way:
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [1.13.4] - 14 Mar, 2025 =
+
+* CHANGED: Remove discontinued lightbox plugins on description list;
 
 = [1.13.3] - 13 Mar, 2025 =
 
