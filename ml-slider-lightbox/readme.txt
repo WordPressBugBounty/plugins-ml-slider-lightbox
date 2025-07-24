@@ -3,7 +3,7 @@ Contributors: matchalabs, DavidAnderson, dnutbourne, kbat82
 Tags: wordpress slideshow lightbox,meta slider,metaslider,metaslider lightbox,slideshow lightbox,lightbox,slideshow,slider,wordpress lightbox
 Requires at least: 3.5
 Tested up to: 6.7.2
-Stable tag: 1.13.4
+Stable tag: 2.0.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -107,6 +107,38 @@ The not so easy way:
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.0.0] - 24 Jul, 2025 =
+
+* ADDED: LightGallery.js implementation with built-in lightbox
+  functionality, #70;
+* ADDED: Admin settings page with color customization options, #49;
+* ADDED: Thumbnail navigation toggle, #58;
+* ADDED: Video support for local and external videos with Video.js
+  integration, #85;
+* ADDED: WordPress "Enlarge on click" override functionality, #50;
+* ADDED: CSS per MetaSlider theme for better mobile compatibility, #77;
+* ADDED: Tab focus accessibility on "Open in Lightbox" buttons, #86;
+* ADDED: Icon hover color picker option, #114;
+* FIXED: Lightbox animation smoothness when opening/closing, #41;
+* FIXED: Arrows and close button visibility on mobile/tablet, #43;
+* FIXED: Thumbnail navigation overlapping main image, #58;
+* FIXED: Slide images being always linked, #62;
+* FIXED: Clear button alignment issues, #72;
+* FIXED: Color picker functionality without MetaSlider installed, #75;
+* FIXED: PHPCS errors and security issues, #89;
+* FIXED: External video loading issues, #107;
+* FIXED: Post feed "Open in Lightbox" button clickability on mobile,
+  #106;
+* FIXED: Custom HTML slide display issues, #101;
+* FIXED: Layer slide text sizing on mobile, #105;
+* FIXED: MetaSlider theme compatibility (Radix, Databold, Highway), #91,
+   #109;
+* FIXED: Close button display on desktop, #45;
+* FIXED: Unable to save disabled "Open in Lightbox" setting, #42;
+* CHANGED: Made lightbox addition automatic for better UX, #38;
+* CHANGED: UI improvements and dropdown labels, #60;
+* CHANGED: Menu and save button design consistency, #113;
 
 = [1.13.4] - 14 Mar, 2025 =
 

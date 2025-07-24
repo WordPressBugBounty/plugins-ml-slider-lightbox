@@ -1,0 +1,440 @@
+/**
+ * MetaSlider Lightbox - Public/Frontend Styles
+ *
+ * All public-facing styles for the MetaSlider Lightbox plugin
+ * Combines: icon styles and LightGallery customizations
+ */
+
+/* ==========================================================================
+   FONT DECLARATIONS
+   ========================================================================== */
+
+@font-face {
+    font-family: 'lg';
+    src: url('../fonts/lg.woff2') format('woff2'),
+         url('../fonts/lg.woff') format('woff'),
+         url('../fonts/lg.ttf') format('truetype'),
+         url('../fonts/lg.svg#lg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ==========================================================================
+   CUSTOM POSITIONING
+   ========================================================================== */
+
+.lg-toolbar .lg-close {
+    right: 20px;
+    top: 20px;
+}
+
+.lg-actions .lg-prev {
+    left: 20px;
+}
+
+.lg-actions .lg-next {
+    right: 20px;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY IMPROVEMENTS
+   ========================================================================== */
+
+/* Focus states for keyboard navigation */
+.lg-outer .lg-close:focus,
+.lg-outer .lg-prev:focus,
+.lg-outer .lg-next:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .lg-outer .lg-close,
+    .lg-outer .lg-prev,
+    .lg-outer .lg-next {
+        background: rgba(0, 0, 0, 0.9);
+        border: 2px solid #ffffff;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .lg-outer .lg-close,
+    .lg-outer .lg-prev,
+    .lg-outer .lg-next {
+        transition: none;
+    }
+
+    .lg-outer .lg-close:hover,
+    .lg-outer .lg-prev:hover,
+    .lg-outer .lg-next:hover {
+        transform: none;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .lg-close:after,
+    .lg-prev:after,
+    .lg-next:after {
+        background-size: 18px 18px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .lg-close,
+    .lg-prev,
+    .lg-next {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+/* ==========================================================================
+   THUMBNAIL STYLES
+   ========================================================================== */
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+    border-color: #000;
+}
+
+.lg-thumb-item.active {
+    border-color: #ffffff;
+    opacity: 1;
+}
+
+/* Thumbnail images */
+.lg-thumb-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+/* Video thumbnail overlay */
+.lg-thumb-item[data-video] {
+    background: #000;
+}
+
+.lg-thumb-item[data-video]:hover::after {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Video thumbnail with poster */
+.lg-thumb-item[data-video][data-poster] img {
+    opacity: 0.8;
+}
+
+.lg-thumb-item[data-video][data-poster]:hover img {
+    opacity: 1;
+}
+
+
+
+/* ==========================================================================
+   LIGHTBOX BUTTON STYLES
+   ========================================================================== */
+
+/* Open in Lightbox button for all slide types */
+.ml-lightbox-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    z-index: 10;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+.ml-lightbox-button:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-decoration: none;
+}
+
+.ml-lightbox-button:focus {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    text-decoration: none;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Enhanced focus for keyboard navigation */
+.ml-lightbox-button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.4), 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure parent slide is positioned for button placement */
+.ml-lightbox-slide {
+    position: relative;
+}
+
+/* High contrast mode support for lightbox buttons */
+@media (prefers-contrast: high) {
+    .ml-lightbox-button {
+        background: rgba(0, 0, 0, 0.95);
+        border: 2px solid #ffffff;
+        font-weight: bold;
+    }
+    
+    .ml-lightbox-button:focus,
+    .ml-lightbox-button:focus-visible {
+        outline: 4px solid #ffffff;
+        outline-offset: 2px;
+        box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Reduced motion support for lightbox buttons */
+@media (prefers-reduced-motion: reduce) {
+    .ml-lightbox-button {
+        transition: none;
+    }
+    
+    .ml-lightbox-button:focus,
+    .ml-lightbox-button:focus-visible {
+        box-shadow: none;
+        outline: 3px solid #ffffff;
+    }
+}
+
+/* ==========================================================================
+   METASLIDER INTEGRATION
+   ========================================================================== */
+
+/* MetaSlider container with lightbox enabled */
+.ml-lightgallery-active {
+    position: relative;
+}
+
+.ml-lightgallery-active a[data-src] {
+    cursor: pointer;
+}
+
+.ml-lightgallery-active a[data-src]:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+/* Loading indicator for images */
+.ml-lightgallery-active .lg-loading {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Caption styling */
+.lg-sub-html {
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.lg-sub-html p {
+    margin: 0;
+}
+
+/* Layer content in lightbox */
+.lightbox-layer-wrapper {
+    margin-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 15px;
+}
+
+.lightbox-layer-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.lightbox-layer-content p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.lightbox-layer-content h1,
+.lightbox-layer-content h2,
+.lightbox-layer-content h3,
+.lightbox-layer-content h4,
+.lightbox-layer-content h5,
+.lightbox-layer-content h6 {
+    margin: 8px 0 5px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.lightbox-layer-content strong {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.lightbox-layer-content em {
+    color: #cccccc;
+    font-style: italic;
+}
+
+.lightbox-layer-content a {
+    color: #66b3ff;
+    text-decoration: underline;
+}
+
+.lightbox-layer-content a:hover {
+    color: #99ccff;
+}
+
+/* ==========================================================================
+   METASLIDER THEMES
+   ========================================================================== */
+
+.metaslider.ms-theme-bitono .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-draxler .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-revelio .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-databold .flexslider .slides > li > a.ml-lightbox-button {
+	position: absolute;
+	z-index: 9999;
+}
+.metaslider.ms-theme-cubic .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-blend .flexslider .slides > li > a.ml-lightbox-button ,
+.metaslider.ms-theme-precognition .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-highway .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-hero .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-revelio .flexslider .slides > li > a.ml-lightbox-button{
+    bottom: auto;
+    top: 10px;
+    z-index: 9999;
+}
+.metaslider.ms-theme-jenga .flexslider .slides > li > a.ml-lightbox-button,
+.metaslider.ms-theme-radix .flexslider .slides > li > a.ml-lightbox-button {
+	right: auto;
+	left: 15px;
+    z-index: 9999;
+}
+
+/* Specific positioning for Radix theme with flex-pauseplay */
+.metaslider.ms-theme-radix .flex-pauseplay + * .ml-lightbox-button,
+.metaslider.ms-theme-radix:has(.flex-pauseplay) .ml-lightbox-button {
+    left: 90px!important;
+    bottom: 5px;
+}
+
+/* Different positioning based on flex-pauseplay content type */
+.metaslider.ms-theme-radix.ml-radix-icon-only .ml-lightbox-button {
+    left: 60px!important;
+    bottom: 5px;
+}
+
+.metaslider.ms-theme-radix.ml-radix-with-text .ml-lightbox-button {
+    left: 100px!important;
+    bottom: 5px;
+}
+.metaslider.ms-theme-disjoint .flexslider .slides > li > a.ml-lightbox-button {
+    bottom: auto;
+	right: auto;
+	left: 15px;
+    top: 10px;
+    z-index: 9999;
+}
+.filmstrip .ms-thumb .ml-lightbox-button{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .metaslider.ms-theme-bitono .flexslider .slides > li > a.ml-lightbox-button,
+    .metaslider.ms-theme-bubble .flexslider .slides > li > a.ml-lightbox-button {
+        bottom: auto;
+        top: 10px;
+    }
+    .metaslider.ms-theme-highway .flexslider .slides > li > a.ml-lightbox-button{
+        bottom: 10px;
+        top: auto;
+    }
+    .ms-is-small.metaslider.ms-theme-highway .flexslider ol.flex-control-nav:not(.flex-control-thumbs) {
+        width: 60%;
+    }
+    .ms-is-small.metaslider.ms-theme-highway .flexslider:not(.filmstrip) ul.flex-direction-nav {
+        top: 20%;
+    }
+    .metaslider.ms-theme-highway .flexslider:not(.filmstrip) ul.flex-direction-nav {
+        height: 30%;
+    }
+    .metaslider.ms-theme-radix .flex-pauseplay + * .ml-lightbox-button, .metaslider.ms-theme-radix:has(.flex-pauseplay) .ml-lightbox-button {
+        left: 80px!important;
+        font-size: 11px;
+    }
+    .lightbox-layer-content span {
+        font-size: 21px !important;
+    }   
+}
+
+/* ==========================================================================
+   COLOR CUSTOMIZATION VARIABLES
+   ========================================================================== */
+
+:root {
+    --ml-lightbox-bg-color: rgba(0, 0, 0, 0.5);
+    --ml-lightbox-bg-hover-color: rgba(0, 0, 0, 0.8);
+    --ml-lightbox-border-radius: 6px;
+    --ml-lightbox-transition: all 0.2s ease;
+}
+
+/* ==========================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+.ml-lightbox-fade-in {
+    animation: ml-lightbox-fadeIn 0.3s ease-in-out;
+}
+
+@keyframes ml-lightbox-fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.ml-lightbox-hidden {
+    display: none !important;
+}
+
+.ml-lightbox-loading {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+    .lg-outer,
+    .lg-backdrop {
+        display: none !important;
+    }
+}
