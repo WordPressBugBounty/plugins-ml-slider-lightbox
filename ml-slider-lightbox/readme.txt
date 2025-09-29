@@ -3,7 +3,7 @@ Contributors: matchalabs, DavidAnderson, dnutbourne, kbat82
 Tags: wordpress slideshow lightbox,meta slider,metaslider,metaslider lightbox,slideshow lightbox,lightbox,slideshow,slider,wordpress lightbox
 Requires at least: 3.5
 Tested up to: 6.7.2
-Stable tag: 2.0.0
+Stable tag: 2.10.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -107,6 +107,21 @@ The not so easy way:
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.10.0] - 29 Sep, 2025 =
+
+ADDED: Different settings for different post types, #121;
+ADDED: Add an option to hide or show slide Image Title Text, #132;
+ADDED: Add ability to use MetaSlider slide to show Lightbox instead of button, #128;
+ADDED: Add settings for manual options, #155;
+ADDED: Add settings for button text colors, #162;
+CHANGED: Behavior Tab should be for all options (manual and automatic), #152;
+FIXED: Custom HTML: Images are zoomed in Lightbox when using mobile portrait, #104;
+FIXED: Layer Slides: Open in Lightbox button overlaps with Play / Pause button, #119;
+FIXED: Layer Slides: Text layers are too big when on mobile (portrait and landscape), #105;
+FIXED: Lightbox not working on content-based videos, #157;
+FIXED: Menu conflict when Firelight Lightbox is installed, #142;
+FIXED: Vimeo with lazyload enabled, #83;
 
 = [2.0.0] - 24 Jul, 2025 =
 

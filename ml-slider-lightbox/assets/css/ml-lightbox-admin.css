@@ -160,7 +160,7 @@
 
 .ml-lightbox-form-table th {
     background: #f8f9fa;
-    font-weight: 600;
+    font-weight: normal;
     width: 200px;
     vertical-align: top;
 }
@@ -306,7 +306,7 @@
 
     .ml-lightbox-form-table th {
         background: none;
-        font-weight: 600;
+        font-weight: normal;
         border-bottom: none;
         padding-bottom: 5px;
     }
@@ -426,10 +426,6 @@
     animation: fadeIn 0.3s ease-in-out;
 }
 
-.tab-content form {
-    max-width: 800px;
-}
-
 .tab-content h2 {
     color: #1d2327;
     font-size: 20px;
@@ -444,7 +440,7 @@
 
 .tab-content .form-table th {
     color: #1d2327;
-    font-weight: 600;
+    font-weight: normal;
     padding: 15px 10px 15px 0;
     width: 200px;
     background: transparent;
@@ -452,7 +448,7 @@
 }
 
 .tab-content .form-table td {
-    padding: 15px 10px 15px 20px;
+    padding: 15px 10px 15px 5px;
     vertical-align: top;
     background: white;
     border-radius: 0 4px 4px 0;
@@ -527,6 +523,9 @@
     top: 16px;
 }
 
+.tab-content .form-table th:empty {
+    display: none;
+}
 /* ==========================================================================
    ENHANCED SUBMIT BUTTON
    ========================================================================== */
@@ -808,6 +807,269 @@
 }
 
 /* ==========================================================================
+   NEW THREE-TAB UI ENHANCEMENTS
+   ========================================================================== */
+
+.metaslider-lightbox .form-table th {
+    width: 220px;
+    font-weight: normal;
+    color: #1d2327;
+}
+
+.metaslider-lightbox .form-table td {
+    padding: 15px 10px;
+}
+
+.metaslider-lightbox .form-table td label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.metaslider-lightbox .form-table td label input[type="checkbox"] {
+    margin-right: 8px;
+    margin-top: 0;
+    transform: scale(1.1);
+    accent-color: #dd6923;
+}
+
+.metaslider-lightbox .form-table td .description {
+    margin-top: 8px;
+    color: #646970;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Section Headers with Icons */
+.metaslider-lightbox .form-table h2 {
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #1d2327;
+}
+
+.metaslider-lightbox .form-table h3 {
+    color: #dd6923;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Enhanced Color Picker Integration */
+.metaslider-lightbox .wp-picker-container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.metaslider-lightbox .wp-picker-container .wp-picker-clear {
+    vertical-align: top !important;
+    margin-left: 6px !important;
+    height: 30px !important;
+    line-height: 28px !important;
+}
+
+.metaslider-lightbox .wp-picker-container .wp-picker-input-wrap {
+    vertical-align: top !important;
+}
+
+.metaslider-lightbox .wp-picker-input-wrap label {
+    display: inline !important;
+}
+
+/* Notice Boxes for Better UX */
+.ml-lightbox-notice {
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.ml-lightbox-notice p {
+    margin: 0;
+}
+
+.ml-lightbox-notice p:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.ml-lightbox-notice strong {
+    color: inherit;
+}
+
+/* Tab Content Spacing */
+.tab-content .form-table {
+    margin-top: 10px;
+}
+
+.tab-content .form-table:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+/* Section Dividers */
+.tab-content .form-table + .form-table {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+/* Range Slider for Opacity */
+input[type="range"] {
+    width: 200px;
+    margin-right: 10px;
+    accent-color: #dd6923;
+}
+
+/* Output Display for Range Values */
+output {
+    font-weight: 600;
+    color: #dd6923;
+    font-size: 14px;
+    min-width: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Pro Feature Badges */
+.ml-lightbox-notice {
+    position: relative;
+    overflow: hidden;
+}
+
+.ml-lightbox-notice::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Enhanced Submit Button Area */
+.tab-content .submit {
+    padding: 20px 0px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* ==========================================================================
+   PRO FEATURES PREVIEW SECTIONS STYLING
+   ========================================================================== */
+
+/* Preview sections maintain Pro visual hierarchy */
+.metaslider-lightbox .tab-content .form-table tr.preview-feature {
+    opacity: 0.7;
+    position: relative;
+}
+
+.metaslider-lightbox .tab-content .form-table tr.preview-feature::after {
+    content: 'PRO';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffb900;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+/* Preview checkboxes styling */
+.metaslider-lightbox .form-table input[type="checkbox"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.metaslider-lightbox .form-table label:has(input[type="checkbox"]:disabled) {
+    opacity: 0.6;
+    cursor: not-allowed;
+    position: relative;
+}
+
+/* Enhanced preview section headers */
+.tab-content h2:contains("Enhanced Zoom"),
+.tab-content h2:contains("Media & Video"),
+.tab-content h2:contains("Social & Navigation"),
+.tab-content h2:contains("Advanced Features") {
+    position: relative;
+    padding-right: 80px;
+}
+
+.tab-content h2:contains("Enhanced Zoom")::after,
+.tab-content h2:contains("Media & Video")::after,
+.tab-content h2:contains("Social & Navigation")::after,
+.tab-content h2:contains("Advanced Features")::after {
+    content: 'PREVIEW';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffb900;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Pro notice boxes in preview sections */
+.ml-lightbox-notice.preview-notice {
+    background: linear-gradient(135deg, #fff8e5 0%, #fef7e0 100%);
+    border-left: 4px solid #ffb900;
+    position: relative;
+    overflow: hidden;
+}
+
+.ml-lightbox-notice.preview-notice::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 185, 0, 0.1) 50%, transparent 70%);
+    animation: shimmerPreview 3s ease-in-out infinite;
+}
+
+@keyframes shimmerPreview {
+    0% { transform: translateX(-100%); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Section consistency between free and Pro */
+.metaslider-lightbox h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Disabled field overlay effect */
+.metaslider-lightbox .form-table tr:has(input:disabled) td {
+    position: relative;
+}
+
+.metaslider-lightbox .form-table tr:has(input:disabled) td::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* ==========================================================================
    PRO UPGRADE TAB RESPONSIVE DESIGN
    ========================================================================== */
 
@@ -844,5 +1106,268 @@
     .pro-upgrade-btn {
         padding: 12px 30px !important;
         font-size: 16px !important;
+    }
+}
+
+/* ==========================================================================
+   MANUAL OPTIONS HOW-TO TOGGLES
+   ========================================================================== */
+
+.manual-options-content {
+    margin-top: 20px;
+}
+
+.ml-how-to-toggle {
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+.ml-how-to-toggle summary {
+    padding: 12px 15px;
+    background: #f7f7f7;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px 3px 0 0;
+    font-weight: 600;
+    color: #1d2327;
+    transition: background 0.3s ease;
+}
+
+.ml-how-to-toggle summary:hover {
+    background: #f0f0f0;
+    color: #dd6923;
+}
+
+.ml-how-to-toggle[open] summary {
+    border-bottom: 1px solid #ddd;
+    background: #dd6923;
+    color: white;
+}
+
+.ml-how-to-content {
+    padding: 15px;
+}
+
+.ml-how-to-content ol {
+    padding-left: 25px;
+    margin: 10px 0;
+}
+
+.ml-how-to-content li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.ml-how-to-content h4 {
+    color: #dd6923;
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+    font-weight: 600;
+}
+
+.ml-how-to-content code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #d73502;
+}
+
+.ml-how-to-content pre {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 12px;
+    overflow-x: auto;
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.ml-how-to-content pre code {
+    background: none;
+    padding: 0;
+    color: #333;
+}
+
+.ml-how-to-content img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ml-how-to-content p em {
+    color: #646970;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   TOGGLE SWITCH CARD STYLES (MODERN LAYOUT)
+   ========================================================================== */
+
+/* Hide the default checkbox */
+.ml-toggle-card input[type="checkbox"] {
+    display: none;
+}
+
+/* Toggle card container - main wrapper */
+.ml-toggle-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ml-toggle-card:last-child {
+    border-bottom: none;
+}
+
+/* Left side content area */
+.ml-toggle-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Title styling */
+.ml-toggle-title {
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: #1d2327;
+	margin: 0 0 6px 0;
+	line-height: 1.4;
+}
+
+/* Description styling */
+.ml-toggle-description {
+    font-size: 14px;
+    color: #646970;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Right side toggle control area */
+.ml-toggle-control {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle switch track */
+.ml-toggle-switch {
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    background: #ddd;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Toggle switch slider */
+.ml-toggle-switch::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.15s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Toggle switch when checked */
+.ml-toggle-card input[type="checkbox"]:checked + .ml-toggle-switch {
+    background: #dd6923;
+}
+
+.ml-toggle-card input[type="checkbox"]:checked + .ml-toggle-switch::before {
+    transform: translateX(20px);
+}
+
+/* Toggle switch hover effects */
+.ml-toggle-switch:hover {
+    background: #c9c9c9;
+}
+
+.ml-toggle-card input[type="checkbox"]:checked + .ml-toggle-switch:hover {
+    background: #c55a1e;
+}
+
+/* Toggle switch focus effects */
+.ml-toggle-card input[type="checkbox"]:focus + .ml-toggle-switch {
+    outline: 2px solid rgba(221, 105, 35, 0.3);
+    outline-offset: 2px;
+}
+
+/* Toggle switch disabled state */
+.ml-toggle-card input[type="checkbox"]:disabled + .ml-toggle-switch {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.ml-toggle-card input[type="checkbox"]:disabled + .ml-toggle-switch:hover {
+    background: #ddd;
+}
+
+/* Disabled card styling */
+.ml-toggle-card:has(input[type="checkbox"]:disabled) .ml-toggle-title {
+    opacity: 0.6;
+}
+
+.ml-toggle-card:has(input[type="checkbox"]:disabled) .ml-toggle-description {
+    opacity: 0.6;
+}
+
+/* Responsive styling for mobile */
+@media (max-width: 640px) {
+    .ml-toggle-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .ml-toggle-content {
+        margin-right: 0;
+    }
+
+    .ml-toggle-control {
+        align-self: flex-end;
+    }
+}
+
+/* ==========================================================================
+   MANUAL OPTIONS RESPONSIVE HOW-TO TOGGLES
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .ml-how-to-toggle summary {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .ml-how-to-content {
+        padding: 12px;
+    }
+
+    .ml-how-to-content ol {
+        padding-left: 20px;
+    }
+
+    .ml-how-to-content pre {
+        padding: 8px;
+        font-size: 12px;
     }
 }
