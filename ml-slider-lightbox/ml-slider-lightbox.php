@@ -4,7 +4,7 @@
  * Plugin Name: MetaSlider Lightbox
  * Plugin URI: https://www.metaslider.com
  * Description: MetaSlider Lightbox is the lightbox plugin for WordPress. Create lightbox display for images, sliders, galleries, videos, and more.
- * Version: 2.10.0
+ * Version: 2.22.0
  * Author: MetaSlider
  * Author URI: https://www.metaslider.com
  * License: GPL-2.0+
@@ -20,4 +20,15 @@ if (! defined('ABSPATH')) {
 if (! class_exists('MetaSlider\Lightbox\MetaSliderLightboxPlugin')) {
     require_once plugin_dir_path(__FILE__) . 'class-ml-slider-lightbox.php';
     add_action('plugins_loaded', array(MetaSlider\Lightbox\MetaSliderLightboxPlugin::getInstance(), 'setup'), 10);
+
+    register_activation_hook(__FILE__, 'metaslider_lightbox_activation');
+}
+
+/**
+ * Plugin activation hook
+ * Sets a transient to trigger redirect to settings page
+ */
+function metaslider_lightbox_activation()
+{
+    set_transient('metaslider_lightbox_activation_redirect', true, 30);
 }

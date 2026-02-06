@@ -24,11 +24,6 @@
    CUSTOM POSITIONING
    ========================================================================== */
 
-.lg-toolbar .lg-close {
-    right: 20px;
-    top: 20px;
-}
-
 .lg-actions .lg-prev {
     left: 20px;
 }
@@ -38,10 +33,23 @@
 }
 
 /* ==========================================================================
+   HIDE LIGHTBOX BUTTONS ON UI ELEMENTS
+   ========================================================================== */
+
+.flex-control-nav .ml-lightbox-button,
+.flex-control-thumbs .ml-lightbox-button {
+    display: none !important;
+}
+
+.lg-thumb .ml-lightbox-button,
+.lg-thumb-item .ml-lightbox-button {
+    display: none !important;
+}
+
+/* ==========================================================================
    ACCESSIBILITY IMPROVEMENTS
    ========================================================================== */
 
-/* Focus states for keyboard navigation */
 .lg-outer .lg-close:focus,
 .lg-outer .lg-prev:focus,
 .lg-outer .lg-next:focus {
@@ -49,7 +57,6 @@
     outline-offset: 2px;
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
     .lg-outer .lg-close,
     .lg-outer .lg-prev,
@@ -59,7 +66,6 @@
     }
 }
 
-/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     .lg-outer .lg-close,
     .lg-outer .lg-prev,
@@ -107,7 +113,6 @@
     opacity: 1;
 }
 
-/* Thumbnail images */
 .lg-thumb-item img {
     width: 100%;
     height: 100%;
@@ -115,7 +120,6 @@
     border-radius: 2px;
 }
 
-/* Video thumbnail overlay */
 .lg-thumb-item[data-video] {
     background: #000;
 }
@@ -124,7 +128,6 @@
     background: rgba(255, 255, 255, 1);
 }
 
-/* Video thumbnail with poster */
 .lg-thumb-item[data-video][data-poster] img {
     opacity: 0.8;
 }
@@ -139,18 +142,16 @@
    LIGHTBOX BUTTON STYLES
    ========================================================================== */
 
-/* Open in Lightbox button for all slide types */
 .ml-lightbox-button,
 .widget .ml-lightbox-enabled a.ml-lightbox-button {
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 10;
-    /* Background and color set by dynamic CSS in PHP */
     padding: 8px 12px;
     border-radius: 4px;
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: none!important;
     line-height: 16px;
     max-width: 150px;
     white-space: nowrap;
@@ -166,38 +167,33 @@
 }
 
 .ml-lightbox-button:hover {
-    /* Background and color set by dynamic CSS in PHP */
     text-decoration: none;
 }
 
 .ml-lightbox-button:focus {
-    /* Background and color set by dynamic CSS in PHP */
     text-decoration: none;
     outline: 2px solid white;
     outline-offset: 2px;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3);
 }
 
-/* Enhanced focus for keyboard navigation */
 .ml-lightbox-button:focus-visible {
     outline: 3px solid #ffffff;
     outline-offset: 2px;
     box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.4), 0 0 8px rgba(0, 0, 0, 0.5);
 }
 
-/* Ensure parent slide is positioned for button placement */
 .ml-lightbox-slide {
     position: relative;
 }
 
-/* High contrast mode support for lightbox buttons */
 @media (prefers-contrast: high) {
     .ml-lightbox-button {
         background: rgba(0, 0, 0, 0.95);
         border: 2px solid #ffffff;
         font-weight: bold;
     }
-    
+
     .ml-lightbox-button:focus,
     .ml-lightbox-button:focus-visible {
         outline: 4px solid #ffffff;
@@ -206,12 +202,11 @@
     }
 }
 
-/* Reduced motion support for lightbox buttons */
 @media (prefers-reduced-motion: reduce) {
     .ml-lightbox-button {
         transition: none;
     }
-    
+
     .ml-lightbox-button:focus,
     .ml-lightbox-button:focus-visible {
         box-shadow: none;
@@ -219,11 +214,30 @@
     }
 }
 
+.lg-container .lg-counter {
+	padding: 10px !important;
+	border-radius: 0 !important;
+}
+
+.lg-toolbar {
+    z-index: 1083 !important;
+}
+
+@supports not selector(:has(*)) {
+    .lg-toolbar.lg-group {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    .lg-toolbar.lg-group .lg-counter {
+        margin-left: 10px !important;
+    }
+}
+
 /* ==========================================================================
    METASLIDER INTEGRATION
    ========================================================================== */
 
-/* MetaSlider container with lightbox enabled */
 .ml-lightgallery-active {
     position: relative;
 }
@@ -237,7 +251,6 @@
     transition: opacity 0.3s ease;
 }
 
-/* Loading indicator for images */
 .ml-lightgallery-active .lg-loading {
     background: rgba(0, 0, 0, 0.7);
     color: white;
@@ -246,7 +259,6 @@
     font-size: 14px;
 }
 
-/* Caption styling */
 .lg-sub-html {
     background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
     color: white;
@@ -259,7 +271,6 @@
     margin: 0;
 }
 
-/* Layer content in lightbox */
 .lightbox-layer-wrapper {
     margin-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -338,14 +349,12 @@
     z-index: 9999;
 }
 
-/* Specific positioning for Radix theme with flex-pauseplay */
 .metaslider.ms-theme-radix .flex-pauseplay + * .ml-lightbox-button,
 .metaslider.ms-theme-radix:has(.flex-pauseplay) .ml-lightbox-button {
     left: 90px!important;
     bottom: 5px;
 }
 
-/* Different positioning based on flex-pauseplay content type */
 .metaslider.ms-theme-radix.ml-radix-icon-only .ml-lightbox-button {
     left: 60px!important;
     bottom: 5px;
@@ -391,7 +400,7 @@
     }
     .lightbox-layer-content span {
         font-size: 21px !important;
-    }   
+    }
 }
 
 /* ==========================================================================
@@ -409,7 +418,6 @@
    CUSTOM HTML RESPONSIVE STYLES
    ========================================================================== */
 
-/* MetaSlider Custom HTML content wrapper in lightbox */
 .ml-custom-html-wrapper {
     display: flex;
     align-items: center;
@@ -419,7 +427,6 @@
     box-sizing: border-box;
 }
 
-/* MetaSlider Custom HTML content container */
 .ml-custom-html-content {
     background: #ffffff;
     border-radius: 8px;
@@ -433,9 +440,8 @@
     box-sizing: border-box;
 }
 
-/* Responsive typography for Custom HTML content */
-.ml-custom-html-content h1, 
-.ml-custom-html-content h2, 
+.ml-custom-html-content h1,
+.ml-custom-html-content h2,
 .ml-custom-html-content h3 {
     margin-top: 0;
     margin-bottom: 1em;
@@ -459,27 +465,26 @@
     height: auto;
 }
 
-/* Responsive breakpoints for Custom HTML */
 @media (max-width: 768px) {
     .ml-custom-html-wrapper {
         padding: 20px 10px;
     }
-    
+
     .ml-custom-html-content {
         padding: 20px;
         max-width: 95vw;
         max-height: 85vh;
         font-size: 14px;
     }
-    
+
     .ml-custom-html-content h1 {
         font-size: 1.5em;
     }
-    
+
     .ml-custom-html-content h2 {
         font-size: 1.3em;
     }
-    
+
     .ml-custom-html-content h3 {
         font-size: 1.1em;
     }
@@ -489,7 +494,7 @@
     .ml-custom-html-wrapper {
         padding: 15px 5px;
     }
-    
+
     .ml-custom-html-content {
         padding: 15px;
         max-width: 98vw;
@@ -502,7 +507,6 @@
    LIGHTBOX OVERLAY STYLES
    ========================================================================== */
 
-/* Base overlay styles for direct-click mode */
 .ml-video-overlay,
 .ml-image-overlay {
     position: absolute;
@@ -534,7 +538,6 @@ img.ml-lightbox-enabled {
 	cursor: default !important;
 }
 
-/* Disabled container styling when lightbox button is present */
 .ml-lightbox-container-disabled {
     cursor: default !important;
     text-decoration: none !important;
@@ -546,19 +549,16 @@ img.ml-lightbox-enabled {
     color: inherit !important;
 }
 
-/* Visual indicator for containers with lightbox buttons */
 .ml-has-lightbox-button {
     position: relative;
 }
 
-/* Focus states for accessibility */
 .ml-video-overlay:focus,
 .ml-image-overlay:focus {
     outline: 2px solid #0073aa;
     outline-offset: 2px;
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
     .ml-video-overlay,
     .ml-image-overlay {
@@ -572,7 +572,6 @@ img.ml-lightbox-enabled {
     }
 }
 
-/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     .ml-video-overlay,
     .ml-image-overlay {
@@ -584,18 +583,15 @@ img.ml-lightbox-enabled {
    VIDEO LIGHTBOX STYLES
    ========================================================================== */
 
-/* Only fix specific issues without overriding WordPress video sizing */
 .wp-block-embed .wp-block-embed__wrapper {
     position: relative !important;
     overflow: visible !important;
 }
 
-/* Ensure WordPress embed wrapper with lightbox maintains proper structure */
 .wp-block-embed .wp-block-embed__wrapper.ml-lightbox-enabled {
     position: relative !important;
 }
 
-/* Only fix videos that have max-height: 0 issue */
 .wp-block-embed iframe[style*="max-height: 0"],
 .wp-block-embed iframe[style*="max-height:0"],
 .wp-block-embed iframe[style*="max-height: 0px"],
@@ -604,7 +600,6 @@ img.ml-lightbox-enabled {
     height: auto !important;
 }
 
-/* WordPress video block positioning for lightbox overlay */
 .wp-block-video {
     position: relative;
 }
@@ -612,6 +607,10 @@ img.ml-lightbox-enabled {
 .wp-block-video video {
     position: relative;
     z-index: 1;
+}
+
+.lg-initialized.wp-lightbox-container {
+	display: inline-block;
 }
 
 .lg-initialized.wp-lightbox-container img {
@@ -622,7 +621,6 @@ img.ml-lightbox-enabled {
    LIGHTGALLERY LAYOUT AND PERFORMANCE OPTIMIZATIONS
    ========================================================================== */
 
-/* Prevent layout shifts during loading */
 .lg-outer .lg-item {
     display: flex;
     align-items: center;
@@ -638,17 +636,14 @@ img.ml-lightbox-enabled {
     object-position: center;
 }
 
-/* Adjust image height when thumbnails are visible */
 .lg-outer.lg-thumbnail .lg-item img {
     max-height: calc(100vh - 160px);
 }
 
-/* Smooth fade transitions */
 .lg-outer .lg-item {
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Layer slides styling for direct-click mode */
 .lg-outer .lg-item .ms-layer .msDefaultImage {
     width: 1400px !important;
     height: 600px !important;
@@ -697,6 +692,22 @@ img.ml-lightbox-enabled {
 .ml-lightbox-loading {
     opacity: 0.5;
     pointer-events: none;
+}
+
+/* ==========================================================================
+   ACCESSIBILITY - SCREEN READER ONLY
+   ========================================================================== */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /* ==========================================================================

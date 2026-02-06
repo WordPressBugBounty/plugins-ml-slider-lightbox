@@ -1,78 +1,131 @@
-=== MetaSlider Lightbox ===
-Contributors: matchalabs, DavidAnderson, dnutbourne, kbat82
-Tags: wordpress slideshow lightbox,meta slider,metaslider,metaslider lightbox,slideshow lightbox,lightbox,slideshow,slider,wordpress lightbox
-Requires at least: 3.5
-Tested up to: 6.7.2
-Stable tag: 2.10.0
+=== MetaSlider Lightbox - Modals & Lightboxes - Image, Gallery, Video, Slideshow Lightbox ==
+Contributors: 
+Tags: lightbox, image lightbox, gallery lightbox, wordpress lightbox, video lightbox
+Requires at least: 5.0
+Tested up to: 6.9
+Stable tag: 2.22.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Extends MetaSlider allowing slides to be opened in a lightbox.
+MetaSlider Lightbox is the lightbox and modal plugin for WordPress. Build a lightbox for images, galleries, video, slideshows and more.
 
 == Description ==
 
-For use with the popular WordPress plugin <a href="https://wordpress.org/plugins/ml-slider/">MetaSlider</a> allowing slides to be opened in a lightbox, using one of the following supported lightbox plugins:<br>
+MetaSlider Lightbox is the lightbox and modal plugin for WordPress. You can use MetaSlider Lightbox to add modal windows for images, galleries, videos, slideshows and more. You can use MetaSlider Lightbox to enhance your MetaSlider slideshows, plus also the media files inside your WordPress posts.
 
-<ul>
-<li><a href="https://wordpress.org/plugins/easy-fancybox/">Easy FancyBox</a></li>
-<li><a href="https://wordpress.org/plugins/simple-lightbox/">Simple Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/foobox-image-lightbox/">FooBox Image Lightbox</a> </li>
-<li><a href="https://wordpress.org/plugins/wp-colorbox/">WP Colorbox Lightbox</a> </li>
-<li><a href="https://wordpress.org/plugins/ari-fancy-lightbox/">ARI Fancy Lightbox</a></li>
-</ul>
+The MetaSlider Lightbox plugin allows you to show a wide variety of media inside a lightbox modal window, including these:
 
-We also support the following WordPress plugins, although they haven't had recent updates, or sometimes go long periods without the authors fixing issues:<br>
+* Images
+* Image galleries
+* Videos hosted on WordPress sites
+* Vimeo videos
+* YouTube Videos
+* Featured images
+* [MetaSlider slideshows](https://wordpress.org/plugins/ml-slider/)
 
-<ul>
-<li><a href="https://wordpress.org/plugins/responsive-lightbox/">Responsive Lightbox by dFactory</a></li>
-<li><a href="https://wordpress.org/plugins/wp-lightbox-2/">WP Lightbox 2</a></li>
-<li><a href="https://wordpress.org/plugins/wp-jquery-lightbox/">WP jQuery Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/jquery-colorbox/">jQuery Colorbox</a></li>
-<li><a href="https://wordpress.org/plugins/fancy-lightbox/">Fancy Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/imagelightbox/">imageLightbox</a></li>
-<li><a href="https://www.tipsandtricks-hq.com/wordpress-lightbox-ultimate-plugin-display-media-in-a-fancy-lightbox-overlay-3163">WP Lightbox Ultimate</a></li>
-<li><a href="https://23systems.net/wordpress-plugins/lightbox-plus-for-wordpress/">Lightbox Plus</a></li>
-</ul>
+You can really enhance your WordPress media with a lightbox. Visitors can view your images or videos and then open them inside a modal. This can make the image or video larger and also darken the background so it’s easier to focus on the media.
 
-If you would like to use a lightbox plugin that isn't supported you can add support by hooking into the `metaslider_lightbox_supported_plugins` filter. If you need assistance, please open an issue.
+### WordPress Image Lightbox
 
+MetaSlider Lightbox allows you to add lightboxes to images in your WordPress post content. You can choose to automatically add the lightbox to all images, or you can do it manually via the "Enlarge on click" setting. This works with both the block editor and the Classic Editor. You can also use this lightbox with page-builders such as Elementor, Divi, and Beaver Builder, thanks to the CSS feature.
 
+[Click here to see more lightboxes with images](https://www.metaslider.com/docs/images-lightbox-modal/).
 
-== Screenshots ==
+### WordPress Image Gallery Lightbox
 
-1. Toggle the lightbox in the advanced settings panel
+MetaSlider Lightbox allows you to add lightboxes to image galleries in your WordPress post content. You can choose to automatically add the lightbox to all images, or you can do it manually via the "Enlarge on click" setting. Each image in your gallery can get it's own lightbox setting.
+
+[Click here to see more lightboxes with image galleries](https://www.metaslider.com/docs/image-galleries-lightbox-modal/).
+
+### Lightboxes with Local Videos
+
+You can use the MetaSlider Lightbox plugin to show videos inside a lightbox modal window. The MetaSlider Lightbox plugin supports videos hosted inside your WordPress media library. You can use MetaSlider Lightbox to showcase your .MP4, .WebM, and .MOV videos.
+
+[Click here to see more lightboxes with local videos](https://www.metaslider.com/docs/video-lightbox/).
+
+### Lightboxes with YouTube Videos
+
+MetaSlider Lightbox allows you to add lightboxes to YouTube videos in your WordPress post content. You can choose to automatically add the lightbox to all YouTube images. You can use many different YouTube URL formats. [There's a list of formats here](https://www.metaslider.com/docs/youtube-url-formats/).
+
+[Click here to see more lightboxes with YouTube videos](https://www.metaslider.com/docs/youtube-videos-lightbox-modal/).
+
+### Lightboxes with Vimeo Videos
+
+MetaSlider Lightbox allows you to add lightboxes to Vimeo videos in your WordPress post content. You can choose to automatically add the lightbox to all Vimeo videos
+
+[Click here to see more lightboxes with Vimeo videos](https://www.metaslider.com/docs/vimeo-videos-lightbox-modal/).
+
+### Lightboxes with MetaSlider Slideshows
+
+The MetaSlider lightbox plugin connects deeply with the MetaSlider slideshow plugin.
+
+A slideshow allows you to create a beautiful showcase of images or videos for your visitors. You can enhance your slideshow with a lightbox. Visitors can view your slideshow and then click on an image and see a larger, higher-resolution version of the image. Often the background is darkened so that the viewer’s eyes can focus on the image alone.
+
+MetaSlider Lightbox supports every kind of slideshow created with MetaSlider except Layer Slides and Custom HTML.
+
+[Click here to see more lightboxes with MetaSlider slideshows](https://www.metaslider.com/docs/slideshows-lightbox-modal/).
+
+### Design Options for MetaSlider Lightbox
+
+The MetaSlider Lightbox plugin has a wide range of design options to allow to customize the lightbox effect. You can customize the lightbox background and overlay appearance. You can choose the navigation icons (close, previous, next arrows) that appear in all lightboxes. You can modify the the “Open in Lightbox” option that can be added to media.
+
+[Click here to see lightbox design options](https://www.metaslider.com/docs/design-options-for-metaslider-lightbox/).
+
 
 == Installation ==
 
-Requires: <br>
+= To install the plugin automatically: =
+* Through WordPress admin, use the menu: Plugin > Add New.
+* Search for MetaSlider Lightbox.
+* Click on install then click the activation link.
 
-<ul>
-<li><a href="https://wordpress.org/plugins/ml-slider/">MetaSlider</a> 3.0+ </li>
-</ul>
+== Frequently Asked Questions ==
 
-and one of the following lightbox plugins:
+= What library is used in MetaSlider Lightbox =
 
-<ul>
-<li><a href="https://wordpress.org/plugins/easy-fancybox/">Easy FancyBox</a></li>
-<li><a href="https://wordpress.org/plugins/simple-lightbox/">Simple Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/responsive-lightbox/">Responsive Lightbox by dFactory</a></li>
-<li><a href="https://wordpress.org/plugins/foobox-image-lightbox/">FooBox Image Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/wp-featherlight/">WP Featherlight</a></li>
-<li><a href="https://wordpress.org/plugins/wp-colorbox/">WP ColorBox Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/fancy-gallery/">Gallery Manager</a></li>
-<li><a href="https://wordpress.org/plugins/ari-fancy-lightbox/">ARI Fancy Lightbox â€“ WordPress Popup</a></li>
-<li><a href="https://wordpress.org/plugins/wp-lightbox-2/">WP Lightbox 2</a></li>
-<li><a href="https://wordpress.org/plugins/wp-jquery-lightbox/">WP jQuery Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/jquery-colorbox/">jQuery Colorbox</a></li>
-<li><a href="https://wordpress.org/plugins/fancy-lightbox/">Fancy Lightbox</a></li>
-<li><a href="https://wordpress.org/plugins/imagelightbox/">imageLightbox</a></li>
-<li><a href="https://www.tipsandtricks-hq.com/wordpress-lightbox-ultimate-plugin-display-media-in-a-fancy-lightbox-overlay-3163">WP Lightbox Ultimate</a></li>
-<li><a href="https://23systems.net/wordpress-plugins/lightbox-plus-for-wordpress/">Lightbox Plus</a></li>
-</ul>
+We rely on lightGallery which is a lightweight, modular, JavaScript image and video lightbox gallery. Find out more at [their website](https://www.lightgalleryjs.com/). lightGallery is built with most modern technologies available to achieve the best performance and quality. It supports all modern browsers including IE 10 and above. lightGallery is highly optimized for mobile and tablets so you get a native look-and-feel, plus best performance.
 
+= Is MetsaSlider Lightbox ready for mobile? =
 
-If you would like to use a lightbox plugin, you can filter the supported plugin list with the necessary attributes. For example, using <a target="_blank" href="https://wordpress.org/plugins/responsive-lightbox-lite/">Responsive Lightbox Lite</a>
+Yes, MetaSlider Lightbox is highly optimized for mobile. MetaSlider Lightbox supports multiple touch gestures to perform specific actions such as pinch to zoom in, zoom out, double tap to zoom, drag or swipe to navigate to different slides, vertical swipe or drag to close etc. MetaSlider Lightbox  uses CSS-only approach for resizing images and videos to achieve maximum performance on mobile devices.
+
+= Is MetaSlider Lightbox ready for touch gestures? =
+
+Yes, MetaSlider Lightbox supports touch and swipe navigation on touchscreen devices, as well as mouse drag for desktops. This allows users to navigate between slides by either swiping or dragging on the media.
+
+= Is MetaSlider Lightbox accessible? =
+
+Yes, MetaSlider Lightbox supports keyboard navigation to navigate different slides, and uses escape key to close the gallery, and uses recommended accessibility HTML markups to make lightGallery accessible for keyboard and screen reader users. 
+
+= Does WordPress have a default lightbox? =
+
+Yes, but it's more limited than the lightbox offered by MetaSlider Lightbox. WordPress 6.4 gives us a new lightbox feature that can be used with images and photo galleries. You can add lightboxes inside WordPress posts. Inside each image or gallery block, you'll be able to find the "Expand on click" option. When visitors see this image in your post, it will probably appear smaller than the full-size version of the image. Thanks to the lightbox feature, they'll be able to click and see a much larger, expanded version of the image. [Find out more here](https://www.metaslider.com/block-editor-lightbox/).
+
+= Is there a direct link to install MetaSlider lightbox? =
+
+Yes, use the phrase metasliderlightbox or mslightbox when searching for plugins. We use that for some banners inside the plugin. Searching for metasliderlightbox or mslightbox will result in only this plugin being found.
+
+= Can I connect to other lightbox plugins to MetaSlider? =
+
+Yes, a legacy feature in this plugin allows you to connect other Lightbox plugins to MetaSlider slideshows. We no longer support this feature, but it may still work. Here are the connected slideshows:
+
+* [Easy FancyBox](https://wordpress.org/plugins/easy-fancybox/)
+* [Simple Lightbox](https://wordpress.org/plugins/simple-lightbox/)
+* [FooBox Image Lightbox](https://wordpress.org/plugins/foobox-image-lightbox/)
+* [WP Colorbox Lightbox](https://wordpress.org/plugins/wp-colorbox/)
+* [ARI Fancy Lightbox](https://wordpress.org/plugins/ari-fancy-lightbox/)
+* [Responsive Lightbox by dFactory](https://wordpress.org/plugins/responsive-lightbox/)
+* [WP Lightbox 2](https://wordpress.org/plugins/wp-lightbox-2/)
+* [WP jQuery Lightbox](https://wordpress.org/plugins/wp-jquery-lightbox/)
+* [jQuery Colorbox](https://wordpress.org/plugins/jquery-colorbox/)
+* [Fancy Lightbox](https://wordpress.org/plugins/fancy-lightbox/)
+* [imageLightbox](https://wordpress.org/plugins/imagelightbox/)
+* [WP Lightbox Ultimate](https://www.tipsandtricks-hq.com/wordpress-lightbox-ultimate-plugin-display-media-in-a-fancy-lightbox-overlay-3163)
+* [Lightbox Plus](https://23systems.net/wordpress-plugins/lightbox-plus-for-wordpress/)
+
+If you would like to use a lightbox plugin, you can filter the supported plugin list with the necessary attributes. For example, using the Responsive Lightbox Lite plugin, try this code:
+
 <pre>
 add_filter('metaslider_lightbox_supported_plugins', 'supported_plugins_list');
 function supported_plugins_list($supported_plugins_list) {
@@ -89,24 +142,69 @@ function supported_plugins_list($supported_plugins_list) {
 }
 </pre>
 
-<p>Note that you can use <code>:url</code> or <code>:caption</code> to retrieve these items from the slides, such as <code>'data-lightbox-url' => ':url'</code></p>
-
-The easy way:
-
-1. Go to the Plugins Menu in WordPress
-2. Search for "MetaSlider Lightbox"
-3. Click "Install"
-
-The not so easy way:
-
-1. Upload the `ml-slider-lightbox` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Manage your slideshows using the 'MetaSlider' menu option
 
 == Changelog ==
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.22.0] - 28 Jan, 2026 =
+
+* FIXED: Fix toolbar icon CSS selector affecting share dropdown icons, #261;
+* FIXED: Include the MetaSlider logo, #283;
+* CHANGED: Hash URLs, #282;
+* CHANGED: Move sidebar setting to a new panel, #285;
+
+= [2.21.0] - 20 Jan, 2026 =
+
+* ADDED: Test for accessibility, #1245;
+* ADDED: Store plugin version and path in db, #264;
+* ADDED: Pro Ads/Tab on Free, #262;
+* ADDED: Pro Features promos, #263;
+* FIXED: Italian, Spanish and French translation updates, #258;
+* FIXED: Add Recursion Guard, #268;
+* FIXED: Duplicate images, #269;
+* FIXED: Dealing with small images, #236;
+* FIXED: Lightbox still being applied to a slideshow even if not enabled, #260;
+* FIXED: Disable lightbox in thumbnails navigation, #191;
+* FIXED: First Carousel Slide Shows Cropped Image in Lightbox, #270;
+* FIXED: Check Woocommerce products/gallery, automatic mode doesn't seem to work, #266;
+* FIXED: Cursor is not a "mouse hand" for images below a gallery, #208;
+
+= [2.20.0] - 20 Nov, 2025 =
+
+* ADDED: Detect Pro Version, #242;
+* FIXED: Italian, Spanish and French translation updates, #241;
+* FIXED: Allow users to change icon colors, #252;
+* CHANGED: Match the MetaSlider settings, #179;
+* CHANGED: Text updates for Behavior tab, #238;
+* CHANGED: Text updates for Appearance tab, #237;
+* CHANGED: Allow users to show the images in a larger size?, #214;
+* REMOVED: Close Button Position Setting, #248;
+
+= [2.12.0] - 30 Oct, 2025 =
+
+* ADDED: Redirect on install, #222;
+* ADDED: Skip over items inserted in the page, #213;
+* FIXED: Lightbox appears on WooCommerce products even when disabled, #220;
+* FIXED: Enlarge on click instructions are not correct, #216;
+* CHANGED: Update Appearance Tab, #219, #218, #217;
+* CHANGED: Automatic Mode/Manual Mode, #221;
+
+= [2.11.1] - 16 Oct, 2025 =
+
+* CHANGED: Plugin Version, #210;
+
+= [2.11.0] - 16 Oct, 2025 =
+
+* ADDED: Allow users to move the "Close" button and "Open in Lightbox" button, #183;
+* ADDED: Add Ability to Change "Open in Lightbox" text in button, #127;
+* ADDED: Allow users to switch to include or exclude, #174;
+* FIXED: Post type exclusions not finding all post types, #196;
+* CHANGED: Description accuracy, #188;
+* CHANGED: Include the MetaSlider logo, #170;
+* CHANGED: Add padding to right of settings area, #173;
+* REMOVED: Translating screenshots, #184;
 
 = [2.10.0] - 29 Sep, 2025 =
 
