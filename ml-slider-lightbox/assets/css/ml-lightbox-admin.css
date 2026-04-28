@@ -7,7 +7,8 @@
 /* ==========================================================================
    ADMIN LAYOUT
    ========================================================================== */
-div#wpcontent {
+div#wpcontent,
+.gallery-pro_page_ml-gallery-editor #wpcontent {
 	padding-left: 0 !important;
 	padding-right: 0 !important;
 }
@@ -401,6 +402,22 @@ div#wpcontent {
 
 .ml-toggle-card:has(input[type="checkbox"]:disabled) .ml-toggle-title {
     opacity: 0.6;
+}
+
+/* Sub-setting styles (nested/dependent options) */
+.ml-sub-setting {
+    margin-left: 30px;
+    padding-left: 20px;
+    border-left: 3px solid #f0f0f0;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.ml-sub-setting .ml-toggle-card {
+    background: #f9f9f9;
+}
+
+.ml-sub-setting .ml-toggle-title {
+    font-size: 1rem;
 }
 
 .ml-toggle-card:has(input[type="checkbox"]:disabled) .ml-toggle-description {

@@ -1,0 +1,105 @@
+/* ML Gallery — frontend layout styles */
+
+/* ── Base ───────────────────────────────────────────────────────────────── */
+
+.ml-gallery-container {
+	margin: 1em 0;
+	padding: 0;
+	list-style: none;
+	--ml-columns: 3;
+	--ml-gap: 8px;
+}
+
+.ml-gallery-container > a {
+	display: block;
+	overflow: hidden;
+	line-height: 0;
+	text-decoration: none;
+}
+
+.ml-gallery-container > a img {
+	display: block;
+	width: 100%;
+	transition: opacity .2s ease;
+}
+
+.ml-gallery-container > a:hover img {
+	opacity: .85;
+}
+
+/* ── Grid ───────────────────────────────────────────────────────────────── */
+
+.ml-gallery-container.ml-layout-grid {
+	display: grid;
+	grid-template-columns: repeat(var(--ml-columns), 1fr);
+	gap: var(--ml-gap);
+}
+
+.ml-gallery-container.ml-layout-grid > a img {
+	height: 220px;
+	object-fit: cover;
+}
+
+/* ── Masonry ────────────────────────────────────────────────────────────── */
+
+.ml-gallery-container.ml-layout-masonry {
+	columns: var(--ml-columns);
+	column-gap: var(--ml-gap);
+}
+
+.ml-gallery-container.ml-layout-masonry > a {
+	break-inside: avoid;
+	margin-bottom: var(--ml-gap);
+}
+
+.ml-gallery-container.ml-layout-masonry > a img {
+	height: auto;
+	object-fit: unset;
+}
+
+/* ── Justified ──────────────────────────────────────────────────────────── */
+
+.ml-gallery-container.ml-layout-justified {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ml-gap);
+}
+
+.ml-gallery-container.ml-layout-justified > a {
+	flex-grow: 1;
+	overflow: hidden;
+}
+
+.ml-gallery-container.ml-layout-justified > a img {
+	height: 220px;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+}
+
+/* Last row: don't stretch orphaned items to fill the whole row */
+.ml-gallery-container.ml-layout-justified > a:last-child {
+	flex-grow: 0;
+}
+
+/* ── Carousel (lightGallery inline carousel) ────────────────────────────── */
+
+/* Give the container a height so lightGallery has space to render into.
+   LG inline mode absolutely-positions its stage inside this element. */
+.ml-gallery-container.ml-layout-carousel {
+	position: relative;
+	height: 500px;
+}
+
+/* Hide the raw <a> source items — lightGallery replaces them with its own UI */
+.ml-gallery-container.ml-layout-carousel > a {
+	display: none;
+}
+
+/* Scale images to fit within the slide instead of cropping */
+.ml-gallery-container.ml-layout-carousel .lg-object {
+	object-fit: contain;
+	max-height: 100%;
+	width: auto;
+	max-width: 100%;
+}

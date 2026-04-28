@@ -202,6 +202,61 @@
     }
 }
 
+/* ==========================================================================
+   ICON MODE STYLES
+   ========================================================================== */
+
+/* When button contains only an icon (no text) */
+.ml-lightbox-button .ml-lightbox-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+/* Make button smaller and circular when showing icon */
+.ml-lightbox-button:has(.ml-lightbox-icon) {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 10px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 40px !important;
+    min-width: 40px !important;
+    flex: none !important;
+    object-fit: initial !important;
+}
+
+/* Icon color inherits from button text color */
+.ml-lightbox-button .ml-lightbox-icon {
+    color: inherit;
+}
+
+/* Ensure icon scales properly on hover */
+.ml-lightbox-button:hover .ml-lightbox-icon {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+/* Override WordPress gallery defaults for icon buttons */
+.wp-block-gallery .ml-lightbox-button:has(.ml-lightbox-icon),
+.wp-block-gallery figure .ml-lightbox-button:has(.ml-lightbox-icon),
+.gallery .ml-lightbox-button:has(.ml-lightbox-icon) {
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    min-width: 40px !important;
+    flex: none !important;
+}
+
+.wp-block-gallery .ml-lightbox-button .ml-lightbox-icon,
+.gallery .ml-lightbox-button .ml-lightbox-icon {
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: initial !important;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .ml-lightbox-button {
         transition: none;

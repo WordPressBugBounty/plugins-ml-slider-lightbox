@@ -12,9 +12,12 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.22.0';
+    public $version = '2.23.0';
     protected static $instance = null;
     private $supported_plugins = array();
+
+    /** @var MetaSliderLightboxGallery */
+    private $gallery;
 
     /**
      * Static caches for performance optimization
@@ -44,27 +47,22 @@ class MetaSliderLightboxPlugin
         $this->setupCoreFeatures();
         $this->setupMetasliderIntegration();
         $this->setupAdminMenu();
+        require_once plugin_dir_path( __FILE__ ) . 'class-ml-gallery.php';
+        $this->gallery = new MetaSliderLightboxGallery( $this->version, $this->isProPluginActive() );
     }
 
     public function __construct()
     {
         add_action('init', array($this, 'initializeWordPressLightboxOverride'));
-
         add_action('admin_init', array($this, 'migrateSettingsIfNeeded'));
         add_action('admin_init', array($this, 'migrateIconColorSettings'));
         add_action('admin_init', array($this, 'migrateBackgroundColorSettings'));
-
+        add_action('admin_init', array($this, 'migrateEnableOnAllMetaSliderSlideshows'));
         add_action('admin_init', array($this, 'activationRedirect'));
-
         add_filter('body_class', array($this, 'addContentFilteringBodyClass'));
-
-        // Store plugin data
         add_action( 'init', array( $this, 'store_plugin_data' ) );
     }
 
-    /**
-     * Add body class to indicate Content Filtering status
-     */
     public function addContentFilteringBodyClass($classes)
     {
         if ($this->shouldExcludePage()) {
@@ -75,9 +73,6 @@ class MetaSliderLightboxPlugin
         return $classes;
     }
 
-    /**
-     * Redirect to settings page on plugin activation
-     */
     public function activationRedirect()
     {
         if (!get_transient('metaslider_lightbox_activation_redirect')) {
@@ -90,17 +85,14 @@ class MetaSliderLightboxPlugin
             return;
         }
 
-        if (isset($_GET['page']) && $_GET['page'] === 'metaslider-lightbox') {
+        if (isset($_GET['post_type']) && $_GET['post_type'] === 'ml_gallery') {
             return;
         }
 
-        wp_safe_redirect(admin_url('admin.php?page=metaslider-lightbox'));
+        wp_safe_redirect(admin_url('edit.php?post_type=ml_gallery'));
         exit;
     }
 
-    /**
-     * Initialize WordPress lightbox override functionality
-     */
     public function initializeWordPressLightboxOverride()
     {
         $options = $this->getCachedGeneralOptions();
@@ -116,9 +108,6 @@ class MetaSliderLightboxPlugin
         }
     }
 
-    /**
-     * Disable WordPress built-in lightbox via theme JSON
-     */
     public function disableWordPressLightbox($theme_json)
     {
         $new_data = $theme_json->get_data();
@@ -127,18 +116,11 @@ class MetaSliderLightboxPlugin
         return $theme_json->update_with($new_data);
     }
 
-    /**
-     * Remove WordPress lightbox theme support for older versions
-     */
     public function removeWordPressLightboxSupport()
     {
         remove_theme_support('lightbox');
     }
 
-    /**
-     * Migrate old settings structure to new separated structure
-     * This ensures backwards compatibility for existing users
-     */
     public function migrateSettingsIfNeeded()
     {
         $migration_done = get_option('metaslider_lightbox_migration_done', false);
@@ -308,6 +290,22 @@ class MetaSliderLightboxPlugin
         update_option('metaslider_lightbox_background_color_migration_done', true);
     }
 
+    public function migrateEnableOnAllMetaSliderSlideshows()
+    {
+        $flag = 'metaslider_lightbox_enable_on_all_ms_slideshows_migration_done';
+        if (get_option($flag, false)) {
+            return;
+        }
+
+        $options = get_option('metaslider_lightbox_content_options', array());
+        if (!isset($options['enable_on_all_metaslider_slideshows'])) {
+            $options['enable_on_all_metaslider_slideshows'] = false;
+            update_option('metaslider_lightbox_content_options', $options);
+        }
+
+        update_option($flag, true);
+    }
+
     /**
      * Get cached general options to reduce DB queries
      *
@@ -340,6 +338,7 @@ class MetaSliderLightboxPlugin
                 'exclude_posts' => array(),
                 'exclude_post_types' => array('post'),
                 'exclude_css_selectors' => '',
+                'enable_on_all_metaslider_slideshows' => false,
             );
 
             $merged_options = array_merge($default_options, $content_options, $manual_options, $appearance_options);
@@ -389,6 +388,8 @@ class MetaSliderLightboxPlugin
                 'button_hover_text_color' => '#000000',
                 'icon_color' => '#ffffff',
                 'icon_hover_color' => '#000000',
+                'icon_background_color' => '#000000',
+                'icon_background_hover_color' => '#f0f0f0',
                 'arrow_color' => '#ffffff',
                 'arrow_hover_color' => '#000000',
                 'close_icon_color' => '#ffffff',
@@ -424,7 +425,8 @@ class MetaSliderLightboxPlugin
             $default_metaslider_options = array(
                 'show_arrows' => true,
                 'show_thumbnails' => true,
-                'show_lightbox_button' => true,
+                'show_lightbox_button' => false,
+                'use_icon_instead_of_button' => false,
                 'show_captions' => true,
             );
             add_option('ml_lightbox_options', $default_metaslider_options);
@@ -436,8 +438,6 @@ class MetaSliderLightboxPlugin
     {
         add_action('wp_enqueue_scripts', array($this, 'enqueueFrontendAssets'));
         add_shortcode('ml_lightbox', array($this, 'lightboxShortcode'));
-        add_shortcode('ml_gallery', array($this, 'galleryShortcode'));
-        
         $this->setupContentDetection();
 
         $this->setupEnlargeOnClickOverride();
@@ -660,7 +660,7 @@ class MetaSliderLightboxPlugin
     public static function getSupportedPlugins()
     {
         $supported_plugins_list = array(
-            'MetaSlider Lightbox' => array(
+            'MetaSlider Gallery' => array(
                 'location' => 'built-in',
                 'settings_url' => 'admin.php?page=metaslider-lightbox',
                 'built_in' => true,
@@ -798,7 +798,7 @@ class MetaSliderLightboxPlugin
             $slide['id']
         );
 
-        if (filter_var($enabled, FILTER_VALIDATE_BOOLEAN)) {
+        if ($this->isLightboxEnabled($enabled)) {
             $thirdPartyActive = false;
             $activePlugin = null;
             
@@ -1053,7 +1053,7 @@ class MetaSliderLightboxPlugin
         <div class='metaslider-admin-notice notice notice-error is-dismissible'>
             <p><?php
                 _e(
-                    'MetaSlider Lightbox requires MetaSlider and at least one other supported lightbox plugin to be installed and activated.',
+                    'MetaSlider Gallery requires MetaSlider and at least one other supported lightbox plugin to be installed and activated.',
                     'ml-slider-lightbox'
                 ); ?> <a href='https://wordpress.org/plugins/ml-slider-lightbox#description-header'
                          target='_blank'><?php
@@ -1068,7 +1068,7 @@ class MetaSliderLightboxPlugin
         <div class='metaslider-admin-notice error'>
             <p><?php
                 _e(
-                    'There is more than one lightbox plugin activated. This may cause conflicts with MetaSlider Lightbox',
+                    'There is more than one lightbox plugin activated. This may cause conflicts with MetaSlider Gallery',
                     'ml-slider-lightbox'
                 ); ?></p>
         </div>
@@ -1114,10 +1114,10 @@ class MetaSliderLightboxPlugin
 
         if (! isset($active_lightbox_data['Version'])) {
             $active_lightbox_data = array(
-                'Name' => 'MetaSlider Lightbox',
+                'Name' => 'MetaSlider Gallery',
                 'Version' => $this->version
             );
-            $lightbox_name = 'MetaSlider Lightbox';
+            $lightbox_name = 'MetaSlider Gallery';
             $lightbox_settings_url = 'admin.php?page=metaslider-lightbox';
         }
 
@@ -1145,6 +1145,24 @@ class MetaSliderLightboxPlugin
                     )
                 ),
             );
+            if ($this->isGlobalMetaSliderLightboxEnabled()) {
+                $msl_lightbox['lightbox']['helptext'] = sprintf(
+                    __('Lightbox is enabled for all slideshows via <a href="%s">Automatic Mode settings</a>.', 'ml-slider-lightbox'),
+                    esc_url(admin_url('admin.php?page=metaslider-lightbox&tab=detection'))
+                );
+                $msl_lightbox['lightbox']['after'] .= '<script>
+                    (function() {
+                        document.addEventListener("DOMContentLoaded", function() {
+                            var cb = document.querySelector("input[name=\'lightbox\']");
+                            if (cb) {
+                                cb.disabled = true;
+                                var wrap = cb.closest("label") || cb.parentNode;
+                                if (wrap) { wrap.style.opacity = "0.5"; wrap.style.pointerEvents = "none"; }
+                            }
+                        });
+                    })();
+                </script>';
+            }
             $aFields = array_merge($aFields, $msl_lightbox);
         }
 
@@ -1162,7 +1180,19 @@ class MetaSliderLightboxPlugin
      */
     private function isLightboxEnabled($enabled)
     {
-        return filter_var($enabled, FILTER_VALIDATE_BOOLEAN);
+        return filter_var($enabled, FILTER_VALIDATE_BOOLEAN)
+            || $this->isGlobalMetaSliderLightboxEnabled();
+    }
+
+    /**
+     * Check if the global MetaSlider lightbox override is enabled
+     *
+     * @return bool
+     */
+    private function isGlobalMetaSliderLightboxEnabled(): bool
+    {
+        $options = $this->getCachedGeneralOptions();
+        return !empty($options['enable_on_all_metaslider_slideshows']);
     }
 
     /**
@@ -1301,9 +1331,9 @@ class MetaSliderLightboxPlugin
 
         wp_enqueue_style(
             'ml-lightgallery-css',
-            'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css',
+            plugin_dir_url(__FILE__) . 'assets/css/lightgallery.min.css',
             array(),
-            '2.7.1'
+            $this->version
         );
 
         $css_dependencies = array('ml-lightgallery-css');
@@ -1311,9 +1341,9 @@ class MetaSliderLightboxPlugin
         if ($needs_video) {
             wp_enqueue_style(
                 'lightgallery-video-css',
-                'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-video.css',
+                plugin_dir_url(__FILE__) . 'assets/css/lg-video.css',
                 array('ml-lightgallery-css'),
-                '2.7.1'
+                $this->version
             );
             $css_dependencies[] = 'lightgallery-video-css';
         }
@@ -1321,9 +1351,9 @@ class MetaSliderLightboxPlugin
         if ($needs_thumbnails) {
             wp_enqueue_style(
                 'lightgallery-thumbnail-css',
-                'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lg-thumbnail.css',
+                plugin_dir_url(__FILE__) . 'assets/css/lg-thumbnail.css',
                 array('ml-lightgallery-css'),
-                '2.7.1'
+                $this->version
             );
             $css_dependencies[] = 'lightgallery-thumbnail-css';
         }
@@ -1348,9 +1378,9 @@ class MetaSliderLightboxPlugin
         if ($needs_video) {
             wp_enqueue_script(
                 'lightgallery-video',
-                'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/video/lg-video.min.js',
+                plugin_dir_url(__FILE__) . 'assets/js/lg-video.min.js',
                 array('ml-lightgallery-js'),
-                '2.7.1',
+                $this->version,
                 true
             );
         }
@@ -1358,9 +1388,9 @@ class MetaSliderLightboxPlugin
         if ($needs_thumbnails) {
             wp_enqueue_script(
                 'lightgallery-thumbnail',
-                'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js',
+                plugin_dir_url(__FILE__) . 'assets/js/lg-thumbnail.min.js',
                 array('ml-lightgallery-js'),
-                '2.7.1',
+                $this->version,
                 true
             );
         }
@@ -1368,9 +1398,9 @@ class MetaSliderLightboxPlugin
         if ($needs_video) {
             wp_enqueue_script(
                 'lightgallery-vimeo-thumbnail',
-                'https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/vimeoThumbnail/lg-vimeo-thumbnail.min.js',
+                plugin_dir_url(__FILE__) . 'assets/js/lg-vimeo-thumbnail.min.js',
                 array('ml-lightgallery-js'),
-                '2.7.1',
+                $this->version,
                 true
             );
         }
@@ -1378,16 +1408,16 @@ class MetaSliderLightboxPlugin
         if ($needs_video) {
             wp_enqueue_style(
                 'videojs-css',
-                'https://vjs.zencdn.net/8.5.2/video-js.css',
+                plugin_dir_url(__FILE__) . 'assets/css/video-js.css',
                 array(),
-                '8.5.2'
+                $this->version
             );
 
             wp_enqueue_script(
                 'videojs',
-                'https://vjs.zencdn.net/8.5.2/video.min.js',
+                plugin_dir_url(__FILE__) . 'assets/js/video.min.js',
                 array(),
-                '8.5.2',
+                $this->version,
                 true
             );
         }
@@ -1437,6 +1467,7 @@ class MetaSliderLightboxPlugin
                 'show_arrows' => isset($metaslider_options['show_arrows']) ? $metaslider_options['show_arrows'] : true,
                 'show_thumbnails' => isset($metaslider_options['show_thumbnails']) ? $metaslider_options['show_thumbnails'] : true,
                 'show_lightbox_button' => isset($metaslider_options['show_lightbox_button']) ? $metaslider_options['show_lightbox_button'] : true,
+                'use_icon_instead_of_button' => isset($metaslider_options['use_icon_instead_of_button']) ? $metaslider_options['use_icon_instead_of_button'] : false,
                 'show_captions' => isset($metaslider_options['show_captions']) ? $metaslider_options['show_captions'] : true,
             ),
             'enable_on_content' => isset($general_options['enable_on_content']) ? $general_options['enable_on_content'] : false,
@@ -1451,7 +1482,8 @@ class MetaSliderLightboxPlugin
             'minimum_image_height' => isset($general_options['minimum_image_height']) ? absint($general_options['minimum_image_height']) : 200,
             'page_excluded' => $this->shouldExcludePage(),
             'manual_excluded' => $this->shouldExcludeManualForPostType(),
-            'license_key' => ML_LIGHTGALLERY_LICENSE_KEY
+            'license_key'      => ML_LIGHTGALLERY_LICENSE_KEY,
+            'view_image_label' => __( 'View image', 'ml-slider-lightbox' ),
         );
         
         $lightbox_settings = apply_filters('ml_lightbox_settings', $lightbox_settings);
@@ -1482,6 +1514,11 @@ class MetaSliderLightboxPlugin
         $close_icon_background_hover_color = isset($options['close_icon_background_hover_color']) ? $options['close_icon_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
         $toolbar_icon_background_color = isset($options['toolbar_icon_background_color']) ? $options['toolbar_icon_background_color'] : (isset($options['button_color']) ? $options['button_color'] : '#000000');
         $toolbar_icon_background_hover_color = isset($options['toolbar_icon_background_hover_color']) ? $options['toolbar_icon_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
+
+        $icon_color = isset($options['icon_color']) ? $options['icon_color'] : '#ffffff';
+        $icon_hover_color = isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000000';
+        $icon_background_color = isset($options['icon_background_color']) ? $options['icon_background_color'] : '#000000';
+        $icon_background_hover_color = isset($options['icon_background_hover_color']) ? $options['icon_background_hover_color'] : '#f0f0f0';
 
         $background_opacity = isset($options['background_opacity']) ? $options['background_opacity'] : '0.9';
         $close_button_position = isset($options['close_button_position']) ? $options['close_button_position'] : 'top-right';
@@ -1552,6 +1589,24 @@ class MetaSliderLightboxPlugin
             .ml-lightbox-button:focus {
                 background-color: ' . esc_html($button_hover_color) . ' !important;
                 color: ' . esc_html($button_hover_text_color) . ' !important;
+            }
+
+            .ml-lightbox-button:has(.ml-lightbox-icon) {
+                background-color: ' . esc_html($icon_background_color) . ' !important;
+            }
+
+            .ml-lightbox-button:has(.ml-lightbox-icon):hover,
+            .ml-lightbox-button:has(.ml-lightbox-icon):focus {
+                background-color: ' . esc_html($icon_background_hover_color) . ' !important;
+            }
+
+            .ml-lightbox-button .ml-lightbox-icon {
+                color: ' . esc_html($icon_color) . ' !important;
+            }
+
+            .ml-lightbox-button:hover .ml-lightbox-icon,
+            .ml-lightbox-button:focus .ml-lightbox-icon {
+                color: ' . esc_html($icon_hover_color) . ' !important;
             }';
 
         if ($lightbox_button_position === 'top-left') {
@@ -1676,7 +1731,7 @@ class MetaSliderLightboxPlugin
         <div class='metaslider-admin-notice notice notice-error is-dismissible'>
             <p><?php
                 esc_html_e(
-                    'MetaSlider Lightbox requires MetaSlider to be installed and activated.',
+                    'MetaSlider Gallery requires MetaSlider to be installed and activated.',
                     'ml-slider-lightbox'
                 );
                 ?> <a href='<?php echo esc_url(admin_url('plugin-install.php?s=metaslider&tab=search&type=term')); ?>'><?php
@@ -1780,9 +1835,9 @@ class MetaSliderLightboxPlugin
                         <h1>
                             <?php
                             if ($this->isProPluginActive()) {
-                                _e('MetaSlider Lightbox Pro', 'ml-slider-lightbox');
+                                _e('MetaSlider Gallery Pro', 'ml-slider-lightbox');
                             } else {
-                                _e('MetaSlider Lightbox', 'ml-slider-lightbox');
+                                _e('MetaSlider Gallery', 'ml-slider-lightbox');
                             }
                             ?>
                         </h1>
@@ -1865,14 +1920,10 @@ class MetaSliderLightboxPlugin
 
         wp_enqueue_script('wp-color-picker');
         wp_enqueue_style('wp-color-picker');
-
         wp_enqueue_script('ml-select2', plugin_dir_url(__FILE__) . 'assets/js/select2.min.js', array('jquery'), '4.1.0', true);
         wp_enqueue_style('ml-select2-style', plugin_dir_url(__FILE__) . 'assets/css/select2.min.css', array(), '4.1.0');
-
-        // Enqueue Tipsy tooltip library
         wp_enqueue_style('ml-tipsy-style', plugin_dir_url(__FILE__) . 'assets/vendor/tipsy/tipsy.css', array(), $this->version);
         wp_enqueue_script('ml-tipsy', plugin_dir_url(__FILE__) . 'assets/vendor/tipsy/jquery.tipsy.js', array('jquery'), $this->version, true);
-
         wp_enqueue_style(
             'ml-lightbox-admin-style',
             plugin_dir_url(__FILE__) . 'assets/css/ml-lightbox-admin.css',
@@ -1892,12 +1943,12 @@ class MetaSliderLightboxPlugin
     public function addAdminMenu()
     {
         $menu_title = $this->isProPluginActive()
-            ? __('Lightbox Pro', 'ml-slider-lightbox')
-            : __('Lightbox', 'ml-slider-lightbox');
+            ? __('Gallery Pro', 'ml-slider-lightbox')
+            : __('Gallery', 'ml-slider-lightbox');
 
         $page_title = $this->isProPluginActive()
-            ? __('MetaSlider Lightbox Pro', 'ml-slider-lightbox')
-            : __('MetaSlider Lightbox', 'ml-slider-lightbox');
+            ? __('MetaSlider Gallery Pro', 'ml-slider-lightbox')
+            : __('MetaSlider Gallery', 'ml-slider-lightbox');
 
         add_menu_page(
             $page_title,
@@ -1906,6 +1957,16 @@ class MetaSliderLightboxPlugin
             'metaslider-lightbox',
             array($this, 'renderMainPage'),
             'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjU1LjggMjU1LjgiIHN0eWxlPSJmaWxsOiNmZmYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik0xMjcuOSwwQzU3LjMsMCwwLDU3LjMsMCwxMjcuOWMwLDcwLjYsNTcuMywxMjcuOSwxMjcuOSwxMjcuOWM3MC42LDAsMTI3LjktNTcuMywxMjcuOS0xMjcuOUMyNTUuOCw1Ny4zLDE5OC41LDAsMTI3LjksMHogTTE2LjQsMTc3LjFsOTIuNS0xMTcuNUwxMjQuMiw3OWwtNzcuMyw5OC4xSDE2LjR6IE0xNzAuNSwxNzcuMWwtMzguOS00OS40bDE1LjUtMTkuNmw1NC40LDY5SDE3MC41eiBNMjA4LjUsMTc3LjFMMTQ2LjksOTkgbC02MS42LDc4LjJoLTMxbDkyLjUtMTE3LjVsOTIuNSwxMTcuNUgyMDguNXoiLz48L2c+PC9zdmc+Cg=='
+        );
+
+        // Explicit Settings submenu so it always appears with the correct label.
+        add_submenu_page(
+            'metaslider-lightbox',
+            $page_title,
+            __('Lightboxes', 'ml-slider-lightbox'),
+            'manage_options',
+            'metaslider-lightbox',
+            array($this, 'renderMainPage')
         );
     }
 
@@ -1962,6 +2023,13 @@ class MetaSliderLightboxPlugin
                         <?php do_settings_fields('metaslider_lightbox_content', 'metaslider_lightbox_content_where'); ?>
                     </table>
 
+                    <?php if ($this->isMetasliderActive()) : ?>
+                        <h2><?php echo esc_html(__('MetaSlider Slideshows', 'ml-slider-lightbox')); ?></h2>
+                        <?php $this->metaSliderSectionCallback(); ?>
+                        <table class="form-table" role="presentation">
+                            <?php do_settings_fields('metaslider_lightbox_content', 'metaslider_lightbox_content_metaslider'); ?>
+                        </table>
+                    <?php endif; ?>
 
                     <h2><?php echo esc_html(__('Content Filtering', 'ml-slider-lightbox')); ?></h2>
                     <?php $this->contentExclusionsCallback(); ?>
@@ -2146,6 +2214,21 @@ class MetaSliderLightboxPlugin
         );
 
         add_settings_section(
+            'metaslider_lightbox_content_metaslider',
+            '',
+            array($this, 'metaSliderSectionCallback'),
+            'metaslider_lightbox_content'
+        );
+
+        add_settings_field(
+            'enable_on_all_metaslider_slideshows',
+            '',
+            array($this, 'enableOnAllMetaSliderSlideshowsCallback'),
+            'metaslider_lightbox_content',
+            'metaslider_lightbox_content_metaslider'
+        );
+
+        add_settings_section(
             'metaslider_lightbox_content_exclusions',
             __('Content Filtering', 'ml-slider-lightbox'),
             array($this, 'contentExclusionsCallback'),
@@ -2281,6 +2364,14 @@ class MetaSliderLightboxPlugin
         );
 
         add_settings_field(
+            'icon_colors',
+            __('Icon Colors', 'ml-slider-lightbox'),
+            array($this, 'iconColorsGroupCallback'),
+            'metaslider_lightbox_appearance',
+            'metaslider_lightbox_appearance_buttons'
+        );
+
+        add_settings_field(
             'button_text',
             __('Button Text', 'ml-slider-lightbox'),
             array($this, 'buttonTextCallback'),
@@ -2339,6 +2430,14 @@ class MetaSliderLightboxPlugin
             'metaslider_lightbox_behavior_navigation'
         );
 
+        add_settings_field(
+            'use_icon_instead_of_button',
+            '',
+            array($this, 'useIconInsteadOfButtonCallback'),
+            'metaslider_lightbox_settings',
+            'metaslider_lightbox_behavior_navigation'
+        );
+
         if (!$this->isProPluginActive()) {
 
         }
@@ -2387,7 +2486,7 @@ class MetaSliderLightboxPlugin
 
         $sanitized = array();
 
-        $content_fields = ['enable_on_content', 'enable_on_widgets', 'enable_galleries', 'enable_featured_images', 'enable_videos'];
+        $content_fields = ['enable_on_content', 'enable_on_widgets', 'enable_galleries', 'enable_featured_images', 'enable_videos', 'enable_on_all_metaslider_slideshows'];
 
         foreach ($content_fields as $field) {
             $sanitized[$field] = isset($input[$field]) ? true : false;
@@ -2531,6 +2630,14 @@ class MetaSliderLightboxPlugin
             $sanitized['icon_hover_color'] = sanitize_hex_color($input['icon_hover_color']);
         }
 
+        if (isset($input['icon_background_color'])) {
+            $sanitized['icon_background_color'] = sanitize_hex_color($input['icon_background_color']);
+        }
+
+        if (isset($input['icon_background_hover_color'])) {
+            $sanitized['icon_background_hover_color'] = sanitize_hex_color($input['icon_background_hover_color']);
+        }
+
         if (isset($input['arrow_color'])) {
             $sanitized['arrow_color'] = sanitize_hex_color($input['arrow_color']);
         }
@@ -2625,6 +2732,7 @@ class MetaSliderLightboxPlugin
         $sanitized['show_thumbnails'] = isset($input['show_thumbnails']) ? true : false;
         $sanitized['show_captions'] = isset($input['show_captions']) ? true : false;
         $sanitized['show_lightbox_button'] = isset($input['show_lightbox_button']) ? true : false;
+        $sanitized['use_icon_instead_of_button'] = isset($input['use_icon_instead_of_button']) ? true : false;
 
         return $sanitized;
     }
@@ -2753,6 +2861,30 @@ class MetaSliderLightboxPlugin
             $enabled,
             __('Featured images', 'ml-slider-lightbox'),
             __('When enabled, featured images (post thumbnails) will automatically open in the lightbox when clicked.', 'ml-slider-lightbox')
+        );
+    }
+
+    public function metaSliderSectionCallback()
+    {
+        if (!current_user_can('manage_options')) {
+            return;
+        }
+        echo '<p>' . esc_html__('Automatically enable the lightbox on all MetaSlider slideshows, overriding the per-slider setting.', 'ml-slider-lightbox') . '</p>';
+    }
+
+    public function enableOnAllMetaSliderSlideshowsCallback()
+    {
+        if (!current_user_can('manage_options')) {
+            return;
+        }
+        $options = $this->getCachedGeneralOptions();
+        $enabled = !empty($options['enable_on_all_metaslider_slideshows']);
+
+        $this->renderToggleSwitch(
+            'metaslider_lightbox_content_options[enable_on_all_metaslider_slideshows]',
+            $enabled,
+            __('MetaSlider slideshows', 'ml-slider-lightbox'),
+            __('When enabled, all MetaSlider slideshows will open slides in the lightbox, overriding the per-slider setting.', 'ml-slider-lightbox')
         );
     }
 
@@ -3235,6 +3367,38 @@ class MetaSliderLightboxPlugin
         echo '</div>';
     }
 
+    /**
+     * Render grouped Icon color fields with inline layout
+     */
+    public function iconColorsGroupCallback()
+    {
+        if (!current_user_can('manage_options')) {
+            return;
+        }
+
+        $options = $this->getCachedGeneralOptions();
+
+        $icon_color = isset($options['icon_color']) ? $options['icon_color'] : '#ffffff';
+        $icon_hover_color = isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000000';
+        $icon_bg_color = isset($options['icon_background_color']) ? $options['icon_background_color'] : '#000000';
+        $icon_bg_hover_color = isset($options['icon_background_hover_color']) ? $options['icon_background_hover_color'] : '#f0f0f0';
+
+        echo '<div class="ml-color-inline">';
+        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon', 'ml-slider-lightbox') . '">';
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_color]" value="' . esc_attr($icon_color) . '" />';
+        echo '</div>';
+        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon Hover', 'ml-slider-lightbox') . '">';
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_hover_color]" value="' . esc_attr($icon_hover_color) . '" />';
+        echo '</div>';
+        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background', 'ml-slider-lightbox') . '">';
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_background_color]" value="' . esc_attr($icon_bg_color) . '" />';
+        echo '</div>';
+        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background Hover', 'ml-slider-lightbox') . '">';
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_background_hover_color]" value="' . esc_attr($icon_bg_hover_color) . '" />';
+        echo '</div>';
+        echo '</div>';
+    }
+
     public function behaviorNavigationCallback()
     {
         echo '<p>' . __('Configure navigation and control options that apply to all lightboxes.', 'ml-slider-lightbox') . '</p>';
@@ -3265,6 +3429,26 @@ class MetaSliderLightboxPlugin
         );
     }
 
+    public function useIconInsteadOfButtonCallback()
+    {
+        $options = $this->getCachedMetaSliderOptions();
+        $checked = isset($options['use_icon_instead_of_button']) ? $options['use_icon_instead_of_button'] : false;
+        $button_enabled = isset($options['show_lightbox_button']) ? $options['show_lightbox_button'] : true;
+
+        // Wrapper div with ID for JavaScript targeting and conditional visibility
+        $display_style = $button_enabled ? '' : ' style="display: none;"';
+        echo '<div id="ml-icon-instead-of-button-setting"' . $display_style . '>';
+
+        $this->renderToggleSwitch(
+            'ml_lightbox_options[use_icon_instead_of_button]',
+            $checked,
+            __('Show an icon instead of button', 'ml-slider-lightbox'),
+            __('When enabled, displays a small icon instead of the full button text.', 'ml-slider-lightbox')
+        );
+
+        echo '</div>';
+    }
+
     public function showCaptionsCallback()
     {
         $options = $this->getCachedMetaSliderOptions();
@@ -3281,9 +3465,9 @@ class MetaSliderLightboxPlugin
     public function behaviorZoomCallback()
     {
         if ($this->isProPluginActive()) {
-            echo '<p>' . __('Advanced lightbox features are available through MetaSlider Lightbox Pro.', 'ml-slider-lightbox') . '</p>';
+            echo '<p>' . __('Advanced lightbox features are available through MetaSlider Gallery Pro.', 'ml-slider-lightbox') . '</p>';
         } else {
-            echo '<p>' . __('Get a preview of the advanced features available in MetaSlider Lightbox Pro.', 'ml-slider-lightbox') . '</p>';
+            echo '<p>' . __('Get a preview of the advanced features available in MetaSlider Gallery Pro.', 'ml-slider-lightbox') . '</p>';
             echo '<div class="ml-lightbox-notice" style="background: #fff8e5; border-left: 4px solid #ffb900; padding: 12px; margin: 15px 0 15px 0;">';
             echo '<p><strong>🎆 Pro Features Preview</strong><br>';
             echo __('These advanced LightGallery.js plugins are available in the Pro version with additional customization options.', 'ml-slider-lightbox');
@@ -3541,7 +3725,7 @@ class MetaSliderLightboxPlugin
                     <?php echo esc_html__('Minimum Image Width', 'ml-slider-lightbox'); ?>
                 </h3>
                 <div class="ml-settings-field-description">
-                    <?php echo esc_html__('Skip images narrower than this width (in pixels). Useful to exclude small icons, badges, and buttons. Set to 0 to disable width checking.', 'ml-slider-lightbox'); ?>
+                    <?php echo esc_html__('Skip images narrower than this width (in pixels). Uses the displayed width, not the actual image file size. This is helpful for excluding small icons, badges, and buttons.', 'ml-slider-lightbox'); ?>
                 </div>
             </div>
             <div class="ml-settings-field-control">
@@ -3567,7 +3751,7 @@ class MetaSliderLightboxPlugin
                     <?php echo esc_html__('Minimum Image Height', 'ml-slider-lightbox'); ?>
                 </h3>
                 <div class="ml-settings-field-description">
-                    <?php echo esc_html__('Skip images shorter than this height (in pixels). Useful to exclude small icons, badges, and buttons. Set to 0 to disable height checking.', 'ml-slider-lightbox'); ?>
+                    <?php echo esc_html__('Skip images shorter than this height (in pixels). Uses the displayed height, not the actual image file size. This is helpful for excluding small icons, badges, and buttons.', 'ml-slider-lightbox'); ?>
                 </div>
             </div>
             <div class="ml-settings-field-control">
@@ -3657,7 +3841,7 @@ class MetaSliderLightboxPlugin
             'ml_lightbox_options[enable_autoplay]',
             false,
             __('Enable Autoplay', 'ml-slider-lightbox'),
-            __('Automatic slideshow progression with customizable timing and pause-on-hover.', 'ml-slider-lightbox'),
+            __('Automatically advance through images in the lightbox.', 'ml-slider-lightbox'),
             true
         );
     }
@@ -3685,7 +3869,7 @@ class MetaSliderLightboxPlugin
     }
 
     /**
-     * Check if MetaSlider Lightbox Pro plugin is active
+     * Check if MetaSlider Gallery Pro plugin is active
      */
     private function isProPluginActive()
     {
@@ -3762,7 +3946,7 @@ class MetaSliderLightboxPlugin
     private function renderProLockIcon($text = '')
     {
         if (empty($text)) {
-            $text = __('This feature is available in MetaSlider Lightbox Pro', 'ml-slider-lightbox');
+            $text = __('This feature is available in MetaSlider Gallery Pro', 'ml-slider-lightbox');
         }
 
         $link = 'https://www.metaslider.com/upgrade-lightbox/';
@@ -3816,21 +4000,21 @@ class MetaSliderLightboxPlugin
                 __('Enable Zoom', 'ml-slider-lightbox'),
                 __('Allow users to zoom in and out with double-click, mouse wheel, and zoom controls.', 'ml-slider-lightbox'),
                 true,
-                __('Zoom controls are available in MetaSlider Lightbox Pro', 'ml-slider-lightbox')
+                __('Zoom controls are available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
 
             $this->renderProFeatureAd(
                 __('Enable Fullscreen', 'ml-slider-lightbox'),
                 __('Native HTML5 fullscreen mode for immersive image viewing.', 'ml-slider-lightbox'),
                 true,
-                __('Fullscreen mode is available in MetaSlider Lightbox Pro', 'ml-slider-lightbox')
+                __('Fullscreen mode is available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
 
             $this->renderProFeatureAd(
                 __('Enable Rotate', 'ml-slider-lightbox'),
                 __('Rotate images clockwise/anticlockwise and flip horizontal/vertical.', 'ml-slider-lightbox'),
                 true,
-                __('Image rotation is available in MetaSlider Lightbox Pro', 'ml-slider-lightbox')
+                __('Image rotation is available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
             ?>
         </table>
@@ -3844,14 +4028,14 @@ class MetaSliderLightboxPlugin
                 __('Enable Share', 'ml-slider-lightbox'),
                 __('Built-in social media sharing for Facebook, Twitter, and Pinterest.', 'ml-slider-lightbox'),
                 true,
-                __('Social sharing is available in MetaSlider Lightbox Pro', 'ml-slider-lightbox')
+                __('Social sharing is available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
 
             $this->renderProFeatureAd(
                 __('Enable Pager', 'ml-slider-lightbox'),
                 __('Minimal pagination dots instead of thumbnails for a cleaner interface.', 'ml-slider-lightbox'),
                 false,
-                __('Pager pagination is available in MetaSlider Lightbox Pro', 'ml-slider-lightbox')
+                __('Pager pagination is available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
             ?>
         </table>
@@ -3865,14 +4049,14 @@ class MetaSliderLightboxPlugin
                 __('Enable Unique Image URLs', 'ml-slider-lightbox'),
                 __('Generate unique URLs for each gallery image with browser back/forward navigation.', 'ml-slider-lightbox'),
                 true,
-                __('Hash URLs are available in MetaSlider Lightbox Pro', 'ml-slider-lightbox')
+                __('Unique Image URLs are available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
 
             $this->renderProFeatureAd(
                 __('Enable Autoplay', 'ml-slider-lightbox'),
                 __('Automatic slideshow with timing controls and progress bar.', 'ml-slider-lightbox'),
                 true,
-                __('Autoplay is available in MetaSlider Lightbox Pro', 'ml-slider-lightbox')
+                __('Autoplay is available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
             ?>
         </table>
@@ -3970,7 +4154,7 @@ class MetaSliderLightboxPlugin
                     </tr>
                     <tr>
                         <td>
-                            <h4><?php _e('Hash URLs', 'ml-slider-lightbox'); ?></h4>
+                            <h4><?php _e('Enable Unique Image URLs', 'ml-slider-lightbox'); ?></h4>
                             <p><?php _e('Generate unique URLs for each gallery image with browser back/forward navigation.', 'ml-slider-lightbox'); ?></p>
                         </td>
                         <td><div class="ml-dot unavailable"></div></td>
@@ -4395,6 +4579,7 @@ class MetaSliderLightboxPlugin
         
         if (isset($options['enable_featured_images']) && $options['enable_featured_images']) {
             add_filter('post_thumbnail_html', array($this, 'enhanceFeaturedImage'), 10, 5);
+            add_filter('render_block', array($this, 'enhanceFeaturedImageBlock'), 10, 2);
         }
 
         if (isset($options['enable_videos']) && $options['enable_videos']) {
@@ -6116,13 +6301,15 @@ class MetaSliderLightboxPlugin
             return $html;
         }
         
+        $post_url = get_permalink($post_id);
+
         if (preg_match('/<a[^>]*>.*?<\/a>/s', $html)) {
             $enhanced_html = preg_replace(
                 '/(<a[^>]*?)(\s*>)/',
                 '$1 data-src="' . esc_url($full_size_url) . '" data-thumb="' . esc_url($full_size_url) . '" class="ml-featured-lightbox"$2',
                 $html
             );
-            
+
             if (preg_match('/class=["\'][^"\']*["\']/', $html)) {
                 $enhanced_html = preg_replace(
                     '/(<a[^>]*class=["\'][^"\']*)(["\']\s[^>]*>)/',
@@ -6135,11 +6322,70 @@ class MetaSliderLightboxPlugin
                     $enhanced_html
                 );
             }
-            
+
             return $enhanced_html;
         } else {
-            return '<a href="' . esc_url($full_size_url) . '" data-src="' . esc_url($full_size_url) . '" data-thumb="' . esc_url($full_size_url) . '" class="ml-featured-lightbox">' . $html . '</a>';
+            return '<a href="' . esc_url($post_url) . '" data-src="' . esc_url($full_size_url) . '" data-thumb="' . esc_url($full_size_url) . '" class="ml-featured-lightbox">' . $html . '</a>';
         }
+    }
+
+    public function enhanceFeaturedImageBlock($block_content, $parsed_block)
+    {
+        if ($parsed_block['blockName'] !== 'core/post-featured-image') {
+            return $block_content;
+        }
+
+        if (empty($block_content) || is_admin() || $this->shouldExcludePage()) {
+            return $block_content;
+        }
+
+        // Only process if our lightbox <a> is present (added by post_thumbnail_html hook)
+        if (strpos($block_content, 'ml-featured-lightbox') === false) {
+            return $block_content;
+        }
+
+        // Extract img URL from our lightbox <a>'s data-src attribute
+        if (!preg_match('/data-src="([^"]+)"[^>]*class="[^"]*ml-featured-lightbox/', $block_content, $m) &&
+            !preg_match('/class="[^"]*ml-featured-lightbox[^"]*"[^>]*data-src="([^"]+)"/', $block_content, $m)) {
+            return $block_content;
+        }
+        $img_url = $m[1];
+
+        // Detect nesting: if the first <a> in the block IS our lightbox <a>, there is no outer wrapper
+        if (!preg_match('/<a\b[^>]*>/', $block_content, $first_a_match)) {
+            return $block_content;
+        }
+        if (strpos($first_a_match[0], 'ml-featured-lightbox') !== false) {
+            // First <a> is already our lightbox link — no nesting, nothing to fix
+            return $block_content;
+        }
+
+        // Fix: remove inner lightbox <a> wrapper, keeping its children
+        $block_content = preg_replace(
+            '/<a\b[^>]+class="[^"]*ml-featured-lightbox[^"]*"[^>]*>(.*?)<\/a>/s',
+            '$1',
+            $block_content
+        );
+
+        // Add lightbox attributes to the outer post-link <a> (first <a> in block)
+        $escaped_url   = esc_url($img_url);
+        $block_content = preg_replace_callback(
+            '/(<a\b)([^>]*)(>)/',
+            function ($matches) use ($escaped_url) {
+                $attrs = $matches[2];
+                $attrs .= ' data-src="' . $escaped_url . '" data-thumb="' . $escaped_url . '"';
+                if (preg_match('/\bclass="/', $attrs)) {
+                    $attrs = preg_replace('/class="([^"]*)"/', 'class="$1 ml-featured-lightbox"', $attrs, 1);
+                } else {
+                    $attrs .= ' class="ml-featured-lightbox"';
+                }
+                return $matches[1] . $attrs . $matches[3];
+            },
+            $block_content,
+            1
+        );
+
+        return $block_content;
     }
 
     private function hasContentDetectionEnabled()
@@ -6209,6 +6455,15 @@ class MetaSliderLightboxPlugin
 
     private function pageNeedsThumbnailAssets()
     {
+        global $post;
+        $content = $post && $post->post_content ? $post->post_content : '';
+
+        // ml_gallery has per-gallery thumbnail settings independent of the global toggle,
+        // so always load thumbnail assets when the shortcode is present on the page.
+        if ($content && strpos($content, '[ml_gallery') !== false) {
+            return true;
+        }
+
         $options = $this->getCachedMetaSliderOptions();
 
         if (!isset($options['show_thumbnails']) || !$options['show_thumbnails']) {
@@ -6219,12 +6474,9 @@ class MetaSliderLightboxPlugin
             return true;
         }
 
-        global $post;
-        if (!$post || !$post->post_content) {
+        if (!$content) {
             return false;
         }
-
-        $content = $post->post_content;
 
         if (strpos($content, '[gallery') !== false ||
             strpos($content, 'wp-block-gallery') !== false ||
@@ -6318,7 +6570,7 @@ class MetaSliderLightboxPlugin
     }
 
     /**
-     * Store MetaSlider Lightbox version and path in the database
+     * Store MetaSlider Gallery version and path in the database
      * 
      * @since 2.21
      * 

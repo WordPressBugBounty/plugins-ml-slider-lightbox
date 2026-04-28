@@ -3,7 +3,7 @@ Contributors:
 Tags: lightbox, image lightbox, gallery lightbox, wordpress lightbox, video lightbox
 Requires at least: 5.0
 Tested up to: 6.9
-Stable tag: 2.22.0
+Stable tag: 2.23.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -147,6 +147,28 @@ function supported_plugins_list($supported_plugins_list) {
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.23.0] - 28 Apr, 2026 =
+
+* ADDED: Create a basic post type for MS Galleries, #308;
+* ADDED: Allow users to enable or disable the lightbox on individual slides, #298;
+* ADDED: Offer an icon instead of "Open in Lightbox", #299;
+* ADDED: Allow users to customize "Open in Lightbox", #311;
+* FIXED: Lightbox icon doesn't work with custom color schemes, #295;
+* FIXED: Featured image option doesn't work correctly, #300;
+* FIXED: Autoplay description text, #297;
+* FIXED: Layout labels are too long sometimes, #326;
+* CHANGED: Plugin name updated to MetaSlider Gallery, #312;
+* CHANGED: Plan for menus and settings, #313;
+* CHANGED: Rename Hash URLs to Unique Image URLs, #282;
+* CHANGED: Clarify width and height settings, #294;
+* CHANGED: Change the default settings for "Open in Lightbox", #320;
+* CHANGED: Move title field to the left, #319;
+* CHANGED: Make the gallery title field required, #322;
+* CHANGED: Tooltips, #318;
+* CHANGED: Translation updates for ES, FR, IT, #293;
+* CHANGED: Translate into more languages, #307;
+* CHANGED: ES-FR-IT translation updates for Metaslider-lightbox FREE and PRO on weblate, #327;
 
 = [2.22.0] - 28 Jan, 2026 =
 

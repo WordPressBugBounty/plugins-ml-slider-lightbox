@@ -1,10 +1,10 @@
 <?php
 
 /*
- * Plugin Name: MetaSlider Lightbox
+ * Plugin Name: MetaSlider Gallery
  * Plugin URI: https://www.metaslider.com
- * Description: MetaSlider Lightbox is the lightbox plugin for WordPress. Create lightbox display for images, sliders, galleries, videos, and more.
- * Version: 2.22.0
+ * Description: MetaSlider Gallery is the image gallery plugin for WordPress. Create a beautiful display for your photos with carousel, masonry, grid, and more views.
+ * Version: 2.23.0
  * Author: MetaSlider
  * Author URI: https://www.metaslider.com
  * License: GPL-2.0+

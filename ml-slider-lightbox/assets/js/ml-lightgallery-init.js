@@ -47,6 +47,14 @@
     };
 
     function getButtonText() {
+        var useIcon = typeof mlLightboxSettings !== 'undefined'
+                      && mlLightboxSettings.metaslider_options
+                      && mlLightboxSettings.metaslider_options.use_icon_instead_of_button;
+
+        if (useIcon) {
+            return '<svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+        }
+
         return (typeof mlLightboxSettings !== 'undefined' && mlLightboxSettings.button_text)
                ? mlLightboxSettings.button_text
                : 'Open in Lightbox';
@@ -483,10 +491,12 @@
                 var $parentGallery = $link.closest('.wp-block-gallery');
                 var $parentContainer = $link.closest('.wp-lightbox-container');
                 var $wooGallery = $link.closest('.woocommerce-product-gallery');
+                var $mlGallery = $link.closest('.ml-gallery-container');
                 return $link.find('img').length > 0 &&
                        $parentGallery.length === 0 &&
                        $parentContainer.length === 0 &&
                        $wooGallery.length === 0 &&
+                       $mlGallery.length === 0 &&
                        !$link.hasClass('lg-initialized') &&
                        !$link.closest('.ml-lightbox-enabled').length;
             });
@@ -563,8 +573,9 @@
                 var minWidth = mlLightboxSettings.minimum_image_width || 200;
                 var minHeight = mlLightboxSettings.minimum_image_height || 200;
 
-                var imgWidth = $img[0].naturalWidth || $img.width() || $img.attr('width') || 0;
-                var imgHeight = $img[0].naturalHeight || $img.height() || $img.attr('height') || 0;
+                // Check displayed dimensions (not actual file size) to match server-side behavior
+                var imgWidth = $img.width() || $img.attr('width') || 0;
+                var imgHeight = $img.height() || $img.attr('height') || 0;
 
                 if (minWidth > 0 && imgWidth > 0 && imgWidth < minWidth) {
                     return false;
@@ -581,6 +592,176 @@
                     handleSingleElementWithButton($(this));
                 } else {
                     handleSingleElement($(this));
+                }
+            });
+        }
+
+        if (mlLightboxSettings.enable_featured_images && !pageExcluded) {
+            $('a.ml-featured-lightbox[data-src]').filter(function() {
+                return !$(this).hasClass('lg-initialized');
+            }).each(function() {
+                if (useButtonsForManual) {
+                    initFeaturedImageWithButton($(this));
+                } else {
+                    initFeaturedImage($(this));
+                }
+            });
+        }
+
+        // Initialize [ml_gallery] shortcode containers.
+        // Uses getLightboxSettings(true) so gallery-specific options (counter,
+        // thumbnails strip, etc.) apply. Respects useButtonsForManual for
+        // consistent button/no-button behaviour across the plugin.
+        if (!pageExcluded) {
+            /**
+             * Apply all per-gallery data-lg-* settings onto a settings object.
+             * Used by both regular and carousel init paths.
+             */
+            function applyGallerySettings(settings, $container) {
+                var lgClass = $container.data('lg-class') || '';
+                if (lgClass) { settings.addClass = lgClass; }
+
+                settings.mode     = $container.data('lg-mode') || settings.mode;
+                settings.controls = !!parseInt($container.data('lg-controls'), 10);
+                settings.counter  = !!parseInt($container.data('lg-counter'), 10);
+                settings.download = !!parseInt($container.data('lg-download'), 10);
+                settings.loop     = !!parseInt($container.data('lg-loop'), 10);
+
+                if (!parseInt($container.data('lg-captions'), 10)) {
+                    settings.subHtml = '';
+                    settings.getCaptionFromTitleOrAlt = false;
+                }
+
+                // Thumbnails
+                var wantThumbs = !!parseInt($container.data('lg-thumbnails'), 10);
+                if (typeof lgThumbnail !== 'undefined') {
+                    if (wantThumbs) {
+                        if (settings.plugins.indexOf(lgThumbnail) === -1) {
+                            settings.plugins.push(lgThumbnail);
+                        }
+                    } else {
+                        settings.plugins = settings.plugins.filter(function(p) { return p !== lgThumbnail; });
+                    }
+                }
+                if (wantThumbs) {
+                    settings.thumbWidth   = 100;
+                    settings.thumbHeight  = 80;
+                    settings.thumbMargin  = 4;
+                    settings.exThumbImage = 'data-thumb';
+                }
+
+                // Plugin toggles
+                if (!!parseInt($container.data('lg-zoom'), 10) && typeof lgZoom !== 'undefined') {
+                    if (settings.plugins.indexOf(lgZoom) === -1) { settings.plugins.push(lgZoom); }
+                } else if (typeof lgZoom !== 'undefined') {
+                    settings.plugins = settings.plugins.filter(function(p) { return p !== lgZoom; });
+                }
+
+                if (!!parseInt($container.data('lg-fullscreen'), 10) && typeof lgFullscreen !== 'undefined') {
+                    if (settings.plugins.indexOf(lgFullscreen) === -1) { settings.plugins.push(lgFullscreen); }
+                }
+
+                if (!!parseInt($container.data('lg-rotate'), 10) && typeof lgRotate !== 'undefined') {
+                    if (settings.plugins.indexOf(lgRotate) === -1) { settings.plugins.push(lgRotate); }
+                }
+
+                if (!!parseInt($container.data('lg-share'), 10) && typeof lgShare !== 'undefined') {
+                    if (settings.plugins.indexOf(lgShare) === -1) { settings.plugins.push(lgShare); }
+                }
+
+                if (!!parseInt($container.data('lg-autoplay'), 10) && typeof lgAutoplay !== 'undefined') {
+                    if (settings.plugins.indexOf(lgAutoplay) === -1) { settings.plugins.push(lgAutoplay); }
+                    settings.autoplay           = true;
+                    settings.progressBar        = true;
+                    settings.autoplayFirstVideo = false;
+                    settings.autoplayInterval   = parseInt($container.data('lg-autoplay-interval'), 10) || 3000;
+                }
+
+                if (!!parseInt($container.data('lg-pager'), 10) && typeof lgPager !== 'undefined') {
+                    if (settings.plugins.indexOf(lgPager) === -1) { settings.plugins.push(lgPager); }
+                }
+
+                if (!!parseInt($container.data('lg-hash'), 10) && typeof lgHash !== 'undefined') {
+                    if (settings.plugins.indexOf(lgHash) === -1) { settings.plugins.push(lgHash); }
+                }
+
+                // Built-in behaviour
+                settings.swipeToClose = !!parseInt($container.data('lg-swipe-close'), 10);
+                settings.mousewheel   = !!parseInt($container.data('lg-mousewheel'), 10);
+                settings.keyPress     = !!parseInt($container.data('lg-keyboard'), 10);
+
+                return settings;
+            }
+
+            $('.ml-gallery-container[data-ml-gallery]').filter(function() {
+                return !$(this).hasClass('lg-initialized');
+            }).each(function() {
+                var $container = $(this);
+
+                // ── Inline carousel (lightGallery container mode) ─────────── //
+                if (!!parseInt($container.data('lg-carousel'), 10)) {
+                    var dynamicEl = [];
+                    $container.find('a[data-src]').each(function () {
+                        var $a = $(this);
+                        var el = { src: $a.attr('data-src') };
+                        if ($a.attr('data-thumb'))    { el.thumb   = $a.attr('data-thumb'); }
+                        if ($a.attr('data-sub-html')) { el.subHtml = $a.attr('data-sub-html'); }
+                        dynamicEl.push(el);
+                    });
+
+                    if (dynamicEl.length) {
+                        var carouselSettings = applyGallerySettings({
+                            container       : $container[0],
+                            dynamic         : true,
+                            dynamicEl       : dynamicEl,
+                            plugins         : [],
+                            hash            : false,
+                            closable        : false,
+                            showMaximizeIcon: true,
+                            appendSubHtmlTo : '.lg-item',
+                            slideDelay      : 400,
+                        }, $container);
+
+                        try {
+                            var inlineGallery = lightGallery($container[0], carouselSettings);
+                            inlineGallery.openGallery();
+                            $container.addClass('lg-initialized');
+                        } catch (error) {
+                            console.error('MetaSlider Lightbox: carousel init error:', error);
+                        }
+                    }
+                    return; // skip regular lightbox init for carousel galleries
+                }
+
+                var settings = getLightboxSettings(true);
+                applyGallerySettings(settings, $container);
+
+                if (useButtonsForManual) {
+                    $container.find('a[data-src]').each(function() {
+                        var $a      = $(this);
+                        var dataSrc = $a.attr('data-src');
+                        var $img    = $a.find('img').first();
+                        var imgSrc  = $img.attr('src') || dataSrc;
+                        var alt     = $img.attr('alt') || '';
+
+                        var $btn = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-gallery" href="#">' + getButtonText() + '</a>');
+                        $btn.attr({
+                            'data-src'  : dataSrc,
+                            'data-thumb': $a.attr('data-thumb') || imgSrc,
+                            'aria-label': mlLightboxSettings.view_image_label + (alt ? ': ' + alt : ''),
+                        });
+                        $a.css('position', 'relative').append($btn);
+                    });
+                    settings.selector = '.ml-lightbox-button';
+                } else {
+                    settings.selector = 'a[data-src]';
+                }
+
+                try {
+                    lightGallery($container[0], settings);
+                    $container.addClass('lg-initialized');
+                } catch (error) {
+                    console.error('MetaSlider Lightbox: Error initializing gallery shortcode:', error);
                 }
             });
         }
@@ -1555,6 +1736,64 @@
 
         } catch (error) {
             console.error('MetaSlider Lightbox: Error initializing "Link to Media File" button:', error);
+        }
+    }
+
+    /**
+     * Initialize a featured image lightbox where the outer <a> links to the post
+     * and data-src holds the image URL for the lightbox
+     */
+    function initFeaturedImageWithButton($link) {
+        var dataSrc = $link.attr('data-src');
+        var $img = $link.find('img').first();
+        var imgSrc = $img.attr('src');
+
+        if (!dataSrc || !imgSrc) return;
+
+        var altText = $img.attr('alt') || '';
+        var ariaLabel = 'View image' + (altText ? ': ' + altText : '');
+
+        var $button = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-link-to-media-single-img" href="#">' + getButtonText() + '</a>');
+        $button.attr({
+            'data-src': dataSrc,
+            'data-thumb': imgSrc,
+            'aria-label': ariaLabel
+        });
+
+        $link.attr('aria-label', ariaLabel).css('position', 'relative').append($button);
+
+        var settings = getLightboxSettings(false);
+        settings.selector = '.ml-lightbox-button';
+
+        try {
+            lightGallery($link[0], settings);
+            $link.addClass('lg-initialized');
+        } catch (error) {
+            console.error('MetaSlider Lightbox: Error initializing featured image lightbox:', error);
+        }
+    }
+
+    /**
+     * Initialize a featured image lightbox without a button — clicking the link opens the lightbox directly
+     */
+    function initFeaturedImage($link) {
+        var dataSrc = $link.attr('data-src');
+        var $img = $link.find('img').first();
+        var imgSrc = $img.attr('src');
+
+        if (!dataSrc || !imgSrc) return;
+
+        var altText = $img.attr('alt') || '';
+        $link.attr('aria-label', 'View image' + (altText ? ': ' + altText : ''));
+
+        var settings = getLightboxSettings(false);
+        settings.selector = 'this';
+
+        try {
+            lightGallery($link[0], settings);
+            $link.addClass('lg-initialized');
+        } catch (error) {
+            console.error('MetaSlider Lightbox: Error initializing featured image lightbox:', error);
         }
     }
 

@@ -1,0 +1,722 @@
+/* ML Gallery — admin styles (editor page + image grid) */
+
+/* ── Brand tokens ────────────────────────────────────────────────────────── */
+:root {
+	--ml-orange:      #dd6923;
+	--ml-orange-dark: #c45a1a;
+	--ml-gray-100:    #f6f7f7;
+	--ml-gray-200:    #e8e8e8;
+	--ml-gray-300:    #ddd;
+	--ml-gray-400:    #c3c4c7;
+	--ml-gray-600:    #50575e;
+	--ml-gray-800:    #3c434a;
+	--ml-white:       #fff;
+}
+
+/* ── Editor page header (MetaSlider toolbar style) ───────────────────────── */
+.lightbox_page_ml-gallery-editor #wpcontent,
+.gallery_page_ml-gallery-editor #wpcontent,
+.post-type-ml_gallery #wpcontent,
+.gallery-pro_page_ml-gallery-editor #wpcontent{
+	padding-left: 0;
+}
+.ml-gallery-header {
+	background: var(--ml-white);
+	height: 64px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.12);
+	position: sticky;
+	top: 32px;
+	z-index: 100;
+	margin-bottom: 0;
+}
+
+.ml-gallery-header-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0 8px;
+}
+
+/* Logo link on the left */
+.ml-gallery-logo-link {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 8px 12px;
+	text-decoration: none;
+	flex-shrink: 0;
+}
+
+.ml-gallery-logo {
+	width: 46px;
+	height: 46px;
+}
+
+.ml-gallery-logo svg {
+	width: 100%;
+	height: 100%;
+	fill: var(--ml-orange);
+}
+
+.ml-gallery-logo-title {
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--ml-gray-800);
+	margin-left: 10px;
+	white-space: nowrap;
+}
+
+/* Toolbar action area on the right */
+.ml-gallery-header-actions {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+/* Individual toolbar buttons (icon above, label below) */
+.ml-gallery-toolbar-btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	text-decoration: none;
+	color: var(--ml-gray-800);
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 12px;
+	line-height: 1;
+	transition: background .15s ease, color .15s ease;
+	white-space: nowrap;
+	padding: 0 15px;
+}
+
+.ml-gallery-toolbar-btn:hover,
+.ml-gallery-toolbar-btn:focus {
+	background: var(--ml-gray-100);
+	color: #000;
+	outline: none;
+}
+
+.ml-gallery-toolbar-btn svg {
+	width: 22px;
+	height: 22px;
+	margin-bottom: 3px;
+	stroke: currentColor;
+	fill: none;
+	flex-shrink: 0;
+}
+
+/* Save button — blue background, white content */
+.ml-gallery-toolbar-btn--save {
+	background: #007cba;
+	color: var(--ml-white);
+}
+
+.ml-gallery-toolbar-btn--save:hover,
+.ml-gallery-toolbar-btn--save:focus {
+	background: #006ba1;
+	color: var(--ml-white);
+}
+
+/* Vertical separator between button groups */
+.ml-gallery-toolbar-sep {
+	display: block;
+	width: 1px;
+	height: 32px;
+	background: var(--ml-gray-200);
+	margin: 0 4px;
+	flex-shrink: 0;
+}
+
+/* ── Editor page layout ─────────────────────────────────────────────────── */
+
+.ml-gallery-editor-body {
+	display: grid;
+	grid-template-columns: 1fr 360px;
+	gap: 20px;
+	align-items: start;
+	margin: 24px 20px 20px;
+}
+
+.ml-gallery-sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.ml-gallery-sidebar-panel {
+	background: var(--ml-white);
+	border: 1px solid var(--ml-gray-300);
+	padding: 14px 16px;
+	margin-bottom: 16px;
+}
+
+.ml-gallery-sidebar-panel h3 {
+	margin: 0 0 10px;
+	padding: 0 0 8px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: .07em;
+	color: var(--ml-orange);
+	border-bottom: 1px solid var(--ml-gray-200);
+}
+
+.ml-gallery-main {
+	background: var(--ml-white);
+	border: 1px solid var(--ml-gray-300);
+	padding: 16px;
+}
+
+.ml-gallery-title-input {
+	width: 100%;
+	font-size: 20px;
+	font-weight: 600;
+	border: none;
+	border-bottom: 2px solid var(--ml-gray-300);
+	border-radius: 0;
+	padding: 0 0 10px;
+	margin-bottom: 16px;
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+.ml-gallery-title-input:focus {
+	border-bottom-color: var(--ml-orange);
+	box-shadow: none;
+}
+
+#ml_gallery_title {
+	border: 2px solid var(--ml-gray-300);
+}
+
+.ml-gallery-main-heading {
+	margin-top: 0;
+}
+
+.ml-gallery-add-images-btn {
+	margin-top: 10px;
+}
+
+.ml-gallery-input {
+	margin-top: 6px;
+}
+
+.ml-gallery-shortcode-input {
+	margin-top: 6px;
+	font-family: monospace;
+}
+
+/* ── Lightbox settings rows ──────────────────────────────────────────────── */
+
+.ml-gallery-setting {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 7px 0;
+	border-bottom: 1px solid var(--ml-gray-100);
+}
+
+.ml-gallery-setting:last-child,
+.ml-gallery-setting:has(+ p.ml-settings-section-label) {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.ml-gallery-setting label {
+	font-size: 14px;
+	color: var(--ml-gray-800);
+}
+
+.ml-gallery-setting select {
+	max-width: 120px;
+}
+
+/* ── Layout icon picker ──────────────────────────────────────────────────── */
+
+.ml-layout-picker {
+	display: flex;
+	gap: 6px;
+	padding: 4px 0 2px;
+	width: 100%;
+}
+
+.ml-layout-option {
+	flex: 1;
+	cursor: pointer;
+}
+
+.ml-layout-option input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.ml-layout-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	padding: 8px 6px 7px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 2px solid var(--ml-gray-300);
+	border-radius: 4px;
+	color: var(--ml-gray-600);
+	transition: border-color .15s, background .15s, color .15s;
+	cursor: pointer;
+	user-select: none;
+}
+
+.ml-layout-icon svg {
+	width: 28px;
+	height: 28px;
+	display: block;
+}
+
+.ml-layout-icon span {
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	line-height: 1;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+}
+
+.ml-layout-option:hover .ml-layout-icon {
+	border-color: var(--ml-gray-400);
+	color: var(--ml-gray-800);
+}
+
+.ml-layout-option input:checked + .ml-layout-icon {
+	border-color: var(--ml-orange);
+	background: rgba(221, 105, 35, .06);
+	color: var(--ml-orange);
+}
+
+.ml-gallery-columns-row.is-hidden,
+.ml-gallery-gap-row.is-hidden,
+.ml-autoplay-interval-row.is-hidden {
+	display: none;
+}
+
+/* ── Toggle switch (replaces default checkbox) ───────────────────────────── */
+
+.ml-toggle-switch {
+	position: relative;
+	display: inline-block;
+	width: 36px;
+	height: 20px;
+	flex-shrink: 0;
+}
+
+.ml-toggle-switch input[type="checkbox"] {
+	opacity: 0;
+	width: 0;
+	height: 0;
+	position: absolute;
+}
+
+.ml-toggle-track {
+	position: absolute;
+	cursor: pointer;
+	inset: 0;
+	background: var(--ml-gray-400);
+	border-radius: 20px;
+	transition: background .18s ease;
+}
+
+.ml-toggle-track::before {
+	content: '';
+	position: absolute;
+	height: 14px;
+	width: 14px;
+	left: 3px;
+	bottom: 3px;
+	background: var(--ml-white);
+	border-radius: 50%;
+	transition: transform .18s ease;
+	box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+.ml-toggle-switch input:checked + .ml-toggle-track {
+	background: var(--ml-orange);
+}
+
+.ml-toggle-switch input:checked + .ml-toggle-track::before {
+	transform: translateX(16px);
+}
+
+.ml-toggle-switch input:focus-visible + .ml-toggle-track {
+	outline: 2px solid var(--ml-orange);
+	outline-offset: 2px;
+}
+
+/* Stacked variant (label above, full-width control below) */
+.ml-gallery-setting--col {
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 6px;
+}
+
+.ml-gallery-setting--col label {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.ml-gallery-range-value {
+	font-weight: 600;
+	color: var(--ml-orange);
+}
+
+.ml-gallery-setting--col .wp-picker-container {
+	width: 100%;
+}
+
+.ml-gallery-setting--col .wp-color-result {
+	width: 100% !important;
+	box-sizing: border-box;
+}
+
+.ml-gallery-setting--col .wp-picker-container.wp-picker-active .wp-picker-input-wrap {
+	display: flex !important;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 6px;
+	margin-top: 6px;
+}
+
+.ml-gallery-setting--col .wp-picker-container.wp-picker-active .wp-picker-input-wrap label {
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+	display: block;
+}
+
+.ml-gallery-setting--col .wp-picker-container.wp-picker-active .wp-picker-input-wrap label input[type="text"] {
+	width: 100%;
+	margin: 0;
+}
+
+.ml-gallery-setting--col .wp-picker-container.wp-picker-active .wp-picker-input-wrap .wp-picker-default {
+	flex-shrink: 0;
+	margin: 0;
+}
+
+/* ── Image grid (shared between editor and meta box fallback) ────────────── */
+
+#ml-gallery-image-picker {
+	padding: 6px 0 10px;
+}
+
+#ml-gallery-preview {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 12px;
+	min-height: 60px;
+	padding: 4px;
+	border: 1px dashed var(--ml-gray-400);
+	border-radius: 3px;
+}
+
+#ml-gallery-preview.is-empty::before {
+	content: attr(data-empty-label);
+	color: #777;
+	font-size: 20px;
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.ml-gallery-item {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	cursor: move;
+}
+
+.ml-gallery-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	border: 2px solid var(--ml-gray-300);
+	border-radius: 3px;
+}
+
+.ml-gallery-item.ui-sortable-helper {
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+.ml-gallery-remove {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	line-height: 20px;
+	text-align: center;
+	font-size: 14px;
+	background: #dc3545;
+	color: #fff;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.ml-gallery-remove:hover {
+	background: #c82333;
+}
+
+.ml-gallery-remove:focus-visible {
+	outline: 2px solid #005fcc;
+	outline-offset: 2px;
+}
+
+/* ── Edit-caption pencil button ─────────────────────────────────────────── */
+
+.ml-gallery-edit-caption {
+	position: absolute;
+	bottom: -6px;
+	left: -6px;
+	width: 22px;
+	height: 22px;
+	padding: 3px;
+	background: var(--ml-white);
+	border: 1px solid var(--ml-gray-300);
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity .15s ease, background .15s ease;
+	color: var(--ml-gray-600);
+	box-shadow: 0 1px 3px rgba(0,0,0,.15);
+}
+
+.ml-gallery-edit-caption svg {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.ml-gallery-item:hover .ml-gallery-edit-caption,
+.ml-gallery-item:focus-within .ml-gallery-edit-caption {
+	opacity: 1;
+}
+
+.ml-gallery-edit-caption:hover {
+	background: var(--ml-orange);
+	border-color: var(--ml-orange);
+	color: var(--ml-white);
+	opacity: 1;
+}
+
+.ml-gallery-edit-caption:focus-visible {
+	outline: 2px solid var(--ml-orange);
+	outline-offset: 2px;
+	opacity: 1;
+}
+
+/* Caption indicator dot */
+.ml-gallery-item.has-caption::after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	right: 50%;
+	transform: translateX(50%);
+	width: 6px;
+	height: 6px;
+	background: var(--ml-orange);
+	border-radius: 50%;
+	border: 1px solid var(--ml-white);
+}
+
+/* ── Caption editor modal ────────────────────────────────────────────────── */
+
+#ml-caption-modal {
+	display: none;
+	position: fixed;
+	inset: 0;
+	z-index: 160000;
+}
+
+#ml-caption-modal.is-open {
+	display: block;
+}
+
+#ml-caption-overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, .6);
+}
+
+#ml-caption-modal-inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: var(--ml-white);
+	width: 560px;
+	max-width: calc(100vw - 40px);
+	max-height: calc(100vh - 60px);
+	display: flex;
+	flex-direction: column;
+	border-radius: 3px;
+	box-shadow: 0 8px 32px rgba(0,0,0,.28);
+	overflow: hidden;
+}
+
+#ml-caption-modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 16px;
+	border-bottom: 1px solid var(--ml-gray-200);
+	flex-shrink: 0;
+}
+
+#ml-caption-modal-header h2 {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--ml-gray-800);
+}
+
+#ml-caption-close {
+	background: none;
+	border: none;
+	font-size: 20px;
+	line-height: 1;
+	cursor: pointer;
+	color: var(--ml-gray-600);
+	padding: 0 4px;
+}
+
+#ml-caption-close:hover {
+	color: var(--ml-gray-800);
+}
+
+#ml-caption-modal-body {
+	display: flex;
+	gap: 16px;
+	padding: 16px;
+	overflow-y: auto;
+	flex: 1;
+}
+
+#ml-caption-preview-wrap {
+	flex-shrink: 0;
+	width: 120px;
+}
+
+#ml-caption-preview-img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 3px;
+	border: 1px solid var(--ml-gray-300);
+	display: block;
+}
+
+#ml-caption-editor-wrap {
+	flex: 1;
+	min-width: 0;
+}
+
+/* Keep TinyMCE from overflowing */
+#ml-caption-editor-wrap .wp-editor-container {
+	width: 100%;
+}
+
+#ml-caption-modal-footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+	padding: 12px 16px;
+	border-top: 1px solid var(--ml-gray-200);
+	flex-shrink: 0;
+}
+
+/* Prevent WP page scroll when modal is open */
+body.ml-modal-open {
+	overflow: hidden;
+}
+
+.post-type-ml_gallery #wpbody-content {
+	padding-top: 0;
+}
+
+.post-type-ml_gallery .wrap {
+	margin: 10px 20px;
+}
+
+/* ── Sticky header: adjust top offset for WP admin bar breakpoints ───────── */
+@media screen and (max-width: 600px) {
+	.ml-gallery-header {
+		top: 0;
+	}
+}
+
+/* ── Lightbox settings section labels ────────────────────────────────────── */
+p.ml-settings-section-label {
+	margin: 0;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	color: var(--ml-gray-600);
+	background-color: #eee;
+	margin: 20px 0 10px 0;
+}
+
+/* ── Pro-locked settings ─────────────────────────────────────────────────── */
+.ml-gallery-setting--pro-locked {
+	opacity: 0.75;
+}
+
+.ml-gallery-setting--pro-locked .ml-toggle-switch {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.ml-gallery-pro-controls {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+a.ml-gallery-pro-lock {
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	transition: transform 0.2s ease;
+	line-height: 1;
+}
+
+a.ml-gallery-pro-lock:hover {
+	color: #000;
+	transform: scale(1.1);
+}
+
+a.ml-gallery-pro-lock.dashicons-lock::before {
+	background-color: #feb123;
+	border-radius: 50%;
+	padding: 4px;
+}
+

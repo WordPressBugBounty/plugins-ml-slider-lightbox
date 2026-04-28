@@ -17,17 +17,19 @@
     "php": ">=5.6.20"
   },
   "require-dev": {
-    "spatie/ray": "*",
-    "spatie/wordpress-ray": "dev-patch-1",
+    "publishpress/translations": "dev-development",
+    "spatie/ray": "^1.0.0",
+    "spatie/wordpress-ray": "^1.0.0",
     "phpcompatibility/php-compatibility": "*",
     "squizlabs/php_codesniffer": "3.*",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-    "publishpress/publishpress-phpcs-standards": "dev-main"
+    "publishpress/publishpress-phpcs-standards": "dev-master"
   },
   "prefer-stable": true,
   "config": {
     "allow-plugins": {
-      "dealerdirect/phpcodesniffer-composer-installer": true
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "automattic/jetpack-autoloader": true
     }
   },
   "scripts": {
@@ -43,10 +45,19 @@
     ],
     "post-update-cmd": [
       "[ $COMPOSER_DEV_MODE -eq 0 ] || vendor/bin/phpcs --config-set installed_paths \"../../automattic/vipwpcs,../../phpcompatibility/php-compatibility,../../sirbrillig/phpcs-variable-analysis,../../wp-coding-standards/wpcs,../../publishpress/publishpress-phpcs-standards/standards/PublishPressStandards\""
-    ]
+    ],
+    "translate": "vendor/bin/publishpress-translate",
+    "translate:dry-run": "vendor/bin/publishpress-translate --dry-run",
+    "translate:download": "vendor/bin/publishpress-translate --download",
+    "translate:upload": "vendor/bin/publishpress-translate --upload",
+    "translate:custom": "vendor/bin/publishpress-translate --languages",
+    "translate:force": "vendor/bin/publishpress-translate --force",
+    "translate:force-custom": "vendor/bin/publishpress-translate --force --languages",
+    "translate:repair-plurals": "php vendor/bin/publishpress-translate --repair-plurals"
   },
   "extra": {
     "plugin-name": "ml-slider-lightbox",
-    "plugin-slug": "ml-slider-lightbox"
+    "plugin-slug": "ml-slider-lightbox",
+    "plugin_name": "MetaSlider Gallery"
   }
 }

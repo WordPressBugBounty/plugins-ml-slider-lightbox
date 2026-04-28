@@ -241,6 +241,27 @@
         if (typeof $.fn.tipsy !== 'undefined') {
             $('.tipsy-tooltip-top').tipsy({live: false, delayIn: 500, html: true, gravity: 's'});
         }
+
+        // Handle conditional visibility of icon setting based on button toggle
+        var $buttonToggle = $('#ml_lightbox_options_show_lightbox_button');
+        var $iconSetting = $('#ml-icon-instead-of-button-setting');
+
+        if ($buttonToggle.length && $iconSetting.length) {
+            // Function to toggle icon setting visibility
+            function toggleIconSetting() {
+                if ($buttonToggle.is(':checked')) {
+                    $iconSetting.slideDown(300);
+                } else {
+                    $iconSetting.slideUp(300);
+                }
+            }
+
+            // Listen for changes on the button toggle
+            $buttonToggle.on('change', toggleIconSetting);
+
+            // Set initial state on page load
+            toggleIconSetting();
+        }
     });
 
 })(jQuery);
