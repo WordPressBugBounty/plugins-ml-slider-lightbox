@@ -1,0 +1,1558 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 15:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: class-ml-gallery.php:70
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "برخی از این ویژگی‌ها در MetaSlider Gallery Pro موجود است"
+
+#: class-ml-gallery.php:78
+msgid "Fade"
+msgstr "محو"
+
+#: class-ml-gallery.php:79
+msgid "Slide"
+msgstr "اسلاید"
+
+#: class-ml-gallery.php:80 class-ml-gallery.php:560
+msgid "Zoom"
+msgstr "زوم"
+
+#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
+msgid "Galleries"
+msgstr "گالری‌ها"
+
+#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
+msgid "Gallery"
+msgstr "گالری"
+
+#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
+#: class-ml-gallery.php:1124
+msgid "Add New Gallery"
+msgstr "افزودن گالری جدید"
+
+#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
+#: class-ml-gallery.php:258
+msgid "Edit Gallery"
+msgstr "ویرایش گالری"
+
+#: class-ml-gallery.php:138 class-ml-gallery.php:241
+msgid "New Gallery"
+msgstr "گالری جدید"
+
+#: class-ml-gallery.php:139
+msgid "Search Galleries"
+msgstr "جستجوی گالری‌ها"
+
+#: class-ml-gallery.php:140
+msgid "No galleries found."
+msgstr "هیچ گالری‌ای پیدا نشد."
+
+#: class-ml-gallery.php:141
+msgid "No galleries found in trash."
+msgstr "هیچ گالری‌ای در سطل زباله پیدا نشد."
+
+#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
+msgid "You do not have sufficient permissions to access this page."
+msgstr "شما مجوز کافی برای دسترسی به این صفحه را ندارید."
+
+#: class-ml-gallery.php:238
+msgid "Gallery not found."
+msgstr "گالری پیدا نشد."
+
+#: class-ml-gallery.php:260
+msgid "Save Gallery"
+msgstr "ذخیره گالری"
+
+#: class-ml-gallery.php:261
+msgid "Update Gallery"
+msgstr "به‌روزرسانی گالری"
+
+#: class-ml-gallery.php:274
+msgid "Back to Galleries"
+msgstr "بازگشت به گالری‌ها"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:1130
+#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: class-ml-gallery.php:308
+msgid "Gallery saved."
+msgstr "گالری ذخیره شد."
+
+#: class-ml-gallery.php:319
+msgid "Enter gallery title"
+msgstr "عنوان گالری را وارد کنید"
+
+#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+msgid "Images"
+msgstr "تصاویر"
+
+#: class-ml-gallery.php:331
+msgid "No images added yet"
+msgstr "هنوز تصویری اضافه نشده است"
+
+#: class-ml-gallery.php:344 class-ml-gallery.php:892
+msgid "Remove image"
+msgstr "حذف تصویر"
+
+#: class-ml-gallery.php:349 class-ml-gallery.php:893
+msgid "Edit caption"
+msgstr "ویرایش عنوان"
+
+#: class-ml-gallery.php:362
+msgid "Add Images"
+msgstr "اضافه کردن تصاویر"
+
+#: class-ml-gallery.php:369
+msgid "Layout"
+msgstr "چیدمان"
+
+#: class-ml-gallery.php:372
+msgid "Gallery layout"
+msgstr "چیدمان گالری"
+
+#: class-ml-gallery.php:384
+msgid "Grid"
+msgstr "شبکه"
+
+#: class-ml-gallery.php:398
+msgid "Masonry"
+msgstr "موزائیکی"
+
+#: class-ml-gallery.php:414
+msgid "Justified"
+msgstr "تراز شده"
+
+#: class-ml-gallery.php:427
+msgid "Carousel"
+msgstr "کاروسل"
+
+#: class-ml-gallery.php:436
+msgid "Columns"
+msgstr "ستون‌ها"
+
+#: class-ml-gallery.php:446
+msgid "Gap"
+msgstr "فاصله"
+
+#: class-ml-gallery.php:460
+msgid "Lightbox Settings"
+msgstr "تنظیمات Lightbox"
+
+#: class-ml-gallery.php:464
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "کنترل‌های زوم به MetaSlider Gallery Pro نیاز دارند"
+
+#: class-ml-gallery.php:465
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "حالت تمام صفحه به MetaSlider Gallery Pro نیاز دارد"
+
+#: class-ml-gallery.php:466
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "پخش خودکار به MetaSlider Gallery Pro نیاز دارد"
+
+#: class-ml-gallery.php:467
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "چرخش تصویر به MetaSlider Gallery Pro نیاز دارد"
+
+#: class-ml-gallery.php:468
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "اشتراک‌گذاری اجتماعی به MetaSlider Gallery Pro نیاز دارد"
+
+#: class-ml-gallery.php:472
+msgid "Show left and right navigation arrows"
+msgstr "نمایش فلش‌های ناوبری چپ و راست"
+
+#: class-ml-gallery.php:473
+msgid "Cycle back to the first image after reaching the last"
+msgstr "پس از رسیدن به آخرین تصویر، به تصویر اول برگردید"
+
+#: class-ml-gallery.php:474
+msgid "Navigate images using left and right arrow keys"
+msgstr "برای مرور تصاویر از کلیدهای جهت‌دار چپ و راست استفاده کنید"
+
+#: class-ml-gallery.php:475
+msgid "Scroll through images using the mouse wheel"
+msgstr "برای اسکرول کردن تصاویر از چرخ ماوس استفاده کنید"
+
+#: class-ml-gallery.php:476
+msgid "Swipe up or down to close the lightbox on touch devices"
+msgstr "برای بستن Lightbox در دستگاه‌های لمسی، انگشت خود را به بالا یا پایین بکشید"
+
+#: class-ml-gallery.php:477
+msgid "Display the current image number and total count"
+msgstr "شماره تصویر فعلی و تعداد کل را نمایش دهید"
+
+#: class-ml-gallery.php:478
+msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+msgstr "یک نوار از تصاویر کوچک را در پایین Lightbox نمایش دهید"
+
+#: class-ml-gallery.php:479
+msgid "Display image captions in the lightbox"
+msgstr "عنوان تصاویر را در Lightbox نمایش دهید"
+
+#: class-ml-gallery.php:480
+msgid "Show a download button for each image"
+msgstr "برای هر تصویر یک دکمه دانلود نشان دهید"
+
+#: class-ml-gallery.php:481
+msgid "Pinch and zoom into images"
+msgstr "با زدن دو انگشت، تصاویر را بزرگنمایی کنید"
+
+#: class-ml-gallery.php:482
+msgid "Expand the lightbox to fill the entire screen"
+msgstr "Lightbox را گسترش دهید تا تمام صفحه را پر کند"
+
+#: class-ml-gallery.php:483
+msgid "Rotate images left and right"
+msgstr "تصاویر را به چپ و راست بچرخانید"
+
+#: class-ml-gallery.php:484
+msgid "Automatically advance through images at a set interval"
+msgstr "به طور خودکار در فواصل تنظیم‌شده بین تصاویر پیش بروید"
+
+#: class-ml-gallery.php:485
+msgid "Add social sharing buttons for each image"
+msgstr "دکمه‌های اشتراک‌گذاری اجتماعی را برای هر تصویر اضافه کنید"
+
+#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
+#: class-ml-slider-lightbox.php:2409
+msgid "Navigation & Controls"
+msgstr "ناوبری و کنترل‌ها"
+
+#: class-ml-gallery.php:525
+msgid "Animation effect when moving between images"
+msgstr "اثر انیمیشن هنگام جابجایی بین تصاویر"
+
+#: class-ml-gallery.php:525
+msgid "Transition"
+msgstr "انتقال"
+
+#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
+msgid "Arrows"
+msgstr "پیکان‌ها"
+
+#: class-ml-gallery.php:535
+msgid "Loop"
+msgstr "حلقه"
+
+#: class-ml-gallery.php:536
+msgid "Keyboard"
+msgstr "کیبورد"
+
+#: class-ml-gallery.php:537
+msgid "Mouse wheel"
+msgstr "چرخ ماوس"
+
+#: class-ml-gallery.php:538
+msgid "Swipe to close"
+msgstr "برای بستن بکشید"
+
+#: class-ml-gallery.php:540
+msgid "Display"
+msgstr "نمایش"
+
+#: class-ml-gallery.php:541
+msgid "Slide counter"
+msgstr "شمارنده اسلاید"
+
+#: class-ml-gallery.php:542
+msgid "Thumbnail strip"
+msgstr "نوار تصویر کوچک"
+
+#: class-ml-gallery.php:543
+msgid "Captions"
+msgstr "زیرنویس‌ها"
+
+#: class-ml-gallery.php:544
+msgid "Download"
+msgstr "دانلود"
+
+#: class-ml-gallery.php:547
+msgid "Pager"
+msgstr "صفحه‌گردان"
+
+#: class-ml-gallery.php:553
+msgid "Pager pagination requires MetaSlider Gallery Pro"
+msgstr "صفحه‌گردانی به متااسلاید گالری پرو نیاز دارد"
+
+#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
+#: class-ml-slider-lightbox.php:4008
+msgid "Enhanced Zoom & Controls"
+msgstr "زوم و کنترل‌های پیشرفته"
+
+#: class-ml-gallery.php:561
+msgid "Fullscreen"
+msgstr "تمام صفحه"
+
+#: class-ml-gallery.php:562
+msgid "Rotate"
+msgstr "چرخش"
+
+#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
+#: class-ml-slider-lightbox.php:4057
+msgid "Advanced Features"
+msgstr "ویژگی‌های پیشرفته"
+
+#: class-ml-gallery.php:567
+msgid "Autoplay"
+msgstr "پخش خودکار"
+
+#: class-ml-gallery.php:568
+msgid "Share"
+msgstr "اشتراک‌گذاری"
+
+#: class-ml-gallery.php:572
+msgid "Unique Image URLs"
+msgstr "آدرس‌های تصویر منحصر به فرد"
+
+#: class-ml-gallery.php:578
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "آدرس‌های تصویر منحصر به فرد به متااسلاید گالری پرو نیاز دارد"
+
+#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
+#: class-ml-slider-lightbox.php:2058
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+msgid "Background Opacity"
+msgstr "شفافیت پس‌زمینه"
+
+#: class-ml-gallery.php:616
+msgid "Arrow Color"
+msgstr "رنگ فلش"
+
+#: class-ml-gallery.php:626
+msgid "Arrow Background"
+msgstr "پس‌زمینه فلش"
+
+#: class-ml-gallery.php:636
+msgid "Close Icon Color"
+msgstr "رنگ آیکون بستن"
+
+#: class-ml-gallery.php:646
+msgid "Close Background"
+msgstr "پس‌زمینه بستن"
+
+#: class-ml-gallery.php:656
+msgid "Toolbar Icon Color"
+msgstr "رنگ آیکون نوار ابزار"
+
+#: class-ml-gallery.php:666
+msgid "Toolbar Background"
+msgstr "پس‌زمینه نوار ابزار"
+
+#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:681
+msgid "Copy and paste into any post or page."
+msgstr "کپی و پیست در هر پست یا صفحه."
+
+#: class-ml-gallery.php:701
+msgid "Edit Caption"
+msgstr "ویرایش عنوان"
+
+#: class-ml-gallery.php:702
+msgid "Close"
+msgstr "بستن"
+
+#: class-ml-gallery.php:710
+msgid "Caption"
+msgstr "عنوان"
+
+#: class-ml-gallery.php:717
+msgid "Cancel"
+msgstr "لغو"
+
+#: class-ml-gallery.php:720
+msgid "Save Caption"
+msgstr "ذخیره عنوان"
+
+#: class-ml-gallery.php:741
+msgid "Security check failed."
+msgstr "بررسی امنیت ناموفق بود."
+
+#: class-ml-gallery.php:745
+msgid "You do not have sufficient permissions."
+msgstr "شما اجازه‌های کافی ندارید."
+
+#: class-ml-gallery.php:764
+msgid "Could not update the gallery. Please try again."
+msgstr "نمی‌توان گالری را به‌روزرسانی کرد. لطفاً دوباره تلاش کنید."
+
+#: class-ml-gallery.php:890
+msgid "Select Gallery Images"
+msgstr "انتخاب تصاویر گالری"
+
+#: class-ml-gallery.php:891
+msgid "Add to Gallery"
+msgstr "اضافه کردن به گالری"
+
+#: class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"گالری MetaSlider به نصب و فعال‌سازی MetaSlider و حداقل یک افزونه lightbox "
+"دیگر نیاز دارد."
+
+#: class-ml-slider-lightbox.php:1060
+msgid "More info"
+msgstr "اطلاعات بیشتر"
+
+#: class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"بیش از یک افزونه lightbox فعال شده است. این ممکن است باعث تداخل با گالری "
+"MetaSlider شود."
+
+#: class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "تنظیمات را ویرایش کنید"
+
+#: class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "آیا در Lightbox باز شود؟"
+
+#: class-ml-slider-lightbox.php:1150
+#, php-format
+msgid ""
+"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+"settings</a>."
+msgstr ""
+"Lightbox برای تمام اسلایدشوها از طریق <a href=\"%s\">تنظیمات حالت "
+"خودکار</a> فعال است."
+
+#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
+msgid "Open in Lightbox"
+msgstr "در Lightbox باز شود"
+
+#: class-ml-slider-lightbox.php:1486
+msgid "View image"
+msgstr "مشاهده تصویر"
+
+#: class-ml-slider-lightbox.php:1734
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery نیاز به نصب و فعال‌سازی MetaSlider دارد."
+
+#: class-ml-slider-lightbox.php:1738
+msgid "Install MetaSlider"
+msgstr "نصب MetaSlider"
+
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1945
+#, php-format
+msgid "Select pages to %s..."
+msgstr "صفحات را برای %s انتخاب کنید..."
+
+#: class-ml-slider-lightbox.php:1946
+#, php-format
+msgid "Select posts to %s..."
+msgstr "پست‌ها را برای %s انتخاب کنید..."
+
+#: class-ml-slider-lightbox.php:1947
+#, php-format
+msgid "Select post types to %s..."
+msgstr "نوع پست‌ها را برای %s انتخاب کنید..."
+
+#: class-ml-slider-lightbox.php:1948
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "%1$s را برای %2$s انتخاب کنید..."
+
+#: class-ml-slider-lightbox.php:1949
+msgid "Select post types to exclude"
+msgstr "نوع پست‌ها را برای استثنا انتخاب کنید"
+
+#: class-ml-slider-lightbox.php:1950
+msgid "Include"
+msgstr "شامل"
+
+#: class-ml-slider-lightbox.php:1951
+msgid "Exclude"
+msgstr "استثنا"
+
+#: class-ml-slider-lightbox.php:1959, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1979
+msgid "Lightboxes"
+msgstr "Lightbox‌ها"
+
+#: class-ml-slider-lightbox.php:1995
+msgid "Automatic Mode"
+msgstr "حالت خودکار"
+
+#: class-ml-slider-lightbox.php:1996
+msgid "Manual Mode"
+msgstr "حالت دستی"
+
+#: class-ml-slider-lightbox.php:1998
+msgid "Behavior"
+msgstr "رفتار"
+
+#: class-ml-slider-lightbox.php:2003
+msgid "Upgrade to Pro"
+msgstr "ارتقاء به پرو"
+
+#: class-ml-slider-lightbox.php:2023
+msgid "Settings saved successfully!"
+msgstr "تنظیمات با موفقیت ذخیره شد!"
+
+#: class-ml-slider-lightbox.php:2033
+msgid "Where to Enable Automatically"
+msgstr "کجا به طور خودکار فعال شود"
+
+#: class-ml-slider-lightbox.php:2040
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider Slideshow ها"
+
+#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+msgid "Content Filtering"
+msgstr "فیلتر کردن محتوا"
+
+#: class-ml-slider-lightbox.php:2059
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr "رنگ‌ها، شفافیت و سبک بصری را برای لایه نوری و کنترل‌ها شخصی‌سازی کنید."
+
+#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+msgid "Background & Overlay"
+msgstr "پس‌زمینه و لایه"
+
+#: class-ml-slider-lightbox.php:2068
+msgid "Navigation"
+msgstr "ناوبری"
+
+#: class-ml-slider-lightbox.php:2073
+msgid "\"Open in Lightbox\" Button"
+msgstr "دکمه \"باز کردن در Lightbox\""
+
+#: class-ml-slider-lightbox.php:2089
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>افزونه شخص ثالث شناسایی شد:</strong> یک افزونه لایت باکس شخص ثالث "
+"فعال است. این تنظیمات ممکن است برای MetaSlider اعمال نشود، اما برای لایت "
+"باکس‌های محتوای WordPress همچنان کار خواهد کرد."
+
+#: class-ml-slider-lightbox.php:2104
+msgid "Media & Video Enhancements"
+msgstr "رسانه و بهبود ویدیو"
+
+#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+msgid "Social & Navigation"
+msgstr "اجتماعی و ناوبری"
+
+#: class-ml-slider-lightbox.php:2136
+msgid "Manual Lightbox Options"
+msgstr "گزینه‌های دستی لایت باکس"
+
+#: class-ml-slider-lightbox.php:2137
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr ""
+"کنترل‌های دستی و بازنویسی‌های WordPress که به طور مستقل از تنظیمات خودکار "
+"کار می‌کنند."
+
+#: class-ml-slider-lightbox.php:2319
+msgid "Navigation Icons"
+msgstr "آیکون‌های ناوبری"
+
+#: class-ml-slider-lightbox.php:2326
+msgid "Buttons"
+msgstr "دکمه‌ها"
+
+#: class-ml-slider-lightbox.php:2357
+msgid "Close Button"
+msgstr "دکمه بستن"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Lightbox Toolbar"
+msgstr "نوار ابزار لایت باکس"
+
+#: class-ml-slider-lightbox.php:2373
+msgid "Button Colors"
+msgstr "رنگ‌های دکمه"
+
+#: class-ml-slider-lightbox.php:2381
+msgid "Icon Colors"
+msgstr "رنگ‌های آیکون"
+
+#: class-ml-slider-lightbox.php:2389
+msgid "Button Text"
+msgstr "متن دکمه"
+
+#: class-ml-slider-lightbox.php:2397
+msgid "Button Position"
+msgstr "موقعیت دکمه"
+
+#: class-ml-slider-lightbox.php:2755
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "تنظیمات عمومی lightbox را پیکربندی کنید که در سایت به‌طور کلی اعمال می‌شود."
+
+#: class-ml-slider-lightbox.php:2760
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr "تنظیمات خاص عملکرد lightbox MetaSlider را پیکربندی کنید."
+
+#: class-ml-slider-lightbox.php:2765
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "انتخاب کنید که lightbox در کجا به‌طور خودکار فعال شود."
+
+#: class-ml-slider-lightbox.php:2771
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"انتخاب کنید که چگونه محتوا را برای پردازش lightbox فیلتر کنید و مشخص کنید "
+"کدام صفحات، پست‌ها یا انتخاب‌گرها را شامل یا مستثنی کنید."
+
+#: class-ml-slider-lightbox.php:2787
+msgid "Processing Mode"
+msgstr "حالت پردازش"
+
+#: class-ml-slider-lightbox.php:2790
+msgid "Process all content EXCEPT the items specified below"
+msgstr "تمام محتوا به جز موارد مشخص شده در زیر را پردازش کنید"
+
+#: class-ml-slider-lightbox.php:2793
+msgid "ONLY process the items specified below"
+msgstr "فقط موارد مشخص شده در زیر را پردازش کنید"
+
+#: class-ml-slider-lightbox.php:2800
+msgid "Inclusion Mode"
+msgstr "حالت گنجاندن"
+
+#: class-ml-slider-lightbox.php:2804
+msgid "Exclusion Mode"
+msgstr "حالت استثنا"
+
+#: class-ml-slider-lightbox.php:2824
+msgid "Images in post content"
+msgstr "تصاویر در محتوای پست"
+
+#: class-ml-slider-lightbox.php:2825
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"هنگامی که فعال شود، تصاویر فردی بدون لینک و تنظیم \"با کلیک بزرگ‌نمایی "
+"شود\" در پست‌ها و صفحات به‌طور خودکار در lightbox باز خواهند شد."
+
+#: class-ml-slider-lightbox.php:2841
+msgid "Images and videos in widgets and sidebars"
+msgstr "تصاویر و ویدیوها در ویدجت‌ها و نوار کناری"
+
+#: class-ml-slider-lightbox.php:2842
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"هنگامی که فعال شود، تصاویر و ویدیوها در نواحی ویدجت به‌طور خودکار در "
+"lightbox باز خواهند شد."
+
+#: class-ml-slider-lightbox.php:2858
+msgid "Gallery shortcodes and blocks"
+msgstr "کدکوتاه‌های گالری و بلوک‌ها"
+
+#: class-ml-slider-lightbox.php:2859
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"هنگامی که فعال شود، تصاویر در کدکوتاه‌های [gallery] WordPress و بلوک‌های "
+"گالری گوتنبرگ به‌طور خودکار در lightbox باز خواهند شد."
+
+#: class-ml-slider-lightbox.php:2875
+msgid "Featured images"
+msgstr "تصاویر ویژه"
+
+#: class-ml-slider-lightbox.php:2876
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"هنگامی که فعال شود، تصاویر ویژه (تصاویر بندانگشتی پست) به‌طور خودکار در "
+"lightbox هنگام کلیک باز خواهند شد."
+
+#: class-ml-slider-lightbox.php:2885
+msgid ""
+"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
+"the per-slider setting."
+msgstr ""
+"lightbox را به‌طور خودکار در تمام اسلایدشوهای MetaSlider فعال کنید و "
+"تنظیمات خاص هر اسلاید را نادیده بگیرید."
+
+#: class-ml-slider-lightbox.php:2899
+msgid "MetaSlider slideshows"
+msgstr "اسلایدشوهای MetaSlider"
+
+#: class-ml-slider-lightbox.php:2900
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+"overriding the per-slider setting."
+msgstr ""
+"زمانی که فعال باشد، تمام اسلایدشوهای MetaSlider در Lightbox باز خواهند شد و "
+"تنظیمات هر اسلاید را نادیده می‌گیرند."
+
+#: class-ml-slider-lightbox.php:2916
+msgid "Videos in post content"
+msgstr "ویدیوها در محتوای پست"
+
+#: class-ml-slider-lightbox.php:2917
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"زمانی که فعال باشد، بلوک‌های ویدیویی مستقل (ویدیوهای HTML5، ویدیوهای "
+"یوتیوب، ویدیوهای ویمئو) در محتوای پست/صفحه به طور خودکار در Lightbox باز "
+"خواهند شد."
+
+#: class-ml-slider-lightbox.php:2932
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"رنگ پس‌زمینه برای پوشش Lightbox. رنگ‌های تیره برای مشاهده تصویر بهترین "
+"عملکرد را دارند."
+
+#: class-ml-slider-lightbox.php:2945
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"رنگ پس‌زمینه برای دکمه‌های \"باز کردن در Lightbox\" که بر روی اسلایدها، "
+"تصاویر و ویدیوها ظاهر می‌شوند."
+
+#: class-ml-slider-lightbox.php:2958
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"رنگ متن برای دکمه‌های \"باز کردن در Lightbox\" که بر روی اسلایدها، تصاویر و "
+"ویدیوها ظاهر می‌شوند."
+
+#: class-ml-slider-lightbox.php:2971
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "رنگ پس‌زمینه هنگام قرارگیری ماوس بر روی دکمه‌های \"باز کردن در Lightbox\"."
+
+#: class-ml-slider-lightbox.php:2984
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "رنگ متن هنگام قرارگیری ماوس بر روی دکمه‌های \"باز کردن در Lightbox\"."
+
+#: class-ml-slider-lightbox.php:2997
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"متن سفارشی برای دکمه‌های Lightbox. این متن بر روی تمام دکمه‌های \"باز کردن "
+"در Lightbox\" در سرتاسر سایت ظاهر خواهد شد."
+
+#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+msgid "Top Right (Default)"
+msgstr "بالا سمت راست (پیش‌فرض)"
+
+#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
+msgid "Top Left"
+msgstr "بالا سمت چپ"
+
+#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
+msgid "Bottom Right"
+msgstr "پایین سمت راست"
+
+#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
+msgid "Bottom Left"
+msgstr "پایین سمت چپ"
+
+#: class-ml-slider-lightbox.php:3023
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "محل قرارگیری دکمه بستن (X) در پوشش Lightbox را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:3049
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"محل قرارگیری دکمه‌های \"باز کردن در Lightbox\" درون اسلایدها، تصاویر، "
+"گالری‌ها و ویدیوها را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:3062
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "رنگ برای فلش‌های ناوبری قبلی و بعدی در Lightbox."
+
+#: class-ml-slider-lightbox.php:3075
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr ""
+"رنگ فلش هنگام قرارگیری ماوس. بازخورد بصری ایجاد می‌کند زمانی که کاربران "
+"ماوس خود را بر روی فلش‌های ناوبری حرکت می‌دهند."
+
+#: class-ml-slider-lightbox.php:3088
+msgid "Color for the close button (X) in the lightbox."
+msgstr "رنگ دکمه بستن (X) در Lightbox."
+
+#: class-ml-slider-lightbox.php:3101
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr ""
+"رنگ دکمه بستن هنگام قرارگیری ماوس. بازخورد بصری ایجاد می‌کند زمانی که "
+"کاربران ماوس خود را بر روی دکمه بستن حرکت می‌دهند."
+
+#: class-ml-slider-lightbox.php:3114
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"رنگ برای آیکون‌های نوار ابزار و متن شمارنده در Lightbox. بر روی زوم، "
+"آیکون‌های تمام‌صفحه (Pro) و نمایش شمارنده تصویر تأثیر می‌گذارد."
+
+#: class-ml-slider-lightbox.php:3127
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"رنگ آیکون نوار ابزار هنگام جابجایی ماوس. بازخورد بصری ایجاد می‌کند زمانی که "
+"کاربران ماوس خود را بر روی آیکون‌های نوار ابزار و شمارنده حرکت می‌دهند."
+
+#: class-ml-slider-lightbox.php:3140
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr "رنگ پس‌زمینه برای دکمه‌های ناوبری قبلی و بعدی."
+
+#: class-ml-slider-lightbox.php:3153
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr ""
+"رنگ پس‌زمینه برای دکمه‌های پیکان هنگام جابجایی ماوس. بازخورد بصری ایجاد "
+"می‌کند زمانی که کاربران ماوس خود را بر روی پیکان‌ها حرکت می‌دهند."
+
+#: class-ml-slider-lightbox.php:3166
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "رنگ پس‌زمینه برای دکمه بستن (X) در Lightbox."
+
+#: class-ml-slider-lightbox.php:3179
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr ""
+"رنگ پس‌زمینه برای دکمه بستن هنگام جابجایی ماوس. بازخورد بصری ایجاد می‌کند "
+"زمانی که کاربران ماوس خود را بر روی دکمه بستن حرکت می‌دهند."
+
+#: class-ml-slider-lightbox.php:3192
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "رنگ پس‌زمینه برای آیکون‌های نوار ابزار در Lightbox."
+
+#: class-ml-slider-lightbox.php:3205
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr ""
+"رنگ پس‌زمینه برای آیکون‌های نوار ابزار هنگام جابجایی ماوس. بازخورد بصری "
+"ایجاد می‌کند زمانی که کاربران ماوس خود را بر روی آیکون‌های نوار ابزار حرکت "
+"می‌دهند."
+
+#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
+#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+msgid "Icon"
+msgstr "آیکون"
+
+#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+msgid "Icon Hover"
+msgstr "آیکون جابجایی"
+
+#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
+#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3406
+msgid "Background"
+msgstr "پس‌زمینه"
+
+#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
+#: class-ml-slider-lightbox.php:3409
+msgid "Background Hover"
+msgstr "پس‌زمینه جابجایی"
+
+#: class-ml-slider-lightbox.php:3317
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr "شفافیت پس‌زمینه Lightbox را تنظیم کنید (0 = شفاف، 1 = کدر)."
+
+#: class-ml-slider-lightbox.php:3328
+msgid "Show navigation arrows in lightbox"
+msgstr "نمایش پیکان‌های ناوبری در Lightbox"
+
+#: class-ml-slider-lightbox.php:3329
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"نمایش پیکان‌های چپ/راست برای ناوبری. همچنین ناوبری با صفحه‌کلید را فعال "
+"می‌کند (کلیدهای ← →، ESC برای بستن). این برای نمایش اسلایدها و گالری‌های "
+"تصاویر در دسترس است."
+
+#: class-ml-slider-lightbox.php:3338
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "ظاهر پس‌زمینه و پوشش Lightbox را سفارشی کنید."
+
+#: class-ml-slider-lightbox.php:3343
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr ""
+"آیکون‌های ناوبری (بستن، پیکان‌های قبلی و بعدی) را برای Lightboxها سفارشی "
+"کنید."
+
+#: class-ml-slider-lightbox.php:3348
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"دکمه‌های \"باز کردن در Lightbox\" را که می‌توان به اسلایدها، تصاویر، "
+"گالری‌ها و ویدیوها اضافه کرد، سفارشی کنید."
+
+#: class-ml-slider-lightbox.php:3368
+msgid "Text"
+msgstr "متن"
+
+#: class-ml-slider-lightbox.php:3371
+msgid "Text Hover"
+msgstr "متن جابجایی"
+
+#: class-ml-slider-lightbox.php:3417
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr "تنظیم گزینه‌های ناوبری و کنترل که به همه Lightboxها اعمال می‌شود."
+
+#: class-ml-slider-lightbox.php:3427
+msgid "Show thumbnails"
+msgstr "نمایش تصویر کوچک"
+
+#: class-ml-slider-lightbox.php:3428
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"تصاویر کوچک را در پایین Lightbox برای ناوبری آسان نمایش دهید. این قابلیت "
+"برای اسلایدشوها و گالری‌های تصویری در دسترس است."
+
+#: class-ml-slider-lightbox.php:3440
+msgid "Show \"Open in Lightbox\" button"
+msgstr "نمایش دکمه \"باز کردن در Lightbox\""
+
+#: class-ml-slider-lightbox.php:3441
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"زمانی که فعال باشد، دکمه‌ای برای باز کردن Lightbox نمایش می‌دهد. وقتی "
+"غیرفعال باشد، کلیک بر روی اسلاید، تصویر یا ویدیو به‌طور مستقیم Lightbox را "
+"باز می‌کند."
+
+#: class-ml-slider-lightbox.php:3458
+msgid "Show an icon instead of button"
+msgstr "نمایش آیکون به جای دکمه"
+
+#: class-ml-slider-lightbox.php:3459
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr "زمانی که فعال باشد، یک آیکون کوچک به جای متن کامل دکمه نمایش می‌دهد."
+
+#: class-ml-slider-lightbox.php:3473
+msgid "Show captions"
+msgstr "نمایش زیرنویس‌ها"
+
+#: class-ml-slider-lightbox.php:3474
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"زمانی که فعال باشد، زیرنویس‌ها را در Lightbox نمایش دهید. این قابلیت برای "
+"اسلایدشوها، تصاویر و گالری‌های تصویری در دسترس است."
+
+#: class-ml-slider-lightbox.php:3481
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr "ویژگی‌های پیشرفته Lightbox از طریق MetaSlider Gallery Pro در دسترس است."
+
+#: class-ml-slider-lightbox.php:3483
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr ""
+"پیش‌نمایشی از ویژگی‌های پیشرفته در دسترس در MetaSlider Gallery Pro را "
+"دریافت کنید."
+
+#: class-ml-slider-lightbox.php:3486
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr ""
+"این افزونه‌های پیشرفته LightGallery.js در نسخه Pro با گزینه‌های سفارشی‌سازی "
+"اضافی در دسترس هستند."
+
+#: class-ml-slider-lightbox.php:3512
+msgid "Include specific Pages"
+msgstr "شامل صفحات خاص"
+
+#: class-ml-slider-lightbox.php:3514
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"صفحات را انتخاب کنید که Lightbox باید غیرفعال شود. حداکثر ۱۰۰ صفحه اخیر "
+"نمایش داده می‌شود. برای جستجو تایپ کنید."
+
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"صفحات را انتخاب کنید که Lightbox باید فعال شود. حداکثر ۱۰۰ صفحه اخیر نمایش "
+"داده می‌شود. برای جستجو تایپ کنید."
+
+#: class-ml-slider-lightbox.php:3557
+msgid "Include specific Posts"
+msgstr "شامل پست‌های خاص"
+
+#: class-ml-slider-lightbox.php:3559
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"پست‌ها را انتخاب کنید که Lightbox باید غیرفعال شود. حداکثر ۱۰۰ پست اخیر "
+"نمایش داده می‌شود. برای جستجو تایپ کنید."
+
+#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"پست‌ها را انتخاب کنید که Lightbox باید فعال شود. حداکثر ۱۰۰ پست اخیر نمایش "
+"داده می‌شود. برای جستجو تایپ کنید."
+
+#: class-ml-slider-lightbox.php:3587
+msgid "include"
+msgstr "شامل"
+
+#: class-ml-slider-lightbox.php:3587
+msgid "exclude"
+msgstr "حذف"
+
+#: class-ml-slider-lightbox.php:3626
+#, php-format
+msgid "%s specific %s"
+msgstr "%s خاص %s"
+
+#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "تا 100 مورد اخیر %s را نشان می‌دهد. برای جستجو تایپ کنید."
+
+#: class-ml-slider-lightbox.php:3675
+msgid "Include specific post types"
+msgstr "شامل نوع پست‌های مشخص"
+
+#: class-ml-slider-lightbox.php:3677
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr "نوع پست‌هایی را انتخاب کنید که Lightbox باید کاملاً غیرفعال شود."
+
+#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "نوع پست‌هایی را انتخاب کنید که Lightbox باید کاملاً فعال شود."
+
+#: class-ml-slider-lightbox.php:3712
+msgid "Exclude by CSS selector"
+msgstr "به‌طور انتخابی با CSS"
+
+#: class-ml-slider-lightbox.php:3715
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"انتخابگرهای CSS برای عناصری که باید از Lightbox مستثنی شوند (یکی در هر خط). "
+"مثال‌ها:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+
+#: class-ml-slider-lightbox.php:3738
+msgid "Minimum Image Width"
+msgstr "حداقل عرض تصویر"
+
+#: class-ml-slider-lightbox.php:3741
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"تصاویر باریک‌تر از این عرض (به پیکسل) را رد کنید. از عرض نمایش داده شده "
+"استفاده می‌کند، نه اندازه واقعی فایل تصویر. این برای حذف آیکون‌ها، نشان‌ها "
+"و دکمه‌های کوچک مفید است."
+
+#: class-ml-slider-lightbox.php:3764
+msgid "Minimum Image Height"
+msgstr "حداقل ارتفاع تصویر"
+
+#: class-ml-slider-lightbox.php:3767
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"تصاویر کوتاه‌تر از این ارتفاع (به پیکسل) را رد کنید. از ارتفاع نمایش داده "
+"شده استفاده می‌کند، نه اندازه واقعی فایل تصویر. این برای حذف آیکون‌ها، "
+"نشان‌ها و دکمه‌های کوچک مفید است."
+
+#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr "مدیریت رسانه پیشرفته و ویژگی‌های پخش ویدئو برای گالری‌های حرفه‌ای."
+
+#: class-ml-slider-lightbox.php:3790
+msgid "Advanced features for professional lightbox implementations."
+msgstr "ویژگی‌های پیشرفته برای پیاده‌سازی‌های حرفه‌ای Lightbox."
+
+#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+msgid "Enable Zoom"
+msgstr "فعال‌سازی بزرگ‌نمایی"
+
+#: class-ml-slider-lightbox.php:3802
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr ""
+"دوبار کلیک کنید تا بزرگ‌نمایی کنید، کنترل‌های بزرگ‌نمایی، بزرگ‌نمایی با چرخ "
+"ماوس و گزینه‌های بزرگ‌نمایی به تناسب."
+
+#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+msgid "Enable Fullscreen"
+msgstr "فعال‌سازی تمام صفحه"
+
+#: class-ml-slider-lightbox.php:3813
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr ""
+"پشتیبانی بومی HTML5 برای تمام صفحه با کلیدهای میانبر (کلید F) برای مشاهده "
+"غوطه‌ور."
+
+#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+msgid "Enable Rotate"
+msgstr "فعال‌سازی چرخش"
+
+#: class-ml-slider-lightbox.php:3824
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr ""
+"چرخش تصاویر در جهت ساعت‌گرد/پادساعت‌گرد، معکوس کردن افقی/عمودی با کنترل‌های "
+"نوار ابزار."
+
+#: class-ml-slider-lightbox.php:3834
+msgid "Enable Video"
+msgstr "فعال‌سازی ویدئو"
+
+#: class-ml-slider-lightbox.php:3835
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr ""
+"پشتیبانی پیشرفته از ویدیو برای YouTube، Vimeo، ویدیوهای HTML5 با پخش خودکار "
+"و کنترل کیفیت."
+
+#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:4170
+msgid "Enable Unique Image URLs"
+msgstr "فعال‌سازی URL‌های منحصر به فرد تصویر"
+
+#: class-ml-slider-lightbox.php:3846
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr ""
+"URL‌های منحصر به فرد برای هر تصویر در گالری با پشتیبانی از ناوبری به "
+"عقب/جلو در مرورگر."
+
+#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+msgid "Enable Autoplay"
+msgstr "فعال‌سازی پخش خودکار"
+
+#: class-ml-slider-lightbox.php:3857
+msgid "Automatically advance through images in the lightbox."
+msgstr "به طور خودکار از میان تصاویر در lightbox پیش بروید."
+
+#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+msgid "Enable Share"
+msgstr "فعال‌سازی اشتراک‌گذاری"
+
+#: class-ml-slider-lightbox.php:3868
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr ""
+"دکمه‌های اشتراک‌گذاری در رسانه‌های اجتماعی برای Facebook، Twitter، "
+"Pinterest، و اشتراک‌گذاری URL مستقیم."
+
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+msgid "Enable Pager"
+msgstr "فعال‌سازی صفحه‌گردان"
+
+#: class-ml-slider-lightbox.php:3879
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr "نقاط صفحه‌گردان حداقلی برای ناوبری تمیز بدون پیش‌نمایش‌های بندانگشتی."
+
+#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr "کنترل‌های زوم حرفه‌ای و تعامل با تصویر برای تجربه کاربری بهبود یافته."
+
+#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr "بهبودهای اشتراک‌گذاری اجتماعی و ناوبری برای افزایش تعامل."
+
+#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+msgid "Advanced functionality including URL management and automation features."
+msgstr "عملکرد پیشرفته شامل مدیریت URL و ویژگی‌های خودکارسازی."
+
+#: class-ml-slider-lightbox.php:3962
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "این ویژگی در MetaSlider Gallery Pro موجود است"
+
+#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr ""
+"به کاربران اجازه دهید با کلیک دوگانه، چرخ‌دنده ماوس، و کنترل‌های زوم زوم "
+"کنند."
+
+#: class-ml-slider-lightbox.php:4016
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "کنترل‌های زوم در MetaSlider Gallery Pro موجود است"
+
+#: class-ml-slider-lightbox.php:4021
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr "حالت تمام صفحه HTML5 بومی برای مشاهده غوطه‌ور تصاویر."
+
+#: class-ml-slider-lightbox.php:4023
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "حالت تمام صفحه در MetaSlider Gallery Pro موجود است"
+
+#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr "چرخش تصاویر در جهت عقربه‌های ساعت/برعکس و معکوس کردن افقی/عمودی."
+
+#: class-ml-slider-lightbox.php:4030
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "چرخش تصویر در MetaSlider Gallery Pro موجود است"
+
+#: class-ml-slider-lightbox.php:4042
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr "اشتراک‌گذاری رسانه‌های اجتماعی داخلی برای Facebook، Twitter، و Pinterest."
+
+#: class-ml-slider-lightbox.php:4044
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "اشتراک‌گذاری اجتماعی در MetaSlider Gallery Pro در دسترس است"
+
+#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr "نقاط صفحه‌بندی حداقلی به جای تصاویر کوچک برای یک رابط تمیزتر."
+
+#: class-ml-slider-lightbox.php:4051
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "صفحه‌بندی Pager در MetaSlider Gallery Pro در دسترس است"
+
+#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr "URLهای منحصر به فرد برای هر تصویر گالری با ناوبری جلو/عقب مرورگر ایجاد کنید."
+
+#: class-ml-slider-lightbox.php:4065
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "URLهای منحصر به فرد تصویر در MetaSlider Gallery Pro در دسترس است"
+
+#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "اسلایدشو خودکار با کنترل‌های زمان‌بندی و نوار پیشرفت."
+
+#: class-ml-slider-lightbox.php:4072
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "پخش خودکار در MetaSlider Gallery Pro در دسترس است"
+
+#: class-ml-slider-lightbox.php:4089
+msgid "Features"
+msgstr "ویژگی‌ها"
+
+#: class-ml-slider-lightbox.php:4090
+msgid "Free"
+msgstr "رایگان"
+
+#: class-ml-slider-lightbox.php:4091, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+msgid "Installed"
+msgstr "نصب شده"
+
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+msgid "Upgrade now"
+msgstr "هم‌اکنون ارتقاء دهید"
+
+#: class-ml-slider-lightbox.php:4106
+msgid "Automatic lightbox for images"
+msgstr "Lightbox خودکار برای تصاویر"
+
+#: class-ml-slider-lightbox.php:4107
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "به‌طور خودکار Lightbox را برای تمام تصاویر سایت شما فعال کنید."
+
+#: class-ml-slider-lightbox.php:4114
+msgid "MetaSlider integration"
+msgstr "یکپارچگی MetaSlider"
+
+#: class-ml-slider-lightbox.php:4115
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "یکپارچگی بدون درز با اسلایدشوهای MetaSlider."
+
+#: class-ml-slider-lightbox.php:4122
+msgid "WordPress gallery support"
+msgstr "پشتیبانی از گالری WordPress"
+
+#: class-ml-slider-lightbox.php:4123
+msgid "Support for WordPress native galleries and blocks."
+msgstr "پشتیبانی از گالری‌ها و بلوک‌های بومی WordPress."
+
+#: class-ml-slider-lightbox.php:4130
+msgid "Appearance customization"
+msgstr "سفارشی‌سازی ظاهر"
+
+#: class-ml-slider-lightbox.php:4131
+msgid "Customize colors, opacity, and button styles."
+msgstr "سفارشی‌سازی رنگ‌ها، شفافیت و سبک‌های دکمه."
+
+#: class-ml-slider-lightbox.php:4138
+msgid "Zoom controls"
+msgstr "کنترل‌های زوم"
+
+#: class-ml-slider-lightbox.php:4146
+msgid "Fullscreen mode"
+msgstr "حالت تمام صفحه"
+
+#: class-ml-slider-lightbox.php:4147
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "تمام صفحه HTML5 بومی برای مشاهده تصاویر به‌طور غوطه‌ور."
+
+#: class-ml-slider-lightbox.php:4154
+msgid "Rotate and flip images"
+msgstr "چرخش و معکوس کردن تصاویر"
+
+#: class-ml-slider-lightbox.php:4162
+msgid "Social media sharing"
+msgstr "به اشتراک‌گذاری در شبکه‌های اجتماعی"
+
+#: class-ml-slider-lightbox.php:4163
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "به اشتراک‌گذاری داخلی برای Facebook، Twitter و Pinterest."
+
+#: class-ml-slider-lightbox.php:4178
+msgid "Autoplay slideshow"
+msgstr "اسلایدشو پخش خودکار"
+
+#: class-ml-slider-lightbox.php:4186
+msgid "Pager navigation"
+msgstr "ناوبری صفحه‌ای"
+
+#: class-ml-slider-lightbox.php:4194
+msgid "Premium support"
+msgstr "پشتیبانی ممتاز"
+
+#: class-ml-slider-lightbox.php:4195
+msgid "Have your specific queries addressed directly by our experts."
+msgstr "سوالات خاص شما به‌طور مستقیم توسط کارشناسان ما پاسخ داده می‌شود."
+
+#: class-ml-slider-lightbox.php:6006
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr "پیکربندی نحوه تعامل lightbox با ویژگی‌های بومی WordPress."
+
+#: class-ml-slider-lightbox.php:6021
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "تنظیم \"بزرگ‌نمایی با کلیک\" WordPress را نادیده بگیرید"
+
+#: class-ml-slider-lightbox.php:6022
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"هنگامی که فعال شود، lightbox بومی WordPress را غیرفعال کرده و از lightbox "
+"ما برای تصاویری که به \"بزرگ‌نمایی با کلیک\" تنظیم شده‌اند استفاده می‌کند. "
+"وقتی غیرفعال باشد، تنظیمات WordPress را رعایت کرده و از تصاویری که به "
+"\"بزرگ‌نمایی با کلیک\" تنظیم شده‌اند صرف‌نظر می‌کند."
+
+#: class-ml-slider-lightbox.php:6038
+msgid "Override \"Link to Image File\" Setting"
+msgstr "تنظیم \"لینک به فایل تصویر\" را نادیده بگیرید"
+
+#: class-ml-slider-lightbox.php:6039
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"هنگامی که فعال شود، از lightbox ما برای تصاویری که به فایل تصویر تمام‌سایز "
+"خود لینک شده‌اند استفاده می‌کند (که معمولاً از طریق \"لینک به فایل تصویر\" "
+"در ویرایشگر بلوک تنظیم می‌شود). وقتی غیرفعال باشد، رفتار لینک اصلی را رعایت "
+"می‌کند."
+
+#: class-ml-slider-lightbox.php:6070
+msgid "Exclude Post Types from Manual Processing"
+msgstr "استثنا کردن انواع پست از پردازش دستی"
+
+#: class-ml-slider-lightbox.php:6073
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"انواع پست‌هایی را انتخاب کنید که گزینه‌های دستی نباید روی آن‌ها کار کنند. "
+"به عنوان مثال، \"محصولات (محصول)\" را انتخاب کنید تا lightbox دستی را در "
+"صفحات محصول WooCommerce غیرفعال کنید در حالی که آن را در سایر نقاط فعال نگه "
+"دارید."
+
+#: class-ml-slider-lightbox.php:6097
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "نحوه استفاده: \"بزرگ‌نمایی با کلیک\" WordPress"
+
+#: class-ml-slider-lightbox.php:6099
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"WordPress دارای ویژگی بومی \"بزرگ‌نمایی با کلیک\" برای تصاویر است. در اینجا "
+"نحوه فعال‌سازی آن آمده است:"
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+msgid "Select an image in the block editor."
+msgstr "یک تصویر را در ویرایشگر بلوک انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
+msgid "In the block toolbar, click on the Link icon."
+msgstr "در نوار ابزار بلوک، روی آیکون لینک کلیک کنید."
+
+#: class-ml-slider-lightbox.php:6103
+msgid "Select \"Enlarge on click\"."
+msgstr "\"بزرگ‌نمایی با کلیک\" را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6109
+msgid "How to use: \"Link to Image File\""
+msgstr "نحوه استفاده: \"لینک به فایل تصویر\""
+
+#: class-ml-slider-lightbox.php:6111
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr ""
+"شما می‌توانید تصاویر را مستقیماً به فایل رسانه‌ای تمام‌نما لینک کنید. در "
+"اینجا نحوه انجام این کار آمده است:"
+
+#: class-ml-slider-lightbox.php:6112
+msgid "For the Block Editor:"
+msgstr "برای ویرایشگر بلوک:"
+
+#: class-ml-slider-lightbox.php:6116
+msgid "Choose \"Link to image file\"."
+msgstr "\"لینک به فایل تصویر\" را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6118
+msgid "For the Classic Editor:"
+msgstr "برای ویرایشگر کلاسیک:"
+
+#: class-ml-slider-lightbox.php:6120
+msgid "Select an image."
+msgstr "یک تصویر را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6121
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "در نوار ابزار تصویر، روی آیکون ویرایش کلیک کنید."
+
+#: class-ml-slider-lightbox.php:6122
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "در منوی کشویی \"لینک به\"، \"فایل رسانه\" را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6128
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "نحوه استفاده: روش کلاس CSS (پیشرفته)"
+
+#: class-ml-slider-lightbox.php:6130
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"برای توسعه‌دهندگان: کلاس <code>ml-lightbox-enabled</code> را برای فعال‌سازی "
+"Lightbox بر روی هر عنصری که حاوی تصاویر است، اضافه کنید."
+
+#: class-ml-slider-lightbox.php:6131
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "روش 1: کلاس‌های CSS اضافی ویرایشگر بلوک"
+
+#: class-ml-slider-lightbox.php:6133
+msgid "Select an image or gallery block."
+msgstr "یک تصویر یا بلوک گالری را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6134
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "در نوار کناری تنظیمات بلوک، به \"پیشرفته\" بروید."
+
+#: class-ml-slider-lightbox.php:6135
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr ""
+"کلاس <code>ml-lightbox-enabled</code> را به \"کلاس‌های اضافی CSS\" اضافه "
+"کنید."
+
+#: class-ml-slider-lightbox.php:6137
+msgid "Method 2: HTML/Code"
+msgstr "روش 2: HTML/کد"
+
+#: class-ml-slider-lightbox.php:6138
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "برای توسعه‌دهندگان HTML یا تم‌های سفارشی، کلاس را مستقیماً اضافه کنید:"
+
+#: class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "همه اسلایدها در یک Lightbox باز خواهند شد، با استفاده از %s"

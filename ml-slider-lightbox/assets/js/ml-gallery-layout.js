@@ -26,7 +26,97 @@
 		} );
 	}
 
+	function initShowcase( container ) {
+		var links        = Array.prototype.slice.call( container.querySelectorAll( 'a[data-src]' ) );
+		var showThumbs   = container.getAttribute( 'data-lg-thumbnails' ) === '1';
+		if ( ! links.length ) return;
+
+		var current = 0;
+
+		// Stage
+		var stage    = document.createElement( 'div' );
+		stage.className = 'ml-showcase-stage';
+		var stageImg = document.createElement( 'img' );
+		stageImg.className = 'ml-showcase-img';
+		stageImg.alt = '';
+		stage.appendChild( stageImg );
+		// Capture phase fires before child handlers (e.g. ml-lightbox-wrapper),
+		// preventing the main plugin from opening a second single-image lightbox.
+		stage.addEventListener( 'click', function ( e ) {
+			e.stopImmediatePropagation();
+			e.preventDefault();
+			if ( container._mlLgInstance ) {
+				container._mlLgInstance.openGallery( current );
+			}
+		}, true );
+
+		// Thumbnail strip (optional)
+		var thumbItems = [];
+		var thumbStrip = null;
+		if ( showThumbs ) {
+			thumbStrip = document.createElement( 'div' );
+			thumbStrip.className = 'ml-showcase-thumbs';
+			links.forEach( function ( link, i ) {
+				var sourceImg = link.querySelector( 'img' );
+				var thumb     = document.createElement( 'button' );
+				thumb.type    = 'button';
+				thumb.className = 'ml-showcase-thumb';
+				var t = document.createElement( 'img' );
+				t.src = sourceImg ? sourceImg.src : link.getAttribute( 'data-src' );
+				t.alt = sourceImg ? ( sourceImg.alt || '' ) : '';
+				thumb.appendChild( t );
+				thumb.addEventListener( 'click', function () { goTo( i ); } );
+				thumbStrip.appendChild( thumb );
+				thumbItems.push( thumb );
+			} );
+		}
+
+		// Nav
+		var nav      = document.createElement( 'div' );
+		nav.className = 'ml-showcase-nav';
+		var prevBtn  = document.createElement( 'button' );
+		prevBtn.type = 'button';
+		prevBtn.className = 'ml-showcase-btn ml-showcase-prev';
+		prevBtn.setAttribute( 'aria-label', 'Previous' );
+		prevBtn.innerHTML = '&larr;';
+		var counterEl = document.createElement( 'span' );
+		counterEl.className = 'ml-showcase-counter';
+		var nextBtn  = document.createElement( 'button' );
+		nextBtn.type = 'button';
+		nextBtn.className = 'ml-showcase-btn ml-showcase-next';
+		nextBtn.setAttribute( 'aria-label', 'Next' );
+		nextBtn.innerHTML = '&rarr;';
+		nav.appendChild( prevBtn );
+		nav.appendChild( counterEl );
+		nav.appendChild( nextBtn );
+		prevBtn.addEventListener( 'click', function () { goTo( current - 1 ); } );
+		nextBtn.addEventListener( 'click', function () { goTo( current + 1 ); } );
+
+		// Insert: stage → thumbs (if any) → nav
+		container.insertBefore( stage, container.firstChild );
+		if ( thumbStrip ) {
+			container.insertBefore( thumbStrip, stage.nextSibling );
+		}
+		container.insertBefore( nav, ( thumbStrip || stage ).nextSibling );
+
+		function goTo( index ) {
+			current = ( index + links.length ) % links.length;
+			var sourceImg = links[ current ].querySelector( 'img' );
+			stageImg.src = links[ current ].getAttribute( 'data-src' ) || ( sourceImg ? sourceImg.src : '' );
+			stageImg.alt = sourceImg ? ( sourceImg.alt || '' ) : '';
+			counterEl.textContent = ( current + 1 ) + ' / ' + links.length;
+			thumbItems.forEach( function ( t, i ) {
+				t.classList.toggle( 'is-active', i === current );
+			} );
+		}
+
+		goTo( 0 );
+	}
+
 	function init() {
+		// Showcase layout
+		document.querySelectorAll( '.ml-layout-showcase[data-ml-layout]' ).forEach( initShowcase );
+
 		// Justified layout
 		var containers = document.querySelectorAll( '.ml-layout-justified[data-ml-layout]' );
 		if ( ! containers.length ) return;

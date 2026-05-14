@@ -1,0 +1,1583 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 16:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: fi\n"
+
+#: class-ml-gallery.php:70
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "Jotkut näistä ominaisuuksista ovat saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-gallery.php:78
+msgid "Fade"
+msgstr "Häipyminen"
+
+#: class-ml-gallery.php:79
+msgid "Slide"
+msgstr "Liuku"
+
+#: class-ml-gallery.php:80 class-ml-gallery.php:560, fuzzy
+msgid "Zoom"
+msgstr "Zoom"
+
+#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
+msgid "Galleries"
+msgstr "Galleria"
+
+#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
+msgid "Gallery"
+msgstr "Galleria"
+
+#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
+#: class-ml-gallery.php:1124
+msgid "Add New Gallery"
+msgstr "Lisää uusi galleria"
+
+#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
+#: class-ml-gallery.php:258
+msgid "Edit Gallery"
+msgstr "Muokkaa galleriaa"
+
+#: class-ml-gallery.php:138 class-ml-gallery.php:241
+msgid "New Gallery"
+msgstr "Uusi galleria"
+
+#: class-ml-gallery.php:139
+msgid "Search Galleries"
+msgstr "Etsi gallerioita"
+
+#: class-ml-gallery.php:140
+msgid "No galleries found."
+msgstr "Gallerioita ei löytynyt."
+
+#: class-ml-gallery.php:141
+msgid "No galleries found in trash."
+msgstr "Gallerioita ei löytynyt roskakorista."
+
+#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Sinulla ei ole riittäviä oikeuksia käyttää tätä sivua."
+
+#: class-ml-gallery.php:238
+msgid "Gallery not found."
+msgstr "Galleriaa ei löytynyt."
+
+#: class-ml-gallery.php:260
+msgid "Save Gallery"
+msgstr "Tallenna galleria"
+
+#: class-ml-gallery.php:261
+msgid "Update Gallery"
+msgstr "Päivitä galleria"
+
+#: class-ml-gallery.php:274
+msgid "Back to Galleries"
+msgstr "Takaisin gallerioihin"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:1130
+#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: class-ml-gallery.php:308
+msgid "Gallery saved."
+msgstr "Galleria tallennettu."
+
+#: class-ml-gallery.php:319
+msgid "Enter gallery title"
+msgstr "Syötä gallerian otsikko"
+
+#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+msgid "Images"
+msgstr "Kuvat"
+
+#: class-ml-gallery.php:331
+msgid "No images added yet"
+msgstr "Kuvia ei ole vielä lisätty"
+
+#: class-ml-gallery.php:344 class-ml-gallery.php:892
+msgid "Remove image"
+msgstr "Poista kuva"
+
+#: class-ml-gallery.php:349 class-ml-gallery.php:893
+msgid "Edit caption"
+msgstr "Muokkaa kuvatekstiä"
+
+#: class-ml-gallery.php:362
+msgid "Add Images"
+msgstr "Lisää kuvia"
+
+#: class-ml-gallery.php:369
+msgid "Layout"
+msgstr "Asettelu"
+
+#: class-ml-gallery.php:372
+msgid "Gallery layout"
+msgstr "Gallerian asettelu"
+
+#: class-ml-gallery.php:384
+msgid "Grid"
+msgstr "Ruudukko"
+
+#: class-ml-gallery.php:398, fuzzy
+msgid "Masonry"
+msgstr "Masonry"
+
+#: class-ml-gallery.php:414
+msgid "Justified"
+msgstr "Oikeutettu"
+
+#: class-ml-gallery.php:427
+msgid "Carousel"
+msgstr "Karuselli"
+
+#: class-ml-gallery.php:436
+msgid "Columns"
+msgstr "Sarakkeet"
+
+#: class-ml-gallery.php:446
+msgid "Gap"
+msgstr "Väli"
+
+#: class-ml-gallery.php:460
+msgid "Lightbox Settings"
+msgstr "Lightbox-asetukset"
+
+#: class-ml-gallery.php:464
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "Zoom-ohjaimet vaativat MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:465
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "Koko näytön tila vaatii MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:466
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "Automaattinen toisto vaatii MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:467
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "Kuvan kierto vaatii MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:468
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "Sosiaalinen jakaminen vaatii MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:472
+msgid "Show left and right navigation arrows"
+msgstr "Näytä vasemman ja oikean navigointinuolen"
+
+#: class-ml-gallery.php:473
+msgid "Cycle back to the first image after reaching the last"
+msgstr "Palaa ensimmäiseen kuvaan viimeisen kuvan jälkeen"
+
+#: class-ml-gallery.php:474
+msgid "Navigate images using left and right arrow keys"
+msgstr "Selaa kuvia vasemman ja oikean nuolinäppäimen avulla"
+
+#: class-ml-gallery.php:475
+msgid "Scroll through images using the mouse wheel"
+msgstr "Selaa kuvia hiiren pyörällä"
+
+#: class-ml-gallery.php:476
+msgid "Swipe up or down to close the lightbox on touch devices"
+msgstr "Pyyhkäise ylös tai alas sulkeaksesi Lightboxin kosketuslaitteilla"
+
+#: class-ml-gallery.php:477
+msgid "Display the current image number and total count"
+msgstr "Näytä nykyisen kuvan numero ja kokonaismäärä"
+
+#: class-ml-gallery.php:478
+msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+msgstr "Näytä sarja pikkukuvia Lightboxin alareunassa"
+
+#: class-ml-gallery.php:479
+msgid "Display image captions in the lightbox"
+msgstr "Näytä kuvatekstit Lightboxissa"
+
+#: class-ml-gallery.php:480
+msgid "Show a download button for each image"
+msgstr "Näytä latauspainike jokaiselle kuvalle"
+
+#: class-ml-gallery.php:481
+msgid "Pinch and zoom into images"
+msgstr "Purista ja zoomaa kuviin"
+
+#: class-ml-gallery.php:482
+msgid "Expand the lightbox to fill the entire screen"
+msgstr "Laajenna Lightbox täyttämään koko näyttö"
+
+#: class-ml-gallery.php:483
+msgid "Rotate images left and right"
+msgstr "Käännä kuvia vasemmalle ja oikealle"
+
+#: class-ml-gallery.php:484
+msgid "Automatically advance through images at a set interval"
+msgstr "Etene automaattisesti kuvien läpi asetetuin välein"
+
+#: class-ml-gallery.php:485
+msgid "Add social sharing buttons for each image"
+msgstr "Lisää sosiaalisen jakamisen painikkeet jokaiselle kuvalle"
+
+#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
+#: class-ml-slider-lightbox.php:2409
+msgid "Navigation & Controls"
+msgstr "Navigointi & Ohjaimet"
+
+#: class-ml-gallery.php:525
+msgid "Animation effect when moving between images"
+msgstr "Animaatioefekti siirryttäessä kuvien välillä"
+
+#: class-ml-gallery.php:525
+msgid "Transition"
+msgstr "Siirtymä"
+
+#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
+msgid "Arrows"
+msgstr "Nuolit"
+
+#: class-ml-gallery.php:535
+msgid "Loop"
+msgstr "Silmukka"
+
+#: class-ml-gallery.php:536
+msgid "Keyboard"
+msgstr "Näppäimistö"
+
+#: class-ml-gallery.php:537
+msgid "Mouse wheel"
+msgstr "Hiiren pyörä"
+
+#: class-ml-gallery.php:538
+msgid "Swipe to close"
+msgstr "Pyyhkäise sulkeaksesi"
+
+#: class-ml-gallery.php:540
+msgid "Display"
+msgstr "Näytä"
+
+#: class-ml-gallery.php:541
+msgid "Slide counter"
+msgstr "Dia-laskuri"
+
+#: class-ml-gallery.php:542
+msgid "Thumbnail strip"
+msgstr "Pienkuvakaista"
+
+#: class-ml-gallery.php:543
+msgid "Captions"
+msgstr "Kuvatekstit"
+
+#: class-ml-gallery.php:544
+msgid "Download"
+msgstr "Lataa"
+
+#: class-ml-gallery.php:547
+msgid "Pager"
+msgstr "Sivunvaihtaja"
+
+#: class-ml-gallery.php:553
+msgid "Pager pagination requires MetaSlider Gallery Pro"
+msgstr "Sivunvaihtajan sivunvaihto vaatii MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
+#: class-ml-slider-lightbox.php:4008
+msgid "Enhanced Zoom & Controls"
+msgstr "Parannettu zoomaus & ohjaimet"
+
+#: class-ml-gallery.php:561
+msgid "Fullscreen"
+msgstr "Koko näyttö"
+
+#: class-ml-gallery.php:562
+msgid "Rotate"
+msgstr "Käännä"
+
+#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
+#: class-ml-slider-lightbox.php:4057
+msgid "Advanced Features"
+msgstr "Edistyneet ominaisuudet"
+
+#: class-ml-gallery.php:567
+msgid "Autoplay"
+msgstr "Automaattinen toisto"
+
+#: class-ml-gallery.php:568
+msgid "Share"
+msgstr "Jaa"
+
+#: class-ml-gallery.php:572
+msgid "Unique Image URLs"
+msgstr "Uniikit kuvan URL-osoitteet"
+
+#: class-ml-gallery.php:578
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "Uniikit kuvan URL-osoitteet vaativat MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
+#: class-ml-slider-lightbox.php:2058
+msgid "Appearance"
+msgstr "Ulkoasu"
+
+#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+msgid "Background Color"
+msgstr "Taustaväri"
+
+#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+msgid "Background Opacity"
+msgstr "Taustan läpinäkyvyys"
+
+#: class-ml-gallery.php:616
+msgid "Arrow Color"
+msgstr "Nuolen väri"
+
+#: class-ml-gallery.php:626
+msgid "Arrow Background"
+msgstr "Nuoli Tausta"
+
+#: class-ml-gallery.php:636
+msgid "Close Icon Color"
+msgstr "Sulje Kuvakkeen Väri"
+
+#: class-ml-gallery.php:646
+msgid "Close Background"
+msgstr "Sulje Tausta"
+
+#: class-ml-gallery.php:656
+msgid "Toolbar Icon Color"
+msgstr "Työkalupalkin Kuvakkeen Väri"
+
+#: class-ml-gallery.php:666
+msgid "Toolbar Background"
+msgstr "Työkalupalkin Tausta"
+
+#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:681
+msgid "Copy and paste into any post or page."
+msgstr "Kopioi ja liitä mihin tahansa viestiin tai sivulle."
+
+#: class-ml-gallery.php:701
+msgid "Edit Caption"
+msgstr "Muokkaa Kuvatekstiä"
+
+#: class-ml-gallery.php:702
+msgid "Close"
+msgstr "Sulje"
+
+#: class-ml-gallery.php:710
+msgid "Caption"
+msgstr "Kuvateksti"
+
+#: class-ml-gallery.php:717
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: class-ml-gallery.php:720
+msgid "Save Caption"
+msgstr "Tallenna Kuvateksti"
+
+#: class-ml-gallery.php:741
+msgid "Security check failed."
+msgstr "Turvatarkastus epäonnistui."
+
+#: class-ml-gallery.php:745
+msgid "You do not have sufficient permissions."
+msgstr "Sinulla ei ole riittäviä oikeuksia."
+
+#: class-ml-gallery.php:764
+msgid "Could not update the gallery. Please try again."
+msgstr "Galleriaa ei voitu päivittää. Yritä uudelleen."
+
+#: class-ml-gallery.php:890
+msgid "Select Gallery Images"
+msgstr "Valitse Galleria Kuvia"
+
+#: class-ml-gallery.php:891
+msgid "Add to Gallery"
+msgstr "Lisää Galleriaan"
+
+#: class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"MetaSlider Galleria vaatii, että MetaSlider ja ainakin yksi muu tuettu "
+"lightbox-laajennus on asennettu ja aktivoitu."
+
+#: class-ml-slider-lightbox.php:1060
+msgid "More info"
+msgstr "Lisätietoja"
+
+#: class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"Yksi tai useampi lightbox-laajennus on aktivoitu. Tämä voi aiheuttaa "
+"ristiriitoja MetaSlider Gallerian kanssa"
+
+#: class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "Muokkaa asetuksia"
+
+#: class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "Avaa lightboxissa?"
+
+#: class-ml-slider-lightbox.php:1150
+#, php-format
+msgid ""
+"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+"settings</a>."
+msgstr ""
+"Lightbox on käytössä kaikille diaesityksille <a href=\"%s\">Automaattisen "
+"tilan asetusten</a> kautta."
+
+#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
+msgid "Open in Lightbox"
+msgstr "Avaa lightboxissa"
+
+#: class-ml-slider-lightbox.php:1486
+msgid "View image"
+msgstr "Näytä kuva"
+
+#: class-ml-slider-lightbox.php:1734
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery vaatii, että MetaSlider on asennettuna ja aktivoituna."
+
+#: class-ml-slider-lightbox.php:1738
+msgid "Install MetaSlider"
+msgstr "Asenna MetaSlider"
+
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1945
+#, php-format
+msgid "Select pages to %s..."
+msgstr "Valitse sivut %s..."
+
+#: class-ml-slider-lightbox.php:1946
+#, php-format
+msgid "Select posts to %s..."
+msgstr "Valitse viestit %s..."
+
+#: class-ml-slider-lightbox.php:1947
+#, php-format
+msgid "Select post types to %s..."
+msgstr "Valitse viestityypit %s..."
+
+#: class-ml-slider-lightbox.php:1948
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "Valitse %1$s %2$s..."
+
+#: class-ml-slider-lightbox.php:1949
+msgid "Select post types to exclude"
+msgstr "Valitse suljettavat viestityypit"
+
+#: class-ml-slider-lightbox.php:1950
+msgid "Include"
+msgstr "Sisällytä"
+
+#: class-ml-slider-lightbox.php:1951
+msgid "Exclude"
+msgstr "Sulje pois"
+
+#: class-ml-slider-lightbox.php:1959, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1979
+msgid "Lightboxes"
+msgstr "Lightboxit"
+
+#: class-ml-slider-lightbox.php:1995
+msgid "Automatic Mode"
+msgstr "Automaattinen tila"
+
+#: class-ml-slider-lightbox.php:1996
+msgid "Manual Mode"
+msgstr "Manuaalinen tila"
+
+#: class-ml-slider-lightbox.php:1998
+msgid "Behavior"
+msgstr "Käyttäytyminen"
+
+#: class-ml-slider-lightbox.php:2003
+msgid "Upgrade to Pro"
+msgstr "Päivitä Pro-versioon"
+
+#: class-ml-slider-lightbox.php:2023
+msgid "Settings saved successfully!"
+msgstr "Asetukset tallennettu onnistuneesti!"
+
+#: class-ml-slider-lightbox.php:2033
+msgid "Where to Enable Automatically"
+msgstr "Missä aktivoida automaattisesti"
+
+#: class-ml-slider-lightbox.php:2040
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider-esitykset"
+
+#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+msgid "Content Filtering"
+msgstr "Sisällön suodatus"
+
+#: class-ml-slider-lightbox.php:2059
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr ""
+"Mukauta värejä, läpinäkyvyyttä ja visuaalista tyyliä lightbox-peitteen ja "
+"ohjainten osalta."
+
+#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+msgid "Background & Overlay"
+msgstr "Tausta & Peite"
+
+#: class-ml-slider-lightbox.php:2068
+msgid "Navigation"
+msgstr "Navigointi"
+
+#: class-ml-slider-lightbox.php:2073
+msgid "\"Open in Lightbox\" Button"
+msgstr "\"Avaa Lightboxissa\" -painike"
+
+#: class-ml-slider-lightbox.php:2089
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>Kolmannen osapuolen lisäosa havaittu:</strong> Kolmannen osapuolen "
+"lightbox-lisäosa on aktiivinen. Nämä asetukset eivät välttämättä koske "
+"MetaSlideria, mutta toimivat silti WordPress-sisällön lightboxien kanssa."
+
+#: class-ml-slider-lightbox.php:2104
+msgid "Media & Video Enhancements"
+msgstr "Media & Videoparannukset"
+
+#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+msgid "Social & Navigation"
+msgstr "Sosiaalinen & Navigointi"
+
+#: class-ml-slider-lightbox.php:2136
+msgid "Manual Lightbox Options"
+msgstr "Manuaaliset Lightbox-vaihtoehdot"
+
+#: class-ml-slider-lightbox.php:2137
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr ""
+"Manuaaliset ohjaimet ja WordPressin ohitukset, jotka toimivat itsenäisesti "
+"automaattisista asetuksista."
+
+#: class-ml-slider-lightbox.php:2319
+msgid "Navigation Icons"
+msgstr "Navigointikuvakkeet"
+
+#: class-ml-slider-lightbox.php:2326
+msgid "Buttons"
+msgstr "Painikkeet"
+
+#: class-ml-slider-lightbox.php:2357
+msgid "Close Button"
+msgstr "Sulje-painike"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Lightbox Toolbar"
+msgstr "Lightbox-työkalurivi"
+
+#: class-ml-slider-lightbox.php:2373
+msgid "Button Colors"
+msgstr "Painikkeiden värit"
+
+#: class-ml-slider-lightbox.php:2381
+msgid "Icon Colors"
+msgstr "Kuvakkeiden värit"
+
+#: class-ml-slider-lightbox.php:2389
+msgid "Button Text"
+msgstr "Painikkeen teksti"
+
+#: class-ml-slider-lightbox.php:2397
+msgid "Button Position"
+msgstr "Painikkeen sijainti"
+
+#: class-ml-slider-lightbox.php:2755
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "Määritä yleiset lightbox-asetukset, jotka soveltuvat koko sivustolle."
+
+#: class-ml-slider-lightbox.php:2760
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr ""
+"Määritä asetukset, jotka ovat erityisesti MetaSlider lightbox "
+"-toiminnallisuudelle."
+
+#: class-ml-slider-lightbox.php:2765
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "Valitse, missä lightbox otetaan käyttöön automaattisesti."
+
+#: class-ml-slider-lightbox.php:2771
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Valitse, kuinka suodatat sisältöä lightbox-käsittelyä varten ja määritä, "
+"mitkä sivut, viestit tai valitsijat sisällytetään tai poistetaan."
+
+#: class-ml-slider-lightbox.php:2787
+msgid "Processing Mode"
+msgstr "Käsittelytila"
+
+#: class-ml-slider-lightbox.php:2790
+msgid "Process all content EXCEPT the items specified below"
+msgstr "Käsittele kaikki sisältö, POIS LUKIEN alla määritellyt kohteet"
+
+#: class-ml-slider-lightbox.php:2793
+msgid "ONLY process the items specified below"
+msgstr "Käsittele VAIN alla määritellyt kohteet"
+
+#: class-ml-slider-lightbox.php:2800
+msgid "Inclusion Mode"
+msgstr "Sisällyttämistila"
+
+#: class-ml-slider-lightbox.php:2804
+msgid "Exclusion Mode"
+msgstr "Poissulkemistila"
+
+#: class-ml-slider-lightbox.php:2824
+msgid "Images in post content"
+msgstr "Kuvat viestisisällössä"
+
+#: class-ml-slider-lightbox.php:2825
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"Kun se on käytössä, yksittäiset linkittömät kuvat ja \"Suurenna "
+"napsauttamalla\" asetuksella varustetut viestit ja sivut avautuvat "
+"automaattisesti lightboxissa."
+
+#: class-ml-slider-lightbox.php:2841
+msgid "Images and videos in widgets and sidebars"
+msgstr "Kuvat ja videot widgeteissä ja sivupalkissa"
+
+#: class-ml-slider-lightbox.php:2842
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"Kun se on käytössä, kuvat ja videot widget-alueilla avautuvat "
+"automaattisesti lightboxissa."
+
+#: class-ml-slider-lightbox.php:2858
+msgid "Gallery shortcodes and blocks"
+msgstr "Galleria-shortcode ja -lohko"
+
+#: class-ml-slider-lightbox.php:2859
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"Kun se on käytössä, kuvat WordPress [gallery] -shortcodeissa ja Gutenberg "
+"Galleria -lohkoissa avautuvat automaattisesti lightboxissa."
+
+#: class-ml-slider-lightbox.php:2875
+msgid "Featured images"
+msgstr "Esikatselukuvat"
+
+#: class-ml-slider-lightbox.php:2876
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"Kun se on käytössä, esikatselukuvat (viestithumbnailit) avautuvat "
+"automaattisesti lightboxissa napsautettaessa."
+
+#: class-ml-slider-lightbox.php:2885
+msgid ""
+"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
+"the per-slider setting."
+msgstr ""
+"Ota lightbox automaattisesti käyttöön kaikissa MetaSlider-esityksissä, "
+"ohittaen per-slider-asetuksen."
+
+#: class-ml-slider-lightbox.php:2899
+msgid "MetaSlider slideshows"
+msgstr "MetaSlider-esitykset"
+
+#: class-ml-slider-lightbox.php:2900
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+"overriding the per-slider setting."
+msgstr ""
+"Kun se on käytössä, kaikki MetaSlider-esitykset avautuvat liu'uttamalla "
+"Lightboxissa, ohittaen per-liu'utusasetuksen."
+
+#: class-ml-slider-lightbox.php:2916
+msgid "Videos in post content"
+msgstr "Videot viestisisällössä"
+
+#: class-ml-slider-lightbox.php:2917
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"Kun se on käytössä, itsenäiset videolohkot (HTML5-videot, "
+"YouTube-upotukset, Vimeo-upotukset) viesti-/sivusisällössä avautuvat "
+"automaattisesti Lightboxissa."
+
+#: class-ml-slider-lightbox.php:2932
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Taustaväri Lightbox-peitteen päälle. Tummat värit toimivat parhaiten kuvien "
+"katselussa."
+
+#: class-ml-slider-lightbox.php:2945
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Taustaväri \"Avaa Lightboxissa\" -painikkeille, jotka näkyvät "
+"liu'utuksissa, kuvissa ja videoissa."
+
+#: class-ml-slider-lightbox.php:2958
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Tekstin väri \"Avaa Lightboxissa\" -painikkeille, jotka näkyvät "
+"liu'utuksissa, kuvissa ja videoissa."
+
+#: class-ml-slider-lightbox.php:2971
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Taustaväri, kun hiiri on \"Avaa Lightboxissa\" -painikkeen päällä."
+
+#: class-ml-slider-lightbox.php:2984
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Tekstin väri, kun hiiri on \"Avaa Lightboxissa\" -painikkeen päällä."
+
+#: class-ml-slider-lightbox.php:2997
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"Mukautettu teksti Lightbox-painikkeille. Tämä teksti näkyy kaikissa \"Avaa "
+"Lightboxissa\" -painikkeissa koko sivustolla."
+
+#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+msgid "Top Right (Default)"
+msgstr "Yläoikea (oletus)"
+
+#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
+msgid "Top Left"
+msgstr "Ylävasen"
+
+#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
+msgid "Bottom Right"
+msgstr "Alhaaoikea"
+
+#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
+msgid "Bottom Left"
+msgstr "Alhavasen"
+
+#: class-ml-slider-lightbox.php:3023
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "Valitse, mihin kohtaan close-painike (X) sijoitetaan Lightbox-peitteeseen."
+
+#: class-ml-slider-lightbox.php:3049
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"Valitse, mihin kohtaan \"Avaa Lightboxissa\" -painikkeet sijoitetaan "
+"liu'utuksissa, kuvissa, gallerioissa ja videoissa."
+
+#: class-ml-slider-lightbox.php:3062
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Väri edellisille ja seuraaville navigointinuolille Lightboxissa."
+
+#: class-ml-slider-lightbox.php:3075
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr ""
+"Nuolen väri, kun hiiri on päällä. Luo visuaalista palautetta, kun käyttäjät "
+"liikuttavat hiirtään navigointinuolien yli."
+
+#: class-ml-slider-lightbox.php:3088
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Close-painikkeen (X) väri Lightboxissa."
+
+#: class-ml-slider-lightbox.php:3101
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr ""
+"Close-painikkeen väri, kun hiiri on päällä. Luo visuaalista palautetta, kun "
+"käyttäjät liikuttavat hiirtään close-painikkeen yli."
+
+#: class-ml-slider-lightbox.php:3114
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"Väri työkalupalkin kuvakkeille ja laskurin tekstille lightboxissa. "
+"Vaikuttaa zoom- ja koko näytön kuvakkeisiin (Pro) sekä kuvien laskurin "
+"näyttöön."
+
+#: class-ml-slider-lightbox.php:3127
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"Työkalupalkin kuvakkeen väri hiiren ollessa päällä. Luo visuaalista "
+"palautetta, kun käyttäjät liikuttavat hiirtään työkalupalkin kuvakkeiden ja "
+"laskurin yli."
+
+#: class-ml-slider-lightbox.php:3140
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr "Taustaväri edelliset ja seuraavat navigointinuoli painikkeille."
+
+#: class-ml-slider-lightbox.php:3153
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr ""
+"Taustaväri nuolipainikkeille hiiren ollessa päällä. Luo visuaalista "
+"palautetta, kun käyttäjät liikuttavat hiirtään nuolien yli."
+
+#: class-ml-slider-lightbox.php:3166
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "Taustaväri suljepainikkeelle (X) lightboxissa."
+
+#: class-ml-slider-lightbox.php:3179
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr ""
+"Taustaväri suljepainikkeelle hiiren ollessa päällä. Luo visuaalista "
+"palautetta, kun käyttäjät liikuttavat hiirtään suljepainikkeen yli."
+
+#: class-ml-slider-lightbox.php:3192
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "Taustaväri työkalupalkin kuvakkeille lightboxissa."
+
+#: class-ml-slider-lightbox.php:3205
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr ""
+"Taustaväri työkalupalkin kuvakkeille hiiren ollessa päällä. Luo visuaalista "
+"palautetta, kun käyttäjät liikuttavat hiirtään työkalupalkin kuvakkeiden "
+"yli."
+
+#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
+#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+msgid "Icon"
+msgstr "Kuvake"
+
+#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+msgid "Icon Hover"
+msgstr "Kuvake hiiren ollessa päällä"
+
+#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
+#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3406
+msgid "Background"
+msgstr "Tausta"
+
+#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
+#: class-ml-slider-lightbox.php:3409
+msgid "Background Hover"
+msgstr "Tausta hiiren ollessa päällä"
+
+#: class-ml-slider-lightbox.php:3317
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr "Aseta lightboxin taustan opasiteetti (0 = läpinäkyvä, 1 = läpinäkymätön)."
+
+#: class-ml-slider-lightbox.php:3328
+msgid "Show navigation arrows in lightbox"
+msgstr "Näytä navigointinuolet lightboxissa"
+
+#: class-ml-slider-lightbox.php:3329
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"Näytä vasen/oikea nuoli navigointia varten. Mahdollistaa myös näppäimistön "
+"navigoinnin (← → näppäimet, ESC sulkemiseen). Tämä on saatavilla "
+"esityksille ja kuvagallerioille."
+
+#: class-ml-slider-lightbox.php:3338
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "Mukauta lightboxin taustaa ja peittoa."
+
+#: class-ml-slider-lightbox.php:3343
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr ""
+"Mukauta navigointikuvakkeita (sulje, edellinen, seuraava nuoli) "
+"lightboxeille."
+
+#: class-ml-slider-lightbox.php:3348
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"Mukauta \"Avaa Lightboxissa\" -painikkeita, joita voidaan lisätä dioihin, "
+"kuviin, gallerioihin ja videoihin."
+
+#: class-ml-slider-lightbox.php:3368
+msgid "Text"
+msgstr "Teksti"
+
+#: class-ml-slider-lightbox.php:3371
+msgid "Text Hover"
+msgstr "Teksti hiiren ollessa päällä"
+
+#: class-ml-slider-lightbox.php:3417
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr ""
+"Määritä navigointi- ja ohjausvaihtoehdot, jotka koskevat kaikkia "
+"lightboxeja."
+
+#: class-ml-slider-lightbox.php:3427
+msgid "Show thumbnails"
+msgstr "Näytä pikkukuvat"
+
+#: class-ml-slider-lightbox.php:3428
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"Näytä pikkukuvia lightboxin alareunassa helppoa navigointia varten. Tämä on "
+"saatavilla diaesityksissä ja kuvagallerioissa."
+
+#: class-ml-slider-lightbox.php:3440
+msgid "Show \"Open in Lightbox\" button"
+msgstr "Näytä \"Avaa Lightboxissa\" -painike"
+
+#: class-ml-slider-lightbox.php:3441
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"Kun se on käytössä, näyttää painikkeen lightboxin avaamiseen. Kun se on "
+"pois käytöstä, diaan, kuvaan tai videoon napsauttaminen avaa suoraan "
+"lightboxin."
+
+#: class-ml-slider-lightbox.php:3458
+msgid "Show an icon instead of button"
+msgstr "Näytä kuvake painikkeen sijaan"
+
+#: class-ml-slider-lightbox.php:3459
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr "Kun se on käytössä, näyttää pienen kuvakkeen täyden painiketekstin sijaan."
+
+#: class-ml-slider-lightbox.php:3473
+msgid "Show captions"
+msgstr "Näytä kuvatekstit"
+
+#: class-ml-slider-lightbox.php:3474
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"Kun se on käytössä, näytä kuvatekstit lightboxissa. Tämä on saatavilla "
+"diaesityksissä, kuvissa ja kuvagallerioissa."
+
+#: class-ml-slider-lightbox.php:3481
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr "Edistyneet lightbox-ominaisuudet ovat saatavilla MetaSlider Gallery Pro:sta."
+
+#: class-ml-slider-lightbox.php:3483
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr ""
+"Hanki esikatselu edistyneistä ominaisuuksista, jotka ovat saatavilla "
+"MetaSlider Gallery Pro:ssa."
+
+#: class-ml-slider-lightbox.php:3486
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr ""
+"Nämä edistyneet LightGallery.js-laajennukset ovat saatavilla Pro-versiossa, "
+"jossa on lisämuokkausmahdollisuuksia."
+
+#: class-ml-slider-lightbox.php:3512
+msgid "Include specific Pages"
+msgstr "Sisällytä tietyt sivut"
+
+#: class-ml-slider-lightbox.php:3514
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Valitse sivut, joilla lightboxin tulisi olla pois käytöstä. Näyttää "
+"enintään 100 viimeisintä sivua. Kirjoita etsiäksesi."
+
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Valitse sivut, joilla lightboxin tulisi olla käytössä. Näyttää enintään 100 "
+"viimeisintä sivua. Kirjoita etsiäksesi."
+
+#: class-ml-slider-lightbox.php:3557
+msgid "Include specific Posts"
+msgstr "Sisällytä tietyt viestit"
+
+#: class-ml-slider-lightbox.php:3559
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Valitse viestit, joilla lightboxin tulisi olla pois käytöstä. Näyttää "
+"enintään 100 viimeisintä viestiä. Kirjoita etsiäksesi."
+
+#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Valitse viestit, joilla lightboxin tulisi olla käytössä. Näyttää enintään "
+"100 viimeisintä viestiä. Kirjoita etsiäksesi."
+
+#: class-ml-slider-lightbox.php:3587
+msgid "include"
+msgstr "sisällytä"
+
+#: class-ml-slider-lightbox.php:3587
+msgid "exclude"
+msgstr "poista"
+
+#: class-ml-slider-lightbox.php:3626
+#, php-format
+msgid "%s specific %s"
+msgstr "%s spesifinen %s"
+
+#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "Näyttää enintään 100 viimeisintä %s. Kirjoita etsiäksesi."
+
+#: class-ml-slider-lightbox.php:3675
+msgid "Include specific post types"
+msgstr "Sisällytä tietyt viestityypit"
+
+#: class-ml-slider-lightbox.php:3677
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr "Valitse viestityypit, joissa Lightboxin pitäisi olla täysin pois käytöstä."
+
+#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "Valitse viestityypit, joissa Lightboxin pitäisi olla täysin käytössä."
+
+#: class-ml-slider-lightbox.php:3712
+msgid "Exclude by CSS selector"
+msgstr "Poissulje CSS-valitsimen mukaan"
+
+#: class-ml-slider-lightbox.php:3715
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"CSS-valitsimet elementeille, jotka poistetaan Lightboxista (yksi per rivi). "
+"Esimerkit:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+
+#: class-ml-slider-lightbox.php:3738
+msgid "Minimum Image Width"
+msgstr "Minimikuva leveys"
+
+#: class-ml-slider-lightbox.php:3741
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"Ohita kuvat, jotka ovat kapeampia kuin tämä leveys (pikseleinä). Käyttää "
+"näytettävää leveyttä, ei varsinaista kuvakoon kokoa. Tämä on hyödyllistä "
+"pienten kuvakkeiden, merkkien ja painikkeiden poistamiseksi."
+
+#: class-ml-slider-lightbox.php:3764
+msgid "Minimum Image Height"
+msgstr "Minimikuva korkeus"
+
+#: class-ml-slider-lightbox.php:3767
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"Ohita kuvat, jotka ovat lyhyempiä kuin tämä korkeus (pikseleinä). Käyttää "
+"näytettävää korkeutta, ei varsinaista kuvakoon kokoa. Tämä on hyödyllistä "
+"pienten kuvakkeiden, merkkien ja painikkeiden poistamiseksi."
+
+#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr ""
+"Parannettu median käsittely ja videotoisto-ominaisuudet ammattimaisille "
+"gallerioille."
+
+#: class-ml-slider-lightbox.php:3790
+msgid "Advanced features for professional lightbox implementations."
+msgstr "Edistyneet ominaisuudet ammattimaisille Lightbox-toteutuksille."
+
+#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+msgid "Enable Zoom"
+msgstr "Ota zoomaus käyttöön"
+
+#: class-ml-slider-lightbox.php:3802
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr ""
+"Kaksoisnapsauta zoomataksesi, zoomausohjaimet, hiiren rullauszoom ja "
+"zoomaustäyttöasetukset."
+
+#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+msgid "Enable Fullscreen"
+msgstr "Ota koko näyttö käyttöön"
+
+#: class-ml-slider-lightbox.php:3813
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr ""
+"Natiivi HTML5 koko näytön tuki näppäimistön pikakuvakkeilla (F-näppäin) "
+"immersiivista katselua varten."
+
+#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+msgid "Enable Rotate"
+msgstr "Ota kierto käyttöön"
+
+#: class-ml-slider-lightbox.php:3824
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr ""
+"Käännä kuvia myötä- ja vastapäivään, käännä vaaka/pystysuunnassa "
+"työkalupalkin ohjaimilla."
+
+#: class-ml-slider-lightbox.php:3834
+msgid "Enable Video"
+msgstr "Ota video käyttöön"
+
+#: class-ml-slider-lightbox.php:3835
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr ""
+"Parannettu videoiden tuki YouTubelle, Vimeolle, HTML5-videoille, joissa on "
+"automaattinen toisto ja laadunhallinta."
+
+#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:4170
+msgid "Enable Unique Image URLs"
+msgstr "Ota käyttöön ainutlaatuiset kuvalinkit"
+
+#: class-ml-slider-lightbox.php:3846
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr ""
+"Ainutlaatuiset linkit jokaiselle gallerian kuvalla, joissa on selaimen "
+"takaisin/eteenpäin navigointituki."
+
+#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+msgid "Enable Autoplay"
+msgstr "Ota käyttöön automaattinen toisto"
+
+#: class-ml-slider-lightbox.php:3857
+msgid "Automatically advance through images in the lightbox."
+msgstr "Siirry automaattisesti kuvista lightboxissa."
+
+#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+msgid "Enable Share"
+msgstr "Ota käyttöön jakaminen"
+
+#: class-ml-slider-lightbox.php:3868
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr ""
+"Sosiaalisen median jakopainikkeet Facebookille, Twitterille, Pinterestille "
+"ja suoran URL-jakamisen mahdollisuus."
+
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+msgid "Enable Pager"
+msgstr "Ota käyttöön sivutus"
+
+#: class-ml-slider-lightbox.php:3879
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr ""
+"Minimalistiset sivutuspisteet puhtaaseen navigointiin ilman "
+"pikkukuvaesikatseluja."
+
+#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr ""
+"Ammattimaiset zoomaus- ja kuvainteraktiovalvontatoiminnot parannetun "
+"käyttäjäkokemuksen saavuttamiseksi."
+
+#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr "Sosiaalisen jakamisen ja navigoinnin parannuksia sitoutumisen lisäämiseksi."
+
+#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+msgid "Advanced functionality including URL management and automation features."
+msgstr ""
+"Edistykselliset toiminnot, mukaan lukien URL-hallinta ja "
+"automaatio-ominaisuudet."
+
+#: class-ml-slider-lightbox.php:3962
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "Tämä ominaisuus on saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr ""
+"Salli käyttäjien zoomata sisään ja ulos kaksoisnapsautuksella, hiiren "
+"rullalla ja zoomausohjaimilla."
+
+#: class-ml-slider-lightbox.php:4016
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "Zoomausohjaimet ovat saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4021
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr "Natiiv HTML5-koko ruudun tila mukaansatempaavaa kuvien katselua varten."
+
+#: class-ml-slider-lightbox.php:4023
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "Koko ruudun tila on saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr "Käännä kuvia myötä- ja vastapäivään ja käännä vaaka/vertikaali."
+
+#: class-ml-slider-lightbox.php:4030
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "Kuvan kierto on saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4042
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr ""
+"Sisäänrakennettu sosiaalisen median jakaminen Facebookille, Twitterille ja "
+"Pinterestille."
+
+#: class-ml-slider-lightbox.php:4044
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "Sosiaalinen jakaminen on saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr ""
+"Minimalistiset sivunumeropisteet pikkuvalokuvien sijaan puhtaamman "
+"käyttöliittymän saavuttamiseksi."
+
+#: class-ml-slider-lightbox.php:4051
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "Sivunumerointi on saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr ""
+"Luo ainutlaatuiset URL-osoitteet jokaiselle galleria-kuvalle selaimen "
+"takaisin/eteenpäin navigoinnilla."
+
+#: class-ml-slider-lightbox.php:4065
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr ""
+"Ainutlaatuiset kuvien URL-osoitteet ovat saatavilla MetaSlider Gallery "
+"Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "Automaattinen diaesitys ajastuskontrollilla ja edistymispalkilla."
+
+#: class-ml-slider-lightbox.php:4072
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "Automaattinen toisto on saatavilla MetaSlider Gallery Pro:ssa"
+
+#: class-ml-slider-lightbox.php:4089
+msgid "Features"
+msgstr "Ominaisuudet"
+
+#: class-ml-slider-lightbox.php:4090
+msgid "Free"
+msgstr "Ilmainen"
+
+#: class-ml-slider-lightbox.php:4091, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+msgid "Installed"
+msgstr "Asennettu"
+
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+msgid "Upgrade now"
+msgstr "Päivitä nyt"
+
+#: class-ml-slider-lightbox.php:4106
+msgid "Automatic lightbox for images"
+msgstr "Automaattinen lightbox kuville"
+
+#: class-ml-slider-lightbox.php:4107
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "Ota automaattisesti käyttöön lightbox kaikille sivustosi kuville."
+
+#: class-ml-slider-lightbox.php:4114
+msgid "MetaSlider integration"
+msgstr "MetaSlider-integraatio"
+
+#: class-ml-slider-lightbox.php:4115
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "Saumaton integraatio MetaSlider-diaesityksiin."
+
+#: class-ml-slider-lightbox.php:4122
+msgid "WordPress gallery support"
+msgstr "WordPress-galleria-tuki"
+
+#: class-ml-slider-lightbox.php:4123
+msgid "Support for WordPress native galleries and blocks."
+msgstr "Tuki WordPressin natiiveille gallerioille ja lohkoille."
+
+#: class-ml-slider-lightbox.php:4130
+msgid "Appearance customization"
+msgstr "Ulkoasun mukauttaminen"
+
+#: class-ml-slider-lightbox.php:4131
+msgid "Customize colors, opacity, and button styles."
+msgstr "Mukauta värejä, läpinäkyvyyttä ja painikkeiden tyylejä."
+
+#: class-ml-slider-lightbox.php:4138
+msgid "Zoom controls"
+msgstr "Zoom-ohjaimet"
+
+#: class-ml-slider-lightbox.php:4146
+msgid "Fullscreen mode"
+msgstr "Koko näyttö -tila"
+
+#: class-ml-slider-lightbox.php:4147
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "Natiivi HTML5 koko näyttö -tila immersiiviseen kuvien katseluun."
+
+#: class-ml-slider-lightbox.php:4154
+msgid "Rotate and flip images"
+msgstr "Kuvien kiertäminen ja kääntäminen"
+
+#: class-ml-slider-lightbox.php:4162
+msgid "Social media sharing"
+msgstr "Sosiaalisen median jakaminen"
+
+#: class-ml-slider-lightbox.php:4163
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "Sisäänrakennettu jakaminen Facebookiin, Twitteriin ja Pinteresttiin."
+
+#: class-ml-slider-lightbox.php:4178
+msgid "Autoplay slideshow"
+msgstr "Automaattinen diaesitys"
+
+#: class-ml-slider-lightbox.php:4186
+msgid "Pager navigation"
+msgstr "Sivunavigointi"
+
+#: class-ml-slider-lightbox.php:4194
+msgid "Premium support"
+msgstr "Premium-tuki"
+
+#: class-ml-slider-lightbox.php:4195
+msgid "Have your specific queries addressed directly by our experts."
+msgstr "Kysy asiantuntijoiltamme suoraan erityisiä kysymyksiäsi."
+
+#: class-ml-slider-lightbox.php:6006
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr ""
+"Määritä, miten lightbox vuorovaikuttaa WordPressin sisäänrakennettujen "
+"ominaisuuksien kanssa."
+
+#: class-ml-slider-lightbox.php:6021
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "Ohita WordPressin \"Suurennus napsautettaessa\" -asetukset"
+
+#: class-ml-slider-lightbox.php:6022
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"Kun käytössä, poistaa WordPressin sisäänrakennetun lightboxin käytöstä ja "
+"käyttää meidän lightboxiamme kuville, jotka on asetettu \"Suurennus "
+"napsautettaessa\". Kun pois päältä, kunnioittaa WordPressin asetuksia ja "
+"ohittaa kuvat, jotka on asetettu \"Suurennus napsautettaessa\"."
+
+#: class-ml-slider-lightbox.php:6038
+msgid "Override \"Link to Image File\" Setting"
+msgstr "Ohita \"Linkki kuvafilerille\" -asetukset"
+
+#: class-ml-slider-lightbox.php:6039
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"Kun käytössä, käyttää meidän lightboxiamme kuville, jotka on linkitetty "
+"niiden täysikokoiseen kuvafilerille (yleensä asetettu \"Linkki "
+"kuvafilerille\" -asetuksessa lohkoeditorissa). Kun pois päältä, kunnioittaa "
+"alkuperäistä linkkäyttäytymistä."
+
+#: class-ml-slider-lightbox.php:6070
+msgid "Exclude Post Types from Manual Processing"
+msgstr "Poista postityypit manuaalisesta käsittelystä"
+
+#: class-ml-slider-lightbox.php:6073
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"Valitse postityypit, joissa manuaaliset vaihtoehdot eivät saa toimia. "
+"Esimerkiksi, valitse \"Tuotteet (tuote)\" poistaaksesi manuaalisen "
+"lightboxin WooCommerce-tuotesivuilta samalla kun se pysyy aktiivisena "
+"muualla."
+
+#: class-ml-slider-lightbox.php:6097
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "Kuinka käyttää: WordPress \"Suurennus napsautettaessa\""
+
+#: class-ml-slider-lightbox.php:6099
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"WordPressillä on sisäänrakennettu \"Suurennus napsautettaessa\" -toiminto "
+"kuville. Tässä on, miten voit aktivoida sen:"
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+msgid "Select an image in the block editor."
+msgstr "Valitse kuva lohkoeditorissa."
+
+#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
+msgid "In the block toolbar, click on the Link icon."
+msgstr "Napsauta lohkotyökalupalkissa Linkki-kuvaketta."
+
+#: class-ml-slider-lightbox.php:6103
+msgid "Select \"Enlarge on click\"."
+msgstr "Valitse \"Suurennus klikkauksella\"."
+
+#: class-ml-slider-lightbox.php:6109
+msgid "How to use: \"Link to Image File\""
+msgstr "Kuinka käyttää: \"Linkki kuvafileeseen\""
+
+#: class-ml-slider-lightbox.php:6111
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr ""
+"Voit linkittää kuvat suoraan niiden täysikokoiseen mediatiedostoon. Näin se "
+"tehdään:"
+
+#: class-ml-slider-lightbox.php:6112
+msgid "For the Block Editor:"
+msgstr "Blokkieditorille:"
+
+#: class-ml-slider-lightbox.php:6116
+msgid "Choose \"Link to image file\"."
+msgstr "Valitse \"Linkki kuvafileeseen\"."
+
+#: class-ml-slider-lightbox.php:6118
+msgid "For the Classic Editor:"
+msgstr "Klassiselle editorille:"
+
+#: class-ml-slider-lightbox.php:6120
+msgid "Select an image."
+msgstr "Valitse kuva."
+
+#: class-ml-slider-lightbox.php:6121
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "Kuvan työkalupalkissa, napsauta Muokkaa-kuvaketta."
+
+#: class-ml-slider-lightbox.php:6122
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "Valitse \"Mediatiedosto\" \"Linkki\" pudotusvalikosta."
+
+#: class-ml-slider-lightbox.php:6128
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "Kuinka käyttää: CSS-luokka -menetelmä (edistyneet)"
+
+#: class-ml-slider-lightbox.php:6130
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"Kehittäjille: Lisää <code>ml-lightbox-enabled</code> -luokka ottaaksesi "
+"lightboxin käyttöön kaikissa elementeissä, joissa on kuvia."
+
+#: class-ml-slider-lightbox.php:6131
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "Menetelmä 1: Blokki-editorin lisä-CSS-luokat"
+
+#: class-ml-slider-lightbox.php:6133
+msgid "Select an image or gallery block."
+msgstr "Valitse kuva tai galleria-lohko."
+
+#: class-ml-slider-lightbox.php:6134
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "Lohkoasetusten sivupalkissa, vieritä kohtaan \"Edistyneet\"."
+
+#: class-ml-slider-lightbox.php:6135
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr "Lisää <code>ml-lightbox-enabled</code> \"Lisä-CSS-luokka(ta)\"."
+
+#: class-ml-slider-lightbox.php:6137
+msgid "Method 2: HTML/Code"
+msgstr "Menetelmä 2: HTML/Koodi"
+
+#: class-ml-slider-lightbox.php:6138
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "Mukautetuille HTML- tai teema-kehittäjille, lisää luokka suoraan:"
+
+#: class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "Kaikki diat avautuvat lightboxissa, käyttäen %s"

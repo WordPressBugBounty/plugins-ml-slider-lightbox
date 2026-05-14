@@ -1,0 +1,1606 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 16:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: ro-RO\n"
+
+#: class-ml-gallery.php:70
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "Unele dintre aceste funcții sunt disponibile în MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:78
+msgid "Fade"
+msgstr "Fading"
+
+#: class-ml-gallery.php:79
+msgid "Slide"
+msgstr "Glisare"
+
+#: class-ml-gallery.php:80 class-ml-gallery.php:560, fuzzy
+msgid "Zoom"
+msgstr "Zoom"
+
+#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
+msgid "Galleries"
+msgstr "Galerii"
+
+#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
+msgid "Gallery"
+msgstr "Galerie"
+
+#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
+#: class-ml-gallery.php:1124
+msgid "Add New Gallery"
+msgstr "Adaugă galerie nouă"
+
+#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
+#: class-ml-gallery.php:258
+msgid "Edit Gallery"
+msgstr "Editează galerie"
+
+#: class-ml-gallery.php:138 class-ml-gallery.php:241
+msgid "New Gallery"
+msgstr "Galerie nouă"
+
+#: class-ml-gallery.php:139
+msgid "Search Galleries"
+msgstr "Caută galerii"
+
+#: class-ml-gallery.php:140
+msgid "No galleries found."
+msgstr "Nu au fost găsite galerii."
+
+#: class-ml-gallery.php:141
+msgid "No galleries found in trash."
+msgstr "Nu au fost găsite galerii în coș."
+
+#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nu aveți permisiuni suficiente pentru a accesa această pagină."
+
+#: class-ml-gallery.php:238
+msgid "Gallery not found."
+msgstr "Galeria nu a fost găsită."
+
+#: class-ml-gallery.php:260
+msgid "Save Gallery"
+msgstr "Salvează galerie"
+
+#: class-ml-gallery.php:261
+msgid "Update Gallery"
+msgstr "Actualizează galerie"
+
+#: class-ml-gallery.php:274
+msgid "Back to Galleries"
+msgstr "Înapoi la galerii"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:1130
+#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: class-ml-gallery.php:308
+msgid "Gallery saved."
+msgstr "Galerie salvată."
+
+#: class-ml-gallery.php:319
+msgid "Enter gallery title"
+msgstr "Introduceți titlul galeriei"
+
+#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+msgid "Images"
+msgstr "Imagini"
+
+#: class-ml-gallery.php:331
+msgid "No images added yet"
+msgstr "Nu au fost adăugate imagini încă"
+
+#: class-ml-gallery.php:344 class-ml-gallery.php:892
+msgid "Remove image"
+msgstr "Șterge imaginea"
+
+#: class-ml-gallery.php:349 class-ml-gallery.php:893
+msgid "Edit caption"
+msgstr "Editează legenda"
+
+#: class-ml-gallery.php:362
+msgid "Add Images"
+msgstr "Adaugă imagini"
+
+#: class-ml-gallery.php:369
+msgid "Layout"
+msgstr "Dispunere"
+
+#: class-ml-gallery.php:372
+msgid "Gallery layout"
+msgstr "Dispunerea galeriei"
+
+#: class-ml-gallery.php:384
+msgid "Grid"
+msgstr "Grilă"
+
+#: class-ml-gallery.php:398
+msgid "Masonry"
+msgstr "Masonerie"
+
+#: class-ml-gallery.php:414
+msgid "Justified"
+msgstr "Justificat"
+
+#: class-ml-gallery.php:427
+msgid "Carousel"
+msgstr "Carusel"
+
+#: class-ml-gallery.php:436
+msgid "Columns"
+msgstr "Coloane"
+
+#: class-ml-gallery.php:446
+msgid "Gap"
+msgstr "Spațiu"
+
+#: class-ml-gallery.php:460
+msgid "Lightbox Settings"
+msgstr "Setări Lightbox"
+
+#: class-ml-gallery.php:464
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "Controalele de zoom necesită MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:465
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "Modul pe întreaga ecran necesită MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:466
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "Redare automată necesită MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:467
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "Rotirea imaginii necesită MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:468
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "Partajarea socială necesită MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:472
+msgid "Show left and right navigation arrows"
+msgstr "Afișează săgețile de navigare stânga și dreapta"
+
+#: class-ml-gallery.php:473
+msgid "Cycle back to the first image after reaching the last"
+msgstr "Ciclare înapoi la prima imagine după ce ai ajuns la ultima"
+
+#: class-ml-gallery.php:474
+msgid "Navigate images using left and right arrow keys"
+msgstr "Navighează printre imagini folosind tastele săgeată stânga și dreapta"
+
+#: class-ml-gallery.php:475
+msgid "Scroll through images using the mouse wheel"
+msgstr "Derulează prin imagini folosind rotița mouse-ului"
+
+#: class-ml-gallery.php:476
+msgid "Swipe up or down to close the lightbox on touch devices"
+msgstr ""
+"Glisează în sus sau în jos pentru a închide Lightbox-ul pe dispozitivele "
+"tactile"
+
+#: class-ml-gallery.php:477
+msgid "Display the current image number and total count"
+msgstr "Afișează numărul imaginii curente și numărul total"
+
+#: class-ml-gallery.php:478
+msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+msgstr "Afișează o bandă de imagini miniatură în partea de jos a Lightbox-ului"
+
+#: class-ml-gallery.php:479
+msgid "Display image captions in the lightbox"
+msgstr "Afișează subtitrările imaginilor în Lightbox"
+
+#: class-ml-gallery.php:480
+msgid "Show a download button for each image"
+msgstr "Afișează un buton de descărcare pentru fiecare imagine"
+
+#: class-ml-gallery.php:481
+msgid "Pinch and zoom into images"
+msgstr "Cumpănește și mărește imaginile"
+
+#: class-ml-gallery.php:482
+msgid "Expand the lightbox to fill the entire screen"
+msgstr "Extinde Lightbox-ul pentru a umple întreaga ecran"
+
+#: class-ml-gallery.php:483
+msgid "Rotate images left and right"
+msgstr "Rotește imaginile stânga și dreapta"
+
+#: class-ml-gallery.php:484
+msgid "Automatically advance through images at a set interval"
+msgstr "Avansează automat printre imagini la un interval setat"
+
+#: class-ml-gallery.php:485
+msgid "Add social sharing buttons for each image"
+msgstr "Adaugă butoane de partajare socială pentru fiecare imagine"
+
+#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
+#: class-ml-slider-lightbox.php:2409
+msgid "Navigation & Controls"
+msgstr "Navigare & Controale"
+
+#: class-ml-gallery.php:525
+msgid "Animation effect when moving between images"
+msgstr "Efect de animație când te muți între imagini"
+
+#: class-ml-gallery.php:525
+msgid "Transition"
+msgstr "Tranziție"
+
+#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
+msgid "Arrows"
+msgstr "Săgeți"
+
+#: class-ml-gallery.php:535
+msgid "Loop"
+msgstr "Ciclare"
+
+#: class-ml-gallery.php:536
+msgid "Keyboard"
+msgstr "Tastatură"
+
+#: class-ml-gallery.php:537
+msgid "Mouse wheel"
+msgstr "Rotiță de mouse"
+
+#: class-ml-gallery.php:538
+msgid "Swipe to close"
+msgstr "Glisează pentru a închide"
+
+#: class-ml-gallery.php:540
+msgid "Display"
+msgstr "Afișare"
+
+#: class-ml-gallery.php:541
+msgid "Slide counter"
+msgstr "Contor de diapozitive"
+
+#: class-ml-gallery.php:542
+msgid "Thumbnail strip"
+msgstr "Bandă de miniaturi"
+
+#: class-ml-gallery.php:543
+msgid "Captions"
+msgstr "Subtitrări"
+
+#: class-ml-gallery.php:544
+msgid "Download"
+msgstr "Descarcă"
+
+#: class-ml-gallery.php:547, fuzzy
+msgid "Pager"
+msgstr "Pager"
+
+#: class-ml-gallery.php:553
+msgid "Pager pagination requires MetaSlider Gallery Pro"
+msgstr "Paginatea Pager necesită MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
+#: class-ml-slider-lightbox.php:4008
+msgid "Enhanced Zoom & Controls"
+msgstr "Zoom și controale îmbunătățite"
+
+#: class-ml-gallery.php:561
+msgid "Fullscreen"
+msgstr "Modul complet"
+
+#: class-ml-gallery.php:562
+msgid "Rotate"
+msgstr "Rotește"
+
+#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
+#: class-ml-slider-lightbox.php:4057
+msgid "Advanced Features"
+msgstr "Funcții avansate"
+
+#: class-ml-gallery.php:567
+msgid "Autoplay"
+msgstr "Redare automată"
+
+#: class-ml-gallery.php:568
+msgid "Share"
+msgstr "Împărtășește"
+
+#: class-ml-gallery.php:572
+msgid "Unique Image URLs"
+msgstr "URL-uri unice pentru imagini"
+
+#: class-ml-gallery.php:578
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "URL-urile unice pentru imagini necesită MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
+#: class-ml-slider-lightbox.php:2058
+msgid "Appearance"
+msgstr "Aparitie"
+
+#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+msgid "Background Color"
+msgstr "Culoare de fundal"
+
+#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+msgid "Background Opacity"
+msgstr "Opacitate de fundal"
+
+#: class-ml-gallery.php:616
+msgid "Arrow Color"
+msgstr "Culoare săgeată"
+
+#: class-ml-gallery.php:626
+msgid "Arrow Background"
+msgstr "Fundal săgeată"
+
+#: class-ml-gallery.php:636
+msgid "Close Icon Color"
+msgstr "Culoare pictogramă închidere"
+
+#: class-ml-gallery.php:646
+msgid "Close Background"
+msgstr "Fundal închidere"
+
+#: class-ml-gallery.php:656
+msgid "Toolbar Icon Color"
+msgstr "Culoare pictogramă toolbar"
+
+#: class-ml-gallery.php:666
+msgid "Toolbar Background"
+msgstr "Fundal toolbar"
+
+#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:681
+msgid "Copy and paste into any post or page."
+msgstr "Copiați și lipiți în orice postare sau pagină."
+
+#: class-ml-gallery.php:701
+msgid "Edit Caption"
+msgstr "Editează legendă"
+
+#: class-ml-gallery.php:702
+msgid "Close"
+msgstr "Închide"
+
+#: class-ml-gallery.php:710
+msgid "Caption"
+msgstr "Legendă"
+
+#: class-ml-gallery.php:717
+msgid "Cancel"
+msgstr "Anulează"
+
+#: class-ml-gallery.php:720
+msgid "Save Caption"
+msgstr "Salvează legendă"
+
+#: class-ml-gallery.php:741
+msgid "Security check failed."
+msgstr "Verificarea de securitate a eșuat."
+
+#: class-ml-gallery.php:745
+msgid "You do not have sufficient permissions."
+msgstr "Nu aveți permisiuni suficiente."
+
+#: class-ml-gallery.php:764
+msgid "Could not update the gallery. Please try again."
+msgstr "Nu s-a putut actualiza galeria. Vă rugăm să încercați din nou."
+
+#: class-ml-gallery.php:890
+msgid "Select Gallery Images"
+msgstr "Selectați imagini pentru galerie"
+
+#: class-ml-gallery.php:891
+msgid "Add to Gallery"
+msgstr "Adaugă în galerie"
+
+#: class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"Galeria MetaSlider necesită MetaSlider și cel puțin un alt plugin lightbox "
+"suportat să fie instalat și activat."
+
+#: class-ml-slider-lightbox.php:1060
+msgid "More info"
+msgstr "Mai multe informații"
+
+#: class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"Există mai mult de un plugin lightbox activat. Acest lucru poate cauza "
+"conflicte cu Galeria MetaSlider"
+
+#: class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "Editați setările"
+
+#: class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "Deschideți în lightbox?"
+
+#: class-ml-slider-lightbox.php:1150
+#, php-format
+msgid ""
+"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+"settings</a>."
+msgstr ""
+"Lightbox este activat pentru toate slideshow-urile prin <a "
+"href=\"%s\">setările modului automat</a>."
+
+#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
+msgid "Open in Lightbox"
+msgstr "Deschideți în Lightbox"
+
+#: class-ml-slider-lightbox.php:1486
+msgid "View image"
+msgstr "Vizualizați imaginea"
+
+#: class-ml-slider-lightbox.php:1734
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery necesită ca MetaSlider să fie instalat și activat."
+
+#: class-ml-slider-lightbox.php:1738
+msgid "Install MetaSlider"
+msgstr "Instalați MetaSlider"
+
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1945
+#, php-format
+msgid "Select pages to %s..."
+msgstr "Selectați paginile pentru %s..."
+
+#: class-ml-slider-lightbox.php:1946
+#, php-format
+msgid "Select posts to %s..."
+msgstr "Selectați postările pentru %s..."
+
+#: class-ml-slider-lightbox.php:1947
+#, php-format
+msgid "Select post types to %s..."
+msgstr "Selectați tipurile de postări pentru %s..."
+
+#: class-ml-slider-lightbox.php:1948
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "Selectați %1$s pentru %2$s..."
+
+#: class-ml-slider-lightbox.php:1949
+msgid "Select post types to exclude"
+msgstr "Selectați tipurile de postări de exclus"
+
+#: class-ml-slider-lightbox.php:1950
+msgid "Include"
+msgstr "Includeți"
+
+#: class-ml-slider-lightbox.php:1951
+msgid "Exclude"
+msgstr "Excluzând"
+
+#: class-ml-slider-lightbox.php:1959, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1979
+msgid "Lightboxes"
+msgstr "Lightbox-uri"
+
+#: class-ml-slider-lightbox.php:1995
+msgid "Automatic Mode"
+msgstr "Mod automat"
+
+#: class-ml-slider-lightbox.php:1996
+msgid "Manual Mode"
+msgstr "Mod manual"
+
+#: class-ml-slider-lightbox.php:1998
+msgid "Behavior"
+msgstr "Comportament"
+
+#: class-ml-slider-lightbox.php:2003
+msgid "Upgrade to Pro"
+msgstr "Upgrade la Pro"
+
+#: class-ml-slider-lightbox.php:2023
+msgid "Settings saved successfully!"
+msgstr "Setările au fost salvate cu succes!"
+
+#: class-ml-slider-lightbox.php:2033
+msgid "Where to Enable Automatically"
+msgstr "Unde să activați automat"
+
+#: class-ml-slider-lightbox.php:2040, fuzzy
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider Slideshows"
+
+#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+msgid "Content Filtering"
+msgstr "Filtrare conținut"
+
+#: class-ml-slider-lightbox.php:2059
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr ""
+"Personalizați culorile, opacitatea și stilul vizual pentru suprapunerea "
+"lightbox și controale."
+
+#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+msgid "Background & Overlay"
+msgstr "Fundal & Suprapunere"
+
+#: class-ml-slider-lightbox.php:2068
+msgid "Navigation"
+msgstr "Navigare"
+
+#: class-ml-slider-lightbox.php:2073
+msgid "\"Open in Lightbox\" Button"
+msgstr "\"Deschide în Lightbox\" Buton"
+
+#: class-ml-slider-lightbox.php:2089
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>Plugin de terță parte detectat:</strong> Un plugin lightbox de "
+"terță parte este activ. Aceste setări s-ar putea să nu se aplice la "
+"MetaSlider, dar vor funcționa pentru lightbox-urile de conținut WordPress."
+
+#: class-ml-slider-lightbox.php:2104
+msgid "Media & Video Enhancements"
+msgstr "Îmbunătățiri Media & Video"
+
+#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+msgid "Social & Navigation"
+msgstr "Social & Navigare"
+
+#: class-ml-slider-lightbox.php:2136
+msgid "Manual Lightbox Options"
+msgstr "Opțiuni Lightbox Manuale"
+
+#: class-ml-slider-lightbox.php:2137
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr ""
+"Controale manuale și suprascrieri WordPress care funcționează independent "
+"de setările automate."
+
+#: class-ml-slider-lightbox.php:2319
+msgid "Navigation Icons"
+msgstr "Iconițe de Navigare"
+
+#: class-ml-slider-lightbox.php:2326
+msgid "Buttons"
+msgstr "Buton"
+
+#: class-ml-slider-lightbox.php:2357
+msgid "Close Button"
+msgstr "Buton de Închidere"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Lightbox Toolbar"
+msgstr "Bară de instrumente Lightbox"
+
+#: class-ml-slider-lightbox.php:2373
+msgid "Button Colors"
+msgstr "Culorile Butoanelor"
+
+#: class-ml-slider-lightbox.php:2381
+msgid "Icon Colors"
+msgstr "Culorile Iconițelor"
+
+#: class-ml-slider-lightbox.php:2389
+msgid "Button Text"
+msgstr "Textul butonului"
+
+#: class-ml-slider-lightbox.php:2397
+msgid "Button Position"
+msgstr "Poziția butonului"
+
+#: class-ml-slider-lightbox.php:2755
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr ""
+"Configurează setările generale ale lightbox-ului care se aplică pe întreg "
+"site-ul."
+
+#: class-ml-slider-lightbox.php:2760
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr "Configurează setările specifice funcționalității lightbox a MetaSlider."
+
+#: class-ml-slider-lightbox.php:2765
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "Selectează unde va fi activat automat lightbox-ul."
+
+#: class-ml-slider-lightbox.php:2771
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Alege cum să filtrezi conținutul pentru procesarea lightbox-ului și "
+"specifică ce pagini, postări sau selecții să incluzi sau să excluzi."
+
+#: class-ml-slider-lightbox.php:2787
+msgid "Processing Mode"
+msgstr "Mod de procesare"
+
+#: class-ml-slider-lightbox.php:2790
+msgid "Process all content EXCEPT the items specified below"
+msgstr "Procesează tot conținutul, CU EXCEPȚIA elementelor specificate mai jos"
+
+#: class-ml-slider-lightbox.php:2793
+msgid "ONLY process the items specified below"
+msgstr "PROCesează DOAR elementele specificate mai jos"
+
+#: class-ml-slider-lightbox.php:2800
+msgid "Inclusion Mode"
+msgstr "Mod de includere"
+
+#: class-ml-slider-lightbox.php:2804
+msgid "Exclusion Mode"
+msgstr "Mod de excludere"
+
+#: class-ml-slider-lightbox.php:2824
+msgid "Images in post content"
+msgstr "Imagini în conținutul postărilor"
+
+#: class-ml-slider-lightbox.php:2825
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"Când este activat, imaginile individuale fără linkuri și setarea \"Mărire "
+"la Click\" din postări și pagini se vor deschide automat în lightbox."
+
+#: class-ml-slider-lightbox.php:2841
+msgid "Images and videos in widgets and sidebars"
+msgstr "Imagini și videoclipuri în widget-uri și bare laterale"
+
+#: class-ml-slider-lightbox.php:2842
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"Când este activat, imaginile și videoclipurile din zonele widget-urilor se "
+"vor deschide automat în lightbox."
+
+#: class-ml-slider-lightbox.php:2858
+msgid "Gallery shortcodes and blocks"
+msgstr "Shortcode-uri și blocuri de galerie"
+
+#: class-ml-slider-lightbox.php:2859
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"Când este activat, imaginile din shortcode-urile [gallery] WordPress și "
+"blocurile Galerie Gutenberg se vor deschide automat în lightbox."
+
+#: class-ml-slider-lightbox.php:2875
+msgid "Featured images"
+msgstr "Imagini prezentate"
+
+#: class-ml-slider-lightbox.php:2876
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"Când este activat, imaginile prezentate (miniaturi ale postărilor) se vor "
+"deschide automat în lightbox când sunt clicuite."
+
+#: class-ml-slider-lightbox.php:2885
+msgid ""
+"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
+"the per-slider setting."
+msgstr ""
+"Activează automat lightbox-ul pe toate prezentările slide-urilor "
+"MetaSlider, suprascriind setarea pe fiecare slider."
+
+#: class-ml-slider-lightbox.php:2899
+msgid "MetaSlider slideshows"
+msgstr "Slideshow-uri MetaSlider"
+
+#: class-ml-slider-lightbox.php:2900
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+"overriding the per-slider setting."
+msgstr ""
+"Când este activat, toate slideshow-urile MetaSlider vor deschide "
+"slide-urile în Lightbox, suprascriind setarea per-slider."
+
+#: class-ml-slider-lightbox.php:2916
+msgid "Videos in post content"
+msgstr "Videoclipuri în conținutul postării"
+
+#: class-ml-slider-lightbox.php:2917
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"Când este activat, blocurile video autonome (videoclipuri HTML5, "
+"încorporări YouTube, încorporări Vimeo) din conținutul postării/paginii se "
+"vor deschide automat în Lightbox."
+
+#: class-ml-slider-lightbox.php:2932
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Culoare de fundal pentru suprapunerile Lightbox. Culorile închise "
+"funcționează cel mai bine pentru vizionarea imaginilor."
+
+#: class-ml-slider-lightbox.php:2945
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Culoare de fundal pentru butoanele \"Deschide în Lightbox\" care apar pe "
+"slide-uri, imagini și videoclipuri."
+
+#: class-ml-slider-lightbox.php:2958
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Culoare a textului pentru butoanele \"Deschide în Lightbox\" care apar pe "
+"slide-uri, imagini și videoclipuri."
+
+#: class-ml-slider-lightbox.php:2971
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr ""
+"Culoare de fundal când treceți cu mouse-ul peste butoanele \"Deschide în "
+"Lightbox\"."
+
+#: class-ml-slider-lightbox.php:2984
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr ""
+"Culoare a textului când treceți cu mouse-ul peste butoanele \"Deschide în "
+"Lightbox\"."
+
+#: class-ml-slider-lightbox.php:2997
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"Text personalizat pentru butoanele Lightbox. Acest text va apărea pe toate "
+"butoanele \"Deschide în Lightbox\" de pe site."
+
+#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+msgid "Top Right (Default)"
+msgstr "Sus Dreapta (Implicit)"
+
+#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
+msgid "Top Left"
+msgstr "Sus Stânga"
+
+#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
+msgid "Bottom Right"
+msgstr "Jos Dreapta"
+
+#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
+msgid "Bottom Left"
+msgstr "Jos Stânga"
+
+#: class-ml-slider-lightbox.php:3023
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr ""
+"Alegeți unde să poziționați butonul de închidere (X) în suprapunerea "
+"Lightbox."
+
+#: class-ml-slider-lightbox.php:3049
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"Alegeți unde să poziționați butoanele \"Deschide în Lightbox\" în "
+"slide-uri, imagini, galerii și videoclipuri."
+
+#: class-ml-slider-lightbox.php:3062
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Culoare pentru săgețile de navigație anterioară și următoare din Lightbox."
+
+#: class-ml-slider-lightbox.php:3075
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr ""
+"Culoare a săgeții când treceți cu mouse-ul. Creează feedback vizual când "
+"utilizatorii își mișcă mouse-ul peste săgețile de navigație."
+
+#: class-ml-slider-lightbox.php:3088
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Culoare pentru butonul de închidere (X) din Lightbox."
+
+#: class-ml-slider-lightbox.php:3101
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr ""
+"Culoare a butonului de închidere când treceți cu mouse-ul. Creează feedback "
+"vizual când utilizatorii își mișcă mouse-ul peste butonul de închidere."
+
+#: class-ml-slider-lightbox.php:3114
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"Culoare pentru pictogramele barei de instrumente și textul contorului în "
+"Lightbox. Afectează zoomul, pictogramele de ecran complet (Pro) și afișarea "
+"contorului de imagini."
+
+#: class-ml-slider-lightbox.php:3127
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"Culoarea pictogramei barei de instrumente atunci când se trece cu mouse-ul. "
+"Creează feedback vizual atunci când utilizatorii își mută mouse-ul peste "
+"pictogramele barei de instrumente și contor."
+
+#: class-ml-slider-lightbox.php:3140
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr ""
+"Culoarea de fundal pentru butoanele săgeților de navigare anterioară și "
+"următoare."
+
+#: class-ml-slider-lightbox.php:3153
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr ""
+"Culoarea de fundal pentru butoanele săgeților atunci când se trece cu "
+"mouse-ul. Creează feedback vizual atunci când utilizatorii își mută "
+"mouse-ul peste săgeți."
+
+#: class-ml-slider-lightbox.php:3166
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "Culoarea de fundal pentru butonul de închidere (X) din Lightbox."
+
+#: class-ml-slider-lightbox.php:3179
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr ""
+"Culoarea de fundal pentru butonul de închidere atunci când se trece cu "
+"mouse-ul. Creează feedback vizual atunci când utilizatorii își mută "
+"mouse-ul peste butonul de închidere."
+
+#: class-ml-slider-lightbox.php:3192
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "Culoarea de fundal pentru pictogramele barei de instrumente în Lightbox."
+
+#: class-ml-slider-lightbox.php:3205
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr ""
+"Culoarea de fundal pentru pictogramele barei de instrumente atunci când se "
+"trece cu mouse-ul. Creează feedback vizual atunci când utilizatorii își "
+"mută mouse-ul peste pictogramele barei de instrumente."
+
+#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
+#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+msgid "Icon"
+msgstr "Pictogramă"
+
+#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+msgid "Icon Hover"
+msgstr "Pictogramă Hover"
+
+#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
+#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3406
+msgid "Background"
+msgstr "Fundal"
+
+#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
+#: class-ml-slider-lightbox.php:3409
+msgid "Background Hover"
+msgstr "Fundal Hover"
+
+#: class-ml-slider-lightbox.php:3317
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr "Setați opacitatea fundalului Lightbox (0 = transparent, 1 = opac)."
+
+#: class-ml-slider-lightbox.php:3328
+msgid "Show navigation arrows in lightbox"
+msgstr "Afișați săgețile de navigare în Lightbox"
+
+#: class-ml-slider-lightbox.php:3329
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"Afișați săgețile stânga/dreapta pentru navigare. De asemenea, activează "
+"navigarea cu tastatura (tastele ← →, ESC pentru a închide). Acest lucru "
+"este disponibil pentru slideshow-uri și galerii de imagini."
+
+#: class-ml-slider-lightbox.php:3338
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "Personalizați aspectul fundalului Lightbox și al suprapunerii."
+
+#: class-ml-slider-lightbox.php:3343
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr ""
+"Personalizați pictogramele de navigare (închidere, săgeți anterioare, "
+"săgeți următoare) pentru Lightbox-uri."
+
+#: class-ml-slider-lightbox.php:3348
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"Personalizați butoanele \"Deschide în Lightbox\" care pot fi adăugate la "
+"diapozitive, imagini, galerii și videoclipuri."
+
+#: class-ml-slider-lightbox.php:3368, fuzzy
+msgid "Text"
+msgstr "Text"
+
+#: class-ml-slider-lightbox.php:3371, fuzzy
+msgid "Text Hover"
+msgstr "Text Hover"
+
+#: class-ml-slider-lightbox.php:3417
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr ""
+"Configurează opțiunile de navigare și control care se aplică tuturor "
+"lightbox-urilor."
+
+#: class-ml-slider-lightbox.php:3427
+msgid "Show thumbnails"
+msgstr "Arată miniaturi"
+
+#: class-ml-slider-lightbox.php:3428
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"Afișează imagini miniatură în partea de jos a lightbox-ului pentru o "
+"navigare ușoară. Acest lucru este disponibil pentru slideshow-uri și "
+"galerii de imagini."
+
+#: class-ml-slider-lightbox.php:3440
+msgid "Show \"Open in Lightbox\" button"
+msgstr "Arată butonul \"Deschide în Lightbox\""
+
+#: class-ml-slider-lightbox.php:3441
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"Când este activat, arată un buton pentru a deschide lightbox-ul. Când este "
+"dezactivat, clicarea pe slide, imagine sau video deschide direct "
+"lightbox-ul."
+
+#: class-ml-slider-lightbox.php:3458
+msgid "Show an icon instead of button"
+msgstr "Arată un icon în loc de buton"
+
+#: class-ml-slider-lightbox.php:3459
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr ""
+"Când este activat, afișează un mic icon în locul textului complet al "
+"butonului."
+
+#: class-ml-slider-lightbox.php:3473
+msgid "Show captions"
+msgstr "Arată subtitrări"
+
+#: class-ml-slider-lightbox.php:3474
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"Când este activat, afișează subtitrări în lightbox. Acest lucru este "
+"disponibil pentru slideshow-uri, imagini și galerii de imagini."
+
+#: class-ml-slider-lightbox.php:3481
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr ""
+"Funcțiile avansate ale lightbox-ului sunt disponibile prin MetaSlider "
+"Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3483
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr ""
+"Obține o previzualizare a funcțiilor avansate disponibile în MetaSlider "
+"Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3486
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr ""
+"Aceste plugin-uri avansate LightGallery.js sunt disponibile în versiunea "
+"Pro cu opțiuni suplimentare de personalizare."
+
+#: class-ml-slider-lightbox.php:3512
+msgid "Include specific Pages"
+msgstr "Include pagini specifice"
+
+#: class-ml-slider-lightbox.php:3514
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Selectează paginile unde lightbox-ul ar trebui să fie dezactivat. Arată "
+"până la 100 de pagini cele mai recente. Tastează pentru a căuta."
+
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Selectează paginile unde lightbox-ul ar trebui să fie activat. Arată până "
+"la 100 de pagini cele mai recente. Tastează pentru a căuta."
+
+#: class-ml-slider-lightbox.php:3557
+msgid "Include specific Posts"
+msgstr "Include postări specifice"
+
+#: class-ml-slider-lightbox.php:3559
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Selectează postările unde lightbox-ul ar trebui să fie dezactivat. Arată "
+"până la 100 de postări cele mai recente. Tastează pentru a căuta."
+
+#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Selectează postările unde lightbox-ul ar trebui să fie activat. Arată până "
+"la 100 de postări cele mai recente. Tastează pentru a căuta."
+
+#: class-ml-slider-lightbox.php:3587, fuzzy
+msgid "include"
+msgstr "include"
+
+#: class-ml-slider-lightbox.php:3587, fuzzy
+msgid "exclude"
+msgstr "exclude"
+
+#: class-ml-slider-lightbox.php:3626
+#, fuzzy, php-format
+msgid "%s specific %s"
+msgstr "%s specific %s"
+
+#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "Afișează până la 100 cele mai recente %s. Tastează pentru a căuta."
+
+#: class-ml-slider-lightbox.php:3675
+msgid "Include specific post types"
+msgstr "Inclusiv tipuri specifice de postări"
+
+#: class-ml-slider-lightbox.php:3677
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr ""
+"Selectează tipurile de postări unde Lightbox ar trebui să fie dezactivat "
+"complet."
+
+#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr ""
+"Selectează tipurile de postări unde Lightbox ar trebui să fie activat "
+"complet."
+
+#: class-ml-slider-lightbox.php:3712
+msgid "Exclude by CSS selector"
+msgstr "Excluzând după selector CSS"
+
+#: class-ml-slider-lightbox.php:3715
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"Selectori CSS pentru elementele de exclus din Lightbox (câte unul pe "
+"linie). Exemple:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar "
+".widget-area"
+
+#: class-ml-slider-lightbox.php:3738
+msgid "Minimum Image Width"
+msgstr "Lățimea minimă a imaginii"
+
+#: class-ml-slider-lightbox.php:3741
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"Sari peste imaginile mai înguste decât această lățime (în pixeli). "
+"Folosește lățimea afișată, nu dimensiunea reală a fișierului de imagine. "
+"Acest lucru este util pentru a exclude pictograme, insigne și butoane mici."
+
+#: class-ml-slider-lightbox.php:3764
+msgid "Minimum Image Height"
+msgstr "Înălțimea minimă a imaginii"
+
+#: class-ml-slider-lightbox.php:3767
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"Sari peste imaginile mai scurte decât această înălțime (în pixeli). "
+"Folosește înălțimea afișată, nu dimensiunea reală a fișierului de imagine. "
+"Acest lucru este util pentru a exclude pictograme, insigne și butoane mici."
+
+#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr ""
+"Gestionare îmbunătățită a mediilor și caracteristici de redare video pentru "
+"galerii profesionale."
+
+#: class-ml-slider-lightbox.php:3790
+msgid "Advanced features for professional lightbox implementations."
+msgstr "Funcții avansate pentru implementări profesionale de Lightbox."
+
+#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+msgid "Enable Zoom"
+msgstr "Activează Zoom"
+
+#: class-ml-slider-lightbox.php:3802
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr ""
+"Dublu clic pentru a mări, controale de zoom, zoom cu rotița mouse-ului și "
+"opțiuni de zoom pentru a se potrivi."
+
+#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+msgid "Enable Fullscreen"
+msgstr "Activează Mod Ecran Întreg"
+
+#: class-ml-slider-lightbox.php:3813
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr ""
+"Suport nativ HTML5 pentru ecran complet cu comenzi rapide de la tastatură "
+"(tasta F) pentru vizionare imersivă."
+
+#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+msgid "Enable Rotate"
+msgstr "Activează Rotire"
+
+#: class-ml-slider-lightbox.php:3824
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr ""
+"Rotește imaginile în sensul acelor de ceasornic/în sens invers acelor de "
+"ceasornic, răsturnând orizontal/vertical cu controale în bara de "
+"instrumente."
+
+#: class-ml-slider-lightbox.php:3834
+msgid "Enable Video"
+msgstr "Activează Video"
+
+#: class-ml-slider-lightbox.php:3835
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr ""
+"Suport video îmbunătățit pentru YouTube, Vimeo, videoclipuri HTML5 cu "
+"redare automată și controale de calitate."
+
+#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:4170
+msgid "Enable Unique Image URLs"
+msgstr "Activare URL-uri unice pentru imagini"
+
+#: class-ml-slider-lightbox.php:3846
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr ""
+"URL-uri unice pentru fiecare imagine din galerie cu suport pentru navigarea "
+"înapoi/înainte în browser."
+
+#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+msgid "Enable Autoplay"
+msgstr "Activare redare automată"
+
+#: class-ml-slider-lightbox.php:3857
+msgid "Automatically advance through images in the lightbox."
+msgstr "Avansează automat prin imagini în lightbox."
+
+#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+msgid "Enable Share"
+msgstr "Activare partajare"
+
+#: class-ml-slider-lightbox.php:3868
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr ""
+"Buton de partajare pe rețele sociale pentru Facebook, Twitter, Pinterest și "
+"partajare directă a URL-ului."
+
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+msgid "Enable Pager"
+msgstr "Activare pager"
+
+#: class-ml-slider-lightbox.php:3879
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr ""
+"Puncte de paginare minime pentru navigare curată fără previzualizări "
+"miniatură."
+
+#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr ""
+"Controale profesionale de zoom și interacțiune cu imaginea pentru o "
+"experiență îmbunătățită a utilizatorului."
+
+#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr ""
+"Îmbunătățiri pentru partajarea socială și navigare pentru a crește "
+"angajamentul."
+
+#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+msgid "Advanced functionality including URL management and automation features."
+msgstr ""
+"Funcționalitate avansată incluzând gestionarea URL-urilor și caracteristici "
+"de automatizare."
+
+#: class-ml-slider-lightbox.php:3962
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "Această caracteristică este disponibilă în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr ""
+"Permite utilizatorilor să mărească și să micșoreze cu dublu clic, rotița "
+"mouse-ului și controalele de zoom."
+
+#: class-ml-slider-lightbox.php:4016
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "Controalele de zoom sunt disponibile în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4021
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr ""
+"Modul pe ecran complet HTML5 nativ pentru vizualizarea imersivă a "
+"imaginilor."
+
+#: class-ml-slider-lightbox.php:4023
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "Modul pe ecran complet este disponibil în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr ""
+"Rotire a imaginilor în sensul acelor de ceasornic/anti-sensul acelor de "
+"ceasornic și întoarcere orizontal/vertical."
+
+#: class-ml-slider-lightbox.php:4030
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "Rotirea imaginilor este disponibilă în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4042
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr "Partajare integrată pe rețele sociale pentru Facebook, Twitter și Pinterest."
+
+#: class-ml-slider-lightbox.php:4044
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "Partajarea socială este disponibilă în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr "Puncte de paginare minime în loc de miniaturi pentru o interfață mai curată."
+
+#: class-ml-slider-lightbox.php:4051
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "Paginarea Pager este disponibilă în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr ""
+"Generați URL-uri unice pentru fiecare imagine din galerie cu navigare "
+"înapoi/înainte în browser."
+
+#: class-ml-slider-lightbox.php:4065
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "URL-uri unice pentru imagini sunt disponibile în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "Slideshow automat cu controale de temporizare și bară de progres."
+
+#: class-ml-slider-lightbox.php:4072
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "Redare automată este disponibilă în MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4089
+msgid "Features"
+msgstr "Funcții"
+
+#: class-ml-slider-lightbox.php:4090
+msgid "Free"
+msgstr "Gratuit"
+
+#: class-ml-slider-lightbox.php:4091, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+msgid "Installed"
+msgstr "Instalat"
+
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+msgid "Upgrade now"
+msgstr "Upgradează acum"
+
+#: class-ml-slider-lightbox.php:4106
+msgid "Automatic lightbox for images"
+msgstr "Lightbox automat pentru imagini"
+
+#: class-ml-slider-lightbox.php:4107
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "Activați automat lightbox pentru toate imaginile de pe site-ul dvs."
+
+#: class-ml-slider-lightbox.php:4114
+msgid "MetaSlider integration"
+msgstr "Integrarea MetaSlider"
+
+#: class-ml-slider-lightbox.php:4115
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "Integrare perfectă cu slideshow-urile MetaSlider."
+
+#: class-ml-slider-lightbox.php:4122
+msgid "WordPress gallery support"
+msgstr "Suport pentru galeriile WordPress"
+
+#: class-ml-slider-lightbox.php:4123
+msgid "Support for WordPress native galleries and blocks."
+msgstr "Suport pentru galeriile și blocurile native WordPress."
+
+#: class-ml-slider-lightbox.php:4130
+msgid "Appearance customization"
+msgstr "Personalizarea aspectului"
+
+#: class-ml-slider-lightbox.php:4131
+msgid "Customize colors, opacity, and button styles."
+msgstr "Personalizați culorile, opacitatea și stilurile butoanelor."
+
+#: class-ml-slider-lightbox.php:4138
+msgid "Zoom controls"
+msgstr "Controale Zoom"
+
+#: class-ml-slider-lightbox.php:4146
+msgid "Fullscreen mode"
+msgstr "Mod pe întreaga ecran"
+
+#: class-ml-slider-lightbox.php:4147
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "Fullscreen nativ HTML5 pentru vizualizarea captivantă a imaginilor."
+
+#: class-ml-slider-lightbox.php:4154
+msgid "Rotate and flip images"
+msgstr "Rotește și răstoarnă imagini"
+
+#: class-ml-slider-lightbox.php:4162
+msgid "Social media sharing"
+msgstr "Partajare pe rețele sociale"
+
+#: class-ml-slider-lightbox.php:4163
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "Partajare încorporată pentru Facebook, Twitter și Pinterest."
+
+#: class-ml-slider-lightbox.php:4178
+msgid "Autoplay slideshow"
+msgstr "Slideshow cu redare automată"
+
+#: class-ml-slider-lightbox.php:4186
+msgid "Pager navigation"
+msgstr "Navigare prin pagini"
+
+#: class-ml-slider-lightbox.php:4194
+msgid "Premium support"
+msgstr "Asistență premium"
+
+#: class-ml-slider-lightbox.php:4195
+msgid "Have your specific queries addressed directly by our experts."
+msgstr "Adresează-ți întrebările specifice direct experților noștri."
+
+#: class-ml-slider-lightbox.php:6006
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr ""
+"Configurează modul în care lightbox-ul interacționează cu caracteristicile "
+"încorporate WordPress."
+
+#: class-ml-slider-lightbox.php:6021
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "Suprascrie setarea WordPress \"Mărește la Click\""
+
+#: class-ml-slider-lightbox.php:6022
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"Când este activat, dezactivează lightbox-ul încorporat WordPress și "
+"folosește lightbox-ul nostru pentru imaginile setate la \"Mărește la "
+"Click\". Când este dezactivat, respectă setarea WordPress și sări peste "
+"imaginile setate la \"Mărește la Click\"."
+
+#: class-ml-slider-lightbox.php:6038
+msgid "Override \"Link to Image File\" Setting"
+msgstr "Suprascrie setarea \"Link către fișierul imagine\""
+
+#: class-ml-slider-lightbox.php:6039
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"Când este activat, folosește lightbox-ul nostru pentru imaginile legate de "
+"fișierul lor imagine la dimensiune completă (de obicei setat prin \"Link "
+"către fișierul imagine\" în editorul de blocuri). Când este dezactivat, "
+"respectă comportamentul original al linkului."
+
+#: class-ml-slider-lightbox.php:6070
+msgid "Exclude Post Types from Manual Processing"
+msgstr "Excluderea tipurilor de postări din procesarea manuală"
+
+#: class-ml-slider-lightbox.php:6073
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"Selectează tipurile de postări unde opțiunile manuale NU ar trebui să "
+"funcționeze. De exemplu, selectează \"Produse (product)\" pentru a "
+"dezactiva lightbox-ul manual pe paginile de produse WooCommerce, "
+"menținându-l activ în alte părți."
+
+#: class-ml-slider-lightbox.php:6097
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "Cum să folosești: WordPress \"Mărește la Click\""
+
+#: class-ml-slider-lightbox.php:6099
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"WordPress are o caracteristică încorporată \"Mărește la Click\" pentru "
+"imagini. Iată cum să o activezi:"
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+msgid "Select an image in the block editor."
+msgstr "Selectează o imagine în editorul de blocuri."
+
+#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
+msgid "In the block toolbar, click on the Link icon."
+msgstr "În bara de instrumente a blocului, faceți clic pe pictograma Link."
+
+#: class-ml-slider-lightbox.php:6103
+msgid "Select \"Enlarge on click\"."
+msgstr "Selectați \"Mărire la clic\"."
+
+#: class-ml-slider-lightbox.php:6109
+msgid "How to use: \"Link to Image File\""
+msgstr "Cum să folosiți: \"Link către fișierul imagine\""
+
+#: class-ml-slider-lightbox.php:6111
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr ""
+"Puteți lega imaginile direct la fișierul lor media de dimensiuni complete. "
+"Iată cum:"
+
+#: class-ml-slider-lightbox.php:6112
+msgid "For the Block Editor:"
+msgstr "Pentru Editorul de Blocuri:"
+
+#: class-ml-slider-lightbox.php:6116
+msgid "Choose \"Link to image file\"."
+msgstr "Alegeți \"Link către fișierul imagine\"."
+
+#: class-ml-slider-lightbox.php:6118
+msgid "For the Classic Editor:"
+msgstr "Pentru Editorul Clasic:"
+
+#: class-ml-slider-lightbox.php:6120
+msgid "Select an image."
+msgstr "Selectați o imagine."
+
+#: class-ml-slider-lightbox.php:6121
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "În bara de instrumente a imaginii, faceți clic pe pictograma Editare."
+
+#: class-ml-slider-lightbox.php:6122
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "Alegeți \"Fișier Media\" din lista derulantă \"Link către\"."
+
+#: class-ml-slider-lightbox.php:6128
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "Cum să folosiți: Metoda CSS Class (Avansat)"
+
+#: class-ml-slider-lightbox.php:6130
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"Pentru dezvoltatori: Adăugați clasa <code>ml-lightbox-enabled</code> pentru "
+"a activa lightbox pe orice element care conține imagini."
+
+#: class-ml-slider-lightbox.php:6131
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "Metoda 1: Clase CSS suplimentare pentru Editorul de Blocuri"
+
+#: class-ml-slider-lightbox.php:6133
+msgid "Select an image or gallery block."
+msgstr "Selectați un bloc de imagine sau galerie."
+
+#: class-ml-slider-lightbox.php:6134
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "În bara laterală de setări a blocului, derulați la \"Avansat\"."
+
+#: class-ml-slider-lightbox.php:6135
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr "Adăugați <code>ml-lightbox-enabled</code> la \"Clasă(e) CSS suplimentare\"."
+
+#: class-ml-slider-lightbox.php:6137
+msgid "Method 2: HTML/Code"
+msgstr "Metoda 2: HTML/Cod"
+
+#: class-ml-slider-lightbox.php:6138
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "Pentru dezvoltatorii de HTML personalizat sau teme, adăugați clasa direct:"
+
+#: class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "Toate slide-urile se vor deschide într-un Lightbox, folosind %s"

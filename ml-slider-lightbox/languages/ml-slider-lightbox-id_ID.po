@@ -1,0 +1,1573 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 15:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: id-ID\n"
+
+#: class-ml-gallery.php:70
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "Beberapa fitur ini tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:78
+msgid "Fade"
+msgstr "Pudar"
+
+#: class-ml-gallery.php:79
+msgid "Slide"
+msgstr "Geser"
+
+#: class-ml-gallery.php:80 class-ml-gallery.php:560, fuzzy
+msgid "Zoom"
+msgstr "Zoom"
+
+#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
+msgid "Galleries"
+msgstr "Galeri"
+
+#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
+msgid "Gallery"
+msgstr "Galeri"
+
+#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
+#: class-ml-gallery.php:1124
+msgid "Add New Gallery"
+msgstr "Tambah Galeri Baru"
+
+#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
+#: class-ml-gallery.php:258
+msgid "Edit Gallery"
+msgstr "Edit Galeri"
+
+#: class-ml-gallery.php:138 class-ml-gallery.php:241
+msgid "New Gallery"
+msgstr "Galeri Baru"
+
+#: class-ml-gallery.php:139
+msgid "Search Galleries"
+msgstr "Cari Galeri"
+
+#: class-ml-gallery.php:140
+msgid "No galleries found."
+msgstr "Tidak ada galeri yang ditemukan."
+
+#: class-ml-gallery.php:141
+msgid "No galleries found in trash."
+msgstr "Tidak ada galeri yang ditemukan di tempat sampah."
+
+#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Anda tidak memiliki izin yang cukup untuk mengakses halaman ini."
+
+#: class-ml-gallery.php:238
+msgid "Gallery not found."
+msgstr "Galeri tidak ditemukan."
+
+#: class-ml-gallery.php:260
+msgid "Save Gallery"
+msgstr "Simpan Galeri"
+
+#: class-ml-gallery.php:261
+msgid "Update Gallery"
+msgstr "Perbarui Galeri"
+
+#: class-ml-gallery.php:274
+msgid "Back to Galleries"
+msgstr "Kembali ke Galeri"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:1130
+#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: class-ml-gallery.php:308
+msgid "Gallery saved."
+msgstr "Galeri disimpan."
+
+#: class-ml-gallery.php:319
+msgid "Enter gallery title"
+msgstr "Masukkan judul galeri"
+
+#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+msgid "Images"
+msgstr "Gambar"
+
+#: class-ml-gallery.php:331
+msgid "No images added yet"
+msgstr "Belum ada gambar yang ditambahkan"
+
+#: class-ml-gallery.php:344 class-ml-gallery.php:892
+msgid "Remove image"
+msgstr "Hapus gambar"
+
+#: class-ml-gallery.php:349 class-ml-gallery.php:893
+msgid "Edit caption"
+msgstr "Edit keterangan"
+
+#: class-ml-gallery.php:362
+msgid "Add Images"
+msgstr "Tambah Gambar"
+
+#: class-ml-gallery.php:369
+msgid "Layout"
+msgstr "Tata Letak"
+
+#: class-ml-gallery.php:372
+msgid "Gallery layout"
+msgstr "Tata letak galeri"
+
+#: class-ml-gallery.php:384, fuzzy
+msgid "Grid"
+msgstr "Grid"
+
+#: class-ml-gallery.php:398, fuzzy
+msgid "Masonry"
+msgstr "Masonry"
+
+#: class-ml-gallery.php:414, fuzzy
+msgid "Justified"
+msgstr "Justified"
+
+#: class-ml-gallery.php:427, fuzzy
+msgid "Carousel"
+msgstr "Carousel"
+
+#: class-ml-gallery.php:436
+msgid "Columns"
+msgstr "Kolom"
+
+#: class-ml-gallery.php:446
+msgid "Gap"
+msgstr "Jarak"
+
+#: class-ml-gallery.php:460
+msgid "Lightbox Settings"
+msgstr "Pengaturan Lightbox"
+
+#: class-ml-gallery.php:464
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "Kontrol zoom memerlukan MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:465
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "Mode layar penuh memerlukan MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:466
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "Pemutaran otomatis memerlukan MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:467
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "Rotasi gambar memerlukan MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:468
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "Berbagi sosial memerlukan MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:472
+msgid "Show left and right navigation arrows"
+msgstr "Tampilkan panah navigasi kiri dan kanan"
+
+#: class-ml-gallery.php:473
+msgid "Cycle back to the first image after reaching the last"
+msgstr "Kembali ke gambar pertama setelah mencapai yang terakhir"
+
+#: class-ml-gallery.php:474
+msgid "Navigate images using left and right arrow keys"
+msgstr "Navigasi gambar menggunakan tombol panah kiri dan kanan"
+
+#: class-ml-gallery.php:475
+msgid "Scroll through images using the mouse wheel"
+msgstr "Gulir melalui gambar menggunakan roda mouse"
+
+#: class-ml-gallery.php:476
+msgid "Swipe up or down to close the lightbox on touch devices"
+msgstr "Geser ke atas atau bawah untuk menutup Lightbox di perangkat sentuh"
+
+#: class-ml-gallery.php:477
+msgid "Display the current image number and total count"
+msgstr "Tampilkan nomor gambar saat ini dan total jumlah"
+
+#: class-ml-gallery.php:478
+msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+msgstr "Tampilkan strip gambar mini di bagian bawah Lightbox"
+
+#: class-ml-gallery.php:479
+msgid "Display image captions in the lightbox"
+msgstr "Tampilkan keterangan gambar di Lightbox"
+
+#: class-ml-gallery.php:480
+msgid "Show a download button for each image"
+msgstr "Tampilkan tombol unduh untuk setiap gambar"
+
+#: class-ml-gallery.php:481
+msgid "Pinch and zoom into images"
+msgstr "Cubit dan perbesar gambar"
+
+#: class-ml-gallery.php:482
+msgid "Expand the lightbox to fill the entire screen"
+msgstr "Perluas Lightbox untuk mengisi seluruh layar"
+
+#: class-ml-gallery.php:483
+msgid "Rotate images left and right"
+msgstr "Putar gambar ke kiri dan kanan"
+
+#: class-ml-gallery.php:484
+msgid "Automatically advance through images at a set interval"
+msgstr "Secara otomatis maju melalui gambar pada interval yang ditentukan"
+
+#: class-ml-gallery.php:485
+msgid "Add social sharing buttons for each image"
+msgstr "Tambahkan tombol berbagi sosial untuk setiap gambar"
+
+#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
+#: class-ml-slider-lightbox.php:2409
+msgid "Navigation & Controls"
+msgstr "Navigasi & Kontrol"
+
+#: class-ml-gallery.php:525
+msgid "Animation effect when moving between images"
+msgstr "Efek animasi saat berpindah antar gambar"
+
+#: class-ml-gallery.php:525
+msgid "Transition"
+msgstr "Transisi"
+
+#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
+msgid "Arrows"
+msgstr "Panah"
+
+#: class-ml-gallery.php:535, fuzzy
+msgid "Loop"
+msgstr "Loop"
+
+#: class-ml-gallery.php:536, fuzzy
+msgid "Keyboard"
+msgstr "Keyboard"
+
+#: class-ml-gallery.php:537
+msgid "Mouse wheel"
+msgstr "Roda mouse"
+
+#: class-ml-gallery.php:538
+msgid "Swipe to close"
+msgstr "Geser untuk menutup"
+
+#: class-ml-gallery.php:540
+msgid "Display"
+msgstr "Tampilkan"
+
+#: class-ml-gallery.php:541
+msgid "Slide counter"
+msgstr "Penghitung slide"
+
+#: class-ml-gallery.php:542
+msgid "Thumbnail strip"
+msgstr "Gulungan thumbnail"
+
+#: class-ml-gallery.php:543
+msgid "Captions"
+msgstr "Keterangan"
+
+#: class-ml-gallery.php:544
+msgid "Download"
+msgstr "Unduh"
+
+#: class-ml-gallery.php:547, fuzzy
+msgid "Pager"
+msgstr "Pager"
+
+#: class-ml-gallery.php:553
+msgid "Pager pagination requires MetaSlider Gallery Pro"
+msgstr "Paginasi pager memerlukan MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
+#: class-ml-slider-lightbox.php:4008
+msgid "Enhanced Zoom & Controls"
+msgstr "Zoom & Kontrol yang Ditingkatkan"
+
+#: class-ml-gallery.php:561
+msgid "Fullscreen"
+msgstr "Layar penuh"
+
+#: class-ml-gallery.php:562
+msgid "Rotate"
+msgstr "Putar"
+
+#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
+#: class-ml-slider-lightbox.php:4057
+msgid "Advanced Features"
+msgstr "Fitur Lanjutan"
+
+#: class-ml-gallery.php:567
+msgid "Autoplay"
+msgstr "Putar otomatis"
+
+#: class-ml-gallery.php:568
+msgid "Share"
+msgstr "Bagikan"
+
+#: class-ml-gallery.php:572
+msgid "Unique Image URLs"
+msgstr "URL Gambar Unik"
+
+#: class-ml-gallery.php:578
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "URL Gambar Unik memerlukan MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
+#: class-ml-slider-lightbox.php:2058
+msgid "Appearance"
+msgstr "Tampilan"
+
+#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+msgid "Background Color"
+msgstr "Warna Latar Belakang"
+
+#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+msgid "Background Opacity"
+msgstr "Opasitas Latar Belakang"
+
+#: class-ml-gallery.php:616
+msgid "Arrow Color"
+msgstr "Warna Panah"
+
+#: class-ml-gallery.php:626
+msgid "Arrow Background"
+msgstr "Latar Belakang Panah"
+
+#: class-ml-gallery.php:636
+msgid "Close Icon Color"
+msgstr "Warna Ikon Tutup"
+
+#: class-ml-gallery.php:646
+msgid "Close Background"
+msgstr "Latar Belakang Tutup"
+
+#: class-ml-gallery.php:656
+msgid "Toolbar Icon Color"
+msgstr "Warna Ikon Toolbar"
+
+#: class-ml-gallery.php:666
+msgid "Toolbar Background"
+msgstr "Latar Belakang Toolbar"
+
+#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:681
+msgid "Copy and paste into any post or page."
+msgstr "Salin dan tempel ke dalam postingan atau halaman mana pun."
+
+#: class-ml-gallery.php:701
+msgid "Edit Caption"
+msgstr "Edit Keterangan"
+
+#: class-ml-gallery.php:702
+msgid "Close"
+msgstr "Tutup"
+
+#: class-ml-gallery.php:710
+msgid "Caption"
+msgstr "Keterangan"
+
+#: class-ml-gallery.php:717
+msgid "Cancel"
+msgstr "Batal"
+
+#: class-ml-gallery.php:720
+msgid "Save Caption"
+msgstr "Simpan Keterangan"
+
+#: class-ml-gallery.php:741
+msgid "Security check failed."
+msgstr "Pemeriksaan keamanan gagal."
+
+#: class-ml-gallery.php:745
+msgid "You do not have sufficient permissions."
+msgstr "Anda tidak memiliki izin yang cukup."
+
+#: class-ml-gallery.php:764
+msgid "Could not update the gallery. Please try again."
+msgstr "Tidak dapat memperbarui galeri. Silakan coba lagi."
+
+#: class-ml-gallery.php:890
+msgid "Select Gallery Images"
+msgstr "Pilih Gambar Galeri"
+
+#: class-ml-gallery.php:891
+msgid "Add to Gallery"
+msgstr "Tambahkan ke Galeri"
+
+#: class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"Galeri MetaSlider memerlukan MetaSlider dan setidaknya satu plugin lightbox "
+"yang didukung lainnya untuk diinstal dan diaktifkan."
+
+#: class-ml-slider-lightbox.php:1060
+msgid "More info"
+msgstr "Info lebih lanjut"
+
+#: class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"Ada lebih dari satu plugin lightbox yang diaktifkan. Ini dapat menyebabkan "
+"konflik dengan Galeri MetaSlider"
+
+#: class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "Edit pengaturan"
+
+#: class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "Buka di lightbox?"
+
+#: class-ml-slider-lightbox.php:1150
+#, php-format
+msgid ""
+"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+"settings</a>."
+msgstr ""
+"Lightbox diaktifkan untuk semua tayangan slide melalui <a "
+"href=\"%s\">pengaturan Mode Otomatis</a>."
+
+#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
+msgid "Open in Lightbox"
+msgstr "Buka di Lightbox"
+
+#: class-ml-slider-lightbox.php:1486
+msgid "View image"
+msgstr "Lihat gambar"
+
+#: class-ml-slider-lightbox.php:1734
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery memerlukan MetaSlider untuk diinstal dan diaktifkan."
+
+#: class-ml-slider-lightbox.php:1738
+msgid "Install MetaSlider"
+msgstr "Instal MetaSlider"
+
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1945
+#, php-format
+msgid "Select pages to %s..."
+msgstr "Pilih halaman untuk %s..."
+
+#: class-ml-slider-lightbox.php:1946
+#, php-format
+msgid "Select posts to %s..."
+msgstr "Pilih pos untuk %s..."
+
+#: class-ml-slider-lightbox.php:1947
+#, php-format
+msgid "Select post types to %s..."
+msgstr "Pilih jenis pos untuk %s..."
+
+#: class-ml-slider-lightbox.php:1948
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "Pilih %1$s untuk %2$s..."
+
+#: class-ml-slider-lightbox.php:1949
+msgid "Select post types to exclude"
+msgstr "Pilih jenis pos untuk dikecualikan"
+
+#: class-ml-slider-lightbox.php:1950
+msgid "Include"
+msgstr "Sertakan"
+
+#: class-ml-slider-lightbox.php:1951
+msgid "Exclude"
+msgstr "Kecualikan"
+
+#: class-ml-slider-lightbox.php:1959, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1979
+msgid "Lightboxes"
+msgstr "Lightbox"
+
+#: class-ml-slider-lightbox.php:1995
+msgid "Automatic Mode"
+msgstr "Mode Otomatis"
+
+#: class-ml-slider-lightbox.php:1996
+msgid "Manual Mode"
+msgstr "Mode Manual"
+
+#: class-ml-slider-lightbox.php:1998
+msgid "Behavior"
+msgstr "Perilaku"
+
+#: class-ml-slider-lightbox.php:2003
+msgid "Upgrade to Pro"
+msgstr "Upgrade ke Pro"
+
+#: class-ml-slider-lightbox.php:2023
+msgid "Settings saved successfully!"
+msgstr "Pengaturan berhasil disimpan!"
+
+#: class-ml-slider-lightbox.php:2033
+msgid "Where to Enable Automatically"
+msgstr "Di mana mengaktifkan secara otomatis"
+
+#: class-ml-slider-lightbox.php:2040, fuzzy
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider Slideshows"
+
+#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+msgid "Content Filtering"
+msgstr "Penyaringan Konten"
+
+#: class-ml-slider-lightbox.php:2059
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr ""
+"Kustomisasi warna, opasitas, dan gaya visual untuk overlay lightbox dan "
+"kontrol."
+
+#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+msgid "Background & Overlay"
+msgstr "Latar Belakang & Overlay"
+
+#: class-ml-slider-lightbox.php:2068
+msgid "Navigation"
+msgstr "Navigasi"
+
+#: class-ml-slider-lightbox.php:2073
+msgid "\"Open in Lightbox\" Button"
+msgstr "\"Buka di Lightbox\" Tombol"
+
+#: class-ml-slider-lightbox.php:2089
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>Plugin Pihak Ketiga Terdeteksi:</strong> Plugin lightbox pihak "
+"ketiga aktif. Pengaturan ini mungkin tidak berlaku untuk MetaSlider tetapi "
+"tetap akan berfungsi untuk lightbox konten WordPress."
+
+#: class-ml-slider-lightbox.php:2104
+msgid "Media & Video Enhancements"
+msgstr "Media & Peningkatan Video"
+
+#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+msgid "Social & Navigation"
+msgstr "Sosial & Navigasi"
+
+#: class-ml-slider-lightbox.php:2136
+msgid "Manual Lightbox Options"
+msgstr "Opsi Lightbox Manual"
+
+#: class-ml-slider-lightbox.php:2137
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr ""
+"Kontrol manual dan penggantian WordPress yang bekerja secara independen "
+"dari pengaturan otomatis."
+
+#: class-ml-slider-lightbox.php:2319
+msgid "Navigation Icons"
+msgstr "Ikon Navigasi"
+
+#: class-ml-slider-lightbox.php:2326
+msgid "Buttons"
+msgstr "Tombol"
+
+#: class-ml-slider-lightbox.php:2357
+msgid "Close Button"
+msgstr "Tombol Tutup"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Lightbox Toolbar"
+msgstr "Toolbar Lightbox"
+
+#: class-ml-slider-lightbox.php:2373
+msgid "Button Colors"
+msgstr "Warna Tombol"
+
+#: class-ml-slider-lightbox.php:2381
+msgid "Icon Colors"
+msgstr "Warna Ikon"
+
+#: class-ml-slider-lightbox.php:2389
+msgid "Button Text"
+msgstr "Teks Tombol"
+
+#: class-ml-slider-lightbox.php:2397
+msgid "Button Position"
+msgstr "Posisi Tombol"
+
+#: class-ml-slider-lightbox.php:2755
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "Konfigurasi pengaturan lightbox umum yang berlaku di seluruh situs."
+
+#: class-ml-slider-lightbox.php:2760
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr "Konfigurasi pengaturan khusus untuk fungsi lightbox MetaSlider."
+
+#: class-ml-slider-lightbox.php:2765
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "Pilih di mana lightbox akan diaktifkan secara otomatis."
+
+#: class-ml-slider-lightbox.php:2771
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Pilih bagaimana menyaring konten untuk pemrosesan lightbox dan tentukan "
+"halaman, pos, atau pemilih yang akan disertakan atau dikecualikan."
+
+#: class-ml-slider-lightbox.php:2787
+msgid "Processing Mode"
+msgstr "Mode Pemrosesan"
+
+#: class-ml-slider-lightbox.php:2790
+msgid "Process all content EXCEPT the items specified below"
+msgstr "Proses semua konten KECUALI item yang ditentukan di bawah ini"
+
+#: class-ml-slider-lightbox.php:2793
+msgid "ONLY process the items specified below"
+msgstr "HANYA proses item yang ditentukan di bawah ini"
+
+#: class-ml-slider-lightbox.php:2800
+msgid "Inclusion Mode"
+msgstr "Mode Inklusi"
+
+#: class-ml-slider-lightbox.php:2804
+msgid "Exclusion Mode"
+msgstr "Mode Eksklusi"
+
+#: class-ml-slider-lightbox.php:2824
+msgid "Images in post content"
+msgstr "Gambar dalam konten pos"
+
+#: class-ml-slider-lightbox.php:2825
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"Ketika diaktifkan, gambar individu tanpa tautan dan \"Perbesar untuk "
+"Mengklik\" yang diatur dalam pos dan halaman akan otomatis terbuka di "
+"lightbox."
+
+#: class-ml-slider-lightbox.php:2841
+msgid "Images and videos in widgets and sidebars"
+msgstr "Gambar dan video dalam widget dan sidebar"
+
+#: class-ml-slider-lightbox.php:2842
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"Ketika diaktifkan, gambar dan video di area widget akan otomatis terbuka di "
+"lightbox."
+
+#: class-ml-slider-lightbox.php:2858
+msgid "Gallery shortcodes and blocks"
+msgstr "Shortcode dan blok galeri"
+
+#: class-ml-slider-lightbox.php:2859
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"Ketika diaktifkan, gambar dalam shortcode [gallery] WordPress dan blok "
+"Galeri Gutenberg akan otomatis terbuka di lightbox."
+
+#: class-ml-slider-lightbox.php:2875
+msgid "Featured images"
+msgstr "Gambar unggulan"
+
+#: class-ml-slider-lightbox.php:2876
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"Ketika diaktifkan, gambar unggulan (thumbnail pos) akan otomatis terbuka di "
+"lightbox saat diklik."
+
+#: class-ml-slider-lightbox.php:2885
+msgid ""
+"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
+"the per-slider setting."
+msgstr ""
+"Aktifkan lightbox secara otomatis di semua slideshow MetaSlider, "
+"mengesampingkan pengaturan per-slider."
+
+#: class-ml-slider-lightbox.php:2899
+msgid "MetaSlider slideshows"
+msgstr "MetaSlider slideshow"
+
+#: class-ml-slider-lightbox.php:2900
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+"overriding the per-slider setting."
+msgstr ""
+"Saat diaktifkan, semua slideshow MetaSlider akan membuka slide di Lightbox, "
+"mengesampingkan pengaturan per-slider."
+
+#: class-ml-slider-lightbox.php:2916
+msgid "Videos in post content"
+msgstr "Video dalam konten pos"
+
+#: class-ml-slider-lightbox.php:2917
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"Saat diaktifkan, blok video mandiri (video HTML5, penyematan YouTube, "
+"penyematan Vimeo) dalam konten pos/halaman akan secara otomatis terbuka di "
+"Lightbox."
+
+#: class-ml-slider-lightbox.php:2932
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Warna latar untuk overlay Lightbox. Warna gelap bekerja paling baik untuk "
+"melihat gambar."
+
+#: class-ml-slider-lightbox.php:2945
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Warna latar untuk tombol \"Buka di Lightbox\" yang muncul di slide, gambar "
+"dan video."
+
+#: class-ml-slider-lightbox.php:2958
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Warna teks untuk tombol \"Buka di Lightbox\" yang muncul di slide, gambar "
+"dan video."
+
+#: class-ml-slider-lightbox.php:2971
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Warna latar saat mengarahkan mouse ke tombol \"Buka di Lightbox\"."
+
+#: class-ml-slider-lightbox.php:2984
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Warna teks saat mengarahkan mouse ke tombol \"Buka di Lightbox\"."
+
+#: class-ml-slider-lightbox.php:2997
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"Teks kustom untuk tombol Lightbox. Teks ini akan muncul di semua tombol "
+"\"Buka di Lightbox\" di seluruh situs."
+
+#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+msgid "Top Right (Default)"
+msgstr "Atas Kanan (Default)"
+
+#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
+msgid "Top Left"
+msgstr "Atas Kiri"
+
+#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
+msgid "Bottom Right"
+msgstr "Bawah Kanan"
+
+#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
+msgid "Bottom Left"
+msgstr "Bawah Kiri"
+
+#: class-ml-slider-lightbox.php:3023
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "Pilih di mana untuk menempatkan tombol tutup (X) di overlay Lightbox."
+
+#: class-ml-slider-lightbox.php:3049
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"Pilih di mana untuk menempatkan tombol \"Buka di Lightbox\" dalam slide, "
+"gambar, galeri, dan video."
+
+#: class-ml-slider-lightbox.php:3062
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Warna untuk panah navigasi sebelumnya dan berikutnya di Lightbox."
+
+#: class-ml-slider-lightbox.php:3075
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr ""
+"Warna panah saat mengarahkan mouse. Memberikan umpan balik visual saat "
+"pengguna menggerakkan mouse mereka di atas panah navigasi."
+
+#: class-ml-slider-lightbox.php:3088
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Warna untuk tombol tutup (X) di Lightbox."
+
+#: class-ml-slider-lightbox.php:3101
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr ""
+"Warna tombol tutup saat mengarahkan mouse. Memberikan umpan balik visual "
+"saat pengguna menggerakkan mouse mereka di atas tombol tutup."
+
+#: class-ml-slider-lightbox.php:3114
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"Warna untuk ikon toolbar dan teks penghitung di Lightbox. Mempengaruhi ikon "
+"zoom, layar penuh (Pro), dan tampilan penghitung gambar."
+
+#: class-ml-slider-lightbox.php:3127
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"Warna ikon toolbar saat mengarahkan kursor. Menciptakan umpan balik visual "
+"ketika pengguna menggerakkan mouse mereka di atas ikon toolbar dan "
+"penghitung."
+
+#: class-ml-slider-lightbox.php:3140
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr "Warna latar belakang untuk tombol panah navigasi sebelumnya dan berikutnya."
+
+#: class-ml-slider-lightbox.php:3153
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr ""
+"Warna latar belakang untuk tombol panah saat mengarahkan kursor. "
+"Menciptakan umpan balik visual ketika pengguna menggerakkan mouse mereka di "
+"atas panah."
+
+#: class-ml-slider-lightbox.php:3166
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "Warna latar belakang untuk tombol tutup (X) di Lightbox."
+
+#: class-ml-slider-lightbox.php:3179
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr ""
+"Warna latar belakang untuk tombol tutup saat mengarahkan kursor. "
+"Menciptakan umpan balik visual ketika pengguna menggerakkan mouse mereka di "
+"atas tombol tutup."
+
+#: class-ml-slider-lightbox.php:3192
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "Warna latar belakang untuk ikon toolbar di Lightbox."
+
+#: class-ml-slider-lightbox.php:3205
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr ""
+"Warna latar belakang untuk ikon toolbar saat mengarahkan kursor. "
+"Menciptakan umpan balik visual ketika pengguna menggerakkan mouse mereka di "
+"atas ikon toolbar."
+
+#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
+#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+msgid "Icon"
+msgstr "Ikon"
+
+#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+msgid "Icon Hover"
+msgstr "Ikon Hover"
+
+#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
+#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3406
+msgid "Background"
+msgstr "Latar Belakang"
+
+#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
+#: class-ml-slider-lightbox.php:3409
+msgid "Background Hover"
+msgstr "Latar Belakang Hover"
+
+#: class-ml-slider-lightbox.php:3317
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr ""
+"Atur opasitas latar belakang Lightbox (0 = transparan, 1 = tidak "
+"transparan)."
+
+#: class-ml-slider-lightbox.php:3328
+msgid "Show navigation arrows in lightbox"
+msgstr "Tampilkan panah navigasi di Lightbox"
+
+#: class-ml-slider-lightbox.php:3329
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"Tampilkan panah kiri/kanan untuk navigasi. Juga mengaktifkan navigasi "
+"keyboard (tombol ← →, ESC untuk menutup). Ini tersedia untuk slideshow dan "
+"galeri gambar."
+
+#: class-ml-slider-lightbox.php:3338
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "Kustomisasi latar belakang dan penampilan overlay Lightbox."
+
+#: class-ml-slider-lightbox.php:3343
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr ""
+"Kustomisasi ikon navigasi (tutup, panah sebelumnya, berikutnya) untuk "
+"Lightbox."
+
+#: class-ml-slider-lightbox.php:3348
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"Kustomisasi tombol \"Buka di Lightbox\" yang dapat ditambahkan ke slide, "
+"gambar, galeri, dan video."
+
+#: class-ml-slider-lightbox.php:3368
+msgid "Text"
+msgstr "Teks"
+
+#: class-ml-slider-lightbox.php:3371
+msgid "Text Hover"
+msgstr "Teks Hover"
+
+#: class-ml-slider-lightbox.php:3417
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr "Konfigurasi opsi navigasi dan kontrol yang berlaku untuk semua lightbox."
+
+#: class-ml-slider-lightbox.php:3427
+msgid "Show thumbnails"
+msgstr "Tampilkan thumbnail"
+
+#: class-ml-slider-lightbox.php:3428
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"Tampilkan gambar thumbnail di bagian bawah lightbox untuk navigasi yang "
+"mudah. Ini tersedia untuk slideshow dan galeri gambar."
+
+#: class-ml-slider-lightbox.php:3440
+msgid "Show \"Open in Lightbox\" button"
+msgstr "Tampilkan tombol \"Buka di Lightbox\""
+
+#: class-ml-slider-lightbox.php:3441
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"Ketika diaktifkan, menampilkan tombol untuk membuka lightbox. Ketika "
+"dinonaktifkan, mengklik slide, gambar, atau video langsung membuka lightbox."
+
+#: class-ml-slider-lightbox.php:3458
+msgid "Show an icon instead of button"
+msgstr "Tampilkan ikon alih-alih tombol"
+
+#: class-ml-slider-lightbox.php:3459
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr "Ketika diaktifkan, menampilkan ikon kecil alih-alih teks tombol penuh."
+
+#: class-ml-slider-lightbox.php:3473
+msgid "Show captions"
+msgstr "Tampilkan keterangan"
+
+#: class-ml-slider-lightbox.php:3474
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"Ketika diaktifkan, tampilkan keterangan di lightbox. Ini tersedia untuk "
+"slideshow, gambar, dan galeri gambar."
+
+#: class-ml-slider-lightbox.php:3481
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr "Fitur lightbox lanjutan tersedia melalui MetaSlider Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3483
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr "Dapatkan pratinjau fitur lanjutan yang tersedia di MetaSlider Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3486
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr ""
+"Plugin LightGallery.js lanjutan ini tersedia di versi Pro dengan opsi "
+"kustomisasi tambahan."
+
+#: class-ml-slider-lightbox.php:3512
+msgid "Include specific Pages"
+msgstr "Sertakan Halaman tertentu"
+
+#: class-ml-slider-lightbox.php:3514
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Pilih halaman di mana lightbox harus dinonaktifkan. Menampilkan hingga 100 "
+"halaman terbaru. Ketik untuk mencari."
+
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Pilih halaman di mana lightbox harus diaktifkan. Menampilkan hingga 100 "
+"halaman terbaru. Ketik untuk mencari."
+
+#: class-ml-slider-lightbox.php:3557
+msgid "Include specific Posts"
+msgstr "Sertakan Pos tertentu"
+
+#: class-ml-slider-lightbox.php:3559
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Pilih pos di mana lightbox harus dinonaktifkan. Menampilkan hingga 100 pos "
+"terbaru. Ketik untuk mencari."
+
+#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Pilih pos di mana lightbox harus diaktifkan. Menampilkan hingga 100 pos "
+"terbaru. Ketik untuk mencari."
+
+#: class-ml-slider-lightbox.php:3587
+msgid "include"
+msgstr "sertakan"
+
+#: class-ml-slider-lightbox.php:3587
+msgid "exclude"
+msgstr "kecualikan"
+
+#: class-ml-slider-lightbox.php:3626
+#, php-format
+msgid "%s specific %s"
+msgstr "%s spesifik %s"
+
+#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "Menampilkan hingga 100 %s terbaru. Ketik untuk mencari."
+
+#: class-ml-slider-lightbox.php:3675
+msgid "Include specific post types"
+msgstr "Sertakan jenis pos tertentu"
+
+#: class-ml-slider-lightbox.php:3677
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr "Pilih jenis pos di mana Lightbox harus dinonaktifkan sepenuhnya."
+
+#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "Pilih jenis pos di mana Lightbox harus diaktifkan sepenuhnya."
+
+#: class-ml-slider-lightbox.php:3712
+msgid "Exclude by CSS selector"
+msgstr "Kecualikan dengan pemilih CSS"
+
+#: class-ml-slider-lightbox.php:3715
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"Pemilih CSS untuk elemen yang akan dikecualikan dari Lightbox (satu per "
+"baris). Contoh:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar "
+".widget-area"
+
+#: class-ml-slider-lightbox.php:3738
+msgid "Minimum Image Width"
+msgstr "Lebar Gambar Minimum"
+
+#: class-ml-slider-lightbox.php:3741
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"Lewati gambar yang lebih sempit dari lebar ini (dalam piksel). Menggunakan "
+"lebar yang ditampilkan, bukan ukuran file gambar yang sebenarnya. Ini "
+"berguna untuk mengecualikan ikon kecil, lencana, dan tombol."
+
+#: class-ml-slider-lightbox.php:3764
+msgid "Minimum Image Height"
+msgstr "Tinggi Gambar Minimum"
+
+#: class-ml-slider-lightbox.php:3767
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"Lewati gambar yang lebih pendek dari tinggi ini (dalam piksel). Menggunakan "
+"tinggi yang ditampilkan, bukan ukuran file gambar yang sebenarnya. Ini "
+"berguna untuk mengecualikan ikon kecil, lencana, dan tombol."
+
+#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr ""
+"Penanganan media yang ditingkatkan dan fitur pemutaran video untuk galeri "
+"profesional."
+
+#: class-ml-slider-lightbox.php:3790
+msgid "Advanced features for professional lightbox implementations."
+msgstr "Fitur lanjutan untuk implementasi Lightbox profesional."
+
+#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+msgid "Enable Zoom"
+msgstr "Aktifkan Zoom"
+
+#: class-ml-slider-lightbox.php:3802
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr ""
+"Klik dua kali untuk zoom, kontrol zoom, zoom dengan roda mouse, dan opsi "
+"zoom untuk menyesuaikan."
+
+#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+msgid "Enable Fullscreen"
+msgstr "Aktifkan Layar Penuh"
+
+#: class-ml-slider-lightbox.php:3813
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr ""
+"Dukungan layar penuh HTML5 asli dengan pintasan keyboard (tombol F) untuk "
+"tampilan yang imersif."
+
+#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+msgid "Enable Rotate"
+msgstr "Aktifkan Putar"
+
+#: class-ml-slider-lightbox.php:3824
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr ""
+"Putar gambar searah jarum jam/berlawanan arah jarum jam, flip "
+"horizontal/vertikal dengan kontrol toolbar."
+
+#: class-ml-slider-lightbox.php:3834
+msgid "Enable Video"
+msgstr "Aktifkan Video"
+
+#: class-ml-slider-lightbox.php:3835
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr ""
+"Dukungan video yang ditingkatkan untuk YouTube, Vimeo, video HTML5 dengan "
+"pemutaran otomatis dan kontrol kualitas."
+
+#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:4170
+msgid "Enable Unique Image URLs"
+msgstr "Aktifkan URL Gambar Unik"
+
+#: class-ml-slider-lightbox.php:3846
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr ""
+"URL unik untuk setiap gambar galeri dengan dukungan navigasi kembali/maju "
+"di browser."
+
+#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+msgid "Enable Autoplay"
+msgstr "Aktifkan Pemutaran Otomatis"
+
+#: class-ml-slider-lightbox.php:3857
+msgid "Automatically advance through images in the lightbox."
+msgstr "Secara otomatis maju melalui gambar di lightbox."
+
+#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+msgid "Enable Share"
+msgstr "Aktifkan Berbagi"
+
+#: class-ml-slider-lightbox.php:3868
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr ""
+"Tombol berbagi media sosial untuk Facebook, Twitter, Pinterest, dan berbagi "
+"URL langsung."
+
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+msgid "Enable Pager"
+msgstr "Aktifkan Pager"
+
+#: class-ml-slider-lightbox.php:3879
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr "Titik paginasi minimal untuk navigasi yang bersih tanpa pratinjau thumbnail."
+
+#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr ""
+"Kontrol interaksi zoom dan gambar profesional untuk meningkatkan pengalaman "
+"pengguna."
+
+#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr "Peningkatan berbagi sosial dan navigasi untuk meningkatkan keterlibatan."
+
+#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+msgid "Advanced functionality including URL management and automation features."
+msgstr "Fungsi canggih termasuk manajemen URL dan fitur otomatisasi."
+
+#: class-ml-slider-lightbox.php:3962
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "Fitur ini tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr ""
+"Izinkan pengguna untuk zoom in dan out dengan klik ganda, roda mouse, dan "
+"kontrol zoom."
+
+#: class-ml-slider-lightbox.php:4016
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "Kontrol zoom tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4021
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr "Mode layar penuh HTML5 asli untuk pengalaman melihat gambar yang mendalam."
+
+#: class-ml-slider-lightbox.php:4023
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "Mode layar penuh tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr ""
+"Putar gambar searah jarum jam/berlawanan arah jarum jam dan flip "
+"horizontal/vertikal."
+
+#: class-ml-slider-lightbox.php:4030
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "Rotasi gambar tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4042
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr "Berbagi media sosial bawaan untuk Facebook, Twitter, dan Pinterest."
+
+#: class-ml-slider-lightbox.php:4044
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "Berbagi sosial tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr ""
+"Titik pagination minimal alih-alih thumbnail untuk antarmuka yang lebih "
+"bersih."
+
+#: class-ml-slider-lightbox.php:4051
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "Pagination Pager tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr ""
+"Hasilkan URL unik untuk setiap gambar galeri dengan navigasi mundur/maju di "
+"browser."
+
+#: class-ml-slider-lightbox.php:4065
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "URL Gambar Unik tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "Slideshow otomatis dengan kontrol waktu dan bilah kemajuan."
+
+#: class-ml-slider-lightbox.php:4072
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "Autoplay tersedia di MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4089
+msgid "Features"
+msgstr "Fitur"
+
+#: class-ml-slider-lightbox.php:4090
+msgid "Free"
+msgstr "Gratis"
+
+#: class-ml-slider-lightbox.php:4091, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+msgid "Installed"
+msgstr "Terpasang"
+
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+msgid "Upgrade now"
+msgstr "Tingkatkan sekarang"
+
+#: class-ml-slider-lightbox.php:4106
+msgid "Automatic lightbox for images"
+msgstr "Lightbox otomatis untuk gambar"
+
+#: class-ml-slider-lightbox.php:4107
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "Secara otomatis aktifkan lightbox untuk semua gambar di situs Anda."
+
+#: class-ml-slider-lightbox.php:4114
+msgid "MetaSlider integration"
+msgstr "Integrasi MetaSlider"
+
+#: class-ml-slider-lightbox.php:4115
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "Integrasi tanpa batas dengan slideshow MetaSlider."
+
+#: class-ml-slider-lightbox.php:4122
+msgid "WordPress gallery support"
+msgstr "Dukungan galeri WordPress"
+
+#: class-ml-slider-lightbox.php:4123
+msgid "Support for WordPress native galleries and blocks."
+msgstr "Dukungan untuk galeri dan blok asli WordPress."
+
+#: class-ml-slider-lightbox.php:4130
+msgid "Appearance customization"
+msgstr "Kustomisasi penampilan"
+
+#: class-ml-slider-lightbox.php:4131
+msgid "Customize colors, opacity, and button styles."
+msgstr "Sesuaikan warna, opasitas, dan gaya tombol."
+
+#: class-ml-slider-lightbox.php:4138
+msgid "Zoom controls"
+msgstr "Kontrol Zoom"
+
+#: class-ml-slider-lightbox.php:4146
+msgid "Fullscreen mode"
+msgstr "Mode Layar Penuh"
+
+#: class-ml-slider-lightbox.php:4147
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "Layar penuh HTML5 asli untuk melihat gambar yang imersif."
+
+#: class-ml-slider-lightbox.php:4154
+msgid "Rotate and flip images"
+msgstr "Putar dan balik gambar"
+
+#: class-ml-slider-lightbox.php:4162
+msgid "Social media sharing"
+msgstr "Berbagi media sosial"
+
+#: class-ml-slider-lightbox.php:4163
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "Berbagi bawaan untuk Facebook, Twitter, dan Pinterest."
+
+#: class-ml-slider-lightbox.php:4178
+msgid "Autoplay slideshow"
+msgstr "Slideshow otomatis"
+
+#: class-ml-slider-lightbox.php:4186
+msgid "Pager navigation"
+msgstr "Navigasi Pager"
+
+#: class-ml-slider-lightbox.php:4194
+msgid "Premium support"
+msgstr "Dukungan Premium"
+
+#: class-ml-slider-lightbox.php:4195
+msgid "Have your specific queries addressed directly by our experts."
+msgstr "Ajukan pertanyaan spesifik Anda langsung kepada para ahli kami."
+
+#: class-ml-slider-lightbox.php:6006
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr ""
+"Konfigurasikan bagaimana lightbox berinteraksi dengan fitur bawaan "
+"WordPress."
+
+#: class-ml-slider-lightbox.php:6021
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "Tindakan Override Pengaturan \"Perbesar saat Diklik\" WordPress"
+
+#: class-ml-slider-lightbox.php:6022
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"Saat diaktifkan, menonaktifkan lightbox bawaan WordPress dan menggunakan "
+"lightbox kami untuk gambar yang diatur ke \"Perbesar saat Diklik\". Saat "
+"dinonaktifkan, menghormati pengaturan WordPress dan melewatkan gambar yang "
+"diatur ke \"Perbesar saat Diklik\"."
+
+#: class-ml-slider-lightbox.php:6038
+msgid "Override \"Link to Image File\" Setting"
+msgstr "Tindakan Override Pengaturan \"Tautan ke File Gambar\""
+
+#: class-ml-slider-lightbox.php:6039
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"Saat diaktifkan, menggunakan lightbox kami untuk gambar yang terhubung ke "
+"file gambar ukuran penuh mereka (umumnya diatur melalui \"Tautan ke File "
+"Gambar\" di editor blok). Saat dinonaktifkan, menghormati perilaku tautan "
+"asli."
+
+#: class-ml-slider-lightbox.php:6070
+msgid "Exclude Post Types from Manual Processing"
+msgstr "Kecualikan Jenis Postingan dari Pemrosesan Manual"
+
+#: class-ml-slider-lightbox.php:6073
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"Pilih jenis postingan di mana opsi Manual TIDAK boleh berfungsi. Misalnya, "
+"pilih \"Produk (produk)\" untuk menonaktifkan lightbox Manual di halaman "
+"produk WooCommerce sambil mempertahankannya aktif di tempat lain."
+
+#: class-ml-slider-lightbox.php:6097
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "Cara menggunakan: \"Perbesar saat Diklik\" WordPress"
+
+#: class-ml-slider-lightbox.php:6099
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"WordPress memiliki fitur bawaan \"Perbesar saat Diklik\" untuk gambar. "
+"Berikut cara mengaktifkannya:"
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+msgid "Select an image in the block editor."
+msgstr "Pilih gambar di editor blok."
+
+#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
+msgid "In the block toolbar, click on the Link icon."
+msgstr "Di toolbar blok, klik pada ikon Tautan."
+
+#: class-ml-slider-lightbox.php:6103
+msgid "Select \"Enlarge on click\"."
+msgstr "Pilih \"Perbesar saat diklik\"."
+
+#: class-ml-slider-lightbox.php:6109
+msgid "How to use: \"Link to Image File\""
+msgstr "Cara menggunakan: \"Tautan ke File Gambar\""
+
+#: class-ml-slider-lightbox.php:6111
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr ""
+"Anda dapat menautkan gambar langsung ke file media ukuran penuh mereka. "
+"Berikut caranya:"
+
+#: class-ml-slider-lightbox.php:6112
+msgid "For the Block Editor:"
+msgstr "Untuk Editor Blok:"
+
+#: class-ml-slider-lightbox.php:6116
+msgid "Choose \"Link to image file\"."
+msgstr "Pilih \"Tautan ke file gambar\"."
+
+#: class-ml-slider-lightbox.php:6118
+msgid "For the Classic Editor:"
+msgstr "Untuk Editor Klasik:"
+
+#: class-ml-slider-lightbox.php:6120
+msgid "Select an image."
+msgstr "Pilih gambar."
+
+#: class-ml-slider-lightbox.php:6121
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "Di toolbar gambar, klik pada ikon Edit."
+
+#: class-ml-slider-lightbox.php:6122
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "Pilih \"File Media\" pada dropdown \"Tautan Ke\"."
+
+#: class-ml-slider-lightbox.php:6128
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "Cara menggunakan: Metode Kelas CSS (Lanjutan)"
+
+#: class-ml-slider-lightbox.php:6130
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"Untuk pengembang: Tambahkan kelas <code>ml-lightbox-enabled</code> untuk "
+"mengaktifkan Lightbox pada elemen apa pun yang berisi gambar."
+
+#: class-ml-slider-lightbox.php:6131
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "Metode 1: Kelas CSS Tambahan Editor Blok"
+
+#: class-ml-slider-lightbox.php:6133
+msgid "Select an image or gallery block."
+msgstr "Pilih gambar atau blok galeri."
+
+#: class-ml-slider-lightbox.php:6134
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "Di sidebar pengaturan blok, gulir ke \"Lanjutan\"."
+
+#: class-ml-slider-lightbox.php:6135
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr "Tambahkan <code>ml-lightbox-enabled</code> ke \"Kelas CSS tambahan\"."
+
+#: class-ml-slider-lightbox.php:6137
+msgid "Method 2: HTML/Code"
+msgstr "Metode 2: HTML/Kode"
+
+#: class-ml-slider-lightbox.php:6138
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "Untuk pengembang HTML atau tema kustom, tambahkan kelas secara langsung:"
+
+#: class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "Semua slide akan terbuka di Lightbox, menggunakan %s"

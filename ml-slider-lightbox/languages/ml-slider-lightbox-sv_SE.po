@@ -1,0 +1,1573 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 15:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: sv-SE\n"
+
+#: class-ml-gallery.php:70
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "Några av dessa funktioner är tillgängliga i MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:78
+msgid "Fade"
+msgstr "Blekning"
+
+#: class-ml-gallery.php:79, fuzzy
+msgid "Slide"
+msgstr "Slide"
+
+#: class-ml-gallery.php:80 class-ml-gallery.php:560
+msgid "Zoom"
+msgstr "Zooma"
+
+#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
+msgid "Galleries"
+msgstr "Gallerier"
+
+#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
+msgid "Gallery"
+msgstr "Galleri"
+
+#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
+#: class-ml-gallery.php:1124
+msgid "Add New Gallery"
+msgstr "Lägg till nytt galleri"
+
+#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
+#: class-ml-gallery.php:258
+msgid "Edit Gallery"
+msgstr "Redigera galleri"
+
+#: class-ml-gallery.php:138 class-ml-gallery.php:241
+msgid "New Gallery"
+msgstr "Nytt galleri"
+
+#: class-ml-gallery.php:139
+msgid "Search Galleries"
+msgstr "Sök gallerier"
+
+#: class-ml-gallery.php:140
+msgid "No galleries found."
+msgstr "Inga gallerier hittades."
+
+#: class-ml-gallery.php:141
+msgid "No galleries found in trash."
+msgstr "Inga gallerier hittades i papperskorgen."
+
+#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Du har inte tillräckliga behörigheter för att komma åt den här sidan."
+
+#: class-ml-gallery.php:238
+msgid "Gallery not found."
+msgstr "Galleri hittades inte."
+
+#: class-ml-gallery.php:260
+msgid "Save Gallery"
+msgstr "Spara galleri"
+
+#: class-ml-gallery.php:261
+msgid "Update Gallery"
+msgstr "Uppdatera galleri"
+
+#: class-ml-gallery.php:274
+msgid "Back to Galleries"
+msgstr "Tillbaka till gallerier"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:1130
+#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: class-ml-gallery.php:308
+msgid "Gallery saved."
+msgstr "Galleri sparat."
+
+#: class-ml-gallery.php:319
+msgid "Enter gallery title"
+msgstr "Ange galleri titel"
+
+#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+msgid "Images"
+msgstr "Bilder"
+
+#: class-ml-gallery.php:331
+msgid "No images added yet"
+msgstr "Inga bilder har lagts till än"
+
+#: class-ml-gallery.php:344 class-ml-gallery.php:892
+msgid "Remove image"
+msgstr "Ta bort bild"
+
+#: class-ml-gallery.php:349 class-ml-gallery.php:893
+msgid "Edit caption"
+msgstr "Redigera bildtext"
+
+#: class-ml-gallery.php:362
+msgid "Add Images"
+msgstr "Lägg till bilder"
+
+#: class-ml-gallery.php:369, fuzzy
+msgid "Layout"
+msgstr "Layout"
+
+#: class-ml-gallery.php:372
+msgid "Gallery layout"
+msgstr "Galleri-layout"
+
+#: class-ml-gallery.php:384
+msgid "Grid"
+msgstr "Rutnät"
+
+#: class-ml-gallery.php:398, fuzzy
+msgid "Masonry"
+msgstr "Masonry"
+
+#: class-ml-gallery.php:414, fuzzy
+msgid "Justified"
+msgstr "Justified"
+
+#: class-ml-gallery.php:427
+msgid "Carousel"
+msgstr "Karusell"
+
+#: class-ml-gallery.php:436
+msgid "Columns"
+msgstr "Kolumner"
+
+#: class-ml-gallery.php:446
+msgid "Gap"
+msgstr "Avstånd"
+
+#: class-ml-gallery.php:460
+msgid "Lightbox Settings"
+msgstr "Lightbox-inställningar"
+
+#: class-ml-gallery.php:464
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "Zoomkontroller kräver MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:465
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "Helskärmsläge kräver MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:466
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "Autoplay kräver MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:467
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "Bildrotation kräver MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:468
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "Social delning kräver MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:472
+msgid "Show left and right navigation arrows"
+msgstr "Visa vänster och höger navigeringspilar"
+
+#: class-ml-gallery.php:473
+msgid "Cycle back to the first image after reaching the last"
+msgstr "Cykla tillbaka till den första bilden efter att ha nått den sista"
+
+#: class-ml-gallery.php:474
+msgid "Navigate images using left and right arrow keys"
+msgstr "Navigera bilder med hjälp av vänster och höger piltangenter"
+
+#: class-ml-gallery.php:475
+msgid "Scroll through images using the mouse wheel"
+msgstr "Bläddra igenom bilder med musens rullhjul"
+
+#: class-ml-gallery.php:476
+msgid "Swipe up or down to close the lightbox on touch devices"
+msgstr "Svep upp eller ner för att stänga Lightbox på pekskärmsenheter"
+
+#: class-ml-gallery.php:477
+msgid "Display the current image number and total count"
+msgstr "Visa det aktuella bildnumret och totala antalet"
+
+#: class-ml-gallery.php:478
+msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+msgstr "Visa en remsa av miniatyrbilder längst ner i Lightbox"
+
+#: class-ml-gallery.php:479
+msgid "Display image captions in the lightbox"
+msgstr "Visa bildtexter i Lightbox"
+
+#: class-ml-gallery.php:480
+msgid "Show a download button for each image"
+msgstr "Visa en nedladdningsknapp för varje bild"
+
+#: class-ml-gallery.php:481
+msgid "Pinch and zoom into images"
+msgstr "Klia och zooma in på bilder"
+
+#: class-ml-gallery.php:482
+msgid "Expand the lightbox to fill the entire screen"
+msgstr "Expandera Lightbox för att fylla hela skärmen"
+
+#: class-ml-gallery.php:483
+msgid "Rotate images left and right"
+msgstr "Rotera bilder åt vänster och höger"
+
+#: class-ml-gallery.php:484
+msgid "Automatically advance through images at a set interval"
+msgstr "Automatiskt avancera genom bilder med ett angivet intervall"
+
+#: class-ml-gallery.php:485
+msgid "Add social sharing buttons for each image"
+msgstr "Lägg till knappar för social delning för varje bild"
+
+#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
+#: class-ml-slider-lightbox.php:2409
+msgid "Navigation & Controls"
+msgstr "Navigering & Kontroller"
+
+#: class-ml-gallery.php:525
+msgid "Animation effect when moving between images"
+msgstr "Animations effekt när man rör sig mellan bilder"
+
+#: class-ml-gallery.php:525
+msgid "Transition"
+msgstr "Övergång"
+
+#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
+msgid "Arrows"
+msgstr "Pilar"
+
+#: class-ml-gallery.php:535, fuzzy
+msgid "Loop"
+msgstr "Loop"
+
+#: class-ml-gallery.php:536
+msgid "Keyboard"
+msgstr "Tangentbord"
+
+#: class-ml-gallery.php:537
+msgid "Mouse wheel"
+msgstr "Musens rullhjul"
+
+#: class-ml-gallery.php:538
+msgid "Swipe to close"
+msgstr "Svep för att stänga"
+
+#: class-ml-gallery.php:540
+msgid "Display"
+msgstr "Visa"
+
+#: class-ml-gallery.php:541
+msgid "Slide counter"
+msgstr "Bildspelräknare"
+
+#: class-ml-gallery.php:542
+msgid "Thumbnail strip"
+msgstr "Miniatyrstrip"
+
+#: class-ml-gallery.php:543
+msgid "Captions"
+msgstr "Bildtexter"
+
+#: class-ml-gallery.php:544
+msgid "Download"
+msgstr "Ladda ner"
+
+#: class-ml-gallery.php:547, fuzzy
+msgid "Pager"
+msgstr "Pager"
+
+#: class-ml-gallery.php:553
+msgid "Pager pagination requires MetaSlider Gallery Pro"
+msgstr "Pagedelning kräver MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
+#: class-ml-slider-lightbox.php:4008
+msgid "Enhanced Zoom & Controls"
+msgstr "Förbättrad zoom & kontroller"
+
+#: class-ml-gallery.php:561
+msgid "Fullscreen"
+msgstr "Helskärm"
+
+#: class-ml-gallery.php:562
+msgid "Rotate"
+msgstr "Rotera"
+
+#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
+#: class-ml-slider-lightbox.php:4057
+msgid "Advanced Features"
+msgstr "Avancerade funktioner"
+
+#: class-ml-gallery.php:567
+msgid "Autoplay"
+msgstr "Autospel"
+
+#: class-ml-gallery.php:568
+msgid "Share"
+msgstr "Dela"
+
+#: class-ml-gallery.php:572
+msgid "Unique Image URLs"
+msgstr "Unika bild-URL:er"
+
+#: class-ml-gallery.php:578
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "Unika bild-URL:er kräver MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
+#: class-ml-slider-lightbox.php:2058
+msgid "Appearance"
+msgstr "Utseende"
+
+#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+msgid "Background Color"
+msgstr "Bakgrundsfärg"
+
+#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+msgid "Background Opacity"
+msgstr "Bakgrundsopacitet"
+
+#: class-ml-gallery.php:616
+msgid "Arrow Color"
+msgstr "Pilarfärg"
+
+#: class-ml-gallery.php:626
+msgid "Arrow Background"
+msgstr "Pilar Bakgrund"
+
+#: class-ml-gallery.php:636
+msgid "Close Icon Color"
+msgstr "Stäng Ikon Färg"
+
+#: class-ml-gallery.php:646
+msgid "Close Background"
+msgstr "Stäng Bakgrund"
+
+#: class-ml-gallery.php:656
+msgid "Toolbar Icon Color"
+msgstr "Verktygsfält Ikon Färg"
+
+#: class-ml-gallery.php:666
+msgid "Toolbar Background"
+msgstr "Verktygsfält Bakgrund"
+
+#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:681
+msgid "Copy and paste into any post or page."
+msgstr "Kopiera och klistra in i valfritt inlägg eller sida."
+
+#: class-ml-gallery.php:701
+msgid "Edit Caption"
+msgstr "Redigera Bildtext"
+
+#: class-ml-gallery.php:702
+msgid "Close"
+msgstr "Stäng"
+
+#: class-ml-gallery.php:710
+msgid "Caption"
+msgstr "Bildtext"
+
+#: class-ml-gallery.php:717
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: class-ml-gallery.php:720
+msgid "Save Caption"
+msgstr "Spara Bildtext"
+
+#: class-ml-gallery.php:741
+msgid "Security check failed."
+msgstr "Säkerhetskontroll misslyckades."
+
+#: class-ml-gallery.php:745
+msgid "You do not have sufficient permissions."
+msgstr "Du har inte tillräckliga behörigheter."
+
+#: class-ml-gallery.php:764
+msgid "Could not update the gallery. Please try again."
+msgstr "Kunde inte uppdatera galleriet. Vänligen försök igen."
+
+#: class-ml-gallery.php:890
+msgid "Select Gallery Images"
+msgstr "Välj Galleri Bilder"
+
+#: class-ml-gallery.php:891
+msgid "Add to Gallery"
+msgstr "Lägg till i Galleri"
+
+#: class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"MetaSlider Galleri kräver att MetaSlider och minst en annan stödjad "
+"lightbox-plugin är installerad och aktiverad."
+
+#: class-ml-slider-lightbox.php:1060
+msgid "More info"
+msgstr "Mer information"
+
+#: class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"Det finns mer än en lightbox-plugin aktiverad. Detta kan orsaka konflikter "
+"med MetaSlider Galleri"
+
+#: class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "Redigera inställningar"
+
+#: class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "Öppna i lightbox?"
+
+#: class-ml-slider-lightbox.php:1150
+#, php-format
+msgid ""
+"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+"settings</a>."
+msgstr ""
+"Lightbox är aktiverad för alla bildspel via <a href=\"%s\">inställningar "
+"för Automatisk läge</a>."
+
+#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
+msgid "Open in Lightbox"
+msgstr "Öppna i Lightbox"
+
+#: class-ml-slider-lightbox.php:1486
+msgid "View image"
+msgstr "Visa bild"
+
+#: class-ml-slider-lightbox.php:1734
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery kräver att MetaSlider är installerad och aktiverad."
+
+#: class-ml-slider-lightbox.php:1738
+msgid "Install MetaSlider"
+msgstr "Installera MetaSlider"
+
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1945
+#, php-format
+msgid "Select pages to %s..."
+msgstr "Välj sidor för %s..."
+
+#: class-ml-slider-lightbox.php:1946
+#, php-format
+msgid "Select posts to %s..."
+msgstr "Välj inlägg för %s..."
+
+#: class-ml-slider-lightbox.php:1947
+#, php-format
+msgid "Select post types to %s..."
+msgstr "Välj inläggstyper för %s..."
+
+#: class-ml-slider-lightbox.php:1948
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "Välj %1$s till %2$s..."
+
+#: class-ml-slider-lightbox.php:1949
+msgid "Select post types to exclude"
+msgstr "Välj inläggstyper att exkludera"
+
+#: class-ml-slider-lightbox.php:1950
+msgid "Include"
+msgstr "Inkludera"
+
+#: class-ml-slider-lightbox.php:1951
+msgid "Exclude"
+msgstr "Exkludera"
+
+#: class-ml-slider-lightbox.php:1959, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1979, fuzzy
+msgid "Lightboxes"
+msgstr "Lightboxes"
+
+#: class-ml-slider-lightbox.php:1995
+msgid "Automatic Mode"
+msgstr "Automatisk läge"
+
+#: class-ml-slider-lightbox.php:1996
+msgid "Manual Mode"
+msgstr "Manuell läge"
+
+#: class-ml-slider-lightbox.php:1998
+msgid "Behavior"
+msgstr "Beteende"
+
+#: class-ml-slider-lightbox.php:2003
+msgid "Upgrade to Pro"
+msgstr "Uppgradera till Pro"
+
+#: class-ml-slider-lightbox.php:2023
+msgid "Settings saved successfully!"
+msgstr "Inställningar sparades framgångsrikt!"
+
+#: class-ml-slider-lightbox.php:2033
+msgid "Where to Enable Automatically"
+msgstr "Var du aktiverar automatiskt"
+
+#: class-ml-slider-lightbox.php:2040
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider bildspel"
+
+#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+msgid "Content Filtering"
+msgstr "Innehållsfiltrering"
+
+#: class-ml-slider-lightbox.php:2059
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr ""
+"Anpassa färger, opacitet och visuell stil för lightbox-overlay och "
+"kontroller."
+
+#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+msgid "Background & Overlay"
+msgstr "Bakgrund & Overlay"
+
+#: class-ml-slider-lightbox.php:2068, fuzzy
+msgid "Navigation"
+msgstr "Navigation"
+
+#: class-ml-slider-lightbox.php:2073
+msgid "\"Open in Lightbox\" Button"
+msgstr "\"Öppna i Lightbox\" knapp"
+
+#: class-ml-slider-lightbox.php:2089
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>Tredjepartsplugin detekterad:</strong> Ett tredjeparts "
+"lightbox-plugin är aktivt. Dessa inställningar kanske inte gäller för "
+"MetaSlider men kommer fortfarande att fungera för WordPress-innehålls "
+"lightboxar."
+
+#: class-ml-slider-lightbox.php:2104
+msgid "Media & Video Enhancements"
+msgstr "Media & Videoförbättringar"
+
+#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+msgid "Social & Navigation"
+msgstr "Socialt & Navigation"
+
+#: class-ml-slider-lightbox.php:2136
+msgid "Manual Lightbox Options"
+msgstr "Manuella Lightbox-alternativ"
+
+#: class-ml-slider-lightbox.php:2137
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr ""
+"Manuella kontroller och WordPress-överskrivningar som fungerar oberoende av "
+"automatiska inställningar."
+
+#: class-ml-slider-lightbox.php:2319
+msgid "Navigation Icons"
+msgstr "Navigeringsikoner"
+
+#: class-ml-slider-lightbox.php:2326
+msgid "Buttons"
+msgstr "Knappar"
+
+#: class-ml-slider-lightbox.php:2357
+msgid "Close Button"
+msgstr "Stäng knapp"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Lightbox Toolbar"
+msgstr "Lightbox-verktygsfält"
+
+#: class-ml-slider-lightbox.php:2373
+msgid "Button Colors"
+msgstr "Knappfärger"
+
+#: class-ml-slider-lightbox.php:2381
+msgid "Icon Colors"
+msgstr "Ikonfärger"
+
+#: class-ml-slider-lightbox.php:2389
+msgid "Button Text"
+msgstr "Knapptext"
+
+#: class-ml-slider-lightbox.php:2397
+msgid "Button Position"
+msgstr "Knappläge"
+
+#: class-ml-slider-lightbox.php:2755
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "Konfigurera allmänna lightbox-inställningar som gäller för hela webbplatsen."
+
+#: class-ml-slider-lightbox.php:2760
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr "Konfigurera inställningar specifika för MetaSlider lightbox-funktionalitet."
+
+#: class-ml-slider-lightbox.php:2765
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "Välj var lightboxen automatiskt ska aktiveras."
+
+#: class-ml-slider-lightbox.php:2771
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Välj hur innehåll ska filtreras för lightbox-behandling och specificera "
+"vilka sidor, inlägg eller selektorer som ska inkluderas eller exkluderas."
+
+#: class-ml-slider-lightbox.php:2787
+msgid "Processing Mode"
+msgstr "Bearbetningsläge"
+
+#: class-ml-slider-lightbox.php:2790
+msgid "Process all content EXCEPT the items specified below"
+msgstr "Bearbeta allt innehåll FÖRUTOM de angivna objekten nedan"
+
+#: class-ml-slider-lightbox.php:2793
+msgid "ONLY process the items specified below"
+msgstr "BEARbeta ENDAST de angivna objekten nedan"
+
+#: class-ml-slider-lightbox.php:2800
+msgid "Inclusion Mode"
+msgstr "Inklusionsläge"
+
+#: class-ml-slider-lightbox.php:2804
+msgid "Exclusion Mode"
+msgstr "Exklusionsläge"
+
+#: class-ml-slider-lightbox.php:2824
+msgid "Images in post content"
+msgstr "Bilder i inläggsinnehåll"
+
+#: class-ml-slider-lightbox.php:2825
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"När det är aktiverat kommer individuella bilder utan länkar och \"Förstora "
+"vid klick\" inställt i inlägg och sidor automatiskt att öppnas i lightboxen."
+
+#: class-ml-slider-lightbox.php:2841
+msgid "Images and videos in widgets and sidebars"
+msgstr "Bilder och videor i widgets och sidofält"
+
+#: class-ml-slider-lightbox.php:2842
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"När det är aktiverat kommer bilder och videor i widgetområden automatiskt "
+"att öppnas i lightboxen."
+
+#: class-ml-slider-lightbox.php:2858
+msgid "Gallery shortcodes and blocks"
+msgstr "Galleri-shortcodes och block"
+
+#: class-ml-slider-lightbox.php:2859
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"När det är aktiverat kommer bilder i WordPress [gallery] shortcodes och "
+"Gutenberg Gallery-block automatiskt att öppnas i lightboxen."
+
+#: class-ml-slider-lightbox.php:2875
+msgid "Featured images"
+msgstr "Utvalda bilder"
+
+#: class-ml-slider-lightbox.php:2876
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"När det är aktiverat kommer utvalda bilder (inläggsminiatyrer) automatiskt "
+"att öppnas i lightboxen när de klickas på."
+
+#: class-ml-slider-lightbox.php:2885
+msgid ""
+"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
+"the per-slider setting."
+msgstr ""
+"Aktivera automatiskt lightboxen på alla MetaSlider bildspel, vilket "
+"åsidosätter inställningen per bildspel."
+
+#: class-ml-slider-lightbox.php:2899
+msgid "MetaSlider slideshows"
+msgstr "MetaSlider bildspel"
+
+#: class-ml-slider-lightbox.php:2900
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+"overriding the per-slider setting."
+msgstr ""
+"När det är aktiverat kommer alla MetaSlider bildspel att öppna bilder i "
+"Lightbox, vilket åsidosätter inställningen per bildspel."
+
+#: class-ml-slider-lightbox.php:2916
+msgid "Videos in post content"
+msgstr "Videor i inläggsinnehåll"
+
+#: class-ml-slider-lightbox.php:2917
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"När det är aktiverat kommer fristående videoblock (HTML5-videor, "
+"YouTube-inbäddningar, Vimeo-inbäddningar) i inlägg/sidoinnehåll automatiskt "
+"att öppnas i Lightbox."
+
+#: class-ml-slider-lightbox.php:2932
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Bakgrundsfärg för Lightbox-overlay. Mörka färger fungerar bäst för visning "
+"av bilder."
+
+#: class-ml-slider-lightbox.php:2945
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Bakgrundsfärg för \"Öppna i Lightbox\" knappar som visas på bilder, videor "
+"och slides."
+
+#: class-ml-slider-lightbox.php:2958
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Textfärg för \"Öppna i Lightbox\" knappar som visas på bilder, videor och "
+"slides."
+
+#: class-ml-slider-lightbox.php:2971
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Bakgrundsfärg när du hovrar över \"Öppna i Lightbox\" knappar."
+
+#: class-ml-slider-lightbox.php:2984
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Textfärg när du hovrar över \"Öppna i Lightbox\" knappar."
+
+#: class-ml-slider-lightbox.php:2997
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"Anpassad text för Lightbox-knappar. Denna text kommer att visas på alla "
+"\"Öppna i Lightbox\" knappar på hela webbplatsen."
+
+#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+msgid "Top Right (Default)"
+msgstr "Överst till höger (standard)"
+
+#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
+msgid "Top Left"
+msgstr "Överst till vänster"
+
+#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
+msgid "Bottom Right"
+msgstr "Nederst till höger"
+
+#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
+msgid "Bottom Left"
+msgstr "Nederst till vänster"
+
+#: class-ml-slider-lightbox.php:3023
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "Välj var du vill placera stängknappen (X) i Lightbox-overlay."
+
+#: class-ml-slider-lightbox.php:3049
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"Välj var du vill placera \"Öppna i Lightbox\" knappar inom slides, bilder, "
+"gallerier och videor."
+
+#: class-ml-slider-lightbox.php:3062
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Färg för tidigare och nästa navigationspilar i Lightbox."
+
+#: class-ml-slider-lightbox.php:3075
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr ""
+"Pilar färg vid hovring. Skapar visuell feedback när användare flyttar musen "
+"över navigationspilarna."
+
+#: class-ml-slider-lightbox.php:3088
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Färg för stängknappen (X) i Lightbox."
+
+#: class-ml-slider-lightbox.php:3101
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr ""
+"Stängknappens färg vid hovring. Skapar visuell feedback när användare "
+"flyttar musen över stängknappen."
+
+#: class-ml-slider-lightbox.php:3114
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"Färg för verktygsfältsikoner och räknartekst i Lightbox. Påverkar zoom-, "
+"helskärmsikoner (Pro) och bildräknarvisning."
+
+#: class-ml-slider-lightbox.php:3127
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"Färg på verktygsfältsikonen vid hovring. Skapar visuell feedback när "
+"användare för musen över verktygsfältsikoner och räknare."
+
+#: class-ml-slider-lightbox.php:3140
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr "Bakgrundsfärg för tidigare och nästa navigeringspilknappar."
+
+#: class-ml-slider-lightbox.php:3153
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr ""
+"Bakgrundsfärg för pilknappar vid hovring. Skapar visuell feedback när "
+"användare för musen över pilarna."
+
+#: class-ml-slider-lightbox.php:3166
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "Bakgrundsfärg för stängknappen (X) i Lightbox."
+
+#: class-ml-slider-lightbox.php:3179
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr ""
+"Bakgrundsfärg för stängknappen vid hovring. Skapar visuell feedback när "
+"användare för musen över stängknappen."
+
+#: class-ml-slider-lightbox.php:3192
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "Bakgrundsfärg för verktygsfältsikoner i Lightbox."
+
+#: class-ml-slider-lightbox.php:3205
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr ""
+"Bakgrundsfärg för verktygsfältsikoner vid hovring. Skapar visuell feedback "
+"när användare för musen över verktygsfältsikoner."
+
+#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
+#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+msgid "Icon"
+msgstr "Ikon"
+
+#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+msgid "Icon Hover"
+msgstr "Ikon Hovring"
+
+#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
+#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3406
+msgid "Background"
+msgstr "Bakgrund"
+
+#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
+#: class-ml-slider-lightbox.php:3409
+msgid "Background Hover"
+msgstr "Bakgrund Hovring"
+
+#: class-ml-slider-lightbox.php:3317
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr ""
+"Ställ in opaciteten för Lightbox-bakgrunden (0 = transparent, 1 = "
+"ogenomskinlig)."
+
+#: class-ml-slider-lightbox.php:3328
+msgid "Show navigation arrows in lightbox"
+msgstr "Visa navigeringspilar i Lightbox"
+
+#: class-ml-slider-lightbox.php:3329
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"Visa vänster/höger pilar för navigering. Aktiverar även "
+"tangentbordsnavigering (← → tangenter, ESC för att stänga). Detta är "
+"tillgängligt för bildspel och bildgallerier."
+
+#: class-ml-slider-lightbox.php:3338
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "Anpassa Lightbox-bakgrunden och överläggens utseende."
+
+#: class-ml-slider-lightbox.php:3343
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr "Anpassa navigeringsikoner (stäng, tidigare, nästa pilar) för Lightboxar."
+
+#: class-ml-slider-lightbox.php:3348
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"Anpassa \"Öppna i Lightbox\" knappar som kan läggas till i bilder, "
+"gallerier och videor."
+
+#: class-ml-slider-lightbox.php:3368, fuzzy
+msgid "Text"
+msgstr "Text"
+
+#: class-ml-slider-lightbox.php:3371
+msgid "Text Hover"
+msgstr "Text Hovring"
+
+#: class-ml-slider-lightbox.php:3417
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr ""
+"Konfigurera navigations- och kontrollalternativ som gäller för alla "
+"lightboxar."
+
+#: class-ml-slider-lightbox.php:3427
+msgid "Show thumbnails"
+msgstr "Visa miniatyrer"
+
+#: class-ml-slider-lightbox.php:3428
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"Visa miniatyrbilder längst ner i lightboxen för enkel navigering. Detta är "
+"tillgängligt för bildspel och bildgallerier."
+
+#: class-ml-slider-lightbox.php:3440
+msgid "Show \"Open in Lightbox\" button"
+msgstr "Visa \"Öppna i Lightbox\" knapp"
+
+#: class-ml-slider-lightbox.php:3441
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"När den är aktiverad visas en knapp för att öppna lightboxen. När den är "
+"inaktiverad öppnar ett klick på bilden, videon eller bilden direkt "
+"lightboxen."
+
+#: class-ml-slider-lightbox.php:3458
+msgid "Show an icon instead of button"
+msgstr "Visa en ikon istället för knapp"
+
+#: class-ml-slider-lightbox.php:3459
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr "När den är aktiverad visas en liten ikon istället för hela knapptexten."
+
+#: class-ml-slider-lightbox.php:3473
+msgid "Show captions"
+msgstr "Visa bildtexter"
+
+#: class-ml-slider-lightbox.php:3474
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"När den är aktiverad visas bildtexter i lightboxen. Detta är tillgängligt "
+"för bildspel, bilder och bildgallerier."
+
+#: class-ml-slider-lightbox.php:3481
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr ""
+"Avancerade lightbox-funktioner finns tillgängliga genom MetaSlider Gallery "
+"Pro."
+
+#: class-ml-slider-lightbox.php:3483
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr ""
+"Få en förhandsvisning av de avancerade funktionerna som finns i MetaSlider "
+"Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3486
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr ""
+"Dessa avancerade LightGallery.js-plugins finns i Pro-versionen med "
+"ytterligare anpassningsalternativ."
+
+#: class-ml-slider-lightbox.php:3512
+msgid "Include specific Pages"
+msgstr "Inkludera specifika sidor"
+
+#: class-ml-slider-lightbox.php:3514
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Välj sidor där lightboxen ska inaktiveras. Visar de 100 senaste sidorna. "
+"Skriv för att söka."
+
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Välj sidor där lightboxen ska aktiveras. Visar de 100 senaste sidorna. "
+"Skriv för att söka."
+
+#: class-ml-slider-lightbox.php:3557
+msgid "Include specific Posts"
+msgstr "Inkludera specifika inlägg"
+
+#: class-ml-slider-lightbox.php:3559
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Välj inlägg där lightboxen ska inaktiveras. Visar de 100 senaste inläggen. "
+"Skriv för att söka."
+
+#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Välj inlägg där lightboxen ska aktiveras. Visar de 100 senaste inläggen. "
+"Skriv för att söka."
+
+#: class-ml-slider-lightbox.php:3587
+msgid "include"
+msgstr "inkludera"
+
+#: class-ml-slider-lightbox.php:3587
+msgid "exclude"
+msgstr "exkludera"
+
+#: class-ml-slider-lightbox.php:3626
+#, php-format
+msgid "%s specific %s"
+msgstr "%s specifik %s"
+
+#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "Visar upp till 100 senaste %s. Skriv för att söka."
+
+#: class-ml-slider-lightbox.php:3675
+msgid "Include specific post types"
+msgstr "Inkludera specifika inläggstyper"
+
+#: class-ml-slider-lightbox.php:3677
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr "Välj inläggstyper där Lightbox helt ska inaktiveras."
+
+#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "Välj inläggstyper där Lightbox helt ska aktiveras."
+
+#: class-ml-slider-lightbox.php:3712
+msgid "Exclude by CSS selector"
+msgstr "Uteslut med CSS-väljare"
+
+#: class-ml-slider-lightbox.php:3715
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"CSS-väljare för element att utesluta från Lightbox (en per rad). "
+"Exempel:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+
+#: class-ml-slider-lightbox.php:3738
+msgid "Minimum Image Width"
+msgstr "Minsta bildbredd"
+
+#: class-ml-slider-lightbox.php:3741
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"Hoppa över bilder som är smalare än denna bredd (i pixlar). Använder den "
+"visade bredden, inte den faktiska bildfilens storlek. Detta är användbart "
+"för att utesluta små ikoner, märken och knappar."
+
+#: class-ml-slider-lightbox.php:3764
+msgid "Minimum Image Height"
+msgstr "Minsta bildhöjd"
+
+#: class-ml-slider-lightbox.php:3767
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"Hoppa över bilder som är kortare än denna höjd (i pixlar). Använder den "
+"visade höjden, inte den faktiska bildfilens storlek. Detta är användbart "
+"för att utesluta små ikoner, märken och knappar."
+
+#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr ""
+"Förbättrad mediehanteing och videouppspelningsfunktioner för professionella "
+"gallerier."
+
+#: class-ml-slider-lightbox.php:3790
+msgid "Advanced features for professional lightbox implementations."
+msgstr "Avancerade funktioner för professionella Lightbox-implementationer."
+
+#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+msgid "Enable Zoom"
+msgstr "Aktivera zoom"
+
+#: class-ml-slider-lightbox.php:3802
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr ""
+"Dubbelklicka för att zooma, zoomkontroller, musens hjulzoom och alternativ "
+"för att zooma till anpassning."
+
+#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+msgid "Enable Fullscreen"
+msgstr "Aktivera helskärm"
+
+#: class-ml-slider-lightbox.php:3813
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr ""
+"Inbyggt HTML5 helskärmsstöds med kortkommandon (F-tangenten) för "
+"uppslukande visning."
+
+#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+msgid "Enable Rotate"
+msgstr "Aktivera rotation"
+
+#: class-ml-slider-lightbox.php:3824
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr ""
+"Rotera bilder medurs/moturs, vänd horisontellt/vertikalt med "
+"verktygsfältets kontroller."
+
+#: class-ml-slider-lightbox.php:3834
+msgid "Enable Video"
+msgstr "Aktivera video"
+
+#: class-ml-slider-lightbox.php:3835
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr ""
+"Förbättrat videosupport för YouTube, Vimeo, HTML5-videor med autoplay och "
+"kvalitetskontroller."
+
+#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:4170
+msgid "Enable Unique Image URLs"
+msgstr "Aktivera unika bild-URL:er"
+
+#: class-ml-slider-lightbox.php:3846
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr ""
+"Unika URL:er för varje galleri bild med stöd för webbläsarens bakåt/framåt "
+"navigering."
+
+#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+msgid "Enable Autoplay"
+msgstr "Aktivera autoplay"
+
+#: class-ml-slider-lightbox.php:3857
+msgid "Automatically advance through images in the lightbox."
+msgstr "Automatiskt gå vidare genom bilder i lightboxen."
+
+#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+msgid "Enable Share"
+msgstr "Aktivera delning"
+
+#: class-ml-slider-lightbox.php:3868
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr ""
+"Dela på sociala medier knappar för Facebook, Twitter, Pinterest och direkt "
+"URL-delning."
+
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+msgid "Enable Pager"
+msgstr "Aktivera pager"
+
+#: class-ml-slider-lightbox.php:3879
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr ""
+"Minimala pagineringspunkter för ren navigering utan "
+"miniatyrförhandsgranskningar."
+
+#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr ""
+"Professionella zoom- och bildinteraktionskontroller för en förbättrad "
+"användarupplevelse."
+
+#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr "Social delning och navigeringsförbättringar för att öka engagemanget."
+
+#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+msgid "Advanced functionality including URL management and automation features."
+msgstr ""
+"Avancerad funktionalitet inklusive URL-hantering och "
+"automatiseringsfunktioner."
+
+#: class-ml-slider-lightbox.php:3962
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "Denna funktion är tillgänglig i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr ""
+"Tillåt användare att zooma in och ut med dubbelklick, musens rullhjul och "
+"zoomkontroller."
+
+#: class-ml-slider-lightbox.php:4016
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "Zoomkontroller är tillgängliga i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4021
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr "Inbyggd HTML5 helskärmsläge för uppslukande bildvisning."
+
+#: class-ml-slider-lightbox.php:4023
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "Helskärmsläge är tillgängligt i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr "Rotera bilder medurs/nikurs och vända horisontellt/vertikalt."
+
+#: class-ml-slider-lightbox.php:4030
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "Bildrotation är tillgänglig i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4042
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr "Inbyggd delning på sociala medier för Facebook, Twitter och Pinterest."
+
+#: class-ml-slider-lightbox.php:4044
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "Social delning är tillgänglig i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr ""
+"Minimal pagineringspunkter istället för miniatyrbilder för ett renare "
+"gränssnitt."
+
+#: class-ml-slider-lightbox.php:4051
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "Pager-pagineringsfunktionalitet är tillgänglig i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr ""
+"Generera unika URL:er för varje galleriimage med webbläsarens "
+"bakåt/framåt-navigering."
+
+#: class-ml-slider-lightbox.php:4065
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "Unika bild-URL:er är tillgängliga i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "Automatisk bildspel med tidskontroller och aktivitetsfält."
+
+#: class-ml-slider-lightbox.php:4072
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "Autoplay är tillgängligt i MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4089
+msgid "Features"
+msgstr "Funktioner"
+
+#: class-ml-slider-lightbox.php:4090
+msgid "Free"
+msgstr "Gratis"
+
+#: class-ml-slider-lightbox.php:4091, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+msgid "Installed"
+msgstr "Installerad"
+
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+msgid "Upgrade now"
+msgstr "Uppgradera nu"
+
+#: class-ml-slider-lightbox.php:4106
+msgid "Automatic lightbox for images"
+msgstr "Automatisk lightbox för bilder"
+
+#: class-ml-slider-lightbox.php:4107
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "Aktivera automatiskt lightbox för alla bilder på din webbplats."
+
+#: class-ml-slider-lightbox.php:4114
+msgid "MetaSlider integration"
+msgstr "MetaSlider-integration"
+
+#: class-ml-slider-lightbox.php:4115
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "Sömlös integration med MetaSlider bildspel."
+
+#: class-ml-slider-lightbox.php:4122
+msgid "WordPress gallery support"
+msgstr "WordPress galleri stöd"
+
+#: class-ml-slider-lightbox.php:4123
+msgid "Support for WordPress native galleries and blocks."
+msgstr "Stöd för WordPress inbyggda gallerier och block."
+
+#: class-ml-slider-lightbox.php:4130
+msgid "Appearance customization"
+msgstr "Anpassning av utseende"
+
+#: class-ml-slider-lightbox.php:4131
+msgid "Customize colors, opacity, and button styles."
+msgstr "Anpassa färger, opacitet och knappstilar."
+
+#: class-ml-slider-lightbox.php:4138
+msgid "Zoom controls"
+msgstr "Zoomkontroller"
+
+#: class-ml-slider-lightbox.php:4146
+msgid "Fullscreen mode"
+msgstr "Helskärmsläge"
+
+#: class-ml-slider-lightbox.php:4147
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "Inbyggd HTML5 helskärm för uppslukande bildvisning."
+
+#: class-ml-slider-lightbox.php:4154
+msgid "Rotate and flip images"
+msgstr "Rotera och vänd bilder"
+
+#: class-ml-slider-lightbox.php:4162
+msgid "Social media sharing"
+msgstr "Dela på sociala medier"
+
+#: class-ml-slider-lightbox.php:4163
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "Inbyggd delning för Facebook, Twitter och Pinterest."
+
+#: class-ml-slider-lightbox.php:4178
+msgid "Autoplay slideshow"
+msgstr "Autoplay bildspel"
+
+#: class-ml-slider-lightbox.php:4186
+msgid "Pager navigation"
+msgstr "Navigering med paginering"
+
+#: class-ml-slider-lightbox.php:4194
+msgid "Premium support"
+msgstr "Premiumsupport"
+
+#: class-ml-slider-lightbox.php:4195
+msgid "Have your specific queries addressed directly by our experts."
+msgstr "Få dina specifika frågor besvarade direkt av våra experter."
+
+#: class-ml-slider-lightbox.php:6006
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr "Konfigurera hur lightboxen interagerar med WordPress inbyggda funktioner."
+
+#: class-ml-slider-lightbox.php:6021
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "Åsidosätt WordPress \"Förstora vid klick\" inställning"
+
+#: class-ml-slider-lightbox.php:6022
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"När aktiverad, inaktiverar WordPress inbyggda lightbox och använder vår "
+"lightbox för bilder inställda på \"Förstora vid klick\". När inaktiverad, "
+"respekterar WordPress-inställningen och hoppar över bilder inställda på "
+"\"Förstora vid klick\"."
+
+#: class-ml-slider-lightbox.php:6038
+msgid "Override \"Link to Image File\" Setting"
+msgstr "Åsidosätt \"Länk till bildfil\" inställning"
+
+#: class-ml-slider-lightbox.php:6039
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"När aktiverad, använder vår lightbox för bilder länkade till sin "
+"fullstorlek bildfil (vanligtvis inställd via \"Länk till bildfil\" i "
+"blockredigeraren). När inaktiverad, respekterar det det ursprungliga "
+"länkbeteendet."
+
+#: class-ml-slider-lightbox.php:6070
+msgid "Exclude Post Types from Manual Processing"
+msgstr "Exkludera inläggstyper från manuell bearbetning"
+
+#: class-ml-slider-lightbox.php:6073
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"Välj inläggstyper där manuella alternativ INTE ska fungera. Till exempel, "
+"välj \"Produkter (produkt)\" för att inaktivera manuell lightbox på "
+"WooCommerce produkt sidor medan den hålls aktiv på andra ställen."
+
+#: class-ml-slider-lightbox.php:6097
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "Hur man använder: WordPress \"Förstora vid klick\""
+
+#: class-ml-slider-lightbox.php:6099
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"WordPress har en inbyggd \"Förstora vid klick\" funktion för bilder. Här är "
+"hur man aktiverar det:"
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+msgid "Select an image in the block editor."
+msgstr "Välj en bild i blockredigeraren."
+
+#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
+msgid "In the block toolbar, click on the Link icon."
+msgstr "I blockverktygsfältet, klicka på Länk-ikonen."
+
+#: class-ml-slider-lightbox.php:6103
+msgid "Select \"Enlarge on click\"."
+msgstr "Välj \"Stora vid klick\"."
+
+#: class-ml-slider-lightbox.php:6109
+msgid "How to use: \"Link to Image File\""
+msgstr "Hur man använder: \"Länk till bildfil\""
+
+#: class-ml-slider-lightbox.php:6111
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr "Du kan länka bilder direkt till deras fullstora mediefil. Så här gör du:"
+
+#: class-ml-slider-lightbox.php:6112
+msgid "For the Block Editor:"
+msgstr "För Blockredigeraren:"
+
+#: class-ml-slider-lightbox.php:6116
+msgid "Choose \"Link to image file\"."
+msgstr "Välj \"Länk till bildfil\"."
+
+#: class-ml-slider-lightbox.php:6118
+msgid "For the Classic Editor:"
+msgstr "För Klassisk redigerare:"
+
+#: class-ml-slider-lightbox.php:6120
+msgid "Select an image."
+msgstr "Välj en bild."
+
+#: class-ml-slider-lightbox.php:6121
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "I bildverktygsfältet, klicka på Redigera-ikonen."
+
+#: class-ml-slider-lightbox.php:6122
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "Välj \"Mediefil\" i rullgardinsmenyn \"Länk till\"."
+
+#: class-ml-slider-lightbox.php:6128
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "Hur man använder: CSS-klassmetod (Avancerat)"
+
+#: class-ml-slider-lightbox.php:6130
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"För utvecklare: Lägg till <code>ml-lightbox-enabled</code>-klassen för att "
+"aktivera Lightbox på vilket element som helst som innehåller bilder."
+
+#: class-ml-slider-lightbox.php:6131
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "Metod 1: Blockredigerarens ytterligare CSS-klasser"
+
+#: class-ml-slider-lightbox.php:6133
+msgid "Select an image or gallery block."
+msgstr "Välj en bild- eller galleriblok."
+
+#: class-ml-slider-lightbox.php:6134
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "I sidofältet för blockinställningar, rulla ner till \"Avancerat\"."
+
+#: class-ml-slider-lightbox.php:6135
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr ""
+"Lägg till <code>ml-lightbox-enabled</code> till \"Ytterligare "
+"CSS-klass(er)\"."
+
+#: class-ml-slider-lightbox.php:6137
+msgid "Method 2: HTML/Code"
+msgstr "Metod 2: HTML/Kod"
+
+#: class-ml-slider-lightbox.php:6138
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "För anpassad HTML eller temautvecklare, lägg till klassen direkt:"
+
+#: class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "Alla bilder kommer att öppnas i en Lightbox, med %s"

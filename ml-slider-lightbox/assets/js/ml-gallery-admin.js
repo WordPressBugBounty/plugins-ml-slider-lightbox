@@ -2,6 +2,64 @@
 ( function ( $ ) {
 	'use strict';
 
+	// ── Usage modal (runs on list page) ──────────────────────────────────── //
+
+	function closeUsageModal( id ) {
+		$( '#ml-usage-modal-' + id ).fadeOut( 150 );
+		$( '#ml-usage-overlay-' + id ).fadeOut( 150 );
+	}
+
+	$( document ).on( 'click', '.ml-usage-btn', function () {
+		var id = $( this ).data( 'id' );
+		$( '#ml-usage-modal-' + id ).fadeIn( 200 );
+		$( '#ml-usage-overlay-' + id ).fadeIn( 200 );
+	} );
+
+	$( document ).on( 'click', '.ml-usage-modal-close, .ml-modal-overlay', function () {
+		closeUsageModal( $( this ).data( 'id' ) );
+	} );
+
+	$( document ).on( 'keydown', function ( e ) {
+		if ( 27 === e.which ) {
+			$( '.ml-usage-modal:visible' ).each( function () {
+				closeUsageModal( $( this ).data( 'id' ) );
+			} );
+		}
+	} );
+
+	// ── Click-to-copy shortcode (runs on list + editor) ───────────────────── //
+
+	$( document ).on( 'click', '.ml-shortcode-copy', function () {
+		var $el  = $( this );
+		var text = $el.find( '.ml-shortcode-value' ).text().trim();
+		if ( ! navigator.clipboard ) return;
+		navigator.clipboard.writeText( text ).then( function () {
+			var $check = $el.siblings( '.ml-shortcode-copied' );
+			$check.show();
+			setTimeout( function () { $check.hide(); }, 2000 );
+		} );
+	} );
+
+	function copyShortcodeFromRow( $row ) {
+		var text = $row.find( '.ml-gallery-shortcode-pre' ).text().trim();
+		if ( ! navigator.clipboard ) return;
+		navigator.clipboard.writeText( text ).then( function () {
+			var $icon = $row.find( '.ml-shortcode-copy-btn .dashicons' );
+			$icon.removeClass( 'dashicons-clipboard' ).addClass( 'dashicons-yes' );
+			setTimeout( function () {
+				$icon.removeClass( 'dashicons-yes' ).addClass( 'dashicons-clipboard' );
+			}, 2000 );
+		} );
+	}
+
+	$( document ).on( 'click', '.ml-shortcode-copy-btn', function () {
+		copyShortcodeFromRow( $( this ).closest( '.ml-shortcode-row' ) );
+	} );
+
+	$( document ).on( 'click', '.ml-gallery-shortcode-pre', function () {
+		copyShortcodeFromRow( $( this ).closest( '.ml-shortcode-row' ) );
+	} );
+
 	if ( typeof wp === 'undefined' || typeof wp.media === 'undefined' ) {
 		return;
 	}
@@ -240,11 +298,14 @@
 
 		// Show/hide Columns row based on selected layout
 		function toggleColumnsRow( layout ) {
-			$( '.ml-gallery-columns-row' ).toggleClass( 'is-hidden', layout === 'justified' || layout === 'carousel' );
-			$( '.ml-gallery-gap-row' ).toggleClass( 'is-hidden', layout === 'carousel' );
+			var hideColumns = layout === 'justified' || layout === 'carousel' || layout === 'showcase';
+			var hideGap     = layout === 'carousel' || layout === 'showcase';
+			$( '.ml-gallery-columns-row' ).toggleClass( 'is-hidden', hideColumns );
+			$( '.ml-gallery-mobile-columns-row' ).toggleClass( 'is-hidden', hideColumns );
+			$( '.ml-gallery-gap-row' ).toggleClass( 'is-hidden', hideGap );
 		}
 
-		// Init on page load
+// Init on page load
 		const $checkedLayout = $( 'input[name="ml_gallery_settings[layout]"]:checked' );
 		if ( $checkedLayout.length ) {
 			toggleColumnsRow( $checkedLayout.val() );

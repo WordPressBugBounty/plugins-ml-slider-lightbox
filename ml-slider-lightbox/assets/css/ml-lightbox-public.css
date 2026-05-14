@@ -104,13 +104,28 @@
 /* ==========================================================================
    THUMBNAIL STYLES
    ========================================================================== */
-.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
-    border-color: #000;
+
+.lg-outer .lg-thumb-item {
+    opacity: 0.5;
+    transition: border-color 0.25s ease;
 }
 
-.lg-thumb-item.active {
-    border-color: #ffffff;
+.lg-outer .lg-thumb-item:hover {
+    opacity: 0.8;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.lg-outer .lg-thumb-item.active {
     opacity: 1;
+    border-color: #ffffff !important;
+}
+
+.lg-outer .lg-thumb-item img {
+    transition: transform 0.25s ease;
+}
+
+.lg-outer .lg-thumb-item.active img {
+    transform: scale(1.12);
 }
 
 .lg-thumb-item img {
@@ -581,6 +596,13 @@
 .ml-image-overlay:hover {
     background: rgba(0, 0, 0, 0.1);
     text-decoration: none;
+}
+
+/* Override themes (e.g. MetaSlider Undertone) that reset <a> position/z-index inside slides */
+.metaslider .slides > li > .ml-video-overlay,
+.metaslider .slides > li > .ml-image-overlay {
+    position: absolute !important;
+    z-index: 1 !important;
 }
 
 .ml-lightbox-enabled {

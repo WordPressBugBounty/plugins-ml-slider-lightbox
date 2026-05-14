@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "ml-slider-lightbox/gallery",
+  "title": "MetaSlider Gallery",
+  "category": "media",
+"description": "Display a MetaSlider Gallery.",
+  "textdomain": "ml-slider-lightbox",
+  "attributes": {
+    "galleryId": {
+      "type": "integer",
+      "default": 0
+    },
+    "isFullWidth": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./build/index.js"
+}

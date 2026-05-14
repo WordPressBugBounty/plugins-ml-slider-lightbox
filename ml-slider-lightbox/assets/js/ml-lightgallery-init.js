@@ -46,18 +46,18 @@
         }
     };
 
-    function getButtonText() {
-        var useIcon = typeof mlLightboxSettings !== 'undefined'
-                      && mlLightboxSettings.metaslider_options
-                      && mlLightboxSettings.metaslider_options.use_icon_instead_of_button;
+    // Set by initMetaSliderButtonMode so getButtonText() picks up the per-slider icon setting
+    var _metasliderButtonSliderId = null;
 
-        if (useIcon) {
+    function getButtonText(sliderId) {
+        var id = sliderId !== undefined ? sliderId : _metasliderButtonSliderId;
+        if (resolveSliderIcon(id)) {
             return '<svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
         }
 
         return (typeof mlLightboxSettings !== 'undefined' && mlLightboxSettings.button_text)
                ? mlLightboxSettings.button_text
-               : 'Open in Lightbox';
+               : 'Open in Gallery';
     }
 
     /**
@@ -130,11 +130,11 @@
                 var totalItems = $(event.target).find('[data-lg-item-id]').length;
                 var ariaLabel = totalItems > 1
                     ? 'Image gallery with ' + totalItems + ' images'
-                    : 'Image lightbox';
+                    : 'Image gallery';
                 $lgContainer.attr('aria-label', ariaLabel);
             }
 
-            announceToScreenReader('Lightbox opened');
+            announceToScreenReader('Gallery opened');
         });
 
         $(document).on('lgAfterSlide.lg', function(event, prevIndex, index) {
@@ -155,7 +155,7 @@
         });
 
         $(document).on('lgBeforeClose.lg', function() {
-            announceToScreenReader('Lightbox closed');
+            announceToScreenReader('Gallery closed');
         });
     });
 
@@ -693,13 +693,21 @@
                 return settings;
             }
 
+            // Map of layout name → lightGallery plugins for inline (container) mode.
+            // Add future inline layouts here — one line per layout.
+            var inlineLayoutPlugins = {
+                carousel: []
+            };
+
             $('.ml-gallery-container[data-ml-gallery]').filter(function() {
                 return !$(this).hasClass('lg-initialized');
             }).each(function() {
                 var $container = $(this);
 
-                // ── Inline carousel (lightGallery container mode) ─────────── //
-                if (!!parseInt($container.data('lg-carousel'), 10)) {
+                // ── Inline layouts (lightGallery container mode) ──────────── //
+                var mlLayout = $container.data('ml-layout');
+
+                if ( inlineLayoutPlugins.hasOwnProperty( mlLayout ) ) {
                     var dynamicEl = [];
                     $container.find('a[data-src]').each(function () {
                         var $a = $(this);
@@ -710,11 +718,11 @@
                     });
 
                     if (dynamicEl.length) {
-                        var carouselSettings = applyGallerySettings({
+                        var inlineSettings = applyGallerySettings({
                             container       : $container[0],
                             dynamic         : true,
                             dynamicEl       : dynamicEl,
-                            plugins         : [],
+                            plugins         : inlineLayoutPlugins[ mlLayout ],
                             hash            : false,
                             closable        : false,
                             showMaximizeIcon: true,
@@ -723,14 +731,14 @@
                         }, $container);
 
                         try {
-                            var inlineGallery = lightGallery($container[0], carouselSettings);
+                            var inlineGallery = lightGallery($container[0], inlineSettings);
                             inlineGallery.openGallery();
                             $container.addClass('lg-initialized');
                         } catch (error) {
-                            console.error('MetaSlider Lightbox: carousel init error:', error);
+                            console.error('MetaSlider Lightbox: inline gallery init error:', error);
                         }
                     }
-                    return; // skip regular lightbox init for carousel galleries
+                    return; // skip regular lightbox init for inline layouts
                 }
 
                 var settings = getLightboxSettings(true);
@@ -758,7 +766,7 @@
                 }
 
                 try {
-                    lightGallery($container[0], settings);
+                    $container[0]._mlLgInstance = lightGallery($container[0], settings);
                     $container.addClass('lg-initialized');
                 } catch (error) {
                     console.error('MetaSlider Lightbox: Error initializing gallery shortcode:', error);
@@ -1855,82 +1863,122 @@
                 }
             }
 
-            var showButton = true;
-            if (typeof mlLightboxSettings !== 'undefined' && mlLightboxSettings.metaslider_options) {
-                showButton = mlLightboxSettings.metaslider_options.show_lightbox_button !== false;
-            }
+            var showButton = resolveSliderButton(sliderId);
 
             if (showButton) {
-                initMetaSliderButtonMode($slider);
+                initMetaSliderButtonMode($slider, sliderId);
             } else {
-                initMetaSliderDirectMode($slider);
+                initMetaSliderDirectMode($slider, sliderId);
             }
+        });
+    }
+
+    /**
+     * Read a per-slider boolean override (true/false) from slider_settings.
+     * PHP sends true/false/null where null means "use global default".
+     * Returns the per-slider value when set, otherwise calls globalFn().
+     */
+    function resolveSliderSetting(sliderId, key, globalFn) {
+        var perSlider = mlLightboxSettings.slider_settings &&
+                        sliderId &&
+                        mlLightboxSettings.slider_settings[sliderId];
+        var val = perSlider ? perSlider[key] : null;
+        if (val === true)  { return true; }
+        if (val === false) { return false; }
+        return globalFn();
+    }
+
+    function resolveSliderCaptions(sliderId) {
+        return resolveSliderSetting(sliderId, 'lightbox_captions', shouldShowCaptions);
+    }
+
+    function resolveSliderNavigation(sliderId) {
+        return resolveSliderSetting(sliderId, 'lightbox_navigation', function() {
+            return (mlLightboxSettings.metaslider_options || {}).show_arrows !== false;
+        });
+    }
+
+    function resolveSliderButton(sliderId) {
+        return resolveSliderSetting(sliderId, 'lightbox_button', function() {
+            return (mlLightboxSettings.metaslider_options || {}).show_lightbox_button !== false;
+        });
+    }
+
+    function resolveSliderIcon(sliderId) {
+        return resolveSliderSetting(sliderId, 'lightbox_icon', function() {
+            return !!(mlLightboxSettings.metaslider_options || {}).use_icon_instead_of_button;
         });
     }
 
     /**
      * Initialize MetaSlider in button mode
      */
-    function initMetaSliderButtonMode($slider) {
-        var $slides = $slider.find('li').not('.clone').not('.flex-control-nav li, .flex-control-thumbs li, .filmstrip li, li.ms-thumb');
-        var buttonsAdded = 0;
+    function initMetaSliderButtonMode($slider, sliderId) {
+        _metasliderButtonSliderId = sliderId;
+        try {
+            var $slides = $slider.find('li').not('.clone').not('.flex-control-nav li, .flex-control-thumbs li, .filmstrip li, li.ms-thumb');
+            var buttonsAdded = 0;
 
-        $slides.each(function() {
-            var $slide = $(this);
-            var $button = null;
+            $slides.each(function() {
+                var $slide = $(this);
+                var $button = null;
 
-            if ($slide.find('.ml-lightbox-button').length > 0) {
-                return;
-            }
+                if ($slide.find('.ml-lightbox-button').length > 0) {
+                    return;
+                }
 
-            if ($slide.hasClass('ms-youtube')) {
-                $button = createYouTubeButton($slide);
-            }
-            else if ($slide.hasClass('ms-vimeo')) {
-                $button = createVimeoButton($slide);
-            }
-            else if ($slide.hasClass('ms-external-video')) {
-                $button = createExternalVideoButton($slide);
-            }
-            else if ($slide.hasClass('ms-local-video')) {
-                $button = createLocalVideoButton($slide);
-            }
-            else if ($slide.hasClass('ms-postfeed')) {
-                $button = createPostFeedButton($slide);
-            }
-            else if ($slide.hasClass('ms-layer')) {
-                $button = createLayerButton($slide);
-            }
-            else if ($slide.hasClass('ms-custom-html')) {
-                $button = createCustomHtmlButton($slide);
-            }
-            else {
-                $button = createImageButton($slide);
-            }
+                if ($slide.hasClass('ms-youtube')) {
+                    $button = createYouTubeButton($slide);
+                } else if ($slide.hasClass('ms-vimeo')) {
+                    $button = createVimeoButton($slide);
+                } else if ($slide.hasClass('ms-external-video')) {
+                    $button = createExternalVideoButton($slide);
+                } else if ($slide.hasClass('ms-local-video')) {
+                    $button = createLocalVideoButton($slide);
+                } else if ($slide.hasClass('ms-postfeed')) {
+                    $button = createPostFeedButton($slide);
+                } else if ($slide.hasClass('ms-layer')) {
+                    $button = createLayerButton($slide);
+                } else if ($slide.hasClass('ms-custom-html')) {
+                    $button = createCustomHtmlButton($slide);
+                } else {
+                    $button = createImageButton($slide);
+                }
 
-            if ($button) {
-                $slide.css('position', 'relative').append($button);
-                buttonsAdded++;
-            }
-        });
+                if ($button) {
+                    $slide.css('position', 'relative').append($button);
+                    buttonsAdded++;
+                }
+            });
 
-        if (buttonsAdded > 0) {
-            var settings = getLightboxSettings(buttonsAdded > 1);
-            settings.selector = '.ml-lightbox-button';
+            if (buttonsAdded > 0) {
+                var settings = getLightboxSettings(buttonsAdded > 1);
+                settings.selector = '.ml-lightbox-button';
 
-            try {
-                lightGallery($slider[0], settings);
-                $slider.addClass('lg-initialized');
-            } catch (error) {
-                console.error('MetaSlider Lightbox: Error initializing button mode:', error);
+                if (!resolveSliderCaptions(sliderId)) {
+                    settings.subHtml = '';
+                    settings.getCaptionFromTitleOrAlt = false;
+                    $slider.find('.ml-lightbox-button').removeAttr('data-sub-html');
+                }
+
+                settings.controls = resolveSliderNavigation(sliderId);
+
+                try {
+                    lightGallery($slider[0], settings);
+                    $slider.addClass('lg-initialized');
+                } catch (error) {
+                    console.error('MetaSlider Lightbox: Error initializing button mode:', error);
+                }
             }
+        } finally {
+            _metasliderButtonSliderId = null;
         }
     }
 
     /**
      * Initialize MetaSlider in direct-click mode
      */
-    function initMetaSliderDirectMode($slider) {
+    function initMetaSliderDirectMode($slider, sliderId) {
 
         var $slides = $slider.find('li').not('.clone').not('.flex-control-nav li, .flex-control-thumbs li, .filmstrip li, li.ms-thumb');
         var linksAdded = 0;
@@ -1997,6 +2045,14 @@
         if (linksAdded > 0) {
             var settings = getLightboxSettings(linksAdded > 1);
             settings.selector = '.ml-metaslider-link, .ml-video-overlay, .ml-image-overlay';
+
+            if (!resolveSliderCaptions(sliderId)) {
+                settings.subHtml = '';
+                settings.getCaptionFromTitleOrAlt = false;
+                $slider.find('.ml-metaslider-link, .ml-video-overlay, .ml-image-overlay').removeAttr('data-sub-html');
+            }
+
+            settings.controls = resolveSliderNavigation(sliderId);
 
             try {
                 lightGallery($slider[0], settings);

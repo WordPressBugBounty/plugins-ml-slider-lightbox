@@ -1,0 +1,1445 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 15:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: class-ml-gallery.php:70
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "这些功能中的一些在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-gallery.php:78
+msgid "Fade"
+msgstr "淡入"
+
+#: class-ml-gallery.php:79
+msgid "Slide"
+msgstr "滑动"
+
+#: class-ml-gallery.php:80 class-ml-gallery.php:560
+msgid "Zoom"
+msgstr "缩放"
+
+#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
+msgid "Galleries"
+msgstr "画廊"
+
+#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
+msgid "Gallery"
+msgstr "画廊"
+
+#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
+#: class-ml-gallery.php:1124
+msgid "Add New Gallery"
+msgstr "添加新画廊"
+
+#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
+#: class-ml-gallery.php:258
+msgid "Edit Gallery"
+msgstr "编辑画廊"
+
+#: class-ml-gallery.php:138 class-ml-gallery.php:241
+msgid "New Gallery"
+msgstr "新画廊"
+
+#: class-ml-gallery.php:139
+msgid "Search Galleries"
+msgstr "搜索画廊"
+
+#: class-ml-gallery.php:140
+msgid "No galleries found."
+msgstr "未找到画廊。"
+
+#: class-ml-gallery.php:141
+msgid "No galleries found in trash."
+msgstr "垃圾箱中未找到画廊。"
+
+#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
+msgid "You do not have sufficient permissions to access this page."
+msgstr "您没有足够的权限访问此页面。"
+
+#: class-ml-gallery.php:238
+msgid "Gallery not found."
+msgstr "未找到画廊。"
+
+#: class-ml-gallery.php:260
+msgid "Save Gallery"
+msgstr "保存画廊"
+
+#: class-ml-gallery.php:261
+msgid "Update Gallery"
+msgstr "更新画廊"
+
+#: class-ml-gallery.php:274
+msgid "Back to Galleries"
+msgstr "返回画廊"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:1130
+#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: class-ml-gallery.php:308
+msgid "Gallery saved."
+msgstr "画廊已保存。"
+
+#: class-ml-gallery.php:319
+msgid "Enter gallery title"
+msgstr "输入画廊标题"
+
+#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+msgid "Images"
+msgstr "图片"
+
+#: class-ml-gallery.php:331
+msgid "No images added yet"
+msgstr "尚未添加图片"
+
+#: class-ml-gallery.php:344 class-ml-gallery.php:892
+msgid "Remove image"
+msgstr "移除图片"
+
+#: class-ml-gallery.php:349 class-ml-gallery.php:893
+msgid "Edit caption"
+msgstr "编辑标题"
+
+#: class-ml-gallery.php:362
+msgid "Add Images"
+msgstr "添加图片"
+
+#: class-ml-gallery.php:369
+msgid "Layout"
+msgstr "布局"
+
+#: class-ml-gallery.php:372
+msgid "Gallery layout"
+msgstr "画廊布局"
+
+#: class-ml-gallery.php:384
+msgid "Grid"
+msgstr "网格"
+
+#: class-ml-gallery.php:398
+msgid "Masonry"
+msgstr "砖石"
+
+#: class-ml-gallery.php:414
+msgid "Justified"
+msgstr "对齐"
+
+#: class-ml-gallery.php:427
+msgid "Carousel"
+msgstr "轮播"
+
+#: class-ml-gallery.php:436
+msgid "Columns"
+msgstr "列"
+
+#: class-ml-gallery.php:446
+msgid "Gap"
+msgstr "间隙"
+
+#: class-ml-gallery.php:460
+msgid "Lightbox Settings"
+msgstr "Lightbox 设置"
+
+#: class-ml-gallery.php:464
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "缩放控件需要 MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:465
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "全屏模式需要 MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:466
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "自动播放需要 MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:467
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "图片旋转需要 MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:468
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "社交分享需要 MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:472
+msgid "Show left and right navigation arrows"
+msgstr "显示左右导航箭头"
+
+#: class-ml-gallery.php:473
+msgid "Cycle back to the first image after reaching the last"
+msgstr "到达最后一张后循环回到第一张"
+
+#: class-ml-gallery.php:474
+msgid "Navigate images using left and right arrow keys"
+msgstr "使用左右箭头键浏览图片"
+
+#: class-ml-gallery.php:475
+msgid "Scroll through images using the mouse wheel"
+msgstr "使用鼠标滚轮滚动浏览图片"
+
+#: class-ml-gallery.php:476
+msgid "Swipe up or down to close the lightbox on touch devices"
+msgstr "在触摸设备上向上或向下滑动以关闭Lightbox"
+
+#: class-ml-gallery.php:477
+msgid "Display the current image number and total count"
+msgstr "显示当前图片编号和总数"
+
+#: class-ml-gallery.php:478
+msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+msgstr "在Lightbox底部显示缩略图条"
+
+#: class-ml-gallery.php:479
+msgid "Display image captions in the lightbox"
+msgstr "在Lightbox中显示图片说明"
+
+#: class-ml-gallery.php:480
+msgid "Show a download button for each image"
+msgstr "为每张图片显示下载按钮"
+
+#: class-ml-gallery.php:481
+msgid "Pinch and zoom into images"
+msgstr "捏合并放大图片"
+
+#: class-ml-gallery.php:482
+msgid "Expand the lightbox to fill the entire screen"
+msgstr "扩展Lightbox以填充整个屏幕"
+
+#: class-ml-gallery.php:483
+msgid "Rotate images left and right"
+msgstr "左右旋转图片"
+
+#: class-ml-gallery.php:484
+msgid "Automatically advance through images at a set interval"
+msgstr "以设定的间隔自动播放图片"
+
+#: class-ml-gallery.php:485
+msgid "Add social sharing buttons for each image"
+msgstr "为每张图片添加社交分享按钮"
+
+#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
+#: class-ml-slider-lightbox.php:2409
+msgid "Navigation & Controls"
+msgstr "导航与控制"
+
+#: class-ml-gallery.php:525
+msgid "Animation effect when moving between images"
+msgstr "在图片之间移动时的动画效果"
+
+#: class-ml-gallery.php:525
+msgid "Transition"
+msgstr "过渡"
+
+#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
+msgid "Arrows"
+msgstr "箭头"
+
+#: class-ml-gallery.php:535
+msgid "Loop"
+msgstr "循环"
+
+#: class-ml-gallery.php:536
+msgid "Keyboard"
+msgstr "键盘"
+
+#: class-ml-gallery.php:537
+msgid "Mouse wheel"
+msgstr "鼠标滚轮"
+
+#: class-ml-gallery.php:538
+msgid "Swipe to close"
+msgstr "滑动以关闭"
+
+#: class-ml-gallery.php:540
+msgid "Display"
+msgstr "显示"
+
+#: class-ml-gallery.php:541
+msgid "Slide counter"
+msgstr "幻灯片计数器"
+
+#: class-ml-gallery.php:542
+msgid "Thumbnail strip"
+msgstr "缩略图条"
+
+#: class-ml-gallery.php:543
+msgid "Captions"
+msgstr "标题"
+
+#: class-ml-gallery.php:544
+msgid "Download"
+msgstr "下载"
+
+#: class-ml-gallery.php:547
+msgid "Pager"
+msgstr "分页器"
+
+#: class-ml-gallery.php:553
+msgid "Pager pagination requires MetaSlider Gallery Pro"
+msgstr "分页器分页需要 MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
+#: class-ml-slider-lightbox.php:4008
+msgid "Enhanced Zoom & Controls"
+msgstr "增强的缩放和控制"
+
+#: class-ml-gallery.php:561
+msgid "Fullscreen"
+msgstr "全屏"
+
+#: class-ml-gallery.php:562
+msgid "Rotate"
+msgstr "旋转"
+
+#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
+#: class-ml-slider-lightbox.php:4057
+msgid "Advanced Features"
+msgstr "高级功能"
+
+#: class-ml-gallery.php:567
+msgid "Autoplay"
+msgstr "自动播放"
+
+#: class-ml-gallery.php:568
+msgid "Share"
+msgstr "分享"
+
+#: class-ml-gallery.php:572
+msgid "Unique Image URLs"
+msgstr "唯一的图片网址"
+
+#: class-ml-gallery.php:578
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "唯一的图片网址需要 MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
+#: class-ml-slider-lightbox.php:2058
+msgid "Appearance"
+msgstr "外观"
+
+#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+msgid "Background Opacity"
+msgstr "背景不透明度"
+
+#: class-ml-gallery.php:616
+msgid "Arrow Color"
+msgstr "箭头颜色"
+
+#: class-ml-gallery.php:626
+msgid "Arrow Background"
+msgstr "箭头背景"
+
+#: class-ml-gallery.php:636
+msgid "Close Icon Color"
+msgstr "关闭图标颜色"
+
+#: class-ml-gallery.php:646
+msgid "Close Background"
+msgstr "关闭背景"
+
+#: class-ml-gallery.php:656
+msgid "Toolbar Icon Color"
+msgstr "工具栏图标颜色"
+
+#: class-ml-gallery.php:666
+msgid "Toolbar Background"
+msgstr "工具栏背景"
+
+#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:681
+msgid "Copy and paste into any post or page."
+msgstr "复制并粘贴到任何帖子或页面中。"
+
+#: class-ml-gallery.php:701
+msgid "Edit Caption"
+msgstr "编辑标题"
+
+#: class-ml-gallery.php:702
+msgid "Close"
+msgstr "关闭"
+
+#: class-ml-gallery.php:710
+msgid "Caption"
+msgstr "标题"
+
+#: class-ml-gallery.php:717
+msgid "Cancel"
+msgstr "取消"
+
+#: class-ml-gallery.php:720
+msgid "Save Caption"
+msgstr "保存标题"
+
+#: class-ml-gallery.php:741
+msgid "Security check failed."
+msgstr "安全检查失败。"
+
+#: class-ml-gallery.php:745
+msgid "You do not have sufficient permissions."
+msgstr "您没有足够的权限。"
+
+#: class-ml-gallery.php:764
+msgid "Could not update the gallery. Please try again."
+msgstr "无法更新画廊。请再试一次。"
+
+#: class-ml-gallery.php:890
+msgid "Select Gallery Images"
+msgstr "选择画廊图片"
+
+#: class-ml-gallery.php:891
+msgid "Add to Gallery"
+msgstr "添加到画廊"
+
+#: class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr "MetaSlider 画廊需要安装并激活 MetaSlider 和至少一个其他支持的 lightbox 插件。"
+
+#: class-ml-slider-lightbox.php:1060
+msgid "More info"
+msgstr "更多信息"
+
+#: class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr "已激活多个 lightbox 插件。这可能会与 MetaSlider 画廊产生冲突"
+
+#: class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "编辑设置"
+
+#: class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "在 Lightbox 中打开？"
+
+#: class-ml-slider-lightbox.php:1150
+#, php-format
+msgid ""
+"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+"settings</a>."
+msgstr "通过 <a href=\"%s\">自动模式设置</a>，Lightbox 已为所有幻灯片放映启用。"
+
+#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
+msgid "Open in Lightbox"
+msgstr "在 Lightbox 中打开"
+
+#: class-ml-slider-lightbox.php:1486
+msgid "View image"
+msgstr "查看图片"
+
+#: class-ml-slider-lightbox.php:1734
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery 需要安装并激活 MetaSlider。"
+
+#: class-ml-slider-lightbox.php:1738
+msgid "Install MetaSlider"
+msgstr "安装 MetaSlider"
+
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1945
+#, php-format
+msgid "Select pages to %s..."
+msgstr "选择页面以 %s..."
+
+#: class-ml-slider-lightbox.php:1946
+#, php-format
+msgid "Select posts to %s..."
+msgstr "选择帖子以 %s..."
+
+#: class-ml-slider-lightbox.php:1947
+#, php-format
+msgid "Select post types to %s..."
+msgstr "选择帖子类型以 %s..."
+
+#: class-ml-slider-lightbox.php:1948
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "选择 %1$s 到 %2$s..."
+
+#: class-ml-slider-lightbox.php:1949
+msgid "Select post types to exclude"
+msgstr "选择要排除的帖子类型"
+
+#: class-ml-slider-lightbox.php:1950
+msgid "Include"
+msgstr "包含"
+
+#: class-ml-slider-lightbox.php:1951
+msgid "Exclude"
+msgstr "排除"
+
+#: class-ml-slider-lightbox.php:1959, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1979, fuzzy
+msgid "Lightboxes"
+msgstr "Lightboxes"
+
+#: class-ml-slider-lightbox.php:1995
+msgid "Automatic Mode"
+msgstr "自动模式"
+
+#: class-ml-slider-lightbox.php:1996
+msgid "Manual Mode"
+msgstr "手动模式"
+
+#: class-ml-slider-lightbox.php:1998
+msgid "Behavior"
+msgstr "行为"
+
+#: class-ml-slider-lightbox.php:2003
+msgid "Upgrade to Pro"
+msgstr "升级到专业版"
+
+#: class-ml-slider-lightbox.php:2023
+msgid "Settings saved successfully!"
+msgstr "设置已成功保存！"
+
+#: class-ml-slider-lightbox.php:2033
+msgid "Where to Enable Automatically"
+msgstr "在哪里启用自动"
+
+#: class-ml-slider-lightbox.php:2040
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider 幻灯片"
+
+#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+msgid "Content Filtering"
+msgstr "内容过滤"
+
+#: class-ml-slider-lightbox.php:2059
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr "自定义 lightbox 覆盖层和控件的颜色、透明度和视觉样式。"
+
+#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+msgid "Background & Overlay"
+msgstr "背景和覆盖层"
+
+#: class-ml-slider-lightbox.php:2068
+msgid "Navigation"
+msgstr "导航"
+
+#: class-ml-slider-lightbox.php:2073
+msgid "\"Open in Lightbox\" Button"
+msgstr "“在 Lightbox 中打开”按钮"
+
+#: class-ml-slider-lightbox.php:2089
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>检测到第三方插件：</strong>一个第三方 lightbox 插件已激活。这些设置可能不适用于 MetaSlider，但仍将适用于 "
+"WordPress 内容的 lightbox。"
+
+#: class-ml-slider-lightbox.php:2104
+msgid "Media & Video Enhancements"
+msgstr "媒体和视频增强"
+
+#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+msgid "Social & Navigation"
+msgstr "社交和导航"
+
+#: class-ml-slider-lightbox.php:2136
+msgid "Manual Lightbox Options"
+msgstr "手动 Lightbox 选项"
+
+#: class-ml-slider-lightbox.php:2137
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr "手动控件和 WordPress 覆盖，可独立于自动设置工作。"
+
+#: class-ml-slider-lightbox.php:2319
+msgid "Navigation Icons"
+msgstr "导航图标"
+
+#: class-ml-slider-lightbox.php:2326
+msgid "Buttons"
+msgstr "按钮"
+
+#: class-ml-slider-lightbox.php:2357
+msgid "Close Button"
+msgstr "关闭按钮"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Lightbox Toolbar"
+msgstr "Lightbox 工具栏"
+
+#: class-ml-slider-lightbox.php:2373
+msgid "Button Colors"
+msgstr "按钮颜色"
+
+#: class-ml-slider-lightbox.php:2381
+msgid "Icon Colors"
+msgstr "图标颜色"
+
+#: class-ml-slider-lightbox.php:2389
+msgid "Button Text"
+msgstr "按钮文本"
+
+#: class-ml-slider-lightbox.php:2397
+msgid "Button Position"
+msgstr "按钮位置"
+
+#: class-ml-slider-lightbox.php:2755
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "配置适用于整个网站的一般 lightbox 设置。"
+
+#: class-ml-slider-lightbox.php:2760
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr "配置特定于 MetaSlider lightbox 功能的设置。"
+
+#: class-ml-slider-lightbox.php:2765
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "选择在哪些地方将自动启用 lightbox。"
+
+#: class-ml-slider-lightbox.php:2771
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr "选择如何过滤用于 lightbox 处理的内容，并指定要包含或排除的页面、帖子或选择器。"
+
+#: class-ml-slider-lightbox.php:2787
+msgid "Processing Mode"
+msgstr "处理模式"
+
+#: class-ml-slider-lightbox.php:2790
+msgid "Process all content EXCEPT the items specified below"
+msgstr "处理所有内容，除了下面指定的项目"
+
+#: class-ml-slider-lightbox.php:2793
+msgid "ONLY process the items specified below"
+msgstr "仅处理下面指定的项目"
+
+#: class-ml-slider-lightbox.php:2800
+msgid "Inclusion Mode"
+msgstr "包含模式"
+
+#: class-ml-slider-lightbox.php:2804
+msgid "Exclusion Mode"
+msgstr "排除模式"
+
+#: class-ml-slider-lightbox.php:2824
+msgid "Images in post content"
+msgstr "帖子内容中的图像"
+
+#: class-ml-slider-lightbox.php:2825
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr "启用后，帖子和页面中没有链接且设置为“点击放大”的单独图像将自动在 lightbox 中打开。"
+
+#: class-ml-slider-lightbox.php:2841
+msgid "Images and videos in widgets and sidebars"
+msgstr "小工具和侧边栏中的图像和视频"
+
+#: class-ml-slider-lightbox.php:2842
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr "启用后，小工具区域中的图像和视频将自动在 lightbox 中打开。"
+
+#: class-ml-slider-lightbox.php:2858
+msgid "Gallery shortcodes and blocks"
+msgstr "画廊短代码和区块"
+
+#: class-ml-slider-lightbox.php:2859
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr "启用后，WordPress [gallery] 短代码和 Gutenberg 画廊区块中的图像将自动在 lightbox 中打开。"
+
+#: class-ml-slider-lightbox.php:2875
+msgid "Featured images"
+msgstr "特色图像"
+
+#: class-ml-slider-lightbox.php:2876
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr "启用后，特色图像（帖子缩略图）在点击时将自动在 lightbox 中打开。"
+
+#: class-ml-slider-lightbox.php:2885
+msgid ""
+"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
+"the per-slider setting."
+msgstr "自动在所有 MetaSlider 幻灯片上启用 lightbox，覆盖每个幻灯片的设置。"
+
+#: class-ml-slider-lightbox.php:2899
+msgid "MetaSlider slideshows"
+msgstr "MetaSlider 幻灯片放映"
+
+#: class-ml-slider-lightbox.php:2900
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+"overriding the per-slider setting."
+msgstr "启用后，所有 MetaSlider 幻灯片放映将以 Lightbox 打开幻灯片，覆盖每个幻灯片的设置。"
+
+#: class-ml-slider-lightbox.php:2916
+msgid "Videos in post content"
+msgstr "文章内容中的视频"
+
+#: class-ml-slider-lightbox.php:2917
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr "启用后，文章/页面内容中的独立视频块（HTML5 视频、YouTube 嵌入、Vimeo 嵌入）将自动在 Lightbox 中打开。"
+
+#: class-ml-slider-lightbox.php:2932
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr "Lightbox 覆盖层的背景颜色。深色效果最佳，用于查看图像。"
+
+#: class-ml-slider-lightbox.php:2945
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr "幻灯片、图像和视频上出现的“在 Lightbox 中打开”按钮的背景颜色。"
+
+#: class-ml-slider-lightbox.php:2958
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr "幻灯片、图像和视频上出现的“在 Lightbox 中打开”按钮的文本颜色。"
+
+#: class-ml-slider-lightbox.php:2971
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "悬停在“在 Lightbox 中打开”按钮上时的背景颜色。"
+
+#: class-ml-slider-lightbox.php:2984
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "悬停在“在 Lightbox 中打开”按钮上时的文本颜色。"
+
+#: class-ml-slider-lightbox.php:2997
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr "Lightbox 按钮的自定义文本。此文本将出现在网站上所有的“在 Lightbox 中打开”按钮上。"
+
+#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+msgid "Top Right (Default)"
+msgstr "右上角（默认）"
+
+#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
+msgid "Top Left"
+msgstr "左上角"
+
+#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
+msgid "Bottom Right"
+msgstr "右下角"
+
+#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
+msgid "Bottom Left"
+msgstr "左下角"
+
+#: class-ml-slider-lightbox.php:3023
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "选择关闭按钮（X）在 Lightbox 覆盖层中的位置。"
+
+#: class-ml-slider-lightbox.php:3049
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr "选择“在 Lightbox 中打开”按钮在幻灯片、图像、画廊和视频中的位置。"
+
+#: class-ml-slider-lightbox.php:3062
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Lightbox 中上一个和下一个导航箭头的颜色。"
+
+#: class-ml-slider-lightbox.php:3075
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr "悬停时的箭头颜色。当用户将鼠标移动到导航箭头上时，产生视觉反馈。"
+
+#: class-ml-slider-lightbox.php:3088
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Lightbox 中关闭按钮（X）的颜色。"
+
+#: class-ml-slider-lightbox.php:3101
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr "悬停时关闭按钮的颜色。当用户将鼠标移动到关闭按钮上时，产生视觉反馈。"
+
+#: class-ml-slider-lightbox.php:3114
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr "工具栏图标和光箱中计数文本的颜色。影响缩放、全屏图标（Pro）和图像计数显示。"
+
+#: class-ml-slider-lightbox.php:3127
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr "当鼠标悬停时的工具栏图标颜色。当用户将鼠标移动到工具栏图标和计数器上时，产生视觉反馈。"
+
+#: class-ml-slider-lightbox.php:3140
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr "前进和后退导航箭头按钮的背景颜色。"
+
+#: class-ml-slider-lightbox.php:3153
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr "当鼠标悬停时的箭头按钮背景颜色。当用户将鼠标移动到箭头上时，产生视觉反馈。"
+
+#: class-ml-slider-lightbox.php:3166
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "光箱中关闭按钮（X）的背景颜色。"
+
+#: class-ml-slider-lightbox.php:3179
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr "当鼠标悬停时的关闭按钮背景颜色。当用户将鼠标移动到关闭按钮上时，产生视觉反馈。"
+
+#: class-ml-slider-lightbox.php:3192
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "光箱中工具栏图标的背景颜色。"
+
+#: class-ml-slider-lightbox.php:3205
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr "当鼠标悬停时的工具栏图标背景颜色。当用户将鼠标移动到工具栏图标上时，产生视觉反馈。"
+
+#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
+#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+msgid "Icon"
+msgstr "图标"
+
+#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+msgid "Icon Hover"
+msgstr "图标悬停"
+
+#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
+#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3406
+msgid "Background"
+msgstr "背景"
+
+#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
+#: class-ml-slider-lightbox.php:3409
+msgid "Background Hover"
+msgstr "背景悬停"
+
+#: class-ml-slider-lightbox.php:3317
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr "设置光箱背景的不透明度（0 = 透明，1 = 不透明）。"
+
+#: class-ml-slider-lightbox.php:3328
+msgid "Show navigation arrows in lightbox"
+msgstr "在光箱中显示导航箭头"
+
+#: class-ml-slider-lightbox.php:3329
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr "显示用于导航的左/右箭头。还启用键盘导航（← → 键，ESC 关闭）。这适用于幻灯片和图像库。"
+
+#: class-ml-slider-lightbox.php:3338
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "自定义光箱背景和覆盖层外观。"
+
+#: class-ml-slider-lightbox.php:3343
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr "自定义光箱的导航图标（关闭、上一个、下一个箭头）。"
+
+#: class-ml-slider-lightbox.php:3348
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr "自定义可以添加到幻灯片、图像、画廊和视频中的“在光箱中打开”按钮。"
+
+#: class-ml-slider-lightbox.php:3368
+msgid "Text"
+msgstr "文本"
+
+#: class-ml-slider-lightbox.php:3371
+msgid "Text Hover"
+msgstr "文本悬停"
+
+#: class-ml-slider-lightbox.php:3417
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr "配置适用于所有 Lightbox 的导航和控制选项。"
+
+#: class-ml-slider-lightbox.php:3427
+msgid "Show thumbnails"
+msgstr "显示缩略图"
+
+#: class-ml-slider-lightbox.php:3428
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr "在 Lightbox 底部显示缩略图，以便于导航。此功能可用于幻灯片放映和图像库。"
+
+#: class-ml-slider-lightbox.php:3440
+msgid "Show \"Open in Lightbox\" button"
+msgstr "显示“在 Lightbox 中打开”按钮"
+
+#: class-ml-slider-lightbox.php:3441
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr "启用时，显示一个按钮以打开 Lightbox。禁用时，单击幻灯片、图像或视频会直接打开 Lightbox。"
+
+#: class-ml-slider-lightbox.php:3458
+msgid "Show an icon instead of button"
+msgstr "显示图标而不是按钮"
+
+#: class-ml-slider-lightbox.php:3459
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr "启用时，显示一个小图标，而不是完整的按钮文本。"
+
+#: class-ml-slider-lightbox.php:3473
+msgid "Show captions"
+msgstr "显示标题"
+
+#: class-ml-slider-lightbox.php:3474
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr "启用时，在 Lightbox 中显示标题。此功能可用于幻灯片放映、图像和图像库。"
+
+#: class-ml-slider-lightbox.php:3481
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr "高级 Lightbox 功能通过 MetaSlider Gallery Pro 提供。"
+
+#: class-ml-slider-lightbox.php:3483
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr "获取 MetaSlider Gallery Pro 中可用的高级功能的预览。"
+
+#: class-ml-slider-lightbox.php:3486
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr "这些高级 LightGallery.js 插件在 Pro 版本中可用，具有额外的自定义选项。"
+
+#: class-ml-slider-lightbox.php:3512
+msgid "Include specific Pages"
+msgstr "包含特定页面"
+
+#: class-ml-slider-lightbox.php:3514
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr "选择应禁用 Lightbox 的页面。显示最多 100 个最近的页面。输入以搜索。"
+
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr "选择应启用 Lightbox 的页面。显示最多 100 个最近的页面。输入以搜索。"
+
+#: class-ml-slider-lightbox.php:3557
+msgid "Include specific Posts"
+msgstr "包含特定帖子"
+
+#: class-ml-slider-lightbox.php:3559
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr "选择应禁用 Lightbox 的帖子。显示最多 100 个最近的帖子。输入以搜索。"
+
+#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr "选择应启用 Lightbox 的帖子。显示最多 100 个最近的帖子。输入以搜索。"
+
+#: class-ml-slider-lightbox.php:3587
+msgid "include"
+msgstr "包含"
+
+#: class-ml-slider-lightbox.php:3587
+msgid "exclude"
+msgstr "排除"
+
+#: class-ml-slider-lightbox.php:3626
+#, php-format
+msgid "%s specific %s"
+msgstr "%s 特定 %s"
+
+#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "显示最多 100 个最近的 %s。输入以搜索。"
+
+#: class-ml-slider-lightbox.php:3675
+msgid "Include specific post types"
+msgstr "包含特定的帖子类型"
+
+#: class-ml-slider-lightbox.php:3677
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr "选择应完全禁用 Lightbox 的帖子类型。"
+
+#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "选择应完全启用 Lightbox 的帖子类型。"
+
+#: class-ml-slider-lightbox.php:3712
+msgid "Exclude by CSS selector"
+msgstr "按 CSS 选择器排除"
+
+#: class-ml-slider-lightbox.php:3715
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"要从 Lightbox 中排除的元素的 CSS 选择器（每行一个）。示例：<br>.no-lightbox<br>.custom-gallery "
+"img<br>#sidebar .widget-area"
+
+#: class-ml-slider-lightbox.php:3738
+msgid "Minimum Image Width"
+msgstr "最小图像宽度"
+
+#: class-ml-slider-lightbox.php:3741
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr "跳过宽度小于此值（以像素为单位）的图像。使用显示的宽度，而不是实际的图像文件大小。这有助于排除小图标、徽章和按钮。"
+
+#: class-ml-slider-lightbox.php:3764
+msgid "Minimum Image Height"
+msgstr "最小图像高度"
+
+#: class-ml-slider-lightbox.php:3767
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr "跳过高度小于此值（以像素为单位）的图像。使用显示的高度，而不是实际的图像文件大小。这有助于排除小图标、徽章和按钮。"
+
+#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr "专业画廊的增强媒体处理和视频播放功能。"
+
+#: class-ml-slider-lightbox.php:3790
+msgid "Advanced features for professional lightbox implementations."
+msgstr "专业 Lightbox 实现的高级功能。"
+
+#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+msgid "Enable Zoom"
+msgstr "启用缩放"
+
+#: class-ml-slider-lightbox.php:3802
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr "双击以缩放，缩放控件，鼠标滚轮缩放，以及适合缩放选项。"
+
+#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+msgid "Enable Fullscreen"
+msgstr "启用全屏"
+
+#: class-ml-slider-lightbox.php:3813
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr "原生 HTML5 全屏支持，带键盘快捷键（F 键）以获得沉浸式观看体验。"
+
+#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+msgid "Enable Rotate"
+msgstr "启用旋转"
+
+#: class-ml-slider-lightbox.php:3824
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr "顺时针/逆时针旋转图像，水平/垂直翻转，带工具栏控件。"
+
+#: class-ml-slider-lightbox.php:3834
+msgid "Enable Video"
+msgstr "启用视频"
+
+#: class-ml-slider-lightbox.php:3835
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr "增强对 YouTube、Vimeo、HTML5 视频的支持，支持自动播放和质量控制。"
+
+#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:4170
+msgid "Enable Unique Image URLs"
+msgstr "启用唯一图像 URL"
+
+#: class-ml-slider-lightbox.php:3846
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr "每个画廊图像的唯一 URL，支持浏览器前进/后退导航。"
+
+#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+msgid "Enable Autoplay"
+msgstr "启用自动播放"
+
+#: class-ml-slider-lightbox.php:3857
+msgid "Automatically advance through images in the lightbox."
+msgstr "在 Lightbox 中自动切换图像。"
+
+#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+msgid "Enable Share"
+msgstr "启用分享"
+
+#: class-ml-slider-lightbox.php:3868
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr "适用于 Facebook、Twitter、Pinterest 的社交媒体分享按钮，以及直接 URL 分享。"
+
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+msgid "Enable Pager"
+msgstr "启用分页器"
+
+#: class-ml-slider-lightbox.php:3879
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr "简洁的分页点，便于无缩略图预览的导航。"
+
+#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr "专业的缩放和图像互动控制，以增强用户体验。"
+
+#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr "社交分享和导航增强功能，以增加用户互动。"
+
+#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+msgid "Advanced functionality including URL management and automation features."
+msgstr "包括 URL 管理和自动化功能的高级功能。"
+
+#: class-ml-slider-lightbox.php:3962
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "此功能在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr "允许用户通过双击、鼠标滚轮和缩放控制进行放大和缩小。"
+
+#: class-ml-slider-lightbox.php:4016
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "缩放控制在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4021
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr "原生 HTML5 全屏模式，带来沉浸式图像观看体验。"
+
+#: class-ml-slider-lightbox.php:4023
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "全屏模式在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr "顺时针/逆时针旋转图像，并水平/垂直翻转。"
+
+#: class-ml-slider-lightbox.php:4030
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "图像旋转在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4042
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr "内置社交媒体分享功能，适用于 Facebook、Twitter 和 Pinterest。"
+
+#: class-ml-slider-lightbox.php:4044
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "社交分享在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr "使用最小的分页点而不是缩略图，以获得更清晰的界面。"
+
+#: class-ml-slider-lightbox.php:4051
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "Pager 分页在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr "为每个画廊图像生成唯一的 URL，并支持浏览器的前进/后退导航。"
+
+#: class-ml-slider-lightbox.php:4065
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "唯一的图像 URL 在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "自动幻灯片放映，带有定时控制和进度条。"
+
+#: class-ml-slider-lightbox.php:4072
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "自动播放在 MetaSlider Gallery Pro 中可用"
+
+#: class-ml-slider-lightbox.php:4089
+msgid "Features"
+msgstr "功能"
+
+#: class-ml-slider-lightbox.php:4090
+msgid "Free"
+msgstr "免费"
+
+#: class-ml-slider-lightbox.php:4091
+msgid "Pro"
+msgstr "专业版"
+
+#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+msgid "Installed"
+msgstr "已安装"
+
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+msgid "Upgrade now"
+msgstr "立即升级"
+
+#: class-ml-slider-lightbox.php:4106
+msgid "Automatic lightbox for images"
+msgstr "图像的自动灯箱"
+
+#: class-ml-slider-lightbox.php:4107
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "自动为您网站上的所有图像启用灯箱。"
+
+#: class-ml-slider-lightbox.php:4114
+msgid "MetaSlider integration"
+msgstr "MetaSlider 集成"
+
+#: class-ml-slider-lightbox.php:4115
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "与 MetaSlider 幻灯片的无缝集成。"
+
+#: class-ml-slider-lightbox.php:4122
+msgid "WordPress gallery support"
+msgstr "WordPress 画廊支持"
+
+#: class-ml-slider-lightbox.php:4123
+msgid "Support for WordPress native galleries and blocks."
+msgstr "支持 WordPress 原生画廊和区块。"
+
+#: class-ml-slider-lightbox.php:4130
+msgid "Appearance customization"
+msgstr "外观自定义"
+
+#: class-ml-slider-lightbox.php:4131
+msgid "Customize colors, opacity, and button styles."
+msgstr "自定义颜色、透明度和按钮样式。"
+
+#: class-ml-slider-lightbox.php:4138
+msgid "Zoom controls"
+msgstr "缩放控制"
+
+#: class-ml-slider-lightbox.php:4146
+msgid "Fullscreen mode"
+msgstr "全屏模式"
+
+#: class-ml-slider-lightbox.php:4147
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "原生 HTML5 全屏以便沉浸式图像查看。"
+
+#: class-ml-slider-lightbox.php:4154
+msgid "Rotate and flip images"
+msgstr "旋转和翻转图像"
+
+#: class-ml-slider-lightbox.php:4162
+msgid "Social media sharing"
+msgstr "社交媒体分享"
+
+#: class-ml-slider-lightbox.php:4163
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "内置分享功能，支持 Facebook、Twitter 和 Pinterest。"
+
+#: class-ml-slider-lightbox.php:4178
+msgid "Autoplay slideshow"
+msgstr "自动播放幻灯片"
+
+#: class-ml-slider-lightbox.php:4186
+msgid "Pager navigation"
+msgstr "分页导航"
+
+#: class-ml-slider-lightbox.php:4194
+msgid "Premium support"
+msgstr "高级支持"
+
+#: class-ml-slider-lightbox.php:4195
+msgid "Have your specific queries addressed directly by our experts."
+msgstr "让我们的专家直接解答您的具体问题。"
+
+#: class-ml-slider-lightbox.php:6006
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr "配置 Lightbox 与 WordPress 内置功能的交互方式。"
+
+#: class-ml-slider-lightbox.php:6021
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "覆盖 WordPress \"点击放大\" 设置"
+
+#: class-ml-slider-lightbox.php:6022
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"启用时，禁用 WordPress 内置的 Lightbox，并对设置为 \"点击放大\" 的图像使用我们的 Lightbox。禁用时，遵循 "
+"WordPress 设置并跳过设置为 \"点击放大\" 的图像。"
+
+#: class-ml-slider-lightbox.php:6038
+msgid "Override \"Link to Image File\" Setting"
+msgstr "覆盖 \"链接到图像文件\" 设置"
+
+#: class-ml-slider-lightbox.php:6039
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr "启用时，对链接到其全尺寸图像文件的图像使用我们的 Lightbox（通常通过块编辑器中的 \"链接到图像文件\" 设置）。禁用时，遵循原始链接行为。"
+
+#: class-ml-slider-lightbox.php:6070
+msgid "Exclude Post Types from Manual Processing"
+msgstr "从手动处理排除帖子类型"
+
+#: class-ml-slider-lightbox.php:6073
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"选择不应使用手动选项的帖子类型。例如，选择 \"产品（product）\" 来禁用 WooCommerce 产品页面上的手动 "
+"Lightbox，同时在其他地方保持其启用。"
+
+#: class-ml-slider-lightbox.php:6097
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "如何使用：WordPress \"点击放大\""
+
+#: class-ml-slider-lightbox.php:6099
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr "WordPress 有一个内置的 \"点击放大\" 功能用于图像。以下是启用它的方法："
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+msgid "Select an image in the block editor."
+msgstr "在块编辑器中选择一张图像。"
+
+#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
+msgid "In the block toolbar, click on the Link icon."
+msgstr "在块工具栏中，点击链接图标。"
+
+#: class-ml-slider-lightbox.php:6103
+msgid "Select \"Enlarge on click\"."
+msgstr "选择 \"点击放大\"。"
+
+#: class-ml-slider-lightbox.php:6109
+msgid "How to use: \"Link to Image File\""
+msgstr "使用方法：\"链接到图像文件\""
+
+#: class-ml-slider-lightbox.php:6111
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr "您可以将图像直接链接到其全尺寸媒体文件。以下是操作方法："
+
+#: class-ml-slider-lightbox.php:6112
+msgid "For the Block Editor:"
+msgstr "对于块编辑器："
+
+#: class-ml-slider-lightbox.php:6116
+msgid "Choose \"Link to image file\"."
+msgstr "选择 \"链接到图像文件\"。"
+
+#: class-ml-slider-lightbox.php:6118
+msgid "For the Classic Editor:"
+msgstr "对于经典编辑器："
+
+#: class-ml-slider-lightbox.php:6120
+msgid "Select an image."
+msgstr "选择一张图像。"
+
+#: class-ml-slider-lightbox.php:6121
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "在图像工具栏中，点击编辑图标。"
+
+#: class-ml-slider-lightbox.php:6122
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "在 \"链接到\" 下拉菜单中选择 \"媒体文件\"。"
+
+#: class-ml-slider-lightbox.php:6128
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "使用方法：CSS类方法（高级）"
+
+#: class-ml-slider-lightbox.php:6130
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr "对于开发者：将 <code>ml-lightbox-enabled</code> 类添加到任何包含图像的元素，以启用Lightbox。"
+
+#: class-ml-slider-lightbox.php:6131
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "方法1：块编辑器附加CSS类"
+
+#: class-ml-slider-lightbox.php:6133
+msgid "Select an image or gallery block."
+msgstr "选择一张图像或画廊块。"
+
+#: class-ml-slider-lightbox.php:6134
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "在块设置侧边栏中，滚动到 \"高级\"。"
+
+#: class-ml-slider-lightbox.php:6135
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr "将 <code>ml-lightbox-enabled</code> 添加到 \"附加CSS类\"。"
+
+#: class-ml-slider-lightbox.php:6137
+msgid "Method 2: HTML/Code"
+msgstr "方法2：HTML/代码"
+
+#: class-ml-slider-lightbox.php:6138
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "对于自定义HTML或主题开发者，直接添加类："
+
+#: class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "所有幻灯片将在Lightbox中打开，使用 %s"

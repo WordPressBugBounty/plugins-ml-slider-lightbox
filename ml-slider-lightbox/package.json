@@ -1,0 +1,11 @@
+{
+  "name": "ml-slider-lightbox",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "wp-scripts build blocks/ml-gallery/src/index.js --output-path=blocks/ml-gallery/build",
+    "start": "wp-scripts start blocks/ml-gallery/src/index.js --output-path=blocks/ml-gallery/build"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.0"
+  }
+}

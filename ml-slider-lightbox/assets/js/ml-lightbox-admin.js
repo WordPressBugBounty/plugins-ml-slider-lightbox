@@ -7,6 +7,8 @@
     'use strict';
 
     $(document).ready(function () {
+        const { __, sprintf } = wp.i18n;
+
         if (typeof $.wp !== 'undefined' && typeof $.wp.wpColorPicker !== 'undefined') {
             $('.ml-color-picker').wpColorPicker({
                 defaultColor: false,
@@ -32,7 +34,7 @@
         function initializeSelect2() {
             if (typeof $.fn.select2 !== 'undefined') {
                 var isIncludeMode = $('input[name="metaslider_lightbox_content_options[content_processing_mode]"]:checked').val() === 'include';
-                var action = isIncludeMode ? 'include' : 'exclude';
+                var action = isIncludeMode ? mlLightboxText.include : mlLightboxText.exclude;
 
                 if ($('.ml-select2-pages').hasClass('select2-hidden-accessible')) {
                     $('.ml-select2-pages').select2('destroy');
@@ -45,21 +47,21 @@
                 }
 
                 $('.ml-select2-pages').select2({
-                    placeholder: 'Select pages to ' + action + '...',
+                    placeholder: sprintf( mlLightboxText.select_pages_to, action ),
                     allowClear: true,
                     width: '100%',
                     theme: 'default'
                 });
 
                 $('.ml-select2-posts').select2({
-                    placeholder: 'Select posts to ' + action + '...',
+                    placeholder: sprintf( mlLightboxText.select_posts_to, action ),
                     allowClear: true,
                     width: '100%',
                     theme: 'default'
                 });
 
                 $('.ml-select2-post-types').select2({
-                    placeholder: 'Select post types to ' + action + '...',
+                    placeholder: sprintf( mlLightboxText.select_post_types_to, action ),
                     allowClear: true,
                     width: '100%',
                     theme: 'default'
@@ -74,7 +76,11 @@
                     }
 
                     $select.select2({
-                        placeholder: 'Select ' + cptLabel.toLowerCase() + ' to ' + action + '...',
+                        placeholder: sprintf(
+                            mlLightboxText.select_cpt_to,
+                            cptLabel.toLowerCase(),
+                            action
+                        ),
                         allowClear: true,
                         width: '100%',
                         theme: 'default'
@@ -87,7 +93,7 @@
                     }
 
                     $('.ml-select2-manual-post-types').select2({
-                        placeholder: 'Select post types to exclude',
+                        placeholder: mlLightboxText.select_post_types_to_exclude,
                         allowClear: true,
                         width: '100%',
                         theme: 'default'
@@ -100,7 +106,7 @@
 
         function updateInclusionLabels() {
             var isIncludeMode = $('input[name="metaslider_lightbox_content_options[content_processing_mode]"]:checked').val() === 'include';
-            var prefix = isIncludeMode ? 'Include' : 'Exclude';
+            var prefix = isIncludeMode ? mlLightboxText.include : mlLightboxText.exclude;
 
             var $pagesTh = $('th').filter(function() { return $(this).text().toLowerCase().indexOf('specific pages') !== -1; });
             if ($pagesTh.length) $pagesTh.text(prefix + ' specific Pages');

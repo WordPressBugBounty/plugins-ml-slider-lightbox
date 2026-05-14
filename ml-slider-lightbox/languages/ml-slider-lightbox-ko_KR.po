@@ -1,0 +1,1470 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-05-06 16:36+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.9\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: ko_KR\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: class-ml-gallery.php:70
+#, fuzzy
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "이 기능은 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-gallery.php:78
+msgid "Fade"
+msgstr "페이드"
+
+#: class-ml-gallery.php:79
+msgid "Slide"
+msgstr "슬라이드"
+
+#: class-ml-gallery.php:80 class-ml-gallery.php:560
+msgid "Zoom"
+msgstr "줌"
+
+#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
+msgid "Galleries"
+msgstr "갤러리"
+
+#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
+msgid "Gallery"
+msgstr "갤러리"
+
+#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
+#: class-ml-gallery.php:1124
+msgid "Add New Gallery"
+msgstr "새 갤러리 추가"
+
+#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
+#: class-ml-gallery.php:258
+msgid "Edit Gallery"
+msgstr "갤러리 편집"
+
+#: class-ml-gallery.php:138 class-ml-gallery.php:241
+msgid "New Gallery"
+msgstr "새 갤러리"
+
+#: class-ml-gallery.php:139
+msgid "Search Galleries"
+msgstr "갤러리 검색"
+
+#: class-ml-gallery.php:140
+msgid "No galleries found."
+msgstr "갤러리가 발견되지 않았습니다."
+
+#: class-ml-gallery.php:141
+msgid "No galleries found in trash."
+msgstr "휴지통에서 갤러리가 발견되지 않았습니다."
+
+#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
+msgid "You do not have sufficient permissions to access this page."
+msgstr "이 페이지에 접근할 수 있는 충분한 권한이 없습니다."
+
+#: class-ml-gallery.php:238
+msgid "Gallery not found."
+msgstr "갤러리를 찾을 수 없습니다."
+
+#: class-ml-gallery.php:260
+msgid "Save Gallery"
+msgstr "갤러리 저장"
+
+#: class-ml-gallery.php:261
+msgid "Update Gallery"
+msgstr "갤러리 업데이트"
+
+#: class-ml-gallery.php:274
+msgid "Back to Galleries"
+msgstr "갤러리로 돌아가기"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:1130
+#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: class-ml-gallery.php:308
+msgid "Gallery saved."
+msgstr "갤러리가 저장되었습니다."
+
+#: class-ml-gallery.php:319
+msgid "Enter gallery title"
+msgstr "갤러리 제목 입력"
+
+#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+msgid "Images"
+msgstr "이미지"
+
+#: class-ml-gallery.php:331
+msgid "No images added yet"
+msgstr "아직 추가된 이미지가 없습니다"
+
+#: class-ml-gallery.php:344 class-ml-gallery.php:892
+msgid "Remove image"
+msgstr "이미지 제거"
+
+#: class-ml-gallery.php:349 class-ml-gallery.php:893
+msgid "Edit caption"
+msgstr "캡션 편집"
+
+#: class-ml-gallery.php:362
+msgid "Add Images"
+msgstr "이미지 추가"
+
+#: class-ml-gallery.php:369
+msgid "Layout"
+msgstr "레이아웃"
+
+#: class-ml-gallery.php:372
+msgid "Gallery layout"
+msgstr "갤러리 레이아웃"
+
+#: class-ml-gallery.php:384
+msgid "Grid"
+msgstr "그리드"
+
+#: class-ml-gallery.php:398
+msgid "Masonry"
+msgstr "메이슨리"
+
+#: class-ml-gallery.php:414
+msgid "Justified"
+msgstr "정렬된"
+
+#: class-ml-gallery.php:427
+msgid "Carousel"
+msgstr "캐러셀"
+
+#: class-ml-gallery.php:436
+msgid "Columns"
+msgstr "열"
+
+#: class-ml-gallery.php:446
+msgid "Gap"
+msgstr "간격"
+
+#: class-ml-gallery.php:460
+msgid "Lightbox Settings"
+msgstr "라이트박스 설정"
+
+#: class-ml-gallery.php:464
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "줌 컨트롤은 MetaSlider Gallery Pro가 필요합니다"
+
+#: class-ml-gallery.php:465
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "전체 화면 모드는 MetaSlider Gallery Pro가 필요합니다"
+
+#: class-ml-gallery.php:466
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "자동 재생은 MetaSlider Gallery Pro가 필요합니다"
+
+#: class-ml-gallery.php:467
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "이미지 회전은 MetaSlider Gallery Pro가 필요합니다"
+
+#: class-ml-gallery.php:468
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "소셜 공유는 MetaSlider Gallery Pro가 필요합니다"
+
+#: class-ml-gallery.php:472
+msgid "Show left and right navigation arrows"
+msgstr "왼쪽 및 오른쪽 탐색 화살표 표시"
+
+#: class-ml-gallery.php:473
+msgid "Cycle back to the first image after reaching the last"
+msgstr "마지막 이미지에 도달한 후 첫 번째 이미지로 돌아가기"
+
+#: class-ml-gallery.php:474
+msgid "Navigate images using left and right arrow keys"
+msgstr "왼쪽 및 오른쪽 화살표 키를 사용하여 이미지를 탐색합니다"
+
+#: class-ml-gallery.php:475
+msgid "Scroll through images using the mouse wheel"
+msgstr "마우스 휠을 사용하여 이미지를 스크롤합니다"
+
+#: class-ml-gallery.php:476
+msgid "Swipe up or down to close the lightbox on touch devices"
+msgstr "터치 장치에서 Lightbox를 닫으려면 위로 또는 아래로 스와이프하세요"
+
+#: class-ml-gallery.php:477
+msgid "Display the current image number and total count"
+msgstr "현재 이미지 번호와 총 개수를 표시합니다"
+
+#: class-ml-gallery.php:478
+msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+msgstr "Lightbox 하단에 썸네일 이미지 스트립을 표시합니다"
+
+#: class-ml-gallery.php:479
+msgid "Display image captions in the lightbox"
+msgstr "Lightbox에서 이미지 캡션을 표시합니다"
+
+#: class-ml-gallery.php:480
+msgid "Show a download button for each image"
+msgstr "각 이미지에 대한 다운로드 버튼을 표시합니다"
+
+#: class-ml-gallery.php:481
+msgid "Pinch and zoom into images"
+msgstr "이미지를 확대 및 축소합니다"
+
+#: class-ml-gallery.php:482
+msgid "Expand the lightbox to fill the entire screen"
+msgstr "Lightbox를 전체 화면으로 확장합니다"
+
+#: class-ml-gallery.php:483
+msgid "Rotate images left and right"
+msgstr "이미지를 왼쪽 및 오른쪽으로 회전합니다"
+
+#: class-ml-gallery.php:484
+msgid "Automatically advance through images at a set interval"
+msgstr "설정된 간격으로 이미지를 자동으로 전환합니다"
+
+#: class-ml-gallery.php:485
+msgid "Add social sharing buttons for each image"
+msgstr "각 이미지에 대한 소셜 공유 버튼을 추가합니다"
+
+#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
+#: class-ml-slider-lightbox.php:2409
+msgid "Navigation & Controls"
+msgstr "탐색 및 제어"
+
+#: class-ml-gallery.php:525
+msgid "Animation effect when moving between images"
+msgstr "이미지 간 이동 시 애니메이션 효과"
+
+#: class-ml-gallery.php:525
+msgid "Transition"
+msgstr "전환"
+
+#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
+msgid "Arrows"
+msgstr "화살표"
+
+#: class-ml-gallery.php:535
+msgid "Loop"
+msgstr "루프"
+
+#: class-ml-gallery.php:536
+msgid "Keyboard"
+msgstr "키보드"
+
+#: class-ml-gallery.php:537
+msgid "Mouse wheel"
+msgstr "마우스 휠"
+
+#: class-ml-gallery.php:538
+msgid "Swipe to close"
+msgstr "닫으려면 스와이프하세요"
+
+#: class-ml-gallery.php:540
+msgid "Display"
+msgstr "디스플레이"
+
+#: class-ml-gallery.php:541
+msgid "Slide counter"
+msgstr "슬라이드 카운터"
+
+#: class-ml-gallery.php:542
+msgid "Thumbnail strip"
+msgstr "썸네일 스트립"
+
+#: class-ml-gallery.php:543
+msgid "Captions"
+msgstr "캡션"
+
+#: class-ml-gallery.php:544
+msgid "Download"
+msgstr "다운로드"
+
+#: class-ml-gallery.php:547
+msgid "Pager"
+msgstr "페이저"
+
+#: class-ml-gallery.php:553
+msgid "Pager pagination requires MetaSlider Gallery Pro"
+msgstr "페이저 페이지 매김은 MetaSlider Gallery Pro가 필요합니다"
+
+#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
+#: class-ml-slider-lightbox.php:4008
+msgid "Enhanced Zoom & Controls"
+msgstr "향상된 줌 및 컨트롤"
+
+#: class-ml-gallery.php:561
+msgid "Fullscreen"
+msgstr "전체 화면"
+
+#: class-ml-gallery.php:562
+msgid "Rotate"
+msgstr "회전"
+
+#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
+#: class-ml-slider-lightbox.php:4057
+msgid "Advanced Features"
+msgstr "고급 기능"
+
+#: class-ml-gallery.php:567
+msgid "Autoplay"
+msgstr "자동 재생"
+
+#: class-ml-gallery.php:568
+msgid "Share"
+msgstr "공유"
+
+#: class-ml-gallery.php:572
+msgid "Unique Image URLs"
+msgstr "고유 이미지 URL"
+
+#: class-ml-gallery.php:578
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "고유 이미지 URL은 MetaSlider Gallery Pro가 필요합니다"
+
+#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
+#: class-ml-slider-lightbox.php:2058
+msgid "Appearance"
+msgstr "모양"
+
+#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+msgid "Background Color"
+msgstr "배경 색상"
+
+#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+msgid "Background Opacity"
+msgstr "배경 불투명도"
+
+#: class-ml-gallery.php:616
+msgid "Arrow Color"
+msgstr "화살표 색상"
+
+#: class-ml-gallery.php:626
+msgid "Arrow Background"
+msgstr "화살표 배경"
+
+#: class-ml-gallery.php:636
+msgid "Close Icon Color"
+msgstr "닫기 아이콘 색상"
+
+#: class-ml-gallery.php:646
+msgid "Close Background"
+msgstr "닫기 배경"
+
+#: class-ml-gallery.php:656
+msgid "Toolbar Icon Color"
+msgstr "툴바 아이콘 색상"
+
+#: class-ml-gallery.php:666
+msgid "Toolbar Background"
+msgstr "툴바 배경"
+
+#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:681
+msgid "Copy and paste into any post or page."
+msgstr "모든 게시물이나 페이지에 복사하여 붙여넣기 하세요."
+
+#: class-ml-gallery.php:701
+msgid "Edit Caption"
+msgstr "캡션 편집"
+
+#: class-ml-gallery.php:702
+msgid "Close"
+msgstr "닫기"
+
+#: class-ml-gallery.php:710
+msgid "Caption"
+msgstr "캡션"
+
+#: class-ml-gallery.php:717
+msgid "Cancel"
+msgstr "취소"
+
+#: class-ml-gallery.php:720
+msgid "Save Caption"
+msgstr "캡션 저장"
+
+#: class-ml-gallery.php:741
+msgid "Security check failed."
+msgstr "보안 검사에 실패했습니다."
+
+#: class-ml-gallery.php:745
+msgid "You do not have sufficient permissions."
+msgstr "충분한 권한이 없습니다."
+
+#: class-ml-gallery.php:764
+msgid "Could not update the gallery. Please try again."
+msgstr "갤러리를 업데이트할 수 없습니다. 다시 시도하세요."
+
+#: class-ml-gallery.php:890
+msgid "Select Gallery Images"
+msgstr "갤러리 이미지 선택"
+
+#: class-ml-gallery.php:891
+msgid "Add to Gallery"
+msgstr "갤러리에 추가"
+
+#: class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr "MetaSlider 갤러리는 MetaSlider와 최소한 하나의 다른 지원되는 Lightbox 플러그인이 설치되고 활성화되어야 합니다."
+
+#: class-ml-slider-lightbox.php:1060
+msgid "More info"
+msgstr "자세한 정보"
+
+#: class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr "하나 이상의 Lightbox 플러그인이 활성화되어 있습니다. 이는 MetaSlider Gallery와 충돌을 일으킬 수 있습니다."
+
+#: class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "설정 편집"
+
+#: class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "Lightbox에서 열기?"
+
+#: class-ml-slider-lightbox.php:1150
+#, php-format
+msgid ""
+"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+"settings</a>."
+msgstr "Lightbox는 <a href=\"%s\">자동 모드 설정</a>을 통해 모든 슬라이드쇼에 대해 활성화되어 있습니다."
+
+#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
+msgid "Open in Lightbox"
+msgstr "Lightbox에서 열기"
+
+#: class-ml-slider-lightbox.php:1486
+msgid "View image"
+msgstr "이미지 보기"
+
+#: class-ml-slider-lightbox.php:1734
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery는 MetaSlider가 설치되고 활성화되어야 합니다."
+
+#: class-ml-slider-lightbox.php:1738
+msgid "Install MetaSlider"
+msgstr "MetaSlider 설치"
+
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1945
+#, php-format
+msgid "Select pages to %s..."
+msgstr "페이지를 %s 선택하세요..."
+
+#: class-ml-slider-lightbox.php:1946
+#, php-format
+msgid "Select posts to %s..."
+msgstr "게시물을 %s 선택하세요..."
+
+#: class-ml-slider-lightbox.php:1947
+#, php-format
+msgid "Select post types to %s..."
+msgstr "게시물 유형을 %s 선택하세요..."
+
+#: class-ml-slider-lightbox.php:1948
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "%1$s에서 %2$s를 선택하세요..."
+
+#: class-ml-slider-lightbox.php:1949
+msgid "Select post types to exclude"
+msgstr "제외할 게시물 유형 선택"
+
+#: class-ml-slider-lightbox.php:1950
+#, fuzzy
+msgid "Include"
+msgstr "포함 모드"
+
+#: class-ml-slider-lightbox.php:1951
+#, fuzzy
+msgid "Exclude"
+msgstr "제외 모드"
+
+#: class-ml-slider-lightbox.php:1959, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:1979
+msgid "Lightboxes"
+msgstr "Lightbox"
+
+#: class-ml-slider-lightbox.php:1995
+msgid "Automatic Mode"
+msgstr "자동 모드"
+
+#: class-ml-slider-lightbox.php:1996
+msgid "Manual Mode"
+msgstr "수동 모드"
+
+#: class-ml-slider-lightbox.php:1998
+msgid "Behavior"
+msgstr "동작"
+
+#: class-ml-slider-lightbox.php:2003
+msgid "Upgrade to Pro"
+msgstr "Pro로 업그레이드"
+
+#: class-ml-slider-lightbox.php:2023
+msgid "Settings saved successfully!"
+msgstr "설정이 성공적으로 저장되었습니다!"
+
+#: class-ml-slider-lightbox.php:2033
+msgid "Where to Enable Automatically"
+msgstr "자동으로 활성화할 위치"
+
+#: class-ml-slider-lightbox.php:2040
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider 슬라이드쇼"
+
+#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+msgid "Content Filtering"
+msgstr "콘텐츠 필터링"
+
+#: class-ml-slider-lightbox.php:2059
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr "Lightbox 오버레이 및 컨트롤에 대한 색상, 불투명도 및 시각적 스타일을 사용자 정의합니다."
+
+#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+msgid "Background & Overlay"
+msgstr "배경 및 오버레이"
+
+#: class-ml-slider-lightbox.php:2068
+msgid "Navigation"
+msgstr "내비게이션"
+
+#: class-ml-slider-lightbox.php:2073
+msgid "\"Open in Lightbox\" Button"
+msgstr "\"Lightbox에서 열기\" 버튼"
+
+#: class-ml-slider-lightbox.php:2089
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>서드파티 플러그인 감지됨:</strong> 서드파티 Lightbox 플러그인이 활성화되어 있습니다. 이러한 설정은 "
+"MetaSlider에 적용되지 않을 수 있지만 WordPress 콘텐츠 Lightbox에는 여전히 작동합니다."
+
+#: class-ml-slider-lightbox.php:2104
+msgid "Media & Video Enhancements"
+msgstr "미디어 및 비디오 향상"
+
+#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+msgid "Social & Navigation"
+msgstr "소셜 및 내비게이션"
+
+#: class-ml-slider-lightbox.php:2136
+msgid "Manual Lightbox Options"
+msgstr "수동 Lightbox 옵션"
+
+#: class-ml-slider-lightbox.php:2137
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr "자동 설정과 독립적으로 작동하는 수동 컨트롤 및 WordPress 재정의입니다."
+
+#: class-ml-slider-lightbox.php:2319
+msgid "Navigation Icons"
+msgstr "내비게이션 아이콘"
+
+#: class-ml-slider-lightbox.php:2326
+msgid "Buttons"
+msgstr "버튼"
+
+#: class-ml-slider-lightbox.php:2357
+msgid "Close Button"
+msgstr "닫기 버튼"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Lightbox Toolbar"
+msgstr "Lightbox 도구 모음"
+
+#: class-ml-slider-lightbox.php:2373
+msgid "Button Colors"
+msgstr "버튼 색상"
+
+#: class-ml-slider-lightbox.php:2381
+msgid "Icon Colors"
+msgstr "아이콘 색상"
+
+#: class-ml-slider-lightbox.php:2389
+msgid "Button Text"
+msgstr "버튼 텍스트"
+
+#: class-ml-slider-lightbox.php:2397
+msgid "Button Position"
+msgstr "버튼 위치"
+
+#: class-ml-slider-lightbox.php:2755
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "사이트 전반에 적용되는 일반 Lightbox 설정을 구성합니다."
+
+#: class-ml-slider-lightbox.php:2760
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr "MetaSlider Lightbox 기능에 특정한 설정을 구성합니다."
+
+#: class-ml-slider-lightbox.php:2765
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "Lightbox가 자동으로 활성화될 위치를 선택합니다."
+
+#: class-ml-slider-lightbox.php:2771
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr "Lightbox 처리를 위한 콘텐츠 필터링 방법을 선택하고 포함하거나 제외할 페이지, 게시물 또는 선택기를 지정합니다."
+
+#: class-ml-slider-lightbox.php:2787
+msgid "Processing Mode"
+msgstr "처리 모드"
+
+#: class-ml-slider-lightbox.php:2790
+msgid "Process all content EXCEPT the items specified below"
+msgstr "아래에 지정된 항목을 제외한 모든 콘텐츠 처리"
+
+#: class-ml-slider-lightbox.php:2793
+msgid "ONLY process the items specified below"
+msgstr "아래에 지정된 항목만 처리"
+
+#: class-ml-slider-lightbox.php:2800
+msgid "Inclusion Mode"
+msgstr "포함 모드"
+
+#: class-ml-slider-lightbox.php:2804
+msgid "Exclusion Mode"
+msgstr "제외 모드"
+
+#: class-ml-slider-lightbox.php:2824
+msgid "Images in post content"
+msgstr "게시물 콘텐츠의 이미지"
+
+#: class-ml-slider-lightbox.php:2825
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr "활성화되면, 링크가 없는 개별 이미지와 게시물 및 페이지에 설정된 \"클릭하여 확대\"가 자동으로 Lightbox에서 열립니다."
+
+#: class-ml-slider-lightbox.php:2841
+msgid "Images and videos in widgets and sidebars"
+msgstr "위젯 및 사이드바의 이미지 및 비디오"
+
+#: class-ml-slider-lightbox.php:2842
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr "활성화되면, 위젯 영역의 이미지와 비디오가 자동으로 Lightbox에서 열립니다."
+
+#: class-ml-slider-lightbox.php:2858
+msgid "Gallery shortcodes and blocks"
+msgstr "갤러리 쇼트코드 및 블록"
+
+#: class-ml-slider-lightbox.php:2859
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"활성화되면, WordPress [gallery] 쇼트코드와 Gutenberg 갤러리 블록의 이미지가 자동으로 Lightbox에서 "
+"열립니다."
+
+#: class-ml-slider-lightbox.php:2875
+msgid "Featured images"
+msgstr "대표 이미지"
+
+#: class-ml-slider-lightbox.php:2876
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr "활성화되면, 클릭 시 대표 이미지(게시물 썸네일)가 자동으로 Lightbox에서 열립니다."
+
+#: class-ml-slider-lightbox.php:2885
+msgid ""
+"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
+"the per-slider setting."
+msgstr "모든 MetaSlider 슬라이드쇼에서 Lightbox를 자동으로 활성화하여 슬라이더별 설정을 무시합니다."
+
+#: class-ml-slider-lightbox.php:2899
+msgid "MetaSlider slideshows"
+msgstr "MetaSlider 슬라이드쇼"
+
+#: class-ml-slider-lightbox.php:2900
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+"overriding the per-slider setting."
+msgstr "활성화되면, 모든 MetaSlider 슬라이드쇼의 슬라이드가 자동으로 Lightbox에서 열리며, 슬라이더별 설정을 무시합니다."
+
+#: class-ml-slider-lightbox.php:2916
+msgid "Videos in post content"
+msgstr "게시물 콘텐츠의 비디오"
+
+#: class-ml-slider-lightbox.php:2917
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"활성화되면, 게시물/페이지 콘텐츠의 독립형 비디오 블록(HTML5 비디오, YouTube 임베드, Vimeo 임베드)이 자동으로 "
+"Lightbox에서 열립니다."
+
+#: class-ml-slider-lightbox.php:2932
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr "Lightbox 오버레이의 배경 색상. 어두운 색상이 이미지 보기에는 가장 잘 작동합니다."
+
+#: class-ml-slider-lightbox.php:2945
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr "슬라이드, 이미지 및 비디오에 나타나는 \"Lightbox에서 열기\" 버튼의 배경 색상."
+
+#: class-ml-slider-lightbox.php:2958
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr "슬라이드, 이미지 및 비디오에 나타나는 \"Lightbox에서 열기\" 버튼의 텍스트 색상입니다."
+
+#: class-ml-slider-lightbox.php:2971
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "\"Lightbox에서 열기\" 버튼 위에 마우스를 올릴 때의 배경 색상입니다."
+
+#: class-ml-slider-lightbox.php:2984
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "\"Lightbox에서 열기\" 버튼 위에 마우스를 올릴 때의 텍스트 색상입니다."
+
+#: class-ml-slider-lightbox.php:2997
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr "사이트 전체의 모든 \"Lightbox에서 열기\" 버튼에 나타나는 사용자 정의 텍스트입니다."
+
+#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+msgid "Top Right (Default)"
+msgstr "오른쪽 상단 (기본값)"
+
+#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
+msgid "Top Left"
+msgstr "왼쪽 상단"
+
+#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
+msgid "Bottom Right"
+msgstr "오른쪽 하단"
+
+#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
+msgid "Bottom Left"
+msgstr "왼쪽 하단"
+
+#: class-ml-slider-lightbox.php:3023
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "Lightbox 오버레이에서 닫기 버튼(X)의 위치를 선택하세요."
+
+#: class-ml-slider-lightbox.php:3049
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr "슬라이드, 이미지, 갤러리 및 비디오 내에서 \"Lightbox에서 열기\" 버튼의 위치를 선택하세요."
+
+#: class-ml-slider-lightbox.php:3062
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Lightbox의 이전 및 다음 탐색 화살표 색상입니다."
+
+#: class-ml-slider-lightbox.php:3075
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr "마우스를 올릴 때의 화살표 색상입니다. 사용자가 탐색 화살표 위에 마우스를 이동할 때 시각적 피드백을 생성합니다."
+
+#: class-ml-slider-lightbox.php:3088
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Lightbox의 닫기 버튼(X) 색상입니다."
+
+#: class-ml-slider-lightbox.php:3101
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr "마우스를 올릴 때의 닫기 버튼 색상입니다. 사용자가 닫기 버튼 위에 마우스를 이동할 때 시각적 피드백을 생성합니다."
+
+#: class-ml-slider-lightbox.php:3114
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"Lightbox의 도구 모음 아이콘 및 카운터 텍스트 색상입니다. 확대, 전체 화면 아이콘(전문가) 및 이미지 카운터 표시에도 영향을 "
+"미칩니다."
+
+#: class-ml-slider-lightbox.php:3127
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"마우스를 올릴 때의 도구 모음 아이콘 색상입니다. 사용자가 도구 모음 아이콘 및 카운터 위에 마우스를 이동할 때 시각적 피드백을 "
+"생성합니다."
+
+#: class-ml-slider-lightbox.php:3140
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr "이전 및 다음 탐색 화살표 버튼의 배경 색상입니다."
+
+#: class-ml-slider-lightbox.php:3153
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr "화살표 버튼 위에 마우스를 올릴 때의 배경 색상입니다. 사용자가 화살표 위에 마우스를 이동할 때 시각적 피드백을 생성합니다."
+
+#: class-ml-slider-lightbox.php:3166
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "Lightbox의 닫기 버튼(X)의 배경 색상입니다."
+
+#: class-ml-slider-lightbox.php:3179
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr "마우스를 올릴 때의 닫기 버튼 배경 색상입니다. 사용자가 닫기 버튼 위에 마우스를 이동할 때 시각적 피드백을 생성합니다."
+
+#: class-ml-slider-lightbox.php:3192
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "Lightbox의 툴바 아이콘에 대한 배경 색상."
+
+#: class-ml-slider-lightbox.php:3205
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr "마우스를 툴바 아이콘 위로 이동할 때 시각적 피드백을 생성합니다. 호버할 때의 툴바 아이콘에 대한 배경 색상."
+
+#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
+#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+msgid "Icon"
+msgstr "아이콘"
+
+#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+msgid "Icon Hover"
+msgstr "아이콘 호버"
+
+#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
+#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3406
+msgid "Background"
+msgstr "배경"
+
+#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
+#: class-ml-slider-lightbox.php:3409
+msgid "Background Hover"
+msgstr "배경 호버"
+
+#: class-ml-slider-lightbox.php:3317
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr "Lightbox 배경의 불투명도를 설정합니다 (0 = 투명, 1 = 불투명)."
+
+#: class-ml-slider-lightbox.php:3328
+msgid "Show navigation arrows in lightbox"
+msgstr "Lightbox에서 탐색 화살표 표시"
+
+#: class-ml-slider-lightbox.php:3329
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"탐색을 위한 왼쪽/오른쪽 화살표를 표시합니다. 또한 키보드 탐색(← → 키, ESC로 닫기)을 가능하게 합니다. 슬라이드쇼 및 이미지 "
+"갤러리에서 사용 가능합니다."
+
+#: class-ml-slider-lightbox.php:3338
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "Lightbox 배경 및 오버레이 모양을 사용자 정의합니다."
+
+#: class-ml-slider-lightbox.php:3343
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr "Lightbox에 대한 탐색 아이콘(닫기, 이전, 다음 화살표)을 사용자 정의합니다."
+
+#: class-ml-slider-lightbox.php:3348
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr "슬라이드, 이미지, 갤러리 및 비디오에 추가할 수 있는 \"Lightbox에서 열기\" 버튼을 사용자 정의합니다."
+
+#: class-ml-slider-lightbox.php:3368
+msgid "Text"
+msgstr "텍스트"
+
+#: class-ml-slider-lightbox.php:3371
+msgid "Text Hover"
+msgstr "텍스트 호버"
+
+#: class-ml-slider-lightbox.php:3417
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr "모든 Lightbox에 적용되는 탐색 및 제어 옵션을 구성합니다."
+
+#: class-ml-slider-lightbox.php:3427
+msgid "Show thumbnails"
+msgstr "썸네일 표시"
+
+#: class-ml-slider-lightbox.php:3428
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr "슬라이드쇼 및 이미지 갤러리에서 쉽게 탐색할 수 있도록 Lightbox 하단에 썸네일 이미지를 표시합니다."
+
+#: class-ml-slider-lightbox.php:3440
+msgid "Show \"Open in Lightbox\" button"
+msgstr "\"Lightbox에서 열기\" 버튼 표시"
+
+#: class-ml-slider-lightbox.php:3441
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"활성화되면 Lightbox를 열기 위한 버튼을 표시합니다. 비활성화되면 슬라이드, 이미지 또는 비디오를 클릭하면 직접 Lightbox가 "
+"열립니다."
+
+#: class-ml-slider-lightbox.php:3458
+msgid "Show an icon instead of button"
+msgstr "버전 대신 아이콘 표시"
+
+#: class-ml-slider-lightbox.php:3459
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr "활성화되면 전체 버튼 텍스트 대신 작은 아이콘을 표시합니다."
+
+#: class-ml-slider-lightbox.php:3473
+msgid "Show captions"
+msgstr "캡션 표시"
+
+#: class-ml-slider-lightbox.php:3474
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr "활성화되면 lightbox에 캡션을 표시합니다. 이것은 슬라이드쇼, 이미지 및 이미지 갤러리에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:3481
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr "고급 lightbox 기능은 MetaSlider Gallery Pro를 통해 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:3483
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr "MetaSlider Gallery Pro에서 사용할 수 있는 고급 기능의 미리보기를 가져옵니다."
+
+#: class-ml-slider-lightbox.php:3486
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr "이 고급 LightGallery.js 플러그인은 추가 사용자 지정 옵션과 함께 Pro 버전에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:3512
+msgid "Include specific Pages"
+msgstr "특정 페이지 포함"
+
+#: class-ml-slider-lightbox.php:3514
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr "lightbox를 비활성화해야 하는 페이지를 선택합니다. 최근 100개의 페이지까지 표시됩니다. 검색하려면 입력하세요."
+
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr "lightbox를 활성화해야 하는 페이지를 선택합니다. 최근 100개의 페이지까지 표시됩니다. 검색하려면 입력하세요."
+
+#: class-ml-slider-lightbox.php:3557
+msgid "Include specific Posts"
+msgstr "특정 게시물 포함"
+
+#: class-ml-slider-lightbox.php:3559
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr "lightbox를 비활성화해야 하는 게시물을 선택합니다. 최근 100개의 게시물까지 표시됩니다. 검색하려면 입력하세요."
+
+#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr "lightbox를 활성화해야 하는 게시물을 선택합니다. 최근 100개의 게시물까지 표시됩니다. 검색하려면 입력하세요."
+
+#: class-ml-slider-lightbox.php:3587
+#, fuzzy
+msgid "include"
+msgstr "포함 모드"
+
+#: class-ml-slider-lightbox.php:3587
+#, fuzzy
+msgid "exclude"
+msgstr "제외 모드"
+
+#: class-ml-slider-lightbox.php:3626
+#, php-format
+msgid "%s specific %s"
+msgstr "%s 특정 %s"
+
+#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "최근 %s 최대 100개를 표시합니다. 검색하려면 입력하세요."
+
+#: class-ml-slider-lightbox.php:3675
+msgid "Include specific post types"
+msgstr "특정 게시물 유형 포함"
+
+#: class-ml-slider-lightbox.php:3677
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr "lightbox를 완전히 비활성화해야 하는 게시물 유형을 선택합니다."
+
+#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "lightbox를 완전히 활성화해야 하는 게시물 유형을 선택합니다."
+
+#: class-ml-slider-lightbox.php:3712
+msgid "Exclude by CSS selector"
+msgstr "CSS 선택기로 제외"
+
+#: class-ml-slider-lightbox.php:3715
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"lightbox에서 제외할 요소에 대한 CSS 선택기(한 줄당 하나). "
+"예:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+
+#: class-ml-slider-lightbox.php:3738
+msgid "Minimum Image Width"
+msgstr "최소 이미지 너비"
+
+#: class-ml-slider-lightbox.php:3741
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"이 너비(픽셀)보다 좁은 이미지를 건너뜁니다. 실제 이미지 파일 크기가 아닌 표시된 너비를 사용합니다. 이는 작은 아이콘, 배지 및 "
+"버튼을 제외하는 데 유용합니다."
+
+#: class-ml-slider-lightbox.php:3764
+msgid "Minimum Image Height"
+msgstr "최소 이미지 높이"
+
+#: class-ml-slider-lightbox.php:3767
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"이 높이(픽셀)보다 짧은 이미지를 건너뜁니다. 실제 이미지 파일 크기가 아닌 표시된 높이를 사용합니다. 이는 작은 아이콘, 배지 및 "
+"버튼을 제외하는 데 유용합니다."
+
+#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr "전문 갤러리를 위한 향상된 미디어 처리 및 비디오 재생 기능."
+
+#: class-ml-slider-lightbox.php:3790
+msgid "Advanced features for professional lightbox implementations."
+msgstr "전문 Lightbox 구현을 위한 고급 기능."
+
+#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+msgid "Enable Zoom"
+msgstr "줌 활성화"
+
+#: class-ml-slider-lightbox.php:3802
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr "더블 클릭으로 확대, 확대/축소 제어, 마우스 휠 확대 및 맞춤 확대 옵션."
+
+#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+msgid "Enable Fullscreen"
+msgstr "전체 화면 활성화"
+
+#: class-ml-slider-lightbox.php:3813
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr "몰입형 보기 위한 키보드 단축키(F 키)가 있는 네이티브 HTML5 전체 화면 지원."
+
+#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+msgid "Enable Rotate"
+msgstr "회전 활성화"
+
+#: class-ml-slider-lightbox.php:3824
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr "툴바 제어로 이미지를 시계 방향/반시계 방향으로 회전하고 수평/수직으로 뒤집습니다."
+
+#: class-ml-slider-lightbox.php:3834
+msgid "Enable Video"
+msgstr "비디오 활성화"
+
+#: class-ml-slider-lightbox.php:3835
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr "자동 재생 및 품질 제어 기능이 있는 YouTube, Vimeo, HTML5 비디오에 대한 향상된 비디오 지원."
+
+#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:4170
+msgid "Enable Unique Image URLs"
+msgstr "고유 이미지 URL 활성화"
+
+#: class-ml-slider-lightbox.php:3846
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr "브라우저 뒤로/앞으로 탐색 지원과 함께 각 갤러리 이미지에 대한 고유 URL."
+
+#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+msgid "Enable Autoplay"
+msgstr "자동 재생 활성화"
+
+#: class-ml-slider-lightbox.php:3857
+msgid "Automatically advance through images in the lightbox."
+msgstr "Lightbox에서 이미지를 자동으로 전환합니다."
+
+#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+msgid "Enable Share"
+msgstr "공유 활성화"
+
+#: class-ml-slider-lightbox.php:3868
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr "Facebook, Twitter, Pinterest 및 직접 URL 공유를 위한 소셜 미디어 공유 버튼."
+
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+msgid "Enable Pager"
+msgstr "페이지 활성화"
+
+#: class-ml-slider-lightbox.php:3879
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr "썸네일 미리보기 없이 깔끔한 내비게이션을 위한 최소한의 페이지 점."
+
+#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr "향상된 사용자 경험을 위한 전문적인 확대 및 이미지 상호작용 제어."
+
+#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr "참여도를 높이기 위한 소셜 공유 및 내비게이션 개선."
+
+#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+msgid "Advanced functionality including URL management and automation features."
+msgstr "URL 관리 및 자동화 기능을 포함한 고급 기능."
+
+#: class-ml-slider-lightbox.php:3962
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "이 기능은 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr "사용자가 더블 클릭, 마우스 휠 및 확대/축소 제어로 확대하고 축소할 수 있도록 허용합니다."
+
+#: class-ml-slider-lightbox.php:4016
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "확대/축소 제어는 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4021
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr "몰입감 있는 이미지 보기를 위한 네이티브 HTML5 전체 화면 모드."
+
+#: class-ml-slider-lightbox.php:4023
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "전체 화면 모드는 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr "이미지를 시계 방향/반시계 방향으로 회전하고 수평/수직으로 뒤집기."
+
+#: class-ml-slider-lightbox.php:4030
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "이미지 회전은 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4042
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr "Facebook, Twitter 및 Pinterest를 위한 내장 소셜 미디어 공유."
+
+#: class-ml-slider-lightbox.php:4044
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "소셜 공유는 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr "더 깔끔한 인터페이스를 위한 썸네일 대신 최소한의 페이지 점."
+
+#: class-ml-slider-lightbox.php:4051
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "페이지네이션은 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr "브라우저 뒤로/앞으로 내비게이션으로 각 갤러리 이미지에 대한 고유한 URL을 생성합니다."
+
+#: class-ml-slider-lightbox.php:4065
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "고유 이미지 URL은 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "타이밍 제어 및 진행 표시줄이 있는 자동 슬라이드쇼."
+
+#: class-ml-slider-lightbox.php:4072
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "자동 재생은 MetaSlider Gallery Pro에서 사용할 수 있습니다."
+
+#: class-ml-slider-lightbox.php:4089
+msgid "Features"
+msgstr "기능"
+
+#: class-ml-slider-lightbox.php:4090
+msgid "Free"
+msgstr "무료"
+
+#: class-ml-slider-lightbox.php:4091, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+msgid "Installed"
+msgstr "설치됨"
+
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+msgid "Upgrade now"
+msgstr "지금 업그레이드"
+
+#: class-ml-slider-lightbox.php:4106
+msgid "Automatic lightbox for images"
+msgstr "이미지를 위한 자동 라이트박스"
+
+#: class-ml-slider-lightbox.php:4107
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "사이트의 모든 이미지에 대해 라이트박스를 자동으로 활성화합니다."
+
+#: class-ml-slider-lightbox.php:4114
+msgid "MetaSlider integration"
+msgstr "MetaSlider 통합"
+
+#: class-ml-slider-lightbox.php:4115
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "MetaSlider 슬라이드쇼와의 원활한 통합."
+
+#: class-ml-slider-lightbox.php:4122
+msgid "WordPress gallery support"
+msgstr "WordPress 갤러리 지원"
+
+#: class-ml-slider-lightbox.php:4123
+msgid "Support for WordPress native galleries and blocks."
+msgstr "WordPress 기본 갤러리 및 블록 지원."
+
+#: class-ml-slider-lightbox.php:4130
+msgid "Appearance customization"
+msgstr "외관 사용자 정의"
+
+#: class-ml-slider-lightbox.php:4131
+msgid "Customize colors, opacity, and button styles."
+msgstr "색상, 불투명도 및 버튼 스타일을 사용자 정의합니다."
+
+#: class-ml-slider-lightbox.php:4138
+msgid "Zoom controls"
+msgstr "줌 컨트롤"
+
+#: class-ml-slider-lightbox.php:4146
+msgid "Fullscreen mode"
+msgstr "전체 화면 모드"
+
+#: class-ml-slider-lightbox.php:4147
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "몰입감 있는 이미지 보기를 위한 네이티브 HTML5 전체 화면."
+
+#: class-ml-slider-lightbox.php:4154
+msgid "Rotate and flip images"
+msgstr "이미지 회전 및 뒤집기"
+
+#: class-ml-slider-lightbox.php:4162
+msgid "Social media sharing"
+msgstr "소셜 미디어 공유"
+
+#: class-ml-slider-lightbox.php:4163
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "Facebook, Twitter 및 Pinterest를 위한 내장 공유."
+
+#: class-ml-slider-lightbox.php:4178
+msgid "Autoplay slideshow"
+msgstr "슬라이드쇼 자동 재생"
+
+#: class-ml-slider-lightbox.php:4186
+msgid "Pager navigation"
+msgstr "페이지 네비게이션"
+
+#: class-ml-slider-lightbox.php:4194
+msgid "Premium support"
+msgstr "프리미엄 지원"
+
+#: class-ml-slider-lightbox.php:4195
+msgid "Have your specific queries addressed directly by our experts."
+msgstr "특정 질문을 전문가에게 직접 문의하세요."
+
+#: class-ml-slider-lightbox.php:6006
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr "Lightbox가 WordPress의 기본 기능과 상호 작용하는 방식을 구성합니다."
+
+#: class-ml-slider-lightbox.php:6021
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "WordPress \"클릭하여 확대\" 설정 무시"
+
+#: class-ml-slider-lightbox.php:6022
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"활성화 시 WordPress의 기본 Lightbox를 비활성화하고 \"클릭하여 확대\"로 설정된 이미지에 대해 우리의 Lightbox를 "
+"사용합니다. 비활성화 시 WordPress 설정을 존중하고 \"클릭하여 확대\"로 설정된 이미지는 건너뜁니다."
+
+#: class-ml-slider-lightbox.php:6038
+msgid "Override \"Link to Image File\" Setting"
+msgstr "\"이미지 파일 링크\" 설정 무시"
+
+#: class-ml-slider-lightbox.php:6039
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"활성화 시 전체 크기 이미지 파일에 링크된 이미지에 대해 우리의 Lightbox를 사용합니다 (일반적으로 블록 편집기에서 \"이미지 "
+"파일 링크\"를 통해 설정됨). 비활성화 시 원래 링크 동작을 존중합니다."
+
+#: class-ml-slider-lightbox.php:6070
+msgid "Exclude Post Types from Manual Processing"
+msgstr "수동 처리에서 게시물 유형 제외"
+
+#: class-ml-slider-lightbox.php:6073
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"수동 옵션이 작동하지 않아야 하는 게시물 유형을 선택하세요. 예를 들어 \"제품 (product)\"을 선택하여 WooCommerce "
+"제품 페이지에서 수동 Lightbox를 비활성화하면서 다른 곳에서는 활성 상태로 유지합니다."
+
+#: class-ml-slider-lightbox.php:6097
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "사용 방법: WordPress \"클릭하여 확대\""
+
+#: class-ml-slider-lightbox.php:6099
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr "WordPress에는 이미지용 내장 \"클릭하여 확대\" 기능이 있습니다. 이를 활성화하는 방법은 다음과 같습니다:"
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+msgid "Select an image in the block editor."
+msgstr "블록 편집기에서 이미지를 선택합니다."
+
+#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
+msgid "In the block toolbar, click on the Link icon."
+msgstr "블록 도구 모음에서 링크 아이콘을 클릭합니다."
+
+#: class-ml-slider-lightbox.php:6103
+msgid "Select \"Enlarge on click\"."
+msgstr "\"클릭하여 확대\"를 선택합니다."
+
+#: class-ml-slider-lightbox.php:6109
+msgid "How to use: \"Link to Image File\""
+msgstr "사용 방법: \"이미지 파일 링크\""
+
+#: class-ml-slider-lightbox.php:6111
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr "이미지를 직접 전체 크기 미디어 파일에 링크할 수 있습니다. 방법은 다음과 같습니다:"
+
+#: class-ml-slider-lightbox.php:6112
+msgid "For the Block Editor:"
+msgstr "블록 편집기의 경우:"
+
+#: class-ml-slider-lightbox.php:6116
+msgid "Choose \"Link to image file\"."
+msgstr "\"이미지 파일 링크\"를 선택합니다."
+
+#: class-ml-slider-lightbox.php:6118
+msgid "For the Classic Editor:"
+msgstr "클래식 편집기의 경우:"
+
+#: class-ml-slider-lightbox.php:6120
+msgid "Select an image."
+msgstr "이미지를 선택합니다."
+
+#: class-ml-slider-lightbox.php:6121
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "이미지 도구 모음에서 편집 아이콘을 클릭합니다."
+
+#: class-ml-slider-lightbox.php:6122
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "\"링크할 대상\" 드롭다운에서 \"미디어 파일\"을 선택하세요."
+
+#: class-ml-slider-lightbox.php:6128
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "사용 방법: CSS 클래스 방법 (고급)"
+
+#: class-ml-slider-lightbox.php:6130
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"개발자를 위해: 이미지가 포함된 모든 요소에 Lightbox를 활성화하려면 <code>ml-lightbox-enabled</code> "
+"클래스를 추가하세요."
+
+#: class-ml-slider-lightbox.php:6131
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "방법 1: 블록 편집기 추가 CSS 클래스"
+
+#: class-ml-slider-lightbox.php:6133
+msgid "Select an image or gallery block."
+msgstr "이미지 또는 갤러리 블록을 선택하세요."
+
+#: class-ml-slider-lightbox.php:6134
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "블록 설정 사이드바에서 \"고급\"으로 스크롤하세요."
+
+#: class-ml-slider-lightbox.php:6135
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr "\"추가 CSS 클래스\"에 <code>ml-lightbox-enabled</code>를 추가하세요."
+
+#: class-ml-slider-lightbox.php:6137
+msgid "Method 2: HTML/Code"
+msgstr "방법 2: HTML/코드"
+
+#: class-ml-slider-lightbox.php:6138
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "사용자 정의 HTML 또는 테마 개발자의 경우, 클래스를 직접 추가하세요:"
+
+#: class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "모든 슬라이드는 %s를 사용하여 Lightbox에서 열립니다."
