@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.30.0';
+    public $version = '2.32.0';
     protected static $instance = null;
     private $supported_plugins = array();
 
@@ -861,6 +861,12 @@ class MetaSliderLightboxPlugin
                         }
                     }
                 }
+            } else {
+                // Built-in lightbox: propagate the slide caption so JS can read it
+                // from the existing <a> element (overlay mode) or via extractCaption (button mode).
+                if ( ! empty( $slide['caption'] ) ) {
+                    $attributes['data-sub-html'] = $slide['caption'];
+                }
             }
         }
 
@@ -1128,7 +1134,7 @@ class MetaSliderLightboxPlugin
             $link = ! empty($lightbox_settings_url) ? sprintf(
                 "<br><a href='%s' target='_blank'>%s</a>",
                 admin_url($lightbox_settings_url),
-                __("Edit settings", "ml-slider-lightbox")
+                __("Edit Global Settings", "ml-slider-lightbox")
             ) : '';
 
             $captions_value    = isset($settings['lightbox_captions'])    ? $settings['lightbox_captions']    : 'global';
@@ -1140,7 +1146,7 @@ class MetaSliderLightboxPlugin
                 'lightbox' => array(
                     'priority' => 5,
                     'type' => 'checkbox',
-                    'label' => __('Open in gallery?', 'ml-slider-lightbox'),
+                    'label' => __('Open In Gallery', 'ml-slider-lightbox'),
                     'after' => $link,
                     'class' => 'coin flex responsive nivo',
                     'checked' => $this->isLightboxEnabled($enabled) ? 'checked' : '',
@@ -1156,9 +1162,9 @@ class MetaSliderLightboxPlugin
                     ),
                 ),
                 'lightbox_captions'   => $this->perSliderSelectField(6, __('Show Captions', 'ml-slider-lightbox'), $captions_value, __('Show captions in the gallery for each slide.', 'ml-slider-lightbox')),
-                'lightbox_navigation' => $this->perSliderSelectField(7, __('Show navigation arrows', 'ml-slider-lightbox'), $navigation_value, __('Show previous/next arrows in the gallery.', 'ml-slider-lightbox')),
-                'lightbox_button'     => $this->perSliderSelectField(8, __('Show "Open in Gallery" button', 'ml-slider-lightbox'), $button_value, __('Show a button on each slide to open the image in the gallery.', 'ml-slider-lightbox')),
-                'lightbox_icon'       => $this->perSliderSelectField(9, __('Show an icon instead of button', 'ml-slider-lightbox'), $icon_value, __('Display an icon instead of a text button on each slide.', 'ml-slider-lightbox')),
+                'lightbox_navigation' => $this->perSliderSelectField(7, __('Show Navigation Arrows', 'ml-slider-lightbox'), $navigation_value, __('Show previous/next arrows in the gallery.', 'ml-slider-lightbox')),
+                'lightbox_button'     => $this->perSliderSelectField(8, __('Show "Open In Gallery" Button', 'ml-slider-lightbox'), $button_value, __('Show a button on each slide to open the image in the gallery.', 'ml-slider-lightbox')),
+                'lightbox_icon'       => $this->perSliderSelectField(9, __('Show An Icon Instead Of Button', 'ml-slider-lightbox'), $icon_value, __('Display an icon instead of a text button on each slide.', 'ml-slider-lightbox')),
             );
             if ($this->isGlobalMetaSliderLightboxEnabled()) {
                 $settings_url  = esc_url( admin_url( 'admin.php?page=metaslider-lightbox&tab=detection' ) );
@@ -1603,6 +1609,7 @@ class MetaSliderLightboxPlugin
         $background_opacity = isset($options['background_opacity']) ? $options['background_opacity'] : '0.9';
         $close_button_position = isset($options['close_button_position']) ? $options['close_button_position'] : 'top-right';
         $lightbox_button_position = isset($options['lightbox_button_position']) ? $options['lightbox_button_position'] : 'top-right';
+        $autoplay_progress_bar_color = isset($options['autoplay_progress_bar_color']) ? $options['autoplay_progress_bar_color'] : '#a90707';
 
 
         $custom_css = '
@@ -1728,6 +1735,10 @@ class MetaSliderLightboxPlugin
         }
 
         $custom_css .= '
+
+            .lg-progress-bar .lg-progress {
+                background-color: ' . esc_html($autoplay_progress_bar_color) . ' !important;
+            }
 
         ';
 
@@ -2425,6 +2436,14 @@ class MetaSliderLightboxPlugin
         );
 
         add_settings_field(
+            'autoplay_progress_bar_color',
+            __('Autoplay Progress Bar Color', 'ml-slider-lightbox'),
+            array($this, 'autoplayProgressBarColorCallback'),
+            'metaslider_lightbox_appearance',
+            'metaslider_lightbox_appearance_background'
+        );
+
+        add_settings_field(
             'navigation_arrows',
             __('Arrows', 'ml-slider-lightbox'),
             array($this, 'navigationArrowsGroupCallback'),
@@ -2777,6 +2796,10 @@ class MetaSliderLightboxPlugin
 
         if (isset($input['toolbar_icon_background_hover_color'])) {
             $sanitized['toolbar_icon_background_hover_color'] = sanitize_hex_color($input['toolbar_icon_background_hover_color']);
+        }
+
+        if (isset($input['autoplay_progress_bar_color'])) {
+            $sanitized['autoplay_progress_bar_color'] = sanitize_hex_color($input['autoplay_progress_bar_color']);
         }
 
         if (isset($input['background_opacity'])) {
@@ -3394,7 +3417,20 @@ class MetaSliderLightboxPlugin
         echo '<input type="range" name="metaslider_lightbox_appearance_options[background_opacity]" min="0" max="1" step="0.1" value="' . esc_attr($opacity) . '" oninput="this.nextElementSibling.value = this.value" />';
         echo '<output>' . esc_html($opacity) . '</output>';
         echo '</div>';
-        echo '<p class="description">' . __('Set the opacity of the lightbox background (0 = transparent, 1 = opaque).', 'ml-slider-lightbox') . '</p>';
+        echo '<p class="description">' . __('Set the opacity of the gallery background (0 = transparent, 1 = opaque).', 'ml-slider-lightbox') . '</p>';
+    }
+
+    public function autoplayProgressBarColorCallback()
+    {
+        if (!current_user_can('manage_options')) {
+            return;
+        }
+
+        $options = $this->getCachedGeneralOptions();
+        $color = isset($options['autoplay_progress_bar_color']) ? $options['autoplay_progress_bar_color'] : '#a90707';
+
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[autoplay_progress_bar_color]" value="' . esc_attr($color) . '" />';
+        echo '<p class="description">' . esc_html__('Color of the progress bar shown during autoplay slideshows.', 'ml-slider-lightbox') . '</p>';
     }
 
     public function showArrowsCallback()
@@ -3405,7 +3441,7 @@ class MetaSliderLightboxPlugin
         $this->renderToggleSwitch(
             'ml_lightbox_options[show_arrows]',
             $checked,
-            __('Show navigation arrows in lightbox', 'ml-slider-lightbox'),
+            __('Show navigation arrows in gallery', 'ml-slider-lightbox'),
             __('Display left/right arrows for navigation. Also enables keyboard navigation (← → keys, ESC to close). This is available for slideshows and image galleries.', 'ml-slider-lightbox')
         );
     }
@@ -3415,12 +3451,12 @@ class MetaSliderLightboxPlugin
 
     public function appearanceBackgroundCallback()
     {
-        echo '<p>' . __('Customize the lightbox background and overlay appearance.', 'ml-slider-lightbox') . '</p>';
+        echo '<p>' . __('Customize the gallery background and overlay appearance.', 'ml-slider-lightbox') . '</p>';
     }
 
     public function appearanceIconsCallback()
     {
-        echo '<p>' . __('Customize navigation icons (close, previous, next arrows) for lightboxes.', 'ml-slider-lightbox') . '</p>';
+        echo '<p>' . __('Customize navigation icons (close, previous, next arrows) for gallery.', 'ml-slider-lightbox') . '</p>';
     }
 
     public function appearanceButtonsCallback()
@@ -3505,7 +3541,7 @@ class MetaSliderLightboxPlugin
             'ml_lightbox_options[show_thumbnails]',
             $checked,
             __('Show thumbnails', 'ml-slider-lightbox'),
-            __('Display thumbnail images at the bottom of the lightbox for easy navigation. This is available for slideshows and image galleries.', 'ml-slider-lightbox')
+            __('Display thumbnail images at the bottom of the gallery for easy navigation. This is available for slideshows and image galleries.', 'ml-slider-lightbox')
         );
     }
 
@@ -3517,7 +3553,7 @@ class MetaSliderLightboxPlugin
         $this->renderToggleSwitch(
             'ml_lightbox_options[show_lightbox_button]',
             $checked,
-            __('Show "Open in Lightbox" button', 'ml-slider-lightbox'),
+            __('Show "Open in Gallery" button', 'ml-slider-lightbox'),
             __('When enabled, shows a button to open the gallery. When disabled, clicking the slide, image, or video directly opens the gallery.', 'ml-slider-lightbox')
         );
     }
@@ -3672,6 +3708,8 @@ class MetaSliderLightboxPlugin
             '_builtin' => false
         ), 'objects');
 
+        unset($post_types['ml_gallery']);
+
         if (empty($post_types)) {
             return;
         }
@@ -3743,7 +3781,7 @@ class MetaSliderLightboxPlugin
             'show_ui' => true
         ), 'objects');
 
-        $internal_types = array('attachment', 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', 'oembed_cache', 'user_request', 'wp_block', 'wp_template', 'wp_template_part', 'wp_global_styles', 'wp_navigation');
+        $internal_types = array('attachment', 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', 'oembed_cache', 'user_request', 'wp_block', 'wp_template', 'wp_template_part', 'wp_global_styles', 'wp_navigation', 'ml_gallery');
         foreach ($internal_types as $internal_type) {
             unset($post_types[$internal_type]);
         }
@@ -3792,7 +3830,7 @@ class MetaSliderLightboxPlugin
                     <?php echo esc_html__('Exclude by CSS selector', 'ml-slider-lightbox'); ?>
                 </h3>
                 <div class="ml-settings-field-description">
-                    <?php echo wp_kses_post(__('CSS selectors for elements to exclude from lightbox (one per line). Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area', 'ml-slider-lightbox')); ?>
+                    <?php echo wp_kses_post(__('CSS selectors for elements to exclude from gallery window (one per line). Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area', 'ml-slider-lightbox')); ?>
                 </div>
             </div>
             <div class="ml-settings-field-control">
@@ -4314,6 +4352,7 @@ class MetaSliderLightboxPlugin
             'toolbar_icon_color' => '#ffffff',
             'toolbar_icon_hover_color' => '#000000',
             'background_opacity' => '0.9',
+            'autoplay_progress_bar_color' => '#a90707',
         );
 
         $general_options = $this->getCachedGeneralOptions();
@@ -6099,7 +6138,7 @@ class MetaSliderLightboxPlugin
             'metaslider_lightbox_manual_options[override_enlarge_on_click]',
             $enabled,
             __('Override WordPress "Enlarge on Click" Setting', 'ml-slider-lightbox'),
-            __('When enabled, disables WordPress built-in lightbox and uses our lightbox for images set to "Enlarge on Click". When disabled, respects WordPress setting and skips images set to "Enlarge on Click".', 'ml-slider-lightbox')
+            __('When enabled, disables WordPress built-in gallery window and uses MetaSlider Gallery for images set to "Enlarge on Click". When disabled, respects WordPress setting and skips images set to "Enlarge on Click".', 'ml-slider-lightbox')
         );
     }
 
@@ -6116,7 +6155,7 @@ class MetaSliderLightboxPlugin
             'metaslider_lightbox_manual_options[override_link_to_image_file]',
             $enabled,
             __('Override "Link to Image File" Setting', 'ml-slider-lightbox'),
-            __('When enabled, uses our lightbox for images linked to their full-size image file (commonly set via "Link to Image File" in the block editor). When disabled, respects the original link behavior.', 'ml-slider-lightbox')
+            __('When enabled, uses MetaSlider Gallery for images linked to their full-size image file (commonly set via "Link to Image File" in the block editor). When disabled, respects the original link behavior.', 'ml-slider-lightbox')
         );
     }
 
@@ -6138,7 +6177,7 @@ class MetaSliderLightboxPlugin
             'show_ui' => true
         ), 'objects');
 
-        $internal_types = array('attachment', 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', 'oembed_cache', 'user_request', 'wp_block', 'wp_template', 'wp_template_part', 'wp_global_styles', 'wp_navigation');
+        $internal_types = array('attachment', 'revision', 'nav_menu_item', 'custom_css', 'customize_changeset', 'oembed_cache', 'user_request', 'wp_block', 'wp_template', 'wp_template_part', 'wp_global_styles', 'wp_navigation', 'ml_gallery');
         foreach ($internal_types as $internal_type) {
             unset($post_types[$internal_type]);
         }
@@ -6207,7 +6246,7 @@ class MetaSliderLightboxPlugin
         echo '<details class="ml-how-to-toggle">';
         echo '<summary><strong>' . __('How to use: CSS Class Method (Advanced)', 'ml-slider-lightbox') . '</strong></summary>';
         echo '<div class="ml-how-to-content">';
-        echo '<p>' . __('For developers: Add the <code>ml-lightbox-enabled</code> class to enable lightbox on any element containing images.', 'ml-slider-lightbox') . '</p>';
+        echo '<p>' . __('For developers: Add the <code>ml-lightbox-enabled</code> class to enable MetaSlider Gallery on any element containing images.', 'ml-slider-lightbox') . '</p>';
         echo '<h4>' . __('Method 1: Block Editor Additional CSS Classes', 'ml-slider-lightbox') . '</h4>';
         echo '<ol>';
         echo '<li>' . __('Select an image or gallery block.', 'ml-slider-lightbox') . '</li>';
@@ -6327,10 +6366,14 @@ class MetaSliderLightboxPlugin
             )
         );
 
+        $options     = $this->getCachedGeneralOptions();
+        $button_text = isset($options['button_text']) ? $options['button_text'] : __('Open in Gallery', 'ml-slider-lightbox');
+
         $button = sprintf(
-            '<a href="#" class="ml-lightbox-button" data-src="" data-video=\'%s\' data-thumb="%s">Open in Lightbox</a>',
+            '<a href="#" class="ml-lightbox-button" data-src="" data-video=\'%s\' data-thumb="%s">%s</a>',
             esc_attr(wp_json_encode($video_data)),
-            esc_url($poster_url)
+            esc_url($poster_url),
+            esc_html($button_text)
         );
 
         $enhanced_content = preg_replace(
@@ -6346,10 +6389,14 @@ class MetaSliderLightboxPlugin
     {
         $poster_url = $this->getVideoThumbnail($video_url, $provider);
 
+        $options     = $this->getCachedGeneralOptions();
+        $button_text = isset($options['button_text']) ? $options['button_text'] : __('Open in Gallery', 'ml-slider-lightbox');
+
         $button = sprintf(
-            '<a href="#" class="ml-lightbox-button" data-src="%s" data-poster="%s">Open in Lightbox</a>',
+            '<a href="#" class="ml-lightbox-button" data-src="%s" data-poster="%s">%s</a>',
             esc_url($video_url),
-            esc_url($poster_url)
+            esc_url($poster_url),
+            esc_html($button_text)
         );
 
         $enhanced_content = preg_replace(

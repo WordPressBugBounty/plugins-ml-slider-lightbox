@@ -805,26 +805,30 @@ class MetaSliderLightboxGallery {
                             $pro_tooltips = array(
                                 'zoom'       => __( 'Zoom controls require MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                                 'fullscreen' => __( 'Fullscreen mode requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
-                                'autoplay'   => __( 'Autoplay requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                                 'rotate'     => __( 'Image rotation requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                                'autoplay'   => __( 'Autoplay requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                                 'share'      => __( 'Social sharing requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                                'pager'      => __( 'Pager requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                                'hash'       => __( 'Unique Image URLs require MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                             );
 
                             $descriptions = array(
                                 'controls'    => __( 'Show left and right navigation arrows', 'ml-slider-lightbox' ),
-                                'loop'        => __( 'Cycle back to the first image after reaching the last', 'ml-slider-lightbox' ),
-                                'keyboard'    => __( 'Navigate images using left and right arrow keys', 'ml-slider-lightbox' ),
-                                'mousewheel'  => __( 'Scroll through images using the mouse wheel', 'ml-slider-lightbox' ),
-                                'swipe_close' => __( 'Swipe up or down to close the gallery on touch devices', 'ml-slider-lightbox' ),
                                 'counter'     => __( 'Display the current image number and total count', 'ml-slider-lightbox' ),
                                 'thumbnails'  => __( 'Show a strip of thumbnail images at the bottom of the gallery', 'ml-slider-lightbox' ),
                                 'captions'    => __( 'Display image captions in the gallery', 'ml-slider-lightbox' ),
+                                'pager'       => __( 'Show dot navigation area below each image.', 'ml-slider-lightbox' ),
+                                'zoom'        => __( 'Pinch or scroll to zoom in and out of gallery images. The Zoom control will appear only if the original size is larger than the gallery size.', 'ml-slider-lightbox' ),
+                                'fullscreen'  => __( 'Expand the gallery window to fill the whole screen.', 'ml-slider-lightbox' ),
+                                'rotate'      => __( 'Users can rotate images left or right, plus flip them vertically or horizontally.', 'ml-slider-lightbox' ),
+                                'autoplay'    => __( 'Automatically advance through the images without the user clicking.', 'ml-slider-lightbox' ),
+                                'share'       => __( 'Enable users to share images on Facebook, X, or Pinterest.', 'ml-slider-lightbox' ),
+                                'hash'        => __( 'Create a unique URL for each image to enable direct linking inside a gallery.', 'ml-slider-lightbox' ),
+                                'keyboard'    => __( 'Navigate images using left and right arrow keys', 'ml-slider-lightbox' ),
+                                'mousewheel'  => __( 'Scroll through images using the mouse wheel', 'ml-slider-lightbox' ),
+                                'swipe_close' => __( 'Swipe up or down to close the gallery on touch devices', 'ml-slider-lightbox' ),
+                                'loop'        => __( 'Cycle back to the first image after reaching the last', 'ml-slider-lightbox' ),
                                 'download'    => __( 'Show a download button for each image', 'ml-slider-lightbox' ),
-                                'zoom'        => __( 'Pinch and zoom into images', 'ml-slider-lightbox' ),
-                                'fullscreen'  => __( 'Expand the gallery to fill the entire screen', 'ml-slider-lightbox' ),
-                                'rotate'      => __( 'Rotate images left and right', 'ml-slider-lightbox' ),
-                                'autoplay'    => __( 'Automatically advance through images at a set interval', 'ml-slider-lightbox' ),
-                                'share'       => __( 'Add social sharing buttons for each image', 'ml-slider-lightbox' ),
                             );
 
                             $render_toggle = function( $key, $label ) use ( $lg_settings, $pro_tooltips, $descriptions ) {
@@ -859,7 +863,7 @@ class MetaSliderLightboxGallery {
                             };
                             ?>
 
-                            <p class="ml-settings-section-label"><?php esc_html_e( 'Navigation & Controls', 'ml-slider-lightbox' ); ?></p>
+                            <p class="ml-settings-section-label"><?php esc_html_e( 'Display', 'ml-slider-lightbox' ); ?></p>
                             <div class="ml-gallery-setting">
                                 <label for="ml_gallery_mode" class="ml-tipsy" title="<?php esc_attr_e( 'Animation effect when moving between images', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Transition', 'ml-slider-lightbox' ); ?></label>
                                 <select id="ml_gallery_mode" name="ml_gallery_settings[mode]" class="ml-gallery-input">
@@ -870,58 +874,38 @@ class MetaSliderLightboxGallery {
                                     <?php endforeach; ?>
                                 </select>
                             </div>
-                            <?php $render_toggle( 'controls',    __( 'Arrows',            'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'loop',        __( 'Loop',              'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'keyboard',    __( 'Keyboard',          'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'mousewheel',  __( 'Mouse wheel',       'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'swipe_close', __( 'Swipe to close',    'ml-slider-lightbox' ) ); ?>
-
-                            <p class="ml-settings-section-label"><?php esc_html_e( 'Display', 'ml-slider-lightbox' ); ?></p>
-                            <?php $render_toggle( 'counter',    __( 'Slide counter',   'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'thumbnails', __( 'Thumbnail strip', 'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'captions',  __( 'Captions',        'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'download',  __( 'Download',        'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'controls',   __( 'Arrows',        'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'counter',    __( 'Slide Counter', 'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'thumbnails', __( 'Thumbnails',    'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'captions',   __( 'Captions',      'ml-slider-lightbox' ) ); ?>
                             <?php if ( ! $this->is_pro ) : ?>
-                                <div class="ml-gallery-setting ml-gallery-setting--pro-locked">
-                                    <label><?php esc_html_e( 'Pager', 'ml-slider-lightbox' ); ?></label>
-                                    <span class="ml-gallery-pro-controls">
-                                        <label class="ml-toggle-switch" aria-hidden="true">
-                                            <input type="checkbox" disabled>
-                                            <span class="ml-toggle-track"></span>
-                                        </label>
-                                        <?php echo $this->renderProLockIcon( __( 'Pager pagination requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-                                    </span>
-                                </div>
+                                <?php $render_toggle( 'pager', __( 'Pager', 'ml-slider-lightbox' ) ); ?>
+                            <?php else : ?>
+                                <?php do_action( 'ml_gallery_pro_display_fields', $gallery_id ); ?>
                             <?php endif; ?>
 
+                            <p class="ml-settings-section-label"><?php esc_html_e( 'Toolbar Controls', 'ml-slider-lightbox' ); ?></p>
                             <?php if ( ! $this->is_pro ) : ?>
-                            <p class="ml-settings-section-label"><?php esc_html_e( 'Enhanced Zoom & Controls', 'ml-slider-lightbox' ); ?></p>
-                            <?php $render_toggle( 'zoom',       __( 'Zoom',       'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'fullscreen', __( 'Fullscreen', 'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'rotate',     __( 'Rotate',     'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'share',      __( 'Share',           'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'autoplay',   __( 'Autoplay',         'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'rotate',     __( 'Rotate and Flip',  'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'fullscreen', __( 'Fullscreen',        'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'zoom',       __( 'Zoom',              'ml-slider-lightbox' ) ); ?>
+                            <?php else : ?>
+                                <?php do_action( 'ml_gallery_pro_toolbar_fields', $gallery_id ); ?>
                             <?php endif; ?>
+                            <?php $render_toggle( 'download', __( 'Download', 'ml-slider-lightbox' ) ); ?>
 
-                            <?php if ( ! $this->is_pro ) : ?>
                             <p class="ml-settings-section-label"><?php esc_html_e( 'Advanced Features', 'ml-slider-lightbox' ); ?></p>
-                            <?php $render_toggle( 'autoplay', __( 'Autoplay', 'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'share', __( 'Share', 'ml-slider-lightbox' ) ); ?>
-                            <?php endif; ?>
+                            <?php $render_toggle( 'loop', __( 'Loop', 'ml-slider-lightbox' ) ); ?>
                             <?php if ( ! $this->is_pro ) : ?>
-                                <div class="ml-gallery-setting ml-gallery-setting--pro-locked">
-                                    <label><?php esc_html_e( 'Unique Image URLs', 'ml-slider-lightbox' ); ?></label>
-                                    <span class="ml-gallery-pro-controls">
-                                        <label class="ml-toggle-switch" aria-hidden="true">
-                                            <input type="checkbox" disabled>
-                                            <span class="ml-toggle-track"></span>
-                                        </label>
-                                        <?php echo $this->renderProLockIcon( __( 'Unique Image URLs require MetaSlider Gallery Pro', 'ml-slider-lightbox' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-                                    </span>
-                                </div>
+                                <?php $render_toggle( 'hash', __( 'Unique Image URLs', 'ml-slider-lightbox' ) ); ?>
+                            <?php else : ?>
+                                <?php do_action( 'ml_gallery_pro_advanced_fields', $gallery_id ); ?>
                             <?php endif; ?>
-
-                            <?php if ( $this->is_pro ) : ?>
-                                <?php do_action( 'ml_gallery_pro_settings_fields', $gallery_id ); ?>
-                            <?php endif; ?>
+                            <?php $render_toggle( 'keyboard',    __( 'Keyboard',       'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'mousewheel',  __( 'Mouse wheel',    'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'swipe_close', __( 'Swipe to close', 'ml-slider-lightbox' ) ); ?>
 
                         </div>
 
@@ -1010,6 +994,8 @@ class MetaSliderLightboxGallery {
                                        class="ml-gallery-color-picker"
                                        data-default-color="#000000">
                             </div>
+
+                            <?php do_action( 'ml_gallery_pro_appearance_fields', $gallery_id ); ?>
 
                         </div>
 
@@ -1471,7 +1457,7 @@ class MetaSliderLightboxGallery {
      * @return bool
      */
     public function forceLoadAssetsForBlock( $should_load ) {
-        if ( $this->pageHasGalleryBlock() ) {
+        if ( $this->pageHasGalleryBlock() || $this->pageHasGalleryShortcode() ) {
             return true;
         }
         return $should_load;

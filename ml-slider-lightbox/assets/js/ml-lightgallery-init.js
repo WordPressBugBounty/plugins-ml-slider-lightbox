@@ -612,7 +612,9 @@
         // Uses getLightboxSettings(true) so gallery-specific options (counter,
         // thumbnails strip, etc.) apply. Respects useButtonsForManual for
         // consistent button/no-button behaviour across the plugin.
-        if (!pageExcluded) {
+        // Note: pageExcluded does NOT gate gallery init — galleries are explicitly
+        // placed by the user and are unaffected by Automatic Mode content filtering.
+        {
             /**
              * Apply all per-gallery data-lg-* settings onto a settings object.
              * Used by both regular and carousel init paths.
@@ -2222,6 +2224,16 @@
             'tabindex': '0'
         });
 
+        var caption = extractCaption($slide);
+        if (caption) {
+            $button.attr('data-sub-html', caption);
+        }
+
+        var caption = extractCaption($slide);
+        if (caption) {
+            $button.attr('data-sub-html', caption);
+        }
+
         return $button;
     }
 
@@ -2508,8 +2520,15 @@
      * Extract caption from various sources for an image or container
      */
     function extractCaption($element) {
+        // PHP sets data-sub-html on the slide's <a> for the built-in lightbox.
+        // Read this before the shouldShowCaptions() guard so it is available when
+        // global captions are off but a per-slider override enables them.
+        // resolveSliderCaptions() is the final authority on removal.
+        var $childLink = $element.find('a').first();
+        var childCaption = $childLink.length ? ($childLink.attr('data-sub-html') || '').trim() : '';
+
         if (!shouldShowCaptions()) {
-            return '';
+            return childCaption;
         }
 
         var caption = '';
@@ -2539,6 +2558,10 @@
 
         if (!caption) {
             caption = $element.attr('data-sub-html') || '';
+        }
+
+        if (!caption) {
+            caption = childCaption;
         }
 
         return caption.trim();

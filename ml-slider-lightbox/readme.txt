@@ -2,8 +2,8 @@
 Contributors: andergmartins, htmgarcia, publishpress, stevejburge, rochdesigns
 Tags: gallery, image gallery, video gallery, wordpress gallery, YouTube gallery
 Requires at least: 5.0
-Tested up to: 6.9
-Stable tag: 2.30.0
+Tested up to: 7.0
+Stable tag: 2.32.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -14,7 +14,7 @@ MetaSlider Gallery is the ultimate gallery plugin. Build an image gallery, or sh
 
 MetaSlider Gallery is the ultimate WordPress gallery plugin. You can build an image gallery. You can also show your images, videos, and slideshows in a beautiful gallery window. Plus, MetaSlider Gallery is deeply integrated with the [MetaSlider Slideshow](https://wordpress.org/plugins/ml-slider/) plugin so you can create stylish sliders.
 
-The MetaSlider Gallery plugin allows you to show a wide variety of media inside a lightbox gallery window, including these:
+The MetaSlider Gallery plugin allows you to create beautiful image galleries that can be placed anywhere on your WordPress site. You can also show a wide variety of media inside a lightbox gallery window, including these:
 
 * Images
 * Image galleries
@@ -24,9 +24,23 @@ The MetaSlider Gallery plugin allows you to show a wide variety of media inside 
 * Featured images
 * [MetaSlider slideshows](https://wordpress.org/plugins/ml-slider/)
 
-You can really enhance your WordPress media with gallery windows. Visitors can view your images or videos and then open them inside a modal. This can make the image or video larger and also darken the background so it's easier to focus on the media.
+### Create stylish image galleries
+
+MetaSlider Gallery allows you to create stylish image galleries that work with the block editor, the Classic Editor, and any page-builder. To create a new gallery, find the "Galleries" screen.
+
+There are five layouts available for your image gallery: Grid, Masonry, Justified, Carousel, and Showcase. 
+
+* **Grid**: Show your images in rows and columns. Each row and column will be the same size.
+* **Masonry**: Show the images in a grid-like layout, but this approach has a flexible placement that fills gaps left by shorter items.
+* **Justified**: This allows each image to keep its original aspect ratio, so it won't always be possible to fill each row edge-to-edge.
+* **Carousel**: Show one main image at the time. The visitor can use arrows or the thumbnail navigation to browse to the next image.
+* **Showcase**: Shows one image at a time. In this layout, the arrows and the thumbnail navigation are both underneath the image.
+
+[See how to create WordPress image galleries](https://www.metaslider.com/docs/create-image-galleries/).
 
 ### Show your single images in a gallery window
+
+You can really enhance your WordPress media with gallery windows. Visitors can view your images or videos and then open them inside a modal. This can make the image or video larger and also darken the background so it's easier to focus on the media.
 
 MetaSlider Gallery allows you to add gallery windows to images in your WordPress post content. You can choose to automatically add the gallery window to all images, or you can do it manually via the "Enlarge on click" setting. This works with both the block editor and the Classic Editor. You can also use this gallery window with page-builders such as Elementor, Divi, and Beaver Builder, thanks to the CSS feature.
 
@@ -66,10 +80,9 @@ A slideshow allows you to create a beautiful showcase of images or videos for yo
 
 ### Design Options for MetaSlider Gallery
 
-The MetaSlider Gallery plugin has a wide range of design options to allow to customize the gallery window effect. You can customize the gallery window background and overlay appearance. You can choose the navigation icons (close, previous, next arrows) that appear in all gallery windows. You can modify the the “Open in lightbox window” option that can be added to media.
+The MetaSlider Gallery plugin has a wide range of design options to allow to customize the gallery window effect. You can customize the gallery window background and overlay appearance. You can choose the navigation icons (close, previous, next arrows) that appear in all gallery windows. You can modify the "Open in lightbox window" option that can be added to media.
 
 [Click here to see gallery window design options](https://www.metaslider.com/docs/design-options-for-metaslider-lightbox/).
-
 
 == Installation ==
 
@@ -84,7 +97,7 @@ The MetaSlider Gallery plugin has a wide range of design options to allow to cus
 
 We rely on lightGallery which is a lightweight, modular, JavaScript image and video gallery window gallery. Find out more at [their website](https://www.lightgalleryjs.com/). lightGallery is built with most modern technologies available to achieve the best performance and quality. It supports all modern browsers including IE 10 and above. lightGallery is highly optimized for mobile and tablets so you get a native look-and-feel, plus best performance.
 
-= Is MetsaSlider gallery window ready for mobile? =
+= Is MetaSlider gallery window ready for mobile? =
 
 Yes, MetaSlider Gallery is highly optimized for mobile. MetaSlider Gallery supports multiple touch gestures to perform specific actions such as pinch to zoom in, zoom out, double tap to zoom, drag or swipe to navigate to different slides, vertical swipe or drag to close etc. MetaSlider Gallery  uses CSS-only approach for resizing images and videos to achieve maximum performance on mobile devices.
 
@@ -127,6 +140,17 @@ Yes, a legacy feature in this plugin allows you to connect other gallery window 
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.32.0] - 28 May, 2026 =
+
+* ADDED: Allow users to choose the color for the progress bar, #421;
+* CHANGED: Update settings and UI text from "lightbox" to "gallery", #391;
+* CHANGED: Rename "Rotate" feature to "Rotate and Flip" to reflect available actions, #403;
+* CHANGED: Reorganize settings panel between Free and Pro features, #401;
+* CHANGED: Update Pro feature description tooltips, #404;
+* FIXED: Captions missing in MetaSlider slideshow when "Open in Gallery" button is enabled, #380, #409;
+* FIXED: Pro features cannot be disabled from settings, #402;
+* FIXED: Content filtering settings incorrectly affecting gallery display, #415;
 
 = [2.30.0] - 14 May, 2026 =
 

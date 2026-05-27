@@ -286,13 +286,13 @@
 		$( document ).on( 'input', '.ml-gallery-range', function () {
 			const $val   = $( this ).closest( '.ml-gallery-setting' ).find( '.ml-gallery-range-value' );
 			const isGap  = $( this ).is( '#ml_gallery_gap' );
-			const isMs   = $( this ).is( '#ml_gallery_autoplay_interval' );
+			const isMs   = $( this ).is( '#ml_gallery_autoplay_interval, #ml_gallery_pro_autoplay_interval' );
 			const suffix = isGap ? 'px' : ( isMs ? 'ms' : '' );
 			$val.text( this.value + suffix );
 		} );
 
 		// Show/hide autoplay interval row based on autoplay toggle
-		$( document ).on( 'change', '#ml_gallery_autoplay', function () {
+		$( document ).on( 'change', '#ml_gallery_autoplay, #ml_gallery_pro_autoplay', function () {
 			$( '.ml-autoplay-interval-row' ).toggleClass( 'is-hidden', ! this.checked );
 		} );
 

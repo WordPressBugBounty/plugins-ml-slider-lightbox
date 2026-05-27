@@ -4,7 +4,7 @@
  * Plugin Name: MetaSlider Gallery
  * Plugin URI: https://www.metaslider.com
  * Description: MetaSlider Gallery is the image gallery plugin for WordPress. Create a beautiful display for your photos with carousel, masonry, grid, and more views.
- * Version: 2.30.0
+ * Version: 2.32.0
  * Author: MetaSlider
  * Author URI: https://www.metaslider.com
  * License: GPL-2.0+
@@ -31,4 +31,4 @@ if (! class_exists('MetaSlider\Lightbox\MetaSliderLightboxPlugin')) {
 function metaslider_lightbox_activation()
 {
     set_transient('metaslider_lightbox_activation_redirect', true, 30);
-}
+} 
