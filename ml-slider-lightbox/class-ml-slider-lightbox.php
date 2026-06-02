@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.32.0';
+    public $version = '2.32.1';
     protected static $instance = null;
     private $supported_plugins = array();
 
@@ -1525,13 +1525,13 @@ class MetaSliderLightboxPlugin
             'minimum_image_height' => isset($general_options['minimum_image_height']) ? absint($general_options['minimum_image_height']) : 200,
             'page_excluded' => $this->shouldExcludePage(),
             'manual_excluded' => $this->shouldExcludeManualForPostType(),
-            'license_key'      => ML_LIGHTGALLERY_LICENSE_KEY,
             'view_image_label' => __( 'View image', 'ml-slider-lightbox' ),
         );
-        
+
         $lightbox_settings = apply_filters('ml_lightbox_settings', $lightbox_settings);
-        
+
         wp_localize_script('ml-lightgallery-clean', 'mlLightboxSettings', $lightbox_settings);
+        wp_add_inline_script('ml-lightgallery-clean', 'var _mlLk="' . esc_js(ML_LIGHTGALLERY_LICENSE_KEY) . '";', 'before');
     }
 
     /**
@@ -1610,6 +1610,8 @@ class MetaSliderLightboxPlugin
         $close_button_position = isset($options['close_button_position']) ? $options['close_button_position'] : 'top-right';
         $lightbox_button_position = isset($options['lightbox_button_position']) ? $options['lightbox_button_position'] : 'top-right';
         $autoplay_progress_bar_color = isset($options['autoplay_progress_bar_color']) ? $options['autoplay_progress_bar_color'] : '#a90707';
+        $thumbnail_border_color = isset($options['thumbnail_border_color']) ? $options['thumbnail_border_color'] : '#ffffff';
+        $thumbnail_border_hover_color = isset($options['thumbnail_border_hover_color']) ? $options['thumbnail_border_hover_color'] : '#dd6923';
 
 
         $custom_css = '
@@ -1620,6 +1622,8 @@ class MetaSliderLightboxPlugin
                 --ml-lightbox-close-icon-hover-color: ' . esc_html($close_icon_hover_color) . ' !important;
                 --ml-lightbox-toolbar-icon-color: ' . esc_html($toolbar_icon_color) . ' !important;
                 --ml-lightbox-toolbar-icon-hover-color: ' . esc_html($toolbar_icon_hover_color) . ' !important;
+                --ml-lightbox-thumbnail-border-color: ' . esc_html($thumbnail_border_color) . ' !important;
+                --ml-lightbox-thumbnail-border-hover-color: ' . esc_html($thumbnail_border_hover_color) . ' !important;
             }
 
             .lg-backdrop {
@@ -2444,6 +2448,14 @@ class MetaSliderLightboxPlugin
         );
 
         add_settings_field(
+            'thumbnail_border_color',
+            __('Thumbnail Border Color', 'ml-slider-lightbox'),
+            array($this, 'thumbnailBorderColorCallback'),
+            'metaslider_lightbox_appearance',
+            'metaslider_lightbox_appearance_background'
+        );
+
+        add_settings_field(
             'navigation_arrows',
             __('Arrows', 'ml-slider-lightbox'),
             array($this, 'navigationArrowsGroupCallback'),
@@ -2800,6 +2812,14 @@ class MetaSliderLightboxPlugin
 
         if (isset($input['autoplay_progress_bar_color'])) {
             $sanitized['autoplay_progress_bar_color'] = sanitize_hex_color($input['autoplay_progress_bar_color']);
+        }
+
+        if (isset($input['thumbnail_border_color'])) {
+            $sanitized['thumbnail_border_color'] = sanitize_hex_color($input['thumbnail_border_color']);
+        }
+
+        if (isset($input['thumbnail_border_hover_color'])) {
+            $sanitized['thumbnail_border_hover_color'] = sanitize_hex_color($input['thumbnail_border_hover_color']);
         }
 
         if (isset($input['background_opacity'])) {
@@ -3431,6 +3451,26 @@ class MetaSliderLightboxPlugin
 
         echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[autoplay_progress_bar_color]" value="' . esc_attr($color) . '" />';
         echo '<p class="description">' . esc_html__('Color of the progress bar shown during autoplay slideshows.', 'ml-slider-lightbox') . '</p>';
+    }
+
+    public function thumbnailBorderColorCallback()
+    {
+        if (!current_user_can('manage_options')) {
+            return;
+        }
+
+        $options = $this->getCachedGeneralOptions();
+        $color = isset($options['thumbnail_border_color']) ? $options['thumbnail_border_color'] : '#ffffff';
+        $hover_color = isset($options['thumbnail_border_hover_color']) ? $options['thumbnail_border_hover_color'] : '#dd6923';
+
+        echo '<div class="ml-color-inline">';
+        echo '<div class="ml-color-field" data-label="' . esc_attr__('Border', 'ml-slider-lightbox') . '">';
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[thumbnail_border_color]" value="' . esc_attr($color) . '" />';
+        echo '</div>';
+        echo '<div class="ml-color-field" data-label="' . esc_attr__('Border Active and Hover', 'ml-slider-lightbox') . '">';
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[thumbnail_border_hover_color]" value="' . esc_attr($hover_color) . '" />';
+        echo '</div>';
+        echo '</div>';
     }
 
     public function showArrowsCallback()

@@ -136,14 +136,16 @@ class MetaSliderLightboxGallery {
      */
     private function defaultAppearance() {
         return array(
-            'bg_color'         => '#000000',
-            'bg_opacity'       => '0.9',
-            'arrow_color'      => '#ffffff',
-            'arrow_bg_color'   => '#000000',
-            'close_color'      => '#ffffff',
-            'close_bg_color'   => '#000000',
-            'toolbar_color'    => '#ffffff',
-            'toolbar_bg_color' => '#000000',
+            'bg_color'               => '#000000',
+            'bg_opacity'             => '0.9',
+            'arrow_color'            => '#ffffff',
+            'arrow_bg_color'         => '#000000',
+            'close_color'            => '#ffffff',
+            'close_bg_color'         => '#000000',
+            'toolbar_color'          => '#ffffff',
+            'toolbar_bg_color'       => '#000000',
+            'thumbnail_border_color'       => '#ffffff',
+            'thumbnail_border_hover_color' => '#dd6923',
         );
     }
 
@@ -222,7 +224,7 @@ class MetaSliderLightboxGallery {
                 'methods'             => \WP_REST_Server::READABLE,
                 'callback'            => array( $this, 'previewGallery' ),
                 'permission_callback' => function () {
-                    return current_user_can( 'edit_posts' );
+                    return current_user_can( 'manage_options' );
                 },
                 'args'                => array(
                     'id' => array(
@@ -995,6 +997,26 @@ class MetaSliderLightboxGallery {
                                        data-default-color="#000000">
                             </div>
 
+                            <div class="ml-gallery-setting ml-gallery-setting--col">
+                                <label for="ml_gallery_thumbnail_border_color"><?php esc_html_e( 'Thumbnail Border Color', 'ml-slider-lightbox' ); ?></label>
+                                <input type="text"
+                                       id="ml_gallery_thumbnail_border_color"
+                                       name="ml_gallery_appearance[thumbnail_border_color]"
+                                       value="<?php echo esc_attr( $appearance['thumbnail_border_color'] ); ?>"
+                                       class="ml-gallery-color-picker"
+                                       data-default-color="#ffffff">
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col">
+                                <label for="ml_gallery_thumbnail_border_hover_color"><?php esc_html_e( 'Thumbnail Border Active and Hover', 'ml-slider-lightbox' ); ?></label>
+                                <input type="text"
+                                       id="ml_gallery_thumbnail_border_hover_color"
+                                       name="ml_gallery_appearance[thumbnail_border_hover_color]"
+                                       value="<?php echo esc_attr( $appearance['thumbnail_border_hover_color'] ); ?>"
+                                       class="ml-gallery-color-picker"
+                                       data-default-color="#dd6923">
+                            </div>
+
                             <?php do_action( 'ml_gallery_pro_appearance_fields', $gallery_id ); ?>
 
                         </div>
@@ -1118,14 +1140,16 @@ class MetaSliderLightboxGallery {
                 : array();
             $bg_opacity = isset( $app_raw['bg_opacity'] ) ? min( 1.0, max( 0.0, (float) $app_raw['bg_opacity'] ) ) : 0.9;
             update_post_meta( $gallery_id, '_ml_gallery_appearance', array(
-                'bg_color'         => sanitize_hex_color( $app_raw['bg_color'] ?? '' ) ?: '#000000',
-                'bg_opacity'       => (string) $bg_opacity,
-                'arrow_color'      => sanitize_hex_color( $app_raw['arrow_color'] ?? '' ) ?: '#ffffff',
-                'arrow_bg_color'   => sanitize_hex_color( $app_raw['arrow_bg_color'] ?? '' ) ?: '#000000',
-                'close_color'      => sanitize_hex_color( $app_raw['close_color'] ?? '' ) ?: '#ffffff',
-                'close_bg_color'   => sanitize_hex_color( $app_raw['close_bg_color'] ?? '' ) ?: '#000000',
-                'toolbar_color'    => sanitize_hex_color( $app_raw['toolbar_color'] ?? '' ) ?: '#ffffff',
-                'toolbar_bg_color' => sanitize_hex_color( $app_raw['toolbar_bg_color'] ?? '' ) ?: '#000000',
+                'bg_color'               => sanitize_hex_color( $app_raw['bg_color'] ?? '' ) ?: '#000000',
+                'bg_opacity'             => (string) $bg_opacity,
+                'arrow_color'            => sanitize_hex_color( $app_raw['arrow_color'] ?? '' ) ?: '#ffffff',
+                'arrow_bg_color'         => sanitize_hex_color( $app_raw['arrow_bg_color'] ?? '' ) ?: '#000000',
+                'close_color'            => sanitize_hex_color( $app_raw['close_color'] ?? '' ) ?: '#ffffff',
+                'close_bg_color'         => sanitize_hex_color( $app_raw['close_bg_color'] ?? '' ) ?: '#000000',
+                'toolbar_color'          => sanitize_hex_color( $app_raw['toolbar_color'] ?? '' ) ?: '#ffffff',
+                'toolbar_bg_color'       => sanitize_hex_color( $app_raw['toolbar_bg_color'] ?? '' ) ?: '#000000',
+                'thumbnail_border_color'       => sanitize_hex_color( $app_raw['thumbnail_border_color'] ?? '' ) ?: '#ffffff',
+                'thumbnail_border_hover_color' => sanitize_hex_color( $app_raw['thumbnail_border_hover_color'] ?? '' ) ?: '#dd6923',
             ) );
 
             $raw_layout = isset( $settings_raw['layout'] ) ? sanitize_key( $settings_raw['layout'] ) : 'grid';
@@ -1164,7 +1188,7 @@ class MetaSliderLightboxGallery {
         $gallery_id = isset( $_GET['gallery_id'] ) ? absint( $_GET['gallery_id'] ) : 0;
 
         if ( ! wp_verify_nonce( $nonce, 'ml_duplicate_gallery_' . $gallery_id ) ||
-             ! current_user_can( 'edit_posts' ) ) {
+             ! current_user_can( 'manage_options' ) ) {
             wp_die( esc_html__( 'Security check failed.', 'ml-slider-lightbox' ) );
         }
 
@@ -1319,8 +1343,10 @@ class MetaSliderLightboxGallery {
         $arrow_bg      = esc_html( sanitize_hex_color( $appearance['arrow_bg_color'] )   ?: '#000000' );
         $close_color   = esc_html( sanitize_hex_color( $appearance['close_color'] )      ?: '#ffffff' );
         $close_bg      = esc_html( sanitize_hex_color( $appearance['close_bg_color'] )   ?: '#000000' );
-        $toolbar_color = esc_html( sanitize_hex_color( $appearance['toolbar_color'] )    ?: '#ffffff' );
-        $toolbar_bg    = esc_html( sanitize_hex_color( $appearance['toolbar_bg_color'] ) ?: '#000000' );
+        $toolbar_color    = esc_html( sanitize_hex_color( $appearance['toolbar_color'] )    ?: '#ffffff' );
+        $toolbar_bg       = esc_html( sanitize_hex_color( $appearance['toolbar_bg_color'] ) ?: '#000000' );
+        $thumbnail_border       = esc_html( sanitize_hex_color( $appearance['thumbnail_border_color'] )       ?: '#ffffff' );
+        $thumbnail_border_hover = esc_html( sanitize_hex_color( $appearance['thumbnail_border_hover_color'] ) ?: '#dd6923' );
 
         $lg_class = 'ml-gallery-' . $gallery_id;
 
@@ -1335,6 +1361,8 @@ class MetaSliderLightboxGallery {
                 --ml-lightbox-arrow-color: {$arrow_color} !important;
                 --ml-lightbox-close-icon-color: {$close_color} !important;
                 --ml-lightbox-toolbar-icon-color: {$toolbar_color} !important;
+                --ml-lightbox-thumbnail-border-color: {$thumbnail_border} !important;
+                --ml-lightbox-thumbnail-border-hover-color: {$thumbnail_border_hover} !important;
             }
             .lg-container.{$lg_class} .lg-backdrop,
             .lg-container.{$lg_class} .lg-thumb-outer {

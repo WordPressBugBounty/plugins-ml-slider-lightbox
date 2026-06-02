@@ -49,6 +49,10 @@
     // Set by initMetaSliderButtonMode so getButtonText() picks up the per-slider icon setting
     var _metasliderButtonSliderId = null;
 
+    function escapeHtml(str) {
+        return $('<div>').text(str).html();
+    }
+
     function getButtonText(sliderId) {
         var id = sliderId !== undefined ? sliderId : _metasliderButtonSliderId;
         if (resolveSliderIcon(id)) {
@@ -1234,8 +1238,8 @@
             ariaDescribedby: ''  // Will be set dynamically per image
         };
 
-        if (mlLightboxSettings.license_key) {
-            settings.licenseKey = mlLightboxSettings.license_key;
+        if (typeof _mlLk !== 'undefined') {
+            settings.licenseKey = _mlLk;
         }
 
         if (!shouldShowCaptions()) {
@@ -1415,10 +1419,10 @@
                 'data-thumb': src || href
             });
 
-            var caption = $img.attr('alt') || $img.attr('title') || '';
+            var caption = escapeHtml($img.attr('alt') || $img.attr('title') || '');
             var $figcaption = $link.closest('.gallery-item').find('figcaption, .wp-caption-text');
             if ($figcaption.length > 0) {
-                caption = $figcaption.text().trim();
+                caption = escapeHtml($figcaption.text().trim());
             }
 
             if (caption) {
@@ -2553,7 +2557,7 @@
         }
 
         if (!caption && $img.length > 0) {
-            caption = $img.attr('alt') || $img.attr('title') || '';
+            caption = escapeHtml($img.attr('alt') || $img.attr('title') || '');
         }
 
         if (!caption) {

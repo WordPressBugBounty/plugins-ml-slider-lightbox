@@ -3,7 +3,7 @@ Contributors: andergmartins, htmgarcia, publishpress, stevejburge, rochdesigns
 Tags: gallery, image gallery, video gallery, wordpress gallery, YouTube gallery
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 2.32.0
+Stable tag: 2.32.1
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -140,6 +140,14 @@ Yes, a legacy feature in this plugin allows you to connect other gallery window 
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.32.1] - 2 Jun, 2026 =
+
+* ADDED: Allow users to customize the thumbnail border and hover color, #374;
+* FIXED: Sanitize image captions before rendering to prevent XSS via lightGallery data-sub-html, #388;
+* FIXED: Require manage_options capability in gallery duplication handler to prevent authorization bypass, #389, #392;
+* FIXED: Align REST gallery preview endpoint permission with gallery management policy, #390;
+* FIXED: Remove lightGallery license key from named JS global to prevent exposure to site visitors, #393;
 
 = [2.32.0] - 28 May, 2026 =
 

@@ -108,20 +108,26 @@
 .lg-outer .lg-thumb-item {
     opacity: 0.5;
     transition: border-color 0.25s ease;
+    border-color: var(--ml-lightbox-thumbnail-border-color, #ffffff) !important;
+    background-color: transparent !important;
 }
 
 .lg-outer .lg-thumb-item:hover {
     opacity: 0.8;
-    border-color: rgba(255, 255, 255, 0.6);
+    border-color: var(--ml-lightbox-thumbnail-border-hover-color, #dd6923) !important;
 }
 
 .lg-outer .lg-thumb-item.active {
     opacity: 1;
-    border-color: #ffffff !important;
+    border-color: var(--ml-lightbox-thumbnail-border-hover-color, #dd6923) !important;
 }
 
 .lg-outer .lg-thumb-item img {
     transition: transform 0.25s ease;
+}
+
+.ml-showcase-thumb {
+    background-color: var(--ml-lightbox-thumbnail-border-color) !important;
 }
 
 .lg-outer .lg-thumb-item.active img {
