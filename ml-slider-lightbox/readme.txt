@@ -3,7 +3,7 @@ Contributors: andergmartins, htmgarcia, publishpress, stevejburge, rochdesigns
 Tags: gallery, image gallery, video gallery, wordpress gallery, YouTube gallery
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 2.32.1
+Stable tag: 2.32.2
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -140,6 +140,13 @@ Yes, a legacy feature in this plugin allows you to connect other gallery window 
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.32.2] - 8 Jun, 2026 =
+
+* ADDED: Disable Gallery Window Setting, #411;
+* FIXED: Gallery images doesn't follow Image Size Setting, #460;
+* FIXED: "MetaSlider Gallery" category blocks lightbox, #442;
+* FIXED: Authors can see the Gallery menu link, #451;
 
 = [2.32.1] - 2 Jun, 2026 =
 

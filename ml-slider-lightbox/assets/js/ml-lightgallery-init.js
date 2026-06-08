@@ -105,7 +105,7 @@
     }
 
     function isInsideMetaSliderContainer($element) {
-        var $container = $element.closest('.metaslider, [class*="metaslider-"], [id*="metaslider"], .filmstrip, [id*="filmstrip"]');
+        var $container = $element.closest('.metaslider, [id*="metaslider"], .filmstrip, [id*="filmstrip"]');
         if ($container.length > 0) {
             if ($container.is('body') || $container.is('html')) {
                 return false;
@@ -706,7 +706,7 @@
             };
 
             $('.ml-gallery-container[data-ml-gallery]').filter(function() {
-                return !$(this).hasClass('lg-initialized');
+                return !$(this).hasClass('lg-initialized') && $(this).data('ml-lightbox') !== 0;
             }).each(function() {
                 var $container = $(this);
 

@@ -300,9 +300,11 @@
 		function toggleColumnsRow( layout ) {
 			var hideColumns = layout === 'justified' || layout === 'carousel' || layout === 'showcase';
 			var hideGap     = layout === 'carousel' || layout === 'showcase';
+			var hideModal   = layout === 'carousel' || layout === 'showcase';
 			$( '.ml-gallery-columns-row' ).toggleClass( 'is-hidden', hideColumns );
 			$( '.ml-gallery-mobile-columns-row' ).toggleClass( 'is-hidden', hideColumns );
 			$( '.ml-gallery-gap-row' ).toggleClass( 'is-hidden', hideGap );
+			$( '.ml-show-in-modal-row' ).toggleClass( 'is-hidden', hideModal );
 		}
 
 // Init on page load

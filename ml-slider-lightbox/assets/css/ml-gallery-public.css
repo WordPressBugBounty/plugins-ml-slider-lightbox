@@ -203,3 +203,9 @@
 		height: 260px;
 	}
 }
+
+/* Block link navigation when lightbox is disabled */
+.ml-gallery-container[data-ml-lightbox="0"] a {
+	pointer-events: none;
+	cursor: default;
+}

@@ -110,6 +110,7 @@ class MetaSliderLightboxGallery {
             'columns_mobile'   => 1,
             'gap'              => 8,
             'lightbox_size'    => 'full',
+            'open_in_lightbox' => 1,
             // Pro-only settings (default off; rendered as locked for free users)
             'zoom'        => 0,
             'fullscreen'  => 0,
@@ -188,6 +189,7 @@ class MetaSliderLightboxGallery {
                 'capability_type'    => 'post',
                 'capabilities'       => array(
                     'create_posts' => 'manage_options',
+                    'edit_posts'   => 'manage_options',
                 ),
                 'map_meta_cap'       => true,
             )
@@ -829,16 +831,18 @@ class MetaSliderLightboxGallery {
                                 'keyboard'    => __( 'Navigate images using left and right arrow keys', 'ml-slider-lightbox' ),
                                 'mousewheel'  => __( 'Scroll through images using the mouse wheel', 'ml-slider-lightbox' ),
                                 'swipe_close' => __( 'Swipe up or down to close the gallery on touch devices', 'ml-slider-lightbox' ),
-                                'loop'        => __( 'Cycle back to the first image after reaching the last', 'ml-slider-lightbox' ),
-                                'download'    => __( 'Show a download button for each image', 'ml-slider-lightbox' ),
+                                'loop'             => __( 'Cycle back to the first image after reaching the last', 'ml-slider-lightbox' ),
+                                'download'         => __( 'Show a download button for each image', 'ml-slider-lightbox' ),
+                                'open_in_lightbox' => __( 'Open images in a window overlay when clicked. Applies to Grid, Masonry, and Justified layouts.', 'ml-slider-lightbox' ),
                             );
 
-                            $render_toggle = function( $key, $label ) use ( $lg_settings, $pro_tooltips, $descriptions ) {
+                            $render_toggle = function( $key, $label, $extra_class = '' ) use ( $lg_settings, $pro_tooltips, $descriptions ) {
                                 $is_pro_key = isset( $pro_tooltips[ $key ] );
                                 $locked     = $is_pro_key && ! $this->is_pro;
-                                $title  = isset( $descriptions[ $key ] ) ? $descriptions[ $key ] : '';
+                                $title      = isset( $descriptions[ $key ] ) ? $descriptions[ $key ] : '';
+                                $class_attr = $extra_class ? ' ' . esc_attr( $extra_class ) : '';
                                 if ( $locked ) : ?>
-                                    <div class="ml-gallery-setting ml-gallery-setting--pro-locked">
+                                    <div class="ml-gallery-setting ml-gallery-setting--pro-locked<?php echo $class_attr; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>">
                                         <label<?php if ( $title ) : ?> class="ml-tipsy" title="<?php echo esc_attr( $title ); ?>"<?php endif; ?>><?php echo esc_html( $label ); ?></label>
                                         <span class="ml-gallery-pro-controls">
                                             <label class="ml-toggle-switch" aria-hidden="true">
@@ -849,7 +853,7 @@ class MetaSliderLightboxGallery {
                                         </span>
                                     </div>
                                 <?php else : ?>
-                                    <div class="ml-gallery-setting">
+                                    <div class="ml-gallery-setting<?php echo $class_attr; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>">
                                         <label for="ml_gallery_<?php echo esc_attr( $key ); ?>"<?php if ( $title ) : ?> class="ml-tipsy" title="<?php echo esc_attr( $title ); ?>"<?php endif; ?>><?php echo esc_html( $label ); ?></label>
                                         <input type="hidden" name="ml_gallery_settings[<?php echo esc_attr( $key ); ?>]" value="0">
                                         <label class="ml-toggle-switch">
@@ -899,6 +903,7 @@ class MetaSliderLightboxGallery {
                             <?php $render_toggle( 'download', __( 'Download', 'ml-slider-lightbox' ) ); ?>
 
                             <p class="ml-settings-section-label"><?php esc_html_e( 'Advanced Features', 'ml-slider-lightbox' ); ?></p>
+                            <?php $render_toggle( 'open_in_lightbox', __( 'Show in Gallery Window', 'ml-slider-lightbox' ), 'ml-show-in-modal-row' ); ?>
                             <?php $render_toggle( 'loop', __( 'Loop', 'ml-slider-lightbox' ) ); ?>
                             <?php if ( ! $this->is_pro ) : ?>
                                 <?php $render_toggle( 'hash', __( 'Unique Image URLs', 'ml-slider-lightbox' ) ); ?>
@@ -1169,6 +1174,7 @@ class MetaSliderLightboxGallery {
                 'columns_mobile'   => min( 6, max( 1, (int) ( $settings_raw['columns_mobile'] ?? 1 ) ) ),
                 'gap'              => min( 32, max( 0, (int) ( $settings_raw['gap'] ?? 8 ) ) ),
                 'lightbox_size'    => $this->sanitizeImageSize( $settings_raw['lightbox_size'] ?? 'full' ),
+                'open_in_lightbox' => in_array( $raw_layout, array( 'carousel', 'showcase' ), true ) ? 1 : ( ! empty( $settings_raw['open_in_lightbox'] ) ? 1 : 0 ),
             ) );
 
             do_action( 'ml_save_gallery_pro', $gallery_id );
@@ -1399,6 +1405,7 @@ class MetaSliderLightboxGallery {
              class="ml-gallery-container ml-layout-<?php echo esc_attr( $layout ); ?>"
              style="--ml-columns:<?php echo esc_attr( $columns ); ?>;--ml-columns-mobile:<?php echo absint( $lg['columns_mobile'] ?? 1 ); ?>;--ml-gap:<?php echo esc_attr( $gap ); ?>px"
              data-ml-gallery="true"
+             data-ml-lightbox="<?php echo $lg['open_in_lightbox'] ? '1' : '0'; ?>"
              data-ml-layout="<?php echo esc_attr( $layout ); ?>"
              data-lg-class="<?php echo esc_attr( $lg_class ); ?>"
              data-lg-mode="<?php echo esc_attr( $lg['mode'] ); ?>"
@@ -1440,7 +1447,7 @@ class MetaSliderLightboxGallery {
                    <?php endif; ?>
                    <?php // esc_html() not esc_attr(): data-sub-html is rendered as HTML by lightGallery.
                          // esc_attr() would double-encode entities (& → &amp;amp;), producing visible artefacts. ?>>
-                    <?php echo wp_get_attachment_image( $image_id, 'medium', false, array( 'alt' => $alt ) ); ?>
+                    <?php echo wp_get_attachment_image( $image_id, $lightbox_size, false, array( 'alt' => $alt ) ); ?>
                 </a>
             <?php endforeach; ?>
 

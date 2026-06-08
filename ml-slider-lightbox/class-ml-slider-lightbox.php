@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.32.1';
+    public $version = '2.32.2';
     protected static $instance = null;
     private $supported_plugins = array();
 
