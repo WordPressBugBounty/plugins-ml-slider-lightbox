@@ -765,6 +765,11 @@
                             'aria-label': mlLightboxSettings.view_image_label + (alt ? ': ' + alt : ''),
                         });
                         $a.css('position', 'relative').append($btn);
+
+                        // Button mode: only the button should open the lightbox.
+                        // Strip the wrapper link's own attributes so clicking the
+                        // image itself doesn't navigate to the image URL.
+                        $a.removeAttr('href').removeAttr('data-src').removeAttr('data-thumb');
                     });
                     settings.selector = '.ml-lightbox-button';
                 } else {

@@ -82,7 +82,7 @@ class MetaSliderLightboxGallery {
             $text = __( 'Some of these features are available in MetaSlider Gallery Pro', 'ml-slider-lightbox' );
         }
         return '<a class="dashicons dashicons-lock ml-gallery-pro-lock ml-tipsy" title="' .
-            esc_attr( $text ) . '" href="https://www.metaslider.com/upgrade-lightbox/" target="_blank" rel="noopener"></a>';
+            esc_attr( $text ) . '" href="https://www.metaslider.com/upgrade-gallery/" target="_blank" rel="noopener"></a>';
     }
 
     private function allowedModes() {

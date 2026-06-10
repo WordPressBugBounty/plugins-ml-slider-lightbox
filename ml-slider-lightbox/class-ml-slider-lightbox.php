@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.32.2';
+    public $version = '2.32.3';
     protected static $instance = null;
     private $supported_plugins = array();
 
@@ -4120,7 +4120,7 @@ class MetaSliderLightboxPlugin
             $text = __('This feature is available in MetaSlider Gallery Pro', 'ml-slider-lightbox');
         }
 
-        $link = 'https://www.metaslider.com/upgrade-lightbox/';
+        $link = 'https://www.metaslider.com/upgrade-gallery/';
         return '<a class="dashicons dashicons-lock ml-pro-setting tipsy-tooltip-top" title="' .
             esc_attr($text) . '" href="' .
             esc_url($link) . '" target="_blank" rel="noopener"></a>';
@@ -4254,7 +4254,7 @@ class MetaSliderLightboxPlugin
                         <td></td>
                         <td class="ml-installed-status"><?php _e('Installed', 'ml-slider-lightbox'); ?></td>
                         <td class="ml-installed-status">
-                            <a href="https://www.metaslider.com/upgrade-lightbox/" target="_blank" rel="noopener" class="ml-upgrade-link">
+                            <a href="https://www.metaslider.com/upgrade-gallery/" target="_blank" rel="noopener" class="ml-upgrade-link">
                                 <?php _e('Upgrade now', 'ml-slider-lightbox'); ?>
                             </a>
                         </td>
@@ -4361,7 +4361,7 @@ class MetaSliderLightboxPlugin
                         <td></td>
                         <td class="ml-installed-status"><?php _e('Installed', 'ml-slider-lightbox'); ?></td>
                         <td class="ml-installed-status">
-                            <a href="https://www.metaslider.com/upgrade-lightbox/" target="_blank" rel="noopener" class="ml-upgrade-link">
+                            <a href="https://www.metaslider.com/upgrade-gallery/" target="_blank" rel="noopener" class="ml-upgrade-link">
                                 <?php _e('Upgrade now', 'ml-slider-lightbox'); ?>
                             </a>
                         </td>
