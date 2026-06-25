@@ -108,22 +108,11 @@
             var isIncludeMode = $('input[name="metaslider_lightbox_content_options[content_processing_mode]"]:checked').val() === 'include';
             var prefix = isIncludeMode ? mlLightboxText.include : mlLightboxText.exclude;
 
-            var $pagesTh = $('th').filter(function() { return $(this).text().toLowerCase().indexOf('specific pages') !== -1; });
-            if ($pagesTh.length) $pagesTh.text(prefix + ' specific Pages');
-
-            var $postsTh = $('th').filter(function() { return $(this).text().toLowerCase().indexOf('specific posts') !== -1; });
-            if ($postsTh.length) $postsTh.text(prefix + ' specific Posts');
-
-            var $postTypesTh = $('th').filter(function() { return $(this).text().toLowerCase().indexOf('specific post types') !== -1; });
-            if ($postTypesTh.length) $postTypesTh.text(prefix + ' specific post types');
-
-            $('.ml-cpt-label').each(function() {
-                var $label = $(this);
-                var cptName = $label.data('cpt-name');
-                var $select = $('.ml-select2-cpt-' + cptName);
-                if ($select.length) {
-                    var cptLabel = $select.data('cpt-label');
-                    $label.text(prefix + ' specific ' + cptLabel);
+            $('.ml-mode-title').each(function() {
+                var $title = $(this);
+                var noun = $title.data('mode-noun');
+                if (noun) {
+                    $title.text(prefix + ' ' + noun);
                 }
             });
 

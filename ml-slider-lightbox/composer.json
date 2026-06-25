@@ -14,7 +14,7 @@
     }
   ],
   "require": {
-    "php": ">=5.6.20"
+    "php": ">=7.0"
   },
   "require-dev": {
     "publishpress/translations": "^1.1.0",
@@ -23,13 +23,24 @@
     "phpcompatibility/php-compatibility": "*",
     "squizlabs/php_codesniffer": "3.*",
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
-    "publishpress/publishpress-phpcs-standards": "dev-master"
+    "publishpress/publishpress-phpcs-standards": "dev-master",
+    "phpunit/phpunit": "^9.6",
+    "brain/monkey": "^2.6"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MetaSlider\\Lightbox\\Tests\\": "tests/phpunit/"
+    }
   },
   "prefer-stable": true,
   "config": {
+    "process-timeout": 0,
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
       "automattic/jetpack-autoloader": true
+    },
+    "platform": {
+      "php": "8.2.12"
     }
   },
   "scripts": {
@@ -53,7 +64,11 @@
     "translate:custom": "vendor/bin/publishpress-translate --languages",
     "translate:force": "vendor/bin/publishpress-translate --force",
     "translate:force-custom": "vendor/bin/publishpress-translate --force --languages",
-    "translate:repair-plurals": "php vendor/bin/publishpress-translate --repair-plurals"
+    "translate:repair-plurals": "vendor/bin/publishpress-translate --repair-plurals",
+    "translate:clean-po": "vendor/bin/publishpress-translate --clean-po",
+    "translate:sync-files": "vendor/bin/publishpress-translate --sync-files",
+    "translate:audit": "vendor/bin/publishpress-translate --audit",
+    "translate:audit:report": "vendor/bin/publishpress-translate --audit --audit-mode=report"
   },
   "extra": {
     "plugin-name": "ml-slider-lightbox",

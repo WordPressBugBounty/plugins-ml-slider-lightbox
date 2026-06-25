@@ -158,6 +158,11 @@
             }
         });
 
+        // Caption transitions are CSS-driven (keyed to lightGallery's .lg-current
+        // state, like the official caption-animation demo). The mode is applied as
+        // an ml-cap-* class on .lg-container and the caption text is wrapped in
+        // .ml-caption-text at init — see applyGallerySettings / wrapMlCaptionText.
+
         $(document).on('lgBeforeClose.lg', function() {
             announceToScreenReader('Gallery closed');
         });
@@ -623,9 +628,31 @@
              * Apply all per-gallery data-lg-* settings onto a settings object.
              * Used by both regular and carousel init paths.
              */
+            // Wrap caption HTML in a .ml-caption-text span so the caption
+            // transition animates the text, not the .lg-sub-html bar. Set in JS
+            // (never in the PHP data-sub-html attribute — wptexturize mangles
+            // markup inside attributes). Idempotent.
+            function wrapMlCaptionText(sub) {
+                if (sub && sub.indexOf('ml-caption-text') === -1) {
+                    return '<span class="ml-caption-text">' + sub + '</span>';
+                }
+                return sub;
+            }
+
             function applyGallerySettings(settings, $container) {
                 var lgClass = $container.data('lg-class') || '';
                 if (lgClass) { settings.addClass = lgClass; }
+
+                // Caption transition (CSS state-driven, per the official demo):
+                // append the caption inside each slide item so .lg-current can
+                // scope it, pass the mode as an ml-cap-* class, and delay slides
+                // so the animation can play.
+                var captionTransition = $container.data('lg-caption-transition');
+                if (captionTransition && captionTransition !== 'none') {
+                    settings.appendSubHtmlTo = '.lg-item';
+                    settings.slideDelay = settings.slideDelay || 400;
+                    settings.addClass = (settings.addClass ? settings.addClass + ' ' : '') + 'ml-cap-' + captionTransition;
+                }
 
                 settings.mode     = $container.data('lg-mode') || settings.mode;
                 settings.controls = !!parseInt($container.data('lg-controls'), 10);
@@ -651,7 +678,7 @@
                 }
                 if (wantThumbs) {
                     settings.thumbWidth   = 100;
-                    settings.thumbHeight  = 80;
+                    settings.thumbHeight  = '80px';
                     settings.thumbMargin  = 4;
                     settings.exThumbImage = 'data-thumb';
                 }
@@ -719,7 +746,7 @@
                         var $a = $(this);
                         var el = { src: $a.attr('data-src') };
                         if ($a.attr('data-thumb'))    { el.thumb   = $a.attr('data-thumb'); }
-                        if ($a.attr('data-sub-html')) { el.subHtml = $a.attr('data-sub-html'); }
+                        if ($a.attr('data-sub-html')) { el.subHtml = wrapMlCaptionText($a.attr('data-sub-html')); }
                         dynamicEl.push(el);
                     });
 
@@ -750,7 +777,17 @@
                 var settings = getLightboxSettings(true);
                 applyGallerySettings(settings, $container);
 
-                if (useButtonsForManual) {
+                // A gallery can force its own "Open in Gallery" button via
+                // data-ml-show-button, overriding the global manual-button setting.
+                var perGalleryButton    = $container.attr('data-ml-show-button') === '1';
+                var effectiveUseButtons = useButtonsForManual || perGalleryButton;
+
+                if (effectiveUseButtons) {
+                    // Per-gallery galleries carry their own icon/text; global button
+                    // mode falls back to getButtonText() (per-slider icon + global text).
+                    var perIcon = perGalleryButton && $container.attr('data-ml-button-icon') === '1';
+                    var perText = perGalleryButton ? ($container.attr('data-ml-button-text') || '') : '';
+
                     $container.find('a[data-src]').each(function() {
                         var $a      = $(this);
                         var dataSrc = $a.attr('data-src');
@@ -758,12 +795,32 @@
                         var imgSrc  = $img.attr('src') || dataSrc;
                         var alt     = $img.attr('alt') || '';
 
-                        var $btn = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-gallery" href="#">' + getButtonText() + '</a>');
+                        var btnLabel;
+                        if (perGalleryButton) {
+                            if (perIcon) {
+                                btnLabel = '<svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+                            } else {
+                                // Per-gallery button: a blank custom text defaults to
+                                // "Open in Gallery" (matches the admin placeholder), not
+                                // the global lightbox button text.
+                                btnLabel = perText || 'Open in Gallery';
+                            }
+                        } else {
+                            btnLabel = getButtonText();
+                        }
+
+                        var $btn = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-gallery" href="#">' + btnLabel + '</a>');
                         $btn.attr({
                             'data-src'  : dataSrc,
                             'data-thumb': $a.attr('data-thumb') || imgSrc,
                             'aria-label': mlLightboxSettings.view_image_label + (alt ? ': ' + alt : ''),
                         });
+                        // The button becomes lightGallery's slide source (selector below),
+                        // so carry the caption over or it would be dropped.
+                        var subHtml = $a.attr('data-sub-html');
+                        if (subHtml) {
+                            $btn.attr('data-sub-html', subHtml);
+                        }
                         $a.css('position', 'relative').append($btn);
 
                         // Button mode: only the button should open the lightbox.
@@ -774,6 +831,16 @@
                     settings.selector = '.ml-lightbox-button';
                 } else {
                     settings.selector = 'a[data-src]';
+                }
+
+                // Wrap caption text so the caption transition animates the text,
+                // not the bar. Only when a transition is active.
+                var galleryCaptionTransition = $container.data('lg-caption-transition');
+                if (galleryCaptionTransition && galleryCaptionTransition !== 'none') {
+                    $container.find('a[data-sub-html]').each(function() {
+                        var $a = $(this);
+                        $a.attr('data-sub-html', wrapMlCaptionText($a.attr('data-sub-html')));
+                    });
                 }
 
                 try {
@@ -1255,7 +1322,7 @@
         if (isGallery && metasliderOptions.show_thumbnails && typeof lgThumbnail !== 'undefined') {
             settings.plugins.push(lgThumbnail);
             settings.thumbWidth = 100;
-            settings.thumbHeight = 80;
+            settings.thumbHeight = '80px';
             settings.thumbMargin = 4;
             settings.exThumbImage = 'data-thumb';
         }
@@ -2238,11 +2305,6 @@
             $button.attr('data-sub-html', caption);
         }
 
-        var caption = extractCaption($slide);
-        if (caption) {
-            $button.attr('data-sub-html', caption);
-        }
-
         return $button;
     }
 
@@ -3175,5 +3237,13 @@
     }
 
     window.mlInitWooCommerceGallery = initWooCommerceGallery;
+
+    // Exposed for unit tests only — not a public API.
+    window.__mlLightboxTestable = {
+        CONSTANTS: CONSTANTS,
+        escapeHtml: escapeHtml,
+        ensureImageAltAttribute: ensureImageAltAttribute,
+        removeConflictingAttributes: removeConflictingAttributes
+    };
 
 })(jQuery);

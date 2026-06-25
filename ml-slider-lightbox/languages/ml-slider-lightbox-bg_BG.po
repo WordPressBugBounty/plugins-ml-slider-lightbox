@@ -1,0 +1,3722 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-24 15:26+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: bg-BG\n"
+
+#: admin/Notices.php:43 ml-slider-lightbox/admin/Notices.php:43
+msgid ""
+"Enjoying MetaSlider Gallery? Please help us with a 5-star review on "
+"WordPress.org."
+msgstr ""
+"Наслаждавате ли се на MetaSlider Gallery? Моля, помогнете ни с 5-звездено "
+"ревю на WordPress.org."
+
+#: admin/Notices.php:53 ml-slider-lightbox/admin/Notices.php:53
+msgid "Unlock zoom, fullscreen, sharing and more with MetaSlider Gallery Pro."
+msgstr "Отключете зум, цял екран, споделяне и още с MetaSlider Gallery Pro."
+
+#: admin/Notices.php:163 ml-slider-lightbox/admin/Notices.php:163
+msgid "Review MetaSlider Gallery &rarr;"
+msgstr "Прегледайте MetaSlider Gallery &rarr;"
+
+#: admin/Notices.php:164 ml-slider-lightbox/admin/Notices.php:164
+msgid "Get Gallery Pro &rarr;"
+msgstr "Вземете Gallery Pro &rarr;"
+
+#: admin/Notices.php:167 ml-slider-lightbox/admin/Notices.php:167
+msgid "Read more"
+msgstr "Прочетете повече"
+
+#: admin/Notices.php:197 ml-slider-lightbox/admin/Notices.php:197
+msgid "The security check failed. Please refresh the page and try again."
+msgstr ""
+"Проверка за сигурност неуспешна. Моля, обновете страницата и опитайте "
+"отново."
+
+#: admin/Notices.php:203 ml-slider-lightbox/admin/Notices.php:203
+msgid "Access denied. Sorry, you do not have permission to complete this task."
+msgstr "Достъпът е забранен. Съжаляваме, нямате разрешение да завършите тази задача."
+
+#: admin/Notices.php:209 ml-slider-lightbox/admin/Notices.php:209
+msgid "Bad request"
+msgstr "Невалидна заявка"
+
+#: admin/Notices.php:217 ml-slider-lightbox/admin/Notices.php:217
+msgid "This item does not exist. Please refresh the page and try again."
+msgstr "Този елемент не съществува. Моля, обновете страницата и опитайте отново."
+
+#: admin/Notices.php:230 ml-slider-lightbox/admin/Notices.php:230
+msgid "The option was successfully updated"
+msgstr "Опцията беше успешно обновена"
+
+#: admin/Notices.php:241 ml-slider-lightbox/admin/Notices.php:241
+msgid "The requested data does not exist."
+msgstr "Заявените данни не съществуват."
+
+#: admin/Notices.php:253 ml-slider-lightbox/admin/Notices.php:253
+msgid "The attempt to update the option failed."
+msgstr "Опитът за обновяване на опцията неуспешен."
+
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:697
+#: class-ml-gallery.php:2263 class-ml-slider-lightbox.php:1914
+#: class-ml-slider-lightbox.php:2038
+#: ml-slider-lightbox/admin/views/notices/header-notice.php:8
+#: ml-slider-lightbox/class-ml-gallery.php:697
+#: ml-slider-lightbox/class-ml-gallery.php:2263
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1914
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2038
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: admin/views/notices/header-notice.php:23
+#: ml-slider-lightbox/admin/views/notices/header-notice.php:23
+msgid "Dismiss"
+msgstr "Отхвърли"
+
+#: class-ml-gallery.php:85 ml-slider-lightbox/class-ml-gallery.php:85
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "Някои от тези функции са налични в MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:93 class-ml-gallery.php:102
+#: ml-slider-lightbox/class-ml-gallery.php:93
+#: ml-slider-lightbox/class-ml-gallery.php:102
+msgid "Fade"
+msgstr "Затихване"
+
+#: class-ml-gallery.php:94 ml-slider-lightbox/class-ml-gallery.php:94
+msgid "Slide"
+msgstr "Слайд"
+
+#: class-ml-gallery.php:95 class-ml-gallery.php:1181
+#: ml-slider-lightbox/class-ml-gallery.php:95
+#: ml-slider-lightbox/class-ml-gallery.php:1181
+msgid "Zoom"
+msgstr "Зум"
+
+#: class-ml-gallery.php:101 ml-slider-lightbox/class-ml-gallery.php:101
+msgid "None"
+msgstr "Няма"
+
+#: class-ml-gallery.php:103 ml-slider-lightbox/class-ml-gallery.php:103
+msgid "Slide Up"
+msgstr "Слайд нагоре"
+
+#: class-ml-gallery.php:104 ml-slider-lightbox/class-ml-gallery.php:104
+msgid "Slide Down"
+msgstr "Плъзнете надолу"
+
+#: class-ml-gallery.php:118 ml-slider-lightbox/class-ml-gallery.php:118
+msgid "Hidden"
+msgstr "Скрито"
+
+#: class-ml-gallery.php:119 ml-slider-lightbox/class-ml-gallery.php:119
+msgid "Gallery + Window"
+msgstr "Галерия + Прозорец"
+
+#: class-ml-gallery.php:120 ml-slider-lightbox/class-ml-gallery.php:120
+msgid "Window Only"
+msgstr "Само прозорец"
+
+#: class-ml-gallery.php:121 ml-slider-lightbox/class-ml-gallery.php:121
+msgid "Gallery Only"
+msgstr "Само галерия"
+
+#: class-ml-gallery.php:275 class-ml-gallery.php:284 class-ml-gallery.php:706
+#: ml-slider-lightbox/class-ml-gallery.php:275
+#: ml-slider-lightbox/class-ml-gallery.php:284
+#: ml-slider-lightbox/class-ml-gallery.php:706
+msgid "Galleries"
+msgstr "Галерии"
+
+#: class-ml-gallery.php:276 class-ml-gallery.php:425 class-ml-gallery.php:959
+#: class-ml-slider-lightbox.php:2034
+#: ml-slider-lightbox/class-ml-gallery.php:276
+#: ml-slider-lightbox/class-ml-gallery.php:425
+#: ml-slider-lightbox/class-ml-gallery.php:959
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2034
+msgid "Gallery"
+msgstr "Галерия"
+
+#: class-ml-gallery.php:277 class-ml-gallery.php:278 class-ml-gallery.php:672
+#: class-ml-gallery.php:2257 ml-slider-lightbox/class-ml-gallery.php:277
+#: ml-slider-lightbox/class-ml-gallery.php:278
+#: ml-slider-lightbox/class-ml-gallery.php:672
+#: ml-slider-lightbox/class-ml-gallery.php:2257
+msgid "Add New Gallery"
+msgstr "Добавяне на нова галерия"
+
+#: class-ml-gallery.php:279 class-ml-gallery.php:592 class-ml-gallery.php:593
+#: class-ml-gallery.php:673 ml-slider-lightbox/class-ml-gallery.php:279
+#: ml-slider-lightbox/class-ml-gallery.php:592
+#: ml-slider-lightbox/class-ml-gallery.php:593
+#: ml-slider-lightbox/class-ml-gallery.php:673
+msgid "Edit Gallery"
+msgstr "Редактиране на галерия"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:655
+#: ml-slider-lightbox/class-ml-gallery.php:280
+#: ml-slider-lightbox/class-ml-gallery.php:655
+msgid "New Gallery"
+msgstr "Нова галерия"
+
+#: class-ml-gallery.php:281 ml-slider-lightbox/class-ml-gallery.php:281
+msgid "Search Galleries"
+msgstr "Търсене на галерии"
+
+#: class-ml-gallery.php:282 ml-slider-lightbox/class-ml-gallery.php:282
+msgid "No galleries found."
+msgstr "Не са намерени галерии."
+
+#: class-ml-gallery.php:283 ml-slider-lightbox/class-ml-gallery.php:283
+msgid "No galleries found in trash."
+msgstr "Не са намерени галерии в кошчето."
+
+#: class-ml-gallery.php:432 ml-slider-lightbox/class-ml-gallery.php:432
+msgid "All Galleries"
+msgstr "Всички галерии"
+
+#: class-ml-gallery.php:439 ml-slider-lightbox/class-ml-gallery.php:439
+msgid "Create Gallery"
+msgstr "Създаване на галерия"
+
+#: class-ml-gallery.php:449 ml-slider-lightbox/class-ml-gallery.php:449
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Редактиране на &#8220;%s&#8221;"
+
+#: class-ml-gallery.php:467 ml-slider-lightbox/class-ml-gallery.php:467
+msgid "Invalid gallery ID."
+msgstr "Невалиден идентификатор на галерия."
+
+#: class-ml-gallery.php:533 class-ml-slider-lightbox.php:1507
+#: ml-slider-lightbox/class-ml-gallery.php:533
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1507
+msgid "View image"
+msgstr "Преглед на изображение"
+
+#: class-ml-gallery.php:644 class-ml-slider-lightbox.php:2075
+#: class-ml-slider-lightbox.php:2090
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1915
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1915
+#: ml-slider-lightbox/class-ml-gallery.php:644
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2090
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Нямате достатъчно права за достъп до тази страница."
+
+#: class-ml-gallery.php:652 class-ml-gallery.php:1531
+#: ml-slider-lightbox/class-ml-gallery.php:652
+#: ml-slider-lightbox/class-ml-gallery.php:1531
+msgid "Gallery not found."
+msgstr "Галерията не е намерена."
+
+#: class-ml-gallery.php:675 ml-slider-lightbox/class-ml-gallery.php:675
+msgid "Save Gallery"
+msgstr "Запази Галерия"
+
+#: class-ml-gallery.php:676 ml-slider-lightbox/class-ml-gallery.php:676
+msgid "Update Gallery"
+msgstr "Актуализирай Галерия"
+
+#: class-ml-gallery.php:691 ml-slider-lightbox/class-ml-gallery.php:691
+msgid "Back to Galleries"
+msgstr "Назад към Галерии"
+
+#: class-ml-gallery.php:717 ml-slider-lightbox/class-ml-gallery.php:717
+msgid "Duplicate"
+msgstr "Дублирай"
+
+#: class-ml-gallery.php:737 ml-slider-lightbox/class-ml-gallery.php:737
+msgid "Gallery saved."
+msgstr "Галерията е запазена."
+
+#: class-ml-gallery.php:748 ml-slider-lightbox/class-ml-gallery.php:748
+msgid "Enter gallery title"
+msgstr "Въведете заглавие на галерията"
+
+#: class-ml-gallery.php:751 class-ml-gallery.php:2285
+#: ml-slider-lightbox/class-ml-gallery.php:751
+#: ml-slider-lightbox/class-ml-gallery.php:2285
+msgid "Images"
+msgstr "Изображения"
+
+#: class-ml-gallery.php:760 ml-slider-lightbox/class-ml-gallery.php:760
+msgid "No images added yet"
+msgstr "Все още не са добавени изображения"
+
+#: class-ml-gallery.php:773 class-ml-gallery.php:1864
+#: ml-slider-lightbox/class-ml-gallery.php:773
+#: ml-slider-lightbox/class-ml-gallery.php:1864
+msgid "Remove image"
+msgstr "Премахни изображение"
+
+#: class-ml-gallery.php:778 class-ml-gallery.php:1865
+#: ml-slider-lightbox/class-ml-gallery.php:778
+#: ml-slider-lightbox/class-ml-gallery.php:1865
+msgid "Edit caption"
+msgstr "Редактирай надписа"
+
+#: class-ml-gallery.php:793 ml-slider-lightbox/class-ml-gallery.php:793
+msgid "Add Images"
+msgstr "Добави Изображения"
+
+#: class-ml-gallery.php:797 ml-slider-lightbox/class-ml-gallery.php:797
+msgid "More ways to add images"
+msgstr "Повече начини за добавяне на изображения"
+
+#: class-ml-gallery.php:803 ml-slider-lightbox/class-ml-gallery.php:803
+msgid "Upload"
+msgstr "Качи"
+
+#: class-ml-gallery.php:808 ml-slider-lightbox/class-ml-gallery.php:808
+msgid "Media Library"
+msgstr "Медийна Библиотека"
+
+#: class-ml-gallery.php:813 ml-slider-lightbox/class-ml-gallery.php:813
+msgid "Server Folder"
+msgstr "Сървърна Папка"
+
+#: class-ml-gallery.php:818 ml-slider-lightbox/class-ml-gallery.php:818, fuzzy
+msgid "ZIP"
+msgstr "ZIP"
+
+#: class-ml-gallery.php:824 ml-slider-lightbox/class-ml-gallery.php:824
+msgid "Where to add new images"
+msgstr "Къде да добавите нови изображения"
+
+#: class-ml-gallery.php:825 ml-slider-lightbox/class-ml-gallery.php:825
+msgid "Add new images at:"
+msgstr "Добавете нови изображения на:"
+
+#: class-ml-gallery.php:829 ml-slider-lightbox/class-ml-gallery.php:829
+msgid "Start"
+msgstr "Начало"
+
+#: class-ml-gallery.php:834 ml-slider-lightbox/class-ml-gallery.php:834
+msgid "End"
+msgstr "Край"
+
+#: class-ml-gallery.php:843 ml-slider-lightbox/class-ml-gallery.php:843
+msgid "Layout"
+msgstr "Оформление"
+
+#: class-ml-gallery.php:846 ml-slider-lightbox/class-ml-gallery.php:846
+msgid "Gallery layout"
+msgstr "Оформление на галерията"
+
+#: class-ml-gallery.php:848 ml-slider-lightbox/class-ml-gallery.php:848
+msgid "Evenly sized images arranged in a fixed grid"
+msgstr "Равноразмерни изображения, подредени в фиксирана решетка"
+
+#: class-ml-gallery.php:858 ml-slider-lightbox/class-ml-gallery.php:858
+msgid "Grid"
+msgstr "Решетка"
+
+#: class-ml-gallery.php:862 ml-slider-lightbox/class-ml-gallery.php:862
+msgid "Images at their natural heights, fitting together like a brick wall"
+msgstr "Изображения с естествени височини, подредени като тухлена стена"
+
+#: class-ml-gallery.php:872 ml-slider-lightbox/class-ml-gallery.php:872
+msgid "Masonry"
+msgstr "Мазайка"
+
+#: class-ml-gallery.php:876 ml-slider-lightbox/class-ml-gallery.php:876
+msgid "Images scaled to fill each row edge-to-edge with a consistent height"
+msgstr ""
+"Изображения, мащабирани да запълнят всяка редица от край до край с "
+"постоянна височина"
+
+#: class-ml-gallery.php:888 ml-slider-lightbox/class-ml-gallery.php:888
+msgid "Justified"
+msgstr "Подравнено"
+
+#: class-ml-gallery.php:892 ml-slider-lightbox/class-ml-gallery.php:892
+msgid "Images displayed one at a time in a scrollable slideshow"
+msgstr "Изображения, показвани едно по едно в скролируем слайдшоу"
+
+#: class-ml-gallery.php:901 ml-slider-lightbox/class-ml-gallery.php:901
+msgid "Carousel"
+msgstr "Караусел"
+
+#: class-ml-gallery.php:905 ml-slider-lightbox/class-ml-gallery.php:905
+msgid "Large main image with a scrollable thumbnail strip below"
+msgstr "Голямо основно изображение с скролируема лента с миниатюри отдолу"
+
+#: class-ml-gallery.php:915 ml-slider-lightbox/class-ml-gallery.php:915
+msgid "Showcase"
+msgstr "Демонстрация"
+
+#: class-ml-gallery.php:926 ml-slider-lightbox/class-ml-gallery.php:926
+msgid "Number of columns to show on desktop screens"
+msgstr "Брой колони за показване на настолни екрани"
+
+#: class-ml-gallery.php:926 ml-slider-lightbox/class-ml-gallery.php:926
+msgid "Columns"
+msgstr "Колони"
+
+#: class-ml-gallery.php:935 ml-slider-lightbox/class-ml-gallery.php:935
+msgid "Number of columns to show on phones and small screens"
+msgstr "Брой колони за показване на телефони и малки екрани"
+
+#: class-ml-gallery.php:935 ml-slider-lightbox/class-ml-gallery.php:935
+msgid "Columns (mobile)"
+msgstr "Колони (мобилни)"
+
+#: class-ml-gallery.php:944 ml-slider-lightbox/class-ml-gallery.php:944
+msgid "Space between images"
+msgstr "Разстояние между изображенията"
+
+#: class-ml-gallery.php:945 ml-slider-lightbox/class-ml-gallery.php:945
+msgid "Gap"
+msgstr "Интервал"
+
+#: class-ml-gallery.php:963 ml-slider-lightbox/class-ml-gallery.php:963
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "Контролите за увеличение изискват MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:964 ml-slider-lightbox/class-ml-gallery.php:964
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "Режим на цял екран изисква MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:965 ml-slider-lightbox/class-ml-gallery.php:965
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "Ротацията на изображението изисква MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:966 ml-slider-lightbox/class-ml-gallery.php:966
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "Автоматичното възпроизвеждане изисква MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:967 ml-slider-lightbox/class-ml-gallery.php:967
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "Социалното споделяне изисква MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:968 ml-slider-lightbox/class-ml-gallery.php:968
+msgid "Pager requires MetaSlider Gallery Pro"
+msgstr "Пейджърът изисква MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:969 ml-slider-lightbox/class-ml-gallery.php:969
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "Уникалните URL адреси на изображенията изискват MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:973 ml-slider-lightbox/class-ml-gallery.php:973
+msgid "Show left and right navigation arrows"
+msgstr "Покажи стрелките за навигация наляво и надясно"
+
+#: class-ml-gallery.php:974 ml-slider-lightbox/class-ml-gallery.php:974
+msgid "Display the current image number and total count"
+msgstr "Показване на текущия номер на изображението и общия брой"
+
+#: class-ml-gallery.php:975 ml-slider-lightbox/class-ml-gallery.php:975
+msgid "Show a strip of thumbnail images at the bottom of the gallery"
+msgstr "Покажи лента с миниатюрни изображения в долната част на галерията"
+
+#: class-ml-gallery.php:976 ml-slider-lightbox/class-ml-gallery.php:976
+msgid "Show dot navigation area below each image."
+msgstr "Покажи зоната за навигация с точки под всяко изображение."
+
+#: class-ml-gallery.php:977 ml-slider-lightbox/class-ml-gallery.php:977
+msgid ""
+"Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
+"appear only if the original size is larger than the gallery size."
+msgstr ""
+"Стиснете или превъртете, за да увеличите и намалите изображенията в "
+"галерията. Контролът за увеличение ще се появи само ако оригиналният размер "
+"е по-голям от размера на галерията."
+
+#: class-ml-gallery.php:978 ml-slider-lightbox/class-ml-gallery.php:978
+msgid "Expand the gallery window to fill the whole screen."
+msgstr "Разширете прозореца на галерията, за да запълни целия екран."
+
+#: class-ml-gallery.php:979 ml-slider-lightbox/class-ml-gallery.php:979
+msgid ""
+"Users can rotate images left or right, plus flip them vertically or "
+"horizontally."
+msgstr ""
+"Потребителите могат да завъртат изображения наляво или надясно, плюс да ги "
+"обърнат вертикално или хоризонтално."
+
+#: class-ml-gallery.php:980 ml-slider-lightbox/class-ml-gallery.php:980
+msgid "Automatically advance through the images without the user clicking."
+msgstr "Автоматично напредване през изображенията без потребителско взаимодействие."
+
+#: class-ml-gallery.php:981 ml-slider-lightbox/class-ml-gallery.php:981
+msgid "Enable users to share images on Facebook, X, or Pinterest."
+msgstr ""
+"Позволете на потребителите да споделят изображения в Facebook, X или "
+"Pinterest."
+
+#: class-ml-gallery.php:982 ml-slider-lightbox/class-ml-gallery.php:982
+msgid ""
+"Create a unique URL for each image to enable direct linking inside a "
+"gallery."
+msgstr ""
+"Създайте уникален URL адрес за всяко изображение, за да позволите директно "
+"свързване в галерията."
+
+#: class-ml-gallery.php:983 ml-slider-lightbox/class-ml-gallery.php:983
+msgid "Navigate images using left and right arrow keys"
+msgstr "Навигирайте изображенията с помощта на стрелките наляво и надясно"
+
+#: class-ml-gallery.php:984 ml-slider-lightbox/class-ml-gallery.php:984
+msgid "Scroll through images using the mouse wheel"
+msgstr "Превъртете изображенията с помощта на колелото на мишката"
+
+#: class-ml-gallery.php:985 ml-slider-lightbox/class-ml-gallery.php:985
+msgid "Swipe up or down to close the gallery on touch devices"
+msgstr ""
+"Плъзнете нагоре или надолу, за да затворите галерията на устройства с "
+"чувствителен на допир екран"
+
+#: class-ml-gallery.php:986 ml-slider-lightbox/class-ml-gallery.php:986
+msgid "Cycle back to the first image after reaching the last"
+msgstr "Циклично се връщайте към първото изображение след достигане на последното"
+
+#: class-ml-gallery.php:987 ml-slider-lightbox/class-ml-gallery.php:987
+msgid "Show a download button for each image"
+msgstr "Покажи бутон за изтегляне за всяко изображение"
+
+#: class-ml-gallery.php:988 ml-slider-lightbox/class-ml-gallery.php:988
+msgid ""
+"Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
+"Justified layouts."
+msgstr ""
+"Отворете изображения в изскачащ прозорец при кликване. Отнася се за "
+"мрежови, мозайка и оправдани оформления."
+
+#: class-ml-gallery.php:1031 ml-slider-lightbox/class-ml-gallery.php:1031
+msgid "Full (original)"
+msgstr "Пълен (оригинален)"
+
+#: class-ml-gallery.php:1035 ml-slider-lightbox/class-ml-gallery.php:1035
+msgid "Show in Gallery Window"
+msgstr "Покажи в прозорец на галерията"
+
+#: class-ml-gallery.php:1038 ml-slider-lightbox/class-ml-gallery.php:1038
+msgid "The size of the image shown when a visitor clicks to view it in full"
+msgstr ""
+"Размерът на изображението, показано, когато посетителят кликне, за да го "
+"види в пълен размер"
+
+#: class-ml-gallery.php:1038 ml-slider-lightbox/class-ml-gallery.php:1038
+msgid "Image Size"
+msgstr "Размер на изображението"
+
+#: class-ml-gallery.php:1055 ml-slider-lightbox/class-ml-gallery.php:1055
+msgid "Open in Gallery Button"
+msgstr "Отворете в галерията бутон"
+
+#: class-ml-gallery.php:1058 ml-slider-lightbox/class-ml-gallery.php:1058
+msgid "Use Icon Instead of Text"
+msgstr "Използвайте икона вместо текст"
+
+#: class-ml-gallery.php:1061 class-ml-slider-lightbox.php:2500
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2285
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2285
+#: ml-slider-lightbox/class-ml-gallery.php:1061
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2500
+msgid "Button Text"
+msgstr "Текст на бутона"
+
+#: class-ml-gallery.php:1066 class-ml-slider-lightbox.php:1502
+#: class-ml-slider-lightbox.php:3105 class-ml-slider-lightbox.php:6250
+#: class-ml-slider-lightbox.php:6273
+#: ml-slider-lightbox/class-ml-gallery.php:1066
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1502
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3105
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6250
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6273
+msgid "Open in Gallery"
+msgstr "Отворете в галерията"
+
+#: class-ml-gallery.php:1071 class-ml-slider-lightbox.php:2508
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2293
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2293
+#: ml-slider-lightbox/class-ml-gallery.php:1071
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2508
+msgid "Button Position"
+msgstr "Позиция на бутона"
+
+#: class-ml-gallery.php:1073 ml-slider-lightbox/class-ml-gallery.php:1073
+msgid "Top Right"
+msgstr "Горен десен"
+
+#: class-ml-gallery.php:1074 class-ml-slider-lightbox.php:3122
+#: class-ml-slider-lightbox.php:3148
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2866
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2892
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2866
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2892
+#: ml-slider-lightbox/class-ml-gallery.php:1074
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3122
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3148
+msgid "Top Left"
+msgstr "Горен ляв"
+
+#: class-ml-gallery.php:1075 class-ml-slider-lightbox.php:3123
+#: class-ml-slider-lightbox.php:3149
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2867
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2893
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2867
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2893
+#: ml-slider-lightbox/class-ml-gallery.php:1075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3123
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3149
+msgid "Bottom Right"
+msgstr "Долен десен"
+
+#: class-ml-gallery.php:1076 class-ml-slider-lightbox.php:3124
+#: class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2868
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2868
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+#: ml-slider-lightbox/class-ml-gallery.php:1076
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3124
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+msgid "Bottom Left"
+msgstr "Долен ляв"
+
+#: class-ml-gallery.php:1077 ml-slider-lightbox/class-ml-gallery.php:1077
+msgid "Center"
+msgstr "Център"
+
+#: class-ml-gallery.php:1086 ml-slider-lightbox/class-ml-gallery.php:1086
+msgid "Display"
+msgstr "Показване"
+
+#: class-ml-gallery.php:1088 ml-slider-lightbox/class-ml-gallery.php:1088
+msgid "Animation effect when moving between images"
+msgstr "Анимационен ефект при преминаване между изображения"
+
+#: class-ml-gallery.php:1088 class-ml-gallery.php:1164
+#: ml-slider-lightbox/class-ml-gallery.php:1088
+#: ml-slider-lightbox/class-ml-gallery.php:1164
+msgid "Transition"
+msgstr "Преход"
+
+#: class-ml-gallery.php:1097 class-ml-slider-lightbox.php:2460
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2253
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2253
+#: ml-slider-lightbox/class-ml-gallery.php:1097
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2460
+msgid "Arrows"
+msgstr "Стрелки"
+
+#: class-ml-gallery.php:1098 ml-slider-lightbox/class-ml-gallery.php:1098
+msgid "Slide Counter"
+msgstr "Брояч на слайдове"
+
+#: class-ml-gallery.php:1099 ml-slider-lightbox/class-ml-gallery.php:1099
+msgid "Thumbnails"
+msgstr "Превюта"
+
+#: class-ml-gallery.php:1101 ml-slider-lightbox/class-ml-gallery.php:1101
+msgid "Pager"
+msgstr "Страница"
+
+#: class-ml-gallery.php:1106 class-ml-slider-lightbox.php:2165
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1987
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1987
+#: ml-slider-lightbox/class-ml-gallery.php:1106
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2165
+msgid "Navigation"
+msgstr "Навигация"
+
+#: class-ml-gallery.php:1107 ml-slider-lightbox/class-ml-gallery.php:1107
+msgid "Loop"
+msgstr "Цикъл"
+
+#: class-ml-gallery.php:1108 ml-slider-lightbox/class-ml-gallery.php:1108
+msgid "Keyboard"
+msgstr "Клавиатура"
+
+#: class-ml-gallery.php:1109 ml-slider-lightbox/class-ml-gallery.php:1109
+msgid "Mouse wheel"
+msgstr "Колело на мишката"
+
+#: class-ml-gallery.php:1110 ml-slider-lightbox/class-ml-gallery.php:1110
+msgid "Swipe to close"
+msgstr "Плъзнете, за да затворите"
+
+#: class-ml-gallery.php:1117 class-ml-gallery.php:1119
+#: ml-slider-lightbox/class-ml-gallery.php:1117
+#: ml-slider-lightbox/class-ml-gallery.php:1119
+msgid "Captions"
+msgstr "Надписи"
+
+#: class-ml-gallery.php:1119 ml-slider-lightbox/class-ml-gallery.php:1119
+msgid ""
+"Where captions appear: on gallery thumbnails, in the gallery window, or "
+"both."
+msgstr ""
+"Къде се появяват надписите: на миниатюри на галерията, в прозореца на "
+"галерията или и на двете."
+
+#: class-ml-gallery.php:1131 ml-slider-lightbox/class-ml-gallery.php:1131
+msgid ""
+"Caption text size. Applies to both gallery thumbnails and the gallery "
+"window."
+msgstr ""
+"Размер на текста на надписа. Приложимо е както за миниатюрите на галерията, "
+"така и за прозореца на галерията."
+
+#: class-ml-gallery.php:1132 ml-slider-lightbox/class-ml-gallery.php:1132
+msgid "Text Size"
+msgstr "Размер на текста"
+
+#: class-ml-gallery.php:1144 ml-slider-lightbox/class-ml-gallery.php:1144
+msgid ""
+"Caption text color. Applies to both gallery thumbnails and the gallery "
+"window."
+msgstr ""
+"Цвят на текста на надписа. Приложимо е както за миниатюрите на галерията, "
+"така и за прозореца на галерията."
+
+#: class-ml-gallery.php:1144 ml-slider-lightbox/class-ml-gallery.php:1144
+msgid "Text Color"
+msgstr "Цвят на текста"
+
+#: class-ml-gallery.php:1154 ml-slider-lightbox/class-ml-gallery.php:1154
+msgid ""
+"Caption background. Applies to both gallery thumbnails and the gallery "
+"window; on thumbnails it fades to transparent for readability."
+msgstr ""
+"Фон на надписа. Приложимо е както за миниатюрите на галерията, така и за "
+"прозореца на галерията; на миниатюрите той избледнява до прозрачен за "
+"четимост."
+
+#: class-ml-gallery.php:1154 class-ml-gallery.php:1196
+#: class-ml-slider-lightbox.php:2428
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2237
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2237
+#: ml-slider-lightbox/class-ml-gallery.php:1154
+#: ml-slider-lightbox/class-ml-gallery.php:1196
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2428
+msgid "Background Color"
+msgstr "Цвят на фона"
+
+#: class-ml-gallery.php:1164 ml-slider-lightbox/class-ml-gallery.php:1164
+msgid ""
+"How the caption animates in. Applies to the gallery window only — not to "
+"gallery thumbnail captions."
+msgstr ""
+"Как анимацията на надписа се появява. Приложимо е само за прозореца на "
+"галерията — не и за надписите на миниатюрите на галерията."
+
+#: class-ml-gallery.php:1174 class-ml-slider-lightbox.php:2476
+#: ml-slider-lightbox/class-ml-gallery.php:1174
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2476
+msgid "Toolbar"
+msgstr "Инструментална лента"
+
+#: class-ml-gallery.php:1175 ml-slider-lightbox/class-ml-gallery.php:1175
+msgid "Download"
+msgstr "Изтегляне"
+
+#: class-ml-gallery.php:1177 ml-slider-lightbox/class-ml-gallery.php:1177
+msgid "Share"
+msgstr "Споделяне"
+
+#: class-ml-gallery.php:1178 ml-slider-lightbox/class-ml-gallery.php:1178
+msgid "Autoplay"
+msgstr "Автоматично възпроизвеждане"
+
+#: class-ml-gallery.php:1179 ml-slider-lightbox/class-ml-gallery.php:1179
+msgid "Rotate and Flip"
+msgstr "Завъртане и обръщане"
+
+#: class-ml-gallery.php:1180 ml-slider-lightbox/class-ml-gallery.php:1180
+msgid "Fullscreen"
+msgstr "На цял екран"
+
+#: class-ml-gallery.php:1186 ml-slider-lightbox/class-ml-gallery.php:1186
+msgid "Unique Image URLs"
+msgstr "Уникални URL адреси на изображения"
+
+#: class-ml-gallery.php:1193 class-ml-slider-lightbox.php:2098
+#: class-ml-slider-lightbox.php:2155
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1923
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1977
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1923
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1977
+#: ml-slider-lightbox/class-ml-gallery.php:1193
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2098
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2155
+msgid "Appearance"
+msgstr "Външен вид"
+
+#: class-ml-gallery.php:1207 class-ml-slider-lightbox.php:2436
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2245
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2245
+#: ml-slider-lightbox/class-ml-gallery.php:1207
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2436
+msgid "Background Opacity"
+msgstr "Непрозрачност на фона"
+
+#: class-ml-gallery.php:1219 ml-slider-lightbox/class-ml-gallery.php:1219
+msgid "Arrow Color"
+msgstr "Цвят на стрелката"
+
+#: class-ml-gallery.php:1229 ml-slider-lightbox/class-ml-gallery.php:1229
+msgid "Arrow Background"
+msgstr "Фон на стрелката"
+
+#: class-ml-gallery.php:1239 ml-slider-lightbox/class-ml-gallery.php:1239
+msgid "Close Icon Color"
+msgstr "Цвят на иконата за затваряне"
+
+#: class-ml-gallery.php:1249 ml-slider-lightbox/class-ml-gallery.php:1249
+msgid "Close Background"
+msgstr "Фон на затварянето"
+
+#: class-ml-gallery.php:1259 ml-slider-lightbox/class-ml-gallery.php:1259
+msgid "Toolbar Icon Color"
+msgstr "Цвят на иконата на лентата с инструменти"
+
+#: class-ml-gallery.php:1269 ml-slider-lightbox/class-ml-gallery.php:1269
+msgid "Toolbar Background"
+msgstr "Фон на лентата с инструменти"
+
+#: class-ml-gallery.php:1279 class-ml-slider-lightbox.php:2452
+#: ml-slider-lightbox/class-ml-gallery.php:1279
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2452
+msgid "Thumbnail Border Color"
+msgstr "Цвят на рамката на миниатюрата"
+
+#: class-ml-gallery.php:1289 ml-slider-lightbox/class-ml-gallery.php:1289
+msgid "Thumbnail Border Active and Hover"
+msgstr "Активна рамка на миниатюрата и при задържане на курсора"
+
+#: class-ml-gallery.php:1304 class-ml-gallery.php:2284
+#: ml-slider-lightbox/class-ml-gallery.php:1304
+#: ml-slider-lightbox/class-ml-gallery.php:2284
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:1306 class-ml-gallery.php:2304
+#: ml-slider-lightbox/class-ml-gallery.php:1306
+#: ml-slider-lightbox/class-ml-gallery.php:2304
+msgid "Click to copy shortcode."
+msgstr "Кликнете, за да копирате shortcode."
+
+#: class-ml-gallery.php:1324 ml-slider-lightbox/class-ml-gallery.php:1324
+msgid "Edit Caption"
+msgstr "Редактиране на надписа"
+
+#: class-ml-gallery.php:1325 class-ml-gallery.php:1354
+#: class-ml-gallery.php:1375 class-ml-gallery.php:2329
+#: ml-slider-lightbox/class-ml-gallery.php:1325
+#: ml-slider-lightbox/class-ml-gallery.php:1354
+#: ml-slider-lightbox/class-ml-gallery.php:1375
+#: ml-slider-lightbox/class-ml-gallery.php:2329
+msgid "Close"
+msgstr "Затвори"
+
+#: class-ml-gallery.php:1333 ml-slider-lightbox/class-ml-gallery.php:1333
+msgid "Caption"
+msgstr "Надпис"
+
+#: class-ml-gallery.php:1340 class-ml-gallery.php:1362
+#: ml-slider-lightbox/class-ml-gallery.php:1340
+#: ml-slider-lightbox/class-ml-gallery.php:1362
+msgid "Cancel"
+msgstr "Отказ"
+
+#: class-ml-gallery.php:1343 ml-slider-lightbox/class-ml-gallery.php:1343
+msgid "Save Caption"
+msgstr "Запази надписа"
+
+#: class-ml-gallery.php:1353 ml-slider-lightbox/class-ml-gallery.php:1353
+msgid "Import from Server Folder"
+msgstr "Импортиране от папка на сървъра"
+
+#: class-ml-gallery.php:1363 ml-slider-lightbox/class-ml-gallery.php:1363
+msgid "Import selected"
+msgstr "Импортиране на избраните"
+
+#: class-ml-gallery.php:1374 ml-slider-lightbox/class-ml-gallery.php:1374
+msgid "Import from ZIP"
+msgstr "Импортиране от ZIP"
+
+#: class-ml-gallery.php:1398 class-ml-gallery.php:1526
+#: ml-slider-lightbox/class-ml-gallery.php:1398
+#: ml-slider-lightbox/class-ml-gallery.php:1526
+msgid "Security check failed."
+msgstr "Проверката за сигурност не успя."
+
+#: class-ml-gallery.php:1402 ml-slider-lightbox/class-ml-gallery.php:1402
+msgid "You do not have sufficient permissions."
+msgstr "Нямате достатъчни разрешения."
+
+#: class-ml-gallery.php:1421 ml-slider-lightbox/class-ml-gallery.php:1421
+msgid "Could not update the gallery. Please try again."
+msgstr "Неуспешно обновяване на галерията. Моля, опитайте отново."
+
+#: class-ml-gallery.php:1536 ml-slider-lightbox/class-ml-gallery.php:1536
+msgid "(Copy)"
+msgstr "(Копирай)"
+
+#: class-ml-gallery.php:1542 ml-slider-lightbox/class-ml-gallery.php:1542
+msgid "Could not duplicate the gallery. Please try again."
+msgstr "Неуспешно дублиране на галерията. Моля, опитайте отново."
+
+#: class-ml-gallery.php:1646 class-ml-gallery.php:1761
+#: class-ml-gallery.php:2449 ml-slider-lightbox/class-ml-gallery.php:1646
+#: ml-slider-lightbox/class-ml-gallery.php:1761
+#: ml-slider-lightbox/class-ml-gallery.php:2449
+msgid "Permission denied."
+msgstr "Разрешението е отказано."
+
+#: class-ml-gallery.php:1653 ml-slider-lightbox/class-ml-gallery.php:1653
+msgid "Folder not found."
+msgstr "Папката не е намерена."
+
+#: class-ml-gallery.php:1662 ml-slider-lightbox/class-ml-gallery.php:1662
+msgid "Folder could not be read."
+msgstr "Папката не може да бъде прочетена."
+
+#: class-ml-gallery.php:1699 ml-slider-lightbox/class-ml-gallery.php:1699
+msgid "Uploads"
+msgstr "Качвания"
+
+#: class-ml-gallery.php:1862 ml-slider-lightbox/class-ml-gallery.php:1862
+msgid "Select Gallery Images"
+msgstr "Изберете изображения за галерията"
+
+#: class-ml-gallery.php:1863 ml-slider-lightbox/class-ml-gallery.php:1863
+msgid "Add to Gallery"
+msgstr "Добави в галерията"
+
+#: class-ml-gallery.php:1867 ml-slider-lightbox/class-ml-gallery.php:1867
+msgid "Loading…"
+msgstr "Зареждане…"
+
+#: class-ml-gallery.php:1868 ml-slider-lightbox/class-ml-gallery.php:1868
+msgid "No images in this folder."
+msgstr "Няма изображения в тази папка."
+
+#: class-ml-gallery.php:1869 ml-slider-lightbox/class-ml-gallery.php:1869
+msgid "Could not load this folder."
+msgstr "Неуспешно зареждане на тази папка."
+
+#: class-ml-gallery.php:1870 ml-slider-lightbox/class-ml-gallery.php:1870
+msgid "Importing…"
+msgstr "Импортиране…"
+
+#: class-ml-gallery.php:1871 ml-slider-lightbox/class-ml-gallery.php:1871
+msgid "Showing the first 200 images — open a subfolder to narrow the list."
+msgstr ""
+"Показване на първите 200 изображения — отворете подпапка, за да стесните "
+"списъка."
+
+#: class-ml-gallery.php:1872 ml-slider-lightbox/class-ml-gallery.php:1872
+msgid "Select at least one image."
+msgstr "Изберете поне едно изображение."
+
+#: class-ml-gallery.php:1873 class-ml-gallery.php:1876
+#: ml-slider-lightbox/class-ml-gallery.php:1873
+#: ml-slider-lightbox/class-ml-gallery.php:1876
+#, php-format
+msgid "Imported %1$d image(s); %2$d image(s) skipped."
+msgstr "Импортнати %1$d изображение(я); %2$d изображение(я) пропуснати."
+
+#: class-ml-gallery.php:1874 ml-slider-lightbox/class-ml-gallery.php:1874
+msgid "Uploading…"
+msgstr "Качване…"
+
+#: class-ml-gallery.php:1875 ml-slider-lightbox/class-ml-gallery.php:1875
+msgid "Importing images…"
+msgstr "Импортиране на изображения…"
+
+#: class-ml-gallery.php:1877 ml-slider-lightbox/class-ml-gallery.php:1877
+msgid "Only the first 200 images (or 256 MB) were imported."
+msgstr "Само първите 200 изображения (или 256 MB) бяха импортирани."
+
+#: class-ml-gallery.php:1878 ml-slider-lightbox/class-ml-gallery.php:1878
+msgid "The ZIP could not be imported."
+msgstr "ZIP файлът не може да бъде импортиран."
+
+#: class-ml-gallery.php:1879 ml-slider-lightbox/class-ml-gallery.php:1879
+msgid "The upload was rejected — the ZIP may be larger than this server allows."
+msgstr ""
+"Качването беше отхвърлено — ZIP файлът може да е по-голям от разрешеното от "
+"този сървър."
+
+#: class-ml-gallery.php:1880 ml-slider-lightbox/class-ml-gallery.php:1880
+msgid "No images found in the ZIP."
+msgstr "Няма намерени изображения в ZIP файла."
+
+#: class-ml-gallery.php:2286 ml-slider-lightbox/class-ml-gallery.php:2286
+msgid "Usage"
+msgstr "Използване"
+
+#: class-ml-gallery.php:2319 ml-slider-lightbox/class-ml-gallery.php:2319
+msgid "Not found."
+msgstr "Не е намерено."
+
+#: class-ml-gallery.php:2324 ml-slider-lightbox/class-ml-gallery.php:2324
+msgid "View Usage"
+msgstr "Преглед на използването"
+
+#: class-ml-gallery.php:2330 ml-slider-lightbox/class-ml-gallery.php:2330
+msgid "Content Using This Gallery"
+msgstr "Съдържание, използващо тази галерия"
+
+#: class-ml-gallery.php:2397 ml-slider-lightbox/class-ml-gallery.php:2397
+msgid "(no title)"
+msgstr "(без заглавие)"
+
+#: class-ml-gallery.php:2455 class-ml-gallery.php:2464
+#: ml-slider-lightbox/class-ml-gallery.php:2455
+#: ml-slider-lightbox/class-ml-gallery.php:2464
+msgid "Please choose a valid .zip file."
+msgstr "Моля, изберете валиден .zip файл."
+
+#: class-ml-gallery.php:2470 ml-slider-lightbox/class-ml-gallery.php:2470
+msgid "Server cannot read ZIP files."
+msgstr "Сървърът не може да чете ZIP файлове."
+
+#: class-ml-gallery.php:2477 ml-slider-lightbox/class-ml-gallery.php:2477
+msgid "The ZIP could not be read."
+msgstr "ZIP файлът не можа да бъде прочетен."
+
+#: class-ml-gallery.php:2511 ml-slider-lightbox/class-ml-gallery.php:2511
+msgid "Could not prepare a temporary folder."
+msgstr "Не можа да се подготви временна папка."
+
+#: class-ml-slider-lightbox.php:1039
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1039
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"Галерията MetaSlider изисква инсталиран и активиран MetaSlider и поне един "
+"друг поддържан плъгин за lightbox."
+
+#: class-ml-slider-lightbox.php:1043
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1060
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1060
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1043
+msgid "More info"
+msgstr "Повече информация"
+
+#: class-ml-slider-lightbox.php:1054
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1054
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"Има активирани повече от един плъгин за lightbox. Това може да причини "
+"конфликти с Галерията MetaSlider"
+
+#: class-ml-slider-lightbox.php:1114
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1114
+msgid "Edit Global Settings"
+msgstr "Редактиране на глобалните настройки"
+
+#: class-ml-slider-lightbox.php:1126
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1126
+msgid "Open In Gallery"
+msgstr "Отвори в галерията"
+
+#: class-ml-slider-lightbox.php:1141
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1141
+msgid "Show Captions"
+msgstr "Покажи надписи"
+
+#: class-ml-slider-lightbox.php:1141
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1141
+msgid "Show captions in the gallery for each slide."
+msgstr "Покажете надписи в галерията за всеки слайд."
+
+#: class-ml-slider-lightbox.php:1142
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1142
+msgid "Show Navigation Arrows"
+msgstr "Покажи навигационни стрелки"
+
+#: class-ml-slider-lightbox.php:1142
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1142
+msgid "Show previous/next arrows in the gallery."
+msgstr "Покажи предишните/следващите стрелки в галерията."
+
+#: class-ml-slider-lightbox.php:1143
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+msgid "Show \"Open In Gallery\" Button"
+msgstr "Покажи бутона \"Отвори в галерията\""
+
+#: class-ml-slider-lightbox.php:1143
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+msgid "Show a button on each slide to open the image in the gallery."
+msgstr "Покажи бутон на всеки слайд, за да отвориш изображението в галерията."
+
+#: class-ml-slider-lightbox.php:1144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1144
+msgid "Show An Icon Instead Of Button"
+msgstr "Покажи икона вместо бутон"
+
+#: class-ml-slider-lightbox.php:1144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1144
+msgid "Display an icon instead of a text button on each slide."
+msgstr "Покажи икона вместо текстов бутон на всеки слайд."
+
+#: class-ml-slider-lightbox.php:1149
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1149
+#, php-format
+msgid ""
+"Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
+"Gallery settings</a>."
+msgstr ""
+"Галерията е активирана за всички слайдшоута чрез <a href=\"%s\">настройките "
+"на MetaSlider Gallery</a>."
+
+#: class-ml-slider-lightbox.php:1552
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1552
+msgid "Global"
+msgstr "Глобално"
+
+#: class-ml-slider-lightbox.php:1553
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1553
+msgid "Yes"
+msgstr "Да"
+
+#: class-ml-slider-lightbox.php:1554
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1554
+msgid "No"
+msgstr "Не"
+
+#: class-ml-slider-lightbox.php:1808
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1808
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Gallery изисква MetaSlider да бъде инсталиран и активиран."
+
+#: class-ml-slider-lightbox.php:1812
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1683
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1683
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1812
+msgid "Install MetaSlider"
+msgstr "Инсталирай MetaSlider"
+
+#: class-ml-slider-lightbox.php:1912 class-ml-slider-lightbox.php:2037
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1912
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2037, fuzzy
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2019
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2019
+#, php-format
+msgid "Select pages to %s..."
+msgstr "Избери страници за %s..."
+
+#: class-ml-slider-lightbox.php:2020
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2020
+#, php-format
+msgid "Select posts to %s..."
+msgstr "Избери публикации за %s..."
+
+#: class-ml-slider-lightbox.php:2021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2021
+#, php-format
+msgid "Select post types to %s..."
+msgstr "Избери типове публикации за %s..."
+
+#: class-ml-slider-lightbox.php:2022
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2022
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "Избери %1$s за %2$s..."
+
+#: class-ml-slider-lightbox.php:2023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+msgid "Select post types to exclude"
+msgstr "Избери типове публикации за изключване"
+
+#: class-ml-slider-lightbox.php:2024 class-ml-slider-lightbox.php:3482
+#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3651
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2024
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3482
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3529
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3651
+msgid "Include"
+msgstr "Включи"
+
+#: class-ml-slider-lightbox.php:2025 class-ml-slider-lightbox.php:3482
+#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3651
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2025
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3482
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3529
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3651
+msgid "Exclude"
+msgstr "Изключи"
+
+#: class-ml-slider-lightbox.php:2033
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2033, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2053
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2053
+msgid "Settings"
+msgstr "Настройки"
+
+#: class-ml-slider-lightbox.php:2063
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2063
+msgid "Upgrade to MetaSlider Gallery Pro"
+msgstr "Актуализиране до MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2064
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1929
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1929
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2064
+msgid "Upgrade to Pro"
+msgstr "Актуализиране до Pro"
+
+#: class-ml-slider-lightbox.php:2096
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1921
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1921
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2096
+msgid "Automatic Mode"
+msgstr "Автоматичен режим"
+
+#: class-ml-slider-lightbox.php:2097
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1922
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1922
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2097
+msgid "Manual Mode"
+msgstr "Ръчен режим"
+
+#: class-ml-slider-lightbox.php:2099
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1924
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1924
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2099
+msgid "Behavior"
+msgstr "Поведение"
+
+#: class-ml-slider-lightbox.php:2120
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1949
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1949
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2120
+msgid "Settings saved successfully!"
+msgstr "Настройките бяха записани успешно!"
+
+#: class-ml-slider-lightbox.php:2130
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1959
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1959
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2130
+msgid "Where to Enable Automatically"
+msgstr "Къде да се активира автоматично"
+
+#: class-ml-slider-lightbox.php:2137
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2137
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider Слайдшоута"
+
+#: class-ml-slider-lightbox.php:2144 class-ml-slider-lightbox.php:2341
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1966
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2150
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1966
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2150
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2341
+msgid "Content Filtering"
+msgstr "Филтриране на съдържанието"
+
+#: class-ml-slider-lightbox.php:2156
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2156
+msgid ""
+"Customize colors, opacity, and visual styling for the gallery overlay and "
+"controls."
+msgstr ""
+"Персонализирайте цветовете, непрозрачността и визуалния стил за "
+"надстройката на галерията и контролните елементи."
+
+#: class-ml-slider-lightbox.php:2160 class-ml-slider-lightbox.php:2407
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1982
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2216
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2216
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2160
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2407
+msgid "Background & Overlay"
+msgstr "Фон & Надстройка"
+
+#: class-ml-slider-lightbox.php:2170
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2170
+msgid "\"Open in Gallery\" Button"
+msgstr "\"Отвори в галерия\" бутон"
+
+#: class-ml-slider-lightbox.php:2180 class-ml-slider-lightbox.php:2520
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2002
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2305
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2002
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2305
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2180
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2520
+msgid "Navigation & Controls"
+msgstr "Навигация & Контроли"
+
+#: class-ml-slider-lightbox.php:2186
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2008
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2186
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>Открит трети страни плъгин:</strong> Активен е плъгин за лайтбокс "
+"от трета страна. Тези настройки може да не важат за MetaSlider, но все пак "
+"ще работят за лайтбоксовете на съдържанието в WordPress."
+
+#: class-ml-slider-lightbox.php:2193 class-ml-slider-lightbox.php:3999
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2015
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3811
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2015
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3811
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2193
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3999
+msgid "Enhanced Zoom & Controls"
+msgstr "Разширено увеличение & Контроли"
+
+#: class-ml-slider-lightbox.php:2201
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2201
+msgid "Media & Video Enhancements"
+msgstr "Медийни & Видео подобрения"
+
+#: class-ml-slider-lightbox.php:2209 class-ml-slider-lightbox.php:4027
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2031
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3839
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2031
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3839
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2209
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4027
+msgid "Social & Navigation"
+msgstr "Социални & Навигация"
+
+#: class-ml-slider-lightbox.php:2217 class-ml-slider-lightbox.php:4048
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3860
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2039
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3860
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2217
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4048
+msgid "Advanced Features"
+msgstr "Разширени функции"
+
+#: class-ml-slider-lightbox.php:2233
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2233
+msgid "Manual Options"
+msgstr "Ръчни опции"
+
+#: class-ml-slider-lightbox.php:2234
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2056
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2056
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2234
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr ""
+"Ръчни контроли и WordPress настройки, които работят независимо от "
+"автоматичните настройки."
+
+#: class-ml-slider-lightbox.php:2414
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2223
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2223
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2414
+msgid "Navigation Icons"
+msgstr "Навигационни икони"
+
+#: class-ml-slider-lightbox.php:2421
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2230
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2230
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2421
+msgid "Buttons"
+msgstr "Бутони"
+
+#: class-ml-slider-lightbox.php:2444
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2444
+msgid "Autoplay Progress Bar Color"
+msgstr "Цвят на прогрес бара за автоматично възпроизвеждане"
+
+#: class-ml-slider-lightbox.php:2468
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2261
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2261
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2468
+msgid "Close Button"
+msgstr "Бутон за затваряне"
+
+#: class-ml-slider-lightbox.php:2484
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2277
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2277
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2484
+msgid "Button Colors"
+msgstr "Цветове на бутоните"
+
+#: class-ml-slider-lightbox.php:2492
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2492
+msgid "Icon Colors"
+msgstr "Цветове на иконите"
+
+#: class-ml-slider-lightbox.php:2878
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+msgid "Configure general gallery settings that apply site-wide."
+msgstr "Конфигурирайте общите настройки на галерията, които се прилагат на сайта."
+
+#: class-ml-slider-lightbox.php:2883
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2883
+msgid "Configure settings specific to MetaSlider Gallery functionality."
+msgstr ""
+"Конфигурирайте настройки, специфични за функционалността на MetaSlider "
+"Gallery."
+
+#: class-ml-slider-lightbox.php:2888
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2888
+msgid "Select where the gallery will be enabled automatically."
+msgstr "Изберете къде галерията ще бъде активирана автоматично."
+
+#: class-ml-slider-lightbox.php:2894
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+msgid ""
+"Choose how to filter content for gallery processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Изберете как да филтрирате съдържанието за обработка на галерията и "
+"уточнете кои страници, публикации или селектори да включите или изключите."
+
+#: class-ml-slider-lightbox.php:2910
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2666
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2666
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2910
+msgid "Processing Mode"
+msgstr "Режим на обработка"
+
+#: class-ml-slider-lightbox.php:2913
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2669
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2669
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2913
+msgid "Process all content EXCEPT the items specified below"
+msgstr "Обработвайте всичкото съдържание, ОСВЕН елементите, посочени по-долу"
+
+#: class-ml-slider-lightbox.php:2916
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2672
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2672
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2916
+msgid "ONLY process the items specified below"
+msgstr "ОСНОВНО обработвайте елементите, посочени по-долу"
+
+#: class-ml-slider-lightbox.php:2923
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2679
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2679
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2923
+msgid "Inclusion Mode"
+msgstr "Режим на включване"
+
+#: class-ml-slider-lightbox.php:2927
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2683
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2683
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2927
+msgid "Exclusion Mode"
+msgstr "Режим на изключване"
+
+#: class-ml-slider-lightbox.php:2947
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2703
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2703
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2947
+msgid "Images in post content"
+msgstr "Снимки в съдържанието на публикацията"
+
+#: class-ml-slider-lightbox.php:2948
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2948
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the gallery."
+msgstr ""
+"Когато е активирано, индивидуалните снимки без линкове и настройката "
+"\"Увеличи при клик\" в публикации и страници автоматично ще се отворят в "
+"галерията."
+
+#: class-ml-slider-lightbox.php:2964
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2720
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2720
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2964
+msgid "Images and videos in widgets and sidebars"
+msgstr "Снимки и видеа в widget-и и странични панели"
+
+#: class-ml-slider-lightbox.php:2965
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2965
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the gallery."
+msgstr ""
+"Когато е активирано, снимките и видеата в областите на widget-ите "
+"автоматично ще се отворят в галерията."
+
+#: class-ml-slider-lightbox.php:2981
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2737
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2737
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2981
+msgid "Gallery shortcodes and blocks"
+msgstr "Кратки кодове и блокове на галерията"
+
+#: class-ml-slider-lightbox.php:2982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the gallery window."
+msgstr ""
+"Когато е активирано, изображенията в късите кодове на WordPress [gallery] и "
+"блоковете на Gutenberg Gallery ще се отварят автоматично в прозореца на "
+"галерията."
+
+#: class-ml-slider-lightbox.php:2998
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2754
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2754
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2998
+msgid "Featured images"
+msgstr "Избрани изображения"
+
+#: class-ml-slider-lightbox.php:2999
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2999
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the gallery when clicked."
+msgstr ""
+"Когато е активирано, избраните изображения (миниатюри на публикации) ще се "
+"отварят автоматично в галерията при кликване."
+
+#: class-ml-slider-lightbox.php:3008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+msgid ""
+"Automatically open all MetaSlider slideshows in the gallery, overriding the "
+"per-slider setting."
+msgstr ""
+"Автоматично отваряне на всички слайдшоута на MetaSlider в галерията, "
+"пренебрегвайки настройката за всяко слайдшоу."
+
+#: class-ml-slider-lightbox.php:3022
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3022
+msgid "MetaSlider slideshows"
+msgstr "Слайдшоута на MetaSlider"
+
+#: class-ml-slider-lightbox.php:3023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3023
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the gallery "
+"window, overriding the per-slider setting."
+msgstr ""
+"Когато е активирано, всички слайдшоута на MetaSlider ще отварят слайдове в "
+"прозореца на галерията, пренебрегвайки настройката за всяко слайдшоу."
+
+#: class-ml-slider-lightbox.php:3039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2771
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2771
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3039
+msgid "Videos in post content"
+msgstr "Видеа в съдържанието на публикацията"
+
+#: class-ml-slider-lightbox.php:3040
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3040
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the gallery."
+msgstr ""
+"Когато е активирано, самостоятелните видео блокове (HTML5 видеа, вграждания "
+"от YouTube, вграждания от Vimeo) в съдържанието на публикации/страници ще "
+"се отварят автоматично в галерията."
+
+#: class-ml-slider-lightbox.php:3075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3075
+msgid ""
+"Background color for the gallery overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Цвят на фона за покритие на галерията. Тъмните цветове работят най-добре за "
+"преглед на изображения."
+
+#: class-ml-slider-lightbox.php:3080
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+msgid ""
+"Background color for \"Open in Gallery\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Цвят на фона за бутони \"Отвори в галерия\", които се появяват на слайдове, "
+"изображения и видеа."
+
+#: class-ml-slider-lightbox.php:3085
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3085
+msgid ""
+"Text color for \"Open in Gallery\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Цвят на текста за бутони \"Отвори в галерия\", които се появяват на "
+"слайдове, изображения и видеа."
+
+#: class-ml-slider-lightbox.php:3090
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3090
+msgid "Background color when hovering over \"Open in Gallery\" buttons."
+msgstr "Цвят на фона при задържане над бутони \"Отвори в галерия\"."
+
+#: class-ml-slider-lightbox.php:3095
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3095
+msgid "Text color when hovering over \"Open in Gallery\" buttons."
+msgstr "Цвят на текста при задържане над бутони \"Отвори в галерия\"."
+
+#: class-ml-slider-lightbox.php:3108
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3108
+msgid ""
+"Custom text for gallery buttons. This text will appear on all \"Open in "
+"Gallery\" buttons throughout the site."
+msgstr ""
+"Персонализиран текст за бутоните на галерията. Този текст ще се появи на "
+"всички бутони \"Отвори в галерия\" в сайта."
+
+#: class-ml-slider-lightbox.php:3121 class-ml-slider-lightbox.php:3147
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2865
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2891
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2865
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2891
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+msgid "Top Right (Default)"
+msgstr "Горно дясно (по подразбиране)"
+
+#: class-ml-slider-lightbox.php:3134
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3134
+msgid "Choose where to position the close button (X) in the gallery overlay."
+msgstr ""
+"Изберете къде да позиционирате бутона за затваряне (X) в покритието на "
+"галерията."
+
+#: class-ml-slider-lightbox.php:3160
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3160
+msgid ""
+"Choose where to position \"Open in Gallery\" buttons within slides, images, "
+"galleries, and videos."
+msgstr ""
+"Изберете къде да позиционирате бутоните \"Отвори в галерия\" в слайдове, "
+"изображения, галерии и видеа."
+
+#: class-ml-slider-lightbox.php:3165
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3165
+msgid "Color for previous and next navigation arrows in the gallery."
+msgstr "Цвят за навигационните стрелки за предишен и следващ в галерията."
+
+#: class-ml-slider-lightbox.php:3170
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2930
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2930
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3170
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr ""
+"Цвят на стрелките при задържане. Създава визуална обратна връзка, когато "
+"потребителите преместят мишката си над навигационните стрелки."
+
+#: class-ml-slider-lightbox.php:3175
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3175
+msgid "Color for the close button (X) in the gallery."
+msgstr "Цвят на бутона за затваряне (X) в галерията."
+
+#: class-ml-slider-lightbox.php:3180
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2956
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2956
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3180
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr ""
+"Цвят на бутона за затваряне при задържане на курсора. Създава визуална "
+"обратна връзка, когато потребителите преместят мишката си над бутона за "
+"затваряне."
+
+#: class-ml-slider-lightbox.php:3185
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2969
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2969
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3185
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"Цвят на иконите на инструменталната лента и текста на брояча в светлинната "
+"кутия. Влияе на иконите за увеличение, цял екран (Pro) и показването на "
+"броя на изображенията."
+
+#: class-ml-slider-lightbox.php:3190
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3190
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"Цвят на иконите на инструменталната лента при задържане на курсора. Създава "
+"визуална обратна връзка, когато потребителите преместят мишката си над "
+"иконите на инструменталната лента и брояча."
+
+#: class-ml-slider-lightbox.php:3195
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2995
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2995
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3195
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr "Цвят на фона за бутони за навигация напред и назад."
+
+#: class-ml-slider-lightbox.php:3200
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3200
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr ""
+"Цвят на фона за бутоните за стрелки при задържане на курсора. Създава "
+"визуална обратна връзка, когато потребителите преместят мишката си над "
+"стрелките."
+
+#: class-ml-slider-lightbox.php:3205
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3205
+msgid "Background color for the close button (X) in the gallery."
+msgstr "Цвят на фона за бутона за затваряне (X) в галерията."
+
+#: class-ml-slider-lightbox.php:3210
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3034
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3034
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3210
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr ""
+"Цвят на фона за бутона за затваряне при задържане на курсора. Създава "
+"визуална обратна връзка, когато потребителите преместят мишката си над "
+"бутона за затваряне."
+
+#: class-ml-slider-lightbox.php:3215
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3047
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3047
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3215
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "Цвят на фона за иконите на инструменталната лента в светлинната кутия."
+
+#: class-ml-slider-lightbox.php:3220
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3060
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3060
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3220
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr ""
+"Цвят на фона за иконите на инструменталната лента при задържане на курсора. "
+"Създава визуална обратна връзка, когато потребителите преместят мишката си "
+"над иконите на инструменталната лента."
+
+#: class-ml-slider-lightbox.php:3264 class-ml-slider-lightbox.php:3277
+#: class-ml-slider-lightbox.php:3290 class-ml-slider-lightbox.php:3388
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3112
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3144
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3112
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3290
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3388
+msgid "Icon"
+msgstr "Икона"
+
+#: class-ml-slider-lightbox.php:3265 class-ml-slider-lightbox.php:3278
+#: class-ml-slider-lightbox.php:3291 class-ml-slider-lightbox.php:3389
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3083
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3115
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3083
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3115
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3265
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3278
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3291
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3389
+msgid "Icon Hover"
+msgstr "Икона при задържане на курсора"
+
+#: class-ml-slider-lightbox.php:3266 class-ml-slider-lightbox.php:3279
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3373
+#: class-ml-slider-lightbox.php:3390
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3086
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3118
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3229
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3086
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3118
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3229
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3266
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3279
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3292
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3373
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3390
+msgid "Background"
+msgstr "Фон"
+
+#: class-ml-slider-lightbox.php:3267 class-ml-slider-lightbox.php:3280
+#: class-ml-slider-lightbox.php:3293 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3391
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3089
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3153
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3232
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3089
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3153
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3232
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3267
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3280
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3293
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3374
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3391
+msgid "Background Hover"
+msgstr "Фон при задържане на курсора"
+
+#: class-ml-slider-lightbox.php:3310
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3310
+msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
+msgstr ""
+"Настройте непрозрачността на фона на галерията (0 = прозрачен, 1 = "
+"непрозрачен)."
+
+#: class-ml-slider-lightbox.php:3319
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3319
+msgid "Color of the progress bar shown during autoplay slideshows."
+msgstr "Цвят на прогрес бара, показан по време на автоматични слайдшоу."
+
+#: class-ml-slider-lightbox.php:3325
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3325
+msgid "Border"
+msgstr "Рамка"
+
+#: class-ml-slider-lightbox.php:3326
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3326
+msgid "Border Active and Hover"
+msgstr "Активна рамка и рамка при задържане на курсора"
+
+#: class-ml-slider-lightbox.php:3338
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3338
+msgid "Show navigation arrows in gallery"
+msgstr "Показване на навигационни стрелки в галерията"
+
+#: class-ml-slider-lightbox.php:3339
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3184
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3184
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3339
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"Показване на стрелки наляво/надясно за навигация. Също така позволява "
+"навигация с клавиатура (← → клавиши, ESC за затваряне). Това е налично за "
+"слайдшоута и галерии с изображения."
+
+#: class-ml-slider-lightbox.php:3348
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3348
+msgid "Customize the gallery background and overlay appearance."
+msgstr "Персонализирайте фона на галерията и външния вид на покритието."
+
+#: class-ml-slider-lightbox.php:3353
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3353
+msgid "Customize navigation icons (close, previous, next arrows) for gallery."
+msgstr ""
+"Персонализирайте иконите за навигация (затваряне, предишна, следваща "
+"стрелка) за галерията."
+
+#: class-ml-slider-lightbox.php:3358
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3358
+msgid ""
+"Customize the \"Open in Gallery\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"Персонализирайте бутоните \"Отвори в галерия\", които могат да бъдат "
+"добавени към слайдове, изображения, галерии и видеа."
+
+#: class-ml-slider-lightbox.php:3371
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3223
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3223
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3371
+msgid "Text"
+msgstr "Текст"
+
+#: class-ml-slider-lightbox.php:3372
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3226
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3226
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3372
+msgid "Text Hover"
+msgstr "Текст при задържане"
+
+#: class-ml-slider-lightbox.php:3397
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3397
+msgid ""
+"Configure navigation and control options that apply to all MetaSlider "
+"galleries."
+msgstr ""
+"Конфигурирайте опциите за навигация и управление, които се прилагат за "
+"всички галерии MetaSlider."
+
+#: class-ml-slider-lightbox.php:3407
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3250
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3250
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3407
+msgid "Show thumbnails"
+msgstr "Показване на миниатюри"
+
+#: class-ml-slider-lightbox.php:3408
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3408
+msgid ""
+"Display thumbnail images at the bottom of the gallery for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"Показване на миниатюрни изображения в долната част на галерията за лесна "
+"навигация. Това е налично за слайдшоута и галерии с изображения."
+
+#: class-ml-slider-lightbox.php:3420
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3420
+msgid "Show \"Open in Gallery\" button"
+msgstr "Показване на бутона \"Отвори в галерия\""
+
+#: class-ml-slider-lightbox.php:3421
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3421
+msgid ""
+"When enabled, shows a button to open the gallery. When disabled, clicking "
+"the slide, image, or video directly opens the gallery."
+msgstr ""
+"Когато е активирано, показва бутон за отваряне на галерията. Когато е "
+"деактивирано, кликването върху слайда, изображението или видеото директно "
+"отваря галерията."
+
+#: class-ml-slider-lightbox.php:3438
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3438
+msgid "Show an icon instead of button"
+msgstr "Показване на икона вместо бутон"
+
+#: class-ml-slider-lightbox.php:3439
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3439
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr "Когато е активирано, показва малка икона вместо целия текст на бутона."
+
+#: class-ml-slider-lightbox.php:3453
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3276
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3276
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3453
+msgid "Show captions"
+msgstr "Показване на надписи"
+
+#: class-ml-slider-lightbox.php:3454
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3454
+msgid ""
+"When enabled, display captions in the gallery window. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"Когато е активирано, показва надписи в прозореца на галерията. Това е "
+"налично за слайдшоута, изображения и галерии с изображения."
+
+#: class-ml-slider-lightbox.php:3461
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3461
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr "Разширените функции на lightbox са налични чрез MetaSlider Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3463
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3463
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr ""
+"Вземете предварителен преглед на разширените функции, налични в MetaSlider "
+"Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3466
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3289
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3289
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3466
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr ""
+"Тези разширени плъгини LightGallery.js са налични в Pro версията с "
+"допълнителни опции за персонализация."
+
+#: class-ml-slider-lightbox.php:3494 class-ml-slider-lightbox.php:3495
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3494
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3495
+msgid "specific Pages"
+msgstr "специфични Страници"
+
+#: class-ml-slider-lightbox.php:3497
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3497
+msgid ""
+"Select pages where gallery should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Изберете страници, където галерията трябва да бъде деактивирана. Показва до "
+"100 най-скорошни страници. Напишете, за да търсите."
+
+#: class-ml-slider-lightbox.php:3497 class-ml-slider-lightbox.php:3498
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3497
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3498
+msgid ""
+"Select pages where gallery should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Изберете страници, където галерията трябва да бъде активирана. Показва до "
+"100 най-скорошни страници. Напишете, за да търсите."
+
+#: class-ml-slider-lightbox.php:3542 class-ml-slider-lightbox.php:3543
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3542
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3543
+msgid "specific Posts"
+msgstr "специфични публикации"
+
+#: class-ml-slider-lightbox.php:3545
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3545
+msgid ""
+"Select posts where gallery should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Изберете публикации, където галерията трябва да бъде деактивирана. Показва "
+"до 100 най-скорошни публикации. Напишете, за да търсите."
+
+#: class-ml-slider-lightbox.php:3545 class-ml-slider-lightbox.php:3546
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3545
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3546
+msgid ""
+"Select posts where gallery should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Изберете публикации, където галерията трябва да бъде активирана. Показва до "
+"100 най-скорошни публикации. Напишете, за да търсите."
+
+#: class-ml-slider-lightbox.php:3573
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3573
+msgid "include"
+msgstr "включи"
+
+#: class-ml-slider-lightbox.php:3573
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3573
+msgid "exclude"
+msgstr "изключи"
+
+#: class-ml-slider-lightbox.php:3613
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3613
+#, php-format
+msgid "specific %s"
+msgstr "специфичен %s"
+
+#: class-ml-slider-lightbox.php:3614
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3429
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3429
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3614
+#, php-format
+msgid "%s specific %s"
+msgstr "%s специфичен %s"
+
+#: class-ml-slider-lightbox.php:3616 class-ml-slider-lightbox.php:3617
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3431
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3432
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3431
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3432
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3617
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "Показва до 100 най-скорошни %s. Напишете, за да търсите."
+
+#: class-ml-slider-lightbox.php:3665 class-ml-slider-lightbox.php:3666
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3665
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3666
+msgid "specific post types"
+msgstr "специфични типове публикации"
+
+#: class-ml-slider-lightbox.php:3668
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3668
+msgid "Select post types where gallery should be disabled entirely."
+msgstr ""
+"Изберете типове публикации, където галерията трябва да бъде напълно "
+"деактивирана."
+
+#: class-ml-slider-lightbox.php:3668 class-ml-slider-lightbox.php:3669
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3668
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3669
+msgid "Select post types where gallery should be enabled entirely."
+msgstr ""
+"Изберете типове публикации, където галерията трябва да бъде напълно "
+"активирана."
+
+#: class-ml-slider-lightbox.php:3703
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3515
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3515
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3703
+msgid "Exclude by CSS selector"
+msgstr "Изключи по CSS селектор"
+
+#: class-ml-slider-lightbox.php:3706
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3706
+msgid ""
+"CSS selectors for elements to exclude from gallery window (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"CSS селектори за елементи, които да бъдат изключени от прозореца на "
+"галерията (по един на ред). Примери:<br>.no-lightbox<br>.custom-gallery "
+"img<br>#sidebar .widget-area"
+
+#: class-ml-slider-lightbox.php:3729
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3541
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3541
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3729
+msgid "Minimum Image Width"
+msgstr "Минимална ширина на изображението"
+
+#: class-ml-slider-lightbox.php:3732
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3732
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"Пропуснете изображения, които са по-тесни от тази ширина (в пиксели). "
+"Използва показаната ширина, а не действителния размер на файла на "
+"изображението. Това е полезно за изключване на малки икони, значки и бутони."
+
+#: class-ml-slider-lightbox.php:3755
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3567
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3567
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3755
+msgid "Minimum Image Height"
+msgstr "Минимална височина на изображението"
+
+#: class-ml-slider-lightbox.php:3758
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3758
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"Пропуснете изображения, които са по-къси от тази височина (в пиксели). "
+"Използва показаната височина, а не действителния размер на файла на "
+"изображението. Това е полезно за изключване на малки икони, значки и бутони."
+
+#: class-ml-slider-lightbox.php:3774 class-ml-slider-lightbox.php:3931
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3586
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3743
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3586
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3743
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3774
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3931
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr ""
+"Подобрено управление на медии и функции за възпроизвеждане на видео за "
+"професионални галерии."
+
+#: class-ml-slider-lightbox.php:3781
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3593
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3593
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3781
+msgid "Advanced features for professional lightbox implementations."
+msgstr "Разширени функции за професионални реализации на lightbox."
+
+#: class-ml-slider-lightbox.php:3792 class-ml-slider-lightbox.php:4004
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3604
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3816
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3604
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3816
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3792
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4004
+msgid "Enable Zoom"
+msgstr "Активирай Zoom"
+
+#: class-ml-slider-lightbox.php:3793
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3605
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3605
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3793
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr ""
+"Двойно щракване за увеличение, контроли за увеличение, увеличение с мишката "
+"и опции за адаптиране на размера."
+
+#: class-ml-slider-lightbox.php:3803 class-ml-slider-lightbox.php:4011
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3615
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3823
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3615
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3823
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3803
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4011
+msgid "Enable Fullscreen"
+msgstr "Активирай пълен екран"
+
+#: class-ml-slider-lightbox.php:3804
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3804
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr ""
+"Поддръжка на нативен HTML5 пълен екран с клавишни комбинации (клавиш F) за "
+"потапящо гледане."
+
+#: class-ml-slider-lightbox.php:3814 class-ml-slider-lightbox.php:4018
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3626
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3830
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3626
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3830
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3814
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4018
+msgid "Enable Rotate"
+msgstr "Активирай завъртане"
+
+#: class-ml-slider-lightbox.php:3815
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3627
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3627
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3815
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr ""
+"Завъртате изображенията по часовниковата стрелка/обратно на часовниковата "
+"стрелка, обръщане хоризонтално/вертикално с контроли на工具条."
+
+#: class-ml-slider-lightbox.php:3825
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3637
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3637
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3825
+msgid "Enable Video"
+msgstr "Активирай видео"
+
+#: class-ml-slider-lightbox.php:3826
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3638
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3638
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr ""
+"Разширена поддръжка на видео за YouTube, Vimeo, HTML5 видеа с автоматично "
+"възпроизвеждане и контрол на качеството."
+
+#: class-ml-slider-lightbox.php:3836 class-ml-slider-lightbox.php:4053
+#: class-ml-slider-lightbox.php:4193
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3648
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3865
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3648
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3865
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3836
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4053
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4193
+msgid "Enable Unique Image URLs"
+msgstr "Активирай уникални URL адреси на изображения"
+
+#: class-ml-slider-lightbox.php:3837
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3649
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3649
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3837
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr ""
+"Уникални URL адреси за всяко изображение в галерията с поддръжка на "
+"навигация напред/назад в браузъра."
+
+#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:4060
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3659
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3872
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3659
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3872
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4060
+msgid "Enable Autoplay"
+msgstr "Активирай автоматично възпроизвеждане"
+
+#: class-ml-slider-lightbox.php:3848
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3848
+msgid "Automatically advance through images in the gallery."
+msgstr "Автоматично преминаване през изображенията в галерията."
+
+#: class-ml-slider-lightbox.php:3858 class-ml-slider-lightbox.php:4032
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3670
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3844
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3670
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3844
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3858
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4032
+msgid "Enable Share"
+msgstr "Активирай споделяне"
+
+#: class-ml-slider-lightbox.php:3859
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3671
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3671
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3859
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr ""
+"Бутоните за споделяне в социалните медии за Facebook, Twitter, Pinterest и "
+"директно споделяне на URL адреси."
+
+#: class-ml-slider-lightbox.php:3869 class-ml-slider-lightbox.php:4039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3681
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3851
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3681
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3851
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3869
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4039
+msgid "Enable Pager"
+msgstr "Активирай страница"
+
+#: class-ml-slider-lightbox.php:3870
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3682
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3682
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3870
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr ""
+"Минимални точки за страни за чиста навигация без миниатюрни предварителни "
+"прегледи."
+
+#: class-ml-slider-lightbox.php:3926 class-ml-slider-lightbox.php:4000
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3738
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3812
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3738
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3812
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4000
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr ""
+"Професионални контроли за увеличение и взаимодействие с изображения за "
+"подобрено потребителско изживяване."
+
+#: class-ml-slider-lightbox.php:3936 class-ml-slider-lightbox.php:4028
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3748
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3840
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3748
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3840
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3936
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4028
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr ""
+"Подобрения в социалното споделяне и навигацията за увеличаване на "
+"ангажираността."
+
+#: class-ml-slider-lightbox.php:3941 class-ml-slider-lightbox.php:4049
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3753
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3861
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3753
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3861
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4049
+msgid "Advanced functionality including URL management and automation features."
+msgstr ""
+"Разширена функционалност, включително управление на URL адреси и "
+"автоматизационни функции."
+
+#: class-ml-slider-lightbox.php:3953
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3953
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "Тази функция е налична в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3817
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3942
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3817
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3942
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4005
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4162
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr ""
+"Позволете на потребителите да увеличават и намаляват с двойно щракване, "
+"колелото на мишката и контроли за увеличение."
+
+#: class-ml-slider-lightbox.php:4007
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "Контролите за zoom са налични в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4012
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3824
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3824
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4012
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr "Нативен HTML5 режим на цял екран за потапящо гледане на изображения."
+
+#: class-ml-slider-lightbox.php:4014
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4014
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "Режим на цял екран е наличен в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4019 class-ml-slider-lightbox.php:4178
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3831
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3958
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3831
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3958
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4019
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4178
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr ""
+"Завъртете изображенията по часовниковата стрелка/обратната посока и ги "
+"обърнете хоризонтално/вертикално."
+
+#: class-ml-slider-lightbox.php:4021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4021
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "Завъртането на изображения е налично в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4033
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3845
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3845
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4033
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr "Вградено споделяне в социалните медии за Facebook, Twitter и Pinterest."
+
+#: class-ml-slider-lightbox.php:4035
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4035
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "Споделянето в социалните медии е налично в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4040 class-ml-slider-lightbox.php:4210
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3852
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3990
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3852
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3990
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4040
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4210
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr "Минимални точки за странициране вместо миниатюри за по-чист интерфейс."
+
+#: class-ml-slider-lightbox.php:4042
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4042
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "Страницирането на Pager е налично в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4054 class-ml-slider-lightbox.php:4194
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3866
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3974
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3866
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3974
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4054
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4194
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr ""
+"Генерирайте уникални URL адреси за всяко изображение в галерията с "
+"навигация напред/назад в браузъра."
+
+#: class-ml-slider-lightbox.php:4056
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4056
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "Уникалните URL адреси на изображения са налични в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4061 class-ml-slider-lightbox.php:4202
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3873
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3873
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4061
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4202
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "Автоматично слайдшоу с контрол на времето и лента за напредък."
+
+#: class-ml-slider-lightbox.php:4063
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4063
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "Автоигра е налична в MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4080
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3892
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3892
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4080
+msgid "Features"
+msgstr "Функции"
+
+#: class-ml-slider-lightbox.php:4081
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3893
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3893
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4081
+msgid "Free"
+msgstr "Безплатно"
+
+#: class-ml-slider-lightbox.php:4082
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3894
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3894
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4082, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4088 class-ml-slider-lightbox.php:4227
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3900
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3900
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4088
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4227
+msgid "Installed"
+msgstr "Инсталирано"
+
+#: class-ml-slider-lightbox.php:4091 class-ml-slider-lightbox.php:4230
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3903
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:4010
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3903
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:4010
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4091
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4230
+msgid "Upgrade now"
+msgstr "Актуализирайте сега"
+
+#: class-ml-slider-lightbox.php:4097
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3909
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3909
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4097
+msgid "Automatic lightbox for images"
+msgstr "Автоматична лайтбокс за изображения"
+
+#: class-ml-slider-lightbox.php:4098
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3910
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3910
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4098
+msgid "Automatically enable lightbox for all images on your site."
+msgstr "Автоматично активирайте лайтбокс за всички изображения на вашия сайт."
+
+#: class-ml-slider-lightbox.php:4105
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3917
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4105
+msgid "MetaSlider integration"
+msgstr "Интеграция на MetaSlider"
+
+#: class-ml-slider-lightbox.php:4106
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3918
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3918
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4106
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "Безпроблемна интеграция с слайдшоута на MetaSlider."
+
+#: class-ml-slider-lightbox.php:4113
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3925
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3925
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4113
+msgid "WordPress gallery support"
+msgstr "Поддръжка на WordPress галерии"
+
+#: class-ml-slider-lightbox.php:4114
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4114
+msgid "Support for WordPress native galleries and blocks."
+msgstr "Поддръжка на нативни галерии и блокове на WordPress."
+
+#: class-ml-slider-lightbox.php:4121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3933
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3933
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4121
+msgid "Appearance customization"
+msgstr "Персонализиране на външния вид"
+
+#: class-ml-slider-lightbox.php:4122
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3934
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3934
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4122
+msgid "Customize colors, opacity, and button styles."
+msgstr "Персонализирайте цветове, прозрачност и стилове на бутони."
+
+#: class-ml-slider-lightbox.php:4129
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4129
+msgid "Gallery builder &amp; layouts"
+msgstr "Генератор на галерии &amp; оформления"
+
+#: class-ml-slider-lightbox.php:4130
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4130
+msgid ""
+"Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
+"layouts."
+msgstr "Създайте галерии с оформления Grid, Masonry, Justified, Carousel и Showcase."
+
+#: class-ml-slider-lightbox.php:4137
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4137
+msgid "Responsive columns"
+msgstr "Отзивчиви колони"
+
+#: class-ml-slider-lightbox.php:4138
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4138
+msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
+msgstr ""
+"Задайте броя на колоните за настолни компютри и мобилни устройства, с "
+"регулируемо разстояние."
+
+#: class-ml-slider-lightbox.php:4145
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4145
+msgid "Image captions"
+msgstr "Надписи на изображения"
+
+#: class-ml-slider-lightbox.php:4146
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4146
+msgid "Show image captions in the gallery grid and the gallery window."
+msgstr ""
+"Показвайте надписи на изображения в решетката на галерията и в прозореца на "
+"галерията."
+
+#: class-ml-slider-lightbox.php:4153
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4153
+msgid "Thumbnail navigation"
+msgstr "Навигация с миниатюри"
+
+#: class-ml-slider-lightbox.php:4154
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4154
+msgid "Display a strip of thumbnails for quick navigation between images."
+msgstr "Показвайте лента с миниатюри за бърза навигация между изображенията."
+
+#: class-ml-slider-lightbox.php:4161
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4161
+msgid "Zoom controls"
+msgstr "Контроли за увеличение"
+
+#: class-ml-slider-lightbox.php:4169
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3949
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3949
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4169
+msgid "Fullscreen mode"
+msgstr "Режим на цял екран"
+
+#: class-ml-slider-lightbox.php:4170
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3950
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3950
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4170
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr "Нативен HTML5 режим на цял екран за потапящо преглеждане на изображения."
+
+#: class-ml-slider-lightbox.php:4177
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3957
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3957
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4177
+msgid "Rotate and flip images"
+msgstr "Завъртане и обръщане на изображения"
+
+#: class-ml-slider-lightbox.php:4185
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3965
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3965
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4185
+msgid "Social media sharing"
+msgstr "Споделяне в социалните медии"
+
+#: class-ml-slider-lightbox.php:4186
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3966
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3966
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4186
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "Вградена функция за споделяне за Facebook, Twitter и Pinterest."
+
+#: class-ml-slider-lightbox.php:4201
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3981
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3981
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4201
+msgid "Autoplay slideshow"
+msgstr "Автоматично стартиране на слайдшоу"
+
+#: class-ml-slider-lightbox.php:4209
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3989
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3989
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4209
+msgid "Pager navigation"
+msgstr "Навигация с пагер"
+
+#: class-ml-slider-lightbox.php:4217
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3997
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3997
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4217
+msgid "Premium support"
+msgstr "Премиум поддръжка"
+
+#: class-ml-slider-lightbox.php:4218
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3998
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3998
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4218
+msgid "Have your specific queries addressed directly by our experts."
+msgstr ""
+"Нека вашите конкретни запитвания да бъдат адресирани директно от нашите "
+"експерти."
+
+#: class-ml-slider-lightbox.php:6005
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5808
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5808
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6005
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr ""
+"Конфигурирайте как лайтбоксът взаимодействува с вградените функции на "
+"WordPress."
+
+#: class-ml-slider-lightbox.php:6020
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5823
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5823
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6020
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "Промяна на настройката \"Увеличаване при кликване\" на WordPress"
+
+#: class-ml-slider-lightbox.php:6021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6021
+msgid ""
+"When enabled, disables WordPress built-in gallery window and uses "
+"MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
+"respects WordPress setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"Когато е активирано, деактивира вграденото прозорче на галерията на "
+"WordPress и използва MetaSlider Gallery за изображения, зададени на "
+"\"Увеличаване при кликване\". Когато е деактивирано, спазва настройката на "
+"WordPress и пропуска изображенията, зададени на \"Увеличаване при "
+"кликване\"."
+
+#: class-ml-slider-lightbox.php:6037
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5840
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5840
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6037
+msgid "Override \"Link to Image File\" Setting"
+msgstr "Промяна на настройката \"Линк към изображение\""
+
+#: class-ml-slider-lightbox.php:6038
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6038
+msgid ""
+"When enabled, uses MetaSlider Gallery for images linked to their full-size "
+"image file (commonly set via \"Link to Image File\" in the block editor). "
+"When disabled, respects the original link behavior."
+msgstr ""
+"Когато е активирано, използва MetaSlider Gallery за изображения, свързани с "
+"техния файл с изображение с пълен размер (обикновено зададено чрез \"Линк "
+"към изображение\" в редактора на блокове). Когато е деактивирано, спазва "
+"оригиналното поведение на линка."
+
+#: class-ml-slider-lightbox.php:6069
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5872
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5872
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6069
+msgid "Exclude Post Types from Manual Processing"
+msgstr "Изключване на типове публикации от ръчна обработка"
+
+#: class-ml-slider-lightbox.php:6072
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6072
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable the gallery on WooCommerce product pages "
+"while keeping it active elsewhere."
+msgstr ""
+"Изберете типове публикации, при които ръчните опции НЕ трябва да работят. "
+"Например, изберете \"Продукти (продукт)\", за да деактивирате галерията на "
+"страниците с продукти на WooCommerce, докато я запазите активна на друго "
+"място."
+
+#: class-ml-slider-lightbox.php:6096
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5899
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5899
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6096
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "Как да използвате: \"Увеличаване при кликване\" на WordPress"
+
+#: class-ml-slider-lightbox.php:6098
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5901
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5901
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6098
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"WordPress има вградена функция \"Увеличаване при кликване\" за изображения. "
+"Ето как да я активирате:"
+
+#: class-ml-slider-lightbox.php:6100 class-ml-slider-lightbox.php:6113
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5903
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5916
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5903
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5916
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6100
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6113
+msgid "Select an image in the block editor."
+msgstr "Изберете изображение в редактора на блокове."
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5904
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5904
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5917
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6101
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6114
+msgid "In the block toolbar, click on the Link icon."
+msgstr "В инструментариума на блока кликнете върху иконата за линк."
+
+#: class-ml-slider-lightbox.php:6102
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5905
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5905
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6102
+msgid "Select \"Enlarge on click\"."
+msgstr "Изберете \"Увеличаване при кликване\"."
+
+#: class-ml-slider-lightbox.php:6108
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5911
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5911
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6108
+msgid "How to use: \"Link to Image File\""
+msgstr "Как да използвате: \"Линк към изображение\""
+
+#: class-ml-slider-lightbox.php:6110
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5913
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5913
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6110
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr ""
+"Можете да свържете изображения директно с техния файл с медия с пълен "
+"размер. Ето как:"
+
+#: class-ml-slider-lightbox.php:6111
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5914
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5914
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6111
+msgid "For the Block Editor:"
+msgstr "За редактора на блокове:"
+
+#: class-ml-slider-lightbox.php:6115
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5918
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5918
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6115
+msgid "Choose \"Link to image file\"."
+msgstr "Изберете \"Линк към изображение\"."
+
+#: class-ml-slider-lightbox.php:6117
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5920
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5920
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6117
+msgid "For the Classic Editor:"
+msgstr "За класическия редактор:"
+
+#: class-ml-slider-lightbox.php:6119
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5922
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5922
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6119
+msgid "Select an image."
+msgstr "Изберете изображение."
+
+#: class-ml-slider-lightbox.php:6120
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5923
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5923
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6120
+msgid "In the image toolbar, click on the Edit icon."
+msgstr ""
+"В инструменталната лента за изображения, кликнете върху иконата за "
+"редактиране."
+
+#: class-ml-slider-lightbox.php:6121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5924
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5924
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6121
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "Изберете \"Медийни файлове\" от падащото меню \"Връзка към\"."
+
+#: class-ml-slider-lightbox.php:6127
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5930
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5930
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6127
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "Как да използвате: Метод с CSS клас (разширен)"
+
+#: class-ml-slider-lightbox.php:6129
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6129
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"MetaSlider Gallery on any element containing images."
+msgstr ""
+"За разработчици: Добавете <code>ml-lightbox-enabled</code> клас, за да "
+"активирате MetaSlider галерия на всеки елемент, съдържащ изображения."
+
+#: class-ml-slider-lightbox.php:6130
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5933
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5933
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6130
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "Метод 1: Допълнителни CSS класове за блок редактора"
+
+#: class-ml-slider-lightbox.php:6132
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5935
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5935
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6132
+msgid "Select an image or gallery block."
+msgstr "Изберете блок с изображение или галерия."
+
+#: class-ml-slider-lightbox.php:6133
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5936
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5936
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6133
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "В страничната лента с настройки на блока, превъртете до \"Разширени\"."
+
+#: class-ml-slider-lightbox.php:6134
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5937
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5937
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6134
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr "Добавете <code>ml-lightbox-enabled</code> в \"Допълнителен CSS клас(ове)\"."
+
+#: class-ml-slider-lightbox.php:6136
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5939
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5939
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6136
+msgid "Method 2: HTML/Code"
+msgstr "Метод 2: HTML/Код"
+
+#: class-ml-slider-lightbox.php:6137
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5940
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5940
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6137
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "За персонализирани HTML или разработчици на теми, добавете класа директно:"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1056
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Lightbox requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"MetaSlider Lightbox изисква MetaSlider и поне още един поддържан плъгин за "
+"lightbox да бъде инсталиран и активиран."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1071
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Lightbox"
+msgstr ""
+"Има повече от един активиран плъгин за lightbox. Това може да предизвика "
+"конфликти с MetaSlider Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "Редактиране на настройки"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1138
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "Да се отвори в lightbox?"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1449
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2849
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1449
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2849
+msgid "Open in Lightbox"
+msgstr "Отвори в Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1679
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1679
+msgid "MetaSlider Lightbox requires MetaSlider to be installed and activated."
+msgstr "MetaSlider Lightbox изисква MetaSlider да бъде инсталиран и активиран."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1783
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1899
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1783
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1899, fuzzy
+msgid "MetaSlider Lightbox Pro"
+msgstr "MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1785
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1900
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1785
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1900, fuzzy
+msgid "MetaSlider Lightbox"
+msgstr "MetaSlider Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1895
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1895, fuzzy
+msgid "Lightbox Pro"
+msgstr "Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1896
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1896, fuzzy
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1978
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1978
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr ""
+"Персонализирайте цветовете, непрозрачността и визуалния стил на покритието "
+"на lightbox-а и контролните елементи."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1992
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1992
+msgid "\"Open in Lightbox\" Button"
+msgstr "\"Отвори в Lightbox\" бутон"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2055
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2055
+msgid "Manual Lightbox Options"
+msgstr "Ръчни опции за Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2269
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2269
+msgid "Lightbox Toolbar"
+msgstr "Лента с инструменти на Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2634
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2634
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "Конфигурирайте общите настройки на lightbox-а, които се прилагат на сайта."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2639
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2639
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr ""
+"Конфигурирайте настройки, специфични за функционалността на lightbox-а на "
+"MetaSlider."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2644
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2644
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "Изберете къде lightbox-ът да бъде активиран автоматично."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2650
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2650
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Изберете как да филтрирате съдържанието за обработка в lightbox-а и "
+"посочете кои страници, публикации или селектори да включите или изключите."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2704
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2704
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"Когато е активиран, отделните изображения без линкове и настроените за "
+"\"Увеличаване при клик\" в публикации и страници автоматично ще се отварят "
+"в lightbox-а."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2721
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2721
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"Когато е активиран, изображенията и видеата в области на widget-а "
+"автоматично ще се отварят в lightbox-а."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2738
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2738
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"Когато е активиран, изображенията в кратките кодове [gallery] на WordPress "
+"и блоковете на Gutenberg Gallery автоматично ще се отварят в lightbox-а."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2755
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2755
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"Когато е активиран, представените изображения (миниатюри на публикации) "
+"автоматично ще се отварят в lightbox-а, когато бъдат кликнати."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2772
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2772
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"Когато е активиран, самостоятелните видео блокове (HTML5 видеа, вграждания "
+"от YouTube, вграждания от Vimeo) в съдържанието на публикации/страници "
+"автоматично ще се отварят в lightbox-а."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2787
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2787
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Цвят на фона за покритието на lightbox-а. Тъмните цветове работят най-добре "
+"за гледане на изображения."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2800
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2800
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Цвят на фона за бутоните \"Отвори в Lightbox\", които се появяват на "
+"слайдове, изображения и видеа."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2813
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2813
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Цвят на текста за бутоните \"Отвори в Lightbox\", които се появяват на "
+"слайдове, изображения и видеа."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2826
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2826
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Цвят на фона при задържане над бутоните \"Отвори в Lightbox\"."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2839
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2839
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Цвят на текста при задържане над бутоните \"Отвори в Lightbox\"."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2852
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2852
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"Персонализиран текст за бутоните на лайтбокса. Текстът ще се появи на "
+"всички \"Отвори в лайтбокс\" бутони в сайта."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "Изберете къде да позиционирате бутона за затваряне (X) в лайтбоксOverlay."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2904
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2904
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"Изберете къде да позиционирате \"Отвори в лайтбокс\" бутоните в слайдове, "
+"изображения, галерии и видеа."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2917
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Цвят за предишните и следващите навигационни стрелки в лайтбокса."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2943
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2943
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Цвят за бутона за затваряне (X) в лайтбокса."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3021
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3021
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "Цвят на фона за бутона за затваряне (X) в лайтбокса."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3172
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3172
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr ""
+"Настройте непрозрачността на фона на лайтбокса (0 = прозрачен, 1 = "
+"непрозрачен)."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3183
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3183
+msgid "Show navigation arrows in lightbox"
+msgstr "Покажи навигационни стрелки в лайтбокса"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3193
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3193
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "Персонализирайте фона на лайтбокса и външния му вид."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3198
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3198
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr ""
+"Персонализирайте навигационните икони (затвори, предишна, следваща стрелка) "
+"за лайтбоксовете."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3203
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3203
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"Персонализирайте бутоните \"Отвори в лайтбокс\", които могат да бъдат "
+"добавени към слайдове, изображения, галерии и видеа."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3240
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3240
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr ""
+"Конфигурирайте навигационните и контролни опции, които се прилагат за "
+"всички лайтбоксове."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3251
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3251
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"Показвайте миниатюрни изображения в долната част на лайтбокса за лесна "
+"навигация. Това е налично за слайдшоута и галерии от изображения."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3263
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3263
+msgid "Show \"Open in Lightbox\" button"
+msgstr "Покажи бутон \"Отвори в лайтбокс\""
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"Когато е активиран, показва бутон за отваряне на лайтбокса. Когато е "
+"деактивиран, кликването на слайда, изображението или видеото директно "
+"отваря лайтбокса."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"Когато е активиран, показва надписи в лайтбокса. Това е налично за "
+"слайдшоута, изображения и галерии от изображения."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3284
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3284
+msgid "Advanced lightbox features are available through MetaSlider Lightbox Pro."
+msgstr "Разширените функции на лайтбокса са налични чрез MetaSlider Lightbox Pro."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3286
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3286
+msgid "Get a preview of the advanced features available in MetaSlider Lightbox Pro."
+msgstr ""
+"Получете предварителен преглед на разширените функции, налични в MetaSlider "
+"Lightbox Pro."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3315
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3315
+msgid "Include specific Pages"
+msgstr "Включете специфични страници"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Изберете страници, на които лайтбоксът трябва да бъде деактивиран. Показва "
+"до 100 най-нови страници. Напишете за търсене."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3318
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3318
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Изберете страници, където светлинната кутия трябва да бъде активирана. "
+"Показва до 100 най-нови страници. Въведете за търсене."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3360
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3360
+msgid "Include specific Posts"
+msgstr "Включете специфични публикации"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Изберете публикации, където светлинната кутия трябва да бъде деактивирана. "
+"Показва до 100 най-нови публикации. Въведете за търсене."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3363
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3363
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Изберете публикации, където светлинната кутия трябва да бъде активирана. "
+"Показва до 100 най-нови публикации. Въведете за търсене."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3478
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3478
+msgid "Include specific post types"
+msgstr "Включете специфични типове публикации"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr ""
+"Изберете типове публикации, където светлинната кутия трябва да бъде напълно "
+"деактивирана."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3481
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3481
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr ""
+"Изберете типове публикации, където светлинната кутия трябва да бъде напълно "
+"активирана."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3518
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3518
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"CSS селектори за елементи, които да се изключат от светлинната кутия (по "
+"един на ред). Примери:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar "
+".widget-area"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3544
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3544
+msgid ""
+"Skip images narrower than this width (in pixels). Useful to exclude small "
+"icons, badges, and buttons. Set to 0 to disable width checking."
+msgstr ""
+"Пропуснете изображения по-тесни от тази ширина (в пиксели). Полезно е да се "
+"изключат малки икони, значки и бутони. Задайте на 0, за да деактивирате "
+"проверката на ширината."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3570
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3570
+msgid ""
+"Skip images shorter than this height (in pixels). Useful to exclude small "
+"icons, badges, and buttons. Set to 0 to disable height checking."
+msgstr ""
+"Пропуснете изображения по-къси от тази височина (в пиксели). Полезно е да "
+"се изключат малки икони, значки и бутони. Задайте на 0, за да деактивирате "
+"проверката на височината."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3660
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3660
+msgid "Automatic slideshow progression with customizable timing and pause-on-hover."
+msgstr ""
+"Автоматично прогресиране на слайдшоу с настраиваемо време и пауза при "
+"задържане с мишката."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3765
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3765
+msgid "This feature is available in MetaSlider Lightbox Pro"
+msgstr "Тази функция е налична в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3819
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3819
+msgid "Zoom controls are available in MetaSlider Lightbox Pro"
+msgstr "Контролите за приближаване са налични в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+msgid "Fullscreen mode is available in MetaSlider Lightbox Pro"
+msgstr "Режим на цял екран е наличен в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3833
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3833
+msgid "Image rotation is available in MetaSlider Lightbox Pro"
+msgstr "Ротация на изображения е налична в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+msgid "Social sharing is available in MetaSlider Lightbox Pro"
+msgstr "Социално споделяне е налично в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3854
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3854
+msgid "Pager pagination is available in MetaSlider Lightbox Pro"
+msgstr "Пагинация на страници е налична в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3868
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3868
+msgid "Hash URLs are available in MetaSlider Lightbox Pro"
+msgstr "Hash URL адреси са налични в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3875
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3875
+msgid "Autoplay is available in MetaSlider Lightbox Pro"
+msgstr "Автоматично възпроизвеждане е налично в MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3973
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3973
+msgid "Hash URLs"
+msgstr "Hash URL адреси"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5824
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5824
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"Когато е активирано, деактивира вградения lightbox на WordPress и използва "
+"нашия lightbox за изображения, зададени на \"Увеличаване при клик\". Когато "
+"е деактивирано, спазва настройката на WordPress и пропуска изображения, "
+"зададени на \"Увеличаване при клик\"."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5841
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5841
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"Когато е активирано, използва нашия lightbox за изображения, свързани с "
+"техния файл с изображение с пълен размер (обикновено зададено чрез \"Връзка "
+"към файл с изображение\" в редактора на блокове). Когато е деактивирано, "
+"спазва оригиналното поведение на връзката."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5875
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5875
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"Изберете типовете публикации, за които Ръчните опции НЕ трябва да работят. "
+"Например, изберете \"Продукти (продукт)\", за да деактивирате Ръчния "
+"lightbox на страниците с продукти на WooCommerce, докато го запазвате "
+"активен на друго място."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5932
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5932
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"За разработчици: Добавете клас <code>ml-lightbox-enabled</code>, за да "
+"активирате lightbox на всеки елемент, съдържащ изображения."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:26
+#: vendor/gettext/gettext/tests/TranslatorTest.php:27
+#: vendor/gettext/gettext/tests/TranslatorTest.php:68
+#: vendor/gettext/gettext/tests/TranslatorTest.php:74
+msgid "single"
+msgid_plural "more"
+msgstr[0] "един"
+msgstr[1] "повече"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:29
+#: vendor/gettext/gettext/tests/TranslatorTest.php:44
+msgid "Integer"
+msgstr "Цяло число"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:33
+#: vendor/gettext/gettext/tests/TranslatorTest.php:45
+msgid "This field cannot be blank."
+msgstr "Това поле не може да бъде празно."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:34
+#: vendor/gettext/gettext/tests/TranslatorTest.php:46
+#: vendor/gettext/gettext/tests/TranslatorTest.php:47
+#: vendor/gettext/gettext/tests/TranslatorTest.php:48
+#: vendor/gettext/gettext/tests/TranslatorTest.php:49
+#: vendor/gettext/gettext/tests/TranslatorTest.php:51
+#, php-format
+msgid "Value %sr is not a valid choice."
+msgstr "Стойността %sr не е валиден избор."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:50
+#, php-format
+msgid "%ss must be unique for %ss %ss."
+msgstr "%ss трябва да бъде уникално за %ss %ss."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:60
+#: vendor/gettext/gettext/tests/TranslatorTest.php:61
+#: vendor/gettext/gettext/tests/TranslatorTest.php:62
+#: vendor/gettext/gettext/tests/TranslatorTest.php:63
+#: vendor/gettext/gettext/tests/TranslatorTest.php:64
+#: vendor/gettext/gettext/tests/TranslatorTest.php:65
+msgid "one file"
+msgid_plural "multiple files"
+msgstr[0] "един файл"
+msgstr[1] "множество файлове"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:253
+msgid "hello"
+msgstr "Здравей"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:254
+#: vendor/gettext/gettext/tests/TranslatorTest.php:255
+#: vendor/gettext/gettext/tests/TranslatorTest.php:256
+msgid "world"
+msgid_plural "worlds"
+msgstr[0] "свят"
+msgstr[1] "светове"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:2
+msgid "text 1"
+msgstr "текст 1"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:9
+msgid "text 3 (with parenthesis)"
+msgstr "текст 3 (с скоби)"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:10
+msgid "text 4 \"with double quotes\""
+msgstr "текст 4 \"с двойни кавички\""
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:11
+msgid "text 5 'with escaped single quotes'"
+msgstr "текст 5 'с избягали единични кавички'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:15
+msgid "text 6"
+msgstr "текст 6"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:16
+msgid "text 7 (with parenthesis)"
+msgstr "текст 7 (с скоби)"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:17
+msgid "text 8 \"with escaped double quotes\""
+msgstr "текст 8 \"с избягали двойни кавички\""
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:18
+msgid "text 9 'with single quotes'"
+msgstr "текст 9 'с единични кавички'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:22
+msgid ""
+"<div id=\"blog\" class=\"container\">\n"
+"    <div class=\"row\">\n"
+"        <div class=\"col-md-12\">\n"
+"            <div id=\"content\">\n"
+"                <div class=\"page_post\">\n"
+"                    <div class=\"container\">\n"
+"                        <div class=\"margin-top-40\"></div>\n"
+"                        <div class=\"col-sm-3 col-md-2 centered-xs "
+"an-number\">4</div>\n"
+"                    </div>\n"
+"                </div>\n"
+"                <div class=\"container\">\n"
+"                    <h1 class=\"text-center margin-top-10\">Sorry, but we "
+"couldn't find this page</h1>\n"
+"                    <div id=\"body-div\">\n"
+"                        <div id=\"main-div\">\n"
+"                            <div class=\"text-404\">\n"
+"                                <div>\n"
+"                                    <p>Maybe you have entered an incorrect "
+"URL of the page or page moved to another section or just page is "
+"temporarily unavailable.</p>\n"
+"                                </div>\n"
+"                            </div>\n"
+"                        </div>\n"
+"                    </div>\n"
+"                </div>\n"
+"            </div>\n"
+"        </div>\n"
+"    </div>\n"
+"</div>"
+msgstr ""
+"<div id=\"blog\" class=\"container\">\n"
+"    <div class=\"row\">\n"
+"        <div class=\"col-md-12\">\n"
+"            <div id=\"content\">\n"
+"                <div class=\"page_post\">\n"
+"                    <div class=\"container\">\n"
+"                        <div class=\"margin-top-40\"></div>\n"
+"                        <div class=\"col-sm-3 col-md-2 centered-xs "
+"an-number\">4</div>\n"
+"                    </div>\n"
+"                </div>\n"
+"                <div class=\"container\">\n"
+"                    <h1 class=\"text-center margin-top-10\">Съжаляваме, но "
+"не успяхме да намерим тази страница</h1>\n"
+"                    <div id=\"body-div\">\n"
+"                        <div id=\"main-div\">\n"
+"                            <div class=\"text-404\">\n"
+"                                <div>\n"
+"                                    <p>Може би сте въвели неправилен URL на "
+"страницата или страницата е преместена в друга секция или просто страницата "
+"е временно недостъпна.</p>\n"
+"                                </div>\n"
+"                            </div>\n"
+"                        </div>\n"
+"                    </div>\n"
+"                </div>\n"
+"            </div>\n"
+"        </div>\n"
+"    </div>\n"
+"</div>"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:2
+msgid "plain"
+msgstr "обикновен"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:3
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:4
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:5
+msgid "DATE \\a\\t TIME"
+msgstr "ДАТА \\а\\t ВРЕМЕ"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:6
+msgid "FIELD\tFIELD"
+msgstr "ПОЛЕ\tПОЛЕ"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:8
+msgid "text concatenated with 'comments'"
+msgstr "текст, свързан с 'коментари'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:14
+msgid "Stop at the variable"
+msgstr "Спри на променливата"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:19
+msgid "No comments"
+msgstr "Няма коментари"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:26
+msgid "i18n Tagged comment"
+msgstr "i18n маркиран коментар"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:30
+msgid "i18n Tagged comment inside"
+msgstr "i18n маркиран коментар вътре"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:36
+#, php-format
+msgid "i18n tagged %s"
+msgstr "i18n маркиран %s"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:42, fuzzy
+msgid "foo"
+msgstr "foo"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:44, fuzzy
+msgid "bar"
+msgstr "bar"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:51, fuzzy
+msgid "foo bar"
+msgstr "foo bar"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:54
+msgid "World"
+msgstr "Светът"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:55
+msgid "No comment"
+msgstr "Няма коментар"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+#, php-format
+msgid "Within printf: %s"
+msgstr "В рамките на printf: %s"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+msgid "placeholder"
+msgstr "плейсхолдер"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+msgid "After printf"
+msgstr "След printf"
+
+#: vendor/gettext/gettext/tests/assets/phpcode3/input.php:8
+msgid "Translation with comments"
+msgstr "Превод с коментари"
+
+#: vendor/gettext/gettext/tests/assets/phpcode3/input.php:11, fuzzy
+msgid "Foo"
+msgstr "Foo"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:3
+msgid "matching 1"
+msgstr "съвпадение 1"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:4
+msgid "matching 2 singular"
+msgid_plural "matching 2 plural"
+msgstr[0] "съвпадение 2 единствено"
+msgstr[1] "съвпадение 2 множествено"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:8
+msgid "skip singular"
+msgid_plural "skip plural"
+msgstr[0] "пропусни единствено"
+msgstr[1] "пропусни множествено"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:9
+msgid "skip"
+msgstr "пропусни"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:11
+msgid "skip global 1"
+msgstr "пропусни глобално 1"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:12
+msgid "skip global 2"
+msgstr "пропусни глобално 2"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:3
+msgid "no domain"
+msgstr "няма домейн"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:5
+msgid "domain1 Text"
+msgstr "домен1 Текст"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:8
+msgid "domain2 Text"
+msgid_plural "domain2 Text plural"
+msgstr[0] "домен2 Текст"
+msgstr[1] "домен2 Текст множествено"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:9
+msgid "domain2 Text Separate"
+msgstr "домен2 Текст Отделно"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:14
+msgid "no domain 2"
+msgstr "няма домейн 2"
+
+#: vendor/gettext/gettext/tests/assets/phpcode6/input.php:4
+msgid "No domain text"
+msgstr "Текст без домейн"
+
+#: vendor/gettext/gettext/tests/assets/phpcode6/input.php:6
+msgid "Other domain text"
+msgstr "Текст за друг домейн"
+
+#: class-ml-slider-lightbox.php:1131
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a gallery, using %s"
+msgstr "Всички слайдове ще се отворят в галерия, използвайки %s"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "Всички слайдове ще се отворят в светлинна кутия, използвайки %s"

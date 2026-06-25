@@ -69,6 +69,9 @@ class MetaSliderLightboxGallery {
         add_filter( 'metaslider_lightbox_load_assets',         array( $this, 'forceLoadAssetsForBlock' ), 10, 1 );
         add_filter( 'manage_ml_gallery_posts_columns',         array( $this, 'addListColumns' ) );
         add_action( 'manage_ml_gallery_posts_custom_column',   array( $this, 'renderListColumn' ), 10, 2 );
+        add_action( 'wp_ajax_ml_gallery_browse_folder', array( $this, 'ajaxBrowseFolder' ) );
+        add_action( 'wp_ajax_ml_gallery_import_folder', array( $this, 'ajaxImportFolder' ) );
+        add_action( 'wp_ajax_ml_gallery_import_zip', array( $this, 'ajaxImportZip' ) );
     }
 
     /**
@@ -93,6 +96,104 @@ class MetaSliderLightboxGallery {
         );
     }
 
+    private function allowedCaptionTransitions() {
+        return array(
+            'none'       => __( 'None', 'ml-slider-lightbox' ),
+            'fade'       => __( 'Fade', 'ml-slider-lightbox' ),
+            'slide-up'   => __( 'Slide Up', 'ml-slider-lightbox' ),
+            'slide-down' => __( 'Slide Down', 'ml-slider-lightbox' ),
+        );
+    }
+
+    /**
+     * Allowed caption display modes for a gallery.
+     *
+     * Drives the editor dropdown and saveGallery() validation.
+     *
+     * @since 2.23.0
+     * @return array<string,string> value => translatable label
+     */
+    private function allowedCaptionDisplay() {
+        return array(
+            'hidden'   => __( 'Hidden', 'ml-slider-lightbox' ),
+            'both'     => __( 'Gallery + Window', 'ml-slider-lightbox' ),
+            'lightbox' => __( 'Window Only', 'ml-slider-lightbox' ),
+            'gallery'  => __( 'Gallery Only', 'ml-slider-lightbox' ),
+        );
+    }
+
+    /**
+     * Resolve the caption display mode from raw saved settings, migrating the
+     * legacy boolean `captions` flag.
+     *
+     * Order: an explicit valid `caption_display` wins; else legacy `captions`
+     * (1 => lightbox, 0 => hidden); else default `lightbox`.
+     *
+     * @since 2.23.0
+     * @param mixed $saved Raw _ml_gallery_settings meta (array or not).
+     * @return string One of array_keys( allowedCaptionDisplay() ).
+     */
+    private function resolveCaptionDisplay( $saved ) {
+        $saved = is_array( $saved ) ? $saved : array();
+
+        if ( isset( $saved['caption_display'] )
+            && array_key_exists( $saved['caption_display'], $this->allowedCaptionDisplay() ) ) {
+            return $saved['caption_display'];
+        }
+
+        if ( isset( $saved['captions'] ) ) {
+            return 1 === (int) $saved['captions'] ? 'lightbox' : 'hidden';
+        }
+
+        return 'lightbox';
+    }
+
+    /**
+     * Sanitize a hex color, returning the default when empty or invalid.
+     *
+     * @param string|null $raw     Raw color value (may be unset/empty).
+     * @param string      $default Fallback color when sanitization yields nothing.
+     * @return string Sanitized hex color, or the default.
+     */
+    private function sanitizeColorValue( $raw, $default ) {
+        return sanitize_hex_color( $raw ?? '' ) ?: $default;
+    }
+
+    /**
+     * Convert a 3- or 6-digit hex color to an rgba() string at the given alpha.
+     *
+     * @param string $hex   Hex color (e.g. #fff or #ffffff); assumed already
+     *                      validated via sanitize_hex_color().
+     * @param float  $alpha Alpha 0.0–1.0.
+     * @return string rgba(r, g, b, a)
+     */
+    private function hexToRgba( $hex, $alpha ) {
+        $hex = ltrim( (string) $hex, '#' );
+        if ( 3 === strlen( $hex ) ) {
+            $hex = $hex[0] . $hex[0] . $hex[1] . $hex[1] . $hex[2] . $hex[2];
+        }
+        $r = hexdec( substr( $hex, 0, 2 ) );
+        $g = hexdec( substr( $hex, 2, 2 ) );
+        $b = hexdec( substr( $hex, 4, 2 ) );
+        return sprintf(
+            'rgba(%d, %d, %d, %s)',
+            $r,
+            $g,
+            $b,
+            rtrim( rtrim( sprintf( '%.2f', $alpha ), '0' ), '.' )
+        );
+    }
+
+    /**
+     * Clamp an opacity value to the 0.0–1.0 range.
+     *
+     * @param mixed $value Raw opacity value.
+     * @return float Clamped opacity.
+     */
+    private function clampOpacity( $value ) {
+        return min( 1.0, max( 0.0, (float) $value ) );
+    }
+
     private function defaultSettings() {
         return array(
             'mode'        => 'lg-fade',
@@ -100,7 +201,7 @@ class MetaSliderLightboxGallery {
             'counter'     => 1,
             'thumbnails'  => 1,
             'download'    => 0,
-            'captions'    => 1,
+            'caption_display' => 'lightbox',
             'loop'        => 1,
             'swipe_close' => 1,
             'mousewheel'  => 1,
@@ -110,7 +211,12 @@ class MetaSliderLightboxGallery {
             'columns_mobile'   => 1,
             'gap'              => 8,
             'lightbox_size'    => 'full',
+            'add_position'     => 'end',
             'open_in_lightbox' => 1,
+            'show_lightbox_button' => 0,
+            'button_icon'          => 0,
+            'button_text'          => '',
+            'button_position'      => 'top-right',
             // Pro-only settings (default off; rendered as locked for free users)
             'zoom'        => 0,
             'fullscreen'  => 0,
@@ -122,6 +228,10 @@ class MetaSliderLightboxGallery {
 
     private function allowedLayouts() {
         return array( 'grid', 'masonry', 'justified', 'carousel', 'showcase' );
+    }
+
+    private function allowedButtonPositions() {
+        return array( 'top-right', 'top-left', 'bottom-right', 'bottom-left', 'center' );
     }
 
     private function sanitizeImageSize( $size ) {
@@ -147,6 +257,10 @@ class MetaSliderLightboxGallery {
             'toolbar_bg_color'       => '#000000',
             'thumbnail_border_color'       => '#ffffff',
             'thumbnail_border_hover_color' => '#dd6923',
+            'caption_text_color' => '#ffffff',
+            'caption_bg_color'   => '#000000',
+            'caption_text_size'  => '14',
+            'caption_transition' => 'none',
         );
     }
 
@@ -378,6 +492,14 @@ class MetaSliderLightboxGallery {
         if ( ! $is_carousel ) {
             $html .= '<style>.ml-gallery-lightgallery a{pointer-events:none;cursor:default}</style>';
         }
+        // The preview renders inside a narrow editor iframe, so the frontend's
+        // "max-width: 768px" mobile breakpoint fires and the gallery shows the
+        // mobile column count. Re-assert the desktop column count here (later in
+        // source order, so it wins) so the preview matches the frontend.
+        $html .= '<style>@media (max-width:768px){'
+            . '.ml-gallery-container.ml-layout-grid{grid-template-columns:repeat(var(--ml-columns),1fr)}'
+            . '.ml-gallery-container.ml-layout-masonry{columns:var(--ml-columns)}'
+            . '}</style>';
         $html .= '</head><body>';
         $html .= $content;
         $html .= '<script src="' . esc_url( includes_url( 'js/jquery/jquery.min.js' ) ) . '"></script>';
@@ -413,7 +535,9 @@ class MetaSliderLightboxGallery {
             ), $id );
 
             $html .= '<script>window.mlLightboxSettings=' . wp_json_encode( $settings_array ) . ';</script>';
-            $html .= '<script src="' . esc_url( $plugin_url . 'assets/js/ml-lightgallery-init.js' ) . '"></script>';
+            $init_js_path = plugin_dir_path( __FILE__ ) . 'assets/js/ml-lightgallery-init.js';
+            $init_js_ver  = file_exists( $init_js_path ) ? filemtime( $init_js_path ) : '';
+            $html .= '<script src="' . esc_url( $plugin_url . 'assets/js/ml-lightgallery-init.js?ver=' . $init_js_ver ) . '"></script>';
 
             if ( $this->is_pro ) {
                 $pro_js_base  = plugins_url( 'ml-slider-lightbox-pro/assets/plugins/' );
@@ -539,6 +663,7 @@ class MetaSliderLightboxGallery {
 
         $saved_appearance = $post ? get_post_meta( $post->ID, '_ml_gallery_appearance', true ) : array();
         $appearance       = wp_parse_args( is_array( $saved_appearance ) ? $saved_appearance : array(), $this->defaultAppearance() );
+        $caption_display = $this->resolveCaptionDisplay( $saved_settings );
 
         $saved_captions = $post ? get_post_meta( $post->ID, '_ml_gallery_captions', true ) : array();
         $captions       = is_array( $saved_captions ) ? $saved_captions : array();
@@ -551,6 +676,8 @@ class MetaSliderLightboxGallery {
             : __( 'Update Gallery', 'ml-slider-lightbox' );
         ?>
         <div class="ml-lightbox-wrap">
+
+            <?php do_action( 'metaslider_lightbox_admin_notices' ); ?>
 
             <form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
                 <?php wp_nonce_field( 'ml_save_gallery', 'ml_gallery_nonce' ); ?>
@@ -660,9 +787,54 @@ class MetaSliderLightboxGallery {
                             <?php endforeach; ?>
                         </div>
 
-                        <button type="button" id="ml-gallery-add-images" class="button button-primary ml-gallery-add-images-btn">
-                            <?php esc_html_e( 'Add Images', 'ml-slider-lightbox' ); ?>
-                        </button>
+                        <div class="ml-gallery-add-bar">
+                            <div class="ml-gallery-add-split">
+                                <button type="button" id="ml-gallery-add-images" class="button button-primary ml-gallery-add-images-btn">
+                                    <?php esc_html_e( 'Add Images', 'ml-slider-lightbox' ); ?>
+                                </button>
+                                <button type="button" class="button button-primary ml-gallery-add-caret"
+                                        aria-haspopup="true" aria-expanded="false"
+                                        aria-label="<?php esc_attr_e( 'More ways to add images', 'ml-slider-lightbox' ); ?>">
+                                    <span class="ml-caret" aria-hidden="true">&#9662;</span>
+                                </button>
+                                <ul class="ml-gallery-add-menu" role="menu" hidden>
+                                    <li role="none">
+                                        <button type="button" role="menuitem" data-method="upload">
+                                            <?php esc_html_e( 'Upload', 'ml-slider-lightbox' ); ?>
+                                        </button>
+                                    </li>
+                                    <li role="none">
+                                        <button type="button" role="menuitem" data-method="browse">
+                                            <?php esc_html_e( 'Media Library', 'ml-slider-lightbox' ); ?>
+                                        </button>
+                                    </li>
+                                    <li role="none">
+                                        <button type="button" role="menuitem" data-method="server">
+                                            <?php esc_html_e( 'Server Folder', 'ml-slider-lightbox' ); ?>
+                                        </button>
+                                    </li>
+                                    <li role="none">
+                                        <button type="button" role="menuitem" data-method="zip">
+                                            <?php esc_html_e( 'ZIP', 'ml-slider-lightbox' ); ?>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="ml-add-position" role="group" aria-label="<?php esc_attr_e( 'Where to add new images', 'ml-slider-lightbox' ); ?>">
+                                <span class="ml-add-position-label"><?php esc_html_e( 'Add new images at:', 'ml-slider-lightbox' ); ?></span>
+                                <label class="ml-add-position-option">
+                                    <input type="radio" name="ml_gallery_settings[add_position]" value="start"
+                                           <?php checked( $lg_settings['add_position'], 'start' ); ?>>
+                                    <span><?php esc_html_e( 'Start', 'ml-slider-lightbox' ); ?></span>
+                                </label>
+                                <label class="ml-add-position-option">
+                                    <input type="radio" name="ml_gallery_settings[add_position]" value="end"
+                                           <?php checked( $lg_settings['add_position'], 'end' ); ?>>
+                                    <span><?php esc_html_e( 'End', 'ml-slider-lightbox' ); ?></span>
+                                </label>
+                            </div>
+                        </div>
                     </main>
 
                     <aside class="ml-gallery-sidebar">
@@ -749,16 +921,6 @@ class MetaSliderLightboxGallery {
 
                             <?php
                             $hide_columns  = in_array( $lg_settings['layout'], array( 'justified', 'carousel', 'showcase' ), true );
-                            $registered    = wp_get_registered_image_subsizes();
-                            $size_options  = array();
-                            foreach ( get_intermediate_image_sizes() as $s ) {
-                                $dims = isset( $registered[ $s ] )
-                                    ? ' (' . $registered[ $s ]['width'] . '×' . $registered[ $s ]['height'] . ')'
-                                    : '';
-                                $size_options[ $s ] = ucfirst( str_replace( '-', ' ', $s ) ) . $dims;
-                            }
-                            $size_options['full'] = __( 'Full (original)', 'ml-slider-lightbox' );
-                            $saved_lb_size        = $lg_settings['lightbox_size'] ?? 'full';
                             ?>
                             <div class="ml-gallery-setting ml-gallery-columns-row<?php echo $hide_columns ? ' is-hidden' : ''; ?>">
                                 <label for="ml_gallery_columns" class="ml-tipsy" title="<?php esc_attr_e( 'Number of columns to show on desktop screens', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Columns', 'ml-slider-lightbox' ); ?></label>
@@ -791,19 +953,10 @@ class MetaSliderLightboxGallery {
                                        class="ml-gallery-range widefat">
                             </div>
 
-                            <div class="ml-gallery-setting">
-                                <label for="ml_gallery_lightbox_size" class="ml-tipsy" title="<?php esc_attr_e( 'The size of the image shown when a visitor clicks to view it in full', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Image Size', 'ml-slider-lightbox' ); ?></label>
-                                <select id="ml_gallery_lightbox_size" name="ml_gallery_settings[lightbox_size]">
-                                    <?php foreach ( $size_options as $val => $label ) : ?>
-                                        <option value="<?php echo esc_attr( $val ); ?>" <?php selected( $saved_lb_size, $val ); ?>><?php echo esc_html( $label ); ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </div>
-
                         </div>
 
                         <div class="ml-gallery-sidebar-panel">
-                            <h3><?php esc_html_e( 'Gallery Settings', 'ml-slider-lightbox' ); ?></h3>
+                            <h3><?php esc_html_e( 'Gallery', 'ml-slider-lightbox' ); ?></h3>
 
                             <?php
                             $pro_tooltips = array(
@@ -820,7 +973,6 @@ class MetaSliderLightboxGallery {
                                 'controls'    => __( 'Show left and right navigation arrows', 'ml-slider-lightbox' ),
                                 'counter'     => __( 'Display the current image number and total count', 'ml-slider-lightbox' ),
                                 'thumbnails'  => __( 'Show a strip of thumbnail images at the bottom of the gallery', 'ml-slider-lightbox' ),
-                                'captions'    => __( 'Display image captions in the gallery', 'ml-slider-lightbox' ),
                                 'pager'       => __( 'Show dot navigation area below each image.', 'ml-slider-lightbox' ),
                                 'zoom'        => __( 'Pinch or scroll to zoom in and out of gallery images. The Zoom control will appear only if the original size is larger than the gallery size.', 'ml-slider-lightbox' ),
                                 'fullscreen'  => __( 'Expand the gallery window to fill the whole screen.', 'ml-slider-lightbox' ),
@@ -867,7 +1019,69 @@ class MetaSliderLightboxGallery {
                                     </div>
                                 <?php endif;
                             };
+
+                            $registered    = wp_get_registered_image_subsizes();
+                            $size_options  = array();
+                            foreach ( get_intermediate_image_sizes() as $s ) {
+                                $dims = isset( $registered[ $s ] )
+                                    ? ' (' . $registered[ $s ]['width'] . '×' . $registered[ $s ]['height'] . ')'
+                                    : '';
+                                $size_options[ $s ] = ucfirst( str_replace( '-', ' ', $s ) ) . $dims;
+                            }
+                            $size_options['full'] = __( 'Full (original)', 'ml-slider-lightbox' );
+                            $saved_lb_size        = $lg_settings['lightbox_size'] ?? 'full';
                             ?>
+
+                            <?php $render_toggle( 'open_in_lightbox', __( 'Show in Gallery Window', 'ml-slider-lightbox' ), 'ml-show-in-modal-row' ); ?>
+
+                            <div class="ml-gallery-setting">
+                                <label for="ml_gallery_lightbox_size" class="ml-tipsy" title="<?php esc_attr_e( 'The size of the image shown when a visitor clicks to view it in full', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Image Size', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_lightbox_size" name="ml_gallery_settings[lightbox_size]">
+                                    <?php foreach ( $size_options as $val => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $val ); ?>" <?php selected( $saved_lb_size, $val ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <?php
+                            $btn_position     = $lg_settings['button_position'] ?? 'top-right';
+                            $btn_text         = $lg_settings['button_text'] ?? '';
+                            $btn_icon         = ! empty( $lg_settings['button_icon'] );
+                            // The button only applies to grid-like layouts that open a gallery window.
+                            $hide_btn_panel   = in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true ) || empty( $lg_settings['open_in_lightbox'] );
+                            $hide_btn_subopts = empty( $lg_settings['show_lightbox_button'] );
+                            ?>
+                            <div class="ml-button-settings-group<?php echo $hide_btn_panel ? ' is-hidden' : ''; ?>">
+                                <?php $render_toggle( 'show_lightbox_button', __( 'Open in Gallery Button', 'ml-slider-lightbox' ), 'ml-show-button-row' ); ?>
+
+                                <div class="ml-button-suboptions<?php echo $hide_btn_subopts ? ' is-hidden' : ''; ?>">
+                                    <?php $render_toggle( 'button_icon', __( 'Use Icon Instead of Text', 'ml-slider-lightbox' ) ); ?>
+
+                                    <div class="ml-gallery-setting ml-button-text-row<?php echo $btn_icon ? ' is-hidden' : ''; ?>">
+                                        <label for="ml_gallery_button_text"><?php esc_html_e( 'Button Text', 'ml-slider-lightbox' ); ?></label>
+                                        <input type="text"
+                                               id="ml_gallery_button_text"
+                                               name="ml_gallery_settings[button_text]"
+                                               value="<?php echo esc_attr( $btn_text ); ?>"
+                                               placeholder="<?php esc_attr_e( 'Open in Gallery', 'ml-slider-lightbox' ); ?>"
+                                               class="ml-button-text-input">
+                                    </div>
+
+                                    <div class="ml-gallery-setting">
+                                        <label for="ml_gallery_button_position"><?php esc_html_e( 'Button Position', 'ml-slider-lightbox' ); ?></label>
+                                        <select id="ml_gallery_button_position" name="ml_gallery_settings[button_position]">
+                                            <option value="top-right"    <?php selected( $btn_position, 'top-right' ); ?>><?php esc_html_e( 'Top Right',    'ml-slider-lightbox' ); ?></option>
+                                            <option value="top-left"     <?php selected( $btn_position, 'top-left' ); ?>><?php esc_html_e( 'Top Left',     'ml-slider-lightbox' ); ?></option>
+                                            <option value="bottom-right" <?php selected( $btn_position, 'bottom-right' ); ?>><?php esc_html_e( 'Bottom Right', 'ml-slider-lightbox' ); ?></option>
+                                            <option value="bottom-left"  <?php selected( $btn_position, 'bottom-left' ); ?>><?php esc_html_e( 'Bottom Left',  'ml-slider-lightbox' ); ?></option>
+                                            <option value="center"       <?php selected( $btn_position, 'center' ); ?>><?php esc_html_e( 'Center',       'ml-slider-lightbox' ); ?></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <?php $hide_lightbox_sections = in_array( $lg_settings['layout'], array( 'grid', 'masonry', 'justified' ), true ) && empty( $lg_settings['open_in_lightbox'] ); ?>
+                            <div class="ml-lightbox-settings-group<?php echo $hide_lightbox_sections ? ' is-hidden' : ''; ?>">
 
                             <p class="ml-settings-section-label"><?php esc_html_e( 'Display', 'ml-slider-lightbox' ); ?></p>
                             <div class="ml-gallery-setting">
@@ -883,14 +1097,82 @@ class MetaSliderLightboxGallery {
                             <?php $render_toggle( 'controls',   __( 'Arrows',        'ml-slider-lightbox' ) ); ?>
                             <?php $render_toggle( 'counter',    __( 'Slide Counter', 'ml-slider-lightbox' ) ); ?>
                             <?php $render_toggle( 'thumbnails', __( 'Thumbnails',    'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'captions',   __( 'Captions',      'ml-slider-lightbox' ) ); ?>
                             <?php if ( ! $this->is_pro ) : ?>
                                 <?php $render_toggle( 'pager', __( 'Pager', 'ml-slider-lightbox' ) ); ?>
                             <?php else : ?>
                                 <?php do_action( 'ml_gallery_pro_display_fields', $gallery_id ); ?>
                             <?php endif; ?>
 
-                            <p class="ml-settings-section-label"><?php esc_html_e( 'Toolbar Controls', 'ml-slider-lightbox' ); ?></p>
+                            <p class="ml-settings-section-label"><?php esc_html_e( 'Navigation', 'ml-slider-lightbox' ); ?></p>
+                            <?php $render_toggle( 'loop', __( 'Loop', 'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'keyboard',    __( 'Keyboard',       'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'mousewheel',  __( 'Mouse wheel',    'ml-slider-lightbox' ) ); ?>
+                            <?php $render_toggle( 'swipe_close', __( 'Swipe to close', 'ml-slider-lightbox' ) ); ?>
+
+                            </div>
+
+                        </div>
+
+                        <div class="ml-gallery-sidebar-panel">
+                            <h3><?php esc_html_e( 'Captions', 'ml-slider-lightbox' ); ?></h3>
+                            <div class="ml-gallery-setting">
+                                <label for="ml_gallery_caption_display" class="ml-tipsy" title="<?php esc_attr_e( 'Where captions appear: on gallery thumbnails, in the gallery window, or both.', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Captions', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_caption_display" name="ml_gallery_settings[caption_display]">
+                                    <?php foreach ( $this->allowedCaptionDisplay() as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( $caption_display, $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <?php $caption_style_hidden = 'hidden' === $caption_display ? ' is-hidden' : ''; ?>
+                            <?php $caption_transition_hidden = in_array( $caption_display, array( 'hidden', 'gallery' ), true ) ? ' is-hidden' : ''; ?>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col ml-caption-style-field<?php echo esc_attr( $caption_style_hidden ); ?>">
+                                <label for="ml_gallery_caption_text_size" class="ml-tipsy" title="<?php esc_attr_e( 'Caption text size. Applies to both gallery thumbnails and the gallery window.', 'ml-slider-lightbox' ); ?>">
+                                    <?php esc_html_e( 'Text Size', 'ml-slider-lightbox' ); ?>
+                                    <span class="ml-gallery-range-value"><?php echo absint( $appearance['caption_text_size'] ); ?>px</span>
+                                </label>
+                                <input type="range"
+                                       id="ml_gallery_caption_text_size"
+                                       name="ml_gallery_appearance[caption_text_size]"
+                                       min="10" max="24" step="1"
+                                       value="<?php echo absint( $appearance['caption_text_size'] ); ?>"
+                                       class="ml-gallery-range widefat">
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col ml-caption-style-field<?php echo esc_attr( $caption_style_hidden ); ?>">
+                                <label for="ml_gallery_caption_text_color" class="ml-tipsy" title="<?php esc_attr_e( 'Caption text color. Applies to both gallery thumbnails and the gallery window.', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Text Color', 'ml-slider-lightbox' ); ?></label>
+                                <input type="text"
+                                       id="ml_gallery_caption_text_color"
+                                       name="ml_gallery_appearance[caption_text_color]"
+                                       value="<?php echo esc_attr( $appearance['caption_text_color'] ); ?>"
+                                       class="ml-gallery-color-picker"
+                                       data-default-color="#ffffff">
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col ml-caption-style-field<?php echo esc_attr( $caption_style_hidden ); ?>">
+                                <label for="ml_gallery_caption_bg_color" class="ml-tipsy" title="<?php esc_attr_e( 'Caption background. Applies to both gallery thumbnails and the gallery window; on thumbnails it fades to transparent for readability.', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Background Color', 'ml-slider-lightbox' ); ?></label>
+                                <input type="text"
+                                       id="ml_gallery_caption_bg_color"
+                                       name="ml_gallery_appearance[caption_bg_color]"
+                                       value="<?php echo esc_attr( $appearance['caption_bg_color'] ); ?>"
+                                       class="ml-gallery-color-picker"
+                                       data-default-color="#000000">
+                            </div>
+
+                            <div class="ml-gallery-setting ml-caption-style-field ml-caption-window-only<?php echo esc_attr( $caption_transition_hidden ); ?>">
+                                <label for="ml_gallery_caption_transition" class="ml-tipsy" title="<?php esc_attr_e( 'How the caption animates in. Applies to the gallery window only — not to gallery thumbnail captions.', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Transition', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_caption_transition" name="ml_gallery_appearance[caption_transition]">
+                                    <?php foreach ( $this->allowedCaptionTransitions() as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( $appearance['caption_transition'], $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="ml-gallery-sidebar-panel ml-lightbox-only-panel<?php echo $hide_lightbox_sections ? ' is-hidden' : ''; ?>">
+                            <h3><?php esc_html_e( 'Toolbar', 'ml-slider-lightbox' ); ?></h3>
+                            <?php $render_toggle( 'download', __( 'Download', 'ml-slider-lightbox' ) ); ?>
                             <?php if ( ! $this->is_pro ) : ?>
                                 <?php $render_toggle( 'share',      __( 'Share',           'ml-slider-lightbox' ) ); ?>
                                 <?php $render_toggle( 'autoplay',   __( 'Autoplay',         'ml-slider-lightbox' ) ); ?>
@@ -900,23 +1182,14 @@ class MetaSliderLightboxGallery {
                             <?php else : ?>
                                 <?php do_action( 'ml_gallery_pro_toolbar_fields', $gallery_id ); ?>
                             <?php endif; ?>
-                            <?php $render_toggle( 'download', __( 'Download', 'ml-slider-lightbox' ) ); ?>
-
-                            <p class="ml-settings-section-label"><?php esc_html_e( 'Advanced Features', 'ml-slider-lightbox' ); ?></p>
-                            <?php $render_toggle( 'open_in_lightbox', __( 'Show in Gallery Window', 'ml-slider-lightbox' ), 'ml-show-in-modal-row' ); ?>
-                            <?php $render_toggle( 'loop', __( 'Loop', 'ml-slider-lightbox' ) ); ?>
                             <?php if ( ! $this->is_pro ) : ?>
                                 <?php $render_toggle( 'hash', __( 'Unique Image URLs', 'ml-slider-lightbox' ) ); ?>
                             <?php else : ?>
                                 <?php do_action( 'ml_gallery_pro_advanced_fields', $gallery_id ); ?>
                             <?php endif; ?>
-                            <?php $render_toggle( 'keyboard',    __( 'Keyboard',       'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'mousewheel',  __( 'Mouse wheel',    'ml-slider-lightbox' ) ); ?>
-                            <?php $render_toggle( 'swipe_close', __( 'Swipe to close', 'ml-slider-lightbox' ) ); ?>
-
                         </div>
 
-                        <div class="ml-gallery-sidebar-panel">
+                        <div class="ml-gallery-sidebar-panel ml-lightbox-only-panel<?php echo $hide_lightbox_sections ? ' is-hidden' : ''; ?>">
                             <h3><?php esc_html_e( 'Appearance', 'ml-slider-lightbox' ); ?></h3>
 
                             <div class="ml-gallery-setting ml-gallery-setting--col">
@@ -932,13 +1205,13 @@ class MetaSliderLightboxGallery {
                             <div class="ml-gallery-setting ml-gallery-setting--col">
                                 <label for="ml_gallery_bg_opacity">
                                     <?php esc_html_e( 'Background Opacity', 'ml-slider-lightbox' ); ?>
-                                    <span class="ml-gallery-range-value"><?php echo esc_html( (string) min( 1.0, max( 0.0, (float) $appearance['bg_opacity'] ) ) ); ?></span>
+                                    <span class="ml-gallery-range-value"><?php echo esc_html( (string) $this->clampOpacity( $appearance['bg_opacity'] ) ); ?></span>
                                 </label>
                                 <input type="range"
                                        id="ml_gallery_bg_opacity"
                                        name="ml_gallery_appearance[bg_opacity]"
                                        min="0" max="1" step="0.05"
-                                       value="<?php echo esc_attr( (string) min( 1.0, max( 0.0, (float) $appearance['bg_opacity'] ) ) ); ?>"
+                                       value="<?php echo esc_attr( (string) $this->clampOpacity( $appearance['bg_opacity'] ) ); ?>"
                                        class="ml-gallery-range widefat">
                             </div>
 
@@ -1073,6 +1346,40 @@ class MetaSliderLightboxGallery {
                     </div>
                 </div>
 
+                <div id="ml-folder-modal" role="dialog" aria-modal="true" aria-labelledby="ml-folder-modal-title">
+                    <div id="ml-folder-overlay" aria-hidden="true"></div>
+                    <div id="ml-folder-modal-inner">
+                        <div id="ml-folder-modal-header">
+                            <h2 id="ml-folder-modal-title"><?php esc_html_e( 'Import from Server Folder', 'ml-slider-lightbox' ); ?></h2>
+                            <button type="button" id="ml-folder-close" aria-label="<?php esc_attr_e( 'Close', 'ml-slider-lightbox' ); ?>">&times;</button>
+                        </div>
+                        <div id="ml-folder-breadcrumb" class="ml-folder-breadcrumb"></div>
+                        <div id="ml-folder-modal-body">
+                            <div id="ml-folder-results" class="ml-folder-results"></div>
+                        </div>
+                        <div id="ml-folder-modal-footer">
+                            <span id="ml-folder-status" class="ml-folder-status"></span>
+                            <button type="button" id="ml-folder-cancel" class="button"><?php esc_html_e( 'Cancel', 'ml-slider-lightbox' ); ?></button>
+                            <button type="button" id="ml-folder-import" class="button button-primary"><?php esc_html_e( 'Import selected', 'ml-slider-lightbox' ); ?></button>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="file" id="ml-zip-input" accept=".zip,application/zip" style="display:none">
+
+                <div id="ml-zip-modal" role="dialog" aria-modal="true" aria-labelledby="ml-zip-modal-title">
+                    <div id="ml-zip-overlay" aria-hidden="true"></div>
+                    <div id="ml-zip-modal-inner">
+                        <div id="ml-zip-modal-header">
+                            <h2 id="ml-zip-modal-title"><?php esc_html_e( 'Import from ZIP', 'ml-slider-lightbox' ); ?></h2>
+                            <button type="button" id="ml-zip-close" aria-label="<?php esc_attr_e( 'Close', 'ml-slider-lightbox' ); ?>">&times;</button>
+                        </div>
+                        <div id="ml-zip-modal-body">
+                            <p id="ml-zip-status" class="ml-zip-status"></p>
+                        </div>
+                    </div>
+                </div>
+
             </form>
         </div>
         <?php
@@ -1143,28 +1450,43 @@ class MetaSliderLightboxGallery {
             $app_raw       = isset( $_POST['ml_gallery_appearance'] ) && is_array( $_POST['ml_gallery_appearance'] )
                 ? array_map( 'sanitize_text_field', wp_unslash( $_POST['ml_gallery_appearance'] ) )
                 : array();
-            $bg_opacity = isset( $app_raw['bg_opacity'] ) ? min( 1.0, max( 0.0, (float) $app_raw['bg_opacity'] ) ) : 0.9;
+            $bg_opacity = isset( $app_raw['bg_opacity'] ) ? $this->clampOpacity( $app_raw['bg_opacity'] ) : 0.9;
             update_post_meta( $gallery_id, '_ml_gallery_appearance', array(
-                'bg_color'               => sanitize_hex_color( $app_raw['bg_color'] ?? '' ) ?: '#000000',
+                'bg_color'               => $this->sanitizeColorValue( $app_raw['bg_color'] ?? '', '#000000' ),
                 'bg_opacity'             => (string) $bg_opacity,
-                'arrow_color'            => sanitize_hex_color( $app_raw['arrow_color'] ?? '' ) ?: '#ffffff',
-                'arrow_bg_color'         => sanitize_hex_color( $app_raw['arrow_bg_color'] ?? '' ) ?: '#000000',
-                'close_color'            => sanitize_hex_color( $app_raw['close_color'] ?? '' ) ?: '#ffffff',
-                'close_bg_color'         => sanitize_hex_color( $app_raw['close_bg_color'] ?? '' ) ?: '#000000',
-                'toolbar_color'          => sanitize_hex_color( $app_raw['toolbar_color'] ?? '' ) ?: '#ffffff',
-                'toolbar_bg_color'       => sanitize_hex_color( $app_raw['toolbar_bg_color'] ?? '' ) ?: '#000000',
-                'thumbnail_border_color'       => sanitize_hex_color( $app_raw['thumbnail_border_color'] ?? '' ) ?: '#ffffff',
-                'thumbnail_border_hover_color' => sanitize_hex_color( $app_raw['thumbnail_border_hover_color'] ?? '' ) ?: '#dd6923',
+                'arrow_color'            => $this->sanitizeColorValue( $app_raw['arrow_color'] ?? '', '#ffffff' ),
+                'arrow_bg_color'         => $this->sanitizeColorValue( $app_raw['arrow_bg_color'] ?? '', '#000000' ),
+                'close_color'            => $this->sanitizeColorValue( $app_raw['close_color'] ?? '', '#ffffff' ),
+                'close_bg_color'         => $this->sanitizeColorValue( $app_raw['close_bg_color'] ?? '', '#000000' ),
+                'toolbar_color'          => $this->sanitizeColorValue( $app_raw['toolbar_color'] ?? '', '#ffffff' ),
+                'toolbar_bg_color'       => $this->sanitizeColorValue( $app_raw['toolbar_bg_color'] ?? '', '#000000' ),
+                'thumbnail_border_color'       => $this->sanitizeColorValue( $app_raw['thumbnail_border_color'] ?? '', '#ffffff' ),
+                'thumbnail_border_hover_color' => $this->sanitizeColorValue( $app_raw['thumbnail_border_hover_color'] ?? '', '#dd6923' ),
+                'caption_text_color' => $this->sanitizeColorValue( $app_raw['caption_text_color'] ?? '', '#ffffff' ),
+                'caption_bg_color'   => $this->sanitizeColorValue( $app_raw['caption_bg_color'] ?? '', '#000000' ),
+                'caption_text_size'  => (string) min( 24, max( 10, (int) ( $app_raw['caption_text_size'] ?? 14 ) ) ),
+                'caption_transition' => in_array( $app_raw['caption_transition'] ?? '', array_keys( $this->allowedCaptionTransitions() ), true )
+                    ? $app_raw['caption_transition'] : 'none',
             ) );
 
             $raw_layout = isset( $settings_raw['layout'] ) ? sanitize_key( $settings_raw['layout'] ) : 'grid';
+
+            $caption_display = array_key_exists( $settings_raw['caption_display'] ?? '', $this->allowedCaptionDisplay() )
+                ? $settings_raw['caption_display'] : 'lightbox';
+            // Carousel/Showcase offer only Hidden and Gallery Only (the inline view
+            // is the only surface); coerce the lightbox-based values to 'gallery'.
+            if ( in_array( $caption_display, array( 'both', 'lightbox' ), true )
+                && in_array( $raw_layout, array( 'carousel', 'showcase' ), true ) ) {
+                $caption_display = 'gallery';
+            }
+
             update_post_meta( $gallery_id, '_ml_gallery_settings', array(
                 'mode'             => in_array( $raw_mode, array_keys( $this->allowedModes() ), true ) ? $raw_mode : 'lg-fade',
                 'controls'         => ! empty( $settings_raw['controls'] ) ? 1 : 0,
                 'counter'          => ! empty( $settings_raw['counter'] ) ? 1 : 0,
                 'thumbnails'       => ! empty( $settings_raw['thumbnails'] ) ? 1 : 0,
                 'download'         => ! empty( $settings_raw['download'] ) ? 1 : 0,
-                'captions'         => ! empty( $settings_raw['captions'] ) ? 1 : 0,
+                'caption_display'  => $caption_display,
                 'loop'             => ! empty( $settings_raw['loop'] ) ? 1 : 0,
                 'swipe_close'      => ! empty( $settings_raw['swipe_close'] ) ? 1 : 0,
                 'mousewheel'       => ! empty( $settings_raw['mousewheel'] ) ? 1 : 0,
@@ -1174,7 +1496,13 @@ class MetaSliderLightboxGallery {
                 'columns_mobile'   => min( 6, max( 1, (int) ( $settings_raw['columns_mobile'] ?? 1 ) ) ),
                 'gap'              => min( 32, max( 0, (int) ( $settings_raw['gap'] ?? 8 ) ) ),
                 'lightbox_size'    => $this->sanitizeImageSize( $settings_raw['lightbox_size'] ?? 'full' ),
+                'add_position'     => in_array( $settings_raw['add_position'] ?? '', array( 'start', 'end' ), true ) ? $settings_raw['add_position'] : 'end',
                 'open_in_lightbox' => in_array( $raw_layout, array( 'carousel', 'showcase' ), true ) ? 1 : ( ! empty( $settings_raw['open_in_lightbox'] ) ? 1 : 0 ),
+                'show_lightbox_button' => ! empty( $settings_raw['show_lightbox_button'] ) ? 1 : 0,
+                'button_icon'          => ! empty( $settings_raw['button_icon'] ) ? 1 : 0,
+                'button_text'          => isset( $settings_raw['button_text'] ) ? sanitize_text_field( $settings_raw['button_text'] ) : '',
+                'button_position'      => in_array( $settings_raw['button_position'] ?? '', $this->allowedButtonPositions(), true )
+                    ? $settings_raw['button_position'] : 'top-right',
             ) );
 
             do_action( 'ml_save_gallery_pro', $gallery_id );
@@ -1228,6 +1556,245 @@ class MetaSliderLightboxGallery {
     }
 
     /**
+     * Resolve the browsable import root (uploads dir), as a canonical real path.
+     *
+     * @return string|false
+     */
+    private function importRoot() {
+        $uploads = wp_get_upload_dir();
+        $base    = isset( $uploads['basedir'] ) ? $uploads['basedir'] : '';
+        $base    = apply_filters( 'ml_gallery_import_root', $base );
+        $real    = $base ? realpath( $base ) : false;
+        return $real ? $real : false;
+    }
+
+    /**
+     * Resolve a uploads-relative path to a contained absolute path, or false.
+     *
+     * @param string $relpath Path relative to the import root.
+     * @return string|false
+     */
+    private function resolveImportPath( $relpath ) {
+        $root = $this->importRoot();
+        if ( ! $root ) {
+            return false;
+        }
+        $relpath = ltrim( (string) $relpath, "/\\" );
+        $target  = ( '' === $relpath ) ? $root : $root . DIRECTORY_SEPARATOR . $relpath;
+        $real    = realpath( $target );
+        if ( false === $real ) {
+            return false;
+        }
+        if ( $real === $root || 0 === strpos( $real, $root . DIRECTORY_SEPARATOR ) ) {
+            return $real;
+        }
+        return false;
+    }
+
+    /**
+     * Build the uploads URL for an absolute path inside the uploads dir.
+     *
+     * @param string $abs_path Absolute file path.
+     * @return string Empty string if the path is not under uploads.
+     */
+    private function uploadsUrlForPath( $abs_path ) {
+        $uploads = wp_get_upload_dir();
+        $basedir = isset( $uploads['basedir'] ) ? realpath( $uploads['basedir'] ) : false;
+        $real    = realpath( $abs_path );
+        if ( ! $basedir || ! $real
+            || ( $real !== $basedir && 0 !== strpos( $real, $basedir . DIRECTORY_SEPARATOR ) ) ) {
+            return '';
+        }
+        $rel = ltrim( substr( $real, strlen( $basedir ) ), "/\\" );
+        $rel = str_replace( '\\', '/', $rel );
+        return trailingslashit( $uploads['baseurl'] ) . $rel;
+    }
+
+    /**
+     * Whether a ZIP entry name is a safe, importable image (no traversal).
+     *
+     * @param string $name Entry name from the archive listing.
+     * @return bool
+     */
+    private function isSafeZipImageEntry( $name ) {
+        $name = (string) $name;
+        if ( '' === $name ) {
+            return false;
+        }
+        // Directory entry.
+        if ( '/' === substr( $name, -1 ) || '\\' === substr( $name, -1 ) ) {
+            return false;
+        }
+        // Absolute path or Windows drive prefix.
+        if ( '/' === $name[0] || '\\' === $name[0] || preg_match( '#^[A-Za-z]:#', $name ) ) {
+            return false;
+        }
+        // Path traversal (conservative: reject any '..').
+        if ( false !== strpos( $name, '..' ) ) {
+            return false;
+        }
+        $allowed = array( 'jpg', 'jpeg', 'png', 'gif', 'webp', 'avif' );
+        $ext     = strtolower( pathinfo( $name, PATHINFO_EXTENSION ) );
+        return in_array( $ext, $allowed, true );
+    }
+
+    /**
+     * AJAX: list subfolders and images within an uploads-relative folder.
+     */
+    public function ajaxBrowseFolder() {
+        if ( ! check_ajax_referer( 'ml_gallery_folder', '_wpnonce', false ) || ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( array( 'message' => __( 'Permission denied.', 'ml-slider-lightbox' ) ), 403 );
+            return;
+        }
+
+        $rel = isset( $_POST['path'] ) ? sanitize_text_field( wp_unslash( $_POST['path'] ) ) : '';
+        $dir = $this->resolveImportPath( $rel );
+        if ( ! $dir || ! is_dir( $dir ) ) {
+            wp_send_json_error( array( 'message' => __( 'Folder not found.', 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        $root     = $this->importRoot();
+        $rel_norm = ltrim( str_replace( '\\', '/', substr( $dir, strlen( $root ) ) ), '/' );
+
+        $entries = @scandir( $dir );
+        if ( false === $entries ) {
+            wp_send_json_error( array( 'message' => __( 'Folder could not be read.', 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        $allowed   = array( 'jpg', 'jpeg', 'png', 'gif', 'webp', 'avif' );
+        $limit     = 200;
+        $folders   = array();
+        $images    = array();
+        $truncated = false;
+
+        foreach ( $entries as $entry ) {
+            if ( '.' === $entry || '..' === $entry || '.' === $entry[0] ) {
+                continue;
+            }
+            $abs       = $dir . DIRECTORY_SEPARATOR . $entry;
+            $child_rel = ( '' === $rel_norm ? '' : $rel_norm . '/' ) . $entry;
+
+            if ( is_dir( $abs ) ) {
+                $folders[] = array( 'name' => $entry, 'path' => $child_rel );
+            } elseif ( is_file( $abs ) ) {
+                $ext = strtolower( pathinfo( $entry, PATHINFO_EXTENSION ) );
+                if ( ! in_array( $ext, $allowed, true ) ) {
+                    continue;
+                }
+                if ( count( $images ) >= $limit ) {
+                    $truncated = true;
+                    continue;
+                }
+                $url      = $this->uploadsUrlForPath( $abs );
+                $id       = $url ? attachment_url_to_postid( $url ) : 0;
+                $images[] = array( 'name' => $entry, 'path' => $child_rel, 'url' => $url, 'id' => (int) $id );
+            }
+        }
+
+        usort( $folders, function ( $a, $b ) { return strcasecmp( $a['name'], $b['name'] ); } );
+        usort( $images, function ( $a, $b ) { return strcasecmp( $a['name'], $b['name'] ); } );
+
+        $crumbs = array( array( 'name' => __( 'Uploads', 'ml-slider-lightbox' ), 'path' => '' ) );
+        if ( '' !== $rel_norm ) {
+            $acc = '';
+            foreach ( explode( '/', $rel_norm ) as $seg ) {
+                $acc      = ( '' === $acc ? '' : $acc . '/' ) . $seg;
+                $crumbs[] = array( 'name' => $seg, 'path' => $acc );
+            }
+        }
+
+        wp_send_json_success( array(
+            'breadcrumb' => $crumbs,
+            'folders'    => $folders,
+            'images'     => $images,
+            'truncated'  => $truncated,
+        ) );
+    }
+
+    /**
+     * Return an existing attachment id for the file, or create one in place.
+     *
+     * @param string $abs_path Absolute path to an image already inside uploads.
+     * @return int Attachment id, or 0 on failure.
+     */
+    private function findOrCreateAttachment( $abs_path ) {
+        $url = $this->uploadsUrlForPath( $abs_path );
+        if ( $url ) {
+            $existing = attachment_url_to_postid( $url );
+            if ( $existing ) {
+                return (int) $existing;
+            }
+        }
+
+        $filetype = wp_check_filetype( $abs_path );
+        if ( empty( $filetype['type'] ) ) {
+            return 0;
+        }
+
+        $attachment = array(
+            'guid'           => $url ? $url : '',
+            'post_mime_type' => $filetype['type'],
+            'post_title'     => sanitize_file_name( pathinfo( $abs_path, PATHINFO_FILENAME ) ),
+            'post_content'   => '',
+            'post_status'    => 'inherit',
+        );
+
+        $attach_id = wp_insert_attachment( $attachment, $abs_path );
+        if ( is_wp_error( $attach_id ) || ! $attach_id ) {
+            return 0;
+        }
+
+        require_once ABSPATH . 'wp-admin/includes/image.php';
+        $meta = wp_generate_attachment_metadata( $attach_id, $abs_path );
+        wp_update_attachment_metadata( $attach_id, $meta );
+
+        return (int) $attach_id;
+    }
+
+    /**
+     * AJAX: import selected uploads-relative image paths as attachments.
+     */
+    public function ajaxImportFolder() {
+        if ( ! check_ajax_referer( 'ml_gallery_folder', '_wpnonce', false ) || ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( array( 'message' => __( 'Permission denied.', 'ml-slider-lightbox' ) ), 403 );
+            return; // Defensive: ensure nothing else runs even if a filter/override prevents wp_die().
+        }
+
+        $paths = ( isset( $_POST['paths'] ) && is_array( $_POST['paths'] ) )
+            ? array_map( function ( $p ) { return sanitize_text_field( wp_unslash( $p ) ); }, $_POST['paths'] )
+            : array();
+
+        $allowed     = array( 'jpg', 'jpeg', 'png', 'gif', 'webp', 'avif' );
+        $attachments = array();
+        $skipped     = 0;
+
+        foreach ( $paths as $rel ) {
+            $abs = $this->resolveImportPath( $rel );
+            $ext = $abs ? strtolower( pathinfo( $abs, PATHINFO_EXTENSION ) ) : '';
+            if ( ! $abs || ! is_file( $abs ) || ! in_array( $ext, $allowed, true ) ) {
+                $skipped++;
+                continue;
+            }
+            $id = $this->findOrCreateAttachment( $abs );
+            if ( ! $id ) {
+                $skipped++;
+                continue;
+            }
+            $thumb = wp_get_attachment_image_url( $id, 'thumbnail' );
+            $full  = wp_get_attachment_url( $id );
+            $attachments[] = array(
+                'id'    => $id,
+                'url'   => $full ? $full : '',
+                'thumb' => $thumb ? $thumb : ( $full ? $full : '' ),
+            );
+        }
+
+        wp_send_json_success( array( 'attachments' => $attachments, 'skipped' => $skipped ) );
+    }
+
+    /**
      * Enqueue admin assets on the custom gallery editor page only.
      *
      * @since 2.23.0
@@ -1254,7 +1821,7 @@ class MetaSliderLightboxGallery {
                 'ml-gallery-admin',
                 plugin_dir_url( __FILE__ ) . 'assets/js/ml-gallery-admin.js',
                 array( 'jquery' ),
-                $this->version,
+                filemtime( plugin_dir_path( __FILE__ ) . 'assets/js/ml-gallery-admin.js' ) ?: $this->version,
                 true
             );
             return;
@@ -1284,7 +1851,7 @@ class MetaSliderLightboxGallery {
             'ml-gallery-admin',
             plugin_dir_url( __FILE__ ) . 'assets/js/ml-gallery-admin.js',
             array( 'jquery', 'jquery-ui-sortable', 'media-upload', 'wp-color-picker', 'jquery-tipsy' ),
-            $this->version,
+            filemtime( plugin_dir_path( __FILE__ ) . 'assets/js/ml-gallery-admin.js' ) ?: $this->version,
             true
         );
 
@@ -1296,6 +1863,21 @@ class MetaSliderLightboxGallery {
                 'selectButton'     => __( 'Add to Gallery', 'ml-slider-lightbox' ),
                 'removeLabel'      => __( 'Remove image', 'ml-slider-lightbox' ),
                 'editCaptionLabel' => __( 'Edit caption', 'ml-slider-lightbox' ),
+                'folderNonce'     => wp_create_nonce( 'ml_gallery_folder' ),
+                'folderLoading'   => __( 'Loading…', 'ml-slider-lightbox' ),
+                'folderEmpty'     => __( 'No images in this folder.', 'ml-slider-lightbox' ),
+                'folderError'     => __( 'Could not load this folder.', 'ml-slider-lightbox' ),
+                'folderImporting' => __( 'Importing…', 'ml-slider-lightbox' ),
+                'folderTruncated' => __( 'Showing the first 200 images — open a subfolder to narrow the list.', 'ml-slider-lightbox' ),
+                'folderNoSel'     => __( 'Select at least one image.', 'ml-slider-lightbox' ),
+                'folderImported'  => __( 'Imported %1$d image(s); %2$d image(s) skipped.', 'ml-slider-lightbox' ),
+                'zipUploading'    => __( 'Uploading…', 'ml-slider-lightbox' ),
+                'zipImporting'    => __( 'Importing images…', 'ml-slider-lightbox' ),
+                'zipDone'         => __( 'Imported %1$d image(s); %2$d image(s) skipped.', 'ml-slider-lightbox' ),
+                'zipTruncated'    => __( 'Only the first 200 images (or 256 MB) were imported.', 'ml-slider-lightbox' ),
+                'zipError'        => __( 'The ZIP could not be imported.', 'ml-slider-lightbox' ),
+                'zipRejected'     => __( 'The upload was rejected — the ZIP may be larger than this server allows.', 'ml-slider-lightbox' ),
+                'zipNone'         => __( 'No images found in the ZIP.', 'ml-slider-lightbox' ),
             )
         );
     }
@@ -1339,22 +1921,36 @@ class MetaSliderLightboxGallery {
 
         $saved = get_post_meta( $gallery_id, '_ml_gallery_settings', true );
         $lg    = wp_parse_args( is_array( $saved ) ? $saved : array(), $this->defaultSettings() );
+        $caption_display       = $this->resolveCaptionDisplay( $saved );
+        $show_lightbox_caption = in_array( $caption_display, array( 'both', 'lightbox' ), true );
+        $show_thumb_caption    = in_array( $caption_display, array( 'both', 'gallery' ), true );
 
         $saved_app  = get_post_meta( $gallery_id, '_ml_gallery_appearance', true );
         $appearance = wp_parse_args( is_array( $saved_app ) ? $saved_app : array(), $this->defaultAppearance() );
 
-        $bg_color      = esc_html( sanitize_hex_color( $appearance['bg_color'] )         ?: '#000000' );
-        $bg_opacity    = esc_html( (string) min( 1.0, max( 0.0, (float) $appearance['bg_opacity'] ) ) );
-        $arrow_color   = esc_html( sanitize_hex_color( $appearance['arrow_color'] )      ?: '#ffffff' );
-        $arrow_bg      = esc_html( sanitize_hex_color( $appearance['arrow_bg_color'] )   ?: '#000000' );
-        $close_color   = esc_html( sanitize_hex_color( $appearance['close_color'] )      ?: '#ffffff' );
-        $close_bg      = esc_html( sanitize_hex_color( $appearance['close_bg_color'] )   ?: '#000000' );
-        $toolbar_color    = esc_html( sanitize_hex_color( $appearance['toolbar_color'] )    ?: '#ffffff' );
-        $toolbar_bg       = esc_html( sanitize_hex_color( $appearance['toolbar_bg_color'] ) ?: '#000000' );
-        $thumbnail_border       = esc_html( sanitize_hex_color( $appearance['thumbnail_border_color'] )       ?: '#ffffff' );
-        $thumbnail_border_hover = esc_html( sanitize_hex_color( $appearance['thumbnail_border_hover_color'] ) ?: '#dd6923' );
+        $bg_color      = esc_html( $this->sanitizeColorValue( $appearance['bg_color'], '#000000' ) );
+        $bg_opacity    = esc_html( (string) $this->clampOpacity( $appearance['bg_opacity'] ) );
+        $arrow_color   = esc_html( $this->sanitizeColorValue( $appearance['arrow_color'], '#ffffff' ) );
+        $arrow_bg      = esc_html( $this->sanitizeColorValue( $appearance['arrow_bg_color'], '#000000' ) );
+        $close_color   = esc_html( $this->sanitizeColorValue( $appearance['close_color'], '#ffffff' ) );
+        $close_bg      = esc_html( $this->sanitizeColorValue( $appearance['close_bg_color'], '#000000' ) );
+        $toolbar_color    = esc_html( $this->sanitizeColorValue( $appearance['toolbar_color'], '#ffffff' ) );
+        $toolbar_bg       = esc_html( $this->sanitizeColorValue( $appearance['toolbar_bg_color'], '#000000' ) );
+        $thumbnail_border       = esc_html( $this->sanitizeColorValue( $appearance['thumbnail_border_color'], '#ffffff' ) );
+        $thumbnail_border_hover = esc_html( $this->sanitizeColorValue( $appearance['thumbnail_border_hover_color'], '#dd6923' ) );
+
+        $caption_text_color = esc_html( $this->sanitizeColorValue( $appearance['caption_text_color'], '#ffffff' ) );
+        $caption_bg_color   = esc_html( $this->sanitizeColorValue( $appearance['caption_bg_color'], '#000000' ) );
+        $caption_text_size  = min( 24, max( 10, (int) ( $appearance['caption_text_size'] ?? 14 ) ) );
+        $caption_transition = in_array( $appearance['caption_transition'] ?? '', array_keys( $this->allowedCaptionTransitions() ), true )
+            ? $appearance['caption_transition'] : 'none';
 
         $lg_class = 'ml-gallery-' . $gallery_id;
+
+        // On-page caption scrim: the chosen background colour faded to transparent
+        // so captions stay legible over any image. Shared by gallery thumbnails and
+        // showcase (via --ml-thumb-caption-bg) and the inline carousel (.lg-sub-html).
+        $thumb_caption_bg = "linear-gradient(to top, {$this->hexToRgba( $caption_bg_color, 0.7 )}, {$this->hexToRgba( $caption_bg_color, 0 )})";
 
         $inline_css = "
             #ml-gallery-{$gallery_id} {
@@ -1362,6 +1958,9 @@ class MetaSliderLightboxGallery {
                 --ml-arrow-bg:    {$arrow_bg};
                 --ml-toolbar-color: {$toolbar_color};
                 --ml-toolbar-bg:    {$toolbar_bg};
+                --ml-thumb-caption-color: {$caption_text_color};
+                --ml-thumb-caption-size: {$caption_text_size}px;
+                --ml-thumb-caption-bg: {$thumb_caption_bg};
             }
             .lg-container.{$lg_class} {
                 --ml-lightbox-arrow-color: {$arrow_color} !important;
@@ -1370,10 +1969,13 @@ class MetaSliderLightboxGallery {
                 --ml-lightbox-thumbnail-border-color: {$thumbnail_border} !important;
                 --ml-lightbox-thumbnail-border-hover-color: {$thumbnail_border_hover} !important;
             }
-            .lg-container.{$lg_class} .lg-backdrop,
-            .lg-container.{$lg_class} .lg-thumb-outer {
+            .lg-container.{$lg_class} .lg-backdrop {
                 background-color: {$bg_color} !important;
                 opacity: {$bg_opacity} !important;
+            }
+            .lg-container.{$lg_class} .lg-thumb-outer {
+                background-color: {$bg_color} !important;
+                opacity: 1 !important;
             }
             .lg-container.{$lg_class} .lg-prev,
             .lg-container.{$lg_class} .lg-next {
@@ -1389,7 +1991,30 @@ class MetaSliderLightboxGallery {
                 background-color: {$toolbar_bg} !important;
                 color: {$toolbar_color} !important;
             }
+            .lg-container.{$lg_class} .lg-sub-html,
+            .lg-container.{$lg_class} .lg-sub-html p {
+                color: {$caption_text_color} !important;
+                font-size: {$caption_text_size}px !important;
+            }
         ";
+
+        if ( ! in_array( $lg['layout'], array( 'carousel', 'showcase' ), true ) ) {
+            $inline_css .= "
+                .lg-container.{$lg_class} .lg-sub-html {
+                    background-image: none !important;
+                    background-color: {$caption_bg_color} !important;
+                }
+            ";
+        } elseif ( 'carousel' === $lg['layout'] ) {
+            // Carousel renders its caption through lightGallery's inline .lg-sub-html
+            // (showcase uses .ml-showcase-caption instead). Apply the same on-page
+            // gradient scrim so the chosen background colour shows and stays legible.
+            $inline_css .= "
+                .lg-container.{$lg_class} .lg-sub-html {
+                    background: {$thumb_caption_bg} !important;
+                }
+            ";
+        }
 
         self::$queued_css[ $gallery_id ] = $inline_css;
 
@@ -1397,12 +2022,46 @@ class MetaSliderLightboxGallery {
         $columns = min( 6, max( 2, (int) $lg['columns'] ) );
         $gap     = min( 32, max( 0, (int) $lg['gap'] ) );
 
+        // data-sub-html feeds the popup lightbox (grid/masonry/justified) or the
+        // inline carousel view. For inline layouts (carousel/showcase) the caption
+        // is a gallery-surface concept offered only as Hidden / Gallery Only, so the
+        // inline caption shows for any "on" state (this also keeps legacy galleries
+        // saved as 'lightbox' working until re-saved). Otherwise gate on the
+        // lightbox flag.
+        $is_inline_layout = in_array( $layout, array( 'carousel', 'showcase' ), true );
+        $emit_sub_html    = $is_inline_layout
+            ? ( $show_thumb_caption || $show_lightbox_caption )
+            : $show_lightbox_caption;
+
         $extra_attrs = (array) apply_filters( 'ml_gallery_data_attributes', array(), $gallery_id );
+
+        // The "Open in Gallery" button only applies to grid-like layouts that open a
+        // gallery window. Carousel/showcase are inline surfaces with no wrapper button.
+        $show_gallery_button = ! empty( $lg['show_lightbox_button'] )
+            && ! empty( $lg['open_in_lightbox'] )
+            && in_array( $layout, array( 'grid', 'masonry', 'justified' ), true );
+        $button_position     = $lg['button_position'] ?? 'top-right';
+
+        // Position the button per gallery via ID-scoped inline CSS so it overrides
+        // the default .ml-lightbox-button (top-right) regardless of stylesheet order,
+        // and so multiple galleries on one page each keep their own position.
+        if ( $show_gallery_button && 'top-right' !== $button_position ) {
+            $pos_rules = array(
+                'top-left'     => 'top:10px;bottom:auto;left:10px;right:auto;',
+                'bottom-right' => 'top:auto;bottom:10px;left:auto;right:10px;',
+                'bottom-left'  => 'top:auto;bottom:10px;left:10px;right:auto;',
+                'center'       => 'top:50%;bottom:auto;left:50%;right:auto;transform:translate(-50%,-50%);',
+            );
+            if ( isset( $pos_rules[ $button_position ] ) ) {
+                $decls = preg_replace( '/;/', ' !important;', $pos_rules[ $button_position ] );
+                self::$queued_css[ $gallery_id ] .= "\n#ml-gallery-{$gallery_id} .ml-lightbox-button{{$decls}}";
+            }
+        }
 
         ob_start();
         ?>
         <div id="ml-gallery-<?php echo esc_attr( $gallery_id ); ?>"
-             class="ml-gallery-container ml-layout-<?php echo esc_attr( $layout ); ?>"
+             class="ml-gallery-container ml-layout-<?php echo esc_attr( $layout ); ?><?php echo $show_thumb_caption ? ' ml-has-thumb-captions' : ''; ?>"
              style="--ml-columns:<?php echo esc_attr( $columns ); ?>;--ml-columns-mobile:<?php echo absint( $lg['columns_mobile'] ?? 1 ); ?>;--ml-gap:<?php echo esc_attr( $gap ); ?>px"
              data-ml-gallery="true"
              data-ml-lightbox="<?php echo $lg['open_in_lightbox'] ? '1' : '0'; ?>"
@@ -1413,11 +2072,17 @@ class MetaSliderLightboxGallery {
              data-lg-counter="<?php echo $lg['counter'] ? '1' : '0'; ?>"
              data-lg-thumbnails="<?php echo $lg['thumbnails'] ? '1' : '0'; ?>"
              data-lg-download="<?php echo $lg['download'] ? '1' : '0'; ?>"
-             data-lg-captions="<?php echo $lg['captions'] ? '1' : '0'; ?>"
+             data-lg-captions="<?php echo $emit_sub_html ? '1' : '0'; ?>"
+             data-lg-caption-transition="<?php echo esc_attr( $caption_transition ); ?>"
              data-lg-loop="<?php echo $lg['loop'] ? '1' : '0'; ?>"
              data-lg-swipe-close="<?php echo $lg['swipe_close'] ? '1' : '0'; ?>"
              data-lg-mousewheel="<?php echo $lg['mousewheel'] ? '1' : '0'; ?>"
              data-lg-keyboard="<?php echo $lg['keyboard'] ? '1' : '0'; ?>"
+             <?php if ( $show_gallery_button ) : ?>
+             data-ml-show-button="1"
+             <?php if ( ! empty( $lg['button_icon'] ) ) : ?>data-ml-button-icon="1"<?php endif; ?>
+             <?php if ( '' !== ( $lg['button_text'] ?? '' ) ) : ?>data-ml-button-text="<?php echo esc_attr( $lg['button_text'] ); ?>"<?php endif; ?>
+             <?php endif; ?>
              <?php foreach ( $extra_attrs as $attr_name => $attr_value ) : ?>
              <?php if ( ! preg_match( '/^data-[a-z][a-z0-9\-]*$/', $attr_name ) ) { continue; } ?>
              <?php echo ' ' . esc_attr( $attr_name ) . '="' . esc_attr( (string) $attr_value ) . '"'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
@@ -1442,12 +2107,18 @@ class MetaSliderLightboxGallery {
                 <a href="<?php echo esc_url( $full_url ); ?>"
                    data-src="<?php echo esc_url( $full_url ); ?>"
                    data-thumb="<?php echo esc_url( $thumb_url ? $thumb_url : $full_url ); ?>"
-                   <?php if ( $caption ) : ?>
+                   <?php if ( $caption && $emit_sub_html ) : ?>
                    data-sub-html="<?php echo esc_html( $caption ); ?>"
                    <?php endif; ?>
                    <?php // esc_html() not esc_attr(): data-sub-html is rendered as HTML by lightGallery.
-                         // esc_attr() would double-encode entities (& → &amp;amp;), producing visible artefacts. ?>>
+                         // esc_attr() would double-encode entities (& → &amp;amp;), producing visible artefacts.
+                         // Do NOT embed markup (e.g. a wrapper <span>) here: wptexturize mangles quotes
+                         // around tags inside attributes. The .ml-caption-text wrapper for the caption
+                         // transition is added client-side in applyMlCaptionTransition(). ?>>
                     <?php echo wp_get_attachment_image( $image_id, $lightbox_size, false, array( 'alt' => $alt ) ); ?>
+                    <?php if ( $caption ) : ?>
+                        <span class="ml-gallery-caption"><?php echo wp_kses_post( $caption ); ?></span>
+                    <?php endif; ?>
                 </a>
             <?php endforeach; ?>
 
@@ -1513,14 +2184,14 @@ class MetaSliderLightboxGallery {
             'ml-gallery-public',
             plugin_dir_url( __FILE__ ) . 'assets/css/ml-gallery-public.css',
             array(),
-            $this->version
+            filemtime( plugin_dir_path( __FILE__ ) . 'assets/css/ml-gallery-public.css' ) ?: $this->version
         );
 
         wp_enqueue_script(
             'ml-gallery-layout',
             plugin_dir_url( __FILE__ ) . 'assets/js/ml-gallery-layout.js',
             array( 'ml-lightgallery-clean' ),
-            $this->version,
+            filemtime( plugin_dir_path( __FILE__ ) . 'assets/js/ml-gallery-layout.js' ) ?: $this->version,
             true
         );
 
@@ -1739,5 +2410,184 @@ class MetaSliderLightboxGallery {
 
         wp_cache_set( $cache_key, $output, 'ml_gallery', 5 * MINUTE_IN_SECONDS );
         return $output;
+    }
+
+    /**
+     * Recursively delete a temp dir, refusing anything not under uploads.
+     *
+     * @param string $dir Absolute path.
+     */
+    private function deleteUploadsTempDir( $dir ) {
+        $uploads = wp_get_upload_dir();
+        $basedir = isset( $uploads['basedir'] ) ? realpath( $uploads['basedir'] ) : false;
+        $real    = realpath( $dir );
+        if ( ! $basedir || ! $real || 0 !== strpos( $real, $basedir . DIRECTORY_SEPARATOR ) ) {
+            return;
+        }
+        $items = @scandir( $real );
+        if ( is_array( $items ) ) {
+            foreach ( $items as $item ) {
+                if ( '.' === $item || '..' === $item ) {
+                    continue;
+                }
+                $path = $real . DIRECTORY_SEPARATOR . $item;
+                if ( is_dir( $path ) ) {
+                    $this->deleteUploadsTempDir( $path );
+                } else {
+                    @unlink( $path );
+                }
+            }
+        }
+        @rmdir( $real );
+    }
+
+    /**
+     * AJAX: import images from an uploaded ZIP into the Media Library.
+     */
+    public function ajaxImportZip() {
+        if ( ! check_ajax_referer( 'ml_gallery_folder', '_wpnonce', false ) || ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( array( 'message' => __( 'Permission denied.', 'ml-slider-lightbox' ) ), 403 );
+            return;
+        }
+
+        if ( empty( $_FILES['zip'] ) || ! isset( $_FILES['zip']['tmp_name'] )
+            || ! empty( $_FILES['zip']['error'] ) || ! is_uploaded_file( $_FILES['zip']['tmp_name'] ) ) {
+            wp_send_json_error( array( 'message' => __( 'Please choose a valid .zip file.', 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        $tmp   = $_FILES['zip']['tmp_name']; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+        $name  = isset( $_FILES['zip']['name'] ) ? sanitize_file_name( wp_unslash( $_FILES['zip']['name'] ) ) : 'upload.zip';
+        $check = wp_check_filetype_and_ext( $tmp, $name );
+        $type  = ! empty( $check['type'] ) ? $check['type'] : '';
+        if ( 'application/zip' !== $type && 'application/x-zip-compressed' !== $type ) {
+            wp_send_json_error( array( 'message' => __( 'Please choose a valid .zip file.', 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        require_once ABSPATH . 'wp-admin/includes/class-pclzip.php';
+        if ( ! class_exists( 'PclZip' ) ) {
+            wp_send_json_error( array( 'message' => __( 'Server cannot read ZIP files.', 'ml-slider-lightbox' ) ), 500 );
+            return;
+        }
+
+        $archive = new \PclZip( $tmp );
+        $list    = $archive->listContent();
+        if ( empty( $list ) || ! is_array( $list ) ) {
+            wp_send_json_error( array( 'message' => __( 'The ZIP could not be read.', 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        $max_files    = 200;
+        $max_bytes    = 256 * 1024 * 1024; // Cumulative real (post-extraction) byte budget.
+        $per_file_cap = 64 * 1024 * 1024;  // Reject any single extracted image larger than this.
+        $selected     = array();
+        $truncated    = false;
+
+        // Select up to $max_files safe image entries by count only. Declared
+        // sizes in the central directory are attacker-controlled and NOT trusted
+        // for the size budget — that is enforced against the real extracted size
+        // below, one entry at a time.
+        foreach ( $list as $entry ) {
+            $entry_name = isset( $entry['filename'] ) ? $entry['filename'] : '';
+            if ( ! $this->isSafeZipImageEntry( $entry_name ) ) {
+                continue;
+            }
+            if ( count( $selected ) >= $max_files ) {
+                $truncated = true;
+                break;
+            }
+            $selected[] = $entry_name;
+        }
+
+        if ( empty( $selected ) ) {
+            wp_send_json_success( array( 'attachments' => array(), 'skipped' => 0, 'truncated' => $truncated ) );
+            return;
+        }
+
+        $uploads = wp_get_upload_dir();
+        $tmpdir  = trailingslashit( $uploads['basedir'] ) . 'ml-gallery-zip-tmp/' . uniqid( 'z', true );
+        if ( ! wp_mkdir_p( $tmpdir ) ) {
+            wp_send_json_error( array( 'message' => __( 'Could not prepare a temporary folder.', 'ml-slider-lightbox' ) ), 500 );
+            return;
+        }
+
+        require_once ABSPATH . 'wp-admin/includes/file.php';
+        require_once ABSPATH . 'wp-admin/includes/media.php';
+        require_once ABSPATH . 'wp-admin/includes/image.php';
+
+        $attachments = array();
+        $skipped     = 0;
+        $real_total  = 0;
+
+        // Extract ONE entry at a time and stat its REAL size, so a zip bomb that
+        // lies about declared sizes cannot fill the disk: each extracted file is
+        // sideloaded (moved out of the temp dir) before the next is extracted, so
+        // transient disk use is bounded to a single file, and the cumulative real
+        // byte budget stops the import once reached.
+        foreach ( $selected as $entry_name ) {
+            // PclZip's extract() only treats args as options when the FIRST arg
+            // is a PCLZIP_OPT_* integer constant — it must be the flattened
+            // variadic form, NOT a single options array (an array falls through
+            // to the legacy "path" argument and fatals in privExtractByRule).
+            $res = $archive->extract(
+                PCLZIP_OPT_PATH, $tmpdir,
+                PCLZIP_OPT_BY_NAME, $entry_name,
+                PCLZIP_OPT_REMOVE_ALL_PATH
+            );
+
+            $abs = ( is_array( $res ) && ! empty( $res[0]['filename'] ) ) ? $res[0]['filename'] : '';
+            if ( ! $abs || ! is_file( $abs ) ) {
+                $skipped++;
+                continue;
+            }
+
+            $fsize = (int) filesize( $abs );
+
+            // Drop a single oversized file.
+            if ( $fsize > $per_file_cap ) {
+                @unlink( $abs );
+                $skipped++;
+                continue;
+            }
+
+            // Stop before the cumulative real-byte budget is exceeded.
+            if ( ( $real_total + $fsize ) > $max_bytes ) {
+                @unlink( $abs );
+                $truncated = true;
+                break;
+            }
+
+            $base = wp_basename( $abs );
+            if ( ! $this->isSafeZipImageEntry( $base ) ) {
+                @unlink( $abs );
+                $skipped++;
+                continue;
+            }
+
+            $id = media_handle_sideload( array( 'name' => $base, 'tmp_name' => $abs ), 0 );
+            if ( is_wp_error( $id ) || ! $id ) {
+                @unlink( $abs );
+                $skipped++;
+                continue;
+            }
+
+            $real_total   += $fsize;
+            $full          = wp_get_attachment_url( $id );
+            $thumb         = wp_get_attachment_image_url( $id, 'thumbnail' );
+            $attachments[] = array(
+                'id'    => (int) $id,
+                'url'   => $full ? $full : '',
+                'thumb' => $thumb ? $thumb : ( $full ? $full : '' ),
+            );
+        }
+
+        $this->deleteUploadsTempDir( $tmpdir );
+
+        wp_send_json_success( array(
+            'attachments' => $attachments,
+            'skipped'     => $skipped,
+            'truncated'   => $truncated,
+        ) );
     }
 }

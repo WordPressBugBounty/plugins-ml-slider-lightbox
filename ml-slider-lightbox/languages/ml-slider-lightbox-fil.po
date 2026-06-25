@@ -1,0 +1,3755 @@
+# Copyright (C) 2026 MetaSlider Gallery
+# This file is distributed under the same license as the MetaSlider Gallery package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MetaSlider Gallery\n"
+"Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-06-24 15:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: Team Updraft\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"|| n % 10 == 6 || n % 10 == 9);\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: fil\n"
+"Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 || n % 10 == 6 || n % 10 == 9);\n"
+
+#: admin/Notices.php:43 ml-slider-lightbox/admin/Notices.php:43
+msgid ""
+"Enjoying MetaSlider Gallery? Please help us with a 5-star review on "
+"WordPress.org."
+msgstr ""
+"Nasiyahan ka ba sa MetaSlider Gallery? Mangyaring tulungan kami sa isang "
+"5-star na pagsusuri sa WordPress.org."
+
+#: admin/Notices.php:53 ml-slider-lightbox/admin/Notices.php:53
+msgid "Unlock zoom, fullscreen, sharing and more with MetaSlider Gallery Pro."
+msgstr ""
+"I-unlock ang zoom, fullscreen, sharing at higit pa sa MetaSlider Gallery "
+"Pro."
+
+#: admin/Notices.php:163 ml-slider-lightbox/admin/Notices.php:163
+msgid "Review MetaSlider Gallery &rarr;"
+msgstr "Suriin ang MetaSlider Gallery &rarr;"
+
+#: admin/Notices.php:164 ml-slider-lightbox/admin/Notices.php:164
+msgid "Get Gallery Pro &rarr;"
+msgstr "Kumuha ng Gallery Pro &rarr;"
+
+#: admin/Notices.php:167 ml-slider-lightbox/admin/Notices.php:167
+msgid "Read more"
+msgstr "Magbasa ng higit pa"
+
+#: admin/Notices.php:197 ml-slider-lightbox/admin/Notices.php:197
+msgid "The security check failed. Please refresh the page and try again."
+msgstr "Nabigo ang security check. Mangyaring i-refresh ang pahina at subukang muli."
+
+#: admin/Notices.php:203 ml-slider-lightbox/admin/Notices.php:203
+msgid "Access denied. Sorry, you do not have permission to complete this task."
+msgstr ""
+"Access denied. Paumanhin, wala kang pahintulot upang kumpletuhin ang "
+"gawaing ito."
+
+#: admin/Notices.php:209 ml-slider-lightbox/admin/Notices.php:209
+msgid "Bad request"
+msgstr "Masamang kahilingan"
+
+#: admin/Notices.php:217 ml-slider-lightbox/admin/Notices.php:217
+msgid "This item does not exist. Please refresh the page and try again."
+msgstr ""
+"Ang item na ito ay hindi umiiral. Mangyaring i-refresh ang pahina at "
+"subukang muli."
+
+#: admin/Notices.php:230 ml-slider-lightbox/admin/Notices.php:230
+msgid "The option was successfully updated"
+msgstr "Ang pagpipilian ay matagumpay na na-update"
+
+#: admin/Notices.php:241 ml-slider-lightbox/admin/Notices.php:241
+msgid "The requested data does not exist."
+msgstr "Ang hinihinging data ay hindi umiiral."
+
+#: admin/Notices.php:253 ml-slider-lightbox/admin/Notices.php:253
+msgid "The attempt to update the option failed."
+msgstr "Nabigo ang pagtatangkang i-update ang pagpipilian."
+
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:697
+#: class-ml-gallery.php:2263 class-ml-slider-lightbox.php:1914
+#: class-ml-slider-lightbox.php:2038
+#: ml-slider-lightbox/admin/views/notices/header-notice.php:8
+#: ml-slider-lightbox/class-ml-gallery.php:697
+#: ml-slider-lightbox/class-ml-gallery.php:2263
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1914
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2038
+msgid "MetaSlider Gallery"
+msgstr "MetaSlider Gallery"
+
+#: admin/views/notices/header-notice.php:23
+#: ml-slider-lightbox/admin/views/notices/header-notice.php:23
+msgid "Dismiss"
+msgstr "Isara"
+
+#: class-ml-gallery.php:85 ml-slider-lightbox/class-ml-gallery.php:85
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "Ilan sa mga tampok na ito ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:93 class-ml-gallery.php:102
+#: ml-slider-lightbox/class-ml-gallery.php:93
+#: ml-slider-lightbox/class-ml-gallery.php:102, fuzzy
+msgid "Fade"
+msgstr "Fade"
+
+#: class-ml-gallery.php:94 ml-slider-lightbox/class-ml-gallery.php:94, fuzzy
+msgid "Slide"
+msgstr "Slide"
+
+#: class-ml-gallery.php:95 class-ml-gallery.php:1181
+#: ml-slider-lightbox/class-ml-gallery.php:95
+#: ml-slider-lightbox/class-ml-gallery.php:1181, fuzzy
+msgid "Zoom"
+msgstr "Zoom"
+
+#: class-ml-gallery.php:101 ml-slider-lightbox/class-ml-gallery.php:101
+msgid "None"
+msgstr "Wala"
+
+#: class-ml-gallery.php:103 ml-slider-lightbox/class-ml-gallery.php:103, fuzzy
+msgid "Slide Up"
+msgstr "Slide Up"
+
+#: class-ml-gallery.php:104 ml-slider-lightbox/class-ml-gallery.php:104
+msgid "Slide Down"
+msgstr "I-slide Down"
+
+#: class-ml-gallery.php:118 ml-slider-lightbox/class-ml-gallery.php:118
+msgid "Hidden"
+msgstr "Nakatago"
+
+#: class-ml-gallery.php:119 ml-slider-lightbox/class-ml-gallery.php:119
+msgid "Gallery + Window"
+msgstr "Gallery + Bintana"
+
+#: class-ml-gallery.php:120 ml-slider-lightbox/class-ml-gallery.php:120
+msgid "Window Only"
+msgstr "Bintana Lamang"
+
+#: class-ml-gallery.php:121 ml-slider-lightbox/class-ml-gallery.php:121
+msgid "Gallery Only"
+msgstr "Gallery Lamang"
+
+#: class-ml-gallery.php:275 class-ml-gallery.php:284 class-ml-gallery.php:706
+#: ml-slider-lightbox/class-ml-gallery.php:275
+#: ml-slider-lightbox/class-ml-gallery.php:284
+#: ml-slider-lightbox/class-ml-gallery.php:706
+msgid "Galleries"
+msgstr "Mga Gallery"
+
+#: class-ml-gallery.php:276 class-ml-gallery.php:425 class-ml-gallery.php:959
+#: class-ml-slider-lightbox.php:2034
+#: ml-slider-lightbox/class-ml-gallery.php:276
+#: ml-slider-lightbox/class-ml-gallery.php:425
+#: ml-slider-lightbox/class-ml-gallery.php:959
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2034, fuzzy
+msgid "Gallery"
+msgstr "Gallery"
+
+#: class-ml-gallery.php:277 class-ml-gallery.php:278 class-ml-gallery.php:672
+#: class-ml-gallery.php:2257 ml-slider-lightbox/class-ml-gallery.php:277
+#: ml-slider-lightbox/class-ml-gallery.php:278
+#: ml-slider-lightbox/class-ml-gallery.php:672
+#: ml-slider-lightbox/class-ml-gallery.php:2257
+msgid "Add New Gallery"
+msgstr "Magdagdag ng Bagong Gallery"
+
+#: class-ml-gallery.php:279 class-ml-gallery.php:592 class-ml-gallery.php:593
+#: class-ml-gallery.php:673 ml-slider-lightbox/class-ml-gallery.php:279
+#: ml-slider-lightbox/class-ml-gallery.php:592
+#: ml-slider-lightbox/class-ml-gallery.php:593
+#: ml-slider-lightbox/class-ml-gallery.php:673
+msgid "Edit Gallery"
+msgstr "I-edit ang Gallery"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:655
+#: ml-slider-lightbox/class-ml-gallery.php:280
+#: ml-slider-lightbox/class-ml-gallery.php:655
+msgid "New Gallery"
+msgstr "Bagong Gallery"
+
+#: class-ml-gallery.php:281 ml-slider-lightbox/class-ml-gallery.php:281
+msgid "Search Galleries"
+msgstr "Maghanap ng Mga Gallery"
+
+#: class-ml-gallery.php:282 ml-slider-lightbox/class-ml-gallery.php:282
+msgid "No galleries found."
+msgstr "Walang natagpuang mga gallery."
+
+#: class-ml-gallery.php:283 ml-slider-lightbox/class-ml-gallery.php:283
+msgid "No galleries found in trash."
+msgstr "Walang natagpuang mga gallery sa basurahan."
+
+#: class-ml-gallery.php:432 ml-slider-lightbox/class-ml-gallery.php:432
+msgid "All Galleries"
+msgstr "Lahat ng Mga Gallery"
+
+#: class-ml-gallery.php:439 ml-slider-lightbox/class-ml-gallery.php:439
+msgid "Create Gallery"
+msgstr "Lumikha ng Gallery"
+
+#: class-ml-gallery.php:449 ml-slider-lightbox/class-ml-gallery.php:449
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "I-edit &#8220;%s&#8221;"
+
+#: class-ml-gallery.php:467 ml-slider-lightbox/class-ml-gallery.php:467
+msgid "Invalid gallery ID."
+msgstr "Hindi wastong gallery ID."
+
+#: class-ml-gallery.php:533 class-ml-slider-lightbox.php:1507
+#: ml-slider-lightbox/class-ml-gallery.php:533
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1507
+msgid "View image"
+msgstr "Tumingin ng larawan"
+
+#: class-ml-gallery.php:644 class-ml-slider-lightbox.php:2075
+#: class-ml-slider-lightbox.php:2090
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1915
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1915
+#: ml-slider-lightbox/class-ml-gallery.php:644
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2090
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Wala kang sapat na pahintulot upang ma-access ang pahinang ito."
+
+#: class-ml-gallery.php:652 class-ml-gallery.php:1531
+#: ml-slider-lightbox/class-ml-gallery.php:652
+#: ml-slider-lightbox/class-ml-gallery.php:1531
+msgid "Gallery not found."
+msgstr "Hindi natagpuan ang gallery."
+
+#: class-ml-gallery.php:675 ml-slider-lightbox/class-ml-gallery.php:675
+msgid "Save Gallery"
+msgstr "I-save ang Gallery"
+
+#: class-ml-gallery.php:676 ml-slider-lightbox/class-ml-gallery.php:676
+msgid "Update Gallery"
+msgstr "I-update ang Gallery"
+
+#: class-ml-gallery.php:691 ml-slider-lightbox/class-ml-gallery.php:691
+msgid "Back to Galleries"
+msgstr "Bumalik sa Galleries"
+
+#: class-ml-gallery.php:717 ml-slider-lightbox/class-ml-gallery.php:717
+msgid "Duplicate"
+msgstr "Kopyahin"
+
+#: class-ml-gallery.php:737 ml-slider-lightbox/class-ml-gallery.php:737
+msgid "Gallery saved."
+msgstr "Naisave ang gallery."
+
+#: class-ml-gallery.php:748 ml-slider-lightbox/class-ml-gallery.php:748
+msgid "Enter gallery title"
+msgstr "Ilagay ang pamagat ng gallery"
+
+#: class-ml-gallery.php:751 class-ml-gallery.php:2285
+#: ml-slider-lightbox/class-ml-gallery.php:751
+#: ml-slider-lightbox/class-ml-gallery.php:2285
+msgid "Images"
+msgstr "Mga Larawan"
+
+#: class-ml-gallery.php:760 ml-slider-lightbox/class-ml-gallery.php:760
+msgid "No images added yet"
+msgstr "Walang mga larawang idinagdag pa"
+
+#: class-ml-gallery.php:773 class-ml-gallery.php:1864
+#: ml-slider-lightbox/class-ml-gallery.php:773
+#: ml-slider-lightbox/class-ml-gallery.php:1864
+msgid "Remove image"
+msgstr "Alisin ang larawan"
+
+#: class-ml-gallery.php:778 class-ml-gallery.php:1865
+#: ml-slider-lightbox/class-ml-gallery.php:778
+#: ml-slider-lightbox/class-ml-gallery.php:1865
+msgid "Edit caption"
+msgstr "I-edit ang caption"
+
+#: class-ml-gallery.php:793 ml-slider-lightbox/class-ml-gallery.php:793
+msgid "Add Images"
+msgstr "Magdagdag ng Mga Larawan"
+
+#: class-ml-gallery.php:797 ml-slider-lightbox/class-ml-gallery.php:797
+msgid "More ways to add images"
+msgstr "Mas maraming paraan upang magdagdag ng mga larawan"
+
+#: class-ml-gallery.php:803 ml-slider-lightbox/class-ml-gallery.php:803
+msgid "Upload"
+msgstr "I-upload"
+
+#: class-ml-gallery.php:808 ml-slider-lightbox/class-ml-gallery.php:808
+msgid "Media Library"
+msgstr "Aklatan ng Media"
+
+#: class-ml-gallery.php:813 ml-slider-lightbox/class-ml-gallery.php:813
+msgid "Server Folder"
+msgstr "Folder ng Server"
+
+#: class-ml-gallery.php:818 ml-slider-lightbox/class-ml-gallery.php:818, fuzzy
+msgid "ZIP"
+msgstr "ZIP"
+
+#: class-ml-gallery.php:824 ml-slider-lightbox/class-ml-gallery.php:824
+msgid "Where to add new images"
+msgstr "Saan ilalagay ang mga bagong larawan"
+
+#: class-ml-gallery.php:825 ml-slider-lightbox/class-ml-gallery.php:825
+msgid "Add new images at:"
+msgstr "Magdagdag ng mga bagong larawan sa:"
+
+#: class-ml-gallery.php:829 ml-slider-lightbox/class-ml-gallery.php:829
+msgid "Start"
+msgstr "Simula"
+
+#: class-ml-gallery.php:834 ml-slider-lightbox/class-ml-gallery.php:834
+msgid "End"
+msgstr "Wakas"
+
+#: class-ml-gallery.php:843 ml-slider-lightbox/class-ml-gallery.php:843, fuzzy
+msgid "Layout"
+msgstr "Layout"
+
+#: class-ml-gallery.php:846 ml-slider-lightbox/class-ml-gallery.php:846, fuzzy
+msgid "Gallery layout"
+msgstr "Gallery layout"
+
+#: class-ml-gallery.php:848 ml-slider-lightbox/class-ml-gallery.php:848
+msgid "Evenly sized images arranged in a fixed grid"
+msgstr "Mga imaheng pantay na laki na nakahanay sa isang nakapirming grid"
+
+#: class-ml-gallery.php:858 ml-slider-lightbox/class-ml-gallery.php:858, fuzzy
+msgid "Grid"
+msgstr "Grid"
+
+#: class-ml-gallery.php:862 ml-slider-lightbox/class-ml-gallery.php:862
+msgid "Images at their natural heights, fitting together like a brick wall"
+msgstr "Mga imahen sa kanilang likas na taas, nagkasya na parang pader ng ladrilyo"
+
+#: class-ml-gallery.php:872 ml-slider-lightbox/class-ml-gallery.php:872, fuzzy
+msgid "Masonry"
+msgstr "Masonry"
+
+#: class-ml-gallery.php:876 ml-slider-lightbox/class-ml-gallery.php:876
+msgid "Images scaled to fill each row edge-to-edge with a consistent height"
+msgstr ""
+"Mga imahen na na-scale upang punan ang bawat hilera mula gilid hanggang "
+"gilid na may pare-parehong taas"
+
+#: class-ml-gallery.php:888 ml-slider-lightbox/class-ml-gallery.php:888, fuzzy
+msgid "Justified"
+msgstr "Justified"
+
+#: class-ml-gallery.php:892 ml-slider-lightbox/class-ml-gallery.php:892
+msgid "Images displayed one at a time in a scrollable slideshow"
+msgstr "Mga imahen na ipinapakita isa-isa sa isang scrollable slideshow"
+
+#: class-ml-gallery.php:901 ml-slider-lightbox/class-ml-gallery.php:901, fuzzy
+msgid "Carousel"
+msgstr "Carousel"
+
+#: class-ml-gallery.php:905 ml-slider-lightbox/class-ml-gallery.php:905
+msgid "Large main image with a scrollable thumbnail strip below"
+msgstr "Malaking pangunahing imahen na may scrollable thumbnail strip sa ibaba"
+
+#: class-ml-gallery.php:915 ml-slider-lightbox/class-ml-gallery.php:915, fuzzy
+msgid "Showcase"
+msgstr "Showcase"
+
+#: class-ml-gallery.php:926 ml-slider-lightbox/class-ml-gallery.php:926
+msgid "Number of columns to show on desktop screens"
+msgstr "Bilang ng mga kolum na ipapakita sa mga desktop screen"
+
+#: class-ml-gallery.php:926 ml-slider-lightbox/class-ml-gallery.php:926, fuzzy
+msgid "Columns"
+msgstr "Columns"
+
+#: class-ml-gallery.php:935 ml-slider-lightbox/class-ml-gallery.php:935
+msgid "Number of columns to show on phones and small screens"
+msgstr "Bilang ng mga kolum na ipapakita sa mga telepono at maliliit na screen"
+
+#: class-ml-gallery.php:935 ml-slider-lightbox/class-ml-gallery.php:935, fuzzy
+msgid "Columns (mobile)"
+msgstr "Columns (mobile)"
+
+#: class-ml-gallery.php:944 ml-slider-lightbox/class-ml-gallery.php:944
+msgid "Space between images"
+msgstr "Espasyo sa pagitan ng mga imahen"
+
+#: class-ml-gallery.php:945 ml-slider-lightbox/class-ml-gallery.php:945, fuzzy
+msgid "Gap"
+msgstr "Gap"
+
+#: class-ml-gallery.php:963 ml-slider-lightbox/class-ml-gallery.php:963
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr "Ang mga kontrol ng zoom ay nangangailangan ng MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:964 ml-slider-lightbox/class-ml-gallery.php:964
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr "Ang fullscreen mode ay nangangailangan ng MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:965 ml-slider-lightbox/class-ml-gallery.php:965
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr "Ang pag-ikot ng imahe ay nangangailangan ng MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:966 ml-slider-lightbox/class-ml-gallery.php:966
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "Ang autoplay ay nangangailangan ng MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:967 ml-slider-lightbox/class-ml-gallery.php:967
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr "Ang pagbabahagi sa social media ay nangangailangan ng MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:968 ml-slider-lightbox/class-ml-gallery.php:968
+msgid "Pager requires MetaSlider Gallery Pro"
+msgstr "Ang pager ay nangangailangan ng MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:969 ml-slider-lightbox/class-ml-gallery.php:969
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr "Ang natatanging URL ng Imahe ay nangangailangan ng MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:973 ml-slider-lightbox/class-ml-gallery.php:973
+msgid "Show left and right navigation arrows"
+msgstr "Ipakita ang kaliwa at kanang mga arrow ng nabigasyon"
+
+#: class-ml-gallery.php:974 ml-slider-lightbox/class-ml-gallery.php:974
+msgid "Display the current image number and total count"
+msgstr "Ipakita ang kasalukuyang bilang ng imahe at kabuuang bilang"
+
+#: class-ml-gallery.php:975 ml-slider-lightbox/class-ml-gallery.php:975
+msgid "Show a strip of thumbnail images at the bottom of the gallery"
+msgstr "Ipakita ang isang strip ng mga thumbnail na imahe sa ibaba ng gallery"
+
+#: class-ml-gallery.php:976 ml-slider-lightbox/class-ml-gallery.php:976
+msgid "Show dot navigation area below each image."
+msgstr "Ipakita ang lugar ng dot navigation sa ilalim ng bawat imahe."
+
+#: class-ml-gallery.php:977 ml-slider-lightbox/class-ml-gallery.php:977
+msgid ""
+"Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
+"appear only if the original size is larger than the gallery size."
+msgstr ""
+"Ipinapinch o i-scroll upang mag-zoom in at out ng mga imahe ng gallery. Ang "
+"kontrol sa Zoom ay lalabas lamang kung ang orihinal na sukat ay mas malaki "
+"kaysa sa sukat ng gallery."
+
+#: class-ml-gallery.php:978 ml-slider-lightbox/class-ml-gallery.php:978
+msgid "Expand the gallery window to fill the whole screen."
+msgstr "Palawakin ang bintana ng gallery upang punan ang buong screen."
+
+#: class-ml-gallery.php:979 ml-slider-lightbox/class-ml-gallery.php:979
+msgid ""
+"Users can rotate images left or right, plus flip them vertically or "
+"horizontally."
+msgstr ""
+"Maaaring i-rotate ng mga gumagamit ang mga imahe pakaliwa o pakanan, at "
+"maaari rin silang i-flip nang patayo o pahalang."
+
+#: class-ml-gallery.php:980 ml-slider-lightbox/class-ml-gallery.php:980
+msgid "Automatically advance through the images without the user clicking."
+msgstr ""
+"Awtomatikong umusad sa mga imahe nang hindi kinakailangan ang pag-click ng "
+"gumagamit."
+
+#: class-ml-gallery.php:981 ml-slider-lightbox/class-ml-gallery.php:981
+msgid "Enable users to share images on Facebook, X, or Pinterest."
+msgstr ""
+"Pahintulutan ang mga gumagamit na ibahagi ang mga imahe sa Facebook, X, o "
+"Pinterest."
+
+#: class-ml-gallery.php:982 ml-slider-lightbox/class-ml-gallery.php:982
+msgid ""
+"Create a unique URL for each image to enable direct linking inside a "
+"gallery."
+msgstr ""
+"Lumikha ng natatanging URL para sa bawat imahe upang payagan ang direktang "
+"pag-link sa loob ng gallery."
+
+#: class-ml-gallery.php:983 ml-slider-lightbox/class-ml-gallery.php:983
+msgid "Navigate images using left and right arrow keys"
+msgstr "Mag-navigate sa mga imahe gamit ang kaliwa at kanang arrow keys"
+
+#: class-ml-gallery.php:984 ml-slider-lightbox/class-ml-gallery.php:984
+msgid "Scroll through images using the mouse wheel"
+msgstr "I-scroll sa mga imahe gamit ang mouse wheel"
+
+#: class-ml-gallery.php:985 ml-slider-lightbox/class-ml-gallery.php:985
+msgid "Swipe up or down to close the gallery on touch devices"
+msgstr "I-swipe pataas o pababa upang isara ang gallery sa mga touch device"
+
+#: class-ml-gallery.php:986 ml-slider-lightbox/class-ml-gallery.php:986
+msgid "Cycle back to the first image after reaching the last"
+msgstr "Mag-cycle pabalik sa unang imahe pagkatapos maabot ang huli"
+
+#: class-ml-gallery.php:987 ml-slider-lightbox/class-ml-gallery.php:987
+msgid "Show a download button for each image"
+msgstr "Ipakita ang isang download button para sa bawat imahe"
+
+#: class-ml-gallery.php:988 ml-slider-lightbox/class-ml-gallery.php:988
+msgid ""
+"Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
+"Justified layouts."
+msgstr ""
+"Buksan ang mga larawan sa isang overlay ng bintana kapag na-click. "
+"Nalalapat sa Grid, Masonry, at Justified na mga layout."
+
+#: class-ml-gallery.php:1031 ml-slider-lightbox/class-ml-gallery.php:1031
+msgid "Full (original)"
+msgstr "Buong (orihinal)"
+
+#: class-ml-gallery.php:1035 ml-slider-lightbox/class-ml-gallery.php:1035
+msgid "Show in Gallery Window"
+msgstr "Ipakita sa Gallery Window"
+
+#: class-ml-gallery.php:1038 ml-slider-lightbox/class-ml-gallery.php:1038
+msgid "The size of the image shown when a visitor clicks to view it in full"
+msgstr ""
+"Ang laki ng larawang ipinapakita kapag nag-click ang bisita upang tingnan "
+"ito ng buo"
+
+#: class-ml-gallery.php:1038 ml-slider-lightbox/class-ml-gallery.php:1038
+msgid "Image Size"
+msgstr "Laki ng Larawan"
+
+#: class-ml-gallery.php:1055 ml-slider-lightbox/class-ml-gallery.php:1055
+msgid "Open in Gallery Button"
+msgstr "Buksan sa Gallery Button"
+
+#: class-ml-gallery.php:1058 ml-slider-lightbox/class-ml-gallery.php:1058
+msgid "Use Icon Instead of Text"
+msgstr "Gumamit ng Icon Imbes na Teksto"
+
+#: class-ml-gallery.php:1061 class-ml-slider-lightbox.php:2500
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2285
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2285
+#: ml-slider-lightbox/class-ml-gallery.php:1061
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2500
+msgid "Button Text"
+msgstr "Teksto ng Button"
+
+#: class-ml-gallery.php:1066 class-ml-slider-lightbox.php:1502
+#: class-ml-slider-lightbox.php:3105 class-ml-slider-lightbox.php:6250
+#: class-ml-slider-lightbox.php:6273
+#: ml-slider-lightbox/class-ml-gallery.php:1066
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1502
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3105
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6250
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6273
+msgid "Open in Gallery"
+msgstr "Buksan sa Gallery"
+
+#: class-ml-gallery.php:1071 class-ml-slider-lightbox.php:2508
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2293
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2293
+#: ml-slider-lightbox/class-ml-gallery.php:1071
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2508
+msgid "Button Position"
+msgstr "Posisyon ng Button"
+
+#: class-ml-gallery.php:1073 ml-slider-lightbox/class-ml-gallery.php:1073
+msgid "Top Right"
+msgstr "Itaas sa Kanang Bahagi"
+
+#: class-ml-gallery.php:1074 class-ml-slider-lightbox.php:3122
+#: class-ml-slider-lightbox.php:3148
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2866
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2892
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2866
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2892
+#: ml-slider-lightbox/class-ml-gallery.php:1074
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3122
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3148
+msgid "Top Left"
+msgstr "Itaas sa Kaliwang Bahagi"
+
+#: class-ml-gallery.php:1075 class-ml-slider-lightbox.php:3123
+#: class-ml-slider-lightbox.php:3149
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2867
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2893
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2867
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2893
+#: ml-slider-lightbox/class-ml-gallery.php:1075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3123
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3149
+msgid "Bottom Right"
+msgstr "Ibaba sa Kanang Bahagi"
+
+#: class-ml-gallery.php:1076 class-ml-slider-lightbox.php:3124
+#: class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2868
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2868
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+#: ml-slider-lightbox/class-ml-gallery.php:1076
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3124
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+msgid "Bottom Left"
+msgstr "Ibaba sa Kaliwang Bahagi"
+
+#: class-ml-gallery.php:1077 ml-slider-lightbox/class-ml-gallery.php:1077
+msgid "Center"
+msgstr "Sentro"
+
+#: class-ml-gallery.php:1086 ml-slider-lightbox/class-ml-gallery.php:1086
+msgid "Display"
+msgstr "I-display"
+
+#: class-ml-gallery.php:1088 ml-slider-lightbox/class-ml-gallery.php:1088
+msgid "Animation effect when moving between images"
+msgstr "Epekto ng animasyon kapag lumilipat sa pagitan ng mga larawan"
+
+#: class-ml-gallery.php:1088 class-ml-gallery.php:1164
+#: ml-slider-lightbox/class-ml-gallery.php:1088
+#: ml-slider-lightbox/class-ml-gallery.php:1164
+msgid "Transition"
+msgstr "Transisyon"
+
+#: class-ml-gallery.php:1097 class-ml-slider-lightbox.php:2460
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2253
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2253
+#: ml-slider-lightbox/class-ml-gallery.php:1097
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2460
+msgid "Arrows"
+msgstr "Mga Arrow"
+
+#: class-ml-gallery.php:1098 ml-slider-lightbox/class-ml-gallery.php:1098
+msgid "Slide Counter"
+msgstr "Bilang ng Slide"
+
+#: class-ml-gallery.php:1099 ml-slider-lightbox/class-ml-gallery.php:1099
+msgid "Thumbnails"
+msgstr "Mga Miniature"
+
+#: class-ml-gallery.php:1101 ml-slider-lightbox/class-ml-gallery.php:1101, fuzzy
+msgid "Pager"
+msgstr "Pager"
+
+#: class-ml-gallery.php:1106 class-ml-slider-lightbox.php:2165
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1987
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1987
+#: ml-slider-lightbox/class-ml-gallery.php:1106
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2165
+msgid "Navigation"
+msgstr "Nabigasyon"
+
+#: class-ml-gallery.php:1107 ml-slider-lightbox/class-ml-gallery.php:1107
+msgid "Loop"
+msgstr "Ulitin"
+
+#: class-ml-gallery.php:1108 ml-slider-lightbox/class-ml-gallery.php:1108, fuzzy
+msgid "Keyboard"
+msgstr "Keyboard"
+
+#: class-ml-gallery.php:1109 ml-slider-lightbox/class-ml-gallery.php:1109
+msgid "Mouse wheel"
+msgstr "Gulong ng Mouse"
+
+#: class-ml-gallery.php:1110 ml-slider-lightbox/class-ml-gallery.php:1110
+msgid "Swipe to close"
+msgstr "Swipe upang isara"
+
+#: class-ml-gallery.php:1117 class-ml-gallery.php:1119
+#: ml-slider-lightbox/class-ml-gallery.php:1117
+#: ml-slider-lightbox/class-ml-gallery.php:1119
+msgid "Captions"
+msgstr "Mga Caption"
+
+#: class-ml-gallery.php:1119 ml-slider-lightbox/class-ml-gallery.php:1119
+msgid ""
+"Where captions appear: on gallery thumbnails, in the gallery window, or "
+"both."
+msgstr ""
+"Kung saan lumalabas ang mga caption: sa mga thumbnail ng gallery, sa window "
+"ng gallery, o pareho."
+
+#: class-ml-gallery.php:1131 ml-slider-lightbox/class-ml-gallery.php:1131
+msgid ""
+"Caption text size. Applies to both gallery thumbnails and the gallery "
+"window."
+msgstr ""
+"Sukat ng teksto ng caption. Nalalapat sa parehong mga thumbnail ng gallery "
+"at sa window ng gallery."
+
+#: class-ml-gallery.php:1132 ml-slider-lightbox/class-ml-gallery.php:1132
+msgid "Text Size"
+msgstr "Sukat ng Teksto"
+
+#: class-ml-gallery.php:1144 ml-slider-lightbox/class-ml-gallery.php:1144
+msgid ""
+"Caption text color. Applies to both gallery thumbnails and the gallery "
+"window."
+msgstr ""
+"Kulay ng teksto ng caption. Nalalapat sa parehong mga thumbnail ng gallery "
+"at sa window ng gallery."
+
+#: class-ml-gallery.php:1144 ml-slider-lightbox/class-ml-gallery.php:1144
+msgid "Text Color"
+msgstr "Kulay ng Teksto"
+
+#: class-ml-gallery.php:1154 ml-slider-lightbox/class-ml-gallery.php:1154
+msgid ""
+"Caption background. Applies to both gallery thumbnails and the gallery "
+"window; on thumbnails it fades to transparent for readability."
+msgstr ""
+"Likuran ng caption. Nalalapat sa parehong mga thumbnail ng gallery at sa "
+"window ng gallery; sa mga thumbnail, ito ay unti-unting nagiging "
+"transparent para sa mabasang teksto."
+
+#: class-ml-gallery.php:1154 class-ml-gallery.php:1196
+#: class-ml-slider-lightbox.php:2428
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2237
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2237
+#: ml-slider-lightbox/class-ml-gallery.php:1154
+#: ml-slider-lightbox/class-ml-gallery.php:1196
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2428
+msgid "Background Color"
+msgstr "Kulay ng Background"
+
+#: class-ml-gallery.php:1164 ml-slider-lightbox/class-ml-gallery.php:1164
+msgid ""
+"How the caption animates in. Applies to the gallery window only — not to "
+"gallery thumbnail captions."
+msgstr ""
+"Paano nag-aanimate ang caption papasok. Nalalapat lamang sa window ng "
+"gallery — hindi sa mga caption ng thumbnail ng gallery."
+
+#: class-ml-gallery.php:1174 class-ml-slider-lightbox.php:2476
+#: ml-slider-lightbox/class-ml-gallery.php:1174
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2476, fuzzy
+msgid "Toolbar"
+msgstr "Toolbar"
+
+#: class-ml-gallery.php:1175 ml-slider-lightbox/class-ml-gallery.php:1175
+msgid "Download"
+msgstr "I-download"
+
+#: class-ml-gallery.php:1177 ml-slider-lightbox/class-ml-gallery.php:1177
+msgid "Share"
+msgstr "Ibahagi"
+
+#: class-ml-gallery.php:1178 ml-slider-lightbox/class-ml-gallery.php:1178
+msgid "Autoplay"
+msgstr "Awtonomong Pag-play"
+
+#: class-ml-gallery.php:1179 ml-slider-lightbox/class-ml-gallery.php:1179
+msgid "Rotate and Flip"
+msgstr "I-rotate at I-flip"
+
+#: class-ml-gallery.php:1180 ml-slider-lightbox/class-ml-gallery.php:1180, fuzzy
+msgid "Fullscreen"
+msgstr "Fullscreen"
+
+#: class-ml-gallery.php:1186 ml-slider-lightbox/class-ml-gallery.php:1186
+msgid "Unique Image URLs"
+msgstr "Natanging URL ng Imahe"
+
+#: class-ml-gallery.php:1193 class-ml-slider-lightbox.php:2098
+#: class-ml-slider-lightbox.php:2155
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1923
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1977
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1923
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1977
+#: ml-slider-lightbox/class-ml-gallery.php:1193
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2098
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2155
+msgid "Appearance"
+msgstr "Hitsura"
+
+#: class-ml-gallery.php:1207 class-ml-slider-lightbox.php:2436
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2245
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2245
+#: ml-slider-lightbox/class-ml-gallery.php:1207
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2436
+msgid "Background Opacity"
+msgstr "Opacity ng Background"
+
+#: class-ml-gallery.php:1219 ml-slider-lightbox/class-ml-gallery.php:1219
+msgid "Arrow Color"
+msgstr "Kulay ng Arrow"
+
+#: class-ml-gallery.php:1229 ml-slider-lightbox/class-ml-gallery.php:1229
+msgid "Arrow Background"
+msgstr "Background ng Arrow"
+
+#: class-ml-gallery.php:1239 ml-slider-lightbox/class-ml-gallery.php:1239
+msgid "Close Icon Color"
+msgstr "Kulay ng Close Icon"
+
+#: class-ml-gallery.php:1249 ml-slider-lightbox/class-ml-gallery.php:1249
+msgid "Close Background"
+msgstr "Background ng Close"
+
+#: class-ml-gallery.php:1259 ml-slider-lightbox/class-ml-gallery.php:1259
+msgid "Toolbar Icon Color"
+msgstr "Kulay ng Toolbar Icon"
+
+#: class-ml-gallery.php:1269 ml-slider-lightbox/class-ml-gallery.php:1269
+msgid "Toolbar Background"
+msgstr "Background ng Toolbar"
+
+#: class-ml-gallery.php:1279 class-ml-slider-lightbox.php:2452
+#: ml-slider-lightbox/class-ml-gallery.php:1279
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2452
+msgid "Thumbnail Border Color"
+msgstr "Kulay ng Hangganan ng Thumbnail"
+
+#: class-ml-gallery.php:1289 ml-slider-lightbox/class-ml-gallery.php:1289
+msgid "Thumbnail Border Active and Hover"
+msgstr "Aktibo at Hover ng Hangganan ng Thumbnail"
+
+#: class-ml-gallery.php:1304 class-ml-gallery.php:2284
+#: ml-slider-lightbox/class-ml-gallery.php:1304
+#: ml-slider-lightbox/class-ml-gallery.php:2284
+msgid "Shortcode"
+msgstr "shortcode"
+
+#: class-ml-gallery.php:1306 class-ml-gallery.php:2304
+#: ml-slider-lightbox/class-ml-gallery.php:1306
+#: ml-slider-lightbox/class-ml-gallery.php:2304
+msgid "Click to copy shortcode."
+msgstr "I-click upang kopyahin ang shortcode."
+
+#: class-ml-gallery.php:1324 ml-slider-lightbox/class-ml-gallery.php:1324
+msgid "Edit Caption"
+msgstr "I-edit ang Caption"
+
+#: class-ml-gallery.php:1325 class-ml-gallery.php:1354
+#: class-ml-gallery.php:1375 class-ml-gallery.php:2329
+#: ml-slider-lightbox/class-ml-gallery.php:1325
+#: ml-slider-lightbox/class-ml-gallery.php:1354
+#: ml-slider-lightbox/class-ml-gallery.php:1375
+#: ml-slider-lightbox/class-ml-gallery.php:2329
+msgid "Close"
+msgstr "Isara"
+
+#: class-ml-gallery.php:1333 ml-slider-lightbox/class-ml-gallery.php:1333, fuzzy
+msgid "Caption"
+msgstr "Caption"
+
+#: class-ml-gallery.php:1340 class-ml-gallery.php:1362
+#: ml-slider-lightbox/class-ml-gallery.php:1340
+#: ml-slider-lightbox/class-ml-gallery.php:1362
+msgid "Cancel"
+msgstr "Kanselahin"
+
+#: class-ml-gallery.php:1343 ml-slider-lightbox/class-ml-gallery.php:1343
+msgid "Save Caption"
+msgstr "I-save ang Caption"
+
+#: class-ml-gallery.php:1353 ml-slider-lightbox/class-ml-gallery.php:1353
+msgid "Import from Server Folder"
+msgstr "I-import mula sa Server Folder"
+
+#: class-ml-gallery.php:1363 ml-slider-lightbox/class-ml-gallery.php:1363
+msgid "Import selected"
+msgstr "I-import ang napili"
+
+#: class-ml-gallery.php:1374 ml-slider-lightbox/class-ml-gallery.php:1374
+msgid "Import from ZIP"
+msgstr "I-import mula sa ZIP"
+
+#: class-ml-gallery.php:1398 class-ml-gallery.php:1526
+#: ml-slider-lightbox/class-ml-gallery.php:1398
+#: ml-slider-lightbox/class-ml-gallery.php:1526
+msgid "Security check failed."
+msgstr "Nabigo ang pagsusuri sa seguridad."
+
+#: class-ml-gallery.php:1402 ml-slider-lightbox/class-ml-gallery.php:1402
+msgid "You do not have sufficient permissions."
+msgstr "Wala kang sapat na pahintulot."
+
+#: class-ml-gallery.php:1421 ml-slider-lightbox/class-ml-gallery.php:1421
+msgid "Could not update the gallery. Please try again."
+msgstr "Hindi ma-update ang gallery. Pakisubukang muli."
+
+#: class-ml-gallery.php:1536 ml-slider-lightbox/class-ml-gallery.php:1536
+msgid "(Copy)"
+msgstr "(Kopyahin)"
+
+#: class-ml-gallery.php:1542 ml-slider-lightbox/class-ml-gallery.php:1542
+msgid "Could not duplicate the gallery. Please try again."
+msgstr "Hindi makaduplicate ng gallery. Pakisubukang muli."
+
+#: class-ml-gallery.php:1646 class-ml-gallery.php:1761
+#: class-ml-gallery.php:2449 ml-slider-lightbox/class-ml-gallery.php:1646
+#: ml-slider-lightbox/class-ml-gallery.php:1761
+#: ml-slider-lightbox/class-ml-gallery.php:2449
+msgid "Permission denied."
+msgstr "Tinanggihan ang pahintulot."
+
+#: class-ml-gallery.php:1653 ml-slider-lightbox/class-ml-gallery.php:1653
+msgid "Folder not found."
+msgstr "Hindi natagpuan ang folder."
+
+#: class-ml-gallery.php:1662 ml-slider-lightbox/class-ml-gallery.php:1662
+msgid "Folder could not be read."
+msgstr "Hindi mabasa ang folder."
+
+#: class-ml-gallery.php:1699 ml-slider-lightbox/class-ml-gallery.php:1699
+msgid "Uploads"
+msgstr "Mga Upload"
+
+#: class-ml-gallery.php:1862 ml-slider-lightbox/class-ml-gallery.php:1862
+msgid "Select Gallery Images"
+msgstr "Pumili ng Mga Imahe ng Gallery"
+
+#: class-ml-gallery.php:1863 ml-slider-lightbox/class-ml-gallery.php:1863
+msgid "Add to Gallery"
+msgstr "Idagdag sa Gallery"
+
+#: class-ml-gallery.php:1867 ml-slider-lightbox/class-ml-gallery.php:1867
+msgid "Loading…"
+msgstr "Naglo-load…"
+
+#: class-ml-gallery.php:1868 ml-slider-lightbox/class-ml-gallery.php:1868
+msgid "No images in this folder."
+msgstr "Walang mga imahe sa folder na ito."
+
+#: class-ml-gallery.php:1869 ml-slider-lightbox/class-ml-gallery.php:1869
+msgid "Could not load this folder."
+msgstr "Hindi ma-load ang folder na ito."
+
+#: class-ml-gallery.php:1870 ml-slider-lightbox/class-ml-gallery.php:1870
+msgid "Importing…"
+msgstr "Nagli-load…"
+
+#: class-ml-gallery.php:1871 ml-slider-lightbox/class-ml-gallery.php:1871
+msgid "Showing the first 200 images — open a subfolder to narrow the list."
+msgstr ""
+"Ipinapakita ang unang 200 na imahe — buksan ang isang subfolder upang "
+"paliitin ang listahan."
+
+#: class-ml-gallery.php:1872 ml-slider-lightbox/class-ml-gallery.php:1872
+msgid "Select at least one image."
+msgstr "Pumili ng hindi bababa sa isang imahe."
+
+#: class-ml-gallery.php:1873 class-ml-gallery.php:1876
+#: ml-slider-lightbox/class-ml-gallery.php:1873
+#: ml-slider-lightbox/class-ml-gallery.php:1876
+#, php-format
+msgid "Imported %1$d image(s); %2$d image(s) skipped."
+msgstr "Na-import na %1$d na larawan; %2$d na larawan ang hindi isinama."
+
+#: class-ml-gallery.php:1874 ml-slider-lightbox/class-ml-gallery.php:1874
+msgid "Uploading…"
+msgstr "Nagli-upload…"
+
+#: class-ml-gallery.php:1875 ml-slider-lightbox/class-ml-gallery.php:1875
+msgid "Importing images…"
+msgstr "Nagli-load ng mga imahe…"
+
+#: class-ml-gallery.php:1877 ml-slider-lightbox/class-ml-gallery.php:1877
+msgid "Only the first 200 images (or 256 MB) were imported."
+msgstr "Tanging ang unang 200 na imahe (o 256 MB) ang na-import."
+
+#: class-ml-gallery.php:1878 ml-slider-lightbox/class-ml-gallery.php:1878
+msgid "The ZIP could not be imported."
+msgstr "Hindi ma-import ang ZIP."
+
+#: class-ml-gallery.php:1879 ml-slider-lightbox/class-ml-gallery.php:1879
+msgid "The upload was rejected — the ZIP may be larger than this server allows."
+msgstr ""
+"Tinanggihan ang pag-upload — maaaring mas malaki ang ZIP kaysa sa "
+"pinapayagan ng server na ito."
+
+#: class-ml-gallery.php:1880 ml-slider-lightbox/class-ml-gallery.php:1880
+msgid "No images found in the ZIP."
+msgstr "Walang mga larawan na natagpuan sa ZIP."
+
+#: class-ml-gallery.php:2286 ml-slider-lightbox/class-ml-gallery.php:2286
+msgid "Usage"
+msgstr "Paggamit"
+
+#: class-ml-gallery.php:2319 ml-slider-lightbox/class-ml-gallery.php:2319
+msgid "Not found."
+msgstr "Hindi natagpuan."
+
+#: class-ml-gallery.php:2324 ml-slider-lightbox/class-ml-gallery.php:2324
+msgid "View Usage"
+msgstr "Tingnan ang Paggamit"
+
+#: class-ml-gallery.php:2330 ml-slider-lightbox/class-ml-gallery.php:2330
+msgid "Content Using This Gallery"
+msgstr "Nilalaman na Gumagamit ng Gallery na Ito"
+
+#: class-ml-gallery.php:2397 ml-slider-lightbox/class-ml-gallery.php:2397
+msgid "(no title)"
+msgstr "(walang pamagat)"
+
+#: class-ml-gallery.php:2455 class-ml-gallery.php:2464
+#: ml-slider-lightbox/class-ml-gallery.php:2455
+#: ml-slider-lightbox/class-ml-gallery.php:2464
+msgid "Please choose a valid .zip file."
+msgstr "Mangyaring pumili ng wastong .zip na file."
+
+#: class-ml-gallery.php:2470 ml-slider-lightbox/class-ml-gallery.php:2470
+msgid "Server cannot read ZIP files."
+msgstr "Hindi mabasa ng server ang mga ZIP na file."
+
+#: class-ml-gallery.php:2477 ml-slider-lightbox/class-ml-gallery.php:2477
+msgid "The ZIP could not be read."
+msgstr "Hindi mabasa ang ZIP."
+
+#: class-ml-gallery.php:2511 ml-slider-lightbox/class-ml-gallery.php:2511
+msgid "Could not prepare a temporary folder."
+msgstr "Hindi maihanda ang pansamantalang folder."
+
+#: class-ml-slider-lightbox.php:1039
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1039
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"Ang MetaSlider Gallery ay nangangailangan ng MetaSlider at hindi bababa sa "
+"isang iba pang suportadong lightbox plugin na naka-install at naka-activate."
+
+#: class-ml-slider-lightbox.php:1043
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1060
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1060
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1043
+msgid "More info"
+msgstr "Karagdagang impormasyon"
+
+#: class-ml-slider-lightbox.php:1054
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1054
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"May higit sa isang lightbox plugin na naka-activate. Maaaring magdulot ito "
+"ng mga salungatan sa MetaSlider Gallery"
+
+#: class-ml-slider-lightbox.php:1114
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1114
+msgid "Edit Global Settings"
+msgstr "I-edit ang Pangkalahatang Mga Setting"
+
+#: class-ml-slider-lightbox.php:1126
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1126
+msgid "Open In Gallery"
+msgstr "Buksan sa Gallery"
+
+#: class-ml-slider-lightbox.php:1141
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1141
+msgid "Show Captions"
+msgstr "Ipakita ang mga Caption"
+
+#: class-ml-slider-lightbox.php:1141
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1141
+msgid "Show captions in the gallery for each slide."
+msgstr "Ipakita ang mga caption sa gallery para sa bawat slide."
+
+#: class-ml-slider-lightbox.php:1142
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1142
+msgid "Show Navigation Arrows"
+msgstr "Ipakita ang mga Navigation Arrows"
+
+#: class-ml-slider-lightbox.php:1142
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1142
+msgid "Show previous/next arrows in the gallery."
+msgstr "Ipakita ang mga arrow na nakaraang/susunod sa gallery."
+
+#: class-ml-slider-lightbox.php:1143
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+msgid "Show \"Open In Gallery\" Button"
+msgstr "Ipakita ang \"Buksan Sa Gallery\" na Buton"
+
+#: class-ml-slider-lightbox.php:1143
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+msgid "Show a button on each slide to open the image in the gallery."
+msgstr "Ipakita ang isang buton sa bawat slide upang buksan ang larawan sa gallery."
+
+#: class-ml-slider-lightbox.php:1144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1144
+msgid "Show An Icon Instead Of Button"
+msgstr "Ipakita ang Isang Icon Sa Halip Na Buton"
+
+#: class-ml-slider-lightbox.php:1144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1144
+msgid "Display an icon instead of a text button on each slide."
+msgstr "I-display ang isang icon sa halip na text button sa bawat slide."
+
+#: class-ml-slider-lightbox.php:1149
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1149
+#, php-format
+msgid ""
+"Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
+"Gallery settings</a>."
+msgstr ""
+"Ang Gallery ay naka-enable para sa lahat ng slideshow sa pamamagitan ng <a "
+"href=\"%s\">Mga setting ng MetaSlider Gallery</a>."
+
+#: class-ml-slider-lightbox.php:1552
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1552
+msgid "Global"
+msgstr "Pangkalahatan"
+
+#: class-ml-slider-lightbox.php:1553
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1553
+msgid "Yes"
+msgstr "Oo"
+
+#: class-ml-slider-lightbox.php:1554
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1554
+msgid "No"
+msgstr "Hindi"
+
+#: class-ml-slider-lightbox.php:1808
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1808
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr ""
+"Ang MetaSlider Gallery ay nangangailangan ng MetaSlider na naka-install at "
+"naka-activate."
+
+#: class-ml-slider-lightbox.php:1812
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1683
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1683
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1812
+msgid "Install MetaSlider"
+msgstr "I-install ang MetaSlider"
+
+#: class-ml-slider-lightbox.php:1912 class-ml-slider-lightbox.php:2037
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1912
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2037, fuzzy
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2019
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2019
+#, php-format
+msgid "Select pages to %s..."
+msgstr "Pumili ng mga pahina upang %s..."
+
+#: class-ml-slider-lightbox.php:2020
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2020
+#, php-format
+msgid "Select posts to %s..."
+msgstr "Pumili ng mga post upang %s..."
+
+#: class-ml-slider-lightbox.php:2021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2021
+#, php-format
+msgid "Select post types to %s..."
+msgstr "Pumili ng mga uri ng post upang %s..."
+
+#: class-ml-slider-lightbox.php:2022
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2022
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "Pumili ng %1$s upang %2$s..."
+
+#: class-ml-slider-lightbox.php:2023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+msgid "Select post types to exclude"
+msgstr "Pumili ng mga uri ng post na i-exclude"
+
+#: class-ml-slider-lightbox.php:2024 class-ml-slider-lightbox.php:3482
+#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3651
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2024
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3482
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3529
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3651
+msgid "Include"
+msgstr "Isama"
+
+#: class-ml-slider-lightbox.php:2025 class-ml-slider-lightbox.php:3482
+#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3651
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2025
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3482
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3529
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3651
+msgid "Exclude"
+msgstr "I-exclude"
+
+#: class-ml-slider-lightbox.php:2033
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2033, fuzzy
+msgid "Gallery Pro"
+msgstr "Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2053
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2053
+msgid "Settings"
+msgstr "Mga Setting"
+
+#: class-ml-slider-lightbox.php:2063
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2063
+msgid "Upgrade to MetaSlider Gallery Pro"
+msgstr "Mag-upgrade sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2064
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1929
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1929
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2064
+msgid "Upgrade to Pro"
+msgstr "Mag-upgrade sa Pro"
+
+#: class-ml-slider-lightbox.php:2096
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1921
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1921
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2096
+msgid "Automatic Mode"
+msgstr "Awtomatikong Mode"
+
+#: class-ml-slider-lightbox.php:2097
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1922
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1922
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2097
+msgid "Manual Mode"
+msgstr "Manu-manong Mode"
+
+#: class-ml-slider-lightbox.php:2099
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1924
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1924
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2099
+msgid "Behavior"
+msgstr "Pag-uugali"
+
+#: class-ml-slider-lightbox.php:2120
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1949
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1949
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2120
+msgid "Settings saved successfully!"
+msgstr "Naitala ang mga setting nang matagumpay!"
+
+#: class-ml-slider-lightbox.php:2130
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1959
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1959
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2130
+msgid "Where to Enable Automatically"
+msgstr "Saan Paganahin ang Awtomatikong"
+
+#: class-ml-slider-lightbox.php:2137
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2137, fuzzy
+msgid "MetaSlider Slideshows"
+msgstr "MetaSlider Slideshows"
+
+#: class-ml-slider-lightbox.php:2144 class-ml-slider-lightbox.php:2341
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1966
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2150
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1966
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2150
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2341
+msgid "Content Filtering"
+msgstr "Pag-filter ng Nilalaman"
+
+#: class-ml-slider-lightbox.php:2156
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2156
+msgid ""
+"Customize colors, opacity, and visual styling for the gallery overlay and "
+"controls."
+msgstr ""
+"I-customize ang mga kulay, opacity, at visual styling para sa overlay ng "
+"gallery at mga kontrol."
+
+#: class-ml-slider-lightbox.php:2160 class-ml-slider-lightbox.php:2407
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1982
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2216
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2216
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2160
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2407, fuzzy
+msgid "Background & Overlay"
+msgstr "Background & Overlay"
+
+#: class-ml-slider-lightbox.php:2170
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2170
+msgid "\"Open in Gallery\" Button"
+msgstr "\"Buksan sa Gallery\" Button"
+
+#: class-ml-slider-lightbox.php:2180 class-ml-slider-lightbox.php:2520
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2002
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2305
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2002
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2305
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2180
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2520
+msgid "Navigation & Controls"
+msgstr "Navigasyon & Mga Kontrol"
+
+#: class-ml-slider-lightbox.php:2186
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2008
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2186
+msgid ""
+"<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
+"is active. These settings may not apply to MetaSlider but will still work "
+"for WordPress content lightboxes."
+msgstr ""
+"<strong>Nakatuklas ng Third-Party Plugin:</strong> Isang third-party "
+"lightbox plugin ang aktibo. Maaaring hindi mailapat ang mga setting na ito "
+"sa MetaSlider ngunit gagana pa rin para sa mga lightbox ng nilalaman ng "
+"WordPress."
+
+#: class-ml-slider-lightbox.php:2193 class-ml-slider-lightbox.php:3999
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2015
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3811
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2015
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3811
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2193
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3999
+msgid "Enhanced Zoom & Controls"
+msgstr "Pinaigting na Zoom & Mga Kontrol"
+
+#: class-ml-slider-lightbox.php:2201
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2201
+msgid "Media & Video Enhancements"
+msgstr "Media & Mga Pagpapahusay sa Video"
+
+#: class-ml-slider-lightbox.php:2209 class-ml-slider-lightbox.php:4027
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2031
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3839
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2031
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3839
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2209
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4027
+msgid "Social & Navigation"
+msgstr "Social & Navigasyon"
+
+#: class-ml-slider-lightbox.php:2217 class-ml-slider-lightbox.php:4048
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3860
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2039
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3860
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2217
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4048
+msgid "Advanced Features"
+msgstr "Mga Advanced na Tampok"
+
+#: class-ml-slider-lightbox.php:2233
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2233
+msgid "Manual Options"
+msgstr "Manu-manong Mga Opsyon"
+
+#: class-ml-slider-lightbox.php:2234
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2056
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2056
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2234
+msgid ""
+"Manual controls and WordPress overrides that work independently of "
+"automatic settings."
+msgstr ""
+"Manu-manong mga kontrol at mga override ng WordPress na gumagana nang "
+"nakapag-iisa sa mga awtomatikong setting."
+
+#: class-ml-slider-lightbox.php:2414
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2223
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2223
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2414
+msgid "Navigation Icons"
+msgstr "Mga Icon ng Navigasyon"
+
+#: class-ml-slider-lightbox.php:2421
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2230
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2230
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2421
+msgid "Buttons"
+msgstr "Mga Button"
+
+#: class-ml-slider-lightbox.php:2444
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2444
+msgid "Autoplay Progress Bar Color"
+msgstr "Kulay ng Autoplay Progress Bar"
+
+#: class-ml-slider-lightbox.php:2468
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2261
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2261
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2468
+msgid "Close Button"
+msgstr "Button na Isara"
+
+#: class-ml-slider-lightbox.php:2484
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2277
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2277
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2484
+msgid "Button Colors"
+msgstr "Mga Kulay ng Button"
+
+#: class-ml-slider-lightbox.php:2492
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2492
+msgid "Icon Colors"
+msgstr "Mga Kulay ng Icon"
+
+#: class-ml-slider-lightbox.php:2878
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+msgid "Configure general gallery settings that apply site-wide."
+msgstr ""
+"I-configure ang mga pangkalahatang setting ng gallery na naaangkop sa buong "
+"site."
+
+#: class-ml-slider-lightbox.php:2883
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2883
+msgid "Configure settings specific to MetaSlider Gallery functionality."
+msgstr "I-configure ang mga setting na tiyak sa pag-andar ng MetaSlider Gallery."
+
+#: class-ml-slider-lightbox.php:2888
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2888
+msgid "Select where the gallery will be enabled automatically."
+msgstr "Pumili kung saan awtomatikong paganahin ang gallery."
+
+#: class-ml-slider-lightbox.php:2894
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+msgid ""
+"Choose how to filter content for gallery processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Pumili kung paano i-filter ang nilalaman para sa pagproseso ng gallery at "
+"tukuyin kung aling mga pahina, post, o selector ang isasama o aalisin."
+
+#: class-ml-slider-lightbox.php:2910
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2666
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2666
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2910
+msgid "Processing Mode"
+msgstr "Mode ng Pagproseso"
+
+#: class-ml-slider-lightbox.php:2913
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2669
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2669
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2913
+msgid "Process all content EXCEPT the items specified below"
+msgstr "Iproseso ang lahat ng nilalaman MALIBAN sa mga item na tinukoy sa ibaba"
+
+#: class-ml-slider-lightbox.php:2916
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2672
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2672
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2916
+msgid "ONLY process the items specified below"
+msgstr "Tanging iproseso ang mga item na tinukoy sa ibaba"
+
+#: class-ml-slider-lightbox.php:2923
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2679
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2679
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2923
+msgid "Inclusion Mode"
+msgstr "Mode ng Pagsasama"
+
+#: class-ml-slider-lightbox.php:2927
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2683
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2683
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2927
+msgid "Exclusion Mode"
+msgstr "Mode ng Pagtatangi"
+
+#: class-ml-slider-lightbox.php:2947
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2703
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2703
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2947
+msgid "Images in post content"
+msgstr "Mga Imahe sa nilalaman ng post"
+
+#: class-ml-slider-lightbox.php:2948
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2948
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the gallery."
+msgstr ""
+"Kapag naka-enable, ang mga indibidwal na larawan na walang link at "
+"\"Palakihin sa I-click\" na nakatakda sa mga post at pahina ay awtomatikong "
+"magbubukas sa gallery."
+
+#: class-ml-slider-lightbox.php:2964
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2720
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2720
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2964
+msgid "Images and videos in widgets and sidebars"
+msgstr "Mga Imahe at video sa mga widget at sidebar"
+
+#: class-ml-slider-lightbox.php:2965
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2965
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the gallery."
+msgstr ""
+"Kapag naka-enable, ang mga imahe at video sa mga lugar ng widget ay "
+"awtomatikong magbubukas sa gallery."
+
+#: class-ml-slider-lightbox.php:2981
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2737
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2737
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2981
+msgid "Gallery shortcodes and blocks"
+msgstr "Mga shortcode at bloke ng Gallery"
+
+#: class-ml-slider-lightbox.php:2982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the gallery window."
+msgstr ""
+"Kapag naka-enable, ang mga larawan sa WordPress [gallery] shortcodes at "
+"Gutenberg Gallery blocks ay awtomatikong magbubukas sa gallery window."
+
+#: class-ml-slider-lightbox.php:2998
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2754
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2754
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2998
+msgid "Featured images"
+msgstr "Mga tampok na larawan"
+
+#: class-ml-slider-lightbox.php:2999
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2999
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the gallery when clicked."
+msgstr ""
+"Kapag naka-enable, ang mga tampok na larawan (mga thumbnail ng post) ay "
+"awtomatikong magbubukas sa gallery kapag na-click."
+
+#: class-ml-slider-lightbox.php:3008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+msgid ""
+"Automatically open all MetaSlider slideshows in the gallery, overriding the "
+"per-slider setting."
+msgstr ""
+"Awtomatikong buksan ang lahat ng MetaSlider slideshows sa gallery, na "
+"pinapawalang-bisa ang per-slider na setting."
+
+#: class-ml-slider-lightbox.php:3022
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3022, fuzzy
+msgid "MetaSlider slideshows"
+msgstr "MetaSlider slideshows"
+
+#: class-ml-slider-lightbox.php:3023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3023
+msgid ""
+"When enabled, all MetaSlider slideshows will open slides in the gallery "
+"window, overriding the per-slider setting."
+msgstr ""
+"Kapag naka-enable, lahat ng MetaSlider slideshows ay magbubukas ng mga "
+"slide sa gallery window, na pinapawalang-bisa ang per-slider na setting."
+
+#: class-ml-slider-lightbox.php:3039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2771
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2771
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3039
+msgid "Videos in post content"
+msgstr "Mga video sa nilalaman ng post"
+
+#: class-ml-slider-lightbox.php:3040
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3040
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the gallery."
+msgstr ""
+"Kapag naka-enable, ang mga standalone na video blocks (HTML5 videos, "
+"YouTube embeds, Vimeo embeds) sa nilalaman ng post/pahina ay awtomatikong "
+"magbubukas sa gallery."
+
+#: class-ml-slider-lightbox.php:3075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3075
+msgid ""
+"Background color for the gallery overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Kulay ng background para sa overlay ng gallery. Ang mga madilim na kulay ay "
+"pinakamahusay para sa pagtingin ng larawan."
+
+#: class-ml-slider-lightbox.php:3080
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+msgid ""
+"Background color for \"Open in Gallery\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Kulay ng background para sa \"Buksan sa Gallery\" na mga button na "
+"lumalabas sa mga slide, larawan, at video."
+
+#: class-ml-slider-lightbox.php:3085
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3085
+msgid ""
+"Text color for \"Open in Gallery\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Kulay ng teksto para sa \"Buksan sa Gallery\" na mga button na lumalabas sa "
+"mga slide, larawan, at video."
+
+#: class-ml-slider-lightbox.php:3090
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3090
+msgid "Background color when hovering over \"Open in Gallery\" buttons."
+msgstr "Kulay ng background kapag hover sa \"Buksan sa Gallery\" na mga button."
+
+#: class-ml-slider-lightbox.php:3095
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3095
+msgid "Text color when hovering over \"Open in Gallery\" buttons."
+msgstr "Kulay ng teksto kapag hover sa \"Buksan sa Gallery\" na mga button."
+
+#: class-ml-slider-lightbox.php:3108
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3108
+msgid ""
+"Custom text for gallery buttons. This text will appear on all \"Open in "
+"Gallery\" buttons throughout the site."
+msgstr ""
+"Custom na teksto para sa mga button ng gallery. Ang teksto na ito ay "
+"lilitaw sa lahat ng \"Buksan sa Gallery\" na mga button sa buong site."
+
+#: class-ml-slider-lightbox.php:3121 class-ml-slider-lightbox.php:3147
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2865
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2891
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2865
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2891
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+msgid "Top Right (Default)"
+msgstr "Ituktok Kanan (Default)"
+
+#: class-ml-slider-lightbox.php:3134
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3134
+msgid "Choose where to position the close button (X) in the gallery overlay."
+msgstr "Pumili kung saan ilalagay ang close button (X) sa overlay ng gallery."
+
+#: class-ml-slider-lightbox.php:3160
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3160
+msgid ""
+"Choose where to position \"Open in Gallery\" buttons within slides, images, "
+"galleries, and videos."
+msgstr ""
+"Pumili kung saan ilalagay ang \"Buksan sa Gallery\" na mga button sa loob "
+"ng mga slide, larawan, gallery, at video."
+
+#: class-ml-slider-lightbox.php:3165
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3165
+msgid "Color for previous and next navigation arrows in the gallery."
+msgstr "Kulay para sa mga arrow ng navigation na nakaraang at susunod sa gallery."
+
+#: class-ml-slider-lightbox.php:3170
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2930
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2930
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3170
+msgid ""
+"Arrow color when hovering. Creates visual feedback when users move their "
+"mouse over the navigation arrows."
+msgstr ""
+"Kulay ng arrow kapag hover. Lumilikha ng visual feedback kapag ang mga "
+"gumagamit ay gumagalaw ng kanilang mouse sa mga navigation arrow."
+
+#: class-ml-slider-lightbox.php:3175
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3175
+msgid "Color for the close button (X) in the gallery."
+msgstr "Kulay para sa button na isara (X) sa gallery."
+
+#: class-ml-slider-lightbox.php:3180
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2956
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2956
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3180
+msgid ""
+"Close button color when hovering. Creates visual feedback when users move "
+"their mouse over the close button."
+msgstr ""
+"Kulayan ng button na isara kapag nag-hover. Nagbibigay ng visual na "
+"feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa button na "
+"isara."
+
+#: class-ml-slider-lightbox.php:3185
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2969
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2969
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3185
+msgid ""
+"Color for toolbar icons and counter text in the lightbox. Affects zoom, "
+"fullscreen icons (Pro), and image counter display."
+msgstr ""
+"Kulayan para sa mga icon ng toolbar at teksto ng counter sa lightbox. "
+"Nakakaapekto sa zoom, fullscreen icons (Pro), at display ng bilang ng mga "
+"larawan."
+
+#: class-ml-slider-lightbox.php:3190
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3190
+msgid ""
+"Toolbar icon color when hovering. Creates visual feedback when users move "
+"their mouse over toolbar icons and counter."
+msgstr ""
+"Kulayan ng icon ng toolbar kapag nag-hover. Nagbibigay ng visual na "
+"feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa mga icon ng "
+"toolbar at counter."
+
+#: class-ml-slider-lightbox.php:3195
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2995
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2995
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3195
+msgid "Background color for previous and next navigation arrow buttons."
+msgstr ""
+"Kulayan ng background para sa mga arrow button na nakaraan at susunod na "
+"navigasyon."
+
+#: class-ml-slider-lightbox.php:3200
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3200
+msgid ""
+"Background color for arrow buttons when hovering. Creates visual feedback "
+"when users move their mouse over the arrows."
+msgstr ""
+"Kulayan ng background para sa mga arrow button kapag nag-hover. Nagbibigay "
+"ng visual na feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa "
+"mga arrow."
+
+#: class-ml-slider-lightbox.php:3205
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3205
+msgid "Background color for the close button (X) in the gallery."
+msgstr "Kulayan ng background para sa button na isara (X) sa gallery."
+
+#: class-ml-slider-lightbox.php:3210
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3034
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3034
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3210
+msgid ""
+"Background color for the close button when hovering. Creates visual "
+"feedback when users move their mouse over the close button."
+msgstr ""
+"Kulayan ng background para sa button na isara kapag nag-hover. Nagbibigay "
+"ng visual na feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa "
+"button na isara."
+
+#: class-ml-slider-lightbox.php:3215
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3047
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3047
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3215
+msgid "Background color for toolbar icons in the lightbox."
+msgstr "Kulayan ng background para sa mga icon ng toolbar sa lightbox."
+
+#: class-ml-slider-lightbox.php:3220
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3060
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3060
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3220
+msgid ""
+"Background color for toolbar icons when hovering. Creates visual feedback "
+"when users move their mouse over toolbar icons."
+msgstr ""
+"Kulayan ng background para sa mga icon ng toolbar kapag nag-hover. "
+"Nagbibigay ng visual na feedback kapag inilipat ng mga gumagamit ang "
+"kanilang mouse sa mga icon ng toolbar."
+
+#: class-ml-slider-lightbox.php:3264 class-ml-slider-lightbox.php:3277
+#: class-ml-slider-lightbox.php:3290 class-ml-slider-lightbox.php:3388
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3112
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3144
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3112
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3290
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3388, fuzzy
+msgid "Icon"
+msgstr "Icon"
+
+#: class-ml-slider-lightbox.php:3265 class-ml-slider-lightbox.php:3278
+#: class-ml-slider-lightbox.php:3291 class-ml-slider-lightbox.php:3389
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3083
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3115
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3083
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3115
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3265
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3278
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3291
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3389, fuzzy
+msgid "Icon Hover"
+msgstr "Icon Hover"
+
+#: class-ml-slider-lightbox.php:3266 class-ml-slider-lightbox.php:3279
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3373
+#: class-ml-slider-lightbox.php:3390
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3086
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3118
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3229
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3086
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3118
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3229
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3266
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3279
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3292
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3373
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3390, fuzzy
+msgid "Background"
+msgstr "Background"
+
+#: class-ml-slider-lightbox.php:3267 class-ml-slider-lightbox.php:3280
+#: class-ml-slider-lightbox.php:3293 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3391
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3089
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3153
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3232
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3089
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3153
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3232
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3267
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3280
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3293
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3374
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3391, fuzzy
+msgid "Background Hover"
+msgstr "Background Hover"
+
+#: class-ml-slider-lightbox.php:3310
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3310
+msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
+msgstr "Itakda ang opacity ng background ng gallery (0 = transparent, 1 = opaque)."
+
+#: class-ml-slider-lightbox.php:3319
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3319
+msgid "Color of the progress bar shown during autoplay slideshows."
+msgstr "Kulayan ng progress bar na ipinapakita sa panahon ng autoplay slideshows."
+
+#: class-ml-slider-lightbox.php:3325
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3325
+msgid "Border"
+msgstr "Hangganan"
+
+#: class-ml-slider-lightbox.php:3326
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3326
+msgid "Border Active and Hover"
+msgstr "Aktibong Hangganan at Hover"
+
+#: class-ml-slider-lightbox.php:3338
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3338
+msgid "Show navigation arrows in gallery"
+msgstr "Ipakita ang mga navigation arrow sa gallery"
+
+#: class-ml-slider-lightbox.php:3339
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3184
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3184
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3339
+msgid ""
+"Display left/right arrows for navigation. Also enables keyboard navigation "
+"(← → keys, ESC to close). This is available for slideshows and image "
+"galleries."
+msgstr ""
+"I-display ang kaliwa/kanang arrow para sa navigasyon. Pinapayagan din ang "
+"keyboard navigation (← → keys, ESC upang isara). Ito ay available para sa "
+"mga slideshows at mga gallery ng larawan."
+
+#: class-ml-slider-lightbox.php:3348
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3348
+msgid "Customize the gallery background and overlay appearance."
+msgstr "I-customize ang background ng gallery at ang hitsura ng overlay."
+
+#: class-ml-slider-lightbox.php:3353
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3353
+msgid "Customize navigation icons (close, previous, next arrows) for gallery."
+msgstr ""
+"I-customize ang mga icon ng nabigasyon (isara, nakaraan, susunod na mga "
+"arrow) para sa gallery."
+
+#: class-ml-slider-lightbox.php:3358
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3358
+msgid ""
+"Customize the \"Open in Gallery\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"I-customize ang mga \"Buksan sa Gallery\" na mga button na maaaring idagdag "
+"sa mga slide, larawan, gallery, at mga video."
+
+#: class-ml-slider-lightbox.php:3371
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3223
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3223
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3371
+msgid "Text"
+msgstr "Teksto"
+
+#: class-ml-slider-lightbox.php:3372
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3226
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3226
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3372
+msgid "Text Hover"
+msgstr "Teksto sa Hover"
+
+#: class-ml-slider-lightbox.php:3397
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3397
+msgid ""
+"Configure navigation and control options that apply to all MetaSlider "
+"galleries."
+msgstr ""
+"I-configure ang mga opsyon sa nabigasyon at kontrol na nalalapat sa lahat "
+"ng MetaSlider galleries."
+
+#: class-ml-slider-lightbox.php:3407
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3250
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3250
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3407
+msgid "Show thumbnails"
+msgstr "Ipakita ang mga thumbnail"
+
+#: class-ml-slider-lightbox.php:3408
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3408
+msgid ""
+"Display thumbnail images at the bottom of the gallery for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"I-display ang mga thumbnail na larawan sa ibaba ng gallery para sa madaling "
+"nabigasyon. Ito ay available para sa slideshows at mga image gallery."
+
+#: class-ml-slider-lightbox.php:3420
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3420
+msgid "Show \"Open in Gallery\" button"
+msgstr "Ipakita ang button na \"Buksan sa Gallery\""
+
+#: class-ml-slider-lightbox.php:3421
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3421
+msgid ""
+"When enabled, shows a button to open the gallery. When disabled, clicking "
+"the slide, image, or video directly opens the gallery."
+msgstr ""
+"Kapag naka-enable, nagpapakita ng button para buksan ang gallery. Kapag "
+"naka-disable, ang pag-click sa slide, larawan, o video ay direktang "
+"nagbubukas ng gallery."
+
+#: class-ml-slider-lightbox.php:3438
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3438
+msgid "Show an icon instead of button"
+msgstr "Ipakita ang isang icon sa halip na button"
+
+#: class-ml-slider-lightbox.php:3439
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3439
+msgid "When enabled, displays a small icon instead of the full button text."
+msgstr ""
+"Kapag naka-enable, nagdi-display ng maliit na icon sa halip ng buong teksto "
+"ng button."
+
+#: class-ml-slider-lightbox.php:3453
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3276
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3276
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3453
+msgid "Show captions"
+msgstr "Ipakita ang mga caption"
+
+#: class-ml-slider-lightbox.php:3454
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3454
+msgid ""
+"When enabled, display captions in the gallery window. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"Kapag naka-enable, nagdi-display ng mga caption sa window ng gallery. Ito "
+"ay available para sa slideshows, mga larawan, at mga image gallery."
+
+#: class-ml-slider-lightbox.php:3461
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3461
+msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
+msgstr ""
+"Ang mga advanced na tampok ng lightbox ay available sa pamamagitan ng "
+"MetaSlider Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3463
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3463
+msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
+msgstr ""
+"Kumuha ng preview ng mga advanced na tampok na available sa MetaSlider "
+"Gallery Pro."
+
+#: class-ml-slider-lightbox.php:3466
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3289
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3289
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3466
+msgid ""
+"These advanced LightGallery.js plugins are available in the Pro version "
+"with additional customization options."
+msgstr ""
+"Ang mga advanced na LightGallery.js plugins ay available sa Pro version na "
+"may karagdagang mga opsyon sa pagpapasadya."
+
+#: class-ml-slider-lightbox.php:3494 class-ml-slider-lightbox.php:3495
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3494
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3495
+msgid "specific Pages"
+msgstr "mga partikular na Pahina"
+
+#: class-ml-slider-lightbox.php:3497
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3497
+msgid ""
+"Select pages where gallery should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Pumili ng mga pahina kung saan dapat i-disable ang gallery. Ipinapakita ang "
+"hanggang 100 pinakabagong pahina. Mag-type upang maghanap."
+
+#: class-ml-slider-lightbox.php:3497 class-ml-slider-lightbox.php:3498
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3497
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3498
+msgid ""
+"Select pages where gallery should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Pumili ng mga pahina kung saan dapat i-enable ang gallery. Ipinapakita ang "
+"hanggang 100 pinakabagong pahina. Mag-type upang maghanap."
+
+#: class-ml-slider-lightbox.php:3542 class-ml-slider-lightbox.php:3543
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3542
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3543
+msgid "specific Posts"
+msgstr "tukoy na Mga Post"
+
+#: class-ml-slider-lightbox.php:3545
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3545
+msgid ""
+"Select posts where gallery should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Pumili ng mga post kung saan dapat hindi paganahin ang gallery. Ipinapakita "
+"ang hanggang 100 pinakabagong mga post. Mag-type upang maghanap."
+
+#: class-ml-slider-lightbox.php:3545 class-ml-slider-lightbox.php:3546
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3545
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3546
+msgid ""
+"Select posts where gallery should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Pumili ng mga post kung saan dapat paganahin ang gallery. Ipinapakita ang "
+"hanggang 100 pinakabagong mga post. Mag-type upang maghanap."
+
+#: class-ml-slider-lightbox.php:3573
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3573
+msgid "include"
+msgstr "isama"
+
+#: class-ml-slider-lightbox.php:3573
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3573
+msgid "exclude"
+msgstr "huwag isama"
+
+#: class-ml-slider-lightbox.php:3613
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3613
+#, php-format
+msgid "specific %s"
+msgstr "tukoy na %s"
+
+#: class-ml-slider-lightbox.php:3614
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3429
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3429
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3614
+#, php-format
+msgid "%s specific %s"
+msgstr "%s tukoy na %s"
+
+#: class-ml-slider-lightbox.php:3616 class-ml-slider-lightbox.php:3617
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3431
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3432
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3431
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3432
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3617
+#, php-format
+msgid "Shows up to 100 most recent %s. Type to search."
+msgstr "Ipinapakita ang hanggang 100 pinakabagong %s. Mag-type upang maghanap."
+
+#: class-ml-slider-lightbox.php:3665 class-ml-slider-lightbox.php:3666
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3665
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3666
+msgid "specific post types"
+msgstr "tukoy na mga uri ng post"
+
+#: class-ml-slider-lightbox.php:3668
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3668
+msgid "Select post types where gallery should be disabled entirely."
+msgstr ""
+"Pumili ng mga uri ng post kung saan dapat ganap na hindi paganahin ang "
+"gallery."
+
+#: class-ml-slider-lightbox.php:3668 class-ml-slider-lightbox.php:3669
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3668
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3669
+msgid "Select post types where gallery should be enabled entirely."
+msgstr "Pumili ng mga uri ng post kung saan dapat ganap na paganahin ang gallery."
+
+#: class-ml-slider-lightbox.php:3703
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3515
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3515
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3703
+msgid "Exclude by CSS selector"
+msgstr "Huwag isama ayon sa CSS selector"
+
+#: class-ml-slider-lightbox.php:3706
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3706
+msgid ""
+"CSS selectors for elements to exclude from gallery window (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"Mga CSS selector para sa mga elementong hindi isasama sa gallery window "
+"(isa bawat linya). Mga halimbawa:<br>.no-lightbox<br>.custom-gallery "
+"img<br>#sidebar .widget-area"
+
+#: class-ml-slider-lightbox.php:3729
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3541
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3541
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3729
+msgid "Minimum Image Width"
+msgstr "Minimum na Lapad ng Larawan"
+
+#: class-ml-slider-lightbox.php:3732
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3732
+msgid ""
+"Skip images narrower than this width (in pixels). Uses the displayed width, "
+"not the actual image file size. This is helpful for excluding small icons, "
+"badges, and buttons."
+msgstr ""
+"Laktawan ang mga larawang mas makitid kaysa sa lapad na ito (sa mga "
+"pixels). Gumagamit ng ipinakitang lapad, hindi ang aktwal na laki ng file "
+"ng larawan. Makakatulong ito para sa hindi pagsasama ng maliliit na icon, "
+"badge, at mga button."
+
+#: class-ml-slider-lightbox.php:3755
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3567
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3567
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3755
+msgid "Minimum Image Height"
+msgstr "Minimum na Taas ng Larawan"
+
+#: class-ml-slider-lightbox.php:3758
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3758
+msgid ""
+"Skip images shorter than this height (in pixels). Uses the displayed "
+"height, not the actual image file size. This is helpful for excluding small "
+"icons, badges, and buttons."
+msgstr ""
+"Laktawan ang mga larawang mas maikli kaysa sa taas na ito (sa mga pixels). "
+"Gumagamit ng ipinakitang taas, hindi ang aktwal na laki ng file ng larawan. "
+"Makakatulong ito para sa hindi pagsasama ng maliliit na icon, badge, at mga "
+"button."
+
+#: class-ml-slider-lightbox.php:3774 class-ml-slider-lightbox.php:3931
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3586
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3743
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3586
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3743
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3774
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3931
+msgid ""
+"Enhanced media handling and video playback features for professional "
+"galleries."
+msgstr ""
+"Pinalakas na paghawak ng media at mga tampok ng pag-playback ng video para "
+"sa mga propesyonal na gallery."
+
+#: class-ml-slider-lightbox.php:3781
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3593
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3593
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3781
+msgid "Advanced features for professional lightbox implementations."
+msgstr ""
+"Advanced na mga tampok para sa mga propesyonal na lightbox na "
+"implementasyon."
+
+#: class-ml-slider-lightbox.php:3792 class-ml-slider-lightbox.php:4004
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3604
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3816
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3604
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3816
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3792
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4004
+msgid "Enable Zoom"
+msgstr "Paganahin ang Zoom"
+
+#: class-ml-slider-lightbox.php:3793
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3605
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3605
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3793
+msgid ""
+"Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
+"options."
+msgstr ""
+"Mag-double click upang mag-zoom, mga kontrol sa zoom, pag-zoom gamit ang "
+"mouse wheel, at mga opsyon sa zoom-to-fit."
+
+#: class-ml-slider-lightbox.php:3803 class-ml-slider-lightbox.php:4011
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3615
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3823
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3615
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3823
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3803
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4011
+msgid "Enable Fullscreen"
+msgstr "Paganahin ang Fullscreen"
+
+#: class-ml-slider-lightbox.php:3804
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3804
+msgid ""
+"Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
+"immersive viewing."
+msgstr ""
+"Suportang native ng HTML5 fullscreen na may mga shortcut sa keyboard (F "
+"key) para sa mas nakaka-engganyong pagtingin."
+
+#: class-ml-slider-lightbox.php:3814 class-ml-slider-lightbox.php:4018
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3626
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3830
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3626
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3830
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3814
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4018
+msgid "Enable Rotate"
+msgstr "Paganahin ang Rotate"
+
+#: class-ml-slider-lightbox.php:3815
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3627
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3627
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3815
+msgid ""
+"Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
+"toolbar controls."
+msgstr ""
+"I-rotate ang mga larawan pakanan/pakaliwa, baligtarin nang "
+"pahalang/bertekal gamit ang mga kontrol ng toolbar."
+
+#: class-ml-slider-lightbox.php:3825
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3637
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3637
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3825
+msgid "Enable Video"
+msgstr "Paganahin ang Video"
+
+#: class-ml-slider-lightbox.php:3826
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3638
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3638
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+msgid ""
+"Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
+"quality controls."
+msgstr ""
+"Pina-enhanced na suporta sa video para sa YouTube, Vimeo, mga HTML5 video "
+"na may autoplay at mga kontrol ng kalidad."
+
+#: class-ml-slider-lightbox.php:3836 class-ml-slider-lightbox.php:4053
+#: class-ml-slider-lightbox.php:4193
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3648
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3865
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3648
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3865
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3836
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4053
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4193
+msgid "Enable Unique Image URLs"
+msgstr "Paganahin ang Natatanging URL ng Larawan"
+
+#: class-ml-slider-lightbox.php:3837
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3649
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3649
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3837
+msgid ""
+"Unique URLs for each gallery image with browser back/forward navigation "
+"support."
+msgstr ""
+"Natatanging mga URL para sa bawat larawan sa gallery na may suporta sa "
+"pag-navigate pabalik/pasulong ng browser."
+
+#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:4060
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3659
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3872
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3659
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3872
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4060
+msgid "Enable Autoplay"
+msgstr "Paganahin ang Autoplay"
+
+#: class-ml-slider-lightbox.php:3848
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3848
+msgid "Automatically advance through images in the gallery."
+msgstr "Awtomatikong umusad sa mga larawan sa gallery."
+
+#: class-ml-slider-lightbox.php:3858 class-ml-slider-lightbox.php:4032
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3670
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3844
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3670
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3844
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3858
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4032
+msgid "Enable Share"
+msgstr "Paganahin ang Share"
+
+#: class-ml-slider-lightbox.php:3859
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3671
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3671
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3859
+msgid ""
+"Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
+"URL sharing."
+msgstr ""
+"Mga pindutan para sa pagbabahagi sa social media para sa Facebook, Twitter, "
+"Pinterest, at direktang pagbabahagi ng URL."
+
+#: class-ml-slider-lightbox.php:3869 class-ml-slider-lightbox.php:4039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3681
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3851
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3681
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3851
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3869
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4039
+msgid "Enable Pager"
+msgstr "Paganahin ang Pager"
+
+#: class-ml-slider-lightbox.php:3870
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3682
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3682
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3870
+msgid "Minimal pagination dots for clean navigation without thumbnail previews."
+msgstr ""
+"Minimal na mga tuldok ng pagination para sa malinis na pag-navigate nang "
+"walang thumbnail na mga preview."
+
+#: class-ml-slider-lightbox.php:3926 class-ml-slider-lightbox.php:4000
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3738
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3812
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3738
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3812
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4000
+msgid ""
+"Professional zoom and image interaction controls for enhanced user "
+"experience."
+msgstr ""
+"Propesyonal na zoom at mga kontrol sa interaksyon ng larawan para sa mas "
+"pinabuting karanasan ng gumagamit."
+
+#: class-ml-slider-lightbox.php:3936 class-ml-slider-lightbox.php:4028
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3748
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3840
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3748
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3840
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3936
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4028
+msgid "Social sharing and navigation enhancements to increase engagement."
+msgstr ""
+"Mga pagpapahusay sa pagbabahagi sa social at pag-navigate upang madagdagan "
+"ang pakikilahok."
+
+#: class-ml-slider-lightbox.php:3941 class-ml-slider-lightbox.php:4049
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3753
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3861
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3753
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3861
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4049
+msgid "Advanced functionality including URL management and automation features."
+msgstr ""
+"Advanced na functionality kabilang ang pamamahala ng URL at mga tampok na "
+"automation."
+
+#: class-ml-slider-lightbox.php:3953
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3953
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "Ang tampok na ito ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3817
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3942
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3817
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3942
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4005
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4162
+msgid ""
+"Allow users to zoom in and out with double-click, mouse wheel, and zoom "
+"controls."
+msgstr ""
+"Payagan ang mga gumagamit na mag-zoom in at out gamit ang double-click, "
+"mouse wheel, at mga kontrol sa zoom."
+
+#: class-ml-slider-lightbox.php:4007
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+msgid "Zoom controls are available in MetaSlider Gallery Pro"
+msgstr "Ang mga kontrol sa Zoom ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4012
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3824
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3824
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4012
+msgid "Native HTML5 fullscreen mode for immersive image viewing."
+msgstr ""
+"Katutubong HTML5 fullscreen mode para sa nakaka-engganyong pagtingin sa mga "
+"larawan."
+
+#: class-ml-slider-lightbox.php:4014
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4014
+msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
+msgstr "Ang fullscreen mode ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4019 class-ml-slider-lightbox.php:4178
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3831
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3958
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3831
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3958
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4019
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4178
+msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
+msgstr ""
+"I-rotate ang mga larawan sa clockwise/anticlockwise at i-flip ng "
+"pahalang/vertikal."
+
+#: class-ml-slider-lightbox.php:4021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4021
+msgid "Image rotation is available in MetaSlider Gallery Pro"
+msgstr "Ang pag-ikot ng larawan ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4033
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3845
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3845
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4033
+msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
+msgstr ""
+"Naka-built in na pagbabahagi ng social media para sa Facebook, Twitter, at "
+"Pinterest."
+
+#: class-ml-slider-lightbox.php:4035
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4035
+msgid "Social sharing is available in MetaSlider Gallery Pro"
+msgstr "Ang pagbabahagi sa social media ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4040 class-ml-slider-lightbox.php:4210
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3852
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3990
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3852
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3990
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4040
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4210
+msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
+msgstr ""
+"Minimal na mga tuldok ng pagination sa halip na mga thumbnail para sa mas "
+"malinis na interface."
+
+#: class-ml-slider-lightbox.php:4042
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4042
+msgid "Pager pagination is available in MetaSlider Gallery Pro"
+msgstr "Ang pager pagination ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4054 class-ml-slider-lightbox.php:4194
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3866
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3974
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3866
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3974
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4054
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4194
+msgid ""
+"Generate unique URLs for each gallery image with browser back/forward "
+"navigation."
+msgstr ""
+"Bumuo ng natatanging mga URL para sa bawat gallery image na may navigation "
+"ng browser back/forward."
+
+#: class-ml-slider-lightbox.php:4056
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4056
+msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
+msgstr "Ang mga natatanging URL ng Larawan ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4061 class-ml-slider-lightbox.php:4202
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3873
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3873
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4061
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4202
+msgid "Automatic slideshow with timing controls and progress bar."
+msgstr "Awtomatikong slideshow na may mga kontrol sa timing at progress bar."
+
+#: class-ml-slider-lightbox.php:4063
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4063
+msgid "Autoplay is available in MetaSlider Gallery Pro"
+msgstr "Ang autoplay ay available sa MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4080
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3892
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3892
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4080
+msgid "Features"
+msgstr "Mga Tampok"
+
+#: class-ml-slider-lightbox.php:4081
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3893
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3893
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4081
+msgid "Free"
+msgstr "Libre"
+
+#: class-ml-slider-lightbox.php:4082
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3894
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3894
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4082, fuzzy
+msgid "Pro"
+msgstr "Pro"
+
+#: class-ml-slider-lightbox.php:4088 class-ml-slider-lightbox.php:4227
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3900
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3900
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4088
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4227
+msgid "Installed"
+msgstr "Naka-install"
+
+#: class-ml-slider-lightbox.php:4091 class-ml-slider-lightbox.php:4230
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3903
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:4010
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3903
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:4010
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4091
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4230
+msgid "Upgrade now"
+msgstr "Mag-upgrade ngayon"
+
+#: class-ml-slider-lightbox.php:4097
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3909
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3909
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4097
+msgid "Automatic lightbox for images"
+msgstr "Awtomatikong lightbox para sa mga larawan"
+
+#: class-ml-slider-lightbox.php:4098
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3910
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3910
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4098
+msgid "Automatically enable lightbox for all images on your site."
+msgstr ""
+"Awtomatikong i-enable ang lightbox para sa lahat ng mga larawan sa iyong "
+"site."
+
+#: class-ml-slider-lightbox.php:4105
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3917
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4105
+msgid "MetaSlider integration"
+msgstr "Integrasyon ng MetaSlider"
+
+#: class-ml-slider-lightbox.php:4106
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3918
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3918
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4106
+msgid "Seamless integration with MetaSlider slideshows."
+msgstr "Walang putol na integrasyon sa mga slideshow ng MetaSlider."
+
+#: class-ml-slider-lightbox.php:4113
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3925
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3925
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4113
+msgid "WordPress gallery support"
+msgstr "Suporta para sa WordPress gallery"
+
+#: class-ml-slider-lightbox.php:4114
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4114
+msgid "Support for WordPress native galleries and blocks."
+msgstr "Suporta para sa mga katutubong gallery at mga bloke ng WordPress."
+
+#: class-ml-slider-lightbox.php:4121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3933
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3933
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4121
+msgid "Appearance customization"
+msgstr "Pag-customize ng hitsura"
+
+#: class-ml-slider-lightbox.php:4122
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3934
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3934
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4122
+msgid "Customize colors, opacity, and button styles."
+msgstr "I-customize ang mga kulay, opacity, at estilo ng button."
+
+#: class-ml-slider-lightbox.php:4129
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4129
+msgid "Gallery builder &amp; layouts"
+msgstr "Tagabuo ng gallery &amp; mga layout"
+
+#: class-ml-slider-lightbox.php:4130
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4130
+msgid ""
+"Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
+"layouts."
+msgstr ""
+"Bumuo ng mga gallery gamit ang Grid, Masonry, Justified, Carousel, at "
+"Showcase na mga layout."
+
+#: class-ml-slider-lightbox.php:4137
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4137
+msgid "Responsive columns"
+msgstr "Responsive na mga haligi"
+
+#: class-ml-slider-lightbox.php:4138
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4138
+msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
+msgstr ""
+"Itakda ang bilang ng mga haligi para sa desktop at mobile, na may naaayong "
+"espasyo."
+
+#: class-ml-slider-lightbox.php:4145
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4145
+msgid "Image captions"
+msgstr "Mga caption ng larawan"
+
+#: class-ml-slider-lightbox.php:4146
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4146
+msgid "Show image captions in the gallery grid and the gallery window."
+msgstr ""
+"Ipakita ang mga caption ng larawan sa grid ng gallery at sa window ng "
+"gallery."
+
+#: class-ml-slider-lightbox.php:4153
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4153
+msgid "Thumbnail navigation"
+msgstr "Thumbnail na nabigasyon"
+
+#: class-ml-slider-lightbox.php:4154
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4154
+msgid "Display a strip of thumbnails for quick navigation between images."
+msgstr ""
+"I-display ang isang strip ng mga thumbnail para sa mabilis na nabigasyon sa "
+"pagitan ng mga larawan."
+
+#: class-ml-slider-lightbox.php:4161
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4161
+msgid "Zoom controls"
+msgstr "Mga kontrol sa zoom"
+
+#: class-ml-slider-lightbox.php:4169
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3949
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3949
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4169
+msgid "Fullscreen mode"
+msgstr "Fullscreen na mode"
+
+#: class-ml-slider-lightbox.php:4170
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3950
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3950
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4170
+msgid "Native HTML5 fullscreen for immersive image viewing."
+msgstr ""
+"Katutubong HTML5 fullscreen para sa nakaka-engganyong pagtingin ng mga "
+"larawan."
+
+#: class-ml-slider-lightbox.php:4177
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3957
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3957
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4177
+msgid "Rotate and flip images"
+msgstr "I-rotate at i-flip ang mga larawan"
+
+#: class-ml-slider-lightbox.php:4185
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3965
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3965
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4185
+msgid "Social media sharing"
+msgstr "Pagbabahagi sa social media"
+
+#: class-ml-slider-lightbox.php:4186
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3966
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3966
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4186
+msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+msgstr "Naka-built-in na pagbabahagi para sa Facebook, Twitter, at Pinterest."
+
+#: class-ml-slider-lightbox.php:4201
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3981
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3981
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4201, fuzzy
+msgid "Autoplay slideshow"
+msgstr "Autoplay slideshow"
+
+#: class-ml-slider-lightbox.php:4209
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3989
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3989
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4209, fuzzy
+msgid "Pager navigation"
+msgstr "Pager navigation"
+
+#: class-ml-slider-lightbox.php:4217
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3997
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3997
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4217, fuzzy
+msgid "Premium support"
+msgstr "Premium support"
+
+#: class-ml-slider-lightbox.php:4218
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3998
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3998
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4218
+msgid "Have your specific queries addressed directly by our experts."
+msgstr ""
+"I-address ang iyong mga tiyak na katanungan nang direkta sa aming mga "
+"eksperto."
+
+#: class-ml-slider-lightbox.php:6005
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5808
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5808
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6005
+msgid "Configure how the lightbox interacts with WordPress built-in features."
+msgstr ""
+"I-configure kung paano nakikipag-ugnayan ang lightbox sa mga built-in na "
+"tampok ng WordPress."
+
+#: class-ml-slider-lightbox.php:6020
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5823
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5823
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6020
+msgid "Override WordPress \"Enlarge on Click\" Setting"
+msgstr "I-overwrite ang WordPress \"Palakihin sa Pag-click\" na Setting"
+
+#: class-ml-slider-lightbox.php:6021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6021
+msgid ""
+"When enabled, disables WordPress built-in gallery window and uses "
+"MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
+"respects WordPress setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"Kapag pinagana, pinipigilan ang built-in na gallery window ng WordPress at "
+"gumagamit ng MetaSlider Gallery para sa mga imaheng nakatakdang \"Palakihin "
+"sa Pag-click\". Kapag hindi pinagana, iginagalang ang setting ng WordPress "
+"at nililipat ang mga imaheng nakatakdang \"Palakihin sa Pag-click\"."
+
+#: class-ml-slider-lightbox.php:6037
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5840
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5840
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6037
+msgid "Override \"Link to Image File\" Setting"
+msgstr "I-overwrite ang \"Link to Image File\" na Setting"
+
+#: class-ml-slider-lightbox.php:6038
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6038
+msgid ""
+"When enabled, uses MetaSlider Gallery for images linked to their full-size "
+"image file (commonly set via \"Link to Image File\" in the block editor). "
+"When disabled, respects the original link behavior."
+msgstr ""
+"Kapag pinagana, gumagamit ng MetaSlider Gallery para sa mga imaheng "
+"naka-link sa kanilang buong sukat na file ng imahe (karaniwang itinatakda "
+"sa pamamagitan ng \"Link to Image File\" sa block editor). Kapag hindi "
+"pinagana, iginagalang ang orihinal na pag-uugali ng link."
+
+#: class-ml-slider-lightbox.php:6069
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5872
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5872
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6069
+msgid "Exclude Post Types from Manual Processing"
+msgstr "I-exclude ang mga Uri ng Post mula sa Manu-manong Pagproseso"
+
+#: class-ml-slider-lightbox.php:6072
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6072
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable the gallery on WooCommerce product pages "
+"while keeping it active elsewhere."
+msgstr ""
+"Pumili ng mga uri ng post kung saan ang mga Manu-manong opsyon ay HINDI "
+"dapat gumana. Halimbawa, pumili ng \"Mga Produkto (produkto)\" upang huwag "
+"paganahin ang gallery sa mga pahina ng produkto ng WooCommerce habang "
+"pinapanatili itong aktibo sa ibang lugar."
+
+#: class-ml-slider-lightbox.php:6096
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5899
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5899
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6096
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "Paano gamitin: WordPress \"Palakihin sa Pag-click\""
+
+#: class-ml-slider-lightbox.php:6098
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5901
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5901
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6098
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"May built-in na tampok na \"Palakihin sa Pag-click\" ang WordPress para sa "
+"mga imahe. Narito kung paano ito paganahin:"
+
+#: class-ml-slider-lightbox.php:6100 class-ml-slider-lightbox.php:6113
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5903
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5916
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5903
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5916
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6100
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6113
+msgid "Select an image in the block editor."
+msgstr "Pumili ng isang imahe sa block editor."
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5904
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5904
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5917
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6101
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6114
+msgid "In the block toolbar, click on the Link icon."
+msgstr "Sa block toolbar, i-click ang icon ng Link."
+
+#: class-ml-slider-lightbox.php:6102
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5905
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5905
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6102
+msgid "Select \"Enlarge on click\"."
+msgstr "Pumili ng \"Palakihin sa pag-click\"."
+
+#: class-ml-slider-lightbox.php:6108
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5911
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5911
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6108
+msgid "How to use: \"Link to Image File\""
+msgstr "Paano gamitin: \"Link to Image File\""
+
+#: class-ml-slider-lightbox.php:6110
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5913
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5913
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6110
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr ""
+"Maaari mong i-link ang mga imahe nang direkta sa kanilang buong sukat na "
+"media file. Narito kung paano:"
+
+#: class-ml-slider-lightbox.php:6111
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5914
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5914
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6111
+msgid "For the Block Editor:"
+msgstr "Para sa Block Editor:"
+
+#: class-ml-slider-lightbox.php:6115
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5918
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5918
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6115
+msgid "Choose \"Link to image file\"."
+msgstr "Pumili ng \"Link to image file\"."
+
+#: class-ml-slider-lightbox.php:6117
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5920
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5920
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6117
+msgid "For the Classic Editor:"
+msgstr "Para sa Classic Editor:"
+
+#: class-ml-slider-lightbox.php:6119
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5922
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5922
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6119
+msgid "Select an image."
+msgstr "Pumili ng isang imahe."
+
+#: class-ml-slider-lightbox.php:6120
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5923
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5923
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6120
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "Sa toolbar ng imahe, i-click ang icon na I-edit."
+
+#: class-ml-slider-lightbox.php:6121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5924
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5924
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6121
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "Pumili ng \"Media File\" sa dropdown na \"Link To\"."
+
+#: class-ml-slider-lightbox.php:6127
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5930
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5930
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6127
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "Paano gamitin: CSS Class Method (Advanced)"
+
+#: class-ml-slider-lightbox.php:6129
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6129
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"MetaSlider Gallery on any element containing images."
+msgstr ""
+"Para sa mga developer: Idagdag ang <code>ml-lightbox-enabled</code> na "
+"klase upang i-enable ang MetaSlider Gallery sa anumang elemento na "
+"naglalaman ng mga imahe."
+
+#: class-ml-slider-lightbox.php:6130
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5933
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5933
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6130
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "Pamamaraan 1: Block Editor Karagdagang CSS Classes"
+
+#: class-ml-slider-lightbox.php:6132
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5935
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5935
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6132
+msgid "Select an image or gallery block."
+msgstr "Pumili ng isang imahe o gallery block."
+
+#: class-ml-slider-lightbox.php:6133
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5936
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5936
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6133
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "Sa sidebar ng mga setting ng block, mag-scroll sa \"Advanced\"."
+
+#: class-ml-slider-lightbox.php:6134
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5937
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5937
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6134
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr ""
+"Idagdag ang <code>ml-lightbox-enabled</code> sa \"Karagdagang CSS "
+"class(es)\"."
+
+#: class-ml-slider-lightbox.php:6136
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5939
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5939
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6136
+msgid "Method 2: HTML/Code"
+msgstr "Pamamaraan 2: HTML/Kodigo"
+
+#: class-ml-slider-lightbox.php:6137
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5940
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5940
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6137
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr ""
+"Para sa mga custom na HTML o theme developer, idirekta ang pagdagdag ng "
+"klase:"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1056
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Lightbox requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"Ang MetaSlider Lightbox ay nangangailangan ng MetaSlider at kahit isang iba "
+"pang suportadong lightbox plugin na naka-install at na-activate."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1071
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Lightbox"
+msgstr ""
+"May higit sa isang lightbox plugin na naka-activate. Maaaring magdulot ito "
+"ng mga salungatan sa MetaSlider Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "I-edit ang mga setting"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1138
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "Buksan sa lightbox?"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1449
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2849
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1449
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2849
+msgid "Open in Lightbox"
+msgstr "Buksan sa Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1679
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1679
+msgid "MetaSlider Lightbox requires MetaSlider to be installed and activated."
+msgstr ""
+"Ang MetaSlider Lightbox ay nangangailangan ng MetaSlider na naka-install at "
+"na-activate."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1783
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1899
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1783
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1899, fuzzy
+msgid "MetaSlider Lightbox Pro"
+msgstr "MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1785
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1900
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1785
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1900, fuzzy
+msgid "MetaSlider Lightbox"
+msgstr "MetaSlider Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1895
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1895, fuzzy
+msgid "Lightbox Pro"
+msgstr "Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1896
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1896, fuzzy
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1978
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1978
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr ""
+"I-customize ang mga kulay, opacity, at visual styling para sa lightbox "
+"overlay at mga kontrol."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1992
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1992
+msgid "\"Open in Lightbox\" Button"
+msgstr "\"Buksan sa Lightbox\" Button"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2055
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2055
+msgid "Manual Lightbox Options"
+msgstr "Manu-manong Mga Opsyon ng Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2269
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2269
+msgid "Lightbox Toolbar"
+msgstr "Toolbar ng Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2634
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2634
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr ""
+"I-configure ang mga pangkalahatang setting ng lightbox na naaangkop sa "
+"buong site."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2639
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2639
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr ""
+"I-configure ang mga setting na tiyak sa functionality ng lightbox ng "
+"MetaSlider."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2644
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2644
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "Piliin kung saan awtomatikong i-enable ang lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2650
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2650
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"Pumili kung paano i-filter ang nilalaman para sa pagproseso ng lightbox at "
+"tukuyin kung aling mga pahina, post, o selector ang isasama o aalisin."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2704
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2704
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"Kapag na-enable, ang mga indibidwal na larawan na walang mga link at "
+"\"Palakihin sa Pag-click\" na itinakda sa mga post at pahina ay "
+"awtomatikong magbubukas sa lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2721
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2721
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"Kapag na-enable, ang mga larawan at video sa mga widget area ay "
+"awtomatikong magbubukas sa lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2738
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2738
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"Kapag na-enable, ang mga larawan sa WordPress [gallery] shortcodes at "
+"Gutenberg Gallery blocks ay awtomatikong magbubukas sa lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2755
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2755
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"Kapag na-enable, ang mga tampok na larawan (mga post thumbnail) ay "
+"awtomatikong magbubukas sa lightbox kapag na-click."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2772
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2772
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"Kapag na-enable, ang mga standalone video blocks (HTML5 videos, YouTube "
+"embeds, Vimeo embeds) sa nilalaman ng post/pahina ay awtomatikong "
+"magbubukas sa lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2787
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2787
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"Kulayan ng background para sa lightbox overlay. Mas mainam ang madidilim na "
+"kulay para sa pagtingin ng mga larawan."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2800
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2800
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"Kulayan ng background para sa \"Buksan sa Lightbox\" na mga button na "
+"lumalabas sa mga slide, larawan at video."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2813
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2813
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"Kulayan ng teksto para sa \"Buksan sa Lightbox\" na mga button na lumalabas "
+"sa mga slide, larawan at video."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2826
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2826
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr ""
+"Kulayan ng background kapag nakahover sa \"Buksan sa Lightbox\" na mga "
+"button."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2839
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2839
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "Kulayan ng teksto kapag nakahover sa \"Buksan sa Lightbox\" na mga button."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2852
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2852
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"Pasadulang teksto para sa mga buton ng lightbox. Ang tekstong ito ay "
+"lilitaw sa lahat ng \"Buksan sa Lightbox\" na mga buton sa buong site."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "Pumili kung saan ilalagay ang close button (X) sa lightbox overlay."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2904
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2904
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"Pumili kung saan ilalagay ang \"Buksan sa Lightbox\" na mga buton sa loob "
+"ng mga slide, larawan, gallery, at video."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2917
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "Kulay para sa mga nakaraang at susunod na arrow ng nabigasyon sa lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2943
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2943
+msgid "Color for the close button (X) in the lightbox."
+msgstr "Kulay para sa close button (X) sa lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3021
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3021
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "Kulay ng background para sa close button (X) sa lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3172
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3172
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr "Itakda ang opacity ng background ng lightbox (0 = transparent, 1 = opaque)."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3183
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3183
+msgid "Show navigation arrows in lightbox"
+msgstr "Ipakita ang mga arrow ng nabigasyon sa lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3193
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3193
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "I-customize ang background ng lightbox at hitsura ng overlay."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3198
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3198
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr ""
+"I-customize ang mga icon ng nabigasyon (close, nakaraan, susunod na mga "
+"arrow) para sa mga lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3203
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3203
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"I-customize ang mga buton ng \"Buksan sa Lightbox\" na maaaring idagdag sa "
+"mga slide, larawan, gallery, at video."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3240
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3240
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr ""
+"I-configure ang mga pagpipilian sa nabigasyon at kontrol na nalalapat sa "
+"lahat ng lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3251
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3251
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"I-display ang mga thumbnail na larawan sa ibaba ng lightbox para sa "
+"madaling nabigasyon. Ito ay available para sa mga slideshow at image "
+"gallery."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3263
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3263
+msgid "Show \"Open in Lightbox\" button"
+msgstr "Ipakita ang \"Buksan sa Lightbox\" na buton"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"Kapag naka-enable, naglalabas ito ng buton upang buksan ang lightbox. Kapag "
+"naka-disable, ang pag-click sa slide, larawan, o video ay direktang "
+"nagbubukas ng lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"Kapag naka-enable, ipakita ang mga caption sa lightbox. Ito ay available "
+"para sa mga slideshow, larawan, at image gallery."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3284
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3284
+msgid "Advanced lightbox features are available through MetaSlider Lightbox Pro."
+msgstr ""
+"Ang mga advanced na tampok ng lightbox ay available sa pamamagitan ng "
+"MetaSlider Lightbox Pro."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3286
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3286
+msgid "Get a preview of the advanced features available in MetaSlider Lightbox Pro."
+msgstr ""
+"Kumuha ng preview ng mga advanced na tampok na available sa MetaSlider "
+"Lightbox Pro."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3315
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3315
+msgid "Include specific Pages"
+msgstr "Isama ang mga partikular na Pahina"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Pumili ng mga pahina kung saan dapat i-disable ang lightbox. Ipinapakita "
+"ang hanggang 100 pinakabagong pahina. Mag-type upang maghanap."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3318
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3318
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"Pumili ng mga pahina kung saan dapat paganahin ang lightbox. Nagpapakita ng "
+"hanggang 100 pinakamakabagong pahina. Mag-type upang maghanap."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3360
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3360
+msgid "Include specific Posts"
+msgstr "Isama ang mga tiyak na Post"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Pumili ng mga post kung saan dapat huwag paganahin ang lightbox. "
+"Nagpapakita ng hanggang 100 pinakamakabagong post. Mag-type upang maghanap."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3363
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3363
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"Pumili ng mga post kung saan dapat paganahin ang lightbox. Nagpapakita ng "
+"hanggang 100 pinakamakabagong post. Mag-type upang maghanap."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3478
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3478
+msgid "Include specific post types"
+msgstr "Isama ang mga tiyak na uri ng post"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr ""
+"Pumili ng mga uri ng post kung saan dapat ganap na huwag paganahin ang "
+"lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3481
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3481
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "Pumili ng mga uri ng post kung saan dapat ganap na paganahin ang lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3518
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3518
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"Mga CSS selector para sa mga elemento na dapat i-exclude mula sa lightbox "
+"(isa bawat linya). Mga halimbawa:<br>.no-lightbox<br>.custom-gallery "
+"img<br>#sidebar .widget-area"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3544
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3544
+msgid ""
+"Skip images narrower than this width (in pixels). Useful to exclude small "
+"icons, badges, and buttons. Set to 0 to disable width checking."
+msgstr ""
+"Laktawan ang mga larawan na mas makitid kaysa sa lapad na ito (sa pixels). "
+"Kapaki-pakinabang upang i-exclude ang maliliit na icon, badge, at button. "
+"I-set sa 0 upang huwag paganahin ang pagsuri sa lapad."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3570
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3570
+msgid ""
+"Skip images shorter than this height (in pixels). Useful to exclude small "
+"icons, badges, and buttons. Set to 0 to disable height checking."
+msgstr ""
+"Laktawan ang mga larawan na mas maikli kaysa sa taas na ito (sa pixels). "
+"Kapaki-pakinabang upang i-exclude ang maliliit na icon, badge, at button. "
+"I-set sa 0 upang huwag paganahin ang pagsuri sa taas."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3660
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3660
+msgid "Automatic slideshow progression with customizable timing and pause-on-hover."
+msgstr ""
+"Awtomatikong pag-usad ng slideshow na may nako-customize na timing at "
+"pause-on-hover."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3765
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3765
+msgid "This feature is available in MetaSlider Lightbox Pro"
+msgstr "Ang tampok na ito ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3819
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3819
+msgid "Zoom controls are available in MetaSlider Lightbox Pro"
+msgstr "Ang mga kontrol sa zoom ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+msgid "Fullscreen mode is available in MetaSlider Lightbox Pro"
+msgstr "Ang fullscreen mode ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3833
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3833
+msgid "Image rotation is available in MetaSlider Lightbox Pro"
+msgstr "Ang pag-ikot ng larawan ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+msgid "Social sharing is available in MetaSlider Lightbox Pro"
+msgstr "Ang social sharing ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3854
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3854
+msgid "Pager pagination is available in MetaSlider Lightbox Pro"
+msgstr "Ang pager pagination ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3868
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3868
+msgid "Hash URLs are available in MetaSlider Lightbox Pro"
+msgstr "Ang Hash URLs ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3875
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3875
+msgid "Autoplay is available in MetaSlider Lightbox Pro"
+msgstr "Ang Autoplay ay available sa MetaSlider Lightbox Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3973
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3973, fuzzy
+msgid "Hash URLs"
+msgstr "Hash URLs"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5824
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5824
+msgid ""
+"When enabled, disables WordPress built-in lightbox and uses our lightbox "
+"for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+"setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"Kapag naka-enable, pinapatay ang built-in na lightbox ng WordPress at "
+"ginagamit ang aming lightbox para sa mga larawang nakatakdang \"Palakihin "
+"sa Pag-click\". Kapag naka-disable, iginagalang ang setting ng WordPress at "
+"hindi isinasama ang mga larawang nakatakdang \"Palakihin sa Pag-click\"."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5841
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5841
+msgid ""
+"When enabled, uses our lightbox for images linked to their full-size image "
+"file (commonly set via \"Link to Image File\" in the block editor). When "
+"disabled, respects the original link behavior."
+msgstr ""
+"Kapag naka-enable, ginagamit ang aming lightbox para sa mga larawang "
+"naka-link sa kanilang buong sukat na file ng larawan (karaniwang nakatakda "
+"sa \"Link to Image File\" sa block editor). Kapag naka-disable, iginagalang "
+"ang orihinal na pag-uugali ng link."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5875
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5875
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
+"pages while keeping it active elsewhere."
+msgstr ""
+"Pumili ng mga uri ng post kung saan HINDI dapat gumana ang Manual na mga "
+"opsyon. Halimbawa, piliin ang \"Products (product)\" upang huwag paganahin "
+"ang Manual na lightbox sa mga pahina ng produkto ng WooCommerce habang "
+"pinapanatiling aktibo sa ibang lugar."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5932
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5932
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"lightbox on any element containing images."
+msgstr ""
+"Para sa mga developer: Idagdag ang <code>ml-lightbox-enabled</code> na "
+"klase upang paganahin ang lightbox sa anumang elemento na naglalaman ng mga "
+"larawan."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:26
+#: vendor/gettext/gettext/tests/TranslatorTest.php:27
+#: vendor/gettext/gettext/tests/TranslatorTest.php:68
+#: vendor/gettext/gettext/tests/TranslatorTest.php:74
+msgid "single"
+msgid_plural "more"
+msgstr[0] "isa"
+msgstr[1] "marami"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:29
+#: vendor/gettext/gettext/tests/TranslatorTest.php:44
+msgid "Integer"
+msgstr "Buong bilang"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:33
+#: vendor/gettext/gettext/tests/TranslatorTest.php:45
+msgid "This field cannot be blank."
+msgstr "Ang larangang ito ay hindi maaaring walang laman."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:34
+#: vendor/gettext/gettext/tests/TranslatorTest.php:46
+#: vendor/gettext/gettext/tests/TranslatorTest.php:47
+#: vendor/gettext/gettext/tests/TranslatorTest.php:48
+#: vendor/gettext/gettext/tests/TranslatorTest.php:49
+#: vendor/gettext/gettext/tests/TranslatorTest.php:51
+#, php-format
+msgid "Value %sr is not a valid choice."
+msgstr "Ang halaga %sr ay hindi wastong pagpipilian."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:50
+#, php-format
+msgid "%ss must be unique for %ss %ss."
+msgstr "%ss ay dapat na natatangi para sa %ss %ss."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:60
+#: vendor/gettext/gettext/tests/TranslatorTest.php:61
+#: vendor/gettext/gettext/tests/TranslatorTest.php:62
+#: vendor/gettext/gettext/tests/TranslatorTest.php:63
+#: vendor/gettext/gettext/tests/TranslatorTest.php:64
+#: vendor/gettext/gettext/tests/TranslatorTest.php:65
+msgid "one file"
+msgid_plural "multiple files"
+msgstr[0] "isang file"
+msgstr[1] "maraming mga file"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:253, fuzzy
+msgid "hello"
+msgstr "hello"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:254
+#: vendor/gettext/gettext/tests/TranslatorTest.php:255
+#: vendor/gettext/gettext/tests/TranslatorTest.php:256
+msgid "world"
+msgid_plural "worlds"
+msgstr[0] "mundo"
+msgstr[1] "mga mundo"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:2, fuzzy
+msgid "text 1"
+msgstr "text 1"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:9
+msgid "text 3 (with parenthesis)"
+msgstr "text 3 (na may panaklong)"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:10
+msgid "text 4 \"with double quotes\""
+msgstr "text 4 \"na may dobleng panipi\""
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:11
+msgid "text 5 'with escaped single quotes'"
+msgstr "text 5 'na may na-escape na solong panipi'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:15, fuzzy
+msgid "text 6"
+msgstr "text 6"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:16
+msgid "text 7 (with parenthesis)"
+msgstr "text 7 (na may panaklong)"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:17
+msgid "text 8 \"with escaped double quotes\""
+msgstr "text 8 \"na may na-escape na dobleng panipi\""
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:18
+msgid "text 9 'with single quotes'"
+msgstr "text 9 'na may solong panipi'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:22
+msgid ""
+"<div id=\"blog\" class=\"container\">\n"
+"    <div class=\"row\">\n"
+"        <div class=\"col-md-12\">\n"
+"            <div id=\"content\">\n"
+"                <div class=\"page_post\">\n"
+"                    <div class=\"container\">\n"
+"                        <div class=\"margin-top-40\"></div>\n"
+"                        <div class=\"col-sm-3 col-md-2 centered-xs "
+"an-number\">4</div>\n"
+"                    </div>\n"
+"                </div>\n"
+"                <div class=\"container\">\n"
+"                    <h1 class=\"text-center margin-top-10\">Sorry, but we "
+"couldn't find this page</h1>\n"
+"                    <div id=\"body-div\">\n"
+"                        <div id=\"main-div\">\n"
+"                            <div class=\"text-404\">\n"
+"                                <div>\n"
+"                                    <p>Maybe you have entered an incorrect "
+"URL of the page or page moved to another section or just page is "
+"temporarily unavailable.</p>\n"
+"                                </div>\n"
+"                            </div>\n"
+"                        </div>\n"
+"                    </div>\n"
+"                </div>\n"
+"            </div>\n"
+"        </div>\n"
+"    </div>\n"
+"</div>"
+msgstr ""
+"<div id=\"blog\" class=\"container\">\n"
+"    <div class=\"row\">\n"
+"        <div class=\"col-md-12\">\n"
+"            <div id=\"content\">\n"
+"                <div class=\"page_post\">\n"
+"                    <div class=\"container\">\n"
+"                        <div class=\"margin-top-40\"></div>\n"
+"                        <div class=\"col-sm-3 col-md-2 centered-xs "
+"an-number\">4</div>\n"
+"                    </div>\n"
+"                </div>\n"
+"                <div class=\"container\">\n"
+"                    <h1 class=\"text-center margin-top-10\">Paumanhin, "
+"ngunit hindi namin mahanap ang pahinang ito</h1>\n"
+"                    <div id=\"body-div\">\n"
+"                        <div id=\"main-div\">\n"
+"                            <div class=\"text-404\">\n"
+"                                <div>\n"
+"                                    <p>Marahil ay nag-enter ka ng maling "
+"URL ng pahina o ang pahina ay nailipat sa ibang seksyon o ang pahina ay "
+"pansamantalang hindi magagamit.</p>\n"
+"                                </div>\n"
+"                            </div>\n"
+"                        </div>\n"
+"                    </div>\n"
+"                </div>\n"
+"            </div>\n"
+"        </div>\n"
+"    </div>\n"
+"</div>"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:2, fuzzy
+msgid "plain"
+msgstr "plain"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:3
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:4
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:5
+msgid "DATE \\a\\t TIME"
+msgstr "PETS \\a\\t ORAS"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:6, fuzzy
+msgid "FIELD\tFIELD"
+msgstr "FIELD\tFIELD"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:8
+msgid "text concatenated with 'comments'"
+msgstr "teksto na pinagsama sa 'komento'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:14
+msgid "Stop at the variable"
+msgstr "Itigil sa variable"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:19
+msgid "No comments"
+msgstr "Walang komento"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:26
+msgid "i18n Tagged comment"
+msgstr "i18n Tagged na komento"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:30
+msgid "i18n Tagged comment inside"
+msgstr "i18n Tagged na komento sa loob"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:36
+#, fuzzy, php-format
+msgid "i18n tagged %s"
+msgstr "i18n tagged %s"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:42, fuzzy
+msgid "foo"
+msgstr "foo"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:44, fuzzy
+msgid "bar"
+msgstr "bar"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:51, fuzzy
+msgid "foo bar"
+msgstr "foo bar"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:54
+msgid "World"
+msgstr "Mundo"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:55
+msgid "No comment"
+msgstr "Walang komento"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+#, php-format
+msgid "Within printf: %s"
+msgstr "Sa loob ng printf: %s"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57, fuzzy
+msgid "placeholder"
+msgstr "placeholder"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+msgid "After printf"
+msgstr "Pagkatapos ng printf"
+
+#: vendor/gettext/gettext/tests/assets/phpcode3/input.php:8
+msgid "Translation with comments"
+msgstr "Pagsasalin na may mga komento"
+
+#: vendor/gettext/gettext/tests/assets/phpcode3/input.php:11, fuzzy
+msgid "Foo"
+msgstr "Foo"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:3
+msgid "matching 1"
+msgstr "tugma 1"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:4
+msgid "matching 2 singular"
+msgid_plural "matching 2 plural"
+msgstr[0] "tugma 2 na nag-iisa"
+msgstr[1] "tugma 2 na marami"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:8
+msgid "skip singular"
+msgid_plural "skip plural"
+msgstr[0] "laktawan"
+msgstr[1] "laktawan"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:9
+msgid "skip"
+msgstr "laktawan"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:11
+msgid "skip global 1"
+msgstr "laktawan pandaigdig 1"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:12
+msgid "skip global 2"
+msgstr "laktawan pandaigdig 2"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:3
+msgid "no domain"
+msgstr "walang domain"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:5
+msgid "domain1 Text"
+msgstr "teksto ng domain1"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:8
+msgid "domain2 Text"
+msgid_plural "domain2 Text plural"
+msgstr[0] "teksto ng domain2"
+msgstr[1] "teksto ng domain2 na marami"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:9
+msgid "domain2 Text Separate"
+msgstr "Teksto ng domain2 na Hiwalay"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:14
+msgid "no domain 2"
+msgstr "walang domain 2"
+
+#: vendor/gettext/gettext/tests/assets/phpcode6/input.php:4
+msgid "No domain text"
+msgstr "Walang teksto ng domain"
+
+#: vendor/gettext/gettext/tests/assets/phpcode6/input.php:6
+msgid "Other domain text"
+msgstr "Ibang teksto ng domain"
+
+#: class-ml-slider-lightbox.php:1131
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a gallery, using %s"
+msgstr "Lahat ng mga slide ay magbubukas sa isang gallery, gamit ang %s"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a lightbox, using %s"
+msgstr "Lahat ng mga slide ay magbubukas sa isang lightbox, gamit ang %s"

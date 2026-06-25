@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-05-06 15:23+0000\n"
+"PO-Revision-Date: 2026-06-24 15:25+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -22,402 +22,971 @@ msgstr ""
 "Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: class-ml-gallery.php:70
-msgid "Some of these features are available in MetaSlider Gallery Pro"
-msgstr "برخی از این ویژگی‌ها در MetaSlider Gallery Pro موجود است"
+#: admin/Notices.php:43 ml-slider-lightbox/admin/Notices.php:43
+msgid ""
+"Enjoying MetaSlider Gallery? Please help us with a 5-star review on "
+"WordPress.org."
+msgstr ""
+"آیا از گالری MetaSlider لذت می‌برید؟ لطفاً با یک بررسی 5 ستاره در "
+"WordPress.org به ما کمک کنید."
 
-#: class-ml-gallery.php:78
-msgid "Fade"
-msgstr "محو"
+#: admin/Notices.php:53 ml-slider-lightbox/admin/Notices.php:53
+msgid "Unlock zoom, fullscreen, sharing and more with MetaSlider Gallery Pro."
+msgstr ""
+"زوم، صفحه‌نمایش کامل، اشتراک‌گذاری و بیشتر را با گالری MetaSlider Pro باز "
+"کنید."
 
-#: class-ml-gallery.php:79
-msgid "Slide"
-msgstr "اسلاید"
+#: admin/Notices.php:163 ml-slider-lightbox/admin/Notices.php:163
+msgid "Review MetaSlider Gallery &rarr;"
+msgstr "بررسی گالری MetaSlider &rarr;"
 
-#: class-ml-gallery.php:80 class-ml-gallery.php:560
-msgid "Zoom"
-msgstr "زوم"
+#: admin/Notices.php:164 ml-slider-lightbox/admin/Notices.php:164
+msgid "Get Gallery Pro &rarr;"
+msgstr "گالری Pro را بگیرید &rarr;"
 
-#: class-ml-gallery.php:133 class-ml-gallery.php:142 class-ml-gallery.php:289
-msgid "Galleries"
-msgstr "گالری‌ها"
+#: admin/Notices.php:167 ml-slider-lightbox/admin/Notices.php:167
+msgid "Read more"
+msgstr "بیشتر بخوانید"
 
-#: class-ml-gallery.php:134 class-ml-slider-lightbox.php:1960
-msgid "Gallery"
-msgstr "گالری"
+#: admin/Notices.php:197 ml-slider-lightbox/admin/Notices.php:197
+msgid "The security check failed. Please refresh the page and try again."
+msgstr "بررسی امنیت ناموفق بود. لطفاً صفحه را تازه‌سازی کرده و دوباره تلاش کنید."
 
-#: class-ml-gallery.php:135 class-ml-gallery.php:136 class-ml-gallery.php:257
-#: class-ml-gallery.php:1124
-msgid "Add New Gallery"
-msgstr "افزودن گالری جدید"
+#: admin/Notices.php:203 ml-slider-lightbox/admin/Notices.php:203
+msgid "Access denied. Sorry, you do not have permission to complete this task."
+msgstr "دسترسی denied. متاسفم، شما اجازه انجام این کار را ندارید."
 
-#: class-ml-gallery.php:137 class-ml-gallery.php:178 class-ml-gallery.php:179
-#: class-ml-gallery.php:258
-msgid "Edit Gallery"
-msgstr "ویرایش گالری"
+#: admin/Notices.php:209 ml-slider-lightbox/admin/Notices.php:209
+msgid "Bad request"
+msgstr "درخواست نادرست"
 
-#: class-ml-gallery.php:138 class-ml-gallery.php:241
-msgid "New Gallery"
-msgstr "گالری جدید"
+#: admin/Notices.php:217 ml-slider-lightbox/admin/Notices.php:217
+msgid "This item does not exist. Please refresh the page and try again."
+msgstr "این مورد وجود ندارد. لطفاً صفحه را تازه‌سازی کرده و دوباره تلاش کنید."
 
-#: class-ml-gallery.php:139
-msgid "Search Galleries"
-msgstr "جستجوی گالری‌ها"
+#: admin/Notices.php:230 ml-slider-lightbox/admin/Notices.php:230
+msgid "The option was successfully updated"
+msgstr "گزینه با موفقیت به‌روزرسانی شد"
 
-#: class-ml-gallery.php:140
-msgid "No galleries found."
-msgstr "هیچ گالری‌ای پیدا نشد."
+#: admin/Notices.php:241 ml-slider-lightbox/admin/Notices.php:241
+msgid "The requested data does not exist."
+msgstr "داده‌های درخواستی وجود ندارد."
 
-#: class-ml-gallery.php:141
-msgid "No galleries found in trash."
-msgstr "هیچ گالری‌ای در سطل زباله پیدا نشد."
+#: admin/Notices.php:253 ml-slider-lightbox/admin/Notices.php:253
+msgid "The attempt to update the option failed."
+msgstr "تلاش برای به‌روزرسانی گزینه ناموفق بود."
 
-#: class-ml-gallery.php:230 class-ml-slider-lightbox.php:1989
-msgid "You do not have sufficient permissions to access this page."
-msgstr "شما مجوز کافی برای دسترسی به این صفحه را ندارید."
-
-#: class-ml-gallery.php:238
-msgid "Gallery not found."
-msgstr "گالری پیدا نشد."
-
-#: class-ml-gallery.php:260
-msgid "Save Gallery"
-msgstr "ذخیره گالری"
-
-#: class-ml-gallery.php:261
-msgid "Update Gallery"
-msgstr "به‌روزرسانی گالری"
-
-#: class-ml-gallery.php:274
-msgid "Back to Galleries"
-msgstr "بازگشت به گالری‌ها"
-
-#: class-ml-gallery.php:280 class-ml-gallery.php:1130
-#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1964
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:697
+#: class-ml-gallery.php:2263 class-ml-slider-lightbox.php:1914
+#: class-ml-slider-lightbox.php:2038
+#: ml-slider-lightbox/admin/views/notices/header-notice.php:8
+#: ml-slider-lightbox/class-ml-gallery.php:697
+#: ml-slider-lightbox/class-ml-gallery.php:2263
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1914
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2038
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: class-ml-gallery.php:308
+#: admin/views/notices/header-notice.php:23
+#: ml-slider-lightbox/admin/views/notices/header-notice.php:23, fuzzy
+msgid "Dismiss"
+msgstr "Dismiss"
+
+#: class-ml-gallery.php:85 ml-slider-lightbox/class-ml-gallery.php:85
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr "برخی از این ویژگی‌ها در MetaSlider Gallery Pro موجود است"
+
+#: class-ml-gallery.php:93 class-ml-gallery.php:102
+#: ml-slider-lightbox/class-ml-gallery.php:93
+#: ml-slider-lightbox/class-ml-gallery.php:102
+msgid "Fade"
+msgstr "محو"
+
+#: class-ml-gallery.php:94 ml-slider-lightbox/class-ml-gallery.php:94
+msgid "Slide"
+msgstr "اسلاید"
+
+#: class-ml-gallery.php:95 class-ml-gallery.php:1181
+#: ml-slider-lightbox/class-ml-gallery.php:95
+#: ml-slider-lightbox/class-ml-gallery.php:1181
+msgid "Zoom"
+msgstr "زوم"
+
+#: class-ml-gallery.php:101 ml-slider-lightbox/class-ml-gallery.php:101
+msgid "None"
+msgstr "هیچ"
+
+#: class-ml-gallery.php:103 ml-slider-lightbox/class-ml-gallery.php:103
+msgid "Slide Up"
+msgstr "به بالا بکشید"
+
+#: class-ml-gallery.php:104 ml-slider-lightbox/class-ml-gallery.php:104
+msgid "Slide Down"
+msgstr "به پایین بکشید"
+
+#: class-ml-gallery.php:118 ml-slider-lightbox/class-ml-gallery.php:118
+msgid "Hidden"
+msgstr "مخفی"
+
+#: class-ml-gallery.php:119 ml-slider-lightbox/class-ml-gallery.php:119
+msgid "Gallery + Window"
+msgstr "گالری + پنجره"
+
+#: class-ml-gallery.php:120 ml-slider-lightbox/class-ml-gallery.php:120
+msgid "Window Only"
+msgstr "فقط پنجره"
+
+#: class-ml-gallery.php:121 ml-slider-lightbox/class-ml-gallery.php:121
+msgid "Gallery Only"
+msgstr "فقط گالری"
+
+#: class-ml-gallery.php:275 class-ml-gallery.php:284 class-ml-gallery.php:706
+#: ml-slider-lightbox/class-ml-gallery.php:275
+#: ml-slider-lightbox/class-ml-gallery.php:284
+#: ml-slider-lightbox/class-ml-gallery.php:706
+msgid "Galleries"
+msgstr "گالری‌ها"
+
+#: class-ml-gallery.php:276 class-ml-gallery.php:425 class-ml-gallery.php:959
+#: class-ml-slider-lightbox.php:2034
+#: ml-slider-lightbox/class-ml-gallery.php:276
+#: ml-slider-lightbox/class-ml-gallery.php:425
+#: ml-slider-lightbox/class-ml-gallery.php:959
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2034
+msgid "Gallery"
+msgstr "گالری"
+
+#: class-ml-gallery.php:277 class-ml-gallery.php:278 class-ml-gallery.php:672
+#: class-ml-gallery.php:2257 ml-slider-lightbox/class-ml-gallery.php:277
+#: ml-slider-lightbox/class-ml-gallery.php:278
+#: ml-slider-lightbox/class-ml-gallery.php:672
+#: ml-slider-lightbox/class-ml-gallery.php:2257
+msgid "Add New Gallery"
+msgstr "افزودن گالری جدید"
+
+#: class-ml-gallery.php:279 class-ml-gallery.php:592 class-ml-gallery.php:593
+#: class-ml-gallery.php:673 ml-slider-lightbox/class-ml-gallery.php:279
+#: ml-slider-lightbox/class-ml-gallery.php:592
+#: ml-slider-lightbox/class-ml-gallery.php:593
+#: ml-slider-lightbox/class-ml-gallery.php:673
+msgid "Edit Gallery"
+msgstr "ویرایش گالری"
+
+#: class-ml-gallery.php:280 class-ml-gallery.php:655
+#: ml-slider-lightbox/class-ml-gallery.php:280
+#: ml-slider-lightbox/class-ml-gallery.php:655
+msgid "New Gallery"
+msgstr "گالری جدید"
+
+#: class-ml-gallery.php:281 ml-slider-lightbox/class-ml-gallery.php:281
+msgid "Search Galleries"
+msgstr "جستجوی گالری‌ها"
+
+#: class-ml-gallery.php:282 ml-slider-lightbox/class-ml-gallery.php:282
+msgid "No galleries found."
+msgstr "هیچ گالری‌ای پیدا نشد."
+
+#: class-ml-gallery.php:283 ml-slider-lightbox/class-ml-gallery.php:283
+msgid "No galleries found in trash."
+msgstr "هیچ گالری‌ای در سطل زباله پیدا نشد."
+
+#: class-ml-gallery.php:432 ml-slider-lightbox/class-ml-gallery.php:432
+msgid "All Galleries"
+msgstr "تمام گالری‌ها"
+
+#: class-ml-gallery.php:439 ml-slider-lightbox/class-ml-gallery.php:439
+msgid "Create Gallery"
+msgstr "ایجاد گالری"
+
+#: class-ml-gallery.php:449 ml-slider-lightbox/class-ml-gallery.php:449
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "ویرایش &#8220;%s&#8221;"
+
+#: class-ml-gallery.php:467 ml-slider-lightbox/class-ml-gallery.php:467
+msgid "Invalid gallery ID."
+msgstr "شناسه گالری نامعتبر است."
+
+#: class-ml-gallery.php:533 class-ml-slider-lightbox.php:1507
+#: ml-slider-lightbox/class-ml-gallery.php:533
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1507
+msgid "View image"
+msgstr "مشاهده تصویر"
+
+#: class-ml-gallery.php:644 class-ml-slider-lightbox.php:2075
+#: class-ml-slider-lightbox.php:2090
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1915
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1915
+#: ml-slider-lightbox/class-ml-gallery.php:644
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2090
+msgid "You do not have sufficient permissions to access this page."
+msgstr "شما مجوز کافی برای دسترسی به این صفحه را ندارید."
+
+#: class-ml-gallery.php:652 class-ml-gallery.php:1531
+#: ml-slider-lightbox/class-ml-gallery.php:652
+#: ml-slider-lightbox/class-ml-gallery.php:1531
+msgid "Gallery not found."
+msgstr "گالری پیدا نشد."
+
+#: class-ml-gallery.php:675 ml-slider-lightbox/class-ml-gallery.php:675
+msgid "Save Gallery"
+msgstr "ذخیره گالری"
+
+#: class-ml-gallery.php:676 ml-slider-lightbox/class-ml-gallery.php:676
+msgid "Update Gallery"
+msgstr "به‌روزرسانی گالری"
+
+#: class-ml-gallery.php:691 ml-slider-lightbox/class-ml-gallery.php:691
+msgid "Back to Galleries"
+msgstr "بازگشت به گالری‌ها"
+
+#: class-ml-gallery.php:717 ml-slider-lightbox/class-ml-gallery.php:717
+msgid "Duplicate"
+msgstr "تکراری"
+
+#: class-ml-gallery.php:737 ml-slider-lightbox/class-ml-gallery.php:737
 msgid "Gallery saved."
 msgstr "گالری ذخیره شد."
 
-#: class-ml-gallery.php:319
+#: class-ml-gallery.php:748 ml-slider-lightbox/class-ml-gallery.php:748
 msgid "Enter gallery title"
 msgstr "عنوان گالری را وارد کنید"
 
-#: class-ml-gallery.php:322 class-ml-gallery.php:1152
+#: class-ml-gallery.php:751 class-ml-gallery.php:2285
+#: ml-slider-lightbox/class-ml-gallery.php:751
+#: ml-slider-lightbox/class-ml-gallery.php:2285
 msgid "Images"
 msgstr "تصاویر"
 
-#: class-ml-gallery.php:331
+#: class-ml-gallery.php:760 ml-slider-lightbox/class-ml-gallery.php:760
 msgid "No images added yet"
 msgstr "هنوز تصویری اضافه نشده است"
 
-#: class-ml-gallery.php:344 class-ml-gallery.php:892
+#: class-ml-gallery.php:773 class-ml-gallery.php:1864
+#: ml-slider-lightbox/class-ml-gallery.php:773
+#: ml-slider-lightbox/class-ml-gallery.php:1864
 msgid "Remove image"
 msgstr "حذف تصویر"
 
-#: class-ml-gallery.php:349 class-ml-gallery.php:893
+#: class-ml-gallery.php:778 class-ml-gallery.php:1865
+#: ml-slider-lightbox/class-ml-gallery.php:778
+#: ml-slider-lightbox/class-ml-gallery.php:1865
 msgid "Edit caption"
 msgstr "ویرایش عنوان"
 
-#: class-ml-gallery.php:362
+#: class-ml-gallery.php:793 ml-slider-lightbox/class-ml-gallery.php:793
 msgid "Add Images"
 msgstr "اضافه کردن تصاویر"
 
-#: class-ml-gallery.php:369
+#: class-ml-gallery.php:797 ml-slider-lightbox/class-ml-gallery.php:797
+msgid "More ways to add images"
+msgstr "راه‌های بیشتری برای افزودن تصاویر"
+
+#: class-ml-gallery.php:803 ml-slider-lightbox/class-ml-gallery.php:803
+msgid "Upload"
+msgstr "بارگذاری"
+
+#: class-ml-gallery.php:808 ml-slider-lightbox/class-ml-gallery.php:808
+msgid "Media Library"
+msgstr "کتابخانه رسانه"
+
+#: class-ml-gallery.php:813 ml-slider-lightbox/class-ml-gallery.php:813
+msgid "Server Folder"
+msgstr "پوشه سرور"
+
+#: class-ml-gallery.php:818 ml-slider-lightbox/class-ml-gallery.php:818
+msgid "ZIP"
+msgstr "فشرده"
+
+#: class-ml-gallery.php:824 ml-slider-lightbox/class-ml-gallery.php:824
+msgid "Where to add new images"
+msgstr "کجا تصاویر جدید را اضافه کنیم"
+
+#: class-ml-gallery.php:825 ml-slider-lightbox/class-ml-gallery.php:825
+msgid "Add new images at:"
+msgstr "افزودن تصاویر جدید در:"
+
+#: class-ml-gallery.php:829 ml-slider-lightbox/class-ml-gallery.php:829
+msgid "Start"
+msgstr "شروع"
+
+#: class-ml-gallery.php:834 ml-slider-lightbox/class-ml-gallery.php:834
+msgid "End"
+msgstr "پایان"
+
+#: class-ml-gallery.php:843 ml-slider-lightbox/class-ml-gallery.php:843
 msgid "Layout"
 msgstr "چیدمان"
 
-#: class-ml-gallery.php:372
+#: class-ml-gallery.php:846 ml-slider-lightbox/class-ml-gallery.php:846
 msgid "Gallery layout"
 msgstr "چیدمان گالری"
 
-#: class-ml-gallery.php:384
+#: class-ml-gallery.php:848 ml-slider-lightbox/class-ml-gallery.php:848
+msgid "Evenly sized images arranged in a fixed grid"
+msgstr "تصاویر با اندازه‌ی یکنواخت که در یک شبکه ثابت مرتب شده‌اند"
+
+#: class-ml-gallery.php:858 ml-slider-lightbox/class-ml-gallery.php:858
 msgid "Grid"
 msgstr "شبکه"
 
-#: class-ml-gallery.php:398
+#: class-ml-gallery.php:862 ml-slider-lightbox/class-ml-gallery.php:862
+msgid "Images at their natural heights, fitting together like a brick wall"
+msgstr "تصاویر در ارتفاع طبیعی خود، مثل یک دیوار آجری کنار هم قرار گرفته‌اند"
+
+#: class-ml-gallery.php:872 ml-slider-lightbox/class-ml-gallery.php:872
 msgid "Masonry"
 msgstr "موزائیکی"
 
-#: class-ml-gallery.php:414
+#: class-ml-gallery.php:876 ml-slider-lightbox/class-ml-gallery.php:876
+msgid "Images scaled to fill each row edge-to-edge with a consistent height"
+msgstr "تصاویر با مقیاس مناسب برای پر کردن هر ردیف از لبه تا لبه با ارتفاع ثابت"
+
+#: class-ml-gallery.php:888 ml-slider-lightbox/class-ml-gallery.php:888
 msgid "Justified"
 msgstr "تراز شده"
 
-#: class-ml-gallery.php:427
+#: class-ml-gallery.php:892 ml-slider-lightbox/class-ml-gallery.php:892
+msgid "Images displayed one at a time in a scrollable slideshow"
+msgstr "تصاویر به صورت یک به یک در یک اسلایدشو قابل پیمایش نمایش داده می‌شوند"
+
+#: class-ml-gallery.php:901 ml-slider-lightbox/class-ml-gallery.php:901
 msgid "Carousel"
 msgstr "کاروسل"
 
-#: class-ml-gallery.php:436
+#: class-ml-gallery.php:905 ml-slider-lightbox/class-ml-gallery.php:905
+msgid "Large main image with a scrollable thumbnail strip below"
+msgstr "تصویر اصلی بزرگ با نوار کوچک قابل پیمایش در زیر"
+
+#: class-ml-gallery.php:915 ml-slider-lightbox/class-ml-gallery.php:915
+msgid "Showcase"
+msgstr "نمایشگاه"
+
+#: class-ml-gallery.php:926 ml-slider-lightbox/class-ml-gallery.php:926
+msgid "Number of columns to show on desktop screens"
+msgstr "تعداد ستون‌ها برای نمایش در صفحه‌های دسکتاپ"
+
+#: class-ml-gallery.php:926 ml-slider-lightbox/class-ml-gallery.php:926
 msgid "Columns"
 msgstr "ستون‌ها"
 
-#: class-ml-gallery.php:446
+#: class-ml-gallery.php:935 ml-slider-lightbox/class-ml-gallery.php:935
+msgid "Number of columns to show on phones and small screens"
+msgstr "تعداد ستون‌ها برای نمایش در تلفن‌ها و صفحه‌های کوچک"
+
+#: class-ml-gallery.php:935 ml-slider-lightbox/class-ml-gallery.php:935
+msgid "Columns (mobile)"
+msgstr "ستون‌ها (موبایل)"
+
+#: class-ml-gallery.php:944 ml-slider-lightbox/class-ml-gallery.php:944
+msgid "Space between images"
+msgstr "فاصله بین تصاویر"
+
+#: class-ml-gallery.php:945 ml-slider-lightbox/class-ml-gallery.php:945
 msgid "Gap"
 msgstr "فاصله"
 
-#: class-ml-gallery.php:460
-msgid "Lightbox Settings"
-msgstr "تنظیمات Lightbox"
-
-#: class-ml-gallery.php:464
+#: class-ml-gallery.php:963 ml-slider-lightbox/class-ml-gallery.php:963
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "کنترل‌های زوم به MetaSlider Gallery Pro نیاز دارند"
 
-#: class-ml-gallery.php:465
+#: class-ml-gallery.php:964 ml-slider-lightbox/class-ml-gallery.php:964
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "حالت تمام صفحه به MetaSlider Gallery Pro نیاز دارد"
 
-#: class-ml-gallery.php:466
-msgid "Autoplay requires MetaSlider Gallery Pro"
-msgstr "پخش خودکار به MetaSlider Gallery Pro نیاز دارد"
-
-#: class-ml-gallery.php:467
+#: class-ml-gallery.php:965 ml-slider-lightbox/class-ml-gallery.php:965
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "چرخش تصویر به MetaSlider Gallery Pro نیاز دارد"
 
-#: class-ml-gallery.php:468
+#: class-ml-gallery.php:966 ml-slider-lightbox/class-ml-gallery.php:966
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr "پخش خودکار به MetaSlider Gallery Pro نیاز دارد"
+
+#: class-ml-gallery.php:967 ml-slider-lightbox/class-ml-gallery.php:967
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "اشتراک‌گذاری اجتماعی به MetaSlider Gallery Pro نیاز دارد"
 
-#: class-ml-gallery.php:472
-msgid "Show left and right navigation arrows"
-msgstr "نمایش فلش‌های ناوبری چپ و راست"
+#: class-ml-gallery.php:968 ml-slider-lightbox/class-ml-gallery.php:968
+msgid "Pager requires MetaSlider Gallery Pro"
+msgstr "Pager نیاز به MetaSlider Gallery Pro دارد"
 
-#: class-ml-gallery.php:473
-msgid "Cycle back to the first image after reaching the last"
-msgstr "پس از رسیدن به آخرین تصویر، به تصویر اول برگردید"
-
-#: class-ml-gallery.php:474
-msgid "Navigate images using left and right arrow keys"
-msgstr "برای مرور تصاویر از کلیدهای جهت‌دار چپ و راست استفاده کنید"
-
-#: class-ml-gallery.php:475
-msgid "Scroll through images using the mouse wheel"
-msgstr "برای اسکرول کردن تصاویر از چرخ ماوس استفاده کنید"
-
-#: class-ml-gallery.php:476
-msgid "Swipe up or down to close the lightbox on touch devices"
-msgstr "برای بستن Lightbox در دستگاه‌های لمسی، انگشت خود را به بالا یا پایین بکشید"
-
-#: class-ml-gallery.php:477
-msgid "Display the current image number and total count"
-msgstr "شماره تصویر فعلی و تعداد کل را نمایش دهید"
-
-#: class-ml-gallery.php:478
-msgid "Show a strip of thumbnail images at the bottom of the lightbox"
-msgstr "یک نوار از تصاویر کوچک را در پایین Lightbox نمایش دهید"
-
-#: class-ml-gallery.php:479
-msgid "Display image captions in the lightbox"
-msgstr "عنوان تصاویر را در Lightbox نمایش دهید"
-
-#: class-ml-gallery.php:480
-msgid "Show a download button for each image"
-msgstr "برای هر تصویر یک دکمه دانلود نشان دهید"
-
-#: class-ml-gallery.php:481
-msgid "Pinch and zoom into images"
-msgstr "با زدن دو انگشت، تصاویر را بزرگنمایی کنید"
-
-#: class-ml-gallery.php:482
-msgid "Expand the lightbox to fill the entire screen"
-msgstr "Lightbox را گسترش دهید تا تمام صفحه را پر کند"
-
-#: class-ml-gallery.php:483
-msgid "Rotate images left and right"
-msgstr "تصاویر را به چپ و راست بچرخانید"
-
-#: class-ml-gallery.php:484
-msgid "Automatically advance through images at a set interval"
-msgstr "به طور خودکار در فواصل تنظیم‌شده بین تصاویر پیش بروید"
-
-#: class-ml-gallery.php:485
-msgid "Add social sharing buttons for each image"
-msgstr "دکمه‌های اشتراک‌گذاری اجتماعی را برای هر تصویر اضافه کنید"
-
-#: class-ml-gallery.php:523 class-ml-slider-lightbox.php:2083
-#: class-ml-slider-lightbox.php:2409
-msgid "Navigation & Controls"
-msgstr "ناوبری و کنترل‌ها"
-
-#: class-ml-gallery.php:525
-msgid "Animation effect when moving between images"
-msgstr "اثر انیمیشن هنگام جابجایی بین تصاویر"
-
-#: class-ml-gallery.php:525
-msgid "Transition"
-msgstr "انتقال"
-
-#: class-ml-gallery.php:534 class-ml-slider-lightbox.php:2349
-msgid "Arrows"
-msgstr "پیکان‌ها"
-
-#: class-ml-gallery.php:535
-msgid "Loop"
-msgstr "حلقه"
-
-#: class-ml-gallery.php:536
-msgid "Keyboard"
-msgstr "کیبورد"
-
-#: class-ml-gallery.php:537
-msgid "Mouse wheel"
-msgstr "چرخ ماوس"
-
-#: class-ml-gallery.php:538
-msgid "Swipe to close"
-msgstr "برای بستن بکشید"
-
-#: class-ml-gallery.php:540
-msgid "Display"
-msgstr "نمایش"
-
-#: class-ml-gallery.php:541
-msgid "Slide counter"
-msgstr "شمارنده اسلاید"
-
-#: class-ml-gallery.php:542
-msgid "Thumbnail strip"
-msgstr "نوار تصویر کوچک"
-
-#: class-ml-gallery.php:543
-msgid "Captions"
-msgstr "زیرنویس‌ها"
-
-#: class-ml-gallery.php:544
-msgid "Download"
-msgstr "دانلود"
-
-#: class-ml-gallery.php:547
-msgid "Pager"
-msgstr "صفحه‌گردان"
-
-#: class-ml-gallery.php:553
-msgid "Pager pagination requires MetaSlider Gallery Pro"
-msgstr "صفحه‌گردانی به متااسلاید گالری پرو نیاز دارد"
-
-#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2096
-#: class-ml-slider-lightbox.php:4008
-msgid "Enhanced Zoom & Controls"
-msgstr "زوم و کنترل‌های پیشرفته"
-
-#: class-ml-gallery.php:561
-msgid "Fullscreen"
-msgstr "تمام صفحه"
-
-#: class-ml-gallery.php:562
-msgid "Rotate"
-msgstr "چرخش"
-
-#: class-ml-gallery.php:566 class-ml-slider-lightbox.php:2120
-#: class-ml-slider-lightbox.php:4057
-msgid "Advanced Features"
-msgstr "ویژگی‌های پیشرفته"
-
-#: class-ml-gallery.php:567
-msgid "Autoplay"
-msgstr "پخش خودکار"
-
-#: class-ml-gallery.php:568
-msgid "Share"
-msgstr "اشتراک‌گذاری"
-
-#: class-ml-gallery.php:572
-msgid "Unique Image URLs"
-msgstr "آدرس‌های تصویر منحصر به فرد"
-
-#: class-ml-gallery.php:578
+#: class-ml-gallery.php:969 ml-slider-lightbox/class-ml-gallery.php:969
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "آدرس‌های تصویر منحصر به فرد به متااسلاید گالری پرو نیاز دارد"
 
-#: class-ml-gallery.php:590 class-ml-slider-lightbox.php:1997
-#: class-ml-slider-lightbox.php:2058
-msgid "Appearance"
-msgstr "ظاهر"
+#: class-ml-gallery.php:973 ml-slider-lightbox/class-ml-gallery.php:973
+msgid "Show left and right navigation arrows"
+msgstr "نمایش فلش‌های ناوبری چپ و راست"
 
-#: class-ml-gallery.php:593 class-ml-slider-lightbox.php:2333
+#: class-ml-gallery.php:974 ml-slider-lightbox/class-ml-gallery.php:974
+msgid "Display the current image number and total count"
+msgstr "شماره تصویر فعلی و تعداد کل را نمایش دهید"
+
+#: class-ml-gallery.php:975 ml-slider-lightbox/class-ml-gallery.php:975
+msgid "Show a strip of thumbnail images at the bottom of the gallery"
+msgstr "نمایش نوار تصاویر کوچک در پایین گالری"
+
+#: class-ml-gallery.php:976 ml-slider-lightbox/class-ml-gallery.php:976
+msgid "Show dot navigation area below each image."
+msgstr "نمایش ناحیه ناوبری نقطه‌ای زیر هر تصویر."
+
+#: class-ml-gallery.php:977 ml-slider-lightbox/class-ml-gallery.php:977
+msgid ""
+"Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
+"appear only if the original size is larger than the gallery size."
+msgstr ""
+"برای زوم کردن روی تصاویر گالری، با دو انگشت بکشید یا اسکرول کنید. کنترل زوم "
+"فقط در صورتی ظاهر می‌شود که اندازه اصلی بزرگ‌تر از اندازه گالری باشد."
+
+#: class-ml-gallery.php:978 ml-slider-lightbox/class-ml-gallery.php:978
+msgid "Expand the gallery window to fill the whole screen."
+msgstr "پنجره گالری را گسترش دهید تا کل صفحه را پر کند."
+
+#: class-ml-gallery.php:979 ml-slider-lightbox/class-ml-gallery.php:979
+msgid ""
+"Users can rotate images left or right, plus flip them vertically or "
+"horizontally."
+msgstr ""
+"کاربران می‌توانند تصاویر را به سمت چپ یا راست بچرخانند و همچنین آن‌ها را به "
+"صورت عمودی یا افقی برعکس کنند."
+
+#: class-ml-gallery.php:980 ml-slider-lightbox/class-ml-gallery.php:980
+msgid "Automatically advance through the images without the user clicking."
+msgstr "به‌طور خودکار از میان تصاویر بدون نیاز به کلیک کاربر پیش بروید."
+
+#: class-ml-gallery.php:981 ml-slider-lightbox/class-ml-gallery.php:981
+msgid "Enable users to share images on Facebook, X, or Pinterest."
+msgstr "به کاربران اجازه دهید تصاویر را در فیس‌بوک، X یا پینترست به اشتراک بگذارند."
+
+#: class-ml-gallery.php:982 ml-slider-lightbox/class-ml-gallery.php:982
+msgid ""
+"Create a unique URL for each image to enable direct linking inside a "
+"gallery."
+msgstr ""
+"برای هر تصویر یک URL منحصر به فرد ایجاد کنید تا امکان لینک‌دهی مستقیم در "
+"داخل گالری فراهم شود."
+
+#: class-ml-gallery.php:983 ml-slider-lightbox/class-ml-gallery.php:983
+msgid "Navigate images using left and right arrow keys"
+msgstr "برای مرور تصاویر از کلیدهای جهت‌دار چپ و راست استفاده کنید"
+
+#: class-ml-gallery.php:984 ml-slider-lightbox/class-ml-gallery.php:984
+msgid "Scroll through images using the mouse wheel"
+msgstr "برای اسکرول کردن تصاویر از چرخ ماوس استفاده کنید"
+
+#: class-ml-gallery.php:985 ml-slider-lightbox/class-ml-gallery.php:985
+msgid "Swipe up or down to close the gallery on touch devices"
+msgstr "برای بستن گالری در دستگاه‌های لمسی، به بالا یا پایین بکشید"
+
+#: class-ml-gallery.php:986 ml-slider-lightbox/class-ml-gallery.php:986
+msgid "Cycle back to the first image after reaching the last"
+msgstr "پس از رسیدن به آخرین تصویر، به تصویر اول برگردید"
+
+#: class-ml-gallery.php:987 ml-slider-lightbox/class-ml-gallery.php:987
+msgid "Show a download button for each image"
+msgstr "برای هر تصویر یک دکمه دانلود نشان دهید"
+
+#: class-ml-gallery.php:988 ml-slider-lightbox/class-ml-gallery.php:988
+msgid ""
+"Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
+"Justified layouts."
+msgstr ""
+"تصاویر را در یک پنجره پوششی هنگام کلیک باز کنید. این مورد برای چیدمان‌های "
+"Grid، Masonry و Justified اعمال می‌شود."
+
+#: class-ml-gallery.php:1031 ml-slider-lightbox/class-ml-gallery.php:1031
+msgid "Full (original)"
+msgstr "تمام (اصلی)"
+
+#: class-ml-gallery.php:1035 ml-slider-lightbox/class-ml-gallery.php:1035
+msgid "Show in Gallery Window"
+msgstr "نمایش در پنجره گالری"
+
+#: class-ml-gallery.php:1038 ml-slider-lightbox/class-ml-gallery.php:1038
+msgid "The size of the image shown when a visitor clicks to view it in full"
+msgstr ""
+"اندازه تصویری که هنگام کلیک بازدیدکننده برای مشاهده کامل آن نمایش داده "
+"می‌شود"
+
+#: class-ml-gallery.php:1038 ml-slider-lightbox/class-ml-gallery.php:1038
+msgid "Image Size"
+msgstr "اندازه تصویر"
+
+#: class-ml-gallery.php:1055 ml-slider-lightbox/class-ml-gallery.php:1055
+msgid "Open in Gallery Button"
+msgstr "باز کردن در دکمه گالری"
+
+#: class-ml-gallery.php:1058 ml-slider-lightbox/class-ml-gallery.php:1058
+msgid "Use Icon Instead of Text"
+msgstr "از آیکن به جای متن استفاده کنید"
+
+#: class-ml-gallery.php:1061 class-ml-slider-lightbox.php:2500
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2285
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2285
+#: ml-slider-lightbox/class-ml-gallery.php:1061
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2500
+msgid "Button Text"
+msgstr "متن دکمه"
+
+#: class-ml-gallery.php:1066 class-ml-slider-lightbox.php:1502
+#: class-ml-slider-lightbox.php:3105 class-ml-slider-lightbox.php:6250
+#: class-ml-slider-lightbox.php:6273
+#: ml-slider-lightbox/class-ml-gallery.php:1066
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1502
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3105
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6250
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6273
+msgid "Open in Gallery"
+msgstr "در گالری باز کنید"
+
+#: class-ml-gallery.php:1071 class-ml-slider-lightbox.php:2508
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2293
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2293
+#: ml-slider-lightbox/class-ml-gallery.php:1071
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2508
+msgid "Button Position"
+msgstr "موقعیت دکمه"
+
+#: class-ml-gallery.php:1073 ml-slider-lightbox/class-ml-gallery.php:1073
+msgid "Top Right"
+msgstr "بالا سمت راست"
+
+#: class-ml-gallery.php:1074 class-ml-slider-lightbox.php:3122
+#: class-ml-slider-lightbox.php:3148
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2866
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2892
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2866
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2892
+#: ml-slider-lightbox/class-ml-gallery.php:1074
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3122
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3148
+msgid "Top Left"
+msgstr "بالا سمت چپ"
+
+#: class-ml-gallery.php:1075 class-ml-slider-lightbox.php:3123
+#: class-ml-slider-lightbox.php:3149
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2867
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2893
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2867
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2893
+#: ml-slider-lightbox/class-ml-gallery.php:1075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3123
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3149
+msgid "Bottom Right"
+msgstr "پایین سمت راست"
+
+#: class-ml-gallery.php:1076 class-ml-slider-lightbox.php:3124
+#: class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2868
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2868
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2894
+#: ml-slider-lightbox/class-ml-gallery.php:1076
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3124
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+msgid "Bottom Left"
+msgstr "پایین سمت چپ"
+
+#: class-ml-gallery.php:1077 ml-slider-lightbox/class-ml-gallery.php:1077
+msgid "Center"
+msgstr "مرکز"
+
+#: class-ml-gallery.php:1086 ml-slider-lightbox/class-ml-gallery.php:1086
+msgid "Display"
+msgstr "نمایش"
+
+#: class-ml-gallery.php:1088 ml-slider-lightbox/class-ml-gallery.php:1088
+msgid "Animation effect when moving between images"
+msgstr "اثر انیمیشن هنگام جابجایی بین تصاویر"
+
+#: class-ml-gallery.php:1088 class-ml-gallery.php:1164
+#: ml-slider-lightbox/class-ml-gallery.php:1088
+#: ml-slider-lightbox/class-ml-gallery.php:1164
+msgid "Transition"
+msgstr "انتقال"
+
+#: class-ml-gallery.php:1097 class-ml-slider-lightbox.php:2460
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2253
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2253
+#: ml-slider-lightbox/class-ml-gallery.php:1097
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2460
+msgid "Arrows"
+msgstr "پیکان‌ها"
+
+#: class-ml-gallery.php:1098 ml-slider-lightbox/class-ml-gallery.php:1098
+msgid "Slide Counter"
+msgstr "شمارنده اسلاید"
+
+#: class-ml-gallery.php:1099 ml-slider-lightbox/class-ml-gallery.php:1099
+msgid "Thumbnails"
+msgstr "تصاویر کوچک"
+
+#: class-ml-gallery.php:1101 ml-slider-lightbox/class-ml-gallery.php:1101
+msgid "Pager"
+msgstr "صفحه‌گردان"
+
+#: class-ml-gallery.php:1106 class-ml-slider-lightbox.php:2165
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1987
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1987
+#: ml-slider-lightbox/class-ml-gallery.php:1106
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2165
+msgid "Navigation"
+msgstr "ناوبری"
+
+#: class-ml-gallery.php:1107 ml-slider-lightbox/class-ml-gallery.php:1107
+msgid "Loop"
+msgstr "حلقه"
+
+#: class-ml-gallery.php:1108 ml-slider-lightbox/class-ml-gallery.php:1108
+msgid "Keyboard"
+msgstr "کیبورد"
+
+#: class-ml-gallery.php:1109 ml-slider-lightbox/class-ml-gallery.php:1109
+msgid "Mouse wheel"
+msgstr "چرخ ماوس"
+
+#: class-ml-gallery.php:1110 ml-slider-lightbox/class-ml-gallery.php:1110
+msgid "Swipe to close"
+msgstr "برای بستن بکشید"
+
+#: class-ml-gallery.php:1117 class-ml-gallery.php:1119
+#: ml-slider-lightbox/class-ml-gallery.php:1117
+#: ml-slider-lightbox/class-ml-gallery.php:1119
+msgid "Captions"
+msgstr "زیرنویس‌ها"
+
+#: class-ml-gallery.php:1119 ml-slider-lightbox/class-ml-gallery.php:1119
+msgid ""
+"Where captions appear: on gallery thumbnails, in the gallery window, or "
+"both."
+msgstr "محل نمایش زیرنویس‌ها: روی تصاویر کوچک گالری، در پنجره گالری، یا هر دو."
+
+#: class-ml-gallery.php:1131 ml-slider-lightbox/class-ml-gallery.php:1131
+msgid ""
+"Caption text size. Applies to both gallery thumbnails and the gallery "
+"window."
+msgstr "اندازه متن زیرنویس. به هر دو تصاویر کوچک گالری و پنجره گالری اعمال می‌شود."
+
+#: class-ml-gallery.php:1132 ml-slider-lightbox/class-ml-gallery.php:1132
+msgid "Text Size"
+msgstr "اندازه متن"
+
+#: class-ml-gallery.php:1144 ml-slider-lightbox/class-ml-gallery.php:1144
+msgid ""
+"Caption text color. Applies to both gallery thumbnails and the gallery "
+"window."
+msgstr "رنگ متن زیرنویس. به هر دو تصاویر کوچک گالری و پنجره گالری اعمال می‌شود."
+
+#: class-ml-gallery.php:1144 ml-slider-lightbox/class-ml-gallery.php:1144
+msgid "Text Color"
+msgstr "رنگ متن"
+
+#: class-ml-gallery.php:1154 ml-slider-lightbox/class-ml-gallery.php:1154
+msgid ""
+"Caption background. Applies to both gallery thumbnails and the gallery "
+"window; on thumbnails it fades to transparent for readability."
+msgstr ""
+"پس‌زمینه زیرنویس. به هر دو تصاویر کوچک گالری و پنجره گالری اعمال می‌شود؛ در "
+"تصاویر کوچک به تدریج به حالت شفاف می‌رود تا خوانایی بهتری داشته باشد."
+
+#: class-ml-gallery.php:1154 class-ml-gallery.php:1196
+#: class-ml-slider-lightbox.php:2428
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2237
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2237
+#: ml-slider-lightbox/class-ml-gallery.php:1154
+#: ml-slider-lightbox/class-ml-gallery.php:1196
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2428
 msgid "Background Color"
 msgstr "رنگ پس‌زمینه"
 
-#: class-ml-gallery.php:604 class-ml-slider-lightbox.php:2341
+#: class-ml-gallery.php:1164 ml-slider-lightbox/class-ml-gallery.php:1164
+msgid ""
+"How the caption animates in. Applies to the gallery window only — not to "
+"gallery thumbnail captions."
+msgstr ""
+"نحوه انیمیشن زیرنویس. فقط به پنجره گالری اعمال می‌شود — نه به زیرنویس‌های "
+"تصاویر کوچک گالری."
+
+#: class-ml-gallery.php:1174 class-ml-slider-lightbox.php:2476
+#: ml-slider-lightbox/class-ml-gallery.php:1174
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2476
+msgid "Toolbar"
+msgstr "نوار ابزار"
+
+#: class-ml-gallery.php:1175 ml-slider-lightbox/class-ml-gallery.php:1175
+msgid "Download"
+msgstr "دانلود"
+
+#: class-ml-gallery.php:1177 ml-slider-lightbox/class-ml-gallery.php:1177
+msgid "Share"
+msgstr "اشتراک‌گذاری"
+
+#: class-ml-gallery.php:1178 ml-slider-lightbox/class-ml-gallery.php:1178
+msgid "Autoplay"
+msgstr "پخش خودکار"
+
+#: class-ml-gallery.php:1179 ml-slider-lightbox/class-ml-gallery.php:1179
+msgid "Rotate and Flip"
+msgstr "چرخش و معکوس کردن"
+
+#: class-ml-gallery.php:1180 ml-slider-lightbox/class-ml-gallery.php:1180
+msgid "Fullscreen"
+msgstr "تمام صفحه"
+
+#: class-ml-gallery.php:1186 ml-slider-lightbox/class-ml-gallery.php:1186
+msgid "Unique Image URLs"
+msgstr "آدرس‌های تصویر منحصر به فرد"
+
+#: class-ml-gallery.php:1193 class-ml-slider-lightbox.php:2098
+#: class-ml-slider-lightbox.php:2155
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1923
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1977
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1923
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1977
+#: ml-slider-lightbox/class-ml-gallery.php:1193
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2098
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2155
+msgid "Appearance"
+msgstr "ظاهر"
+
+#: class-ml-gallery.php:1207 class-ml-slider-lightbox.php:2436
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2245
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2245
+#: ml-slider-lightbox/class-ml-gallery.php:1207
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2436
 msgid "Background Opacity"
 msgstr "شفافیت پس‌زمینه"
 
-#: class-ml-gallery.php:616
+#: class-ml-gallery.php:1219 ml-slider-lightbox/class-ml-gallery.php:1219
 msgid "Arrow Color"
 msgstr "رنگ فلش"
 
-#: class-ml-gallery.php:626
+#: class-ml-gallery.php:1229 ml-slider-lightbox/class-ml-gallery.php:1229
 msgid "Arrow Background"
 msgstr "پس‌زمینه فلش"
 
-#: class-ml-gallery.php:636
+#: class-ml-gallery.php:1239 ml-slider-lightbox/class-ml-gallery.php:1239
 msgid "Close Icon Color"
 msgstr "رنگ آیکون بستن"
 
-#: class-ml-gallery.php:646
+#: class-ml-gallery.php:1249 ml-slider-lightbox/class-ml-gallery.php:1249
 msgid "Close Background"
 msgstr "پس‌زمینه بستن"
 
-#: class-ml-gallery.php:656
+#: class-ml-gallery.php:1259 ml-slider-lightbox/class-ml-gallery.php:1259
 msgid "Toolbar Icon Color"
 msgstr "رنگ آیکون نوار ابزار"
 
-#: class-ml-gallery.php:666
+#: class-ml-gallery.php:1269 ml-slider-lightbox/class-ml-gallery.php:1269
 msgid "Toolbar Background"
 msgstr "پس‌زمینه نوار ابزار"
 
-#: class-ml-gallery.php:679 class-ml-gallery.php:1151
+#: class-ml-gallery.php:1279 class-ml-slider-lightbox.php:2452
+#: ml-slider-lightbox/class-ml-gallery.php:1279
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2452
+msgid "Thumbnail Border Color"
+msgstr "رنگ حاشیه تصویر کوچک"
+
+#: class-ml-gallery.php:1289 ml-slider-lightbox/class-ml-gallery.php:1289
+msgid "Thumbnail Border Active and Hover"
+msgstr "حاشیه تصویر کوچک فعال و در حالت معلق"
+
+#: class-ml-gallery.php:1304 class-ml-gallery.php:2284
+#: ml-slider-lightbox/class-ml-gallery.php:1304
+#: ml-slider-lightbox/class-ml-gallery.php:2284
 msgid "Shortcode"
 msgstr "shortcode"
 
-#: class-ml-gallery.php:681
-msgid "Copy and paste into any post or page."
-msgstr "کپی و پیست در هر پست یا صفحه."
+#: class-ml-gallery.php:1306 class-ml-gallery.php:2304
+#: ml-slider-lightbox/class-ml-gallery.php:1306
+#: ml-slider-lightbox/class-ml-gallery.php:2304
+msgid "Click to copy shortcode."
+msgstr "برای کپی کردن shortcode کلیک کنید."
 
-#: class-ml-gallery.php:701
+#: class-ml-gallery.php:1324 ml-slider-lightbox/class-ml-gallery.php:1324
 msgid "Edit Caption"
 msgstr "ویرایش عنوان"
 
-#: class-ml-gallery.php:702
+#: class-ml-gallery.php:1325 class-ml-gallery.php:1354
+#: class-ml-gallery.php:1375 class-ml-gallery.php:2329
+#: ml-slider-lightbox/class-ml-gallery.php:1325
+#: ml-slider-lightbox/class-ml-gallery.php:1354
+#: ml-slider-lightbox/class-ml-gallery.php:1375
+#: ml-slider-lightbox/class-ml-gallery.php:2329
 msgid "Close"
 msgstr "بستن"
 
-#: class-ml-gallery.php:710
+#: class-ml-gallery.php:1333 ml-slider-lightbox/class-ml-gallery.php:1333
 msgid "Caption"
 msgstr "عنوان"
 
-#: class-ml-gallery.php:717
+#: class-ml-gallery.php:1340 class-ml-gallery.php:1362
+#: ml-slider-lightbox/class-ml-gallery.php:1340
+#: ml-slider-lightbox/class-ml-gallery.php:1362
 msgid "Cancel"
 msgstr "لغو"
 
-#: class-ml-gallery.php:720
+#: class-ml-gallery.php:1343 ml-slider-lightbox/class-ml-gallery.php:1343
 msgid "Save Caption"
 msgstr "ذخیره عنوان"
 
-#: class-ml-gallery.php:741
+#: class-ml-gallery.php:1353 ml-slider-lightbox/class-ml-gallery.php:1353
+msgid "Import from Server Folder"
+msgstr "وارد کردن از پوشه سرور"
+
+#: class-ml-gallery.php:1363 ml-slider-lightbox/class-ml-gallery.php:1363
+msgid "Import selected"
+msgstr "وارد کردن انتخاب شده"
+
+#: class-ml-gallery.php:1374 ml-slider-lightbox/class-ml-gallery.php:1374
+msgid "Import from ZIP"
+msgstr "وارد کردن از ZIP"
+
+#: class-ml-gallery.php:1398 class-ml-gallery.php:1526
+#: ml-slider-lightbox/class-ml-gallery.php:1398
+#: ml-slider-lightbox/class-ml-gallery.php:1526
 msgid "Security check failed."
 msgstr "بررسی امنیت ناموفق بود."
 
-#: class-ml-gallery.php:745
+#: class-ml-gallery.php:1402 ml-slider-lightbox/class-ml-gallery.php:1402
 msgid "You do not have sufficient permissions."
 msgstr "شما اجازه‌های کافی ندارید."
 
-#: class-ml-gallery.php:764
+#: class-ml-gallery.php:1421 ml-slider-lightbox/class-ml-gallery.php:1421
 msgid "Could not update the gallery. Please try again."
 msgstr "نمی‌توان گالری را به‌روزرسانی کرد. لطفاً دوباره تلاش کنید."
 
-#: class-ml-gallery.php:890
+#: class-ml-gallery.php:1536 ml-slider-lightbox/class-ml-gallery.php:1536
+msgid "(Copy)"
+msgstr "(کپی)"
+
+#: class-ml-gallery.php:1542 ml-slider-lightbox/class-ml-gallery.php:1542
+msgid "Could not duplicate the gallery. Please try again."
+msgstr "نتوانستیم گالری را تکرار کنیم. لطفاً دوباره تلاش کنید."
+
+#: class-ml-gallery.php:1646 class-ml-gallery.php:1761
+#: class-ml-gallery.php:2449 ml-slider-lightbox/class-ml-gallery.php:1646
+#: ml-slider-lightbox/class-ml-gallery.php:1761
+#: ml-slider-lightbox/class-ml-gallery.php:2449
+msgid "Permission denied."
+msgstr "دسترسی رد شد."
+
+#: class-ml-gallery.php:1653 ml-slider-lightbox/class-ml-gallery.php:1653
+msgid "Folder not found."
+msgstr "پوشه پیدا نشد."
+
+#: class-ml-gallery.php:1662 ml-slider-lightbox/class-ml-gallery.php:1662
+msgid "Folder could not be read."
+msgstr "پوشه قابل خواندن نبود."
+
+#: class-ml-gallery.php:1699 ml-slider-lightbox/class-ml-gallery.php:1699
+msgid "Uploads"
+msgstr "بارگذاری‌ها"
+
+#: class-ml-gallery.php:1862 ml-slider-lightbox/class-ml-gallery.php:1862
 msgid "Select Gallery Images"
 msgstr "انتخاب تصاویر گالری"
 
-#: class-ml-gallery.php:891
+#: class-ml-gallery.php:1863 ml-slider-lightbox/class-ml-gallery.php:1863
 msgid "Add to Gallery"
 msgstr "اضافه کردن به گالری"
 
-#: class-ml-slider-lightbox.php:1056
+#: class-ml-gallery.php:1867 ml-slider-lightbox/class-ml-gallery.php:1867
+msgid "Loading…"
+msgstr "در حال بارگذاری…"
+
+#: class-ml-gallery.php:1868 ml-slider-lightbox/class-ml-gallery.php:1868
+msgid "No images in this folder."
+msgstr "هیچ عکسی در این پوشه وجود ندارد."
+
+#: class-ml-gallery.php:1869 ml-slider-lightbox/class-ml-gallery.php:1869
+msgid "Could not load this folder."
+msgstr "نتوانستم این پوشه را بارگذاری کنم."
+
+#: class-ml-gallery.php:1870 ml-slider-lightbox/class-ml-gallery.php:1870
+msgid "Importing…"
+msgstr "در حال وارد کردن…"
+
+#: class-ml-gallery.php:1871 ml-slider-lightbox/class-ml-gallery.php:1871
+msgid "Showing the first 200 images — open a subfolder to narrow the list."
+msgstr "نمایش ۲۰۰ تصویر اول — یک زیرپوشه را باز کنید تا لیست را محدود کنید."
+
+#: class-ml-gallery.php:1872 ml-slider-lightbox/class-ml-gallery.php:1872
+msgid "Select at least one image."
+msgstr "حداقل یک تصویر را انتخاب کنید."
+
+#: class-ml-gallery.php:1873 class-ml-gallery.php:1876
+#: ml-slider-lightbox/class-ml-gallery.php:1873
+#: ml-slider-lightbox/class-ml-gallery.php:1876
+#, php-format
+msgid "Imported %1$d image(s); %2$d image(s) skipped."
+msgstr "%1$d تصویر وارد شده؛ %2$d تصویر نادیده گرفته شده."
+
+#: class-ml-gallery.php:1874 ml-slider-lightbox/class-ml-gallery.php:1874
+msgid "Uploading…"
+msgstr "در حال بارگذاری…"
+
+#: class-ml-gallery.php:1875 ml-slider-lightbox/class-ml-gallery.php:1875
+msgid "Importing images…"
+msgstr "در حال وارد کردن تصاویر…"
+
+#: class-ml-gallery.php:1877 ml-slider-lightbox/class-ml-gallery.php:1877
+msgid "Only the first 200 images (or 256 MB) were imported."
+msgstr "فقط ۲۰۰ تصویر اول (یا ۲۵۶ مگابایت) وارد شدند."
+
+#: class-ml-gallery.php:1878 ml-slider-lightbox/class-ml-gallery.php:1878
+msgid "The ZIP could not be imported."
+msgstr "فایل ZIP قابل وارد کردن نبود."
+
+#: class-ml-gallery.php:1879 ml-slider-lightbox/class-ml-gallery.php:1879
+msgid "The upload was rejected — the ZIP may be larger than this server allows."
+msgstr "بارگذاری رد شد — ممکن است فایل ZIP بزرگتر از حد مجاز این سرور باشد."
+
+#: class-ml-gallery.php:1880 ml-slider-lightbox/class-ml-gallery.php:1880
+msgid "No images found in the ZIP."
+msgstr "هیچ عکسی در فایل ZIP پیدا نشد."
+
+#: class-ml-gallery.php:2286 ml-slider-lightbox/class-ml-gallery.php:2286
+msgid "Usage"
+msgstr "استفاده"
+
+#: class-ml-gallery.php:2319 ml-slider-lightbox/class-ml-gallery.php:2319
+msgid "Not found."
+msgstr "پیدا نشد."
+
+#: class-ml-gallery.php:2324 ml-slider-lightbox/class-ml-gallery.php:2324
+msgid "View Usage"
+msgstr "نمایش استفاده"
+
+#: class-ml-gallery.php:2330 ml-slider-lightbox/class-ml-gallery.php:2330
+msgid "Content Using This Gallery"
+msgstr "محتوا با استفاده از این گالری"
+
+#: class-ml-gallery.php:2397 ml-slider-lightbox/class-ml-gallery.php:2397
+msgid "(no title)"
+msgstr "(بدون عنوان)"
+
+#: class-ml-gallery.php:2455 class-ml-gallery.php:2464
+#: ml-slider-lightbox/class-ml-gallery.php:2455
+#: ml-slider-lightbox/class-ml-gallery.php:2464
+msgid "Please choose a valid .zip file."
+msgstr "لطفاً یک فایل .zip معتبر انتخاب کنید."
+
+#: class-ml-gallery.php:2470 ml-slider-lightbox/class-ml-gallery.php:2470
+msgid "Server cannot read ZIP files."
+msgstr "سرور نمی‌تواند فایل‌های ZIP را بخواند."
+
+#: class-ml-gallery.php:2477 ml-slider-lightbox/class-ml-gallery.php:2477
+msgid "The ZIP could not be read."
+msgstr "فایل ZIP قابل خواندن نبود."
+
+#: class-ml-gallery.php:2511 ml-slider-lightbox/class-ml-gallery.php:2511
+msgid "Could not prepare a temporary folder."
+msgstr "نمی‌توان یک پوشه موقت آماده کرد."
+
+#: class-ml-slider-lightbox.php:1039
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1039
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -425,11 +994,15 @@ msgstr ""
 "گالری MetaSlider به نصب و فعال‌سازی MetaSlider و حداقل یک افزونه lightbox "
 "دیگر نیاز دارد."
 
-#: class-ml-slider-lightbox.php:1060
+#: class-ml-slider-lightbox.php:1043
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1060
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1060
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1043
 msgid "More info"
 msgstr "اطلاعات بیشتر"
 
-#: class-ml-slider-lightbox.php:1071
+#: class-ml-slider-lightbox.php:1054
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1054
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -437,134 +1010,254 @@ msgstr ""
 "بیش از یک افزونه lightbox فعال شده است. این ممکن است باعث تداخل با گالری "
 "MetaSlider شود."
 
-#: class-ml-slider-lightbox.php:1131
-msgid "Edit settings"
-msgstr "تنظیمات را ویرایش کنید"
+#: class-ml-slider-lightbox.php:1114
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1114
+msgid "Edit Global Settings"
+msgstr "تنظیمات کلی را ویرایش کنید"
 
-#: class-ml-slider-lightbox.php:1138
-msgid "Open in lightbox?"
-msgstr "آیا در Lightbox باز شود؟"
+#: class-ml-slider-lightbox.php:1126
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1126
+msgid "Open In Gallery"
+msgstr "باز کردن در گالری"
 
-#: class-ml-slider-lightbox.php:1150
+#: class-ml-slider-lightbox.php:1141
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1141
+msgid "Show Captions"
+msgstr "نمایش توضیحات"
+
+#: class-ml-slider-lightbox.php:1141
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1141
+msgid "Show captions in the gallery for each slide."
+msgstr "توضیحات را در گالری برای هر اسلاید نشان دهید."
+
+#: class-ml-slider-lightbox.php:1142
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1142
+msgid "Show Navigation Arrows"
+msgstr "نمایش فلش‌های ناوبری"
+
+#: class-ml-slider-lightbox.php:1142
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1142
+msgid "Show previous/next arrows in the gallery."
+msgstr "فلش‌های قبلی/بعدی را در گالری نشان دهید."
+
+#: class-ml-slider-lightbox.php:1143
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+msgid "Show \"Open In Gallery\" Button"
+msgstr "نمایش دکمه \"باز کردن در گالری\""
+
+#: class-ml-slider-lightbox.php:1143
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+msgid "Show a button on each slide to open the image in the gallery."
+msgstr "بر روی هر اسلاید یک دکمه برای باز کردن تصویر در گالری نشان دهید."
+
+#: class-ml-slider-lightbox.php:1144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1144
+msgid "Show An Icon Instead Of Button"
+msgstr "نمایش یک آیکون به جای دکمه"
+
+#: class-ml-slider-lightbox.php:1144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1144
+msgid "Display an icon instead of a text button on each slide."
+msgstr "یک آیکون به جای یک دکمه متنی در هر اسلاید نمایش دهید."
+
+#: class-ml-slider-lightbox.php:1149
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1149
 #, php-format
 msgid ""
-"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
-"settings</a>."
+"Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
+"Gallery settings</a>."
 msgstr ""
-"Lightbox برای تمام اسلایدشوها از طریق <a href=\"%s\">تنظیمات حالت "
-"خودکار</a> فعال است."
+"گالری برای تمام اسلایدشوها از طریق <a href=\"%s\">تنظیمات گالری "
+"MetaSlider</a> فعال است."
 
-#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2994
-msgid "Open in Lightbox"
-msgstr "در Lightbox باز شود"
+#: class-ml-slider-lightbox.php:1552
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1552
+msgid "Global"
+msgstr "کلی"
 
-#: class-ml-slider-lightbox.php:1486
-msgid "View image"
-msgstr "مشاهده تصویر"
+#: class-ml-slider-lightbox.php:1553
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1553
+msgid "Yes"
+msgstr "بله"
 
-#: class-ml-slider-lightbox.php:1734
+#: class-ml-slider-lightbox.php:1554
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1554
+msgid "No"
+msgstr "خیر"
+
+#: class-ml-slider-lightbox.php:1808
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1808
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Gallery نیاز به نصب و فعال‌سازی MetaSlider دارد."
 
-#: class-ml-slider-lightbox.php:1738
+#: class-ml-slider-lightbox.php:1812
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1683
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1683
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1812
 msgid "Install MetaSlider"
 msgstr "نصب MetaSlider"
 
-#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1963
+#: class-ml-slider-lightbox.php:1912 class-ml-slider-lightbox.php:2037
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1912
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2037, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:1945
+#: class-ml-slider-lightbox.php:2019
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2019
 #, php-format
 msgid "Select pages to %s..."
 msgstr "صفحات را برای %s انتخاب کنید..."
 
-#: class-ml-slider-lightbox.php:1946
+#: class-ml-slider-lightbox.php:2020
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2020
 #, php-format
 msgid "Select posts to %s..."
 msgstr "پست‌ها را برای %s انتخاب کنید..."
 
-#: class-ml-slider-lightbox.php:1947
+#: class-ml-slider-lightbox.php:2021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2021
 #, php-format
 msgid "Select post types to %s..."
 msgstr "نوع پست‌ها را برای %s انتخاب کنید..."
 
-#: class-ml-slider-lightbox.php:1948
+#: class-ml-slider-lightbox.php:2022
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2022
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "%1$s را برای %2$s انتخاب کنید..."
 
-#: class-ml-slider-lightbox.php:1949
+#: class-ml-slider-lightbox.php:2023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2023
 msgid "Select post types to exclude"
 msgstr "نوع پست‌ها را برای استثنا انتخاب کنید"
 
-#: class-ml-slider-lightbox.php:1950
+#: class-ml-slider-lightbox.php:2024 class-ml-slider-lightbox.php:3482
+#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3651
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2024
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3482
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3529
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3651
 msgid "Include"
 msgstr "شامل"
 
-#: class-ml-slider-lightbox.php:1951
+#: class-ml-slider-lightbox.php:2025 class-ml-slider-lightbox.php:3482
+#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3651
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2025
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3482
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3529
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3651
 msgid "Exclude"
 msgstr "استثنا"
 
-#: class-ml-slider-lightbox.php:1959, fuzzy
+#: class-ml-slider-lightbox.php:2033
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2033, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:1979
-msgid "Lightboxes"
-msgstr "Lightbox‌ها"
+#: class-ml-slider-lightbox.php:2053
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2053
+msgid "Settings"
+msgstr "تنظیمات"
 
-#: class-ml-slider-lightbox.php:1995
-msgid "Automatic Mode"
-msgstr "حالت خودکار"
+#: class-ml-slider-lightbox.php:2063
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2063
+msgid "Upgrade to MetaSlider Gallery Pro"
+msgstr "به MetaSlider Gallery Pro ارتقا دهید"
 
-#: class-ml-slider-lightbox.php:1996
-msgid "Manual Mode"
-msgstr "حالت دستی"
-
-#: class-ml-slider-lightbox.php:1998
-msgid "Behavior"
-msgstr "رفتار"
-
-#: class-ml-slider-lightbox.php:2003
+#: class-ml-slider-lightbox.php:2064
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1929
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1929
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2064
 msgid "Upgrade to Pro"
 msgstr "ارتقاء به پرو"
 
-#: class-ml-slider-lightbox.php:2023
+#: class-ml-slider-lightbox.php:2096
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1921
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1921
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2096
+msgid "Automatic Mode"
+msgstr "حالت خودکار"
+
+#: class-ml-slider-lightbox.php:2097
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1922
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1922
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2097
+msgid "Manual Mode"
+msgstr "حالت دستی"
+
+#: class-ml-slider-lightbox.php:2099
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1924
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1924
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2099
+msgid "Behavior"
+msgstr "رفتار"
+
+#: class-ml-slider-lightbox.php:2120
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1949
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1949
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2120
 msgid "Settings saved successfully!"
 msgstr "تنظیمات با موفقیت ذخیره شد!"
 
-#: class-ml-slider-lightbox.php:2033
+#: class-ml-slider-lightbox.php:2130
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1959
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1959
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2130
 msgid "Where to Enable Automatically"
 msgstr "کجا به طور خودکار فعال شود"
 
-#: class-ml-slider-lightbox.php:2040
+#: class-ml-slider-lightbox.php:2137
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2137
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider Slideshow ها"
 
-#: class-ml-slider-lightbox.php:2047 class-ml-slider-lightbox.php:2246
+#: class-ml-slider-lightbox.php:2144 class-ml-slider-lightbox.php:2341
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1966
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2150
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1966
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2150
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2341
 msgid "Content Filtering"
 msgstr "فیلتر کردن محتوا"
 
-#: class-ml-slider-lightbox.php:2059
+#: class-ml-slider-lightbox.php:2156
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2156
 msgid ""
-"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
-msgstr "رنگ‌ها، شفافیت و سبک بصری را برای لایه نوری و کنترل‌ها شخصی‌سازی کنید."
+msgstr "رنگ‌ها، شفافیت و سبک بصری را برای پوشش گالری و کنترل‌ها سفارشی کنید."
 
-#: class-ml-slider-lightbox.php:2063 class-ml-slider-lightbox.php:2312
+#: class-ml-slider-lightbox.php:2160 class-ml-slider-lightbox.php:2407
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1982
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2216
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2216
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2160
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2407
 msgid "Background & Overlay"
 msgstr "پس‌زمینه و لایه"
 
-#: class-ml-slider-lightbox.php:2068
-msgid "Navigation"
-msgstr "ناوبری"
+#: class-ml-slider-lightbox.php:2170
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2170
+msgid "\"Open in Gallery\" Button"
+msgstr "\"باز کردن در گالری\" دکمه"
 
-#: class-ml-slider-lightbox.php:2073
-msgid "\"Open in Lightbox\" Button"
-msgstr "دکمه \"باز کردن در Lightbox\""
+#: class-ml-slider-lightbox.php:2180 class-ml-slider-lightbox.php:2520
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2002
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2305
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2002
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2305
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2180
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2520
+msgid "Navigation & Controls"
+msgstr "ناوبری و کنترل‌ها"
 
-#: class-ml-slider-lightbox.php:2089
+#: class-ml-slider-lightbox.php:2186
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2008
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2186
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -574,19 +1267,52 @@ msgstr ""
 "فعال است. این تنظیمات ممکن است برای MetaSlider اعمال نشود، اما برای لایت "
 "باکس‌های محتوای WordPress همچنان کار خواهد کرد."
 
-#: class-ml-slider-lightbox.php:2104
+#: class-ml-slider-lightbox.php:2193 class-ml-slider-lightbox.php:3999
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2015
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3811
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2015
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3811
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2193
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3999
+msgid "Enhanced Zoom & Controls"
+msgstr "زوم و کنترل‌های پیشرفته"
+
+#: class-ml-slider-lightbox.php:2201
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2201
 msgid "Media & Video Enhancements"
 msgstr "رسانه و بهبود ویدیو"
 
-#: class-ml-slider-lightbox.php:2112 class-ml-slider-lightbox.php:4036
+#: class-ml-slider-lightbox.php:2209 class-ml-slider-lightbox.php:4027
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2031
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3839
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2031
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3839
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2209
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4027
 msgid "Social & Navigation"
 msgstr "اجتماعی و ناوبری"
 
-#: class-ml-slider-lightbox.php:2136
-msgid "Manual Lightbox Options"
-msgstr "گزینه‌های دستی لایت باکس"
+#: class-ml-slider-lightbox.php:2217 class-ml-slider-lightbox.php:4048
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3860
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2039
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3860
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2217
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4048
+msgid "Advanced Features"
+msgstr "ویژگی‌های پیشرفته"
 
-#: class-ml-slider-lightbox.php:2137
+#: class-ml-slider-lightbox.php:2233
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2233
+msgid "Manual Options"
+msgstr "گزینه‌های دستی"
+
+#: class-ml-slider-lightbox.php:2234
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2056
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2056
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2234
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -594,232 +1320,286 @@ msgstr ""
 "کنترل‌های دستی و بازنویسی‌های WordPress که به طور مستقل از تنظیمات خودکار "
 "کار می‌کنند."
 
-#: class-ml-slider-lightbox.php:2319
+#: class-ml-slider-lightbox.php:2414
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2223
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2223
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2414
 msgid "Navigation Icons"
 msgstr "آیکون‌های ناوبری"
 
-#: class-ml-slider-lightbox.php:2326
+#: class-ml-slider-lightbox.php:2421
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2230
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2230
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2421
 msgid "Buttons"
 msgstr "دکمه‌ها"
 
-#: class-ml-slider-lightbox.php:2357
+#: class-ml-slider-lightbox.php:2444
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2444
+msgid "Autoplay Progress Bar Color"
+msgstr "رنگ نوار پیشرفت پخش خودکار"
+
+#: class-ml-slider-lightbox.php:2468
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2261
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2261
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2468
 msgid "Close Button"
 msgstr "دکمه بستن"
 
-#: class-ml-slider-lightbox.php:2365
-msgid "Lightbox Toolbar"
-msgstr "نوار ابزار لایت باکس"
-
-#: class-ml-slider-lightbox.php:2373
+#: class-ml-slider-lightbox.php:2484
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2277
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2277
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2484
 msgid "Button Colors"
 msgstr "رنگ‌های دکمه"
 
-#: class-ml-slider-lightbox.php:2381
+#: class-ml-slider-lightbox.php:2492
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2492
 msgid "Icon Colors"
 msgstr "رنگ‌های آیکون"
 
-#: class-ml-slider-lightbox.php:2389
-msgid "Button Text"
-msgstr "متن دکمه"
+#: class-ml-slider-lightbox.php:2878
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+msgid "Configure general gallery settings that apply site-wide."
+msgstr "تنظیمات عمومی گالری را پیکربندی کنید که در سایت به‌طور کلی اعمال می‌شود."
 
-#: class-ml-slider-lightbox.php:2397
-msgid "Button Position"
-msgstr "موقعیت دکمه"
+#: class-ml-slider-lightbox.php:2883
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2883
+msgid "Configure settings specific to MetaSlider Gallery functionality."
+msgstr "تنظیمات خاص عملکرد گالری MetaSlider را پیکربندی کنید."
 
-#: class-ml-slider-lightbox.php:2755
-msgid "Configure general lightbox settings that apply site-wide."
-msgstr "تنظیمات عمومی lightbox را پیکربندی کنید که در سایت به‌طور کلی اعمال می‌شود."
+#: class-ml-slider-lightbox.php:2888
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2888
+msgid "Select where the gallery will be enabled automatically."
+msgstr "محل فعال‌سازی خودکار گالری را انتخاب کنید."
 
-#: class-ml-slider-lightbox.php:2760
-msgid "Configure settings specific to MetaSlider lightbox functionality."
-msgstr "تنظیمات خاص عملکرد lightbox MetaSlider را پیکربندی کنید."
-
-#: class-ml-slider-lightbox.php:2765
-msgid "Select where the lightbox will be enabled automatically."
-msgstr "انتخاب کنید که lightbox در کجا به‌طور خودکار فعال شود."
-
-#: class-ml-slider-lightbox.php:2771
+#: class-ml-slider-lightbox.php:2894
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2894
 msgid ""
-"Choose how to filter content for lightbox processing and specify which "
+"Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
 msgstr ""
-"انتخاب کنید که چگونه محتوا را برای پردازش lightbox فیلتر کنید و مشخص کنید "
-"کدام صفحات، پست‌ها یا انتخاب‌گرها را شامل یا مستثنی کنید."
+"شیوه فیلتر کردن محتوا برای پردازش گالری را انتخاب کنید و مشخص کنید که کدام "
+"صفحات، پست‌ها یا انتخاب‌گرها را شامل یا حذف کنید."
 
-#: class-ml-slider-lightbox.php:2787
+#: class-ml-slider-lightbox.php:2910
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2666
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2666
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2910
 msgid "Processing Mode"
 msgstr "حالت پردازش"
 
-#: class-ml-slider-lightbox.php:2790
+#: class-ml-slider-lightbox.php:2913
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2669
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2669
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2913
 msgid "Process all content EXCEPT the items specified below"
 msgstr "تمام محتوا به جز موارد مشخص شده در زیر را پردازش کنید"
 
-#: class-ml-slider-lightbox.php:2793
+#: class-ml-slider-lightbox.php:2916
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2672
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2672
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2916
 msgid "ONLY process the items specified below"
 msgstr "فقط موارد مشخص شده در زیر را پردازش کنید"
 
-#: class-ml-slider-lightbox.php:2800
+#: class-ml-slider-lightbox.php:2923
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2679
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2679
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2923
 msgid "Inclusion Mode"
 msgstr "حالت گنجاندن"
 
-#: class-ml-slider-lightbox.php:2804
+#: class-ml-slider-lightbox.php:2927
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2683
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2683
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2927
 msgid "Exclusion Mode"
 msgstr "حالت استثنا"
 
-#: class-ml-slider-lightbox.php:2824
+#: class-ml-slider-lightbox.php:2947
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2703
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2703
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2947
 msgid "Images in post content"
 msgstr "تصاویر در محتوای پست"
 
-#: class-ml-slider-lightbox.php:2825
+#: class-ml-slider-lightbox.php:2948
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2948
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
-"in posts and pages will automatically open in the lightbox."
+"in posts and pages will automatically open in the gallery."
 msgstr ""
-"هنگامی که فعال شود، تصاویر فردی بدون لینک و تنظیم \"با کلیک بزرگ‌نمایی "
-"شود\" در پست‌ها و صفحات به‌طور خودکار در lightbox باز خواهند شد."
+"هنگامی که فعال باشد، تصاویر فردی بدون لینک و تنظیم \"بزرگ کردن به کلیک\" در "
+"پست‌ها و صفحات به‌طور خودکار در گالری باز خواهند شد."
 
-#: class-ml-slider-lightbox.php:2841
+#: class-ml-slider-lightbox.php:2964
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2720
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2720
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2964
 msgid "Images and videos in widgets and sidebars"
 msgstr "تصاویر و ویدیوها در ویدجت‌ها و نوار کناری"
 
-#: class-ml-slider-lightbox.php:2842
+#: class-ml-slider-lightbox.php:2965
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2965
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
-"the lightbox."
+"the gallery."
 msgstr ""
-"هنگامی که فعال شود، تصاویر و ویدیوها در نواحی ویدجت به‌طور خودکار در "
-"lightbox باز خواهند شد."
+"هنگامی که فعال باشد، تصاویر و ویدیوها در نواحی ویجت به‌طور خودکار در گالری "
+"باز خواهند شد."
 
-#: class-ml-slider-lightbox.php:2858
+#: class-ml-slider-lightbox.php:2981
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2737
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2737
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2981
 msgid "Gallery shortcodes and blocks"
 msgstr "کدکوتاه‌های گالری و بلوک‌ها"
 
-#: class-ml-slider-lightbox.php:2859
+#: class-ml-slider-lightbox.php:2982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2982
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
-"Gallery blocks will automatically open in the lightbox."
+"Gallery blocks will automatically open in the gallery window."
 msgstr ""
-"هنگامی که فعال شود، تصاویر در کدکوتاه‌های [gallery] WordPress و بلوک‌های "
-"گالری گوتنبرگ به‌طور خودکار در lightbox باز خواهند شد."
+"هنگامی که فعال باشد، تصاویر در کدهای کوتاه [gallery] WordPress و بلوک‌های "
+"گالری گوتنبرگ به‌طور خودکار در پنجره گالری باز خواهند شد."
 
-#: class-ml-slider-lightbox.php:2875
+#: class-ml-slider-lightbox.php:2998
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2754
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2754
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2998
 msgid "Featured images"
 msgstr "تصاویر ویژه"
 
-#: class-ml-slider-lightbox.php:2876
+#: class-ml-slider-lightbox.php:2999
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:2999
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
-"the lightbox when clicked."
+"the gallery when clicked."
 msgstr ""
-"هنگامی که فعال شود، تصاویر ویژه (تصاویر بندانگشتی پست) به‌طور خودکار در "
-"lightbox هنگام کلیک باز خواهند شد."
+"هنگامی که فعال باشد، تصاویر ویژه (تصاویر بندانگشتی پست) به‌طور خودکار در "
+"گالری هنگام کلیک باز خواهند شد."
 
-#: class-ml-slider-lightbox.php:2885
+#: class-ml-slider-lightbox.php:3008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3008
 msgid ""
-"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
-"the per-slider setting."
+"Automatically open all MetaSlider slideshows in the gallery, overriding the "
+"per-slider setting."
 msgstr ""
-"lightbox را به‌طور خودکار در تمام اسلایدشوهای MetaSlider فعال کنید و "
-"تنظیمات خاص هر اسلاید را نادیده بگیرید."
+"به‌طور خودکار تمام اسلایدشوهای MetaSlider را در گالری باز کنید و تنظیمات هر "
+"اسلاید را نادیده بگیرید."
 
-#: class-ml-slider-lightbox.php:2899
+#: class-ml-slider-lightbox.php:3022
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3022
 msgid "MetaSlider slideshows"
 msgstr "اسلایدشوهای MetaSlider"
 
-#: class-ml-slider-lightbox.php:2900
+#: class-ml-slider-lightbox.php:3023
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3023
 msgid ""
-"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
-"overriding the per-slider setting."
+"When enabled, all MetaSlider slideshows will open slides in the gallery "
+"window, overriding the per-slider setting."
 msgstr ""
-"زمانی که فعال باشد، تمام اسلایدشوهای MetaSlider در Lightbox باز خواهند شد و "
-"تنظیمات هر اسلاید را نادیده می‌گیرند."
+"هنگامی که فعال باشد، تمام اسلایدشوهای MetaSlider اسلایدها را در پنجره گالری "
+"باز خواهند کرد و تنظیمات هر اسلاید را نادیده می‌گیرند."
 
-#: class-ml-slider-lightbox.php:2916
+#: class-ml-slider-lightbox.php:3039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2771
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2771
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3039
 msgid "Videos in post content"
 msgstr "ویدیوها در محتوای پست"
 
-#: class-ml-slider-lightbox.php:2917
+#: class-ml-slider-lightbox.php:3040
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3040
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
-"embeds) in post/page content will automatically open in the lightbox."
+"embeds) in post/page content will automatically open in the gallery."
 msgstr ""
-"زمانی که فعال باشد، بلوک‌های ویدیویی مستقل (ویدیوهای HTML5، ویدیوهای "
-"یوتیوب، ویدیوهای ویمئو) در محتوای پست/صفحه به طور خودکار در Lightbox باز "
+"هنگامی که فعال باشد، بلوک‌های ویدیوی مستقل (ویدیوهای HTML5، گنجاندن‌های "
+"یوتیوب، گنجاندن‌های ویمئو) در محتوای پست/صفحه به‌طور خودکار در گالری باز "
 "خواهند شد."
 
-#: class-ml-slider-lightbox.php:2932
+#: class-ml-slider-lightbox.php:3075
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3075
 msgid ""
-"Background color for the lightbox overlay. Dark colors work best for image "
+"Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
 msgstr ""
-"رنگ پس‌زمینه برای پوشش Lightbox. رنگ‌های تیره برای مشاهده تصویر بهترین "
-"عملکرد را دارند."
+"رنگ پس‌زمینه برای پوشش گالری. رنگ‌های تیره برای مشاهده تصویر بهترین عملکرد "
+"را دارند."
 
-#: class-ml-slider-lightbox.php:2945
+#: class-ml-slider-lightbox.php:3080
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3080
 msgid ""
-"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
 msgstr ""
-"رنگ پس‌زمینه برای دکمه‌های \"باز کردن در Lightbox\" که بر روی اسلایدها، "
-"تصاویر و ویدیوها ظاهر می‌شوند."
+"رنگ پس‌زمینه برای دکمه‌های \"باز کردن در گالری\" که بر روی اسلایدها، تصاویر "
+"و ویدیوها ظاهر می‌شوند."
 
-#: class-ml-slider-lightbox.php:2958
+#: class-ml-slider-lightbox.php:3085
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3085
 msgid ""
-"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
 msgstr ""
-"رنگ متن برای دکمه‌های \"باز کردن در Lightbox\" که بر روی اسلایدها، تصاویر و "
+"رنگ متن برای دکمه‌های \"باز کردن در گالری\" که بر روی اسلایدها، تصاویر و "
 "ویدیوها ظاهر می‌شوند."
 
-#: class-ml-slider-lightbox.php:2971
-msgid "Background color when hovering over \"Open in Lightbox\" buttons."
-msgstr "رنگ پس‌زمینه هنگام قرارگیری ماوس بر روی دکمه‌های \"باز کردن در Lightbox\"."
+#: class-ml-slider-lightbox.php:3090
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3090
+msgid "Background color when hovering over \"Open in Gallery\" buttons."
+msgstr "رنگ پس‌زمینه هنگام قرار گرفتن بر روی دکمه‌های \"باز کردن در گالری\"."
 
-#: class-ml-slider-lightbox.php:2984
-msgid "Text color when hovering over \"Open in Lightbox\" buttons."
-msgstr "رنگ متن هنگام قرارگیری ماوس بر روی دکمه‌های \"باز کردن در Lightbox\"."
+#: class-ml-slider-lightbox.php:3095
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3095
+msgid "Text color when hovering over \"Open in Gallery\" buttons."
+msgstr "رنگ متن هنگام قرار گرفتن روی دکمه‌های \"باز کردن در گالری\"."
 
-#: class-ml-slider-lightbox.php:2997
+#: class-ml-slider-lightbox.php:3108
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3108
 msgid ""
-"Custom text for lightbox buttons. This text will appear on all \"Open in "
-"Lightbox\" buttons throughout the site."
+"Custom text for gallery buttons. This text will appear on all \"Open in "
+"Gallery\" buttons throughout the site."
 msgstr ""
-"متن سفارشی برای دکمه‌های Lightbox. این متن بر روی تمام دکمه‌های \"باز کردن "
-"در Lightbox\" در سرتاسر سایت ظاهر خواهد شد."
+"متن سفارشی برای دکمه‌های گالری. این متن در تمام دکمه‌های \"باز کردن در "
+"گالری\" در سرتاسر سایت ظاهر خواهد شد."
 
-#: class-ml-slider-lightbox.php:3010 class-ml-slider-lightbox.php:3036
+#: class-ml-slider-lightbox.php:3121 class-ml-slider-lightbox.php:3147
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2865
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2891
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2865
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2891
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3147
 msgid "Top Right (Default)"
 msgstr "بالا سمت راست (پیش‌فرض)"
 
-#: class-ml-slider-lightbox.php:3011 class-ml-slider-lightbox.php:3037
-msgid "Top Left"
-msgstr "بالا سمت چپ"
+#: class-ml-slider-lightbox.php:3134
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3134
+msgid "Choose where to position the close button (X) in the gallery overlay."
+msgstr "محل قرارگیری دکمه بستن (X) را در پوشش گالری انتخاب کنید."
 
-#: class-ml-slider-lightbox.php:3012 class-ml-slider-lightbox.php:3038
-msgid "Bottom Right"
-msgstr "پایین سمت راست"
-
-#: class-ml-slider-lightbox.php:3013 class-ml-slider-lightbox.php:3039
-msgid "Bottom Left"
-msgstr "پایین سمت چپ"
-
-#: class-ml-slider-lightbox.php:3023
-msgid "Choose where to position the close button (X) in the lightbox overlay."
-msgstr "محل قرارگیری دکمه بستن (X) در پوشش Lightbox را انتخاب کنید."
-
-#: class-ml-slider-lightbox.php:3049
+#: class-ml-slider-lightbox.php:3160
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3160
 msgid ""
-"Choose where to position \"Open in Lightbox\" buttons within slides, "
-"images, galleries, and videos."
+"Choose where to position \"Open in Gallery\" buttons within slides, images, "
+"galleries, and videos."
 msgstr ""
-"محل قرارگیری دکمه‌های \"باز کردن در Lightbox\" درون اسلایدها، تصاویر، "
-"گالری‌ها و ویدیوها را انتخاب کنید."
+"محل قرارگیری دکمه‌های \"باز کردن در گالری\" را در اسلایدها، تصاویر، "
+"گالری‌ها و ویدیوها انتخاب کنید."
 
-#: class-ml-slider-lightbox.php:3062
-msgid "Color for previous and next navigation arrows in the lightbox."
-msgstr "رنگ برای فلش‌های ناوبری قبلی و بعدی در Lightbox."
+#: class-ml-slider-lightbox.php:3165
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3165
+msgid "Color for previous and next navigation arrows in the gallery."
+msgstr "رنگ پیکان‌های ناوبری قبلی و بعدی در گالری."
 
-#: class-ml-slider-lightbox.php:3075
+#: class-ml-slider-lightbox.php:3170
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2930
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2930
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3170
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -827,11 +1607,15 @@ msgstr ""
 "رنگ فلش هنگام قرارگیری ماوس. بازخورد بصری ایجاد می‌کند زمانی که کاربران "
 "ماوس خود را بر روی فلش‌های ناوبری حرکت می‌دهند."
 
-#: class-ml-slider-lightbox.php:3088
-msgid "Color for the close button (X) in the lightbox."
-msgstr "رنگ دکمه بستن (X) در Lightbox."
+#: class-ml-slider-lightbox.php:3175
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3175
+msgid "Color for the close button (X) in the gallery."
+msgstr "رنگ دکمه بستن (X) در گالری."
 
-#: class-ml-slider-lightbox.php:3101
+#: class-ml-slider-lightbox.php:3180
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2956
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2956
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3180
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -839,7 +1623,10 @@ msgstr ""
 "رنگ دکمه بستن هنگام قرارگیری ماوس. بازخورد بصری ایجاد می‌کند زمانی که "
 "کاربران ماوس خود را بر روی دکمه بستن حرکت می‌دهند."
 
-#: class-ml-slider-lightbox.php:3114
+#: class-ml-slider-lightbox.php:3185
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2969
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2969
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3185
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -847,7 +1634,10 @@ msgstr ""
 "رنگ برای آیکون‌های نوار ابزار و متن شمارنده در Lightbox. بر روی زوم، "
 "آیکون‌های تمام‌صفحه (Pro) و نمایش شمارنده تصویر تأثیر می‌گذارد."
 
-#: class-ml-slider-lightbox.php:3127
+#: class-ml-slider-lightbox.php:3190
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3190
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -855,11 +1645,17 @@ msgstr ""
 "رنگ آیکون نوار ابزار هنگام جابجایی ماوس. بازخورد بصری ایجاد می‌کند زمانی که "
 "کاربران ماوس خود را بر روی آیکون‌های نوار ابزار و شمارنده حرکت می‌دهند."
 
-#: class-ml-slider-lightbox.php:3140
+#: class-ml-slider-lightbox.php:3195
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2995
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2995
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3195
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "رنگ پس‌زمینه برای دکمه‌های ناوبری قبلی و بعدی."
 
-#: class-ml-slider-lightbox.php:3153
+#: class-ml-slider-lightbox.php:3200
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3008
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3200
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -867,11 +1663,15 @@ msgstr ""
 "رنگ پس‌زمینه برای دکمه‌های پیکان هنگام جابجایی ماوس. بازخورد بصری ایجاد "
 "می‌کند زمانی که کاربران ماوس خود را بر روی پیکان‌ها حرکت می‌دهند."
 
-#: class-ml-slider-lightbox.php:3166
-msgid "Background color for the close button (X) in the lightbox."
-msgstr "رنگ پس‌زمینه برای دکمه بستن (X) در Lightbox."
+#: class-ml-slider-lightbox.php:3205
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3205
+msgid "Background color for the close button (X) in the gallery."
+msgstr "رنگ پس‌زمینه دکمه بستن (X) در گالری."
 
-#: class-ml-slider-lightbox.php:3179
+#: class-ml-slider-lightbox.php:3210
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3034
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3034
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3210
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -879,11 +1679,17 @@ msgstr ""
 "رنگ پس‌زمینه برای دکمه بستن هنگام جابجایی ماوس. بازخورد بصری ایجاد می‌کند "
 "زمانی که کاربران ماوس خود را بر روی دکمه بستن حرکت می‌دهند."
 
-#: class-ml-slider-lightbox.php:3192
+#: class-ml-slider-lightbox.php:3215
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3047
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3047
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3215
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "رنگ پس‌زمینه برای آیکون‌های نوار ابزار در Lightbox."
 
-#: class-ml-slider-lightbox.php:3205
+#: class-ml-slider-lightbox.php:3220
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3060
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3060
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3220
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -892,37 +1698,103 @@ msgstr ""
 "ایجاد می‌کند زمانی که کاربران ماوس خود را بر روی آیکون‌های نوار ابزار حرکت "
 "می‌دهند."
 
-#: class-ml-slider-lightbox.php:3225 class-ml-slider-lightbox.php:3257
-#: class-ml-slider-lightbox.php:3289 class-ml-slider-lightbox.php:3400
+#: class-ml-slider-lightbox.php:3264 class-ml-slider-lightbox.php:3277
+#: class-ml-slider-lightbox.php:3290 class-ml-slider-lightbox.php:3388
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3112
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3144
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3080
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3112
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3144
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3290
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3388
 msgid "Icon"
 msgstr "آیکون"
 
-#: class-ml-slider-lightbox.php:3228 class-ml-slider-lightbox.php:3260
-#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3403
+#: class-ml-slider-lightbox.php:3265 class-ml-slider-lightbox.php:3278
+#: class-ml-slider-lightbox.php:3291 class-ml-slider-lightbox.php:3389
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3083
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3115
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3083
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3115
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3147
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3265
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3278
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3291
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3389
 msgid "Icon Hover"
 msgstr "آیکون جابجایی"
 
-#: class-ml-slider-lightbox.php:3231 class-ml-slider-lightbox.php:3263
-#: class-ml-slider-lightbox.php:3295 class-ml-slider-lightbox.php:3374
-#: class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3266 class-ml-slider-lightbox.php:3279
+#: class-ml-slider-lightbox.php:3292 class-ml-slider-lightbox.php:3373
+#: class-ml-slider-lightbox.php:3390
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3086
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3118
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3229
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3086
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3118
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3150
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3229
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3266
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3279
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3292
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3373
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3390
 msgid "Background"
 msgstr "پس‌زمینه"
 
-#: class-ml-slider-lightbox.php:3234 class-ml-slider-lightbox.php:3266
-#: class-ml-slider-lightbox.php:3298 class-ml-slider-lightbox.php:3377
-#: class-ml-slider-lightbox.php:3409
+#: class-ml-slider-lightbox.php:3267 class-ml-slider-lightbox.php:3280
+#: class-ml-slider-lightbox.php:3293 class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3391
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3089
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3153
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3232
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3089
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3121
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3153
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3232
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3267
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3280
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3293
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3374
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3391
 msgid "Background Hover"
 msgstr "پس‌زمینه جابجایی"
 
-#: class-ml-slider-lightbox.php:3317
-msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
-msgstr "شفافیت پس‌زمینه Lightbox را تنظیم کنید (0 = شفاف، 1 = کدر)."
+#: class-ml-slider-lightbox.php:3310
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3310
+msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
+msgstr "شفافیت پس‌زمینه گالری را تنظیم کنید (0 = شفاف، 1 = کدر)."
 
-#: class-ml-slider-lightbox.php:3328
-msgid "Show navigation arrows in lightbox"
-msgstr "نمایش پیکان‌های ناوبری در Lightbox"
+#: class-ml-slider-lightbox.php:3319
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3319
+msgid "Color of the progress bar shown during autoplay slideshows."
+msgstr "رنگ نوار پیشرفت که در هنگام نمایش اسلایدهای خودکار نشان داده می‌شود."
 
-#: class-ml-slider-lightbox.php:3329
+#: class-ml-slider-lightbox.php:3325
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3325
+msgid "Border"
+msgstr "مرز"
+
+#: class-ml-slider-lightbox.php:3326
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3326
+msgid "Border Active and Hover"
+msgstr "مرز فعال و هنگام قرار گرفتن"
+
+#: class-ml-slider-lightbox.php:3338
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3338
+msgid "Show navigation arrows in gallery"
+msgstr "نمایش پیکان‌های ناوبری در گالری"
+
+#: class-ml-slider-lightbox.php:3339
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3184
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3184
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3339
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -932,92 +1804,120 @@ msgstr ""
 "می‌کند (کلیدهای ← →، ESC برای بستن). این برای نمایش اسلایدها و گالری‌های "
 "تصاویر در دسترس است."
 
-#: class-ml-slider-lightbox.php:3338
-msgid "Customize the lightbox background and overlay appearance."
-msgstr "ظاهر پس‌زمینه و پوشش Lightbox را سفارشی کنید."
-
-#: class-ml-slider-lightbox.php:3343
-msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
-msgstr ""
-"آیکون‌های ناوبری (بستن، پیکان‌های قبلی و بعدی) را برای Lightboxها سفارشی "
-"کنید."
-
 #: class-ml-slider-lightbox.php:3348
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3348
+msgid "Customize the gallery background and overlay appearance."
+msgstr "ظاهر پس‌زمینه و پوشش گالری را سفارشی کنید."
+
+#: class-ml-slider-lightbox.php:3353
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3353
+msgid "Customize navigation icons (close, previous, next arrows) for gallery."
+msgstr "آیکون‌های ناوبری (بستن، قبلی، بعدی) را برای گالری سفارشی کنید."
+
+#: class-ml-slider-lightbox.php:3358
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3358
 msgid ""
-"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
 msgstr ""
-"دکمه‌های \"باز کردن در Lightbox\" را که می‌توان به اسلایدها، تصاویر، "
-"گالری‌ها و ویدیوها اضافه کرد، سفارشی کنید."
+"دکمه‌های \"باز کردن در گالری\" که می‌توانند به اسلایدها، تصاویر، گالری‌ها و "
+"ویدیوها اضافه شوند را سفارشی کنید."
 
-#: class-ml-slider-lightbox.php:3368
+#: class-ml-slider-lightbox.php:3371
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3223
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3223
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3371
 msgid "Text"
 msgstr "متن"
 
-#: class-ml-slider-lightbox.php:3371
+#: class-ml-slider-lightbox.php:3372
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3226
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3226
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3372
 msgid "Text Hover"
 msgstr "متن جابجایی"
 
-#: class-ml-slider-lightbox.php:3417
-msgid "Configure navigation and control options that apply to all lightboxes."
-msgstr "تنظیم گزینه‌های ناوبری و کنترل که به همه Lightboxها اعمال می‌شود."
+#: class-ml-slider-lightbox.php:3397
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3397
+msgid ""
+"Configure navigation and control options that apply to all MetaSlider "
+"galleries."
+msgstr ""
+"گزینه‌های ناوبری و کنترل را که به تمام گالری‌های MetaSlider اعمال می‌شود "
+"پیکربندی کنید."
 
-#: class-ml-slider-lightbox.php:3427
+#: class-ml-slider-lightbox.php:3407
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3250
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3250
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3407
 msgid "Show thumbnails"
 msgstr "نمایش تصویر کوچک"
 
-#: class-ml-slider-lightbox.php:3428
+#: class-ml-slider-lightbox.php:3408
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3408
 msgid ""
-"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
 msgstr ""
-"تصاویر کوچک را در پایین Lightbox برای ناوبری آسان نمایش دهید. این قابلیت "
-"برای اسلایدشوها و گالری‌های تصویری در دسترس است."
+"تصاویر بند انگشتی را در پایین گالری برای ناوبری آسان نمایش دهید. این گزینه "
+"برای نمایش‌های اسلاید و گالری‌های تصویری در دسترس است."
 
-#: class-ml-slider-lightbox.php:3440
-msgid "Show \"Open in Lightbox\" button"
-msgstr "نمایش دکمه \"باز کردن در Lightbox\""
+#: class-ml-slider-lightbox.php:3420
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3420
+msgid "Show \"Open in Gallery\" button"
+msgstr "نمایش دکمه \"باز کردن در گالری\""
 
-#: class-ml-slider-lightbox.php:3441
+#: class-ml-slider-lightbox.php:3421
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3421
 msgid ""
-"When enabled, shows a button to open the lightbox. When disabled, clicking "
-"the slide, image, or video directly opens the lightbox."
+"When enabled, shows a button to open the gallery. When disabled, clicking "
+"the slide, image, or video directly opens the gallery."
 msgstr ""
-"زمانی که فعال باشد، دکمه‌ای برای باز کردن Lightbox نمایش می‌دهد. وقتی "
-"غیرفعال باشد، کلیک بر روی اسلاید، تصویر یا ویدیو به‌طور مستقیم Lightbox را "
-"باز می‌کند."
+"هنگامی که فعال باشد، دکمه‌ای برای باز کردن گالری نشان می‌دهد. وقتی غیرفعال "
+"باشد، کلیک بر روی اسلاید، تصویر یا ویدیو مستقیماً گالری را باز می‌کند."
 
-#: class-ml-slider-lightbox.php:3458
+#: class-ml-slider-lightbox.php:3438
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3438
 msgid "Show an icon instead of button"
 msgstr "نمایش آیکون به جای دکمه"
 
-#: class-ml-slider-lightbox.php:3459
+#: class-ml-slider-lightbox.php:3439
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3439
 msgid "When enabled, displays a small icon instead of the full button text."
 msgstr "زمانی که فعال باشد، یک آیکون کوچک به جای متن کامل دکمه نمایش می‌دهد."
 
-#: class-ml-slider-lightbox.php:3473
+#: class-ml-slider-lightbox.php:3453
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3276
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3276
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3453
 msgid "Show captions"
 msgstr "نمایش زیرنویس‌ها"
 
-#: class-ml-slider-lightbox.php:3474
+#: class-ml-slider-lightbox.php:3454
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3454
 msgid ""
-"When enabled, display captions in the lightbox. This is available for "
+"When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
 msgstr ""
-"زمانی که فعال باشد، زیرنویس‌ها را در Lightbox نمایش دهید. این قابلیت برای "
-"اسلایدشوها، تصاویر و گالری‌های تصویری در دسترس است."
+"هنگامی که فعال باشد، زیرنویس‌ها را در پنجره گالری نمایش دهید. این گزینه "
+"برای نمایش‌های اسلاید، تصاویر و گالری‌های تصویری در دسترس است."
 
-#: class-ml-slider-lightbox.php:3481
+#: class-ml-slider-lightbox.php:3461
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3461
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr "ویژگی‌های پیشرفته Lightbox از طریق MetaSlider Gallery Pro در دسترس است."
 
-#: class-ml-slider-lightbox.php:3483
+#: class-ml-slider-lightbox.php:3463
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3463
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr ""
 "پیش‌نمایشی از ویژگی‌های پیشرفته در دسترس در MetaSlider Gallery Pro را "
 "دریافت کنید."
 
-#: class-ml-slider-lightbox.php:3486
+#: class-ml-slider-lightbox.php:3466
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3289
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3289
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3466
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -1025,93 +1925,134 @@ msgstr ""
 "این افزونه‌های پیشرفته LightGallery.js در نسخه Pro با گزینه‌های سفارشی‌سازی "
 "اضافی در دسترس هستند."
 
-#: class-ml-slider-lightbox.php:3512
-msgid "Include specific Pages"
-msgstr "شامل صفحات خاص"
+#: class-ml-slider-lightbox.php:3494 class-ml-slider-lightbox.php:3495
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3494
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3495
+msgid "specific Pages"
+msgstr "صفحات خاص"
 
-#: class-ml-slider-lightbox.php:3514
+#: class-ml-slider-lightbox.php:3497
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3497
 msgid ""
-"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr ""
-"صفحات را انتخاب کنید که Lightbox باید غیرفعال شود. حداکثر ۱۰۰ صفحه اخیر "
-"نمایش داده می‌شود. برای جستجو تایپ کنید."
+"صفحات را انتخاب کنید که گالری باید غیرفعال باشد. تا 100 صفحه اخیر نمایش "
+"داده می‌شود. برای جستجو تایپ کنید."
 
-#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3515
+#: class-ml-slider-lightbox.php:3497 class-ml-slider-lightbox.php:3498
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3497
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3498
 msgid ""
-"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr ""
-"صفحات را انتخاب کنید که Lightbox باید فعال شود. حداکثر ۱۰۰ صفحه اخیر نمایش "
-"داده می‌شود. برای جستجو تایپ کنید."
+"صفحات را انتخاب کنید که گالری باید فعال باشد. تا 100 صفحه اخیر نمایش داده "
+"می‌شود. برای جستجو تایپ کنید."
 
-#: class-ml-slider-lightbox.php:3557
-msgid "Include specific Posts"
-msgstr "شامل پست‌های خاص"
+#: class-ml-slider-lightbox.php:3542 class-ml-slider-lightbox.php:3543
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3542
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3543
+msgid "specific Posts"
+msgstr "پست‌های خاص"
 
-#: class-ml-slider-lightbox.php:3559
+#: class-ml-slider-lightbox.php:3545
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3545
 msgid ""
-"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
 msgstr ""
-"پست‌ها را انتخاب کنید که Lightbox باید غیرفعال شود. حداکثر ۱۰۰ پست اخیر "
-"نمایش داده می‌شود. برای جستجو تایپ کنید."
-
-#: class-ml-slider-lightbox.php:3559 class-ml-slider-lightbox.php:3560
-msgid ""
-"Select posts where lightbox should be enabled. Shows up to 100 most recent "
-"posts. Type to search."
-msgstr ""
-"پست‌ها را انتخاب کنید که Lightbox باید فعال شود. حداکثر ۱۰۰ پست اخیر نمایش "
+"پست‌ها را انتخاب کنید که گالری باید غیرفعال باشد. تا 100 پست اخیر نمایش "
 "داده می‌شود. برای جستجو تایپ کنید."
 
-#: class-ml-slider-lightbox.php:3587
+#: class-ml-slider-lightbox.php:3545 class-ml-slider-lightbox.php:3546
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3545
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3546
+msgid ""
+"Select posts where gallery should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"پست‌ها را انتخاب کنید که گالری باید فعال باشد. تا 100 پست اخیر نمایش داده "
+"می‌شود. برای جستجو تایپ کنید."
+
+#: class-ml-slider-lightbox.php:3573
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3573
 msgid "include"
 msgstr "شامل"
 
-#: class-ml-slider-lightbox.php:3587
+#: class-ml-slider-lightbox.php:3573
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3573
 msgid "exclude"
 msgstr "حذف"
 
-#: class-ml-slider-lightbox.php:3626
+#: class-ml-slider-lightbox.php:3613
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3613
+#, php-format
+msgid "specific %s"
+msgstr "خاص %s"
+
+#: class-ml-slider-lightbox.php:3614
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3429
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3429
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3614
 #, php-format
 msgid "%s specific %s"
 msgstr "%s خاص %s"
 
-#: class-ml-slider-lightbox.php:3628 class-ml-slider-lightbox.php:3629
+#: class-ml-slider-lightbox.php:3616 class-ml-slider-lightbox.php:3617
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3431
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3432
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3431
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3432
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3617
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "تا 100 مورد اخیر %s را نشان می‌دهد. برای جستجو تایپ کنید."
 
-#: class-ml-slider-lightbox.php:3675
-msgid "Include specific post types"
-msgstr "شامل نوع پست‌های مشخص"
+#: class-ml-slider-lightbox.php:3665 class-ml-slider-lightbox.php:3666
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3665
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3666
+msgid "specific post types"
+msgstr "نوع‌های خاص پست"
 
-#: class-ml-slider-lightbox.php:3677
-msgid "Select post types where lightbox should be disabled entirely."
-msgstr "نوع پست‌هایی را انتخاب کنید که Lightbox باید کاملاً غیرفعال شود."
+#: class-ml-slider-lightbox.php:3668
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3668
+msgid "Select post types where gallery should be disabled entirely."
+msgstr "نوع‌های پست را انتخاب کنید که گالری باید به‌طور کامل غیرفعال باشد."
 
-#: class-ml-slider-lightbox.php:3677 class-ml-slider-lightbox.php:3678
-msgid "Select post types where lightbox should be enabled entirely."
-msgstr "نوع پست‌هایی را انتخاب کنید که Lightbox باید کاملاً فعال شود."
+#: class-ml-slider-lightbox.php:3668 class-ml-slider-lightbox.php:3669
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3668
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3669
+msgid "Select post types where gallery should be enabled entirely."
+msgstr "نوع‌های پست را انتخاب کنید که گالری باید به‌طور کامل فعال باشد."
 
-#: class-ml-slider-lightbox.php:3712
+#: class-ml-slider-lightbox.php:3703
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3515
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3515
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3703
 msgid "Exclude by CSS selector"
 msgstr "به‌طور انتخابی با CSS"
 
-#: class-ml-slider-lightbox.php:3715
+#: class-ml-slider-lightbox.php:3706
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3706
 msgid ""
-"CSS selectors for elements to exclude from lightbox (one per line). "
+"CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
 msgstr ""
-"انتخابگرهای CSS برای عناصری که باید از Lightbox مستثنی شوند (یکی در هر خط). "
-"مثال‌ها:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+"انتخابگرهای CSS برای عناصری که باید از پنجره گالری مستثنی شوند (هر کدام در "
+"یک خط). مثال‌ها:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar "
+".widget-area"
 
-#: class-ml-slider-lightbox.php:3738
+#: class-ml-slider-lightbox.php:3729
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3541
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3541
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3729
 msgid "Minimum Image Width"
 msgstr "حداقل عرض تصویر"
 
-#: class-ml-slider-lightbox.php:3741
+#: class-ml-slider-lightbox.php:3732
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3732
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -1121,11 +2062,15 @@ msgstr ""
 "استفاده می‌کند، نه اندازه واقعی فایل تصویر. این برای حذف آیکون‌ها، نشان‌ها "
 "و دکمه‌های کوچک مفید است."
 
-#: class-ml-slider-lightbox.php:3764
+#: class-ml-slider-lightbox.php:3755
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3567
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3567
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3755
 msgid "Minimum Image Height"
 msgstr "حداقل ارتفاع تصویر"
 
-#: class-ml-slider-lightbox.php:3767
+#: class-ml-slider-lightbox.php:3758
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3758
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -1135,21 +2080,39 @@ msgstr ""
 "شده استفاده می‌کند، نه اندازه واقعی فایل تصویر. این برای حذف آیکون‌ها، "
 "نشان‌ها و دکمه‌های کوچک مفید است."
 
-#: class-ml-slider-lightbox.php:3783 class-ml-slider-lightbox.php:3940
+#: class-ml-slider-lightbox.php:3774 class-ml-slider-lightbox.php:3931
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3586
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3743
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3586
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3743
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3774
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3931
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
 msgstr "مدیریت رسانه پیشرفته و ویژگی‌های پخش ویدئو برای گالری‌های حرفه‌ای."
 
-#: class-ml-slider-lightbox.php:3790
+#: class-ml-slider-lightbox.php:3781
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3593
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3593
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3781
 msgid "Advanced features for professional lightbox implementations."
 msgstr "ویژگی‌های پیشرفته برای پیاده‌سازی‌های حرفه‌ای Lightbox."
 
-#: class-ml-slider-lightbox.php:3801 class-ml-slider-lightbox.php:4013
+#: class-ml-slider-lightbox.php:3792 class-ml-slider-lightbox.php:4004
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3604
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3816
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3604
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3816
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3792
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4004
 msgid "Enable Zoom"
 msgstr "فعال‌سازی بزرگ‌نمایی"
 
-#: class-ml-slider-lightbox.php:3802
+#: class-ml-slider-lightbox.php:3793
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3605
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3605
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3793
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -1157,11 +2120,20 @@ msgstr ""
 "دوبار کلیک کنید تا بزرگ‌نمایی کنید، کنترل‌های بزرگ‌نمایی، بزرگ‌نمایی با چرخ "
 "ماوس و گزینه‌های بزرگ‌نمایی به تناسب."
 
-#: class-ml-slider-lightbox.php:3812 class-ml-slider-lightbox.php:4020
+#: class-ml-slider-lightbox.php:3803 class-ml-slider-lightbox.php:4011
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3615
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3823
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3615
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3823
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3803
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4011
 msgid "Enable Fullscreen"
 msgstr "فعال‌سازی تمام صفحه"
 
-#: class-ml-slider-lightbox.php:3813
+#: class-ml-slider-lightbox.php:3804
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3616
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3804
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
@@ -1169,11 +2141,20 @@ msgstr ""
 "پشتیبانی بومی HTML5 برای تمام صفحه با کلیدهای میانبر (کلید F) برای مشاهده "
 "غوطه‌ور."
 
-#: class-ml-slider-lightbox.php:3823 class-ml-slider-lightbox.php:4027
+#: class-ml-slider-lightbox.php:3814 class-ml-slider-lightbox.php:4018
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3626
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3830
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3626
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3830
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3814
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4018
 msgid "Enable Rotate"
 msgstr "فعال‌سازی چرخش"
 
-#: class-ml-slider-lightbox.php:3824
+#: class-ml-slider-lightbox.php:3815
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3627
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3627
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3815
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -1181,11 +2162,17 @@ msgstr ""
 "چرخش تصاویر در جهت ساعت‌گرد/پادساعت‌گرد، معکوس کردن افقی/عمودی با کنترل‌های "
 "نوار ابزار."
 
-#: class-ml-slider-lightbox.php:3834
+#: class-ml-slider-lightbox.php:3825
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3637
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3637
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3825
 msgid "Enable Video"
 msgstr "فعال‌سازی ویدئو"
 
-#: class-ml-slider-lightbox.php:3835
+#: class-ml-slider-lightbox.php:3826
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3638
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3638
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3826
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -1193,12 +2180,22 @@ msgstr ""
 "پشتیبانی پیشرفته از ویدیو برای YouTube، Vimeo، ویدیوهای HTML5 با پخش خودکار "
 "و کنترل کیفیت."
 
-#: class-ml-slider-lightbox.php:3845 class-ml-slider-lightbox.php:4062
-#: class-ml-slider-lightbox.php:4170
+#: class-ml-slider-lightbox.php:3836 class-ml-slider-lightbox.php:4053
+#: class-ml-slider-lightbox.php:4193
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3648
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3865
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3648
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3865
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3836
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4053
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4193
 msgid "Enable Unique Image URLs"
 msgstr "فعال‌سازی URL‌های منحصر به فرد تصویر"
 
-#: class-ml-slider-lightbox.php:3846
+#: class-ml-slider-lightbox.php:3837
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3649
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3649
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3837
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -1206,19 +2203,35 @@ msgstr ""
 "URL‌های منحصر به فرد برای هر تصویر در گالری با پشتیبانی از ناوبری به "
 "عقب/جلو در مرورگر."
 
-#: class-ml-slider-lightbox.php:3856 class-ml-slider-lightbox.php:4069
+#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:4060
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3659
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3872
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3659
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3872
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4060
 msgid "Enable Autoplay"
 msgstr "فعال‌سازی پخش خودکار"
 
-#: class-ml-slider-lightbox.php:3857
-msgid "Automatically advance through images in the lightbox."
-msgstr "به طور خودکار از میان تصاویر در lightbox پیش بروید."
+#: class-ml-slider-lightbox.php:3848
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3848
+msgid "Automatically advance through images in the gallery."
+msgstr "به‌طور خودکار از طریق تصاویر در گالری پیش بروید."
 
-#: class-ml-slider-lightbox.php:3867 class-ml-slider-lightbox.php:4041
+#: class-ml-slider-lightbox.php:3858 class-ml-slider-lightbox.php:4032
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3670
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3844
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3670
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3844
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3858
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4032
 msgid "Enable Share"
 msgstr "فعال‌سازی اشتراک‌گذاری"
 
-#: class-ml-slider-lightbox.php:3868
+#: class-ml-slider-lightbox.php:3859
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3671
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3671
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3859
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -1226,33 +2239,67 @@ msgstr ""
 "دکمه‌های اشتراک‌گذاری در رسانه‌های اجتماعی برای Facebook، Twitter، "
 "Pinterest، و اشتراک‌گذاری URL مستقیم."
 
-#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:4048
+#: class-ml-slider-lightbox.php:3869 class-ml-slider-lightbox.php:4039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3681
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3851
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3681
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3851
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3869
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4039
 msgid "Enable Pager"
 msgstr "فعال‌سازی صفحه‌گردان"
 
-#: class-ml-slider-lightbox.php:3879
+#: class-ml-slider-lightbox.php:3870
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3682
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3682
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3870
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "نقاط صفحه‌گردان حداقلی برای ناوبری تمیز بدون پیش‌نمایش‌های بندانگشتی."
 
-#: class-ml-slider-lightbox.php:3935 class-ml-slider-lightbox.php:4009
+#: class-ml-slider-lightbox.php:3926 class-ml-slider-lightbox.php:4000
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3738
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3812
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3738
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3812
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4000
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
 msgstr "کنترل‌های زوم حرفه‌ای و تعامل با تصویر برای تجربه کاربری بهبود یافته."
 
-#: class-ml-slider-lightbox.php:3945 class-ml-slider-lightbox.php:4037
+#: class-ml-slider-lightbox.php:3936 class-ml-slider-lightbox.php:4028
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3748
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3840
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3748
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3840
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3936
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4028
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "بهبودهای اشتراک‌گذاری اجتماعی و ناوبری برای افزایش تعامل."
 
-#: class-ml-slider-lightbox.php:3950 class-ml-slider-lightbox.php:4058
+#: class-ml-slider-lightbox.php:3941 class-ml-slider-lightbox.php:4049
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3753
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3861
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3753
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3861
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4049
 msgid "Advanced functionality including URL management and automation features."
 msgstr "عملکرد پیشرفته شامل مدیریت URL و ویژگی‌های خودکارسازی."
 
-#: class-ml-slider-lightbox.php:3962
+#: class-ml-slider-lightbox.php:3953
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:3953
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "این ویژگی در MetaSlider Gallery Pro موجود است"
 
-#: class-ml-slider-lightbox.php:4014 class-ml-slider-lightbox.php:4139
+#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3817
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3942
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3817
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3942
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4005
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4162
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -1260,161 +2307,993 @@ msgstr ""
 "به کاربران اجازه دهید با کلیک دوگانه، چرخ‌دنده ماوس، و کنترل‌های زوم زوم "
 "کنند."
 
-#: class-ml-slider-lightbox.php:4016
+#: class-ml-slider-lightbox.php:4007
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4007
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "کنترل‌های زوم در MetaSlider Gallery Pro موجود است"
 
-#: class-ml-slider-lightbox.php:4021
+#: class-ml-slider-lightbox.php:4012
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3824
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3824
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4012
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "حالت تمام صفحه HTML5 بومی برای مشاهده غوطه‌ور تصاویر."
 
-#: class-ml-slider-lightbox.php:4023
+#: class-ml-slider-lightbox.php:4014
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4014
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "حالت تمام صفحه در MetaSlider Gallery Pro موجود است"
 
-#: class-ml-slider-lightbox.php:4028 class-ml-slider-lightbox.php:4155
+#: class-ml-slider-lightbox.php:4019 class-ml-slider-lightbox.php:4178
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3831
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3958
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3831
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3958
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4019
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4178
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr "چرخش تصاویر در جهت عقربه‌های ساعت/برعکس و معکوس کردن افقی/عمودی."
 
-#: class-ml-slider-lightbox.php:4030
+#: class-ml-slider-lightbox.php:4021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4021
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "چرخش تصویر در MetaSlider Gallery Pro موجود است"
 
-#: class-ml-slider-lightbox.php:4042
+#: class-ml-slider-lightbox.php:4033
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3845
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3845
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4033
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "اشتراک‌گذاری رسانه‌های اجتماعی داخلی برای Facebook، Twitter، و Pinterest."
 
-#: class-ml-slider-lightbox.php:4044
+#: class-ml-slider-lightbox.php:4035
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4035
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "اشتراک‌گذاری اجتماعی در MetaSlider Gallery Pro در دسترس است"
 
-#: class-ml-slider-lightbox.php:4049 class-ml-slider-lightbox.php:4187
+#: class-ml-slider-lightbox.php:4040 class-ml-slider-lightbox.php:4210
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3852
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3990
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3852
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3990
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4040
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4210
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "نقاط صفحه‌بندی حداقلی به جای تصاویر کوچک برای یک رابط تمیزتر."
 
-#: class-ml-slider-lightbox.php:4051
+#: class-ml-slider-lightbox.php:4042
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4042
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "صفحه‌بندی Pager در MetaSlider Gallery Pro در دسترس است"
 
-#: class-ml-slider-lightbox.php:4063 class-ml-slider-lightbox.php:4171
+#: class-ml-slider-lightbox.php:4054 class-ml-slider-lightbox.php:4194
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3866
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3974
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3866
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3974
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4054
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4194
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
 msgstr "URLهای منحصر به فرد برای هر تصویر گالری با ناوبری جلو/عقب مرورگر ایجاد کنید."
 
-#: class-ml-slider-lightbox.php:4065
+#: class-ml-slider-lightbox.php:4056
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4056
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "URLهای منحصر به فرد تصویر در MetaSlider Gallery Pro در دسترس است"
 
-#: class-ml-slider-lightbox.php:4070 class-ml-slider-lightbox.php:4179
+#: class-ml-slider-lightbox.php:4061 class-ml-slider-lightbox.php:4202
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3873
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3982
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3873
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3982
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4061
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4202
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "اسلایدشو خودکار با کنترل‌های زمان‌بندی و نوار پیشرفت."
 
-#: class-ml-slider-lightbox.php:4072
+#: class-ml-slider-lightbox.php:4063
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4063
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "پخش خودکار در MetaSlider Gallery Pro در دسترس است"
 
-#: class-ml-slider-lightbox.php:4089
+#: class-ml-slider-lightbox.php:4080
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3892
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3892
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4080
 msgid "Features"
 msgstr "ویژگی‌ها"
 
-#: class-ml-slider-lightbox.php:4090
+#: class-ml-slider-lightbox.php:4081
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3893
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3893
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4081
 msgid "Free"
 msgstr "رایگان"
 
-#: class-ml-slider-lightbox.php:4091, fuzzy
+#: class-ml-slider-lightbox.php:4082
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3894
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3894
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4082, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4097 class-ml-slider-lightbox.php:4204
+#: class-ml-slider-lightbox.php:4088 class-ml-slider-lightbox.php:4227
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3900
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3900
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:4007
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4088
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4227
 msgid "Installed"
 msgstr "نصب شده"
 
-#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4207
+#: class-ml-slider-lightbox.php:4091 class-ml-slider-lightbox.php:4230
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3903
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:4010
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3903
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:4010
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4091
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4230
 msgid "Upgrade now"
 msgstr "هم‌اکنون ارتقاء دهید"
 
-#: class-ml-slider-lightbox.php:4106
+#: class-ml-slider-lightbox.php:4097
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3909
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3909
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4097
 msgid "Automatic lightbox for images"
 msgstr "Lightbox خودکار برای تصاویر"
 
-#: class-ml-slider-lightbox.php:4107
+#: class-ml-slider-lightbox.php:4098
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3910
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3910
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4098
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "به‌طور خودکار Lightbox را برای تمام تصاویر سایت شما فعال کنید."
 
-#: class-ml-slider-lightbox.php:4114
+#: class-ml-slider-lightbox.php:4105
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3917
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4105
 msgid "MetaSlider integration"
 msgstr "یکپارچگی MetaSlider"
 
-#: class-ml-slider-lightbox.php:4115
+#: class-ml-slider-lightbox.php:4106
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3918
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3918
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4106
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "یکپارچگی بدون درز با اسلایدشوهای MetaSlider."
 
-#: class-ml-slider-lightbox.php:4122
+#: class-ml-slider-lightbox.php:4113
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3925
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3925
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4113
 msgid "WordPress gallery support"
 msgstr "پشتیبانی از گالری WordPress"
 
-#: class-ml-slider-lightbox.php:4123
+#: class-ml-slider-lightbox.php:4114
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3926
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4114
 msgid "Support for WordPress native galleries and blocks."
 msgstr "پشتیبانی از گالری‌ها و بلوک‌های بومی WordPress."
 
-#: class-ml-slider-lightbox.php:4130
+#: class-ml-slider-lightbox.php:4121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3933
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3933
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4121
 msgid "Appearance customization"
 msgstr "سفارشی‌سازی ظاهر"
 
-#: class-ml-slider-lightbox.php:4131
+#: class-ml-slider-lightbox.php:4122
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3934
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3934
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4122
 msgid "Customize colors, opacity, and button styles."
 msgstr "سفارشی‌سازی رنگ‌ها، شفافیت و سبک‌های دکمه."
 
+#: class-ml-slider-lightbox.php:4129
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4129
+msgid "Gallery builder &amp; layouts"
+msgstr "سازنده گالری و چیدمان‌ها"
+
+#: class-ml-slider-lightbox.php:4130
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4130
+msgid ""
+"Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
+"layouts."
+msgstr "گالری‌ها را با چیدمان‌های شبکه، آجری، توجیه شده، چرخ‌دار و نمایش‌گاه بسازید."
+
+#: class-ml-slider-lightbox.php:4137
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4137
+msgid "Responsive columns"
+msgstr "ستون‌های پاسخگو"
+
 #: class-ml-slider-lightbox.php:4138
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4138
+msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
+msgstr "تعداد ستون‌ها را برای دسکتاپ و موبایل تنظیم کنید، با فاصله‌های قابل تنظیم."
+
+#: class-ml-slider-lightbox.php:4145
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4145
+msgid "Image captions"
+msgstr "زیرنویس‌های تصویر"
+
+#: class-ml-slider-lightbox.php:4146
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4146
+msgid "Show image captions in the gallery grid and the gallery window."
+msgstr "زیرنویس‌های تصویر را در شبکه گالری و پنجره گالری نمایش دهید."
+
+#: class-ml-slider-lightbox.php:4153
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4153
+msgid "Thumbnail navigation"
+msgstr "ناوبری بندانگشتی"
+
+#: class-ml-slider-lightbox.php:4154
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4154
+msgid "Display a strip of thumbnails for quick navigation between images."
+msgstr "نوار بندانگشتی‌ها را برای ناوبری سریع بین تصاویر نمایش دهید."
+
+#: class-ml-slider-lightbox.php:4161
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3941
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4161
 msgid "Zoom controls"
 msgstr "کنترل‌های زوم"
 
-#: class-ml-slider-lightbox.php:4146
+#: class-ml-slider-lightbox.php:4169
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3949
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3949
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4169
 msgid "Fullscreen mode"
 msgstr "حالت تمام صفحه"
 
-#: class-ml-slider-lightbox.php:4147
+#: class-ml-slider-lightbox.php:4170
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3950
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3950
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4170
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "تمام صفحه HTML5 بومی برای مشاهده تصاویر به‌طور غوطه‌ور."
 
-#: class-ml-slider-lightbox.php:4154
+#: class-ml-slider-lightbox.php:4177
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3957
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3957
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4177
 msgid "Rotate and flip images"
 msgstr "چرخش و معکوس کردن تصاویر"
 
-#: class-ml-slider-lightbox.php:4162
+#: class-ml-slider-lightbox.php:4185
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3965
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3965
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4185
 msgid "Social media sharing"
 msgstr "به اشتراک‌گذاری در شبکه‌های اجتماعی"
 
-#: class-ml-slider-lightbox.php:4163
+#: class-ml-slider-lightbox.php:4186
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3966
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3966
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4186
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "به اشتراک‌گذاری داخلی برای Facebook، Twitter و Pinterest."
 
-#: class-ml-slider-lightbox.php:4178
+#: class-ml-slider-lightbox.php:4201
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3981
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3981
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4201
 msgid "Autoplay slideshow"
 msgstr "اسلایدشو پخش خودکار"
 
-#: class-ml-slider-lightbox.php:4186
+#: class-ml-slider-lightbox.php:4209
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3989
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3989
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4209
 msgid "Pager navigation"
 msgstr "ناوبری صفحه‌ای"
 
-#: class-ml-slider-lightbox.php:4194
+#: class-ml-slider-lightbox.php:4217
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3997
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3997
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4217
 msgid "Premium support"
 msgstr "پشتیبانی ممتاز"
 
-#: class-ml-slider-lightbox.php:4195
+#: class-ml-slider-lightbox.php:4218
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3998
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3998
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:4218
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "سوالات خاص شما به‌طور مستقیم توسط کارشناسان ما پاسخ داده می‌شود."
 
-#: class-ml-slider-lightbox.php:6006
+#: class-ml-slider-lightbox.php:6005
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5808
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5808
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6005
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr "پیکربندی نحوه تعامل lightbox با ویژگی‌های بومی WordPress."
 
-#: class-ml-slider-lightbox.php:6021
+#: class-ml-slider-lightbox.php:6020
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5823
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5823
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6020
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "تنظیم \"بزرگ‌نمایی با کلیک\" WordPress را نادیده بگیرید"
 
-#: class-ml-slider-lightbox.php:6022
+#: class-ml-slider-lightbox.php:6021
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6021
+msgid ""
+"When enabled, disables WordPress built-in gallery window and uses "
+"MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
+"respects WordPress setting and skips images set to \"Enlarge on Click\"."
+msgstr ""
+"هنگامی که فعال باشد، پنجره گالری داخلی WordPress را غیرفعال کرده و از گالری "
+"MetaSlider برای تصاویری که به \"بزرگ‌نمایی در کلیک\" تنظیم شده‌اند استفاده "
+"می‌کند. هنگامی که غیرفعال باشد، تنظیمات WordPress را رعایت کرده و تصاویری "
+"که به \"بزرگ‌نمایی در کلیک\" تنظیم شده‌اند را رد می‌کند."
+
+#: class-ml-slider-lightbox.php:6037
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5840
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5840
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6037
+msgid "Override \"Link to Image File\" Setting"
+msgstr "تنظیم \"لینک به فایل تصویر\" را نادیده بگیرید"
+
+#: class-ml-slider-lightbox.php:6038
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6038
+msgid ""
+"When enabled, uses MetaSlider Gallery for images linked to their full-size "
+"image file (commonly set via \"Link to Image File\" in the block editor). "
+"When disabled, respects the original link behavior."
+msgstr ""
+"هنگامی که فعال باشد، از گالری MetaSlider برای تصاویری که به فایل تصویر "
+"تمام‌سایز خود پیوند دارند استفاده می‌کند (معمولاً از طریق \"پیوند به فایل "
+"تصویر\" در ویرایشگر بلوک تنظیم می‌شود). هنگامی که غیرفعال باشد، رفتار لینک "
+"اصلی را رعایت می‌کند."
+
+#: class-ml-slider-lightbox.php:6069
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5872
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5872
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6069
+msgid "Exclude Post Types from Manual Processing"
+msgstr "استثنا کردن انواع پست از پردازش دستی"
+
+#: class-ml-slider-lightbox.php:6072
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6072
+msgid ""
+"Select post types where Manual options should NOT work. For example, select "
+"\"Products (product)\" to disable the gallery on WooCommerce product pages "
+"while keeping it active elsewhere."
+msgstr ""
+"نوع پست‌هایی را انتخاب کنید که گزینه‌های دستی نباید کار کنند. به عنوان "
+"مثال، \"محصولات (محصول)\" را انتخاب کنید تا گالری را در صفحات محصولات "
+"WooCommerce غیرفعال کنید در حالی که در سایر مکان‌ها فعال بماند."
+
+#: class-ml-slider-lightbox.php:6096
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5899
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5899
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6096
+msgid "How to use: WordPress \"Enlarge on Click\""
+msgstr "نحوه استفاده: \"بزرگ‌نمایی با کلیک\" WordPress"
+
+#: class-ml-slider-lightbox.php:6098
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5901
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5901
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6098
+msgid ""
+"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
+"how to enable it:"
+msgstr ""
+"WordPress دارای ویژگی بومی \"بزرگ‌نمایی با کلیک\" برای تصاویر است. در اینجا "
+"نحوه فعال‌سازی آن آمده است:"
+
+#: class-ml-slider-lightbox.php:6100 class-ml-slider-lightbox.php:6113
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5903
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5916
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5903
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5916
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6100
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6113
+msgid "Select an image in the block editor."
+msgstr "یک تصویر را در ویرایشگر بلوک انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5904
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5904
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5917
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6101
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6114
+msgid "In the block toolbar, click on the Link icon."
+msgstr "در نوار ابزار بلوک، روی آیکون لینک کلیک کنید."
+
+#: class-ml-slider-lightbox.php:6102
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5905
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5905
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6102
+msgid "Select \"Enlarge on click\"."
+msgstr "\"بزرگ‌نمایی با کلیک\" را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6108
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5911
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5911
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6108
+msgid "How to use: \"Link to Image File\""
+msgstr "نحوه استفاده: \"لینک به فایل تصویر\""
+
+#: class-ml-slider-lightbox.php:6110
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5913
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5913
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6110
+msgid "You can link images directly to their full-size media file. Here's how:"
+msgstr ""
+"شما می‌توانید تصاویر را مستقیماً به فایل رسانه‌ای تمام‌نما لینک کنید. در "
+"اینجا نحوه انجام این کار آمده است:"
+
+#: class-ml-slider-lightbox.php:6111
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5914
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5914
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6111
+msgid "For the Block Editor:"
+msgstr "برای ویرایشگر بلوک:"
+
+#: class-ml-slider-lightbox.php:6115
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5918
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5918
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6115
+msgid "Choose \"Link to image file\"."
+msgstr "\"لینک به فایل تصویر\" را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6117
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5920
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5920
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6117
+msgid "For the Classic Editor:"
+msgstr "برای ویرایشگر کلاسیک:"
+
+#: class-ml-slider-lightbox.php:6119
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5922
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5922
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6119
+msgid "Select an image."
+msgstr "یک تصویر را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6120
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5923
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5923
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6120
+msgid "In the image toolbar, click on the Edit icon."
+msgstr "در نوار ابزار تصویر، روی آیکون ویرایش کلیک کنید."
+
+#: class-ml-slider-lightbox.php:6121
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5924
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5924
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6121
+msgid "Choose \"Media File\" on the \"Link To\" dropdown."
+msgstr "در منوی کشویی \"لینک به\"، \"فایل رسانه\" را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6127
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5930
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5930
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6127
+msgid "How to use: CSS Class Method (Advanced)"
+msgstr "نحوه استفاده: روش کلاس CSS (پیشرفته)"
+
+#: class-ml-slider-lightbox.php:6129
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6129
+msgid ""
+"For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+"MetaSlider Gallery on any element containing images."
+msgstr ""
+"برای توسعه‌دهندگان: کلاس <code>ml-lightbox-enabled</code> را برای فعال‌سازی "
+"گالری MetaSlider بر روی هر عنصری که شامل تصاویر است اضافه کنید."
+
+#: class-ml-slider-lightbox.php:6130
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5933
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5933
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6130
+msgid "Method 1: Block Editor Additional CSS Classes"
+msgstr "روش 1: کلاس‌های CSS اضافی ویرایشگر بلوک"
+
+#: class-ml-slider-lightbox.php:6132
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5935
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5935
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6132
+msgid "Select an image or gallery block."
+msgstr "یک تصویر یا بلوک گالری را انتخاب کنید."
+
+#: class-ml-slider-lightbox.php:6133
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5936
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5936
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6133
+msgid "In the block settings sidebar, scroll to \"Advanced\"."
+msgstr "در نوار کناری تنظیمات بلوک، به \"پیشرفته\" بروید."
+
+#: class-ml-slider-lightbox.php:6134
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5937
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5937
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6134
+msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+msgstr ""
+"کلاس <code>ml-lightbox-enabled</code> را به \"کلاس‌های اضافی CSS\" اضافه "
+"کنید."
+
+#: class-ml-slider-lightbox.php:6136
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5939
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5939
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6136
+msgid "Method 2: HTML/Code"
+msgstr "روش 2: HTML/کد"
+
+#: class-ml-slider-lightbox.php:6137
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5940
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5940
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:6137
+msgid "For custom HTML or theme developers, add the class directly:"
+msgstr "برای توسعه‌دهندگان HTML یا تم‌های سفارشی، کلاس را مستقیماً اضافه کنید:"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1056
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1056
+msgid ""
+"MetaSlider Lightbox requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"گالری MetaSlider نیاز به نصب و فعال‌سازی MetaSlider و حداقل یک افزونه لایت "
+"باکس پشتیبانی شده دارد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1071
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1071
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Lightbox"
+msgstr ""
+"بیش از یک افزونه لایت باکس فعال شده است. این ممکن است با گالری MetaSlider "
+"تداخل ایجاد کند."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+msgid "Edit settings"
+msgstr "تنظیمات را ویرایش کنید"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1138
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1138
+msgid "Open in lightbox?"
+msgstr "آیا در Lightbox باز شود؟"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1449
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2849
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1449
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2849
+msgid "Open in Lightbox"
+msgstr "در Lightbox باز شود"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1679
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1679
+msgid "MetaSlider Lightbox requires MetaSlider to be installed and activated."
+msgstr "گالری MetaSlider نیاز به نصب و فعال‌سازی MetaSlider دارد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1783
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1899
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1783
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1899
+msgid "MetaSlider Lightbox Pro"
+msgstr "گالری لایت باکس MetaSlider Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1785
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1900
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1785
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1900
+msgid "MetaSlider Lightbox"
+msgstr "گالری لایت باکس MetaSlider"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1895
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1895
+msgid "Lightbox Pro"
+msgstr "لایت باکس Pro"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1896
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1896
+msgid "Lightbox"
+msgstr "لایت باکس"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1978
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1978
+msgid ""
+"Customize colors, opacity, and visual styling for the lightbox overlay and "
+"controls."
+msgstr "رنگ‌ها، شفافیت و سبک بصری را برای لایه نوری و کنترل‌ها شخصی‌سازی کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1992
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1992
+msgid "\"Open in Lightbox\" Button"
+msgstr "دکمه \"باز کردن در Lightbox\""
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2055
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2055
+msgid "Manual Lightbox Options"
+msgstr "گزینه‌های دستی لایت باکس"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2269
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2269
+msgid "Lightbox Toolbar"
+msgstr "نوار ابزار لایت باکس"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2634
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2634
+msgid "Configure general lightbox settings that apply site-wide."
+msgstr "تنظیمات عمومی lightbox را پیکربندی کنید که در سایت به‌طور کلی اعمال می‌شود."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2639
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2639
+msgid "Configure settings specific to MetaSlider lightbox functionality."
+msgstr "تنظیمات خاص عملکرد lightbox MetaSlider را پیکربندی کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2644
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2644
+msgid "Select where the lightbox will be enabled automatically."
+msgstr "انتخاب کنید که lightbox در کجا به‌طور خودکار فعال شود."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2650
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2650
+msgid ""
+"Choose how to filter content for lightbox processing and specify which "
+"pages, posts, or selectors to include or exclude."
+msgstr ""
+"انتخاب کنید که چگونه محتوا را برای پردازش lightbox فیلتر کنید و مشخص کنید "
+"کدام صفحات، پست‌ها یا انتخاب‌گرها را شامل یا مستثنی کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2704
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2704
+msgid ""
+"When enabled, individual images without links and \"Enlarge to Click\" set "
+"in posts and pages will automatically open in the lightbox."
+msgstr ""
+"هنگامی که فعال شود، تصاویر فردی بدون لینک و تنظیم \"با کلیک بزرگ‌نمایی "
+"شود\" در پست‌ها و صفحات به‌طور خودکار در lightbox باز خواهند شد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2721
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2721
+msgid ""
+"When enabled, images and videos in widget areas will automatically open in "
+"the lightbox."
+msgstr ""
+"هنگامی که فعال شود، تصاویر و ویدیوها در نواحی ویدجت به‌طور خودکار در "
+"lightbox باز خواهند شد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2738
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2738
+msgid ""
+"When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+"Gallery blocks will automatically open in the lightbox."
+msgstr ""
+"هنگامی که فعال شود، تصاویر در کدکوتاه‌های [gallery] WordPress و بلوک‌های "
+"گالری گوتنبرگ به‌طور خودکار در lightbox باز خواهند شد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2755
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2755
+msgid ""
+"When enabled, featured images (post thumbnails) will automatically open in "
+"the lightbox when clicked."
+msgstr ""
+"هنگامی که فعال شود، تصاویر ویژه (تصاویر بندانگشتی پست) به‌طور خودکار در "
+"lightbox هنگام کلیک باز خواهند شد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2772
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2772
+msgid ""
+"When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
+"embeds) in post/page content will automatically open in the lightbox."
+msgstr ""
+"زمانی که فعال باشد، بلوک‌های ویدیویی مستقل (ویدیوهای HTML5، ویدیوهای "
+"یوتیوب، ویدیوهای ویمئو) در محتوای پست/صفحه به طور خودکار در Lightbox باز "
+"خواهند شد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2787
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2787
+msgid ""
+"Background color for the lightbox overlay. Dark colors work best for image "
+"viewing."
+msgstr ""
+"رنگ پس‌زمینه برای پوشش Lightbox. رنگ‌های تیره برای مشاهده تصویر بهترین "
+"عملکرد را دارند."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2800
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2800
+msgid ""
+"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"images and videos."
+msgstr ""
+"رنگ پس‌زمینه برای دکمه‌های \"باز کردن در Lightbox\" که بر روی اسلایدها، "
+"تصاویر و ویدیوها ظاهر می‌شوند."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2813
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2813
+msgid ""
+"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+"and videos."
+msgstr ""
+"رنگ متن برای دکمه‌های \"باز کردن در Lightbox\" که بر روی اسلایدها، تصاویر و "
+"ویدیوها ظاهر می‌شوند."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2826
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2826
+msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+msgstr "رنگ پس‌زمینه هنگام قرارگیری ماوس بر روی دکمه‌های \"باز کردن در Lightbox\"."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2839
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2839
+msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+msgstr "رنگ متن هنگام قرارگیری ماوس بر روی دکمه‌های \"باز کردن در Lightbox\"."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2852
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2852
+msgid ""
+"Custom text for lightbox buttons. This text will appear on all \"Open in "
+"Lightbox\" buttons throughout the site."
+msgstr ""
+"متن سفارشی برای دکمه‌های Lightbox. این متن بر روی تمام دکمه‌های \"باز کردن "
+"در Lightbox\" در سرتاسر سایت ظاهر خواهد شد."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2878
+msgid "Choose where to position the close button (X) in the lightbox overlay."
+msgstr "محل قرارگیری دکمه بستن (X) در پوشش Lightbox را انتخاب کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2904
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2904
+msgid ""
+"Choose where to position \"Open in Lightbox\" buttons within slides, "
+"images, galleries, and videos."
+msgstr ""
+"محل قرارگیری دکمه‌های \"باز کردن در Lightbox\" درون اسلایدها، تصاویر، "
+"گالری‌ها و ویدیوها را انتخاب کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2917
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2917
+msgid "Color for previous and next navigation arrows in the lightbox."
+msgstr "رنگ برای فلش‌های ناوبری قبلی و بعدی در Lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:2943
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:2943
+msgid "Color for the close button (X) in the lightbox."
+msgstr "رنگ دکمه بستن (X) در Lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3021
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3021
+msgid "Background color for the close button (X) in the lightbox."
+msgstr "رنگ پس‌زمینه برای دکمه بستن (X) در Lightbox."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3172
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3172
+msgid "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+msgstr "شفافیت پس‌زمینه Lightbox را تنظیم کنید (0 = شفاف، 1 = کدر)."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3183
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3183
+msgid "Show navigation arrows in lightbox"
+msgstr "نمایش پیکان‌های ناوبری در Lightbox"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3193
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3193
+msgid "Customize the lightbox background and overlay appearance."
+msgstr "ظاهر پس‌زمینه و پوشش Lightbox را سفارشی کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3198
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3198
+msgid "Customize navigation icons (close, previous, next arrows) for lightboxes."
+msgstr ""
+"آیکون‌های ناوبری (بستن، پیکان‌های قبلی و بعدی) را برای Lightboxها سفارشی "
+"کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3203
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3203
+msgid ""
+"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"images, galleries, and videos."
+msgstr ""
+"دکمه‌های \"باز کردن در Lightbox\" را که می‌توان به اسلایدها، تصاویر، "
+"گالری‌ها و ویدیوها اضافه کرد، سفارشی کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3240
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3240
+msgid "Configure navigation and control options that apply to all lightboxes."
+msgstr "تنظیم گزینه‌های ناوبری و کنترل که به همه Lightboxها اعمال می‌شود."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3251
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3251
+msgid ""
+"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"This is available for slideshows and image galleries."
+msgstr ""
+"تصاویر کوچک را در پایین Lightbox برای ناوبری آسان نمایش دهید. این قابلیت "
+"برای اسلایدشوها و گالری‌های تصویری در دسترس است."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3263
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3263
+msgid "Show \"Open in Lightbox\" button"
+msgstr "نمایش دکمه \"باز کردن در Lightbox\""
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3264
+msgid ""
+"When enabled, shows a button to open the lightbox. When disabled, clicking "
+"the slide, image, or video directly opens the lightbox."
+msgstr ""
+"زمانی که فعال باشد، دکمه‌ای برای باز کردن Lightbox نمایش می‌دهد. وقتی "
+"غیرفعال باشد، کلیک بر روی اسلاید، تصویر یا ویدیو به‌طور مستقیم Lightbox را "
+"باز می‌کند."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3277
+msgid ""
+"When enabled, display captions in the lightbox. This is available for "
+"slideshows, images, and image galleries."
+msgstr ""
+"زمانی که فعال باشد، زیرنویس‌ها را در Lightbox نمایش دهید. این قابلیت برای "
+"اسلایدشوها، تصاویر و گالری‌های تصویری در دسترس است."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3284
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3284
+msgid "Advanced lightbox features are available through MetaSlider Lightbox Pro."
+msgstr ""
+"ویژگی‌های پیشرفته لایت باکس از طریق گالری لایت باکس MetaSlider Pro در دسترس "
+"است."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3286
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3286
+msgid "Get a preview of the advanced features available in MetaSlider Lightbox Pro."
+msgstr ""
+"پیش‌نمایشی از ویژگی‌های پیشرفته موجود در گالری لایت باکس MetaSlider Pro "
+"دریافت کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3315
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3315
+msgid "Include specific Pages"
+msgstr "شامل صفحات خاص"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+msgid ""
+"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"صفحات را انتخاب کنید که Lightbox باید غیرفعال شود. حداکثر ۱۰۰ صفحه اخیر "
+"نمایش داده می‌شود. برای جستجو تایپ کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3318
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3317
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3318
+msgid ""
+"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"pages. Type to search."
+msgstr ""
+"صفحات را انتخاب کنید که Lightbox باید فعال شود. حداکثر ۱۰۰ صفحه اخیر نمایش "
+"داده می‌شود. برای جستجو تایپ کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3360
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3360
+msgid "Include specific Posts"
+msgstr "شامل پست‌های خاص"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+msgid ""
+"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"پست‌ها را انتخاب کنید که Lightbox باید غیرفعال شود. حداکثر ۱۰۰ پست اخیر "
+"نمایش داده می‌شود. برای جستجو تایپ کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3363
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3362
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3363
+msgid ""
+"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"posts. Type to search."
+msgstr ""
+"پست‌ها را انتخاب کنید که Lightbox باید فعال شود. حداکثر ۱۰۰ پست اخیر نمایش "
+"داده می‌شود. برای جستجو تایپ کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3478
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3478
+msgid "Include specific post types"
+msgstr "شامل نوع پست‌های مشخص"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+msgid "Select post types where lightbox should be disabled entirely."
+msgstr "نوع پست‌هایی را انتخاب کنید که Lightbox باید کاملاً غیرفعال شود."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3481
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3480
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3481
+msgid "Select post types where lightbox should be enabled entirely."
+msgstr "نوع پست‌هایی را انتخاب کنید که Lightbox باید کاملاً فعال شود."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3518
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3518
+msgid ""
+"CSS selectors for elements to exclude from lightbox (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+msgstr ""
+"انتخابگرهای CSS برای عناصری که باید از Lightbox مستثنی شوند (یکی در هر خط). "
+"مثال‌ها:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3544
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3544
+msgid ""
+"Skip images narrower than this width (in pixels). Useful to exclude small "
+"icons, badges, and buttons. Set to 0 to disable width checking."
+msgstr ""
+"تصاویر باریک‌تر از این عرض (به پیکسل) را رد کنید. مفید برای حذف آیکون‌های "
+"کوچک، نشان‌ها و دکمه‌ها. برای غیرفعال کردن بررسی عرض، به 0 تنظیم کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3570
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3570
+msgid ""
+"Skip images shorter than this height (in pixels). Useful to exclude small "
+"icons, badges, and buttons. Set to 0 to disable height checking."
+msgstr ""
+"تصاویر کوتاه‌تر از این ارتفاع (به پیکسل) را رد کنید. مفید برای حذف "
+"آیکون‌های کوچک، نشان‌ها و دکمه‌ها. برای غیرفعال کردن بررسی ارتفاع، به 0 "
+"تنظیم کنید."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3660
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3660
+msgid "Automatic slideshow progression with customizable timing and pause-on-hover."
+msgstr "پیشرفت خودکار اسلایدشو با زمان‌بندی قابل تنظیم و توقف در حالت شناور."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3765
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3765
+msgid "This feature is available in MetaSlider Lightbox Pro"
+msgstr "این ویژگی در گالری لایت باکس MetaSlider Pro در دسترس است."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3819
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3819
+msgid "Zoom controls are available in MetaSlider Lightbox Pro"
+msgstr "کنترل‌های بزرگ‌نمایی در گالری لایت باکس MetaSlider Pro در دسترس است."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3826
+msgid "Fullscreen mode is available in MetaSlider Lightbox Pro"
+msgstr "حالت تمام‌صفحه در گالری لایت باکس MetaSlider Pro در دسترس است."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3833
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3833
+msgid "Image rotation is available in MetaSlider Lightbox Pro"
+msgstr "چرخش تصویر در گالری لایت باکس MetaSlider Pro در دسترس است."
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3847
+msgid "Social sharing is available in MetaSlider Lightbox Pro"
+msgstr "اشتراک‌گذاری اجتماعی در MetaSlider Lightbox Pro در دسترس است"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3854
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3854
+msgid "Pager pagination is available in MetaSlider Lightbox Pro"
+msgstr "صفحه‌بندی Pager در MetaSlider Lightbox Pro در دسترس است"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3868
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3868
+msgid "Hash URLs are available in MetaSlider Lightbox Pro"
+msgstr "URL های هش در MetaSlider Lightbox Pro در دسترس است"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3875
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3875
+msgid "Autoplay is available in MetaSlider Lightbox Pro"
+msgstr "پخش خودکار در MetaSlider Lightbox Pro در دسترس است"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:3973
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:3973
+msgid "Hash URLs"
+msgstr "URL های هش"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5824
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5824
 msgid ""
 "When enabled, disables WordPress built-in lightbox and uses our lightbox "
 "for images set to \"Enlarge on Click\". When disabled, respects WordPress "
@@ -1425,11 +3304,8 @@ msgstr ""
 "وقتی غیرفعال باشد، تنظیمات WordPress را رعایت کرده و از تصاویری که به "
 "\"بزرگ‌نمایی با کلیک\" تنظیم شده‌اند صرف‌نظر می‌کند."
 
-#: class-ml-slider-lightbox.php:6038
-msgid "Override \"Link to Image File\" Setting"
-msgstr "تنظیم \"لینک به فایل تصویر\" را نادیده بگیرید"
-
-#: class-ml-slider-lightbox.php:6039
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5841
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5841
 msgid ""
 "When enabled, uses our lightbox for images linked to their full-size image "
 "file (commonly set via \"Link to Image File\" in the block editor). When "
@@ -1440,11 +3316,8 @@ msgstr ""
 "در ویرایشگر بلوک تنظیم می‌شود). وقتی غیرفعال باشد، رفتار لینک اصلی را رعایت "
 "می‌کند."
 
-#: class-ml-slider-lightbox.php:6070
-msgid "Exclude Post Types from Manual Processing"
-msgstr "استثنا کردن انواع پست از پردازش دستی"
-
-#: class-ml-slider-lightbox.php:6073
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5875
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5875
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable Manual lightbox on WooCommerce product "
@@ -1455,69 +3328,8 @@ msgstr ""
 "صفحات محصول WooCommerce غیرفعال کنید در حالی که آن را در سایر نقاط فعال نگه "
 "دارید."
 
-#: class-ml-slider-lightbox.php:6097
-msgid "How to use: WordPress \"Enlarge on Click\""
-msgstr "نحوه استفاده: \"بزرگ‌نمایی با کلیک\" WordPress"
-
-#: class-ml-slider-lightbox.php:6099
-msgid ""
-"WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
-"how to enable it:"
-msgstr ""
-"WordPress دارای ویژگی بومی \"بزرگ‌نمایی با کلیک\" برای تصاویر است. در اینجا "
-"نحوه فعال‌سازی آن آمده است:"
-
-#: class-ml-slider-lightbox.php:6101 class-ml-slider-lightbox.php:6114
-msgid "Select an image in the block editor."
-msgstr "یک تصویر را در ویرایشگر بلوک انتخاب کنید."
-
-#: class-ml-slider-lightbox.php:6102 class-ml-slider-lightbox.php:6115
-msgid "In the block toolbar, click on the Link icon."
-msgstr "در نوار ابزار بلوک، روی آیکون لینک کلیک کنید."
-
-#: class-ml-slider-lightbox.php:6103
-msgid "Select \"Enlarge on click\"."
-msgstr "\"بزرگ‌نمایی با کلیک\" را انتخاب کنید."
-
-#: class-ml-slider-lightbox.php:6109
-msgid "How to use: \"Link to Image File\""
-msgstr "نحوه استفاده: \"لینک به فایل تصویر\""
-
-#: class-ml-slider-lightbox.php:6111
-msgid "You can link images directly to their full-size media file. Here's how:"
-msgstr ""
-"شما می‌توانید تصاویر را مستقیماً به فایل رسانه‌ای تمام‌نما لینک کنید. در "
-"اینجا نحوه انجام این کار آمده است:"
-
-#: class-ml-slider-lightbox.php:6112
-msgid "For the Block Editor:"
-msgstr "برای ویرایشگر بلوک:"
-
-#: class-ml-slider-lightbox.php:6116
-msgid "Choose \"Link to image file\"."
-msgstr "\"لینک به فایل تصویر\" را انتخاب کنید."
-
-#: class-ml-slider-lightbox.php:6118
-msgid "For the Classic Editor:"
-msgstr "برای ویرایشگر کلاسیک:"
-
-#: class-ml-slider-lightbox.php:6120
-msgid "Select an image."
-msgstr "یک تصویر را انتخاب کنید."
-
-#: class-ml-slider-lightbox.php:6121
-msgid "In the image toolbar, click on the Edit icon."
-msgstr "در نوار ابزار تصویر، روی آیکون ویرایش کلیک کنید."
-
-#: class-ml-slider-lightbox.php:6122
-msgid "Choose \"Media File\" on the \"Link To\" dropdown."
-msgstr "در منوی کشویی \"لینک به\"، \"فایل رسانه\" را انتخاب کنید."
-
-#: class-ml-slider-lightbox.php:6128
-msgid "How to use: CSS Class Method (Advanced)"
-msgstr "نحوه استفاده: روش کلاس CSS (پیشرفته)"
-
-#: class-ml-slider-lightbox.php:6130
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:5932
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:5932
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "lightbox on any element containing images."
@@ -1525,33 +3337,306 @@ msgstr ""
 "برای توسعه‌دهندگان: کلاس <code>ml-lightbox-enabled</code> را برای فعال‌سازی "
 "Lightbox بر روی هر عنصری که حاوی تصاویر است، اضافه کنید."
 
-#: class-ml-slider-lightbox.php:6131
-msgid "Method 1: Block Editor Additional CSS Classes"
-msgstr "روش 1: کلاس‌های CSS اضافی ویرایشگر بلوک"
+#: vendor/gettext/gettext/tests/TranslatorTest.php:26
+#: vendor/gettext/gettext/tests/TranslatorTest.php:27
+#: vendor/gettext/gettext/tests/TranslatorTest.php:68
+#: vendor/gettext/gettext/tests/TranslatorTest.php:74
+msgid "single"
+msgid_plural "more"
+msgstr[0] "یک"
+msgstr[1] ""
 
-#: class-ml-slider-lightbox.php:6133
-msgid "Select an image or gallery block."
-msgstr "یک تصویر یا بلوک گالری را انتخاب کنید."
+#: vendor/gettext/gettext/tests/TranslatorTest.php:29
+#: vendor/gettext/gettext/tests/TranslatorTest.php:44
+msgid "Integer"
+msgstr "عدد صحیح"
 
-#: class-ml-slider-lightbox.php:6134
-msgid "In the block settings sidebar, scroll to \"Advanced\"."
-msgstr "در نوار کناری تنظیمات بلوک، به \"پیشرفته\" بروید."
+#: vendor/gettext/gettext/tests/TranslatorTest.php:33
+#: vendor/gettext/gettext/tests/TranslatorTest.php:45
+msgid "This field cannot be blank."
+msgstr "این فیلد نمی‌تواند خالی باشد."
 
-#: class-ml-slider-lightbox.php:6135
-msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
+#: vendor/gettext/gettext/tests/TranslatorTest.php:34
+#: vendor/gettext/gettext/tests/TranslatorTest.php:46
+#: vendor/gettext/gettext/tests/TranslatorTest.php:47
+#: vendor/gettext/gettext/tests/TranslatorTest.php:48
+#: vendor/gettext/gettext/tests/TranslatorTest.php:49
+#: vendor/gettext/gettext/tests/TranslatorTest.php:51
+#, php-format
+msgid "Value %sr is not a valid choice."
+msgstr "مقدار %sr انتخاب معتبری نیست."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:50
+#, php-format
+msgid "%ss must be unique for %ss %ss."
+msgstr "%ss باید برای %ss %ss منحصر به فرد باشد."
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:60
+#: vendor/gettext/gettext/tests/TranslatorTest.php:61
+#: vendor/gettext/gettext/tests/TranslatorTest.php:62
+#: vendor/gettext/gettext/tests/TranslatorTest.php:63
+#: vendor/gettext/gettext/tests/TranslatorTest.php:64
+#: vendor/gettext/gettext/tests/TranslatorTest.php:65
+msgid "one file"
+msgid_plural "multiple files"
+msgstr[0] "یک فایل"
+msgstr[1] ""
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:253
+msgid "hello"
+msgstr "سلام"
+
+#: vendor/gettext/gettext/tests/TranslatorTest.php:254
+#: vendor/gettext/gettext/tests/TranslatorTest.php:255
+#: vendor/gettext/gettext/tests/TranslatorTest.php:256
+msgid "world"
+msgid_plural "worlds"
+msgstr[0] "دنیا"
+msgstr[1] ""
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:2
+msgid "text 1"
+msgstr "متن ۱"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:9
+msgid "text 3 (with parenthesis)"
+msgstr "متن ۳ (با پرانتز)"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:10
+msgid "text 4 \"with double quotes\""
+msgstr "متن ۴ \"با نقل قول‌های دوتایی\""
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:11
+msgid "text 5 'with escaped single quotes'"
+msgstr "متن ۵ 'با نقل قول‌های تکی فرار داده شده'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:15
+msgid "text 6"
+msgstr "متن ۶"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:16
+msgid "text 7 (with parenthesis)"
+msgstr "متن ۷ (با پرانتز)"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:17
+msgid "text 8 \"with escaped double quotes\""
+msgstr "متن ۸ \"با نقل قول‌های دوتایی فرار داده شده\""
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:18
+msgid "text 9 'with single quotes'"
+msgstr "متن 9 'با نقل قول‌های تکی'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode/input.php:22
+msgid ""
+"<div id=\"blog\" class=\"container\">\n"
+"    <div class=\"row\">\n"
+"        <div class=\"col-md-12\">\n"
+"            <div id=\"content\">\n"
+"                <div class=\"page_post\">\n"
+"                    <div class=\"container\">\n"
+"                        <div class=\"margin-top-40\"></div>\n"
+"                        <div class=\"col-sm-3 col-md-2 centered-xs "
+"an-number\">4</div>\n"
+"                    </div>\n"
+"                </div>\n"
+"                <div class=\"container\">\n"
+"                    <h1 class=\"text-center margin-top-10\">Sorry, but we "
+"couldn't find this page</h1>\n"
+"                    <div id=\"body-div\">\n"
+"                        <div id=\"main-div\">\n"
+"                            <div class=\"text-404\">\n"
+"                                <div>\n"
+"                                    <p>Maybe you have entered an incorrect "
+"URL of the page or page moved to another section or just page is "
+"temporarily unavailable.</p>\n"
+"                                </div>\n"
+"                            </div>\n"
+"                        </div>\n"
+"                    </div>\n"
+"                </div>\n"
+"            </div>\n"
+"        </div>\n"
+"    </div>\n"
+"</div>"
 msgstr ""
-"کلاس <code>ml-lightbox-enabled</code> را به \"کلاس‌های اضافی CSS\" اضافه "
-"کنید."
+"<div id=\"blog\" class=\"container\">\n"
+"    <div class=\"row\">\n"
+"        <div class=\"col-md-12\">\n"
+"            <div id=\"content\">\n"
+"                <div class=\"page_post\">\n"
+"                    <div class=\"container\">\n"
+"                        <div class=\"margin-top-40\"></div>\n"
+"                        <div class=\"col-sm-3 col-md-2 centered-xs "
+"an-number\">4</div>\n"
+"                    </div>\n"
+"                </div>\n"
+"                <div class=\"container\">\n"
+"                    <h1 class=\"text-center margin-top-10\">متاسفیم، اما "
+"نمی‌توانیم این صفحه را پیدا کنیم</h1>\n"
+"                    <div id=\"body-div\">\n"
+"                        <div id=\"main-div\">\n"
+"                            <div class=\"text-404\">\n"
+"                                <div>\n"
+"                                    <p>شاید URL نادرستی برای صفحه وارد "
+"کرده‌اید یا صفحه به بخش دیگری منتقل شده یا فقط صفحه به طور موقت در دسترس "
+"نیست.</p>\n"
+"                                </div>\n"
+"                            </div>\n"
+"                        </div>\n"
+"                    </div>\n"
+"                </div>\n"
+"            </div>\n"
+"        </div>\n"
+"    </div>\n"
+"</div>"
 
-#: class-ml-slider-lightbox.php:6137
-msgid "Method 2: HTML/Code"
-msgstr "روش 2: HTML/کد"
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:2
+msgid "plain"
+msgstr "ساده"
 
-#: class-ml-slider-lightbox.php:6138
-msgid "For custom HTML or theme developers, add the class directly:"
-msgstr "برای توسعه‌دهندگان HTML یا تم‌های سفارشی، کلاس را مستقیماً اضافه کنید:"
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:3
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:4
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:5
+msgid "DATE \\a\\t TIME"
+msgstr "تاریخ \\a\\t زمان"
 
-#: class-ml-slider-lightbox.php:1143
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:6
+msgid "FIELD\tFIELD"
+msgstr "فیلد\tفیلد"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:8
+msgid "text concatenated with 'comments'"
+msgstr "متن متصل شده با 'نظرات'"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:14
+msgid "Stop at the variable"
+msgstr "در متغیر متوقف شوید"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:19
+msgid "No comments"
+msgstr "بدون نظرات"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:26
+msgid "i18n Tagged comment"
+msgstr "نظر برچسب‌گذاری شده i18n"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:30
+msgid "i18n Tagged comment inside"
+msgstr "نظر برچسب‌گذاری شده i18n درون"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:36
+#, php-format
+msgid "i18n tagged %s"
+msgstr "برچسب‌گذاری شده i18n %s"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:42, fuzzy
+msgid "foo"
+msgstr "foo"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:44, fuzzy
+msgid "bar"
+msgstr "bar"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:51, fuzzy
+msgid "foo bar"
+msgstr "foo bar"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:54
+msgid "World"
+msgstr "دنیا"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:55
+msgid "No comment"
+msgstr "بدون نظر"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+#, php-format
+msgid "Within printf: %s"
+msgstr "در printf: %s"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+msgid "placeholder"
+msgstr "جایگزین"
+
+#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
+msgid "After printf"
+msgstr "پس از printf"
+
+#: vendor/gettext/gettext/tests/assets/phpcode3/input.php:8
+msgid "Translation with comments"
+msgstr "ترجمه با نظرات"
+
+#: vendor/gettext/gettext/tests/assets/phpcode3/input.php:11
+msgid "Foo"
+msgstr "فو"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:3
+msgid "matching 1"
+msgstr "یک مورد مطابقت دارد"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:4
+msgid "matching 2 singular"
+msgid_plural "matching 2 plural"
+msgstr[0] "مورد مطابقت ۲"
+msgstr[1] ""
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:8
+msgid "skip singular"
+msgid_plural "skip plural"
+msgstr[0] "رد کردن"
+msgstr[1] ""
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:9
+msgid "skip"
+msgstr "رد کردن"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:11
+msgid "skip global 1"
+msgstr "رد کردن جهانی ۱"
+
+#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:12
+msgid "skip global 2"
+msgstr "رد کردن جهانی ۲"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:3
+msgid "no domain"
+msgstr "بدون دامنه"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:5
+msgid "domain1 Text"
+msgstr "متن دامنه۱"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:8
+msgid "domain2 Text"
+msgid_plural "domain2 Text plural"
+msgstr[0] "متن دامنه۲"
+msgstr[1] ""
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:9
+msgid "domain2 Text Separate"
+msgstr "متن دامنه۲ جداگانه"
+
+#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:14
+msgid "no domain 2"
+msgstr "بدون دامنه ۲"
+
+#: vendor/gettext/gettext/tests/assets/phpcode6/input.php:4
+msgid "No domain text"
+msgstr "متن بدون دامنه"
+
+#: vendor/gettext/gettext/tests/assets/phpcode6/input.php:6
+msgid "Other domain text"
+msgstr "متن دامنه دیگر"
+
+#: class-ml-slider-lightbox.php:1131
+#: ml-slider-lightbox/class-ml-slider-lightbox.php:1131
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a gallery, using %s"
+msgstr "همه اسلایدها در یک گالری با استفاده از %s باز خواهند شد"
+
+#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:1143
+#: dist/ml-slider-lightbox/ml-slider-lightbox/class-ml-slider-lightbox.php:1143
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a lightbox, using %s"

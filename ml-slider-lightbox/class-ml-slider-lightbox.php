@@ -12,12 +12,14 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.32.3';
+    public $version = '2.33.0';
     protected static $instance = null;
     private $supported_plugins = array();
 
     /** @var MetaSliderLightboxGallery */
     private $gallery;
+
+    private $notices;
 
     /**
      * Static caches for performance optimization
@@ -49,6 +51,9 @@ class MetaSliderLightboxPlugin
         $this->setupAdminMenu();
         require_once plugin_dir_path( __FILE__ ) . 'class-ml-gallery.php';
         $this->gallery = new MetaSliderLightboxGallery( $this->version, $this->isProPluginActive() );
+
+        require_once plugin_dir_path( __FILE__ ) . 'admin/Notices.php';
+        $this->notices = new \MLSliderLightbox_Notices( $this->version, $this->isProPluginActive() );
     }
 
     public function __construct()
@@ -180,55 +185,21 @@ class MetaSliderLightboxPlugin
      */
     public function migrateIconColorSettings()
     {
-        $icon_migration_done = get_option('metaslider_lightbox_icon_color_migration_done', false);
-        if ($icon_migration_done) {
-            return;
-        }
-
-        $appearance_options = get_option('metaslider_lightbox_appearance_options', array());
-
-        if (isset($appearance_options['icon_color']) || isset($appearance_options['icon_hover_color'])) {
-            $icon_color = isset($appearance_options['icon_color']) ? $appearance_options['icon_color'] : '#ffffff';
-            $icon_hover_color = isset($appearance_options['icon_hover_color']) ? $appearance_options['icon_hover_color'] : '#000000';
-
-            $needs_update = false;
-
-            if (!isset($appearance_options['arrow_color'])) {
-                $appearance_options['arrow_color'] = $icon_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['arrow_hover_color'])) {
-                $appearance_options['arrow_hover_color'] = $icon_hover_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['close_icon_color'])) {
-                $appearance_options['close_icon_color'] = $icon_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['close_icon_hover_color'])) {
-                $appearance_options['close_icon_hover_color'] = $icon_hover_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['toolbar_icon_color'])) {
-                $appearance_options['toolbar_icon_color'] = $icon_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['toolbar_icon_hover_color'])) {
-                $appearance_options['toolbar_icon_hover_color'] = $icon_hover_color;
-                $needs_update = true;
-            }
-
-            if ($needs_update) {
-                update_option('metaslider_lightbox_appearance_options', $appearance_options);
-            }
-        }
-
-        update_option('metaslider_lightbox_icon_color_migration_done', true);
+        $this->migrateColorFields(
+            'metaslider_lightbox_icon_color_migration_done',
+            'icon_color',
+            'icon_hover_color',
+            '#ffffff',
+            '#000000',
+            array(
+                'arrow_color'              => false,
+                'arrow_hover_color'        => true,
+                'close_icon_color'         => false,
+                'close_icon_hover_color'   => true,
+                'toolbar_icon_color'       => false,
+                'toolbar_icon_hover_color' => true,
+            )
+        );
     }
 
     /**
@@ -239,47 +210,53 @@ class MetaSliderLightboxPlugin
      */
     public function migrateBackgroundColorSettings()
     {
-        $background_migration_done = get_option('metaslider_lightbox_background_color_migration_done', false);
-        if ($background_migration_done) {
+        $this->migrateColorFields(
+            'metaslider_lightbox_background_color_migration_done',
+            'button_color',
+            'button_hover_color',
+            '#000000',
+            '#f0f0f0',
+            array(
+                'arrow_background_color'              => false,
+                'arrow_background_hover_color'        => true,
+                'close_icon_background_color'         => false,
+                'close_icon_background_hover_color'   => true,
+                'toolbar_icon_background_color'       => false,
+                'toolbar_icon_background_hover_color' => true,
+            )
+        );
+    }
+
+    /**
+     * Shared one-time migration: seed granular color fields from a legacy
+     * base/hover color pair, only filling fields that are not already set.
+     *
+     * @param string $flag_option      Option name used as the "migration done" flag.
+     * @param string $source_color_key Legacy option key holding the base color.
+     * @param string $source_hover_key Legacy option key holding the hover color.
+     * @param string $default_color    Fallback when the base color is unset.
+     * @param string $default_hover    Fallback when the hover color is unset.
+     * @param array  $field_map        Map of target_field => bool (true = use hover color).
+     */
+    private function migrateColorFields($flag_option, $source_color_key, $source_hover_key, $default_color, $default_hover, $field_map)
+    {
+        if (get_option($flag_option, false)) {
             return;
         }
 
         $appearance_options = get_option('metaslider_lightbox_appearance_options', array());
 
-        if (isset($appearance_options['button_color']) || isset($appearance_options['button_hover_color'])) {
-            $button_color = isset($appearance_options['button_color']) ? $appearance_options['button_color'] : '#000000';
-            $button_hover_color = isset($appearance_options['button_hover_color']) ? $appearance_options['button_hover_color'] : '#f0f0f0';
+        if (isset($appearance_options[$source_color_key]) || isset($appearance_options[$source_hover_key])) {
+            $color = isset($appearance_options[$source_color_key]) ? $appearance_options[$source_color_key] : $default_color;
+            $hover_color = isset($appearance_options[$source_hover_key]) ? $appearance_options[$source_hover_key] : $default_hover;
 
             $needs_update = false;
 
-            if (!isset($appearance_options['arrow_background_color'])) {
-                $appearance_options['arrow_background_color'] = $button_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['arrow_background_hover_color'])) {
-                $appearance_options['arrow_background_hover_color'] = $button_hover_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['close_icon_background_color'])) {
-                $appearance_options['close_icon_background_color'] = $button_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['close_icon_background_hover_color'])) {
-                $appearance_options['close_icon_background_hover_color'] = $button_hover_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['toolbar_icon_background_color'])) {
-                $appearance_options['toolbar_icon_background_color'] = $button_color;
-                $needs_update = true;
-            }
-
-            if (!isset($appearance_options['toolbar_icon_background_hover_color'])) {
-                $appearance_options['toolbar_icon_background_hover_color'] = $button_hover_color;
-                $needs_update = true;
+            foreach ($field_map as $target_field => $use_hover) {
+                if (!isset($appearance_options[$target_field])) {
+                    $appearance_options[$target_field] = $use_hover ? $hover_color : $color;
+                    $needs_update = true;
+                }
             }
 
             if ($needs_update) {
@@ -287,7 +264,7 @@ class MetaSliderLightboxPlugin
             }
         }
 
-        update_option('metaslider_lightbox_background_color_migration_done', true);
+        update_option($flag_option, true);
     }
 
     public function migrateEnableOnAllMetaSliderSlideshows()
@@ -498,7 +475,7 @@ class MetaSliderLightboxPlugin
                 'description' => 'Vimeo video slides with lightbox button',
                 'filters' => array(
                 ),
-                'handler' => 'handleVimeoVideoSlide',
+                'handler' => 'handleVideoSlides',
                 'has_anchor' => false,
             ),
             'youtube' => array(
@@ -506,7 +483,7 @@ class MetaSliderLightboxPlugin
                 'description' => 'YouTube video slides with lightbox button',
                 'filters' => array(
                 ),
-                'handler' => 'handleYoutubeVideoSlide',
+                'handler' => 'handleVideoSlides',
                 'has_anchor' => false,
             ),
             'external_video' => array(
@@ -514,7 +491,7 @@ class MetaSliderLightboxPlugin
                 'description' => 'External video slides with lightbox button',
                 'filters' => array(
                 ),
-                'handler' => 'handleExternalVideoSlide',
+                'handler' => 'handleVideoSlides',
                 'has_anchor' => false,
             ),
             'custom_html' => array(
@@ -1397,11 +1374,12 @@ class MetaSliderLightboxPlugin
             $css_dependencies[] = 'lightgallery-thumbnail-css';
         }
 
+        $public_css_path = plugin_dir_path(__FILE__) . 'assets/css/ml-lightbox-public.css';
         wp_enqueue_style(
             'ml-lightbox-public-css',
             plugin_dir_url(__FILE__) . 'assets/css/ml-lightbox-public.css',
             $css_dependencies,
-            $this->version
+            file_exists($public_css_path) ? filemtime($public_css_path) : $this->version
         );
 
         $this->addCustomLightboxCss();
@@ -1475,11 +1453,12 @@ class MetaSliderLightboxPlugin
             $js_dependencies[] = 'metaslider-lightbox-pro-init';
         }
 
+        $init_js_path = plugin_dir_path(__FILE__) . 'assets/js/ml-lightgallery-init.js';
         wp_enqueue_script(
             'ml-lightgallery-clean',
             plugin_dir_url(__FILE__) . 'assets/js/ml-lightgallery-init.js',
             $js_dependencies,
-            $this->version,
+            file_exists($init_js_path) ? filemtime($init_js_path) : $this->version,
             true
         );
 
@@ -2076,12 +2055,39 @@ class MetaSliderLightboxPlugin
             'metaslider-lightbox',
             array($this, 'renderMainPage')
         );
+
+        // Upgrade to Pro page, only when Pro is NOT active.
+        if (!$this->isProPluginActive()) {
+            add_submenu_page(
+                'metaslider-lightbox',
+                __('Upgrade to MetaSlider Gallery Pro', 'ml-slider-lightbox'),
+                '<span style="color: #FEB123 !important; font-weight: bold;">' . __('Upgrade to Pro', 'ml-slider-lightbox') . '</span>',
+                'manage_options',
+                'metaslider-lightbox-upgrade',
+                array($this, 'renderUpgradePage')
+            );
+        }
+    }
+
+    public function renderUpgradePage()
+    {
+        if (!current_user_can('manage_options')) {
+            wp_die(esc_html__('You do not have sufficient permissions to access this page.', 'ml-slider-lightbox'));
+        }
+
+        $this->renderAdminHeader('metaslider-lightbox-upgrade');
+        ?>
+        <div class="tab-content" style="margin-top: 20px;">
+            <?php $this->renderUpgradeComparisonTable(); ?>
+        </div>
+        <?php
+        $this->renderAdminFooter();
     }
 
     public function renderMainPage()
     {
         if (!current_user_can('manage_options')) {
-            wp_die(__('You do not have sufficient permissions to access this page.'));
+            wp_die(esc_html__('You do not have sufficient permissions to access this page.', 'ml-slider-lightbox'));
         }
 
         $current_tab = isset($_GET['tab']) ? sanitize_key($_GET['tab']) : 'detection';
@@ -2093,12 +2099,8 @@ class MetaSliderLightboxPlugin
             'behavior' => '⚙️ ' . __('Behavior', 'ml-slider-lightbox')
         );
 
-        // Add Upgrade tab only when Pro is NOT active
-        if (!$this->isProPluginActive()) {
-            $tabs['upgrade'] = '⭐ ' . __('Upgrade to Pro', 'ml-slider-lightbox');
-        }
-
         $this->renderAdminHeader('metaslider-lightbox', $tabs);
+        do_action( 'metaslider_lightbox_admin_notices' );
         ?>
         
         <!-- Tab Navigation -->
@@ -2257,8 +2259,6 @@ class MetaSliderLightboxPlugin
                 <div class="manual-options-content">
                     <?php $this->renderManualOptionsHowTo(); ?>
                 </div>
-            <?php elseif ($current_tab === 'upgrade' && !$this->isProPluginActive()) : ?>
-                <?php $this->renderUpgradeComparisonTable(); ?>
             <?php endif; ?>
         </div>
         
@@ -3042,69 +3042,57 @@ class MetaSliderLightboxPlugin
     }
 
 
-    public function backgroundColorCallback()
+    /**
+     * Render a single color-picker field for the appearance options, with an
+     * optional fallback option key used when the primary key is unset.
+     *
+     * @param string      $key          Appearance option key for this field.
+     * @param string      $default      Default color when neither key is set.
+     * @param string      $description  Pre-translated description HTML to echo.
+     * @param string|null $fallback_key Optional legacy key to inherit from.
+     */
+    private function renderColorPickerField($key, $default, $description, $fallback_key = null)
     {
         if (!current_user_can('manage_options')) {
             return;
         }
 
         $options = $this->getCachedGeneralOptions();
-        $color = isset($options['background_color']) ? $options['background_color'] : '#000000';
+        if (isset($options[$key])) {
+            $color = $options[$key];
+        } elseif (null !== $fallback_key && isset($options[$fallback_key])) {
+            $color = $options[$fallback_key];
+        } else {
+            $color = $default;
+        }
 
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[background_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for the gallery overlay. Dark colors work best for image viewing.', 'ml-slider-lightbox') . '</p>';
+        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[' . esc_attr($key) . ']" value="' . esc_attr($color) . '" />';
+        echo '<p class="description">' . $description . '</p>';
+    }
+
+    public function backgroundColorCallback()
+    {
+        $this->renderColorPickerField('background_color', '#000000', __('Background color for the gallery overlay. Dark colors work best for image viewing.', 'ml-slider-lightbox'));
     }
 
     public function buttonColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['button_color']) ? $options['button_color'] : '#000000';
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for "Open in Gallery" buttons that appear on slides, images and videos.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('button_color', '#000000', __('Background color for "Open in Gallery" buttons that appear on slides, images and videos.', 'ml-slider-lightbox'));
     }
 
     public function buttonTextColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['button_text_color']) ? $options['button_text_color'] : '#ffffff';
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_text_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Text color for "Open in Gallery" buttons that appear on slides, images and videos.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('button_text_color', '#ffffff', __('Text color for "Open in Gallery" buttons that appear on slides, images and videos.', 'ml-slider-lightbox'));
     }
 
     public function buttonHoverColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0';
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_hover_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color when hovering over "Open in Gallery" buttons.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('button_hover_color', '#f0f0f0', __('Background color when hovering over "Open in Gallery" buttons.', 'ml-slider-lightbox'));
     }
 
     public function buttonHoverTextColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['button_hover_text_color']) ? $options['button_hover_text_color'] : '#000000';
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_hover_text_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Text color when hovering over "Open in Gallery" buttons.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('button_hover_text_color', '#000000', __('Text color when hovering over "Open in Gallery" buttons.', 'ml-slider-lightbox'));
     }
 
     public function buttonTextCallback()
@@ -3174,158 +3162,97 @@ class MetaSliderLightboxPlugin
 
     public function arrowColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['arrow_color']) ? $options['arrow_color'] : (isset($options['icon_color']) ? $options['icon_color'] : '#ffffff');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Color for previous and next navigation arrows in the gallery.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('arrow_color', '#ffffff', __('Color for previous and next navigation arrows in the gallery.', 'ml-slider-lightbox'), 'icon_color');
     }
 
     public function arrowHoverColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['arrow_hover_color']) ? $options['arrow_hover_color'] : (isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000000');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_hover_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Arrow color when hovering. Creates visual feedback when users move their mouse over the navigation arrows.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('arrow_hover_color', '#000000', __('Arrow color when hovering. Creates visual feedback when users move their mouse over the navigation arrows.', 'ml-slider-lightbox'), 'icon_hover_color');
     }
 
     public function closeIconColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['close_icon_color']) ? $options['close_icon_color'] : (isset($options['icon_color']) ? $options['icon_color'] : '#ffffff');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Color for the close button (X) in the gallery.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('close_icon_color', '#ffffff', __('Color for the close button (X) in the gallery.', 'ml-slider-lightbox'), 'icon_color');
     }
 
     public function closeIconHoverColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['close_icon_hover_color']) ? $options['close_icon_hover_color'] : (isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000000');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_hover_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Close button color when hovering. Creates visual feedback when users move their mouse over the close button.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('close_icon_hover_color', '#000000', __('Close button color when hovering. Creates visual feedback when users move their mouse over the close button.', 'ml-slider-lightbox'), 'icon_hover_color');
     }
 
     public function toolbarIconColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['toolbar_icon_color']) ? $options['toolbar_icon_color'] : (isset($options['icon_color']) ? $options['icon_color'] : '#ffffff');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Color for toolbar icons and counter text in the lightbox. Affects zoom, fullscreen icons (Pro), and image counter display.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('toolbar_icon_color', '#ffffff', __('Color for toolbar icons and counter text in the lightbox. Affects zoom, fullscreen icons (Pro), and image counter display.', 'ml-slider-lightbox'), 'icon_color');
     }
 
     public function toolbarIconHoverColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['toolbar_icon_hover_color']) ? $options['toolbar_icon_hover_color'] : (isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000000');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_hover_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Toolbar icon color when hovering. Creates visual feedback when users move their mouse over toolbar icons and counter.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('toolbar_icon_hover_color', '#000000', __('Toolbar icon color when hovering. Creates visual feedback when users move their mouse over toolbar icons and counter.', 'ml-slider-lightbox'), 'icon_hover_color');
     }
 
     public function arrowBackgroundColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['arrow_background_color']) ? $options['arrow_background_color'] : (isset($options['button_color']) ? $options['button_color'] : '#000000');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_background_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for previous and next navigation arrow buttons.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('arrow_background_color', '#000000', __('Background color for previous and next navigation arrow buttons.', 'ml-slider-lightbox'), 'button_color');
     }
 
     public function arrowBackgroundHoverColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['arrow_background_hover_color']) ? $options['arrow_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_background_hover_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for arrow buttons when hovering. Creates visual feedback when users move their mouse over the arrows.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('arrow_background_hover_color', '#f0f0f0', __('Background color for arrow buttons when hovering. Creates visual feedback when users move their mouse over the arrows.', 'ml-slider-lightbox'), 'button_hover_color');
     }
 
     public function closeIconBackgroundColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['close_icon_background_color']) ? $options['close_icon_background_color'] : (isset($options['button_color']) ? $options['button_color'] : '#000000');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_background_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for the close button (X) in the gallery.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('close_icon_background_color', '#000000', __('Background color for the close button (X) in the gallery.', 'ml-slider-lightbox'), 'button_color');
     }
 
     public function closeIconBackgroundHoverColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['close_icon_background_hover_color']) ? $options['close_icon_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_background_hover_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for the close button when hovering. Creates visual feedback when users move their mouse over the close button.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('close_icon_background_hover_color', '#f0f0f0', __('Background color for the close button when hovering. Creates visual feedback when users move their mouse over the close button.', 'ml-slider-lightbox'), 'button_hover_color');
     }
 
     public function toolbarIconBackgroundColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['toolbar_icon_background_color']) ? $options['toolbar_icon_background_color'] : (isset($options['button_color']) ? $options['button_color'] : '#000000');
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_background_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for toolbar icons in the lightbox.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('toolbar_icon_background_color', '#000000', __('Background color for toolbar icons in the lightbox.', 'ml-slider-lightbox'), 'button_color');
     }
 
     public function toolbarIconBackgroundHoverColorCallback()
+    {
+        $this->renderColorPickerField('toolbar_icon_background_hover_color', '#f0f0f0', __('Background color for toolbar icons when hovering. Creates visual feedback when users move their mouse over toolbar icons.', 'ml-slider-lightbox'), 'button_hover_color');
+    }
+
+    /**
+     * Render an inline group of labeled color-picker fields wrapped in
+     * .ml-color-inline. Each field is an array with keys:
+     * 'key', 'default', 'label', and an optional 'fallback' option key.
+     *
+     * @param array $fields Ordered list of field definitions to render.
+     */
+    private function renderColorFieldGroup($fields)
     {
         if (!current_user_can('manage_options')) {
             return;
         }
 
         $options = $this->getCachedGeneralOptions();
-        $color = isset($options['toolbar_icon_background_hover_color']) ? $options['toolbar_icon_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
 
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_background_hover_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . __('Background color for toolbar icons when hovering. Creates visual feedback when users move their mouse over toolbar icons.', 'ml-slider-lightbox') . '</p>';
+        echo '<div class="ml-color-inline">';
+        foreach ($fields as $field) {
+            $key = $field['key'];
+            $fallback_key = isset($field['fallback']) ? $field['fallback'] : null;
+
+            if (isset($options[$key])) {
+                $color = $options[$key];
+            } elseif (null !== $fallback_key && isset($options[$fallback_key])) {
+                $color = $options[$fallback_key];
+            } else {
+                $color = $field['default'];
+            }
+
+            echo '<div class="ml-color-field" data-label="' . esc_attr($field['label']) . '">';
+            echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[' . esc_attr($key) . ']" value="' . esc_attr($color) . '" />';
+            echo '</div>';
+        }
+        echo '</div>';
     }
 
     /**
@@ -3333,31 +3260,12 @@ class MetaSliderLightboxPlugin
      */
     public function navigationArrowsGroupCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-
-        $arrow_color = isset($options['arrow_color']) ? $options['arrow_color'] : (isset($options['icon_color']) ? $options['icon_color'] : '#ffffff');
-        $arrow_hover_color = isset($options['arrow_hover_color']) ? $options['arrow_hover_color'] : (isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000');
-        $arrow_bg = isset($options['arrow_background_color']) ? $options['arrow_background_color'] : (isset($options['button_color']) ? $options['button_color'] : '#000000');
-        $arrow_bg_hover = isset($options['arrow_background_hover_color']) ? $options['arrow_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
-
-        echo '<div class="ml-color-inline">';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_color]" value="' . esc_attr($arrow_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_hover_color]" value="' . esc_attr($arrow_hover_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_background_color]" value="' . esc_attr($arrow_bg) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[arrow_background_hover_color]" value="' . esc_attr($arrow_bg_hover) . '" />';
-        echo '</div>';
-        echo '</div>';
+        $this->renderColorFieldGroup(array(
+            array('key' => 'arrow_color', 'default' => '#ffffff', 'label' => __('Icon', 'ml-slider-lightbox'), 'fallback' => 'icon_color'),
+            array('key' => 'arrow_hover_color', 'default' => '#000', 'label' => __('Icon Hover', 'ml-slider-lightbox'), 'fallback' => 'icon_hover_color'),
+            array('key' => 'arrow_background_color', 'default' => '#000000', 'label' => __('Background', 'ml-slider-lightbox'), 'fallback' => 'button_color'),
+            array('key' => 'arrow_background_hover_color', 'default' => '#f0f0f0', 'label' => __('Background Hover', 'ml-slider-lightbox'), 'fallback' => 'button_hover_color'),
+        ));
     }
 
     /**
@@ -3365,31 +3273,12 @@ class MetaSliderLightboxPlugin
      */
     public function navigationCloseButtonGroupCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-
-        $close_color = isset($options['close_icon_color']) ? $options['close_icon_color'] : (isset($options['icon_color']) ? $options['icon_color'] : '#ffffff');
-        $close_hover_color = isset($options['close_icon_hover_color']) ? $options['close_icon_hover_color'] : (isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000');
-        $close_bg = isset($options['close_icon_background_color']) ? $options['close_icon_background_color'] : (isset($options['button_color']) ? $options['button_color'] : '#000000');
-        $close_bg_hover = isset($options['close_icon_background_hover_color']) ? $options['close_icon_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
-
-        echo '<div class="ml-color-inline">';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_color]" value="' . esc_attr($close_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_hover_color]" value="' . esc_attr($close_hover_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_background_color]" value="' . esc_attr($close_bg) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[close_icon_background_hover_color]" value="' . esc_attr($close_bg_hover) . '" />';
-        echo '</div>';
-        echo '</div>';
+        $this->renderColorFieldGroup(array(
+            array('key' => 'close_icon_color', 'default' => '#ffffff', 'label' => __('Icon', 'ml-slider-lightbox'), 'fallback' => 'icon_color'),
+            array('key' => 'close_icon_hover_color', 'default' => '#000', 'label' => __('Icon Hover', 'ml-slider-lightbox'), 'fallback' => 'icon_hover_color'),
+            array('key' => 'close_icon_background_color', 'default' => '#000000', 'label' => __('Background', 'ml-slider-lightbox'), 'fallback' => 'button_color'),
+            array('key' => 'close_icon_background_hover_color', 'default' => '#f0f0f0', 'label' => __('Background Hover', 'ml-slider-lightbox'), 'fallback' => 'button_hover_color'),
+        ));
     }
 
     /**
@@ -3397,31 +3286,12 @@ class MetaSliderLightboxPlugin
      */
     public function navigationToolbarGroupCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-
-        $toolbar_color = isset($options['toolbar_icon_color']) ? $options['toolbar_icon_color'] : (isset($options['icon_color']) ? $options['icon_color'] : '#ffffff');
-        $toolbar_hover_color = isset($options['toolbar_icon_hover_color']) ? $options['toolbar_icon_hover_color'] : (isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000');
-        $toolbar_bg = isset($options['toolbar_icon_background_color']) ? $options['toolbar_icon_background_color'] : (isset($options['button_color']) ? $options['button_color'] : '#000000');
-        $toolbar_bg_hover = isset($options['toolbar_icon_background_hover_color']) ? $options['toolbar_icon_background_hover_color'] : (isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0');
-
-        echo '<div class="ml-color-inline">';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_color]" value="' . esc_attr($toolbar_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_hover_color]" value="' . esc_attr($toolbar_hover_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_background_color]" value="' . esc_attr($toolbar_bg) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[toolbar_icon_background_hover_color]" value="' . esc_attr($toolbar_bg_hover) . '" />';
-        echo '</div>';
-        echo '</div>';
+        $this->renderColorFieldGroup(array(
+            array('key' => 'toolbar_icon_color', 'default' => '#ffffff', 'label' => __('Icon', 'ml-slider-lightbox'), 'fallback' => 'icon_color'),
+            array('key' => 'toolbar_icon_hover_color', 'default' => '#000', 'label' => __('Icon Hover', 'ml-slider-lightbox'), 'fallback' => 'icon_hover_color'),
+            array('key' => 'toolbar_icon_background_color', 'default' => '#000000', 'label' => __('Background', 'ml-slider-lightbox'), 'fallback' => 'button_color'),
+            array('key' => 'toolbar_icon_background_hover_color', 'default' => '#f0f0f0', 'label' => __('Background Hover', 'ml-slider-lightbox'), 'fallback' => 'button_hover_color'),
+        ));
     }
 
     public function backgroundOpacityCallback()
@@ -3446,31 +3316,15 @@ class MetaSliderLightboxPlugin
             return;
         }
 
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['autoplay_progress_bar_color']) ? $options['autoplay_progress_bar_color'] : '#a90707';
-
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[autoplay_progress_bar_color]" value="' . esc_attr($color) . '" />';
-        echo '<p class="description">' . esc_html__('Color of the progress bar shown during autoplay slideshows.', 'ml-slider-lightbox') . '</p>';
+        $this->renderColorPickerField('autoplay_progress_bar_color', '#a90707', esc_html__('Color of the progress bar shown during autoplay slideshows.', 'ml-slider-lightbox'));
     }
 
     public function thumbnailBorderColorCallback()
     {
-        if (!current_user_can('manage_options')) {
-            return;
-        }
-
-        $options = $this->getCachedGeneralOptions();
-        $color = isset($options['thumbnail_border_color']) ? $options['thumbnail_border_color'] : '#ffffff';
-        $hover_color = isset($options['thumbnail_border_hover_color']) ? $options['thumbnail_border_hover_color'] : '#dd6923';
-
-        echo '<div class="ml-color-inline">';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Border', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[thumbnail_border_color]" value="' . esc_attr($color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Border Active and Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[thumbnail_border_hover_color]" value="' . esc_attr($hover_color) . '" />';
-        echo '</div>';
-        echo '</div>';
+        $this->renderColorFieldGroup(array(
+            array('key' => 'thumbnail_border_color', 'default' => '#ffffff', 'label' => __('Border', 'ml-slider-lightbox')),
+            array('key' => 'thumbnail_border_hover_color', 'default' => '#dd6923', 'label' => __('Border Active and Hover', 'ml-slider-lightbox')),
+        ));
     }
 
     public function showArrowsCallback()
@@ -3513,27 +3367,12 @@ class MetaSliderLightboxPlugin
             return;
         }
 
-        $options = $this->getCachedGeneralOptions();
-
-        $text_color = isset($options['button_text_color']) ? $options['button_text_color'] : '#ffffff';
-        $text_hover_color = isset($options['button_hover_text_color']) ? $options['button_hover_text_color'] : '#000000';
-        $bg_color = isset($options['button_color']) ? $options['button_color'] : '#000000';
-        $bg_hover_color = isset($options['button_hover_color']) ? $options['button_hover_color'] : '#f0f0f0';
-
-        echo '<div class="ml-color-inline">';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Text', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_text_color]" value="' . esc_attr($text_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Text Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_hover_text_color]" value="' . esc_attr($text_hover_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_color]" value="' . esc_attr($bg_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[button_hover_color]" value="' . esc_attr($bg_hover_color) . '" />';
-        echo '</div>';
-        echo '</div>';
+        $this->renderColorFieldGroup(array(
+            array('key' => 'button_text_color', 'default' => '#ffffff', 'label' => __('Text', 'ml-slider-lightbox')),
+            array('key' => 'button_hover_text_color', 'default' => '#000000', 'label' => __('Text Hover', 'ml-slider-lightbox')),
+            array('key' => 'button_color', 'default' => '#000000', 'label' => __('Background', 'ml-slider-lightbox')),
+            array('key' => 'button_hover_color', 'default' => '#f0f0f0', 'label' => __('Background Hover', 'ml-slider-lightbox')),
+        ));
     }
 
     /**
@@ -3545,27 +3384,12 @@ class MetaSliderLightboxPlugin
             return;
         }
 
-        $options = $this->getCachedGeneralOptions();
-
-        $icon_color = isset($options['icon_color']) ? $options['icon_color'] : '#ffffff';
-        $icon_hover_color = isset($options['icon_hover_color']) ? $options['icon_hover_color'] : '#000000';
-        $icon_bg_color = isset($options['icon_background_color']) ? $options['icon_background_color'] : '#000000';
-        $icon_bg_hover_color = isset($options['icon_background_hover_color']) ? $options['icon_background_hover_color'] : '#f0f0f0';
-
-        echo '<div class="ml-color-inline">';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_color]" value="' . esc_attr($icon_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Icon Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_hover_color]" value="' . esc_attr($icon_hover_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_background_color]" value="' . esc_attr($icon_bg_color) . '" />';
-        echo '</div>';
-        echo '<div class="ml-color-field" data-label="' . esc_attr__('Background Hover', 'ml-slider-lightbox') . '">';
-        echo '<input type="text" class="ml-color-picker" name="metaslider_lightbox_appearance_options[icon_background_hover_color]" value="' . esc_attr($icon_bg_hover_color) . '" />';
-        echo '</div>';
-        echo '</div>';
+        $this->renderColorFieldGroup(array(
+            array('key' => 'icon_color', 'default' => '#ffffff', 'label' => __('Icon', 'ml-slider-lightbox')),
+            array('key' => 'icon_hover_color', 'default' => '#000000', 'label' => __('Icon Hover', 'ml-slider-lightbox')),
+            array('key' => 'icon_background_color', 'default' => '#000000', 'label' => __('Background', 'ml-slider-lightbox')),
+            array('key' => 'icon_background_hover_color', 'default' => '#f0f0f0', 'label' => __('Background Hover', 'ml-slider-lightbox')),
+        ));
     }
 
     public function behaviorNavigationCallback()
@@ -3654,6 +3478,9 @@ class MetaSliderLightboxPlugin
         $options = $this->getCachedGeneralOptions();
         $selected_pages = isset($options['exclude_pages']) ? $options['exclude_pages'] : array();
 
+        $mode = isset($options['content_processing_mode']) ? $options['content_processing_mode'] : 'include';
+        $action = $mode === 'include' ? __('Include', 'ml-slider-lightbox') : __('Exclude', 'ml-slider-lightbox');
+
         $pages = get_pages(array(
             'sort_column' => 'post_title',
             'sort_order' => 'ASC',
@@ -3664,8 +3491,8 @@ class MetaSliderLightboxPlugin
         ?>
         <div class="ml-settings-field">
             <div class="ml-settings-field-content">
-                <h3 class="ml-settings-field-title">
-                    <?php echo esc_html__('Include specific Pages', 'ml-slider-lightbox'); ?>
+                <h3 class="ml-settings-field-title ml-mode-title" data-mode-noun="<?php echo esc_attr__('specific Pages', 'ml-slider-lightbox'); ?>">
+                    <?php echo esc_html(sprintf('%s %s', $action, __('specific Pages', 'ml-slider-lightbox'))); ?>
                 </h3>
                 <div class="ml-settings-field-description ml-filter-description" data-exclude-text="<?php echo esc_attr__('Select pages where gallery should be disabled. Shows up to 100 most recent pages. Type to search.', 'ml-slider-lightbox'); ?>" data-include-text="<?php echo esc_attr__('Select pages where gallery should be enabled. Shows up to 100 most recent pages. Type to search.', 'ml-slider-lightbox'); ?>">
                     <?php echo esc_html__('Select pages where gallery should be enabled. Shows up to 100 most recent pages. Type to search.', 'ml-slider-lightbox'); ?>
@@ -3698,6 +3525,9 @@ class MetaSliderLightboxPlugin
         $options = $this->getCachedGeneralOptions();
         $selected_posts = isset($options['exclude_posts']) ? $options['exclude_posts'] : array();
 
+        $mode = isset($options['content_processing_mode']) ? $options['content_processing_mode'] : 'include';
+        $action = $mode === 'include' ? __('Include', 'ml-slider-lightbox') : __('Exclude', 'ml-slider-lightbox');
+
         $posts = get_posts(array(
             'numberposts' => 100,
             'post_type' => 'post',
@@ -3709,8 +3539,8 @@ class MetaSliderLightboxPlugin
         ?>
         <div class="ml-settings-field">
             <div class="ml-settings-field-content">
-                <h3 class="ml-settings-field-title">
-                    <?php echo esc_html__('Include specific Posts', 'ml-slider-lightbox'); ?>
+                <h3 class="ml-settings-field-title ml-mode-title" data-mode-noun="<?php echo esc_attr__('specific Posts', 'ml-slider-lightbox'); ?>">
+                    <?php echo esc_html(sprintf('%s %s', $action, __('specific Posts', 'ml-slider-lightbox'))); ?>
                 </h3>
                 <div class="ml-settings-field-description ml-filter-description" data-exclude-text="<?php echo esc_attr__('Select posts where gallery should be disabled. Shows up to 100 most recent posts. Type to search.', 'ml-slider-lightbox'); ?>" data-include-text="<?php echo esc_attr__('Select posts where gallery should be enabled. Shows up to 100 most recent posts. Type to search.', 'ml-slider-lightbox'); ?>">
                     <?php echo esc_html__('Select posts where gallery should be enabled. Shows up to 100 most recent posts. Type to search.', 'ml-slider-lightbox'); ?>
@@ -3780,7 +3610,7 @@ class MetaSliderLightboxPlugin
             ?>
             <div class="ml-settings-field">
                 <div class="ml-settings-field-content">
-                    <h3 class="ml-settings-field-title">
+                    <h3 class="ml-settings-field-title ml-mode-title" data-mode-noun="<?php echo esc_attr(sprintf(__('specific %s', 'ml-slider-lightbox'), $cpt_label)); ?>">
                         <?php echo sprintf(esc_html__('%s specific %s', 'ml-slider-lightbox'), $action_label, esc_html($cpt_label)); ?>
                     </h3>
                     <div class="ml-settings-field-description ml-filter-description" data-exclude-text="<?php echo esc_attr(sprintf(__('Shows up to 100 most recent %s. Type to search.', 'ml-slider-lightbox'), strtolower($cpt_label))); ?>" data-include-text="<?php echo esc_attr(sprintf(__('Shows up to 100 most recent %s. Type to search.', 'ml-slider-lightbox'), strtolower($cpt_label))); ?>">
@@ -3817,6 +3647,9 @@ class MetaSliderLightboxPlugin
         $content_options = get_option('metaslider_lightbox_content_options', array());
         $selected_post_types = isset($content_options['exclude_post_types']) ? $content_options['exclude_post_types'] : array();
 
+        $mode = isset($content_options['content_processing_mode']) ? $content_options['content_processing_mode'] : 'include';
+        $action = $mode === 'include' ? __('Include', 'ml-slider-lightbox') : __('Exclude', 'ml-slider-lightbox');
+
         $post_types = get_post_types(array(
             'show_ui' => true
         ), 'objects');
@@ -3829,8 +3662,8 @@ class MetaSliderLightboxPlugin
         ?>
         <div class="ml-settings-field">
             <div class="ml-settings-field-content">
-                <h3 class="ml-settings-field-title">
-                    <?php echo esc_html__('Include specific post types', 'ml-slider-lightbox'); ?>
+                <h3 class="ml-settings-field-title ml-mode-title" data-mode-noun="<?php echo esc_attr__('specific post types', 'ml-slider-lightbox'); ?>">
+                    <?php echo esc_html(sprintf('%s %s', $action, __('specific post types', 'ml-slider-lightbox'))); ?>
                 </h3>
                 <div class="ml-settings-field-description ml-filter-description" data-exclude-text="<?php echo esc_attr__('Select post types where gallery should be disabled entirely.', 'ml-slider-lightbox'); ?>" data-include-text="<?php echo esc_attr__('Select post types where gallery should be enabled entirely.', 'ml-slider-lightbox'); ?>">
                     <?php echo esc_html__('Select post types where gallery should be enabled entirely.', 'ml-slider-lightbox'); ?>
@@ -4293,6 +4126,38 @@ class MetaSliderLightboxPlugin
                     </tr>
                     <tr>
                         <td>
+                            <h4><?php _e('Gallery builder &amp; layouts', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Build galleries with Grid, Masonry, Justified, Carousel, and Showcase layouts.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot available"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Responsive columns', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Set the number of columns for desktop and mobile, with adjustable spacing.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot available"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Image captions', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Show image captions in the gallery grid and the gallery window.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot available"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Thumbnail navigation', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Display a strip of thumbnails for quick navigation between images.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot available"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
                             <h4><?php _e('Zoom controls', 'ml-slider-lightbox'); ?></h4>
                             <p><?php _e('Allow users to zoom in and out with double-click, mouse wheel, and zoom controls.', 'ml-slider-lightbox'); ?></p>
                         </td>
@@ -4502,21 +4367,6 @@ class MetaSliderLightboxPlugin
         return $attributes;
     }
 
-    public function handleVimeoVideoSlide($attributes, $slide, $slider_id)
-    {
-        return $this->handleVideoSlides($attributes, $slide, $slider_id);
-    }
-
-    public function handleYoutubeVideoSlide($attributes, $slide, $slider_id)
-    {
-        return $this->handleVideoSlides($attributes, $slide, $slider_id);
-    }
-
-    public function handleExternalVideoSlide($attributes, $slide, $slider_id)
-    {
-        return $this->handleVideoSlides($attributes, $slide, $slider_id);
-    }
-
     public function handleCustomHtmlSlide($attributes, $slide, $slider_id)
     {
         $settings = get_post_meta($slider_id, 'ml-slider_settings', true);
@@ -4722,16 +4572,6 @@ class MetaSliderLightboxPlugin
     public function lightboxShortcode($atts)
     {
         return '';
-    }
-
-    public function galleryShortcode($atts)
-    {
-        return '';
-    }
-
-    public function autoDetectGalleries($content)
-    {
-        return $content;
     }
 
     private function setupContentDetection()

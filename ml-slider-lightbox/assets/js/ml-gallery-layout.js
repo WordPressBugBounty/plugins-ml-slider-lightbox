@@ -29,9 +29,15 @@
 	function initShowcase( container ) {
 		var links        = Array.prototype.slice.call( container.querySelectorAll( 'a[data-src]' ) );
 		var showThumbs   = container.getAttribute( 'data-lg-thumbnails' ) === '1';
+		var showControls = container.getAttribute( 'data-lg-controls' ) === '1';
+		var showCounter  = container.getAttribute( 'data-lg-counter' ) === '1';
+		var showPager    = container.getAttribute( 'data-lg-pager' ) === '1';
 		if ( ! links.length ) return;
 
-		var current = 0;
+		var current           = 0;
+		var initialized       = false;
+		var slideMode         = container.getAttribute( 'data-lg-mode' ) || 'lg-fade';
+		var captionTransition = container.getAttribute( 'data-lg-caption-transition' ) || 'none';
 
 		// Stage
 		var stage    = document.createElement( 'div' );
@@ -40,6 +46,18 @@
 		stageImg.className = 'ml-showcase-img';
 		stageImg.alt = '';
 		stage.appendChild( stageImg );
+
+		// Caption overlay on the stage, shown only when the gallery surface is
+		// enabled (container carries ml-has-thumb-captions). Populated per slide
+		// in goTo() from the source item's hidden .ml-gallery-caption span.
+		var showCaption = container.classList.contains( 'ml-has-thumb-captions' );
+		var captionEl   = null;
+		if ( showCaption ) {
+			captionEl = document.createElement( 'div' );
+			captionEl.className = 'ml-showcase-caption';
+			stage.appendChild( captionEl );
+		}
+
 		// Capture phase fires before child handlers (e.g. ml-lightbox-wrapper),
 		// preventing the main plugin from opening a second single-image lightbox.
 		stage.addEventListener( 'click', function ( e ) {
@@ -71,46 +89,146 @@
 			} );
 		}
 
-		// Nav
-		var nav      = document.createElement( 'div' );
-		nav.className = 'ml-showcase-nav';
-		var prevBtn  = document.createElement( 'button' );
-		prevBtn.type = 'button';
-		prevBtn.className = 'ml-showcase-btn ml-showcase-prev';
-		prevBtn.setAttribute( 'aria-label', 'Previous' );
-		prevBtn.innerHTML = '&larr;';
-		var counterEl = document.createElement( 'span' );
-		counterEl.className = 'ml-showcase-counter';
-		var nextBtn  = document.createElement( 'button' );
-		nextBtn.type = 'button';
-		nextBtn.className = 'ml-showcase-btn ml-showcase-next';
-		nextBtn.setAttribute( 'aria-label', 'Next' );
-		nextBtn.innerHTML = '&rarr;';
-		nav.appendChild( prevBtn );
-		nav.appendChild( counterEl );
-		nav.appendChild( nextBtn );
-		prevBtn.addEventListener( 'click', function () { goTo( current - 1 ); } );
-		nextBtn.addEventListener( 'click', function () { goTo( current + 1 ); } );
-
-		// Insert: stage → thumbs (if any) → nav
-		container.insertBefore( stage, container.firstChild );
-		if ( thumbStrip ) {
-			container.insertBefore( thumbStrip, stage.nextSibling );
+		// Nav bar: arrows and/or slide counter (omitted entirely when both are off)
+		var nav       = null;
+		var prevBtn   = null;
+		var nextBtn   = null;
+		var counterEl = null;
+		if ( showControls || showCounter ) {
+			nav = document.createElement( 'div' );
+			nav.className = 'ml-showcase-nav';
+			if ( showControls ) {
+				prevBtn = document.createElement( 'button' );
+				prevBtn.type = 'button';
+				prevBtn.className = 'ml-showcase-btn ml-showcase-prev';
+				prevBtn.setAttribute( 'aria-label', 'Previous' );
+				prevBtn.innerHTML = '&larr;';
+				nav.appendChild( prevBtn );
+				prevBtn.addEventListener( 'click', function () { goTo( current - 1 ); } );
+			}
+			if ( showCounter ) {
+				counterEl = document.createElement( 'span' );
+				counterEl.className = 'ml-showcase-counter';
+				nav.appendChild( counterEl );
+			}
+			if ( showControls ) {
+				nextBtn = document.createElement( 'button' );
+				nextBtn.type = 'button';
+				nextBtn.className = 'ml-showcase-btn ml-showcase-next';
+				nextBtn.setAttribute( 'aria-label', 'Next' );
+				nextBtn.innerHTML = '&rarr;';
+				nav.appendChild( nextBtn );
+				nextBtn.addEventListener( 'click', function () { goTo( current + 1 ); } );
+			}
 		}
-		container.insertBefore( nav, ( thumbStrip || stage ).nextSibling );
 
-		function goTo( index ) {
-			current = ( index + links.length ) % links.length;
-			var sourceImg = links[ current ].querySelector( 'img' );
-			stageImg.src = links[ current ].getAttribute( 'data-src' ) || ( sourceImg ? sourceImg.src : '' );
-			stageImg.alt = sourceImg ? ( sourceImg.alt || '' ) : '';
-			counterEl.textContent = ( current + 1 ) + ' / ' + links.length;
-			thumbItems.forEach( function ( t, i ) {
-				t.classList.toggle( 'is-active', i === current );
+		// Pager dots
+		var pagerEl   = null;
+		var pagerDots = [];
+		if ( showPager ) {
+			pagerEl = document.createElement( 'div' );
+			pagerEl.className = 'ml-showcase-pager';
+			links.forEach( function ( _, i ) {
+				var dot = document.createElement( 'button' );
+				dot.type = 'button';
+				dot.className = 'ml-showcase-pager-dot';
+				dot.setAttribute( 'aria-label', 'Go to slide ' + ( i + 1 ) );
+				dot.addEventListener( 'click', function () { goTo( i ); } );
+				pagerEl.appendChild( dot );
+				pagerDots.push( dot );
 			} );
 		}
 
+		// Insert: stage → thumbs (if any) → nav (if any) → pager (if any)
+		container.insertBefore( stage, container.firstChild );
+		var lastInserted = stage;
+		if ( thumbStrip ) {
+			container.insertBefore( thumbStrip, lastInserted.nextSibling );
+			lastInserted = thumbStrip;
+		}
+		if ( nav ) {
+			container.insertBefore( nav, lastInserted.nextSibling );
+			lastInserted = nav;
+		}
+		if ( pagerEl ) {
+			container.insertBefore( pagerEl, lastInserted.nextSibling );
+		}
+
+		// Animate the image change, honoring the gallery Transition (mode) setting.
+		// The incoming image animates in over the current one, then becomes the base.
+		function animateImage( newSrc, newAlt, dir ) {
+			var stale = stage.querySelector( '.ml-showcase-incoming' );
+			if ( stale && stale.parentNode ) { stale.parentNode.removeChild( stale ); }
+
+			var incoming = document.createElement( 'img' );
+			incoming.className = 'ml-showcase-img ml-showcase-incoming';
+			incoming.alt = newAlt;
+
+			var initClass = 'ml-tr-fade';
+			if ( slideMode === 'lg-slide' ) {
+				initClass = dir < 0 ? 'ml-tr-slide-prev' : 'ml-tr-slide-next';
+			} else if ( slideMode === 'lg-zoom-in-out' ) {
+				initClass = 'ml-tr-zoom';
+			}
+			incoming.classList.add( initClass );
+			incoming.src = newSrc;
+			stage.appendChild( incoming );
+
+			// Reflow so the transition runs from the initial state.
+			void incoming.offsetWidth;
+			incoming.classList.add( 'ml-tr-active' );
+
+			var finalize = function () {
+				if ( incoming._mlDone ) { return; }
+				incoming._mlDone = true;
+				stageImg.src = newSrc;
+				stageImg.alt = newAlt;
+				if ( incoming.parentNode ) { incoming.parentNode.removeChild( incoming ); }
+			};
+			incoming.addEventListener( 'transitionend', finalize, { once: true } );
+			setTimeout( finalize, 600 );
+		}
+
+		function goTo( index ) {
+			var prevIndex = current;
+			current = ( index + links.length ) % links.length;
+			var sourceImg = links[ current ].querySelector( 'img' );
+			var newSrc    = links[ current ].getAttribute( 'data-src' ) || ( sourceImg ? sourceImg.src : '' );
+			var newAlt    = sourceImg ? ( sourceImg.alt || '' ) : '';
+
+			if ( ! initialized ) {
+				stageImg.src = newSrc;
+				stageImg.alt = newAlt;
+			} else {
+				animateImage( newSrc, newAlt, current < prevIndex ? -1 : 1 );
+			}
+
+			if ( counterEl ) {
+				counterEl.textContent = ( current + 1 ) + ' / ' + links.length;
+			}
+			thumbItems.forEach( function ( t, i ) {
+				t.classList.toggle( 'is-active', i === current );
+			} );
+			pagerDots.forEach( function ( dot, i ) {
+				dot.classList.toggle( 'is-active', i === current );
+			} );
+			if ( captionEl ) {
+				var srcCaption = links[ current ].querySelector( '.ml-gallery-caption' );
+				var capHtml    = srcCaption ? srcCaption.innerHTML : '';
+				captionEl.innerHTML     = capHtml;
+				captionEl.style.display = capHtml ? '' : 'none';
+				// Re-trigger the caption animation, honoring the Caption Transition
+				// setting. captionEl is stable here, so reflow re-trigger is reliable.
+				if ( capHtml && captionTransition !== 'none' ) {
+					captionEl.classList.remove( 'ml-showcase-cap-' + captionTransition );
+					void captionEl.offsetWidth;
+					captionEl.classList.add( 'ml-showcase-cap-' + captionTransition );
+				}
+			}
+		}
+
 		goTo( 0 );
+		initialized = true;
 	}
 
 	function init() {

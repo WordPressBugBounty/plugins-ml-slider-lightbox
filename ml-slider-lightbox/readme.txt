@@ -3,7 +3,7 @@ Contributors: andergmartins, htmgarcia, publishpress, stevejburge, rochdesigns
 Tags: gallery, image gallery, video gallery, wordpress gallery, YouTube gallery
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 2.32.3
+Stable tag: 2.33.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -140,6 +140,27 @@ Yes, a legacy feature in this plugin allows you to connect other gallery window 
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.33.0] - 25 Jun, 2026 =
+
+* ADDED: Dedicated "Upgrade to Pro" page, #400;
+* ADDED: Pro upgrade prompts within the Gallery interface, #468;
+* ADDED: More per-gallery customization for the gallery window, including "Open in Gallery" button, icon and text options, #467;
+* ADDED: More ways to add images, including upload, media library, server folder and ZIP import, #454;
+* ADDED: Option to keep thumbnail navigation a consistent height, #398;
+* ADDED: Left and right margin settings, #347;
+* ADDED: Completed translations for all 28 languages, #452;
+* CHANGED: Rearranged and reorganized the gallery settings panel, #476;
+* CHANGED: Improved caption styling with new customization options, #413;
+* CHANGED: Apply caption text, color and background styling to gallery thumbnails and the gallery window, #493;
+* CHANGED: Hide related settings when "Show in Gallery Window" is disabled, #465;
+* CHANGED: Clarified the confusing Include / Exclude settings, #438;
+* CHANGED: Updated the Autoplay, Autoplay Slide Interval and Autoplay Progress Bar Color settings labels so it's clear they're connected, #491;
+* CHANGED: Include AI translation updates in the release workflow, #453;
+* FIXED: Gallery preview now matches the frontend layout, #503;
+* FIXED: Some settings did not show or hide correctly for the Showcase layout, #482;
+* FIXED: "Columns (mobile)" setting was ignored and fell back to the desktop Columns value, #396;
+* FIXED: Copy shortcode did not work on non-HTTPS sites, #463;
 
 = [2.32.3] - 10 Jun, 2026 =
 

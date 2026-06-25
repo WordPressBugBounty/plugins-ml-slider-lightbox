@@ -347,6 +347,47 @@
     margin: 0;
 }
 
+/* Caption text transitions — lightGallery state-driven, like the official
+   caption-animation demo. The mode is set per gallery via an ml-cap-* class on
+   .lg-container (see applyGallerySettings); the caption text is wrapped in
+   .ml-caption-text at init so the transition animates the text, not the
+   .lg-sub-html bar/background. Non-current slides keep the text hidden; the
+   active (.lg-current) slide reveals it once the slide settles. */
+.lg-container[class*="ml-cap-"] .lg-sub-html .ml-caption-text {
+    display: inline-block;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.lg-container.ml-cap-slide-up .lg-sub-html .ml-caption-text {
+    transform: translate3d(0, 20px, 0);
+}
+
+.lg-container.ml-cap-slide-down .lg-sub-html .ml-caption-text {
+    transform: translate3d(0, -20px, 0);
+}
+
+.lg-container[class*="ml-cap-"] .lg-current .lg-sub-html .ml-caption-text {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition-delay: 0.4s;
+}
+
+/* Caption-transition mode appends a .lg-sub-html into each .lg-item
+   (appendSubHtmlTo: '.lg-item'). lightGallery then toggles .lg-empty-html on
+   ALL items based on the last-rendered slide's caption, so a captionless
+   preloaded slide can both hide real captions AND leave empty bars showing
+   (the class lands on the wrong items in both directions). Ignore the unreliable
+   .lg-empty-html toggle and drive bar visibility purely by content: show bars
+   that have a caption, hide truly empty ones. Both out-specify lightGallery's
+   own `.lg-outer .lg-empty-html .lg-sub-html { display: none }` (0,3,0). */
+.lg-container[class*="ml-cap-"] .lg-sub-html:not(:empty) {
+    display: block;
+}
+.lg-container[class*="ml-cap-"] .lg-sub-html:empty {
+    display: none;
+}
+
 .lightbox-layer-wrapper {
     margin-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -747,6 +788,11 @@ img.ml-lightbox-enabled {
 .lg-outer .lg-item .ms-layer .msHtmlOverlay .content {
     font-size: 1.8em !important;
     line-height: 1.2 !important;
+}
+
+.lg-outer .lg-content {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
 }
 
 /* ==========================================================================

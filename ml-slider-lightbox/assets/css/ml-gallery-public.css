@@ -116,6 +116,7 @@
 }
 
 .ml-showcase-stage {
+	position: relative;
 	width: 100%;
 	overflow: hidden;
 	cursor: pointer;
@@ -126,6 +127,84 @@
 	width: 100%;
 	height: 420px;
 	object-fit: cover;
+}
+
+/* Showcase stage caption overlay. Shares the thumbnail-caption custom-property
+   hooks so future per-gallery styling controls apply uniformly. */
+.ml-showcase-caption {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2; /* stay above the transitioning incoming image */
+	margin: 0;
+	padding: 12px 16px;
+	line-height: 1.35;
+	color: var(--ml-thumb-caption-color, #ffffff);
+	font-size: var(--ml-thumb-caption-size, 14px);
+	text-align: var(--ml-thumb-caption-align, left);
+	background: var(--ml-thumb-caption-bg, linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)));
+}
+
+/* Showcase slide transitions — image change honors the gallery Transition
+   (mode) setting: fade / slide / zoom. The incoming image (inherits sizing from
+   .ml-showcase-stage .ml-showcase-img) animates in over the current base image,
+   then JS promotes it to the base and removes the overlay. */
+.ml-showcase-incoming {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.ml-showcase-incoming.ml-tr-fade {
+	opacity: 0;
+}
+
+.ml-showcase-incoming.ml-tr-slide-next {
+	transform: translateX(100%);
+}
+
+.ml-showcase-incoming.ml-tr-slide-prev {
+	transform: translateX(-100%);
+}
+
+.ml-showcase-incoming.ml-tr-zoom {
+	opacity: 0;
+	transform: scale(1.15);
+}
+
+.ml-showcase-incoming.ml-tr-active {
+	opacity: 1;
+	transform: translateX(0) scale(1);
+	transition: transform 0.45s ease, opacity 0.45s ease;
+}
+
+/* Showcase caption transition — honors the Caption Transition setting. */
+.ml-showcase-cap-fade {
+	animation: ml-showcase-cap-fade 0.4s ease;
+}
+
+.ml-showcase-cap-slide-up {
+	animation: ml-showcase-cap-slide-up 0.4s ease;
+}
+
+.ml-showcase-cap-slide-down {
+	animation: ml-showcase-cap-slide-down 0.4s ease;
+}
+
+@keyframes ml-showcase-cap-fade {
+	from { opacity: 0; }
+	to   { opacity: 1; }
+}
+
+@keyframes ml-showcase-cap-slide-up {
+	from { opacity: 0; transform: translateY(20px); }
+	to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes ml-showcase-cap-slide-down {
+	from { opacity: 0; transform: translateY(-20px); }
+	to   { opacity: 1; transform: translateY(0); }
 }
 
 .ml-showcase-thumbs {
@@ -193,10 +272,44 @@
 	padding: 6px 8px;
 }
 
+.ml-showcase-pager {
+	display: flex;
+	justify-content: center;
+	gap: 6px;
+	padding: 8px 0;
+}
+
+.ml-showcase-pager-dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	background-color: var(--ml-toolbar-bg, #000);
+	opacity: 0.35;
+	transition: opacity 0.2s;
+}
+
+.ml-showcase-pager-dot:hover {
+	opacity: 0.65;
+}
+
+.ml-showcase-pager-dot.is-active {
+	opacity: 1;
+}
+
 @media (max-width: 768px) {
-	.ml-gallery-container.ml-layout-grid,
+	/* Override the consuming properties directly. --ml-columns is set inline on
+	   the container, so reassigning it from a stylesheet rule has no effect
+	   (inline wins); target grid-template-columns / columns instead, both of
+	   which read the inline-provided --ml-columns-mobile. */
+	.ml-gallery-container.ml-layout-grid {
+		grid-template-columns: repeat(var(--ml-columns-mobile, 1), 1fr);
+	}
+
 	.ml-gallery-container.ml-layout-masonry {
-		--ml-columns: var(--ml-columns-mobile, 1);
+		columns: var(--ml-columns-mobile, 1);
 	}
 
 	.ml-showcase-stage .ml-showcase-img {
@@ -208,4 +321,32 @@
 .ml-gallery-container[data-ml-lightbox="0"] a {
 	pointer-events: none;
 	cursor: default;
+}
+
+/* ── Thumbnail captions ─────────────────────────────────────────────────── */
+
+/* Off by default: rendered in markup but hidden unless the container opts in.
+   No layout impact (absolutely positioned) when shown. */
+.ml-gallery-caption {
+	display: none;
+}
+
+.ml-gallery-container.ml-has-thumb-captions > a {
+	position: relative;
+}
+
+.ml-gallery-container.ml-has-thumb-captions .ml-gallery-caption {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 10px 12px;
+	line-height: 1.35;
+	/* Hook points for future per-gallery controls; fall back to sensible defaults. */
+	color: var(--ml-thumb-caption-color, #ffffff);
+	font-size: var(--ml-thumb-caption-size, 14px);
+	text-align: var(--ml-thumb-caption-align, left);
+	background: var(--ml-thumb-caption-bg, linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)));
 }
