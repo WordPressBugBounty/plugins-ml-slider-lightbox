@@ -2,28 +2,44 @@
 ( function () {
 	'use strict';
 
-	/**
-	 * Set flex-basis on each anchor proportional to its image's natural aspect
-	 * ratio so the items fill rows at a consistent row height.
-	 *
-	 * @param {HTMLElement} container  .ml-layout-justified element
-	 */
 	function justify( container ) {
-		var gap        = parseFloat( getComputedStyle( container ).getPropertyValue( '--ml-gap' ) ) || 8;
-		var rowHeight  = 220;
-		var items      = Array.prototype.slice.call( container.querySelectorAll( 'a' ) );
+		var gap       = parseFloat( getComputedStyle( container ).getPropertyValue( '--ml-gap' ) ) || 8;
+		var rowHeight = 220;
+		var items     = Array.prototype.slice.call( container.querySelectorAll( 'a' ) );
+		if ( ! items.length ) return;
 
-		items.forEach( function ( item ) {
+		var cs       = getComputedStyle( container );
+		var rowWidth = container.clientWidth - ( parseFloat( cs.paddingLeft ) || 0 ) - ( parseFloat( cs.paddingRight ) || 0 );
+		if ( rowWidth <= 0 ) return;
+
+		var metas = items.map( function ( item ) {
 			var img = item.querySelector( 'img' );
-			if ( ! img ) return;
-
-			var w = img.naturalWidth  || parseFloat( img.getAttribute( 'width' ) )  || 4;
-			var h = img.naturalHeight || parseFloat( img.getAttribute( 'height' ) ) || 3;
+			var w = ( img && ( img.naturalWidth  || parseFloat( img.getAttribute( 'width' ) ) ) )  || 4;
+			var h = ( img && ( img.naturalHeight || parseFloat( img.getAttribute( 'height' ) ) ) ) || 3;
 			var aspect = w / h;
-
-			item.style.flexBasis = ( aspect * rowHeight ) + 'px';
-			item.style.maxWidth  = ( aspect * rowHeight * 2 ) + 'px';
+			return { item: item, baseWidth: aspect * rowHeight };
 		} );
+
+		function flushRow( row, sumBaseWidth ) {
+			if ( ! row.length ) return;
+			var k = ( rowWidth - gap * ( row.length - 1 ) ) / sumBaseWidth;
+			row.forEach( function ( m ) {
+				m.item.style.width = Math.floor( m.baseWidth * k ) + 'px';
+			} );
+		}
+
+		var row = [];
+		var sumBaseWidth = 0;
+		metas.forEach( function ( m ) {
+			row.push( m );
+			sumBaseWidth += m.baseWidth;
+			if ( sumBaseWidth + gap * ( row.length - 1 ) >= rowWidth ) {
+				flushRow( row, sumBaseWidth );
+				row = [];
+				sumBaseWidth = 0;
+			}
+		} );
+		flushRow( row, sumBaseWidth );
 	}
 
 	function initShowcase( container ) {
@@ -264,11 +280,20 @@
 			} );
 		} );
 
-		// Re-justify on resize
+		// Re-justify on resize, only when the rounded width actually changes.
 		if ( typeof ResizeObserver !== 'undefined' ) {
+			var scheduled = false;
 			var ro = new ResizeObserver( function ( entries ) {
-				entries.forEach( function ( entry ) {
-					justify( entry.target );
+				if ( scheduled ) return;
+				scheduled = true;
+				requestAnimationFrame( function () {
+					scheduled = false;
+					entries.forEach( function ( entry ) {
+						var width = Math.round( entry.contentRect.width );
+						if ( entry.target._mlLastWidth === width ) return;
+						entry.target._mlLastWidth = width;
+						justify( entry.target );
+					} );
 				} );
 			} );
 			containers.forEach( function ( c ) { ro.observe( c ); } );

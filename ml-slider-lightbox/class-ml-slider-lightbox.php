@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.33.0';
+    public $version = '2.34.0';
     protected static $instance = null;
     private $supported_plugins = array();
 
@@ -1505,6 +1505,18 @@ class MetaSliderLightboxPlugin
             'page_excluded' => $this->shouldExcludePage(),
             'manual_excluded' => $this->shouldExcludeManualForPostType(),
             'view_image_label' => __( 'View image', 'ml-slider-lightbox' ),
+            // lightGallery core UI strings. Passed to lightGallery's `strings`
+            // option so its built-in controls are translatable (they default to
+            // hardcoded English otherwise). Keys must match LightGalleryCoreStrings.
+            'lg_strings' => array(
+                'closeGallery'       => __( 'Close gallery', 'ml-slider-lightbox' ),
+                'toggleMaximize'     => __( 'Toggle maximize', 'ml-slider-lightbox' ),
+                'previousSlide'      => __( 'Previous slide', 'ml-slider-lightbox' ),
+                'nextSlide'          => __( 'Next slide', 'ml-slider-lightbox' ),
+                'download'           => __( 'Download', 'ml-slider-lightbox' ),
+                'playVideo'          => __( 'Play video', 'ml-slider-lightbox' ),
+                'mediaLoadingFailed' => __( 'Oops... Failed to load content...', 'ml-slider-lightbox' ),
+            ),
         );
 
         $lightbox_settings = apply_filters('ml_lightbox_settings', $lightbox_settings);
@@ -1822,7 +1834,30 @@ class MetaSliderLightboxPlugin
             add_action('admin_enqueue_scripts', array($this, 'enqueueAdminAssets'));
             add_action('updated_option', array($this, 'handleOptionUpdate'), 10, 3);
             add_action('admin_init', array($this, 'registerSettings'));
+
+            add_filter('custom_menu_order', '__return_true');
+            add_filter('menu_order', array($this, 'positionAdminMenu'));
         }
+    }
+
+    public function positionAdminMenu($menu_order)
+    {
+        if (!is_array($menu_order)) {
+            return $menu_order;
+        }
+
+        $our_slug    = 'metaslider-lightbox';
+        $anchor_slug = 'metaslider';
+
+        if (!in_array($our_slug, $menu_order, true) || !in_array($anchor_slug, $menu_order, true)) {
+            return $menu_order;
+        }
+
+        $menu_order   = array_values(array_diff($menu_order, array($our_slug)));
+        $anchor_index = array_search($anchor_slug, $menu_order, true);
+        array_splice($menu_order, $anchor_index, 0, $our_slug);
+
+        return $menu_order;
     }
 
     /**
@@ -4061,6 +4096,13 @@ class MetaSliderLightboxPlugin
                 __('Automatic slideshow with timing controls and progress bar.', 'ml-slider-lightbox'),
                 true,
                 __('Autoplay is available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
+            );
+
+            $this->renderProFeatureAd(
+                __('Enable Image Protection', 'ml-slider-lightbox'),
+                __('Discourage casual saving by blocking right-click, drag, and long-press on gallery images.', 'ml-slider-lightbox'),
+                false,
+                __('Image protection is available in MetaSlider Gallery Pro', 'ml-slider-lightbox')
             );
             ?>
         </table>

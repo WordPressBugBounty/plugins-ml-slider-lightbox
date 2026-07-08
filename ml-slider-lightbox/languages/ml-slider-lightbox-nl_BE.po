@@ -413,7 +413,7 @@ msgstr ""
 
 #: class-ml-gallery.php:679 class-ml-gallery.php:1151
 msgid "Shortcode"
-msgstr ""
+msgstr "Shortcode"
 
 #: class-ml-gallery.php:681
 msgid "Copy and paste into any post or page."
@@ -1031,7 +1031,6 @@ msgid "Show navigation arrows in lightbox"
 msgstr "Toon navigatiepijlen in lightbox"
 
 #: class-ml-slider-lightbox.php:3329
-#, fuzzy
 #| msgid ""
 #| "Display left/right arrows for navigating between slides and gallery "
 #| "images. Also enables keyboard navigation (← → keys, ESC to close)."
@@ -1049,7 +1048,6 @@ msgid "Customize the lightbox background and overlay appearance."
 msgstr "Pas de achtergrond en overlay van de lightbox aan."
 
 #: class-ml-slider-lightbox.php:3343
-#, fuzzy
 #| msgid ""
 #| "Customize navigation icons (close, previous, next arrows) that appear in "
 #| "all lightboxes."
@@ -1060,7 +1058,6 @@ msgstr ""
 "lightboxes verschijnen."
 
 #: class-ml-slider-lightbox.php:3348
-#, fuzzy
 #| msgid ""
 #| "Customize the \"Open in Lightbox\" buttons that appear on slides, images, "
 #| "and videos."
@@ -1978,3 +1975,8 @@ msgstr ""
 #~ msgid "In the block settings sidebar, find \"Link\" settings"
 #~ msgstr ""
 #~ "Zoek in de zijbalk van de blokinstellingen naar \"Link\"-instellingen"
+
+#: class-ml-gallery.php:1616
+#: class-ml-gallery.php:2638
+msgid "Click to copy shortcode."
+msgstr "Klik om de shortcode te kopiëren."

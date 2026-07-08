@@ -223,6 +223,7 @@ class MetaSliderLightboxGallery {
             'rotate'      => 0,
             'autoplay'    => 0,
             'share'       => 0,
+            'image_protection' => 0,
         );
     }
 
@@ -262,6 +263,177 @@ class MetaSliderLightboxGallery {
             'caption_text_size'  => '14',
             'caption_transition' => 'none',
         );
+    }
+
+    /**
+     * Default "Image Styles" settings for a gallery.
+     *
+     * These apply to every image in the gallery grid (filter, rounded corners,
+     * border, box shadow, opacity, rotate, flip).
+     *
+     * @return array<string,mixed>
+     */
+    private function defaultImageStyles() {
+        return array(
+            'filter'        => '',
+            'corner_radius' => 0,
+            'border_width'  => 0,
+            'border_style'  => 'solid',
+            'border_color'  => '#dddddd',
+            'box_shadow'    => 'none',
+            'opacity'       => 100,
+            'rotate'        => '0',
+            'flip'          => 'none',
+        );
+    }
+
+    /**
+     * CSS `filter` recipes keyed by preset slug.
+     *
+     * @return array<string,string>
+     */
+    private function filterPresets() {
+        return array(
+            'noir'     => 'grayscale(100%) contrast(120%)',
+            'silver'   => 'grayscale(100%) contrast(130%) brightness(105%)',
+            'vintage'  => 'sepia(55%) contrast(110%) brightness(105%)',
+            'golden'   => 'sepia(35%) saturate(150%) hue-rotate(-15deg) brightness(105%)',
+            'toaster'  => 'sepia(40%) contrast(120%) brightness(95%) saturate(110%)',
+            'warm'     => 'saturate(130%) sepia(20%)',
+            'cool'     => 'saturate(110%) hue-rotate(15deg) brightness(105%)',
+            'fade'     => 'contrast(85%) brightness(110%) saturate(80%)',
+            'matte'    => 'contrast(80%) brightness(112%) saturate(85%)',
+            'pastel'   => 'brightness(115%) saturate(75%) contrast(90%)',
+            'vivid'    => 'saturate(160%) contrast(110%)',
+            'crisp'    => 'contrast(140%) saturate(135%) brightness(102%)',
+            'dramatic' => 'contrast(140%) brightness(95%) saturate(120%)',
+            'negative' => 'invert(100%)',
+        );
+    }
+
+    /**
+     * Human-readable labels for the filter presets (keyed by slug, '' = None).
+     *
+     * @return array<string,string>
+     */
+    private function filterPresetLabels() {
+        return array(
+            ''         => __( 'None', 'ml-slider-lightbox' ),
+            'noir'     => __( 'Noir (B&W)', 'ml-slider-lightbox' ),
+            'silver'   => __( 'Silver (B&W)', 'ml-slider-lightbox' ),
+            'vintage'  => __( 'Vintage', 'ml-slider-lightbox' ),
+            'golden'   => __( 'Golden Hour', 'ml-slider-lightbox' ),
+            'toaster'  => __( 'Toaster', 'ml-slider-lightbox' ),
+            'warm'     => __( 'Warm', 'ml-slider-lightbox' ),
+            'cool'     => __( 'Cool', 'ml-slider-lightbox' ),
+            'fade'     => __( 'Fade', 'ml-slider-lightbox' ),
+            'matte'    => __( 'Matte', 'ml-slider-lightbox' ),
+            'pastel'   => __( 'Pastel', 'ml-slider-lightbox' ),
+            'vivid'    => __( 'Vivid', 'ml-slider-lightbox' ),
+            'crisp'    => __( 'Crisp', 'ml-slider-lightbox' ),
+            'dramatic' => __( 'Dramatic', 'ml-slider-lightbox' ),
+            'negative' => __( 'Negative', 'ml-slider-lightbox' ),
+        );
+    }
+
+    /**
+     * Box-shadow recipes keyed by preset slug.
+     *
+     * @param string $key Shadow preset (none|light|medium|heavy).
+     * @return string The box-shadow value, or '' for none/unknown.
+     */
+    private function shadowRecipe( $key ) {
+        $map = array(
+            'light'  => '0 2px 8px rgba(0,0,0,0.15)',
+            'medium' => '0 4px 16px rgba(0,0,0,0.25)',
+            'heavy'  => '0 8px 30px rgba(0,0,0,0.35)',
+        );
+        return isset( $map[ $key ] ) ? $map[ $key ] : '';
+    }
+
+    /**
+     * Build the scoped front-end CSS for a gallery's Image Styles.
+     *
+     * Content effects (filter, opacity, transform) target the thumbnails
+     * (`#ml-gallery-{id} img`); frame effects (corner radius, border, box
+     * shadow) target the link wrappers (`#ml-gallery-{id} > a`). The filter
+     * also carries through to the lightbox overlay image so the styled look is
+     * consistent; other effects (opacity, frame, transform) stay on the grid.
+     *
+     * @param int   $gallery_id Gallery (post) ID.
+     * @param array $styles     Resolved image-style settings.
+     * @return string CSS (may be empty if no styles are active).
+     */
+    private function buildImageStylesCss( $gallery_id, $styles ) {
+        $sel  = "#ml-gallery-{$gallery_id} img";
+        $css  = '';
+
+        // Filter.
+        $presets = $this->filterPresets();
+        $filter  = ( '' !== $styles['filter'] && isset( $presets[ $styles['filter'] ] ) ) ? $presets[ $styles['filter'] ] : '';
+        if ( '' !== $filter ) {
+            $css .= "\n{$sel}{-webkit-filter:{$filter};filter:{$filter};}";
+            $lightbox_sel = ".lg-container.ml-gallery-{$gallery_id} .lg-image,"
+                . ".lg-container.ml-gallery-{$gallery_id} .lg-thumb-item img";
+            $css .= "\n{$lightbox_sel}{-webkit-filter:{$filter};filter:{$filter};}";
+        }
+
+        // Split declarations across two selectors:
+        //  - Content effects (opacity, transform) stay on the image itself.
+        //  - Frame effects (corner radius, border, box shadow) go on the link
+        //    wrapper. This keeps the `filter` above (on the image) from
+        //    desaturating the border colour, and stops the wrapper's own
+        //    `overflow:hidden` from clipping the box shadow.
+        $sel_frame  = "#ml-gallery-{$gallery_id} > a";
+        $img_decl   = array();
+        $frame_decl = array();
+
+        $radius = max( 0, (int) $styles['corner_radius'] );
+        if ( $radius > 0 ) {
+            $frame_decl[] = "border-radius:{$radius}px";
+        }
+
+        $bw = max( 0, (int) $styles['border_width'] );
+        if ( $bw > 0 ) {
+            $bs = $styles['border_style'] ? $styles['border_style'] : 'solid';
+            $bc = $styles['border_color'] ? $styles['border_color'] : '#dddddd';
+            $frame_decl[] = "border:{$bw}px {$bs} {$bc}";
+        }
+
+        $shadow = $this->shadowRecipe( $styles['box_shadow'] );
+        if ( '' !== $shadow ) {
+            $frame_decl[] = "box-shadow:{$shadow}";
+        }
+
+        $opacity = max( 0, min( 100, (int) $styles['opacity'] ) );
+        if ( $opacity < 100 ) {
+            $img_decl[] = 'opacity:' . round( $opacity / 100, 2 );
+        }
+
+        $transform = array();
+        $deg = (int) $styles['rotate'];
+        if ( 0 !== $deg ) {
+            $transform[] = "rotate({$deg}deg)";
+        }
+        if ( 'h' === $styles['flip'] ) {
+            $transform[] = 'scaleX(-1)';
+        } elseif ( 'v' === $styles['flip'] ) {
+            $transform[] = 'scaleY(-1)';
+        } elseif ( 'both' === $styles['flip'] ) {
+            $transform[] = 'scale(-1,-1)';
+        }
+        if ( ! empty( $transform ) ) {
+            $img_decl[] = 'transform:' . implode( ' ', $transform );
+        }
+
+        if ( ! empty( $img_decl ) ) {
+            $css .= "\n{$sel}{" . implode( ';', $img_decl ) . ';}';
+        }
+        if ( ! empty( $frame_decl ) ) {
+            $css .= "\n{$sel_frame}{" . implode( ';', $frame_decl ) . ';}';
+        }
+
+        return $css;
     }
 
     /**
@@ -665,6 +837,9 @@ class MetaSliderLightboxGallery {
         $appearance       = wp_parse_args( is_array( $saved_appearance ) ? $saved_appearance : array(), $this->defaultAppearance() );
         $caption_display = $this->resolveCaptionDisplay( $saved_settings );
 
+        $saved_image_styles = $post ? get_post_meta( $post->ID, '_ml_gallery_image_styles', true ) : array();
+        $image_styles       = wp_parse_args( is_array( $saved_image_styles ) ? $saved_image_styles : array(), $this->defaultImageStyles() );
+
         $saved_captions = $post ? get_post_meta( $post->ID, '_ml_gallery_captions', true ) : array();
         $captions       = is_array( $saved_captions ) ? $saved_captions : array();
 
@@ -699,11 +874,23 @@ class MetaSliderLightboxGallery {
 
                         <div class="ml-gallery-header-actions">
                             <a href="<?php echo esc_url( admin_url( 'edit.php?post_type=ml_gallery' ) ); ?>"
-                               class="ml-gallery-toolbar-btn">
+                               class="ml-gallery-toolbar-btn ml-tipsy-bottom"
+                               title="<?php esc_attr_e( 'Back to Galleries', 'ml-slider-lightbox' ); ?>">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                 </svg>
                                 <span><?php esc_html_e( 'Galleries', 'ml-slider-lightbox' ); ?></span>
+                            </a>
+
+                            <span class="ml-gallery-toolbar-sep"></span>
+
+                            <a href="<?php echo esc_url( admin_url( 'post-new.php?post_type=ml_gallery' ) ); ?>"
+                               class="ml-gallery-toolbar-btn ml-tipsy-bottom"
+                               title="<?php esc_attr_e( 'Create New Gallery', 'ml-slider-lightbox' ); ?>">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span><?php esc_html_e( 'New', 'ml-slider-lightbox' ); ?></span>
                             </a>
 
                             <span class="ml-gallery-toolbar-sep"></span>
@@ -967,6 +1154,7 @@ class MetaSliderLightboxGallery {
                                 'share'      => __( 'Social sharing requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                                 'pager'      => __( 'Pager requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                                 'hash'       => __( 'Unique Image URLs require MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                                'image_protection' => __( 'Image protection requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                             );
 
                             $descriptions = array(
@@ -980,6 +1168,7 @@ class MetaSliderLightboxGallery {
                                 'autoplay'    => __( 'Automatically advance through the images without the user clicking.', 'ml-slider-lightbox' ),
                                 'share'       => __( 'Enable users to share images on Facebook, X, or Pinterest.', 'ml-slider-lightbox' ),
                                 'hash'        => __( 'Create a unique URL for each image to enable direct linking inside a gallery.', 'ml-slider-lightbox' ),
+                                'image_protection' => __( 'Discourage casual saving by blocking right-click, drag, and long-press on gallery images.', 'ml-slider-lightbox' ),
                                 'keyboard'    => __( 'Navigate images using left and right arrow keys', 'ml-slider-lightbox' ),
                                 'mousewheel'  => __( 'Scroll through images using the mouse wheel', 'ml-slider-lightbox' ),
                                 'swipe_close' => __( 'Swipe up or down to close the gallery on touch devices', 'ml-slider-lightbox' ),
@@ -1079,6 +1268,12 @@ class MetaSliderLightboxGallery {
                                     </div>
                                 </div>
                             </div>
+
+                            <?php if ( $this->is_pro ) : ?>
+                                <?php do_action( 'ml_gallery_pro_gallery_fields', $gallery_id ); ?>
+                            <?php else : ?>
+                                <?php $render_toggle( 'image_protection', __( 'Protect images', 'ml-slider-lightbox' ) ); ?>
+                            <?php endif; ?>
 
                             <?php $hide_lightbox_sections = in_array( $lg_settings['layout'], array( 'grid', 'masonry', 'justified' ), true ) && empty( $lg_settings['open_in_lightbox'] ); ?>
                             <div class="ml-lightbox-settings-group<?php echo $hide_lightbox_sections ? ' is-hidden' : ''; ?>">
@@ -1299,6 +1494,121 @@ class MetaSliderLightboxGallery {
 
                         </div>
 
+                        <div class="ml-gallery-sidebar-panel">
+                            <h3><?php esc_html_e( 'Image Styles', 'ml-slider-lightbox' ); ?></h3>
+
+                            <div class="ml-gallery-setting">
+                                <label for="ml_gallery_filter" class="ml-tipsy" title="<?php esc_attr_e( 'Apply a filter to every image in the gallery', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Filter', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_filter" name="ml_gallery_image_styles[filter]">
+                                    <?php foreach ( $this->filterPresetLabels() as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( $image_styles['filter'], $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col">
+                                <label for="ml_gallery_corner_radius" class="ml-tipsy" title="<?php esc_attr_e( 'Corner radius in pixels applied to every image', 'ml-slider-lightbox' ); ?>">
+                                    <?php esc_html_e( 'Rounded Corners', 'ml-slider-lightbox' ); ?>
+                                    <span class="ml-gallery-range-value"><?php echo esc_html( (string) $image_styles['corner_radius'] ); ?>px</span>
+                                </label>
+                                <input type="range" min="0" max="200" step="1"
+                                       id="ml_gallery_corner_radius"
+                                       name="ml_gallery_image_styles[corner_radius]"
+                                       value="<?php echo esc_attr( (string) $image_styles['corner_radius'] ); ?>"
+                                       class="ml-gallery-range widefat">
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col">
+                                <label for="ml_gallery_border_width" class="ml-tipsy" title="<?php esc_attr_e( 'Image border width in pixels (0 = no border)', 'ml-slider-lightbox' ); ?>">
+                                    <?php esc_html_e( 'Border Width', 'ml-slider-lightbox' ); ?>
+                                    <span class="ml-gallery-range-value"><?php echo esc_html( (string) $image_styles['border_width'] ); ?>px</span>
+                                </label>
+                                <input type="range" min="0" max="50" step="1"
+                                       id="ml_gallery_border_width"
+                                       name="ml_gallery_image_styles[border_width]"
+                                       value="<?php echo esc_attr( (string) $image_styles['border_width'] ); ?>"
+                                       class="ml-gallery-range widefat">
+                            </div>
+
+                            <div class="ml-gallery-setting">
+                                <label for="ml_gallery_border_style" class="ml-tipsy" title="<?php esc_attr_e( 'Line style used for the image border', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Border Style', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_border_style" name="ml_gallery_image_styles[border_style]">
+                                    <?php foreach ( array(
+                                        'solid'  => __( 'Solid', 'ml-slider-lightbox' ),
+                                        'dashed' => __( 'Dashed', 'ml-slider-lightbox' ),
+                                        'dotted' => __( 'Dotted', 'ml-slider-lightbox' ),
+                                        'double' => __( 'Double', 'ml-slider-lightbox' ),
+                                    ) as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( $image_styles['border_style'], $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col">
+                                <label for="ml_gallery_border_color"><?php esc_html_e( 'Border Color', 'ml-slider-lightbox' ); ?></label>
+                                <input type="text"
+                                       id="ml_gallery_border_color"
+                                       name="ml_gallery_image_styles[border_color]"
+                                       value="<?php echo esc_attr( $image_styles['border_color'] ); ?>"
+                                       class="ml-gallery-color-picker"
+                                       data-default-color="#dddddd">
+                            </div>
+
+                            <div class="ml-gallery-setting">
+                                <label for="ml_gallery_box_shadow" class="ml-tipsy" title="<?php esc_attr_e( 'Drop shadow depth cast behind each image', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Box Shadow', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_box_shadow" name="ml_gallery_image_styles[box_shadow]">
+                                    <?php foreach ( array(
+                                        'none'   => __( 'None', 'ml-slider-lightbox' ),
+                                        'light'  => __( 'Light', 'ml-slider-lightbox' ),
+                                        'medium' => __( 'Medium', 'ml-slider-lightbox' ),
+                                        'heavy'  => __( 'Heavy', 'ml-slider-lightbox' ),
+                                    ) as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( $image_styles['box_shadow'], $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col">
+                                <label for="ml_gallery_opacity" class="ml-tipsy" title="<?php esc_attr_e( 'Image opacity as a percentage', 'ml-slider-lightbox' ); ?>">
+                                    <?php esc_html_e( 'Opacity', 'ml-slider-lightbox' ); ?>
+                                    <span class="ml-gallery-range-value"><?php echo esc_html( (string) $image_styles['opacity'] ); ?>%</span>
+                                </label>
+                                <input type="range" min="0" max="100" step="1"
+                                       id="ml_gallery_opacity"
+                                       name="ml_gallery_image_styles[opacity]"
+                                       value="<?php echo esc_attr( (string) $image_styles['opacity'] ); ?>"
+                                       class="ml-gallery-range widefat">
+                            </div>
+
+                            <div class="ml-gallery-setting">
+                                <label for="ml_gallery_rotate" class="ml-tipsy" title="<?php esc_attr_e( 'Rotate every image by a fixed angle', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Rotate', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_rotate" name="ml_gallery_image_styles[rotate]">
+                                    <?php foreach ( array(
+                                        '0'   => __( 'None', 'ml-slider-lightbox' ),
+                                        '90'  => '90°',
+                                        '180' => '180°',
+                                        '270' => '270°',
+                                    ) as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( (string) $image_styles['rotate'], (string) $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <div class="ml-gallery-setting">
+                                <label for="ml_gallery_flip" class="ml-tipsy" title="<?php esc_attr_e( 'Mirror every image horizontally, vertically, or both', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Flip', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_flip" name="ml_gallery_image_styles[flip]">
+                                    <?php foreach ( array(
+                                        'none' => __( 'None', 'ml-slider-lightbox' ),
+                                        'h'    => __( 'Horizontal', 'ml-slider-lightbox' ),
+                                        'v'    => __( 'Vertical', 'ml-slider-lightbox' ),
+                                        'both' => __( 'Both', 'ml-slider-lightbox' ),
+                                    ) as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( $image_styles['flip'], $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+
                         <?php if ( ! $is_new ) : ?>
                             <div class="ml-gallery-sidebar-panel">
                                 <h3><?php esc_html_e( 'Shortcode', 'ml-slider-lightbox' ); ?></h3>
@@ -1467,6 +1777,26 @@ class MetaSliderLightboxGallery {
                 'caption_text_size'  => (string) min( 24, max( 10, (int) ( $app_raw['caption_text_size'] ?? 14 ) ) ),
                 'caption_transition' => in_array( $app_raw['caption_transition'] ?? '', array_keys( $this->allowedCaptionTransitions() ), true )
                     ? $app_raw['caption_transition'] : 'none',
+            ) );
+
+            $styles_raw = isset( $_POST['ml_gallery_image_styles'] ) && is_array( $_POST['ml_gallery_image_styles'] )
+                ? array_map( 'sanitize_text_field', wp_unslash( $_POST['ml_gallery_image_styles'] ) )
+                : array();
+            $raw_filter       = isset( $styles_raw['filter'] ) ? sanitize_key( $styles_raw['filter'] ) : '';
+            $raw_border_style = isset( $styles_raw['border_style'] ) ? sanitize_key( $styles_raw['border_style'] ) : 'solid';
+            $raw_box_shadow   = isset( $styles_raw['box_shadow'] ) ? sanitize_key( $styles_raw['box_shadow'] ) : 'none';
+            $raw_rotate       = isset( $styles_raw['rotate'] ) ? sanitize_key( $styles_raw['rotate'] ) : '0';
+            $raw_flip         = isset( $styles_raw['flip'] ) ? sanitize_key( $styles_raw['flip'] ) : 'none';
+            update_post_meta( $gallery_id, '_ml_gallery_image_styles', array(
+                'filter'        => array_key_exists( $raw_filter, $this->filterPresets() ) ? $raw_filter : '',
+                'corner_radius' => min( 200, max( 0, (int) ( $styles_raw['corner_radius'] ?? 0 ) ) ),
+                'border_width'  => min( 50, max( 0, (int) ( $styles_raw['border_width'] ?? 0 ) ) ),
+                'border_style'  => in_array( $raw_border_style, array( 'solid', 'dashed', 'dotted', 'double' ), true ) ? $raw_border_style : 'solid',
+                'border_color'  => sanitize_hex_color( $styles_raw['border_color'] ?? '' ) ?: '#dddddd',
+                'box_shadow'    => in_array( $raw_box_shadow, array( 'none', 'light', 'medium', 'heavy' ), true ) ? $raw_box_shadow : 'none',
+                'opacity'       => min( 100, max( 0, (int) ( $styles_raw['opacity'] ?? 100 ) ) ),
+                'rotate'        => in_array( $raw_rotate, array( '0', '90', '180', '270' ), true ) ? $raw_rotate : '0',
+                'flip'          => in_array( $raw_flip, array( 'none', 'h', 'v', 'both' ), true ) ? $raw_flip : 'none',
             ) );
 
             $raw_layout = isset( $settings_raw['layout'] ) ? sanitize_key( $settings_raw['layout'] ) : 'grid';
@@ -2015,6 +2345,10 @@ class MetaSliderLightboxGallery {
                 }
             ";
         }
+
+        $saved_styles = get_post_meta( $gallery_id, '_ml_gallery_image_styles', true );
+        $image_styles = wp_parse_args( is_array( $saved_styles ) ? $saved_styles : array(), $this->defaultImageStyles() );
+        $inline_css  .= $this->buildImageStylesCss( $gallery_id, $image_styles );
 
         self::$queued_css[ $gallery_id ] = $inline_css;
 

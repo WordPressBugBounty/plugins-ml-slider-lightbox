@@ -426,8 +426,8 @@ msgid ""
 msgstr "MetaSlider Gallery requires MetaSlider and at least one other supported lightbox plugin to be installed and activated."
 
 #: class-ml-slider-lightbox.php:1060
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:380
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:436
+#: class-ml-slider-lightbox.php:380
+#: class-ml-slider-lightbox.php:436
 msgid "More info"
 msgstr "Más información"
 
@@ -438,17 +438,17 @@ msgid ""
 msgstr "Hay más de un plugin de caja de luz activado. Esto puede causar conflictos con MetaSlider Gallery"
 
 #: class-ml-slider-lightbox.php:1131
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:448
+#: class-ml-slider-lightbox.php:448
 msgid "Edit settings"
 msgstr "Editar ajustes"
 
 #: class-ml-slider-lightbox.php:1138
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:455
+#: class-ml-slider-lightbox.php:455
 msgid "Open in lightbox?"
 msgstr "¿Abrir en caja de luz?"
 
 #: class-ml-slider-lightbox.php:1143
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:460
+#: class-ml-slider-lightbox.php:460
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a lightbox, using %s"
@@ -479,7 +479,7 @@ msgstr "Para utilizar MetaSlider Gallery es obligatorio instalar y activar MetaS
 msgid "Install MetaSlider"
 msgstr "Instalar MetaSlider"
 
-#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1950, fuzzy
+#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1950 , fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
@@ -1271,7 +1271,7 @@ msgstr "Características"
 msgid "Free"
 msgstr "Gratis"
 
-#: class-ml-slider-lightbox.php:4078, fuzzy
+#: class-ml-slider-lightbox.php:4078 , fuzzy
 msgid "Pro"
 msgstr "Pro"
 
@@ -1494,7 +1494,7 @@ msgstr "Método 2: HTML/Código"
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "Para desarrolladores de HTML personalizado o temas, añadir la clase directamente:"
 
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:376
+#: class-ml-slider-lightbox.php:376
 msgid ""
 "MetaSlider Lightbox requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1502,7 +1502,7 @@ msgstr ""
 "Para utilizar MetaSlider Lightbox es obligatorio que MetaSlider y al menos "
 "otro plugin de caja de luz compatible esté instalado y activado."
 
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:394
+#: class-ml-slider-lightbox.php:394
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Lightbox"
@@ -1510,7 +1510,7 @@ msgstr ""
 "Hay más de un plugin de caja de luz activado. Esto puede causar conflictos "
 "con MetaSlider Lightbox"
 
-#: dist/ml-slider-lightbox/class-ml-slider-lightbox.php:433
+#: class-ml-slider-lightbox.php:433
 msgid ""
 "Warning: MetaSlider Lightbox is installed but no supported lightbox plugin "
 "is active."
@@ -1586,3 +1586,8 @@ msgstr ""
 
 #~ msgid "https://www.metaslider.com"
 #~ msgstr "https://www.metaslider.com"
+
+#: class-ml-gallery.php:1616
+#: class-ml-gallery.php:2638
+msgid "Click to copy shortcode."
+msgstr "Haz clic para copiar el shortcode."

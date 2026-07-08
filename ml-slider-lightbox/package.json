@@ -8,14 +8,23 @@
     "wp-env": "wp-env",
     "test:e2e": "playwright test --config tests/e2e/playwright.config.js",
     "report": "node tests/bin/report.mjs",
-    "report:e2e": "node tests/bin/report.mjs --e2e"
+    "report:e2e": "node tests/bin/report.mjs --e2e",
+    "docs:auth": "node docs/scripts/auth.mjs",
+    "docs:new": "node docs/scripts/new.mjs",
+    "docs:capture": "node docs/scripts/capture.mjs",
+    "docs:publish": "node docs/scripts/publish.mjs",
+    "docs:article": "node docs/scripts/capture.mjs $npm_config_dir && node docs/scripts/publish.mjs $npm_config_dir"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",
     "@wordpress/env": "^10.39.0",
     "@wordpress/scripts": "^30.0.0",
+    "gray-matter": "^4.0.3",
     "jest-junit": "^17.0.0",
     "jquery": "^3.7.1",
+    "markdown-it": "^14.1.0",
+    "pixelmatch": "^6.0.0",
+    "pngjs": "^7.0.0",
     "xunit-viewer": "^10.6.1"
   }
 }

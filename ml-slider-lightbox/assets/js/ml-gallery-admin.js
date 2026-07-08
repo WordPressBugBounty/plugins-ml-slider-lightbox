@@ -150,12 +150,14 @@
 		} ).addClass( 'ml-gallery-caption-input' ).val( '' );
 
 		$item.append( $img ).append( $remove ).append( $edit ).append( $captionInput );
-
 		if ( position === 'start' ) {
 			$( '#ml-gallery-preview' ).prepend( $item );
 		} else {
 			$( '#ml-gallery-preview' ).append( $item );
 		}
+
+		// Let the Image Styles live preview restyle the new thumbnail.
+		$( document ).trigger( 'ml-gallery-image-added' );
 	}
 
 	// ── Media library ─────────────────────────────────────────────────────── //
@@ -645,17 +647,107 @@
 	$( function () {
 		if ( $.fn.tipsy ) {
 			$( '.ml-tipsy' ).tipsy( { gravity: 'e', fade: true } );
+			$( '.ml-tipsy-bottom' ).tipsy( { gravity: 'n', fade: true } );
+		}
+
+		// ── Image Styles live preview ─────────────────────────────────────── //
+
+		var IMG_STYLE_PRESETS = {
+			noir:     'grayscale(100%) contrast(120%)',
+			silver:   'grayscale(100%) contrast(130%) brightness(105%)',
+			vintage:  'sepia(55%) contrast(110%) brightness(105%)',
+			golden:   'sepia(35%) saturate(150%) hue-rotate(-15deg) brightness(105%)',
+			toaster:  'sepia(40%) contrast(120%) brightness(95%) saturate(110%)',
+			warm:     'saturate(130%) sepia(20%)',
+			cool:     'saturate(110%) hue-rotate(15deg) brightness(105%)',
+			fade:     'contrast(85%) brightness(110%) saturate(80%)',
+			matte:    'contrast(80%) brightness(112%) saturate(85%)',
+			pastel:   'brightness(115%) saturate(75%) contrast(90%)',
+			vivid:    'saturate(160%) contrast(110%)',
+			crisp:    'contrast(140%) saturate(135%) brightness(102%)',
+			dramatic: 'contrast(140%) brightness(95%) saturate(120%)',
+			negative: 'invert(100%)'
+		};
+		var IMG_STYLE_SHADOW = {
+			light:  '0 2px 8px rgba(0,0,0,0.15)',
+			medium: '0 4px 16px rgba(0,0,0,0.25)',
+			heavy:  '0 8px 30px rgba(0,0,0,0.35)'
+		};
+
+		function imgStyleVal( id ) {
+			var el = document.getElementById( id );
+			return el ? el.value : '';
+		}
+
+		function applyImageStylesPreview() {
+			var imgs = document.querySelectorAll( '#ml-gallery-preview .ml-gallery-item img' );
+			if ( ! imgs.length ) { return; }
+
+			var filter = IMG_STYLE_PRESETS[ imgStyleVal( 'ml_gallery_filter' ) ] || '';
+
+			var radius = parseInt( imgStyleVal( 'ml_gallery_corner_radius' ), 10 ) || 0;
+			var bw     = parseInt( imgStyleVal( 'ml_gallery_border_width' ), 10 ) || 0;
+			var bs     = imgStyleVal( 'ml_gallery_border_style' ) || 'solid';
+			var bc     = imgStyleVal( 'ml_gallery_border_color' ) || '#dddddd';
+			var shadow = IMG_STYLE_SHADOW[ imgStyleVal( 'ml_gallery_box_shadow' ) ] || '';
+			var op     = parseInt( imgStyleVal( 'ml_gallery_opacity' ), 10 );
+			if ( isNaN( op ) ) { op = 100; }
+
+			var transform = [];
+			var deg  = parseInt( imgStyleVal( 'ml_gallery_rotate' ), 10 ) || 0;
+			var flip = imgStyleVal( 'ml_gallery_flip' ) || 'none';
+			if ( deg !== 0 ) { transform.push( 'rotate(' + deg + 'deg)' ); }
+			if ( flip === 'h' ) { transform.push( 'scaleX(-1)' ); }
+			else if ( flip === 'v' ) { transform.push( 'scaleY(-1)' ); }
+			else if ( flip === 'both' ) { transform.push( 'scale(-1,-1)' ); }
+			var transformCss = transform.join( ' ' );
+
+			imgs.forEach( function ( img ) {
+				// Content effects stay on the image.
+				img.style.filter          = filter;
+				img.style.webkitFilter    = filter;
+				img.style.borderRadius    = radius > 0 ? radius + 'px' : '';
+				img.style.opacity         = op < 100 ? ( op / 100 ) : '';
+				img.style.transform       = transformCss;
+				img.style.webkitTransform = transformCss;
+
+				// Frame effects (border, shadow) go on the wrapper so the
+				// filter can't desaturate the border and the shadow isn't
+				// clipped. Mirrors the front-end split (image vs `> a`).
+				var frame = img.closest( '.ml-gallery-item' ) || img;
+				frame.style.boxShadow = shadow;
+				if ( bw > 0 ) {
+					frame.style.border       = bw + 'px ' + bs + ' ' + bc;
+					frame.style.borderRadius = radius > 0 ? radius + 'px' : '';
+					// Hide the item's default chrome border to avoid doubling.
+					if ( frame !== img ) { img.style.border = 'none'; }
+				} else {
+					frame.style.border       = '';
+					frame.style.borderRadius = '';
+					if ( frame !== img ) { img.style.border = ''; }
+				}
+			} );
 		}
 
 		if ( $.fn.wpColorPicker ) {
-			$( '.ml-gallery-color-picker' ).wpColorPicker();
+			// Preview on colour changes too (harmless for appearance pickers).
+			$( '.ml-gallery-color-picker' ).wpColorPicker( {
+				change: function () { setTimeout( applyImageStylesPreview, 0 ); },
+				clear:  function () { applyImageStylesPreview(); }
+			} );
 		}
+
+		$( document ).on( 'change input', '[name^="ml_gallery_image_styles["]', applyImageStylesPreview );
+		// Re-apply to thumbnails added to the preview grid after load.
+		$( document ).on( 'ml-gallery-image-added', applyImageStylesPreview );
+		applyImageStylesPreview();
 
 		$( document ).on( 'input', '.ml-gallery-range', function () {
 			const $val   = $( this ).closest( '.ml-gallery-setting' ).find( '.ml-gallery-range-value' );
-			const isGap  = $( this ).is( '#ml_gallery_gap, #ml_gallery_caption_text_size' );
+			const isPx   = $( this ).is( '#ml_gallery_gap, #ml_gallery_caption_text_size, #ml_gallery_corner_radius, #ml_gallery_border_width' );
 			const isMs   = $( this ).is( '#ml_gallery_autoplay_interval, #ml_gallery_pro_autoplay_interval' );
-			const suffix = isGap ? 'px' : ( isMs ? 'ms' : '' );
+			const isPct  = $( this ).is( '#ml_gallery_opacity' );
+			const suffix = isPx ? 'px' : ( isMs ? 'ms' : ( isPct ? '%' : '' ) );
 			$val.text( this.value + suffix );
 		} );
 

@@ -65,21 +65,18 @@
 	gap: var(--ml-gap);
 }
 
+/* Fixed height; per-item width is set by ml-gallery-layout.js (row-packing). */
 .ml-gallery-container.ml-layout-justified > a {
-	flex-grow: 1;
+	flex: 1 1 auto;
+	height: 220px;
 	overflow: hidden;
 }
 
 .ml-gallery-container.ml-layout-justified > a img {
-	height: 220px;
-	min-width: 100%;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	vertical-align: bottom;
-}
-
-/* Last row: don't stretch orphaned items to fill the whole row */
-.ml-gallery-container.ml-layout-justified > a:last-child {
-	flex-grow: 0;
 }
 
 /* ── Carousel (lightGallery inline carousel) ────────────────────────────── */

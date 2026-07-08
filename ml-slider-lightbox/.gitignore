@@ -15,8 +15,13 @@
 .phpunit.result.cache
 *.md
 *.zip
-/docs
 /tests/
-/docs/
-*.zip
 .superpowers/
+
+# How-to pipeline (docs/): tracked in git for docs-as-code, but excluded from the
+# shipped plugin via /docs export-ignore (.gitattributes) and `- docs` (.builder-rsync-filters).
+# Re-include article Markdown that the global *.md rule above would otherwise swallow,
+# and keep the authenticated Playwright session out of git.
+!docs/**/*.md
+docs/auth/storageState.json
+*.yml

@@ -3,7 +3,7 @@ Contributors: andergmartins, htmgarcia, publishpress, stevejburge, rochdesigns
 Tags: gallery, image gallery, video gallery, wordpress gallery, YouTube gallery
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 2.33.0
+Stable tag: 2.34.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -140,6 +140,16 @@ Yes, a legacy feature in this plugin allows you to connect other gallery window 
 
 The format is based on [Keep a Changelog recommendations](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+= [2.34.0] - 8 Jul, 2026 =
+
+* ADDED: Per-gallery image styling — filters, rounded corners, border, shadow, opacity, and rotate/flip, #510;
+* CHANGED: Image Styles filters now also apply to the lightbox image and thumbnail strip, #523;
+* CHANGED: Updated the toolbar icons to match MetaSlider and added a New Gallery button, #375;
+* CHANGED: Justified galleries now stretch the final row to fill the width, #399;
+* FIXED: Fullscreen did not work with the carousel layout, #425, #431;
+* FIXED: Keep the Gallery admin menu next to MetaSlider when other plugins insert between them, #379;
+* FIXED: Small translation issues, including untranslatable gallery close and navigation labels, #507, #383;
 
 = [2.33.0] - 25 Jun, 2026 =
 

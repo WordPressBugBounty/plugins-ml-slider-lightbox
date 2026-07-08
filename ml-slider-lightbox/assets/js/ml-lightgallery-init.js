@@ -732,6 +732,21 @@
                 carousel: []
             };
 
+            var $mlInlineFsGallery = null;
+            $(document).off('.mlInlineFs').on(
+                'fullscreenchange.mlInlineFs webkitfullscreenchange.mlInlineFs mozfullscreenchange.mlInlineFs MSFullscreenChange.mlInlineFs',
+                function() {
+                    if (!$mlInlineFsGallery) { return; }
+                    var inFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement ||
+                        document.mozFullScreenElement || document.msFullscreenElement);
+                    var $gallery = $mlInlineFsGallery;
+                    $gallery.find('.lg-container').first().toggleClass('lg-inline', !inFullscreen);
+                    var inst = $gallery[0]._mlLgInstance;
+                    if (inst && typeof inst.refreshOnResize === 'function') { inst.refreshOnResize(); }
+                    if (!inFullscreen) { $mlInlineFsGallery = null; }
+                }
+            );
+
             $('.ml-gallery-container[data-ml-gallery]').filter(function() {
                 return !$(this).hasClass('lg-initialized') && $(this).data('ml-lightbox') !== 0;
             }).each(function() {
@@ -766,7 +781,12 @@
                         try {
                             var inlineGallery = lightGallery($container[0], inlineSettings);
                             inlineGallery.openGallery();
+                            $container[0]._mlLgInstance = inlineGallery;
                             $container.addClass('lg-initialized');
+
+                            $container.on('click.mlInlineFs', '.lg-fullscreen', function() {
+                                $mlInlineFsGallery = $container;
+                            });
                         } catch (error) {
                             console.error('MetaSlider Lightbox: inline gallery init error:', error);
                         }
@@ -1309,6 +1329,12 @@
             ariaLabelledby: '',  // Will be set dynamically per image
             ariaDescribedby: ''  // Will be set dynamically per image
         };
+
+        // Feed WordPress-translated labels into lightGallery's built-in UI
+        // (close, prev/next, download, etc.), which are hardcoded English by default.
+        if (mlLightboxSettings.lg_strings) {
+            settings.strings = mlLightboxSettings.lg_strings;
+        }
 
         if (typeof _mlLk !== 'undefined') {
             settings.licenseKey = _mlLk;
