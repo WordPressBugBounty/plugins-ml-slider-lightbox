@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.34.0';
+    public $version = '2.35.0';
     protected static $instance = null;
     private $supported_plugins = array();
 
@@ -64,6 +64,7 @@ class MetaSliderLightboxPlugin
         add_action('admin_init', array($this, 'migrateBackgroundColorSettings'));
         add_action('admin_init', array($this, 'migrateEnableOnAllMetaSliderSlideshows'));
         add_action('admin_init', array($this, 'activationRedirect'));
+        add_action('all_admin_notices', array($this, 'renderWelcomeBanner'), 11);
         add_filter('body_class', array($this, 'addContentFilteringBodyClass'));
         add_action( 'init', array( $this, 'store_plugin_data' ) );
     }
@@ -96,6 +97,133 @@ class MetaSliderLightboxPlugin
 
         wp_safe_redirect(admin_url('edit.php?post_type=ml_gallery'));
         exit;
+    }
+
+    /**
+     * Show a one-time animated "thank you" banner on the gallery list page
+     * right after activation. Gated by a transient set on activation and
+     * deleted on first render, so a page refresh (or dismiss) never brings
+     * it back — it appears exactly once.
+     */
+    public function renderWelcomeBanner()
+    {
+        $screen = get_current_screen();
+        if (!$screen || $screen->id !== 'edit-ml_gallery') {
+            return;
+        }
+
+        if (!get_transient('metaslider_lightbox_welcome')) {
+            return;
+        }
+
+        delete_transient('metaslider_lightbox_welcome');
+
+        ?>
+        <style>
+            .ml-welcome-banner {
+                position: relative;
+                overflow: hidden;
+                margin: 16px 20px 10px 20px;
+                padding: 40px 48px 40px 24px;
+                border: 1px solid #dcdcde;
+                border-left: 4px solid #dd6923;
+                border-radius: 6px;
+                background: #fff;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .06);
+                animation: ml-welcome-in .5s cubic-bezier(.16, 1, .3, 1) both;
+            }
+            .ml-welcome-banner__content {
+                text-align: center;
+            }
+            .ml-welcome-banner__title {
+                margin: 0 0 4px;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 1.4;
+            }
+            .ml-welcome-banner__text {
+                margin: 0;
+                color: #50575e;
+                font-size: 13px;
+            }
+            .ml-welcome-banner__dismiss {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 28px;
+                height: 28px;
+                padding: 0;
+                border: 0;
+                border-radius: 4px;
+                background: transparent;
+                color: #787c82;
+                cursor: pointer;
+            }
+            .ml-welcome-banner__dismiss:hover {
+                background: #f0f0f1;
+                color: #1d2327;
+            }
+            .ml-welcome-confetti {
+                position: absolute;
+                top: -16px;
+                opacity: 0;
+                animation-name: ml-welcome-confetti;
+                animation-timing-function: cubic-bezier(.37, 0, .63, 1);
+                animation-fill-mode: forwards;
+            }
+            @keyframes ml-welcome-in {
+                from { opacity: 0; transform: translateY(-10px); }
+                to   { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes ml-welcome-confetti {
+                0%   { opacity: 0; transform: translate(0, -8px) rotate(0deg); }
+                12%  { opacity: 1; }
+                85%  { opacity: 1; }
+                100% { opacity: 0; transform: translate(var(--drift, 0), var(--fall, 160px)) rotate(var(--spin, 360deg)); }
+            }
+            @media (prefers-reduced-motion: reduce) {
+                .ml-welcome-banner { animation: none; }
+                .ml-welcome-confetti { display: none; }
+            }
+        </style>
+        <div class="ml-welcome-banner" role="status">
+            <?php
+            $confetti = array('#dd6923', '#c45a1a', '#f0a868', '#f7c948', '#00a32a', '#2271b1');
+            $palette  = count($confetti);
+            for ($i = 0; $i < 28; $i++) {
+                $size  = wp_rand(5, 9);
+                $is_dot = (0 === $i % 3);
+                printf(
+                    '<span class="ml-welcome-confetti" style="left:%d%%;width:%dpx;height:%dpx;border-radius:%s;background:%s;--drift:%dpx;--fall:%dpx;--spin:%ddeg;animation-duration:%ss;animation-delay:%dms"></span>',
+                    wp_rand(1, 97),
+                    $size,
+                    $is_dot ? $size : $size + wp_rand(3, 8),
+                    $is_dot ? '50%' : '1px',
+                    esc_attr($confetti[$i % $palette]),
+                    wp_rand(-55, 55),
+                    wp_rand(120, 190),
+                    wp_rand(120, 900),
+                    wp_rand(110, 190) / 100,
+                    wp_rand(0, 650)
+                );
+            }
+            ?>
+            <div class="ml-welcome-banner__content">
+                <p class="ml-welcome-banner__title">
+                    <?php esc_html_e('👋 Thanks for installing MetaSlider Gallery!', 'ml-slider-lightbox'); ?>
+                </p>
+                <p class="ml-welcome-banner__text">
+                    <?php esc_html_e('You\'re all set. Create your first gallery to get started.', 'ml-slider-lightbox'); ?>
+                </p>
+            </div>
+            <button type="button" class="ml-welcome-banner__dismiss" aria-label="<?php esc_attr_e('Dismiss', 'ml-slider-lightbox'); ?>" onclick="this.closest('.ml-welcome-banner').remove()">
+                <span class="dashicons dashicons-no-alt"></span>
+            </button>
+        </div>
+        <?php
     }
 
     public function initializeWordPressLightboxOverride()
@@ -1116,8 +1244,7 @@ class MetaSliderLightboxPlugin
 
             $captions_value    = isset($settings['lightbox_captions'])    ? $settings['lightbox_captions']    : 'global';
             $navigation_value  = isset($settings['lightbox_navigation'])  ? $settings['lightbox_navigation']  : 'global';
-            $button_value      = isset($settings['lightbox_button'])      ? $settings['lightbox_button']      : 'global';
-            $icon_value        = isset($settings['lightbox_icon'])        ? $settings['lightbox_icon']        : 'global';
+            $open_with_value   = $this->resolveLightboxOpenWith($settings);
 
             $msl_lightbox = array(
                 'lightbox' => array(
@@ -1134,14 +1261,12 @@ class MetaSliderLightboxPlugin
                     'dependencies' => array(
                         array('show' => 'lightbox_captions',   'when' => true),
                         array('show' => 'lightbox_navigation', 'when' => true),
-                        array('show' => 'lightbox_button',     'when' => true),
-                        array('show' => 'lightbox_icon',       'when' => true),
+                        array('show' => 'lightbox_open_with',  'when' => true),
                     ),
                 ),
                 'lightbox_captions'   => $this->perSliderSelectField(6, __('Show Captions', 'ml-slider-lightbox'), $captions_value, __('Show captions in the gallery for each slide.', 'ml-slider-lightbox')),
                 'lightbox_navigation' => $this->perSliderSelectField(7, __('Show Navigation Arrows', 'ml-slider-lightbox'), $navigation_value, __('Show previous/next arrows in the gallery.', 'ml-slider-lightbox')),
-                'lightbox_button'     => $this->perSliderSelectField(8, __('Show "Open In Gallery" Button', 'ml-slider-lightbox'), $button_value, __('Show a button on each slide to open the image in the gallery.', 'ml-slider-lightbox')),
-                'lightbox_icon'       => $this->perSliderSelectField(9, __('Show An Icon Instead Of Button', 'ml-slider-lightbox'), $icon_value, __('Display an icon instead of a text button on each slide.', 'ml-slider-lightbox')),
+                'lightbox_open_with'  => $this->perSliderOpenWithField(8, $open_with_value),
             );
             if ($this->isGlobalMetaSliderLightboxEnabled()) {
                 $settings_url  = esc_url( admin_url( 'admin.php?page=metaslider-lightbox&tab=detection' ) );
@@ -1471,12 +1596,14 @@ class MetaSliderLightboxPlugin
             $sliders = $wpdb->get_results($wpdb->prepare("SELECT ID FROM {$wpdb->posts} WHERE post_type = %s AND post_status = %s", 'ml-slider', 'publish'));
             foreach ($sliders as $slider) {
                 $settings = get_post_meta($slider->ID, 'ml-slider_settings', true);
+                $open_with = $this->resolveLightboxOpenWith($settings);
                 $slider_settings[$slider->ID] = array(
                     'lightbox_enabled'    => $this->isLightboxEnabled(isset($settings['lightbox']) ? $settings['lightbox'] : null),
                     'lightbox_captions'   => $this->parsePerSliderBool($settings, 'lightbox_captions'),
                     'lightbox_navigation' => $this->parsePerSliderBool($settings, 'lightbox_navigation'),
-                    'lightbox_button'     => $this->parsePerSliderBool($settings, 'lightbox_button'),
-                    'lightbox_icon'       => $this->parsePerSliderBool($settings, 'lightbox_icon'),
+                    // 'global' => null (JS falls back to the global show/icon settings);
+                    // otherwise one of image|icon|button.
+                    'lightbox_open_with'  => ('global' === $open_with) ? null : $open_with,
                 );
             }
         }
@@ -1568,7 +1695,66 @@ class MetaSliderLightboxPlugin
         );
     }
 
-    private function addCustomLightboxCss()
+    /**
+     * Per-slider "how visitors open images" field definition for addSettings() —
+     * unifies the old separate lightbox_button (show button/icon at all) and
+     * lightbox_icon (icon vs text button) selects into one Global/Image/Icon/Button
+     * select, matching the equivalent global setting (see TriggerControl and
+     * lightboxTriggerModeCallback()).
+     *
+     * @since 2.35
+     * 
+     * @param int    $priority Field priority.
+     * @param string $value    Current stored value: global|image|icon|button.
+     * @return array
+     */
+    private function perSliderOpenWithField($priority, $value)
+    {
+        return array(
+            'priority' => $priority,
+            'type'     => 'select',
+            'label'    => __('How Visitors Open Images', 'ml-slider-lightbox'),
+            'class'    => 'coin flex responsive nivo',
+            'value'    => $value,
+            'helptext' => __('Choose whether clicking the image, an icon, or a button opens the gallery.', 'ml-slider-lightbox'),
+            'options'  => array(
+                'global' => array('label' => __('Global', 'ml-slider-lightbox')),
+                'image'  => array('label' => __('Image',  'ml-slider-lightbox')),
+                'icon'   => array('label' => __('Icon',   'ml-slider-lightbox')),
+                'button' => array('label' => __('Button', 'ml-slider-lightbox')),
+            ),
+        );
+    }
+
+    /**
+     * Resolve the unified lightbox_open_with value for a slider's settings,
+     * migrating on the fly from the older separate lightbox_button/lightbox_icon
+     * per-slider overrides for slideshows saved before they were unified.
+     *
+     * @since 2.35
+     * 
+     * @param array $settings Slider post-meta settings array.
+     * @return string One of global|image|icon|button.
+     */
+    private function resolveLightboxOpenWith($settings)
+    {
+        if (isset($settings['lightbox_open_with'])) {
+            return $settings['lightbox_open_with'];
+        }
+
+        $button = isset($settings['lightbox_button']) ? $settings['lightbox_button'] : 'global';
+        $icon   = isset($settings['lightbox_icon'])   ? $settings['lightbox_icon']   : 'global';
+
+        if ('global' === $button && 'global' === $icon) {
+            return 'global';
+        }
+        if ('false' === $button) {
+            return 'image';
+        }
+        return ('true' === $icon) ? 'icon' : 'button';
+    }
+
+    public function getCustomLightboxCss()
     {
         $options = $this->getPluginOptions();
 
@@ -1737,6 +1923,13 @@ class MetaSliderLightboxPlugin
 
         ';
 
+        return $custom_css;
+    }
+
+    private function addCustomLightboxCss()
+    {
+        $custom_css = $this->getCustomLightboxCss();
+
         $general_options = $this->getCachedGeneralOptions();
         $processing_mode = isset($general_options['content_processing_mode']) ? $general_options['content_processing_mode'] : 'include';
 
@@ -1788,27 +1981,6 @@ class MetaSliderLightboxPlugin
         }
 
         wp_add_inline_style('ml-lightbox-public-css', $custom_css);
-    }
-
-    public function enqueueAdminScripts($hook)
-    {
-        if (strpos($hook, 'metaslider-lightbox') === false) {
-            return;
-        }
-
-        wp_enqueue_script('wp-color-picker');
-        wp_enqueue_style('wp-color-picker');
-
-        wp_enqueue_script('ml-select2', plugin_dir_url(__FILE__) . 'assets/js/select2.min.js', array('jquery'), '4.1.0', true);
-        wp_enqueue_style('ml-select2', plugin_dir_url(__FILE__) . 'assets/css/select2.min.css', array(), '4.1.0');
-
-        wp_enqueue_script(
-            'ml-lightbox-admin',
-            plugin_dir_url(__FILE__) . 'assets/js/ml-lightbox-admin.js',
-            array('jquery', 'wp-color-picker', 'ml-select2', 'wp-i18n'),
-            $this->version,
-            true
-        );
     }
 
     public function showMetasliderDependencyWarning()
@@ -2040,12 +2212,31 @@ class MetaSliderLightboxPlugin
             $this->version
         );
 
+        wp_enqueue_style(
+            'ml-trigger-control',
+            plugin_dir_url(__FILE__) . 'assets/css/ml-trigger-control.css',
+            array(),
+            $this->version
+        );
+        wp_enqueue_script(
+            'ml-lightbox-trigger',
+            plugin_dir_url(__FILE__) . 'assets/js/ml-lightbox-trigger.js',
+            array(),
+            $this->version,
+            true
+        );
+
         wp_enqueue_script(
             'ml-lightbox-admin-script',
             plugin_dir_url(__FILE__) . 'assets/js/ml-lightbox-admin.js',
-            array('jquery', 'wp-color-picker', 'ml-select2', 'ml-tipsy', 'wp-i18n'),
+            array('jquery', 'wp-color-picker', 'ml-select2', 'ml-tipsy', 'wp-i18n', 'ml-lightbox-trigger'),
             $this->version,
             true
+        );
+        wp_set_script_translations(
+            'ml-lightbox-admin-script',
+            'ml-slider-lightbox',
+            plugin_dir_path(__FILE__) . 'languages'
         );
         wp_localize_script(
             'ml-lightbox-admin-script',
@@ -2081,11 +2272,11 @@ class MetaSliderLightboxPlugin
             'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjU1LjggMjU1LjgiIHN0eWxlPSJmaWxsOiNmZmYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik0xMjcuOSwwQzU3LjMsMCwwLDU3LjMsMCwxMjcuOWMwLDcwLjYsNTcuMywxMjcuOSwxMjcuOSwxMjcuOWM3MC42LDAsMTI3LjktNTcuMywxMjcuOS0xMjcuOUMyNTUuOCw1Ny4zLDE5OC41LDAsMTI3LjksMHogTTE2LjQsMTc3LjFsOTIuNS0xMTcuNUwxMjQuMiw3OWwtNzcuMyw5OC4xSDE2LjR6IE0xNzAuNSwxNzcuMWwtMzguOS00OS40bDE1LjUtMTkuNmw1NC40LDY5SDE3MC41eiBNMjA4LjUsMTc3LjFMMTQ2LjksOTkgbC02MS42LDc4LjJoLTMxbDkyLjUtMTE3LjVsOTIuNSwxMTcuNUgyMDguNXoiLz48L2c+PC9zdmc+Cg=='
         );
 
-        // Explicit Settings submenu so it always appears with the correct label.
+        // Explicit Global Settings submenu so it always appears with the correct label.
         add_submenu_page(
             'metaslider-lightbox',
             $page_title,
-            __('Settings', 'ml-slider-lightbox'),
+            __('Global Settings', 'ml-slider-lightbox'),
             'manage_options',
             'metaslider-lightbox',
             array($this, 'renderMainPage')
@@ -2582,17 +2773,9 @@ class MetaSliderLightboxPlugin
         );
 
         add_settings_field(
-            'show_lightbox_button',
+            'lightbox_trigger_mode',
             '',
-            array($this, 'showLightboxButtonCallback'),
-            'metaslider_lightbox_settings',
-            'metaslider_lightbox_behavior_navigation'
-        );
-
-        add_settings_field(
-            'use_icon_instead_of_button',
-            '',
-            array($this, 'useIconInsteadOfButtonCallback'),
+            array($this, 'lightboxTriggerModeCallback'),
             'metaslider_lightbox_settings',
             'metaslider_lightbox_behavior_navigation'
         );
@@ -2902,8 +3085,11 @@ class MetaSliderLightboxPlugin
         $sanitized['show_arrows'] = isset($input['show_arrows']) ? true : false;
         $sanitized['show_thumbnails'] = isset($input['show_thumbnails']) ? true : false;
         $sanitized['show_captions'] = isset($input['show_captions']) ? true : false;
-        $sanitized['show_lightbox_button'] = isset($input['show_lightbox_button']) ? true : false;
-        $sanitized['use_icon_instead_of_button'] = isset($input['use_icon_instead_of_button']) ? true : false;
+        // These two come from the "how visitors open images" segmented control,
+        // which posts always-present hidden inputs ('0'/'1') — so read by value,
+        // not key-presence (isset() would always be true and force them on).
+        $sanitized['show_lightbox_button'] = ! empty($input['show_lightbox_button']);
+        $sanitized['use_icon_instead_of_button'] = ! empty($input['use_icon_instead_of_button']);
 
         return $sanitized;
     }
@@ -3444,36 +3630,25 @@ class MetaSliderLightboxPlugin
         );
     }
 
-    public function showLightboxButtonCallback()
+    public function lightboxTriggerModeCallback()
     {
-        $options = $this->getCachedMetaSliderOptions();
-        $checked = isset($options['show_lightbox_button']) ? $options['show_lightbox_button'] : true;
+        $options     = $this->getCachedMetaSliderOptions();
+        $show_button = isset($options['show_lightbox_button']) ? $options['show_lightbox_button'] : true;
+        $use_icon    = isset($options['use_icon_instead_of_button']) ? $options['use_icon_instead_of_button'] : false;
+        $mode        = TriggerControl::modeFromBooleans($show_button, $use_icon);
 
-        $this->renderToggleSwitch(
-            'ml_lightbox_options[show_lightbox_button]',
-            $checked,
-            __('Show "Open in Gallery" button', 'ml-slider-lightbox'),
-            __('When enabled, shows a button to open the gallery. When disabled, clicking the slide, image, or video directly opens the gallery.', 'ml-slider-lightbox')
-        );
-    }
-
-    public function useIconInsteadOfButtonCallback()
-    {
-        $options = $this->getCachedMetaSliderOptions();
-        $checked = isset($options['use_icon_instead_of_button']) ? $options['use_icon_instead_of_button'] : false;
-        $button_enabled = isset($options['show_lightbox_button']) ? $options['show_lightbox_button'] : true;
-
-        // Wrapper div with ID for JavaScript targeting and conditional visibility
-        $display_style = $button_enabled ? '' : ' style="display: none;"';
-        echo '<div id="ml-icon-instead-of-button-setting"' . $display_style . '>';
-
-        $this->renderToggleSwitch(
-            'ml_lightbox_options[use_icon_instead_of_button]',
-            $checked,
-            __('Show an icon instead of button', 'ml-slider-lightbox'),
-            __('When enabled, displays a small icon instead of the full button text.', 'ml-slider-lightbox')
-        );
-
+        echo '<div class="ml-toggle-card">';
+        echo '<div class="ml-toggle-content">';
+        echo '<h3 class="ml-toggle-title">' . esc_html__('How visitors open images', 'ml-slider-lightbox') . '</h3>';
+        echo '<div class="ml-toggle-description">' . esc_html__('Choose whether clicking the image, an icon, or a button opens the gallery.', 'ml-slider-lightbox') . '</div>';
+        echo '</div>';
+        echo '<div class="ml-toggle-control">';
+        TriggerControl::render(array(
+            'name_show' => 'ml_lightbox_options[show_lightbox_button]',
+            'name_icon' => 'ml_lightbox_options[use_icon_instead_of_button]',
+            'mode'      => $mode,
+        ));
+        echo '</div>';
         echo '</div>';
     }
 
@@ -3493,12 +3668,12 @@ class MetaSliderLightboxPlugin
     public function behaviorZoomCallback()
     {
         if ($this->isProPluginActive()) {
-            echo '<p>' . __('Advanced lightbox features are available through MetaSlider Gallery Pro.', 'ml-slider-lightbox') . '</p>';
+            echo '<p>' . esc_html__('Advanced lightbox features are available through MetaSlider Gallery Pro.', 'ml-slider-lightbox') . '</p>';
         } else {
-            echo '<p>' . __('Get a preview of the advanced features available in MetaSlider Gallery Pro.', 'ml-slider-lightbox') . '</p>';
+            echo '<p>' . esc_html__('Get a preview of the advanced features available in MetaSlider Gallery Pro.', 'ml-slider-lightbox') . '</p>';
             echo '<div class="ml-lightbox-notice" style="background: #fff8e5; border-left: 4px solid #ffb900; padding: 12px; margin: 15px 0 15px 0;">';
             echo '<p><strong>🎆 Pro Features Preview</strong><br>';
-            echo __('These advanced LightGallery.js plugins are available in the Pro version with additional customization options.', 'ml-slider-lightbox');
+            echo esc_html__('These advanced LightGallery.js plugins are available in the Pro version with additional customization options.', 'ml-slider-lightbox');
             echo '</p>';
             echo '</div>';
         }

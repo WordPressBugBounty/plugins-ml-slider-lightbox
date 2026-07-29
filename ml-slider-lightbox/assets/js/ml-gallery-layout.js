@@ -4,8 +4,16 @@
 
 	function justify( container ) {
 		var gap       = parseFloat( getComputedStyle( container ).getPropertyValue( '--ml-gap' ) ) || 8;
-		var rowHeight = 220;
-		var items     = Array.prototype.slice.call( container.querySelectorAll( 'a' ) );
+		var rowHeight = parseFloat( getComputedStyle( container ).getPropertyValue( '--ml-row-height' ) ) || 220;
+		// A tile is an anchor wrapping a gallery image, not simply any anchor. With
+		// "open in" set to button each item also carries an .ml-lightbox-button, and a
+		// caption may contain a link; packed as tiles those take the 4:3 fallback
+		// below, consume row width that belongs to real images, and are handed an
+		// inline width they never use.
+		var items     = Array.prototype.slice.call( container.querySelectorAll( 'a' ) )
+			.filter( function ( a ) {
+				return ! a.classList.contains( 'ml-lightbox-button' ) && !! a.querySelector( 'img' );
+			} );
 		if ( ! items.length ) return;
 
 		var cs       = getComputedStyle( container );

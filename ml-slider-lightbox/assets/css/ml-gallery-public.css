@@ -36,7 +36,7 @@
 }
 
 .ml-gallery-container.ml-layout-grid > a img {
-	height: 220px;
+	height: var(--ml-row-height, 220px);
 	object-fit: cover;
 }
 
@@ -68,7 +68,7 @@
 /* Fixed height; per-item width is set by ml-gallery-layout.js (row-packing). */
 .ml-gallery-container.ml-layout-justified > a {
 	flex: 1 1 auto;
-	height: 220px;
+	height: var(--ml-row-height, 220px);
 	overflow: hidden;
 }
 
@@ -346,4 +346,9 @@
 	font-size: var(--ml-thumb-caption-size, 14px);
 	text-align: var(--ml-thumb-caption-align, left);
 	background: var(--ml-thumb-caption-bg, linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)));
+}
+
+.ml-gallery-caption > *,
+.ml-showcase-caption > * {
+	margin: 0;
 }

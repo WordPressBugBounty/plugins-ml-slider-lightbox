@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-07-07 15:10+0000\n"
+"PO-Revision-Date: 2026-07-28 17:01+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -76,435 +76,478 @@ msgstr "Požadovaná data neexistují."
 msgid "The attempt to update the option failed."
 msgstr "Pokusu o aktualizaci možnosti se nezdařil."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:872
-#: class-ml-gallery.php:2597 class-ml-slider-lightbox.php:1949
-#: class-ml-slider-lightbox.php:2073
-#: admin/views/notices/header-notice.php:8
-#: class-ml-gallery.php:872
-#: class-ml-gallery.php:2597
-#: class-ml-slider-lightbox.php:1949
-#: class-ml-slider-lightbox.php:2073
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1240
+#: class-ml-gallery.php:3302 class-ml-slider-lightbox.php:2121
+#: class-ml-slider-lightbox.php:2264
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: admin/views/notices/header-notice.php:23
-#: admin/views/notices/header-notice.php:23
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:222
 msgid "Dismiss"
 msgstr "Zavřít"
 
-#: class-ml-gallery.php:85
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1182
+#: class-ml-slider-lightbox.php:2301 class-ml-slider-lightbox.php:2316
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nemáte dostatečná oprávnění pro přístup na tuto stránku."
+
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2238
+#: class-ml-gallery.php:2398
+msgid "Security check failed."
+msgstr "Kontrola zabezpečení selhala."
+
+#: class-ml-gallery-slideshow-convert.php:61
+msgid "Slideshow not found."
+msgstr "Prezentace nebyla nalezena."
+
+#: class-ml-gallery-slideshow-convert.php:73
+msgid ""
+"This slideshow has no saved images to convert. Save the slideshow, then try "
+"again."
+msgstr ""
+"Tato prezentace nemá žádné uložené obrázky k převodu. Uložte prezentaci a "
+"zkuste to znovu."
+
+#: class-ml-gallery-slideshow-convert.php:78
+msgid "Untitled Slideshow"
+msgstr "Nepojmenovaná prezentace"
+
+#: class-ml-gallery.php:113
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "Některé z těchto funkcí jsou k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:93 class-ml-gallery.php:102 class-ml-gallery.php:329
-#: class-ml-gallery.php:93
-#: class-ml-gallery.php:102
-#: class-ml-gallery.php:329
+#: class-ml-gallery.php:219 class-ml-gallery.php:228 class-ml-gallery.php:609
 msgid "Fade"
 msgstr "Rozostření"
 
-#: class-ml-gallery.php:94
+#: class-ml-gallery.php:220
 msgid "Slide"
 msgstr "Snímek"
 
-#: class-ml-gallery.php:95 class-ml-gallery.php:1376
-#: class-ml-gallery.php:95
-#: class-ml-gallery.php:1376
+#: class-ml-gallery.php:221 class-ml-gallery.php:1831
 msgid "Zoom"
 msgstr "Přiblížení"
 
-#: class-ml-gallery.php:101 class-ml-gallery.php:321 class-ml-gallery.php:1561
-#: class-ml-gallery.php:1587 class-ml-gallery.php:1601
-#: class-ml-gallery.php:101
-#: class-ml-gallery.php:321
-#: class-ml-gallery.php:1561
-#: class-ml-gallery.php:1587
-#: class-ml-gallery.php:1601
+#: class-ml-gallery.php:227 class-ml-gallery.php:601 class-ml-gallery.php:2074
+#: class-ml-gallery.php:2100 class-ml-gallery.php:2114
 msgid "None"
 msgstr "Žádný"
 
-#: class-ml-gallery.php:103
+#: class-ml-gallery.php:229
 msgid "Slide Up"
 msgstr "Posunout nahoru"
 
-#: class-ml-gallery.php:104
+#: class-ml-gallery.php:230
 msgid "Slide Down"
 msgstr "Posunout dolů"
 
-#: class-ml-gallery.php:118
+#: class-ml-gallery.php:244
 msgid "Hidden"
 msgstr "Skryto"
 
-#: class-ml-gallery.php:119
+#: class-ml-gallery.php:245
 msgid "Gallery + Window"
 msgstr "Galerie + Okno"
 
-#: class-ml-gallery.php:120
+#: class-ml-gallery.php:246
 msgid "Window Only"
 msgstr "Pouze okno"
 
-#: class-ml-gallery.php:121
+#: class-ml-gallery.php:247
 msgid "Gallery Only"
 msgstr "Pouze galerie"
 
-#: class-ml-gallery.php:322 class-ml-gallery.php:322, fuzzy
+#: class-ml-gallery.php:266 class-ml-gallery.php:2808
+msgid "Manual entry"
+msgstr "Ruční zadání"
+
+#: class-ml-gallery.php:267 class-ml-gallery.php:2809
+msgid "Media caption"
+msgstr "Popis média"
+
+#: class-ml-gallery.php:268 class-ml-gallery.php:2810
+msgid "Media description"
+msgstr "Popis média"
+
+#: class-ml-gallery.php:602, fuzzy
 msgid "Noir (B&W)"
 msgstr "Noir (B&W)"
 
-#: class-ml-gallery.php:323
+#: class-ml-gallery.php:603
 msgid "Silver (B&W)"
 msgstr "Stříbrný (B&W)"
 
-#: class-ml-gallery.php:324 class-ml-gallery.php:324, fuzzy
+#: class-ml-gallery.php:604, fuzzy
 msgid "Vintage"
 msgstr "Vintage"
 
-#: class-ml-gallery.php:325
+#: class-ml-gallery.php:605
 msgid "Golden Hour"
 msgstr "Zlatá hodina"
 
-#: class-ml-gallery.php:326 class-ml-gallery.php:326, fuzzy
+#: class-ml-gallery.php:606, fuzzy
 msgid "Toaster"
 msgstr "Toaster"
 
-#: class-ml-gallery.php:327
+#: class-ml-gallery.php:607
 msgid "Warm"
 msgstr "Teplý"
 
-#: class-ml-gallery.php:328
+#: class-ml-gallery.php:608
 msgid "Cool"
 msgstr "Chladný"
 
-#: class-ml-gallery.php:330
+#: class-ml-gallery.php:610
 msgid "Matte"
 msgstr "Matný"
 
-#: class-ml-gallery.php:331
+#: class-ml-gallery.php:611
 msgid "Pastel"
 msgstr "Pastelový"
 
-#: class-ml-gallery.php:332
+#: class-ml-gallery.php:612
 msgid "Vivid"
 msgstr "Živý"
 
-#: class-ml-gallery.php:333
+#: class-ml-gallery.php:613
 msgid "Crisp"
 msgstr "Křupavý"
 
-#: class-ml-gallery.php:334
+#: class-ml-gallery.php:614
 msgid "Dramatic"
 msgstr "Dramatický"
 
-#: class-ml-gallery.php:335
+#: class-ml-gallery.php:615
 msgid "Negative"
 msgstr "Negativní"
 
-#: class-ml-gallery.php:447 class-ml-gallery.php:456 class-ml-gallery.php:882
-#: class-ml-gallery.php:447
-#: class-ml-gallery.php:456
-#: class-ml-gallery.php:882
+#: class-ml-gallery.php:727 class-ml-gallery.php:736 class-ml-gallery.php:1250
 msgid "Galleries"
 msgstr "Galerie"
 
-#: class-ml-gallery.php:448 class-ml-gallery.php:597 class-ml-gallery.php:1146
-#: class-ml-slider-lightbox.php:2069
-#: class-ml-gallery.php:448
-#: class-ml-gallery.php:597
-#: class-ml-gallery.php:1146
-#: class-ml-slider-lightbox.php:2069
+#: class-ml-gallery.php:728 class-ml-gallery.php:877 class-ml-gallery.php:1581
+#: class-ml-slider-lightbox.php:2260
 msgid "Gallery"
 msgstr "Galerie"
 
-#: class-ml-gallery.php:449 class-ml-gallery.php:450 class-ml-gallery.php:847
-#: class-ml-gallery.php:2591 class-ml-gallery.php:449
-#: class-ml-gallery.php:450
-#: class-ml-gallery.php:847
-#: class-ml-gallery.php:2591
+#: class-ml-gallery.php:729 class-ml-gallery.php:730 class-ml-gallery.php:1215
+#: class-ml-gallery.php:3296
 msgid "Add New Gallery"
 msgstr "Přidat novou galerii"
 
-#: class-ml-gallery.php:451 class-ml-gallery.php:764 class-ml-gallery.php:765
-#: class-ml-gallery.php:848 class-ml-gallery.php:451
-#: class-ml-gallery.php:764
-#: class-ml-gallery.php:765
-#: class-ml-gallery.php:848
+#: class-ml-gallery.php:731 class-ml-gallery.php:1130 class-ml-gallery.php:1131
+#: class-ml-gallery.php:1216
 msgid "Edit Gallery"
 msgstr "Upravit galerii"
 
-#: class-ml-gallery.php:452 class-ml-gallery.php:827
-#: class-ml-gallery.php:452
-#: class-ml-gallery.php:827
+#: class-ml-gallery.php:732 class-ml-gallery.php:1193 class-ml-gallery.php:2447
 msgid "New Gallery"
 msgstr "Nová galerie"
 
-#: class-ml-gallery.php:453
+#: class-ml-gallery.php:733
 msgid "Search Galleries"
 msgstr "Hledat galerie"
 
-#: class-ml-gallery.php:454
+#: class-ml-gallery.php:734
 msgid "No galleries found."
 msgstr "Žádné galerie nenalezeny."
 
-#: class-ml-gallery.php:455
+#: class-ml-gallery.php:735
 msgid "No galleries found in trash."
 msgstr "Žádné galerie nenalezeny v koši."
 
-#: class-ml-gallery.php:604
+#: class-ml-gallery.php:884
 msgid "All Galleries"
 msgstr "Všechny galerie"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:891
 msgid "Create Gallery"
 msgstr "Vytvořit galerii"
 
-#: class-ml-gallery.php:621
+#: class-ml-gallery.php:901
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "Upravit &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:639
+#: class-ml-gallery.php:919
 msgid "Invalid gallery ID."
 msgstr "Neplatné ID galerie."
 
-#: class-ml-gallery.php:705 class-ml-slider-lightbox.php:1507
-#: class-ml-gallery.php:705
-#: class-ml-slider-lightbox.php:1507
+#: class-ml-gallery.php:1023 class-ml-slider-lightbox.php:1634
 msgid "View image"
 msgstr "Zobrazit obrázek"
 
-#: class-ml-gallery.php:816 class-ml-slider-lightbox.php:2110
-#: class-ml-slider-lightbox.php:2125
-#: class-ml-gallery.php:816
-#: class-ml-slider-lightbox.php:2110
-#: class-ml-slider-lightbox.php:2125
-msgid "You do not have sufficient permissions to access this page."
-msgstr "Nemáte dostatečná oprávnění pro přístup na tuto stránku."
-
-#: class-ml-gallery.php:824 class-ml-gallery.php:1861
-#: class-ml-gallery.php:824
-#: class-ml-gallery.php:1861
+#: class-ml-gallery.php:1190 class-ml-gallery.php:2403
 msgid "Gallery not found."
 msgstr "Galerie nebyla nalezena."
 
-#: class-ml-gallery.php:850
+#: class-ml-gallery.php:1218
 msgid "Save Gallery"
 msgstr "Uložit galerii"
 
-#: class-ml-gallery.php:851
+#: class-ml-gallery.php:1219
 msgid "Update Gallery"
 msgstr "Aktualizovat galerii"
 
-#: class-ml-gallery.php:866 class-ml-gallery.php:878
-#: class-ml-gallery.php:866
-#: class-ml-gallery.php:878
+#: class-ml-gallery.php:1234 class-ml-gallery.php:1246
 msgid "Back to Galleries"
 msgstr "Zpět na galerie"
 
-#: class-ml-gallery.php:889
+#: class-ml-gallery.php:1257
 msgid "Create New Gallery"
 msgstr "Vytvořit novou galerii"
 
-#: class-ml-gallery.php:893
+#: class-ml-gallery.php:1261
 msgid "New"
 msgstr "Nový"
 
-#: class-ml-gallery.php:904
+#: class-ml-gallery.php:1272
 msgid "Duplicate"
 msgstr "Duplicitní"
 
-#: class-ml-gallery.php:924
+#: class-ml-gallery.php:1292
 msgid "Gallery saved."
 msgstr "Galerie uložena."
 
-#: class-ml-gallery.php:935
+#: class-ml-gallery.php:1303
+#, php-format
+msgid ""
+"Gallery created from the slideshow \"%s\". Review the settings below, then "
+"save."
+msgstr ""
+"Galerie vytvořená z prezentace „%s“. Zkontrolujte níže uvedená nastavení a "
+"poté uložte."
+
+#: class-ml-gallery.php:1307
+msgid "Gallery created from your slideshow. Review the settings below, then save."
+msgstr ""
+"Galerie vytvořená z vaší prezentace. Zkontrolujte níže uvedená nastavení a "
+"poté uložte."
+
+#: class-ml-gallery.php:1321
 msgid "Enter gallery title"
 msgstr "Zadejte název galerie"
 
-#: class-ml-gallery.php:938 class-ml-gallery.php:2619
-#: class-ml-gallery.php:938
-#: class-ml-gallery.php:2619
+#: class-ml-gallery.php:1324 class-ml-gallery.php:3748
 msgid "Images"
 msgstr "Obrázky"
 
-#: class-ml-gallery.php:947
+#: class-ml-gallery.php:1334
+msgid "Preview or arrange images"
+msgstr "Náhled nebo uspořádání obrázků"
+
+#: class-ml-gallery.php:1337 class-ml-gallery.php:3661
+msgid "Preview"
+msgstr "Náhled"
+
+#: class-ml-gallery.php:1341
+msgid "Arrange"
+msgstr "Uspořádat"
+
+#: class-ml-gallery.php:1344
+msgid "Preview at desktop or mobile width"
+msgstr "Náhled na šířku stolního počítače nebo mobilu"
+
+#: class-ml-gallery.php:1345
+msgid "Desktop width"
+msgstr "Šířka pro stolní počítač"
+
+#: class-ml-gallery.php:1348
+msgid "Mobile width"
+msgstr "Šířka pro mobilní zařízení"
+
+#: class-ml-gallery.php:1355
 msgid "No images added yet"
 msgstr "Dosud nebyly přidány žádné obrázky"
 
-#: class-ml-gallery.php:960 class-ml-gallery.php:2194
-#: class-ml-gallery.php:960
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:1378 class-ml-gallery.php:2802
 msgid "Remove image"
 msgstr "Odstranit obrázek"
 
-#: class-ml-gallery.php:965 class-ml-gallery.php:2195
-#: class-ml-gallery.php:965
-#: class-ml-gallery.php:2195
+#: class-ml-gallery.php:1383 class-ml-gallery.php:2803
 msgid "Edit caption"
 msgstr "Upravit popis"
 
-#: class-ml-gallery.php:980
+#: class-ml-gallery.php:1383 class-ml-gallery.php:1385
+#: class-ml-gallery.php:2804
+msgid "Add caption"
+msgstr "Přidat popis"
+
+#: class-ml-gallery.php:1395
+msgid "Gallery preview"
+msgstr "Náhled galerie"
+
+#: class-ml-gallery.php:1401
 msgid "Add Images"
 msgstr "Přidat obrázky"
 
-#: class-ml-gallery.php:984
+#: class-ml-gallery.php:1405
 msgid "More ways to add images"
 msgstr "Další způsoby přidání obrázků"
 
-#: class-ml-gallery.php:990
+#: class-ml-gallery.php:1411
 msgid "Upload"
 msgstr "Nahrát"
 
-#: class-ml-gallery.php:995
+#: class-ml-gallery.php:1416
 msgid "Media Library"
 msgstr "Knihovna médií"
 
-#: class-ml-gallery.php:1000
+#: class-ml-gallery.php:1421
 msgid "Server Folder"
 msgstr "Serverová složka"
 
-#: class-ml-gallery.php:1005 class-ml-gallery.php:1005, fuzzy
+#: class-ml-gallery.php:1426, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1011
+#: class-ml-gallery.php:1432
 msgid "Where to add new images"
 msgstr "Kde přidat nové obrázky"
 
-#: class-ml-gallery.php:1012
+#: class-ml-gallery.php:1433
 msgid "Add new images at:"
 msgstr "Přidat nové obrázky na:"
 
-#: class-ml-gallery.php:1016
+#: class-ml-gallery.php:1437
 msgid "Start"
 msgstr "Začátek"
 
-#: class-ml-gallery.php:1021
+#: class-ml-gallery.php:1442
 msgid "End"
 msgstr "Konec"
 
-#: class-ml-gallery.php:1030
+#: class-ml-gallery.php:1451
 msgid "Layout"
 msgstr "Rozložení"
 
-#: class-ml-gallery.php:1033
+#: class-ml-gallery.php:1454
 msgid "Gallery layout"
 msgstr "Rozložení galerie"
 
-#: class-ml-gallery.php:1035
+#: class-ml-gallery.php:1456
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "Obrázky stejné velikosti uspořádané ve fixní mřížce"
 
-#: class-ml-gallery.php:1045
+#: class-ml-gallery.php:1466 class-ml-gallery.php:3664
 msgid "Grid"
 msgstr "Mřížka"
 
-#: class-ml-gallery.php:1049
+#: class-ml-gallery.php:1470
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "Obrázky v jejich přirozené výšce, které se spojí jako cihlová zeď"
 
-#: class-ml-gallery.php:1059 class-ml-gallery.php:1059, fuzzy
+#: class-ml-gallery.php:1480 class-ml-gallery.php:3663, fuzzy
 msgid "Masonry"
 msgstr "Masonry"
 
-#: class-ml-gallery.php:1063
+#: class-ml-gallery.php:1484
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr ""
 "Obrázky škálované tak, aby vyplnily každý řádek od okraje k okraji s "
 "konzistentní výškou"
 
-#: class-ml-gallery.php:1075
+#: class-ml-gallery.php:1496 class-ml-gallery.php:3665
 msgid "Justified"
 msgstr "Justifikované"
 
-#: class-ml-gallery.php:1079
+#: class-ml-gallery.php:1500
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "Obrázky zobrazené jeden po druhém v rolovatelném slideshow"
 
-#: class-ml-gallery.php:1088
+#: class-ml-gallery.php:1509
 msgid "Carousel"
 msgstr "Karusel"
 
-#: class-ml-gallery.php:1092
+#: class-ml-gallery.php:1513
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "Velký hlavní obrázek s rolovatelným pruhem miniatury níže"
 
-#: class-ml-gallery.php:1102
+#: class-ml-gallery.php:1523
 msgid "Showcase"
 msgstr "Vitrína"
 
-#: class-ml-gallery.php:1113
+#: class-ml-gallery.php:1535
 msgid "Number of columns to show on desktop screens"
 msgstr "Počet sloupců zobrazených na desktopových obrazovkách"
 
-#: class-ml-gallery.php:1113
+#: class-ml-gallery.php:1535
 msgid "Columns"
 msgstr "Sloupce"
 
-#: class-ml-gallery.php:1122
+#: class-ml-gallery.php:1544
 msgid "Number of columns to show on phones and small screens"
 msgstr "Počet sloupců zobrazených na telefonech a malých obrazovkách"
 
-#: class-ml-gallery.php:1122
+#: class-ml-gallery.php:1544
 msgid "Columns (mobile)"
 msgstr "Sloupce (mobilní)"
 
-#: class-ml-gallery.php:1131
+#: class-ml-gallery.php:1553
+msgid "Height of the gallery images, in pixels"
+msgstr "Výška obrázků v galerii, v pixelech"
+
+#: class-ml-gallery.php:1554
+msgid "Height"
+msgstr "Výška"
+
+#: class-ml-gallery.php:1566
 msgid "Space between images"
 msgstr "Prostor mezi obrázky"
 
-#: class-ml-gallery.php:1132
+#: class-ml-gallery.php:1567
 msgid "Gap"
 msgstr "Mezera"
 
-#: class-ml-gallery.php:1150
+#: class-ml-gallery.php:1585
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "Ovládání zoomu vyžaduje MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1151
+#: class-ml-gallery.php:1586
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "Režim celé obrazovky vyžaduje MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1152
+#: class-ml-gallery.php:1587
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "Rotace obrázků vyžaduje MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1153
+#: class-ml-gallery.php:1588
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "Automatické přehrávání vyžaduje MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1154
+#: class-ml-gallery.php:1589
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "Sdílení na sociálních sítích vyžaduje MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1155
+#: class-ml-gallery.php:1590
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "Pager vyžaduje MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1156
+#: class-ml-gallery.php:1591
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "Unikátní URL obrázků vyžadují MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1157
+#: class-ml-gallery.php:1592
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "Ochrana obrázků vyžaduje MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1161
+#: class-ml-gallery.php:1596
 msgid "Show left and right navigation arrows"
 msgstr "Zobrazit levé a pravé navigační šipky"
 
-#: class-ml-gallery.php:1162
+#: class-ml-gallery.php:1597
 msgid "Display the current image number and total count"
 msgstr "Zobrazit číslo aktuálního obrázku a celkový počet"
 
-#: class-ml-gallery.php:1163
+#: class-ml-gallery.php:1598
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "Zobrazit pás s náhledovými obrázky na spodní části galerie"
 
-#: class-ml-gallery.php:1164
+#: class-ml-gallery.php:1599
 msgid "Show dot navigation area below each image."
 msgstr "Zobrazit oblast navigace tečkami pod každým obrázkem."
 
-#: class-ml-gallery.php:1165
+#: class-ml-gallery.php:1600
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -513,11 +556,11 @@ msgstr ""
 "přiblížení se zobrazí pouze pokud je původní velikost větší než velikost "
 "galerie."
 
-#: class-ml-gallery.php:1166
+#: class-ml-gallery.php:1601
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "Rozšiřte okno galerie tak, aby vyplnilo celou obrazovku."
 
-#: class-ml-gallery.php:1167
+#: class-ml-gallery.php:1602
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
@@ -525,15 +568,15 @@ msgstr ""
 "Uživatelé mohou otáčet obrázky doleva nebo doprava, a také je převracet "
 "vertikálně nebo horizontálně."
 
-#: class-ml-gallery.php:1168
+#: class-ml-gallery.php:1603
 msgid "Automatically advance through the images without the user clicking."
 msgstr "Automaticky přecházet mezi obrázky bez kliknutí uživatele."
 
-#: class-ml-gallery.php:1169
+#: class-ml-gallery.php:1604
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr "Povolit uživatelům sdílet obrázky na Facebooku, X nebo Pinterestu."
 
-#: class-ml-gallery.php:1170
+#: class-ml-gallery.php:1605
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
@@ -541,7 +584,7 @@ msgstr ""
 "Vytvořit unikátní URL pro každý obrázek pro umožnění přímého propojení "
 "uvnitř galerie."
 
-#: class-ml-gallery.php:1171
+#: class-ml-gallery.php:1606 class-ml-slider-lightbox.php:4278
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -549,27 +592,27 @@ msgstr ""
 "Odraďte uživatele od náhodného ukládání blokováním pravého kliknutí, "
 "táhnutí a dlouhého stisknutí na obrázcích v galerii."
 
-#: class-ml-gallery.php:1172
+#: class-ml-gallery.php:1607
 msgid "Navigate images using left and right arrow keys"
 msgstr "Navigujte mezi obrázky pomocí kláves se šipkami vlevo a vpravo"
 
-#: class-ml-gallery.php:1173
+#: class-ml-gallery.php:1608
 msgid "Scroll through images using the mouse wheel"
 msgstr "Procházejte obrázky pomocí kolečka myši"
 
-#: class-ml-gallery.php:1174
+#: class-ml-gallery.php:1609
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "Přejeďte nahoru nebo dolů pro zavření galerie na dotykových zařízeních"
 
-#: class-ml-gallery.php:1175
+#: class-ml-gallery.php:1610
 msgid "Cycle back to the first image after reaching the last"
 msgstr "Přejděte zpět na první obrázek po dosažení posledního"
 
-#: class-ml-gallery.php:1176
+#: class-ml-gallery.php:1611
 msgid "Show a download button for each image"
 msgstr "Zobrazit tlačítko pro stažení každého obrázku"
 
-#: class-ml-gallery.php:1177
+#: class-ml-gallery.php:1612
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
@@ -577,152 +620,146 @@ msgstr ""
 "Otevřít obrázky v překryvném okně po kliknutí. Platí pro rozložení Grid, "
 "Masonry a Justified."
 
-#: class-ml-gallery.php:1220
+#: class-ml-gallery.php:1613
+msgid "Show a button over the gallery that opens the gallery window when clicked."
+msgstr "Zobrazit tlačítko nad galerií, které otevře okno galerie po kliknutí."
+
+#: class-ml-gallery.php:1614
+msgid "Show an icon on the button instead of text."
+msgstr "Zobrazit ikonu na tlačítku místo textu."
+
+#: class-ml-gallery.php:1657
 msgid "Full (original)"
 msgstr "Úplné (původní)"
 
-#: class-ml-gallery.php:1224
+#: class-ml-gallery.php:1661
 msgid "Show in Gallery Window"
 msgstr "Zobrazit v okně galerie"
 
-#: class-ml-gallery.php:1227
+#: class-ml-gallery.php:1664
 msgid "The size of the image shown when a visitor clicks to view it in full"
 msgstr ""
 "Velikost obrázku zobrazená, když návštěvník klikne pro zobrazení v plné "
 "velikosti"
 
-#: class-ml-gallery.php:1227
+#: class-ml-gallery.php:1664
 msgid "Image Size"
 msgstr "Velikost obrázku"
 
-#: class-ml-gallery.php:1244
-msgid "Open in Gallery Button"
-msgstr "Otevřít v tlačítku galerie"
+#: class-ml-gallery.php:1684
+msgid ""
+"Choose how visitors open the gallery window: click the image, click an "
+"icon, or click a button."
+msgstr ""
+"Vyberte, jak návštěvníci otevřou okno galerie: kliknutím na obrázek, "
+"kliknutím na ikonu nebo kliknutím na tlačítko."
 
-#: class-ml-gallery.php:1247
-msgid "Use Icon Instead of Text"
-msgstr "Použít ikonu místo textu"
+#: class-ml-gallery.php:1684
+msgid "Open with"
+msgstr "Otevřít s"
 
-#: class-ml-gallery.php:1250 class-ml-slider-lightbox.php:2535
-#: class-ml-gallery.php:1250
-#: class-ml-slider-lightbox.php:2535
+#: class-ml-gallery.php:1696
+msgid "Text shown on the button that opens the gallery window"
+msgstr "Text zobrazený na tlačítku, které otevře okno galerie"
+
+#: class-ml-gallery.php:1696 class-ml-slider-lightbox.php:2726
 msgid "Button Text"
 msgstr "Text tlačítka"
 
-#: class-ml-gallery.php:1255 class-ml-slider-lightbox.php:1502
-#: class-ml-slider-lightbox.php:3140 class-ml-slider-lightbox.php:6285
-#: class-ml-slider-lightbox.php:6308
-#: class-ml-gallery.php:1255
-#: class-ml-slider-lightbox.php:1502
-#: class-ml-slider-lightbox.php:3140
-#: class-ml-slider-lightbox.php:6285
-#: class-ml-slider-lightbox.php:6308
+#: class-ml-gallery.php:1701 class-ml-slider-lightbox.php:1629
+#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:6467
+#: class-ml-slider-lightbox.php:6490
 msgid "Open in Gallery"
 msgstr "Otevřít v galerii"
 
-#: class-ml-gallery.php:1260 class-ml-slider-lightbox.php:2543
-#: class-ml-gallery.php:1260
-#: class-ml-slider-lightbox.php:2543
+#: class-ml-gallery.php:1706
+msgid "Where the button or icon sits over the gallery"
+msgstr "Kde se tlačítko nebo ikona nachází nad galerií"
+
+#: class-ml-gallery.php:1706 class-ml-slider-lightbox.php:2734
 msgid "Button Position"
 msgstr "Pozice tlačítka"
 
-#: class-ml-gallery.php:1262
+#: class-ml-gallery.php:1708
 msgid "Top Right"
 msgstr "Vpravo nahoře"
 
-#: class-ml-gallery.php:1263 class-ml-slider-lightbox.php:3157
-#: class-ml-slider-lightbox.php:3183
-#: class-ml-gallery.php:1263
-#: class-ml-slider-lightbox.php:3157
-#: class-ml-slider-lightbox.php:3183
+#: class-ml-gallery.php:1709 class-ml-slider-lightbox.php:3343
+#: class-ml-slider-lightbox.php:3369
 msgid "Top Left"
 msgstr "Nahoru vlevo"
 
-#: class-ml-gallery.php:1264 class-ml-slider-lightbox.php:3158
-#: class-ml-slider-lightbox.php:3184
-#: class-ml-gallery.php:1264
-#: class-ml-slider-lightbox.php:3158
-#: class-ml-slider-lightbox.php:3184
+#: class-ml-gallery.php:1710 class-ml-slider-lightbox.php:3344
+#: class-ml-slider-lightbox.php:3370
 msgid "Bottom Right"
 msgstr "Dole vpravo"
 
-#: class-ml-gallery.php:1265 class-ml-slider-lightbox.php:3159
-#: class-ml-slider-lightbox.php:3185
-#: class-ml-gallery.php:1265
-#: class-ml-slider-lightbox.php:3159
-#: class-ml-slider-lightbox.php:3185
+#: class-ml-gallery.php:1711 class-ml-slider-lightbox.php:3345
+#: class-ml-slider-lightbox.php:3371
 msgid "Bottom Left"
 msgstr "Dole vlevo"
 
-#: class-ml-gallery.php:1266
+#: class-ml-gallery.php:1712
 msgid "Center"
 msgstr "Střed"
 
-#: class-ml-gallery.php:1275
+#: class-ml-gallery.php:1721
 msgid "Protect images"
 msgstr "Chránit obrázky"
 
-#: class-ml-gallery.php:1281
+#: class-ml-gallery.php:1727
 msgid "Display"
 msgstr "Zobrazit"
 
-#: class-ml-gallery.php:1283
+#: class-ml-gallery.php:1729
 msgid "Animation effect when moving between images"
 msgstr "Animovaný efekt při přechodu mezi obrázky"
 
-#: class-ml-gallery.php:1283 class-ml-gallery.php:1359
-#: class-ml-gallery.php:1283
-#: class-ml-gallery.php:1359
+#: class-ml-gallery.php:1729 class-ml-gallery.php:1814
 msgid "Transition"
 msgstr "Přechod"
 
-#: class-ml-gallery.php:1292 class-ml-slider-lightbox.php:2495
-#: class-ml-gallery.php:1292
-#: class-ml-slider-lightbox.php:2495
+#: class-ml-gallery.php:1738 class-ml-slider-lightbox.php:2686
 msgid "Arrows"
 msgstr "Šipky"
 
-#: class-ml-gallery.php:1293
+#: class-ml-gallery.php:1739
 msgid "Slide Counter"
 msgstr "Počet snímků"
 
-#: class-ml-gallery.php:1294
+#: class-ml-gallery.php:1740
 msgid "Thumbnails"
 msgstr "Miniatury"
 
-#: class-ml-gallery.php:1296
+#: class-ml-gallery.php:1742
 msgid "Pager"
 msgstr "Stránkování"
 
-#: class-ml-gallery.php:1301 class-ml-slider-lightbox.php:2200
-#: class-ml-gallery.php:1301
-#: class-ml-slider-lightbox.php:2200
+#: class-ml-gallery.php:1747 class-ml-slider-lightbox.php:2391
 msgid "Navigation"
 msgstr "Navigace"
 
-#: class-ml-gallery.php:1302
+#: class-ml-gallery.php:1748
 msgid "Loop"
 msgstr "Smyčka"
 
-#: class-ml-gallery.php:1303
+#: class-ml-gallery.php:1749
 msgid "Keyboard"
 msgstr "Klávesnice"
 
-#: class-ml-gallery.php:1304
+#: class-ml-gallery.php:1750
 msgid "Mouse wheel"
 msgstr "Kolečko myši"
 
-#: class-ml-gallery.php:1305
+#: class-ml-gallery.php:1751
 msgid "Swipe to close"
 msgstr "Swipe pro zavření"
 
-#: class-ml-gallery.php:1312 class-ml-gallery.php:1314
-#: class-ml-gallery.php:1312
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1758 class-ml-gallery.php:1760
 msgid "Captions"
 msgstr "Popisky"
 
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1760
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -730,27 +767,41 @@ msgstr ""
 "Kde se titulky zobrazují: na náhledech galerie, v okně galerie, nebo na "
 "obojím."
 
-#: class-ml-gallery.php:1326
+#: class-ml-gallery.php:1772
+msgid ""
+"Where each caption's text comes from: your typed caption, or the image's "
+"Media Library caption or description. Empty media fields fall back to your "
+"typed caption."
+msgstr ""
+"Odkud pochází text každého popisku: váš zadaný popis nebo popis nebo "
+"titulek obrázku z médií. Prázdná pole médií se vrací k vašemu zadanému "
+"popisu."
+
+#: class-ml-gallery.php:1772
+msgid "Caption Content"
+msgstr "Obsah popisku"
+
+#: class-ml-gallery.php:1781
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "Velikost textu titulku. Platí pro náhledy galerie i okno galerie."
 
-#: class-ml-gallery.php:1327
+#: class-ml-gallery.php:1782
 msgid "Text Size"
 msgstr "Velikost textu"
 
-#: class-ml-gallery.php:1339
+#: class-ml-gallery.php:1794
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "Barva textu titulku. Platí pro náhledy galerie i okno galerie."
 
-#: class-ml-gallery.php:1339
+#: class-ml-gallery.php:1794
 msgid "Text Color"
 msgstr "Barva textu"
 
-#: class-ml-gallery.php:1349
+#: class-ml-gallery.php:1804
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -758,15 +809,12 @@ msgstr ""
 "Pozadí titulku. Platí pro náhledy galerie i okno galerie; u náhledů se "
 "vybledne do průhledna pro lepší čitelnost."
 
-#: class-ml-gallery.php:1349 class-ml-gallery.php:1391
-#: class-ml-slider-lightbox.php:2463
-#: class-ml-gallery.php:1349
-#: class-ml-gallery.php:1391
-#: class-ml-slider-lightbox.php:2463
+#: class-ml-gallery.php:1804 class-ml-gallery.php:1846
+#: class-ml-slider-lightbox.php:2654
 msgid "Background Color"
 msgstr "Barva pozadí"
 
-#: class-ml-gallery.php:1359
+#: class-ml-gallery.php:1814
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -774,393 +822,568 @@ msgstr ""
 "Jak se titulek animuje při zobrazení. Platí pouze pro okno galerie — ne pro "
 "titulky náhledů galerie."
 
-#: class-ml-gallery.php:1369 class-ml-slider-lightbox.php:2511
-#: class-ml-gallery.php:1369
-#: class-ml-slider-lightbox.php:2511
+#: class-ml-gallery.php:1824 class-ml-slider-lightbox.php:2702
 msgid "Toolbar"
 msgstr "Nástrojová lišta"
 
-#: class-ml-gallery.php:1370 class-ml-slider-lightbox.php:1516
-#: class-ml-gallery.php:1370
-#: class-ml-slider-lightbox.php:1516
+#: class-ml-gallery.php:1825 class-ml-slider-lightbox.php:1643
 msgid "Download"
 msgstr "Stáhnout"
 
-#: class-ml-gallery.php:1372
+#: class-ml-gallery.php:1827
 msgid "Share"
 msgstr "Sdílet"
 
-#: class-ml-gallery.php:1373
+#: class-ml-gallery.php:1828
 msgid "Autoplay"
 msgstr "Automatické přehrávání"
 
-#: class-ml-gallery.php:1374
+#: class-ml-gallery.php:1829
 msgid "Rotate and Flip"
 msgstr "Otáčet a převracet"
 
-#: class-ml-gallery.php:1375
+#: class-ml-gallery.php:1830
 msgid "Fullscreen"
 msgstr "Celá obrazovka"
 
-#: class-ml-gallery.php:1381
+#: class-ml-gallery.php:1836
 msgid "Unique Image URLs"
 msgstr "Unikátní URL obrázků"
 
-#: class-ml-gallery.php:1388 class-ml-slider-lightbox.php:2133
-#: class-ml-slider-lightbox.php:2190
-#: class-ml-gallery.php:1388
-#: class-ml-slider-lightbox.php:2133
-#: class-ml-slider-lightbox.php:2190
+#: class-ml-gallery.php:1843 class-ml-slider-lightbox.php:2324
+#: class-ml-slider-lightbox.php:2381
 msgid "Appearance"
 msgstr "Vzhled"
 
-#: class-ml-gallery.php:1402 class-ml-slider-lightbox.php:2471
-#: class-ml-gallery.php:1402
-#: class-ml-slider-lightbox.php:2471
+#: class-ml-gallery.php:1846
+msgid "Background color of the gallery window"
+msgstr "Barva pozadí okna galerie"
+
+#: class-ml-gallery.php:1856
+msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
+msgstr "Jak neprůhledné je pozadí okna galerie (0 = průhledné, 1 = neprůhledné)"
+
+#: class-ml-gallery.php:1857 class-ml-slider-lightbox.php:2662
 msgid "Background Opacity"
 msgstr "Průhlednost pozadí"
 
-#: class-ml-gallery.php:1414
+#: class-ml-gallery.php:1869
+msgid "Color of the next and previous navigation arrows"
+msgstr "Barva šipek pro navigaci dopředu a dozadu"
+
+#: class-ml-gallery.php:1869
 msgid "Arrow Color"
 msgstr "Barva šipky"
 
-#: class-ml-gallery.php:1424
+#: class-ml-gallery.php:1879
+msgid "Background color behind the navigation arrows"
+msgstr "Barva pozadí za navigačními šipkami"
+
+#: class-ml-gallery.php:1879
 msgid "Arrow Background"
 msgstr "Pozadí šipky"
 
-#: class-ml-gallery.php:1434
+#: class-ml-gallery.php:1889
+msgid "Color of the close (X) icon"
+msgstr "Barva ikony pro zavření (X)"
+
+#: class-ml-gallery.php:1889
 msgid "Close Icon Color"
 msgstr "Barva ikony zavření"
 
-#: class-ml-gallery.php:1444
+#: class-ml-gallery.php:1899
+msgid "Background color behind the close icon"
+msgstr "Barva pozadí za ikonou pro zavření"
+
+#: class-ml-gallery.php:1899
 msgid "Close Background"
 msgstr "Pozadí zavření"
 
-#: class-ml-gallery.php:1454
+#: class-ml-gallery.php:1909
+msgid "Color of the toolbar icons"
+msgstr "Barva ikon na panelu nástrojů"
+
+#: class-ml-gallery.php:1909
 msgid "Toolbar Icon Color"
 msgstr "Barva ikony panelu nástrojů"
 
-#: class-ml-gallery.php:1464
+#: class-ml-gallery.php:1919
+msgid "Background color of the toolbar"
+msgstr "Barva pozadí panelu nástrojů"
+
+#: class-ml-gallery.php:1919
 msgid "Toolbar Background"
 msgstr "Pozadí panelu nástrojů"
 
-#: class-ml-gallery.php:1474 class-ml-slider-lightbox.php:2487
-#: class-ml-gallery.php:1474
-#: class-ml-slider-lightbox.php:2487
+#: class-ml-gallery.php:1929
+msgid "Border color of the thumbnail strip images"
+msgstr "Barva okraje obrázků na pásu miniatur"
+
+#: class-ml-gallery.php:1929 class-ml-slider-lightbox.php:2678
 msgid "Thumbnail Border Color"
 msgstr "Barva okraje miniatury"
 
-#: class-ml-gallery.php:1484
+#: class-ml-gallery.php:1939
+msgid "Border color of the active and hovered thumbnail"
+msgstr "Barva okraje aktivní a najeté miniatury"
+
+#: class-ml-gallery.php:1939
 msgid "Thumbnail Border Active and Hover"
 msgstr "Okraj miniatury aktivní a při najetí myší"
 
-#: class-ml-gallery.php:1498
+#: class-ml-gallery.php:1958
+msgid "Text color of the button that opens the gallery window"
+msgstr "Barva textu tlačítka, které otevře okno galerie"
+
+#: class-ml-gallery.php:1958
+msgid "Button Text Color"
+msgstr "Barva textu tlačítka"
+
+#: class-ml-gallery.php:1962
+msgid "Button text color on hover"
+msgstr "Barva textu tlačítka při najetí myší"
+
+#: class-ml-gallery.php:1962
+msgid "Button Text Hover"
+msgstr "Text tlačítka při najetí myší"
+
+#: class-ml-gallery.php:1966
+msgid "Background color of the button that opens the gallery window"
+msgstr "Barva pozadí tlačítka, které otevírá okno galerie"
+
+#: class-ml-gallery.php:1966
+msgid "Button Background"
+msgstr "Pozadí tlačítka"
+
+#: class-ml-gallery.php:1970
+msgid "Button background color on hover"
+msgstr "Barva pozadí tlačítka při najetí myší"
+
+#: class-ml-gallery.php:1970
+msgid "Button Background Hover"
+msgstr "Pozadí tlačítka při najetí myší"
+
+#: class-ml-gallery.php:1977
+msgid "Color of the icon that opens the gallery window"
+msgstr "Barva ikony, která otevírá okno galerie"
+
+#: class-ml-gallery.php:1977
+msgid "Icon Color"
+msgstr "Barva ikony"
+
+#: class-ml-gallery.php:1981
+msgid "Icon color on hover"
+msgstr "Barva ikony při najetí myší"
+
+#: class-ml-gallery.php:1981
+msgid "Icon Hover Color"
+msgstr "Barva ikony při najetí myší"
+
+#: class-ml-gallery.php:1985
+msgid "Background color behind the icon"
+msgstr "Barva pozadí za ikonou"
+
+#: class-ml-gallery.php:1985
+msgid "Icon Background"
+msgstr "Pozadí ikony"
+
+#: class-ml-gallery.php:1989
+msgid "Icon background color on hover"
+msgstr "Barva pozadí ikony při najetí myší"
+
+#: class-ml-gallery.php:1989
+msgid "Icon Background Hover"
+msgstr "Pozadí ikony při najetí myší"
+
+#: class-ml-gallery.php:1996
+msgid "Color of the progress bar shown during autoplay"
+msgstr "Barva pruhu pokroku zobrazeného během automatického přehrávání"
+
+#: class-ml-gallery.php:1996
+msgid "Autoplay Progress Bar"
+msgstr "Průběh automatického přehrávání"
+
+#: class-ml-gallery.php:2011
 msgid "Image Styles"
 msgstr "Styly obrázků"
 
-#: class-ml-gallery.php:1501
+#: class-ml-gallery.php:2014
 msgid "Apply a filter to every image in the gallery"
 msgstr "Použijte filtr na každý obrázek v galerii"
 
-#: class-ml-gallery.php:1501
+#: class-ml-gallery.php:2014
 msgid "Filter"
 msgstr "Filtr"
 
-#: class-ml-gallery.php:1510
+#: class-ml-gallery.php:2023
 msgid "Corner radius in pixels applied to every image"
 msgstr "Poloměr rohu v pixelech aplikovaný na každý obrázek"
 
-#: class-ml-gallery.php:1511
+#: class-ml-gallery.php:2024
 msgid "Rounded Corners"
 msgstr "Zaoblené rohy"
 
-#: class-ml-gallery.php:1522
+#: class-ml-gallery.php:2035
 msgid "Image border width in pixels (0 = no border)"
 msgstr "Šířka okraje v pixelech (0 = bez okraje)"
 
-#: class-ml-gallery.php:1523
+#: class-ml-gallery.php:2036
 msgid "Border Width"
 msgstr "Šířka okraje"
 
-#: class-ml-gallery.php:1534
+#: class-ml-gallery.php:2047
 msgid "Line style used for the image border"
 msgstr "Styl čáry použitý pro okraj obrázku"
 
-#: class-ml-gallery.php:1534
+#: class-ml-gallery.php:2047
 msgid "Border Style"
 msgstr "Styl okraje"
 
-#: class-ml-gallery.php:1537
+#: class-ml-gallery.php:2050
 msgid "Solid"
 msgstr "Pevný"
 
-#: class-ml-gallery.php:1538
+#: class-ml-gallery.php:2051
 msgid "Dashed"
 msgstr "Čárkovaný"
 
-#: class-ml-gallery.php:1539
+#: class-ml-gallery.php:2052
 msgid "Dotted"
 msgstr "Tečkovaný"
 
-#: class-ml-gallery.php:1540
+#: class-ml-gallery.php:2053
 msgid "Double"
 msgstr "Dvojitý"
 
-#: class-ml-gallery.php:1548
+#: class-ml-gallery.php:2061
+msgid "Color of the image border"
+msgstr "Barva okraje obrázku"
+
+#: class-ml-gallery.php:2061
 msgid "Border Color"
 msgstr "Barva okraje"
 
-#: class-ml-gallery.php:1558
+#: class-ml-gallery.php:2071
 msgid "Drop shadow depth cast behind each image"
 msgstr "Hluboký stín za každým obrázkem"
 
-#: class-ml-gallery.php:1558
+#: class-ml-gallery.php:2071
 msgid "Box Shadow"
 msgstr "Stín boxu"
 
-#: class-ml-gallery.php:1562
+#: class-ml-gallery.php:2075
 msgid "Light"
 msgstr "Světlo"
 
-#: class-ml-gallery.php:1563
+#: class-ml-gallery.php:2076
 msgid "Medium"
 msgstr "Střední"
 
-#: class-ml-gallery.php:1564
+#: class-ml-gallery.php:2077
 msgid "Heavy"
 msgstr "Těžký"
 
-#: class-ml-gallery.php:1572
+#: class-ml-gallery.php:2085
 msgid "Image opacity as a percentage"
 msgstr "Průhlednost obrázku jako procento"
 
-#: class-ml-gallery.php:1573
+#: class-ml-gallery.php:2086
 msgid "Opacity"
 msgstr "Průhlednost"
 
-#: class-ml-gallery.php:1584
+#: class-ml-gallery.php:2097
 msgid "Rotate every image by a fixed angle"
 msgstr "Otočit každý obrázek o pevný úhel"
 
-#: class-ml-gallery.php:1584
+#: class-ml-gallery.php:2097
 msgid "Rotate"
 msgstr "Otočit"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:2111
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "Zrcadlit každý obrázek horizontálně, vertikálně nebo obojí"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:2111
 msgid "Flip"
 msgstr "Převrátit"
 
-#: class-ml-gallery.php:1602
+#: class-ml-gallery.php:2115
 msgid "Horizontal"
 msgstr "Horizontálně"
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:2116
 msgid "Vertical"
 msgstr "Vertikálně"
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:2117
 msgid "Both"
 msgstr "Obojí"
 
-#: class-ml-gallery.php:1614 class-ml-gallery.php:2618
-#: class-ml-gallery.php:1614
-#: class-ml-gallery.php:2618
+#: class-ml-gallery.php:2127 class-ml-gallery.php:3747
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: class-ml-gallery.php:1616 class-ml-gallery.php:2638
-#: class-ml-gallery.php:1616
-#: class-ml-gallery.php:2638
+#: class-ml-gallery.php:2129 class-ml-gallery.php:3767
 msgid "Click to copy shortcode."
 msgstr "Klikněte pro zkopírování shortcode."
 
-#: class-ml-gallery.php:1634
+#: class-ml-gallery.php:2147
 msgid "Edit Caption"
 msgstr "Upravit popis"
 
-#: class-ml-gallery.php:1635 class-ml-gallery.php:1664
-#: class-ml-gallery.php:1685 class-ml-gallery.php:2663
-#: class-ml-gallery.php:1635
-#: class-ml-gallery.php:1664
-#: class-ml-gallery.php:1685
-#: class-ml-gallery.php:2663
+#: class-ml-gallery.php:2149
+msgid "Previous image"
+msgstr "Předchozí obrázek"
+
+#: class-ml-gallery.php:2150
+msgid "Next image"
+msgstr "Další obrázek"
+
+#: class-ml-gallery.php:2152 class-ml-gallery.php:2194
+#: class-ml-gallery.php:2215 class-ml-gallery.php:3792
 msgid "Close"
 msgstr "Zavřít"
 
-#: class-ml-gallery.php:1643
+#: class-ml-gallery.php:2173
 msgid "Caption"
 msgstr "Popis"
 
-#: class-ml-gallery.php:1650 class-ml-gallery.php:1672
-#: class-ml-gallery.php:1650
-#: class-ml-gallery.php:1672
-msgid "Cancel"
-msgstr "Zrušit"
+#: class-ml-gallery.php:2183
+msgid "Done"
+msgstr "Hotovo"
 
-#: class-ml-gallery.php:1653
-msgid "Save Caption"
-msgstr "Uložit popis"
-
-#: class-ml-gallery.php:1663
+#: class-ml-gallery.php:2193
 msgid "Import from Server Folder"
 msgstr "Importovat z adresáře serveru"
 
-#: class-ml-gallery.php:1673
+#: class-ml-gallery.php:2202
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: class-ml-gallery.php:2203
 msgid "Import selected"
 msgstr "Importovat vybrané"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:2214
 msgid "Import from ZIP"
 msgstr "Importovat z ZIP"
 
-#: class-ml-gallery.php:1708 class-ml-gallery.php:1856
-#: class-ml-gallery.php:1708
-#: class-ml-gallery.php:1856
-msgid "Security check failed."
-msgstr "Kontrola zabezpečení selhala."
-
-#: class-ml-gallery.php:1712
+#: class-ml-gallery.php:2242
 msgid "You do not have sufficient permissions."
 msgstr "Nemáte dostatečná oprávnění."
 
-#: class-ml-gallery.php:1731
+#: class-ml-gallery.php:2261
 msgid "Could not update the gallery. Please try again."
 msgstr "Nelze aktualizovat galerii. Zkuste to prosím znovu."
 
-#: class-ml-gallery.php:1866
+#: class-ml-gallery.php:2408
 msgid "(Copy)"
 msgstr "(Zkopírovat)"
 
-#: class-ml-gallery.php:1872
+#: class-ml-gallery.php:2414
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "Nepodařilo se duplikovat galerii. Zkuste to prosím znovu."
 
-#: class-ml-gallery.php:1976 class-ml-gallery.php:2091
-#: class-ml-gallery.php:2783 class-ml-gallery.php:1976
-#: class-ml-gallery.php:2091
-#: class-ml-gallery.php:2783
+#: class-ml-gallery.php:2562 class-ml-gallery.php:2677
+#: class-ml-gallery.php:3912 class-ml-gallery.php:4065
+#: class-ml-gallery.php:4097
 msgid "Permission denied."
 msgstr "Přístup odepřen."
 
-#: class-ml-gallery.php:1983
+#: class-ml-gallery.php:2569
 msgid "Folder not found."
 msgstr "Složka nebyla nalezena."
 
-#: class-ml-gallery.php:1992
+#: class-ml-gallery.php:2578
 msgid "Folder could not be read."
 msgstr "Složku se nepodařilo přečíst."
 
-#: class-ml-gallery.php:2029
+#: class-ml-gallery.php:2615
 msgid "Uploads"
 msgstr "Nahrávky"
 
-#: class-ml-gallery.php:2192
+#: class-ml-gallery.php:2800
 msgid "Select Gallery Images"
 msgstr "Vybrat obrázky galerie"
 
-#: class-ml-gallery.php:2193
+#: class-ml-gallery.php:2801
 msgid "Add to Gallery"
 msgstr "Přidat do galerie"
 
-#: class-ml-gallery.php:2197
+#: class-ml-gallery.php:2812
+msgid ""
+"Saved to this image in your Media Library — changes appear anywhere the "
+"image is used."
+msgstr ""
+"Uloženo k tomuto obrázku ve vaší mediální knihovně — změny se projeví "
+"všude, kde je obrázek použit."
+
+#: class-ml-gallery.php:2813 class-ml-gallery.php:4114
+msgid "You do not have permission to edit this image."
+msgstr "Nemáte oprávnění tento obrázek upravit."
+
+#: class-ml-gallery.php:2814 class-ml-gallery.php:4115
+msgid "This caption source is read-only."
+msgstr "Tento zdroj popisku je pouze pro čtení."
+
+#: class-ml-gallery.php:2815
+msgid "Shown in this gallery"
+msgstr "Zobrazeno v této galerii"
+
+#: class-ml-gallery.php:2817
 msgid "Loading…"
 msgstr "Načítání…"
 
-#: class-ml-gallery.php:2198
+#: class-ml-gallery.php:2818
 msgid "No images in this folder."
 msgstr "V této složce nejsou žádné obrázky."
 
-#: class-ml-gallery.php:2199
+#: class-ml-gallery.php:2819
 msgid "Could not load this folder."
 msgstr "Nepodařilo se načíst tuto složku."
 
-#: class-ml-gallery.php:2200
+#: class-ml-gallery.php:2820
 msgid "Importing…"
 msgstr "Importuji…"
 
-#: class-ml-gallery.php:2201
+#: class-ml-gallery.php:2821
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr "Zobrazuji prvních 200 obrázků — otevřete podsložku pro zúžení seznamu."
 
-#: class-ml-gallery.php:2202
+#: class-ml-gallery.php:2822
 msgid "Select at least one image."
 msgstr "Vyberte alespoň jeden obrázek."
 
-#: class-ml-gallery.php:2203 class-ml-gallery.php:2206
-#: class-ml-gallery.php:2203
-#: class-ml-gallery.php:2206
+#: class-ml-gallery.php:2823 class-ml-gallery.php:2826
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "Importováno %1$d obrázků; %2$d obrázků bylo přeskočeno."
 
-#: class-ml-gallery.php:2204
+#: class-ml-gallery.php:2824
 msgid "Uploading…"
 msgstr "Nahrávám…"
 
-#: class-ml-gallery.php:2205
+#: class-ml-gallery.php:2825
 msgid "Importing images…"
 msgstr "Importuji obrázky…"
 
-#: class-ml-gallery.php:2207
+#: class-ml-gallery.php:2827
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "Bylo importováno pouze prvních 200 obrázků (nebo 256 MB)."
 
-#: class-ml-gallery.php:2208
+#: class-ml-gallery.php:2828
 msgid "The ZIP could not be imported."
 msgstr "ZIP se nepodařilo importovat."
 
-#: class-ml-gallery.php:2209
+#: class-ml-gallery.php:2829
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr "Nahrávání bylo odmítnuto — ZIP může být větší, než tento server povoluje."
 
-#: class-ml-gallery.php:2210
+#: class-ml-gallery.php:2830
 msgid "No images found in the ZIP."
 msgstr "V ZIP nebyly nalezeny žádné obrázky."
 
-#: class-ml-gallery.php:2620
+#: class-ml-gallery.php:3378
+msgid "Drag-and-drop building"
+msgstr "Vytváření přetahováním"
+
+#: class-ml-gallery.php:3379
+msgid "Responsive lightbox"
+msgstr "Responzivní lightbox"
+
+#: class-ml-gallery.php:3380
+msgid "Grid · Masonry · Justified"
+msgstr "Mřížka · Zednický · Justifikovaný"
+
+#: class-ml-gallery.php:3631
+msgid "Get started"
+msgstr "Začít"
+
+#: class-ml-gallery.php:3634
+msgid "Your galleries"
+msgstr "Vaše galerie"
+
+#: class-ml-gallery.php:3634
+msgid "live here."
+msgstr "žijí zde."
+
+#: class-ml-gallery.php:3636
+msgid ""
+"Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
+"justified, no code required."
+msgstr ""
+"Vytvářejte krásné obrazové galerie s úžasným lightboxem. Mřížka, zednický "
+"nebo justifikovaný, žádný kód není potřeba."
+
+#: class-ml-gallery.php:3638
+msgid "Create your first gallery"
+msgstr "Vytvořte svou první galerii"
+
+#: class-ml-gallery.php:3651
+#, php-format
+msgid "View Trash (%s)"
+msgid_plural "View Trash (%s)"
+msgstr[0] "Zobrazit Koš (%s)"
+msgstr[1] "Zobrazit Koš (%s)"
+msgstr[2] ""
+
+#: class-ml-gallery.php:3662
+msgid "Preview layout"
+msgstr "Náhled rozložení"
+
+#: class-ml-gallery.php:3749
 msgid "Usage"
 msgstr "Použití"
 
-#: class-ml-gallery.php:2653
+#: class-ml-gallery.php:3782
 msgid "Not found."
 msgstr "Nenalezeno."
 
-#: class-ml-gallery.php:2658
+#: class-ml-gallery.php:3787
 msgid "View Usage"
 msgstr "Zobrazit použití"
 
-#: class-ml-gallery.php:2664
+#: class-ml-gallery.php:3793
 msgid "Content Using This Gallery"
 msgstr "Obsah využívající tuto galerii"
 
-#: class-ml-gallery.php:2731
+#: class-ml-gallery.php:3860
 msgid "(no title)"
 msgstr "(žádný název)"
 
-#: class-ml-gallery.php:2789 class-ml-gallery.php:2798
-#: class-ml-gallery.php:2789
-#: class-ml-gallery.php:2798
+#: class-ml-gallery.php:3918 class-ml-gallery.php:3927
 msgid "Please choose a valid .zip file."
 msgstr "Prosím vyberte platný .zip soubor."
 
-#: class-ml-gallery.php:2804
+#: class-ml-gallery.php:3933
 msgid "Server cannot read ZIP files."
 msgstr "Server nemůže číst ZIP soubory."
 
-#: class-ml-gallery.php:2811
+#: class-ml-gallery.php:3940
 msgid "The ZIP could not be read."
 msgstr "ZIP mohl být přečten."
 
-#: class-ml-gallery.php:2845
+#: class-ml-gallery.php:3974
 msgid "Could not prepare a temporary folder."
 msgstr "Nepodařilo se připravit dočasnou složku."
 
-#: class-ml-slider-lightbox.php:1039
-#: class-ml-slider-lightbox.php:1039
+#: class-ml-gallery.php:4072 class-ml-gallery.php:4108
+msgid "Image not found."
+msgstr "Obrázek nebyl nalezen."
+
+#: class-ml-gallery.php:4145
+msgid "Unknown caption source."
+msgstr "Neznámý zdroj popisku."
+
+#: class-ml-slider-lightbox.php:216
+msgid "👋 Thanks for installing MetaSlider Gallery!"
+msgstr "👋 Děkujeme za instalaci MetaSlider Gallery!"
+
+#: class-ml-slider-lightbox.php:219
+msgid "You're all set. Create your first gallery to get started."
+msgstr "Jste připraveni. Vytvořte svou první galerii a začněte."
+
+#: class-ml-slider-lightbox.php:1167
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1168,13 +1391,11 @@ msgstr ""
 "MetaSlider Gallery vyžaduje, aby byl nainstalován a aktivován MetaSlider a "
 "alespoň jeden další podporovaný plugin pro lightbox."
 
-#: class-ml-slider-lightbox.php:1043
-#: class-ml-slider-lightbox.php:1043
+#: class-ml-slider-lightbox.php:1171
 msgid "More info"
 msgstr "Více informací"
 
-#: class-ml-slider-lightbox.php:1054
-#: class-ml-slider-lightbox.php:1054
+#: class-ml-slider-lightbox.php:1182
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1182,58 +1403,31 @@ msgstr ""
 "Je aktivováno více než jeden plugin pro lightbox. To může způsobit "
 "konflikty s MetaSlider Gallery"
 
-#: class-ml-slider-lightbox.php:1114
-#: class-ml-slider-lightbox.php:1114
+#: class-ml-slider-lightbox.php:1242
 msgid "Edit Global Settings"
 msgstr "Upravit globální nastavení"
 
-#: class-ml-slider-lightbox.php:1126
-#: class-ml-slider-lightbox.php:1126
+#: class-ml-slider-lightbox.php:1253
 msgid "Open In Gallery"
 msgstr "Otevřít v galerii"
 
-#: class-ml-slider-lightbox.php:1141
-#: class-ml-slider-lightbox.php:1141
+#: class-ml-slider-lightbox.php:1267
 msgid "Show Captions"
 msgstr "Zobrazit popisky"
 
-#: class-ml-slider-lightbox.php:1141
-#: class-ml-slider-lightbox.php:1141
+#: class-ml-slider-lightbox.php:1267
 msgid "Show captions in the gallery for each slide."
 msgstr "Zobrazit popisky v galerii pro každý snímek."
 
-#: class-ml-slider-lightbox.php:1142
-#: class-ml-slider-lightbox.php:1142
+#: class-ml-slider-lightbox.php:1268
 msgid "Show Navigation Arrows"
 msgstr "Zobrazit navigační šipky"
 
-#: class-ml-slider-lightbox.php:1142
-#: class-ml-slider-lightbox.php:1142
+#: class-ml-slider-lightbox.php:1268
 msgid "Show previous/next arrows in the gallery."
 msgstr "Zobrazit předchozí/následující šipky v galerii."
 
-#: class-ml-slider-lightbox.php:1143
-#: class-ml-slider-lightbox.php:1143
-msgid "Show \"Open In Gallery\" Button"
-msgstr "Zobrazit tlačítko \"Otevřít v galerii\""
-
-#: class-ml-slider-lightbox.php:1143
-#: class-ml-slider-lightbox.php:1143
-msgid "Show a button on each slide to open the image in the gallery."
-msgstr "Zobrazit tlačítko na každém snímku pro otevření obrázku v galerii."
-
-#: class-ml-slider-lightbox.php:1144
-#: class-ml-slider-lightbox.php:1144
-msgid "Show An Icon Instead Of Button"
-msgstr "Zobrazit ikonu místo tlačítka"
-
-#: class-ml-slider-lightbox.php:1144
-#: class-ml-slider-lightbox.php:1144
-msgid "Display an icon instead of a text button on each slide."
-msgstr "Zobrazit ikonu místo textového tlačítka na každém snímku."
-
-#: class-ml-slider-lightbox.php:1149
-#: class-ml-slider-lightbox.php:1149
+#: class-ml-slider-lightbox.php:1274
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1242,172 +1436,155 @@ msgstr ""
 "Galerie je povolena pro všechny prezentace prostřednictvím <a "
 "href=\"%s\">Nastavení galerie MetaSlider</a>."
 
-#: class-ml-slider-lightbox.php:1512
-#: class-ml-slider-lightbox.php:1512
+#: class-ml-slider-lightbox.php:1639
 msgid "Close gallery"
 msgstr "Zavřít galerii"
 
-#: class-ml-slider-lightbox.php:1513
-#: class-ml-slider-lightbox.php:1513
+#: class-ml-slider-lightbox.php:1640
 msgid "Toggle maximize"
 msgstr "Přepnout na maximalizaci"
 
-#: class-ml-slider-lightbox.php:1514
-#: class-ml-slider-lightbox.php:1514
+#: class-ml-slider-lightbox.php:1641
 msgid "Previous slide"
 msgstr "Předchozí snímek"
 
-#: class-ml-slider-lightbox.php:1515
-#: class-ml-slider-lightbox.php:1515
+#: class-ml-slider-lightbox.php:1642
 msgid "Next slide"
 msgstr "Další snímek"
 
-#: class-ml-slider-lightbox.php:1517
-#: class-ml-slider-lightbox.php:1517
+#: class-ml-slider-lightbox.php:1644
 msgid "Play video"
 msgstr "Přehrát video"
 
-#: class-ml-slider-lightbox.php:1518
-#: class-ml-slider-lightbox.php:1518
+#: class-ml-slider-lightbox.php:1645
 msgid "Oops... Failed to load content..."
 msgstr "Ups... Nepodařilo se načíst obsah..."
 
-#: class-ml-slider-lightbox.php:1564
-#: class-ml-slider-lightbox.php:1564
+#: class-ml-slider-lightbox.php:1691 class-ml-slider-lightbox.php:1721
 msgid "Global"
 msgstr "Globální"
 
-#: class-ml-slider-lightbox.php:1565
-#: class-ml-slider-lightbox.php:1565
+#: class-ml-slider-lightbox.php:1692
 msgid "Yes"
 msgstr "Ano"
 
-#: class-ml-slider-lightbox.php:1566
-#: class-ml-slider-lightbox.php:1566
+#: class-ml-slider-lightbox.php:1693
 msgid "No"
 msgstr "Ne"
 
-#: class-ml-slider-lightbox.php:1820
-#: class-ml-slider-lightbox.php:1820
+#: class-ml-slider-lightbox.php:1716
+msgid "How Visitors Open Images"
+msgstr "Jak návštěvníci otevírají obrázky"
+
+#: class-ml-slider-lightbox.php:1719 class-ml-slider-lightbox.php:3643
+msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
+msgstr "Vyberte, zda kliknutí na obrázek, ikonu nebo tlačítko otevře galerii."
+
+#: class-ml-slider-lightbox.php:1722 class-ml-trigger-control.php:66
+msgid "Image"
+msgstr "Obrázek"
+
+#: class-ml-slider-lightbox.php:1723 class-ml-slider-lightbox.php:3485
+#: class-ml-slider-lightbox.php:3498 class-ml-slider-lightbox.php:3511
+#: class-ml-slider-lightbox.php:3609 class-ml-trigger-control.php:67
+msgid "Icon"
+msgstr "Ikona"
+
+#: class-ml-slider-lightbox.php:1724 class-ml-trigger-control.php:68
+msgid "Button"
+msgstr "Tlačítko"
+
+#: class-ml-slider-lightbox.php:1992
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Gallery vyžaduje, aby byl nainstalován a aktivován MetaSlider."
 
-#: class-ml-slider-lightbox.php:1824
-#: class-ml-slider-lightbox.php:1824
+#: class-ml-slider-lightbox.php:1996
 msgid "Install MetaSlider"
 msgstr "Nainstalovat MetaSlider"
 
-#: class-ml-slider-lightbox.php:1947 class-ml-slider-lightbox.php:2072
-#: class-ml-slider-lightbox.php:1947
-#: class-ml-slider-lightbox.php:2072, fuzzy
+#: class-ml-slider-lightbox.php:2119 class-ml-slider-lightbox.php:2263, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2054
-#: class-ml-slider-lightbox.php:2054
+#: class-ml-slider-lightbox.php:2245
 #, php-format
 msgid "Select pages to %s..."
 msgstr "Vybrat stránky pro %s..."
 
-#: class-ml-slider-lightbox.php:2055
-#: class-ml-slider-lightbox.php:2055
+#: class-ml-slider-lightbox.php:2246
 #, php-format
 msgid "Select posts to %s..."
 msgstr "Vybrat příspěvky pro %s..."
 
-#: class-ml-slider-lightbox.php:2056
-#: class-ml-slider-lightbox.php:2056
+#: class-ml-slider-lightbox.php:2247
 #, php-format
 msgid "Select post types to %s..."
 msgstr "Vybrat typy příspěvků pro %s..."
 
-#: class-ml-slider-lightbox.php:2057
-#: class-ml-slider-lightbox.php:2057
+#: class-ml-slider-lightbox.php:2248
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "Vybrat %1$s pro %2$s..."
 
-#: class-ml-slider-lightbox.php:2058
-#: class-ml-slider-lightbox.php:2058
+#: class-ml-slider-lightbox.php:2249
 msgid "Select post types to exclude"
 msgstr "Vybrat typy příspěvků k vyloučení"
 
-#: class-ml-slider-lightbox.php:2059 class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564 class-ml-slider-lightbox.php:3686
-#: class-ml-slider-lightbox.php:2059
-#: class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564
-#: class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:2250 class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
 msgid "Include"
 msgstr "Zahrnout"
 
-#: class-ml-slider-lightbox.php:2060 class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564 class-ml-slider-lightbox.php:3686
-#: class-ml-slider-lightbox.php:2060
-#: class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564
-#: class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:2251 class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
 msgid "Exclude"
 msgstr "Vyloučit"
 
-#: class-ml-slider-lightbox.php:2068
-#: class-ml-slider-lightbox.php:2068, fuzzy
+#: class-ml-slider-lightbox.php:2259, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2088
-#: class-ml-slider-lightbox.php:2088
-msgid "Settings"
-msgstr "Nastavení"
+#: class-ml-slider-lightbox.php:2279
+msgid "Global Settings"
+msgstr "Globální nastavení"
 
-#: class-ml-slider-lightbox.php:2098
-#: class-ml-slider-lightbox.php:2098
+#: class-ml-slider-lightbox.php:2289
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "Přejděte na MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2099
-#: class-ml-slider-lightbox.php:2099
+#: class-ml-slider-lightbox.php:2290
 msgid "Upgrade to Pro"
 msgstr "Přejít na Pro"
 
-#: class-ml-slider-lightbox.php:2131
-#: class-ml-slider-lightbox.php:2131
+#: class-ml-slider-lightbox.php:2322
 msgid "Automatic Mode"
 msgstr "Automatický režim"
 
-#: class-ml-slider-lightbox.php:2132
-#: class-ml-slider-lightbox.php:2132
+#: class-ml-slider-lightbox.php:2323
 msgid "Manual Mode"
 msgstr "Manuální režim"
 
-#: class-ml-slider-lightbox.php:2134
-#: class-ml-slider-lightbox.php:2134
+#: class-ml-slider-lightbox.php:2325
 msgid "Behavior"
 msgstr "Chování"
 
-#: class-ml-slider-lightbox.php:2155
-#: class-ml-slider-lightbox.php:2155
+#: class-ml-slider-lightbox.php:2346
 msgid "Settings saved successfully!"
 msgstr "Nastavení byla úspěšně uložena!"
 
-#: class-ml-slider-lightbox.php:2165
-#: class-ml-slider-lightbox.php:2165
+#: class-ml-slider-lightbox.php:2356
 msgid "Where to Enable Automatically"
 msgstr "Kde povolit automaticky"
 
-#: class-ml-slider-lightbox.php:2172
-#: class-ml-slider-lightbox.php:2172
+#: class-ml-slider-lightbox.php:2363
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider Slideshow"
 
-#: class-ml-slider-lightbox.php:2179 class-ml-slider-lightbox.php:2376
-#: class-ml-slider-lightbox.php:2179
-#: class-ml-slider-lightbox.php:2376
+#: class-ml-slider-lightbox.php:2370 class-ml-slider-lightbox.php:2567
 msgid "Content Filtering"
 msgstr "Filtraci obsahu"
 
-#: class-ml-slider-lightbox.php:2191
-#: class-ml-slider-lightbox.php:2191
+#: class-ml-slider-lightbox.php:2382
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
@@ -1415,25 +1592,19 @@ msgstr ""
 "Přizpůsobte barvy, průhlednost a vizuální styl pro překrytí galerie a "
 "ovládací prvky."
 
-#: class-ml-slider-lightbox.php:2195 class-ml-slider-lightbox.php:2442
-#: class-ml-slider-lightbox.php:2195
-#: class-ml-slider-lightbox.php:2442
+#: class-ml-slider-lightbox.php:2386 class-ml-slider-lightbox.php:2633
 msgid "Background & Overlay"
 msgstr "Pozadí & Překrytí"
 
-#: class-ml-slider-lightbox.php:2205
-#: class-ml-slider-lightbox.php:2205
+#: class-ml-slider-lightbox.php:2396
 msgid "\"Open in Gallery\" Button"
 msgstr "\"Otevřít v galerii\" Tlačítko"
 
-#: class-ml-slider-lightbox.php:2215 class-ml-slider-lightbox.php:2555
-#: class-ml-slider-lightbox.php:2215
-#: class-ml-slider-lightbox.php:2555
+#: class-ml-slider-lightbox.php:2406 class-ml-slider-lightbox.php:2746
 msgid "Navigation & Controls"
 msgstr "Navigace & Ovládání"
 
-#: class-ml-slider-lightbox.php:2221
-#: class-ml-slider-lightbox.php:2221
+#: class-ml-slider-lightbox.php:2412
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1443,36 +1614,27 @@ msgstr ""
 "třetí strany. Tato nastavení se nemusí vztahovat na MetaSlider, ale budou "
 "stále fungovat pro lightboxy obsahu WordPressu."
 
-#: class-ml-slider-lightbox.php:2228 class-ml-slider-lightbox.php:4034
-#: class-ml-slider-lightbox.php:2228
-#: class-ml-slider-lightbox.php:4034
+#: class-ml-slider-lightbox.php:2419 class-ml-slider-lightbox.php:4209
 msgid "Enhanced Zoom & Controls"
 msgstr "Vylepšené zoomování a ovládací prvky"
 
-#: class-ml-slider-lightbox.php:2236
-#: class-ml-slider-lightbox.php:2236
+#: class-ml-slider-lightbox.php:2427
 msgid "Media & Video Enhancements"
 msgstr "Vylepšení médií & videa"
 
-#: class-ml-slider-lightbox.php:2244 class-ml-slider-lightbox.php:4062
-#: class-ml-slider-lightbox.php:2244
-#: class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:2435 class-ml-slider-lightbox.php:4237
 msgid "Social & Navigation"
 msgstr "Sociální & Navigace"
 
-#: class-ml-slider-lightbox.php:2252 class-ml-slider-lightbox.php:4083
-#: class-ml-slider-lightbox.php:2252
-#: class-ml-slider-lightbox.php:4083
+#: class-ml-slider-lightbox.php:2443 class-ml-slider-lightbox.php:4258
 msgid "Advanced Features"
 msgstr "Pokročilé funkce"
 
-#: class-ml-slider-lightbox.php:2268
-#: class-ml-slider-lightbox.php:2268
+#: class-ml-slider-lightbox.php:2459
 msgid "Manual Options"
 msgstr "Ruční možnosti"
 
-#: class-ml-slider-lightbox.php:2269
-#: class-ml-slider-lightbox.php:2269
+#: class-ml-slider-lightbox.php:2460
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -1480,53 +1642,43 @@ msgstr ""
 "Manuální ovládací prvky a přepisy WordPress, které fungují nezávisle na "
 "automatických nastaveních."
 
-#: class-ml-slider-lightbox.php:2449
-#: class-ml-slider-lightbox.php:2449
+#: class-ml-slider-lightbox.php:2640
 msgid "Navigation Icons"
 msgstr "Ikony navigace"
 
-#: class-ml-slider-lightbox.php:2456
-#: class-ml-slider-lightbox.php:2456
+#: class-ml-slider-lightbox.php:2647
 msgid "Buttons"
 msgstr "Tlačítka"
 
-#: class-ml-slider-lightbox.php:2479
-#: class-ml-slider-lightbox.php:2479
+#: class-ml-slider-lightbox.php:2670
 msgid "Autoplay Progress Bar Color"
 msgstr "Barva indikátoru automatického přehrávání"
 
-#: class-ml-slider-lightbox.php:2503
-#: class-ml-slider-lightbox.php:2503
+#: class-ml-slider-lightbox.php:2694
 msgid "Close Button"
 msgstr "Tlačítko Zavřít"
 
-#: class-ml-slider-lightbox.php:2519
-#: class-ml-slider-lightbox.php:2519
+#: class-ml-slider-lightbox.php:2710
 msgid "Button Colors"
 msgstr "Barvy tlačítek"
 
-#: class-ml-slider-lightbox.php:2527
-#: class-ml-slider-lightbox.php:2527
+#: class-ml-slider-lightbox.php:2718
 msgid "Icon Colors"
 msgstr "Barvy ikon"
 
-#: class-ml-slider-lightbox.php:2913
-#: class-ml-slider-lightbox.php:2913
+#: class-ml-slider-lightbox.php:3099
 msgid "Configure general gallery settings that apply site-wide."
 msgstr "Konfigurujte obecná nastavení galerie, která se použijí na celém webu."
 
-#: class-ml-slider-lightbox.php:2918
-#: class-ml-slider-lightbox.php:2918
+#: class-ml-slider-lightbox.php:3104
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "Nastavte specifická nastavení pro funkčnost MetaSlider Gallery."
 
-#: class-ml-slider-lightbox.php:2923
-#: class-ml-slider-lightbox.php:2923
+#: class-ml-slider-lightbox.php:3109
 msgid "Select where the gallery will be enabled automatically."
 msgstr "Vyberte, kde bude galerie automaticky povolena."
 
-#: class-ml-slider-lightbox.php:2929
-#: class-ml-slider-lightbox.php:2929
+#: class-ml-slider-lightbox.php:3115
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1534,38 +1686,31 @@ msgstr ""
 "Vyberte, jak filtrovat obsah pro zpracování galerie a určete, které "
 "stránky, příspěvky nebo selektory zahrnout či vyloučit."
 
-#: class-ml-slider-lightbox.php:2945
-#: class-ml-slider-lightbox.php:2945
+#: class-ml-slider-lightbox.php:3131
 msgid "Processing Mode"
 msgstr "Režim zpracování"
 
-#: class-ml-slider-lightbox.php:2948
-#: class-ml-slider-lightbox.php:2948
+#: class-ml-slider-lightbox.php:3134
 msgid "Process all content EXCEPT the items specified below"
 msgstr "Zpracovat veškerý obsah KROMĚ položek uvedených níže"
 
-#: class-ml-slider-lightbox.php:2951
-#: class-ml-slider-lightbox.php:2951
+#: class-ml-slider-lightbox.php:3137
 msgid "ONLY process the items specified below"
 msgstr "ZPRACOVAT POUZE položky uvedené níže"
 
-#: class-ml-slider-lightbox.php:2958
-#: class-ml-slider-lightbox.php:2958
+#: class-ml-slider-lightbox.php:3144
 msgid "Inclusion Mode"
 msgstr "Režim zahrnutí"
 
-#: class-ml-slider-lightbox.php:2962
-#: class-ml-slider-lightbox.php:2962
+#: class-ml-slider-lightbox.php:3148
 msgid "Exclusion Mode"
 msgstr "Režim vyloučení"
 
-#: class-ml-slider-lightbox.php:2982
-#: class-ml-slider-lightbox.php:2982
+#: class-ml-slider-lightbox.php:3168
 msgid "Images in post content"
 msgstr "Obrázky v obsahu příspěvku"
 
-#: class-ml-slider-lightbox.php:2983
-#: class-ml-slider-lightbox.php:2983
+#: class-ml-slider-lightbox.php:3169
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -1573,13 +1718,11 @@ msgstr ""
 "Pokud je povoleno, jednotlivé obrázky bez odkazů a \"Zvětšit na kliknutí\" "
 "nastavené v příspěvcích a stránkách se automaticky otevřou v galerii."
 
-#: class-ml-slider-lightbox.php:2999
-#: class-ml-slider-lightbox.php:2999
+#: class-ml-slider-lightbox.php:3185
 msgid "Images and videos in widgets and sidebars"
 msgstr "Obrázky a videa ve widžetech a postranních panelech"
 
-#: class-ml-slider-lightbox.php:3000
-#: class-ml-slider-lightbox.php:3000
+#: class-ml-slider-lightbox.php:3186
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
@@ -1587,13 +1730,11 @@ msgstr ""
 "Pokud je povoleno, obrázky a videa v oblastech widgetů se automaticky "
 "otevřou v galerii."
 
-#: class-ml-slider-lightbox.php:3016
-#: class-ml-slider-lightbox.php:3016
+#: class-ml-slider-lightbox.php:3202
 msgid "Gallery shortcodes and blocks"
 msgstr "Galerijní shortcody a bloky"
 
-#: class-ml-slider-lightbox.php:3017
-#: class-ml-slider-lightbox.php:3017
+#: class-ml-slider-lightbox.php:3203
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1601,13 +1742,11 @@ msgstr ""
 "Pokud je povoleno, obrázky v WordPress [gallery] shortcodes a Gutenberg "
 "Gallery blocích se automaticky otevřou v okně galerie."
 
-#: class-ml-slider-lightbox.php:3033
-#: class-ml-slider-lightbox.php:3033
+#: class-ml-slider-lightbox.php:3219
 msgid "Featured images"
 msgstr "Významné obrázky"
 
-#: class-ml-slider-lightbox.php:3034
-#: class-ml-slider-lightbox.php:3034
+#: class-ml-slider-lightbox.php:3220
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -1615,8 +1754,7 @@ msgstr ""
 "Pokud je povoleno, vybrané obrázky (náhledy příspěvků) se automaticky "
 "otevřou v galerii po kliknutí."
 
-#: class-ml-slider-lightbox.php:3043
-#: class-ml-slider-lightbox.php:3043
+#: class-ml-slider-lightbox.php:3229
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -1624,13 +1762,11 @@ msgstr ""
 "Automaticky otevřít všechny prezentace MetaSlider v galerii, přepsáním "
 "nastavení pro každý snímek."
 
-#: class-ml-slider-lightbox.php:3057
-#: class-ml-slider-lightbox.php:3057
+#: class-ml-slider-lightbox.php:3243
 msgid "MetaSlider slideshows"
 msgstr "MetaSlider prezentace"
 
-#: class-ml-slider-lightbox.php:3058
-#: class-ml-slider-lightbox.php:3058
+#: class-ml-slider-lightbox.php:3244
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -1638,13 +1774,11 @@ msgstr ""
 "Pokud je povoleno, všechny prezentace MetaSlider otevřou snímky v okně "
 "galerie, přepsáním nastavení pro každý snímek."
 
-#: class-ml-slider-lightbox.php:3074
-#: class-ml-slider-lightbox.php:3074
+#: class-ml-slider-lightbox.php:3260
 msgid "Videos in post content"
 msgstr "Videa v obsahu příspěvků"
 
-#: class-ml-slider-lightbox.php:3075
-#: class-ml-slider-lightbox.php:3075
+#: class-ml-slider-lightbox.php:3261
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1652,8 +1786,7 @@ msgstr ""
 "Pokud je povoleno, samostatné video bloky (HTML5 videa, YouTube embed, "
 "Vimeo embed) v obsahu příspěvků/stránek se automaticky otevřou v galerii."
 
-#: class-ml-slider-lightbox.php:3110
-#: class-ml-slider-lightbox.php:3110
+#: class-ml-slider-lightbox.php:3296
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
@@ -1661,8 +1794,7 @@ msgstr ""
 "Barva pozadí pro překrytí galerie. Tmavé barvy nejlépe fungují pro "
 "prohlížení obrázků."
 
-#: class-ml-slider-lightbox.php:3115
-#: class-ml-slider-lightbox.php:3115
+#: class-ml-slider-lightbox.php:3301
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
@@ -1670,8 +1802,7 @@ msgstr ""
 "Barva pozadí pro tlačítka \"Otevřít v galerii\", která se objevují na "
 "snímcích, obrázcích a videích."
 
-#: class-ml-slider-lightbox.php:3120
-#: class-ml-slider-lightbox.php:3120
+#: class-ml-slider-lightbox.php:3306
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
@@ -1679,18 +1810,15 @@ msgstr ""
 "Barva textu pro tlačítka \"Otevřít v galerii\", která se objevují na "
 "snímcích, obrázcích a videích."
 
-#: class-ml-slider-lightbox.php:3125
-#: class-ml-slider-lightbox.php:3125
+#: class-ml-slider-lightbox.php:3311
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "Barva pozadí při najetí myší na tlačítka \"Otevřít v galerii\"."
 
-#: class-ml-slider-lightbox.php:3130
-#: class-ml-slider-lightbox.php:3130
+#: class-ml-slider-lightbox.php:3316
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "Barva textu při najetí myší na tlačítka \"Otevřít v galerii\"."
 
-#: class-ml-slider-lightbox.php:3143
-#: class-ml-slider-lightbox.php:3143
+#: class-ml-slider-lightbox.php:3329
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -1698,19 +1826,15 @@ msgstr ""
 "Vlastní text pro tlačítka galerie. Tento text se zobrazí na všech "
 "tlačítkách \"Otevřít v galerii\" na celém webu."
 
-#: class-ml-slider-lightbox.php:3156 class-ml-slider-lightbox.php:3182
-#: class-ml-slider-lightbox.php:3156
-#: class-ml-slider-lightbox.php:3182
+#: class-ml-slider-lightbox.php:3342 class-ml-slider-lightbox.php:3368
 msgid "Top Right (Default)"
 msgstr "Nahoru vpravo (Výchozí)"
 
-#: class-ml-slider-lightbox.php:3169
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3355
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "Vyberte, kde umístit tlačítko pro zavření (X) v překryvu galerie."
 
-#: class-ml-slider-lightbox.php:3195
-#: class-ml-slider-lightbox.php:3195
+#: class-ml-slider-lightbox.php:3381
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
@@ -1718,13 +1842,11 @@ msgstr ""
 "Vyberte, kde umístit tlačítka \"Otevřít v galerii\" v rámci snímků, "
 "obrázků, galerií a videí."
 
-#: class-ml-slider-lightbox.php:3200
-#: class-ml-slider-lightbox.php:3200
+#: class-ml-slider-lightbox.php:3386
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "Barva pro navigační šipky předchozí a následující v galerii."
 
-#: class-ml-slider-lightbox.php:3205
-#: class-ml-slider-lightbox.php:3205
+#: class-ml-slider-lightbox.php:3391
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -1732,13 +1854,11 @@ msgstr ""
 "Barva šipky při najetí. Vytváří vizuální zpětnou vazbu, když uživatelé "
 "pohybují myší nad navigačními šipkami."
 
-#: class-ml-slider-lightbox.php:3210
-#: class-ml-slider-lightbox.php:3210
+#: class-ml-slider-lightbox.php:3396
 msgid "Color for the close button (X) in the gallery."
 msgstr "Barva pro tlačítko pro zavření (X) v galerii."
 
-#: class-ml-slider-lightbox.php:3215
-#: class-ml-slider-lightbox.php:3215
+#: class-ml-slider-lightbox.php:3401
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -1746,8 +1866,7 @@ msgstr ""
 "Barva tlačítka pro zavření při najetí. Vytváří vizuální zpětnou vazbu, když "
 "uživatelé pohybují myší nad tlačítkem pro zavření."
 
-#: class-ml-slider-lightbox.php:3220
-#: class-ml-slider-lightbox.php:3220
+#: class-ml-slider-lightbox.php:3406
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -1755,8 +1874,7 @@ msgstr ""
 "Barva ikon nástrojů a textu počitadla v Lightboxu. Ovlivňuje ikony "
 "přiblížení, celé obrazovky (Pro) a zobrazení počitadla obrázků."
 
-#: class-ml-slider-lightbox.php:3225
-#: class-ml-slider-lightbox.php:3225
+#: class-ml-slider-lightbox.php:3411
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -1764,13 +1882,11 @@ msgstr ""
 "Barva ikony nástrojů při najetí myší. Vytváří vizuální zpětnou vazbu, když "
 "uživatelé pohybují myší nad ikonami nástrojů a počitadlem."
 
-#: class-ml-slider-lightbox.php:3230
-#: class-ml-slider-lightbox.php:3230
+#: class-ml-slider-lightbox.php:3416
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "Barva pozadí pro tlačítka navigace předchozí a následující šipky."
 
-#: class-ml-slider-lightbox.php:3235
-#: class-ml-slider-lightbox.php:3235
+#: class-ml-slider-lightbox.php:3421
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -1778,13 +1894,11 @@ msgstr ""
 "Barva pozadí pro tlačítka šipek při najetí myší. Vytváří vizuální zpětnou "
 "vazbu, když uživatelé pohybují myší nad šipkami."
 
-#: class-ml-slider-lightbox.php:3240
-#: class-ml-slider-lightbox.php:3240
+#: class-ml-slider-lightbox.php:3426
 msgid "Background color for the close button (X) in the gallery."
 msgstr "Barva pozadí pro tlačítko pro zavření (X) v galerii."
 
-#: class-ml-slider-lightbox.php:3245
-#: class-ml-slider-lightbox.php:3245
+#: class-ml-slider-lightbox.php:3431
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -1792,13 +1906,11 @@ msgstr ""
 "Barva pozadí pro tlačítko zavřít při najetí myší. Vytváří vizuální zpětnou "
 "vazbu, když uživatelé pohybují myší nad tlačítkem zavřít."
 
-#: class-ml-slider-lightbox.php:3250
-#: class-ml-slider-lightbox.php:3250
+#: class-ml-slider-lightbox.php:3436
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "Barva pozadí pro ikony nástrojů v Lightboxu."
 
-#: class-ml-slider-lightbox.php:3255
-#: class-ml-slider-lightbox.php:3255
+#: class-ml-slider-lightbox.php:3441
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -1806,73 +1918,44 @@ msgstr ""
 "Barva pozadí pro ikony nástrojů při najetí myší. Vytváří vizuální zpětnou "
 "vazbu, když uživatelé pohybují myší nad ikonami nástrojů."
 
-#: class-ml-slider-lightbox.php:3299 class-ml-slider-lightbox.php:3312
-#: class-ml-slider-lightbox.php:3325 class-ml-slider-lightbox.php:3423
-#: class-ml-slider-lightbox.php:3299
-#: class-ml-slider-lightbox.php:3312
-#: class-ml-slider-lightbox.php:3325
-#: class-ml-slider-lightbox.php:3423
-msgid "Icon"
-msgstr "Ikona"
-
-#: class-ml-slider-lightbox.php:3300 class-ml-slider-lightbox.php:3313
-#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:3424
-#: class-ml-slider-lightbox.php:3300
-#: class-ml-slider-lightbox.php:3313
-#: class-ml-slider-lightbox.php:3326
-#: class-ml-slider-lightbox.php:3424
+#: class-ml-slider-lightbox.php:3486 class-ml-slider-lightbox.php:3499
+#: class-ml-slider-lightbox.php:3512 class-ml-slider-lightbox.php:3610
 msgid "Icon Hover"
 msgstr "Ikona při najetí"
 
-#: class-ml-slider-lightbox.php:3301 class-ml-slider-lightbox.php:3314
-#: class-ml-slider-lightbox.php:3327 class-ml-slider-lightbox.php:3408
-#: class-ml-slider-lightbox.php:3425
-#: class-ml-slider-lightbox.php:3301
-#: class-ml-slider-lightbox.php:3314
-#: class-ml-slider-lightbox.php:3327
-#: class-ml-slider-lightbox.php:3408
-#: class-ml-slider-lightbox.php:3425
+#: class-ml-slider-lightbox.php:3487 class-ml-slider-lightbox.php:3500
+#: class-ml-slider-lightbox.php:3513 class-ml-slider-lightbox.php:3594
+#: class-ml-slider-lightbox.php:3611
 msgid "Background"
 msgstr "Pozadí"
 
-#: class-ml-slider-lightbox.php:3302 class-ml-slider-lightbox.php:3315
-#: class-ml-slider-lightbox.php:3328 class-ml-slider-lightbox.php:3409
-#: class-ml-slider-lightbox.php:3426
-#: class-ml-slider-lightbox.php:3302
-#: class-ml-slider-lightbox.php:3315
-#: class-ml-slider-lightbox.php:3328
-#: class-ml-slider-lightbox.php:3409
-#: class-ml-slider-lightbox.php:3426
+#: class-ml-slider-lightbox.php:3488 class-ml-slider-lightbox.php:3501
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3595
+#: class-ml-slider-lightbox.php:3612
 msgid "Background Hover"
 msgstr "Pozadí při najetí"
 
-#: class-ml-slider-lightbox.php:3345
-#: class-ml-slider-lightbox.php:3345
+#: class-ml-slider-lightbox.php:3531
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "Nastavte neprůhlednost pozadí galerie (0 = průhledné, 1 = neprůhledné)."
 
-#: class-ml-slider-lightbox.php:3354
-#: class-ml-slider-lightbox.php:3354
+#: class-ml-slider-lightbox.php:3540
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "Barva indikátoru postupu zobrazeného během automatických prezentací snímků."
 
-#: class-ml-slider-lightbox.php:3360
-#: class-ml-slider-lightbox.php:3360
+#: class-ml-slider-lightbox.php:3546
 msgid "Border"
 msgstr "Okraj"
 
-#: class-ml-slider-lightbox.php:3361
-#: class-ml-slider-lightbox.php:3361
+#: class-ml-slider-lightbox.php:3547
 msgid "Border Active and Hover"
 msgstr "Okraj aktivní a při najetí myší"
 
-#: class-ml-slider-lightbox.php:3373
-#: class-ml-slider-lightbox.php:3373
+#: class-ml-slider-lightbox.php:3559
 msgid "Show navigation arrows in gallery"
 msgstr "Zobrazit navigační šipky v galerii"
 
-#: class-ml-slider-lightbox.php:3374
-#: class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3560
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -1882,20 +1965,17 @@ msgstr ""
 "(← → klávesy, ESC pro zavření). To je k dispozici pro prezentace a galerie "
 "obrázků."
 
-#: class-ml-slider-lightbox.php:3383
-#: class-ml-slider-lightbox.php:3383
+#: class-ml-slider-lightbox.php:3569
 msgid "Customize the gallery background and overlay appearance."
 msgstr "Přizpůsobte vzhled pozadí galerie a překryvu."
 
-#: class-ml-slider-lightbox.php:3388
-#: class-ml-slider-lightbox.php:3388
+#: class-ml-slider-lightbox.php:3574
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr ""
 "Přizpůsobte ikony navigace (zavřít, předchozí, následující šipky) pro "
 "galerii."
 
-#: class-ml-slider-lightbox.php:3393
-#: class-ml-slider-lightbox.php:3393
+#: class-ml-slider-lightbox.php:3579
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -1903,18 +1983,15 @@ msgstr ""
 "Přizpůsobte tlačítka \"Otevřít v galerii\", která lze přidat k snímkům, "
 "obrázkům, galeriím a videím."
 
-#: class-ml-slider-lightbox.php:3406
-#: class-ml-slider-lightbox.php:3406, fuzzy
+#: class-ml-slider-lightbox.php:3592, fuzzy
 msgid "Text"
 msgstr "Text"
 
-#: class-ml-slider-lightbox.php:3407
-#: class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3593
 msgid "Text Hover"
 msgstr "Text při najetí"
 
-#: class-ml-slider-lightbox.php:3432
-#: class-ml-slider-lightbox.php:3432
+#: class-ml-slider-lightbox.php:3618
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
@@ -1922,13 +1999,11 @@ msgstr ""
 "Nakonfigurujte možnosti navigace a ovládání, které se vztahují na všechny "
 "galerie MetaSlider."
 
-#: class-ml-slider-lightbox.php:3442
-#: class-ml-slider-lightbox.php:3442
+#: class-ml-slider-lightbox.php:3628
 msgid "Show thumbnails"
 msgstr "Zobrazit miniatury"
 
-#: class-ml-slider-lightbox.php:3443
-#: class-ml-slider-lightbox.php:3443
+#: class-ml-slider-lightbox.php:3629
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -1936,37 +2011,15 @@ msgstr ""
 "Zobrazit miniatury obrázků na spodní části galerie pro snadnou navigaci. "
 "Toto je k dispozici pro prezentace snímků a galerie obrázků."
 
-#: class-ml-slider-lightbox.php:3455
-#: class-ml-slider-lightbox.php:3455
-msgid "Show \"Open in Gallery\" button"
-msgstr "Zobrazit tlačítko \"Otevřít v galerii\""
+#: class-ml-slider-lightbox.php:3642
+msgid "How visitors open images"
+msgstr "Jak návštěvníci otevírají obrázky"
 
-#: class-ml-slider-lightbox.php:3456
-#: class-ml-slider-lightbox.php:3456
-msgid ""
-"When enabled, shows a button to open the gallery. When disabled, clicking "
-"the slide, image, or video directly opens the gallery."
-msgstr ""
-"Pokud je povoleno, zobrazí se tlačítko pro otevření galerie. Pokud je "
-"zakázáno, kliknutí na snímek, obrázek nebo video přímo otevře galerii."
-
-#: class-ml-slider-lightbox.php:3473
-#: class-ml-slider-lightbox.php:3473
-msgid "Show an icon instead of button"
-msgstr "Zobrazit ikonu místo tlačítka"
-
-#: class-ml-slider-lightbox.php:3474
-#: class-ml-slider-lightbox.php:3474
-msgid "When enabled, displays a small icon instead of the full button text."
-msgstr "Pokud je povoleno, zobrazí se malá ikona místo celého textu tlačítka."
-
-#: class-ml-slider-lightbox.php:3488
-#: class-ml-slider-lightbox.php:3488
+#: class-ml-slider-lightbox.php:3663
 msgid "Show captions"
 msgstr "Zobrazit popisky"
 
-#: class-ml-slider-lightbox.php:3489
-#: class-ml-slider-lightbox.php:3489
+#: class-ml-slider-lightbox.php:3664
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -1974,20 +2027,17 @@ msgstr ""
 "Pokud je povoleno, zobrazit popisky v okně galerie. Toto je k dispozici pro "
 "prezentace snímků, obrázky a galerie obrázků."
 
-#: class-ml-slider-lightbox.php:3496
-#: class-ml-slider-lightbox.php:3496
+#: class-ml-slider-lightbox.php:3671
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr ""
 "Pokročilé funkce lightboxu jsou k dispozici prostřednictvím MetaSlider "
 "Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3498
-#: class-ml-slider-lightbox.php:3498
+#: class-ml-slider-lightbox.php:3673
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr "Získejte náhled na pokročilé funkce dostupné v MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3501
-#: class-ml-slider-lightbox.php:3501
+#: class-ml-slider-lightbox.php:3676
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -1995,14 +2045,11 @@ msgstr ""
 "Tyto pokročilé pluginy LightGallery.js jsou k dispozici v Pro verzi s "
 "dalšími možnostmi přizpůsobení."
 
-#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3530
-#: class-ml-slider-lightbox.php:3529
-#: class-ml-slider-lightbox.php:3530
+#: class-ml-slider-lightbox.php:3704 class-ml-slider-lightbox.php:3705
 msgid "specific Pages"
 msgstr "konkrétní stránky"
 
-#: class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3532
+#: class-ml-slider-lightbox.php:3707
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2010,9 +2057,7 @@ msgstr ""
 "Vyberte stránky, kde by měla být galerie zakázána. Zobrazuje až 100 "
 "nejnovějších stránek. Zadejte pro hledání."
 
-#: class-ml-slider-lightbox.php:3532 class-ml-slider-lightbox.php:3533
-#: class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3533
+#: class-ml-slider-lightbox.php:3707 class-ml-slider-lightbox.php:3708
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2020,14 +2065,11 @@ msgstr ""
 "Vyberte stránky, kde by měla být galerie povolena. Zobrazuje až 100 "
 "nejnovějších stránek. Zadejte pro hledání."
 
-#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3578
-#: class-ml-slider-lightbox.php:3577
-#: class-ml-slider-lightbox.php:3578
+#: class-ml-slider-lightbox.php:3752 class-ml-slider-lightbox.php:3753
 msgid "specific Posts"
 msgstr "konkrétní příspěvky"
 
-#: class-ml-slider-lightbox.php:3580
-#: class-ml-slider-lightbox.php:3580
+#: class-ml-slider-lightbox.php:3755
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2035,9 +2077,7 @@ msgstr ""
 "Vyberte příspěvky, kde by měla být galerie zakázána. Zobrazuje až 100 "
 "nejnovějších příspěvků. Zadejte pro hledání."
 
-#: class-ml-slider-lightbox.php:3580 class-ml-slider-lightbox.php:3581
-#: class-ml-slider-lightbox.php:3580
-#: class-ml-slider-lightbox.php:3581
+#: class-ml-slider-lightbox.php:3755 class-ml-slider-lightbox.php:3756
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2045,59 +2085,46 @@ msgstr ""
 "Vyberte příspěvky, kde by měla být galerie povolena. Zobrazuje až 100 "
 "nejnovějších příspěvků. Zadejte pro hledání."
 
-#: class-ml-slider-lightbox.php:3608
-#: class-ml-slider-lightbox.php:3608
+#: class-ml-slider-lightbox.php:3783
 msgid "include"
 msgstr "zahrnout"
 
-#: class-ml-slider-lightbox.php:3608
-#: class-ml-slider-lightbox.php:3608
+#: class-ml-slider-lightbox.php:3783
 msgid "exclude"
 msgstr "vyloučit"
 
-#: class-ml-slider-lightbox.php:3648
-#: class-ml-slider-lightbox.php:3648
+#: class-ml-slider-lightbox.php:3823
 #, php-format
 msgid "specific %s"
 msgstr "konkrétní %s"
 
-#: class-ml-slider-lightbox.php:3649
-#: class-ml-slider-lightbox.php:3649
+#: class-ml-slider-lightbox.php:3824
 #, php-format
 msgid "%s specific %s"
 msgstr "%s specifický %s"
 
-#: class-ml-slider-lightbox.php:3651 class-ml-slider-lightbox.php:3652
-#: class-ml-slider-lightbox.php:3651
-#: class-ml-slider-lightbox.php:3652
+#: class-ml-slider-lightbox.php:3826 class-ml-slider-lightbox.php:3827
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "Zobrazit až 100 nejnovějších %s. Zadejte pro vyhledávání."
 
-#: class-ml-slider-lightbox.php:3700 class-ml-slider-lightbox.php:3701
-#: class-ml-slider-lightbox.php:3700
-#: class-ml-slider-lightbox.php:3701
+#: class-ml-slider-lightbox.php:3875 class-ml-slider-lightbox.php:3876
 msgid "specific post types"
 msgstr "konkrétní typy příspěvků"
 
-#: class-ml-slider-lightbox.php:3703
-#: class-ml-slider-lightbox.php:3703
+#: class-ml-slider-lightbox.php:3878
 msgid "Select post types where gallery should be disabled entirely."
 msgstr "Vyberte typy příspěvků, kde by měla být galerie zcela zakázána."
 
-#: class-ml-slider-lightbox.php:3703 class-ml-slider-lightbox.php:3704
-#: class-ml-slider-lightbox.php:3703
-#: class-ml-slider-lightbox.php:3704
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:3879
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "Vyberte typy příspěvků, kde by měla být galerie zcela povolena."
 
-#: class-ml-slider-lightbox.php:3738
-#: class-ml-slider-lightbox.php:3738
+#: class-ml-slider-lightbox.php:3913
 msgid "Exclude by CSS selector"
 msgstr "Vyloučit pomocí CSS selektoru"
 
-#: class-ml-slider-lightbox.php:3741
-#: class-ml-slider-lightbox.php:3741
+#: class-ml-slider-lightbox.php:3916
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2106,13 +2133,11 @@ msgstr ""
 "řádek). Příklady:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar "
 ".widget-area"
 
-#: class-ml-slider-lightbox.php:3764
-#: class-ml-slider-lightbox.php:3764
+#: class-ml-slider-lightbox.php:3939
 msgid "Minimum Image Width"
 msgstr "Minimální šířka obrázku"
 
-#: class-ml-slider-lightbox.php:3767
-#: class-ml-slider-lightbox.php:3767
+#: class-ml-slider-lightbox.php:3942
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2122,13 +2147,11 @@ msgstr ""
 "šířka, nikoli skutečná velikost souboru obrázku. To je užitečné pro "
 "vyloučení malých ikon, odznaků a tlačítek."
 
-#: class-ml-slider-lightbox.php:3790
-#: class-ml-slider-lightbox.php:3790
+#: class-ml-slider-lightbox.php:3965
 msgid "Minimum Image Height"
 msgstr "Minimální výška obrázku"
 
-#: class-ml-slider-lightbox.php:3793
-#: class-ml-slider-lightbox.php:3793
+#: class-ml-slider-lightbox.php:3968
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2138,27 +2161,21 @@ msgstr ""
 "výška, nikoli skutečná velikost souboru obrázku. To je užitečné pro "
 "vyloučení malých ikon, odznaků a tlačítek."
 
-#: class-ml-slider-lightbox.php:3809 class-ml-slider-lightbox.php:3966
-#: class-ml-slider-lightbox.php:3809
-#: class-ml-slider-lightbox.php:3966
+#: class-ml-slider-lightbox.php:3984 class-ml-slider-lightbox.php:4141
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
 msgstr "Vylepšená správa médií a funkce přehrávání videa pro profesionální galerie."
 
-#: class-ml-slider-lightbox.php:3816
-#: class-ml-slider-lightbox.php:3816
+#: class-ml-slider-lightbox.php:3991
 msgid "Advanced features for professional lightbox implementations."
 msgstr "Pokročilé funkce pro profesionální implementace Lightboxu."
 
-#: class-ml-slider-lightbox.php:3827 class-ml-slider-lightbox.php:4039
-#: class-ml-slider-lightbox.php:3827
-#: class-ml-slider-lightbox.php:4039
+#: class-ml-slider-lightbox.php:4002 class-ml-slider-lightbox.php:4214
 msgid "Enable Zoom"
 msgstr "Povolit zoom"
 
-#: class-ml-slider-lightbox.php:3828
-#: class-ml-slider-lightbox.php:3828
+#: class-ml-slider-lightbox.php:4003
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -2166,14 +2183,11 @@ msgstr ""
 "Dvojité kliknutí pro přiblížení, ovládací prvky zoomu, zoom pomocí kolečka "
 "myši a možnosti přizpůsobení zoomu."
 
-#: class-ml-slider-lightbox.php:3838 class-ml-slider-lightbox.php:4046
-#: class-ml-slider-lightbox.php:3838
-#: class-ml-slider-lightbox.php:4046
+#: class-ml-slider-lightbox.php:4013 class-ml-slider-lightbox.php:4221
 msgid "Enable Fullscreen"
 msgstr "Povolit celoobrazovkový režim"
 
-#: class-ml-slider-lightbox.php:3839
-#: class-ml-slider-lightbox.php:3839
+#: class-ml-slider-lightbox.php:4014
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
@@ -2181,14 +2195,11 @@ msgstr ""
 "Nativní podpora celoobrazovkového režimu HTML5 s klávesovými zkratkami "
 "(klávesa F) pro pohlcující zobrazení."
 
-#: class-ml-slider-lightbox.php:3849 class-ml-slider-lightbox.php:4053
-#: class-ml-slider-lightbox.php:3849
-#: class-ml-slider-lightbox.php:4053
+#: class-ml-slider-lightbox.php:4024 class-ml-slider-lightbox.php:4228
 msgid "Enable Rotate"
 msgstr "Povolit rotaci"
 
-#: class-ml-slider-lightbox.php:3850
-#: class-ml-slider-lightbox.php:3850
+#: class-ml-slider-lightbox.php:4025
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2197,13 +2208,11 @@ msgstr ""
 "převrátit horizontálně/vertikálně pomocí ovládacích prvků na panelu "
 "nástrojů."
 
-#: class-ml-slider-lightbox.php:3860
-#: class-ml-slider-lightbox.php:3860
+#: class-ml-slider-lightbox.php:4035
 msgid "Enable Video"
 msgstr "Povolit video"
 
-#: class-ml-slider-lightbox.php:3861
-#: class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:4036
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2211,16 +2220,12 @@ msgstr ""
 "Vylepšená podpora videa pro YouTube, Vimeo, HTML5 videa s automatickým "
 "přehráváním a ovládáním kvality."
 
-#: class-ml-slider-lightbox.php:3871 class-ml-slider-lightbox.php:4088
-#: class-ml-slider-lightbox.php:4228
-#: class-ml-slider-lightbox.php:3871
-#: class-ml-slider-lightbox.php:4088
-#: class-ml-slider-lightbox.php:4228
+#: class-ml-slider-lightbox.php:4046 class-ml-slider-lightbox.php:4263
+#: class-ml-slider-lightbox.php:4410
 msgid "Enable Unique Image URLs"
 msgstr "Povolit jedinečné URL obrázků"
 
-#: class-ml-slider-lightbox.php:3872
-#: class-ml-slider-lightbox.php:3872
+#: class-ml-slider-lightbox.php:4047
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -2228,25 +2233,19 @@ msgstr ""
 "Jedinečná URL pro každý obrázek galerie s podporou navigace zpět/dopředu v "
 "prohlížeči."
 
-#: class-ml-slider-lightbox.php:3882 class-ml-slider-lightbox.php:4095
-#: class-ml-slider-lightbox.php:3882
-#: class-ml-slider-lightbox.php:4095
+#: class-ml-slider-lightbox.php:4057 class-ml-slider-lightbox.php:4270
 msgid "Enable Autoplay"
 msgstr "Povolit automatické přehrávání"
 
-#: class-ml-slider-lightbox.php:3883
-#: class-ml-slider-lightbox.php:3883
+#: class-ml-slider-lightbox.php:4058
 msgid "Automatically advance through images in the gallery."
 msgstr "Automaticky přecházet mezi obrázky v galerii."
 
-#: class-ml-slider-lightbox.php:3893 class-ml-slider-lightbox.php:4067
-#: class-ml-slider-lightbox.php:3893
-#: class-ml-slider-lightbox.php:4067
+#: class-ml-slider-lightbox.php:4068 class-ml-slider-lightbox.php:4242
 msgid "Enable Share"
 msgstr "Povolit sdílení"
 
-#: class-ml-slider-lightbox.php:3894
-#: class-ml-slider-lightbox.php:3894
+#: class-ml-slider-lightbox.php:4069
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2254,20 +2253,15 @@ msgstr ""
 "Tlačítka pro sdílení na sociálních médiích pro Facebook, Twitter, Pinterest "
 "a přímé sdílení URL."
 
-#: class-ml-slider-lightbox.php:3904 class-ml-slider-lightbox.php:4074
-#: class-ml-slider-lightbox.php:3904
-#: class-ml-slider-lightbox.php:4074
+#: class-ml-slider-lightbox.php:4079 class-ml-slider-lightbox.php:4249
 msgid "Enable Pager"
 msgstr "Povolit stránkování"
 
-#: class-ml-slider-lightbox.php:3905
-#: class-ml-slider-lightbox.php:3905
+#: class-ml-slider-lightbox.php:4080
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "Minimální tečky pro stránkování pro čistou navigaci bez náhledů miniatur."
 
-#: class-ml-slider-lightbox.php:3961 class-ml-slider-lightbox.php:4035
-#: class-ml-slider-lightbox.php:3961
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4136 class-ml-slider-lightbox.php:4210
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
@@ -2275,26 +2269,19 @@ msgstr ""
 "Profesionální ovládací prvky pro zoom a interakci s obrázkem pro vylepšený "
 "uživatelský zážitek."
 
-#: class-ml-slider-lightbox.php:3971 class-ml-slider-lightbox.php:4063
-#: class-ml-slider-lightbox.php:3971
-#: class-ml-slider-lightbox.php:4063
+#: class-ml-slider-lightbox.php:4146 class-ml-slider-lightbox.php:4238
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "Vylepšení pro sdílení na sociálních médiích a navigaci pro zvýšení zapojení."
 
-#: class-ml-slider-lightbox.php:3976 class-ml-slider-lightbox.php:4084
-#: class-ml-slider-lightbox.php:3976
-#: class-ml-slider-lightbox.php:4084
+#: class-ml-slider-lightbox.php:4151 class-ml-slider-lightbox.php:4259
 msgid "Advanced functionality including URL management and automation features."
 msgstr "Pokročilé funkce včetně správy URL a automatizačních prvků."
 
-#: class-ml-slider-lightbox.php:3988
-#: class-ml-slider-lightbox.php:3988
+#: class-ml-slider-lightbox.php:4163
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "Tato funkce je k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4040 class-ml-slider-lightbox.php:4197
-#: class-ml-slider-lightbox.php:4040
-#: class-ml-slider-lightbox.php:4197
+#: class-ml-slider-lightbox.php:4215 class-ml-slider-lightbox.php:4379
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -2302,58 +2289,45 @@ msgstr ""
 "Umožnit uživatelům přiblížit a oddálit pomocí dvojitého kliknutí, kolečka "
 "myši a ovládacích prvků zoomu."
 
-#: class-ml-slider-lightbox.php:4042
-#: class-ml-slider-lightbox.php:4042
+#: class-ml-slider-lightbox.php:4217
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "Ovládací prvky zoomu jsou k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4047
-#: class-ml-slider-lightbox.php:4047
+#: class-ml-slider-lightbox.php:4222
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "Nativní režim celé obrazovky HTML5 pro pohlcující zobrazení obrázků."
 
-#: class-ml-slider-lightbox.php:4049
-#: class-ml-slider-lightbox.php:4049
+#: class-ml-slider-lightbox.php:4224
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "Režim celé obrazovky je k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4054 class-ml-slider-lightbox.php:4213
-#: class-ml-slider-lightbox.php:4054
-#: class-ml-slider-lightbox.php:4213
+#: class-ml-slider-lightbox.php:4229 class-ml-slider-lightbox.php:4395
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr ""
 "Otáčet obrázky ve směru hodinových ručiček/proti směru hodinových ručiček a "
 "převrátit horizontálně/vertikálně."
 
-#: class-ml-slider-lightbox.php:4056
-#: class-ml-slider-lightbox.php:4056
+#: class-ml-slider-lightbox.php:4231
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "Otáčení obrázků je k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4068
-#: class-ml-slider-lightbox.php:4068
+#: class-ml-slider-lightbox.php:4243
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "Vestavěné sdílení na sociálních médiích pro Facebook, Twitter a Pinterest."
 
-#: class-ml-slider-lightbox.php:4070
-#: class-ml-slider-lightbox.php:4070
+#: class-ml-slider-lightbox.php:4245
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "Sdílení na sociálních sítích je k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4075 class-ml-slider-lightbox.php:4245
-#: class-ml-slider-lightbox.php:4075
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4427
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "Minimalistické tečky pro stránkování místo miniatur pro čistší rozhraní."
 
-#: class-ml-slider-lightbox.php:4077
-#: class-ml-slider-lightbox.php:4077
+#: class-ml-slider-lightbox.php:4252
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "Stránkování Pager je k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4229
-#: class-ml-slider-lightbox.php:4089
-#: class-ml-slider-lightbox.php:4229
+#: class-ml-slider-lightbox.php:4264 class-ml-slider-lightbox.php:4411
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
@@ -2361,96 +2335,83 @@ msgstr ""
 "Generujte jedinečné URL pro každou obrázkovou galerii s navigací zpět/vpřed "
 "v prohlížeči."
 
-#: class-ml-slider-lightbox.php:4091
-#: class-ml-slider-lightbox.php:4091
+#: class-ml-slider-lightbox.php:4266
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "Jedinečné URL obrázků jsou k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4096 class-ml-slider-lightbox.php:4237
-#: class-ml-slider-lightbox.php:4096
-#: class-ml-slider-lightbox.php:4237
+#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4419
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "Automatická prezentace s časovými ovládacími prvky a průběhovým panelem."
 
-#: class-ml-slider-lightbox.php:4098
-#: class-ml-slider-lightbox.php:4098
+#: class-ml-slider-lightbox.php:4273
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "Automatické přehrávání je k dispozici v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4115
-#: class-ml-slider-lightbox.php:4115
+#: class-ml-slider-lightbox.php:4277
+msgid "Enable Image Protection"
+msgstr "Povolit ochranu obrázků"
+
+#: class-ml-slider-lightbox.php:4280
+msgid "Image protection is available in MetaSlider Gallery Pro"
+msgstr "Ochrana obrázků je k dispozici v MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4297
 msgid "Features"
 msgstr "Funkce"
 
-#: class-ml-slider-lightbox.php:4116
-#: class-ml-slider-lightbox.php:4116
+#: class-ml-slider-lightbox.php:4298
 msgid "Free"
 msgstr "Zdarma"
 
-#: class-ml-slider-lightbox.php:4117
-#: class-ml-slider-lightbox.php:4117, fuzzy
+#: class-ml-slider-lightbox.php:4299, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4123 class-ml-slider-lightbox.php:4262
-#: class-ml-slider-lightbox.php:4123
-#: class-ml-slider-lightbox.php:4262
+#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4444
 msgid "Installed"
 msgstr "Nainstalováno"
 
-#: class-ml-slider-lightbox.php:4126 class-ml-slider-lightbox.php:4265
-#: class-ml-slider-lightbox.php:4126
-#: class-ml-slider-lightbox.php:4265
+#: class-ml-slider-lightbox.php:4308 class-ml-slider-lightbox.php:4447
 msgid "Upgrade now"
 msgstr "Aktualizovat nyní"
 
-#: class-ml-slider-lightbox.php:4132
-#: class-ml-slider-lightbox.php:4132
+#: class-ml-slider-lightbox.php:4314
 msgid "Automatic lightbox for images"
 msgstr "Automatický lightbox pro obrázky"
 
-#: class-ml-slider-lightbox.php:4133
-#: class-ml-slider-lightbox.php:4133
+#: class-ml-slider-lightbox.php:4315
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "Automaticky povolte lightbox pro všechny obrázky na vašem webu."
 
-#: class-ml-slider-lightbox.php:4140
-#: class-ml-slider-lightbox.php:4140
+#: class-ml-slider-lightbox.php:4322
 msgid "MetaSlider integration"
 msgstr "Integrace MetaSlider"
 
-#: class-ml-slider-lightbox.php:4141
-#: class-ml-slider-lightbox.php:4141
+#: class-ml-slider-lightbox.php:4323
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "Bezproblémová integrace s prezentacemi MetaSlider."
 
-#: class-ml-slider-lightbox.php:4148
-#: class-ml-slider-lightbox.php:4148
+#: class-ml-slider-lightbox.php:4330
 msgid "WordPress gallery support"
 msgstr "Podpora galerií WordPress"
 
-#: class-ml-slider-lightbox.php:4149
-#: class-ml-slider-lightbox.php:4149
+#: class-ml-slider-lightbox.php:4331
 msgid "Support for WordPress native galleries and blocks."
 msgstr "Podpora nativních galerií a bloků WordPress."
 
-#: class-ml-slider-lightbox.php:4156
-#: class-ml-slider-lightbox.php:4156
+#: class-ml-slider-lightbox.php:4338
 msgid "Appearance customization"
 msgstr "Přizpůsobení vzhledu"
 
-#: class-ml-slider-lightbox.php:4157
-#: class-ml-slider-lightbox.php:4157
+#: class-ml-slider-lightbox.php:4339
 msgid "Customize colors, opacity, and button styles."
 msgstr "Přizpůsobte barvy, průhlednost a styly tlačítek."
 
-#: class-ml-slider-lightbox.php:4164
-#: class-ml-slider-lightbox.php:4164
+#: class-ml-slider-lightbox.php:4346
 msgid "Gallery builder &amp; layouts"
 msgstr "Tvůrce galerií &amp; rozvržení"
 
-#: class-ml-slider-lightbox.php:4165
-#: class-ml-slider-lightbox.php:4165
+#: class-ml-slider-lightbox.php:4347
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
@@ -2458,100 +2419,81 @@ msgstr ""
 "Vytvářejte galerie s rozvržením Grid, Masonry, Justified, Carousel a "
 "Showcase."
 
-#: class-ml-slider-lightbox.php:4172
-#: class-ml-slider-lightbox.php:4172
+#: class-ml-slider-lightbox.php:4354
 msgid "Responsive columns"
 msgstr "Responsivní sloupce"
 
-#: class-ml-slider-lightbox.php:4173
-#: class-ml-slider-lightbox.php:4173
+#: class-ml-slider-lightbox.php:4355
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr "Nastavte počet sloupců pro desktop a mobil, s nastavitelným rozestupem."
 
-#: class-ml-slider-lightbox.php:4180
-#: class-ml-slider-lightbox.php:4180
+#: class-ml-slider-lightbox.php:4362
 msgid "Image captions"
 msgstr "Popisky obrázků"
 
-#: class-ml-slider-lightbox.php:4181
-#: class-ml-slider-lightbox.php:4181
+#: class-ml-slider-lightbox.php:4363
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "Zobrazit popisky obrázků v mřížce galerie a v okně galerie."
 
-#: class-ml-slider-lightbox.php:4188
-#: class-ml-slider-lightbox.php:4188
+#: class-ml-slider-lightbox.php:4370
 msgid "Thumbnail navigation"
 msgstr "Navigace miniaturami"
 
-#: class-ml-slider-lightbox.php:4189
-#: class-ml-slider-lightbox.php:4189
+#: class-ml-slider-lightbox.php:4371
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "Zobrazit pruh miniatur pro rychlou navigaci mezi obrázky."
 
-#: class-ml-slider-lightbox.php:4196
-#: class-ml-slider-lightbox.php:4196
+#: class-ml-slider-lightbox.php:4378
 msgid "Zoom controls"
 msgstr "Ovládací prvky zoomu"
 
-#: class-ml-slider-lightbox.php:4204
-#: class-ml-slider-lightbox.php:4204
+#: class-ml-slider-lightbox.php:4386
 msgid "Fullscreen mode"
 msgstr "Režim celé obrazovky"
 
-#: class-ml-slider-lightbox.php:4205
-#: class-ml-slider-lightbox.php:4205
+#: class-ml-slider-lightbox.php:4387
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "Nativní HTML5 režim celé obrazovky pro pohlcující prohlížení obrázků."
 
-#: class-ml-slider-lightbox.php:4212
-#: class-ml-slider-lightbox.php:4212
+#: class-ml-slider-lightbox.php:4394
 msgid "Rotate and flip images"
 msgstr "Otočit a převrátit obrázky"
 
-#: class-ml-slider-lightbox.php:4220
-#: class-ml-slider-lightbox.php:4220
+#: class-ml-slider-lightbox.php:4402
 msgid "Social media sharing"
 msgstr "Sdílení na sociálních médiích"
 
-#: class-ml-slider-lightbox.php:4221
-#: class-ml-slider-lightbox.php:4221
+#: class-ml-slider-lightbox.php:4403
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "Vestavěné sdílení pro Facebook, Twitter a Pinterest."
 
-#: class-ml-slider-lightbox.php:4236
-#: class-ml-slider-lightbox.php:4236
+#: class-ml-slider-lightbox.php:4418
 msgid "Autoplay slideshow"
 msgstr "Automatické přehrávání prezentace"
 
-#: class-ml-slider-lightbox.php:4244
-#: class-ml-slider-lightbox.php:4244
+#: class-ml-slider-lightbox.php:4426
 msgid "Pager navigation"
 msgstr "Navigace pomocí stránek"
 
-#: class-ml-slider-lightbox.php:4252
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4434
 msgid "Premium support"
 msgstr "Prémiová podpora"
 
-#: class-ml-slider-lightbox.php:4253
-#: class-ml-slider-lightbox.php:4253
+#: class-ml-slider-lightbox.php:4435
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "Nechte si své specifické dotazy zodpovědět přímo našimi odborníky."
 
-#: class-ml-slider-lightbox.php:6040
-#: class-ml-slider-lightbox.php:6040
+#: class-ml-slider-lightbox.php:6222
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr ""
 "Konfigurujte, jak se lightbox interaguje se zabudovanými funkcemi "
 "WordPressu."
 
-#: class-ml-slider-lightbox.php:6055
-#: class-ml-slider-lightbox.php:6055
+#: class-ml-slider-lightbox.php:6237
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "Přepsat nastavení WordPressu \"Zvětšit po kliknutí\""
 
-#: class-ml-slider-lightbox.php:6056
-#: class-ml-slider-lightbox.php:6056
+#: class-ml-slider-lightbox.php:6238
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2562,13 +2504,11 @@ msgstr ""
 "zakázáno, respektuje nastavení WordPress a přeskočí obrázky nastavené na "
 "\"Zvětšit po kliknutí\"."
 
-#: class-ml-slider-lightbox.php:6072
-#: class-ml-slider-lightbox.php:6072
+#: class-ml-slider-lightbox.php:6254
 msgid "Override \"Link to Image File\" Setting"
 msgstr "Přepsat nastavení \"Odkaz na obrazový soubor\""
 
-#: class-ml-slider-lightbox.php:6073
-#: class-ml-slider-lightbox.php:6073
+#: class-ml-slider-lightbox.php:6255
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2579,13 +2519,11 @@ msgstr ""
 "na soubor s obrázkem\" v editoru bloku). Když je zakázáno, respektuje "
 "původní chování odkazu."
 
-#: class-ml-slider-lightbox.php:6104
-#: class-ml-slider-lightbox.php:6104
+#: class-ml-slider-lightbox.php:6286
 msgid "Exclude Post Types from Manual Processing"
 msgstr "Vyloučit typy příspěvků z ručního zpracování"
 
-#: class-ml-slider-lightbox.php:6107
-#: class-ml-slider-lightbox.php:6107
+#: class-ml-slider-lightbox.php:6289
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2595,13 +2533,11 @@ msgstr ""
 "vyberte \"Produkty (produkt)\" pro zakázání galerie na stránkách produktů "
 "WooCommerce, zatímco ji ponecháte aktivní jinde."
 
-#: class-ml-slider-lightbox.php:6131
-#: class-ml-slider-lightbox.php:6131
+#: class-ml-slider-lightbox.php:6313
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "Jak používat: WordPress \"Zvětšit po kliknutí\""
 
-#: class-ml-slider-lightbox.php:6133
-#: class-ml-slider-lightbox.php:6133
+#: class-ml-slider-lightbox.php:6315
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2609,72 +2545,57 @@ msgstr ""
 "WordPress má vestavěnou funkci \"Zvětšit po kliknutí\" pro obrázky. Zde je "
 "návod, jak ji povolit:"
 
-#: class-ml-slider-lightbox.php:6135 class-ml-slider-lightbox.php:6148
-#: class-ml-slider-lightbox.php:6135
-#: class-ml-slider-lightbox.php:6148
+#: class-ml-slider-lightbox.php:6317 class-ml-slider-lightbox.php:6330
 msgid "Select an image in the block editor."
 msgstr "Vyberte obrázek v editoru bloku."
 
-#: class-ml-slider-lightbox.php:6136 class-ml-slider-lightbox.php:6149
-#: class-ml-slider-lightbox.php:6136
-#: class-ml-slider-lightbox.php:6149
+#: class-ml-slider-lightbox.php:6318 class-ml-slider-lightbox.php:6331
 msgid "In the block toolbar, click on the Link icon."
 msgstr "V panelu bloků klikněte na ikonu Odkaz."
 
-#: class-ml-slider-lightbox.php:6137
-#: class-ml-slider-lightbox.php:6137
+#: class-ml-slider-lightbox.php:6319
 msgid "Select \"Enlarge on click\"."
 msgstr "Vyberte \"Zvětšit po kliknutí\"."
 
-#: class-ml-slider-lightbox.php:6143
-#: class-ml-slider-lightbox.php:6143
+#: class-ml-slider-lightbox.php:6325
 msgid "How to use: \"Link to Image File\""
 msgstr "Jak používat: \"Odkaz na obrazový soubor\""
 
-#: class-ml-slider-lightbox.php:6145
-#: class-ml-slider-lightbox.php:6145
+#: class-ml-slider-lightbox.php:6327
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr ""
 "Můžete odkázat obrázky přímo na jejich soubor s plnou velikostí. Zde je "
 "návod:"
 
-#: class-ml-slider-lightbox.php:6146
-#: class-ml-slider-lightbox.php:6146
+#: class-ml-slider-lightbox.php:6328
 msgid "For the Block Editor:"
 msgstr "Pro editor bloků:"
 
-#: class-ml-slider-lightbox.php:6150
-#: class-ml-slider-lightbox.php:6150
+#: class-ml-slider-lightbox.php:6332
 msgid "Choose \"Link to image file\"."
 msgstr "Vyberte \"Odkaz na obrazový soubor\"."
 
-#: class-ml-slider-lightbox.php:6152
-#: class-ml-slider-lightbox.php:6152
+#: class-ml-slider-lightbox.php:6334
 msgid "For the Classic Editor:"
 msgstr "Pro klasický editor:"
 
-#: class-ml-slider-lightbox.php:6154
-#: class-ml-slider-lightbox.php:6154
+#: class-ml-slider-lightbox.php:6336
 msgid "Select an image."
 msgstr "Vyberte obrázek."
 
-#: class-ml-slider-lightbox.php:6155
-#: class-ml-slider-lightbox.php:6155
+#: class-ml-slider-lightbox.php:6337
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "V panelu nástrojů obrázku klikněte na ikonu Úpravy."
 
-#: class-ml-slider-lightbox.php:6156
-#: class-ml-slider-lightbox.php:6156
+#: class-ml-slider-lightbox.php:6338
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "Vyberte \"Mediální soubor\" v rozbalovací nabídce \"Odkaz na\"."
 
-#: class-ml-slider-lightbox.php:6162
-#: class-ml-slider-lightbox.php:6162
+#: class-ml-slider-lightbox.php:6344
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "Jak používat: Metoda CSS třídy (pokročilé)"
 
-#: class-ml-slider-lightbox.php:6164
-#: class-ml-slider-lightbox.php:6164
+#: class-ml-slider-lightbox.php:6346
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2682,38 +2603,31 @@ msgstr ""
 "Pro vývojáře: Přidejte třídu <code>ml-lightbox-enabled</code> pro povolení "
 "galerie MetaSlider na jakémkoli elementu obsahujícím obrázky."
 
-#: class-ml-slider-lightbox.php:6165
-#: class-ml-slider-lightbox.php:6165
+#: class-ml-slider-lightbox.php:6347
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "Metoda 1: Další CSS třídy editoru bloků"
 
-#: class-ml-slider-lightbox.php:6167
-#: class-ml-slider-lightbox.php:6167
+#: class-ml-slider-lightbox.php:6349
 msgid "Select an image or gallery block."
 msgstr "Vyberte blok obrázku nebo galerie."
 
-#: class-ml-slider-lightbox.php:6168
-#: class-ml-slider-lightbox.php:6168
+#: class-ml-slider-lightbox.php:6350
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "V postranním panelu nastavení bloku přejděte na \"Pokročilé\"."
 
-#: class-ml-slider-lightbox.php:6169
-#: class-ml-slider-lightbox.php:6169
+#: class-ml-slider-lightbox.php:6351
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "Přidejte <code>ml-lightbox-enabled</code> do \"Další CSS třída(y)\"."
 
-#: class-ml-slider-lightbox.php:6171
-#: class-ml-slider-lightbox.php:6171
+#: class-ml-slider-lightbox.php:6353
 msgid "Method 2: HTML/Code"
 msgstr "Metoda 2: HTML/Kód"
 
-#: class-ml-slider-lightbox.php:6172
-#: class-ml-slider-lightbox.php:6172
+#: class-ml-slider-lightbox.php:6354
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "Pro vlastní HTML nebo vývojáře šablon přidejte třídu přímo:"
 
-#: class-ml-slider-lightbox.php:1131
-#: class-ml-slider-lightbox.php:1131
+#: class-ml-slider-lightbox.php:1258
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"

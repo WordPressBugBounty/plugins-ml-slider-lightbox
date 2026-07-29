@@ -14,6 +14,7 @@
 /playwright-report/
 .phpunit.result.cache
 *.md
+!CHANGELOG.md
 *.zip
 /tests/
 .superpowers/
@@ -24,4 +25,8 @@
 # and keep the authenticated Playwright session out of git.
 !docs/**/*.md
 docs/auth/storageState.json
+
+# Superpowers design specs/plans: authored locally, never committed.
+docs/superpowers/
 *.yml
+!.github/workflows/*.yml

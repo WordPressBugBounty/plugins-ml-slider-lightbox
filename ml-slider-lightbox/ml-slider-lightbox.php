@@ -4,7 +4,7 @@
  * Plugin Name: MetaSlider Gallery
  * Plugin URI: https://www.metaslider.com
  * Description: MetaSlider Gallery is the image gallery plugin for WordPress. Create a beautiful display for your photos with carousel, masonry, grid, and more views.
- * Version: 2.34.0
+ * Version: 2.35.0
  * Requires PHP: 7.0
  * Author: MetaSlider
  * Author URI: https://www.metaslider.com
@@ -26,6 +26,7 @@ if (! defined('ML_SLIDER_LIGHTBOX_URL')) {
 }
 
 if (! class_exists('MetaSlider\Lightbox\MetaSliderLightboxPlugin')) {
+    require_once plugin_dir_path(__FILE__) . 'class-ml-trigger-control.php';
     require_once plugin_dir_path(__FILE__) . 'class-ml-slider-lightbox.php';
     add_action('plugins_loaded', array(MetaSlider\Lightbox\MetaSliderLightboxPlugin::getInstance(), 'setup'), 10);
 
@@ -34,9 +35,12 @@ if (! class_exists('MetaSlider\Lightbox\MetaSliderLightboxPlugin')) {
 
 /**
  * Plugin activation hook
- * Sets a transient to trigger redirect to settings page
+ * Sets transients to redirect to the gallery list page and show the
+ * one-time welcome banner there. The welcome transient is consumed on
+ * first render, so the banner appears exactly once.
  */
 function metaslider_lightbox_activation()
 {
     set_transient('metaslider_lightbox_activation_redirect', true, 30);
-} 
+    set_transient('metaslider_lightbox_welcome', true, MINUTE_IN_SECONDS);
+}

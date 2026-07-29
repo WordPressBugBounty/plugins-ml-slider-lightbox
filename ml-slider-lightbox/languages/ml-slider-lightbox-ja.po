@@ -5,21 +5,23 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-07-08 08:19+0000\n"
+"PO-Revision-Date: 2026-07-28 17:01+0000\n"
 "Last-Translator: Rochelle Joy Domingo <rochelle@publishpress.com>\n"
-"Language-Team: Japanese <https://weblate.publishpress.com/projects/ml-slider-"
-"lightbox/ml-slider-lightbox/ja/>\n"
-"Language: ja\n"
+"Language-Team: Japanese "
+"<https://weblate.publishpress.com/projects/ml-slider-lightbox/ml-slider-"
+"lightbox/ja/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Weblate 2026.6.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: "
-"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_"
+"attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Weblate 2026.6.1\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: ja\n"
 "X-Poedit-SearchPathExcluded-1: builder\n"
 
 #: admin/Notices.php:43
@@ -72,434 +74,471 @@ msgstr "リクエストされたデータは存在しません。"
 msgid "The attempt to update the option failed."
 msgstr "オプションの更新を試みましたが、失敗しました。"
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:872
-#: class-ml-gallery.php:2597 class-ml-slider-lightbox.php:1949
-#: class-ml-slider-lightbox.php:2073
-#: admin/views/notices/header-notice.php:8
-#: class-ml-gallery.php:872
-#: class-ml-gallery.php:2597
-#: class-ml-slider-lightbox.php:1949
-#: class-ml-slider-lightbox.php:2073
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1240
+#: class-ml-gallery.php:3302 class-ml-slider-lightbox.php:2121
+#: class-ml-slider-lightbox.php:2264
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: admin/views/notices/header-notice.php:23
-#: admin/views/notices/header-notice.php:23
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:222
 msgid "Dismiss"
 msgstr "閉じる"
 
-#: class-ml-gallery.php:85
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1182
+#: class-ml-slider-lightbox.php:2301 class-ml-slider-lightbox.php:2316
+msgid "You do not have sufficient permissions to access this page."
+msgstr "このページにアクセスするための十分な権限がありません。"
+
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2238
+#: class-ml-gallery.php:2398
+msgid "Security check failed."
+msgstr "セキュリティチェックに失敗しました。"
+
+#: class-ml-gallery-slideshow-convert.php:61
+msgid "Slideshow not found."
+msgstr "スライドショーが見つかりません。"
+
+#: class-ml-gallery-slideshow-convert.php:73
+msgid ""
+"This slideshow has no saved images to convert. Save the slideshow, then try "
+"again."
+msgstr "このスライドショーには変換するための保存された画像がありません。スライドショーを保存してから、再度お試しください。"
+
+#: class-ml-gallery-slideshow-convert.php:78
+msgid "Untitled Slideshow"
+msgstr "無題のスライドショー"
+
+#: class-ml-gallery.php:113
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "これらの機能の一部はMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-gallery.php:93 class-ml-gallery.php:102 class-ml-gallery.php:329
-#: class-ml-gallery.php:93
-#: class-ml-gallery.php:102
-#: class-ml-gallery.php:329
+#: class-ml-gallery.php:219 class-ml-gallery.php:228 class-ml-gallery.php:609
 msgid "Fade"
 msgstr "フェード"
 
-#: class-ml-gallery.php:94
+#: class-ml-gallery.php:220
 msgid "Slide"
 msgstr "スライド"
 
-#: class-ml-gallery.php:95 class-ml-gallery.php:1376
-#: class-ml-gallery.php:95
-#: class-ml-gallery.php:1376
+#: class-ml-gallery.php:221 class-ml-gallery.php:1831
 msgid "Zoom"
 msgstr "ズーム"
 
-#: class-ml-gallery.php:101 class-ml-gallery.php:321 class-ml-gallery.php:1561
-#: class-ml-gallery.php:1587 class-ml-gallery.php:1601
-#: class-ml-gallery.php:101
-#: class-ml-gallery.php:321
-#: class-ml-gallery.php:1561
-#: class-ml-gallery.php:1587
-#: class-ml-gallery.php:1601
+#: class-ml-gallery.php:227 class-ml-gallery.php:601 class-ml-gallery.php:2074
+#: class-ml-gallery.php:2100 class-ml-gallery.php:2114
 msgid "None"
 msgstr "なし"
 
-#: class-ml-gallery.php:103
+#: class-ml-gallery.php:229
 msgid "Slide Up"
 msgstr "上にスライド"
 
-#: class-ml-gallery.php:104
+#: class-ml-gallery.php:230
 msgid "Slide Down"
 msgstr "下にスライド"
 
-#: class-ml-gallery.php:118
+#: class-ml-gallery.php:244
 msgid "Hidden"
 msgstr "非表示"
 
-#: class-ml-gallery.php:119
+#: class-ml-gallery.php:245
 msgid "Gallery + Window"
 msgstr "ギャラリー + ウィンドウ"
 
-#: class-ml-gallery.php:120
+#: class-ml-gallery.php:246
 msgid "Window Only"
 msgstr "ウィンドウのみ"
 
-#: class-ml-gallery.php:121
+#: class-ml-gallery.php:247
 msgid "Gallery Only"
 msgstr "ギャラリーのみ"
 
-#: class-ml-gallery.php:322
+#: class-ml-gallery.php:266 class-ml-gallery.php:2808
+msgid "Manual entry"
+msgstr "手動入力"
+
+#: class-ml-gallery.php:267 class-ml-gallery.php:2809
+msgid "Media caption"
+msgstr "メディアキャプション"
+
+#: class-ml-gallery.php:268 class-ml-gallery.php:2810
+msgid "Media description"
+msgstr "メディア説明"
+
+#: class-ml-gallery.php:602
 msgid "Noir (B&W)"
 msgstr "ノワール (白黒)"
 
-#: class-ml-gallery.php:323
+#: class-ml-gallery.php:603
 msgid "Silver (B&W)"
 msgstr "シルバー (白黒)"
 
-#: class-ml-gallery.php:324
+#: class-ml-gallery.php:604
 msgid "Vintage"
 msgstr "ヴィンテージ"
 
-#: class-ml-gallery.php:325
+#: class-ml-gallery.php:605
 msgid "Golden Hour"
 msgstr "ゴールデンアワー"
 
-#: class-ml-gallery.php:326
+#: class-ml-gallery.php:606
 msgid "Toaster"
 msgstr "トースター"
 
-#: class-ml-gallery.php:327
+#: class-ml-gallery.php:607
 msgid "Warm"
 msgstr "ウォーム"
 
-#: class-ml-gallery.php:328
+#: class-ml-gallery.php:608
 msgid "Cool"
 msgstr "クール"
 
-#: class-ml-gallery.php:330
+#: class-ml-gallery.php:610
 msgid "Matte"
 msgstr "マット"
 
-#: class-ml-gallery.php:331
+#: class-ml-gallery.php:611
 msgid "Pastel"
 msgstr "パステル"
 
-#: class-ml-gallery.php:332
+#: class-ml-gallery.php:612
 msgid "Vivid"
 msgstr "ビビッド"
 
-#: class-ml-gallery.php:333
+#: class-ml-gallery.php:613
 msgid "Crisp"
 msgstr "クリスプ"
 
-#: class-ml-gallery.php:334
+#: class-ml-gallery.php:614
 msgid "Dramatic"
 msgstr "ドラマティック"
 
-#: class-ml-gallery.php:335
+#: class-ml-gallery.php:615
 msgid "Negative"
 msgstr "ネガティブ"
 
-#: class-ml-gallery.php:447 class-ml-gallery.php:456 class-ml-gallery.php:882
-#: class-ml-gallery.php:447
-#: class-ml-gallery.php:456
-#: class-ml-gallery.php:882
+#: class-ml-gallery.php:727 class-ml-gallery.php:736 class-ml-gallery.php:1250
 msgid "Galleries"
 msgstr "ギャラリー"
 
-#: class-ml-gallery.php:448 class-ml-gallery.php:597 class-ml-gallery.php:1146
-#: class-ml-slider-lightbox.php:2069
-#: class-ml-gallery.php:448
-#: class-ml-gallery.php:597
-#: class-ml-gallery.php:1146
-#: class-ml-slider-lightbox.php:2069
+#: class-ml-gallery.php:728 class-ml-gallery.php:877 class-ml-gallery.php:1581
+#: class-ml-slider-lightbox.php:2260
 msgid "Gallery"
 msgstr "ギャラリー"
 
-#: class-ml-gallery.php:449 class-ml-gallery.php:450 class-ml-gallery.php:847
-#: class-ml-gallery.php:2591 class-ml-gallery.php:449
-#: class-ml-gallery.php:450
-#: class-ml-gallery.php:847
-#: class-ml-gallery.php:2591
+#: class-ml-gallery.php:729 class-ml-gallery.php:730 class-ml-gallery.php:1215
+#: class-ml-gallery.php:3296
 msgid "Add New Gallery"
 msgstr "新しいギャラリーを追加"
 
-#: class-ml-gallery.php:451 class-ml-gallery.php:764 class-ml-gallery.php:765
-#: class-ml-gallery.php:848 class-ml-gallery.php:451
-#: class-ml-gallery.php:764
-#: class-ml-gallery.php:765
-#: class-ml-gallery.php:848
+#: class-ml-gallery.php:731 class-ml-gallery.php:1130 class-ml-gallery.php:1131
+#: class-ml-gallery.php:1216
 msgid "Edit Gallery"
 msgstr "ギャラリーを編集"
 
-#: class-ml-gallery.php:452 class-ml-gallery.php:827
-#: class-ml-gallery.php:452
-#: class-ml-gallery.php:827
+#: class-ml-gallery.php:732 class-ml-gallery.php:1193 class-ml-gallery.php:2447
 msgid "New Gallery"
 msgstr "新しいギャラリー"
 
-#: class-ml-gallery.php:453
+#: class-ml-gallery.php:733
 msgid "Search Galleries"
 msgstr "ギャラリーを検索"
 
-#: class-ml-gallery.php:454
+#: class-ml-gallery.php:734
 msgid "No galleries found."
 msgstr "ギャラリーが見つかりませんでした。"
 
-#: class-ml-gallery.php:455
+#: class-ml-gallery.php:735
 msgid "No galleries found in trash."
 msgstr "ゴミ箱内にギャラリーが見つかりませんでした。"
 
-#: class-ml-gallery.php:604
+#: class-ml-gallery.php:884
 msgid "All Galleries"
 msgstr "すべてのギャラリー"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:891
 msgid "Create Gallery"
 msgstr "ギャラリーを作成"
 
-#: class-ml-gallery.php:621
+#: class-ml-gallery.php:901
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "編集 &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:639
+#: class-ml-gallery.php:919
 msgid "Invalid gallery ID."
 msgstr "無効なギャラリーIDです。"
 
-#: class-ml-gallery.php:705 class-ml-slider-lightbox.php:1507
-#: class-ml-gallery.php:705
-#: class-ml-slider-lightbox.php:1507
+#: class-ml-gallery.php:1023 class-ml-slider-lightbox.php:1634
 msgid "View image"
 msgstr "画像を表示"
 
-#: class-ml-gallery.php:816 class-ml-slider-lightbox.php:2110
-#: class-ml-slider-lightbox.php:2125
-#: class-ml-gallery.php:816
-#: class-ml-slider-lightbox.php:2110
-#: class-ml-slider-lightbox.php:2125
-msgid "You do not have sufficient permissions to access this page."
-msgstr "このページにアクセスするための十分な権限がありません。"
-
-#: class-ml-gallery.php:824 class-ml-gallery.php:1861
-#: class-ml-gallery.php:824
-#: class-ml-gallery.php:1861
+#: class-ml-gallery.php:1190 class-ml-gallery.php:2403
 msgid "Gallery not found."
 msgstr "ギャラリーが見つかりませんでした。"
 
-#: class-ml-gallery.php:850
+#: class-ml-gallery.php:1218
 msgid "Save Gallery"
 msgstr "ギャラリーを保存"
 
-#: class-ml-gallery.php:851
+#: class-ml-gallery.php:1219
 msgid "Update Gallery"
 msgstr "ギャラリーを更新"
 
-#: class-ml-gallery.php:866 class-ml-gallery.php:878
-#: class-ml-gallery.php:866
-#: class-ml-gallery.php:878
+#: class-ml-gallery.php:1234 class-ml-gallery.php:1246
 msgid "Back to Galleries"
 msgstr "ギャラリーに戻る"
 
-#: class-ml-gallery.php:889
+#: class-ml-gallery.php:1257
 msgid "Create New Gallery"
 msgstr "新しいギャラリーを作成"
 
-#: class-ml-gallery.php:893
+#: class-ml-gallery.php:1261
 msgid "New"
 msgstr "新しい"
 
-#: class-ml-gallery.php:904
+#: class-ml-gallery.php:1272
 msgid "Duplicate"
 msgstr "重複"
 
-#: class-ml-gallery.php:924
+#: class-ml-gallery.php:1292
 msgid "Gallery saved."
 msgstr "ギャラリーが保存されました。"
 
-#: class-ml-gallery.php:935
+#: class-ml-gallery.php:1303
+#, php-format
+msgid ""
+"Gallery created from the slideshow \"%s\". Review the settings below, then "
+"save."
+msgstr "スライドショー「%s」から作成されたギャラリー。以下の設定を確認してから、保存してください。"
+
+#: class-ml-gallery.php:1307
+msgid "Gallery created from your slideshow. Review the settings below, then save."
+msgstr "あなたのスライドショーから作成されたギャラリー。以下の設定を確認してから、保存してください。"
+
+#: class-ml-gallery.php:1321
 msgid "Enter gallery title"
 msgstr "ギャラリーのタイトルを入力"
 
-#: class-ml-gallery.php:938 class-ml-gallery.php:2619
-#: class-ml-gallery.php:938
-#: class-ml-gallery.php:2619
+#: class-ml-gallery.php:1324 class-ml-gallery.php:3748
 msgid "Images"
 msgstr "画像"
 
-#: class-ml-gallery.php:947
+#: class-ml-gallery.php:1334
+msgid "Preview or arrange images"
+msgstr "画像のプレビューまたは配置"
+
+#: class-ml-gallery.php:1337 class-ml-gallery.php:3661
+msgid "Preview"
+msgstr "プレビュー"
+
+#: class-ml-gallery.php:1341
+msgid "Arrange"
+msgstr "配置"
+
+#: class-ml-gallery.php:1344
+msgid "Preview at desktop or mobile width"
+msgstr "デスクトップまたはモバイル幅でのプレビュー"
+
+#: class-ml-gallery.php:1345
+msgid "Desktop width"
+msgstr "デスクトップ幅"
+
+#: class-ml-gallery.php:1348
+msgid "Mobile width"
+msgstr "モバイル幅"
+
+#: class-ml-gallery.php:1355
 msgid "No images added yet"
 msgstr "まだ画像が追加されていません"
 
-#: class-ml-gallery.php:960 class-ml-gallery.php:2194
-#: class-ml-gallery.php:960
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:1378 class-ml-gallery.php:2802
 msgid "Remove image"
 msgstr "画像を削除"
 
-#: class-ml-gallery.php:965 class-ml-gallery.php:2195
-#: class-ml-gallery.php:965
-#: class-ml-gallery.php:2195
+#: class-ml-gallery.php:1383 class-ml-gallery.php:2803
 msgid "Edit caption"
 msgstr "キャプションを編集"
 
-#: class-ml-gallery.php:980
+#: class-ml-gallery.php:1383 class-ml-gallery.php:1385
+#: class-ml-gallery.php:2804
+msgid "Add caption"
+msgstr "キャプションを追加"
+
+#: class-ml-gallery.php:1395
+msgid "Gallery preview"
+msgstr "ギャラリープレビュー"
+
+#: class-ml-gallery.php:1401
 msgid "Add Images"
 msgstr "画像を追加"
 
-#: class-ml-gallery.php:984
+#: class-ml-gallery.php:1405
 msgid "More ways to add images"
 msgstr "画像を追加するその他の方法"
 
-#: class-ml-gallery.php:990
+#: class-ml-gallery.php:1411
 msgid "Upload"
 msgstr "アップロード"
 
-#: class-ml-gallery.php:995
+#: class-ml-gallery.php:1416
 msgid "Media Library"
 msgstr "メディアライブラリ"
 
-#: class-ml-gallery.php:1000
+#: class-ml-gallery.php:1421
 msgid "Server Folder"
 msgstr "サーバーフォルダー"
 
-#: class-ml-gallery.php:1005 class-ml-gallery.php:1005, fuzzy
+#: class-ml-gallery.php:1426, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1011
+#: class-ml-gallery.php:1432
 msgid "Where to add new images"
 msgstr "新しい画像を追加する場所"
 
-#: class-ml-gallery.php:1012
+#: class-ml-gallery.php:1433
 msgid "Add new images at:"
 msgstr "次の場所に新しい画像を追加:"
 
-#: class-ml-gallery.php:1016
+#: class-ml-gallery.php:1437
 msgid "Start"
 msgstr "開始"
 
-#: class-ml-gallery.php:1021
+#: class-ml-gallery.php:1442
 msgid "End"
 msgstr "終了"
 
-#: class-ml-gallery.php:1030
+#: class-ml-gallery.php:1451
 msgid "Layout"
 msgstr "レイアウト"
 
-#: class-ml-gallery.php:1033
+#: class-ml-gallery.php:1454
 msgid "Gallery layout"
 msgstr "ギャラリーのレイアウト"
 
-#: class-ml-gallery.php:1035
+#: class-ml-gallery.php:1456
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "固定グリッドに配置された均等なサイズの画像"
 
-#: class-ml-gallery.php:1045
+#: class-ml-gallery.php:1466 class-ml-gallery.php:3664
 msgid "Grid"
 msgstr "グリッド"
 
-#: class-ml-gallery.php:1049
+#: class-ml-gallery.php:1470
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "自然な高さの画像が、レンガの壁のように組み合わさっています"
 
-#: class-ml-gallery.php:1059
+#: class-ml-gallery.php:1480 class-ml-gallery.php:3663
 msgid "Masonry"
 msgstr "マasonry"
 
-#: class-ml-gallery.php:1063
+#: class-ml-gallery.php:1484
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr "各行を端から端まで一貫した高さで埋めるようにスケールされた画像"
 
-#: class-ml-gallery.php:1075
+#: class-ml-gallery.php:1496 class-ml-gallery.php:3665
 msgid "Justified"
 msgstr "ジャスティファイド"
 
-#: class-ml-gallery.php:1079
+#: class-ml-gallery.php:1500
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "スクロール可能なスライドショーで一度に一つの画像を表示"
 
-#: class-ml-gallery.php:1088
+#: class-ml-gallery.php:1509
 msgid "Carousel"
 msgstr "カルーセル"
 
-#: class-ml-gallery.php:1092
+#: class-ml-gallery.php:1513
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "大きなメイン画像と、その下にスクロール可能なサムネイルストリップ"
 
-#: class-ml-gallery.php:1102
+#: class-ml-gallery.php:1523
 msgid "Showcase"
 msgstr "ショーケース"
 
-#: class-ml-gallery.php:1113
+#: class-ml-gallery.php:1535
 msgid "Number of columns to show on desktop screens"
 msgstr "デスクトップ画面に表示する列の数"
 
-#: class-ml-gallery.php:1113
+#: class-ml-gallery.php:1535
 msgid "Columns"
 msgstr "列"
 
-#: class-ml-gallery.php:1122
+#: class-ml-gallery.php:1544
 msgid "Number of columns to show on phones and small screens"
 msgstr "電話や小さい画面に表示する列の数"
 
-#: class-ml-gallery.php:1122
+#: class-ml-gallery.php:1544
 msgid "Columns (mobile)"
 msgstr "列（モバイル）"
 
-#: class-ml-gallery.php:1131
+#: class-ml-gallery.php:1553
+msgid "Height of the gallery images, in pixels"
+msgstr "ギャラリー画像の高さ（ピクセル単位）"
+
+#: class-ml-gallery.php:1554
+msgid "Height"
+msgstr "高さ"
+
+#: class-ml-gallery.php:1566
 msgid "Space between images"
 msgstr "画像間のスペース"
 
-#: class-ml-gallery.php:1132
+#: class-ml-gallery.php:1567
 msgid "Gap"
 msgstr "ギャップ"
 
-#: class-ml-gallery.php:1150
+#: class-ml-gallery.php:1585
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "ズームコントロールにはMetaSlider Gallery Proが必要です"
 
-#: class-ml-gallery.php:1151
+#: class-ml-gallery.php:1586
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "全画面モードにはMetaSlider Gallery Proが必要です"
 
-#: class-ml-gallery.php:1152
+#: class-ml-gallery.php:1587
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "画像の回転にはMetaSlider Gallery Proが必要です"
 
-#: class-ml-gallery.php:1153
+#: class-ml-gallery.php:1588
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "自動再生にはMetaSlider Gallery Proが必要です"
 
-#: class-ml-gallery.php:1154
+#: class-ml-gallery.php:1589
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "ソーシャル共有にはMetaSlider Gallery Proが必要です"
 
-#: class-ml-gallery.php:1155
+#: class-ml-gallery.php:1590
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "PagerはMetaSlider Gallery Proを必要とします"
 
-#: class-ml-gallery.php:1156
+#: class-ml-gallery.php:1591
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "ユニーク画像URLはMetaSlider Gallery Proが必要です"
 
-#: class-ml-gallery.php:1157
+#: class-ml-gallery.php:1592
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "画像保護にはMetaSlider Gallery Proが必要です"
 
-#: class-ml-gallery.php:1161
+#: class-ml-gallery.php:1596
 #, fuzzy
 msgid "Show left and right navigation arrows"
 msgstr "Lightboxにナビゲーション矢印を表示"
 
-#: class-ml-gallery.php:1162
+#: class-ml-gallery.php:1597
 msgid "Display the current image number and total count"
 msgstr "現在の画像番号と総数を表示"
 
-#: class-ml-gallery.php:1163
+#: class-ml-gallery.php:1598
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "ギャラリーの下にサムネイル画像のストリップを表示する"
 
-#: class-ml-gallery.php:1164
+#: class-ml-gallery.php:1599
 msgid "Show dot navigation area below each image."
 msgstr "各画像の下にドットナビゲーションエリアを表示します。"
 
-#: class-ml-gallery.php:1165
+#: class-ml-gallery.php:1600
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -507,638 +546,809 @@ msgstr ""
 "ピンチまたはスクロールしてギャラリー画像をズームインおよびズームアウトします。ズームコントロールは、元のサイズがギャラリーサイズより大きい場合のみ表示さ"
 "れます。"
 
-#: class-ml-gallery.php:1166
+#: class-ml-gallery.php:1601
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "ギャラリーウィンドウを全画面に拡大します。"
 
-#: class-ml-gallery.php:1167
+#: class-ml-gallery.php:1602
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
 msgstr "ユーザーは画像を左または右に回転させ、さらに垂直または水平に反転させることができます。"
 
-#: class-ml-gallery.php:1168
+#: class-ml-gallery.php:1603
 msgid "Automatically advance through the images without the user clicking."
 msgstr "ユーザーがクリックせずに画像を自動的に進める。"
 
-#: class-ml-gallery.php:1169
+#: class-ml-gallery.php:1604
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr "ユーザーが画像をFacebook、X、またはPinterestで共有できるようにします。"
 
-#: class-ml-gallery.php:1170
+#: class-ml-gallery.php:1605
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
 msgstr "ギャラリー内での直接リンクを可能にするために、各画像にユニークなURLを作成します。"
 
-#: class-ml-gallery.php:1171
+#: class-ml-gallery.php:1606 class-ml-slider-lightbox.php:4278
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
 msgstr "ギャラリー画像の右クリック、ドラッグ、長押しをブロックすることで、カジュアルな保存を抑制します。"
 
-#: class-ml-gallery.php:1172
+#: class-ml-gallery.php:1607
 msgid "Navigate images using left and right arrow keys"
 msgstr "左右の矢印キーを使用して画像をナビゲート"
 
-#: class-ml-gallery.php:1173
+#: class-ml-gallery.php:1608
 msgid "Scroll through images using the mouse wheel"
 msgstr "マウスホイールを使用して画像をスクロール"
 
-#: class-ml-gallery.php:1174
+#: class-ml-gallery.php:1609
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "タッチデバイスでギャラリーを閉じるには、上または下にスワイプします"
 
-#: class-ml-gallery.php:1175
+#: class-ml-gallery.php:1610
 msgid "Cycle back to the first image after reaching the last"
 msgstr "最後の画像に達した後、最初の画像に戻る"
 
-#: class-ml-gallery.php:1176
+#: class-ml-gallery.php:1611
 msgid "Show a download button for each image"
 msgstr "各画像のダウンロードボタンを表示"
 
-#: class-ml-gallery.php:1177
+#: class-ml-gallery.php:1612
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
 msgstr "クリックしたときにウィンドウオーバーレイで画像を開きます。グリッド、メイソンリー、ジャスティファイドレイアウトに適用されます。"
 
-#: class-ml-gallery.php:1220
+#: class-ml-gallery.php:1613
+msgid "Show a button over the gallery that opens the gallery window when clicked."
+msgstr "クリックしたときにギャラリーウィンドウを開くボタンをギャラリーの上に表示します。"
+
+#: class-ml-gallery.php:1614
+msgid "Show an icon on the button instead of text."
+msgstr "テキストの代わりにボタンにアイコンを表示します。"
+
+#: class-ml-gallery.php:1657
 msgid "Full (original)"
 msgstr "フル（元の）"
 
-#: class-ml-gallery.php:1224
+#: class-ml-gallery.php:1661
 msgid "Show in Gallery Window"
 msgstr "ギャラリーウィンドウに表示"
 
-#: class-ml-gallery.php:1227
+#: class-ml-gallery.php:1664
 msgid "The size of the image shown when a visitor clicks to view it in full"
 msgstr "訪問者がフルサイズで表示するためにクリックしたときに表示される画像のサイズ"
 
-#: class-ml-gallery.php:1227
+#: class-ml-gallery.php:1664
 msgid "Image Size"
 msgstr "画像サイズ"
 
-#: class-ml-gallery.php:1244
-msgid "Open in Gallery Button"
-msgstr "ギャラリーボタンで開く"
+#: class-ml-gallery.php:1684
+msgid ""
+"Choose how visitors open the gallery window: click the image, click an "
+"icon, or click a button."
+msgstr "ギャラリーウィンドウを開く方法を選択してください：画像をクリック、アイコンをクリック、またはボタンをクリック。"
 
-#: class-ml-gallery.php:1247
-msgid "Use Icon Instead of Text"
-msgstr "テキストの代わりにアイコンを使用"
+#: class-ml-gallery.php:1684
+msgid "Open with"
+msgstr "開く"
 
-#: class-ml-gallery.php:1250 class-ml-slider-lightbox.php:2535
-#: class-ml-gallery.php:1250
-#: class-ml-slider-lightbox.php:2535
+#: class-ml-gallery.php:1696
+msgid "Text shown on the button that opens the gallery window"
+msgstr "ギャラリーウィンドウを開くボタンに表示されるテキスト"
+
+#: class-ml-gallery.php:1696 class-ml-slider-lightbox.php:2726
 msgid "Button Text"
 msgstr "ボタンテキスト"
 
-#: class-ml-gallery.php:1255 class-ml-slider-lightbox.php:1502
-#: class-ml-slider-lightbox.php:3140 class-ml-slider-lightbox.php:6285
-#: class-ml-slider-lightbox.php:6308
-#: class-ml-gallery.php:1255
-#: class-ml-slider-lightbox.php:1502
-#: class-ml-slider-lightbox.php:3140
-#: class-ml-slider-lightbox.php:6285
-#: class-ml-slider-lightbox.php:6308
+#: class-ml-gallery.php:1701 class-ml-slider-lightbox.php:1629
+#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:6467
+#: class-ml-slider-lightbox.php:6490
 msgid "Open in Gallery"
 msgstr "ギャラリーで開く"
 
-#: class-ml-gallery.php:1260 class-ml-slider-lightbox.php:2543
-#: class-ml-gallery.php:1260
-#: class-ml-slider-lightbox.php:2543
+#: class-ml-gallery.php:1706
+msgid "Where the button or icon sits over the gallery"
+msgstr "ギャラリー上にボタンまたはアイコンが表示される場所"
+
+#: class-ml-gallery.php:1706 class-ml-slider-lightbox.php:2734
 msgid "Button Position"
 msgstr "ボタンの位置"
 
-#: class-ml-gallery.php:1262
+#: class-ml-gallery.php:1708
 msgid "Top Right"
 msgstr "右上"
 
-#: class-ml-gallery.php:1263 class-ml-slider-lightbox.php:3157
-#: class-ml-slider-lightbox.php:3183
-#: class-ml-gallery.php:1263
-#: class-ml-slider-lightbox.php:3157
-#: class-ml-slider-lightbox.php:3183
+#: class-ml-gallery.php:1709 class-ml-slider-lightbox.php:3343
+#: class-ml-slider-lightbox.php:3369
 msgid "Top Left"
 msgstr "左上"
 
-#: class-ml-gallery.php:1264 class-ml-slider-lightbox.php:3158
-#: class-ml-slider-lightbox.php:3184
-#: class-ml-gallery.php:1264
-#: class-ml-slider-lightbox.php:3158
-#: class-ml-slider-lightbox.php:3184
+#: class-ml-gallery.php:1710 class-ml-slider-lightbox.php:3344
+#: class-ml-slider-lightbox.php:3370
 msgid "Bottom Right"
 msgstr "右下"
 
-#: class-ml-gallery.php:1265 class-ml-slider-lightbox.php:3159
-#: class-ml-slider-lightbox.php:3185
-#: class-ml-gallery.php:1265
-#: class-ml-slider-lightbox.php:3159
-#: class-ml-slider-lightbox.php:3185
+#: class-ml-gallery.php:1711 class-ml-slider-lightbox.php:3345
+#: class-ml-slider-lightbox.php:3371
 msgid "Bottom Left"
 msgstr "左下"
 
-#: class-ml-gallery.php:1266
+#: class-ml-gallery.php:1712
 msgid "Center"
 msgstr "中央"
 
-#: class-ml-gallery.php:1275
+#: class-ml-gallery.php:1721
 msgid "Protect images"
 msgstr "画像を保護する"
 
-#: class-ml-gallery.php:1281
+#: class-ml-gallery.php:1727
 msgid "Display"
 msgstr "表示"
 
-#: class-ml-gallery.php:1283
+#: class-ml-gallery.php:1729
 msgid "Animation effect when moving between images"
 msgstr "画像間を移動するときのアニメーション効果"
 
-#: class-ml-gallery.php:1283 class-ml-gallery.php:1359
-#: class-ml-gallery.php:1283
-#: class-ml-gallery.php:1359
+#: class-ml-gallery.php:1729 class-ml-gallery.php:1814
 msgid "Transition"
 msgstr "トランジション"
 
-#: class-ml-gallery.php:1292 class-ml-slider-lightbox.php:2495
-#: class-ml-gallery.php:1292
-#: class-ml-slider-lightbox.php:2495
+#: class-ml-gallery.php:1738 class-ml-slider-lightbox.php:2686
 msgid "Arrows"
 msgstr "矢印"
 
-#: class-ml-gallery.php:1293
+#: class-ml-gallery.php:1739
 msgid "Slide Counter"
 msgstr "スライドカウンター"
 
-#: class-ml-gallery.php:1294
+#: class-ml-gallery.php:1740
 msgid "Thumbnails"
 msgstr "サムネイル"
 
-#: class-ml-gallery.php:1296
+#: class-ml-gallery.php:1742
 msgid "Pager"
 msgstr "ページャー"
 
-#: class-ml-gallery.php:1301 class-ml-slider-lightbox.php:2200
-#: class-ml-gallery.php:1301
-#: class-ml-slider-lightbox.php:2200
+#: class-ml-gallery.php:1747 class-ml-slider-lightbox.php:2391
 msgid "Navigation"
 msgstr "ナビゲーション"
 
-#: class-ml-gallery.php:1302
+#: class-ml-gallery.php:1748
 msgid "Loop"
 msgstr "ループ"
 
-#: class-ml-gallery.php:1303
+#: class-ml-gallery.php:1749
 msgid "Keyboard"
 msgstr "キーボード"
 
-#: class-ml-gallery.php:1304
+#: class-ml-gallery.php:1750
 msgid "Mouse wheel"
 msgstr "マウスホイール"
 
-#: class-ml-gallery.php:1305
+#: class-ml-gallery.php:1751
 msgid "Swipe to close"
 msgstr "閉じるにはスワイプ"
 
-#: class-ml-gallery.php:1312 class-ml-gallery.php:1314
-#: class-ml-gallery.php:1312
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1758 class-ml-gallery.php:1760
 msgid "Captions"
 msgstr "キャプション"
 
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1760
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
 msgstr "キャプションが表示される場所：ギャラリーのサムネイル、ギャラリーウィンドウ、またはその両方。"
 
-#: class-ml-gallery.php:1326
+#: class-ml-gallery.php:1772
+msgid ""
+"Where each caption's text comes from: your typed caption, or the image's "
+"Media Library caption or description. Empty media fields fall back to your "
+"typed caption."
+msgstr ""
+"各キャプションのテキストがどこから来るか：あなたが入力したキャプション、または画像のメディアライブラリのキャプションや説明。空のメディアフィールドはあな"
+"たが入力したキャプションに戻ります。"
+
+#: class-ml-gallery.php:1772
+msgid "Caption Content"
+msgstr "キャプションコンテンツ"
+
+#: class-ml-gallery.php:1781
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "キャプションテキストのサイズ。ギャラリーのサムネイルとギャラリーウィンドウの両方に適用されます。"
 
-#: class-ml-gallery.php:1327
+#: class-ml-gallery.php:1782
 msgid "Text Size"
 msgstr "テキストサイズ"
 
-#: class-ml-gallery.php:1339
+#: class-ml-gallery.php:1794
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "キャプションテキストの色。ギャラリーのサムネイルとギャラリーウィンドウの両方に適用されます。"
 
-#: class-ml-gallery.php:1339
+#: class-ml-gallery.php:1794
 msgid "Text Color"
 msgstr "テキストカラー"
 
-#: class-ml-gallery.php:1349
+#: class-ml-gallery.php:1804
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
 msgstr "キャプションの背景。ギャラリーのサムネイルとギャラリーウィンドウの両方に適用されます。サムネイルでは、可読性のために透明にフェードします。"
 
-#: class-ml-gallery.php:1349 class-ml-gallery.php:1391
-#: class-ml-slider-lightbox.php:2463
-#: class-ml-gallery.php:1349
-#: class-ml-gallery.php:1391
-#: class-ml-slider-lightbox.php:2463
+#: class-ml-gallery.php:1804 class-ml-gallery.php:1846
+#: class-ml-slider-lightbox.php:2654
 msgid "Background Color"
 msgstr "背景色"
 
-#: class-ml-gallery.php:1359
+#: class-ml-gallery.php:1814
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
 msgstr "キャプションのアニメーションの入り方。ギャラリーウィンドウのみに適用され、ギャラリーサムネイルのキャプションには適用されません。"
 
-#: class-ml-gallery.php:1369 class-ml-slider-lightbox.php:2511
-#: class-ml-gallery.php:1369
-#: class-ml-slider-lightbox.php:2511
+#: class-ml-gallery.php:1824 class-ml-slider-lightbox.php:2702
 msgid "Toolbar"
 msgstr "ツールバー"
 
-#: class-ml-gallery.php:1370 class-ml-slider-lightbox.php:1516
-#: class-ml-gallery.php:1370
-#: class-ml-slider-lightbox.php:1516
+#: class-ml-gallery.php:1825 class-ml-slider-lightbox.php:1643
 msgid "Download"
 msgstr "ダウンロード"
 
-#: class-ml-gallery.php:1372
+#: class-ml-gallery.php:1827
 msgid "Share"
 msgstr "共有"
 
-#: class-ml-gallery.php:1373
+#: class-ml-gallery.php:1828
 msgid "Autoplay"
 msgstr "自動再生"
 
-#: class-ml-gallery.php:1374
+#: class-ml-gallery.php:1829
 msgid "Rotate and Flip"
 msgstr "回転と反転"
 
-#: class-ml-gallery.php:1375
+#: class-ml-gallery.php:1830
 msgid "Fullscreen"
 msgstr "フルスクリーン"
 
-#: class-ml-gallery.php:1381
+#: class-ml-gallery.php:1836
 msgid "Unique Image URLs"
 msgstr "ユニーク画像URL"
 
-#: class-ml-gallery.php:1388 class-ml-slider-lightbox.php:2133
-#: class-ml-slider-lightbox.php:2190
-#: class-ml-gallery.php:1388
-#: class-ml-slider-lightbox.php:2133
-#: class-ml-slider-lightbox.php:2190
+#: class-ml-gallery.php:1843 class-ml-slider-lightbox.php:2324
+#: class-ml-slider-lightbox.php:2381
 msgid "Appearance"
 msgstr "外観"
 
-#: class-ml-gallery.php:1402 class-ml-slider-lightbox.php:2471
-#: class-ml-gallery.php:1402
-#: class-ml-slider-lightbox.php:2471
+#: class-ml-gallery.php:1846
+msgid "Background color of the gallery window"
+msgstr "ギャラリーウィンドウの背景色"
+
+#: class-ml-gallery.php:1856
+msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
+msgstr "ギャラリーウィンドウの背景の不透明度（0 = 透明、1 = 不透明）"
+
+#: class-ml-gallery.php:1857 class-ml-slider-lightbox.php:2662
 msgid "Background Opacity"
 msgstr "背景の不透明度"
 
-#: class-ml-gallery.php:1414
+#: class-ml-gallery.php:1869
+msgid "Color of the next and previous navigation arrows"
+msgstr "次と前のナビゲーション矢印の色"
+
+#: class-ml-gallery.php:1869
 msgid "Arrow Color"
 msgstr "矢印の色"
 
-#: class-ml-gallery.php:1424
+#: class-ml-gallery.php:1879
+msgid "Background color behind the navigation arrows"
+msgstr "ナビゲーション矢印の背後の背景色"
+
+#: class-ml-gallery.php:1879
 msgid "Arrow Background"
 msgstr "矢印の背景"
 
-#: class-ml-gallery.php:1434
+#: class-ml-gallery.php:1889
+msgid "Color of the close (X) icon"
+msgstr "閉じる（X）アイコンの色"
+
+#: class-ml-gallery.php:1889
 msgid "Close Icon Color"
 msgstr "閉じるアイコンの色"
 
-#: class-ml-gallery.php:1444
+#: class-ml-gallery.php:1899
+msgid "Background color behind the close icon"
+msgstr "閉じるアイコンの背後の背景色"
+
+#: class-ml-gallery.php:1899
 msgid "Close Background"
 msgstr "閉じる背景"
 
-#: class-ml-gallery.php:1454
+#: class-ml-gallery.php:1909
+msgid "Color of the toolbar icons"
+msgstr "ツールバーアイコンの色"
+
+#: class-ml-gallery.php:1909
 msgid "Toolbar Icon Color"
 msgstr "ツールバーアイコンの色"
 
-#: class-ml-gallery.php:1464
+#: class-ml-gallery.php:1919
+msgid "Background color of the toolbar"
+msgstr "ツールバーの背景色"
+
+#: class-ml-gallery.php:1919
 msgid "Toolbar Background"
 msgstr "ツールバーの背景"
 
-#: class-ml-gallery.php:1474 class-ml-slider-lightbox.php:2487
-#: class-ml-gallery.php:1474
-#: class-ml-slider-lightbox.php:2487
+#: class-ml-gallery.php:1929
+msgid "Border color of the thumbnail strip images"
+msgstr "サムネイルストリップ画像の境界線の色"
+
+#: class-ml-gallery.php:1929 class-ml-slider-lightbox.php:2678
 msgid "Thumbnail Border Color"
 msgstr "サムネイルの境界線の色"
 
-#: class-ml-gallery.php:1484
+#: class-ml-gallery.php:1939
+msgid "Border color of the active and hovered thumbnail"
+msgstr "アクティブおよびホバーされたサムネイルの境界線の色"
+
+#: class-ml-gallery.php:1939
 msgid "Thumbnail Border Active and Hover"
 msgstr "サムネイルの境界線 アクティブおよびホバー"
 
-#: class-ml-gallery.php:1498
+#: class-ml-gallery.php:1958
+msgid "Text color of the button that opens the gallery window"
+msgstr "ギャラリーウィンドウを開くボタンのテキストカラー"
+
+#: class-ml-gallery.php:1958
+msgid "Button Text Color"
+msgstr "ボタンテキストカラー"
+
+#: class-ml-gallery.php:1962
+msgid "Button text color on hover"
+msgstr "ホバー時のボタンテキストカラー"
+
+#: class-ml-gallery.php:1962
+msgid "Button Text Hover"
+msgstr "ボタンテキストホバー"
+
+#: class-ml-gallery.php:1966
+msgid "Background color of the button that opens the gallery window"
+msgstr "ギャラリーウィンドウを開くボタンの背景色"
+
+#: class-ml-gallery.php:1966
+msgid "Button Background"
+msgstr "ボタンの背景"
+
+#: class-ml-gallery.php:1970
+msgid "Button background color on hover"
+msgstr "ホバー時のボタン背景色"
+
+#: class-ml-gallery.php:1970
+msgid "Button Background Hover"
+msgstr "ボタン背景ホバー"
+
+#: class-ml-gallery.php:1977
+msgid "Color of the icon that opens the gallery window"
+msgstr "ギャラリーウィンドウを開くアイコンの色"
+
+#: class-ml-gallery.php:1977
+msgid "Icon Color"
+msgstr "アイコンの色"
+
+#: class-ml-gallery.php:1981
+msgid "Icon color on hover"
+msgstr "ホバー時のアイコン色"
+
+#: class-ml-gallery.php:1981
+msgid "Icon Hover Color"
+msgstr "アイコンホバー色"
+
+#: class-ml-gallery.php:1985
+msgid "Background color behind the icon"
+msgstr "アイコンの背後の背景色"
+
+#: class-ml-gallery.php:1985
+msgid "Icon Background"
+msgstr "アイコンの背景"
+
+#: class-ml-gallery.php:1989
+msgid "Icon background color on hover"
+msgstr "ホバー時のアイコン背景色"
+
+#: class-ml-gallery.php:1989
+msgid "Icon Background Hover"
+msgstr "アイコン背景ホバー"
+
+#: class-ml-gallery.php:1996
+msgid "Color of the progress bar shown during autoplay"
+msgstr "自動再生中に表示されるプログレスバーの色"
+
+#: class-ml-gallery.php:1996
+msgid "Autoplay Progress Bar"
+msgstr "自動再生プログレスバー"
+
+#: class-ml-gallery.php:2011
 msgid "Image Styles"
 msgstr "画像スタイル"
 
-#: class-ml-gallery.php:1501
+#: class-ml-gallery.php:2014
 msgid "Apply a filter to every image in the gallery"
 msgstr "ギャラリー内のすべての画像にフィルターを適用"
 
-#: class-ml-gallery.php:1501
+#: class-ml-gallery.php:2014
 msgid "Filter"
 msgstr "フィルター"
 
-#: class-ml-gallery.php:1510
+#: class-ml-gallery.php:2023
 msgid "Corner radius in pixels applied to every image"
 msgstr "すべての画像に適用されるピクセル単位のコーナー半径"
 
-#: class-ml-gallery.php:1511
+#: class-ml-gallery.php:2024
 msgid "Rounded Corners"
 msgstr "角の丸み"
 
-#: class-ml-gallery.php:1522
+#: class-ml-gallery.php:2035
 msgid "Image border width in pixels (0 = no border)"
 msgstr "画像のボーダー幅（ピクセル単位）（0 = ボーダーなし）"
 
-#: class-ml-gallery.php:1523
+#: class-ml-gallery.php:2036
 msgid "Border Width"
 msgstr "ボーダー幅"
 
-#: class-ml-gallery.php:1534
+#: class-ml-gallery.php:2047
 msgid "Line style used for the image border"
 msgstr "画像のボーダーに使用されるラインスタイル"
 
-#: class-ml-gallery.php:1534
+#: class-ml-gallery.php:2047
 msgid "Border Style"
 msgstr "ボーダースタイル"
 
-#: class-ml-gallery.php:1537
+#: class-ml-gallery.php:2050
 msgid "Solid"
 msgstr "実線"
 
-#: class-ml-gallery.php:1538
+#: class-ml-gallery.php:2051
 msgid "Dashed"
 msgstr "破線"
 
-#: class-ml-gallery.php:1539
+#: class-ml-gallery.php:2052
 msgid "Dotted"
 msgstr "点線"
 
-#: class-ml-gallery.php:1540
+#: class-ml-gallery.php:2053
 msgid "Double"
 msgstr "二重線"
 
-#: class-ml-gallery.php:1548
+#: class-ml-gallery.php:2061
+msgid "Color of the image border"
+msgstr "画像の境界線の色"
+
+#: class-ml-gallery.php:2061
 msgid "Border Color"
 msgstr "ボーダーの色"
 
-#: class-ml-gallery.php:1558
+#: class-ml-gallery.php:2071
 msgid "Drop shadow depth cast behind each image"
 msgstr "各画像の背後に投影されるドロップシャドウの深さ"
 
-#: class-ml-gallery.php:1558
+#: class-ml-gallery.php:2071
 msgid "Box Shadow"
 msgstr "ボックスシャドウ"
 
-#: class-ml-gallery.php:1562
+#: class-ml-gallery.php:2075
 msgid "Light"
 msgstr "軽い"
 
-#: class-ml-gallery.php:1563
+#: class-ml-gallery.php:2076
 msgid "Medium"
 msgstr "中程度"
 
-#: class-ml-gallery.php:1564
+#: class-ml-gallery.php:2077
 msgid "Heavy"
 msgstr "重い"
 
-#: class-ml-gallery.php:1572
+#: class-ml-gallery.php:2085
 msgid "Image opacity as a percentage"
 msgstr "画像の不透明度（パーセンテージ）"
 
-#: class-ml-gallery.php:1573
+#: class-ml-gallery.php:2086
 msgid "Opacity"
 msgstr "不透明度"
 
-#: class-ml-gallery.php:1584
+#: class-ml-gallery.php:2097
 msgid "Rotate every image by a fixed angle"
 msgstr "すべての画像を固定角度で回転する"
 
-#: class-ml-gallery.php:1584
+#: class-ml-gallery.php:2097
 msgid "Rotate"
 msgstr "回転"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:2111
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "すべての画像を水平方向、垂直方向、または両方で反転する"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:2111
 msgid "Flip"
 msgstr "反転"
 
-#: class-ml-gallery.php:1602
+#: class-ml-gallery.php:2115
 msgid "Horizontal"
 msgstr "水平方向"
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:2116
 msgid "Vertical"
 msgstr "垂直方向"
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:2117
 msgid "Both"
 msgstr "両方"
 
-#: class-ml-gallery.php:1614 class-ml-gallery.php:2618
-#: class-ml-gallery.php:1614
-#: class-ml-gallery.php:2618
+#: class-ml-gallery.php:2127 class-ml-gallery.php:3747
 msgid "Shortcode"
 msgstr "ショートコード"
 
-#: class-ml-gallery.php:1616 class-ml-gallery.php:2638
-#: class-ml-gallery.php:1616
-#: class-ml-gallery.php:2638
+#: class-ml-gallery.php:2129 class-ml-gallery.php:3767
 msgid "Click to copy shortcode."
 msgstr "クリックしてショートコードをコピーします。"
 
-#: class-ml-gallery.php:1634
+#: class-ml-gallery.php:2147
 msgid "Edit Caption"
 msgstr "キャプションを編集"
 
-#: class-ml-gallery.php:1635 class-ml-gallery.php:1664
-#: class-ml-gallery.php:1685 class-ml-gallery.php:2663
-#: class-ml-gallery.php:1635
-#: class-ml-gallery.php:1664
-#: class-ml-gallery.php:1685
-#: class-ml-gallery.php:2663
+#: class-ml-gallery.php:2149
+msgid "Previous image"
+msgstr "前の画像"
+
+#: class-ml-gallery.php:2150
+msgid "Next image"
+msgstr "次の画像"
+
+#: class-ml-gallery.php:2152 class-ml-gallery.php:2194
+#: class-ml-gallery.php:2215 class-ml-gallery.php:3792
 msgid "Close"
 msgstr "閉じる"
 
-#: class-ml-gallery.php:1643
+#: class-ml-gallery.php:2173
 msgid "Caption"
 msgstr "キャプション"
 
-#: class-ml-gallery.php:1650 class-ml-gallery.php:1672
-#: class-ml-gallery.php:1650
-#: class-ml-gallery.php:1672
-msgid "Cancel"
-msgstr "キャンセル"
+#: class-ml-gallery.php:2183
+msgid "Done"
+msgstr "完了"
 
-#: class-ml-gallery.php:1653
-msgid "Save Caption"
-msgstr "キャプションを保存"
-
-#: class-ml-gallery.php:1663
+#: class-ml-gallery.php:2193
 msgid "Import from Server Folder"
 msgstr "サーバーフォルダーからインポート"
 
-#: class-ml-gallery.php:1673
+#: class-ml-gallery.php:2202
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: class-ml-gallery.php:2203
 msgid "Import selected"
 msgstr "選択したものをインポート"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:2214
 msgid "Import from ZIP"
 msgstr "ZIPからインポート"
 
-#: class-ml-gallery.php:1708 class-ml-gallery.php:1856
-#: class-ml-gallery.php:1708
-#: class-ml-gallery.php:1856
-msgid "Security check failed."
-msgstr "セキュリティチェックに失敗しました。"
-
-#: class-ml-gallery.php:1712
+#: class-ml-gallery.php:2242
 msgid "You do not have sufficient permissions."
 msgstr "十分な権限がありません。"
 
-#: class-ml-gallery.php:1731
+#: class-ml-gallery.php:2261
 msgid "Could not update the gallery. Please try again."
 msgstr "ギャラリーを更新できませんでした。再試行してください。"
 
-#: class-ml-gallery.php:1866
+#: class-ml-gallery.php:2408
 msgid "(Copy)"
 msgstr "(コピー)"
 
-#: class-ml-gallery.php:1872
+#: class-ml-gallery.php:2414
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "ギャラリーを複製できませんでした。再試行してください。"
 
-#: class-ml-gallery.php:1976 class-ml-gallery.php:2091
-#: class-ml-gallery.php:2783 class-ml-gallery.php:1976
-#: class-ml-gallery.php:2091
-#: class-ml-gallery.php:2783
+#: class-ml-gallery.php:2562 class-ml-gallery.php:2677
+#: class-ml-gallery.php:3912 class-ml-gallery.php:4065
+#: class-ml-gallery.php:4097
 msgid "Permission denied."
 msgstr "アクセス権が拒否されました。"
 
-#: class-ml-gallery.php:1983
+#: class-ml-gallery.php:2569
 msgid "Folder not found."
 msgstr "フォルダーが見つかりません。"
 
-#: class-ml-gallery.php:1992
+#: class-ml-gallery.php:2578
 msgid "Folder could not be read."
 msgstr "フォルダーを読み込めませんでした。"
 
-#: class-ml-gallery.php:2029
+#: class-ml-gallery.php:2615
 msgid "Uploads"
 msgstr "アップロード"
 
-#: class-ml-gallery.php:2192
+#: class-ml-gallery.php:2800
 msgid "Select Gallery Images"
 msgstr "ギャラリー画像を選択"
 
-#: class-ml-gallery.php:2193
+#: class-ml-gallery.php:2801
 msgid "Add to Gallery"
 msgstr "ギャラリーに追加"
 
-#: class-ml-gallery.php:2197
+#: class-ml-gallery.php:2812
+msgid ""
+"Saved to this image in your Media Library — changes appear anywhere the "
+"image is used."
+msgstr "この画像はあなたのメディアライブラリに保存されました — 変更は画像が使用されている場所に反映されます。"
+
+#: class-ml-gallery.php:2813 class-ml-gallery.php:4114
+msgid "You do not have permission to edit this image."
+msgstr "この画像を編集する権限がありません。"
+
+#: class-ml-gallery.php:2814 class-ml-gallery.php:4115
+msgid "This caption source is read-only."
+msgstr "このキャプションソースは読み取り専用です。"
+
+#: class-ml-gallery.php:2815
+msgid "Shown in this gallery"
+msgstr "このギャラリーに表示されます"
+
+#: class-ml-gallery.php:2817
 msgid "Loading…"
 msgstr "読み込み中…"
 
-#: class-ml-gallery.php:2198
+#: class-ml-gallery.php:2818
 msgid "No images in this folder."
 msgstr "このフォルダーには画像がありません。"
 
-#: class-ml-gallery.php:2199
+#: class-ml-gallery.php:2819
 msgid "Could not load this folder."
 msgstr "このフォルダーを読み込めませんでした。"
 
-#: class-ml-gallery.php:2200
+#: class-ml-gallery.php:2820
 msgid "Importing…"
 msgstr "インポート中…"
 
-#: class-ml-gallery.php:2201
+#: class-ml-gallery.php:2821
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr "最初の200枚の画像を表示中 — サブフォルダーを開いてリストを絞り込んでください。"
 
-#: class-ml-gallery.php:2202
+#: class-ml-gallery.php:2822
 msgid "Select at least one image."
 msgstr "少なくとも1枚の画像を選択してください。"
 
-#: class-ml-gallery.php:2203 class-ml-gallery.php:2206
-#: class-ml-gallery.php:2203
-#: class-ml-gallery.php:2206
+#: class-ml-gallery.php:2823 class-ml-gallery.php:2826
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "インポートされた %1$d 画像； %2$d 画像はスキップされました。"
 
-#: class-ml-gallery.php:2204
+#: class-ml-gallery.php:2824
 msgid "Uploading…"
 msgstr "アップロード中…"
 
-#: class-ml-gallery.php:2205
+#: class-ml-gallery.php:2825
 msgid "Importing images…"
 msgstr "画像をインポート中…"
 
-#: class-ml-gallery.php:2207
+#: class-ml-gallery.php:2827
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "最初の200枚の画像（または256 MB）のみがインポートされました。"
 
-#: class-ml-gallery.php:2208
+#: class-ml-gallery.php:2828
 msgid "The ZIP could not be imported."
 msgstr "ZIPをインポートできませんでした。"
 
-#: class-ml-gallery.php:2209
+#: class-ml-gallery.php:2829
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr "アップロードが拒否されました — ZIPがこのサーバーの許可するサイズを超えている可能性があります。"
 
-#: class-ml-gallery.php:2210
+#: class-ml-gallery.php:2830
 msgid "No images found in the ZIP."
 msgstr "ZIP内に画像が見つかりませんでした。"
 
-#: class-ml-gallery.php:2620
+#: class-ml-gallery.php:3378
+msgid "Drag-and-drop building"
+msgstr "ドラッグアンドドロップビルディング"
+
+#: class-ml-gallery.php:3379
+msgid "Responsive lightbox"
+msgstr "レスポンシブライトボックス"
+
+#: class-ml-gallery.php:3380
+msgid "Grid · Masonry · Justified"
+msgstr "グリッド · メイソンリー · ジャスティファイド"
+
+#: class-ml-gallery.php:3631
+msgid "Get started"
+msgstr "始める"
+
+#: class-ml-gallery.php:3634
+msgid "Your galleries"
+msgstr "あなたのギャラリー"
+
+#: class-ml-gallery.php:3634
+msgid "live here."
+msgstr "ここにあります。"
+
+#: class-ml-gallery.php:3636
+msgid ""
+"Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
+"justified, no code required."
+msgstr "美しい画像ギャラリーを驚くべきライトボックスで作成しましょう。グリッド、メイソンリー、またはジャスティファイド、コードは不要です。"
+
+#: class-ml-gallery.php:3638
+msgid "Create your first gallery"
+msgstr "最初のギャラリーを作成する"
+
+#: class-ml-gallery.php:3651
+#, php-format
+msgid "View Trash (%s)"
+msgid_plural "View Trash (%s)"
+msgstr[0] "ゴミ箱を表示 (%s)"
+
+#: class-ml-gallery.php:3662
+msgid "Preview layout"
+msgstr "レイアウトのプレビュー"
+
+#: class-ml-gallery.php:3749
 msgid "Usage"
 msgstr "使用法"
 
-#: class-ml-gallery.php:2653
+#: class-ml-gallery.php:3782
 msgid "Not found."
 msgstr "見つかりません。"
 
-#: class-ml-gallery.php:2658
+#: class-ml-gallery.php:3787
 msgid "View Usage"
 msgstr "使用法を表示"
 
-#: class-ml-gallery.php:2664
+#: class-ml-gallery.php:3793
 msgid "Content Using This Gallery"
 msgstr "このギャラリーを使用しているコンテンツ"
 
-#: class-ml-gallery.php:2731
+#: class-ml-gallery.php:3860
 msgid "(no title)"
 msgstr "(タイトルなし)"
 
-#: class-ml-gallery.php:2789 class-ml-gallery.php:2798
-#: class-ml-gallery.php:2789
-#: class-ml-gallery.php:2798
+#: class-ml-gallery.php:3918 class-ml-gallery.php:3927
 msgid "Please choose a valid .zip file."
 msgstr "有効な.zipファイルを選択してください。"
 
-#: class-ml-gallery.php:2804
+#: class-ml-gallery.php:3933
 msgid "Server cannot read ZIP files."
 msgstr "サーバーはZIPファイルを読み取れません。"
 
-#: class-ml-gallery.php:2811
+#: class-ml-gallery.php:3940
 msgid "The ZIP could not be read."
 msgstr "ZIPを読み取ることができませんでした。"
 
-#: class-ml-gallery.php:2845
+#: class-ml-gallery.php:3974
 msgid "Could not prepare a temporary folder."
 msgstr "一時フォルダーを準備できませんでした。"
 
-#: class-ml-slider-lightbox.php:1039
-#: class-ml-slider-lightbox.php:1039
+#: class-ml-gallery.php:4072 class-ml-gallery.php:4108
+msgid "Image not found."
+msgstr "画像が見つかりません。"
+
+#: class-ml-gallery.php:4145
+msgid "Unknown caption source."
+msgstr "不明なキャプションソース。"
+
+#: class-ml-slider-lightbox.php:216
+msgid "👋 Thanks for installing MetaSlider Gallery!"
+msgstr "👋 MetaSlider Galleryのインストールありがとうございます！"
+
+#: class-ml-slider-lightbox.php:219
+msgid "You're all set. Create your first gallery to get started."
+msgstr "すべての準備が整いました。最初のギャラリーを作成して始めましょう。"
+
+#: class-ml-slider-lightbox.php:1167
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1147,266 +1357,214 @@ msgstr ""
 "Galleryには、MetaSliderと少なくとも1"
 "つの他のサポートされているLightboxプラグインがインストールされ、アクティブになっている必要があります。"
 
-#: class-ml-slider-lightbox.php:1043
-#: class-ml-slider-lightbox.php:1043
+#: class-ml-slider-lightbox.php:1171
 msgid "More info"
 msgstr "詳細情報"
 
-#: class-ml-slider-lightbox.php:1054
-#: class-ml-slider-lightbox.php:1054
+#: class-ml-slider-lightbox.php:1182
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
 msgstr "アクティブなLightboxプラグインが複数あります。これにより、MetaSlider Galleryとの競合が発生する可能性があります。"
 
-#: class-ml-slider-lightbox.php:1114
-#: class-ml-slider-lightbox.php:1114
+#: class-ml-slider-lightbox.php:1242
 msgid "Edit Global Settings"
 msgstr "グローバル設定を編集"
 
-#: class-ml-slider-lightbox.php:1126
-#: class-ml-slider-lightbox.php:1126
+#: class-ml-slider-lightbox.php:1253
 msgid "Open In Gallery"
 msgstr "ギャラリーで開く"
 
-#: class-ml-slider-lightbox.php:1141
-#: class-ml-slider-lightbox.php:1141
+#: class-ml-slider-lightbox.php:1267
 msgid "Show Captions"
 msgstr "キャプションを表示"
 
-#: class-ml-slider-lightbox.php:1141
-#: class-ml-slider-lightbox.php:1141
+#: class-ml-slider-lightbox.php:1267
 msgid "Show captions in the gallery for each slide."
 msgstr "各スライドのギャラリーにキャプションを表示します。"
 
-#: class-ml-slider-lightbox.php:1142
-#: class-ml-slider-lightbox.php:1142
+#: class-ml-slider-lightbox.php:1268
 msgid "Show Navigation Arrows"
 msgstr "ナビゲーション矢印を表示"
 
-#: class-ml-slider-lightbox.php:1142
-#: class-ml-slider-lightbox.php:1142
+#: class-ml-slider-lightbox.php:1268
 msgid "Show previous/next arrows in the gallery."
 msgstr "ギャラリーに前/次の矢印を表示します。"
 
-#: class-ml-slider-lightbox.php:1143
-#: class-ml-slider-lightbox.php:1143
-msgid "Show \"Open In Gallery\" Button"
-msgstr "「ギャラリーで開く」ボタンを表示"
-
-#: class-ml-slider-lightbox.php:1143
-#: class-ml-slider-lightbox.php:1143
-msgid "Show a button on each slide to open the image in the gallery."
-msgstr "各スライドに画像をギャラリーで開くボタンを表示します。"
-
-#: class-ml-slider-lightbox.php:1144
-#: class-ml-slider-lightbox.php:1144
-msgid "Show An Icon Instead Of Button"
-msgstr "ボタンの代わりにアイコンを表示"
-
-#: class-ml-slider-lightbox.php:1144
-#: class-ml-slider-lightbox.php:1144
-msgid "Display an icon instead of a text button on each slide."
-msgstr "各スライドにテキストボタンの代わりにアイコンを表示します。"
-
-#: class-ml-slider-lightbox.php:1149
-#: class-ml-slider-lightbox.php:1149
+#: class-ml-slider-lightbox.php:1274
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
 "Gallery settings</a>."
 msgstr "ギャラリーは、<a href=\"%s\">MetaSliderギャラリー設定</a>を介してすべてのスライドショーで有効です。"
 
-#: class-ml-slider-lightbox.php:1512
-#: class-ml-slider-lightbox.php:1512
+#: class-ml-slider-lightbox.php:1639
 msgid "Close gallery"
 msgstr "ギャラリーを閉じる"
 
-#: class-ml-slider-lightbox.php:1513
-#: class-ml-slider-lightbox.php:1513
+#: class-ml-slider-lightbox.php:1640
 msgid "Toggle maximize"
 msgstr "最大化の切り替え"
 
-#: class-ml-slider-lightbox.php:1514
-#: class-ml-slider-lightbox.php:1514
+#: class-ml-slider-lightbox.php:1641
 msgid "Previous slide"
 msgstr "前のスライド"
 
-#: class-ml-slider-lightbox.php:1515
-#: class-ml-slider-lightbox.php:1515
+#: class-ml-slider-lightbox.php:1642
 msgid "Next slide"
 msgstr "次のスライド"
 
-#: class-ml-slider-lightbox.php:1517
-#: class-ml-slider-lightbox.php:1517
+#: class-ml-slider-lightbox.php:1644
 msgid "Play video"
 msgstr "ビデオを再生"
 
-#: class-ml-slider-lightbox.php:1518
-#: class-ml-slider-lightbox.php:1518
+#: class-ml-slider-lightbox.php:1645
 msgid "Oops... Failed to load content..."
 msgstr "おっと... コンテンツの読み込みに失敗しました..."
 
-#: class-ml-slider-lightbox.php:1564
-#: class-ml-slider-lightbox.php:1564
+#: class-ml-slider-lightbox.php:1691 class-ml-slider-lightbox.php:1721
 msgid "Global"
 msgstr "グローバル"
 
-#: class-ml-slider-lightbox.php:1565
-#: class-ml-slider-lightbox.php:1565
+#: class-ml-slider-lightbox.php:1692
 msgid "Yes"
 msgstr "はい"
 
-#: class-ml-slider-lightbox.php:1566
-#: class-ml-slider-lightbox.php:1566
+#: class-ml-slider-lightbox.php:1693
 msgid "No"
 msgstr "いいえ"
 
-#: class-ml-slider-lightbox.php:1820
-#: class-ml-slider-lightbox.php:1820
+#: class-ml-slider-lightbox.php:1716
+msgid "How Visitors Open Images"
+msgstr "訪問者が画像を開く方法"
+
+#: class-ml-slider-lightbox.php:1719 class-ml-slider-lightbox.php:3643
+msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
+msgstr "画像、アイコン、またはボタンをクリックするとギャラリーが開くかどうかを選択してください。"
+
+#: class-ml-slider-lightbox.php:1722 class-ml-trigger-control.php:66
+msgid "Image"
+msgstr "画像"
+
+#: class-ml-slider-lightbox.php:1723 class-ml-slider-lightbox.php:3485
+#: class-ml-slider-lightbox.php:3498 class-ml-slider-lightbox.php:3511
+#: class-ml-slider-lightbox.php:3609 class-ml-trigger-control.php:67
+msgid "Icon"
+msgstr "アイコン"
+
+#: class-ml-slider-lightbox.php:1724 class-ml-trigger-control.php:68
+msgid "Button"
+msgstr "ボタン"
+
+#: class-ml-slider-lightbox.php:1992
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Galleryには、MetaSliderがインストールされ、アクティブになっている必要があります。"
 
-#: class-ml-slider-lightbox.php:1824
-#: class-ml-slider-lightbox.php:1824
+#: class-ml-slider-lightbox.php:1996
 msgid "Install MetaSlider"
 msgstr "MetaSliderをインストール"
 
-#: class-ml-slider-lightbox.php:1947 class-ml-slider-lightbox.php:2072
-#: class-ml-slider-lightbox.php:1947
-#: class-ml-slider-lightbox.php:2072, fuzzy
+#: class-ml-slider-lightbox.php:2119 class-ml-slider-lightbox.php:2263, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2054
-#: class-ml-slider-lightbox.php:2054
+#: class-ml-slider-lightbox.php:2245
 #, php-format
 msgid "Select pages to %s..."
 msgstr "ページを%sを選択..."
 
-#: class-ml-slider-lightbox.php:2055
-#: class-ml-slider-lightbox.php:2055
+#: class-ml-slider-lightbox.php:2246
 #, php-format
 msgid "Select posts to %s..."
 msgstr "投稿を%sを選択..."
 
-#: class-ml-slider-lightbox.php:2056
-#: class-ml-slider-lightbox.php:2056
+#: class-ml-slider-lightbox.php:2247
 #, php-format
 msgid "Select post types to %s..."
 msgstr "投稿タイプを%sを選択..."
 
-#: class-ml-slider-lightbox.php:2057
-#: class-ml-slider-lightbox.php:2057
+#: class-ml-slider-lightbox.php:2248
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "%1$s から %2$s を選択..."
 
-#: class-ml-slider-lightbox.php:2058
-#: class-ml-slider-lightbox.php:2058
+#: class-ml-slider-lightbox.php:2249
 msgid "Select post types to exclude"
 msgstr "除外する投稿タイプを選択"
 
-#: class-ml-slider-lightbox.php:2059 class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564 class-ml-slider-lightbox.php:3686
-#: class-ml-slider-lightbox.php:2059
-#: class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564
-#: class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:2250 class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
 msgid "Include"
 msgstr "含める"
 
-#: class-ml-slider-lightbox.php:2060 class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564 class-ml-slider-lightbox.php:3686
-#: class-ml-slider-lightbox.php:2060
-#: class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564
-#: class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:2251 class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
 msgid "Exclude"
 msgstr "除外する"
 
-#: class-ml-slider-lightbox.php:2068
-#: class-ml-slider-lightbox.php:2068
+#: class-ml-slider-lightbox.php:2259
 msgid "Gallery Pro"
 msgstr "ギャラリー Pro"
 
-#: class-ml-slider-lightbox.php:2088
-#: class-ml-slider-lightbox.php:2088
-msgid "Settings"
-msgstr "設定"
+#: class-ml-slider-lightbox.php:2279
+msgid "Global Settings"
+msgstr "グローバル設定"
 
-#: class-ml-slider-lightbox.php:2098
-#: class-ml-slider-lightbox.php:2098
+#: class-ml-slider-lightbox.php:2289
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "MetaSliderギャラリーProにアップグレード"
 
-#: class-ml-slider-lightbox.php:2099
-#: class-ml-slider-lightbox.php:2099
+#: class-ml-slider-lightbox.php:2290
 msgid "Upgrade to Pro"
 msgstr "Proにアップグレード"
 
-#: class-ml-slider-lightbox.php:2131
-#: class-ml-slider-lightbox.php:2131
+#: class-ml-slider-lightbox.php:2322
 msgid "Automatic Mode"
 msgstr "自動モード"
 
-#: class-ml-slider-lightbox.php:2132
-#: class-ml-slider-lightbox.php:2132
+#: class-ml-slider-lightbox.php:2323
 msgid "Manual Mode"
 msgstr "手動モード"
 
-#: class-ml-slider-lightbox.php:2134
-#: class-ml-slider-lightbox.php:2134
+#: class-ml-slider-lightbox.php:2325
 msgid "Behavior"
 msgstr "動作"
 
-#: class-ml-slider-lightbox.php:2155
-#: class-ml-slider-lightbox.php:2155
+#: class-ml-slider-lightbox.php:2346
 msgid "Settings saved successfully!"
 msgstr "設定が正常に保存されました！"
 
-#: class-ml-slider-lightbox.php:2165
-#: class-ml-slider-lightbox.php:2165
+#: class-ml-slider-lightbox.php:2356
 msgid "Where to Enable Automatically"
 msgstr "自動的に有効にする場所"
 
-#: class-ml-slider-lightbox.php:2172
-#: class-ml-slider-lightbox.php:2172
+#: class-ml-slider-lightbox.php:2363
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider スライドショー"
 
-#: class-ml-slider-lightbox.php:2179 class-ml-slider-lightbox.php:2376
-#: class-ml-slider-lightbox.php:2179
-#: class-ml-slider-lightbox.php:2376
+#: class-ml-slider-lightbox.php:2370 class-ml-slider-lightbox.php:2567
 msgid "Content Filtering"
 msgstr "コンテンツフィルタリング"
 
-#: class-ml-slider-lightbox.php:2191
-#: class-ml-slider-lightbox.php:2191
+#: class-ml-slider-lightbox.php:2382
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
 msgstr "ギャラリーオーバーレイとコントロールの色、不透明度、ビジュアルスタイルをカスタマイズします。"
 
-#: class-ml-slider-lightbox.php:2195 class-ml-slider-lightbox.php:2442
-#: class-ml-slider-lightbox.php:2195
-#: class-ml-slider-lightbox.php:2442
+#: class-ml-slider-lightbox.php:2386 class-ml-slider-lightbox.php:2633
 msgid "Background & Overlay"
 msgstr "背景 & オーバーレイ"
 
-#: class-ml-slider-lightbox.php:2205
-#: class-ml-slider-lightbox.php:2205
+#: class-ml-slider-lightbox.php:2396
 msgid "\"Open in Gallery\" Button"
 msgstr "\"ギャラリーで開く\"ボタン"
 
-#: class-ml-slider-lightbox.php:2215 class-ml-slider-lightbox.php:2555
-#: class-ml-slider-lightbox.php:2215
-#: class-ml-slider-lightbox.php:2555
+#: class-ml-slider-lightbox.php:2406 class-ml-slider-lightbox.php:2746
 msgid "Navigation & Controls"
 msgstr "ナビゲーション & コントロール"
 
-#: class-ml-slider-lightbox.php:2221
-#: class-ml-slider-lightbox.php:2221
+#: class-ml-slider-lightbox.php:2412
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1416,149 +1574,119 @@ msgstr ""
 "サードパーティのLightboxプラグインがアクティブです。これらの設定はMetaSliderには適用されない場合がありますが、WordPressコンテ"
 "ンツのLightboxには引き続き機能します。"
 
-#: class-ml-slider-lightbox.php:2228 class-ml-slider-lightbox.php:4034
-#: class-ml-slider-lightbox.php:2228
-#: class-ml-slider-lightbox.php:4034
+#: class-ml-slider-lightbox.php:2419 class-ml-slider-lightbox.php:4209
 msgid "Enhanced Zoom & Controls"
 msgstr "強化されたズーム & コントロール"
 
-#: class-ml-slider-lightbox.php:2236
-#: class-ml-slider-lightbox.php:2236
+#: class-ml-slider-lightbox.php:2427
 msgid "Media & Video Enhancements"
 msgstr "メディア & ビデオの強化"
 
-#: class-ml-slider-lightbox.php:2244 class-ml-slider-lightbox.php:4062
-#: class-ml-slider-lightbox.php:2244
-#: class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:2435 class-ml-slider-lightbox.php:4237
 msgid "Social & Navigation"
 msgstr "ソーシャル & ナビゲーション"
 
-#: class-ml-slider-lightbox.php:2252 class-ml-slider-lightbox.php:4083
-#: class-ml-slider-lightbox.php:2252
-#: class-ml-slider-lightbox.php:4083
+#: class-ml-slider-lightbox.php:2443 class-ml-slider-lightbox.php:4258
 msgid "Advanced Features"
 msgstr "高度な機能"
 
-#: class-ml-slider-lightbox.php:2268
-#: class-ml-slider-lightbox.php:2268
+#: class-ml-slider-lightbox.php:2459
 msgid "Manual Options"
 msgstr "手動オプション"
 
-#: class-ml-slider-lightbox.php:2269
-#: class-ml-slider-lightbox.php:2269
+#: class-ml-slider-lightbox.php:2460
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
 msgstr "自動設定とは独立して機能する手動コントロールとWordPressのオーバーライド。"
 
-#: class-ml-slider-lightbox.php:2449
-#: class-ml-slider-lightbox.php:2449
+#: class-ml-slider-lightbox.php:2640
 msgid "Navigation Icons"
 msgstr "ナビゲーションアイコン"
 
-#: class-ml-slider-lightbox.php:2456
-#: class-ml-slider-lightbox.php:2456
+#: class-ml-slider-lightbox.php:2647
 msgid "Buttons"
 msgstr "ボタン"
 
-#: class-ml-slider-lightbox.php:2479
-#: class-ml-slider-lightbox.php:2479
+#: class-ml-slider-lightbox.php:2670
 msgid "Autoplay Progress Bar Color"
 msgstr "自動再生進捗バーの色"
 
-#: class-ml-slider-lightbox.php:2503
-#: class-ml-slider-lightbox.php:2503
+#: class-ml-slider-lightbox.php:2694
 msgid "Close Button"
 msgstr "閉じるボタン"
 
-#: class-ml-slider-lightbox.php:2519
-#: class-ml-slider-lightbox.php:2519
+#: class-ml-slider-lightbox.php:2710
 msgid "Button Colors"
 msgstr "ボタンの色"
 
-#: class-ml-slider-lightbox.php:2527
-#: class-ml-slider-lightbox.php:2527
+#: class-ml-slider-lightbox.php:2718
 msgid "Icon Colors"
 msgstr "アイコンの色"
 
-#: class-ml-slider-lightbox.php:2913
-#: class-ml-slider-lightbox.php:2913
+#: class-ml-slider-lightbox.php:3099
 msgid "Configure general gallery settings that apply site-wide."
 msgstr "サイト全体に適用される一般的なギャラリー設定を構成します。"
 
-#: class-ml-slider-lightbox.php:2918
-#: class-ml-slider-lightbox.php:2918
+#: class-ml-slider-lightbox.php:3104
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "MetaSliderギャラリー機能に特有の設定を構成します。"
 
-#: class-ml-slider-lightbox.php:2923
-#: class-ml-slider-lightbox.php:2923
+#: class-ml-slider-lightbox.php:3109
 msgid "Select where the gallery will be enabled automatically."
 msgstr "ギャラリーが自動的に有効化される場所を選択します。"
 
-#: class-ml-slider-lightbox.php:2929
-#: class-ml-slider-lightbox.php:2929
+#: class-ml-slider-lightbox.php:3115
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
 msgstr "ギャラリー処理のためにコンテンツをフィルタリングする方法を選択し、含めるまたは除外するページ、投稿、またはセレクタを指定します。"
 
-#: class-ml-slider-lightbox.php:2945
-#: class-ml-slider-lightbox.php:2945
+#: class-ml-slider-lightbox.php:3131
 msgid "Processing Mode"
 msgstr "処理モード"
 
-#: class-ml-slider-lightbox.php:2948
-#: class-ml-slider-lightbox.php:2948
+#: class-ml-slider-lightbox.php:3134
 msgid "Process all content EXCEPT the items specified below"
 msgstr "以下に指定された項目を除くすべてのコンテンツを処理します"
 
-#: class-ml-slider-lightbox.php:2951
-#: class-ml-slider-lightbox.php:2951
+#: class-ml-slider-lightbox.php:3137
 msgid "ONLY process the items specified below"
 msgstr "以下に指定された項目のみを処理します"
 
-#: class-ml-slider-lightbox.php:2958
-#: class-ml-slider-lightbox.php:2958
+#: class-ml-slider-lightbox.php:3144
 msgid "Inclusion Mode"
 msgstr "インクルージョンモード"
 
-#: class-ml-slider-lightbox.php:2962
-#: class-ml-slider-lightbox.php:2962
+#: class-ml-slider-lightbox.php:3148
 msgid "Exclusion Mode"
 msgstr "除外モード"
 
-#: class-ml-slider-lightbox.php:2982
-#: class-ml-slider-lightbox.php:2982
+#: class-ml-slider-lightbox.php:3168
 msgid "Images in post content"
 msgstr "投稿コンテンツ内の画像"
 
-#: class-ml-slider-lightbox.php:2983
-#: class-ml-slider-lightbox.php:2983
+#: class-ml-slider-lightbox.php:3169
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
 msgstr "有効化されている場合、リンクのない個々の画像と投稿およびページに設定された「クリックで拡大」が自動的にギャラリーで開きます。"
 
-#: class-ml-slider-lightbox.php:2999
-#: class-ml-slider-lightbox.php:2999
+#: class-ml-slider-lightbox.php:3185
 msgid "Images and videos in widgets and sidebars"
 msgstr "ウィジェットとサイドバーの画像と動画"
 
-#: class-ml-slider-lightbox.php:3000
-#: class-ml-slider-lightbox.php:3000
+#: class-ml-slider-lightbox.php:3186
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
 msgstr "有効化されている場合、ウィジェットエリア内の画像と動画は自動的にギャラリーで開きます。"
 
-#: class-ml-slider-lightbox.php:3016
-#: class-ml-slider-lightbox.php:3016
+#: class-ml-slider-lightbox.php:3202
 msgid "Gallery shortcodes and blocks"
 msgstr "ギャラリーショートコードとブロック"
 
-#: class-ml-slider-lightbox.php:3017
-#: class-ml-slider-lightbox.php:3017
+#: class-ml-slider-lightbox.php:3203
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1566,44 +1694,37 @@ msgstr ""
 "有効化されている場合、WordPress [gallery] "
 "ショートコードおよびGutenbergギャラリーブロック内の画像は自動的にギャラリーウィンドウで開きます。"
 
-#: class-ml-slider-lightbox.php:3033
-#: class-ml-slider-lightbox.php:3033
+#: class-ml-slider-lightbox.php:3219
 msgid "Featured images"
 msgstr "アイキャッチ画像"
 
-#: class-ml-slider-lightbox.php:3034
-#: class-ml-slider-lightbox.php:3034
+#: class-ml-slider-lightbox.php:3220
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
 msgstr "有効化されている場合、フィーチャー画像（投稿のサムネイル）はクリックされると自動的にギャラリーで開きます。"
 
-#: class-ml-slider-lightbox.php:3043
-#: class-ml-slider-lightbox.php:3043
+#: class-ml-slider-lightbox.php:3229
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
 msgstr "すべてのMetaSliderスライドショーをギャラリーで自動的に開き、スライダーごとの設定を上書きします。"
 
-#: class-ml-slider-lightbox.php:3057
-#: class-ml-slider-lightbox.php:3057
+#: class-ml-slider-lightbox.php:3243
 msgid "MetaSlider slideshows"
 msgstr "MetaSliderスライドショー"
 
-#: class-ml-slider-lightbox.php:3058
-#: class-ml-slider-lightbox.php:3058
+#: class-ml-slider-lightbox.php:3244
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
 msgstr "有効化されている場合、すべてのMetaSliderスライドショーはスライダーごとの設定を上書きして、ギャラリーウィンドウでスライドを開きます。"
 
-#: class-ml-slider-lightbox.php:3074
-#: class-ml-slider-lightbox.php:3074
+#: class-ml-slider-lightbox.php:3260
 msgid "Videos in post content"
 msgstr "投稿コンテンツ内の動画"
 
-#: class-ml-slider-lightbox.php:3075
-#: class-ml-slider-lightbox.php:3075
+#: class-ml-slider-lightbox.php:3261
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1611,203 +1732,152 @@ msgstr ""
 "有効化されている場合、投稿/ページのコンテンツ内のスタンドアロン動画ブロック（HTML5"
 "動画、YouTube埋め込み、Vimeo埋め込み）は自動的にギャラリーで開きます。"
 
-#: class-ml-slider-lightbox.php:3110
-#: class-ml-slider-lightbox.php:3110
+#: class-ml-slider-lightbox.php:3296
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
 msgstr "ギャラリーオーバーレイの背景色。画像表示には暗い色が最適です。"
 
-#: class-ml-slider-lightbox.php:3115
-#: class-ml-slider-lightbox.php:3115
+#: class-ml-slider-lightbox.php:3301
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
 msgstr "スライド、画像、動画に表示される「ギャラリーで開く」ボタンの背景色。"
 
-#: class-ml-slider-lightbox.php:3120
-#: class-ml-slider-lightbox.php:3120
+#: class-ml-slider-lightbox.php:3306
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
 msgstr "スライド、画像、動画に表示される「ギャラリーで開く」ボタンのテキスト色。"
 
-#: class-ml-slider-lightbox.php:3125
-#: class-ml-slider-lightbox.php:3125
+#: class-ml-slider-lightbox.php:3311
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "「ギャラリーで開く」ボタンにマウスをホバーしたときの背景色。"
 
-#: class-ml-slider-lightbox.php:3130
-#: class-ml-slider-lightbox.php:3130
+#: class-ml-slider-lightbox.php:3316
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "「ギャラリーで開く」ボタンにマウスオーバーしたときのテキストの色。"
 
-#: class-ml-slider-lightbox.php:3143
-#: class-ml-slider-lightbox.php:3143
+#: class-ml-slider-lightbox.php:3329
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
 msgstr "ギャラリーボタン用のカスタムテキスト。このテキストはサイト全体のすべての「ギャラリーで開く」ボタンに表示されます。"
 
-#: class-ml-slider-lightbox.php:3156 class-ml-slider-lightbox.php:3182
-#: class-ml-slider-lightbox.php:3156
-#: class-ml-slider-lightbox.php:3182
+#: class-ml-slider-lightbox.php:3342 class-ml-slider-lightbox.php:3368
 msgid "Top Right (Default)"
 msgstr "右上（デフォルト）"
 
-#: class-ml-slider-lightbox.php:3169
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3355
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "ギャラリーオーバーレイ内の閉じるボタン (X) の位置を選択します。"
 
-#: class-ml-slider-lightbox.php:3195
-#: class-ml-slider-lightbox.php:3195
+#: class-ml-slider-lightbox.php:3381
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
 msgstr "スライド、画像、ギャラリー、およびビデオ内の「ギャラリーで開く」ボタンの位置を選択します。"
 
-#: class-ml-slider-lightbox.php:3200
-#: class-ml-slider-lightbox.php:3200
+#: class-ml-slider-lightbox.php:3386
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "ギャラリー内の前後ナビゲーション矢印の色。"
 
-#: class-ml-slider-lightbox.php:3205
-#: class-ml-slider-lightbox.php:3205
+#: class-ml-slider-lightbox.php:3391
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
 msgstr "ホバー時の矢印の色。ユーザーがナビゲーション矢印の上にマウスを移動させたときに視覚的フィードバックを作成します。"
 
-#: class-ml-slider-lightbox.php:3210
-#: class-ml-slider-lightbox.php:3210
+#: class-ml-slider-lightbox.php:3396
 msgid "Color for the close button (X) in the gallery."
 msgstr "ギャラリー内の閉じるボタン (X) の色。"
 
-#: class-ml-slider-lightbox.php:3215
-#: class-ml-slider-lightbox.php:3215
+#: class-ml-slider-lightbox.php:3401
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
 msgstr "マウスオーバー時のクローズボタンの色。ユーザーがクローズボタンの上にマウスを移動させると視覚的フィードバックを作成します。"
 
-#: class-ml-slider-lightbox.php:3220
-#: class-ml-slider-lightbox.php:3220
+#: class-ml-slider-lightbox.php:3406
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
 msgstr "Lightbox内のツールバーアイコンとカウントテキストの色。ズーム、フルスクリーンアイコン（Pro）、および画像カウンターディスプレイに影響します。"
 
-#: class-ml-slider-lightbox.php:3225
-#: class-ml-slider-lightbox.php:3225
+#: class-ml-slider-lightbox.php:3411
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
 msgstr "マウスオーバー時のツールバーアイコンの色。ユーザーがツールバーアイコンやカウンターの上にマウスを移動させると視覚的フィードバックを作成します。"
 
-#: class-ml-slider-lightbox.php:3230
-#: class-ml-slider-lightbox.php:3230
+#: class-ml-slider-lightbox.php:3416
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "前のナビゲーション矢印ボタンと次のナビゲーション矢印ボタンの背景色。"
 
-#: class-ml-slider-lightbox.php:3235
-#: class-ml-slider-lightbox.php:3235
+#: class-ml-slider-lightbox.php:3421
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
 msgstr "マウスオーバー時の矢印ボタンの背景色。ユーザーが矢印の上にマウスを移動させると視覚的フィードバックを作成します。"
 
-#: class-ml-slider-lightbox.php:3240
-#: class-ml-slider-lightbox.php:3240
+#: class-ml-slider-lightbox.php:3426
 msgid "Background color for the close button (X) in the gallery."
 msgstr "ギャラリー内の閉じるボタン (X) の背景色。"
 
-#: class-ml-slider-lightbox.php:3245
-#: class-ml-slider-lightbox.php:3245
+#: class-ml-slider-lightbox.php:3431
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
 msgstr "マウスオーバー時のクローズボタンの背景色。ユーザーがクローズボタンの上にマウスを移動させると視覚的フィードバックを作成します。"
 
-#: class-ml-slider-lightbox.php:3250
-#: class-ml-slider-lightbox.php:3250
+#: class-ml-slider-lightbox.php:3436
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "Lightbox内のツールバーアイコンの背景色。"
 
-#: class-ml-slider-lightbox.php:3255
-#: class-ml-slider-lightbox.php:3255
+#: class-ml-slider-lightbox.php:3441
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
 msgstr "マウスオーバー時のツールバーアイコンの背景色。ユーザーがツールバーアイコンの上にマウスを移動させると視覚的フィードバックを作成します。"
 
-#: class-ml-slider-lightbox.php:3299 class-ml-slider-lightbox.php:3312
-#: class-ml-slider-lightbox.php:3325 class-ml-slider-lightbox.php:3423
-#: class-ml-slider-lightbox.php:3299
-#: class-ml-slider-lightbox.php:3312
-#: class-ml-slider-lightbox.php:3325
-#: class-ml-slider-lightbox.php:3423
-msgid "Icon"
-msgstr "アイコン"
-
-#: class-ml-slider-lightbox.php:3300 class-ml-slider-lightbox.php:3313
-#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:3424
-#: class-ml-slider-lightbox.php:3300
-#: class-ml-slider-lightbox.php:3313
-#: class-ml-slider-lightbox.php:3326
-#: class-ml-slider-lightbox.php:3424
+#: class-ml-slider-lightbox.php:3486 class-ml-slider-lightbox.php:3499
+#: class-ml-slider-lightbox.php:3512 class-ml-slider-lightbox.php:3610
 msgid "Icon Hover"
 msgstr "アイコンホバー"
 
-#: class-ml-slider-lightbox.php:3301 class-ml-slider-lightbox.php:3314
-#: class-ml-slider-lightbox.php:3327 class-ml-slider-lightbox.php:3408
-#: class-ml-slider-lightbox.php:3425
-#: class-ml-slider-lightbox.php:3301
-#: class-ml-slider-lightbox.php:3314
-#: class-ml-slider-lightbox.php:3327
-#: class-ml-slider-lightbox.php:3408
-#: class-ml-slider-lightbox.php:3425
+#: class-ml-slider-lightbox.php:3487 class-ml-slider-lightbox.php:3500
+#: class-ml-slider-lightbox.php:3513 class-ml-slider-lightbox.php:3594
+#: class-ml-slider-lightbox.php:3611
 msgid "Background"
 msgstr "背景"
 
-#: class-ml-slider-lightbox.php:3302 class-ml-slider-lightbox.php:3315
-#: class-ml-slider-lightbox.php:3328 class-ml-slider-lightbox.php:3409
-#: class-ml-slider-lightbox.php:3426
-#: class-ml-slider-lightbox.php:3302
-#: class-ml-slider-lightbox.php:3315
-#: class-ml-slider-lightbox.php:3328
-#: class-ml-slider-lightbox.php:3409
-#: class-ml-slider-lightbox.php:3426
+#: class-ml-slider-lightbox.php:3488 class-ml-slider-lightbox.php:3501
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3595
+#: class-ml-slider-lightbox.php:3612
 msgid "Background Hover"
 msgstr "背景ホバー"
 
-#: class-ml-slider-lightbox.php:3345
-#: class-ml-slider-lightbox.php:3345
+#: class-ml-slider-lightbox.php:3531
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "ギャラリーの背景の不透明度を設定します (0 = 透明、1 = 不透明)。"
 
-#: class-ml-slider-lightbox.php:3354
-#: class-ml-slider-lightbox.php:3354
+#: class-ml-slider-lightbox.php:3540
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "自動再生スライドショー中に表示される進捗バーの色。"
 
-#: class-ml-slider-lightbox.php:3360
-#: class-ml-slider-lightbox.php:3360
+#: class-ml-slider-lightbox.php:3546
 msgid "Border"
 msgstr "ボーダー"
 
-#: class-ml-slider-lightbox.php:3361
-#: class-ml-slider-lightbox.php:3361
+#: class-ml-slider-lightbox.php:3547
 msgid "Border Active and Hover"
 msgstr "アクティブおよびホバー時のボーダー"
 
-#: class-ml-slider-lightbox.php:3373
-#: class-ml-slider-lightbox.php:3373
+#: class-ml-slider-lightbox.php:3559
 msgid "Show navigation arrows in gallery"
 msgstr "ギャラリーにナビゲーション矢印を表示"
 
-#: class-ml-slider-lightbox.php:3374
-#: class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3560
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -1816,198 +1886,144 @@ msgstr ""
 "ナビゲーション用の左/右矢印を表示します。また、キーボードナビゲーション（← "
 "→キー、ESCで閉じる）も有効にします。これはスライドショーと画像ギャラリーで利用できます。"
 
-#: class-ml-slider-lightbox.php:3383
-#: class-ml-slider-lightbox.php:3383
+#: class-ml-slider-lightbox.php:3569
 msgid "Customize the gallery background and overlay appearance."
 msgstr "ギャラリーの背景とオーバーレイの外観をカスタマイズします。"
 
-#: class-ml-slider-lightbox.php:3388
-#: class-ml-slider-lightbox.php:3388
+#: class-ml-slider-lightbox.php:3574
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr "ギャラリー用のナビゲーションアイコン (閉じる、前、次の矢印) をカスタマイズします。"
 
-#: class-ml-slider-lightbox.php:3393
-#: class-ml-slider-lightbox.php:3393
+#: class-ml-slider-lightbox.php:3579
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
 msgstr "スライド、画像、ギャラリー、およびビデオに追加できる「ギャラリーで開く」ボタンをカスタマイズします。"
 
-#: class-ml-slider-lightbox.php:3406
-#: class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3592
 msgid "Text"
 msgstr "テキスト"
 
-#: class-ml-slider-lightbox.php:3407
-#: class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3593
 msgid "Text Hover"
 msgstr "テキストホバー"
 
-#: class-ml-slider-lightbox.php:3432
-#: class-ml-slider-lightbox.php:3432
+#: class-ml-slider-lightbox.php:3618
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
 msgstr "すべてのMetaSliderギャラリーに適用されるナビゲーションおよびコントロールオプションを構成します。"
 
-#: class-ml-slider-lightbox.php:3442
-#: class-ml-slider-lightbox.php:3442
+#: class-ml-slider-lightbox.php:3628
 msgid "Show thumbnails"
 msgstr "サムネイルを表示"
 
-#: class-ml-slider-lightbox.php:3443
-#: class-ml-slider-lightbox.php:3443
+#: class-ml-slider-lightbox.php:3629
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
 msgstr "簡単なナビゲーションのために、ギャラリーの下部にサムネイル画像を表示します。これはスライドショーと画像ギャラリーで利用可能です。"
 
-#: class-ml-slider-lightbox.php:3455
-#: class-ml-slider-lightbox.php:3455
-msgid "Show \"Open in Gallery\" button"
-msgstr "「ギャラリーで開く」ボタンを表示"
+#: class-ml-slider-lightbox.php:3642
+msgid "How visitors open images"
+msgstr "訪問者が画像を開く方法"
 
-#: class-ml-slider-lightbox.php:3456
-#: class-ml-slider-lightbox.php:3456
-msgid ""
-"When enabled, shows a button to open the gallery. When disabled, clicking "
-"the slide, image, or video directly opens the gallery."
-msgstr "有効にすると、ギャラリーを開くためのボタンが表示されます。無効にすると、スライド、画像、またはビデオをクリックすると、直接ギャラリーが開きます。"
-
-#: class-ml-slider-lightbox.php:3473
-#: class-ml-slider-lightbox.php:3473
-msgid "Show an icon instead of button"
-msgstr "ボタンの代わりにアイコンを表示"
-
-#: class-ml-slider-lightbox.php:3474
-#: class-ml-slider-lightbox.php:3474
-msgid "When enabled, displays a small icon instead of the full button text."
-msgstr "有効にすると、完全なボタンテキストの代わりに小さなアイコンが表示されます。"
-
-#: class-ml-slider-lightbox.php:3488
-#: class-ml-slider-lightbox.php:3488
+#: class-ml-slider-lightbox.php:3663
 msgid "Show captions"
 msgstr "キャプションを表示"
 
-#: class-ml-slider-lightbox.php:3489
-#: class-ml-slider-lightbox.php:3489
+#: class-ml-slider-lightbox.php:3664
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
 msgstr "有効にすると、ギャラリーウィンドウにキャプションを表示します。これはスライドショー、画像、および画像ギャラリーで利用可能です。"
 
-#: class-ml-slider-lightbox.php:3496
-#: class-ml-slider-lightbox.php:3496
+#: class-ml-slider-lightbox.php:3671
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr "高度なライトボックス機能はMetaSlider Gallery Proで利用できます。"
 
-#: class-ml-slider-lightbox.php:3498
-#: class-ml-slider-lightbox.php:3498
+#: class-ml-slider-lightbox.php:3673
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr "MetaSlider Gallery Proで利用可能な高度な機能のプレビューを取得します。"
 
-#: class-ml-slider-lightbox.php:3501
-#: class-ml-slider-lightbox.php:3501
+#: class-ml-slider-lightbox.php:3676
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
 msgstr "これらの高度なLightGallery.jsプラグインは、追加のカスタマイズオプションを備えたProバージョンで利用可能です。"
 
-#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3530
-#: class-ml-slider-lightbox.php:3529
-#: class-ml-slider-lightbox.php:3530
+#: class-ml-slider-lightbox.php:3704 class-ml-slider-lightbox.php:3705
 msgid "specific Pages"
 msgstr "特定のページ"
 
-#: class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3532
+#: class-ml-slider-lightbox.php:3707
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr "ギャラリーを無効にすべきページを選択します。最新の100ページを表示します。検索するには入力してください。"
 
-#: class-ml-slider-lightbox.php:3532 class-ml-slider-lightbox.php:3533
-#: class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3533
+#: class-ml-slider-lightbox.php:3707 class-ml-slider-lightbox.php:3708
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr "ギャラリーを有効にすべきページを選択します。最新の100ページを表示します。検索するには入力してください。"
 
-#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3578
-#: class-ml-slider-lightbox.php:3577
-#: class-ml-slider-lightbox.php:3578
+#: class-ml-slider-lightbox.php:3752 class-ml-slider-lightbox.php:3753
 msgid "specific Posts"
 msgstr "特定の投稿"
 
-#: class-ml-slider-lightbox.php:3580
-#: class-ml-slider-lightbox.php:3580
+#: class-ml-slider-lightbox.php:3755
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
 msgstr "ギャラリーを無効にすべき投稿を選択します。最新の100投稿を表示します。検索するには入力してください。"
 
-#: class-ml-slider-lightbox.php:3580 class-ml-slider-lightbox.php:3581
-#: class-ml-slider-lightbox.php:3580
-#: class-ml-slider-lightbox.php:3581
+#: class-ml-slider-lightbox.php:3755 class-ml-slider-lightbox.php:3756
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
 msgstr "ギャラリーを有効にすべき投稿を選択します。最新の100投稿を表示します。検索するには入力してください。"
 
-#: class-ml-slider-lightbox.php:3608
-#: class-ml-slider-lightbox.php:3608
+#: class-ml-slider-lightbox.php:3783
 msgid "include"
 msgstr "含める"
 
-#: class-ml-slider-lightbox.php:3608
-#: class-ml-slider-lightbox.php:3608
+#: class-ml-slider-lightbox.php:3783
 msgid "exclude"
 msgstr "除外する"
 
-#: class-ml-slider-lightbox.php:3648
-#: class-ml-slider-lightbox.php:3648
+#: class-ml-slider-lightbox.php:3823
 #, php-format
 msgid "specific %s"
 msgstr "特定の %s"
 
-#: class-ml-slider-lightbox.php:3649
-#: class-ml-slider-lightbox.php:3649
+#: class-ml-slider-lightbox.php:3824
 #, php-format
 msgid "%s specific %s"
 msgstr "%s 特定の %s"
 
-#: class-ml-slider-lightbox.php:3651 class-ml-slider-lightbox.php:3652
-#: class-ml-slider-lightbox.php:3651
-#: class-ml-slider-lightbox.php:3652
+#: class-ml-slider-lightbox.php:3826 class-ml-slider-lightbox.php:3827
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "最近の %s を最大 100 件表示します。検索するには入力してください。"
 
-#: class-ml-slider-lightbox.php:3700 class-ml-slider-lightbox.php:3701
-#: class-ml-slider-lightbox.php:3700
-#: class-ml-slider-lightbox.php:3701
+#: class-ml-slider-lightbox.php:3875 class-ml-slider-lightbox.php:3876
 msgid "specific post types"
 msgstr "特定の投稿タイプ"
 
-#: class-ml-slider-lightbox.php:3703
-#: class-ml-slider-lightbox.php:3703
+#: class-ml-slider-lightbox.php:3878
 msgid "Select post types where gallery should be disabled entirely."
 msgstr "ギャラリーを完全に無効にすべき投稿タイプを選択します。"
 
-#: class-ml-slider-lightbox.php:3703 class-ml-slider-lightbox.php:3704
-#: class-ml-slider-lightbox.php:3703
-#: class-ml-slider-lightbox.php:3704
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:3879
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "ギャラリーを完全に有効にすべき投稿タイプを選択します。"
 
-#: class-ml-slider-lightbox.php:3738
-#: class-ml-slider-lightbox.php:3738
+#: class-ml-slider-lightbox.php:3913
 msgid "Exclude by CSS selector"
 msgstr "CSS セレクタで除外"
 
-#: class-ml-slider-lightbox.php:3741
-#: class-ml-slider-lightbox.php:3741
+#: class-ml-slider-lightbox.php:3916
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2015,13 +2031,11 @@ msgstr ""
 "ギャラリーウィンドウから除外する要素のCSSセレクタ（1行ごと）。例：<br>.no-lightbox<br>.custom-gallery "
 "img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:3764
-#: class-ml-slider-lightbox.php:3764
+#: class-ml-slider-lightbox.php:3939
 msgid "Minimum Image Width"
 msgstr "最小画像幅"
 
-#: class-ml-slider-lightbox.php:3767
-#: class-ml-slider-lightbox.php:3767
+#: class-ml-slider-lightbox.php:3942
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2030,13 +2044,11 @@ msgstr ""
 "この幅（ピクセル）よりも狭い画像をスキップします。実際の画像ファイルサイズではなく、表示される幅を使用します。小さなアイコン、バッジ、ボタンを除外するの"
 "に役立ちます。"
 
-#: class-ml-slider-lightbox.php:3790
-#: class-ml-slider-lightbox.php:3790
+#: class-ml-slider-lightbox.php:3965
 msgid "Minimum Image Height"
 msgstr "最小画像高さ"
 
-#: class-ml-slider-lightbox.php:3793
-#: class-ml-slider-lightbox.php:3793
+#: class-ml-slider-lightbox.php:3968
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2045,395 +2057,314 @@ msgstr ""
 "この高さ（ピクセル）よりも短い画像をスキップします。実際の画像ファイルサイズではなく、表示される高さを使用します。小さなアイコン、バッジ、ボタンを除外す"
 "るのに役立ちます。"
 
-#: class-ml-slider-lightbox.php:3809 class-ml-slider-lightbox.php:3966
-#: class-ml-slider-lightbox.php:3809
-#: class-ml-slider-lightbox.php:3966
+#: class-ml-slider-lightbox.php:3984 class-ml-slider-lightbox.php:4141
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
 msgstr "プロフェッショナルなギャラリー向けの強化されたメディア処理と動画再生機能。"
 
-#: class-ml-slider-lightbox.php:3816
-#: class-ml-slider-lightbox.php:3816
+#: class-ml-slider-lightbox.php:3991
 msgid "Advanced features for professional lightbox implementations."
 msgstr "プロフェッショナルな Lightbox 実装向けの高度な機能。"
 
-#: class-ml-slider-lightbox.php:3827 class-ml-slider-lightbox.php:4039
-#: class-ml-slider-lightbox.php:3827
-#: class-ml-slider-lightbox.php:4039
+#: class-ml-slider-lightbox.php:4002 class-ml-slider-lightbox.php:4214
 msgid "Enable Zoom"
 msgstr "ズームを有効にする"
 
-#: class-ml-slider-lightbox.php:3828
-#: class-ml-slider-lightbox.php:3828
+#: class-ml-slider-lightbox.php:4003
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
 msgstr "ダブルクリックでズーム、ズームコントロール、マウスホイールズーム、フィットオプションを使用します。"
 
-#: class-ml-slider-lightbox.php:3838 class-ml-slider-lightbox.php:4046
-#: class-ml-slider-lightbox.php:3838
-#: class-ml-slider-lightbox.php:4046
+#: class-ml-slider-lightbox.php:4013 class-ml-slider-lightbox.php:4221
 msgid "Enable Fullscreen"
 msgstr "全画面表示を有効にする"
 
-#: class-ml-slider-lightbox.php:3839
-#: class-ml-slider-lightbox.php:3839
+#: class-ml-slider-lightbox.php:4014
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
 msgstr "没入型の表示のためのキーボードショートカット（Fキー）を使用したネイティブHTML5全画面表示サポート。"
 
-#: class-ml-slider-lightbox.php:3849 class-ml-slider-lightbox.php:4053
-#: class-ml-slider-lightbox.php:3849
-#: class-ml-slider-lightbox.php:4053
+#: class-ml-slider-lightbox.php:4024 class-ml-slider-lightbox.php:4228
 msgid "Enable Rotate"
 msgstr "回転を有効にする"
 
-#: class-ml-slider-lightbox.php:3850
-#: class-ml-slider-lightbox.php:3850
+#: class-ml-slider-lightbox.php:4025
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
 msgstr "ツールバーコントロールを使用して画像を時計回り/反時計回りに回転し、水平/垂直に反転します。"
 
-#: class-ml-slider-lightbox.php:3860
-#: class-ml-slider-lightbox.php:3860
+#: class-ml-slider-lightbox.php:4035
 msgid "Enable Video"
 msgstr "動画を有効にする"
 
-#: class-ml-slider-lightbox.php:3861
-#: class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:4036
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
 msgstr "YouTube、Vimeo、HTML5動画の自動再生および品質コントロールのための強化された動画サポート。"
 
-#: class-ml-slider-lightbox.php:3871 class-ml-slider-lightbox.php:4088
-#: class-ml-slider-lightbox.php:4228
-#: class-ml-slider-lightbox.php:3871
-#: class-ml-slider-lightbox.php:4088
-#: class-ml-slider-lightbox.php:4228
+#: class-ml-slider-lightbox.php:4046 class-ml-slider-lightbox.php:4263
+#: class-ml-slider-lightbox.php:4410
 msgid "Enable Unique Image URLs"
 msgstr "ユニークな画像URLを有効にする"
 
-#: class-ml-slider-lightbox.php:3872
-#: class-ml-slider-lightbox.php:3872
+#: class-ml-slider-lightbox.php:4047
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
 msgstr "ブラウザの戻る/進むナビゲーションをサポートする各ギャラリー画像のユニークなURL。"
 
-#: class-ml-slider-lightbox.php:3882 class-ml-slider-lightbox.php:4095
-#: class-ml-slider-lightbox.php:3882
-#: class-ml-slider-lightbox.php:4095
+#: class-ml-slider-lightbox.php:4057 class-ml-slider-lightbox.php:4270
 msgid "Enable Autoplay"
 msgstr "自動再生を有効にする"
 
-#: class-ml-slider-lightbox.php:3883
-#: class-ml-slider-lightbox.php:3883
+#: class-ml-slider-lightbox.php:4058
 msgid "Automatically advance through images in the gallery."
 msgstr "ギャラリー内の画像を自動的に進めます。"
 
-#: class-ml-slider-lightbox.php:3893 class-ml-slider-lightbox.php:4067
-#: class-ml-slider-lightbox.php:3893
-#: class-ml-slider-lightbox.php:4067
+#: class-ml-slider-lightbox.php:4068 class-ml-slider-lightbox.php:4242
 msgid "Enable Share"
 msgstr "共有を有効にする"
 
-#: class-ml-slider-lightbox.php:3894
-#: class-ml-slider-lightbox.php:3894
+#: class-ml-slider-lightbox.php:4069
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
 msgstr "Facebook、Twitter、Pinterest、および直接URL共有のためのソーシャルメディア共有ボタン。"
 
-#: class-ml-slider-lightbox.php:3904 class-ml-slider-lightbox.php:4074
-#: class-ml-slider-lightbox.php:3904
-#: class-ml-slider-lightbox.php:4074
+#: class-ml-slider-lightbox.php:4079 class-ml-slider-lightbox.php:4249
 msgid "Enable Pager"
 msgstr "ページャーを有効にする"
 
-#: class-ml-slider-lightbox.php:3905
-#: class-ml-slider-lightbox.php:3905
+#: class-ml-slider-lightbox.php:4080
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "サムネイルプレビューなしでクリーンなナビゲーションのための最小限のページネーションドット。"
 
-#: class-ml-slider-lightbox.php:3961 class-ml-slider-lightbox.php:4035
-#: class-ml-slider-lightbox.php:3961
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4136 class-ml-slider-lightbox.php:4210
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
 msgstr "向上したユーザー体験のためのプロフェッショナルなズームおよび画像インタラクションコントロール。"
 
-#: class-ml-slider-lightbox.php:3971 class-ml-slider-lightbox.php:4063
-#: class-ml-slider-lightbox.php:3971
-#: class-ml-slider-lightbox.php:4063
+#: class-ml-slider-lightbox.php:4146 class-ml-slider-lightbox.php:4238
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "エンゲージメントを高めるためのソーシャル共有およびナビゲーションの強化。"
 
-#: class-ml-slider-lightbox.php:3976 class-ml-slider-lightbox.php:4084
-#: class-ml-slider-lightbox.php:3976
-#: class-ml-slider-lightbox.php:4084
+#: class-ml-slider-lightbox.php:4151 class-ml-slider-lightbox.php:4259
 msgid "Advanced functionality including URL management and automation features."
 msgstr "URL管理および自動化機能を含む高度な機能。"
 
-#: class-ml-slider-lightbox.php:3988
-#: class-ml-slider-lightbox.php:3988
+#: class-ml-slider-lightbox.php:4163
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "この機能はMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-slider-lightbox.php:4040 class-ml-slider-lightbox.php:4197
-#: class-ml-slider-lightbox.php:4040
-#: class-ml-slider-lightbox.php:4197
+#: class-ml-slider-lightbox.php:4215 class-ml-slider-lightbox.php:4379
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
 msgstr "ダブルクリック、マウスホイール、ズームコントロールでユーザーがズームインおよびズームアウトできるようにする。"
 
-#: class-ml-slider-lightbox.php:4042
-#: class-ml-slider-lightbox.php:4042
+#: class-ml-slider-lightbox.php:4217
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "ズームコントロールはMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-slider-lightbox.php:4047
-#: class-ml-slider-lightbox.php:4047
+#: class-ml-slider-lightbox.php:4222
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "没入型の画像表示のためのネイティブHTML5全画面モード。"
 
-#: class-ml-slider-lightbox.php:4049
-#: class-ml-slider-lightbox.php:4049
+#: class-ml-slider-lightbox.php:4224
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "全画面モードはMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-slider-lightbox.php:4054 class-ml-slider-lightbox.php:4213
-#: class-ml-slider-lightbox.php:4054
-#: class-ml-slider-lightbox.php:4213
+#: class-ml-slider-lightbox.php:4229 class-ml-slider-lightbox.php:4395
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr "画像を時計回り/反時計回りに回転し、水平/垂直に反転させる。"
 
-#: class-ml-slider-lightbox.php:4056
-#: class-ml-slider-lightbox.php:4056
+#: class-ml-slider-lightbox.php:4231
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "画像の回転はMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-slider-lightbox.php:4068
-#: class-ml-slider-lightbox.php:4068
+#: class-ml-slider-lightbox.php:4243
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "Facebook、Twitter、およびPinterestのための組み込みのソーシャルメディア共有。"
 
-#: class-ml-slider-lightbox.php:4070
-#: class-ml-slider-lightbox.php:4070
+#: class-ml-slider-lightbox.php:4245
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "ソーシャル共有はMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-slider-lightbox.php:4075 class-ml-slider-lightbox.php:4245
-#: class-ml-slider-lightbox.php:4075
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4427
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "クリーンなインターフェースのためのサムネイルの代わりに最小限のページネーションドット。"
 
-#: class-ml-slider-lightbox.php:4077
-#: class-ml-slider-lightbox.php:4077
+#: class-ml-slider-lightbox.php:4252
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Proではページャーのページネーションが利用可能です"
 
-#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4229
-#: class-ml-slider-lightbox.php:4089
-#: class-ml-slider-lightbox.php:4229
+#: class-ml-slider-lightbox.php:4264 class-ml-slider-lightbox.php:4411
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
 msgstr "ブラウザの戻る/進むナビゲーションで各ギャラリー画像のユニークなURLを生成します。"
 
-#: class-ml-slider-lightbox.php:4091
-#: class-ml-slider-lightbox.php:4091
+#: class-ml-slider-lightbox.php:4266
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "ユニークな画像URLはMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-slider-lightbox.php:4096 class-ml-slider-lightbox.php:4237
-#: class-ml-slider-lightbox.php:4096
-#: class-ml-slider-lightbox.php:4237
+#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4419
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "タイミングコントロールと進行状況バー付きの自動スライドショー。"
 
-#: class-ml-slider-lightbox.php:4098
-#: class-ml-slider-lightbox.php:4098
+#: class-ml-slider-lightbox.php:4273
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "自動再生はMetaSlider Gallery Proで利用可能です"
 
-#: class-ml-slider-lightbox.php:4115
-#: class-ml-slider-lightbox.php:4115
+#: class-ml-slider-lightbox.php:4277
+msgid "Enable Image Protection"
+msgstr "画像保護を有効にする"
+
+#: class-ml-slider-lightbox.php:4280
+msgid "Image protection is available in MetaSlider Gallery Pro"
+msgstr "画像保護はMetaSlider Gallery Proで利用可能です"
+
+#: class-ml-slider-lightbox.php:4297
 msgid "Features"
 msgstr "機能"
 
-#: class-ml-slider-lightbox.php:4116
-#: class-ml-slider-lightbox.php:4116
+#: class-ml-slider-lightbox.php:4298
 msgid "Free"
 msgstr "無料"
 
-#: class-ml-slider-lightbox.php:4117
-#: class-ml-slider-lightbox.php:4117, fuzzy
+#: class-ml-slider-lightbox.php:4299, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4123 class-ml-slider-lightbox.php:4262
-#: class-ml-slider-lightbox.php:4123
-#: class-ml-slider-lightbox.php:4262
+#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4444
 msgid "Installed"
 msgstr "インストール済み"
 
-#: class-ml-slider-lightbox.php:4126 class-ml-slider-lightbox.php:4265
-#: class-ml-slider-lightbox.php:4126
-#: class-ml-slider-lightbox.php:4265
+#: class-ml-slider-lightbox.php:4308 class-ml-slider-lightbox.php:4447
 msgid "Upgrade now"
 msgstr "今すぐアップグレード"
 
-#: class-ml-slider-lightbox.php:4132
-#: class-ml-slider-lightbox.php:4132
+#: class-ml-slider-lightbox.php:4314
 msgid "Automatic lightbox for images"
 msgstr "画像用の自動ライトボックス"
 
-#: class-ml-slider-lightbox.php:4133
-#: class-ml-slider-lightbox.php:4133
+#: class-ml-slider-lightbox.php:4315
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "サイト上のすべての画像に対して自動的にライトボックスを有効にします。"
 
-#: class-ml-slider-lightbox.php:4140
-#: class-ml-slider-lightbox.php:4140
+#: class-ml-slider-lightbox.php:4322
 msgid "MetaSlider integration"
 msgstr "MetaSlider統合"
 
-#: class-ml-slider-lightbox.php:4141
-#: class-ml-slider-lightbox.php:4141
+#: class-ml-slider-lightbox.php:4323
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "MetaSliderのスライドショーとのシームレスな統合。"
 
-#: class-ml-slider-lightbox.php:4148
-#: class-ml-slider-lightbox.php:4148
+#: class-ml-slider-lightbox.php:4330
 msgid "WordPress gallery support"
 msgstr "WordPressギャラリーサポート"
 
-#: class-ml-slider-lightbox.php:4149
-#: class-ml-slider-lightbox.php:4149
+#: class-ml-slider-lightbox.php:4331
 msgid "Support for WordPress native galleries and blocks."
 msgstr "WordPressのネイティブギャラリーおよびブロックのサポート。"
 
-#: class-ml-slider-lightbox.php:4156
-#: class-ml-slider-lightbox.php:4156
+#: class-ml-slider-lightbox.php:4338
 msgid "Appearance customization"
 msgstr "外観カスタマイズ"
 
-#: class-ml-slider-lightbox.php:4157
-#: class-ml-slider-lightbox.php:4157
+#: class-ml-slider-lightbox.php:4339
 msgid "Customize colors, opacity, and button styles."
 msgstr "色、透明度、ボタンスタイルをカスタマイズします。"
 
-#: class-ml-slider-lightbox.php:4164
-#: class-ml-slider-lightbox.php:4164
+#: class-ml-slider-lightbox.php:4346
 msgid "Gallery builder &amp; layouts"
 msgstr "ギャラリービルダー &amp; レイアウト"
 
-#: class-ml-slider-lightbox.php:4165
-#: class-ml-slider-lightbox.php:4165
+#: class-ml-slider-lightbox.php:4347
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
 msgstr "グリッド、マソリ、ジャスティファイド、カルーセル、ショーケースレイアウトでギャラリーを作成します。"
 
-#: class-ml-slider-lightbox.php:4172
-#: class-ml-slider-lightbox.php:4172
+#: class-ml-slider-lightbox.php:4354
 msgid "Responsive columns"
 msgstr "レスポンシブカラム"
 
-#: class-ml-slider-lightbox.php:4173
-#: class-ml-slider-lightbox.php:4173
+#: class-ml-slider-lightbox.php:4355
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr "デスクトップとモバイル用のカラム数を設定し、間隔を調整できます。"
 
-#: class-ml-slider-lightbox.php:4180
-#: class-ml-slider-lightbox.php:4180
+#: class-ml-slider-lightbox.php:4362
 msgid "Image captions"
 msgstr "画像キャプション"
 
-#: class-ml-slider-lightbox.php:4181
-#: class-ml-slider-lightbox.php:4181
+#: class-ml-slider-lightbox.php:4363
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "ギャラリーグリッドとギャラリーウィンドウに画像キャプションを表示します。"
 
-#: class-ml-slider-lightbox.php:4188
-#: class-ml-slider-lightbox.php:4188
+#: class-ml-slider-lightbox.php:4370
 msgid "Thumbnail navigation"
 msgstr "サムネイルナビゲーション"
 
-#: class-ml-slider-lightbox.php:4189
-#: class-ml-slider-lightbox.php:4189
+#: class-ml-slider-lightbox.php:4371
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "画像間の迅速なナビゲーションのためにサムネイルのストリップを表示します。"
 
-#: class-ml-slider-lightbox.php:4196
-#: class-ml-slider-lightbox.php:4196
+#: class-ml-slider-lightbox.php:4378
 msgid "Zoom controls"
 msgstr "ズームコントロール"
 
-#: class-ml-slider-lightbox.php:4204
-#: class-ml-slider-lightbox.php:4204
+#: class-ml-slider-lightbox.php:4386
 msgid "Fullscreen mode"
 msgstr "全画面モード"
 
-#: class-ml-slider-lightbox.php:4205
-#: class-ml-slider-lightbox.php:4205
+#: class-ml-slider-lightbox.php:4387
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "没入型画像表示のためのネイティブHTML5フルスクリーン。"
 
-#: class-ml-slider-lightbox.php:4212
-#: class-ml-slider-lightbox.php:4212
+#: class-ml-slider-lightbox.php:4394
 msgid "Rotate and flip images"
 msgstr "画像を回転および反転"
 
-#: class-ml-slider-lightbox.php:4220
-#: class-ml-slider-lightbox.php:4220
+#: class-ml-slider-lightbox.php:4402
 msgid "Social media sharing"
 msgstr "ソーシャルメディア共有"
 
-#: class-ml-slider-lightbox.php:4221
-#: class-ml-slider-lightbox.php:4221
+#: class-ml-slider-lightbox.php:4403
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "Facebook、Twitter、およびPinterest用の組み込み共有機能。"
 
-#: class-ml-slider-lightbox.php:4236
-#: class-ml-slider-lightbox.php:4236
+#: class-ml-slider-lightbox.php:4418
 msgid "Autoplay slideshow"
 msgstr "自動再生スライドショー"
 
-#: class-ml-slider-lightbox.php:4244
-#: class-ml-slider-lightbox.php:4244
+#: class-ml-slider-lightbox.php:4426
 msgid "Pager navigation"
 msgstr "ページャーナビゲーション"
 
-#: class-ml-slider-lightbox.php:4252
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4434
 msgid "Premium support"
 msgstr "プレミアムサポート"
 
-#: class-ml-slider-lightbox.php:4253
-#: class-ml-slider-lightbox.php:4253
+#: class-ml-slider-lightbox.php:4435
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "特定の問い合わせを弊社の専門家に直接対応してもらえます。"
 
-#: class-ml-slider-lightbox.php:6040
-#: class-ml-slider-lightbox.php:6040
+#: class-ml-slider-lightbox.php:6222
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr "LightboxがWordPressの組み込み機能とどのように対話するかを設定します。"
 
-#: class-ml-slider-lightbox.php:6055
-#: class-ml-slider-lightbox.php:6055
+#: class-ml-slider-lightbox.php:6237
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "WordPressの「クリックで拡大」設定を上書き"
 
-#: class-ml-slider-lightbox.php:6056
-#: class-ml-slider-lightbox.php:6056
+#: class-ml-slider-lightbox.php:6238
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2442,13 +2373,11 @@ msgstr ""
 "有効な場合、WordPress の組み込みギャラリウィンドウを無効にし、「クリックで拡大」設定の画像には MetaSlider "
 "ギャラリーを使用します。無効な場合、WordPress の設定を尊重し、「クリックで拡大」設定の画像をスキップします。"
 
-#: class-ml-slider-lightbox.php:6072
-#: class-ml-slider-lightbox.php:6072
+#: class-ml-slider-lightbox.php:6254
 msgid "Override \"Link to Image File\" Setting"
 msgstr "「画像ファイルにリンク」設定を上書き"
 
-#: class-ml-slider-lightbox.php:6073
-#: class-ml-slider-lightbox.php:6073
+#: class-ml-slider-lightbox.php:6255
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2457,13 +2386,11 @@ msgstr ""
 "有効な場合、ブロックエディタの「画像ファイルにリンク」から設定されたフルサイズ画像ファイルにリンクされた画像には MetaSlider "
 "ギャラリーを使用します。無効な場合、元のリンクの動作を尊重します。"
 
-#: class-ml-slider-lightbox.php:6104
-#: class-ml-slider-lightbox.php:6104
+#: class-ml-slider-lightbox.php:6286
 msgid "Exclude Post Types from Manual Processing"
 msgstr "手動処理から投稿タイプを除外"
 
-#: class-ml-slider-lightbox.php:6107
-#: class-ml-slider-lightbox.php:6107
+#: class-ml-slider-lightbox.php:6289
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2472,82 +2399,65 @@ msgstr ""
 "手動オプションが機能しない投稿タイプを選択します。たとえば、「製品（product）」を選択すると、WooCommerce "
 "の製品ページでギャラリーが無効になり、他の場所ではアクティブのままになります。"
 
-#: class-ml-slider-lightbox.php:6131
-#: class-ml-slider-lightbox.php:6131
+#: class-ml-slider-lightbox.php:6313
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "使用方法：WordPressの「クリックで拡大」"
 
-#: class-ml-slider-lightbox.php:6133
-#: class-ml-slider-lightbox.php:6133
+#: class-ml-slider-lightbox.php:6315
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
 msgstr "WordPressには画像用の組み込み「クリックで拡大」機能があります。これを有効にする方法は次のとおりです："
 
-#: class-ml-slider-lightbox.php:6135 class-ml-slider-lightbox.php:6148
-#: class-ml-slider-lightbox.php:6135
-#: class-ml-slider-lightbox.php:6148
+#: class-ml-slider-lightbox.php:6317 class-ml-slider-lightbox.php:6330
 msgid "Select an image in the block editor."
 msgstr "ブロックエディターで画像を選択します。"
 
-#: class-ml-slider-lightbox.php:6136 class-ml-slider-lightbox.php:6149
-#: class-ml-slider-lightbox.php:6136
-#: class-ml-slider-lightbox.php:6149
+#: class-ml-slider-lightbox.php:6318 class-ml-slider-lightbox.php:6331
 msgid "In the block toolbar, click on the Link icon."
 msgstr "ブロックツールバーで、リンクアイコンをクリックします。"
 
-#: class-ml-slider-lightbox.php:6137
-#: class-ml-slider-lightbox.php:6137
+#: class-ml-slider-lightbox.php:6319
 msgid "Select \"Enlarge on click\"."
 msgstr "「クリックで拡大」を選択します。"
 
-#: class-ml-slider-lightbox.php:6143
-#: class-ml-slider-lightbox.php:6143
+#: class-ml-slider-lightbox.php:6325
 msgid "How to use: \"Link to Image File\""
 msgstr "使用方法: \"画像ファイルへのリンク\""
 
-#: class-ml-slider-lightbox.php:6145
-#: class-ml-slider-lightbox.php:6145
+#: class-ml-slider-lightbox.php:6327
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr "画像をフルサイズのメディアファイルに直接リンクできます。方法は次のとおりです:"
 
-#: class-ml-slider-lightbox.php:6146
-#: class-ml-slider-lightbox.php:6146
+#: class-ml-slider-lightbox.php:6328
 msgid "For the Block Editor:"
 msgstr "ブロックエディターの場合:"
 
-#: class-ml-slider-lightbox.php:6150
-#: class-ml-slider-lightbox.php:6150
+#: class-ml-slider-lightbox.php:6332
 msgid "Choose \"Link to image file\"."
 msgstr " \"画像ファイルへのリンク\" を選択します。"
 
-#: class-ml-slider-lightbox.php:6152
-#: class-ml-slider-lightbox.php:6152
+#: class-ml-slider-lightbox.php:6334
 msgid "For the Classic Editor:"
 msgstr "クラシックエディターの場合:"
 
-#: class-ml-slider-lightbox.php:6154
-#: class-ml-slider-lightbox.php:6154
+#: class-ml-slider-lightbox.php:6336
 msgid "Select an image."
 msgstr "画像を選択します。"
 
-#: class-ml-slider-lightbox.php:6155
-#: class-ml-slider-lightbox.php:6155
+#: class-ml-slider-lightbox.php:6337
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "画像ツールバーで、編集アイコンをクリックします。"
 
-#: class-ml-slider-lightbox.php:6156
-#: class-ml-slider-lightbox.php:6156
+#: class-ml-slider-lightbox.php:6338
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr " \"リンク先\" ドロップダウンで \"メディアファイル\" を選択します。"
 
-#: class-ml-slider-lightbox.php:6162
-#: class-ml-slider-lightbox.php:6162
+#: class-ml-slider-lightbox.php:6344
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "使用方法: CSSクラスメソッド (高度な設定)"
 
-#: class-ml-slider-lightbox.php:6164
-#: class-ml-slider-lightbox.php:6164
+#: class-ml-slider-lightbox.php:6346
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2555,38 +2465,31 @@ msgstr ""
 "開発者向け：画像を含む任意の要素に対して MetaSlider ギャラリーを有効にするには "
 "<code>ml-lightbox-enabled</code> クラスを追加します。"
 
-#: class-ml-slider-lightbox.php:6165
-#: class-ml-slider-lightbox.php:6165
+#: class-ml-slider-lightbox.php:6347
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "方法1: ブロックエディターの追加CSSクラス"
 
-#: class-ml-slider-lightbox.php:6167
-#: class-ml-slider-lightbox.php:6167
+#: class-ml-slider-lightbox.php:6349
 msgid "Select an image or gallery block."
 msgstr "画像またはギャラリーブロックを選択します。"
 
-#: class-ml-slider-lightbox.php:6168
-#: class-ml-slider-lightbox.php:6168
+#: class-ml-slider-lightbox.php:6350
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "ブロック設定サイドバーで \"高度な設定\" にスクロールします。"
 
-#: class-ml-slider-lightbox.php:6169
-#: class-ml-slider-lightbox.php:6169
+#: class-ml-slider-lightbox.php:6351
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "\"追加CSSクラス\" に <code>ml-lightbox-enabled</code> を追加します。"
 
-#: class-ml-slider-lightbox.php:6171
-#: class-ml-slider-lightbox.php:6171
+#: class-ml-slider-lightbox.php:6353
 msgid "Method 2: HTML/Code"
 msgstr "方法2: HTML/コード"
 
-#: class-ml-slider-lightbox.php:6172
-#: class-ml-slider-lightbox.php:6172
+#: class-ml-slider-lightbox.php:6354
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "カスタムHTMLまたはテーマ開発者の場合、クラスを直接追加します:"
 
-#: class-ml-slider-lightbox.php:1131
-#: class-ml-slider-lightbox.php:1131
+#: class-ml-slider-lightbox.php:1258
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"

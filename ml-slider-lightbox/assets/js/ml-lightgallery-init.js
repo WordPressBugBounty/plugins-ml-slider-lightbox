@@ -797,16 +797,11 @@
                 var settings = getLightboxSettings(true);
                 applyGallerySettings(settings, $container);
 
-                // A gallery can force its own "Open in Gallery" button via
-                // data-ml-show-button, overriding the global manual-button setting.
-                var perGalleryButton    = $container.attr('data-ml-show-button') === '1';
-                var effectiveUseButtons = useButtonsForManual || perGalleryButton;
+                var perGalleryButton = $container.attr('data-ml-show-button') === '1';
 
-                if (effectiveUseButtons) {
-                    // Per-gallery galleries carry their own icon/text; global button
-                    // mode falls back to getButtonText() (per-slider icon + global text).
-                    var perIcon = perGalleryButton && $container.attr('data-ml-button-icon') === '1';
-                    var perText = perGalleryButton ? ($container.attr('data-ml-button-text') || '') : '';
+                if (perGalleryButton) {
+                    var perIcon = $container.attr('data-ml-button-icon') === '1';
+                    var perText = $container.attr('data-ml-button-text') || '';
 
                     $container.find('a[data-src]').each(function() {
                         var $a      = $(this);
@@ -816,17 +811,10 @@
                         var alt     = $img.attr('alt') || '';
 
                         var btnLabel;
-                        if (perGalleryButton) {
-                            if (perIcon) {
-                                btnLabel = '<svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-                            } else {
-                                // Per-gallery button: a blank custom text defaults to
-                                // "Open in Gallery" (matches the admin placeholder), not
-                                // the global lightbox button text.
-                                btnLabel = perText || 'Open in Gallery';
-                            }
+                        if (perIcon) {
+                            btnLabel = '<svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
                         } else {
-                            btnLabel = getButtonText();
+                            btnLabel = perText || 'Open in Gallery';
                         }
 
                         var $btn = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-gallery" href="#">' + btnLabel + '</a>');
@@ -2002,16 +1990,35 @@
         });
     }
 
+    /**
+     * Unified "how visitors open images" mode for a slider: 'image'|'icon'|'button'.
+     * PHP sends slider_settings[id].lightbox_open_with as one of those three
+     * strings, or null to fall back to the global show/icon settings.
+     * 
+     * @since 2.35
+     */
+    function resolveSliderOpenWith(sliderId) {
+        var perSlider = mlLightboxSettings.slider_settings &&
+                        sliderId &&
+                        mlLightboxSettings.slider_settings[sliderId];
+        var mode = perSlider ? perSlider.lightbox_open_with : null;
+        if (mode === 'image' || mode === 'icon' || mode === 'button') {
+            return mode;
+        }
+
+        var opts = mlLightboxSettings.metaslider_options || {};
+        if (opts.show_lightbox_button === false) {
+            return 'image';
+        }
+        return opts.use_icon_instead_of_button ? 'icon' : 'button';
+    }
+
     function resolveSliderButton(sliderId) {
-        return resolveSliderSetting(sliderId, 'lightbox_button', function() {
-            return (mlLightboxSettings.metaslider_options || {}).show_lightbox_button !== false;
-        });
+        return resolveSliderOpenWith(sliderId) !== 'image';
     }
 
     function resolveSliderIcon(sliderId) {
-        return resolveSliderSetting(sliderId, 'lightbox_icon', function() {
-            return !!(mlLightboxSettings.metaslider_options || {}).use_icon_instead_of_button;
-        });
+        return resolveSliderOpenWith(sliderId) === 'icon';
     }
 
     /**

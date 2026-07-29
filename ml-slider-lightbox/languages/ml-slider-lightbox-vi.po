@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-07-07 15:10+0000\n"
+"PO-Revision-Date: 2026-07-28 17:01+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -76,435 +76,478 @@ msgstr "Dữ liệu yêu cầu không tồn tại."
 msgid "The attempt to update the option failed."
 msgstr "Nỗ lực cập nhật tùy chọn không thành công."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:872
-#: class-ml-gallery.php:2597 class-ml-slider-lightbox.php:1949
-#: class-ml-slider-lightbox.php:2073
-#: admin/views/notices/header-notice.php:8
-#: class-ml-gallery.php:872
-#: class-ml-gallery.php:2597
-#: class-ml-slider-lightbox.php:1949
-#: class-ml-slider-lightbox.php:2073
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1240
+#: class-ml-gallery.php:3302 class-ml-slider-lightbox.php:2121
+#: class-ml-slider-lightbox.php:2264
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: admin/views/notices/header-notice.php:23
-#: admin/views/notices/header-notice.php:23
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:222
 msgid "Dismiss"
 msgstr "Bỏ qua"
 
-#: class-ml-gallery.php:85
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1182
+#: class-ml-slider-lightbox.php:2301 class-ml-slider-lightbox.php:2316
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Bạn không có đủ quyền truy cập vào trang này."
+
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2238
+#: class-ml-gallery.php:2398
+msgid "Security check failed."
+msgstr "Kiểm tra bảo mật không thành công."
+
+#: class-ml-gallery-slideshow-convert.php:61
+msgid "Slideshow not found."
+msgstr "Không tìm thấy trình chiếu."
+
+#: class-ml-gallery-slideshow-convert.php:73
+msgid ""
+"This slideshow has no saved images to convert. Save the slideshow, then try "
+"again."
+msgstr ""
+"Trình chiếu này không có hình ảnh nào được lưu để chuyển đổi. Hãy lưu trình "
+"chiếu, sau đó thử lại."
+
+#: class-ml-gallery-slideshow-convert.php:78
+msgid "Untitled Slideshow"
+msgstr "Trình chiếu không tiêu đề"
+
+#: class-ml-gallery.php:113
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "Một số tính năng này có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:93 class-ml-gallery.php:102 class-ml-gallery.php:329
-#: class-ml-gallery.php:93
-#: class-ml-gallery.php:102
-#: class-ml-gallery.php:329
+#: class-ml-gallery.php:219 class-ml-gallery.php:228 class-ml-gallery.php:609
 msgid "Fade"
 msgstr "Nhạt dần"
 
-#: class-ml-gallery.php:94
+#: class-ml-gallery.php:220
 msgid "Slide"
 msgstr "Trượt"
 
-#: class-ml-gallery.php:95 class-ml-gallery.php:1376
-#: class-ml-gallery.php:95
-#: class-ml-gallery.php:1376
+#: class-ml-gallery.php:221 class-ml-gallery.php:1831
 msgid "Zoom"
 msgstr "Phóng to"
 
-#: class-ml-gallery.php:101 class-ml-gallery.php:321 class-ml-gallery.php:1561
-#: class-ml-gallery.php:1587 class-ml-gallery.php:1601
-#: class-ml-gallery.php:101
-#: class-ml-gallery.php:321
-#: class-ml-gallery.php:1561
-#: class-ml-gallery.php:1587
-#: class-ml-gallery.php:1601
+#: class-ml-gallery.php:227 class-ml-gallery.php:601 class-ml-gallery.php:2074
+#: class-ml-gallery.php:2100 class-ml-gallery.php:2114
 msgid "None"
 msgstr "Không có"
 
-#: class-ml-gallery.php:103
+#: class-ml-gallery.php:229
 msgid "Slide Up"
 msgstr "Trượt lên"
 
-#: class-ml-gallery.php:104
+#: class-ml-gallery.php:230
 msgid "Slide Down"
 msgstr "Trượt xuống"
 
-#: class-ml-gallery.php:118
+#: class-ml-gallery.php:244
 msgid "Hidden"
 msgstr "Ẩn"
 
-#: class-ml-gallery.php:119
+#: class-ml-gallery.php:245
 msgid "Gallery + Window"
 msgstr "Gallery + Cửa sổ"
 
-#: class-ml-gallery.php:120
+#: class-ml-gallery.php:246
 msgid "Window Only"
 msgstr "Chỉ cửa sổ"
 
-#: class-ml-gallery.php:121
+#: class-ml-gallery.php:247
 msgid "Gallery Only"
 msgstr "Chỉ Gallery"
 
-#: class-ml-gallery.php:322
+#: class-ml-gallery.php:266 class-ml-gallery.php:2808
+msgid "Manual entry"
+msgstr "Nhập thủ công"
+
+#: class-ml-gallery.php:267 class-ml-gallery.php:2809
+msgid "Media caption"
+msgstr "Chú thích phương tiện"
+
+#: class-ml-gallery.php:268 class-ml-gallery.php:2810
+msgid "Media description"
+msgstr "Mô tả phương tiện"
+
+#: class-ml-gallery.php:602
 msgid "Noir (B&W)"
 msgstr "Đen (B&W)"
 
-#: class-ml-gallery.php:323
+#: class-ml-gallery.php:603
 msgid "Silver (B&W)"
 msgstr "Bạc (B&W)"
 
-#: class-ml-gallery.php:324
+#: class-ml-gallery.php:604
 msgid "Vintage"
 msgstr "Cổ điển"
 
-#: class-ml-gallery.php:325
+#: class-ml-gallery.php:605
 msgid "Golden Hour"
 msgstr "Giờ vàng"
 
-#: class-ml-gallery.php:326
+#: class-ml-gallery.php:606
 msgid "Toaster"
 msgstr "Bánh mì nướng"
 
-#: class-ml-gallery.php:327
+#: class-ml-gallery.php:607
 msgid "Warm"
 msgstr "Ấm áp"
 
-#: class-ml-gallery.php:328
+#: class-ml-gallery.php:608
 msgid "Cool"
 msgstr "Mát mẻ"
 
-#: class-ml-gallery.php:330
+#: class-ml-gallery.php:610
 msgid "Matte"
 msgstr "Mờ"
 
-#: class-ml-gallery.php:331 class-ml-gallery.php:331, fuzzy
+#: class-ml-gallery.php:611, fuzzy
 msgid "Pastel"
 msgstr "Pastel"
 
-#: class-ml-gallery.php:332
+#: class-ml-gallery.php:612
 msgid "Vivid"
 msgstr "Sống động"
 
-#: class-ml-gallery.php:333
+#: class-ml-gallery.php:613
 msgid "Crisp"
 msgstr "Rõ nét"
 
-#: class-ml-gallery.php:334
+#: class-ml-gallery.php:614
 msgid "Dramatic"
 msgstr "Kịch tính"
 
-#: class-ml-gallery.php:335
+#: class-ml-gallery.php:615
 msgid "Negative"
 msgstr "Âm bản"
 
-#: class-ml-gallery.php:447 class-ml-gallery.php:456 class-ml-gallery.php:882
-#: class-ml-gallery.php:447
-#: class-ml-gallery.php:456
-#: class-ml-gallery.php:882
+#: class-ml-gallery.php:727 class-ml-gallery.php:736 class-ml-gallery.php:1250
 msgid "Galleries"
 msgstr "Thư viện"
 
-#: class-ml-gallery.php:448 class-ml-gallery.php:597 class-ml-gallery.php:1146
-#: class-ml-slider-lightbox.php:2069
-#: class-ml-gallery.php:448
-#: class-ml-gallery.php:597
-#: class-ml-gallery.php:1146
-#: class-ml-slider-lightbox.php:2069
+#: class-ml-gallery.php:728 class-ml-gallery.php:877 class-ml-gallery.php:1581
+#: class-ml-slider-lightbox.php:2260
 msgid "Gallery"
 msgstr "Thư viện"
 
-#: class-ml-gallery.php:449 class-ml-gallery.php:450 class-ml-gallery.php:847
-#: class-ml-gallery.php:2591 class-ml-gallery.php:449
-#: class-ml-gallery.php:450
-#: class-ml-gallery.php:847
-#: class-ml-gallery.php:2591
+#: class-ml-gallery.php:729 class-ml-gallery.php:730 class-ml-gallery.php:1215
+#: class-ml-gallery.php:3296
 msgid "Add New Gallery"
 msgstr "Thêm Thư viện Mới"
 
-#: class-ml-gallery.php:451 class-ml-gallery.php:764 class-ml-gallery.php:765
-#: class-ml-gallery.php:848 class-ml-gallery.php:451
-#: class-ml-gallery.php:764
-#: class-ml-gallery.php:765
-#: class-ml-gallery.php:848
+#: class-ml-gallery.php:731 class-ml-gallery.php:1130 class-ml-gallery.php:1131
+#: class-ml-gallery.php:1216
 msgid "Edit Gallery"
 msgstr "Chỉnh sửa Thư viện"
 
-#: class-ml-gallery.php:452 class-ml-gallery.php:827
-#: class-ml-gallery.php:452
-#: class-ml-gallery.php:827
+#: class-ml-gallery.php:732 class-ml-gallery.php:1193 class-ml-gallery.php:2447
 msgid "New Gallery"
 msgstr "Thư viện Mới"
 
-#: class-ml-gallery.php:453
+#: class-ml-gallery.php:733
 msgid "Search Galleries"
 msgstr "Tìm Thư viện"
 
-#: class-ml-gallery.php:454
+#: class-ml-gallery.php:734
 msgid "No galleries found."
 msgstr "Không tìm thấy thư viện nào."
 
-#: class-ml-gallery.php:455
+#: class-ml-gallery.php:735
 msgid "No galleries found in trash."
 msgstr "Không tìm thấy thư viện nào trong thùng rác."
 
-#: class-ml-gallery.php:604
+#: class-ml-gallery.php:884
 msgid "All Galleries"
 msgstr "Tất cả các Bộ sưu tập"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:891
 msgid "Create Gallery"
 msgstr "Tạo Bộ sưu tập"
 
-#: class-ml-gallery.php:621
+#: class-ml-gallery.php:901
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "Chỉnh sửa &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:639
+#: class-ml-gallery.php:919
 msgid "Invalid gallery ID."
 msgstr "ID bộ sưu tập không hợp lệ."
 
-#: class-ml-gallery.php:705 class-ml-slider-lightbox.php:1507
-#: class-ml-gallery.php:705
-#: class-ml-slider-lightbox.php:1507
+#: class-ml-gallery.php:1023 class-ml-slider-lightbox.php:1634
 msgid "View image"
 msgstr "Xem hình ảnh"
 
-#: class-ml-gallery.php:816 class-ml-slider-lightbox.php:2110
-#: class-ml-slider-lightbox.php:2125
-#: class-ml-gallery.php:816
-#: class-ml-slider-lightbox.php:2110
-#: class-ml-slider-lightbox.php:2125
-msgid "You do not have sufficient permissions to access this page."
-msgstr "Bạn không có đủ quyền truy cập vào trang này."
-
-#: class-ml-gallery.php:824 class-ml-gallery.php:1861
-#: class-ml-gallery.php:824
-#: class-ml-gallery.php:1861
+#: class-ml-gallery.php:1190 class-ml-gallery.php:2403
 msgid "Gallery not found."
 msgstr "Không tìm thấy thư viện."
 
-#: class-ml-gallery.php:850
+#: class-ml-gallery.php:1218
 msgid "Save Gallery"
 msgstr "Lưu Thư viện"
 
-#: class-ml-gallery.php:851
+#: class-ml-gallery.php:1219
 msgid "Update Gallery"
 msgstr "Cập nhật Thư viện"
 
-#: class-ml-gallery.php:866 class-ml-gallery.php:878
-#: class-ml-gallery.php:866
-#: class-ml-gallery.php:878
+#: class-ml-gallery.php:1234 class-ml-gallery.php:1246
 msgid "Back to Galleries"
 msgstr "Quay lại Thư viện"
 
-#: class-ml-gallery.php:889
+#: class-ml-gallery.php:1257
 msgid "Create New Gallery"
 msgstr "Tạo thư viện mới"
 
-#: class-ml-gallery.php:893
+#: class-ml-gallery.php:1261
 msgid "New"
 msgstr "Mới"
 
-#: class-ml-gallery.php:904
+#: class-ml-gallery.php:1272
 msgid "Duplicate"
 msgstr "Trùng lặp"
 
-#: class-ml-gallery.php:924
+#: class-ml-gallery.php:1292
 msgid "Gallery saved."
 msgstr "Thư viện đã được lưu."
 
-#: class-ml-gallery.php:935
+#: class-ml-gallery.php:1303
+#, php-format
+msgid ""
+"Gallery created from the slideshow \"%s\". Review the settings below, then "
+"save."
+msgstr ""
+"Thư viện được tạo từ trình chiếu \"%s\". Xem lại các cài đặt bên dưới, sau "
+"đó lưu."
+
+#: class-ml-gallery.php:1307
+msgid "Gallery created from your slideshow. Review the settings below, then save."
+msgstr ""
+"Thư viện được tạo từ trình chiếu của bạn. Xem lại các cài đặt bên dưới, sau "
+"đó lưu."
+
+#: class-ml-gallery.php:1321
 msgid "Enter gallery title"
 msgstr "Nhập tiêu đề thư viện"
 
-#: class-ml-gallery.php:938 class-ml-gallery.php:2619
-#: class-ml-gallery.php:938
-#: class-ml-gallery.php:2619
+#: class-ml-gallery.php:1324 class-ml-gallery.php:3748
 msgid "Images"
 msgstr "Hình ảnh"
 
-#: class-ml-gallery.php:947
+#: class-ml-gallery.php:1334
+msgid "Preview or arrange images"
+msgstr "Xem trước hoặc sắp xếp hình ảnh"
+
+#: class-ml-gallery.php:1337 class-ml-gallery.php:3661
+msgid "Preview"
+msgstr "Xem trước"
+
+#: class-ml-gallery.php:1341
+msgid "Arrange"
+msgstr "Sắp xếp"
+
+#: class-ml-gallery.php:1344
+msgid "Preview at desktop or mobile width"
+msgstr "Xem trước ở độ rộng máy tính để bàn hoặc di động"
+
+#: class-ml-gallery.php:1345
+msgid "Desktop width"
+msgstr "Độ rộng máy tính để bàn"
+
+#: class-ml-gallery.php:1348
+msgid "Mobile width"
+msgstr "Độ rộng di động"
+
+#: class-ml-gallery.php:1355
 msgid "No images added yet"
 msgstr "Chưa thêm hình ảnh nào"
 
-#: class-ml-gallery.php:960 class-ml-gallery.php:2194
-#: class-ml-gallery.php:960
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:1378 class-ml-gallery.php:2802
 msgid "Remove image"
 msgstr "Xóa hình ảnh"
 
-#: class-ml-gallery.php:965 class-ml-gallery.php:2195
-#: class-ml-gallery.php:965
-#: class-ml-gallery.php:2195
+#: class-ml-gallery.php:1383 class-ml-gallery.php:2803
 msgid "Edit caption"
 msgstr "Chỉnh sửa chú thích"
 
-#: class-ml-gallery.php:980
+#: class-ml-gallery.php:1383 class-ml-gallery.php:1385
+#: class-ml-gallery.php:2804
+msgid "Add caption"
+msgstr "Thêm chú thích"
+
+#: class-ml-gallery.php:1395
+msgid "Gallery preview"
+msgstr "Xem trước thư viện"
+
+#: class-ml-gallery.php:1401
 msgid "Add Images"
 msgstr "Thêm hình ảnh"
 
-#: class-ml-gallery.php:984
+#: class-ml-gallery.php:1405
 msgid "More ways to add images"
 msgstr "Nhiều cách để thêm hình ảnh"
 
-#: class-ml-gallery.php:990
+#: class-ml-gallery.php:1411
 msgid "Upload"
 msgstr "Tải lên"
 
-#: class-ml-gallery.php:995
+#: class-ml-gallery.php:1416
 msgid "Media Library"
 msgstr "Thư viện phương tiện"
 
-#: class-ml-gallery.php:1000
+#: class-ml-gallery.php:1421
 msgid "Server Folder"
 msgstr "Thư mục máy chủ"
 
-#: class-ml-gallery.php:1005 class-ml-gallery.php:1005, fuzzy
+#: class-ml-gallery.php:1426, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1011
+#: class-ml-gallery.php:1432
 msgid "Where to add new images"
 msgstr "Nơi thêm hình ảnh mới"
 
-#: class-ml-gallery.php:1012
+#: class-ml-gallery.php:1433
 msgid "Add new images at:"
 msgstr "Thêm hình ảnh mới tại:"
 
-#: class-ml-gallery.php:1016
+#: class-ml-gallery.php:1437
 msgid "Start"
 msgstr "Bắt đầu"
 
-#: class-ml-gallery.php:1021
+#: class-ml-gallery.php:1442
 msgid "End"
 msgstr "Kết thúc"
 
-#: class-ml-gallery.php:1030
+#: class-ml-gallery.php:1451
 msgid "Layout"
 msgstr "Bố cục"
 
-#: class-ml-gallery.php:1033
+#: class-ml-gallery.php:1454
 msgid "Gallery layout"
 msgstr "Bố cục thư viện"
 
-#: class-ml-gallery.php:1035
+#: class-ml-gallery.php:1456
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "Hình ảnh có kích thước đều được sắp xếp trong một lưới cố định"
 
-#: class-ml-gallery.php:1045
+#: class-ml-gallery.php:1466 class-ml-gallery.php:3664
 msgid "Grid"
 msgstr "Lưới"
 
-#: class-ml-gallery.php:1049
+#: class-ml-gallery.php:1470
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "Hình ảnh ở độ cao tự nhiên, khớp với nhau như một bức tường gạch"
 
-#: class-ml-gallery.php:1059 class-ml-gallery.php:1059, fuzzy
+#: class-ml-gallery.php:1480 class-ml-gallery.php:3663, fuzzy
 msgid "Masonry"
 msgstr "Masonry"
 
-#: class-ml-gallery.php:1063
+#: class-ml-gallery.php:1484
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr ""
 "Hình ảnh được điều chỉnh để lấp đầy mỗi hàng từ cạnh tới cạnh với chiều cao "
 "đồng nhất"
 
-#: class-ml-gallery.php:1075
+#: class-ml-gallery.php:1496 class-ml-gallery.php:3665
 msgid "Justified"
 msgstr "Căn chỉnh"
 
-#: class-ml-gallery.php:1079
+#: class-ml-gallery.php:1500
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "Hình ảnh được hiển thị từng cái một trong một trình chiếu cuộn"
 
-#: class-ml-gallery.php:1088 class-ml-gallery.php:1088, fuzzy
+#: class-ml-gallery.php:1509, fuzzy
 msgid "Carousel"
 msgstr "Carousel"
 
-#: class-ml-gallery.php:1092
+#: class-ml-gallery.php:1513
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "Hình ảnh chính lớn với một dải hình thu nhỏ cuộn bên dưới"
 
-#: class-ml-gallery.php:1102
+#: class-ml-gallery.php:1523
 msgid "Showcase"
 msgstr "Trưng bày"
 
-#: class-ml-gallery.php:1113
+#: class-ml-gallery.php:1535
 msgid "Number of columns to show on desktop screens"
 msgstr "Số lượng cột để hiển thị trên màn hình máy tính"
 
-#: class-ml-gallery.php:1113
+#: class-ml-gallery.php:1535
 msgid "Columns"
 msgstr "Cột"
 
-#: class-ml-gallery.php:1122
+#: class-ml-gallery.php:1544
 msgid "Number of columns to show on phones and small screens"
 msgstr "Số lượng cột để hiển thị trên điện thoại và màn hình nhỏ"
 
-#: class-ml-gallery.php:1122
+#: class-ml-gallery.php:1544
 msgid "Columns (mobile)"
 msgstr "Cột (di động)"
 
-#: class-ml-gallery.php:1131
+#: class-ml-gallery.php:1553
+msgid "Height of the gallery images, in pixels"
+msgstr "Chiều cao của hình ảnh trong thư viện, tính bằng pixel"
+
+#: class-ml-gallery.php:1554
+msgid "Height"
+msgstr "Chiều cao"
+
+#: class-ml-gallery.php:1566
 msgid "Space between images"
 msgstr "Khoảng cách giữa các hình ảnh"
 
-#: class-ml-gallery.php:1132
+#: class-ml-gallery.php:1567
 msgid "Gap"
 msgstr "Khoảng cách"
 
-#: class-ml-gallery.php:1150
+#: class-ml-gallery.php:1585
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "Điều khiển phóng to yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1151
+#: class-ml-gallery.php:1586
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "Chế độ toàn màn hình yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1152
+#: class-ml-gallery.php:1587
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "Xoay hình ảnh yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1153
+#: class-ml-gallery.php:1588
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "Tự động phát yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1154
+#: class-ml-gallery.php:1589
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "Chia sẻ xã hội yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1155
+#: class-ml-gallery.php:1590
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "Pager yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1156
+#: class-ml-gallery.php:1591
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "URL hình ảnh duy nhất yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1157
+#: class-ml-gallery.php:1592
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "Bảo vệ hình ảnh yêu cầu MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1161
+#: class-ml-gallery.php:1596
 msgid "Show left and right navigation arrows"
 msgstr "Hiển thị mũi tên điều hướng bên trái và bên phải"
 
-#: class-ml-gallery.php:1162
+#: class-ml-gallery.php:1597
 msgid "Display the current image number and total count"
 msgstr "Hiển thị số thứ tự hình ảnh hiện tại và tổng số"
 
-#: class-ml-gallery.php:1163
+#: class-ml-gallery.php:1598
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "Hiển thị một dải hình ảnh thu nhỏ ở dưới cùng của thư viện"
 
-#: class-ml-gallery.php:1164
+#: class-ml-gallery.php:1599
 msgid "Show dot navigation area below each image."
 msgstr "Hiển thị khu vực điều hướng chấm dưới mỗi hình ảnh."
 
-#: class-ml-gallery.php:1165
+#: class-ml-gallery.php:1600
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -512,11 +555,11 @@ msgstr ""
 "Pinch hoặc cuộn để phóng to và thu nhỏ hình ảnh trong thư viện. Điều khiển "
 "phóng to sẽ chỉ xuất hiện nếu kích thước gốc lớn hơn kích thước thư viện."
 
-#: class-ml-gallery.php:1166
+#: class-ml-gallery.php:1601
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "Mở rộng cửa sổ thư viện để chiếm toàn bộ màn hình."
 
-#: class-ml-gallery.php:1167
+#: class-ml-gallery.php:1602
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
@@ -524,15 +567,15 @@ msgstr ""
 "Người dùng có thể xoay hình ảnh sang trái hoặc phải, và lật chúng theo "
 "chiều dọc hoặc chiều ngang."
 
-#: class-ml-gallery.php:1168
+#: class-ml-gallery.php:1603
 msgid "Automatically advance through the images without the user clicking."
 msgstr "Tự động chuyển tiếp qua các hình ảnh mà không cần người dùng nhấp chuột."
 
-#: class-ml-gallery.php:1169
+#: class-ml-gallery.php:1604
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr "Cho phép người dùng chia sẻ hình ảnh trên Facebook, X, hoặc Pinterest."
 
-#: class-ml-gallery.php:1170
+#: class-ml-gallery.php:1605
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
@@ -540,7 +583,7 @@ msgstr ""
 "Tạo một URL duy nhất cho mỗi hình ảnh để kích hoạt liên kết trực tiếp bên "
 "trong thư viện."
 
-#: class-ml-gallery.php:1171
+#: class-ml-gallery.php:1606 class-ml-slider-lightbox.php:4278
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -548,27 +591,27 @@ msgstr ""
 "Ngăn chặn việc lưu trữ tùy tiện bằng cách chặn nhấp chuột phải, kéo và nhấn "
 "lâu trên hình ảnh trong thư viện."
 
-#: class-ml-gallery.php:1172
+#: class-ml-gallery.php:1607
 msgid "Navigate images using left and right arrow keys"
 msgstr "Điều hướng hình ảnh bằng các phím mũi tên trái và phải"
 
-#: class-ml-gallery.php:1173
+#: class-ml-gallery.php:1608
 msgid "Scroll through images using the mouse wheel"
 msgstr "Cuộn qua hình ảnh bằng cách sử dụng bánh xe chuột"
 
-#: class-ml-gallery.php:1174
+#: class-ml-gallery.php:1609
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "Vuốt lên hoặc xuống để đóng thư viện trên các thiết bị cảm ứng"
 
-#: class-ml-gallery.php:1175
+#: class-ml-gallery.php:1610
 msgid "Cycle back to the first image after reaching the last"
 msgstr "Quay lại hình ảnh đầu tiên sau khi đến hình ảnh cuối cùng"
 
-#: class-ml-gallery.php:1176
+#: class-ml-gallery.php:1611
 msgid "Show a download button for each image"
 msgstr "Hiển thị nút tải xuống cho mỗi hình ảnh"
 
-#: class-ml-gallery.php:1177
+#: class-ml-gallery.php:1612
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
@@ -576,152 +619,146 @@ msgstr ""
 "Mở hình ảnh trong một cửa sổ phủ khi được nhấp. Áp dụng cho các bố cục "
 "Lưới, Xây dựng, và Căn chỉnh."
 
-#: class-ml-gallery.php:1220
+#: class-ml-gallery.php:1613
+msgid "Show a button over the gallery that opens the gallery window when clicked."
+msgstr "Hiện một nút trên thư viện mở cửa sổ thư viện khi nhấn."
+
+#: class-ml-gallery.php:1614
+msgid "Show an icon on the button instead of text."
+msgstr "Hiện một biểu tượng trên nút thay vì văn bản."
+
+#: class-ml-gallery.php:1657
 msgid "Full (original)"
 msgstr "Toàn bộ (gốc)"
 
-#: class-ml-gallery.php:1224
+#: class-ml-gallery.php:1661
 msgid "Show in Gallery Window"
 msgstr "Hiển thị trong Cửa sổ Thư viện"
 
-#: class-ml-gallery.php:1227
+#: class-ml-gallery.php:1664
 msgid "The size of the image shown when a visitor clicks to view it in full"
 msgstr ""
 "Kích thước của hình ảnh hiển thị khi một khách truy cập nhấp để xem nó đầy "
 "đủ"
 
-#: class-ml-gallery.php:1227
+#: class-ml-gallery.php:1664
 msgid "Image Size"
 msgstr "Kích thước Hình ảnh"
 
-#: class-ml-gallery.php:1244
-msgid "Open in Gallery Button"
-msgstr "Mở trong Nút Thư viện"
+#: class-ml-gallery.php:1684
+msgid ""
+"Choose how visitors open the gallery window: click the image, click an "
+"icon, or click a button."
+msgstr ""
+"Chọn cách mà khách truy cập mở cửa sổ thư viện: nhấp vào hình ảnh, nhấp vào "
+"biểu tượng, hoặc nhấp vào nút."
 
-#: class-ml-gallery.php:1247
-msgid "Use Icon Instead of Text"
-msgstr "Sử dụng Biểu Tượng Thay vì Văn Bản"
+#: class-ml-gallery.php:1684
+msgid "Open with"
+msgstr "Mở bằng"
 
-#: class-ml-gallery.php:1250 class-ml-slider-lightbox.php:2535
-#: class-ml-gallery.php:1250
-#: class-ml-slider-lightbox.php:2535
+#: class-ml-gallery.php:1696
+msgid "Text shown on the button that opens the gallery window"
+msgstr "Văn bản hiển thị trên nút mở cửa sổ thư viện"
+
+#: class-ml-gallery.php:1696 class-ml-slider-lightbox.php:2726
 msgid "Button Text"
 msgstr "Văn bản nút"
 
-#: class-ml-gallery.php:1255 class-ml-slider-lightbox.php:1502
-#: class-ml-slider-lightbox.php:3140 class-ml-slider-lightbox.php:6285
-#: class-ml-slider-lightbox.php:6308
-#: class-ml-gallery.php:1255
-#: class-ml-slider-lightbox.php:1502
-#: class-ml-slider-lightbox.php:3140
-#: class-ml-slider-lightbox.php:6285
-#: class-ml-slider-lightbox.php:6308
+#: class-ml-gallery.php:1701 class-ml-slider-lightbox.php:1629
+#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:6467
+#: class-ml-slider-lightbox.php:6490
 msgid "Open in Gallery"
 msgstr "Mở trong Thư Viện"
 
-#: class-ml-gallery.php:1260 class-ml-slider-lightbox.php:2543
-#: class-ml-gallery.php:1260
-#: class-ml-slider-lightbox.php:2543
+#: class-ml-gallery.php:1706
+msgid "Where the button or icon sits over the gallery"
+msgstr "Nơi mà nút hoặc biểu tượng nằm trên thư viện"
+
+#: class-ml-gallery.php:1706 class-ml-slider-lightbox.php:2734
 msgid "Button Position"
 msgstr "Vị trí nút"
 
-#: class-ml-gallery.php:1262
+#: class-ml-gallery.php:1708
 msgid "Top Right"
 msgstr "Trên cùng bên phải"
 
-#: class-ml-gallery.php:1263 class-ml-slider-lightbox.php:3157
-#: class-ml-slider-lightbox.php:3183
-#: class-ml-gallery.php:1263
-#: class-ml-slider-lightbox.php:3157
-#: class-ml-slider-lightbox.php:3183
+#: class-ml-gallery.php:1709 class-ml-slider-lightbox.php:3343
+#: class-ml-slider-lightbox.php:3369
 msgid "Top Left"
 msgstr "Trên bên trái"
 
-#: class-ml-gallery.php:1264 class-ml-slider-lightbox.php:3158
-#: class-ml-slider-lightbox.php:3184
-#: class-ml-gallery.php:1264
-#: class-ml-slider-lightbox.php:3158
-#: class-ml-slider-lightbox.php:3184
+#: class-ml-gallery.php:1710 class-ml-slider-lightbox.php:3344
+#: class-ml-slider-lightbox.php:3370
 msgid "Bottom Right"
 msgstr "Dưới bên phải"
 
-#: class-ml-gallery.php:1265 class-ml-slider-lightbox.php:3159
-#: class-ml-slider-lightbox.php:3185
-#: class-ml-gallery.php:1265
-#: class-ml-slider-lightbox.php:3159
-#: class-ml-slider-lightbox.php:3185
+#: class-ml-gallery.php:1711 class-ml-slider-lightbox.php:3345
+#: class-ml-slider-lightbox.php:3371
 msgid "Bottom Left"
 msgstr "Dưới bên trái"
 
-#: class-ml-gallery.php:1266
+#: class-ml-gallery.php:1712
 msgid "Center"
 msgstr "Căn giữa"
 
-#: class-ml-gallery.php:1275
+#: class-ml-gallery.php:1721
 msgid "Protect images"
 msgstr "Bảo vệ hình ảnh"
 
-#: class-ml-gallery.php:1281
+#: class-ml-gallery.php:1727
 msgid "Display"
 msgstr "Hiển thị"
 
-#: class-ml-gallery.php:1283
+#: class-ml-gallery.php:1729
 msgid "Animation effect when moving between images"
 msgstr "Hiệu ứng hoạt hình khi di chuyển giữa các hình ảnh"
 
-#: class-ml-gallery.php:1283 class-ml-gallery.php:1359
-#: class-ml-gallery.php:1283
-#: class-ml-gallery.php:1359
+#: class-ml-gallery.php:1729 class-ml-gallery.php:1814
 msgid "Transition"
 msgstr "Chuyển tiếp"
 
-#: class-ml-gallery.php:1292 class-ml-slider-lightbox.php:2495
-#: class-ml-gallery.php:1292
-#: class-ml-slider-lightbox.php:2495
+#: class-ml-gallery.php:1738 class-ml-slider-lightbox.php:2686
 msgid "Arrows"
 msgstr "Mũi tên"
 
-#: class-ml-gallery.php:1293
+#: class-ml-gallery.php:1739
 msgid "Slide Counter"
 msgstr "Đếm Slide"
 
-#: class-ml-gallery.php:1294
+#: class-ml-gallery.php:1740
 msgid "Thumbnails"
 msgstr "Hình thu nhỏ"
 
-#: class-ml-gallery.php:1296
+#: class-ml-gallery.php:1742
 msgid "Pager"
 msgstr "Trang điều hướng"
 
-#: class-ml-gallery.php:1301 class-ml-slider-lightbox.php:2200
-#: class-ml-gallery.php:1301
-#: class-ml-slider-lightbox.php:2200
+#: class-ml-gallery.php:1747 class-ml-slider-lightbox.php:2391
 msgid "Navigation"
 msgstr "Điều hướng"
 
-#: class-ml-gallery.php:1302
+#: class-ml-gallery.php:1748
 msgid "Loop"
 msgstr "Lặp lại"
 
-#: class-ml-gallery.php:1303
+#: class-ml-gallery.php:1749
 msgid "Keyboard"
 msgstr "Bàn phím"
 
-#: class-ml-gallery.php:1304
+#: class-ml-gallery.php:1750
 msgid "Mouse wheel"
 msgstr "Bánh xe chuột"
 
-#: class-ml-gallery.php:1305
+#: class-ml-gallery.php:1751
 msgid "Swipe to close"
 msgstr "Vuốt để đóng"
 
-#: class-ml-gallery.php:1312 class-ml-gallery.php:1314
-#: class-ml-gallery.php:1312
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1758 class-ml-gallery.php:1760
 msgid "Captions"
 msgstr "Chú thích"
 
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1760
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -729,7 +766,21 @@ msgstr ""
 "Nơi hiển thị chú thích: trên hình thu nhỏ của thư viện, trong cửa sổ thư "
 "viện, hoặc cả hai."
 
-#: class-ml-gallery.php:1326
+#: class-ml-gallery.php:1772
+msgid ""
+"Where each caption's text comes from: your typed caption, or the image's "
+"Media Library caption or description. Empty media fields fall back to your "
+"typed caption."
+msgstr ""
+"Nơi mà văn bản của mỗi chú thích đến từ: chú thích bạn đã nhập, hoặc chú "
+"thích hoặc mô tả của hình ảnh trong Thư viện Media. Các trường phương tiện "
+"trống sẽ quay lại với chú thích bạn đã nhập."
+
+#: class-ml-gallery.php:1772
+msgid "Caption Content"
+msgstr "Nội dung Chú thích"
+
+#: class-ml-gallery.php:1781
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -737,11 +788,11 @@ msgstr ""
 "Kích thước văn bản chú thích. Áp dụng cho cả hình thu nhỏ của thư viện và "
 "cửa sổ thư viện."
 
-#: class-ml-gallery.php:1327
+#: class-ml-gallery.php:1782
 msgid "Text Size"
 msgstr "Kích thước Văn Bản"
 
-#: class-ml-gallery.php:1339
+#: class-ml-gallery.php:1794
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -749,11 +800,11 @@ msgstr ""
 "Màu sắc văn bản chú thích. Áp dụng cho cả hình thu nhỏ của thư viện và cửa "
 "sổ thư viện."
 
-#: class-ml-gallery.php:1339
+#: class-ml-gallery.php:1794
 msgid "Text Color"
 msgstr "Màu Văn Bản"
 
-#: class-ml-gallery.php:1349
+#: class-ml-gallery.php:1804
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -761,15 +812,12 @@ msgstr ""
 "Nền chú thích. Áp dụng cho cả hình thu nhỏ của thư viện và cửa sổ thư viện; "
 "trên hình thu nhỏ, nó chuyển sang trong suốt để dễ đọc."
 
-#: class-ml-gallery.php:1349 class-ml-gallery.php:1391
-#: class-ml-slider-lightbox.php:2463
-#: class-ml-gallery.php:1349
-#: class-ml-gallery.php:1391
-#: class-ml-slider-lightbox.php:2463
+#: class-ml-gallery.php:1804 class-ml-gallery.php:1846
+#: class-ml-slider-lightbox.php:2654
 msgid "Background Color"
 msgstr "Màu nền"
 
-#: class-ml-gallery.php:1359
+#: class-ml-gallery.php:1814
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -777,393 +825,566 @@ msgstr ""
 "Cách chú thích hoạt hình vào. Chỉ áp dụng cho cửa sổ thư viện — không áp "
 "dụng cho chú thích hình thu nhỏ của thư viện."
 
-#: class-ml-gallery.php:1369 class-ml-slider-lightbox.php:2511
-#: class-ml-gallery.php:1369
-#: class-ml-slider-lightbox.php:2511
+#: class-ml-gallery.php:1824 class-ml-slider-lightbox.php:2702
 msgid "Toolbar"
 msgstr "Thanh Công Cụ"
 
-#: class-ml-gallery.php:1370 class-ml-slider-lightbox.php:1516
-#: class-ml-gallery.php:1370
-#: class-ml-slider-lightbox.php:1516
+#: class-ml-gallery.php:1825 class-ml-slider-lightbox.php:1643
 msgid "Download"
 msgstr "Tải xuống"
 
-#: class-ml-gallery.php:1372
+#: class-ml-gallery.php:1827
 msgid "Share"
 msgstr "Chia sẻ"
 
-#: class-ml-gallery.php:1373
+#: class-ml-gallery.php:1828
 msgid "Autoplay"
 msgstr "Tự động phát"
 
-#: class-ml-gallery.php:1374
+#: class-ml-gallery.php:1829
 msgid "Rotate and Flip"
 msgstr "Xoay và Lật"
 
-#: class-ml-gallery.php:1375
+#: class-ml-gallery.php:1830
 msgid "Fullscreen"
 msgstr "Toàn màn hình"
 
-#: class-ml-gallery.php:1381
+#: class-ml-gallery.php:1836
 msgid "Unique Image URLs"
 msgstr "URL hình ảnh duy nhất"
 
-#: class-ml-gallery.php:1388 class-ml-slider-lightbox.php:2133
-#: class-ml-slider-lightbox.php:2190
-#: class-ml-gallery.php:1388
-#: class-ml-slider-lightbox.php:2133
-#: class-ml-slider-lightbox.php:2190
+#: class-ml-gallery.php:1843 class-ml-slider-lightbox.php:2324
+#: class-ml-slider-lightbox.php:2381
 msgid "Appearance"
 msgstr "Giao diện"
 
-#: class-ml-gallery.php:1402 class-ml-slider-lightbox.php:2471
-#: class-ml-gallery.php:1402
-#: class-ml-slider-lightbox.php:2471
+#: class-ml-gallery.php:1846
+msgid "Background color of the gallery window"
+msgstr "Màu nền của cửa sổ thư viện"
+
+#: class-ml-gallery.php:1856
+msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
+msgstr "Độ mờ của nền cửa sổ thư viện (0 = trong suốt, 1 = đặc)"
+
+#: class-ml-gallery.php:1857 class-ml-slider-lightbox.php:2662
 msgid "Background Opacity"
 msgstr "Độ mờ nền"
 
-#: class-ml-gallery.php:1414
+#: class-ml-gallery.php:1869
+msgid "Color of the next and previous navigation arrows"
+msgstr "Màu của các mũi tên điều hướng tiếp theo và trước đó"
+
+#: class-ml-gallery.php:1869
 msgid "Arrow Color"
 msgstr "Màu mũi tên"
 
-#: class-ml-gallery.php:1424
+#: class-ml-gallery.php:1879
+msgid "Background color behind the navigation arrows"
+msgstr "Màu nền phía sau các mũi tên điều hướng"
+
+#: class-ml-gallery.php:1879
 msgid "Arrow Background"
 msgstr "Nền mũi tên"
 
-#: class-ml-gallery.php:1434
+#: class-ml-gallery.php:1889
+msgid "Color of the close (X) icon"
+msgstr "Màu của biểu tượng đóng (X)"
+
+#: class-ml-gallery.php:1889
 msgid "Close Icon Color"
 msgstr "Màu biểu tượng đóng"
 
-#: class-ml-gallery.php:1444
+#: class-ml-gallery.php:1899
+msgid "Background color behind the close icon"
+msgstr "Màu nền phía sau biểu tượng đóng"
+
+#: class-ml-gallery.php:1899
 msgid "Close Background"
 msgstr "Nền đóng"
 
-#: class-ml-gallery.php:1454
+#: class-ml-gallery.php:1909
+msgid "Color of the toolbar icons"
+msgstr "Màu của các biểu tượng thanh công cụ"
+
+#: class-ml-gallery.php:1909
 msgid "Toolbar Icon Color"
 msgstr "Màu biểu tượng thanh công cụ"
 
-#: class-ml-gallery.php:1464
+#: class-ml-gallery.php:1919
+msgid "Background color of the toolbar"
+msgstr "Màu nền của thanh công cụ"
+
+#: class-ml-gallery.php:1919
 msgid "Toolbar Background"
 msgstr "Nền thanh công cụ"
 
-#: class-ml-gallery.php:1474 class-ml-slider-lightbox.php:2487
-#: class-ml-gallery.php:1474
-#: class-ml-slider-lightbox.php:2487
+#: class-ml-gallery.php:1929
+msgid "Border color of the thumbnail strip images"
+msgstr "Màu viền của các hình ảnh trong dải thu nhỏ"
+
+#: class-ml-gallery.php:1929 class-ml-slider-lightbox.php:2678
 msgid "Thumbnail Border Color"
 msgstr "Màu Viền Hình Thu Nhỏ"
 
-#: class-ml-gallery.php:1484
+#: class-ml-gallery.php:1939
+msgid "Border color of the active and hovered thumbnail"
+msgstr "Màu viền của hình thu nhỏ đang hoạt động và được di chuột qua"
+
+#: class-ml-gallery.php:1939
 msgid "Thumbnail Border Active and Hover"
 msgstr "Viền Hình Thu Nhỏ Kích Hoạt và Di Chuột"
 
-#: class-ml-gallery.php:1498
+#: class-ml-gallery.php:1958
+msgid "Text color of the button that opens the gallery window"
+msgstr "Màu văn bản của nút mở cửa sổ thư viện"
+
+#: class-ml-gallery.php:1958
+msgid "Button Text Color"
+msgstr "Màu văn bản Nút"
+
+#: class-ml-gallery.php:1962
+msgid "Button text color on hover"
+msgstr "Màu văn bản nút khi di chuột qua"
+
+#: class-ml-gallery.php:1962
+msgid "Button Text Hover"
+msgstr "Nút Văn bản Di chuột"
+
+#: class-ml-gallery.php:1966
+msgid "Background color of the button that opens the gallery window"
+msgstr "Màu nền của nút mở cửa sổ thư viện ảnh"
+
+#: class-ml-gallery.php:1966
+msgid "Button Background"
+msgstr "Nền nút"
+
+#: class-ml-gallery.php:1970
+msgid "Button background color on hover"
+msgstr "Màu nền nút khi di chuột qua"
+
+#: class-ml-gallery.php:1970
+msgid "Button Background Hover"
+msgstr "Nền nút khi di chuột"
+
+#: class-ml-gallery.php:1977
+msgid "Color of the icon that opens the gallery window"
+msgstr "Màu của biểu tượng mở cửa sổ thư viện ảnh"
+
+#: class-ml-gallery.php:1977
+msgid "Icon Color"
+msgstr "Màu biểu tượng"
+
+#: class-ml-gallery.php:1981
+msgid "Icon color on hover"
+msgstr "Màu biểu tượng khi di chuột qua"
+
+#: class-ml-gallery.php:1981
+msgid "Icon Hover Color"
+msgstr "Màu biểu tượng khi di chuột"
+
+#: class-ml-gallery.php:1985
+msgid "Background color behind the icon"
+msgstr "Màu nền phía sau biểu tượng"
+
+#: class-ml-gallery.php:1985
+msgid "Icon Background"
+msgstr "Nền biểu tượng"
+
+#: class-ml-gallery.php:1989
+msgid "Icon background color on hover"
+msgstr "Màu nền biểu tượng khi di chuột qua"
+
+#: class-ml-gallery.php:1989
+msgid "Icon Background Hover"
+msgstr "Nền biểu tượng khi di chuột"
+
+#: class-ml-gallery.php:1996
+msgid "Color of the progress bar shown during autoplay"
+msgstr "Màu của thanh tiến trình hiển thị trong chế độ tự động phát"
+
+#: class-ml-gallery.php:1996
+msgid "Autoplay Progress Bar"
+msgstr "Thanh tiến trình tự động phát"
+
+#: class-ml-gallery.php:2011
 msgid "Image Styles"
 msgstr "Kiểu hình ảnh"
 
-#: class-ml-gallery.php:1501
+#: class-ml-gallery.php:2014
 msgid "Apply a filter to every image in the gallery"
 msgstr "Áp dụng bộ lọc cho mọi hình ảnh trong thư viện"
 
-#: class-ml-gallery.php:1501
+#: class-ml-gallery.php:2014
 msgid "Filter"
 msgstr "Bộ lọc"
 
-#: class-ml-gallery.php:1510
+#: class-ml-gallery.php:2023
 msgid "Corner radius in pixels applied to every image"
 msgstr "Bán kính góc tính bằng pixel áp dụng cho mọi hình ảnh"
 
-#: class-ml-gallery.php:1511
+#: class-ml-gallery.php:2024
 msgid "Rounded Corners"
 msgstr "Góc bo"
 
-#: class-ml-gallery.php:1522
+#: class-ml-gallery.php:2035
 msgid "Image border width in pixels (0 = no border)"
 msgstr "Độ rộng viền hình ảnh tính bằng pixel (0 = không có viền)"
 
-#: class-ml-gallery.php:1523
+#: class-ml-gallery.php:2036
 msgid "Border Width"
 msgstr "Độ rộng viền"
 
-#: class-ml-gallery.php:1534
+#: class-ml-gallery.php:2047
 msgid "Line style used for the image border"
 msgstr "Kiểu đường viền sử dụng cho viền hình ảnh"
 
-#: class-ml-gallery.php:1534
+#: class-ml-gallery.php:2047
 msgid "Border Style"
 msgstr "Kiểu viền"
 
-#: class-ml-gallery.php:1537
+#: class-ml-gallery.php:2050
 msgid "Solid"
 msgstr "Đặc"
 
-#: class-ml-gallery.php:1538
+#: class-ml-gallery.php:2051
 msgid "Dashed"
 msgstr "Đứt đoạn"
 
-#: class-ml-gallery.php:1539
+#: class-ml-gallery.php:2052
 msgid "Dotted"
 msgstr "Chấm"
 
-#: class-ml-gallery.php:1540
+#: class-ml-gallery.php:2053
 msgid "Double"
 msgstr "Đôi"
 
-#: class-ml-gallery.php:1548
+#: class-ml-gallery.php:2061
+msgid "Color of the image border"
+msgstr "Màu của đường viền hình ảnh"
+
+#: class-ml-gallery.php:2061
 msgid "Border Color"
 msgstr "Màu viền"
 
-#: class-ml-gallery.php:1558
+#: class-ml-gallery.php:2071
 msgid "Drop shadow depth cast behind each image"
 msgstr "Độ sâu bóng đổ phía sau mỗi hình ảnh"
 
-#: class-ml-gallery.php:1558
+#: class-ml-gallery.php:2071
 msgid "Box Shadow"
 msgstr "Bóng đổ hộp"
 
-#: class-ml-gallery.php:1562
+#: class-ml-gallery.php:2075
 msgid "Light"
 msgstr "Nhẹ"
 
-#: class-ml-gallery.php:1563
+#: class-ml-gallery.php:2076
 msgid "Medium"
 msgstr "Vừa"
 
-#: class-ml-gallery.php:1564
+#: class-ml-gallery.php:2077
 msgid "Heavy"
 msgstr "Nặng"
 
-#: class-ml-gallery.php:1572
+#: class-ml-gallery.php:2085
 msgid "Image opacity as a percentage"
 msgstr "Độ mờ của hình ảnh dưới dạng phần trăm"
 
-#: class-ml-gallery.php:1573
+#: class-ml-gallery.php:2086
 msgid "Opacity"
 msgstr "Độ mờ"
 
-#: class-ml-gallery.php:1584
+#: class-ml-gallery.php:2097
 msgid "Rotate every image by a fixed angle"
 msgstr "Xoay mỗi hình ảnh theo một góc cố định"
 
-#: class-ml-gallery.php:1584
+#: class-ml-gallery.php:2097
 msgid "Rotate"
 msgstr "Xoay"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:2111
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "Lật mỗi hình ảnh theo chiều ngang, chiều dọc, hoặc cả hai"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:2111
 msgid "Flip"
 msgstr "Lật"
 
-#: class-ml-gallery.php:1602
+#: class-ml-gallery.php:2115
 msgid "Horizontal"
 msgstr "Ngang"
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:2116
 msgid "Vertical"
 msgstr "Dọc"
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:2117
 msgid "Both"
 msgstr "Cả hai"
 
-#: class-ml-gallery.php:1614 class-ml-gallery.php:2618
-#: class-ml-gallery.php:1614
-#: class-ml-gallery.php:2618
+#: class-ml-gallery.php:2127 class-ml-gallery.php:3747
 msgid "Shortcode"
 msgstr "Mã ngắn"
 
-#: class-ml-gallery.php:1616 class-ml-gallery.php:2638
-#: class-ml-gallery.php:1616
-#: class-ml-gallery.php:2638
+#: class-ml-gallery.php:2129 class-ml-gallery.php:3767
 msgid "Click to copy shortcode."
 msgstr "Nhấp để sao chép mã ngắn."
 
-#: class-ml-gallery.php:1634
+#: class-ml-gallery.php:2147
 msgid "Edit Caption"
 msgstr "Chỉnh sửa chú thích"
 
-#: class-ml-gallery.php:1635 class-ml-gallery.php:1664
-#: class-ml-gallery.php:1685 class-ml-gallery.php:2663
-#: class-ml-gallery.php:1635
-#: class-ml-gallery.php:1664
-#: class-ml-gallery.php:1685
-#: class-ml-gallery.php:2663
+#: class-ml-gallery.php:2149
+msgid "Previous image"
+msgstr "Hình ảnh trước"
+
+#: class-ml-gallery.php:2150
+msgid "Next image"
+msgstr "Hình ảnh tiếp theo"
+
+#: class-ml-gallery.php:2152 class-ml-gallery.php:2194
+#: class-ml-gallery.php:2215 class-ml-gallery.php:3792
 msgid "Close"
 msgstr "Đóng"
 
-#: class-ml-gallery.php:1643
+#: class-ml-gallery.php:2173
 msgid "Caption"
 msgstr "Chú thích"
 
-#: class-ml-gallery.php:1650 class-ml-gallery.php:1672
-#: class-ml-gallery.php:1650
-#: class-ml-gallery.php:1672
-msgid "Cancel"
-msgstr "Hủy"
+#: class-ml-gallery.php:2183
+msgid "Done"
+msgstr "Đã xong"
 
-#: class-ml-gallery.php:1653
-msgid "Save Caption"
-msgstr "Lưu chú thích"
-
-#: class-ml-gallery.php:1663
+#: class-ml-gallery.php:2193
 msgid "Import from Server Folder"
 msgstr "Nhập từ Thư Mục Máy Chủ"
 
-#: class-ml-gallery.php:1673
+#: class-ml-gallery.php:2202
+msgid "Cancel"
+msgstr "Hủy"
+
+#: class-ml-gallery.php:2203
 msgid "Import selected"
 msgstr "Nhập đã chọn"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:2214
 msgid "Import from ZIP"
 msgstr "Nhập từ ZIP"
 
-#: class-ml-gallery.php:1708 class-ml-gallery.php:1856
-#: class-ml-gallery.php:1708
-#: class-ml-gallery.php:1856
-msgid "Security check failed."
-msgstr "Kiểm tra bảo mật không thành công."
-
-#: class-ml-gallery.php:1712
+#: class-ml-gallery.php:2242
 msgid "You do not have sufficient permissions."
 msgstr "Bạn không có đủ quyền hạn."
 
-#: class-ml-gallery.php:1731
+#: class-ml-gallery.php:2261
 msgid "Could not update the gallery. Please try again."
 msgstr "Không thể cập nhật thư viện ảnh. Vui lòng thử lại."
 
-#: class-ml-gallery.php:1866
+#: class-ml-gallery.php:2408
 msgid "(Copy)"
 msgstr "(Sao chép)"
 
-#: class-ml-gallery.php:1872
+#: class-ml-gallery.php:2414
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "Không thể sao chép thư viện. Vui lòng thử lại."
 
-#: class-ml-gallery.php:1976 class-ml-gallery.php:2091
-#: class-ml-gallery.php:2783 class-ml-gallery.php:1976
-#: class-ml-gallery.php:2091
-#: class-ml-gallery.php:2783
+#: class-ml-gallery.php:2562 class-ml-gallery.php:2677
+#: class-ml-gallery.php:3912 class-ml-gallery.php:4065
+#: class-ml-gallery.php:4097
 msgid "Permission denied."
 msgstr "Không có quyền."
 
-#: class-ml-gallery.php:1983
+#: class-ml-gallery.php:2569
 msgid "Folder not found."
 msgstr "Không tìm thấy thư mục."
 
-#: class-ml-gallery.php:1992
+#: class-ml-gallery.php:2578
 msgid "Folder could not be read."
 msgstr "Không thể đọc thư mục."
 
-#: class-ml-gallery.php:2029
+#: class-ml-gallery.php:2615
 msgid "Uploads"
 msgstr "Tải lên"
 
-#: class-ml-gallery.php:2192
+#: class-ml-gallery.php:2800
 msgid "Select Gallery Images"
 msgstr "Chọn hình ảnh thư viện"
 
-#: class-ml-gallery.php:2193
+#: class-ml-gallery.php:2801
 msgid "Add to Gallery"
 msgstr "Thêm vào thư viện"
 
-#: class-ml-gallery.php:2197
+#: class-ml-gallery.php:2812
+msgid ""
+"Saved to this image in your Media Library — changes appear anywhere the "
+"image is used."
+msgstr ""
+"Đã lưu vào hình ảnh này trong Thư viện Media của bạn - các thay đổi sẽ xuất "
+"hiện ở bất kỳ đâu hình ảnh được sử dụng."
+
+#: class-ml-gallery.php:2813 class-ml-gallery.php:4114
+msgid "You do not have permission to edit this image."
+msgstr "Bạn không có quyền chỉnh sửa hình ảnh này."
+
+#: class-ml-gallery.php:2814 class-ml-gallery.php:4115
+msgid "This caption source is read-only."
+msgstr "Nguồn chú thích này chỉ đọc."
+
+#: class-ml-gallery.php:2815
+msgid "Shown in this gallery"
+msgstr "Hiển thị trong thư viện này"
+
+#: class-ml-gallery.php:2817
 msgid "Loading…"
 msgstr "Đang tải…"
 
-#: class-ml-gallery.php:2198
+#: class-ml-gallery.php:2818
 msgid "No images in this folder."
 msgstr "Không có hình ảnh nào trong thư mục này."
 
-#: class-ml-gallery.php:2199
+#: class-ml-gallery.php:2819
 msgid "Could not load this folder."
 msgstr "Không thể tải thư mục này."
 
-#: class-ml-gallery.php:2200
+#: class-ml-gallery.php:2820
 msgid "Importing…"
 msgstr "Đang nhập…"
 
-#: class-ml-gallery.php:2201
+#: class-ml-gallery.php:2821
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr "Hiển thị 200 hình ảnh đầu tiên — mở một thư mục con để thu hẹp danh sách."
 
-#: class-ml-gallery.php:2202
+#: class-ml-gallery.php:2822
 msgid "Select at least one image."
 msgstr "Vui lòng chọn ít nhất một hình ảnh."
 
-#: class-ml-gallery.php:2203 class-ml-gallery.php:2206
-#: class-ml-gallery.php:2203
-#: class-ml-gallery.php:2206
+#: class-ml-gallery.php:2823 class-ml-gallery.php:2826
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "Đã nhập %1$d hình ảnh; %2$d hình ảnh bị bỏ qua."
 
-#: class-ml-gallery.php:2204
+#: class-ml-gallery.php:2824
 msgid "Uploading…"
 msgstr "Đang tải lên…"
 
-#: class-ml-gallery.php:2205
+#: class-ml-gallery.php:2825
 msgid "Importing images…"
 msgstr "Đang nhập hình ảnh…"
 
-#: class-ml-gallery.php:2207
+#: class-ml-gallery.php:2827
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "Chỉ có 200 hình ảnh đầu tiên (hoặc 256 MB) được nhập."
 
-#: class-ml-gallery.php:2208
+#: class-ml-gallery.php:2828
 msgid "The ZIP could not be imported."
 msgstr "Không thể nhập ZIP."
 
-#: class-ml-gallery.php:2209
+#: class-ml-gallery.php:2829
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr "Tải lên đã bị từ chối — ZIP có thể lớn hơn giới hạn mà máy chủ này cho phép."
 
-#: class-ml-gallery.php:2210
+#: class-ml-gallery.php:2830
 msgid "No images found in the ZIP."
 msgstr "Không tìm thấy hình ảnh nào trong ZIP."
 
-#: class-ml-gallery.php:2620
+#: class-ml-gallery.php:3378
+msgid "Drag-and-drop building"
+msgstr "Xây dựng kéo và thả"
+
+#: class-ml-gallery.php:3379
+msgid "Responsive lightbox"
+msgstr "Lightbox phản hồi"
+
+#: class-ml-gallery.php:3380
+msgid "Grid · Masonry · Justified"
+msgstr "Lưới · Đá · Căn chỉnh"
+
+#: class-ml-gallery.php:3631
+msgid "Get started"
+msgstr "Bắt đầu"
+
+#: class-ml-gallery.php:3634
+msgid "Your galleries"
+msgstr "Thư viện của bạn"
+
+#: class-ml-gallery.php:3634
+msgid "live here."
+msgstr "sống ở đây."
+
+#: class-ml-gallery.php:3636
+msgid ""
+"Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
+"justified, no code required."
+msgstr ""
+"Xây dựng những thư viện hình ảnh đẹp với một lightbox ấn tượng. Lưới, đá "
+"hoặc căn chỉnh, không cần mã."
+
+#: class-ml-gallery.php:3638
+msgid "Create your first gallery"
+msgstr "Tạo thư viện đầu tiên của bạn"
+
+#: class-ml-gallery.php:3651
+#, php-format
+msgid "View Trash (%s)"
+msgid_plural "View Trash (%s)"
+msgstr[0] "Xem Thùng rác (%s)"
+
+#: class-ml-gallery.php:3662
+msgid "Preview layout"
+msgstr "Xem trước bố cục"
+
+#: class-ml-gallery.php:3749
 msgid "Usage"
 msgstr "Sử dụng"
 
-#: class-ml-gallery.php:2653
+#: class-ml-gallery.php:3782
 msgid "Not found."
 msgstr "Không tìm thấy."
 
-#: class-ml-gallery.php:2658
+#: class-ml-gallery.php:3787
 msgid "View Usage"
 msgstr "Xem Sử dụng"
 
-#: class-ml-gallery.php:2664
+#: class-ml-gallery.php:3793
 msgid "Content Using This Gallery"
 msgstr "Nội dung Sử dụng Thư viện Này"
 
-#: class-ml-gallery.php:2731
+#: class-ml-gallery.php:3860
 msgid "(no title)"
 msgstr "(không có tiêu đề)"
 
-#: class-ml-gallery.php:2789 class-ml-gallery.php:2798
-#: class-ml-gallery.php:2789
-#: class-ml-gallery.php:2798
+#: class-ml-gallery.php:3918 class-ml-gallery.php:3927
 msgid "Please choose a valid .zip file."
 msgstr "Vui lòng chọn một tệp .zip hợp lệ."
 
-#: class-ml-gallery.php:2804
+#: class-ml-gallery.php:3933
 msgid "Server cannot read ZIP files."
 msgstr "Máy chủ không thể đọc tệp ZIP."
 
-#: class-ml-gallery.php:2811
+#: class-ml-gallery.php:3940
 msgid "The ZIP could not be read."
 msgstr "Tệp ZIP không thể được đọc."
 
-#: class-ml-gallery.php:2845
+#: class-ml-gallery.php:3974
 msgid "Could not prepare a temporary folder."
 msgstr "Không thể chuẩn bị thư mục tạm thời."
 
-#: class-ml-slider-lightbox.php:1039
-#: class-ml-slider-lightbox.php:1039
+#: class-ml-gallery.php:4072 class-ml-gallery.php:4108
+msgid "Image not found."
+msgstr "Hình ảnh không tìm thấy."
+
+#: class-ml-gallery.php:4145
+msgid "Unknown caption source."
+msgstr "Nguồn chú thích không xác định."
+
+#: class-ml-slider-lightbox.php:216
+msgid "👋 Thanks for installing MetaSlider Gallery!"
+msgstr "👋 Cảm ơn bạn đã cài đặt MetaSlider Gallery!"
+
+#: class-ml-slider-lightbox.php:219
+msgid "You're all set. Create your first gallery to get started."
+msgstr "Bạn đã sẵn sàng. Tạo thư viện đầu tiên của bạn để bắt đầu."
+
+#: class-ml-slider-lightbox.php:1167
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1171,13 +1392,11 @@ msgstr ""
 "Thư viện MetaSlider yêu cầu MetaSlider và ít nhất một plugin lightbox hỗ "
 "trợ khác phải được cài đặt và kích hoạt."
 
-#: class-ml-slider-lightbox.php:1043
-#: class-ml-slider-lightbox.php:1043
+#: class-ml-slider-lightbox.php:1171
 msgid "More info"
 msgstr "Thêm thông tin"
 
-#: class-ml-slider-lightbox.php:1054
-#: class-ml-slider-lightbox.php:1054
+#: class-ml-slider-lightbox.php:1182
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1185,58 +1404,31 @@ msgstr ""
 "Có hơn một plugin lightbox được kích hoạt. Điều này có thể gây ra xung đột "
 "với Thư viện MetaSlider"
 
-#: class-ml-slider-lightbox.php:1114
-#: class-ml-slider-lightbox.php:1114
+#: class-ml-slider-lightbox.php:1242
 msgid "Edit Global Settings"
 msgstr "Chỉnh sửa Cài đặt Toàn cầu"
 
-#: class-ml-slider-lightbox.php:1126
-#: class-ml-slider-lightbox.php:1126
+#: class-ml-slider-lightbox.php:1253
 msgid "Open In Gallery"
 msgstr "Mở trong Thư viện"
 
-#: class-ml-slider-lightbox.php:1141
-#: class-ml-slider-lightbox.php:1141
+#: class-ml-slider-lightbox.php:1267
 msgid "Show Captions"
 msgstr "Hiển thị Chú thích"
 
-#: class-ml-slider-lightbox.php:1141
-#: class-ml-slider-lightbox.php:1141
+#: class-ml-slider-lightbox.php:1267
 msgid "Show captions in the gallery for each slide."
 msgstr "Hiển thị chú thích trong thư viện cho mỗi slide."
 
-#: class-ml-slider-lightbox.php:1142
-#: class-ml-slider-lightbox.php:1142
+#: class-ml-slider-lightbox.php:1268
 msgid "Show Navigation Arrows"
 msgstr "Hiển thị Mũi tên Điều hướng"
 
-#: class-ml-slider-lightbox.php:1142
-#: class-ml-slider-lightbox.php:1142
+#: class-ml-slider-lightbox.php:1268
 msgid "Show previous/next arrows in the gallery."
 msgstr "Hiển thị mũi tên trước/sau trong thư viện."
 
-#: class-ml-slider-lightbox.php:1143
-#: class-ml-slider-lightbox.php:1143
-msgid "Show \"Open In Gallery\" Button"
-msgstr "Hiển thị nút \"Mở trong Thư viện\""
-
-#: class-ml-slider-lightbox.php:1143
-#: class-ml-slider-lightbox.php:1143
-msgid "Show a button on each slide to open the image in the gallery."
-msgstr "Hiển thị một nút trên mỗi slide để mở hình ảnh trong thư viện."
-
-#: class-ml-slider-lightbox.php:1144
-#: class-ml-slider-lightbox.php:1144
-msgid "Show An Icon Instead Of Button"
-msgstr "Hiển thị Biểu tượng Thay vì Nút"
-
-#: class-ml-slider-lightbox.php:1144
-#: class-ml-slider-lightbox.php:1144
-msgid "Display an icon instead of a text button on each slide."
-msgstr "Hiển thị một biểu tượng thay vì một nút văn bản trên mỗi slide."
-
-#: class-ml-slider-lightbox.php:1149
-#: class-ml-slider-lightbox.php:1149
+#: class-ml-slider-lightbox.php:1274
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1245,172 +1437,157 @@ msgstr ""
 "Thư viện được kích hoạt cho tất cả các slideshow qua <a href=\"%s\">cài đặt "
 "MetaSlider Gallery</a>."
 
-#: class-ml-slider-lightbox.php:1512
-#: class-ml-slider-lightbox.php:1512
+#: class-ml-slider-lightbox.php:1639
 msgid "Close gallery"
 msgstr "Đóng thư viện"
 
-#: class-ml-slider-lightbox.php:1513
-#: class-ml-slider-lightbox.php:1513
+#: class-ml-slider-lightbox.php:1640
 msgid "Toggle maximize"
 msgstr "Chuyển đổi tối đa hóa"
 
-#: class-ml-slider-lightbox.php:1514
-#: class-ml-slider-lightbox.php:1514
+#: class-ml-slider-lightbox.php:1641
 msgid "Previous slide"
 msgstr "Slide trước"
 
-#: class-ml-slider-lightbox.php:1515
-#: class-ml-slider-lightbox.php:1515
+#: class-ml-slider-lightbox.php:1642
 msgid "Next slide"
 msgstr "Slide tiếp theo"
 
-#: class-ml-slider-lightbox.php:1517
-#: class-ml-slider-lightbox.php:1517
+#: class-ml-slider-lightbox.php:1644
 msgid "Play video"
 msgstr "Phát video"
 
-#: class-ml-slider-lightbox.php:1518
-#: class-ml-slider-lightbox.php:1518
+#: class-ml-slider-lightbox.php:1645
 msgid "Oops... Failed to load content..."
 msgstr "Ôi... Không thể tải nội dung..."
 
-#: class-ml-slider-lightbox.php:1564
-#: class-ml-slider-lightbox.php:1564
+#: class-ml-slider-lightbox.php:1691 class-ml-slider-lightbox.php:1721
 msgid "Global"
 msgstr "Toàn cầu"
 
-#: class-ml-slider-lightbox.php:1565
-#: class-ml-slider-lightbox.php:1565
+#: class-ml-slider-lightbox.php:1692
 msgid "Yes"
 msgstr "Có"
 
-#: class-ml-slider-lightbox.php:1566
-#: class-ml-slider-lightbox.php:1566
+#: class-ml-slider-lightbox.php:1693
 msgid "No"
 msgstr "Không"
 
-#: class-ml-slider-lightbox.php:1820
-#: class-ml-slider-lightbox.php:1820
+#: class-ml-slider-lightbox.php:1716
+msgid "How Visitors Open Images"
+msgstr "Cách khách truy cập mở hình ảnh"
+
+#: class-ml-slider-lightbox.php:1719 class-ml-slider-lightbox.php:3643
+msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
+msgstr ""
+"Chọn xem nhấp vào hình ảnh, một biểu tượng, hoặc một nút có mở thư viện "
+"không."
+
+#: class-ml-slider-lightbox.php:1722 class-ml-trigger-control.php:66
+msgid "Image"
+msgstr "Hình ảnh"
+
+#: class-ml-slider-lightbox.php:1723 class-ml-slider-lightbox.php:3485
+#: class-ml-slider-lightbox.php:3498 class-ml-slider-lightbox.php:3511
+#: class-ml-slider-lightbox.php:3609 class-ml-trigger-control.php:67
+msgid "Icon"
+msgstr "Biểu tượng"
+
+#: class-ml-slider-lightbox.php:1724 class-ml-trigger-control.php:68
+msgid "Button"
+msgstr "Nút"
+
+#: class-ml-slider-lightbox.php:1992
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Gallery yêu cầu phải cài đặt và kích hoạt MetaSlider."
 
-#: class-ml-slider-lightbox.php:1824
-#: class-ml-slider-lightbox.php:1824
+#: class-ml-slider-lightbox.php:1996
 msgid "Install MetaSlider"
 msgstr "Cài đặt MetaSlider"
 
-#: class-ml-slider-lightbox.php:1947 class-ml-slider-lightbox.php:2072
-#: class-ml-slider-lightbox.php:1947
-#: class-ml-slider-lightbox.php:2072, fuzzy
+#: class-ml-slider-lightbox.php:2119 class-ml-slider-lightbox.php:2263, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2054
-#: class-ml-slider-lightbox.php:2054
+#: class-ml-slider-lightbox.php:2245
 #, php-format
 msgid "Select pages to %s..."
 msgstr "Chọn trang để %s..."
 
-#: class-ml-slider-lightbox.php:2055
-#: class-ml-slider-lightbox.php:2055
+#: class-ml-slider-lightbox.php:2246
 #, php-format
 msgid "Select posts to %s..."
 msgstr "Chọn bài viết để %s..."
 
-#: class-ml-slider-lightbox.php:2056
-#: class-ml-slider-lightbox.php:2056
+#: class-ml-slider-lightbox.php:2247
 #, php-format
 msgid "Select post types to %s..."
 msgstr "Chọn loại bài viết để %s..."
 
-#: class-ml-slider-lightbox.php:2057
-#: class-ml-slider-lightbox.php:2057
+#: class-ml-slider-lightbox.php:2248
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "Chọn %1$s để %2$s..."
 
-#: class-ml-slider-lightbox.php:2058
-#: class-ml-slider-lightbox.php:2058
+#: class-ml-slider-lightbox.php:2249
 msgid "Select post types to exclude"
 msgstr "Chọn loại bài viết để loại trừ"
 
-#: class-ml-slider-lightbox.php:2059 class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564 class-ml-slider-lightbox.php:3686
-#: class-ml-slider-lightbox.php:2059
-#: class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564
-#: class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:2250 class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
 msgid "Include"
 msgstr "Bao gồm"
 
-#: class-ml-slider-lightbox.php:2060 class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564 class-ml-slider-lightbox.php:3686
-#: class-ml-slider-lightbox.php:2060
-#: class-ml-slider-lightbox.php:3517
-#: class-ml-slider-lightbox.php:3564
-#: class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:2251 class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
 msgid "Exclude"
 msgstr "Loại trừ"
 
-#: class-ml-slider-lightbox.php:2068
-#: class-ml-slider-lightbox.php:2068, fuzzy
+#: class-ml-slider-lightbox.php:2259, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2088
-#: class-ml-slider-lightbox.php:2088
-msgid "Settings"
-msgstr "Cài đặt"
+#: class-ml-slider-lightbox.php:2279
+msgid "Global Settings"
+msgstr "Cài đặt toàn cầu"
 
-#: class-ml-slider-lightbox.php:2098
-#: class-ml-slider-lightbox.php:2098
+#: class-ml-slider-lightbox.php:2289
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "Nâng cấp lên MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2099
-#: class-ml-slider-lightbox.php:2099
+#: class-ml-slider-lightbox.php:2290
 msgid "Upgrade to Pro"
 msgstr "Nâng cấp lên Pro"
 
-#: class-ml-slider-lightbox.php:2131
-#: class-ml-slider-lightbox.php:2131
+#: class-ml-slider-lightbox.php:2322
 msgid "Automatic Mode"
 msgstr "Chế độ Tự động"
 
-#: class-ml-slider-lightbox.php:2132
-#: class-ml-slider-lightbox.php:2132
+#: class-ml-slider-lightbox.php:2323
 msgid "Manual Mode"
 msgstr "Chế độ Thủ công"
 
-#: class-ml-slider-lightbox.php:2134
-#: class-ml-slider-lightbox.php:2134
+#: class-ml-slider-lightbox.php:2325
 msgid "Behavior"
 msgstr "Hành vi"
 
-#: class-ml-slider-lightbox.php:2155
-#: class-ml-slider-lightbox.php:2155
+#: class-ml-slider-lightbox.php:2346
 msgid "Settings saved successfully!"
 msgstr "Cài đặt đã được lưu thành công!"
 
-#: class-ml-slider-lightbox.php:2165
-#: class-ml-slider-lightbox.php:2165
+#: class-ml-slider-lightbox.php:2356
 msgid "Where to Enable Automatically"
 msgstr "Nơi để tự động kích hoạt"
 
-#: class-ml-slider-lightbox.php:2172
-#: class-ml-slider-lightbox.php:2172, fuzzy
+#: class-ml-slider-lightbox.php:2363, fuzzy
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider Slideshows"
 
-#: class-ml-slider-lightbox.php:2179 class-ml-slider-lightbox.php:2376
-#: class-ml-slider-lightbox.php:2179
-#: class-ml-slider-lightbox.php:2376
+#: class-ml-slider-lightbox.php:2370 class-ml-slider-lightbox.php:2567
 msgid "Content Filtering"
 msgstr "Lọc nội dung"
 
-#: class-ml-slider-lightbox.php:2191
-#: class-ml-slider-lightbox.php:2191
+#: class-ml-slider-lightbox.php:2382
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
@@ -1418,25 +1595,19 @@ msgstr ""
 "Tùy chỉnh màu sắc, độ mờ và kiểu dáng hình ảnh cho lớp phủ và điều khiển "
 "của thư viện."
 
-#: class-ml-slider-lightbox.php:2195 class-ml-slider-lightbox.php:2442
-#: class-ml-slider-lightbox.php:2195
-#: class-ml-slider-lightbox.php:2442
+#: class-ml-slider-lightbox.php:2386 class-ml-slider-lightbox.php:2633
 msgid "Background & Overlay"
 msgstr "Nền & Lớp phủ"
 
-#: class-ml-slider-lightbox.php:2205
-#: class-ml-slider-lightbox.php:2205
+#: class-ml-slider-lightbox.php:2396
 msgid "\"Open in Gallery\" Button"
 msgstr "\"Mở trong Thư viện\" Nút"
 
-#: class-ml-slider-lightbox.php:2215 class-ml-slider-lightbox.php:2555
-#: class-ml-slider-lightbox.php:2215
-#: class-ml-slider-lightbox.php:2555
+#: class-ml-slider-lightbox.php:2406 class-ml-slider-lightbox.php:2746
 msgid "Navigation & Controls"
 msgstr "Điều hướng & Điều khiển"
 
-#: class-ml-slider-lightbox.php:2221
-#: class-ml-slider-lightbox.php:2221
+#: class-ml-slider-lightbox.php:2412
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1446,36 +1617,27 @@ msgstr ""
 "bên thứ ba đang hoạt động. Các cài đặt này có thể không áp dụng cho "
 "MetaSlider nhưng vẫn sẽ hoạt động cho các lightbox nội dung WordPress."
 
-#: class-ml-slider-lightbox.php:2228 class-ml-slider-lightbox.php:4034
-#: class-ml-slider-lightbox.php:2228
-#: class-ml-slider-lightbox.php:4034
+#: class-ml-slider-lightbox.php:2419 class-ml-slider-lightbox.php:4209
 msgid "Enhanced Zoom & Controls"
 msgstr "Phóng to & Điều khiển nâng cao"
 
-#: class-ml-slider-lightbox.php:2236
-#: class-ml-slider-lightbox.php:2236
+#: class-ml-slider-lightbox.php:2427
 msgid "Media & Video Enhancements"
 msgstr "Nâng cao về Media & Video"
 
-#: class-ml-slider-lightbox.php:2244 class-ml-slider-lightbox.php:4062
-#: class-ml-slider-lightbox.php:2244
-#: class-ml-slider-lightbox.php:4062
+#: class-ml-slider-lightbox.php:2435 class-ml-slider-lightbox.php:4237
 msgid "Social & Navigation"
 msgstr "Mạng xã hội & Điều hướng"
 
-#: class-ml-slider-lightbox.php:2252 class-ml-slider-lightbox.php:4083
-#: class-ml-slider-lightbox.php:2252
-#: class-ml-slider-lightbox.php:4083
+#: class-ml-slider-lightbox.php:2443 class-ml-slider-lightbox.php:4258
 msgid "Advanced Features"
 msgstr "Tính năng nâng cao"
 
-#: class-ml-slider-lightbox.php:2268
-#: class-ml-slider-lightbox.php:2268
+#: class-ml-slider-lightbox.php:2459
 msgid "Manual Options"
 msgstr "Tùy chọn Thủ công"
 
-#: class-ml-slider-lightbox.php:2269
-#: class-ml-slider-lightbox.php:2269
+#: class-ml-slider-lightbox.php:2460
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -1483,53 +1645,43 @@ msgstr ""
 "Các điều khiển thủ công và các ghi đè WordPress hoạt động độc lập với các "
 "cài đặt tự động."
 
-#: class-ml-slider-lightbox.php:2449
-#: class-ml-slider-lightbox.php:2449
+#: class-ml-slider-lightbox.php:2640
 msgid "Navigation Icons"
 msgstr "Biểu tượng Điều hướng"
 
-#: class-ml-slider-lightbox.php:2456
-#: class-ml-slider-lightbox.php:2456
+#: class-ml-slider-lightbox.php:2647
 msgid "Buttons"
 msgstr "Nút"
 
-#: class-ml-slider-lightbox.php:2479
-#: class-ml-slider-lightbox.php:2479
+#: class-ml-slider-lightbox.php:2670
 msgid "Autoplay Progress Bar Color"
 msgstr "Màu của thanh tiến trình Tự động phát"
 
-#: class-ml-slider-lightbox.php:2503
-#: class-ml-slider-lightbox.php:2503
+#: class-ml-slider-lightbox.php:2694
 msgid "Close Button"
 msgstr "Nút Đóng"
 
-#: class-ml-slider-lightbox.php:2519
-#: class-ml-slider-lightbox.php:2519
+#: class-ml-slider-lightbox.php:2710
 msgid "Button Colors"
 msgstr "Màu Nút"
 
-#: class-ml-slider-lightbox.php:2527
-#: class-ml-slider-lightbox.php:2527
+#: class-ml-slider-lightbox.php:2718
 msgid "Icon Colors"
 msgstr "Màu Biểu tượng"
 
-#: class-ml-slider-lightbox.php:2913
-#: class-ml-slider-lightbox.php:2913
+#: class-ml-slider-lightbox.php:3099
 msgid "Configure general gallery settings that apply site-wide."
 msgstr "Cấu hình các cài đặt chung cho thư viện áp dụng trên toàn trang."
 
-#: class-ml-slider-lightbox.php:2918
-#: class-ml-slider-lightbox.php:2918
+#: class-ml-slider-lightbox.php:3104
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "Cấu hình các cài đặt cụ thể cho chức năng của MetaSlider Gallery."
 
-#: class-ml-slider-lightbox.php:2923
-#: class-ml-slider-lightbox.php:2923
+#: class-ml-slider-lightbox.php:3109
 msgid "Select where the gallery will be enabled automatically."
 msgstr "Chọn nơi mà thư viện sẽ được kích hoạt tự động."
 
-#: class-ml-slider-lightbox.php:2929
-#: class-ml-slider-lightbox.php:2929
+#: class-ml-slider-lightbox.php:3115
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1537,38 +1689,31 @@ msgstr ""
 "Chọn cách lọc nội dung để xử lý thư viện và chỉ định các trang, bài viết "
 "hoặc phần tử nào cần bao gồm hoặc loại trừ."
 
-#: class-ml-slider-lightbox.php:2945
-#: class-ml-slider-lightbox.php:2945
+#: class-ml-slider-lightbox.php:3131
 msgid "Processing Mode"
 msgstr "Chế độ xử lý"
 
-#: class-ml-slider-lightbox.php:2948
-#: class-ml-slider-lightbox.php:2948
+#: class-ml-slider-lightbox.php:3134
 msgid "Process all content EXCEPT the items specified below"
 msgstr "Xử lý tất cả nội dung NGOẠI TRỪ các mục được chỉ định bên dưới"
 
-#: class-ml-slider-lightbox.php:2951
-#: class-ml-slider-lightbox.php:2951
+#: class-ml-slider-lightbox.php:3137
 msgid "ONLY process the items specified below"
 msgstr "CHỈ xử lý các mục được chỉ định bên dưới"
 
-#: class-ml-slider-lightbox.php:2958
-#: class-ml-slider-lightbox.php:2958
+#: class-ml-slider-lightbox.php:3144
 msgid "Inclusion Mode"
 msgstr "Chế độ bao gồm"
 
-#: class-ml-slider-lightbox.php:2962
-#: class-ml-slider-lightbox.php:2962
+#: class-ml-slider-lightbox.php:3148
 msgid "Exclusion Mode"
 msgstr "Chế độ loại trừ"
 
-#: class-ml-slider-lightbox.php:2982
-#: class-ml-slider-lightbox.php:2982
+#: class-ml-slider-lightbox.php:3168
 msgid "Images in post content"
 msgstr "Hình ảnh trong nội dung bài viết"
 
-#: class-ml-slider-lightbox.php:2983
-#: class-ml-slider-lightbox.php:2983
+#: class-ml-slider-lightbox.php:3169
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -1576,13 +1721,11 @@ msgstr ""
 "Khi được kích hoạt, các hình ảnh đơn lẻ không có liên kết và \"Phóng to để "
 "Nhấp\" được đặt trong các bài viết và trang sẽ tự động mở trong thư viện."
 
-#: class-ml-slider-lightbox.php:2999
-#: class-ml-slider-lightbox.php:2999
+#: class-ml-slider-lightbox.php:3185
 msgid "Images and videos in widgets and sidebars"
 msgstr "Hình ảnh và video trong các widget và thanh bên"
 
-#: class-ml-slider-lightbox.php:3000
-#: class-ml-slider-lightbox.php:3000
+#: class-ml-slider-lightbox.php:3186
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
@@ -1590,13 +1733,11 @@ msgstr ""
 "Khi được kích hoạt, hình ảnh và video trong các khu vực widget sẽ tự động "
 "mở trong thư viện."
 
-#: class-ml-slider-lightbox.php:3016
-#: class-ml-slider-lightbox.php:3016
+#: class-ml-slider-lightbox.php:3202
 msgid "Gallery shortcodes and blocks"
 msgstr "Shortcode và khối thư viện"
 
-#: class-ml-slider-lightbox.php:3017
-#: class-ml-slider-lightbox.php:3017
+#: class-ml-slider-lightbox.php:3203
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1604,13 +1745,11 @@ msgstr ""
 "Khi được kích hoạt, hình ảnh trong mã rút gọn [gallery] của WordPress và "
 "các khối Thư viện Gutenberg sẽ tự động mở trong cửa sổ thư viện."
 
-#: class-ml-slider-lightbox.php:3033
-#: class-ml-slider-lightbox.php:3033
+#: class-ml-slider-lightbox.php:3219
 msgid "Featured images"
 msgstr "Hình ảnh nổi bật"
 
-#: class-ml-slider-lightbox.php:3034
-#: class-ml-slider-lightbox.php:3034
+#: class-ml-slider-lightbox.php:3220
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -1618,8 +1757,7 @@ msgstr ""
 "Khi được kích hoạt, hình ảnh nổi bật (hình thu nhỏ bài viết) sẽ tự động mở "
 "trong thư viện khi nhấp."
 
-#: class-ml-slider-lightbox.php:3043
-#: class-ml-slider-lightbox.php:3043
+#: class-ml-slider-lightbox.php:3229
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -1627,13 +1765,11 @@ msgstr ""
 "Tự động mở tất cả các slideshow MetaSlider trong thư viện, ghi đè cài đặt "
 "theo từng slider."
 
-#: class-ml-slider-lightbox.php:3057
-#: class-ml-slider-lightbox.php:3057
+#: class-ml-slider-lightbox.php:3243
 msgid "MetaSlider slideshows"
 msgstr "Trình chiếu MetaSlider"
 
-#: class-ml-slider-lightbox.php:3058
-#: class-ml-slider-lightbox.php:3058
+#: class-ml-slider-lightbox.php:3244
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -1641,13 +1777,11 @@ msgstr ""
 "Khi được kích hoạt, tất cả các slideshow MetaSlider sẽ mở các slide trong "
 "cửa sổ thư viện, ghi đè cài đặt theo từng slider."
 
-#: class-ml-slider-lightbox.php:3074
-#: class-ml-slider-lightbox.php:3074
+#: class-ml-slider-lightbox.php:3260
 msgid "Videos in post content"
 msgstr "Video trong nội dung bài đăng"
 
-#: class-ml-slider-lightbox.php:3075
-#: class-ml-slider-lightbox.php:3075
+#: class-ml-slider-lightbox.php:3261
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1655,8 +1789,7 @@ msgstr ""
 "Khi được kích hoạt, các khối video độc lập (video HTML5, nhúng YouTube, "
 "nhúng Vimeo) trong nội dung bài viết/trang sẽ tự động mở trong thư viện."
 
-#: class-ml-slider-lightbox.php:3110
-#: class-ml-slider-lightbox.php:3110
+#: class-ml-slider-lightbox.php:3296
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
@@ -1664,8 +1797,7 @@ msgstr ""
 "Màu nền cho lớp phủ thư viện. Màu tối hoạt động tốt nhất cho việc xem hình "
 "ảnh."
 
-#: class-ml-slider-lightbox.php:3115
-#: class-ml-slider-lightbox.php:3115
+#: class-ml-slider-lightbox.php:3301
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
@@ -1673,8 +1805,7 @@ msgstr ""
 "Màu nền cho các nút \"Mở trong Thư viện\" xuất hiện trên các slide, hình "
 "ảnh và video."
 
-#: class-ml-slider-lightbox.php:3120
-#: class-ml-slider-lightbox.php:3120
+#: class-ml-slider-lightbox.php:3306
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
@@ -1682,18 +1813,15 @@ msgstr ""
 "Màu chữ cho các nút \"Mở trong Thư viện\" xuất hiện trên các slide, hình "
 "ảnh và video."
 
-#: class-ml-slider-lightbox.php:3125
-#: class-ml-slider-lightbox.php:3125
+#: class-ml-slider-lightbox.php:3311
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "Màu nền khi di chuột qua các nút \"Mở trong Thư viện\"."
 
-#: class-ml-slider-lightbox.php:3130
-#: class-ml-slider-lightbox.php:3130
+#: class-ml-slider-lightbox.php:3316
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "Màu văn bản khi di chuột qua nút \"Mở trong Thư viện\"."
 
-#: class-ml-slider-lightbox.php:3143
-#: class-ml-slider-lightbox.php:3143
+#: class-ml-slider-lightbox.php:3329
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -1701,19 +1829,15 @@ msgstr ""
 "Văn bản tùy chỉnh cho các nút thư viện. Văn bản này sẽ xuất hiện trên tất "
 "cả các nút \"Mở trong Thư viện\" trên toàn bộ trang web."
 
-#: class-ml-slider-lightbox.php:3156 class-ml-slider-lightbox.php:3182
-#: class-ml-slider-lightbox.php:3156
-#: class-ml-slider-lightbox.php:3182
+#: class-ml-slider-lightbox.php:3342 class-ml-slider-lightbox.php:3368
 msgid "Top Right (Default)"
 msgstr "Trên bên phải (Mặc định)"
 
-#: class-ml-slider-lightbox.php:3169
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3355
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "Chọn vị trí để đặt nút đóng (X) trong lớp phủ thư viện."
 
-#: class-ml-slider-lightbox.php:3195
-#: class-ml-slider-lightbox.php:3195
+#: class-ml-slider-lightbox.php:3381
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
@@ -1721,13 +1845,11 @@ msgstr ""
 "Chọn vị trí để đặt các nút \"Mở trong Thư viện\" trong các slide, hình ảnh, "
 "thư viện và video."
 
-#: class-ml-slider-lightbox.php:3200
-#: class-ml-slider-lightbox.php:3200
+#: class-ml-slider-lightbox.php:3386
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "Màu cho các mũi tên điều hướng trước và sau trong thư viện."
 
-#: class-ml-slider-lightbox.php:3205
-#: class-ml-slider-lightbox.php:3205
+#: class-ml-slider-lightbox.php:3391
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -1735,13 +1857,11 @@ msgstr ""
 "Màu mũi tên khi di chuột. Tạo phản hồi hình ảnh khi người dùng di chuyển "
 "chuột qua các mũi tên điều hướng."
 
-#: class-ml-slider-lightbox.php:3210
-#: class-ml-slider-lightbox.php:3210
+#: class-ml-slider-lightbox.php:3396
 msgid "Color for the close button (X) in the gallery."
 msgstr "Màu cho nút đóng (X) trong thư viện."
 
-#: class-ml-slider-lightbox.php:3215
-#: class-ml-slider-lightbox.php:3215
+#: class-ml-slider-lightbox.php:3401
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -1749,8 +1869,7 @@ msgstr ""
 "Màu nút đóng khi di chuột. Tạo phản hồi hình ảnh khi người dùng di chuyển "
 "chuột qua nút đóng."
 
-#: class-ml-slider-lightbox.php:3220
-#: class-ml-slider-lightbox.php:3220
+#: class-ml-slider-lightbox.php:3406
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -1758,8 +1877,7 @@ msgstr ""
 "Màu cho biểu tượng thanh công cụ và văn bản đếm trong Lightbox. Ảnh hưởng "
 "đến biểu tượng thu phóng, toàn màn hình (Pro) và hiển thị đếm hình ảnh."
 
-#: class-ml-slider-lightbox.php:3225
-#: class-ml-slider-lightbox.php:3225
+#: class-ml-slider-lightbox.php:3411
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -1767,13 +1885,11 @@ msgstr ""
 "Màu biểu tượng thanh công cụ khi di chuột qua. Tạo phản hồi hình ảnh khi "
 "người dùng di chuột qua biểu tượng thanh công cụ và đếm."
 
-#: class-ml-slider-lightbox.php:3230
-#: class-ml-slider-lightbox.php:3230
+#: class-ml-slider-lightbox.php:3416
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "Màu nền cho các nút mũi tên điều hướng trước và sau."
 
-#: class-ml-slider-lightbox.php:3235
-#: class-ml-slider-lightbox.php:3235
+#: class-ml-slider-lightbox.php:3421
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -1781,13 +1897,11 @@ msgstr ""
 "Màu nền cho các nút mũi tên khi di chuột qua. Tạo phản hồi hình ảnh khi "
 "người dùng di chuột qua các mũi tên."
 
-#: class-ml-slider-lightbox.php:3240
-#: class-ml-slider-lightbox.php:3240
+#: class-ml-slider-lightbox.php:3426
 msgid "Background color for the close button (X) in the gallery."
 msgstr "Màu nền cho nút đóng (X) trong thư viện."
 
-#: class-ml-slider-lightbox.php:3245
-#: class-ml-slider-lightbox.php:3245
+#: class-ml-slider-lightbox.php:3431
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -1795,13 +1909,11 @@ msgstr ""
 "Màu nền cho nút đóng khi di chuột qua. Tạo phản hồi hình ảnh khi người dùng "
 "di chuột qua nút đóng."
 
-#: class-ml-slider-lightbox.php:3250
-#: class-ml-slider-lightbox.php:3250
+#: class-ml-slider-lightbox.php:3436
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "Màu nền cho biểu tượng thanh công cụ trong Lightbox."
 
-#: class-ml-slider-lightbox.php:3255
-#: class-ml-slider-lightbox.php:3255
+#: class-ml-slider-lightbox.php:3441
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -1809,73 +1921,44 @@ msgstr ""
 "Màu nền cho biểu tượng thanh công cụ khi di chuột qua. Tạo phản hồi hình "
 "ảnh khi người dùng di chuột qua biểu tượng thanh công cụ."
 
-#: class-ml-slider-lightbox.php:3299 class-ml-slider-lightbox.php:3312
-#: class-ml-slider-lightbox.php:3325 class-ml-slider-lightbox.php:3423
-#: class-ml-slider-lightbox.php:3299
-#: class-ml-slider-lightbox.php:3312
-#: class-ml-slider-lightbox.php:3325
-#: class-ml-slider-lightbox.php:3423
-msgid "Icon"
-msgstr "Biểu tượng"
-
-#: class-ml-slider-lightbox.php:3300 class-ml-slider-lightbox.php:3313
-#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:3424
-#: class-ml-slider-lightbox.php:3300
-#: class-ml-slider-lightbox.php:3313
-#: class-ml-slider-lightbox.php:3326
-#: class-ml-slider-lightbox.php:3424
+#: class-ml-slider-lightbox.php:3486 class-ml-slider-lightbox.php:3499
+#: class-ml-slider-lightbox.php:3512 class-ml-slider-lightbox.php:3610
 msgid "Icon Hover"
 msgstr "Biểu tượng khi di chuột qua"
 
-#: class-ml-slider-lightbox.php:3301 class-ml-slider-lightbox.php:3314
-#: class-ml-slider-lightbox.php:3327 class-ml-slider-lightbox.php:3408
-#: class-ml-slider-lightbox.php:3425
-#: class-ml-slider-lightbox.php:3301
-#: class-ml-slider-lightbox.php:3314
-#: class-ml-slider-lightbox.php:3327
-#: class-ml-slider-lightbox.php:3408
-#: class-ml-slider-lightbox.php:3425
+#: class-ml-slider-lightbox.php:3487 class-ml-slider-lightbox.php:3500
+#: class-ml-slider-lightbox.php:3513 class-ml-slider-lightbox.php:3594
+#: class-ml-slider-lightbox.php:3611
 msgid "Background"
 msgstr "Nền"
 
-#: class-ml-slider-lightbox.php:3302 class-ml-slider-lightbox.php:3315
-#: class-ml-slider-lightbox.php:3328 class-ml-slider-lightbox.php:3409
-#: class-ml-slider-lightbox.php:3426
-#: class-ml-slider-lightbox.php:3302
-#: class-ml-slider-lightbox.php:3315
-#: class-ml-slider-lightbox.php:3328
-#: class-ml-slider-lightbox.php:3409
-#: class-ml-slider-lightbox.php:3426
+#: class-ml-slider-lightbox.php:3488 class-ml-slider-lightbox.php:3501
+#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3595
+#: class-ml-slider-lightbox.php:3612
 msgid "Background Hover"
 msgstr "Nền khi di chuột qua"
 
-#: class-ml-slider-lightbox.php:3345
-#: class-ml-slider-lightbox.php:3345
+#: class-ml-slider-lightbox.php:3531
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "Đặt độ mờ của nền thư viện (0 = trong suốt, 1 = không trong suốt)."
 
-#: class-ml-slider-lightbox.php:3354
-#: class-ml-slider-lightbox.php:3354
+#: class-ml-slider-lightbox.php:3540
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "Màu của thanh tiến độ hiển thị trong các slideshow tự động phát."
 
-#: class-ml-slider-lightbox.php:3360
-#: class-ml-slider-lightbox.php:3360
+#: class-ml-slider-lightbox.php:3546
 msgid "Border"
 msgstr "Viền"
 
-#: class-ml-slider-lightbox.php:3361
-#: class-ml-slider-lightbox.php:3361
+#: class-ml-slider-lightbox.php:3547
 msgid "Border Active and Hover"
 msgstr "Viền Hoạt động và Di chuột"
 
-#: class-ml-slider-lightbox.php:3373
-#: class-ml-slider-lightbox.php:3373
+#: class-ml-slider-lightbox.php:3559
 msgid "Show navigation arrows in gallery"
 msgstr "Hiển thị các mũi tên điều hướng trong thư viện"
 
-#: class-ml-slider-lightbox.php:3374
-#: class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3560
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -1885,18 +1968,15 @@ msgstr ""
 "bàn phím (phím ← →, ESC để đóng). Điều này có sẵn cho các trình chiếu và bộ "
 "sưu tập hình ảnh."
 
-#: class-ml-slider-lightbox.php:3383
-#: class-ml-slider-lightbox.php:3383
+#: class-ml-slider-lightbox.php:3569
 msgid "Customize the gallery background and overlay appearance."
 msgstr "Tùy chỉnh nền thư viện và giao diện lớp phủ."
 
-#: class-ml-slider-lightbox.php:3388
-#: class-ml-slider-lightbox.php:3388
+#: class-ml-slider-lightbox.php:3574
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr "Tùy chỉnh biểu tượng điều hướng (đóng, trước, sau) cho thư viện."
 
-#: class-ml-slider-lightbox.php:3393
-#: class-ml-slider-lightbox.php:3393
+#: class-ml-slider-lightbox.php:3579
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -1904,18 +1984,15 @@ msgstr ""
 "Tùy chỉnh các nút \"Mở trong Thư viện\" có thể được thêm vào các slide, "
 "hình ảnh, thư viện và video."
 
-#: class-ml-slider-lightbox.php:3406
-#: class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3592
 msgid "Text"
 msgstr "Văn bản"
 
-#: class-ml-slider-lightbox.php:3407
-#: class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3593
 msgid "Text Hover"
 msgstr "Văn bản khi di chuột qua"
 
-#: class-ml-slider-lightbox.php:3432
-#: class-ml-slider-lightbox.php:3432
+#: class-ml-slider-lightbox.php:3618
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
@@ -1923,13 +2000,11 @@ msgstr ""
 "Cấu hình các tùy chọn điều hướng và điều khiển áp dụng cho tất cả các thư "
 "viện MetaSlider."
 
-#: class-ml-slider-lightbox.php:3442
-#: class-ml-slider-lightbox.php:3442
+#: class-ml-slider-lightbox.php:3628
 msgid "Show thumbnails"
 msgstr "Hiển thị hình thu nhỏ"
 
-#: class-ml-slider-lightbox.php:3443
-#: class-ml-slider-lightbox.php:3443
+#: class-ml-slider-lightbox.php:3629
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -1937,37 +2012,15 @@ msgstr ""
 "Hiển thị hình ảnh thu nhỏ ở dưới cùng của thư viện để dễ dàng điều hướng. "
 "Điều này có sẵn cho các slideshow và thư viện hình ảnh."
 
-#: class-ml-slider-lightbox.php:3455
-#: class-ml-slider-lightbox.php:3455
-msgid "Show \"Open in Gallery\" button"
-msgstr "Hiển thị nút \"Mở trong Thư viện\""
+#: class-ml-slider-lightbox.php:3642
+msgid "How visitors open images"
+msgstr "Cách mà khách truy cập mở hình ảnh"
 
-#: class-ml-slider-lightbox.php:3456
-#: class-ml-slider-lightbox.php:3456
-msgid ""
-"When enabled, shows a button to open the gallery. When disabled, clicking "
-"the slide, image, or video directly opens the gallery."
-msgstr ""
-"Khi được kích hoạt, hiển thị nút để mở thư viện. Khi không được kích hoạt, "
-"nhấp vào slide, hình ảnh hoặc video sẽ mở trực tiếp thư viện."
-
-#: class-ml-slider-lightbox.php:3473
-#: class-ml-slider-lightbox.php:3473
-msgid "Show an icon instead of button"
-msgstr "Hiển thị biểu tượng thay vì nút"
-
-#: class-ml-slider-lightbox.php:3474
-#: class-ml-slider-lightbox.php:3474
-msgid "When enabled, displays a small icon instead of the full button text."
-msgstr "Khi được kích hoạt, hiển thị một biểu tượng nhỏ thay vì toàn bộ văn bản nút."
-
-#: class-ml-slider-lightbox.php:3488
-#: class-ml-slider-lightbox.php:3488
+#: class-ml-slider-lightbox.php:3663
 msgid "Show captions"
 msgstr "Hiển thị chú thích"
 
-#: class-ml-slider-lightbox.php:3489
-#: class-ml-slider-lightbox.php:3489
+#: class-ml-slider-lightbox.php:3664
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -1975,20 +2028,17 @@ msgstr ""
 "Khi được kích hoạt, hiển thị chú thích trong cửa sổ thư viện. Điều này có "
 "sẵn cho các slideshow, hình ảnh và thư viện hình ảnh."
 
-#: class-ml-slider-lightbox.php:3496
-#: class-ml-slider-lightbox.php:3496
+#: class-ml-slider-lightbox.php:3671
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr "Các tính năng lightbox nâng cao có sẵn thông qua MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3498
-#: class-ml-slider-lightbox.php:3498
+#: class-ml-slider-lightbox.php:3673
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr ""
 "Nhận bản xem trước các tính năng nâng cao có sẵn trong MetaSlider Gallery "
 "Pro."
 
-#: class-ml-slider-lightbox.php:3501
-#: class-ml-slider-lightbox.php:3501
+#: class-ml-slider-lightbox.php:3676
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -1996,14 +2046,11 @@ msgstr ""
 "Các plugin LightGallery.js nâng cao này có sẵn trong phiên bản Pro với các "
 "tùy chọn tùy chỉnh bổ sung."
 
-#: class-ml-slider-lightbox.php:3529 class-ml-slider-lightbox.php:3530
-#: class-ml-slider-lightbox.php:3529
-#: class-ml-slider-lightbox.php:3530
+#: class-ml-slider-lightbox.php:3704 class-ml-slider-lightbox.php:3705
 msgid "specific Pages"
 msgstr "các trang cụ thể"
 
-#: class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3532
+#: class-ml-slider-lightbox.php:3707
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2011,9 +2058,7 @@ msgstr ""
 "Chọn các trang mà gallery nên bị vô hiệu hóa. Hiển thị tối đa 100 trang gần "
 "đây nhất. Gõ để tìm kiếm."
 
-#: class-ml-slider-lightbox.php:3532 class-ml-slider-lightbox.php:3533
-#: class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3533
+#: class-ml-slider-lightbox.php:3707 class-ml-slider-lightbox.php:3708
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2021,14 +2066,11 @@ msgstr ""
 "Chọn các trang mà gallery nên được bật. Hiển thị tối đa 100 trang gần đây "
 "nhất. Gõ để tìm kiếm."
 
-#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3578
-#: class-ml-slider-lightbox.php:3577
-#: class-ml-slider-lightbox.php:3578
+#: class-ml-slider-lightbox.php:3752 class-ml-slider-lightbox.php:3753
 msgid "specific Posts"
 msgstr "các bài viết cụ thể"
 
-#: class-ml-slider-lightbox.php:3580
-#: class-ml-slider-lightbox.php:3580
+#: class-ml-slider-lightbox.php:3755
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2036,9 +2078,7 @@ msgstr ""
 "Chọn các bài viết mà gallery nên bị vô hiệu hóa. Hiển thị tối đa 100 bài "
 "viết gần đây nhất. Gõ để tìm kiếm."
 
-#: class-ml-slider-lightbox.php:3580 class-ml-slider-lightbox.php:3581
-#: class-ml-slider-lightbox.php:3580
-#: class-ml-slider-lightbox.php:3581
+#: class-ml-slider-lightbox.php:3755 class-ml-slider-lightbox.php:3756
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2046,59 +2086,46 @@ msgstr ""
 "Chọn các bài viết mà gallery nên được bật. Hiển thị tối đa 100 bài viết gần "
 "đây nhất. Gõ để tìm kiếm."
 
-#: class-ml-slider-lightbox.php:3608
-#: class-ml-slider-lightbox.php:3608
+#: class-ml-slider-lightbox.php:3783
 msgid "include"
 msgstr "bao gồm"
 
-#: class-ml-slider-lightbox.php:3608
-#: class-ml-slider-lightbox.php:3608
+#: class-ml-slider-lightbox.php:3783
 msgid "exclude"
 msgstr "loại trừ"
 
-#: class-ml-slider-lightbox.php:3648
-#: class-ml-slider-lightbox.php:3648
+#: class-ml-slider-lightbox.php:3823
 #, php-format
 msgid "specific %s"
 msgstr "cụ thể %s"
 
-#: class-ml-slider-lightbox.php:3649
-#: class-ml-slider-lightbox.php:3649
+#: class-ml-slider-lightbox.php:3824
 #, php-format
 msgid "%s specific %s"
 msgstr "%s cụ thể %s"
 
-#: class-ml-slider-lightbox.php:3651 class-ml-slider-lightbox.php:3652
-#: class-ml-slider-lightbox.php:3651
-#: class-ml-slider-lightbox.php:3652
+#: class-ml-slider-lightbox.php:3826 class-ml-slider-lightbox.php:3827
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "Hiển thị tối đa 100 %s gần đây nhất. Gõ để tìm kiếm."
 
-#: class-ml-slider-lightbox.php:3700 class-ml-slider-lightbox.php:3701
-#: class-ml-slider-lightbox.php:3700
-#: class-ml-slider-lightbox.php:3701
+#: class-ml-slider-lightbox.php:3875 class-ml-slider-lightbox.php:3876
 msgid "specific post types"
 msgstr "các loại bài viết cụ thể"
 
-#: class-ml-slider-lightbox.php:3703
-#: class-ml-slider-lightbox.php:3703
+#: class-ml-slider-lightbox.php:3878
 msgid "Select post types where gallery should be disabled entirely."
 msgstr "Chọn các loại bài viết mà gallery nên bị vô hiệu hóa hoàn toàn."
 
-#: class-ml-slider-lightbox.php:3703 class-ml-slider-lightbox.php:3704
-#: class-ml-slider-lightbox.php:3703
-#: class-ml-slider-lightbox.php:3704
+#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:3879
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "Chọn các loại bài viết mà gallery nên được bật hoàn toàn."
 
-#: class-ml-slider-lightbox.php:3738
-#: class-ml-slider-lightbox.php:3738
+#: class-ml-slider-lightbox.php:3913
 msgid "Exclude by CSS selector"
 msgstr "Loại trừ bằng bộ chọn CSS"
 
-#: class-ml-slider-lightbox.php:3741
-#: class-ml-slider-lightbox.php:3741
+#: class-ml-slider-lightbox.php:3916
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2107,13 +2134,11 @@ msgstr ""
 "phần tử). Ví dụ:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar "
 ".widget-area"
 
-#: class-ml-slider-lightbox.php:3764
-#: class-ml-slider-lightbox.php:3764
+#: class-ml-slider-lightbox.php:3939
 msgid "Minimum Image Width"
 msgstr "Chiều rộng hình ảnh tối thiểu"
 
-#: class-ml-slider-lightbox.php:3767
-#: class-ml-slider-lightbox.php:3767
+#: class-ml-slider-lightbox.php:3942
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2123,13 +2148,11 @@ msgstr ""
 "Sử dụng chiều rộng hiển thị, không phải kích thước tệp hình ảnh thực tế. "
 "Điều này hữu ích để loại trừ các biểu tượng nhỏ, huy hiệu và nút."
 
-#: class-ml-slider-lightbox.php:3790
-#: class-ml-slider-lightbox.php:3790
+#: class-ml-slider-lightbox.php:3965
 msgid "Minimum Image Height"
 msgstr "Chiều cao hình ảnh tối thiểu"
 
-#: class-ml-slider-lightbox.php:3793
-#: class-ml-slider-lightbox.php:3793
+#: class-ml-slider-lightbox.php:3968
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2139,9 +2162,7 @@ msgstr ""
 "Sử dụng chiều cao hiển thị, không phải kích thước tệp hình ảnh thực tế. "
 "Điều này hữu ích để loại trừ các biểu tượng nhỏ, huy hiệu và nút."
 
-#: class-ml-slider-lightbox.php:3809 class-ml-slider-lightbox.php:3966
-#: class-ml-slider-lightbox.php:3809
-#: class-ml-slider-lightbox.php:3966
+#: class-ml-slider-lightbox.php:3984 class-ml-slider-lightbox.php:4141
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
@@ -2149,19 +2170,15 @@ msgstr ""
 "Xử lý phương tiện nâng cao và các tính năng phát video cho các phòng trưng "
 "bày chuyên nghiệp."
 
-#: class-ml-slider-lightbox.php:3816
-#: class-ml-slider-lightbox.php:3816
+#: class-ml-slider-lightbox.php:3991
 msgid "Advanced features for professional lightbox implementations."
 msgstr "Các tính năng nâng cao cho các triển khai Lightbox chuyên nghiệp."
 
-#: class-ml-slider-lightbox.php:3827 class-ml-slider-lightbox.php:4039
-#: class-ml-slider-lightbox.php:3827
-#: class-ml-slider-lightbox.php:4039
+#: class-ml-slider-lightbox.php:4002 class-ml-slider-lightbox.php:4214
 msgid "Enable Zoom"
 msgstr "Bật Zoom"
 
-#: class-ml-slider-lightbox.php:3828
-#: class-ml-slider-lightbox.php:3828
+#: class-ml-slider-lightbox.php:4003
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -2169,27 +2186,21 @@ msgstr ""
 "Nhấp đúp để phóng to, điều khiển phóng to, phóng to bằng cuộn chuột và tùy "
 "chọn phóng to vừa vặn."
 
-#: class-ml-slider-lightbox.php:3838 class-ml-slider-lightbox.php:4046
-#: class-ml-slider-lightbox.php:3838
-#: class-ml-slider-lightbox.php:4046
+#: class-ml-slider-lightbox.php:4013 class-ml-slider-lightbox.php:4221
 msgid "Enable Fullscreen"
 msgstr "Bật Toàn màn hình"
 
-#: class-ml-slider-lightbox.php:3839
-#: class-ml-slider-lightbox.php:3839
+#: class-ml-slider-lightbox.php:4014
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
 msgstr "Hỗ trợ toàn màn hình HTML5 gốc với các phím tắt (phím F) để xem sống động."
 
-#: class-ml-slider-lightbox.php:3849 class-ml-slider-lightbox.php:4053
-#: class-ml-slider-lightbox.php:3849
-#: class-ml-slider-lightbox.php:4053
+#: class-ml-slider-lightbox.php:4024 class-ml-slider-lightbox.php:4228
 msgid "Enable Rotate"
 msgstr "Bật Xoay"
 
-#: class-ml-slider-lightbox.php:3850
-#: class-ml-slider-lightbox.php:3850
+#: class-ml-slider-lightbox.php:4025
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2197,13 +2208,11 @@ msgstr ""
 "Xoay hình ảnh theo chiều kim đồng hồ/ ngược chiều kim đồng hồ, lật ngang/ "
 "dọc với các điều khiển trên thanh công cụ."
 
-#: class-ml-slider-lightbox.php:3860
-#: class-ml-slider-lightbox.php:3860
+#: class-ml-slider-lightbox.php:4035
 msgid "Enable Video"
 msgstr "Bật Video"
 
-#: class-ml-slider-lightbox.php:3861
-#: class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:4036
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2211,16 +2220,12 @@ msgstr ""
 "Hỗ trợ video nâng cao cho YouTube, Vimeo, video HTML5 với autoplay và các "
 "điều khiển chất lượng."
 
-#: class-ml-slider-lightbox.php:3871 class-ml-slider-lightbox.php:4088
-#: class-ml-slider-lightbox.php:4228
-#: class-ml-slider-lightbox.php:3871
-#: class-ml-slider-lightbox.php:4088
-#: class-ml-slider-lightbox.php:4228
+#: class-ml-slider-lightbox.php:4046 class-ml-slider-lightbox.php:4263
+#: class-ml-slider-lightbox.php:4410
 msgid "Enable Unique Image URLs"
 msgstr "Bật URL hình ảnh duy nhất"
 
-#: class-ml-slider-lightbox.php:3872
-#: class-ml-slider-lightbox.php:3872
+#: class-ml-slider-lightbox.php:4047
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -2228,25 +2233,19 @@ msgstr ""
 "URL duy nhất cho mỗi hình ảnh trong bộ sưu tập với hỗ trợ điều hướng quay "
 "lại/tiến tới của trình duyệt."
 
-#: class-ml-slider-lightbox.php:3882 class-ml-slider-lightbox.php:4095
-#: class-ml-slider-lightbox.php:3882
-#: class-ml-slider-lightbox.php:4095
+#: class-ml-slider-lightbox.php:4057 class-ml-slider-lightbox.php:4270
 msgid "Enable Autoplay"
 msgstr "Bật Autoplay"
 
-#: class-ml-slider-lightbox.php:3883
-#: class-ml-slider-lightbox.php:3883
+#: class-ml-slider-lightbox.php:4058
 msgid "Automatically advance through images in the gallery."
 msgstr "Tự động chuyển tiếp qua các hình ảnh trong gallery."
 
-#: class-ml-slider-lightbox.php:3893 class-ml-slider-lightbox.php:4067
-#: class-ml-slider-lightbox.php:3893
-#: class-ml-slider-lightbox.php:4067
+#: class-ml-slider-lightbox.php:4068 class-ml-slider-lightbox.php:4242
 msgid "Enable Share"
 msgstr "Bật Chia sẻ"
 
-#: class-ml-slider-lightbox.php:3894
-#: class-ml-slider-lightbox.php:3894
+#: class-ml-slider-lightbox.php:4069
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2254,22 +2253,17 @@ msgstr ""
 "Nút chia sẻ mạng xã hội cho Facebook, Twitter, Pinterest, và chia sẻ URL "
 "trực tiếp."
 
-#: class-ml-slider-lightbox.php:3904 class-ml-slider-lightbox.php:4074
-#: class-ml-slider-lightbox.php:3904
-#: class-ml-slider-lightbox.php:4074
+#: class-ml-slider-lightbox.php:4079 class-ml-slider-lightbox.php:4249
 msgid "Enable Pager"
 msgstr "Bật Trình phân trang"
 
-#: class-ml-slider-lightbox.php:3905
-#: class-ml-slider-lightbox.php:3905
+#: class-ml-slider-lightbox.php:4080
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr ""
 "Các chấm phân trang tối thiểu cho điều hướng sạch sẽ mà không có bản xem "
 "trước hình thu nhỏ."
 
-#: class-ml-slider-lightbox.php:3961 class-ml-slider-lightbox.php:4035
-#: class-ml-slider-lightbox.php:3961
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4136 class-ml-slider-lightbox.php:4210
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
@@ -2277,26 +2271,19 @@ msgstr ""
 "Các điều khiển phóng to và tương tác hình ảnh chuyên nghiệp cho trải nghiệm "
 "người dùng nâng cao."
 
-#: class-ml-slider-lightbox.php:3971 class-ml-slider-lightbox.php:4063
-#: class-ml-slider-lightbox.php:3971
-#: class-ml-slider-lightbox.php:4063
+#: class-ml-slider-lightbox.php:4146 class-ml-slider-lightbox.php:4238
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "Cải tiến chia sẻ xã hội và điều hướng để tăng cường sự tham gia."
 
-#: class-ml-slider-lightbox.php:3976 class-ml-slider-lightbox.php:4084
-#: class-ml-slider-lightbox.php:3976
-#: class-ml-slider-lightbox.php:4084
+#: class-ml-slider-lightbox.php:4151 class-ml-slider-lightbox.php:4259
 msgid "Advanced functionality including URL management and automation features."
 msgstr "Chức năng nâng cao bao gồm quản lý URL và các tính năng tự động hóa."
 
-#: class-ml-slider-lightbox.php:3988
-#: class-ml-slider-lightbox.php:3988
+#: class-ml-slider-lightbox.php:4163
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "Tính năng này có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4040 class-ml-slider-lightbox.php:4197
-#: class-ml-slider-lightbox.php:4040
-#: class-ml-slider-lightbox.php:4197
+#: class-ml-slider-lightbox.php:4215 class-ml-slider-lightbox.php:4379
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -2304,58 +2291,45 @@ msgstr ""
 "Cho phép người dùng phóng to và thu nhỏ bằng cách nhấp đúp, cuộn chuột và "
 "các điều khiển phóng to."
 
-#: class-ml-slider-lightbox.php:4042
-#: class-ml-slider-lightbox.php:4042
+#: class-ml-slider-lightbox.php:4217
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "Các điều khiển phóng to có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4047
-#: class-ml-slider-lightbox.php:4047
+#: class-ml-slider-lightbox.php:4222
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "Chế độ toàn màn hình HTML5 gốc cho trải nghiệm xem hình ảnh sống động."
 
-#: class-ml-slider-lightbox.php:4049
-#: class-ml-slider-lightbox.php:4049
+#: class-ml-slider-lightbox.php:4224
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "Chế độ toàn màn hình có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4054 class-ml-slider-lightbox.php:4213
-#: class-ml-slider-lightbox.php:4054
-#: class-ml-slider-lightbox.php:4213
+#: class-ml-slider-lightbox.php:4229 class-ml-slider-lightbox.php:4395
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr ""
 "Xoay hình ảnh theo chiều kim đồng hồ/ngược chiều kim đồng hồ và lật theo "
 "chiều ngang/dọc."
 
-#: class-ml-slider-lightbox.php:4056
-#: class-ml-slider-lightbox.php:4056
+#: class-ml-slider-lightbox.php:4231
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "Chức năng xoay hình ảnh có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4068
-#: class-ml-slider-lightbox.php:4068
+#: class-ml-slider-lightbox.php:4243
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "Chia sẻ mạng xã hội tích hợp sẵn cho Facebook, Twitter và Pinterest."
 
-#: class-ml-slider-lightbox.php:4070
-#: class-ml-slider-lightbox.php:4070
+#: class-ml-slider-lightbox.php:4245
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "Chia sẻ xã hội có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4075 class-ml-slider-lightbox.php:4245
-#: class-ml-slider-lightbox.php:4075
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4427
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "Điểm phân trang tối thiểu thay vì hình thu nhỏ để có giao diện sạch hơn."
 
-#: class-ml-slider-lightbox.php:4077
-#: class-ml-slider-lightbox.php:4077
+#: class-ml-slider-lightbox.php:4252
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "Phân trang Pager có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4229
-#: class-ml-slider-lightbox.php:4089
-#: class-ml-slider-lightbox.php:4229
+#: class-ml-slider-lightbox.php:4264 class-ml-slider-lightbox.php:4411
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
@@ -2363,96 +2337,83 @@ msgstr ""
 "Tạo URL duy nhất cho mỗi hình ảnh trong thư viện với điều hướng quay "
 "lại/tới trong trình duyệt."
 
-#: class-ml-slider-lightbox.php:4091
-#: class-ml-slider-lightbox.php:4091
+#: class-ml-slider-lightbox.php:4266
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "URL hình ảnh duy nhất có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4096 class-ml-slider-lightbox.php:4237
-#: class-ml-slider-lightbox.php:4096
-#: class-ml-slider-lightbox.php:4237
+#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4419
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "Trình chiếu tự động với điều khiển thời gian và thanh tiến trình."
 
-#: class-ml-slider-lightbox.php:4098
-#: class-ml-slider-lightbox.php:4098
+#: class-ml-slider-lightbox.php:4273
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "Phát tự động có sẵn trong MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4115
-#: class-ml-slider-lightbox.php:4115
+#: class-ml-slider-lightbox.php:4277
+msgid "Enable Image Protection"
+msgstr "Bật bảo vệ hình ảnh"
+
+#: class-ml-slider-lightbox.php:4280
+msgid "Image protection is available in MetaSlider Gallery Pro"
+msgstr "Bảo vệ hình ảnh có sẵn trong MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4297
 msgid "Features"
 msgstr "Các tính năng"
 
-#: class-ml-slider-lightbox.php:4116
-#: class-ml-slider-lightbox.php:4116
+#: class-ml-slider-lightbox.php:4298
 msgid "Free"
 msgstr "Miễn phí"
 
-#: class-ml-slider-lightbox.php:4117
-#: class-ml-slider-lightbox.php:4117, fuzzy
+#: class-ml-slider-lightbox.php:4299, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4123 class-ml-slider-lightbox.php:4262
-#: class-ml-slider-lightbox.php:4123
-#: class-ml-slider-lightbox.php:4262
+#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4444
 msgid "Installed"
 msgstr "Đã cài đặt"
 
-#: class-ml-slider-lightbox.php:4126 class-ml-slider-lightbox.php:4265
-#: class-ml-slider-lightbox.php:4126
-#: class-ml-slider-lightbox.php:4265
+#: class-ml-slider-lightbox.php:4308 class-ml-slider-lightbox.php:4447
 msgid "Upgrade now"
 msgstr "Nâng cấp ngay"
 
-#: class-ml-slider-lightbox.php:4132
-#: class-ml-slider-lightbox.php:4132
+#: class-ml-slider-lightbox.php:4314
 msgid "Automatic lightbox for images"
 msgstr "Lightbox tự động cho hình ảnh"
 
-#: class-ml-slider-lightbox.php:4133
-#: class-ml-slider-lightbox.php:4133
+#: class-ml-slider-lightbox.php:4315
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "Tự động kích hoạt lightbox cho tất cả hình ảnh trên trang của bạn."
 
-#: class-ml-slider-lightbox.php:4140
-#: class-ml-slider-lightbox.php:4140
+#: class-ml-slider-lightbox.php:4322
 msgid "MetaSlider integration"
 msgstr "Tích hợp MetaSlider"
 
-#: class-ml-slider-lightbox.php:4141
-#: class-ml-slider-lightbox.php:4141
+#: class-ml-slider-lightbox.php:4323
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "Tích hợp liền mạch với các trình chiếu MetaSlider."
 
-#: class-ml-slider-lightbox.php:4148
-#: class-ml-slider-lightbox.php:4148
+#: class-ml-slider-lightbox.php:4330
 msgid "WordPress gallery support"
 msgstr "Hỗ trợ thư viện WordPress"
 
-#: class-ml-slider-lightbox.php:4149
-#: class-ml-slider-lightbox.php:4149
+#: class-ml-slider-lightbox.php:4331
 msgid "Support for WordPress native galleries and blocks."
 msgstr "Hỗ trợ cho các thư viện và khối gốc của WordPress."
 
-#: class-ml-slider-lightbox.php:4156
-#: class-ml-slider-lightbox.php:4156
+#: class-ml-slider-lightbox.php:4338
 msgid "Appearance customization"
 msgstr "Tùy chỉnh giao diện"
 
-#: class-ml-slider-lightbox.php:4157
-#: class-ml-slider-lightbox.php:4157
+#: class-ml-slider-lightbox.php:4339
 msgid "Customize colors, opacity, and button styles."
 msgstr "Tùy chỉnh màu sắc, độ mờ và kiểu nút."
 
-#: class-ml-slider-lightbox.php:4164
-#: class-ml-slider-lightbox.php:4164
+#: class-ml-slider-lightbox.php:4346
 msgid "Gallery builder &amp; layouts"
 msgstr "Trình tạo gallery &amp; bố cục"
 
-#: class-ml-slider-lightbox.php:4165
-#: class-ml-slider-lightbox.php:4165
+#: class-ml-slider-lightbox.php:4347
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
@@ -2460,104 +2421,85 @@ msgstr ""
 "Xây dựng các gallery với bố cục Lưới, Masonry, Căn chỉnh, Băng chuyền và "
 "Trưng bày."
 
-#: class-ml-slider-lightbox.php:4172
-#: class-ml-slider-lightbox.php:4172
+#: class-ml-slider-lightbox.php:4354
 msgid "Responsive columns"
 msgstr "Cột đáp ứng"
 
-#: class-ml-slider-lightbox.php:4173
-#: class-ml-slider-lightbox.php:4173
+#: class-ml-slider-lightbox.php:4355
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr ""
 "Đặt số lượng cột cho máy tính để bàn và di động, với khoảng cách có thể "
 "điều chỉnh."
 
-#: class-ml-slider-lightbox.php:4180
-#: class-ml-slider-lightbox.php:4180
+#: class-ml-slider-lightbox.php:4362
 msgid "Image captions"
 msgstr "Chú thích hình ảnh"
 
-#: class-ml-slider-lightbox.php:4181
-#: class-ml-slider-lightbox.php:4181
+#: class-ml-slider-lightbox.php:4363
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "Hiển thị chú thích hình ảnh trong lưới gallery và cửa sổ gallery."
 
-#: class-ml-slider-lightbox.php:4188
-#: class-ml-slider-lightbox.php:4188
+#: class-ml-slider-lightbox.php:4370
 msgid "Thumbnail navigation"
 msgstr "Điều hướng hình thu nhỏ"
 
-#: class-ml-slider-lightbox.php:4189
-#: class-ml-slider-lightbox.php:4189
+#: class-ml-slider-lightbox.php:4371
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "Hiển thị một dải hình thu nhỏ để điều hướng nhanh giữa các hình ảnh."
 
-#: class-ml-slider-lightbox.php:4196
-#: class-ml-slider-lightbox.php:4196
+#: class-ml-slider-lightbox.php:4378
 msgid "Zoom controls"
 msgstr "Điều khiển Zoom"
 
-#: class-ml-slider-lightbox.php:4204
-#: class-ml-slider-lightbox.php:4204
+#: class-ml-slider-lightbox.php:4386
 msgid "Fullscreen mode"
 msgstr "Chế độ toàn màn hình"
 
-#: class-ml-slider-lightbox.php:4205
-#: class-ml-slider-lightbox.php:4205
+#: class-ml-slider-lightbox.php:4387
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "Toàn màn hình HTML5 gốc cho việc xem hình ảnh sống động."
 
-#: class-ml-slider-lightbox.php:4212
-#: class-ml-slider-lightbox.php:4212
+#: class-ml-slider-lightbox.php:4394
 msgid "Rotate and flip images"
 msgstr "Xoay và lật hình ảnh"
 
-#: class-ml-slider-lightbox.php:4220
-#: class-ml-slider-lightbox.php:4220
+#: class-ml-slider-lightbox.php:4402
 msgid "Social media sharing"
 msgstr "Chia sẻ trên mạng xã hội"
 
-#: class-ml-slider-lightbox.php:4221
-#: class-ml-slider-lightbox.php:4221
+#: class-ml-slider-lightbox.php:4403
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "Chia sẻ tích hợp cho Facebook, Twitter và Pinterest."
 
-#: class-ml-slider-lightbox.php:4236
-#: class-ml-slider-lightbox.php:4236
+#: class-ml-slider-lightbox.php:4418
 msgid "Autoplay slideshow"
 msgstr "Trình chiếu tự động"
 
-#: class-ml-slider-lightbox.php:4244
-#: class-ml-slider-lightbox.php:4244
+#: class-ml-slider-lightbox.php:4426
 msgid "Pager navigation"
 msgstr "Điều hướng trang"
 
-#: class-ml-slider-lightbox.php:4252
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4434
 msgid "Premium support"
 msgstr "Hỗ trợ cao cấp"
 
-#: class-ml-slider-lightbox.php:4253
-#: class-ml-slider-lightbox.php:4253
+#: class-ml-slider-lightbox.php:4435
 msgid "Have your specific queries addressed directly by our experts."
 msgstr ""
 "Để các câu hỏi cụ thể của bạn được giải đáp trực tiếp bởi các chuyên gia "
 "của chúng tôi."
 
-#: class-ml-slider-lightbox.php:6040
-#: class-ml-slider-lightbox.php:6040
+#: class-ml-slider-lightbox.php:6222
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr ""
 "Cấu hình cách mà lightbox tương tác với các tính năng tích hợp của "
 "WordPress."
 
-#: class-ml-slider-lightbox.php:6055
-#: class-ml-slider-lightbox.php:6055
+#: class-ml-slider-lightbox.php:6237
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "Ghi đè cài đặt \"Phóng to khi nhấp\" của WordPress"
 
-#: class-ml-slider-lightbox.php:6056
-#: class-ml-slider-lightbox.php:6056
+#: class-ml-slider-lightbox.php:6238
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2568,13 +2510,11 @@ msgstr ""
 "nhấp\". Khi tắt, sẽ tôn trọng cài đặt của WordPress và bỏ qua các hình ảnh "
 "được đặt là \"Phóng to khi nhấp\"."
 
-#: class-ml-slider-lightbox.php:6072
-#: class-ml-slider-lightbox.php:6072
+#: class-ml-slider-lightbox.php:6254
 msgid "Override \"Link to Image File\" Setting"
 msgstr "Ghi đè cài đặt \"Liên kết đến tệp hình ảnh\""
 
-#: class-ml-slider-lightbox.php:6073
-#: class-ml-slider-lightbox.php:6073
+#: class-ml-slider-lightbox.php:6255
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2585,13 +2525,11 @@ msgstr ""
 "\"Liên kết đến Tệp Hình ảnh\" trong trình chỉnh sửa khối). Khi tắt, sẽ tôn "
 "trọng hành vi liên kết gốc."
 
-#: class-ml-slider-lightbox.php:6104
-#: class-ml-slider-lightbox.php:6104
+#: class-ml-slider-lightbox.php:6286
 msgid "Exclude Post Types from Manual Processing"
 msgstr "Loại bài đăng loại trừ khỏi xử lý thủ công"
 
-#: class-ml-slider-lightbox.php:6107
-#: class-ml-slider-lightbox.php:6107
+#: class-ml-slider-lightbox.php:6289
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2601,13 +2539,11 @@ msgstr ""
 "chọn \"Sản phẩm (product)\" để vô hiệu hóa thư viện trên các trang sản phẩm "
 "WooCommerce trong khi vẫn giữ cho nó hoạt động ở các nơi khác."
 
-#: class-ml-slider-lightbox.php:6131
-#: class-ml-slider-lightbox.php:6131
+#: class-ml-slider-lightbox.php:6313
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "Cách sử dụng: \"Phóng to khi nhấp\" của WordPress"
 
-#: class-ml-slider-lightbox.php:6133
-#: class-ml-slider-lightbox.php:6133
+#: class-ml-slider-lightbox.php:6315
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2615,72 +2551,57 @@ msgstr ""
 "WordPress có tính năng tích hợp \"Phóng to khi nhấp\" cho hình ảnh. Dưới "
 "đây là cách để kích hoạt nó:"
 
-#: class-ml-slider-lightbox.php:6135 class-ml-slider-lightbox.php:6148
-#: class-ml-slider-lightbox.php:6135
-#: class-ml-slider-lightbox.php:6148
+#: class-ml-slider-lightbox.php:6317 class-ml-slider-lightbox.php:6330
 msgid "Select an image in the block editor."
 msgstr "Chọn một hình ảnh trong trình chỉnh sửa khối."
 
-#: class-ml-slider-lightbox.php:6136 class-ml-slider-lightbox.php:6149
-#: class-ml-slider-lightbox.php:6136
-#: class-ml-slider-lightbox.php:6149
+#: class-ml-slider-lightbox.php:6318 class-ml-slider-lightbox.php:6331
 msgid "In the block toolbar, click on the Link icon."
 msgstr "Trong thanh công cụ khối, nhấp vào biểu tượng Liên kết."
 
-#: class-ml-slider-lightbox.php:6137
-#: class-ml-slider-lightbox.php:6137
+#: class-ml-slider-lightbox.php:6319
 msgid "Select \"Enlarge on click\"."
 msgstr "Chọn \"Phóng to khi nhấp\"."
 
-#: class-ml-slider-lightbox.php:6143
-#: class-ml-slider-lightbox.php:6143
+#: class-ml-slider-lightbox.php:6325
 msgid "How to use: \"Link to Image File\""
 msgstr "Cách sử dụng: \"Liên kết đến Tệp Hình ảnh\""
 
-#: class-ml-slider-lightbox.php:6145
-#: class-ml-slider-lightbox.php:6145
+#: class-ml-slider-lightbox.php:6327
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr ""
 "Bạn có thể liên kết hình ảnh trực tiếp đến tệp phương tiện kích thước đầy "
 "đủ của chúng. Dưới đây là cách thực hiện:"
 
-#: class-ml-slider-lightbox.php:6146
-#: class-ml-slider-lightbox.php:6146
+#: class-ml-slider-lightbox.php:6328
 msgid "For the Block Editor:"
 msgstr "Đối với Trình chỉnh sửa Khối:"
 
-#: class-ml-slider-lightbox.php:6150
-#: class-ml-slider-lightbox.php:6150
+#: class-ml-slider-lightbox.php:6332
 msgid "Choose \"Link to image file\"."
 msgstr "Chọn \"Liên kết đến tệp hình ảnh\"."
 
-#: class-ml-slider-lightbox.php:6152
-#: class-ml-slider-lightbox.php:6152
+#: class-ml-slider-lightbox.php:6334
 msgid "For the Classic Editor:"
 msgstr "Đối với Trình chỉnh sửa Cổ điển:"
 
-#: class-ml-slider-lightbox.php:6154
-#: class-ml-slider-lightbox.php:6154
+#: class-ml-slider-lightbox.php:6336
 msgid "Select an image."
 msgstr "Chọn một hình ảnh."
 
-#: class-ml-slider-lightbox.php:6155
-#: class-ml-slider-lightbox.php:6155
+#: class-ml-slider-lightbox.php:6337
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "Trong thanh công cụ hình ảnh, nhấp vào biểu tượng Chỉnh sửa."
 
-#: class-ml-slider-lightbox.php:6156
-#: class-ml-slider-lightbox.php:6156
+#: class-ml-slider-lightbox.php:6338
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "Chọn \"Tệp phương tiện\" trong danh sách xổ xuống \"Liên kết đến\"."
 
-#: class-ml-slider-lightbox.php:6162
-#: class-ml-slider-lightbox.php:6162
+#: class-ml-slider-lightbox.php:6344
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "Cách sử dụng: Phương pháp lớp CSS (Nâng cao)"
 
-#: class-ml-slider-lightbox.php:6164
-#: class-ml-slider-lightbox.php:6164
+#: class-ml-slider-lightbox.php:6346
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2688,38 +2609,31 @@ msgstr ""
 "Dành cho các nhà phát triển: Thêm lớp <code>ml-lightbox-enabled</code> để "
 "kích hoạt Thư viện MetaSlider trên bất kỳ phần tử nào chứa hình ảnh."
 
-#: class-ml-slider-lightbox.php:6165
-#: class-ml-slider-lightbox.php:6165
+#: class-ml-slider-lightbox.php:6347
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "Phương pháp 1: Lớp CSS bổ sung cho Trình chỉnh sửa Khối"
 
-#: class-ml-slider-lightbox.php:6167
-#: class-ml-slider-lightbox.php:6167
+#: class-ml-slider-lightbox.php:6349
 msgid "Select an image or gallery block."
 msgstr "Chọn một hình ảnh hoặc khối thư viện hình ảnh."
 
-#: class-ml-slider-lightbox.php:6168
-#: class-ml-slider-lightbox.php:6168
+#: class-ml-slider-lightbox.php:6350
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "Trong thanh bên cài đặt khối, cuộn xuống \"Nâng cao\"."
 
-#: class-ml-slider-lightbox.php:6169
-#: class-ml-slider-lightbox.php:6169
+#: class-ml-slider-lightbox.php:6351
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "Thêm <code>ml-lightbox-enabled</code> vào \"Lớp CSS bổ sung\"."
 
-#: class-ml-slider-lightbox.php:6171
-#: class-ml-slider-lightbox.php:6171
+#: class-ml-slider-lightbox.php:6353
 msgid "Method 2: HTML/Code"
 msgstr "Phương pháp 2: HTML/Mã"
 
-#: class-ml-slider-lightbox.php:6172
-#: class-ml-slider-lightbox.php:6172
+#: class-ml-slider-lightbox.php:6354
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "Đối với các nhà phát triển HTML hoặc chủ đề tùy chỉnh, thêm lớp trực tiếp:"
 
-#: class-ml-slider-lightbox.php:1131
-#: class-ml-slider-lightbox.php:1131
+#: class-ml-slider-lightbox.php:1258
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"
