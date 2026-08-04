@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-07-28 17:01+0000\n"
+"PO-Revision-Date: 2026-08-04 11:58+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -82,9 +82,9 @@ msgstr "Ang hinihinging data ay hindi umiiral."
 msgid "The attempt to update the option failed."
 msgstr "Nabigo ang pagtatangkang i-update ang pagpipilian."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1240
-#: class-ml-gallery.php:3302 class-ml-slider-lightbox.php:2121
-#: class-ml-slider-lightbox.php:2264
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1247
+#: class-ml-gallery.php:3374 class-ml-slider-lightbox.php:2142
+#: class-ml-slider-lightbox.php:2285
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
@@ -92,13 +92,13 @@ msgstr "MetaSlider Gallery"
 msgid "Dismiss"
 msgstr "Isara"
 
-#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1182
-#: class-ml-slider-lightbox.php:2301 class-ml-slider-lightbox.php:2316
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1189
+#: class-ml-slider-lightbox.php:2322 class-ml-slider-lightbox.php:2337
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Wala kang sapat na pahintulot upang ma-access ang pahinang ito."
 
-#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2238
-#: class-ml-gallery.php:2398
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2283
+#: class-ml-gallery.php:2447
 msgid "Security check failed."
 msgstr "Nabigo ang pagsusuri sa seguridad."
 
@@ -122,200 +122,200 @@ msgstr "Walang Pamagat na Slideshow"
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "Ilan sa mga tampok na ito ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:219 class-ml-gallery.php:228 class-ml-gallery.php:609, fuzzy
+#: class-ml-gallery.php:222 class-ml-gallery.php:231 class-ml-gallery.php:615, fuzzy
 msgid "Fade"
 msgstr "Fade"
 
-#: class-ml-gallery.php:220, fuzzy
+#: class-ml-gallery.php:223, fuzzy
 msgid "Slide"
 msgstr "Slide"
 
-#: class-ml-gallery.php:221 class-ml-gallery.php:1831, fuzzy
+#: class-ml-gallery.php:224 class-ml-gallery.php:1838, fuzzy
 msgid "Zoom"
 msgstr "Zoom"
 
-#: class-ml-gallery.php:227 class-ml-gallery.php:601 class-ml-gallery.php:2074
-#: class-ml-gallery.php:2100 class-ml-gallery.php:2114
+#: class-ml-gallery.php:230 class-ml-gallery.php:607 class-ml-gallery.php:2119
+#: class-ml-gallery.php:2145 class-ml-gallery.php:2159
 msgid "None"
 msgstr "Wala"
 
-#: class-ml-gallery.php:229, fuzzy
+#: class-ml-gallery.php:232, fuzzy
 msgid "Slide Up"
 msgstr "Slide Up"
 
-#: class-ml-gallery.php:230
+#: class-ml-gallery.php:233
 msgid "Slide Down"
 msgstr "I-slide Down"
 
-#: class-ml-gallery.php:244
+#: class-ml-gallery.php:247
 msgid "Hidden"
 msgstr "Nakatago"
 
-#: class-ml-gallery.php:245
+#: class-ml-gallery.php:248
 msgid "Gallery + Window"
 msgstr "Gallery + Bintana"
 
-#: class-ml-gallery.php:246
+#: class-ml-gallery.php:249
 msgid "Window Only"
 msgstr "Bintana Lamang"
 
-#: class-ml-gallery.php:247
+#: class-ml-gallery.php:250
 msgid "Gallery Only"
 msgstr "Gallery Lamang"
 
-#: class-ml-gallery.php:266 class-ml-gallery.php:2808
+#: class-ml-gallery.php:269 class-ml-gallery.php:2857
 msgid "Manual entry"
 msgstr "Manwal na pagpasok"
 
-#: class-ml-gallery.php:267 class-ml-gallery.php:2809
+#: class-ml-gallery.php:270 class-ml-gallery.php:2858
 msgid "Media caption"
 msgstr "Caption ng media"
 
-#: class-ml-gallery.php:268 class-ml-gallery.php:2810
+#: class-ml-gallery.php:271 class-ml-gallery.php:2859
 msgid "Media description"
 msgstr "Paglalarawan ng media"
 
-#: class-ml-gallery.php:602, fuzzy
+#: class-ml-gallery.php:608, fuzzy
 msgid "Noir (B&W)"
 msgstr "Noir (B&W)"
 
-#: class-ml-gallery.php:603
+#: class-ml-gallery.php:609
 msgid "Silver (B&W)"
 msgstr "Pilak (B&W)"
 
-#: class-ml-gallery.php:604, fuzzy
+#: class-ml-gallery.php:610, fuzzy
 msgid "Vintage"
 msgstr "Vintage"
 
-#: class-ml-gallery.php:605
+#: class-ml-gallery.php:611
 msgid "Golden Hour"
 msgstr "Gintong Oras"
 
-#: class-ml-gallery.php:606, fuzzy
+#: class-ml-gallery.php:612, fuzzy
 msgid "Toaster"
 msgstr "Toaster"
 
-#: class-ml-gallery.php:607
+#: class-ml-gallery.php:613
 msgid "Warm"
 msgstr "Mainit"
 
-#: class-ml-gallery.php:608
+#: class-ml-gallery.php:614
 msgid "Cool"
 msgstr "Malinaw"
 
-#: class-ml-gallery.php:610, fuzzy
+#: class-ml-gallery.php:616, fuzzy
 msgid "Matte"
 msgstr "Matte"
 
-#: class-ml-gallery.php:611, fuzzy
+#: class-ml-gallery.php:617, fuzzy
 msgid "Pastel"
 msgstr "Pastel"
 
-#: class-ml-gallery.php:612
+#: class-ml-gallery.php:618
 msgid "Vivid"
 msgstr "Makulay"
 
-#: class-ml-gallery.php:613
+#: class-ml-gallery.php:619
 msgid "Crisp"
 msgstr "Malinaw"
 
-#: class-ml-gallery.php:614
+#: class-ml-gallery.php:620
 msgid "Dramatic"
 msgstr "Dramatik"
 
-#: class-ml-gallery.php:615, fuzzy
+#: class-ml-gallery.php:621, fuzzy
 msgid "Negative"
 msgstr "Negative"
 
-#: class-ml-gallery.php:727 class-ml-gallery.php:736 class-ml-gallery.php:1250
+#: class-ml-gallery.php:734 class-ml-gallery.php:743 class-ml-gallery.php:1257
 msgid "Galleries"
 msgstr "Mga Gallery"
 
-#: class-ml-gallery.php:728 class-ml-gallery.php:877 class-ml-gallery.php:1581
-#: class-ml-slider-lightbox.php:2260, fuzzy
+#: class-ml-gallery.php:735 class-ml-gallery.php:884 class-ml-gallery.php:1588
+#: class-ml-slider-lightbox.php:2281, fuzzy
 msgid "Gallery"
 msgstr "Gallery"
 
-#: class-ml-gallery.php:729 class-ml-gallery.php:730 class-ml-gallery.php:1215
-#: class-ml-gallery.php:3296
+#: class-ml-gallery.php:736 class-ml-gallery.php:737 class-ml-gallery.php:1222
+#: class-ml-gallery.php:3368
 msgid "Add New Gallery"
 msgstr "Magdagdag ng Bagong Gallery"
 
-#: class-ml-gallery.php:731 class-ml-gallery.php:1130 class-ml-gallery.php:1131
-#: class-ml-gallery.php:1216
+#: class-ml-gallery.php:738 class-ml-gallery.php:1137 class-ml-gallery.php:1138
+#: class-ml-gallery.php:1223
 msgid "Edit Gallery"
 msgstr "I-edit ang Gallery"
 
-#: class-ml-gallery.php:732 class-ml-gallery.php:1193 class-ml-gallery.php:2447
+#: class-ml-gallery.php:739 class-ml-gallery.php:1200 class-ml-gallery.php:2496
 msgid "New Gallery"
 msgstr "Bagong Gallery"
 
-#: class-ml-gallery.php:733
+#: class-ml-gallery.php:740
 msgid "Search Galleries"
 msgstr "Maghanap ng Mga Gallery"
 
-#: class-ml-gallery.php:734
+#: class-ml-gallery.php:741
 msgid "No galleries found."
 msgstr "Walang natagpuang mga gallery."
 
-#: class-ml-gallery.php:735
+#: class-ml-gallery.php:742
 msgid "No galleries found in trash."
 msgstr "Walang natagpuang mga gallery sa basurahan."
 
-#: class-ml-gallery.php:884
+#: class-ml-gallery.php:891
 msgid "All Galleries"
 msgstr "Lahat ng Mga Gallery"
 
-#: class-ml-gallery.php:891
+#: class-ml-gallery.php:898
 msgid "Create Gallery"
 msgstr "Lumikha ng Gallery"
 
-#: class-ml-gallery.php:901
+#: class-ml-gallery.php:908
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "I-edit &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:919
+#: class-ml-gallery.php:926
 msgid "Invalid gallery ID."
 msgstr "Hindi wastong gallery ID."
 
-#: class-ml-gallery.php:1023 class-ml-slider-lightbox.php:1634
+#: class-ml-gallery.php:1030 class-ml-slider-lightbox.php:1655
 msgid "View image"
 msgstr "Tumingin ng larawan"
 
-#: class-ml-gallery.php:1190 class-ml-gallery.php:2403
+#: class-ml-gallery.php:1197 class-ml-gallery.php:2452
 msgid "Gallery not found."
 msgstr "Hindi natagpuan ang gallery."
 
-#: class-ml-gallery.php:1218
+#: class-ml-gallery.php:1225
 msgid "Save Gallery"
 msgstr "I-save ang Gallery"
 
-#: class-ml-gallery.php:1219
+#: class-ml-gallery.php:1226
 msgid "Update Gallery"
 msgstr "I-update ang Gallery"
 
-#: class-ml-gallery.php:1234 class-ml-gallery.php:1246
+#: class-ml-gallery.php:1241 class-ml-gallery.php:1253
 msgid "Back to Galleries"
 msgstr "Bumalik sa Galleries"
 
-#: class-ml-gallery.php:1257
+#: class-ml-gallery.php:1264
 msgid "Create New Gallery"
 msgstr "Lumikha ng Bagong Gallery"
 
-#: class-ml-gallery.php:1261
+#: class-ml-gallery.php:1268
 msgid "New"
 msgstr "Bago"
 
-#: class-ml-gallery.php:1272
+#: class-ml-gallery.php:1279
 msgid "Duplicate"
 msgstr "Kopyahin"
 
-#: class-ml-gallery.php:1292
+#: class-ml-gallery.php:1299
 msgid "Gallery saved."
 msgstr "Naisave ang gallery."
 
-#: class-ml-gallery.php:1303
+#: class-ml-gallery.php:1310
 #, php-format
 msgid ""
 "Gallery created from the slideshow \"%s\". Review the settings below, then "
@@ -324,236 +324,236 @@ msgstr ""
 "Gallery na nilikha mula sa slideshow na \"%s\". Suriin ang mga setting sa "
 "ibaba, pagkatapos ay i-save."
 
-#: class-ml-gallery.php:1307
+#: class-ml-gallery.php:1314
 msgid "Gallery created from your slideshow. Review the settings below, then save."
 msgstr ""
 "Gallery na nilikha mula sa iyong slideshow. Suriin ang mga setting sa "
 "ibaba, pagkatapos ay i-save."
 
-#: class-ml-gallery.php:1321
+#: class-ml-gallery.php:1328
 msgid "Enter gallery title"
 msgstr "Ilagay ang pamagat ng gallery"
 
-#: class-ml-gallery.php:1324 class-ml-gallery.php:3748
+#: class-ml-gallery.php:1331 class-ml-gallery.php:3820
 msgid "Images"
 msgstr "Mga Larawan"
 
-#: class-ml-gallery.php:1334
+#: class-ml-gallery.php:1341
 msgid "Preview or arrange images"
 msgstr "I-preview o ayusin ang mga larawan"
 
-#: class-ml-gallery.php:1337 class-ml-gallery.php:3661
+#: class-ml-gallery.php:1344 class-ml-gallery.php:3733
 msgid "Preview"
 msgstr "I-preview"
 
-#: class-ml-gallery.php:1341
+#: class-ml-gallery.php:1348
 msgid "Arrange"
 msgstr "Ayusin"
 
-#: class-ml-gallery.php:1344
+#: class-ml-gallery.php:1351
 msgid "Preview at desktop or mobile width"
 msgstr "I-preview sa desktop o mobile na lapad"
 
-#: class-ml-gallery.php:1345
+#: class-ml-gallery.php:1352
 msgid "Desktop width"
 msgstr "Lapad ng desktop"
 
-#: class-ml-gallery.php:1348
+#: class-ml-gallery.php:1355
 msgid "Mobile width"
 msgstr "Lapad ng mobile"
 
-#: class-ml-gallery.php:1355
+#: class-ml-gallery.php:1362
 msgid "No images added yet"
 msgstr "Walang mga larawang idinagdag pa"
 
-#: class-ml-gallery.php:1378 class-ml-gallery.php:2802
+#: class-ml-gallery.php:1385 class-ml-gallery.php:2851
 msgid "Remove image"
 msgstr "Alisin ang larawan"
 
-#: class-ml-gallery.php:1383 class-ml-gallery.php:2803
+#: class-ml-gallery.php:1390 class-ml-gallery.php:2852
 msgid "Edit caption"
 msgstr "I-edit ang caption"
 
-#: class-ml-gallery.php:1383 class-ml-gallery.php:1385
-#: class-ml-gallery.php:2804
+#: class-ml-gallery.php:1390 class-ml-gallery.php:1392
+#: class-ml-gallery.php:2853
 msgid "Add caption"
 msgstr "Magdagdag ng caption"
 
-#: class-ml-gallery.php:1395
+#: class-ml-gallery.php:1402
 msgid "Gallery preview"
 msgstr "Preview ng gallery"
 
-#: class-ml-gallery.php:1401
+#: class-ml-gallery.php:1408
 msgid "Add Images"
 msgstr "Magdagdag ng Mga Larawan"
 
-#: class-ml-gallery.php:1405
+#: class-ml-gallery.php:1412
 msgid "More ways to add images"
 msgstr "Mas maraming paraan upang magdagdag ng mga larawan"
 
-#: class-ml-gallery.php:1411
+#: class-ml-gallery.php:1418
 msgid "Upload"
 msgstr "I-upload"
 
-#: class-ml-gallery.php:1416
+#: class-ml-gallery.php:1423
 msgid "Media Library"
 msgstr "Aklatan ng Media"
 
-#: class-ml-gallery.php:1421
+#: class-ml-gallery.php:1428
 msgid "Server Folder"
 msgstr "Folder ng Server"
 
-#: class-ml-gallery.php:1426, fuzzy
+#: class-ml-gallery.php:1433, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1432
+#: class-ml-gallery.php:1439
 msgid "Where to add new images"
 msgstr "Saan ilalagay ang mga bagong larawan"
 
-#: class-ml-gallery.php:1433
+#: class-ml-gallery.php:1440
 msgid "Add new images at:"
 msgstr "Magdagdag ng mga bagong larawan sa:"
 
-#: class-ml-gallery.php:1437
+#: class-ml-gallery.php:1444
 msgid "Start"
 msgstr "Simula"
 
-#: class-ml-gallery.php:1442
+#: class-ml-gallery.php:1449
 msgid "End"
 msgstr "Wakas"
 
-#: class-ml-gallery.php:1451, fuzzy
+#: class-ml-gallery.php:1458, fuzzy
 msgid "Layout"
 msgstr "Layout"
 
-#: class-ml-gallery.php:1454, fuzzy
+#: class-ml-gallery.php:1461, fuzzy
 msgid "Gallery layout"
 msgstr "Gallery layout"
 
-#: class-ml-gallery.php:1456
+#: class-ml-gallery.php:1463
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "Mga imaheng pantay na laki na nakahanay sa isang nakapirming grid"
 
-#: class-ml-gallery.php:1466 class-ml-gallery.php:3664, fuzzy
+#: class-ml-gallery.php:1473 class-ml-gallery.php:3736, fuzzy
 msgid "Grid"
 msgstr "Grid"
 
-#: class-ml-gallery.php:1470
+#: class-ml-gallery.php:1477
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "Mga imahen sa kanilang likas na taas, nagkasya na parang pader ng ladrilyo"
 
-#: class-ml-gallery.php:1480 class-ml-gallery.php:3663, fuzzy
+#: class-ml-gallery.php:1487 class-ml-gallery.php:3735, fuzzy
 msgid "Masonry"
 msgstr "Masonry"
 
-#: class-ml-gallery.php:1484
+#: class-ml-gallery.php:1491
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr ""
 "Mga imahen na na-scale upang punan ang bawat hilera mula gilid hanggang "
 "gilid na may pare-parehong taas"
 
-#: class-ml-gallery.php:1496 class-ml-gallery.php:3665, fuzzy
+#: class-ml-gallery.php:1503 class-ml-gallery.php:3737, fuzzy
 msgid "Justified"
 msgstr "Justified"
 
-#: class-ml-gallery.php:1500
+#: class-ml-gallery.php:1507
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "Mga imahen na ipinapakita isa-isa sa isang scrollable slideshow"
 
-#: class-ml-gallery.php:1509, fuzzy
+#: class-ml-gallery.php:1516, fuzzy
 msgid "Carousel"
 msgstr "Carousel"
 
-#: class-ml-gallery.php:1513
+#: class-ml-gallery.php:1520
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "Malaking pangunahing imahen na may scrollable thumbnail strip sa ibaba"
 
-#: class-ml-gallery.php:1523, fuzzy
+#: class-ml-gallery.php:1530, fuzzy
 msgid "Showcase"
 msgstr "Showcase"
 
-#: class-ml-gallery.php:1535
+#: class-ml-gallery.php:1542
 msgid "Number of columns to show on desktop screens"
 msgstr "Bilang ng mga kolum na ipapakita sa mga desktop screen"
 
-#: class-ml-gallery.php:1535, fuzzy
+#: class-ml-gallery.php:1542, fuzzy
 msgid "Columns"
 msgstr "Columns"
 
-#: class-ml-gallery.php:1544
+#: class-ml-gallery.php:1551
 msgid "Number of columns to show on phones and small screens"
 msgstr "Bilang ng mga kolum na ipapakita sa mga telepono at maliliit na screen"
 
-#: class-ml-gallery.php:1544, fuzzy
+#: class-ml-gallery.php:1551, fuzzy
 msgid "Columns (mobile)"
 msgstr "Columns (mobile)"
 
-#: class-ml-gallery.php:1553
+#: class-ml-gallery.php:1560
 msgid "Height of the gallery images, in pixels"
 msgstr "Taas ng mga larawan sa gallery, sa mga pixel"
 
-#: class-ml-gallery.php:1554
+#: class-ml-gallery.php:1561
 msgid "Height"
 msgstr "Taas"
 
-#: class-ml-gallery.php:1566
+#: class-ml-gallery.php:1573
 msgid "Space between images"
 msgstr "Espasyo sa pagitan ng mga imahen"
 
-#: class-ml-gallery.php:1567, fuzzy
+#: class-ml-gallery.php:1574, fuzzy
 msgid "Gap"
 msgstr "Gap"
 
-#: class-ml-gallery.php:1585
+#: class-ml-gallery.php:1592
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "Ang mga kontrol ng zoom ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1586
+#: class-ml-gallery.php:1593
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "Ang fullscreen mode ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1587
+#: class-ml-gallery.php:1594
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "Ang pag-ikot ng imahe ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1588
+#: class-ml-gallery.php:1595
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "Ang autoplay ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1589
+#: class-ml-gallery.php:1596
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "Ang pagbabahagi sa social media ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1590
+#: class-ml-gallery.php:1597
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "Ang pager ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1591
+#: class-ml-gallery.php:1598
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "Ang natatanging URL ng Imahe ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1592
+#: class-ml-gallery.php:1599
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "Ang proteksyon ng larawan ay nangangailangan ng MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1596
+#: class-ml-gallery.php:1603
 msgid "Show left and right navigation arrows"
 msgstr "Ipakita ang kaliwa at kanang mga arrow ng nabigasyon"
 
-#: class-ml-gallery.php:1597
+#: class-ml-gallery.php:1604
 msgid "Display the current image number and total count"
 msgstr "Ipakita ang kasalukuyang bilang ng imahe at kabuuang bilang"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:1605
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "Ipakita ang isang strip ng mga thumbnail na imahe sa ibaba ng gallery"
 
-#: class-ml-gallery.php:1599
+#: class-ml-gallery.php:1606
 msgid "Show dot navigation area below each image."
 msgstr "Ipakita ang lugar ng dot navigation sa ilalim ng bawat imahe."
 
-#: class-ml-gallery.php:1600
+#: class-ml-gallery.php:1607
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -562,11 +562,11 @@ msgstr ""
 "kontrol sa Zoom ay lalabas lamang kung ang orihinal na sukat ay mas malaki "
 "kaysa sa sukat ng gallery."
 
-#: class-ml-gallery.php:1601
+#: class-ml-gallery.php:1608
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "Palawakin ang bintana ng gallery upang punan ang buong screen."
 
-#: class-ml-gallery.php:1602
+#: class-ml-gallery.php:1609
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
@@ -574,19 +574,19 @@ msgstr ""
 "Maaaring i-rotate ng mga gumagamit ang mga imahe pakaliwa o pakanan, at "
 "maaari rin silang i-flip nang patayo o pahalang."
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:1610
 msgid "Automatically advance through the images without the user clicking."
 msgstr ""
 "Awtomatikong umusad sa mga imahe nang hindi kinakailangan ang pag-click ng "
 "gumagamit."
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:1611
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr ""
 "Pahintulutan ang mga gumagamit na ibahagi ang mga imahe sa Facebook, X, o "
 "Pinterest."
 
-#: class-ml-gallery.php:1605
+#: class-ml-gallery.php:1612
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
@@ -594,7 +594,7 @@ msgstr ""
 "Lumikha ng natatanging URL para sa bawat imahe upang payagan ang direktang "
 "pag-link sa loob ng gallery."
 
-#: class-ml-gallery.php:1606 class-ml-slider-lightbox.php:4278
+#: class-ml-gallery.php:1613 class-ml-slider-lightbox.php:4299
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -602,27 +602,27 @@ msgstr ""
 "Pigilan ang hindi sinasadyang pag-save sa pamamagitan ng pag-block sa "
 "right-click, drag, at long-press sa mga larawan ng gallery."
 
-#: class-ml-gallery.php:1607
+#: class-ml-gallery.php:1614
 msgid "Navigate images using left and right arrow keys"
 msgstr "Mag-navigate sa mga imahe gamit ang kaliwa at kanang arrow keys"
 
-#: class-ml-gallery.php:1608
+#: class-ml-gallery.php:1615
 msgid "Scroll through images using the mouse wheel"
 msgstr "I-scroll sa mga imahe gamit ang mouse wheel"
 
-#: class-ml-gallery.php:1609
+#: class-ml-gallery.php:1616
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "I-swipe pataas o pababa upang isara ang gallery sa mga touch device"
 
-#: class-ml-gallery.php:1610
+#: class-ml-gallery.php:1617
 msgid "Cycle back to the first image after reaching the last"
 msgstr "Mag-cycle pabalik sa unang imahe pagkatapos maabot ang huli"
 
-#: class-ml-gallery.php:1611
+#: class-ml-gallery.php:1618
 msgid "Show a download button for each image"
 msgstr "Ipakita ang isang download button para sa bawat imahe"
 
-#: class-ml-gallery.php:1612
+#: class-ml-gallery.php:1619
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
@@ -630,35 +630,35 @@ msgstr ""
 "Buksan ang mga larawan sa isang overlay ng bintana kapag na-click. "
 "Nalalapat sa Grid, Masonry, at Justified na mga layout."
 
-#: class-ml-gallery.php:1613
+#: class-ml-gallery.php:1620
 msgid "Show a button over the gallery that opens the gallery window when clicked."
 msgstr ""
 "Ipakita ang isang button sa ibabaw ng gallery na nagbubukas ng gallery "
 "window kapag na-click."
 
-#: class-ml-gallery.php:1614
+#: class-ml-gallery.php:1621
 msgid "Show an icon on the button instead of text."
 msgstr "Ipakita ang isang icon sa button sa halip na teksto."
 
-#: class-ml-gallery.php:1657
+#: class-ml-gallery.php:1664
 msgid "Full (original)"
 msgstr "Buong (orihinal)"
 
-#: class-ml-gallery.php:1661
+#: class-ml-gallery.php:1668
 msgid "Show in Gallery Window"
 msgstr "Ipakita sa Gallery Window"
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1671
 msgid "The size of the image shown when a visitor clicks to view it in full"
 msgstr ""
 "Ang laki ng larawang ipinapakita kapag nag-click ang bisita upang tingnan "
 "ito ng buo"
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1671
 msgid "Image Size"
 msgstr "Laki ng Larawan"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:1691
 msgid ""
 "Choose how visitors open the gallery window: click the image, click an "
 "icon, or click a button."
@@ -666,112 +666,112 @@ msgstr ""
 "Piliin kung paano bubuksan ng mga bisita ang gallery window: i-click ang "
 "larawan, i-click ang icon, o i-click ang button."
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:1691
 msgid "Open with"
 msgstr "Buksan gamit ang"
 
-#: class-ml-gallery.php:1696
+#: class-ml-gallery.php:1703
 msgid "Text shown on the button that opens the gallery window"
 msgstr "Teksto na ipinapakita sa button na nagbubukas ng gallery window"
 
-#: class-ml-gallery.php:1696 class-ml-slider-lightbox.php:2726
+#: class-ml-gallery.php:1703 class-ml-slider-lightbox.php:2747
 msgid "Button Text"
 msgstr "Teksto ng Button"
 
-#: class-ml-gallery.php:1701 class-ml-slider-lightbox.php:1629
-#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:6467
-#: class-ml-slider-lightbox.php:6490
+#: class-ml-gallery.php:1708 class-ml-slider-lightbox.php:1650
+#: class-ml-slider-lightbox.php:3347 class-ml-slider-lightbox.php:6488
+#: class-ml-slider-lightbox.php:6511
 msgid "Open in Gallery"
 msgstr "Buksan sa Gallery"
 
-#: class-ml-gallery.php:1706
+#: class-ml-gallery.php:1713
 msgid "Where the button or icon sits over the gallery"
 msgstr "Kung saan nakalagay ang button o icon sa ibabaw ng gallery"
 
-#: class-ml-gallery.php:1706 class-ml-slider-lightbox.php:2734
+#: class-ml-gallery.php:1713 class-ml-slider-lightbox.php:2755
 msgid "Button Position"
 msgstr "Posisyon ng Button"
 
-#: class-ml-gallery.php:1708
+#: class-ml-gallery.php:1715
 msgid "Top Right"
 msgstr "Itaas sa Kanang Bahagi"
 
-#: class-ml-gallery.php:1709 class-ml-slider-lightbox.php:3343
-#: class-ml-slider-lightbox.php:3369
+#: class-ml-gallery.php:1716 class-ml-slider-lightbox.php:3364
+#: class-ml-slider-lightbox.php:3390
 msgid "Top Left"
 msgstr "Itaas sa Kaliwang Bahagi"
 
-#: class-ml-gallery.php:1710 class-ml-slider-lightbox.php:3344
-#: class-ml-slider-lightbox.php:3370
+#: class-ml-gallery.php:1717 class-ml-slider-lightbox.php:3365
+#: class-ml-slider-lightbox.php:3391
 msgid "Bottom Right"
 msgstr "Ibaba sa Kanang Bahagi"
 
-#: class-ml-gallery.php:1711 class-ml-slider-lightbox.php:3345
-#: class-ml-slider-lightbox.php:3371
+#: class-ml-gallery.php:1718 class-ml-slider-lightbox.php:3366
+#: class-ml-slider-lightbox.php:3392
 msgid "Bottom Left"
 msgstr "Ibaba sa Kaliwang Bahagi"
 
-#: class-ml-gallery.php:1712
+#: class-ml-gallery.php:1719
 msgid "Center"
 msgstr "Sentro"
 
-#: class-ml-gallery.php:1721
+#: class-ml-gallery.php:1728
 msgid "Protect images"
 msgstr "Protektahan ang mga larawan"
 
-#: class-ml-gallery.php:1727
+#: class-ml-gallery.php:1734
 msgid "Display"
 msgstr "I-display"
 
-#: class-ml-gallery.php:1729
+#: class-ml-gallery.php:1736
 msgid "Animation effect when moving between images"
 msgstr "Epekto ng animasyon kapag lumilipat sa pagitan ng mga larawan"
 
-#: class-ml-gallery.php:1729 class-ml-gallery.php:1814
+#: class-ml-gallery.php:1736 class-ml-gallery.php:1821
 msgid "Transition"
 msgstr "Transisyon"
 
-#: class-ml-gallery.php:1738 class-ml-slider-lightbox.php:2686
+#: class-ml-gallery.php:1745 class-ml-slider-lightbox.php:2707
 msgid "Arrows"
 msgstr "Mga Arrow"
 
-#: class-ml-gallery.php:1739
+#: class-ml-gallery.php:1746
 msgid "Slide Counter"
 msgstr "Bilang ng Slide"
 
-#: class-ml-gallery.php:1740
+#: class-ml-gallery.php:1747
 msgid "Thumbnails"
 msgstr "Mga Miniature"
 
-#: class-ml-gallery.php:1742, fuzzy
+#: class-ml-gallery.php:1749, fuzzy
 msgid "Pager"
 msgstr "Pager"
 
-#: class-ml-gallery.php:1747 class-ml-slider-lightbox.php:2391
+#: class-ml-gallery.php:1754 class-ml-slider-lightbox.php:2412
 msgid "Navigation"
 msgstr "Nabigasyon"
 
-#: class-ml-gallery.php:1748
+#: class-ml-gallery.php:1755
 msgid "Loop"
 msgstr "Ulitin"
 
-#: class-ml-gallery.php:1749, fuzzy
+#: class-ml-gallery.php:1756, fuzzy
 msgid "Keyboard"
 msgstr "Keyboard"
 
-#: class-ml-gallery.php:1750
+#: class-ml-gallery.php:1757
 msgid "Mouse wheel"
 msgstr "Gulong ng Mouse"
 
-#: class-ml-gallery.php:1751
+#: class-ml-gallery.php:1758
 msgid "Swipe to close"
 msgstr "Swipe upang isara"
 
-#: class-ml-gallery.php:1758 class-ml-gallery.php:1760
+#: class-ml-gallery.php:1765 class-ml-gallery.php:1767
 msgid "Captions"
 msgstr "Mga Caption"
 
-#: class-ml-gallery.php:1760
+#: class-ml-gallery.php:1767
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -779,7 +779,7 @@ msgstr ""
 "Kung saan lumalabas ang mga caption: sa mga thumbnail ng gallery, sa window "
 "ng gallery, o pareho."
 
-#: class-ml-gallery.php:1772
+#: class-ml-gallery.php:1779
 msgid ""
 "Where each caption's text comes from: your typed caption, or the image's "
 "Media Library caption or description. Empty media fields fall back to your "
@@ -789,11 +789,11 @@ msgstr ""
 "caption, o sa caption o paglalarawan ng Media Library ng larawan. Ang mga "
 "walang laman na field ng media ay bumabalik sa iyong isinulat na caption."
 
-#: class-ml-gallery.php:1772
+#: class-ml-gallery.php:1779
 msgid "Caption Content"
 msgstr "Nilalaman ng Caption"
 
-#: class-ml-gallery.php:1781
+#: class-ml-gallery.php:1788
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -801,11 +801,11 @@ msgstr ""
 "Sukat ng teksto ng caption. Nalalapat sa parehong mga thumbnail ng gallery "
 "at sa window ng gallery."
 
-#: class-ml-gallery.php:1782
+#: class-ml-gallery.php:1789
 msgid "Text Size"
 msgstr "Sukat ng Teksto"
 
-#: class-ml-gallery.php:1794
+#: class-ml-gallery.php:1801
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -813,11 +813,11 @@ msgstr ""
 "Kulay ng teksto ng caption. Nalalapat sa parehong mga thumbnail ng gallery "
 "at sa window ng gallery."
 
-#: class-ml-gallery.php:1794
+#: class-ml-gallery.php:1801
 msgid "Text Color"
 msgstr "Kulay ng Teksto"
 
-#: class-ml-gallery.php:1804
+#: class-ml-gallery.php:1811
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -826,12 +826,12 @@ msgstr ""
 "window ng gallery; sa mga thumbnail, ito ay unti-unting nagiging "
 "transparent para sa mabasang teksto."
 
-#: class-ml-gallery.php:1804 class-ml-gallery.php:1846
-#: class-ml-slider-lightbox.php:2654
+#: class-ml-gallery.php:1811 class-ml-gallery.php:1853
+#: class-ml-slider-lightbox.php:2675
 msgid "Background Color"
 msgstr "Kulay ng Background"
 
-#: class-ml-gallery.php:1814
+#: class-ml-gallery.php:1821
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -839,397 +839,423 @@ msgstr ""
 "Paano nag-aanimate ang caption papasok. Nalalapat lamang sa window ng "
 "gallery — hindi sa mga caption ng thumbnail ng gallery."
 
-#: class-ml-gallery.php:1824 class-ml-slider-lightbox.php:2702, fuzzy
+#: class-ml-gallery.php:1831 class-ml-slider-lightbox.php:2723, fuzzy
 msgid "Toolbar"
 msgstr "Toolbar"
 
-#: class-ml-gallery.php:1825 class-ml-slider-lightbox.php:1643
+#: class-ml-gallery.php:1832 class-ml-slider-lightbox.php:1664
 msgid "Download"
 msgstr "I-download"
 
-#: class-ml-gallery.php:1827
+#: class-ml-gallery.php:1834
 msgid "Share"
 msgstr "Ibahagi"
 
-#: class-ml-gallery.php:1828
+#: class-ml-gallery.php:1835
 msgid "Autoplay"
 msgstr "Awtonomong Pag-play"
 
-#: class-ml-gallery.php:1829
+#: class-ml-gallery.php:1836
 msgid "Rotate and Flip"
 msgstr "I-rotate at I-flip"
 
-#: class-ml-gallery.php:1830, fuzzy
+#: class-ml-gallery.php:1837, fuzzy
 msgid "Fullscreen"
 msgstr "Fullscreen"
 
-#: class-ml-gallery.php:1836
+#: class-ml-gallery.php:1843
 msgid "Unique Image URLs"
 msgstr "Natanging URL ng Imahe"
 
-#: class-ml-gallery.php:1843 class-ml-slider-lightbox.php:2324
-#: class-ml-slider-lightbox.php:2381
+#: class-ml-gallery.php:1850 class-ml-slider-lightbox.php:2345
+#: class-ml-slider-lightbox.php:2402
 msgid "Appearance"
 msgstr "Hitsura"
 
-#: class-ml-gallery.php:1846
+#: class-ml-gallery.php:1853
 msgid "Background color of the gallery window"
 msgstr "Kulay ng background ng gallery window"
 
-#: class-ml-gallery.php:1856
+#: class-ml-gallery.php:1863
 msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
 msgstr ""
 "Kung gaano kainit ang background ng gallery window (0 = transparent, 1 = "
 "solid)"
 
-#: class-ml-gallery.php:1857 class-ml-slider-lightbox.php:2662
+#: class-ml-gallery.php:1864 class-ml-slider-lightbox.php:2683
 msgid "Background Opacity"
 msgstr "Opacity ng Background"
 
-#: class-ml-gallery.php:1869
-msgid "Color of the next and previous navigation arrows"
-msgstr "Kulay ng susunod at nakaraang mga arrow ng nabigasyon"
-
-#: class-ml-gallery.php:1869
-msgid "Arrow Color"
-msgstr "Kulay ng Arrow"
+#: class-ml-gallery.php:1878
+msgid "Border width in pixels around the carousel (0 = no border)"
+msgstr ""
+"Lapad ng hangganan sa mga pixel sa paligid ng carousel (0 = walang "
+"hangganan)"
 
 #: class-ml-gallery.php:1879
-msgid "Background color behind the navigation arrows"
-msgstr "Kulay ng background sa likod ng mga arrow ng nabigasyon"
+msgid "Frame Border Width"
+msgstr "Lapad ng Hangganan ng Frame"
 
-#: class-ml-gallery.php:1879
-msgid "Arrow Background"
-msgstr "Background ng Arrow"
+#: class-ml-gallery.php:1890
+msgid "Line style used for the carousel border"
+msgstr "Uri ng linya na ginamit para sa hangganan ng carousel"
 
-#: class-ml-gallery.php:1889
-msgid "Color of the close (X) icon"
-msgstr "Kulay ng close (X) icon"
+#: class-ml-gallery.php:1890
+msgid "Frame Border Style"
+msgstr "Uri ng Hangganan ng Frame"
 
-#: class-ml-gallery.php:1889
-msgid "Close Icon Color"
-msgstr "Kulay ng Close Icon"
-
-#: class-ml-gallery.php:1899
-msgid "Background color behind the close icon"
-msgstr "Kulay ng background sa likod ng close icon"
-
-#: class-ml-gallery.php:1899
-msgid "Close Background"
-msgstr "Background ng Close"
-
-#: class-ml-gallery.php:1909
-msgid "Color of the toolbar icons"
-msgstr "Kulay ng mga icon ng toolbar"
-
-#: class-ml-gallery.php:1909
-msgid "Toolbar Icon Color"
-msgstr "Kulay ng Toolbar Icon"
-
-#: class-ml-gallery.php:1919
-msgid "Background color of the toolbar"
-msgstr "Kulay ng background ng toolbar"
-
-#: class-ml-gallery.php:1919
-msgid "Toolbar Background"
-msgstr "Background ng Toolbar"
-
-#: class-ml-gallery.php:1929
-msgid "Border color of the thumbnail strip images"
-msgstr "Kulay ng hangganan ng mga thumbnail strip images"
-
-#: class-ml-gallery.php:1929 class-ml-slider-lightbox.php:2678
-msgid "Thumbnail Border Color"
-msgstr "Kulay ng Hangganan ng Thumbnail"
-
-#: class-ml-gallery.php:1939
-msgid "Border color of the active and hovered thumbnail"
-msgstr "Kulay ng hangganan ng aktibo at nakahover na thumbnail"
-
-#: class-ml-gallery.php:1939
-msgid "Thumbnail Border Active and Hover"
-msgstr "Aktibo at Hover ng Hangganan ng Thumbnail"
-
-#: class-ml-gallery.php:1958
-msgid "Text color of the button that opens the gallery window"
-msgstr "Kulay ng teksto ng button na nagbubukas ng gallery window"
-
-#: class-ml-gallery.php:1958
-msgid "Button Text Color"
-msgstr "Kulay ng Teksto ng Button"
-
-#: class-ml-gallery.php:1962
-msgid "Button text color on hover"
-msgstr "Kulay ng teksto ng button kapag nakahover"
-
-#: class-ml-gallery.php:1962
-msgid "Button Text Hover"
-msgstr "Hover ng Teksto ng Button"
-
-#: class-ml-gallery.php:1966
-msgid "Background color of the button that opens the gallery window"
-msgstr "Kulay ng background ng button na nagbubukas ng gallery window"
-
-#: class-ml-gallery.php:1966
-msgid "Button Background"
-msgstr "Background ng Button"
-
-#: class-ml-gallery.php:1970
-msgid "Button background color on hover"
-msgstr "Kulay ng background ng button kapag hover"
-
-#: class-ml-gallery.php:1970, fuzzy
-msgid "Button Background Hover"
-msgstr "Button Background Hover"
-
-#: class-ml-gallery.php:1977
-msgid "Color of the icon that opens the gallery window"
-msgstr "Kulay ng icon na nagbubukas ng gallery window"
-
-#: class-ml-gallery.php:1977
-msgid "Icon Color"
-msgstr "Kulay ng Icon"
-
-#: class-ml-gallery.php:1981
-msgid "Icon color on hover"
-msgstr "Kulay ng icon kapag hover"
-
-#: class-ml-gallery.php:1981
-msgid "Icon Hover Color"
-msgstr "Kulay ng Icon Hover"
-
-#: class-ml-gallery.php:1985
-msgid "Background color behind the icon"
-msgstr "Kulay ng background sa likod ng icon"
-
-#: class-ml-gallery.php:1985
-msgid "Icon Background"
-msgstr "Background ng Icon"
-
-#: class-ml-gallery.php:1989
-msgid "Icon background color on hover"
-msgstr "Kulay ng background ng icon kapag hover"
-
-#: class-ml-gallery.php:1989, fuzzy
-msgid "Icon Background Hover"
-msgstr "Icon Background Hover"
-
-#: class-ml-gallery.php:1996
-msgid "Color of the progress bar shown during autoplay"
-msgstr "Kulay ng progress bar na ipinapakita sa panahon ng autoplay"
-
-#: class-ml-gallery.php:1996, fuzzy
-msgid "Autoplay Progress Bar"
-msgstr "Autoplay Progress Bar"
-
-#: class-ml-gallery.php:2011
-msgid "Image Styles"
-msgstr "Mga Estilo ng Imahe"
-
-#: class-ml-gallery.php:2014
-msgid "Apply a filter to every image in the gallery"
-msgstr "Mag-apply ng filter sa bawat imahe sa gallery"
-
-#: class-ml-gallery.php:2014, fuzzy
-msgid "Filter"
-msgstr "Filter"
-
-#: class-ml-gallery.php:2023
-msgid "Corner radius in pixels applied to every image"
-msgstr "Radius ng kanto sa mga pixel na inilalapat sa bawat imahe"
-
-#: class-ml-gallery.php:2024
-msgid "Rounded Corners"
-msgstr "Mabilog na Mga Kanto"
-
-#: class-ml-gallery.php:2035
-msgid "Image border width in pixels (0 = no border)"
-msgstr "Lapad ng hangganan sa mga pixel (0 = walang hangganan)"
-
-#: class-ml-gallery.php:2036
-msgid "Border Width"
-msgstr "Lapad ng Hangganan"
-
-#: class-ml-gallery.php:2047
-msgid "Line style used for the image border"
-msgstr "Estilo ng linya na ginamit para sa hangganan ng imahe"
-
-#: class-ml-gallery.php:2047
-msgid "Border Style"
-msgstr "Estilo ng Hangganan"
-
-#: class-ml-gallery.php:2050
+#: class-ml-gallery.php:1893 class-ml-gallery.php:2095
 msgid "Solid"
 msgstr "Solit"
 
-#: class-ml-gallery.php:2051
+#: class-ml-gallery.php:1894 class-ml-gallery.php:2096
 msgid "Dashed"
 msgstr "Tuldok-tuldok"
 
-#: class-ml-gallery.php:2052, fuzzy
+#: class-ml-gallery.php:1895 class-ml-gallery.php:2097, fuzzy
 msgid "Dotted"
 msgstr "Dotted"
 
-#: class-ml-gallery.php:2053
+#: class-ml-gallery.php:1896 class-ml-gallery.php:2098
 msgid "Double"
 msgstr "Doble"
 
-#: class-ml-gallery.php:2061
+#: class-ml-gallery.php:1904
+msgid "Color of the border around the carousel"
+msgstr "Kulay ng hangganan sa paligid ng carousel"
+
+#: class-ml-gallery.php:1904
+msgid "Frame Border Color"
+msgstr "Kulay ng Hangganan ng Frame"
+
+#: class-ml-gallery.php:1914
+msgid "Color of the next and previous navigation arrows"
+msgstr "Kulay ng susunod at nakaraang mga arrow ng nabigasyon"
+
+#: class-ml-gallery.php:1914
+msgid "Arrow Color"
+msgstr "Kulay ng Arrow"
+
+#: class-ml-gallery.php:1924
+msgid "Background color behind the navigation arrows"
+msgstr "Kulay ng background sa likod ng mga arrow ng nabigasyon"
+
+#: class-ml-gallery.php:1924
+msgid "Arrow Background"
+msgstr "Background ng Arrow"
+
+#: class-ml-gallery.php:1934
+msgid "Color of the close (X) icon"
+msgstr "Kulay ng close (X) icon"
+
+#: class-ml-gallery.php:1934
+msgid "Close Icon Color"
+msgstr "Kulay ng Close Icon"
+
+#: class-ml-gallery.php:1944
+msgid "Background color behind the close icon"
+msgstr "Kulay ng background sa likod ng close icon"
+
+#: class-ml-gallery.php:1944
+msgid "Close Background"
+msgstr "Background ng Close"
+
+#: class-ml-gallery.php:1954
+msgid "Color of the toolbar icons"
+msgstr "Kulay ng mga icon ng toolbar"
+
+#: class-ml-gallery.php:1954
+msgid "Toolbar Icon Color"
+msgstr "Kulay ng Toolbar Icon"
+
+#: class-ml-gallery.php:1964
+msgid "Background color of the toolbar"
+msgstr "Kulay ng background ng toolbar"
+
+#: class-ml-gallery.php:1964
+msgid "Toolbar Background"
+msgstr "Background ng Toolbar"
+
+#: class-ml-gallery.php:1974
+msgid "Border color of the thumbnail strip images"
+msgstr "Kulay ng hangganan ng mga thumbnail strip images"
+
+#: class-ml-gallery.php:1974 class-ml-slider-lightbox.php:2699
+msgid "Thumbnail Border Color"
+msgstr "Kulay ng Hangganan ng Thumbnail"
+
+#: class-ml-gallery.php:1984
+msgid "Border color of the active and hovered thumbnail"
+msgstr "Kulay ng hangganan ng aktibo at nakahover na thumbnail"
+
+#: class-ml-gallery.php:1984
+msgid "Thumbnail Border Active and Hover"
+msgstr "Aktibo at Hover ng Hangganan ng Thumbnail"
+
+#: class-ml-gallery.php:2003
+msgid "Text color of the button that opens the gallery window"
+msgstr "Kulay ng teksto ng button na nagbubukas ng gallery window"
+
+#: class-ml-gallery.php:2003
+msgid "Button Text Color"
+msgstr "Kulay ng Teksto ng Button"
+
+#: class-ml-gallery.php:2007
+msgid "Button text color on hover"
+msgstr "Kulay ng teksto ng button kapag nakahover"
+
+#: class-ml-gallery.php:2007
+msgid "Button Text Hover"
+msgstr "Hover ng Teksto ng Button"
+
+#: class-ml-gallery.php:2011
+msgid "Background color of the button that opens the gallery window"
+msgstr "Kulay ng background ng button na nagbubukas ng gallery window"
+
+#: class-ml-gallery.php:2011
+msgid "Button Background"
+msgstr "Background ng Button"
+
+#: class-ml-gallery.php:2015
+msgid "Button background color on hover"
+msgstr "Kulay ng background ng button kapag hover"
+
+#: class-ml-gallery.php:2015, fuzzy
+msgid "Button Background Hover"
+msgstr "Button Background Hover"
+
+#: class-ml-gallery.php:2022
+msgid "Color of the icon that opens the gallery window"
+msgstr "Kulay ng icon na nagbubukas ng gallery window"
+
+#: class-ml-gallery.php:2022
+msgid "Icon Color"
+msgstr "Kulay ng Icon"
+
+#: class-ml-gallery.php:2026
+msgid "Icon color on hover"
+msgstr "Kulay ng icon kapag hover"
+
+#: class-ml-gallery.php:2026
+msgid "Icon Hover Color"
+msgstr "Kulay ng Icon Hover"
+
+#: class-ml-gallery.php:2030
+msgid "Background color behind the icon"
+msgstr "Kulay ng background sa likod ng icon"
+
+#: class-ml-gallery.php:2030
+msgid "Icon Background"
+msgstr "Background ng Icon"
+
+#: class-ml-gallery.php:2034
+msgid "Icon background color on hover"
+msgstr "Kulay ng background ng icon kapag hover"
+
+#: class-ml-gallery.php:2034, fuzzy
+msgid "Icon Background Hover"
+msgstr "Icon Background Hover"
+
+#: class-ml-gallery.php:2041
+msgid "Color of the progress bar shown during autoplay"
+msgstr "Kulay ng progress bar na ipinapakita sa panahon ng autoplay"
+
+#: class-ml-gallery.php:2041, fuzzy
+msgid "Autoplay Progress Bar"
+msgstr "Autoplay Progress Bar"
+
+#: class-ml-gallery.php:2056
+msgid "Image Styles"
+msgstr "Mga Estilo ng Imahe"
+
+#: class-ml-gallery.php:2059
+msgid "Apply a filter to every image in the gallery"
+msgstr "Mag-apply ng filter sa bawat imahe sa gallery"
+
+#: class-ml-gallery.php:2059, fuzzy
+msgid "Filter"
+msgstr "Filter"
+
+#: class-ml-gallery.php:2068
+msgid "Corner radius in pixels applied to every image"
+msgstr "Radius ng kanto sa mga pixel na inilalapat sa bawat imahe"
+
+#: class-ml-gallery.php:2069
+msgid "Rounded Corners"
+msgstr "Mabilog na Mga Kanto"
+
+#: class-ml-gallery.php:2080
+msgid "Image border width in pixels (0 = no border)"
+msgstr "Lapad ng hangganan sa mga pixel (0 = walang hangganan)"
+
+#: class-ml-gallery.php:2081
+msgid "Border Width"
+msgstr "Lapad ng Hangganan"
+
+#: class-ml-gallery.php:2092
+msgid "Line style used for the image border"
+msgstr "Estilo ng linya na ginamit para sa hangganan ng imahe"
+
+#: class-ml-gallery.php:2092
+msgid "Border Style"
+msgstr "Estilo ng Hangganan"
+
+#: class-ml-gallery.php:2106
 msgid "Color of the image border"
 msgstr "Kulay ng border ng imahe"
 
-#: class-ml-gallery.php:2061
+#: class-ml-gallery.php:2106
 msgid "Border Color"
 msgstr "Kulay ng Hangganan"
 
-#: class-ml-gallery.php:2071
+#: class-ml-gallery.php:2116
 msgid "Drop shadow depth cast behind each image"
 msgstr "Lalim ng drop shadow na inihahagis sa likod ng bawat imahe"
 
-#: class-ml-gallery.php:2071, fuzzy
+#: class-ml-gallery.php:2116, fuzzy
 msgid "Box Shadow"
 msgstr "Box Shadow"
 
-#: class-ml-gallery.php:2075
+#: class-ml-gallery.php:2120
 msgid "Light"
 msgstr "Magaan"
 
-#: class-ml-gallery.php:2076
+#: class-ml-gallery.php:2121
 msgid "Medium"
 msgstr "Katamtaman"
 
-#: class-ml-gallery.php:2077
+#: class-ml-gallery.php:2122
 msgid "Heavy"
 msgstr "Mabigat"
 
-#: class-ml-gallery.php:2085
+#: class-ml-gallery.php:2130
 msgid "Image opacity as a percentage"
 msgstr "Opasidad ng larawan bilang porsyento"
 
-#: class-ml-gallery.php:2086
+#: class-ml-gallery.php:2131
 msgid "Opacity"
 msgstr "Opasidad"
 
-#: class-ml-gallery.php:2097
+#: class-ml-gallery.php:2142
 msgid "Rotate every image by a fixed angle"
 msgstr "I-rotate ang bawat larawan sa isang tiyak na anggulo"
 
-#: class-ml-gallery.php:2097
+#: class-ml-gallery.php:2142
 msgid "Rotate"
 msgstr "I-rotate"
 
-#: class-ml-gallery.php:2111
+#: class-ml-gallery.php:2156
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "I-mirror ang bawat larawan nang pahalang, patayo, o pareho"
 
-#: class-ml-gallery.php:2111
+#: class-ml-gallery.php:2156
 msgid "Flip"
 msgstr "I-flip"
 
-#: class-ml-gallery.php:2115
+#: class-ml-gallery.php:2160
 msgid "Horizontal"
 msgstr "Pahalang"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2161
 msgid "Vertical"
 msgstr "Patayo"
 
-#: class-ml-gallery.php:2117
+#: class-ml-gallery.php:2162
 msgid "Both"
 msgstr "Pareho"
 
-#: class-ml-gallery.php:2127 class-ml-gallery.php:3747
+#: class-ml-gallery.php:2172 class-ml-gallery.php:3819
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: class-ml-gallery.php:2129 class-ml-gallery.php:3767
+#: class-ml-gallery.php:2174 class-ml-gallery.php:3839
 msgid "Click to copy shortcode."
 msgstr "I-click upang kopyahin ang shortcode."
 
-#: class-ml-gallery.php:2147
+#: class-ml-gallery.php:2192
 msgid "Edit Caption"
 msgstr "I-edit ang Caption"
 
-#: class-ml-gallery.php:2149
+#: class-ml-gallery.php:2194
 msgid "Previous image"
 msgstr "Nakaraang imahe"
 
-#: class-ml-gallery.php:2150
+#: class-ml-gallery.php:2195
 msgid "Next image"
 msgstr "Susunod na imahe"
 
-#: class-ml-gallery.php:2152 class-ml-gallery.php:2194
-#: class-ml-gallery.php:2215 class-ml-gallery.php:3792
+#: class-ml-gallery.php:2197 class-ml-gallery.php:2239
+#: class-ml-gallery.php:2260 class-ml-gallery.php:3864
 msgid "Close"
 msgstr "Isara"
 
-#: class-ml-gallery.php:2173, fuzzy
+#: class-ml-gallery.php:2218, fuzzy
 msgid "Caption"
 msgstr "Caption"
 
-#: class-ml-gallery.php:2183
+#: class-ml-gallery.php:2228
 msgid "Done"
 msgstr "Tapos na"
 
-#: class-ml-gallery.php:2193
+#: class-ml-gallery.php:2238
 msgid "Import from Server Folder"
 msgstr "I-import mula sa Server Folder"
 
-#: class-ml-gallery.php:2202
+#: class-ml-gallery.php:2247
 msgid "Cancel"
 msgstr "Kanselahin"
 
-#: class-ml-gallery.php:2203
+#: class-ml-gallery.php:2248
 msgid "Import selected"
 msgstr "I-import ang napili"
 
-#: class-ml-gallery.php:2214
+#: class-ml-gallery.php:2259
 msgid "Import from ZIP"
 msgstr "I-import mula sa ZIP"
 
-#: class-ml-gallery.php:2242
+#: class-ml-gallery.php:2287
 msgid "You do not have sufficient permissions."
 msgstr "Wala kang sapat na pahintulot."
 
-#: class-ml-gallery.php:2261
+#: class-ml-gallery.php:2306
 msgid "Could not update the gallery. Please try again."
 msgstr "Hindi ma-update ang gallery. Pakisubukang muli."
 
-#: class-ml-gallery.php:2408
+#: class-ml-gallery.php:2457
 msgid "(Copy)"
 msgstr "(Kopyahin)"
 
-#: class-ml-gallery.php:2414
+#: class-ml-gallery.php:2463
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "Hindi makaduplicate ng gallery. Pakisubukang muli."
 
-#: class-ml-gallery.php:2562 class-ml-gallery.php:2677
-#: class-ml-gallery.php:3912 class-ml-gallery.php:4065
-#: class-ml-gallery.php:4097
+#: class-ml-gallery.php:2611 class-ml-gallery.php:2726
+#: class-ml-gallery.php:3984 class-ml-gallery.php:4137
+#: class-ml-gallery.php:4169
 msgid "Permission denied."
 msgstr "Tinanggihan ang pahintulot."
 
-#: class-ml-gallery.php:2569
+#: class-ml-gallery.php:2618
 msgid "Folder not found."
 msgstr "Hindi natagpuan ang folder."
 
-#: class-ml-gallery.php:2578
+#: class-ml-gallery.php:2627
 msgid "Folder could not be read."
 msgstr "Hindi mabasa ang folder."
 
-#: class-ml-gallery.php:2615
+#: class-ml-gallery.php:2664
 msgid "Uploads"
 msgstr "Mga Upload"
 
-#: class-ml-gallery.php:2800
+#: class-ml-gallery.php:2849
 msgid "Select Gallery Images"
 msgstr "Pumili ng Mga Imahe ng Gallery"
 
-#: class-ml-gallery.php:2801
+#: class-ml-gallery.php:2850
 msgid "Add to Gallery"
 msgstr "Idagdag sa Gallery"
 
-#: class-ml-gallery.php:2812
+#: class-ml-gallery.php:2861
 msgid ""
 "Saved to this image in your Media Library — changes appear anywhere the "
 "image is used."
@@ -1237,100 +1263,100 @@ msgstr ""
 "Naka-save sa imahe na ito sa iyong Media Library — ang mga pagbabago ay "
 "lilitaw kahit saan ginagamit ang imahe."
 
-#: class-ml-gallery.php:2813 class-ml-gallery.php:4114
+#: class-ml-gallery.php:2862 class-ml-gallery.php:4186
 msgid "You do not have permission to edit this image."
 msgstr "Wala kang pahintulot na i-edit ang imahe na ito."
 
-#: class-ml-gallery.php:2814 class-ml-gallery.php:4115
+#: class-ml-gallery.php:2863 class-ml-gallery.php:4187
 msgid "This caption source is read-only."
 msgstr "Ang pinagmulan ng caption na ito ay read-only."
 
-#: class-ml-gallery.php:2815
+#: class-ml-gallery.php:2864
 msgid "Shown in this gallery"
 msgstr "Ipinapakita sa gallery na ito"
 
-#: class-ml-gallery.php:2817
+#: class-ml-gallery.php:2866
 msgid "Loading…"
 msgstr "Naglo-load…"
 
-#: class-ml-gallery.php:2818
+#: class-ml-gallery.php:2867
 msgid "No images in this folder."
 msgstr "Walang mga imahe sa folder na ito."
 
-#: class-ml-gallery.php:2819
+#: class-ml-gallery.php:2868
 msgid "Could not load this folder."
 msgstr "Hindi ma-load ang folder na ito."
 
-#: class-ml-gallery.php:2820
+#: class-ml-gallery.php:2869
 msgid "Importing…"
 msgstr "Nagli-load…"
 
-#: class-ml-gallery.php:2821
+#: class-ml-gallery.php:2870
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr ""
 "Ipinapakita ang unang 200 na imahe — buksan ang isang subfolder upang "
 "paliitin ang listahan."
 
-#: class-ml-gallery.php:2822
+#: class-ml-gallery.php:2871
 msgid "Select at least one image."
 msgstr "Pumili ng hindi bababa sa isang imahe."
 
-#: class-ml-gallery.php:2823 class-ml-gallery.php:2826
+#: class-ml-gallery.php:2872 class-ml-gallery.php:2875
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "Na-import na %1$d na larawan; %2$d na larawan ang hindi isinama."
 
-#: class-ml-gallery.php:2824
+#: class-ml-gallery.php:2873
 msgid "Uploading…"
 msgstr "Nagli-upload…"
 
-#: class-ml-gallery.php:2825
+#: class-ml-gallery.php:2874
 msgid "Importing images…"
 msgstr "Nagli-load ng mga imahe…"
 
-#: class-ml-gallery.php:2827
+#: class-ml-gallery.php:2876
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "Tanging ang unang 200 na imahe (o 256 MB) ang na-import."
 
-#: class-ml-gallery.php:2828
+#: class-ml-gallery.php:2877
 msgid "The ZIP could not be imported."
 msgstr "Hindi ma-import ang ZIP."
 
-#: class-ml-gallery.php:2829
+#: class-ml-gallery.php:2878
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr ""
 "Tinanggihan ang pag-upload — maaaring mas malaki ang ZIP kaysa sa "
 "pinapayagan ng server na ito."
 
-#: class-ml-gallery.php:2830
+#: class-ml-gallery.php:2879
 msgid "No images found in the ZIP."
 msgstr "Walang mga larawan na natagpuan sa ZIP."
 
-#: class-ml-gallery.php:3378
+#: class-ml-gallery.php:3450
 msgid "Drag-and-drop building"
 msgstr "Pagbuo gamit ang drag-and-drop"
 
-#: class-ml-gallery.php:3379
+#: class-ml-gallery.php:3451
 msgid "Responsive lightbox"
 msgstr "Tumugon na lightbox"
 
-#: class-ml-gallery.php:3380, fuzzy
+#: class-ml-gallery.php:3452, fuzzy
 msgid "Grid · Masonry · Justified"
 msgstr "Grid · Masonry · Justified"
 
-#: class-ml-gallery.php:3631
+#: class-ml-gallery.php:3703
 msgid "Get started"
 msgstr "Magsimula na"
 
-#: class-ml-gallery.php:3634
+#: class-ml-gallery.php:3706
 msgid "Your galleries"
 msgstr "Ang iyong mga gallery"
 
-#: class-ml-gallery.php:3634
+#: class-ml-gallery.php:3706
 msgid "live here."
 msgstr "ay narito."
 
-#: class-ml-gallery.php:3636
+#: class-ml-gallery.php:3708
 msgid ""
 "Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
 "justified, no code required."
@@ -1338,62 +1364,62 @@ msgstr ""
 "Bumuo ng magagandang gallery ng imahe gamit ang isang nakamamanghang "
 "lightbox. Grid, masonry o justified, walang kinakailangang code."
 
-#: class-ml-gallery.php:3638
+#: class-ml-gallery.php:3710
 msgid "Create your first gallery"
 msgstr "Lumikha ng iyong unang gallery"
 
-#: class-ml-gallery.php:3651
+#: class-ml-gallery.php:3723
 #, php-format
 msgid "View Trash (%s)"
 msgid_plural "View Trash (%s)"
 msgstr[0] "Tumingin ng Basura (%s)"
 msgstr[1] "Tumingin ng Basura (%s)"
 
-#: class-ml-gallery.php:3662
+#: class-ml-gallery.php:3734
 msgid "Preview layout"
 msgstr "I-preview ang layout"
 
-#: class-ml-gallery.php:3749
+#: class-ml-gallery.php:3821
 msgid "Usage"
 msgstr "Paggamit"
 
-#: class-ml-gallery.php:3782
+#: class-ml-gallery.php:3854
 msgid "Not found."
 msgstr "Hindi natagpuan."
 
-#: class-ml-gallery.php:3787
+#: class-ml-gallery.php:3859
 msgid "View Usage"
 msgstr "Tingnan ang Paggamit"
 
-#: class-ml-gallery.php:3793
+#: class-ml-gallery.php:3865
 msgid "Content Using This Gallery"
 msgstr "Nilalaman na Gumagamit ng Gallery na Ito"
 
-#: class-ml-gallery.php:3860
+#: class-ml-gallery.php:3932
 msgid "(no title)"
 msgstr "(walang pamagat)"
 
-#: class-ml-gallery.php:3918 class-ml-gallery.php:3927
+#: class-ml-gallery.php:3990 class-ml-gallery.php:3999
 msgid "Please choose a valid .zip file."
 msgstr "Mangyaring pumili ng wastong .zip na file."
 
-#: class-ml-gallery.php:3933
+#: class-ml-gallery.php:4005
 msgid "Server cannot read ZIP files."
 msgstr "Hindi mabasa ng server ang mga ZIP na file."
 
-#: class-ml-gallery.php:3940
+#: class-ml-gallery.php:4012
 msgid "The ZIP could not be read."
 msgstr "Hindi mabasa ang ZIP."
 
-#: class-ml-gallery.php:3974
+#: class-ml-gallery.php:4046
 msgid "Could not prepare a temporary folder."
 msgstr "Hindi maihanda ang pansamantalang folder."
 
-#: class-ml-gallery.php:4072 class-ml-gallery.php:4108
+#: class-ml-gallery.php:4144 class-ml-gallery.php:4180
 msgid "Image not found."
 msgstr "Hindi natagpuan ang imahe."
 
-#: class-ml-gallery.php:4145
+#: class-ml-gallery.php:4217
 msgid "Unknown caption source."
 msgstr "Hindi kilalang pinagmulan ng caption."
 
@@ -1405,7 +1431,7 @@ msgstr "👋 Salamat sa pag-install ng MetaSlider Gallery!"
 msgid "You're all set. Create your first gallery to get started."
 msgstr "Naka-set up ka na. Lumikha ng iyong unang gallery upang makapagsimula."
 
-#: class-ml-slider-lightbox.php:1167
+#: class-ml-slider-lightbox.php:1188
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1413,11 +1439,11 @@ msgstr ""
 "Ang MetaSlider Gallery ay nangangailangan ng MetaSlider at hindi bababa sa "
 "isang iba pang suportadong lightbox plugin na naka-install at naka-activate."
 
-#: class-ml-slider-lightbox.php:1171
+#: class-ml-slider-lightbox.php:1192
 msgid "More info"
 msgstr "Karagdagang impormasyon"
 
-#: class-ml-slider-lightbox.php:1182
+#: class-ml-slider-lightbox.php:1203
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1425,31 +1451,31 @@ msgstr ""
 "May higit sa isang lightbox plugin na naka-activate. Maaaring magdulot ito "
 "ng mga salungatan sa MetaSlider Gallery"
 
-#: class-ml-slider-lightbox.php:1242
+#: class-ml-slider-lightbox.php:1263
 msgid "Edit Global Settings"
 msgstr "I-edit ang Pangkalahatang Mga Setting"
 
-#: class-ml-slider-lightbox.php:1253
+#: class-ml-slider-lightbox.php:1274
 msgid "Open In Gallery"
 msgstr "Buksan sa Gallery"
 
-#: class-ml-slider-lightbox.php:1267
+#: class-ml-slider-lightbox.php:1288
 msgid "Show Captions"
 msgstr "Ipakita ang mga Caption"
 
-#: class-ml-slider-lightbox.php:1267
+#: class-ml-slider-lightbox.php:1288
 msgid "Show captions in the gallery for each slide."
 msgstr "Ipakita ang mga caption sa gallery para sa bawat slide."
 
-#: class-ml-slider-lightbox.php:1268
+#: class-ml-slider-lightbox.php:1289
 msgid "Show Navigation Arrows"
 msgstr "Ipakita ang mga Navigation Arrows"
 
-#: class-ml-slider-lightbox.php:1268
+#: class-ml-slider-lightbox.php:1289
 msgid "Show previous/next arrows in the gallery."
 msgstr "Ipakita ang mga arrow na nakaraang/susunod sa gallery."
 
-#: class-ml-slider-lightbox.php:1274
+#: class-ml-slider-lightbox.php:1295
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1458,159 +1484,159 @@ msgstr ""
 "Ang Gallery ay naka-enable para sa lahat ng slideshow sa pamamagitan ng <a "
 "href=\"%s\">Mga setting ng MetaSlider Gallery</a>."
 
-#: class-ml-slider-lightbox.php:1639
+#: class-ml-slider-lightbox.php:1660
 msgid "Close gallery"
 msgstr "Isara ang gallery"
 
-#: class-ml-slider-lightbox.php:1640
+#: class-ml-slider-lightbox.php:1661
 msgid "Toggle maximize"
 msgstr "I-toggle ang maximize"
 
-#: class-ml-slider-lightbox.php:1641
+#: class-ml-slider-lightbox.php:1662
 msgid "Previous slide"
 msgstr "Nakaraang slide"
 
-#: class-ml-slider-lightbox.php:1642
+#: class-ml-slider-lightbox.php:1663
 msgid "Next slide"
 msgstr "Susunod na slide"
 
-#: class-ml-slider-lightbox.php:1644
+#: class-ml-slider-lightbox.php:1665
 msgid "Play video"
 msgstr "I-play ang video"
 
-#: class-ml-slider-lightbox.php:1645
+#: class-ml-slider-lightbox.php:1666
 msgid "Oops... Failed to load content..."
 msgstr "Oops... Nabigong i-load ang nilalaman..."
 
-#: class-ml-slider-lightbox.php:1691 class-ml-slider-lightbox.php:1721
+#: class-ml-slider-lightbox.php:1712 class-ml-slider-lightbox.php:1742
 msgid "Global"
 msgstr "Pangkalahatan"
 
-#: class-ml-slider-lightbox.php:1692
+#: class-ml-slider-lightbox.php:1713
 msgid "Yes"
 msgstr "Oo"
 
-#: class-ml-slider-lightbox.php:1693
+#: class-ml-slider-lightbox.php:1714
 msgid "No"
 msgstr "Hindi"
 
-#: class-ml-slider-lightbox.php:1716
+#: class-ml-slider-lightbox.php:1737
 msgid "How Visitors Open Images"
 msgstr "Paano Binubuksan ng mga Bisita ang mga Imahe"
 
-#: class-ml-slider-lightbox.php:1719 class-ml-slider-lightbox.php:3643
+#: class-ml-slider-lightbox.php:1740 class-ml-slider-lightbox.php:3664
 msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
 msgstr ""
 "Pumili kung ang pag-click sa imahe, isang icon, o isang button ang "
 "magbubukas ng gallery."
 
-#: class-ml-slider-lightbox.php:1722 class-ml-trigger-control.php:66
+#: class-ml-slider-lightbox.php:1743 class-ml-trigger-control.php:66
 msgid "Image"
 msgstr "Imahe"
 
-#: class-ml-slider-lightbox.php:1723 class-ml-slider-lightbox.php:3485
-#: class-ml-slider-lightbox.php:3498 class-ml-slider-lightbox.php:3511
-#: class-ml-slider-lightbox.php:3609 class-ml-trigger-control.php:67, fuzzy
+#: class-ml-slider-lightbox.php:1744 class-ml-slider-lightbox.php:3506
+#: class-ml-slider-lightbox.php:3519 class-ml-slider-lightbox.php:3532
+#: class-ml-slider-lightbox.php:3630 class-ml-trigger-control.php:67, fuzzy
 msgid "Icon"
 msgstr "Icon"
 
-#: class-ml-slider-lightbox.php:1724 class-ml-trigger-control.php:68, fuzzy
+#: class-ml-slider-lightbox.php:1745 class-ml-trigger-control.php:68, fuzzy
 msgid "Button"
 msgstr "Button"
 
-#: class-ml-slider-lightbox.php:1992
+#: class-ml-slider-lightbox.php:2013
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr ""
 "Ang MetaSlider Gallery ay nangangailangan ng MetaSlider na naka-install at "
 "naka-activate."
 
-#: class-ml-slider-lightbox.php:1996
+#: class-ml-slider-lightbox.php:2017
 msgid "Install MetaSlider"
 msgstr "I-install ang MetaSlider"
 
-#: class-ml-slider-lightbox.php:2119 class-ml-slider-lightbox.php:2263, fuzzy
+#: class-ml-slider-lightbox.php:2140 class-ml-slider-lightbox.php:2284, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2245
+#: class-ml-slider-lightbox.php:2266
 #, php-format
 msgid "Select pages to %s..."
 msgstr "Pumili ng mga pahina upang %s..."
 
-#: class-ml-slider-lightbox.php:2246
+#: class-ml-slider-lightbox.php:2267
 #, php-format
 msgid "Select posts to %s..."
 msgstr "Pumili ng mga post upang %s..."
 
-#: class-ml-slider-lightbox.php:2247
+#: class-ml-slider-lightbox.php:2268
 #, php-format
 msgid "Select post types to %s..."
 msgstr "Pumili ng mga uri ng post upang %s..."
 
-#: class-ml-slider-lightbox.php:2248
+#: class-ml-slider-lightbox.php:2269
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "Pumili ng %1$s upang %2$s..."
 
-#: class-ml-slider-lightbox.php:2249
+#: class-ml-slider-lightbox.php:2270
 msgid "Select post types to exclude"
 msgstr "Pumili ng mga uri ng post na i-exclude"
 
-#: class-ml-slider-lightbox.php:2250 class-ml-slider-lightbox.php:3692
-#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:2271 class-ml-slider-lightbox.php:3713
+#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
 msgid "Include"
 msgstr "Isama"
 
-#: class-ml-slider-lightbox.php:2251 class-ml-slider-lightbox.php:3692
-#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:2272 class-ml-slider-lightbox.php:3713
+#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
 msgid "Exclude"
 msgstr "I-exclude"
 
-#: class-ml-slider-lightbox.php:2259, fuzzy
+#: class-ml-slider-lightbox.php:2280, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2279
+#: class-ml-slider-lightbox.php:2300
 msgid "Global Settings"
 msgstr "Pangkalahatang Mga Setting"
 
-#: class-ml-slider-lightbox.php:2289
+#: class-ml-slider-lightbox.php:2310
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "Mag-upgrade sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2290
+#: class-ml-slider-lightbox.php:2311
 msgid "Upgrade to Pro"
 msgstr "Mag-upgrade sa Pro"
 
-#: class-ml-slider-lightbox.php:2322
+#: class-ml-slider-lightbox.php:2343
 msgid "Automatic Mode"
 msgstr "Awtomatikong Mode"
 
-#: class-ml-slider-lightbox.php:2323
+#: class-ml-slider-lightbox.php:2344
 msgid "Manual Mode"
 msgstr "Manu-manong Mode"
 
-#: class-ml-slider-lightbox.php:2325
+#: class-ml-slider-lightbox.php:2346
 msgid "Behavior"
 msgstr "Pag-uugali"
 
-#: class-ml-slider-lightbox.php:2346
+#: class-ml-slider-lightbox.php:2367
 msgid "Settings saved successfully!"
 msgstr "Naitala ang mga setting nang matagumpay!"
 
-#: class-ml-slider-lightbox.php:2356
+#: class-ml-slider-lightbox.php:2377
 msgid "Where to Enable Automatically"
 msgstr "Saan Paganahin ang Awtomatikong"
 
-#: class-ml-slider-lightbox.php:2363, fuzzy
+#: class-ml-slider-lightbox.php:2384, fuzzy
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider Slideshows"
 
-#: class-ml-slider-lightbox.php:2370 class-ml-slider-lightbox.php:2567
+#: class-ml-slider-lightbox.php:2391 class-ml-slider-lightbox.php:2588
 msgid "Content Filtering"
 msgstr "Pag-filter ng Nilalaman"
 
-#: class-ml-slider-lightbox.php:2382
+#: class-ml-slider-lightbox.php:2403
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
@@ -1618,19 +1644,19 @@ msgstr ""
 "I-customize ang mga kulay, opacity, at visual styling para sa overlay ng "
 "gallery at mga kontrol."
 
-#: class-ml-slider-lightbox.php:2386 class-ml-slider-lightbox.php:2633, fuzzy
+#: class-ml-slider-lightbox.php:2407 class-ml-slider-lightbox.php:2654, fuzzy
 msgid "Background & Overlay"
 msgstr "Background & Overlay"
 
-#: class-ml-slider-lightbox.php:2396
+#: class-ml-slider-lightbox.php:2417
 msgid "\"Open in Gallery\" Button"
 msgstr "\"Buksan sa Gallery\" Button"
 
-#: class-ml-slider-lightbox.php:2406 class-ml-slider-lightbox.php:2746
+#: class-ml-slider-lightbox.php:2427 class-ml-slider-lightbox.php:2767
 msgid "Navigation & Controls"
 msgstr "Navigasyon & Mga Kontrol"
 
-#: class-ml-slider-lightbox.php:2412
+#: class-ml-slider-lightbox.php:2433
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1641,27 +1667,27 @@ msgstr ""
 "sa MetaSlider ngunit gagana pa rin para sa mga lightbox ng nilalaman ng "
 "WordPress."
 
-#: class-ml-slider-lightbox.php:2419 class-ml-slider-lightbox.php:4209
+#: class-ml-slider-lightbox.php:2440 class-ml-slider-lightbox.php:4230
 msgid "Enhanced Zoom & Controls"
 msgstr "Pinaigting na Zoom & Mga Kontrol"
 
-#: class-ml-slider-lightbox.php:2427
+#: class-ml-slider-lightbox.php:2448
 msgid "Media & Video Enhancements"
 msgstr "Media & Mga Pagpapahusay sa Video"
 
-#: class-ml-slider-lightbox.php:2435 class-ml-slider-lightbox.php:4237
+#: class-ml-slider-lightbox.php:2456 class-ml-slider-lightbox.php:4258
 msgid "Social & Navigation"
 msgstr "Social & Navigasyon"
 
-#: class-ml-slider-lightbox.php:2443 class-ml-slider-lightbox.php:4258
+#: class-ml-slider-lightbox.php:2464 class-ml-slider-lightbox.php:4279
 msgid "Advanced Features"
 msgstr "Mga Advanced na Tampok"
 
-#: class-ml-slider-lightbox.php:2459
+#: class-ml-slider-lightbox.php:2480
 msgid "Manual Options"
 msgstr "Manu-manong Mga Opsyon"
 
-#: class-ml-slider-lightbox.php:2460
+#: class-ml-slider-lightbox.php:2481
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -1669,45 +1695,45 @@ msgstr ""
 "Manu-manong mga kontrol at mga override ng WordPress na gumagana nang "
 "nakapag-iisa sa mga awtomatikong setting."
 
-#: class-ml-slider-lightbox.php:2640
+#: class-ml-slider-lightbox.php:2661
 msgid "Navigation Icons"
 msgstr "Mga Icon ng Navigasyon"
 
-#: class-ml-slider-lightbox.php:2647
+#: class-ml-slider-lightbox.php:2668
 msgid "Buttons"
 msgstr "Mga Button"
 
-#: class-ml-slider-lightbox.php:2670
+#: class-ml-slider-lightbox.php:2691
 msgid "Autoplay Progress Bar Color"
 msgstr "Kulay ng Autoplay Progress Bar"
 
-#: class-ml-slider-lightbox.php:2694
+#: class-ml-slider-lightbox.php:2715
 msgid "Close Button"
 msgstr "Button na Isara"
 
-#: class-ml-slider-lightbox.php:2710
+#: class-ml-slider-lightbox.php:2731
 msgid "Button Colors"
 msgstr "Mga Kulay ng Button"
 
-#: class-ml-slider-lightbox.php:2718
+#: class-ml-slider-lightbox.php:2739
 msgid "Icon Colors"
 msgstr "Mga Kulay ng Icon"
 
-#: class-ml-slider-lightbox.php:3099
+#: class-ml-slider-lightbox.php:3120
 msgid "Configure general gallery settings that apply site-wide."
 msgstr ""
 "I-configure ang mga pangkalahatang setting ng gallery na naaangkop sa buong "
 "site."
 
-#: class-ml-slider-lightbox.php:3104
+#: class-ml-slider-lightbox.php:3125
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "I-configure ang mga setting na tiyak sa pag-andar ng MetaSlider Gallery."
 
-#: class-ml-slider-lightbox.php:3109
+#: class-ml-slider-lightbox.php:3130
 msgid "Select where the gallery will be enabled automatically."
 msgstr "Pumili kung saan awtomatikong paganahin ang gallery."
 
-#: class-ml-slider-lightbox.php:3115
+#: class-ml-slider-lightbox.php:3136
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1715,31 +1741,31 @@ msgstr ""
 "Pumili kung paano i-filter ang nilalaman para sa pagproseso ng gallery at "
 "tukuyin kung aling mga pahina, post, o selector ang isasama o aalisin."
 
-#: class-ml-slider-lightbox.php:3131
+#: class-ml-slider-lightbox.php:3152
 msgid "Processing Mode"
 msgstr "Mode ng Pagproseso"
 
-#: class-ml-slider-lightbox.php:3134
+#: class-ml-slider-lightbox.php:3155
 msgid "Process all content EXCEPT the items specified below"
 msgstr "Iproseso ang lahat ng nilalaman MALIBAN sa mga item na tinukoy sa ibaba"
 
-#: class-ml-slider-lightbox.php:3137
+#: class-ml-slider-lightbox.php:3158
 msgid "ONLY process the items specified below"
 msgstr "Tanging iproseso ang mga item na tinukoy sa ibaba"
 
-#: class-ml-slider-lightbox.php:3144
+#: class-ml-slider-lightbox.php:3165
 msgid "Inclusion Mode"
 msgstr "Mode ng Pagsasama"
 
-#: class-ml-slider-lightbox.php:3148
+#: class-ml-slider-lightbox.php:3169
 msgid "Exclusion Mode"
 msgstr "Mode ng Pagtatangi"
 
-#: class-ml-slider-lightbox.php:3168
+#: class-ml-slider-lightbox.php:3189
 msgid "Images in post content"
 msgstr "Mga Imahe sa nilalaman ng post"
 
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3190
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -1748,11 +1774,11 @@ msgstr ""
 "\"Palakihin sa I-click\" na nakatakda sa mga post at pahina ay awtomatikong "
 "magbubukas sa gallery."
 
-#: class-ml-slider-lightbox.php:3185
+#: class-ml-slider-lightbox.php:3206
 msgid "Images and videos in widgets and sidebars"
 msgstr "Mga Imahe at video sa mga widget at sidebar"
 
-#: class-ml-slider-lightbox.php:3186
+#: class-ml-slider-lightbox.php:3207
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
@@ -1760,11 +1786,11 @@ msgstr ""
 "Kapag naka-enable, ang mga imahe at video sa mga lugar ng widget ay "
 "awtomatikong magbubukas sa gallery."
 
-#: class-ml-slider-lightbox.php:3202
+#: class-ml-slider-lightbox.php:3223
 msgid "Gallery shortcodes and blocks"
 msgstr "Mga shortcode at bloke ng Gallery"
 
-#: class-ml-slider-lightbox.php:3203
+#: class-ml-slider-lightbox.php:3224
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1772,11 +1798,11 @@ msgstr ""
 "Kapag naka-enable, ang mga larawan sa WordPress [gallery] shortcodes at "
 "Gutenberg Gallery blocks ay awtomatikong magbubukas sa gallery window."
 
-#: class-ml-slider-lightbox.php:3219
+#: class-ml-slider-lightbox.php:3240
 msgid "Featured images"
 msgstr "Mga tampok na larawan"
 
-#: class-ml-slider-lightbox.php:3220
+#: class-ml-slider-lightbox.php:3241
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -1784,7 +1810,7 @@ msgstr ""
 "Kapag naka-enable, ang mga tampok na larawan (mga thumbnail ng post) ay "
 "awtomatikong magbubukas sa gallery kapag na-click."
 
-#: class-ml-slider-lightbox.php:3229
+#: class-ml-slider-lightbox.php:3250
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -1792,11 +1818,11 @@ msgstr ""
 "Awtomatikong buksan ang lahat ng MetaSlider slideshows sa gallery, na "
 "pinapawalang-bisa ang per-slider na setting."
 
-#: class-ml-slider-lightbox.php:3243, fuzzy
+#: class-ml-slider-lightbox.php:3264, fuzzy
 msgid "MetaSlider slideshows"
 msgstr "MetaSlider slideshows"
 
-#: class-ml-slider-lightbox.php:3244
+#: class-ml-slider-lightbox.php:3265
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -1804,11 +1830,11 @@ msgstr ""
 "Kapag naka-enable, lahat ng MetaSlider slideshows ay magbubukas ng mga "
 "slide sa gallery window, na pinapawalang-bisa ang per-slider na setting."
 
-#: class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3281
 msgid "Videos in post content"
 msgstr "Mga video sa nilalaman ng post"
 
-#: class-ml-slider-lightbox.php:3261
+#: class-ml-slider-lightbox.php:3282
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1817,7 +1843,7 @@ msgstr ""
 "YouTube embeds, Vimeo embeds) sa nilalaman ng post/pahina ay awtomatikong "
 "magbubukas sa gallery."
 
-#: class-ml-slider-lightbox.php:3296
+#: class-ml-slider-lightbox.php:3317
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
@@ -1825,7 +1851,7 @@ msgstr ""
 "Kulay ng background para sa overlay ng gallery. Ang mga madilim na kulay ay "
 "pinakamahusay para sa pagtingin ng larawan."
 
-#: class-ml-slider-lightbox.php:3301
+#: class-ml-slider-lightbox.php:3322
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
@@ -1833,7 +1859,7 @@ msgstr ""
 "Kulay ng background para sa \"Buksan sa Gallery\" na mga button na "
 "lumalabas sa mga slide, larawan, at video."
 
-#: class-ml-slider-lightbox.php:3306
+#: class-ml-slider-lightbox.php:3327
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
@@ -1841,15 +1867,15 @@ msgstr ""
 "Kulay ng teksto para sa \"Buksan sa Gallery\" na mga button na lumalabas sa "
 "mga slide, larawan, at video."
 
-#: class-ml-slider-lightbox.php:3311
+#: class-ml-slider-lightbox.php:3332
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "Kulay ng background kapag hover sa \"Buksan sa Gallery\" na mga button."
 
-#: class-ml-slider-lightbox.php:3316
+#: class-ml-slider-lightbox.php:3337
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "Kulay ng teksto kapag hover sa \"Buksan sa Gallery\" na mga button."
 
-#: class-ml-slider-lightbox.php:3329
+#: class-ml-slider-lightbox.php:3350
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -1857,15 +1883,15 @@ msgstr ""
 "Custom na teksto para sa mga button ng gallery. Ang teksto na ito ay "
 "lilitaw sa lahat ng \"Buksan sa Gallery\" na mga button sa buong site."
 
-#: class-ml-slider-lightbox.php:3342 class-ml-slider-lightbox.php:3368
+#: class-ml-slider-lightbox.php:3363 class-ml-slider-lightbox.php:3389
 msgid "Top Right (Default)"
 msgstr "Ituktok Kanan (Default)"
 
-#: class-ml-slider-lightbox.php:3355
+#: class-ml-slider-lightbox.php:3376
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "Pumili kung saan ilalagay ang close button (X) sa overlay ng gallery."
 
-#: class-ml-slider-lightbox.php:3381
+#: class-ml-slider-lightbox.php:3402
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
@@ -1873,11 +1899,11 @@ msgstr ""
 "Pumili kung saan ilalagay ang \"Buksan sa Gallery\" na mga button sa loob "
 "ng mga slide, larawan, gallery, at video."
 
-#: class-ml-slider-lightbox.php:3386
+#: class-ml-slider-lightbox.php:3407
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "Kulay para sa mga arrow ng navigation na nakaraang at susunod sa gallery."
 
-#: class-ml-slider-lightbox.php:3391
+#: class-ml-slider-lightbox.php:3412
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -1885,11 +1911,11 @@ msgstr ""
 "Kulay ng arrow kapag hover. Lumilikha ng visual feedback kapag ang mga "
 "gumagamit ay gumagalaw ng kanilang mouse sa mga navigation arrow."
 
-#: class-ml-slider-lightbox.php:3396
+#: class-ml-slider-lightbox.php:3417
 msgid "Color for the close button (X) in the gallery."
 msgstr "Kulay para sa button na isara (X) sa gallery."
 
-#: class-ml-slider-lightbox.php:3401
+#: class-ml-slider-lightbox.php:3422
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -1898,7 +1924,7 @@ msgstr ""
 "feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa button na "
 "isara."
 
-#: class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3427
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -1907,7 +1933,7 @@ msgstr ""
 "Nakakaapekto sa zoom, fullscreen icons (Pro), at display ng bilang ng mga "
 "larawan."
 
-#: class-ml-slider-lightbox.php:3411
+#: class-ml-slider-lightbox.php:3432
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -1916,13 +1942,13 @@ msgstr ""
 "feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa mga icon ng "
 "toolbar at counter."
 
-#: class-ml-slider-lightbox.php:3416
+#: class-ml-slider-lightbox.php:3437
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr ""
 "Kulayan ng background para sa mga arrow button na nakaraan at susunod na "
 "navigasyon."
 
-#: class-ml-slider-lightbox.php:3421
+#: class-ml-slider-lightbox.php:3442
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -1931,11 +1957,11 @@ msgstr ""
 "ng visual na feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa "
 "mga arrow."
 
-#: class-ml-slider-lightbox.php:3426
+#: class-ml-slider-lightbox.php:3447
 msgid "Background color for the close button (X) in the gallery."
 msgstr "Kulayan ng background para sa button na isara (X) sa gallery."
 
-#: class-ml-slider-lightbox.php:3431
+#: class-ml-slider-lightbox.php:3452
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -1944,11 +1970,11 @@ msgstr ""
 "ng visual na feedback kapag inilipat ng mga gumagamit ang kanilang mouse sa "
 "button na isara."
 
-#: class-ml-slider-lightbox.php:3436
+#: class-ml-slider-lightbox.php:3457
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "Kulayan ng background para sa mga icon ng toolbar sa lightbox."
 
-#: class-ml-slider-lightbox.php:3441
+#: class-ml-slider-lightbox.php:3462
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -1957,44 +1983,44 @@ msgstr ""
 "Nagbibigay ng visual na feedback kapag inilipat ng mga gumagamit ang "
 "kanilang mouse sa mga icon ng toolbar."
 
-#: class-ml-slider-lightbox.php:3486 class-ml-slider-lightbox.php:3499
-#: class-ml-slider-lightbox.php:3512 class-ml-slider-lightbox.php:3610, fuzzy
+#: class-ml-slider-lightbox.php:3507 class-ml-slider-lightbox.php:3520
+#: class-ml-slider-lightbox.php:3533 class-ml-slider-lightbox.php:3631, fuzzy
 msgid "Icon Hover"
 msgstr "Icon Hover"
 
-#: class-ml-slider-lightbox.php:3487 class-ml-slider-lightbox.php:3500
-#: class-ml-slider-lightbox.php:3513 class-ml-slider-lightbox.php:3594
-#: class-ml-slider-lightbox.php:3611, fuzzy
+#: class-ml-slider-lightbox.php:3508 class-ml-slider-lightbox.php:3521
+#: class-ml-slider-lightbox.php:3534 class-ml-slider-lightbox.php:3615
+#: class-ml-slider-lightbox.php:3632, fuzzy
 msgid "Background"
 msgstr "Background"
 
-#: class-ml-slider-lightbox.php:3488 class-ml-slider-lightbox.php:3501
-#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3595
-#: class-ml-slider-lightbox.php:3612, fuzzy
+#: class-ml-slider-lightbox.php:3509 class-ml-slider-lightbox.php:3522
+#: class-ml-slider-lightbox.php:3535 class-ml-slider-lightbox.php:3616
+#: class-ml-slider-lightbox.php:3633, fuzzy
 msgid "Background Hover"
 msgstr "Background Hover"
 
-#: class-ml-slider-lightbox.php:3531
+#: class-ml-slider-lightbox.php:3552
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "Itakda ang opacity ng background ng gallery (0 = transparent, 1 = opaque)."
 
-#: class-ml-slider-lightbox.php:3540
+#: class-ml-slider-lightbox.php:3561
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "Kulayan ng progress bar na ipinapakita sa panahon ng autoplay slideshows."
 
-#: class-ml-slider-lightbox.php:3546
+#: class-ml-slider-lightbox.php:3567
 msgid "Border"
 msgstr "Hangganan"
 
-#: class-ml-slider-lightbox.php:3547
+#: class-ml-slider-lightbox.php:3568
 msgid "Border Active and Hover"
 msgstr "Aktibong Hangganan at Hover"
 
-#: class-ml-slider-lightbox.php:3559
+#: class-ml-slider-lightbox.php:3580
 msgid "Show navigation arrows in gallery"
 msgstr "Ipakita ang mga navigation arrow sa gallery"
 
-#: class-ml-slider-lightbox.php:3560
+#: class-ml-slider-lightbox.php:3581
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -2004,17 +2030,17 @@ msgstr ""
 "keyboard navigation (← → keys, ESC upang isara). Ito ay available para sa "
 "mga slideshows at mga gallery ng larawan."
 
-#: class-ml-slider-lightbox.php:3569
+#: class-ml-slider-lightbox.php:3590
 msgid "Customize the gallery background and overlay appearance."
 msgstr "I-customize ang background ng gallery at ang hitsura ng overlay."
 
-#: class-ml-slider-lightbox.php:3574
+#: class-ml-slider-lightbox.php:3595
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr ""
 "I-customize ang mga icon ng nabigasyon (isara, nakaraan, susunod na mga "
 "arrow) para sa gallery."
 
-#: class-ml-slider-lightbox.php:3579
+#: class-ml-slider-lightbox.php:3600
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -2022,15 +2048,15 @@ msgstr ""
 "I-customize ang mga \"Buksan sa Gallery\" na mga button na maaaring idagdag "
 "sa mga slide, larawan, gallery, at mga video."
 
-#: class-ml-slider-lightbox.php:3592
+#: class-ml-slider-lightbox.php:3613
 msgid "Text"
 msgstr "Teksto"
 
-#: class-ml-slider-lightbox.php:3593
+#: class-ml-slider-lightbox.php:3614
 msgid "Text Hover"
 msgstr "Teksto sa Hover"
 
-#: class-ml-slider-lightbox.php:3618
+#: class-ml-slider-lightbox.php:3639
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
@@ -2038,11 +2064,11 @@ msgstr ""
 "I-configure ang mga opsyon sa nabigasyon at kontrol na nalalapat sa lahat "
 "ng MetaSlider galleries."
 
-#: class-ml-slider-lightbox.php:3628
+#: class-ml-slider-lightbox.php:3649
 msgid "Show thumbnails"
 msgstr "Ipakita ang mga thumbnail"
 
-#: class-ml-slider-lightbox.php:3629
+#: class-ml-slider-lightbox.php:3650
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -2050,15 +2076,15 @@ msgstr ""
 "I-display ang mga thumbnail na larawan sa ibaba ng gallery para sa madaling "
 "nabigasyon. Ito ay available para sa slideshows at mga image gallery."
 
-#: class-ml-slider-lightbox.php:3642
+#: class-ml-slider-lightbox.php:3663
 msgid "How visitors open images"
 msgstr "Paano buksan ng mga bisita ang mga larawan"
 
-#: class-ml-slider-lightbox.php:3663
+#: class-ml-slider-lightbox.php:3684
 msgid "Show captions"
 msgstr "Ipakita ang mga caption"
 
-#: class-ml-slider-lightbox.php:3664
+#: class-ml-slider-lightbox.php:3685
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -2066,19 +2092,19 @@ msgstr ""
 "Kapag naka-enable, nagdi-display ng mga caption sa window ng gallery. Ito "
 "ay available para sa slideshows, mga larawan, at mga image gallery."
 
-#: class-ml-slider-lightbox.php:3671
+#: class-ml-slider-lightbox.php:3692
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr ""
 "Ang mga advanced na tampok ng lightbox ay available sa pamamagitan ng "
 "MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3673
+#: class-ml-slider-lightbox.php:3694
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr ""
 "Kumuha ng preview ng mga advanced na tampok na available sa MetaSlider "
 "Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3676
+#: class-ml-slider-lightbox.php:3697
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -2086,11 +2112,11 @@ msgstr ""
 "Ang mga advanced na LightGallery.js plugins ay available sa Pro version na "
 "may karagdagang mga opsyon sa pagpapasadya."
 
-#: class-ml-slider-lightbox.php:3704 class-ml-slider-lightbox.php:3705
+#: class-ml-slider-lightbox.php:3725 class-ml-slider-lightbox.php:3726
 msgid "specific Pages"
 msgstr "mga partikular na Pahina"
 
-#: class-ml-slider-lightbox.php:3707
+#: class-ml-slider-lightbox.php:3728
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2098,7 +2124,7 @@ msgstr ""
 "Pumili ng mga pahina kung saan dapat i-disable ang gallery. Ipinapakita ang "
 "hanggang 100 pinakabagong pahina. Mag-type upang maghanap."
 
-#: class-ml-slider-lightbox.php:3707 class-ml-slider-lightbox.php:3708
+#: class-ml-slider-lightbox.php:3728 class-ml-slider-lightbox.php:3729
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2106,11 +2132,11 @@ msgstr ""
 "Pumili ng mga pahina kung saan dapat i-enable ang gallery. Ipinapakita ang "
 "hanggang 100 pinakabagong pahina. Mag-type upang maghanap."
 
-#: class-ml-slider-lightbox.php:3752 class-ml-slider-lightbox.php:3753
+#: class-ml-slider-lightbox.php:3773 class-ml-slider-lightbox.php:3774
 msgid "specific Posts"
 msgstr "tukoy na Mga Post"
 
-#: class-ml-slider-lightbox.php:3755
+#: class-ml-slider-lightbox.php:3776
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2118,7 +2144,7 @@ msgstr ""
 "Pumili ng mga post kung saan dapat hindi paganahin ang gallery. Ipinapakita "
 "ang hanggang 100 pinakabagong mga post. Mag-type upang maghanap."
 
-#: class-ml-slider-lightbox.php:3755 class-ml-slider-lightbox.php:3756
+#: class-ml-slider-lightbox.php:3776 class-ml-slider-lightbox.php:3777
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2126,48 +2152,48 @@ msgstr ""
 "Pumili ng mga post kung saan dapat paganahin ang gallery. Ipinapakita ang "
 "hanggang 100 pinakabagong mga post. Mag-type upang maghanap."
 
-#: class-ml-slider-lightbox.php:3783
+#: class-ml-slider-lightbox.php:3804
 msgid "include"
 msgstr "isama"
 
-#: class-ml-slider-lightbox.php:3783
+#: class-ml-slider-lightbox.php:3804
 msgid "exclude"
 msgstr "huwag isama"
 
-#: class-ml-slider-lightbox.php:3823
+#: class-ml-slider-lightbox.php:3844
 #, php-format
 msgid "specific %s"
 msgstr "tukoy na %s"
 
-#: class-ml-slider-lightbox.php:3824
+#: class-ml-slider-lightbox.php:3845
 #, php-format
 msgid "%s specific %s"
 msgstr "%s tukoy na %s"
 
-#: class-ml-slider-lightbox.php:3826 class-ml-slider-lightbox.php:3827
+#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:3848
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "Ipinapakita ang hanggang 100 pinakabagong %s. Mag-type upang maghanap."
 
-#: class-ml-slider-lightbox.php:3875 class-ml-slider-lightbox.php:3876
+#: class-ml-slider-lightbox.php:3896 class-ml-slider-lightbox.php:3897
 msgid "specific post types"
 msgstr "tukoy na mga uri ng post"
 
-#: class-ml-slider-lightbox.php:3878
+#: class-ml-slider-lightbox.php:3899
 msgid "Select post types where gallery should be disabled entirely."
 msgstr ""
 "Pumili ng mga uri ng post kung saan dapat ganap na hindi paganahin ang "
 "gallery."
 
-#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:3879
+#: class-ml-slider-lightbox.php:3899 class-ml-slider-lightbox.php:3900
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "Pumili ng mga uri ng post kung saan dapat ganap na paganahin ang gallery."
 
-#: class-ml-slider-lightbox.php:3913
+#: class-ml-slider-lightbox.php:3934
 msgid "Exclude by CSS selector"
 msgstr "Huwag isama ayon sa CSS selector"
 
-#: class-ml-slider-lightbox.php:3916
+#: class-ml-slider-lightbox.php:3937
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2176,11 +2202,11 @@ msgstr ""
 "(isa bawat linya). Mga halimbawa:<br>.no-lightbox<br>.custom-gallery "
 "img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:3939
+#: class-ml-slider-lightbox.php:3960
 msgid "Minimum Image Width"
 msgstr "Minimum na Lapad ng Larawan"
 
-#: class-ml-slider-lightbox.php:3942
+#: class-ml-slider-lightbox.php:3963
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2191,11 +2217,11 @@ msgstr ""
 "ng larawan. Makakatulong ito para sa hindi pagsasama ng maliliit na icon, "
 "badge, at mga button."
 
-#: class-ml-slider-lightbox.php:3965
+#: class-ml-slider-lightbox.php:3986
 msgid "Minimum Image Height"
 msgstr "Minimum na Taas ng Larawan"
 
-#: class-ml-slider-lightbox.php:3968
+#: class-ml-slider-lightbox.php:3989
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2206,7 +2232,7 @@ msgstr ""
 "Makakatulong ito para sa hindi pagsasama ng maliliit na icon, badge, at mga "
 "button."
 
-#: class-ml-slider-lightbox.php:3984 class-ml-slider-lightbox.php:4141
+#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
@@ -2214,17 +2240,17 @@ msgstr ""
 "Pinalakas na paghawak ng media at mga tampok ng pag-playback ng video para "
 "sa mga propesyonal na gallery."
 
-#: class-ml-slider-lightbox.php:3991
+#: class-ml-slider-lightbox.php:4012
 msgid "Advanced features for professional lightbox implementations."
 msgstr ""
 "Advanced na mga tampok para sa mga propesyonal na lightbox na "
 "implementasyon."
 
-#: class-ml-slider-lightbox.php:4002 class-ml-slider-lightbox.php:4214
+#: class-ml-slider-lightbox.php:4023 class-ml-slider-lightbox.php:4235
 msgid "Enable Zoom"
 msgstr "Paganahin ang Zoom"
 
-#: class-ml-slider-lightbox.php:4003
+#: class-ml-slider-lightbox.php:4024
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -2232,11 +2258,11 @@ msgstr ""
 "Mag-double click upang mag-zoom, mga kontrol sa zoom, pag-zoom gamit ang "
 "mouse wheel, at mga opsyon sa zoom-to-fit."
 
-#: class-ml-slider-lightbox.php:4013 class-ml-slider-lightbox.php:4221
+#: class-ml-slider-lightbox.php:4034 class-ml-slider-lightbox.php:4242
 msgid "Enable Fullscreen"
 msgstr "Paganahin ang Fullscreen"
 
-#: class-ml-slider-lightbox.php:4014
+#: class-ml-slider-lightbox.php:4035
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
@@ -2244,11 +2270,11 @@ msgstr ""
 "Suportang native ng HTML5 fullscreen na may mga shortcut sa keyboard (F "
 "key) para sa mas nakaka-engganyong pagtingin."
 
-#: class-ml-slider-lightbox.php:4024 class-ml-slider-lightbox.php:4228
+#: class-ml-slider-lightbox.php:4045 class-ml-slider-lightbox.php:4249
 msgid "Enable Rotate"
 msgstr "Paganahin ang Rotate"
 
-#: class-ml-slider-lightbox.php:4025
+#: class-ml-slider-lightbox.php:4046
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2256,11 +2282,11 @@ msgstr ""
 "I-rotate ang mga larawan pakanan/pakaliwa, baligtarin nang "
 "pahalang/bertekal gamit ang mga kontrol ng toolbar."
 
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4056
 msgid "Enable Video"
 msgstr "Paganahin ang Video"
 
-#: class-ml-slider-lightbox.php:4036
+#: class-ml-slider-lightbox.php:4057
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2268,12 +2294,12 @@ msgstr ""
 "Pina-enhanced na suporta sa video para sa YouTube, Vimeo, mga HTML5 video "
 "na may autoplay at mga kontrol ng kalidad."
 
-#: class-ml-slider-lightbox.php:4046 class-ml-slider-lightbox.php:4263
-#: class-ml-slider-lightbox.php:4410
+#: class-ml-slider-lightbox.php:4067 class-ml-slider-lightbox.php:4284
+#: class-ml-slider-lightbox.php:4431
 msgid "Enable Unique Image URLs"
 msgstr "Paganahin ang Natatanging URL ng Larawan"
 
-#: class-ml-slider-lightbox.php:4047
+#: class-ml-slider-lightbox.php:4068
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -2281,19 +2307,19 @@ msgstr ""
 "Natatanging mga URL para sa bawat larawan sa gallery na may suporta sa "
 "pag-navigate pabalik/pasulong ng browser."
 
-#: class-ml-slider-lightbox.php:4057 class-ml-slider-lightbox.php:4270
+#: class-ml-slider-lightbox.php:4078 class-ml-slider-lightbox.php:4291
 msgid "Enable Autoplay"
 msgstr "Paganahin ang Autoplay"
 
-#: class-ml-slider-lightbox.php:4058
+#: class-ml-slider-lightbox.php:4079
 msgid "Automatically advance through images in the gallery."
 msgstr "Awtomatikong umusad sa mga larawan sa gallery."
 
-#: class-ml-slider-lightbox.php:4068 class-ml-slider-lightbox.php:4242
+#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4263
 msgid "Enable Share"
 msgstr "Paganahin ang Share"
 
-#: class-ml-slider-lightbox.php:4069
+#: class-ml-slider-lightbox.php:4090
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2301,17 +2327,17 @@ msgstr ""
 "Mga pindutan para sa pagbabahagi sa social media para sa Facebook, Twitter, "
 "Pinterest, at direktang pagbabahagi ng URL."
 
-#: class-ml-slider-lightbox.php:4079 class-ml-slider-lightbox.php:4249
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4270
 msgid "Enable Pager"
 msgstr "Paganahin ang Pager"
 
-#: class-ml-slider-lightbox.php:4080
+#: class-ml-slider-lightbox.php:4101
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr ""
 "Minimal na mga tuldok ng pagination para sa malinis na pag-navigate nang "
 "walang thumbnail na mga preview."
 
-#: class-ml-slider-lightbox.php:4136 class-ml-slider-lightbox.php:4210
+#: class-ml-slider-lightbox.php:4157 class-ml-slider-lightbox.php:4231
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
@@ -2319,23 +2345,23 @@ msgstr ""
 "Propesyonal na zoom at mga kontrol sa interaksyon ng larawan para sa mas "
 "pinabuting karanasan ng gumagamit."
 
-#: class-ml-slider-lightbox.php:4146 class-ml-slider-lightbox.php:4238
+#: class-ml-slider-lightbox.php:4167 class-ml-slider-lightbox.php:4259
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr ""
 "Mga pagpapahusay sa pagbabahagi sa social at pag-navigate upang madagdagan "
 "ang pakikilahok."
 
-#: class-ml-slider-lightbox.php:4151 class-ml-slider-lightbox.php:4259
+#: class-ml-slider-lightbox.php:4172 class-ml-slider-lightbox.php:4280
 msgid "Advanced functionality including URL management and automation features."
 msgstr ""
 "Advanced na functionality kabilang ang pamamahala ng URL at mga tampok na "
 "automation."
 
-#: class-ml-slider-lightbox.php:4163
+#: class-ml-slider-lightbox.php:4184
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "Ang tampok na ito ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4215 class-ml-slider-lightbox.php:4379
+#: class-ml-slider-lightbox.php:4236 class-ml-slider-lightbox.php:4400
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -2343,51 +2369,51 @@ msgstr ""
 "Payagan ang mga gumagamit na mag-zoom in at out gamit ang double-click, "
 "mouse wheel, at mga kontrol sa zoom."
 
-#: class-ml-slider-lightbox.php:4217
+#: class-ml-slider-lightbox.php:4238
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "Ang mga kontrol sa Zoom ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4222
+#: class-ml-slider-lightbox.php:4243
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr ""
 "Katutubong HTML5 fullscreen mode para sa nakaka-engganyong pagtingin sa mga "
 "larawan."
 
-#: class-ml-slider-lightbox.php:4224
+#: class-ml-slider-lightbox.php:4245
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "Ang fullscreen mode ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4229 class-ml-slider-lightbox.php:4395
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4416
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr ""
 "I-rotate ang mga larawan sa clockwise/anticlockwise at i-flip ng "
 "pahalang/vertikal."
 
-#: class-ml-slider-lightbox.php:4231
+#: class-ml-slider-lightbox.php:4252
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "Ang pag-ikot ng larawan ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4243
+#: class-ml-slider-lightbox.php:4264
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr ""
 "Naka-built in na pagbabahagi ng social media para sa Facebook, Twitter, at "
 "Pinterest."
 
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4266
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "Ang pagbabahagi sa social media ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4427
+#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4448
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr ""
 "Minimal na mga tuldok ng pagination sa halip na mga thumbnail para sa mas "
 "malinis na interface."
 
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4273
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "Ang pager pagination ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4264 class-ml-slider-lightbox.php:4411
+#: class-ml-slider-lightbox.php:4285 class-ml-slider-lightbox.php:4432
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
@@ -2395,85 +2421,85 @@ msgstr ""
 "Bumuo ng natatanging mga URL para sa bawat gallery image na may navigation "
 "ng browser back/forward."
 
-#: class-ml-slider-lightbox.php:4266
+#: class-ml-slider-lightbox.php:4287
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "Ang mga natatanging URL ng Larawan ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4419
+#: class-ml-slider-lightbox.php:4292 class-ml-slider-lightbox.php:4440
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "Awtomatikong slideshow na may mga kontrol sa timing at progress bar."
 
-#: class-ml-slider-lightbox.php:4273
+#: class-ml-slider-lightbox.php:4294
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "Ang autoplay ay available sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4277
+#: class-ml-slider-lightbox.php:4298
 msgid "Enable Image Protection"
 msgstr "I-enable ang Proteksyon ng Larawan"
 
-#: class-ml-slider-lightbox.php:4280
+#: class-ml-slider-lightbox.php:4301
 msgid "Image protection is available in MetaSlider Gallery Pro"
 msgstr "Ang proteksyon ng larawan ay magagamit sa MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4297
+#: class-ml-slider-lightbox.php:4318
 msgid "Features"
 msgstr "Mga Tampok"
 
-#: class-ml-slider-lightbox.php:4298
+#: class-ml-slider-lightbox.php:4319
 msgid "Free"
 msgstr "Libre"
 
-#: class-ml-slider-lightbox.php:4299, fuzzy
+#: class-ml-slider-lightbox.php:4320, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4444
+#: class-ml-slider-lightbox.php:4326 class-ml-slider-lightbox.php:4465
 msgid "Installed"
 msgstr "Naka-install"
 
-#: class-ml-slider-lightbox.php:4308 class-ml-slider-lightbox.php:4447
+#: class-ml-slider-lightbox.php:4329 class-ml-slider-lightbox.php:4468
 msgid "Upgrade now"
 msgstr "Mag-upgrade ngayon"
 
-#: class-ml-slider-lightbox.php:4314
+#: class-ml-slider-lightbox.php:4335
 msgid "Automatic lightbox for images"
 msgstr "Awtomatikong lightbox para sa mga larawan"
 
-#: class-ml-slider-lightbox.php:4315
+#: class-ml-slider-lightbox.php:4336
 msgid "Automatically enable lightbox for all images on your site."
 msgstr ""
 "Awtomatikong i-enable ang lightbox para sa lahat ng mga larawan sa iyong "
 "site."
 
-#: class-ml-slider-lightbox.php:4322
+#: class-ml-slider-lightbox.php:4343
 msgid "MetaSlider integration"
 msgstr "Integrasyon ng MetaSlider"
 
-#: class-ml-slider-lightbox.php:4323
+#: class-ml-slider-lightbox.php:4344
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "Walang putol na integrasyon sa mga slideshow ng MetaSlider."
 
-#: class-ml-slider-lightbox.php:4330
+#: class-ml-slider-lightbox.php:4351
 msgid "WordPress gallery support"
 msgstr "Suporta para sa WordPress gallery"
 
-#: class-ml-slider-lightbox.php:4331
+#: class-ml-slider-lightbox.php:4352
 msgid "Support for WordPress native galleries and blocks."
 msgstr "Suporta para sa mga katutubong gallery at mga bloke ng WordPress."
 
-#: class-ml-slider-lightbox.php:4338
+#: class-ml-slider-lightbox.php:4359
 msgid "Appearance customization"
 msgstr "Pag-customize ng hitsura"
 
-#: class-ml-slider-lightbox.php:4339
+#: class-ml-slider-lightbox.php:4360
 msgid "Customize colors, opacity, and button styles."
 msgstr "I-customize ang mga kulay, opacity, at estilo ng button."
 
-#: class-ml-slider-lightbox.php:4346
+#: class-ml-slider-lightbox.php:4367
 msgid "Gallery builder &amp; layouts"
 msgstr "Tagabuo ng gallery &amp; mga layout"
 
-#: class-ml-slider-lightbox.php:4347
+#: class-ml-slider-lightbox.php:4368
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
@@ -2481,91 +2507,91 @@ msgstr ""
 "Bumuo ng mga gallery gamit ang Grid, Masonry, Justified, Carousel, at "
 "Showcase na mga layout."
 
-#: class-ml-slider-lightbox.php:4354
+#: class-ml-slider-lightbox.php:4375
 msgid "Responsive columns"
 msgstr "Responsive na mga haligi"
 
-#: class-ml-slider-lightbox.php:4355
+#: class-ml-slider-lightbox.php:4376
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr ""
 "Itakda ang bilang ng mga haligi para sa desktop at mobile, na may naaayong "
 "espasyo."
 
-#: class-ml-slider-lightbox.php:4362
+#: class-ml-slider-lightbox.php:4383
 msgid "Image captions"
 msgstr "Mga caption ng larawan"
 
-#: class-ml-slider-lightbox.php:4363
+#: class-ml-slider-lightbox.php:4384
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr ""
 "Ipakita ang mga caption ng larawan sa grid ng gallery at sa window ng "
 "gallery."
 
-#: class-ml-slider-lightbox.php:4370
+#: class-ml-slider-lightbox.php:4391
 msgid "Thumbnail navigation"
 msgstr "Thumbnail na nabigasyon"
 
-#: class-ml-slider-lightbox.php:4371
+#: class-ml-slider-lightbox.php:4392
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr ""
 "I-display ang isang strip ng mga thumbnail para sa mabilis na nabigasyon sa "
 "pagitan ng mga larawan."
 
-#: class-ml-slider-lightbox.php:4378
+#: class-ml-slider-lightbox.php:4399
 msgid "Zoom controls"
 msgstr "Mga kontrol sa zoom"
 
-#: class-ml-slider-lightbox.php:4386
+#: class-ml-slider-lightbox.php:4407
 msgid "Fullscreen mode"
 msgstr "Fullscreen na mode"
 
-#: class-ml-slider-lightbox.php:4387
+#: class-ml-slider-lightbox.php:4408
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr ""
 "Katutubong HTML5 fullscreen para sa nakaka-engganyong pagtingin ng mga "
 "larawan."
 
-#: class-ml-slider-lightbox.php:4394
+#: class-ml-slider-lightbox.php:4415
 msgid "Rotate and flip images"
 msgstr "I-rotate at i-flip ang mga larawan"
 
-#: class-ml-slider-lightbox.php:4402
+#: class-ml-slider-lightbox.php:4423
 msgid "Social media sharing"
 msgstr "Pagbabahagi sa social media"
 
-#: class-ml-slider-lightbox.php:4403
+#: class-ml-slider-lightbox.php:4424
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "Naka-built-in na pagbabahagi para sa Facebook, Twitter, at Pinterest."
 
-#: class-ml-slider-lightbox.php:4418, fuzzy
+#: class-ml-slider-lightbox.php:4439, fuzzy
 msgid "Autoplay slideshow"
 msgstr "Autoplay slideshow"
 
-#: class-ml-slider-lightbox.php:4426, fuzzy
+#: class-ml-slider-lightbox.php:4447, fuzzy
 msgid "Pager navigation"
 msgstr "Pager navigation"
 
-#: class-ml-slider-lightbox.php:4434, fuzzy
+#: class-ml-slider-lightbox.php:4455, fuzzy
 msgid "Premium support"
 msgstr "Premium support"
 
-#: class-ml-slider-lightbox.php:4435
+#: class-ml-slider-lightbox.php:4456
 msgid "Have your specific queries addressed directly by our experts."
 msgstr ""
 "I-address ang iyong mga tiyak na katanungan nang direkta sa aming mga "
 "eksperto."
 
-#: class-ml-slider-lightbox.php:6222
+#: class-ml-slider-lightbox.php:6243
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr ""
 "I-configure kung paano nakikipag-ugnayan ang lightbox sa mga built-in na "
 "tampok ng WordPress."
 
-#: class-ml-slider-lightbox.php:6237
+#: class-ml-slider-lightbox.php:6258
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "I-overwrite ang WordPress \"Palakihin sa Pag-click\" na Setting"
 
-#: class-ml-slider-lightbox.php:6238
+#: class-ml-slider-lightbox.php:6259
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2576,11 +2602,11 @@ msgstr ""
 "sa Pag-click\". Kapag hindi pinagana, iginagalang ang setting ng WordPress "
 "at nililipat ang mga imaheng nakatakdang \"Palakihin sa Pag-click\"."
 
-#: class-ml-slider-lightbox.php:6254
+#: class-ml-slider-lightbox.php:6275
 msgid "Override \"Link to Image File\" Setting"
 msgstr "I-overwrite ang \"Link to Image File\" na Setting"
 
-#: class-ml-slider-lightbox.php:6255
+#: class-ml-slider-lightbox.php:6276
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2591,11 +2617,11 @@ msgstr ""
 "sa pamamagitan ng \"Link to Image File\" sa block editor). Kapag hindi "
 "pinagana, iginagalang ang orihinal na pag-uugali ng link."
 
-#: class-ml-slider-lightbox.php:6286
+#: class-ml-slider-lightbox.php:6307
 msgid "Exclude Post Types from Manual Processing"
 msgstr "I-exclude ang mga Uri ng Post mula sa Manu-manong Pagproseso"
 
-#: class-ml-slider-lightbox.php:6289
+#: class-ml-slider-lightbox.php:6310
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2606,11 +2632,11 @@ msgstr ""
 "paganahin ang gallery sa mga pahina ng produkto ng WooCommerce habang "
 "pinapanatili itong aktibo sa ibang lugar."
 
-#: class-ml-slider-lightbox.php:6313
+#: class-ml-slider-lightbox.php:6334
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "Paano gamitin: WordPress \"Palakihin sa Pag-click\""
 
-#: class-ml-slider-lightbox.php:6315
+#: class-ml-slider-lightbox.php:6336
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2618,57 +2644,57 @@ msgstr ""
 "May built-in na tampok na \"Palakihin sa Pag-click\" ang WordPress para sa "
 "mga imahe. Narito kung paano ito paganahin:"
 
-#: class-ml-slider-lightbox.php:6317 class-ml-slider-lightbox.php:6330
+#: class-ml-slider-lightbox.php:6338 class-ml-slider-lightbox.php:6351
 msgid "Select an image in the block editor."
 msgstr "Pumili ng isang imahe sa block editor."
 
-#: class-ml-slider-lightbox.php:6318 class-ml-slider-lightbox.php:6331
+#: class-ml-slider-lightbox.php:6339 class-ml-slider-lightbox.php:6352
 msgid "In the block toolbar, click on the Link icon."
 msgstr "Sa block toolbar, i-click ang icon ng Link."
 
-#: class-ml-slider-lightbox.php:6319
+#: class-ml-slider-lightbox.php:6340
 msgid "Select \"Enlarge on click\"."
 msgstr "Pumili ng \"Palakihin sa pag-click\"."
 
-#: class-ml-slider-lightbox.php:6325
+#: class-ml-slider-lightbox.php:6346
 msgid "How to use: \"Link to Image File\""
 msgstr "Paano gamitin: \"Link to Image File\""
 
-#: class-ml-slider-lightbox.php:6327
+#: class-ml-slider-lightbox.php:6348
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr ""
 "Maaari mong i-link ang mga imahe nang direkta sa kanilang buong sukat na "
 "media file. Narito kung paano:"
 
-#: class-ml-slider-lightbox.php:6328
+#: class-ml-slider-lightbox.php:6349
 msgid "For the Block Editor:"
 msgstr "Para sa Block Editor:"
 
-#: class-ml-slider-lightbox.php:6332
+#: class-ml-slider-lightbox.php:6353
 msgid "Choose \"Link to image file\"."
 msgstr "Pumili ng \"Link to image file\"."
 
-#: class-ml-slider-lightbox.php:6334
+#: class-ml-slider-lightbox.php:6355
 msgid "For the Classic Editor:"
 msgstr "Para sa Classic Editor:"
 
-#: class-ml-slider-lightbox.php:6336
+#: class-ml-slider-lightbox.php:6357
 msgid "Select an image."
 msgstr "Pumili ng isang imahe."
 
-#: class-ml-slider-lightbox.php:6337
+#: class-ml-slider-lightbox.php:6358
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "Sa toolbar ng imahe, i-click ang icon na I-edit."
 
-#: class-ml-slider-lightbox.php:6338
+#: class-ml-slider-lightbox.php:6359
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "Pumili ng \"Media File\" sa dropdown na \"Link To\"."
 
-#: class-ml-slider-lightbox.php:6344
+#: class-ml-slider-lightbox.php:6365
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "Paano gamitin: CSS Class Method (Advanced)"
 
-#: class-ml-slider-lightbox.php:6346
+#: class-ml-slider-lightbox.php:6367
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2677,35 +2703,35 @@ msgstr ""
 "klase upang i-enable ang MetaSlider Gallery sa anumang elemento na "
 "naglalaman ng mga imahe."
 
-#: class-ml-slider-lightbox.php:6347
+#: class-ml-slider-lightbox.php:6368
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "Pamamaraan 1: Block Editor Karagdagang CSS Classes"
 
-#: class-ml-slider-lightbox.php:6349
+#: class-ml-slider-lightbox.php:6370
 msgid "Select an image or gallery block."
 msgstr "Pumili ng isang imahe o gallery block."
 
-#: class-ml-slider-lightbox.php:6350
+#: class-ml-slider-lightbox.php:6371
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "Sa sidebar ng mga setting ng block, mag-scroll sa \"Advanced\"."
 
-#: class-ml-slider-lightbox.php:6351
+#: class-ml-slider-lightbox.php:6372
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr ""
 "Idagdag ang <code>ml-lightbox-enabled</code> sa \"Karagdagang CSS "
 "class(es)\"."
 
-#: class-ml-slider-lightbox.php:6353
+#: class-ml-slider-lightbox.php:6374
 msgid "Method 2: HTML/Code"
 msgstr "Pamamaraan 2: HTML/Kodigo"
 
-#: class-ml-slider-lightbox.php:6354
+#: class-ml-slider-lightbox.php:6375
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr ""
 "Para sa mga custom na HTML o theme developer, idirekta ang pagdagdag ng "
 "klase:"
 
-#: class-ml-slider-lightbox.php:1258
+#: class-ml-slider-lightbox.php:1279
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"

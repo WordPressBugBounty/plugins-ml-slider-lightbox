@@ -3,7 +3,7 @@ Contributors: andergmartins, htmgarcia, publishpress, stevejburge, rochdesigns
 Tags: gallery, image gallery, video gallery, wordpress gallery, YouTube gallery
 Requires at least: 5.0
 Tested up to: 7.0.2
-Stable tag: 2.35.0
+Stable tag: 2.36.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html

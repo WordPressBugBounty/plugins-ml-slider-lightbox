@@ -373,18 +373,10 @@
     transition-delay: 0.4s;
 }
 
-/* Caption-transition mode appends a .lg-sub-html into each .lg-item
-   (appendSubHtmlTo: '.lg-item'). lightGallery then toggles .lg-empty-html on
-   ALL items based on the last-rendered slide's caption, so a captionless
-   preloaded slide can both hide real captions AND leave empty bars showing
-   (the class lands on the wrong items in both directions). Ignore the unreliable
-   .lg-empty-html toggle and drive bar visibility purely by content: show bars
-   that have a caption, hide truly empty ones. Both out-specify lightGallery's
-   own `.lg-outer .lg-empty-html .lg-sub-html { display: none }` (0,3,0). */
-.lg-container[class*="ml-cap-"] .lg-sub-html:not(:empty) {
+.lg-container .lg-item > .lg-sub-html:not(:empty) {
     display: block;
 }
-.lg-container[class*="ml-cap-"] .lg-sub-html:empty {
+.lg-container .lg-item > .lg-sub-html:empty {
     display: none;
 }
 

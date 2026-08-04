@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-07-28 17:01+0000\n"
+"PO-Revision-Date: 2026-08-04 11:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -77,9 +77,9 @@ msgstr "Zahtevani podatki ne obstajajo."
 msgid "The attempt to update the option failed."
 msgstr "Poskus posodobitve možnosti je neuspešen."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1240
-#: class-ml-gallery.php:3302 class-ml-slider-lightbox.php:2121
-#: class-ml-slider-lightbox.php:2264
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1247
+#: class-ml-gallery.php:3374 class-ml-slider-lightbox.php:2142
+#: class-ml-slider-lightbox.php:2285
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
@@ -87,13 +87,13 @@ msgstr "MetaSlider Gallery"
 msgid "Dismiss"
 msgstr "Zavrniti"
 
-#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1182
-#: class-ml-slider-lightbox.php:2301 class-ml-slider-lightbox.php:2316
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1189
+#: class-ml-slider-lightbox.php:2322 class-ml-slider-lightbox.php:2337
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Nimate zadostnih dovoljenj za dostop do te strani."
 
-#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2238
-#: class-ml-gallery.php:2398
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2283
+#: class-ml-gallery.php:2447
 msgid "Security check failed."
 msgstr "Preverjanje varnosti ni uspelo."
 
@@ -117,200 +117,200 @@ msgstr "Neslovenska diaprojekcija"
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "Nekatere od teh funkcij so na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:219 class-ml-gallery.php:228 class-ml-gallery.php:609
+#: class-ml-gallery.php:222 class-ml-gallery.php:231 class-ml-gallery.php:615
 msgid "Fade"
 msgstr "Zasveti"
 
-#: class-ml-gallery.php:220
+#: class-ml-gallery.php:223
 msgid "Slide"
 msgstr "Drsaj"
 
-#: class-ml-gallery.php:221 class-ml-gallery.php:1831, fuzzy
+#: class-ml-gallery.php:224 class-ml-gallery.php:1838, fuzzy
 msgid "Zoom"
 msgstr "Zoom"
 
-#: class-ml-gallery.php:227 class-ml-gallery.php:601 class-ml-gallery.php:2074
-#: class-ml-gallery.php:2100 class-ml-gallery.php:2114
+#: class-ml-gallery.php:230 class-ml-gallery.php:607 class-ml-gallery.php:2119
+#: class-ml-gallery.php:2145 class-ml-gallery.php:2159
 msgid "None"
 msgstr "Nič"
 
-#: class-ml-gallery.php:229
+#: class-ml-gallery.php:232
 msgid "Slide Up"
 msgstr "Drsaj navzgor"
 
-#: class-ml-gallery.php:230
+#: class-ml-gallery.php:233
 msgid "Slide Down"
 msgstr "Povleci navzdol"
 
-#: class-ml-gallery.php:244
+#: class-ml-gallery.php:247
 msgid "Hidden"
 msgstr "Skrito"
 
-#: class-ml-gallery.php:245
+#: class-ml-gallery.php:248
 msgid "Gallery + Window"
 msgstr "Galerija + Okno"
 
-#: class-ml-gallery.php:246
+#: class-ml-gallery.php:249
 msgid "Window Only"
 msgstr "Samo okno"
 
-#: class-ml-gallery.php:247
+#: class-ml-gallery.php:250
 msgid "Gallery Only"
 msgstr "Samo galerija"
 
-#: class-ml-gallery.php:266 class-ml-gallery.php:2808
+#: class-ml-gallery.php:269 class-ml-gallery.php:2857
 msgid "Manual entry"
 msgstr "Ročni vnos"
 
-#: class-ml-gallery.php:267 class-ml-gallery.php:2809
+#: class-ml-gallery.php:270 class-ml-gallery.php:2858
 msgid "Media caption"
 msgstr "Podnapis medija"
 
-#: class-ml-gallery.php:268 class-ml-gallery.php:2810
+#: class-ml-gallery.php:271 class-ml-gallery.php:2859
 msgid "Media description"
 msgstr "Opis medija"
 
-#: class-ml-gallery.php:602, fuzzy
+#: class-ml-gallery.php:608, fuzzy
 msgid "Noir (B&W)"
 msgstr "Noir (B&W)"
 
-#: class-ml-gallery.php:603
+#: class-ml-gallery.php:609
 msgid "Silver (B&W)"
 msgstr "Srebrna (B&W)"
 
-#: class-ml-gallery.php:604, fuzzy
+#: class-ml-gallery.php:610, fuzzy
 msgid "Vintage"
 msgstr "Vintage"
 
-#: class-ml-gallery.php:605
+#: class-ml-gallery.php:611
 msgid "Golden Hour"
 msgstr "Zlata ura"
 
-#: class-ml-gallery.php:606, fuzzy
+#: class-ml-gallery.php:612, fuzzy
 msgid "Toaster"
 msgstr "Toaster"
 
-#: class-ml-gallery.php:607
+#: class-ml-gallery.php:613
 msgid "Warm"
 msgstr "Toplo"
 
-#: class-ml-gallery.php:608
+#: class-ml-gallery.php:614
 msgid "Cool"
 msgstr "Hladi"
 
-#: class-ml-gallery.php:610
+#: class-ml-gallery.php:616
 msgid "Matte"
 msgstr "Mat"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:617
 msgid "Pastel"
 msgstr "Pastelno"
 
-#: class-ml-gallery.php:612
+#: class-ml-gallery.php:618
 msgid "Vivid"
 msgstr "Živo"
 
-#: class-ml-gallery.php:613
+#: class-ml-gallery.php:619
 msgid "Crisp"
 msgstr "Ostro"
 
-#: class-ml-gallery.php:614
+#: class-ml-gallery.php:620
 msgid "Dramatic"
 msgstr "Dramatično"
 
-#: class-ml-gallery.php:615
+#: class-ml-gallery.php:621
 msgid "Negative"
 msgstr "Negativno"
 
-#: class-ml-gallery.php:727 class-ml-gallery.php:736 class-ml-gallery.php:1250
+#: class-ml-gallery.php:734 class-ml-gallery.php:743 class-ml-gallery.php:1257
 msgid "Galleries"
 msgstr "Galerije"
 
-#: class-ml-gallery.php:728 class-ml-gallery.php:877 class-ml-gallery.php:1581
-#: class-ml-slider-lightbox.php:2260
+#: class-ml-gallery.php:735 class-ml-gallery.php:884 class-ml-gallery.php:1588
+#: class-ml-slider-lightbox.php:2281
 msgid "Gallery"
 msgstr "Galerija"
 
-#: class-ml-gallery.php:729 class-ml-gallery.php:730 class-ml-gallery.php:1215
-#: class-ml-gallery.php:3296
+#: class-ml-gallery.php:736 class-ml-gallery.php:737 class-ml-gallery.php:1222
+#: class-ml-gallery.php:3368
 msgid "Add New Gallery"
 msgstr "Dodaj novo galerijo"
 
-#: class-ml-gallery.php:731 class-ml-gallery.php:1130 class-ml-gallery.php:1131
-#: class-ml-gallery.php:1216
+#: class-ml-gallery.php:738 class-ml-gallery.php:1137 class-ml-gallery.php:1138
+#: class-ml-gallery.php:1223
 msgid "Edit Gallery"
 msgstr "Uredi galerijo"
 
-#: class-ml-gallery.php:732 class-ml-gallery.php:1193 class-ml-gallery.php:2447
+#: class-ml-gallery.php:739 class-ml-gallery.php:1200 class-ml-gallery.php:2496
 msgid "New Gallery"
 msgstr "Nova galerija"
 
-#: class-ml-gallery.php:733
+#: class-ml-gallery.php:740
 msgid "Search Galleries"
 msgstr "Išči galerije"
 
-#: class-ml-gallery.php:734
+#: class-ml-gallery.php:741
 msgid "No galleries found."
 msgstr "Nobena galerija ni bila najdena."
 
-#: class-ml-gallery.php:735
+#: class-ml-gallery.php:742
 msgid "No galleries found in trash."
 msgstr "Nobena galerija ni bila najdena v smetnjaku."
 
-#: class-ml-gallery.php:884
+#: class-ml-gallery.php:891
 msgid "All Galleries"
 msgstr "Vse galerije"
 
-#: class-ml-gallery.php:891
+#: class-ml-gallery.php:898
 msgid "Create Gallery"
 msgstr "Ustvari galerijo"
 
-#: class-ml-gallery.php:901
+#: class-ml-gallery.php:908
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "Uredi &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:919
+#: class-ml-gallery.php:926
 msgid "Invalid gallery ID."
 msgstr "Neveljavna ID galerije."
 
-#: class-ml-gallery.php:1023 class-ml-slider-lightbox.php:1634
+#: class-ml-gallery.php:1030 class-ml-slider-lightbox.php:1655
 msgid "View image"
 msgstr "Poglej sliko"
 
-#: class-ml-gallery.php:1190 class-ml-gallery.php:2403
+#: class-ml-gallery.php:1197 class-ml-gallery.php:2452
 msgid "Gallery not found."
 msgstr "Galerija ni bila najdena."
 
-#: class-ml-gallery.php:1218
+#: class-ml-gallery.php:1225
 msgid "Save Gallery"
 msgstr "Shrani galerijo"
 
-#: class-ml-gallery.php:1219
+#: class-ml-gallery.php:1226
 msgid "Update Gallery"
 msgstr "Posodobi galerijo"
 
-#: class-ml-gallery.php:1234 class-ml-gallery.php:1246
+#: class-ml-gallery.php:1241 class-ml-gallery.php:1253
 msgid "Back to Galleries"
 msgstr "Nazaj na galerije"
 
-#: class-ml-gallery.php:1257
+#: class-ml-gallery.php:1264
 msgid "Create New Gallery"
 msgstr "Ustvari novo galerijo"
 
-#: class-ml-gallery.php:1261
+#: class-ml-gallery.php:1268
 msgid "New"
 msgstr "Novo"
 
-#: class-ml-gallery.php:1272
+#: class-ml-gallery.php:1279
 msgid "Duplicate"
 msgstr "Podvoji"
 
-#: class-ml-gallery.php:1292
+#: class-ml-gallery.php:1299
 msgid "Gallery saved."
 msgstr "Galerija shranjena."
 
-#: class-ml-gallery.php:1303
+#: class-ml-gallery.php:1310
 #, php-format
 msgid ""
 "Gallery created from the slideshow \"%s\". Review the settings below, then "
@@ -319,236 +319,236 @@ msgstr ""
 "Galerija ustvarjena iz diaprojekcije \"%s\". Preverite nastavitve spodaj, "
 "nato shranite."
 
-#: class-ml-gallery.php:1307
+#: class-ml-gallery.php:1314
 msgid "Gallery created from your slideshow. Review the settings below, then save."
 msgstr ""
 "Galerija ustvarjena iz vaše diaprojekcije. Preverite nastavitve spodaj, "
 "nato shranite."
 
-#: class-ml-gallery.php:1321
+#: class-ml-gallery.php:1328
 msgid "Enter gallery title"
 msgstr "Vnesite naslov galerije"
 
-#: class-ml-gallery.php:1324 class-ml-gallery.php:3748
+#: class-ml-gallery.php:1331 class-ml-gallery.php:3820
 msgid "Images"
 msgstr "Slike"
 
-#: class-ml-gallery.php:1334
+#: class-ml-gallery.php:1341
 msgid "Preview or arrange images"
 msgstr "Predogled ali razporeditev slik"
 
-#: class-ml-gallery.php:1337 class-ml-gallery.php:3661
+#: class-ml-gallery.php:1344 class-ml-gallery.php:3733
 msgid "Preview"
 msgstr "Predogled"
 
-#: class-ml-gallery.php:1341
+#: class-ml-gallery.php:1348
 msgid "Arrange"
 msgstr "Razporeditev"
 
-#: class-ml-gallery.php:1344
+#: class-ml-gallery.php:1351
 msgid "Preview at desktop or mobile width"
 msgstr "Predogled pri namizni ali mobilni širini"
 
-#: class-ml-gallery.php:1345
+#: class-ml-gallery.php:1352
 msgid "Desktop width"
 msgstr "Širina za namizje"
 
-#: class-ml-gallery.php:1348
+#: class-ml-gallery.php:1355
 msgid "Mobile width"
 msgstr "Širina za mobilne naprave"
 
-#: class-ml-gallery.php:1355
+#: class-ml-gallery.php:1362
 msgid "No images added yet"
 msgstr "Še ni dodanih slik"
 
-#: class-ml-gallery.php:1378 class-ml-gallery.php:2802
+#: class-ml-gallery.php:1385 class-ml-gallery.php:2851
 msgid "Remove image"
 msgstr "Odstrani sliko"
 
-#: class-ml-gallery.php:1383 class-ml-gallery.php:2803
+#: class-ml-gallery.php:1390 class-ml-gallery.php:2852
 msgid "Edit caption"
 msgstr "Uredi napis"
 
-#: class-ml-gallery.php:1383 class-ml-gallery.php:1385
-#: class-ml-gallery.php:2804
+#: class-ml-gallery.php:1390 class-ml-gallery.php:1392
+#: class-ml-gallery.php:2853
 msgid "Add caption"
 msgstr "Dodaj podnapis"
 
-#: class-ml-gallery.php:1395
+#: class-ml-gallery.php:1402
 msgid "Gallery preview"
 msgstr "Predogled galerije"
 
-#: class-ml-gallery.php:1401
+#: class-ml-gallery.php:1408
 msgid "Add Images"
 msgstr "Dodaj slike"
 
-#: class-ml-gallery.php:1405
+#: class-ml-gallery.php:1412
 msgid "More ways to add images"
 msgstr "Več načinov za dodajanje slik"
 
-#: class-ml-gallery.php:1411
+#: class-ml-gallery.php:1418
 msgid "Upload"
 msgstr "Naloži"
 
-#: class-ml-gallery.php:1416
+#: class-ml-gallery.php:1423
 msgid "Media Library"
 msgstr "Knjižnica medijev"
 
-#: class-ml-gallery.php:1421
+#: class-ml-gallery.php:1428
 msgid "Server Folder"
 msgstr "Mape strežnika"
 
-#: class-ml-gallery.php:1426, fuzzy
+#: class-ml-gallery.php:1433, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1432
+#: class-ml-gallery.php:1439
 msgid "Where to add new images"
 msgstr "Kje dodati nove slike"
 
-#: class-ml-gallery.php:1433
+#: class-ml-gallery.php:1440
 msgid "Add new images at:"
 msgstr "Dodajte nove slike na:"
 
-#: class-ml-gallery.php:1437
+#: class-ml-gallery.php:1444
 msgid "Start"
 msgstr "Začetek"
 
-#: class-ml-gallery.php:1442
+#: class-ml-gallery.php:1449
 msgid "End"
 msgstr "Konec"
 
-#: class-ml-gallery.php:1451
+#: class-ml-gallery.php:1458
 msgid "Layout"
 msgstr "Postavitev"
 
-#: class-ml-gallery.php:1454
+#: class-ml-gallery.php:1461
 msgid "Gallery layout"
 msgstr "Postavitev galerije"
 
-#: class-ml-gallery.php:1456
+#: class-ml-gallery.php:1463
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "Enakomerno velike slike razporejene v fiksni mreži"
 
-#: class-ml-gallery.php:1466 class-ml-gallery.php:3664
+#: class-ml-gallery.php:1473 class-ml-gallery.php:3736
 msgid "Grid"
 msgstr "Mreža"
 
-#: class-ml-gallery.php:1470
+#: class-ml-gallery.php:1477
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "Slike v naravnih višinah, ki se prilegajo skupaj kot zid iz opek"
 
-#: class-ml-gallery.php:1480 class-ml-gallery.php:3663
+#: class-ml-gallery.php:1487 class-ml-gallery.php:3735
 msgid "Masonry"
 msgstr "Masonerija"
 
-#: class-ml-gallery.php:1484
+#: class-ml-gallery.php:1491
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr ""
 "Slike, ki so razširjene, da zapolnijo vsak red od roba do roba z enotno "
 "višino"
 
-#: class-ml-gallery.php:1496 class-ml-gallery.php:3665
+#: class-ml-gallery.php:1503 class-ml-gallery.php:3737
 msgid "Justified"
 msgstr "Poravnano"
 
-#: class-ml-gallery.php:1500
+#: class-ml-gallery.php:1507
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "Slike prikazane ena za drugo v pomični diaprojekciji"
 
-#: class-ml-gallery.php:1509
+#: class-ml-gallery.php:1516
 msgid "Carousel"
 msgstr "Krožna diaprojekcija"
 
-#: class-ml-gallery.php:1513
+#: class-ml-gallery.php:1520
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "Velika glavna slika z pomično trakasto sličico spodaj"
 
-#: class-ml-gallery.php:1523
+#: class-ml-gallery.php:1530
 msgid "Showcase"
 msgstr "Razstava"
 
-#: class-ml-gallery.php:1535
+#: class-ml-gallery.php:1542
 msgid "Number of columns to show on desktop screens"
 msgstr "Število stolpcev, ki jih prikažemo na namiznih zaslonih"
 
-#: class-ml-gallery.php:1535
+#: class-ml-gallery.php:1542
 msgid "Columns"
 msgstr "Stolpci"
 
-#: class-ml-gallery.php:1544
+#: class-ml-gallery.php:1551
 msgid "Number of columns to show on phones and small screens"
 msgstr "Število stolpcev, ki jih prikažemo na telefonih in majhnih zaslonih"
 
-#: class-ml-gallery.php:1544
+#: class-ml-gallery.php:1551
 msgid "Columns (mobile)"
 msgstr "Stolpci (mobilni)"
 
-#: class-ml-gallery.php:1553
+#: class-ml-gallery.php:1560
 msgid "Height of the gallery images, in pixels"
 msgstr "Višina slik v galeriji, v slikovnih pikah"
 
-#: class-ml-gallery.php:1554
+#: class-ml-gallery.php:1561
 msgid "Height"
 msgstr "Višina"
 
-#: class-ml-gallery.php:1566
+#: class-ml-gallery.php:1573
 msgid "Space between images"
 msgstr "Prostor med slikami"
 
-#: class-ml-gallery.php:1567
+#: class-ml-gallery.php:1574
 msgid "Gap"
 msgstr "Razmik"
 
-#: class-ml-gallery.php:1585
+#: class-ml-gallery.php:1592
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "Nadzorni elementi za zoom zahtevajo MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1586
+#: class-ml-gallery.php:1593
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "Način celozaslonske zahteva MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1587
+#: class-ml-gallery.php:1594
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "Rotacija slik zahteva MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1588
+#: class-ml-gallery.php:1595
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "Samodejno predvajanje zahteva MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1589
+#: class-ml-gallery.php:1596
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "Družbeno deljenje zahteva MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1590
+#: class-ml-gallery.php:1597
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "Pager zahteva MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1591
+#: class-ml-gallery.php:1598
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "Edinstvene URL slike zahtevajo MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1592
+#: class-ml-gallery.php:1599
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "Zaščita slik zahteva MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1596
+#: class-ml-gallery.php:1603
 msgid "Show left and right navigation arrows"
 msgstr "Prikaži levo in desno navigacijska puščica"
 
-#: class-ml-gallery.php:1597
+#: class-ml-gallery.php:1604
 msgid "Display the current image number and total count"
 msgstr "Prikaži trenutno številko slike in skupno število"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:1605
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "Prikaži trak s sličicami slik na dnu galerije"
 
-#: class-ml-gallery.php:1599
+#: class-ml-gallery.php:1606
 msgid "Show dot navigation area below each image."
 msgstr "Prikaži območje navigacije s pikami pod vsako sliko."
 
-#: class-ml-gallery.php:1600
+#: class-ml-gallery.php:1607
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -557,11 +557,11 @@ msgstr ""
 "Kontrola za povečavo se bo pojavila le, če je izvorna velikost večja od "
 "velikosti galerije."
 
-#: class-ml-gallery.php:1601
+#: class-ml-gallery.php:1608
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "Razširite okno galerije, da zapolni celoten zaslon."
 
-#: class-ml-gallery.php:1602
+#: class-ml-gallery.php:1609
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
@@ -569,15 +569,15 @@ msgstr ""
 "Uporabniki lahko obračajo slike levo ali desno, prav tako pa jih lahko "
 "obrnejo navpično ali vodoravno."
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:1610
 msgid "Automatically advance through the images without the user clicking."
 msgstr "Samodejno napredujte skozi slike brez klikanja uporabnika."
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:1611
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr "Omogočite uporabnikom, da delijo slike na Facebooku, X ali Pinterestu."
 
-#: class-ml-gallery.php:1605
+#: class-ml-gallery.php:1612
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
@@ -585,7 +585,7 @@ msgstr ""
 "Ustvarite edinstven URL za vsako sliko, da omogočite neposredno povezovanje "
 "znotraj galerije."
 
-#: class-ml-gallery.php:1606 class-ml-slider-lightbox.php:4278
+#: class-ml-gallery.php:1613 class-ml-slider-lightbox.php:4299
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -593,27 +593,27 @@ msgstr ""
 "Omejite naključno shranjevanje z blokiranjem desnega klika, povlečenja in "
 "dolgega pritiska na slikah v galeriji."
 
-#: class-ml-gallery.php:1607
+#: class-ml-gallery.php:1614
 msgid "Navigate images using left and right arrow keys"
 msgstr "Navigirajte slike s pomočjo levo in desno puščice"
 
-#: class-ml-gallery.php:1608
+#: class-ml-gallery.php:1615
 msgid "Scroll through images using the mouse wheel"
 msgstr "Pomikajte se skozi slike s pomočjo miške"
 
-#: class-ml-gallery.php:1609
+#: class-ml-gallery.php:1616
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "Povlecite navzgor ali navzdol, da zaprete galerijo na napravah na dotik"
 
-#: class-ml-gallery.php:1610
+#: class-ml-gallery.php:1617
 msgid "Cycle back to the first image after reaching the last"
 msgstr "Ciklični povratek na prvo sliko po dosegu zadnje"
 
-#: class-ml-gallery.php:1611
+#: class-ml-gallery.php:1618
 msgid "Show a download button for each image"
 msgstr "Prikaži gumb za prenos za vsako sliko"
 
-#: class-ml-gallery.php:1612
+#: class-ml-gallery.php:1619
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
@@ -621,31 +621,31 @@ msgstr ""
 "Odpri slike v prekrivanju okna, ko jih kliknete. Uporablja se za postavitve "
 "mreže, zidane in upravičene."
 
-#: class-ml-gallery.php:1613
+#: class-ml-gallery.php:1620
 msgid "Show a button over the gallery that opens the gallery window when clicked."
 msgstr "Prikaži gumb nad galerijo, ki odpre okno galerije, ko se klikne."
 
-#: class-ml-gallery.php:1614
+#: class-ml-gallery.php:1621
 msgid "Show an icon on the button instead of text."
 msgstr "Prikaži ikono na gumbu namesto besedila."
 
-#: class-ml-gallery.php:1657
+#: class-ml-gallery.php:1664
 msgid "Full (original)"
 msgstr "Polna (izvirna)"
 
-#: class-ml-gallery.php:1661
+#: class-ml-gallery.php:1668
 msgid "Show in Gallery Window"
 msgstr "Prikaži v oknu galerije"
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1671
 msgid "The size of the image shown when a visitor clicks to view it in full"
 msgstr "Velikost slike, prikazane, ko obiskovalec klikne, da jo pogleda v celoti"
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1671
 msgid "Image Size"
 msgstr "Velikost slike"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:1691
 msgid ""
 "Choose how visitors open the gallery window: click the image, click an "
 "icon, or click a button."
@@ -653,112 +653,112 @@ msgstr ""
 "Izberite, kako obiskovalci odprejo okno galerije: kliknite sliko, kliknite "
 "ikono ali kliknite gumb."
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:1691
 msgid "Open with"
 msgstr "Odpri z"
 
-#: class-ml-gallery.php:1696
+#: class-ml-gallery.php:1703
 msgid "Text shown on the button that opens the gallery window"
 msgstr "Besedilo, prikazano na gumbu, ki odpre okno galerije"
 
-#: class-ml-gallery.php:1696 class-ml-slider-lightbox.php:2726
+#: class-ml-gallery.php:1703 class-ml-slider-lightbox.php:2747
 msgid "Button Text"
 msgstr "Besedilo gumba"
 
-#: class-ml-gallery.php:1701 class-ml-slider-lightbox.php:1629
-#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:6467
-#: class-ml-slider-lightbox.php:6490
+#: class-ml-gallery.php:1708 class-ml-slider-lightbox.php:1650
+#: class-ml-slider-lightbox.php:3347 class-ml-slider-lightbox.php:6488
+#: class-ml-slider-lightbox.php:6511
 msgid "Open in Gallery"
 msgstr "Odpri v galeriji"
 
-#: class-ml-gallery.php:1706
+#: class-ml-gallery.php:1713
 msgid "Where the button or icon sits over the gallery"
 msgstr "Kje se gumb ali ikona nahaja nad galerijo"
 
-#: class-ml-gallery.php:1706 class-ml-slider-lightbox.php:2734
+#: class-ml-gallery.php:1713 class-ml-slider-lightbox.php:2755
 msgid "Button Position"
 msgstr "Položaj gumba"
 
-#: class-ml-gallery.php:1708
+#: class-ml-gallery.php:1715
 msgid "Top Right"
 msgstr "Zgoraj desno"
 
-#: class-ml-gallery.php:1709 class-ml-slider-lightbox.php:3343
-#: class-ml-slider-lightbox.php:3369
+#: class-ml-gallery.php:1716 class-ml-slider-lightbox.php:3364
+#: class-ml-slider-lightbox.php:3390
 msgid "Top Left"
 msgstr "Zgoraj levo"
 
-#: class-ml-gallery.php:1710 class-ml-slider-lightbox.php:3344
-#: class-ml-slider-lightbox.php:3370
+#: class-ml-gallery.php:1717 class-ml-slider-lightbox.php:3365
+#: class-ml-slider-lightbox.php:3391
 msgid "Bottom Right"
 msgstr "Spodaj desno"
 
-#: class-ml-gallery.php:1711 class-ml-slider-lightbox.php:3345
-#: class-ml-slider-lightbox.php:3371
+#: class-ml-gallery.php:1718 class-ml-slider-lightbox.php:3366
+#: class-ml-slider-lightbox.php:3392
 msgid "Bottom Left"
 msgstr "Spodaj levo"
 
-#: class-ml-gallery.php:1712
+#: class-ml-gallery.php:1719
 msgid "Center"
 msgstr "Središče"
 
-#: class-ml-gallery.php:1721
+#: class-ml-gallery.php:1728
 msgid "Protect images"
 msgstr "Zaščiti slike"
 
-#: class-ml-gallery.php:1727
+#: class-ml-gallery.php:1734
 msgid "Display"
 msgstr "Prikaz"
 
-#: class-ml-gallery.php:1729
+#: class-ml-gallery.php:1736
 msgid "Animation effect when moving between images"
 msgstr "Animacijski učinek pri premikanju med slikami"
 
-#: class-ml-gallery.php:1729 class-ml-gallery.php:1814
+#: class-ml-gallery.php:1736 class-ml-gallery.php:1821
 msgid "Transition"
 msgstr "Prehod"
 
-#: class-ml-gallery.php:1738 class-ml-slider-lightbox.php:2686
+#: class-ml-gallery.php:1745 class-ml-slider-lightbox.php:2707
 msgid "Arrows"
 msgstr "Puščice"
 
-#: class-ml-gallery.php:1739
+#: class-ml-gallery.php:1746
 msgid "Slide Counter"
 msgstr "Števec diapozitivov"
 
-#: class-ml-gallery.php:1740
+#: class-ml-gallery.php:1747
 msgid "Thumbnails"
 msgstr "Miniature"
 
-#: class-ml-gallery.php:1742
+#: class-ml-gallery.php:1749
 msgid "Pager"
 msgstr "Zavihek"
 
-#: class-ml-gallery.php:1747 class-ml-slider-lightbox.php:2391
+#: class-ml-gallery.php:1754 class-ml-slider-lightbox.php:2412
 msgid "Navigation"
 msgstr "Navigacija"
 
-#: class-ml-gallery.php:1748
+#: class-ml-gallery.php:1755
 msgid "Loop"
 msgstr "Zanka"
 
-#: class-ml-gallery.php:1749
+#: class-ml-gallery.php:1756
 msgid "Keyboard"
 msgstr "Tipkovnica"
 
-#: class-ml-gallery.php:1750
+#: class-ml-gallery.php:1757
 msgid "Mouse wheel"
 msgstr "Miška kolesce"
 
-#: class-ml-gallery.php:1751
+#: class-ml-gallery.php:1758
 msgid "Swipe to close"
 msgstr "Povleci za zapiranje"
 
-#: class-ml-gallery.php:1758 class-ml-gallery.php:1760
+#: class-ml-gallery.php:1765 class-ml-gallery.php:1767
 msgid "Captions"
 msgstr "Podnapisi"
 
-#: class-ml-gallery.php:1760
+#: class-ml-gallery.php:1767
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -766,7 +766,7 @@ msgstr ""
 "Kjer se pojavijo podnapisi: na miniaturah galerije, v oknu galerije ali "
 "oboje."
 
-#: class-ml-gallery.php:1772
+#: class-ml-gallery.php:1779
 msgid ""
 "Where each caption's text comes from: your typed caption, or the image's "
 "Media Library caption or description. Empty media fields fall back to your "
@@ -776,11 +776,11 @@ msgstr ""
 "slike iz Medijske knjižnice. Prazna medijska polja se vrnejo na vaš vnešeni "
 "opis."
 
-#: class-ml-gallery.php:1772
+#: class-ml-gallery.php:1779
 msgid "Caption Content"
 msgstr "Vsebina opisa"
 
-#: class-ml-gallery.php:1781
+#: class-ml-gallery.php:1788
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -788,11 +788,11 @@ msgstr ""
 "Velikost besedila podnapisa. Uporablja se za miniature galerije in okno "
 "galerije."
 
-#: class-ml-gallery.php:1782
+#: class-ml-gallery.php:1789
 msgid "Text Size"
 msgstr "Velikost besedila"
 
-#: class-ml-gallery.php:1794
+#: class-ml-gallery.php:1801
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -800,11 +800,11 @@ msgstr ""
 "Barva besedila podnapisa. Uporablja se za miniature galerije in okno "
 "galerije."
 
-#: class-ml-gallery.php:1794
+#: class-ml-gallery.php:1801
 msgid "Text Color"
 msgstr "Barva besedila"
 
-#: class-ml-gallery.php:1804
+#: class-ml-gallery.php:1811
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -812,12 +812,12 @@ msgstr ""
 "Ozadje podnapisa. Uporablja se za miniature galerije in okno galerije; pri "
 "miniaturah se zbledi v prozorno za boljšo berljivost."
 
-#: class-ml-gallery.php:1804 class-ml-gallery.php:1846
-#: class-ml-slider-lightbox.php:2654
+#: class-ml-gallery.php:1811 class-ml-gallery.php:1853
+#: class-ml-slider-lightbox.php:2675
 msgid "Background Color"
 msgstr "Barva ozadja"
 
-#: class-ml-gallery.php:1814
+#: class-ml-gallery.php:1821
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -825,395 +825,419 @@ msgstr ""
 "Način animacije podnapisa. Uporablja se samo za okno galerije — ne za "
 "podnapise na miniaturah galerije."
 
-#: class-ml-gallery.php:1824 class-ml-slider-lightbox.php:2702
+#: class-ml-gallery.php:1831 class-ml-slider-lightbox.php:2723
 msgid "Toolbar"
 msgstr "Orodna vrstica"
 
-#: class-ml-gallery.php:1825 class-ml-slider-lightbox.php:1643
+#: class-ml-gallery.php:1832 class-ml-slider-lightbox.php:1664
 msgid "Download"
 msgstr "Prenesi"
 
-#: class-ml-gallery.php:1827
+#: class-ml-gallery.php:1834
 msgid "Share"
 msgstr "Deli"
 
-#: class-ml-gallery.php:1828
+#: class-ml-gallery.php:1835
 msgid "Autoplay"
 msgstr "Samodejno predvajanje"
 
-#: class-ml-gallery.php:1829
+#: class-ml-gallery.php:1836
 msgid "Rotate and Flip"
 msgstr "Zasukaj in obrni"
 
-#: class-ml-gallery.php:1830
+#: class-ml-gallery.php:1837
 msgid "Fullscreen"
 msgstr "Celozaslonski način"
 
-#: class-ml-gallery.php:1836
+#: class-ml-gallery.php:1843
 msgid "Unique Image URLs"
 msgstr "Edinstvene URL slike"
 
-#: class-ml-gallery.php:1843 class-ml-slider-lightbox.php:2324
-#: class-ml-slider-lightbox.php:2381
+#: class-ml-gallery.php:1850 class-ml-slider-lightbox.php:2345
+#: class-ml-slider-lightbox.php:2402
 msgid "Appearance"
 msgstr "Videz"
 
-#: class-ml-gallery.php:1846
+#: class-ml-gallery.php:1853
 msgid "Background color of the gallery window"
 msgstr "Barva ozadja okna galerije"
 
-#: class-ml-gallery.php:1856
+#: class-ml-gallery.php:1863
 msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
 msgstr "Kako neprosojno je ozadje okna galerije (0 = prozorno, 1 = neprosojno)"
 
-#: class-ml-gallery.php:1857 class-ml-slider-lightbox.php:2662
+#: class-ml-gallery.php:1864 class-ml-slider-lightbox.php:2683
 msgid "Background Opacity"
 msgstr "Prosojnost ozadja"
 
-#: class-ml-gallery.php:1869
-msgid "Color of the next and previous navigation arrows"
-msgstr "Barva naslednjih in prejšnjih navigacijskih puščic"
-
-#: class-ml-gallery.php:1869
-msgid "Arrow Color"
-msgstr "Barva puščice"
+#: class-ml-gallery.php:1878
+msgid "Border width in pixels around the carousel (0 = no border)"
+msgstr "Širina roba v pikslih okoli karusela (0 = brez roba)"
 
 #: class-ml-gallery.php:1879
-msgid "Background color behind the navigation arrows"
-msgstr "Barva ozadja za navigacijskimi puščicami"
+msgid "Frame Border Width"
+msgstr "Širina roba okvirja"
 
-#: class-ml-gallery.php:1879
-msgid "Arrow Background"
-msgstr "Ozadje puščice"
+#: class-ml-gallery.php:1890
+msgid "Line style used for the carousel border"
+msgstr "Slog črte, ki se uporablja za rob karusela"
 
-#: class-ml-gallery.php:1889
-msgid "Color of the close (X) icon"
-msgstr "Barva ikone za zapiranje (X)"
+#: class-ml-gallery.php:1890
+msgid "Frame Border Style"
+msgstr "Slog roba okvirja"
 
-#: class-ml-gallery.php:1889
-msgid "Close Icon Color"
-msgstr "Barva ikone za zapiranje"
-
-#: class-ml-gallery.php:1899
-msgid "Background color behind the close icon"
-msgstr "Barva ozadja za ikono za zapiranje"
-
-#: class-ml-gallery.php:1899
-msgid "Close Background"
-msgstr "Ozadje za zapiranje"
-
-#: class-ml-gallery.php:1909
-msgid "Color of the toolbar icons"
-msgstr "Barva ikon na orodni vrstici"
-
-#: class-ml-gallery.php:1909
-msgid "Toolbar Icon Color"
-msgstr "Barva ikone orodne vrstice"
-
-#: class-ml-gallery.php:1919
-msgid "Background color of the toolbar"
-msgstr "Barva ozadja orodne vrstice"
-
-#: class-ml-gallery.php:1919
-msgid "Toolbar Background"
-msgstr "Ozadje orodne vrstice"
-
-#: class-ml-gallery.php:1929
-msgid "Border color of the thumbnail strip images"
-msgstr "Barva roba slik traku s sličicami"
-
-#: class-ml-gallery.php:1929 class-ml-slider-lightbox.php:2678
-msgid "Thumbnail Border Color"
-msgstr "Barva roba sličice"
-
-#: class-ml-gallery.php:1939
-msgid "Border color of the active and hovered thumbnail"
-msgstr "Barva roba aktivne in preletele sličice"
-
-#: class-ml-gallery.php:1939
-msgid "Thumbnail Border Active and Hover"
-msgstr "Rob sličice aktiven in ob prehodu"
-
-#: class-ml-gallery.php:1958
-msgid "Text color of the button that opens the gallery window"
-msgstr "Barva besedila gumba, ki odpre okno galerije"
-
-#: class-ml-gallery.php:1958
-msgid "Button Text Color"
-msgstr "Barva besedila gumba"
-
-#: class-ml-gallery.php:1962
-msgid "Button text color on hover"
-msgstr "Barva besedila gumba ob preletu"
-
-#: class-ml-gallery.php:1962
-msgid "Button Text Hover"
-msgstr "Besedilo gumba ob preletu"
-
-#: class-ml-gallery.php:1966
-msgid "Background color of the button that opens the gallery window"
-msgstr "Barva ozadja gumba, ki odpre okno galerije"
-
-#: class-ml-gallery.php:1966
-msgid "Button Background"
-msgstr "Ozadje gumba"
-
-#: class-ml-gallery.php:1970
-msgid "Button background color on hover"
-msgstr "Barva ozadja gumba ob lebdenju"
-
-#: class-ml-gallery.php:1970
-msgid "Button Background Hover"
-msgstr "Ozadje gumba ob lebdenju"
-
-#: class-ml-gallery.php:1977
-msgid "Color of the icon that opens the gallery window"
-msgstr "Barva ikone, ki odpre okno galerije"
-
-#: class-ml-gallery.php:1977
-msgid "Icon Color"
-msgstr "Barva ikone"
-
-#: class-ml-gallery.php:1981
-msgid "Icon color on hover"
-msgstr "Barva ikone ob lebdenju"
-
-#: class-ml-gallery.php:1981
-msgid "Icon Hover Color"
-msgstr "Barva ikone ob lebdenju"
-
-#: class-ml-gallery.php:1985
-msgid "Background color behind the icon"
-msgstr "Barva ozadja za ikono"
-
-#: class-ml-gallery.php:1985
-msgid "Icon Background"
-msgstr "Ozadje ikone"
-
-#: class-ml-gallery.php:1989
-msgid "Icon background color on hover"
-msgstr "Barva ozadja ikone ob lebdenju"
-
-#: class-ml-gallery.php:1989
-msgid "Icon Background Hover"
-msgstr "Ozadje ikone ob lebdenju"
-
-#: class-ml-gallery.php:1996
-msgid "Color of the progress bar shown during autoplay"
-msgstr "Barva napredka, prikazana med samodejnim predvajanjem"
-
-#: class-ml-gallery.php:1996
-msgid "Autoplay Progress Bar"
-msgstr "Napredna vrstica samodejnega predvajanja"
-
-#: class-ml-gallery.php:2011
-msgid "Image Styles"
-msgstr "Slike stilov"
-
-#: class-ml-gallery.php:2014
-msgid "Apply a filter to every image in the gallery"
-msgstr "Uporabi filter za vsako sliko v galeriji"
-
-#: class-ml-gallery.php:2014, fuzzy
-msgid "Filter"
-msgstr "Filter"
-
-#: class-ml-gallery.php:2023
-msgid "Corner radius in pixels applied to every image"
-msgstr "Polmer kota v pikselih, uporabljen za vsako sliko"
-
-#: class-ml-gallery.php:2024
-msgid "Rounded Corners"
-msgstr "Zaobljeni koti"
-
-#: class-ml-gallery.php:2035
-msgid "Image border width in pixels (0 = no border)"
-msgstr "Širina obrobe v pikselih (0 = brez obrobe)"
-
-#: class-ml-gallery.php:2036
-msgid "Border Width"
-msgstr "Širina obrobe"
-
-#: class-ml-gallery.php:2047
-msgid "Line style used for the image border"
-msgstr "Slog črte, uporabljen za obrobo slike"
-
-#: class-ml-gallery.php:2047
-msgid "Border Style"
-msgstr "Slog obrobe"
-
-#: class-ml-gallery.php:2050
+#: class-ml-gallery.php:1893 class-ml-gallery.php:2095
 msgid "Solid"
 msgstr "Neprosojno"
 
-#: class-ml-gallery.php:2051
+#: class-ml-gallery.php:1894 class-ml-gallery.php:2096
 msgid "Dashed"
 msgstr "Prekinjeno"
 
-#: class-ml-gallery.php:2052
+#: class-ml-gallery.php:1895 class-ml-gallery.php:2097
 msgid "Dotted"
 msgstr "Pikčasta"
 
-#: class-ml-gallery.php:2053
+#: class-ml-gallery.php:1896 class-ml-gallery.php:2098
 msgid "Double"
 msgstr "Dvojna"
 
-#: class-ml-gallery.php:2061
+#: class-ml-gallery.php:1904
+msgid "Color of the border around the carousel"
+msgstr "Barva roba okoli karusela"
+
+#: class-ml-gallery.php:1904
+msgid "Frame Border Color"
+msgstr "Barva roba okvirja"
+
+#: class-ml-gallery.php:1914
+msgid "Color of the next and previous navigation arrows"
+msgstr "Barva naslednjih in prejšnjih navigacijskih puščic"
+
+#: class-ml-gallery.php:1914
+msgid "Arrow Color"
+msgstr "Barva puščice"
+
+#: class-ml-gallery.php:1924
+msgid "Background color behind the navigation arrows"
+msgstr "Barva ozadja za navigacijskimi puščicami"
+
+#: class-ml-gallery.php:1924
+msgid "Arrow Background"
+msgstr "Ozadje puščice"
+
+#: class-ml-gallery.php:1934
+msgid "Color of the close (X) icon"
+msgstr "Barva ikone za zapiranje (X)"
+
+#: class-ml-gallery.php:1934
+msgid "Close Icon Color"
+msgstr "Barva ikone za zapiranje"
+
+#: class-ml-gallery.php:1944
+msgid "Background color behind the close icon"
+msgstr "Barva ozadja za ikono za zapiranje"
+
+#: class-ml-gallery.php:1944
+msgid "Close Background"
+msgstr "Ozadje za zapiranje"
+
+#: class-ml-gallery.php:1954
+msgid "Color of the toolbar icons"
+msgstr "Barva ikon na orodni vrstici"
+
+#: class-ml-gallery.php:1954
+msgid "Toolbar Icon Color"
+msgstr "Barva ikone orodne vrstice"
+
+#: class-ml-gallery.php:1964
+msgid "Background color of the toolbar"
+msgstr "Barva ozadja orodne vrstice"
+
+#: class-ml-gallery.php:1964
+msgid "Toolbar Background"
+msgstr "Ozadje orodne vrstice"
+
+#: class-ml-gallery.php:1974
+msgid "Border color of the thumbnail strip images"
+msgstr "Barva roba slik traku s sličicami"
+
+#: class-ml-gallery.php:1974 class-ml-slider-lightbox.php:2699
+msgid "Thumbnail Border Color"
+msgstr "Barva roba sličice"
+
+#: class-ml-gallery.php:1984
+msgid "Border color of the active and hovered thumbnail"
+msgstr "Barva roba aktivne in preletele sličice"
+
+#: class-ml-gallery.php:1984
+msgid "Thumbnail Border Active and Hover"
+msgstr "Rob sličice aktiven in ob prehodu"
+
+#: class-ml-gallery.php:2003
+msgid "Text color of the button that opens the gallery window"
+msgstr "Barva besedila gumba, ki odpre okno galerije"
+
+#: class-ml-gallery.php:2003
+msgid "Button Text Color"
+msgstr "Barva besedila gumba"
+
+#: class-ml-gallery.php:2007
+msgid "Button text color on hover"
+msgstr "Barva besedila gumba ob preletu"
+
+#: class-ml-gallery.php:2007
+msgid "Button Text Hover"
+msgstr "Besedilo gumba ob preletu"
+
+#: class-ml-gallery.php:2011
+msgid "Background color of the button that opens the gallery window"
+msgstr "Barva ozadja gumba, ki odpre okno galerije"
+
+#: class-ml-gallery.php:2011
+msgid "Button Background"
+msgstr "Ozadje gumba"
+
+#: class-ml-gallery.php:2015
+msgid "Button background color on hover"
+msgstr "Barva ozadja gumba ob lebdenju"
+
+#: class-ml-gallery.php:2015
+msgid "Button Background Hover"
+msgstr "Ozadje gumba ob lebdenju"
+
+#: class-ml-gallery.php:2022
+msgid "Color of the icon that opens the gallery window"
+msgstr "Barva ikone, ki odpre okno galerije"
+
+#: class-ml-gallery.php:2022
+msgid "Icon Color"
+msgstr "Barva ikone"
+
+#: class-ml-gallery.php:2026
+msgid "Icon color on hover"
+msgstr "Barva ikone ob lebdenju"
+
+#: class-ml-gallery.php:2026
+msgid "Icon Hover Color"
+msgstr "Barva ikone ob lebdenju"
+
+#: class-ml-gallery.php:2030
+msgid "Background color behind the icon"
+msgstr "Barva ozadja za ikono"
+
+#: class-ml-gallery.php:2030
+msgid "Icon Background"
+msgstr "Ozadje ikone"
+
+#: class-ml-gallery.php:2034
+msgid "Icon background color on hover"
+msgstr "Barva ozadja ikone ob lebdenju"
+
+#: class-ml-gallery.php:2034
+msgid "Icon Background Hover"
+msgstr "Ozadje ikone ob lebdenju"
+
+#: class-ml-gallery.php:2041
+msgid "Color of the progress bar shown during autoplay"
+msgstr "Barva napredka, prikazana med samodejnim predvajanjem"
+
+#: class-ml-gallery.php:2041
+msgid "Autoplay Progress Bar"
+msgstr "Napredna vrstica samodejnega predvajanja"
+
+#: class-ml-gallery.php:2056
+msgid "Image Styles"
+msgstr "Slike stilov"
+
+#: class-ml-gallery.php:2059
+msgid "Apply a filter to every image in the gallery"
+msgstr "Uporabi filter za vsako sliko v galeriji"
+
+#: class-ml-gallery.php:2059, fuzzy
+msgid "Filter"
+msgstr "Filter"
+
+#: class-ml-gallery.php:2068
+msgid "Corner radius in pixels applied to every image"
+msgstr "Polmer kota v pikselih, uporabljen za vsako sliko"
+
+#: class-ml-gallery.php:2069
+msgid "Rounded Corners"
+msgstr "Zaobljeni koti"
+
+#: class-ml-gallery.php:2080
+msgid "Image border width in pixels (0 = no border)"
+msgstr "Širina obrobe v pikselih (0 = brez obrobe)"
+
+#: class-ml-gallery.php:2081
+msgid "Border Width"
+msgstr "Širina obrobe"
+
+#: class-ml-gallery.php:2092
+msgid "Line style used for the image border"
+msgstr "Slog črte, uporabljen za obrobo slike"
+
+#: class-ml-gallery.php:2092
+msgid "Border Style"
+msgstr "Slog obrobe"
+
+#: class-ml-gallery.php:2106
 msgid "Color of the image border"
 msgstr "Barva roba slike"
 
-#: class-ml-gallery.php:2061
+#: class-ml-gallery.php:2106
 msgid "Border Color"
 msgstr "Barva obrobe"
 
-#: class-ml-gallery.php:2071
+#: class-ml-gallery.php:2116
 msgid "Drop shadow depth cast behind each image"
 msgstr "Globina sence, ki jo oddaja vsaka slika"
 
-#: class-ml-gallery.php:2071
+#: class-ml-gallery.php:2116
 msgid "Box Shadow"
 msgstr "Senca škatle"
 
-#: class-ml-gallery.php:2075
+#: class-ml-gallery.php:2120
 msgid "Light"
 msgstr "Svetla"
 
-#: class-ml-gallery.php:2076
+#: class-ml-gallery.php:2121
 msgid "Medium"
 msgstr "Srednja"
 
-#: class-ml-gallery.php:2077
+#: class-ml-gallery.php:2122
 msgid "Heavy"
 msgstr "Težka"
 
-#: class-ml-gallery.php:2085
+#: class-ml-gallery.php:2130
 msgid "Image opacity as a percentage"
 msgstr "Opacnost slike v odstotkih"
 
-#: class-ml-gallery.php:2086
+#: class-ml-gallery.php:2131
 msgid "Opacity"
 msgstr "Opacnost"
 
-#: class-ml-gallery.php:2097
+#: class-ml-gallery.php:2142
 msgid "Rotate every image by a fixed angle"
 msgstr "Zavrtite vsako sliko pod fiksnim kotom"
 
-#: class-ml-gallery.php:2097
+#: class-ml-gallery.php:2142
 msgid "Rotate"
 msgstr "Zavrtite"
 
-#: class-ml-gallery.php:2111
+#: class-ml-gallery.php:2156
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "Zrcalite vsako sliko horizontalno, vertikalno ali oboje"
 
-#: class-ml-gallery.php:2111
+#: class-ml-gallery.php:2156
 msgid "Flip"
 msgstr "Obrni"
 
-#: class-ml-gallery.php:2115
+#: class-ml-gallery.php:2160
 msgid "Horizontal"
 msgstr "Horizontalno"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2161
 msgid "Vertical"
 msgstr "Vertikalno"
 
-#: class-ml-gallery.php:2117
+#: class-ml-gallery.php:2162
 msgid "Both"
 msgstr "Oboje"
 
-#: class-ml-gallery.php:2127 class-ml-gallery.php:3747
+#: class-ml-gallery.php:2172 class-ml-gallery.php:3819
 msgid "Shortcode"
 msgstr "Kratka koda"
 
-#: class-ml-gallery.php:2129 class-ml-gallery.php:3767
+#: class-ml-gallery.php:2174 class-ml-gallery.php:3839
 msgid "Click to copy shortcode."
 msgstr "Kliknite za kopiranje kratke kode."
 
-#: class-ml-gallery.php:2147
+#: class-ml-gallery.php:2192
 msgid "Edit Caption"
 msgstr "Uredi napis"
 
-#: class-ml-gallery.php:2149
+#: class-ml-gallery.php:2194
 msgid "Previous image"
 msgstr "Prejšnja slika"
 
-#: class-ml-gallery.php:2150
+#: class-ml-gallery.php:2195
 msgid "Next image"
 msgstr "Naslednja slika"
 
-#: class-ml-gallery.php:2152 class-ml-gallery.php:2194
-#: class-ml-gallery.php:2215 class-ml-gallery.php:3792
+#: class-ml-gallery.php:2197 class-ml-gallery.php:2239
+#: class-ml-gallery.php:2260 class-ml-gallery.php:3864
 msgid "Close"
 msgstr "Zapri"
 
-#: class-ml-gallery.php:2173
+#: class-ml-gallery.php:2218
 msgid "Caption"
 msgstr "Napis"
 
-#: class-ml-gallery.php:2183
+#: class-ml-gallery.php:2228
 msgid "Done"
 msgstr "Končano"
 
-#: class-ml-gallery.php:2193
+#: class-ml-gallery.php:2238
 msgid "Import from Server Folder"
 msgstr "Uvozi iz mape strežnika"
 
-#: class-ml-gallery.php:2202
+#: class-ml-gallery.php:2247
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: class-ml-gallery.php:2203
+#: class-ml-gallery.php:2248
 msgid "Import selected"
 msgstr "Uvozi izbrano"
 
-#: class-ml-gallery.php:2214
+#: class-ml-gallery.php:2259
 msgid "Import from ZIP"
 msgstr "Uvozi iz ZIP"
 
-#: class-ml-gallery.php:2242
+#: class-ml-gallery.php:2287
 msgid "You do not have sufficient permissions."
 msgstr "Nimate dovolj dovoljenj."
 
-#: class-ml-gallery.php:2261
+#: class-ml-gallery.php:2306
 msgid "Could not update the gallery. Please try again."
 msgstr "Galerije ni bilo mogoče posodobiti. Poskusite znova."
 
-#: class-ml-gallery.php:2408
+#: class-ml-gallery.php:2457
 msgid "(Copy)"
 msgstr "(Kopiraj)"
 
-#: class-ml-gallery.php:2414
+#: class-ml-gallery.php:2463
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "Galerije ni bilo mogoče podvojiti. Poskusite znova."
 
-#: class-ml-gallery.php:2562 class-ml-gallery.php:2677
-#: class-ml-gallery.php:3912 class-ml-gallery.php:4065
-#: class-ml-gallery.php:4097
+#: class-ml-gallery.php:2611 class-ml-gallery.php:2726
+#: class-ml-gallery.php:3984 class-ml-gallery.php:4137
+#: class-ml-gallery.php:4169
 msgid "Permission denied."
 msgstr "Dostop zavrnjen."
 
-#: class-ml-gallery.php:2569
+#: class-ml-gallery.php:2618
 msgid "Folder not found."
 msgstr "Mape ni bilo mogoče najti."
 
-#: class-ml-gallery.php:2578
+#: class-ml-gallery.php:2627
 msgid "Folder could not be read."
 msgstr "Mape ni bilo mogoče prebrati."
 
-#: class-ml-gallery.php:2615
+#: class-ml-gallery.php:2664
 msgid "Uploads"
 msgstr "Nalaganja"
 
-#: class-ml-gallery.php:2800
+#: class-ml-gallery.php:2849
 msgid "Select Gallery Images"
 msgstr "Izberite slike iz galerije"
 
-#: class-ml-gallery.php:2801
+#: class-ml-gallery.php:2850
 msgid "Add to Gallery"
 msgstr "Dodaj v galerijo"
 
-#: class-ml-gallery.php:2812
+#: class-ml-gallery.php:2861
 msgid ""
 "Saved to this image in your Media Library — changes appear anywhere the "
 "image is used."
@@ -1221,98 +1245,98 @@ msgstr ""
 "Shranjeno na to sliko v vaši medijski knjižnici — spremembe se pojavijo "
 "povsod, kjer se slika uporablja."
 
-#: class-ml-gallery.php:2813 class-ml-gallery.php:4114
+#: class-ml-gallery.php:2862 class-ml-gallery.php:4186
 msgid "You do not have permission to edit this image."
 msgstr "Nimate dovoljenja za urejanje te slike."
 
-#: class-ml-gallery.php:2814 class-ml-gallery.php:4115
+#: class-ml-gallery.php:2863 class-ml-gallery.php:4187
 msgid "This caption source is read-only."
 msgstr "Ta vir napisov je samo za branje."
 
-#: class-ml-gallery.php:2815
+#: class-ml-gallery.php:2864
 msgid "Shown in this gallery"
 msgstr "Prikazano v tej galeriji"
 
-#: class-ml-gallery.php:2817
+#: class-ml-gallery.php:2866
 msgid "Loading…"
 msgstr "Nalaganje…"
 
-#: class-ml-gallery.php:2818
+#: class-ml-gallery.php:2867
 msgid "No images in this folder."
 msgstr "V tej mapi ni slik."
 
-#: class-ml-gallery.php:2819
+#: class-ml-gallery.php:2868
 msgid "Could not load this folder."
 msgstr "Te mape ni bilo mogoče naložiti."
 
-#: class-ml-gallery.php:2820
+#: class-ml-gallery.php:2869
 msgid "Importing…"
 msgstr "Uvažanje…"
 
-#: class-ml-gallery.php:2821
+#: class-ml-gallery.php:2870
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr "Prikaz prvih 200 slik — odprite podmapo, da zožite seznam."
 
-#: class-ml-gallery.php:2822
+#: class-ml-gallery.php:2871
 msgid "Select at least one image."
 msgstr "Izberite vsaj eno sliko."
 
-#: class-ml-gallery.php:2823 class-ml-gallery.php:2826
+#: class-ml-gallery.php:2872 class-ml-gallery.php:2875
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "Uvoženih %1$d sliko(-e); %2$d sliko(-e) preskočene."
 
-#: class-ml-gallery.php:2824
+#: class-ml-gallery.php:2873
 msgid "Uploading…"
 msgstr "Nalaganje…"
 
-#: class-ml-gallery.php:2825
+#: class-ml-gallery.php:2874
 msgid "Importing images…"
 msgstr "Uvažanje slik…"
 
-#: class-ml-gallery.php:2827
+#: class-ml-gallery.php:2876
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "Uvoženih je bilo le prvih 200 slik (ali 256 MB)."
 
-#: class-ml-gallery.php:2828
+#: class-ml-gallery.php:2877
 msgid "The ZIP could not be imported."
 msgstr "ZIP datoteke ni bilo mogoče uvoziti."
 
-#: class-ml-gallery.php:2829
+#: class-ml-gallery.php:2878
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr ""
 "Nalaganje je bilo zavrnjeno — ZIP datoteka je morda večja, kot jo ta "
 "strežnik dovoljuje."
 
-#: class-ml-gallery.php:2830
+#: class-ml-gallery.php:2879
 msgid "No images found in the ZIP."
 msgstr "V ZIP datoteki ni bilo najdenih slik."
 
-#: class-ml-gallery.php:3378
+#: class-ml-gallery.php:3450
 msgid "Drag-and-drop building"
 msgstr "Ustvarjanje z vlečenjem in spuščanjem"
 
-#: class-ml-gallery.php:3379
+#: class-ml-gallery.php:3451
 msgid "Responsive lightbox"
 msgstr "Prilagodljiv lightbox"
 
-#: class-ml-gallery.php:3380
+#: class-ml-gallery.php:3452
 msgid "Grid · Masonry · Justified"
 msgstr "Mreža · Zidanica · Upravičeno"
 
-#: class-ml-gallery.php:3631
+#: class-ml-gallery.php:3703
 msgid "Get started"
 msgstr "Začetek"
 
-#: class-ml-gallery.php:3634
+#: class-ml-gallery.php:3706
 msgid "Your galleries"
 msgstr "Vaše galerije"
 
-#: class-ml-gallery.php:3634
+#: class-ml-gallery.php:3706
 msgid "live here."
 msgstr "živijo tukaj."
 
-#: class-ml-gallery.php:3636
+#: class-ml-gallery.php:3708
 msgid ""
 "Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
 "justified, no code required."
@@ -1320,11 +1344,11 @@ msgstr ""
 "Ustvarite lepe slike galerij z osupljivim lightboxom. Mreža, zidanica ali "
 "upravičeno, brez potrebe po kodi."
 
-#: class-ml-gallery.php:3638
+#: class-ml-gallery.php:3710
 msgid "Create your first gallery"
 msgstr "Ustvarite svojo prvo galerijo"
 
-#: class-ml-gallery.php:3651
+#: class-ml-gallery.php:3723
 #, php-format
 msgid "View Trash (%s)"
 msgid_plural "View Trash (%s)"
@@ -1333,51 +1357,51 @@ msgstr[1] "Ogled smeti (%s)"
 msgstr[2] ""
 msgstr[3] ""
 
-#: class-ml-gallery.php:3662
+#: class-ml-gallery.php:3734
 msgid "Preview layout"
 msgstr "Predogled postavitve"
 
-#: class-ml-gallery.php:3749
+#: class-ml-gallery.php:3821
 msgid "Usage"
 msgstr "Uporaba"
 
-#: class-ml-gallery.php:3782
+#: class-ml-gallery.php:3854
 msgid "Not found."
 msgstr "Ni najdeno."
 
-#: class-ml-gallery.php:3787
+#: class-ml-gallery.php:3859
 msgid "View Usage"
 msgstr "Ogled uporabe"
 
-#: class-ml-gallery.php:3793
+#: class-ml-gallery.php:3865
 msgid "Content Using This Gallery"
 msgstr "Vsebina, ki uporablja to galerijo"
 
-#: class-ml-gallery.php:3860
+#: class-ml-gallery.php:3932
 msgid "(no title)"
 msgstr "(brez naslova)"
 
-#: class-ml-gallery.php:3918 class-ml-gallery.php:3927
+#: class-ml-gallery.php:3990 class-ml-gallery.php:3999
 msgid "Please choose a valid .zip file."
 msgstr "Izberite veljavno .zip datoteko."
 
-#: class-ml-gallery.php:3933
+#: class-ml-gallery.php:4005
 msgid "Server cannot read ZIP files."
 msgstr "Strežnik ne more brati ZIP datotek."
 
-#: class-ml-gallery.php:3940
+#: class-ml-gallery.php:4012
 msgid "The ZIP could not be read."
 msgstr "ZIP datoteke ni bilo mogoče prebrati."
 
-#: class-ml-gallery.php:3974
+#: class-ml-gallery.php:4046
 msgid "Could not prepare a temporary folder."
 msgstr "Priprava začasne mape ni bila uspešna."
 
-#: class-ml-gallery.php:4072 class-ml-gallery.php:4108
+#: class-ml-gallery.php:4144 class-ml-gallery.php:4180
 msgid "Image not found."
 msgstr "Slika ni bila najdena."
 
-#: class-ml-gallery.php:4145
+#: class-ml-gallery.php:4217
 msgid "Unknown caption source."
 msgstr "Neznan vir napisov."
 
@@ -1389,7 +1413,7 @@ msgstr "👋 Hvala, da ste namestili MetaSlider Gallery!"
 msgid "You're all set. Create your first gallery to get started."
 msgstr "Vse je pripravljeno. Ustvarite svojo prvo galerijo, da začnete."
 
-#: class-ml-slider-lightbox.php:1167
+#: class-ml-slider-lightbox.php:1188
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1397,11 +1421,11 @@ msgstr ""
 "MetaSlider galerija zahteva, da sta NameMetaSlider in vsaj en drug podprt "
 "lightbox vtičnik nameščena in aktivirana."
 
-#: class-ml-slider-lightbox.php:1171
+#: class-ml-slider-lightbox.php:1192
 msgid "More info"
 msgstr "Več informacij"
 
-#: class-ml-slider-lightbox.php:1182
+#: class-ml-slider-lightbox.php:1203
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1409,31 +1433,31 @@ msgstr ""
 "Aktiviranih je več kot en lightbox vtičnik. To lahko povzroči konflikte z "
 "MetaSlider galerijo."
 
-#: class-ml-slider-lightbox.php:1242
+#: class-ml-slider-lightbox.php:1263
 msgid "Edit Global Settings"
 msgstr "Uredi globalne nastavitve"
 
-#: class-ml-slider-lightbox.php:1253
+#: class-ml-slider-lightbox.php:1274
 msgid "Open In Gallery"
 msgstr "Odpri v galeriji"
 
-#: class-ml-slider-lightbox.php:1267
+#: class-ml-slider-lightbox.php:1288
 msgid "Show Captions"
 msgstr "Prikaži napise"
 
-#: class-ml-slider-lightbox.php:1267
+#: class-ml-slider-lightbox.php:1288
 msgid "Show captions in the gallery for each slide."
 msgstr "Prikaži napise v galeriji za vsak diapozitiv."
 
-#: class-ml-slider-lightbox.php:1268
+#: class-ml-slider-lightbox.php:1289
 msgid "Show Navigation Arrows"
 msgstr "Prikaži navigacijske puščice"
 
-#: class-ml-slider-lightbox.php:1268
+#: class-ml-slider-lightbox.php:1289
 msgid "Show previous/next arrows in the gallery."
 msgstr "Prikaži prejšnje/naslednje puščice v galeriji."
 
-#: class-ml-slider-lightbox.php:1274
+#: class-ml-slider-lightbox.php:1295
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1442,155 +1466,155 @@ msgstr ""
 "Galerija je omogočena za vse diaprojekcije preko <a href=\"%s\">nastavitev "
 "MetaSlider Galerije</a>."
 
-#: class-ml-slider-lightbox.php:1639
+#: class-ml-slider-lightbox.php:1660
 msgid "Close gallery"
 msgstr "Zapri galerijo"
 
-#: class-ml-slider-lightbox.php:1640
+#: class-ml-slider-lightbox.php:1661
 msgid "Toggle maximize"
 msgstr "Preklopi na maksimiziranje"
 
-#: class-ml-slider-lightbox.php:1641
+#: class-ml-slider-lightbox.php:1662
 msgid "Previous slide"
 msgstr "Prejšnji diapozitiv"
 
-#: class-ml-slider-lightbox.php:1642
+#: class-ml-slider-lightbox.php:1663
 msgid "Next slide"
 msgstr "Naslednji diapozitiv"
 
-#: class-ml-slider-lightbox.php:1644
+#: class-ml-slider-lightbox.php:1665
 msgid "Play video"
 msgstr "Predvajaj video"
 
-#: class-ml-slider-lightbox.php:1645
+#: class-ml-slider-lightbox.php:1666
 msgid "Oops... Failed to load content..."
 msgstr "Ups... Ni uspelo naložiti vsebine..."
 
-#: class-ml-slider-lightbox.php:1691 class-ml-slider-lightbox.php:1721
+#: class-ml-slider-lightbox.php:1712 class-ml-slider-lightbox.php:1742
 msgid "Global"
 msgstr "Globalno"
 
-#: class-ml-slider-lightbox.php:1692
+#: class-ml-slider-lightbox.php:1713
 msgid "Yes"
 msgstr "Da"
 
-#: class-ml-slider-lightbox.php:1693
+#: class-ml-slider-lightbox.php:1714
 msgid "No"
 msgstr "Ne"
 
-#: class-ml-slider-lightbox.php:1716
+#: class-ml-slider-lightbox.php:1737
 msgid "How Visitors Open Images"
 msgstr "Kako obiskovalci odpirajo slike"
 
-#: class-ml-slider-lightbox.php:1719 class-ml-slider-lightbox.php:3643
+#: class-ml-slider-lightbox.php:1740 class-ml-slider-lightbox.php:3664
 msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
 msgstr "Izberite, ali naj klik na sliko, ikono ali gumb odpre galerijo."
 
-#: class-ml-slider-lightbox.php:1722 class-ml-trigger-control.php:66
+#: class-ml-slider-lightbox.php:1743 class-ml-trigger-control.php:66
 msgid "Image"
 msgstr "Slika"
 
-#: class-ml-slider-lightbox.php:1723 class-ml-slider-lightbox.php:3485
-#: class-ml-slider-lightbox.php:3498 class-ml-slider-lightbox.php:3511
-#: class-ml-slider-lightbox.php:3609 class-ml-trigger-control.php:67
+#: class-ml-slider-lightbox.php:1744 class-ml-slider-lightbox.php:3506
+#: class-ml-slider-lightbox.php:3519 class-ml-slider-lightbox.php:3532
+#: class-ml-slider-lightbox.php:3630 class-ml-trigger-control.php:67
 msgid "Icon"
 msgstr "Ikona"
 
-#: class-ml-slider-lightbox.php:1724 class-ml-trigger-control.php:68
+#: class-ml-slider-lightbox.php:1745 class-ml-trigger-control.php:68
 msgid "Button"
 msgstr "Gumb"
 
-#: class-ml-slider-lightbox.php:1992
+#: class-ml-slider-lightbox.php:2013
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Galerija zahteva, da je MetaSlider nameščen in aktiviran."
 
-#: class-ml-slider-lightbox.php:1996
+#: class-ml-slider-lightbox.php:2017
 msgid "Install MetaSlider"
 msgstr "Namesti MetaSlider"
 
-#: class-ml-slider-lightbox.php:2119 class-ml-slider-lightbox.php:2263
+#: class-ml-slider-lightbox.php:2140 class-ml-slider-lightbox.php:2284
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Galerija Pro"
 
-#: class-ml-slider-lightbox.php:2245
+#: class-ml-slider-lightbox.php:2266
 #, php-format
 msgid "Select pages to %s..."
 msgstr "Izberi strani za %s..."
 
-#: class-ml-slider-lightbox.php:2246
+#: class-ml-slider-lightbox.php:2267
 #, php-format
 msgid "Select posts to %s..."
 msgstr "Izberi objave za %s..."
 
-#: class-ml-slider-lightbox.php:2247
+#: class-ml-slider-lightbox.php:2268
 #, php-format
 msgid "Select post types to %s..."
 msgstr "Izberi tipe objav za %s..."
 
-#: class-ml-slider-lightbox.php:2248
+#: class-ml-slider-lightbox.php:2269
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "Izberi %1$s za %2$s..."
 
-#: class-ml-slider-lightbox.php:2249
+#: class-ml-slider-lightbox.php:2270
 msgid "Select post types to exclude"
 msgstr "Izberi tipe objav za izključitev"
 
-#: class-ml-slider-lightbox.php:2250 class-ml-slider-lightbox.php:3692
-#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:2271 class-ml-slider-lightbox.php:3713
+#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
 msgid "Include"
 msgstr "Vključi"
 
-#: class-ml-slider-lightbox.php:2251 class-ml-slider-lightbox.php:3692
-#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:2272 class-ml-slider-lightbox.php:3713
+#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
 msgid "Exclude"
 msgstr "Izključi"
 
-#: class-ml-slider-lightbox.php:2259
+#: class-ml-slider-lightbox.php:2280
 msgid "Gallery Pro"
 msgstr "Galerija Pro"
 
-#: class-ml-slider-lightbox.php:2279
+#: class-ml-slider-lightbox.php:2300
 msgid "Global Settings"
 msgstr "Svetovne nastavitve"
 
-#: class-ml-slider-lightbox.php:2289
+#: class-ml-slider-lightbox.php:2310
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "Nadgradite na MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2290
+#: class-ml-slider-lightbox.php:2311
 msgid "Upgrade to Pro"
 msgstr "Nadgradite na Pro"
 
-#: class-ml-slider-lightbox.php:2322
+#: class-ml-slider-lightbox.php:2343
 msgid "Automatic Mode"
 msgstr "Samodejni način"
 
-#: class-ml-slider-lightbox.php:2323
+#: class-ml-slider-lightbox.php:2344
 msgid "Manual Mode"
 msgstr "Ročni način"
 
-#: class-ml-slider-lightbox.php:2325
+#: class-ml-slider-lightbox.php:2346
 msgid "Behavior"
 msgstr "Obnašanje"
 
-#: class-ml-slider-lightbox.php:2346
+#: class-ml-slider-lightbox.php:2367
 msgid "Settings saved successfully!"
 msgstr "Nastavitve so bile uspešno shranjene!"
 
-#: class-ml-slider-lightbox.php:2356
+#: class-ml-slider-lightbox.php:2377
 msgid "Where to Enable Automatically"
 msgstr "Kje omogočiti samodejno"
 
-#: class-ml-slider-lightbox.php:2363
+#: class-ml-slider-lightbox.php:2384
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider predstavitve"
 
-#: class-ml-slider-lightbox.php:2370 class-ml-slider-lightbox.php:2567
+#: class-ml-slider-lightbox.php:2391 class-ml-slider-lightbox.php:2588
 msgid "Content Filtering"
 msgstr "Filtriranje vsebine"
 
-#: class-ml-slider-lightbox.php:2382
+#: class-ml-slider-lightbox.php:2403
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
@@ -1598,19 +1622,19 @@ msgstr ""
 "Prilagodite barve, prosojnost in vizualno oblikovanje za prekrivanje "
 "galerije in kontrole."
 
-#: class-ml-slider-lightbox.php:2386 class-ml-slider-lightbox.php:2633
+#: class-ml-slider-lightbox.php:2407 class-ml-slider-lightbox.php:2654
 msgid "Background & Overlay"
 msgstr "Ozadje & Prekrivanje"
 
-#: class-ml-slider-lightbox.php:2396
+#: class-ml-slider-lightbox.php:2417
 msgid "\"Open in Gallery\" Button"
 msgstr "\"Odpri v galeriji\" Gumb"
 
-#: class-ml-slider-lightbox.php:2406 class-ml-slider-lightbox.php:2746
+#: class-ml-slider-lightbox.php:2427 class-ml-slider-lightbox.php:2767
 msgid "Navigation & Controls"
 msgstr "Navigacija & Kontrole"
 
-#: class-ml-slider-lightbox.php:2412
+#: class-ml-slider-lightbox.php:2433
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1620,27 +1644,27 @@ msgstr ""
 "lightbox tretje osebe. Te nastavitve morda ne veljajo za MetaSlider, vendar "
 "bodo še vedno delovale za WordPress vsebinske lightboxe."
 
-#: class-ml-slider-lightbox.php:2419 class-ml-slider-lightbox.php:4209
+#: class-ml-slider-lightbox.php:2440 class-ml-slider-lightbox.php:4230
 msgid "Enhanced Zoom & Controls"
 msgstr "Izboljšan zoom & kontrole"
 
-#: class-ml-slider-lightbox.php:2427
+#: class-ml-slider-lightbox.php:2448
 msgid "Media & Video Enhancements"
 msgstr "Izboljšave medijev & videa"
 
-#: class-ml-slider-lightbox.php:2435 class-ml-slider-lightbox.php:4237
+#: class-ml-slider-lightbox.php:2456 class-ml-slider-lightbox.php:4258
 msgid "Social & Navigation"
 msgstr "Družbena omrežja & navigacija"
 
-#: class-ml-slider-lightbox.php:2443 class-ml-slider-lightbox.php:4258
+#: class-ml-slider-lightbox.php:2464 class-ml-slider-lightbox.php:4279
 msgid "Advanced Features"
 msgstr "Napredne funkcije"
 
-#: class-ml-slider-lightbox.php:2459
+#: class-ml-slider-lightbox.php:2480
 msgid "Manual Options"
 msgstr "Ročne možnosti"
 
-#: class-ml-slider-lightbox.php:2460
+#: class-ml-slider-lightbox.php:2481
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -1648,45 +1672,45 @@ msgstr ""
 "Ročne nastavitve in WordPress preglasitve, ki delujejo neodvisno od "
 "samodejnih nastavitev."
 
-#: class-ml-slider-lightbox.php:2640
+#: class-ml-slider-lightbox.php:2661
 msgid "Navigation Icons"
 msgstr "Ikone za navigacijo"
 
-#: class-ml-slider-lightbox.php:2647
+#: class-ml-slider-lightbox.php:2668
 msgid "Buttons"
 msgstr "Gumbi"
 
-#: class-ml-slider-lightbox.php:2670
+#: class-ml-slider-lightbox.php:2691
 msgid "Autoplay Progress Bar Color"
 msgstr "Barva napredka samodejnega predvajanja"
 
-#: class-ml-slider-lightbox.php:2694
+#: class-ml-slider-lightbox.php:2715
 msgid "Close Button"
 msgstr "Gumb za zapiranje"
 
-#: class-ml-slider-lightbox.php:2710
+#: class-ml-slider-lightbox.php:2731
 msgid "Button Colors"
 msgstr "Barve gumbov"
 
-#: class-ml-slider-lightbox.php:2718
+#: class-ml-slider-lightbox.php:2739
 msgid "Icon Colors"
 msgstr "Barve ikon"
 
-#: class-ml-slider-lightbox.php:3099
+#: class-ml-slider-lightbox.php:3120
 msgid "Configure general gallery settings that apply site-wide."
 msgstr ""
 "Konfigurirajte splošne nastavitve galerije, ki veljajo za celotno spletno "
 "mesto."
 
-#: class-ml-slider-lightbox.php:3104
+#: class-ml-slider-lightbox.php:3125
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "Konfigurirajte nastavitve specifične za funkcionalnost galerije MetaSlider."
 
-#: class-ml-slider-lightbox.php:3109
+#: class-ml-slider-lightbox.php:3130
 msgid "Select where the gallery will be enabled automatically."
 msgstr "Izberite, kje bo galerija omogočena samodejno."
 
-#: class-ml-slider-lightbox.php:3115
+#: class-ml-slider-lightbox.php:3136
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1694,31 +1718,31 @@ msgstr ""
 "Izberite, kako filtrirati vsebino za obdelavo galerije in določite, katere "
 "strani, objave ali selektorje vključiti ali izključiti."
 
-#: class-ml-slider-lightbox.php:3131
+#: class-ml-slider-lightbox.php:3152
 msgid "Processing Mode"
 msgstr "Način obdelave"
 
-#: class-ml-slider-lightbox.php:3134
+#: class-ml-slider-lightbox.php:3155
 msgid "Process all content EXCEPT the items specified below"
 msgstr "Obdelajte vso vsebino, razen elementov, navedenih spodaj"
 
-#: class-ml-slider-lightbox.php:3137
+#: class-ml-slider-lightbox.php:3158
 msgid "ONLY process the items specified below"
 msgstr "OBDELAVAJTE SAMO elemente, navedene spodaj"
 
-#: class-ml-slider-lightbox.php:3144
+#: class-ml-slider-lightbox.php:3165
 msgid "Inclusion Mode"
 msgstr "Način vključitve"
 
-#: class-ml-slider-lightbox.php:3148
+#: class-ml-slider-lightbox.php:3169
 msgid "Exclusion Mode"
 msgstr "Način izključitve"
 
-#: class-ml-slider-lightbox.php:3168
+#: class-ml-slider-lightbox.php:3189
 msgid "Images in post content"
 msgstr "Slike v vsebini objave"
 
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3190
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -1726,11 +1750,11 @@ msgstr ""
 "Ko je omogočeno, se bodo posamezne slike brez povezav in \"Povečaj za "
 "klik\" nastavljene v objavah in straneh samodejno odprle v galeriji."
 
-#: class-ml-slider-lightbox.php:3185
+#: class-ml-slider-lightbox.php:3206
 msgid "Images and videos in widgets and sidebars"
 msgstr "Slike in videoposnetki v widgetih in stranskih vrsticah"
 
-#: class-ml-slider-lightbox.php:3186
+#: class-ml-slider-lightbox.php:3207
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
@@ -1738,11 +1762,11 @@ msgstr ""
 "Ko je omogočeno, se bodo slike in videoposnetki v območjih widgetov "
 "samodejno odprli v galeriji."
 
-#: class-ml-slider-lightbox.php:3202
+#: class-ml-slider-lightbox.php:3223
 msgid "Gallery shortcodes and blocks"
 msgstr "Kratek koda galerije in bloke"
 
-#: class-ml-slider-lightbox.php:3203
+#: class-ml-slider-lightbox.php:3224
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1750,11 +1774,11 @@ msgstr ""
 "Ko je omogočeno, se bodo slike v WordPress [gallery] kratkih kodah in "
 "Gutenberg Gallery blokih samodejno odprle v oknu galerije."
 
-#: class-ml-slider-lightbox.php:3219
+#: class-ml-slider-lightbox.php:3240
 msgid "Featured images"
 msgstr "Izbrane slike"
 
-#: class-ml-slider-lightbox.php:3220
+#: class-ml-slider-lightbox.php:3241
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -1762,7 +1786,7 @@ msgstr ""
 "Ko je omogočeno, se bodo izbrane slike (mini slike objav) samodejno odprle "
 "v galeriji, ko jih kliknete."
 
-#: class-ml-slider-lightbox.php:3229
+#: class-ml-slider-lightbox.php:3250
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -1770,11 +1794,11 @@ msgstr ""
 "Samodejno odpri vse MetaSlider diaprojekcije v galeriji, kar nadomesti "
 "nastavitev za posamezne drsnike."
 
-#: class-ml-slider-lightbox.php:3243
+#: class-ml-slider-lightbox.php:3264
 msgid "MetaSlider slideshows"
 msgstr "MetaSlider diaprojekcije"
 
-#: class-ml-slider-lightbox.php:3244
+#: class-ml-slider-lightbox.php:3265
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -1782,11 +1806,11 @@ msgstr ""
 "Ko je omogočeno, se bodo vse MetaSlider diaprojekcije odprle diapozitive v "
 "oknu galerije, kar nadomesti nastavitev za posamezne drsnike."
 
-#: class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3281
 msgid "Videos in post content"
 msgstr "Videi v vsebini objav"
 
-#: class-ml-slider-lightbox.php:3261
+#: class-ml-slider-lightbox.php:3282
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1794,7 +1818,7 @@ msgstr ""
 "Ko je omogočeno, se bodo samostojni video bloki (HTML5 videi, YouTube "
 "vdelave, Vimeo vdelave) v vsebini objav/strani samodejno odprli v galeriji."
 
-#: class-ml-slider-lightbox.php:3296
+#: class-ml-slider-lightbox.php:3317
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
@@ -1802,7 +1826,7 @@ msgstr ""
 "Barva ozadja za prekrivanje galerije. Temne barve najbolje delujejo za "
 "ogled slik."
 
-#: class-ml-slider-lightbox.php:3301
+#: class-ml-slider-lightbox.php:3322
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
@@ -1810,7 +1834,7 @@ msgstr ""
 "Barva ozadja za \"Odpri v galeriji\" gumbe, ki se pojavljajo na "
 "diapozitivih, slikah in videih."
 
-#: class-ml-slider-lightbox.php:3306
+#: class-ml-slider-lightbox.php:3327
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
@@ -1818,15 +1842,15 @@ msgstr ""
 "Barva besedila za \"Odpri v galeriji\" gumbe, ki se pojavljajo na "
 "diapozitivih, slikah in videih."
 
-#: class-ml-slider-lightbox.php:3311
+#: class-ml-slider-lightbox.php:3332
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "Barva ozadja, ko preletite \"Odpri v galeriji\" gumbe."
 
-#: class-ml-slider-lightbox.php:3316
+#: class-ml-slider-lightbox.php:3337
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "Barva besedila, ko preletite \"Odpri v galeriji\" gumbe."
 
-#: class-ml-slider-lightbox.php:3329
+#: class-ml-slider-lightbox.php:3350
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -1834,15 +1858,15 @@ msgstr ""
 "Po meri besedilo za gumbe galerije. To besedilo se bo pojavilo na vseh "
 "\"Odpri v galeriji\" gumbih po celotnem spletnem mestu."
 
-#: class-ml-slider-lightbox.php:3342 class-ml-slider-lightbox.php:3368
+#: class-ml-slider-lightbox.php:3363 class-ml-slider-lightbox.php:3389
 msgid "Top Right (Default)"
 msgstr "Zgoraj desno (privzeto)"
 
-#: class-ml-slider-lightbox.php:3355
+#: class-ml-slider-lightbox.php:3376
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "Izberite, kje postaviti gumb za zapiranje (X) v prekrivanju galerije."
 
-#: class-ml-slider-lightbox.php:3381
+#: class-ml-slider-lightbox.php:3402
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
@@ -1850,11 +1874,11 @@ msgstr ""
 "Izberite, kje postaviti \"Odpri v galeriji\" gumbe znotraj diapozitivov, "
 "slik, galerij in videov."
 
-#: class-ml-slider-lightbox.php:3386
+#: class-ml-slider-lightbox.php:3407
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "Barva za prejšnje in naslednje navigacijske puščice v galeriji."
 
-#: class-ml-slider-lightbox.php:3391
+#: class-ml-slider-lightbox.php:3412
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -1862,11 +1886,11 @@ msgstr ""
 "Barva puščice pri preletu. Ustvari vizualno povratno informacijo, ko "
 "uporabniki premikajo miško nad navigacijskimi puščicami."
 
-#: class-ml-slider-lightbox.php:3396
+#: class-ml-slider-lightbox.php:3417
 msgid "Color for the close button (X) in the gallery."
 msgstr "Barva za gumb za zapiranje (X) v galeriji."
 
-#: class-ml-slider-lightbox.php:3401
+#: class-ml-slider-lightbox.php:3422
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -1874,7 +1898,7 @@ msgstr ""
 "Barva gumba za zapiranje, ko se pomikate. Ustvari vizualni povratni signal, "
 "ko uporabniki premikajo miško nad gumbom za zapiranje."
 
-#: class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3427
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -1882,7 +1906,7 @@ msgstr ""
 "Barva za ikone orodne vrstice in besedilo števca v lightboxu. Vpliva na "
 "ikone za povečavo, celozaslonske ikone (Pro) in prikaz števca slik."
 
-#: class-ml-slider-lightbox.php:3411
+#: class-ml-slider-lightbox.php:3432
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -1890,11 +1914,11 @@ msgstr ""
 "Barva ikone orodne vrstice, ko se pomikate. Ustvari vizualni povratni "
 "signal, ko uporabniki premikajo miško nad ikonami orodne vrstice in števcem."
 
-#: class-ml-slider-lightbox.php:3416
+#: class-ml-slider-lightbox.php:3437
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "Barva ozadja za gumb prejšnjega in naslednjega navigacijskega puščice."
 
-#: class-ml-slider-lightbox.php:3421
+#: class-ml-slider-lightbox.php:3442
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -1902,11 +1926,11 @@ msgstr ""
 "Barva ozadja za puščice, ko se pomikate. Ustvari vizualni povratni signal, "
 "ko uporabniki premikajo miško nad puščicami."
 
-#: class-ml-slider-lightbox.php:3426
+#: class-ml-slider-lightbox.php:3447
 msgid "Background color for the close button (X) in the gallery."
 msgstr "Barva ozadja za gumb za zapiranje (X) v galeriji."
 
-#: class-ml-slider-lightbox.php:3431
+#: class-ml-slider-lightbox.php:3452
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -1914,11 +1938,11 @@ msgstr ""
 "Barva ozadja za gumb za zapiranje, ko se pomikate. Ustvari vizualni "
 "povratni signal, ko uporabniki premikajo miško nad gumbom za zapiranje."
 
-#: class-ml-slider-lightbox.php:3436
+#: class-ml-slider-lightbox.php:3457
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "Barva ozadja za ikone orodne vrstice v lightboxu."
 
-#: class-ml-slider-lightbox.php:3441
+#: class-ml-slider-lightbox.php:3462
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -1926,44 +1950,44 @@ msgstr ""
 "Barva ozadja za ikone orodne vrstice, ko se pomikate. Ustvari vizualni "
 "povratni signal, ko uporabniki premikajo miško nad ikonami orodne vrstice."
 
-#: class-ml-slider-lightbox.php:3486 class-ml-slider-lightbox.php:3499
-#: class-ml-slider-lightbox.php:3512 class-ml-slider-lightbox.php:3610
+#: class-ml-slider-lightbox.php:3507 class-ml-slider-lightbox.php:3520
+#: class-ml-slider-lightbox.php:3533 class-ml-slider-lightbox.php:3631
 msgid "Icon Hover"
 msgstr "Ikona ob prehodu"
 
-#: class-ml-slider-lightbox.php:3487 class-ml-slider-lightbox.php:3500
-#: class-ml-slider-lightbox.php:3513 class-ml-slider-lightbox.php:3594
-#: class-ml-slider-lightbox.php:3611
+#: class-ml-slider-lightbox.php:3508 class-ml-slider-lightbox.php:3521
+#: class-ml-slider-lightbox.php:3534 class-ml-slider-lightbox.php:3615
+#: class-ml-slider-lightbox.php:3632
 msgid "Background"
 msgstr "Ozadje"
 
-#: class-ml-slider-lightbox.php:3488 class-ml-slider-lightbox.php:3501
-#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3595
-#: class-ml-slider-lightbox.php:3612
+#: class-ml-slider-lightbox.php:3509 class-ml-slider-lightbox.php:3522
+#: class-ml-slider-lightbox.php:3535 class-ml-slider-lightbox.php:3616
+#: class-ml-slider-lightbox.php:3633
 msgid "Background Hover"
 msgstr "Ozadje ob prehodu"
 
-#: class-ml-slider-lightbox.php:3531
+#: class-ml-slider-lightbox.php:3552
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "Nastavite prosojnost ozadja galerije (0 = prozorno, 1 = neprozorno)."
 
-#: class-ml-slider-lightbox.php:3540
+#: class-ml-slider-lightbox.php:3561
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "Barva napredka, prikazana med samodejnimi predstavitvami."
 
-#: class-ml-slider-lightbox.php:3546
+#: class-ml-slider-lightbox.php:3567
 msgid "Border"
 msgstr "Rob"
 
-#: class-ml-slider-lightbox.php:3547
+#: class-ml-slider-lightbox.php:3568
 msgid "Border Active and Hover"
 msgstr "Aktivni rob in ob prehodu"
 
-#: class-ml-slider-lightbox.php:3559
+#: class-ml-slider-lightbox.php:3580
 msgid "Show navigation arrows in gallery"
 msgstr "Prikaži navigacijske puščice v galeriji"
 
-#: class-ml-slider-lightbox.php:3560
+#: class-ml-slider-lightbox.php:3581
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -1973,17 +1997,17 @@ msgstr ""
 "tipkovnico (← → tipke, ESC za zapiranje). To je na voljo za predstavitve in "
 "galerije slik."
 
-#: class-ml-slider-lightbox.php:3569
+#: class-ml-slider-lightbox.php:3590
 msgid "Customize the gallery background and overlay appearance."
 msgstr "Prilagodite ozadje galerije in videz prekrivanja."
 
-#: class-ml-slider-lightbox.php:3574
+#: class-ml-slider-lightbox.php:3595
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr ""
 "Prilagodite ikone za navigacijo (zapri, prejšnja, naslednja puščica) za "
 "galerijo."
 
-#: class-ml-slider-lightbox.php:3579
+#: class-ml-slider-lightbox.php:3600
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -1991,15 +2015,15 @@ msgstr ""
 "Prilagodite gumbe \"Odpri v galeriji\", ki jih lahko dodate na diapozitive, "
 "slike, galerije in videe."
 
-#: class-ml-slider-lightbox.php:3592
+#: class-ml-slider-lightbox.php:3613
 msgid "Text"
 msgstr "Besedilo"
 
-#: class-ml-slider-lightbox.php:3593
+#: class-ml-slider-lightbox.php:3614
 msgid "Text Hover"
 msgstr "Besedilo ob prehodu"
 
-#: class-ml-slider-lightbox.php:3618
+#: class-ml-slider-lightbox.php:3639
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
@@ -2007,11 +2031,11 @@ msgstr ""
 "Konfigurirajte možnosti navigacije in nadzora, ki se uporabljajo za vse "
 "galerije MetaSlider."
 
-#: class-ml-slider-lightbox.php:3628
+#: class-ml-slider-lightbox.php:3649
 msgid "Show thumbnails"
 msgstr "Prikaži sličice"
 
-#: class-ml-slider-lightbox.php:3629
+#: class-ml-slider-lightbox.php:3650
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -2019,15 +2043,15 @@ msgstr ""
 "Prikazuje sličice slik na dnu galerije za enostavno navigacijo. To je na "
 "voljo za diaprojekcije in galerije slik."
 
-#: class-ml-slider-lightbox.php:3642
+#: class-ml-slider-lightbox.php:3663
 msgid "How visitors open images"
 msgstr "Kako obiskovalci odpirajo slike"
 
-#: class-ml-slider-lightbox.php:3663
+#: class-ml-slider-lightbox.php:3684
 msgid "Show captions"
 msgstr "Prikaži napise"
 
-#: class-ml-slider-lightbox.php:3664
+#: class-ml-slider-lightbox.php:3685
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -2035,17 +2059,17 @@ msgstr ""
 "Ko je omogočeno, prikaže napise v oknu galerije. To je na voljo za "
 "diaprojekcije, slike in galerije slik."
 
-#: class-ml-slider-lightbox.php:3671
+#: class-ml-slider-lightbox.php:3692
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr "Napredne funkcije lightboxa so na voljo preko MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3673
+#: class-ml-slider-lightbox.php:3694
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr ""
 "Pridobite predogled naprednih funkcij, ki so na voljo v MetaSlider Gallery "
 "Pro."
 
-#: class-ml-slider-lightbox.php:3676
+#: class-ml-slider-lightbox.php:3697
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -2053,11 +2077,11 @@ msgstr ""
 "Ti napredni dodatki za LightGallery.js so na voljo v Pro različici z "
 "dodatnimi možnostmi prilagoditve."
 
-#: class-ml-slider-lightbox.php:3704 class-ml-slider-lightbox.php:3705
+#: class-ml-slider-lightbox.php:3725 class-ml-slider-lightbox.php:3726
 msgid "specific Pages"
 msgstr "specifične strani"
 
-#: class-ml-slider-lightbox.php:3707
+#: class-ml-slider-lightbox.php:3728
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2065,7 +2089,7 @@ msgstr ""
 "Izberite strani, kjer naj bo galerija onemogočena. Prikazuje do 100 "
 "najnovejših strani. Vtipkajte za iskanje."
 
-#: class-ml-slider-lightbox.php:3707 class-ml-slider-lightbox.php:3708
+#: class-ml-slider-lightbox.php:3728 class-ml-slider-lightbox.php:3729
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2073,11 +2097,11 @@ msgstr ""
 "Izberite strani, kjer naj bo galerija omogočena. Prikazuje do 100 "
 "najnovejših strani. Vtipkajte za iskanje."
 
-#: class-ml-slider-lightbox.php:3752 class-ml-slider-lightbox.php:3753
+#: class-ml-slider-lightbox.php:3773 class-ml-slider-lightbox.php:3774
 msgid "specific Posts"
 msgstr "specifične objave"
 
-#: class-ml-slider-lightbox.php:3755
+#: class-ml-slider-lightbox.php:3776
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2085,7 +2109,7 @@ msgstr ""
 "Izberite objave, kjer naj bo galerija onemogočena. Prikaže do 100 "
 "najnovejših objav. Vnesite za iskanje."
 
-#: class-ml-slider-lightbox.php:3755 class-ml-slider-lightbox.php:3756
+#: class-ml-slider-lightbox.php:3776 class-ml-slider-lightbox.php:3777
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2093,46 +2117,46 @@ msgstr ""
 "Izberite objave, kjer naj bo galerija omogočena. Prikaže do 100 najnovejših "
 "objav. Vnesite za iskanje."
 
-#: class-ml-slider-lightbox.php:3783
+#: class-ml-slider-lightbox.php:3804
 msgid "include"
 msgstr "vključi"
 
-#: class-ml-slider-lightbox.php:3783
+#: class-ml-slider-lightbox.php:3804
 msgid "exclude"
 msgstr "izključi"
 
-#: class-ml-slider-lightbox.php:3823
+#: class-ml-slider-lightbox.php:3844
 #, php-format
 msgid "specific %s"
 msgstr "specifičen %s"
 
-#: class-ml-slider-lightbox.php:3824
+#: class-ml-slider-lightbox.php:3845
 #, php-format
 msgid "%s specific %s"
 msgstr "%s specifičen %s"
 
-#: class-ml-slider-lightbox.php:3826 class-ml-slider-lightbox.php:3827
+#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:3848
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "Prikaže do 100 najnovejših %s. Vnesite za iskanje."
 
-#: class-ml-slider-lightbox.php:3875 class-ml-slider-lightbox.php:3876
+#: class-ml-slider-lightbox.php:3896 class-ml-slider-lightbox.php:3897
 msgid "specific post types"
 msgstr "specifične vrste objav"
 
-#: class-ml-slider-lightbox.php:3878
+#: class-ml-slider-lightbox.php:3899
 msgid "Select post types where gallery should be disabled entirely."
 msgstr "Izberite vrste objav, kjer naj bo galerija popolnoma onemogočena."
 
-#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:3879
+#: class-ml-slider-lightbox.php:3899 class-ml-slider-lightbox.php:3900
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "Izberite vrste objav, kjer naj bo galerija popolnoma omogočena."
 
-#: class-ml-slider-lightbox.php:3913
+#: class-ml-slider-lightbox.php:3934
 msgid "Exclude by CSS selector"
 msgstr "Izključi po CSS selektorju"
 
-#: class-ml-slider-lightbox.php:3916
+#: class-ml-slider-lightbox.php:3937
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2141,11 +2165,11 @@ msgstr ""
 "(eno na vrstico). Primeri:<br>.no-lightbox<br>.custom-gallery "
 "img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:3939
+#: class-ml-slider-lightbox.php:3960
 msgid "Minimum Image Width"
 msgstr "Minimalna širina slike"
 
-#: class-ml-slider-lightbox.php:3942
+#: class-ml-slider-lightbox.php:3963
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2155,11 +2179,11 @@ msgstr ""
 "širino, ne dejanske velikosti datoteke slike. To je koristno za izključitev "
 "majhnih ikon, značk in gumbov."
 
-#: class-ml-slider-lightbox.php:3965
+#: class-ml-slider-lightbox.php:3986
 msgid "Minimum Image Height"
 msgstr "Minimalna višina slike"
 
-#: class-ml-slider-lightbox.php:3968
+#: class-ml-slider-lightbox.php:3989
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2169,7 +2193,7 @@ msgstr ""
 "prikazano višino, ne dejanske velikosti datoteke slike. To je koristno za "
 "izključitev majhnih ikon, značk in gumbov."
 
-#: class-ml-slider-lightbox.php:3984 class-ml-slider-lightbox.php:4141
+#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
@@ -2177,15 +2201,15 @@ msgstr ""
 "Izboljšano upravljanje medijev in funkcije predvajanja videoposnetkov za "
 "profesionalne galerije."
 
-#: class-ml-slider-lightbox.php:3991
+#: class-ml-slider-lightbox.php:4012
 msgid "Advanced features for professional lightbox implementations."
 msgstr "Napredne funkcije za profesionalne implementacije lightboxa."
 
-#: class-ml-slider-lightbox.php:4002 class-ml-slider-lightbox.php:4214
+#: class-ml-slider-lightbox.php:4023 class-ml-slider-lightbox.php:4235
 msgid "Enable Zoom"
 msgstr "Omogoči povečavo"
 
-#: class-ml-slider-lightbox.php:4003
+#: class-ml-slider-lightbox.php:4024
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -2193,11 +2217,11 @@ msgstr ""
 "Dvakrat kliknite za povečavo, kontrole za povečavo, povečava s kolesom "
 "miške in možnosti za prilagoditev povečave."
 
-#: class-ml-slider-lightbox.php:4013 class-ml-slider-lightbox.php:4221
+#: class-ml-slider-lightbox.php:4034 class-ml-slider-lightbox.php:4242
 msgid "Enable Fullscreen"
 msgstr "Omogoči celozaslonski način"
 
-#: class-ml-slider-lightbox.php:4014
+#: class-ml-slider-lightbox.php:4035
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
@@ -2205,11 +2229,11 @@ msgstr ""
 "Nativna podpora za celozaslonski način HTML5 s bližnjicami na tipkovnici "
 "(tipka F) za potopno gledanje."
 
-#: class-ml-slider-lightbox.php:4024 class-ml-slider-lightbox.php:4228
+#: class-ml-slider-lightbox.php:4045 class-ml-slider-lightbox.php:4249
 msgid "Enable Rotate"
 msgstr "Omogoči vrtenje"
 
-#: class-ml-slider-lightbox.php:4025
+#: class-ml-slider-lightbox.php:4046
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2217,11 +2241,11 @@ msgstr ""
 "Zavrtite slike v smeri urinega kazalca/obratno, obrnite "
 "horizontalno/vertikalno s kontrolami na orodni vrstici."
 
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4056
 msgid "Enable Video"
 msgstr "Omogoči video"
 
-#: class-ml-slider-lightbox.php:4036
+#: class-ml-slider-lightbox.php:4057
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2229,12 +2253,12 @@ msgstr ""
 "Izboljšana podpora za video za YouTube, Vimeo, HTML5 videe z samodejnim "
 "predvajanjem in kontrolami kakovosti."
 
-#: class-ml-slider-lightbox.php:4046 class-ml-slider-lightbox.php:4263
-#: class-ml-slider-lightbox.php:4410
+#: class-ml-slider-lightbox.php:4067 class-ml-slider-lightbox.php:4284
+#: class-ml-slider-lightbox.php:4431
 msgid "Enable Unique Image URLs"
 msgstr "Omogoči edinstvene URL slike"
 
-#: class-ml-slider-lightbox.php:4047
+#: class-ml-slider-lightbox.php:4068
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -2242,19 +2266,19 @@ msgstr ""
 "Edinstveni URL-ji za vsako sliko v galeriji s podporo za navigacijo "
 "nazaj/premik naprej v brskalniku."
 
-#: class-ml-slider-lightbox.php:4057 class-ml-slider-lightbox.php:4270
+#: class-ml-slider-lightbox.php:4078 class-ml-slider-lightbox.php:4291
 msgid "Enable Autoplay"
 msgstr "Omogoči samodejno predvajanje"
 
-#: class-ml-slider-lightbox.php:4058
+#: class-ml-slider-lightbox.php:4079
 msgid "Automatically advance through images in the gallery."
 msgstr "Samodejno napredujte skozi slike v galeriji."
 
-#: class-ml-slider-lightbox.php:4068 class-ml-slider-lightbox.php:4242
+#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4263
 msgid "Enable Share"
 msgstr "Omogoči deljenje"
 
-#: class-ml-slider-lightbox.php:4069
+#: class-ml-slider-lightbox.php:4090
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2262,15 +2286,15 @@ msgstr ""
 "Gumbi za deljenje na družbenih omrežjih za Facebook, Twitter, Pinterest in "
 "neposredno deljenje URL-jev."
 
-#: class-ml-slider-lightbox.php:4079 class-ml-slider-lightbox.php:4249
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4270
 msgid "Enable Pager"
 msgstr "Omogoči pager"
 
-#: class-ml-slider-lightbox.php:4080
+#: class-ml-slider-lightbox.php:4101
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "Minimalne pike za paginacijo za čisto navigacijo brez predogledov sličic."
 
-#: class-ml-slider-lightbox.php:4136 class-ml-slider-lightbox.php:4210
+#: class-ml-slider-lightbox.php:4157 class-ml-slider-lightbox.php:4231
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
@@ -2278,21 +2302,21 @@ msgstr ""
 "Profesionalne kontrole za povečavo in interakcijo s slikami za izboljšano "
 "uporabniško izkušnjo."
 
-#: class-ml-slider-lightbox.php:4146 class-ml-slider-lightbox.php:4238
+#: class-ml-slider-lightbox.php:4167 class-ml-slider-lightbox.php:4259
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "Izboljšave za družbeno deljenje in navigacijo za povečanje angažiranosti."
 
-#: class-ml-slider-lightbox.php:4151 class-ml-slider-lightbox.php:4259
+#: class-ml-slider-lightbox.php:4172 class-ml-slider-lightbox.php:4280
 msgid "Advanced functionality including URL management and automation features."
 msgstr ""
 "Napredne funkcionalnosti, vključno z upravljanjem URL-jev in "
 "avtomatizacijskimi funkcijami."
 
-#: class-ml-slider-lightbox.php:4163
+#: class-ml-slider-lightbox.php:4184
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "Ta funkcija je na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4215 class-ml-slider-lightbox.php:4379
+#: class-ml-slider-lightbox.php:4236 class-ml-slider-lightbox.php:4400
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -2300,45 +2324,45 @@ msgstr ""
 "Dovolite uporabnikom, da povečajo in zmanjšajo s dvakratnim klikom, kolesom "
 "miške in kontrolami za povečavo."
 
-#: class-ml-slider-lightbox.php:4217
+#: class-ml-slider-lightbox.php:4238
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "Kontrole za zoom so na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4222
+#: class-ml-slider-lightbox.php:4243
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "Prvotna HTML5 način celozaslonsko za poglobljeno ogledovanje slik."
 
-#: class-ml-slider-lightbox.php:4224
+#: class-ml-slider-lightbox.php:4245
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "Način celozaslonsko je na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4229 class-ml-slider-lightbox.php:4395
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4416
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr ""
 "Zavrtite slike v smeri urinega kazalca/proti smeri urinega kazalca in "
 "obrnite horizontalno/vertikalno."
 
-#: class-ml-slider-lightbox.php:4231
+#: class-ml-slider-lightbox.php:4252
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "Rotacija slik je na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4243
+#: class-ml-slider-lightbox.php:4264
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "Vgrajeno deljenje na družbenih omrežjih za Facebook, Twitter in Pinterest."
 
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4266
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "Družbeno deljenje je na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4427
+#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4448
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "Minimalne pike za paginacijo namesto sličic za čistejši vmesnik."
 
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4273
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "Paginacija pager je na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4264 class-ml-slider-lightbox.php:4411
+#: class-ml-slider-lightbox.php:4285 class-ml-slider-lightbox.php:4432
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
@@ -2346,83 +2370,83 @@ msgstr ""
 "Ustvarite edinstvene URL-je za vsako sliko v galeriji z navigacijo "
 "nazaj/predaj v brskalniku."
 
-#: class-ml-slider-lightbox.php:4266
+#: class-ml-slider-lightbox.php:4287
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "Edinstveni URL-ji slik so na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4419
+#: class-ml-slider-lightbox.php:4292 class-ml-slider-lightbox.php:4440
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "Samodejni diapozitiv z nadzornimi elementi za čas in napredovanje."
 
-#: class-ml-slider-lightbox.php:4273
+#: class-ml-slider-lightbox.php:4294
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "Samodejno predvajanje je na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4277
+#: class-ml-slider-lightbox.php:4298
 msgid "Enable Image Protection"
 msgstr "Omogoči zaščito slik"
 
-#: class-ml-slider-lightbox.php:4280
+#: class-ml-slider-lightbox.php:4301
 msgid "Image protection is available in MetaSlider Gallery Pro"
 msgstr "Zaščita slik je na voljo v MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4297
+#: class-ml-slider-lightbox.php:4318
 msgid "Features"
 msgstr "Značilnosti"
 
-#: class-ml-slider-lightbox.php:4298
+#: class-ml-slider-lightbox.php:4319
 msgid "Free"
 msgstr "Brezplačno"
 
-#: class-ml-slider-lightbox.php:4299, fuzzy
+#: class-ml-slider-lightbox.php:4320, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4444
+#: class-ml-slider-lightbox.php:4326 class-ml-slider-lightbox.php:4465
 msgid "Installed"
 msgstr "Nameščeno"
 
-#: class-ml-slider-lightbox.php:4308 class-ml-slider-lightbox.php:4447
+#: class-ml-slider-lightbox.php:4329 class-ml-slider-lightbox.php:4468
 msgid "Upgrade now"
 msgstr "Nadgradite zdaj"
 
-#: class-ml-slider-lightbox.php:4314
+#: class-ml-slider-lightbox.php:4335
 msgid "Automatic lightbox for images"
 msgstr "Samodejna svetlobna škatla za slike"
 
-#: class-ml-slider-lightbox.php:4315
+#: class-ml-slider-lightbox.php:4336
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "Samodejno omogočite svetlobno škatlo za vse slike na vaši strani."
 
-#: class-ml-slider-lightbox.php:4322
+#: class-ml-slider-lightbox.php:4343
 msgid "MetaSlider integration"
 msgstr "Integracija MetaSlider"
 
-#: class-ml-slider-lightbox.php:4323
+#: class-ml-slider-lightbox.php:4344
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "Brezšivna integracija s predvajanji MetaSlider."
 
-#: class-ml-slider-lightbox.php:4330
+#: class-ml-slider-lightbox.php:4351
 msgid "WordPress gallery support"
 msgstr "Podpora za WordPress galerije"
 
-#: class-ml-slider-lightbox.php:4331
+#: class-ml-slider-lightbox.php:4352
 msgid "Support for WordPress native galleries and blocks."
 msgstr "Podpora za domače galerije in bloke WordPress."
 
-#: class-ml-slider-lightbox.php:4338
+#: class-ml-slider-lightbox.php:4359
 msgid "Appearance customization"
 msgstr "Prilagoditev videza"
 
-#: class-ml-slider-lightbox.php:4339
+#: class-ml-slider-lightbox.php:4360
 msgid "Customize colors, opacity, and button styles."
 msgstr "Prilagodite barve, prosojnost in stile gumbov."
 
-#: class-ml-slider-lightbox.php:4346
+#: class-ml-slider-lightbox.php:4367
 msgid "Gallery builder &amp; layouts"
 msgstr "Graditelj galerij &amp; postavitve"
 
-#: class-ml-slider-lightbox.php:4347
+#: class-ml-slider-lightbox.php:4368
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
@@ -2430,83 +2454,83 @@ msgstr ""
 "Ustvarite galerije s postavitvami Grid, Masonry, Justified, Carousel in "
 "Showcase."
 
-#: class-ml-slider-lightbox.php:4354
+#: class-ml-slider-lightbox.php:4375
 msgid "Responsive columns"
 msgstr "Odgovorni stolpci"
 
-#: class-ml-slider-lightbox.php:4355
+#: class-ml-slider-lightbox.php:4376
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr ""
 "Nastavite število stolpcev za namizje in mobilne naprave, s prilagodljivo "
 "razdaljo."
 
-#: class-ml-slider-lightbox.php:4362
+#: class-ml-slider-lightbox.php:4383
 msgid "Image captions"
 msgstr "Podnapisi slik"
 
-#: class-ml-slider-lightbox.php:4363
+#: class-ml-slider-lightbox.php:4384
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "Prikažite podnapise slik v mreži galerije in oknu galerije."
 
-#: class-ml-slider-lightbox.php:4370
+#: class-ml-slider-lightbox.php:4391
 msgid "Thumbnail navigation"
 msgstr "Navigacija s sličicami"
 
-#: class-ml-slider-lightbox.php:4371
+#: class-ml-slider-lightbox.php:4392
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "Prikažite trak s sličicami za hitro navigacijo med slikami."
 
-#: class-ml-slider-lightbox.php:4378
+#: class-ml-slider-lightbox.php:4399
 msgid "Zoom controls"
 msgstr "Nadzor zooma"
 
-#: class-ml-slider-lightbox.php:4386
+#: class-ml-slider-lightbox.php:4407
 msgid "Fullscreen mode"
 msgstr "Način celozaslonske slike"
 
-#: class-ml-slider-lightbox.php:4387
+#: class-ml-slider-lightbox.php:4408
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "Domači HTML5 celozaslonski način za potopno ogledovanje slik."
 
-#: class-ml-slider-lightbox.php:4394
+#: class-ml-slider-lightbox.php:4415
 msgid "Rotate and flip images"
 msgstr "Zavrtite in obrnite slike"
 
-#: class-ml-slider-lightbox.php:4402
+#: class-ml-slider-lightbox.php:4423
 msgid "Social media sharing"
 msgstr "Deljenje na družbenih omrežjih"
 
-#: class-ml-slider-lightbox.php:4403
+#: class-ml-slider-lightbox.php:4424
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "Vgrajeno deljenje za Facebook, Twitter in Pinterest."
 
-#: class-ml-slider-lightbox.php:4418
+#: class-ml-slider-lightbox.php:4439
 msgid "Autoplay slideshow"
 msgstr "Samodejno predvajanje diaprojekcije"
 
-#: class-ml-slider-lightbox.php:4426
+#: class-ml-slider-lightbox.php:4447
 msgid "Pager navigation"
 msgstr "Navigacija po straneh"
 
-#: class-ml-slider-lightbox.php:4434
+#: class-ml-slider-lightbox.php:4455
 msgid "Premium support"
 msgstr "Premium podpora"
 
-#: class-ml-slider-lightbox.php:4435
+#: class-ml-slider-lightbox.php:4456
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "Vaša specifična vprašanja naj obravnavajo naši strokovnjaki neposredno."
 
-#: class-ml-slider-lightbox.php:6222
+#: class-ml-slider-lightbox.php:6243
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr ""
 "Konfigurirajte, kako se lightbox interagira z vgrajenimi funkcijami "
 "WordPress."
 
-#: class-ml-slider-lightbox.php:6237
+#: class-ml-slider-lightbox.php:6258
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "Prekliči nastavitev \"Povečaj ob klikovanju\" WordPress"
 
-#: class-ml-slider-lightbox.php:6238
+#: class-ml-slider-lightbox.php:6259
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2517,11 +2541,11 @@ msgstr ""
 "je onemogočeno, spoštuje nastavitev WordPress in preskoči slike, "
 "nastavljene na \"Povečaj ob klikovanju\"."
 
-#: class-ml-slider-lightbox.php:6254
+#: class-ml-slider-lightbox.php:6275
 msgid "Override \"Link to Image File\" Setting"
 msgstr "Prekliči nastavitev \"Povezava do slikovne datoteke\""
 
-#: class-ml-slider-lightbox.php:6255
+#: class-ml-slider-lightbox.php:6276
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2532,11 +2556,11 @@ msgstr ""
 "slikovne datoteke\" v urejevalniku blokov). Ko je onemogočeno, spoštuje "
 "izvorno obnašanje povezave."
 
-#: class-ml-slider-lightbox.php:6286
+#: class-ml-slider-lightbox.php:6307
 msgid "Exclude Post Types from Manual Processing"
 msgstr "Izključi vrste objav iz ročnega obdelovanja"
 
-#: class-ml-slider-lightbox.php:6289
+#: class-ml-slider-lightbox.php:6310
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2546,11 +2570,11 @@ msgstr ""
 "izberite \"Izdelki (product)\" za onemogočanje galerije na straneh izdelkov "
 "WooCommerce, medtem ko jo obdržite aktivno drugje."
 
-#: class-ml-slider-lightbox.php:6313
+#: class-ml-slider-lightbox.php:6334
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "Kako uporabiti: WordPress \"Povečaj ob klikovanju\""
 
-#: class-ml-slider-lightbox.php:6315
+#: class-ml-slider-lightbox.php:6336
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2558,57 +2582,57 @@ msgstr ""
 "WordPress ima vgrajeno funkcijo \"Povečaj ob klikovanju\" za slike. Tukaj "
 "je, kako jo omogočiti:"
 
-#: class-ml-slider-lightbox.php:6317 class-ml-slider-lightbox.php:6330
+#: class-ml-slider-lightbox.php:6338 class-ml-slider-lightbox.php:6351
 msgid "Select an image in the block editor."
 msgstr "Izberite sliko v urejevalniku blokov."
 
-#: class-ml-slider-lightbox.php:6318 class-ml-slider-lightbox.php:6331
+#: class-ml-slider-lightbox.php:6339 class-ml-slider-lightbox.php:6352
 msgid "In the block toolbar, click on the Link icon."
 msgstr "V orodni vrstici bloka kliknite na ikono povezave."
 
-#: class-ml-slider-lightbox.php:6319
+#: class-ml-slider-lightbox.php:6340
 msgid "Select \"Enlarge on click\"."
 msgstr "Izberite \"Povečaj ob klikovanju\"."
 
-#: class-ml-slider-lightbox.php:6325
+#: class-ml-slider-lightbox.php:6346
 msgid "How to use: \"Link to Image File\""
 msgstr "Kako uporabiti: \"Povezava do slikovne datoteke\""
 
-#: class-ml-slider-lightbox.php:6327
+#: class-ml-slider-lightbox.php:6348
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr ""
 "Slike lahko neposredno povežete na njihovo datoteko v polni velikosti. "
 "Tukaj je, kako:"
 
-#: class-ml-slider-lightbox.php:6328
+#: class-ml-slider-lightbox.php:6349
 msgid "For the Block Editor:"
 msgstr "Za urejevalnik blokov:"
 
-#: class-ml-slider-lightbox.php:6332
+#: class-ml-slider-lightbox.php:6353
 msgid "Choose \"Link to image file\"."
 msgstr "Izberite \"Povezava do slikovne datoteke\"."
 
-#: class-ml-slider-lightbox.php:6334
+#: class-ml-slider-lightbox.php:6355
 msgid "For the Classic Editor:"
 msgstr "Za klasičnega urednika:"
 
-#: class-ml-slider-lightbox.php:6336
+#: class-ml-slider-lightbox.php:6357
 msgid "Select an image."
 msgstr "Izberite sliko."
 
-#: class-ml-slider-lightbox.php:6337
+#: class-ml-slider-lightbox.php:6358
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "V orodni vrstici za slike kliknite na ikono za urejanje."
 
-#: class-ml-slider-lightbox.php:6338
+#: class-ml-slider-lightbox.php:6359
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "Izberite \"Datoteka medija\" v spustnem meniju \"Povezava na\"."
 
-#: class-ml-slider-lightbox.php:6344
+#: class-ml-slider-lightbox.php:6365
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "Kako uporabiti: metoda CSS razred (napredno)"
 
-#: class-ml-slider-lightbox.php:6346
+#: class-ml-slider-lightbox.php:6367
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2616,31 +2640,31 @@ msgstr ""
 "Za razvijalce: dodajte <code>ml-lightbox-enabled</code> razred, da "
 "omogočite MetaSlider galerijo na katerem koli elementu, ki vsebuje slike."
 
-#: class-ml-slider-lightbox.php:6347
+#: class-ml-slider-lightbox.php:6368
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "Metoda 1: Dodatni CSS razredi za blok urednik"
 
-#: class-ml-slider-lightbox.php:6349
+#: class-ml-slider-lightbox.php:6370
 msgid "Select an image or gallery block."
 msgstr "Izberite sliko ali blok galerije."
 
-#: class-ml-slider-lightbox.php:6350
+#: class-ml-slider-lightbox.php:6371
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "V stranski vrstici nastavitev bloka pomaknite do \"Napredno\"."
 
-#: class-ml-slider-lightbox.php:6351
+#: class-ml-slider-lightbox.php:6372
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "Dodajte <code>ml-lightbox-enabled</code> v \"Dodatni CSS razred(e)\"."
 
-#: class-ml-slider-lightbox.php:6353
+#: class-ml-slider-lightbox.php:6374
 msgid "Method 2: HTML/Code"
 msgstr "Metoda 2: HTML/koda"
 
-#: class-ml-slider-lightbox.php:6354
+#: class-ml-slider-lightbox.php:6375
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "Za razvijalce po meri HTML ali teme, razred dodajte neposredno:"
 
-#: class-ml-slider-lightbox.php:1258
+#: class-ml-slider-lightbox.php:1279
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"

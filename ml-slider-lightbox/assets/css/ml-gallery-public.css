@@ -8,6 +8,7 @@
 	list-style: none;
 	--ml-columns: 3;
 	--ml-gap: 8px;
+	--ml-corner-inset: calc(var(--ml-corner-radius, 0px) * 0.2929);
 }
 
 .ml-gallery-container > a {
@@ -339,7 +340,7 @@
 	right: 0;
 	bottom: 0;
 	margin: 0;
-	padding: 10px 12px;
+	padding: 10px calc(12px + var(--ml-corner-inset, 0px)) calc(10px + var(--ml-corner-inset, 0px));
 	line-height: 1.35;
 	/* Hook points for future per-gallery controls; fall back to sensible defaults. */
 	color: var(--ml-thumb-caption-color, #ffffff);

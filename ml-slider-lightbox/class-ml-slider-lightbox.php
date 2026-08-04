@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.35.0';
+    public $version = '2.36.0';
     protected static $instance = null;
     private $supported_plugins = array();
 
@@ -926,7 +926,11 @@ class MetaSliderLightboxPlugin
                 if ($slide_type === 'postfeed') {
                     return $attributes;
                 }
-                
+
+                if ($this->slideHasCustomLink($attributes)) {
+                    return $attributes;
+                }
+
                 if (empty($attributes['href'])) {
                     $attributes['href'] = wp_get_attachment_url($thumbnail_id);
                 }
@@ -979,8 +983,25 @@ class MetaSliderLightboxPlugin
     }
 
     /**
+     * Check whether the anchor href came from the MetaSlider Links tab
+     *
+     * @param array $attributes Anchor attributes from MetaSlider
+     * @return bool
+     */
+    private function slideHasCustomLink($attributes)
+    {
+        if (empty($attributes['href'])) {
+            return false;
+        }
+
+        $href = trim($attributes['href']);
+
+        return '' !== $href && '#' !== $href && 0 !== stripos($href, 'javascript:');
+    }
+
+    /**
      * Get slide type from slide data
-     * 
+     *
      * @param array $slide Slide data from MetaSlider
      * @return string The slide type
      */
@@ -1881,8 +1902,8 @@ class MetaSliderLightboxPlugin
             $custom_css .= '
             .ml-lightbox-button,
             .widget .ml-lightbox-enabled a.ml-lightbox-button {
-                top: 10px !important;
-                left: 10px !important;
+                top: calc(10px + var(--ml-corner-inset, 0px)) !important;
+                left: calc(10px + var(--ml-corner-inset, 0px)) !important;
                 right: auto !important;
                 bottom: auto !important;
             }';
@@ -1891,9 +1912,9 @@ class MetaSliderLightboxPlugin
             .ml-lightbox-button,
             .widget .ml-lightbox-enabled a.ml-lightbox-button {
                 top: auto !important;
-                left: 10px !important;
+                left: calc(10px + var(--ml-corner-inset, 0px)) !important;
                 right: auto !important;
-                bottom: 10px !important;
+                bottom: calc(10px + var(--ml-corner-inset, 0px)) !important;
             }';
         } elseif ($lightbox_button_position === 'bottom-right') {
             $custom_css .= '
@@ -1901,16 +1922,16 @@ class MetaSliderLightboxPlugin
             .widget .ml-lightbox-enabled a.ml-lightbox-button {
                 top: auto !important;
                 left: auto !important;
-                right: 10px !important;
-                bottom: 10px !important;
+                right: calc(10px + var(--ml-corner-inset, 0px)) !important;
+                bottom: calc(10px + var(--ml-corner-inset, 0px)) !important;
             }';
         } else {
             $custom_css .= '
             .ml-lightbox-button,
             .widget .ml-lightbox-enabled a.ml-lightbox-button {
-                top: 10px !important;
+                top: calc(10px + var(--ml-corner-inset, 0px)) !important;
                 left: auto !important;
-                right: 10px !important;
+                right: calc(10px + var(--ml-corner-inset, 0px)) !important;
                 bottom: auto !important;
             }';
         }

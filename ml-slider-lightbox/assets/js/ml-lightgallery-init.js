@@ -726,8 +726,6 @@
                 return settings;
             }
 
-            // Map of layout name → lightGallery plugins for inline (container) mode.
-            // Add future inline layouts here — one line per layout.
             var inlineLayoutPlugins = {
                 carousel: []
             };
@@ -752,7 +750,6 @@
             }).each(function() {
                 var $container = $(this);
 
-                // ── Inline layouts (lightGallery container mode) ──────────── //
                 var mlLayout = $container.data('ml-layout');
 
                 if ( inlineLayoutPlugins.hasOwnProperty( mlLayout ) ) {
@@ -775,7 +772,6 @@
                             closable        : false,
                             showMaximizeIcon: true,
                             appendSubHtmlTo : '.lg-item',
-                            slideDelay      : 400,
                         }, $container);
 
                         try {
@@ -791,7 +787,7 @@
                             console.error('MetaSlider Lightbox: inline gallery init error:', error);
                         }
                     }
-                    return; // skip regular lightbox init for inline layouts
+                    return;
                 }
 
                 var settings = getLightboxSettings(true);
@@ -1360,6 +1356,16 @@
     function removeWordPressSizeSuffix(url) {
         if (!url) return '';
         return url.replace(/-\d+x\d+(\.[^.]+)$/, '$1');
+    }
+
+    function getSlideImageLink($slide) {
+        return $slide.find('a').has('img').first();
+    }
+
+    function slideHasCustomLink($slide) {
+        var href = $.trim(getSlideImageLink($slide).attr('href') || '');
+
+        return href !== '' && href !== '#' && href.toLowerCase().indexOf('javascript:') !== 0;
     }
 
     /**
@@ -2307,18 +2313,12 @@
      * Create lightbox button for regular image slides
      */
     function createImageButton($slide) {
-        var $link = $slide.find('a').first();
         var $img = $slide.find('img').first();
 
         if ($img.length === 0) return null;
 
         var imgSrc = $img.attr('src');
-        var linkHref = ($link.length > 0) ? $link.attr('href') : null;
-        if (!linkHref) {
-            linkHref = imgSrc;
-        }
-
-        var fullSizeUrl = removeWordPressSizeSuffix(linkHref);
+        var fullSizeUrl = removeWordPressSizeSuffix(imgSrc);
 
         var altText = $img.attr('alt') || 'image';
         var buttonText = getButtonText();
@@ -2676,19 +2676,14 @@
      * Get overlay data for regular images in direct-click mode
      */
     function getImageOverlayData($slide) {
-        var $link = $slide.find('a').first();
         var $img = $slide.find('img').first();
 
         if ($img.length === 0) return null;
+        if (slideHasCustomLink($slide)) return null;
 
         var imgSrc = $img.attr('src');
-        var linkHref = ($link.length > 0) ? $link.attr('href') : null;
-        if (!linkHref) {
-            linkHref = imgSrc;
-        }
-
-        var fullSizeUrl = removeWordPressSizeSuffix(linkHref);
-        var needsOverlay = ($link.length === 0);
+        var fullSizeUrl = removeWordPressSizeSuffix(imgSrc);
+        var needsOverlay = (getSlideImageLink($slide).length === 0);
 
         var attrs = {
             'data-src': fullSizeUrl,
@@ -3276,7 +3271,10 @@
         CONSTANTS: CONSTANTS,
         escapeHtml: escapeHtml,
         ensureImageAltAttribute: ensureImageAltAttribute,
-        removeConflictingAttributes: removeConflictingAttributes
+        removeConflictingAttributes: removeConflictingAttributes,
+        slideHasCustomLink: slideHasCustomLink,
+        getImageOverlayData: getImageOverlayData,
+        createImageButton: createImageButton
     };
 
 })(jQuery);

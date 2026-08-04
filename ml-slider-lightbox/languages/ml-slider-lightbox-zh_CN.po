@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-07-28 17:01+0000\n"
+"PO-Revision-Date: 2026-08-04 11:59+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -72,9 +72,9 @@ msgstr "请求的数据不存在。"
 msgid "The attempt to update the option failed."
 msgstr "更新选项的尝试失败。"
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1240
-#: class-ml-gallery.php:3302 class-ml-slider-lightbox.php:2121
-#: class-ml-slider-lightbox.php:2264
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1247
+#: class-ml-gallery.php:3374 class-ml-slider-lightbox.php:2142
+#: class-ml-slider-lightbox.php:2285
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
@@ -82,13 +82,13 @@ msgstr "MetaSlider Gallery"
 msgid "Dismiss"
 msgstr "关闭"
 
-#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1182
-#: class-ml-slider-lightbox.php:2301 class-ml-slider-lightbox.php:2316
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1189
+#: class-ml-slider-lightbox.php:2322 class-ml-slider-lightbox.php:2337
 msgid "You do not have sufficient permissions to access this page."
 msgstr "您没有足够的权限访问此页面。"
 
-#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2238
-#: class-ml-gallery.php:2398
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2283
+#: class-ml-gallery.php:2447
 msgid "Security check failed."
 msgstr "安全检查失败。"
 
@@ -110,1226 +110,1250 @@ msgstr "未命名的幻灯片"
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "这些功能中的一些在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-gallery.php:219 class-ml-gallery.php:228 class-ml-gallery.php:609
+#: class-ml-gallery.php:222 class-ml-gallery.php:231 class-ml-gallery.php:615
 msgid "Fade"
 msgstr "淡入"
 
-#: class-ml-gallery.php:220
+#: class-ml-gallery.php:223
 msgid "Slide"
 msgstr "滑动"
 
-#: class-ml-gallery.php:221 class-ml-gallery.php:1831
+#: class-ml-gallery.php:224 class-ml-gallery.php:1838
 msgid "Zoom"
 msgstr "缩放"
 
-#: class-ml-gallery.php:227 class-ml-gallery.php:601 class-ml-gallery.php:2074
-#: class-ml-gallery.php:2100 class-ml-gallery.php:2114
+#: class-ml-gallery.php:230 class-ml-gallery.php:607 class-ml-gallery.php:2119
+#: class-ml-gallery.php:2145 class-ml-gallery.php:2159
 msgid "None"
 msgstr "无"
 
-#: class-ml-gallery.php:229
+#: class-ml-gallery.php:232
 msgid "Slide Up"
 msgstr "向上滑动"
 
-#: class-ml-gallery.php:230
+#: class-ml-gallery.php:233
 msgid "Slide Down"
 msgstr "向下滑动"
 
-#: class-ml-gallery.php:244
+#: class-ml-gallery.php:247
 msgid "Hidden"
 msgstr "隐藏"
 
-#: class-ml-gallery.php:245
+#: class-ml-gallery.php:248
 msgid "Gallery + Window"
 msgstr "画廊 + 窗口"
 
-#: class-ml-gallery.php:246
+#: class-ml-gallery.php:249
 msgid "Window Only"
 msgstr "仅窗口"
 
-#: class-ml-gallery.php:247
+#: class-ml-gallery.php:250
 msgid "Gallery Only"
 msgstr "仅画廊"
 
-#: class-ml-gallery.php:266 class-ml-gallery.php:2808
+#: class-ml-gallery.php:269 class-ml-gallery.php:2857
 msgid "Manual entry"
 msgstr "手动输入"
 
-#: class-ml-gallery.php:267 class-ml-gallery.php:2809
+#: class-ml-gallery.php:270 class-ml-gallery.php:2858
 msgid "Media caption"
 msgstr "媒体标题"
 
-#: class-ml-gallery.php:268 class-ml-gallery.php:2810
+#: class-ml-gallery.php:271 class-ml-gallery.php:2859
 msgid "Media description"
 msgstr "媒体描述"
 
-#: class-ml-gallery.php:602
+#: class-ml-gallery.php:608
 msgid "Noir (B&W)"
 msgstr "黑白"
 
-#: class-ml-gallery.php:603
+#: class-ml-gallery.php:609
 msgid "Silver (B&W)"
 msgstr "银色（黑白）"
 
-#: class-ml-gallery.php:604
+#: class-ml-gallery.php:610
 msgid "Vintage"
 msgstr "复古"
 
-#: class-ml-gallery.php:605
+#: class-ml-gallery.php:611
 msgid "Golden Hour"
 msgstr "黄金时刻"
 
-#: class-ml-gallery.php:606
+#: class-ml-gallery.php:612
 msgid "Toaster"
 msgstr "烤面包机"
 
-#: class-ml-gallery.php:607
+#: class-ml-gallery.php:613
 msgid "Warm"
 msgstr "温暖"
 
-#: class-ml-gallery.php:608
+#: class-ml-gallery.php:614
 msgid "Cool"
 msgstr "冷色"
 
-#: class-ml-gallery.php:610
+#: class-ml-gallery.php:616
 msgid "Matte"
 msgstr "哑光"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:617
 msgid "Pastel"
 msgstr "粉彩"
 
-#: class-ml-gallery.php:612
+#: class-ml-gallery.php:618
 msgid "Vivid"
 msgstr "鲜艳"
 
-#: class-ml-gallery.php:613
+#: class-ml-gallery.php:619
 msgid "Crisp"
 msgstr "清晰"
 
-#: class-ml-gallery.php:614
+#: class-ml-gallery.php:620
 msgid "Dramatic"
 msgstr "戏剧性"
 
-#: class-ml-gallery.php:615
+#: class-ml-gallery.php:621
 msgid "Negative"
 msgstr "负片"
 
-#: class-ml-gallery.php:727 class-ml-gallery.php:736 class-ml-gallery.php:1250
+#: class-ml-gallery.php:734 class-ml-gallery.php:743 class-ml-gallery.php:1257
 msgid "Galleries"
 msgstr "画廊"
 
-#: class-ml-gallery.php:728 class-ml-gallery.php:877 class-ml-gallery.php:1581
-#: class-ml-slider-lightbox.php:2260
+#: class-ml-gallery.php:735 class-ml-gallery.php:884 class-ml-gallery.php:1588
+#: class-ml-slider-lightbox.php:2281
 msgid "Gallery"
 msgstr "画廊"
 
-#: class-ml-gallery.php:729 class-ml-gallery.php:730 class-ml-gallery.php:1215
-#: class-ml-gallery.php:3296
+#: class-ml-gallery.php:736 class-ml-gallery.php:737 class-ml-gallery.php:1222
+#: class-ml-gallery.php:3368
 msgid "Add New Gallery"
 msgstr "添加新画廊"
 
-#: class-ml-gallery.php:731 class-ml-gallery.php:1130 class-ml-gallery.php:1131
-#: class-ml-gallery.php:1216
+#: class-ml-gallery.php:738 class-ml-gallery.php:1137 class-ml-gallery.php:1138
+#: class-ml-gallery.php:1223
 msgid "Edit Gallery"
 msgstr "编辑画廊"
 
-#: class-ml-gallery.php:732 class-ml-gallery.php:1193 class-ml-gallery.php:2447
+#: class-ml-gallery.php:739 class-ml-gallery.php:1200 class-ml-gallery.php:2496
 msgid "New Gallery"
 msgstr "新画廊"
 
-#: class-ml-gallery.php:733
+#: class-ml-gallery.php:740
 msgid "Search Galleries"
 msgstr "搜索画廊"
 
-#: class-ml-gallery.php:734
+#: class-ml-gallery.php:741
 msgid "No galleries found."
 msgstr "未找到画廊。"
 
-#: class-ml-gallery.php:735
+#: class-ml-gallery.php:742
 msgid "No galleries found in trash."
 msgstr "垃圾箱中未找到画廊。"
 
-#: class-ml-gallery.php:884
+#: class-ml-gallery.php:891
 msgid "All Galleries"
 msgstr "所有画廊"
 
-#: class-ml-gallery.php:891
+#: class-ml-gallery.php:898
 msgid "Create Gallery"
 msgstr "创建画廊"
 
-#: class-ml-gallery.php:901
+#: class-ml-gallery.php:908
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "编辑 &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:919
+#: class-ml-gallery.php:926
 msgid "Invalid gallery ID."
 msgstr "无效的画廊 ID。"
 
-#: class-ml-gallery.php:1023 class-ml-slider-lightbox.php:1634
+#: class-ml-gallery.php:1030 class-ml-slider-lightbox.php:1655
 msgid "View image"
 msgstr "查看图片"
 
-#: class-ml-gallery.php:1190 class-ml-gallery.php:2403
+#: class-ml-gallery.php:1197 class-ml-gallery.php:2452
 msgid "Gallery not found."
 msgstr "未找到画廊。"
 
-#: class-ml-gallery.php:1218
+#: class-ml-gallery.php:1225
 msgid "Save Gallery"
 msgstr "保存画廊"
 
-#: class-ml-gallery.php:1219
+#: class-ml-gallery.php:1226
 msgid "Update Gallery"
 msgstr "更新画廊"
 
-#: class-ml-gallery.php:1234 class-ml-gallery.php:1246
+#: class-ml-gallery.php:1241 class-ml-gallery.php:1253
 msgid "Back to Galleries"
 msgstr "返回画廊"
 
-#: class-ml-gallery.php:1257
+#: class-ml-gallery.php:1264
 msgid "Create New Gallery"
 msgstr "创建新画廊"
 
-#: class-ml-gallery.php:1261
+#: class-ml-gallery.php:1268
 msgid "New"
 msgstr "新建"
 
-#: class-ml-gallery.php:1272
+#: class-ml-gallery.php:1279
 msgid "Duplicate"
 msgstr "重复"
 
-#: class-ml-gallery.php:1292
+#: class-ml-gallery.php:1299
 msgid "Gallery saved."
 msgstr "画廊已保存。"
 
-#: class-ml-gallery.php:1303
+#: class-ml-gallery.php:1310
 #, php-format
 msgid ""
 "Gallery created from the slideshow \"%s\". Review the settings below, then "
 "save."
 msgstr "从幻灯片“%s”创建的画廊。请查看下面的设置，然后保存。"
 
-#: class-ml-gallery.php:1307
+#: class-ml-gallery.php:1314
 msgid "Gallery created from your slideshow. Review the settings below, then save."
 msgstr "从您的幻灯片创建的画廊。请查看下面的设置，然后保存。"
 
-#: class-ml-gallery.php:1321
+#: class-ml-gallery.php:1328
 msgid "Enter gallery title"
 msgstr "输入画廊标题"
 
-#: class-ml-gallery.php:1324 class-ml-gallery.php:3748
+#: class-ml-gallery.php:1331 class-ml-gallery.php:3820
 msgid "Images"
 msgstr "图片"
 
-#: class-ml-gallery.php:1334
+#: class-ml-gallery.php:1341
 msgid "Preview or arrange images"
 msgstr "预览或排列图像"
 
-#: class-ml-gallery.php:1337 class-ml-gallery.php:3661
+#: class-ml-gallery.php:1344 class-ml-gallery.php:3733
 msgid "Preview"
 msgstr "预览"
 
-#: class-ml-gallery.php:1341
+#: class-ml-gallery.php:1348
 msgid "Arrange"
 msgstr "排列"
 
-#: class-ml-gallery.php:1344
+#: class-ml-gallery.php:1351
 msgid "Preview at desktop or mobile width"
 msgstr "在桌面或移动宽度下预览"
 
-#: class-ml-gallery.php:1345
+#: class-ml-gallery.php:1352
 msgid "Desktop width"
 msgstr "桌面宽度"
 
-#: class-ml-gallery.php:1348
+#: class-ml-gallery.php:1355
 msgid "Mobile width"
 msgstr "移动宽度"
 
-#: class-ml-gallery.php:1355
+#: class-ml-gallery.php:1362
 msgid "No images added yet"
 msgstr "尚未添加图片"
 
-#: class-ml-gallery.php:1378 class-ml-gallery.php:2802
+#: class-ml-gallery.php:1385 class-ml-gallery.php:2851
 msgid "Remove image"
 msgstr "移除图片"
 
-#: class-ml-gallery.php:1383 class-ml-gallery.php:2803
+#: class-ml-gallery.php:1390 class-ml-gallery.php:2852
 msgid "Edit caption"
 msgstr "编辑标题"
 
-#: class-ml-gallery.php:1383 class-ml-gallery.php:1385
-#: class-ml-gallery.php:2804
+#: class-ml-gallery.php:1390 class-ml-gallery.php:1392
+#: class-ml-gallery.php:2853
 msgid "Add caption"
 msgstr "添加标题"
 
-#: class-ml-gallery.php:1395
+#: class-ml-gallery.php:1402
 msgid "Gallery preview"
 msgstr "画廊预览"
 
-#: class-ml-gallery.php:1401
+#: class-ml-gallery.php:1408
 msgid "Add Images"
 msgstr "添加图片"
 
-#: class-ml-gallery.php:1405
+#: class-ml-gallery.php:1412
 msgid "More ways to add images"
 msgstr "更多添加图片的方法"
 
-#: class-ml-gallery.php:1411
+#: class-ml-gallery.php:1418
 msgid "Upload"
 msgstr "上传"
 
-#: class-ml-gallery.php:1416
+#: class-ml-gallery.php:1423
 msgid "Media Library"
 msgstr "媒体库"
 
-#: class-ml-gallery.php:1421
+#: class-ml-gallery.php:1428
 msgid "Server Folder"
 msgstr "服务器文件夹"
 
-#: class-ml-gallery.php:1426, fuzzy
+#: class-ml-gallery.php:1433, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1432
+#: class-ml-gallery.php:1439
 msgid "Where to add new images"
 msgstr "添加新图片的位置"
 
-#: class-ml-gallery.php:1433
+#: class-ml-gallery.php:1440
 msgid "Add new images at:"
 msgstr "在以下位置添加新图片："
 
-#: class-ml-gallery.php:1437
+#: class-ml-gallery.php:1444
 msgid "Start"
 msgstr "开始"
 
-#: class-ml-gallery.php:1442
+#: class-ml-gallery.php:1449
 msgid "End"
 msgstr "结束"
 
-#: class-ml-gallery.php:1451
+#: class-ml-gallery.php:1458
 msgid "Layout"
 msgstr "布局"
 
-#: class-ml-gallery.php:1454
+#: class-ml-gallery.php:1461
 msgid "Gallery layout"
 msgstr "画廊布局"
 
-#: class-ml-gallery.php:1456
+#: class-ml-gallery.php:1463
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "均匀大小的图片排列在固定网格中"
 
-#: class-ml-gallery.php:1466 class-ml-gallery.php:3664
+#: class-ml-gallery.php:1473 class-ml-gallery.php:3736
 msgid "Grid"
 msgstr "网格"
 
-#: class-ml-gallery.php:1470
+#: class-ml-gallery.php:1477
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "图片以自然高度展示，像砖墙一样拼接在一起"
 
-#: class-ml-gallery.php:1480 class-ml-gallery.php:3663
+#: class-ml-gallery.php:1487 class-ml-gallery.php:3735
 msgid "Masonry"
 msgstr "砖石"
 
-#: class-ml-gallery.php:1484
+#: class-ml-gallery.php:1491
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr "图片调整为填满每一行，边缘对齐，保持一致高度"
 
-#: class-ml-gallery.php:1496 class-ml-gallery.php:3665
+#: class-ml-gallery.php:1503 class-ml-gallery.php:3737
 msgid "Justified"
 msgstr "对齐"
 
-#: class-ml-gallery.php:1500
+#: class-ml-gallery.php:1507
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "图片一次展示一张，支持滚动幻灯片"
 
-#: class-ml-gallery.php:1509
+#: class-ml-gallery.php:1516
 msgid "Carousel"
 msgstr "轮播"
 
-#: class-ml-gallery.php:1513
+#: class-ml-gallery.php:1520
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "大型主图像，下方有可滚动的缩略图条"
 
-#: class-ml-gallery.php:1523
+#: class-ml-gallery.php:1530
 msgid "Showcase"
 msgstr "展示"
 
-#: class-ml-gallery.php:1535
+#: class-ml-gallery.php:1542
 msgid "Number of columns to show on desktop screens"
 msgstr "在桌面屏幕上显示的列数"
 
-#: class-ml-gallery.php:1535
+#: class-ml-gallery.php:1542
 msgid "Columns"
 msgstr "列"
 
-#: class-ml-gallery.php:1544
+#: class-ml-gallery.php:1551
 msgid "Number of columns to show on phones and small screens"
 msgstr "在手机和小屏幕上显示的列数"
 
-#: class-ml-gallery.php:1544
+#: class-ml-gallery.php:1551
 msgid "Columns (mobile)"
 msgstr "列（移动）"
 
-#: class-ml-gallery.php:1553
+#: class-ml-gallery.php:1560
 msgid "Height of the gallery images, in pixels"
 msgstr "画廊图像的高度，以像素为单位"
 
-#: class-ml-gallery.php:1554
+#: class-ml-gallery.php:1561
 msgid "Height"
 msgstr "高度"
 
-#: class-ml-gallery.php:1566
+#: class-ml-gallery.php:1573
 msgid "Space between images"
 msgstr "图片之间的间距"
 
-#: class-ml-gallery.php:1567
+#: class-ml-gallery.php:1574
 msgid "Gap"
 msgstr "间隙"
 
-#: class-ml-gallery.php:1585
+#: class-ml-gallery.php:1592
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "缩放控件需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1586
+#: class-ml-gallery.php:1593
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "全屏模式需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1587
+#: class-ml-gallery.php:1594
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "图片旋转需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1588
+#: class-ml-gallery.php:1595
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "自动播放需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1589
+#: class-ml-gallery.php:1596
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "社交分享需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1590
+#: class-ml-gallery.php:1597
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "分页器需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1591
+#: class-ml-gallery.php:1598
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "唯一的图片网址需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1592
+#: class-ml-gallery.php:1599
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "图像保护需要 MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1596
+#: class-ml-gallery.php:1603
 msgid "Show left and right navigation arrows"
 msgstr "显示左右导航箭头"
 
-#: class-ml-gallery.php:1597
+#: class-ml-gallery.php:1604
 msgid "Display the current image number and total count"
 msgstr "显示当前图片编号和总数"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:1605
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "在画廊底部显示缩略图图像条"
 
-#: class-ml-gallery.php:1599
+#: class-ml-gallery.php:1606
 msgid "Show dot navigation area below each image."
 msgstr "在每个图像下方显示点导航区域。"
 
-#: class-ml-gallery.php:1600
+#: class-ml-gallery.php:1607
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
 msgstr "捏合或滚动以放大和缩小画廊图像。只有在原始大小大于画廊大小时，缩放控制才会出现。"
 
-#: class-ml-gallery.php:1601
+#: class-ml-gallery.php:1608
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "展开画廊窗口以填充整个屏幕。"
 
-#: class-ml-gallery.php:1602
+#: class-ml-gallery.php:1609
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
 msgstr "用户可以向左或向右旋转图像，还可以垂直或水平翻转它们。"
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:1610
 msgid "Automatically advance through the images without the user clicking."
 msgstr "自动播放图像，无需用户点击。"
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:1611
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr "使用户能够在 Facebook、X 或 Pinterest 上分享图像。"
 
-#: class-ml-gallery.php:1605
+#: class-ml-gallery.php:1612
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
 msgstr "为每个图像创建一个唯一的 URL，以便在画廊中启用直接链接。"
 
-#: class-ml-gallery.php:1606 class-ml-slider-lightbox.php:4278
+#: class-ml-gallery.php:1613 class-ml-slider-lightbox.php:4299
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
 msgstr "通过阻止右键单击、拖动和长按画廊图像来减少随意保存。"
 
-#: class-ml-gallery.php:1607
+#: class-ml-gallery.php:1614
 msgid "Navigate images using left and right arrow keys"
 msgstr "使用左右箭头键浏览图片"
 
-#: class-ml-gallery.php:1608
+#: class-ml-gallery.php:1615
 msgid "Scroll through images using the mouse wheel"
 msgstr "使用鼠标滚轮滚动浏览图片"
 
-#: class-ml-gallery.php:1609
+#: class-ml-gallery.php:1616
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "在触摸设备上向上或向下滑动以关闭画廊"
 
-#: class-ml-gallery.php:1610
+#: class-ml-gallery.php:1617
 msgid "Cycle back to the first image after reaching the last"
 msgstr "到达最后一张后循环回到第一张"
 
-#: class-ml-gallery.php:1611
+#: class-ml-gallery.php:1618
 msgid "Show a download button for each image"
 msgstr "为每张图片显示下载按钮"
 
-#: class-ml-gallery.php:1612
+#: class-ml-gallery.php:1619
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
 msgstr "点击时在窗口覆盖层中打开图像。适用于网格、砖块和对齐布局。"
 
-#: class-ml-gallery.php:1613
+#: class-ml-gallery.php:1620
 msgid "Show a button over the gallery that opens the gallery window when clicked."
 msgstr "在画廊上显示一个按钮，点击时打开画廊窗口。"
 
-#: class-ml-gallery.php:1614
+#: class-ml-gallery.php:1621
 msgid "Show an icon on the button instead of text."
 msgstr "在按钮上显示图标而不是文本。"
 
-#: class-ml-gallery.php:1657
+#: class-ml-gallery.php:1664
 msgid "Full (original)"
 msgstr "全屏（原始）"
 
-#: class-ml-gallery.php:1661
+#: class-ml-gallery.php:1668
 msgid "Show in Gallery Window"
 msgstr "在画廊窗口中显示"
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1671
 msgid "The size of the image shown when a visitor clicks to view it in full"
 msgstr "访客点击以完整查看时显示的图像大小"
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1671
 msgid "Image Size"
 msgstr "图像大小"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:1691
 msgid ""
 "Choose how visitors open the gallery window: click the image, click an "
 "icon, or click a button."
 msgstr "选择访客打开画廊窗口的方式：点击图片、点击图标或点击按钮。"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:1691
 msgid "Open with"
 msgstr "打开方式"
 
-#: class-ml-gallery.php:1696
+#: class-ml-gallery.php:1703
 msgid "Text shown on the button that opens the gallery window"
 msgstr "打开画廊窗口的按钮上显示的文本"
 
-#: class-ml-gallery.php:1696 class-ml-slider-lightbox.php:2726
+#: class-ml-gallery.php:1703 class-ml-slider-lightbox.php:2747
 msgid "Button Text"
 msgstr "按钮文本"
 
-#: class-ml-gallery.php:1701 class-ml-slider-lightbox.php:1629
-#: class-ml-slider-lightbox.php:3326 class-ml-slider-lightbox.php:6467
-#: class-ml-slider-lightbox.php:6490
+#: class-ml-gallery.php:1708 class-ml-slider-lightbox.php:1650
+#: class-ml-slider-lightbox.php:3347 class-ml-slider-lightbox.php:6488
+#: class-ml-slider-lightbox.php:6511
 msgid "Open in Gallery"
 msgstr "在图库中打开"
 
-#: class-ml-gallery.php:1706
+#: class-ml-gallery.php:1713
 msgid "Where the button or icon sits over the gallery"
 msgstr "按钮或图标在画廊上的位置"
 
-#: class-ml-gallery.php:1706 class-ml-slider-lightbox.php:2734
+#: class-ml-gallery.php:1713 class-ml-slider-lightbox.php:2755
 msgid "Button Position"
 msgstr "按钮位置"
 
-#: class-ml-gallery.php:1708
+#: class-ml-gallery.php:1715
 msgid "Top Right"
 msgstr "右上角"
 
-#: class-ml-gallery.php:1709 class-ml-slider-lightbox.php:3343
-#: class-ml-slider-lightbox.php:3369
+#: class-ml-gallery.php:1716 class-ml-slider-lightbox.php:3364
+#: class-ml-slider-lightbox.php:3390
 msgid "Top Left"
 msgstr "左上角"
 
-#: class-ml-gallery.php:1710 class-ml-slider-lightbox.php:3344
-#: class-ml-slider-lightbox.php:3370
+#: class-ml-gallery.php:1717 class-ml-slider-lightbox.php:3365
+#: class-ml-slider-lightbox.php:3391
 msgid "Bottom Right"
 msgstr "右下角"
 
-#: class-ml-gallery.php:1711 class-ml-slider-lightbox.php:3345
-#: class-ml-slider-lightbox.php:3371
+#: class-ml-gallery.php:1718 class-ml-slider-lightbox.php:3366
+#: class-ml-slider-lightbox.php:3392
 msgid "Bottom Left"
 msgstr "左下角"
 
-#: class-ml-gallery.php:1712
+#: class-ml-gallery.php:1719
 msgid "Center"
 msgstr "居中"
 
-#: class-ml-gallery.php:1721
+#: class-ml-gallery.php:1728
 msgid "Protect images"
 msgstr "保护图像"
 
-#: class-ml-gallery.php:1727
+#: class-ml-gallery.php:1734
 msgid "Display"
 msgstr "显示"
 
-#: class-ml-gallery.php:1729
+#: class-ml-gallery.php:1736
 msgid "Animation effect when moving between images"
 msgstr "在图片之间移动时的动画效果"
 
-#: class-ml-gallery.php:1729 class-ml-gallery.php:1814
+#: class-ml-gallery.php:1736 class-ml-gallery.php:1821
 msgid "Transition"
 msgstr "过渡"
 
-#: class-ml-gallery.php:1738 class-ml-slider-lightbox.php:2686
+#: class-ml-gallery.php:1745 class-ml-slider-lightbox.php:2707
 msgid "Arrows"
 msgstr "箭头"
 
-#: class-ml-gallery.php:1739
+#: class-ml-gallery.php:1746
 msgid "Slide Counter"
 msgstr "幻灯片计数器"
 
-#: class-ml-gallery.php:1740
+#: class-ml-gallery.php:1747
 msgid "Thumbnails"
 msgstr "缩略图"
 
-#: class-ml-gallery.php:1742
+#: class-ml-gallery.php:1749
 msgid "Pager"
 msgstr "分页器"
 
-#: class-ml-gallery.php:1747 class-ml-slider-lightbox.php:2391
+#: class-ml-gallery.php:1754 class-ml-slider-lightbox.php:2412
 msgid "Navigation"
 msgstr "导航"
 
-#: class-ml-gallery.php:1748
+#: class-ml-gallery.php:1755
 msgid "Loop"
 msgstr "循环"
 
-#: class-ml-gallery.php:1749
+#: class-ml-gallery.php:1756
 msgid "Keyboard"
 msgstr "键盘"
 
-#: class-ml-gallery.php:1750
+#: class-ml-gallery.php:1757
 msgid "Mouse wheel"
 msgstr "鼠标滚轮"
 
-#: class-ml-gallery.php:1751
+#: class-ml-gallery.php:1758
 msgid "Swipe to close"
 msgstr "滑动以关闭"
 
-#: class-ml-gallery.php:1758 class-ml-gallery.php:1760
+#: class-ml-gallery.php:1765 class-ml-gallery.php:1767
 msgid "Captions"
 msgstr "标题"
 
-#: class-ml-gallery.php:1760
+#: class-ml-gallery.php:1767
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
 msgstr "字幕出现的位置：在图库缩略图上、图库窗口中，或两者都在。"
 
-#: class-ml-gallery.php:1772
+#: class-ml-gallery.php:1779
 msgid ""
 "Where each caption's text comes from: your typed caption, or the image's "
 "Media Library caption or description. Empty media fields fall back to your "
 "typed caption."
 msgstr "每个标题文本的来源：您输入的标题，或图像的媒体库标题或描述。空的媒体字段将回退到您输入的标题。"
 
-#: class-ml-gallery.php:1772
+#: class-ml-gallery.php:1779
 msgid "Caption Content"
 msgstr "标题内容"
 
-#: class-ml-gallery.php:1781
+#: class-ml-gallery.php:1788
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "字幕文本大小。适用于图库缩略图和图库窗口。"
 
-#: class-ml-gallery.php:1782
+#: class-ml-gallery.php:1789
 msgid "Text Size"
 msgstr "文本大小"
 
-#: class-ml-gallery.php:1794
+#: class-ml-gallery.php:1801
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "字幕文本颜色。适用于图库缩略图和图库窗口。"
 
-#: class-ml-gallery.php:1794
+#: class-ml-gallery.php:1801
 msgid "Text Color"
 msgstr "文本颜色"
 
-#: class-ml-gallery.php:1804
+#: class-ml-gallery.php:1811
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
 msgstr "字幕背景。适用于图库缩略图和图库窗口；在缩略图上渐变为透明以提高可读性。"
 
-#: class-ml-gallery.php:1804 class-ml-gallery.php:1846
-#: class-ml-slider-lightbox.php:2654
+#: class-ml-gallery.php:1811 class-ml-gallery.php:1853
+#: class-ml-slider-lightbox.php:2675
 msgid "Background Color"
 msgstr "背景颜色"
 
-#: class-ml-gallery.php:1814
+#: class-ml-gallery.php:1821
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
 msgstr "字幕的动画进入方式。仅适用于图库窗口——不适用于图库缩略图的字幕。"
 
-#: class-ml-gallery.php:1824 class-ml-slider-lightbox.php:2702
+#: class-ml-gallery.php:1831 class-ml-slider-lightbox.php:2723
 msgid "Toolbar"
 msgstr "工具栏"
 
-#: class-ml-gallery.php:1825 class-ml-slider-lightbox.php:1643
+#: class-ml-gallery.php:1832 class-ml-slider-lightbox.php:1664
 msgid "Download"
 msgstr "下载"
 
-#: class-ml-gallery.php:1827
+#: class-ml-gallery.php:1834
 msgid "Share"
 msgstr "分享"
 
-#: class-ml-gallery.php:1828
+#: class-ml-gallery.php:1835
 msgid "Autoplay"
 msgstr "自动播放"
 
-#: class-ml-gallery.php:1829
+#: class-ml-gallery.php:1836
 msgid "Rotate and Flip"
 msgstr "旋转和翻转"
 
-#: class-ml-gallery.php:1830
+#: class-ml-gallery.php:1837
 msgid "Fullscreen"
 msgstr "全屏"
 
-#: class-ml-gallery.php:1836
+#: class-ml-gallery.php:1843
 msgid "Unique Image URLs"
 msgstr "唯一的图片网址"
 
-#: class-ml-gallery.php:1843 class-ml-slider-lightbox.php:2324
-#: class-ml-slider-lightbox.php:2381
+#: class-ml-gallery.php:1850 class-ml-slider-lightbox.php:2345
+#: class-ml-slider-lightbox.php:2402
 msgid "Appearance"
 msgstr "外观"
 
-#: class-ml-gallery.php:1846
+#: class-ml-gallery.php:1853
 msgid "Background color of the gallery window"
 msgstr "画廊窗口的背景颜色"
 
-#: class-ml-gallery.php:1856
+#: class-ml-gallery.php:1863
 msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
 msgstr "画廊窗口背景的透明度（0 = 透明，1 = 不透明）"
 
-#: class-ml-gallery.php:1857 class-ml-slider-lightbox.php:2662
+#: class-ml-gallery.php:1864 class-ml-slider-lightbox.php:2683
 msgid "Background Opacity"
 msgstr "背景不透明度"
 
-#: class-ml-gallery.php:1869
-msgid "Color of the next and previous navigation arrows"
-msgstr "下一步和上一步导航箭头的颜色"
-
-#: class-ml-gallery.php:1869
-msgid "Arrow Color"
-msgstr "箭头颜色"
+#: class-ml-gallery.php:1878
+msgid "Border width in pixels around the carousel (0 = no border)"
+msgstr "旋转木马周围的边框宽度（0 = 无边框）"
 
 #: class-ml-gallery.php:1879
-msgid "Background color behind the navigation arrows"
-msgstr "导航箭头后面的背景颜色"
+msgid "Frame Border Width"
+msgstr "框架边框宽度"
 
-#: class-ml-gallery.php:1879
-msgid "Arrow Background"
-msgstr "箭头背景"
+#: class-ml-gallery.php:1890
+msgid "Line style used for the carousel border"
+msgstr "用于旋转木马边框的线条样式"
 
-#: class-ml-gallery.php:1889
-msgid "Color of the close (X) icon"
-msgstr "关闭（X）图标的颜色"
+#: class-ml-gallery.php:1890
+msgid "Frame Border Style"
+msgstr "框架边框样式"
 
-#: class-ml-gallery.php:1889
-msgid "Close Icon Color"
-msgstr "关闭图标颜色"
-
-#: class-ml-gallery.php:1899
-msgid "Background color behind the close icon"
-msgstr "关闭图标后面的背景颜色"
-
-#: class-ml-gallery.php:1899
-msgid "Close Background"
-msgstr "关闭背景"
-
-#: class-ml-gallery.php:1909
-msgid "Color of the toolbar icons"
-msgstr "工具栏图标的颜色"
-
-#: class-ml-gallery.php:1909
-msgid "Toolbar Icon Color"
-msgstr "工具栏图标颜色"
-
-#: class-ml-gallery.php:1919
-msgid "Background color of the toolbar"
-msgstr "工具栏的背景颜色"
-
-#: class-ml-gallery.php:1919
-msgid "Toolbar Background"
-msgstr "工具栏背景"
-
-#: class-ml-gallery.php:1929
-msgid "Border color of the thumbnail strip images"
-msgstr "缩略图条带图像的边框颜色"
-
-#: class-ml-gallery.php:1929 class-ml-slider-lightbox.php:2678
-msgid "Thumbnail Border Color"
-msgstr "缩略图边框颜色"
-
-#: class-ml-gallery.php:1939
-msgid "Border color of the active and hovered thumbnail"
-msgstr "活动和悬停缩略图的边框颜色"
-
-#: class-ml-gallery.php:1939
-msgid "Thumbnail Border Active and Hover"
-msgstr "缩略图边框活动和悬停"
-
-#: class-ml-gallery.php:1958
-msgid "Text color of the button that opens the gallery window"
-msgstr "打开画廊窗口的按钮文本颜色"
-
-#: class-ml-gallery.php:1958
-msgid "Button Text Color"
-msgstr "按钮文本颜色"
-
-#: class-ml-gallery.php:1962
-msgid "Button text color on hover"
-msgstr "悬停时的按钮文本颜色"
-
-#: class-ml-gallery.php:1962
-msgid "Button Text Hover"
-msgstr "按钮文本悬停"
-
-#: class-ml-gallery.php:1966
-msgid "Background color of the button that opens the gallery window"
-msgstr "打开图库窗口的按钮背景颜色"
-
-#: class-ml-gallery.php:1966
-msgid "Button Background"
-msgstr "按钮背景"
-
-#: class-ml-gallery.php:1970
-msgid "Button background color on hover"
-msgstr "悬停时按钮背景颜色"
-
-#: class-ml-gallery.php:1970
-msgid "Button Background Hover"
-msgstr "按钮背景悬停"
-
-#: class-ml-gallery.php:1977
-msgid "Color of the icon that opens the gallery window"
-msgstr "打开图库窗口的图标颜色"
-
-#: class-ml-gallery.php:1977
-msgid "Icon Color"
-msgstr "图标颜色"
-
-#: class-ml-gallery.php:1981
-msgid "Icon color on hover"
-msgstr "悬停时图标颜色"
-
-#: class-ml-gallery.php:1981
-msgid "Icon Hover Color"
-msgstr "图标悬停颜色"
-
-#: class-ml-gallery.php:1985
-msgid "Background color behind the icon"
-msgstr "图标后面的背景颜色"
-
-#: class-ml-gallery.php:1985
-msgid "Icon Background"
-msgstr "图标背景"
-
-#: class-ml-gallery.php:1989
-msgid "Icon background color on hover"
-msgstr "悬停时图标背景颜色"
-
-#: class-ml-gallery.php:1989
-msgid "Icon Background Hover"
-msgstr "图标背景悬停"
-
-#: class-ml-gallery.php:1996
-msgid "Color of the progress bar shown during autoplay"
-msgstr "自动播放期间显示的进度条颜色"
-
-#: class-ml-gallery.php:1996
-msgid "Autoplay Progress Bar"
-msgstr "自动播放进度条"
-
-#: class-ml-gallery.php:2011
-msgid "Image Styles"
-msgstr "图像样式"
-
-#: class-ml-gallery.php:2014
-msgid "Apply a filter to every image in the gallery"
-msgstr "对画廊中的每个图像应用滤镜"
-
-#: class-ml-gallery.php:2014
-msgid "Filter"
-msgstr "滤镜"
-
-#: class-ml-gallery.php:2023
-msgid "Corner radius in pixels applied to every image"
-msgstr "应用于每个图像的角半径（以像素为单位）"
-
-#: class-ml-gallery.php:2024
-msgid "Rounded Corners"
-msgstr "圆角"
-
-#: class-ml-gallery.php:2035
-msgid "Image border width in pixels (0 = no border)"
-msgstr "图像边框宽度（以像素为单位）（0 = 无边框）"
-
-#: class-ml-gallery.php:2036
-msgid "Border Width"
-msgstr "边框宽度"
-
-#: class-ml-gallery.php:2047
-msgid "Line style used for the image border"
-msgstr "用于图像边框的线条样式"
-
-#: class-ml-gallery.php:2047
-msgid "Border Style"
-msgstr "边框样式"
-
-#: class-ml-gallery.php:2050
+#: class-ml-gallery.php:1893 class-ml-gallery.php:2095
 msgid "Solid"
 msgstr "实线"
 
-#: class-ml-gallery.php:2051
+#: class-ml-gallery.php:1894 class-ml-gallery.php:2096
 msgid "Dashed"
 msgstr "虚线"
 
-#: class-ml-gallery.php:2052
+#: class-ml-gallery.php:1895 class-ml-gallery.php:2097
 msgid "Dotted"
 msgstr "点线"
 
-#: class-ml-gallery.php:2053
+#: class-ml-gallery.php:1896 class-ml-gallery.php:2098
 msgid "Double"
 msgstr "双线"
 
-#: class-ml-gallery.php:2061
+#: class-ml-gallery.php:1904
+msgid "Color of the border around the carousel"
+msgstr "旋转木马周围的边框颜色"
+
+#: class-ml-gallery.php:1904
+msgid "Frame Border Color"
+msgstr "框架边框颜色"
+
+#: class-ml-gallery.php:1914
+msgid "Color of the next and previous navigation arrows"
+msgstr "下一步和上一步导航箭头的颜色"
+
+#: class-ml-gallery.php:1914
+msgid "Arrow Color"
+msgstr "箭头颜色"
+
+#: class-ml-gallery.php:1924
+msgid "Background color behind the navigation arrows"
+msgstr "导航箭头后面的背景颜色"
+
+#: class-ml-gallery.php:1924
+msgid "Arrow Background"
+msgstr "箭头背景"
+
+#: class-ml-gallery.php:1934
+msgid "Color of the close (X) icon"
+msgstr "关闭（X）图标的颜色"
+
+#: class-ml-gallery.php:1934
+msgid "Close Icon Color"
+msgstr "关闭图标颜色"
+
+#: class-ml-gallery.php:1944
+msgid "Background color behind the close icon"
+msgstr "关闭图标后面的背景颜色"
+
+#: class-ml-gallery.php:1944
+msgid "Close Background"
+msgstr "关闭背景"
+
+#: class-ml-gallery.php:1954
+msgid "Color of the toolbar icons"
+msgstr "工具栏图标的颜色"
+
+#: class-ml-gallery.php:1954
+msgid "Toolbar Icon Color"
+msgstr "工具栏图标颜色"
+
+#: class-ml-gallery.php:1964
+msgid "Background color of the toolbar"
+msgstr "工具栏的背景颜色"
+
+#: class-ml-gallery.php:1964
+msgid "Toolbar Background"
+msgstr "工具栏背景"
+
+#: class-ml-gallery.php:1974
+msgid "Border color of the thumbnail strip images"
+msgstr "缩略图条带图像的边框颜色"
+
+#: class-ml-gallery.php:1974 class-ml-slider-lightbox.php:2699
+msgid "Thumbnail Border Color"
+msgstr "缩略图边框颜色"
+
+#: class-ml-gallery.php:1984
+msgid "Border color of the active and hovered thumbnail"
+msgstr "活动和悬停缩略图的边框颜色"
+
+#: class-ml-gallery.php:1984
+msgid "Thumbnail Border Active and Hover"
+msgstr "缩略图边框活动和悬停"
+
+#: class-ml-gallery.php:2003
+msgid "Text color of the button that opens the gallery window"
+msgstr "打开画廊窗口的按钮文本颜色"
+
+#: class-ml-gallery.php:2003
+msgid "Button Text Color"
+msgstr "按钮文本颜色"
+
+#: class-ml-gallery.php:2007
+msgid "Button text color on hover"
+msgstr "悬停时的按钮文本颜色"
+
+#: class-ml-gallery.php:2007
+msgid "Button Text Hover"
+msgstr "按钮文本悬停"
+
+#: class-ml-gallery.php:2011
+msgid "Background color of the button that opens the gallery window"
+msgstr "打开图库窗口的按钮背景颜色"
+
+#: class-ml-gallery.php:2011
+msgid "Button Background"
+msgstr "按钮背景"
+
+#: class-ml-gallery.php:2015
+msgid "Button background color on hover"
+msgstr "悬停时按钮背景颜色"
+
+#: class-ml-gallery.php:2015
+msgid "Button Background Hover"
+msgstr "按钮背景悬停"
+
+#: class-ml-gallery.php:2022
+msgid "Color of the icon that opens the gallery window"
+msgstr "打开图库窗口的图标颜色"
+
+#: class-ml-gallery.php:2022
+msgid "Icon Color"
+msgstr "图标颜色"
+
+#: class-ml-gallery.php:2026
+msgid "Icon color on hover"
+msgstr "悬停时图标颜色"
+
+#: class-ml-gallery.php:2026
+msgid "Icon Hover Color"
+msgstr "图标悬停颜色"
+
+#: class-ml-gallery.php:2030
+msgid "Background color behind the icon"
+msgstr "图标后面的背景颜色"
+
+#: class-ml-gallery.php:2030
+msgid "Icon Background"
+msgstr "图标背景"
+
+#: class-ml-gallery.php:2034
+msgid "Icon background color on hover"
+msgstr "悬停时图标背景颜色"
+
+#: class-ml-gallery.php:2034
+msgid "Icon Background Hover"
+msgstr "图标背景悬停"
+
+#: class-ml-gallery.php:2041
+msgid "Color of the progress bar shown during autoplay"
+msgstr "自动播放期间显示的进度条颜色"
+
+#: class-ml-gallery.php:2041
+msgid "Autoplay Progress Bar"
+msgstr "自动播放进度条"
+
+#: class-ml-gallery.php:2056
+msgid "Image Styles"
+msgstr "图像样式"
+
+#: class-ml-gallery.php:2059
+msgid "Apply a filter to every image in the gallery"
+msgstr "对画廊中的每个图像应用滤镜"
+
+#: class-ml-gallery.php:2059
+msgid "Filter"
+msgstr "滤镜"
+
+#: class-ml-gallery.php:2068
+msgid "Corner radius in pixels applied to every image"
+msgstr "应用于每个图像的角半径（以像素为单位）"
+
+#: class-ml-gallery.php:2069
+msgid "Rounded Corners"
+msgstr "圆角"
+
+#: class-ml-gallery.php:2080
+msgid "Image border width in pixels (0 = no border)"
+msgstr "图像边框宽度（以像素为单位）（0 = 无边框）"
+
+#: class-ml-gallery.php:2081
+msgid "Border Width"
+msgstr "边框宽度"
+
+#: class-ml-gallery.php:2092
+msgid "Line style used for the image border"
+msgstr "用于图像边框的线条样式"
+
+#: class-ml-gallery.php:2092
+msgid "Border Style"
+msgstr "边框样式"
+
+#: class-ml-gallery.php:2106
 msgid "Color of the image border"
 msgstr "图片边框的颜色"
 
-#: class-ml-gallery.php:2061
+#: class-ml-gallery.php:2106
 msgid "Border Color"
 msgstr "边框颜色"
 
-#: class-ml-gallery.php:2071
+#: class-ml-gallery.php:2116
 msgid "Drop shadow depth cast behind each image"
 msgstr "投影深度，投射在每个图像后面"
 
-#: class-ml-gallery.php:2071
+#: class-ml-gallery.php:2116
 msgid "Box Shadow"
 msgstr "盒子阴影"
 
-#: class-ml-gallery.php:2075
+#: class-ml-gallery.php:2120
 msgid "Light"
 msgstr "浅"
 
-#: class-ml-gallery.php:2076
+#: class-ml-gallery.php:2121
 msgid "Medium"
 msgstr "中等"
 
-#: class-ml-gallery.php:2077
+#: class-ml-gallery.php:2122
 msgid "Heavy"
 msgstr "重"
 
-#: class-ml-gallery.php:2085
+#: class-ml-gallery.php:2130
 msgid "Image opacity as a percentage"
 msgstr "图像的不透明度百分比"
 
-#: class-ml-gallery.php:2086
+#: class-ml-gallery.php:2131
 msgid "Opacity"
 msgstr "不透明度"
 
-#: class-ml-gallery.php:2097
+#: class-ml-gallery.php:2142
 msgid "Rotate every image by a fixed angle"
 msgstr "以固定角度旋转每个图像"
 
-#: class-ml-gallery.php:2097
+#: class-ml-gallery.php:2142
 msgid "Rotate"
 msgstr "旋转"
 
-#: class-ml-gallery.php:2111
+#: class-ml-gallery.php:2156
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "水平、垂直或同时镜像每个图像"
 
-#: class-ml-gallery.php:2111
+#: class-ml-gallery.php:2156
 msgid "Flip"
 msgstr "翻转"
 
-#: class-ml-gallery.php:2115
+#: class-ml-gallery.php:2160
 msgid "Horizontal"
 msgstr "水平"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2161
 msgid "Vertical"
 msgstr "垂直"
 
-#: class-ml-gallery.php:2117
+#: class-ml-gallery.php:2162
 msgid "Both"
 msgstr "两者"
 
-#: class-ml-gallery.php:2127 class-ml-gallery.php:3747
+#: class-ml-gallery.php:2172 class-ml-gallery.php:3819
 msgid "Shortcode"
 msgstr "短代码"
 
-#: class-ml-gallery.php:2129 class-ml-gallery.php:3767
+#: class-ml-gallery.php:2174 class-ml-gallery.php:3839
 msgid "Click to copy shortcode."
 msgstr "点击复制短代码。"
 
-#: class-ml-gallery.php:2147
+#: class-ml-gallery.php:2192
 msgid "Edit Caption"
 msgstr "编辑标题"
 
-#: class-ml-gallery.php:2149
+#: class-ml-gallery.php:2194
 msgid "Previous image"
 msgstr "上一张图片"
 
-#: class-ml-gallery.php:2150
+#: class-ml-gallery.php:2195
 msgid "Next image"
 msgstr "下一张图片"
 
-#: class-ml-gallery.php:2152 class-ml-gallery.php:2194
-#: class-ml-gallery.php:2215 class-ml-gallery.php:3792
+#: class-ml-gallery.php:2197 class-ml-gallery.php:2239
+#: class-ml-gallery.php:2260 class-ml-gallery.php:3864
 msgid "Close"
 msgstr "关闭"
 
-#: class-ml-gallery.php:2173
+#: class-ml-gallery.php:2218
 msgid "Caption"
 msgstr "标题"
 
-#: class-ml-gallery.php:2183
+#: class-ml-gallery.php:2228
 msgid "Done"
 msgstr "完成"
 
-#: class-ml-gallery.php:2193
+#: class-ml-gallery.php:2238
 msgid "Import from Server Folder"
 msgstr "从服务器文件夹导入"
 
-#: class-ml-gallery.php:2202
+#: class-ml-gallery.php:2247
 msgid "Cancel"
 msgstr "取消"
 
-#: class-ml-gallery.php:2203
+#: class-ml-gallery.php:2248
 msgid "Import selected"
 msgstr "导入已选择的"
 
-#: class-ml-gallery.php:2214
+#: class-ml-gallery.php:2259
 msgid "Import from ZIP"
 msgstr "从 ZIP 导入"
 
-#: class-ml-gallery.php:2242
+#: class-ml-gallery.php:2287
 msgid "You do not have sufficient permissions."
 msgstr "您没有足够的权限。"
 
-#: class-ml-gallery.php:2261
+#: class-ml-gallery.php:2306
 msgid "Could not update the gallery. Please try again."
 msgstr "无法更新画廊。请再试一次。"
 
-#: class-ml-gallery.php:2408
+#: class-ml-gallery.php:2457
 msgid "(Copy)"
 msgstr "(复制)"
 
-#: class-ml-gallery.php:2414
+#: class-ml-gallery.php:2463
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "无法复制图库。请再试一次。"
 
-#: class-ml-gallery.php:2562 class-ml-gallery.php:2677
-#: class-ml-gallery.php:3912 class-ml-gallery.php:4065
-#: class-ml-gallery.php:4097
+#: class-ml-gallery.php:2611 class-ml-gallery.php:2726
+#: class-ml-gallery.php:3984 class-ml-gallery.php:4137
+#: class-ml-gallery.php:4169
 msgid "Permission denied."
 msgstr "权限被拒绝。"
 
-#: class-ml-gallery.php:2569
+#: class-ml-gallery.php:2618
 msgid "Folder not found."
 msgstr "未找到文件夹。"
 
-#: class-ml-gallery.php:2578
+#: class-ml-gallery.php:2627
 msgid "Folder could not be read."
 msgstr "无法读取文件夹。"
 
-#: class-ml-gallery.php:2615
+#: class-ml-gallery.php:2664
 msgid "Uploads"
 msgstr "上传"
 
-#: class-ml-gallery.php:2800
+#: class-ml-gallery.php:2849
 msgid "Select Gallery Images"
 msgstr "选择画廊图片"
 
-#: class-ml-gallery.php:2801
+#: class-ml-gallery.php:2850
 msgid "Add to Gallery"
 msgstr "添加到画廊"
 
-#: class-ml-gallery.php:2812
+#: class-ml-gallery.php:2861
 msgid ""
 "Saved to this image in your Media Library — changes appear anywhere the "
 "image is used."
 msgstr "已保存到您的媒体库中的此图像 — 更改将在图像使用的任何地方显示。"
 
-#: class-ml-gallery.php:2813 class-ml-gallery.php:4114
+#: class-ml-gallery.php:2862 class-ml-gallery.php:4186
 msgid "You do not have permission to edit this image."
 msgstr "您没有权限编辑此图像。"
 
-#: class-ml-gallery.php:2814 class-ml-gallery.php:4115
+#: class-ml-gallery.php:2863 class-ml-gallery.php:4187
 msgid "This caption source is read-only."
 msgstr "此标题源为只读。"
 
-#: class-ml-gallery.php:2815
+#: class-ml-gallery.php:2864
 msgid "Shown in this gallery"
 msgstr "在此画廊中显示"
 
-#: class-ml-gallery.php:2817
+#: class-ml-gallery.php:2866
 msgid "Loading…"
 msgstr "加载中…"
 
-#: class-ml-gallery.php:2818
+#: class-ml-gallery.php:2867
 msgid "No images in this folder."
 msgstr "此文件夹中没有图片。"
 
-#: class-ml-gallery.php:2819
+#: class-ml-gallery.php:2868
 msgid "Could not load this folder."
 msgstr "无法加载此文件夹。"
 
-#: class-ml-gallery.php:2820
+#: class-ml-gallery.php:2869
 msgid "Importing…"
 msgstr "导入中…"
 
-#: class-ml-gallery.php:2821
+#: class-ml-gallery.php:2870
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr "显示前200张图片 — 打开一个子文件夹以缩小列表。"
 
-#: class-ml-gallery.php:2822
+#: class-ml-gallery.php:2871
 msgid "Select at least one image."
 msgstr "请至少选择一张图片。"
 
-#: class-ml-gallery.php:2823 class-ml-gallery.php:2826
+#: class-ml-gallery.php:2872 class-ml-gallery.php:2875
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "导入了 %1$d 张图片；跳过了 %2$d 张图片。"
 
-#: class-ml-gallery.php:2824
+#: class-ml-gallery.php:2873
 msgid "Uploading…"
 msgstr "上传中…"
 
-#: class-ml-gallery.php:2825
+#: class-ml-gallery.php:2874
 msgid "Importing images…"
 msgstr "导入图片中…"
 
-#: class-ml-gallery.php:2827
+#: class-ml-gallery.php:2876
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "仅导入了前200张图片（或256 MB）。"
 
-#: class-ml-gallery.php:2828
+#: class-ml-gallery.php:2877
 msgid "The ZIP could not be imported."
 msgstr "无法导入ZIP文件。"
 
-#: class-ml-gallery.php:2829
+#: class-ml-gallery.php:2878
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr "上传被拒绝 — ZIP文件可能超过了此服务器的限制。"
 
-#: class-ml-gallery.php:2830
+#: class-ml-gallery.php:2879
 msgid "No images found in the ZIP."
 msgstr "在ZIP中未找到图片。"
 
-#: class-ml-gallery.php:3378
+#: class-ml-gallery.php:3450
 msgid "Drag-and-drop building"
 msgstr "拖放构建"
 
-#: class-ml-gallery.php:3379
+#: class-ml-gallery.php:3451
 msgid "Responsive lightbox"
 msgstr "响应式灯箱"
 
-#: class-ml-gallery.php:3380
+#: class-ml-gallery.php:3452
 msgid "Grid · Masonry · Justified"
 msgstr "网格 · 砖石 · 对齐"
 
-#: class-ml-gallery.php:3631
+#: class-ml-gallery.php:3703
 msgid "Get started"
 msgstr "开始使用"
 
-#: class-ml-gallery.php:3634
+#: class-ml-gallery.php:3706
 msgid "Your galleries"
 msgstr "您的画廊"
 
-#: class-ml-gallery.php:3634
+#: class-ml-gallery.php:3706
 msgid "live here."
 msgstr "在这里。"
 
-#: class-ml-gallery.php:3636
+#: class-ml-gallery.php:3708
 msgid ""
 "Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
 "justified, no code required."
 msgstr "使用惊艳的灯箱构建美丽的图片画廊。网格、砖石或对齐，无需编码。"
 
-#: class-ml-gallery.php:3638
+#: class-ml-gallery.php:3710
 msgid "Create your first gallery"
 msgstr "创建您的第一个画廊"
 
-#: class-ml-gallery.php:3651
+#: class-ml-gallery.php:3723
 #, php-format
 msgid "View Trash (%s)"
 msgid_plural "View Trash (%s)"
 msgstr[0] "查看垃圾箱 (%s)"
 
-#: class-ml-gallery.php:3662
+#: class-ml-gallery.php:3734
 msgid "Preview layout"
 msgstr "预览布局"
 
-#: class-ml-gallery.php:3749
+#: class-ml-gallery.php:3821
 msgid "Usage"
 msgstr "使用情况"
 
-#: class-ml-gallery.php:3782
+#: class-ml-gallery.php:3854
 msgid "Not found."
 msgstr "未找到。"
 
-#: class-ml-gallery.php:3787
+#: class-ml-gallery.php:3859
 msgid "View Usage"
 msgstr "查看使用情况"
 
-#: class-ml-gallery.php:3793
+#: class-ml-gallery.php:3865
 msgid "Content Using This Gallery"
 msgstr "使用此图库的内容"
 
-#: class-ml-gallery.php:3860
+#: class-ml-gallery.php:3932
 msgid "(no title)"
 msgstr "(无标题)"
 
-#: class-ml-gallery.php:3918 class-ml-gallery.php:3927
+#: class-ml-gallery.php:3990 class-ml-gallery.php:3999
 msgid "Please choose a valid .zip file."
 msgstr "请选择一个有效的 .zip 文件。"
 
-#: class-ml-gallery.php:3933
+#: class-ml-gallery.php:4005
 msgid "Server cannot read ZIP files."
 msgstr "服务器无法读取 ZIP 文件。"
 
-#: class-ml-gallery.php:3940
+#: class-ml-gallery.php:4012
 msgid "The ZIP could not be read."
 msgstr "无法读取 ZIP 文件。"
 
-#: class-ml-gallery.php:3974
+#: class-ml-gallery.php:4046
 msgid "Could not prepare a temporary folder."
 msgstr "无法准备临时文件夹。"
 
-#: class-ml-gallery.php:4072 class-ml-gallery.php:4108
+#: class-ml-gallery.php:4144 class-ml-gallery.php:4180
 msgid "Image not found."
 msgstr "未找到图片。"
 
-#: class-ml-gallery.php:4145
+#: class-ml-gallery.php:4217
 msgid "Unknown caption source."
 msgstr "未知的标题源。"
 
@@ -1341,220 +1365,220 @@ msgstr "👋 感谢安装 MetaSlider 画廊！"
 msgid "You're all set. Create your first gallery to get started."
 msgstr "您已准备就绪。创建您的第一个画廊以开始使用。"
 
-#: class-ml-slider-lightbox.php:1167
+#: class-ml-slider-lightbox.php:1188
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
 msgstr "MetaSlider 画廊需要安装并激活 MetaSlider 和至少一个其他支持的 lightbox 插件。"
 
-#: class-ml-slider-lightbox.php:1171
+#: class-ml-slider-lightbox.php:1192
 msgid "More info"
 msgstr "更多信息"
 
-#: class-ml-slider-lightbox.php:1182
+#: class-ml-slider-lightbox.php:1203
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
 msgstr "已激活多个 lightbox 插件。这可能会与 MetaSlider 画廊产生冲突"
 
-#: class-ml-slider-lightbox.php:1242
+#: class-ml-slider-lightbox.php:1263
 msgid "Edit Global Settings"
 msgstr "编辑全局设置"
 
-#: class-ml-slider-lightbox.php:1253
+#: class-ml-slider-lightbox.php:1274
 msgid "Open In Gallery"
 msgstr "在画廊中打开"
 
-#: class-ml-slider-lightbox.php:1267
+#: class-ml-slider-lightbox.php:1288
 msgid "Show Captions"
 msgstr "显示标题"
 
-#: class-ml-slider-lightbox.php:1267
+#: class-ml-slider-lightbox.php:1288
 msgid "Show captions in the gallery for each slide."
 msgstr "在画廊中为每张幻灯片显示标题。"
 
-#: class-ml-slider-lightbox.php:1268
+#: class-ml-slider-lightbox.php:1289
 msgid "Show Navigation Arrows"
 msgstr "显示导航箭头"
 
-#: class-ml-slider-lightbox.php:1268
+#: class-ml-slider-lightbox.php:1289
 msgid "Show previous/next arrows in the gallery."
 msgstr "在画廊中显示上一张/下一张箭头。"
 
-#: class-ml-slider-lightbox.php:1274
+#: class-ml-slider-lightbox.php:1295
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
 "Gallery settings</a>."
 msgstr "画廊已通过 <a href=\"%s\">MetaSlider 画廊设置</a> 为所有幻灯片放映启用。"
 
-#: class-ml-slider-lightbox.php:1639
+#: class-ml-slider-lightbox.php:1660
 msgid "Close gallery"
 msgstr "关闭画廊"
 
-#: class-ml-slider-lightbox.php:1640
+#: class-ml-slider-lightbox.php:1661
 msgid "Toggle maximize"
 msgstr "切换最大化"
 
-#: class-ml-slider-lightbox.php:1641
+#: class-ml-slider-lightbox.php:1662
 msgid "Previous slide"
 msgstr "上一个幻灯片"
 
-#: class-ml-slider-lightbox.php:1642
+#: class-ml-slider-lightbox.php:1663
 msgid "Next slide"
 msgstr "下一个幻灯片"
 
-#: class-ml-slider-lightbox.php:1644
+#: class-ml-slider-lightbox.php:1665
 msgid "Play video"
 msgstr "播放视频"
 
-#: class-ml-slider-lightbox.php:1645
+#: class-ml-slider-lightbox.php:1666
 msgid "Oops... Failed to load content..."
 msgstr "哎呀... 内容加载失败..."
 
-#: class-ml-slider-lightbox.php:1691 class-ml-slider-lightbox.php:1721
+#: class-ml-slider-lightbox.php:1712 class-ml-slider-lightbox.php:1742
 msgid "Global"
 msgstr "全局"
 
-#: class-ml-slider-lightbox.php:1692
+#: class-ml-slider-lightbox.php:1713
 msgid "Yes"
 msgstr "是"
 
-#: class-ml-slider-lightbox.php:1693
+#: class-ml-slider-lightbox.php:1714
 msgid "No"
 msgstr "否"
 
-#: class-ml-slider-lightbox.php:1716
+#: class-ml-slider-lightbox.php:1737
 msgid "How Visitors Open Images"
 msgstr "访客如何打开图片"
 
-#: class-ml-slider-lightbox.php:1719 class-ml-slider-lightbox.php:3643
+#: class-ml-slider-lightbox.php:1740 class-ml-slider-lightbox.php:3664
 msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
 msgstr "选择点击图片、图标或按钮是否打开画廊。"
 
-#: class-ml-slider-lightbox.php:1722 class-ml-trigger-control.php:66
+#: class-ml-slider-lightbox.php:1743 class-ml-trigger-control.php:66
 msgid "Image"
 msgstr "图片"
 
-#: class-ml-slider-lightbox.php:1723 class-ml-slider-lightbox.php:3485
-#: class-ml-slider-lightbox.php:3498 class-ml-slider-lightbox.php:3511
-#: class-ml-slider-lightbox.php:3609 class-ml-trigger-control.php:67
+#: class-ml-slider-lightbox.php:1744 class-ml-slider-lightbox.php:3506
+#: class-ml-slider-lightbox.php:3519 class-ml-slider-lightbox.php:3532
+#: class-ml-slider-lightbox.php:3630 class-ml-trigger-control.php:67
 msgid "Icon"
 msgstr "图标"
 
-#: class-ml-slider-lightbox.php:1724 class-ml-trigger-control.php:68
+#: class-ml-slider-lightbox.php:1745 class-ml-trigger-control.php:68
 msgid "Button"
 msgstr "按钮"
 
-#: class-ml-slider-lightbox.php:1992
+#: class-ml-slider-lightbox.php:2013
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Gallery 需要安装并激活 MetaSlider。"
 
-#: class-ml-slider-lightbox.php:1996
+#: class-ml-slider-lightbox.php:2017
 msgid "Install MetaSlider"
 msgstr "安装 MetaSlider"
 
-#: class-ml-slider-lightbox.php:2119 class-ml-slider-lightbox.php:2263, fuzzy
+#: class-ml-slider-lightbox.php:2140 class-ml-slider-lightbox.php:2284, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2245
+#: class-ml-slider-lightbox.php:2266
 #, php-format
 msgid "Select pages to %s..."
 msgstr "选择页面以 %s..."
 
-#: class-ml-slider-lightbox.php:2246
+#: class-ml-slider-lightbox.php:2267
 #, php-format
 msgid "Select posts to %s..."
 msgstr "选择帖子以 %s..."
 
-#: class-ml-slider-lightbox.php:2247
+#: class-ml-slider-lightbox.php:2268
 #, php-format
 msgid "Select post types to %s..."
 msgstr "选择帖子类型以 %s..."
 
-#: class-ml-slider-lightbox.php:2248
+#: class-ml-slider-lightbox.php:2269
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "选择 %1$s 到 %2$s..."
 
-#: class-ml-slider-lightbox.php:2249
+#: class-ml-slider-lightbox.php:2270
 msgid "Select post types to exclude"
 msgstr "选择要排除的帖子类型"
 
-#: class-ml-slider-lightbox.php:2250 class-ml-slider-lightbox.php:3692
-#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:2271 class-ml-slider-lightbox.php:3713
+#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
 msgid "Include"
 msgstr "包含"
 
-#: class-ml-slider-lightbox.php:2251 class-ml-slider-lightbox.php:3692
-#: class-ml-slider-lightbox.php:3739 class-ml-slider-lightbox.php:3861
+#: class-ml-slider-lightbox.php:2272 class-ml-slider-lightbox.php:3713
+#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
 msgid "Exclude"
 msgstr "排除"
 
-#: class-ml-slider-lightbox.php:2259, fuzzy
+#: class-ml-slider-lightbox.php:2280, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2279
+#: class-ml-slider-lightbox.php:2300
 msgid "Global Settings"
 msgstr "全局设置"
 
-#: class-ml-slider-lightbox.php:2289
+#: class-ml-slider-lightbox.php:2310
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "升级到 MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2290
+#: class-ml-slider-lightbox.php:2311
 msgid "Upgrade to Pro"
 msgstr "升级到专业版"
 
-#: class-ml-slider-lightbox.php:2322
+#: class-ml-slider-lightbox.php:2343
 msgid "Automatic Mode"
 msgstr "自动模式"
 
-#: class-ml-slider-lightbox.php:2323
+#: class-ml-slider-lightbox.php:2344
 msgid "Manual Mode"
 msgstr "手动模式"
 
-#: class-ml-slider-lightbox.php:2325
+#: class-ml-slider-lightbox.php:2346
 msgid "Behavior"
 msgstr "行为"
 
-#: class-ml-slider-lightbox.php:2346
+#: class-ml-slider-lightbox.php:2367
 msgid "Settings saved successfully!"
 msgstr "设置已成功保存！"
 
-#: class-ml-slider-lightbox.php:2356
+#: class-ml-slider-lightbox.php:2377
 msgid "Where to Enable Automatically"
 msgstr "在哪里启用自动"
 
-#: class-ml-slider-lightbox.php:2363
+#: class-ml-slider-lightbox.php:2384
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider 幻灯片"
 
-#: class-ml-slider-lightbox.php:2370 class-ml-slider-lightbox.php:2567
+#: class-ml-slider-lightbox.php:2391 class-ml-slider-lightbox.php:2588
 msgid "Content Filtering"
 msgstr "内容过滤"
 
-#: class-ml-slider-lightbox.php:2382
+#: class-ml-slider-lightbox.php:2403
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
 msgstr "自定义画廊覆盖层和控件的颜色、不透明度和视觉样式。"
 
-#: class-ml-slider-lightbox.php:2386 class-ml-slider-lightbox.php:2633
+#: class-ml-slider-lightbox.php:2407 class-ml-slider-lightbox.php:2654
 msgid "Background & Overlay"
 msgstr "背景和覆盖层"
 
-#: class-ml-slider-lightbox.php:2396
+#: class-ml-slider-lightbox.php:2417
 msgid "\"Open in Gallery\" Button"
 msgstr "\"在画廊中打开\"按钮"
 
-#: class-ml-slider-lightbox.php:2406 class-ml-slider-lightbox.php:2746
+#: class-ml-slider-lightbox.php:2427 class-ml-slider-lightbox.php:2767
 msgid "Navigation & Controls"
 msgstr "导航与控制"
 
-#: class-ml-slider-lightbox.php:2412
+#: class-ml-slider-lightbox.php:2433
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1563,450 +1587,450 @@ msgstr ""
 "<strong>检测到第三方插件：</strong>一个第三方 lightbox 插件已激活。这些设置可能不适用于 MetaSlider，但仍将适用于 "
 "WordPress 内容的 lightbox。"
 
-#: class-ml-slider-lightbox.php:2419 class-ml-slider-lightbox.php:4209
+#: class-ml-slider-lightbox.php:2440 class-ml-slider-lightbox.php:4230
 msgid "Enhanced Zoom & Controls"
 msgstr "增强的缩放和控制"
 
-#: class-ml-slider-lightbox.php:2427
+#: class-ml-slider-lightbox.php:2448
 msgid "Media & Video Enhancements"
 msgstr "媒体和视频增强"
 
-#: class-ml-slider-lightbox.php:2435 class-ml-slider-lightbox.php:4237
+#: class-ml-slider-lightbox.php:2456 class-ml-slider-lightbox.php:4258
 msgid "Social & Navigation"
 msgstr "社交和导航"
 
-#: class-ml-slider-lightbox.php:2443 class-ml-slider-lightbox.php:4258
+#: class-ml-slider-lightbox.php:2464 class-ml-slider-lightbox.php:4279
 msgid "Advanced Features"
 msgstr "高级功能"
 
-#: class-ml-slider-lightbox.php:2459
+#: class-ml-slider-lightbox.php:2480
 msgid "Manual Options"
 msgstr "手动选项"
 
-#: class-ml-slider-lightbox.php:2460
+#: class-ml-slider-lightbox.php:2481
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
 msgstr "手动控件和 WordPress 覆盖，可独立于自动设置工作。"
 
-#: class-ml-slider-lightbox.php:2640
+#: class-ml-slider-lightbox.php:2661
 msgid "Navigation Icons"
 msgstr "导航图标"
 
-#: class-ml-slider-lightbox.php:2647
+#: class-ml-slider-lightbox.php:2668
 msgid "Buttons"
 msgstr "按钮"
 
-#: class-ml-slider-lightbox.php:2670
+#: class-ml-slider-lightbox.php:2691
 msgid "Autoplay Progress Bar Color"
 msgstr "自动播放进度条颜色"
 
-#: class-ml-slider-lightbox.php:2694
+#: class-ml-slider-lightbox.php:2715
 msgid "Close Button"
 msgstr "关闭按钮"
 
-#: class-ml-slider-lightbox.php:2710
+#: class-ml-slider-lightbox.php:2731
 msgid "Button Colors"
 msgstr "按钮颜色"
 
-#: class-ml-slider-lightbox.php:2718
+#: class-ml-slider-lightbox.php:2739
 msgid "Icon Colors"
 msgstr "图标颜色"
 
-#: class-ml-slider-lightbox.php:3099
+#: class-ml-slider-lightbox.php:3120
 msgid "Configure general gallery settings that apply site-wide."
 msgstr "配置适用于整个站点的一般画廊设置。"
 
-#: class-ml-slider-lightbox.php:3104
+#: class-ml-slider-lightbox.php:3125
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "配置特定于 MetaSlider Gallery 功能的设置。"
 
-#: class-ml-slider-lightbox.php:3109
+#: class-ml-slider-lightbox.php:3130
 msgid "Select where the gallery will be enabled automatically."
 msgstr "选择画廊将自动启用的位置。"
 
-#: class-ml-slider-lightbox.php:3115
+#: class-ml-slider-lightbox.php:3136
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
 msgstr "选择如何过滤内容以进行画廊处理，并指定要包含或排除的页面、帖子或选择器。"
 
-#: class-ml-slider-lightbox.php:3131
+#: class-ml-slider-lightbox.php:3152
 msgid "Processing Mode"
 msgstr "处理模式"
 
-#: class-ml-slider-lightbox.php:3134
+#: class-ml-slider-lightbox.php:3155
 msgid "Process all content EXCEPT the items specified below"
 msgstr "处理所有内容，除了下面指定的项目"
 
-#: class-ml-slider-lightbox.php:3137
+#: class-ml-slider-lightbox.php:3158
 msgid "ONLY process the items specified below"
 msgstr "仅处理下面指定的项目"
 
-#: class-ml-slider-lightbox.php:3144
+#: class-ml-slider-lightbox.php:3165
 msgid "Inclusion Mode"
 msgstr "包含模式"
 
-#: class-ml-slider-lightbox.php:3148
+#: class-ml-slider-lightbox.php:3169
 msgid "Exclusion Mode"
 msgstr "排除模式"
 
-#: class-ml-slider-lightbox.php:3168
+#: class-ml-slider-lightbox.php:3189
 msgid "Images in post content"
 msgstr "帖子内容中的图像"
 
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3190
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
 msgstr "启用时，没有链接的单个图像和在帖子和页面中设置的 \"点击放大\" 将自动在画廊中打开。"
 
-#: class-ml-slider-lightbox.php:3185
+#: class-ml-slider-lightbox.php:3206
 msgid "Images and videos in widgets and sidebars"
 msgstr "小工具和侧边栏中的图像和视频"
 
-#: class-ml-slider-lightbox.php:3186
+#: class-ml-slider-lightbox.php:3207
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
 msgstr "启用时，widget 区域中的图像和视频将自动在画廊中打开。"
 
-#: class-ml-slider-lightbox.php:3202
+#: class-ml-slider-lightbox.php:3223
 msgid "Gallery shortcodes and blocks"
 msgstr "画廊短代码和区块"
 
-#: class-ml-slider-lightbox.php:3203
+#: class-ml-slider-lightbox.php:3224
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
 msgstr "启用时，WordPress [gallery] 短代码和 Gutenberg Gallery 块中的图像将自动在画廊窗口中打开。"
 
-#: class-ml-slider-lightbox.php:3219
+#: class-ml-slider-lightbox.php:3240
 msgid "Featured images"
 msgstr "特色图像"
 
-#: class-ml-slider-lightbox.php:3220
+#: class-ml-slider-lightbox.php:3241
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
 msgstr "启用时，特色图像（帖子缩略图）在点击时将自动在画廊中打开。"
 
-#: class-ml-slider-lightbox.php:3229
+#: class-ml-slider-lightbox.php:3250
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
 msgstr "自动在画廊中打开所有 MetaSlider 幻灯片，覆盖每个幻灯片的设置。"
 
-#: class-ml-slider-lightbox.php:3243
+#: class-ml-slider-lightbox.php:3264
 msgid "MetaSlider slideshows"
 msgstr "MetaSlider 幻灯片放映"
 
-#: class-ml-slider-lightbox.php:3244
+#: class-ml-slider-lightbox.php:3265
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
 msgstr "启用时，所有 MetaSlider 幻灯片将在画廊窗口中打开幻灯片，覆盖每个幻灯片的设置。"
 
-#: class-ml-slider-lightbox.php:3260
+#: class-ml-slider-lightbox.php:3281
 msgid "Videos in post content"
 msgstr "文章内容中的视频"
 
-#: class-ml-slider-lightbox.php:3261
+#: class-ml-slider-lightbox.php:3282
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
 msgstr "启用时，帖子/页面内容中的独立视频块（HTML5 视频、YouTube 嵌入、Vimeo 嵌入）将自动在画廊中打开。"
 
-#: class-ml-slider-lightbox.php:3296
+#: class-ml-slider-lightbox.php:3317
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
 msgstr "画廊覆盖层的背景颜色。深色最适合图像查看。"
 
-#: class-ml-slider-lightbox.php:3301
+#: class-ml-slider-lightbox.php:3322
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
 msgstr "出现在幻灯片、图像和视频上的 \"在画廊中打开\" 按钮的背景颜色。"
 
-#: class-ml-slider-lightbox.php:3306
+#: class-ml-slider-lightbox.php:3327
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
 msgstr "出现在幻灯片、图像和视频上的 \"在画廊中打开\" 按钮的文本颜色。"
 
-#: class-ml-slider-lightbox.php:3311
+#: class-ml-slider-lightbox.php:3332
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "在悬停 \"在画廊中打开\" 按钮时的背景颜色。"
 
-#: class-ml-slider-lightbox.php:3316
+#: class-ml-slider-lightbox.php:3337
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "当悬停在 \"在画廊中打开\" 按钮时的文本颜色。"
 
-#: class-ml-slider-lightbox.php:3329
+#: class-ml-slider-lightbox.php:3350
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
 msgstr "画廊按钮的自定义文本。该文本将出现在整个网站的所有 \"在画廊中打开\" 按钮上。"
 
-#: class-ml-slider-lightbox.php:3342 class-ml-slider-lightbox.php:3368
+#: class-ml-slider-lightbox.php:3363 class-ml-slider-lightbox.php:3389
 msgid "Top Right (Default)"
 msgstr "右上角（默认）"
 
-#: class-ml-slider-lightbox.php:3355
+#: class-ml-slider-lightbox.php:3376
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "选择关闭按钮 (X) 在画廊覆盖层中的位置。"
 
-#: class-ml-slider-lightbox.php:3381
+#: class-ml-slider-lightbox.php:3402
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
 msgstr "选择 \"在画廊中打开\" 按钮在幻灯片、图像、画廊和视频中的位置。"
 
-#: class-ml-slider-lightbox.php:3386
+#: class-ml-slider-lightbox.php:3407
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "画廊中上一个和下一个导航箭头的颜色。"
 
-#: class-ml-slider-lightbox.php:3391
+#: class-ml-slider-lightbox.php:3412
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
 msgstr "悬停时的箭头颜色。当用户将鼠标移动到导航箭头上时，产生视觉反馈。"
 
-#: class-ml-slider-lightbox.php:3396
+#: class-ml-slider-lightbox.php:3417
 msgid "Color for the close button (X) in the gallery."
 msgstr "画廊中关闭按钮 (X) 的颜色。"
 
-#: class-ml-slider-lightbox.php:3401
+#: class-ml-slider-lightbox.php:3422
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
 msgstr "悬停时关闭按钮的颜色。当用户将鼠标移动到关闭按钮上时，产生视觉反馈。"
 
-#: class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3427
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
 msgstr "工具栏图标和光箱中计数文本的颜色。影响缩放、全屏图标（Pro）和图像计数显示。"
 
-#: class-ml-slider-lightbox.php:3411
+#: class-ml-slider-lightbox.php:3432
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
 msgstr "当鼠标悬停时的工具栏图标颜色。当用户将鼠标移动到工具栏图标和计数器上时，产生视觉反馈。"
 
-#: class-ml-slider-lightbox.php:3416
+#: class-ml-slider-lightbox.php:3437
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "前进和后退导航箭头按钮的背景颜色。"
 
-#: class-ml-slider-lightbox.php:3421
+#: class-ml-slider-lightbox.php:3442
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
 msgstr "当鼠标悬停时的箭头按钮背景颜色。当用户将鼠标移动到箭头上时，产生视觉反馈。"
 
-#: class-ml-slider-lightbox.php:3426
+#: class-ml-slider-lightbox.php:3447
 msgid "Background color for the close button (X) in the gallery."
 msgstr "画廊中关闭按钮 (X) 的背景颜色。"
 
-#: class-ml-slider-lightbox.php:3431
+#: class-ml-slider-lightbox.php:3452
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
 msgstr "当鼠标悬停时的关闭按钮背景颜色。当用户将鼠标移动到关闭按钮上时，产生视觉反馈。"
 
-#: class-ml-slider-lightbox.php:3436
+#: class-ml-slider-lightbox.php:3457
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "光箱中工具栏图标的背景颜色。"
 
-#: class-ml-slider-lightbox.php:3441
+#: class-ml-slider-lightbox.php:3462
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
 msgstr "当鼠标悬停时的工具栏图标背景颜色。当用户将鼠标移动到工具栏图标上时，产生视觉反馈。"
 
-#: class-ml-slider-lightbox.php:3486 class-ml-slider-lightbox.php:3499
-#: class-ml-slider-lightbox.php:3512 class-ml-slider-lightbox.php:3610
+#: class-ml-slider-lightbox.php:3507 class-ml-slider-lightbox.php:3520
+#: class-ml-slider-lightbox.php:3533 class-ml-slider-lightbox.php:3631
 msgid "Icon Hover"
 msgstr "图标悬停"
 
-#: class-ml-slider-lightbox.php:3487 class-ml-slider-lightbox.php:3500
-#: class-ml-slider-lightbox.php:3513 class-ml-slider-lightbox.php:3594
-#: class-ml-slider-lightbox.php:3611
+#: class-ml-slider-lightbox.php:3508 class-ml-slider-lightbox.php:3521
+#: class-ml-slider-lightbox.php:3534 class-ml-slider-lightbox.php:3615
+#: class-ml-slider-lightbox.php:3632
 msgid "Background"
 msgstr "背景"
 
-#: class-ml-slider-lightbox.php:3488 class-ml-slider-lightbox.php:3501
-#: class-ml-slider-lightbox.php:3514 class-ml-slider-lightbox.php:3595
-#: class-ml-slider-lightbox.php:3612
+#: class-ml-slider-lightbox.php:3509 class-ml-slider-lightbox.php:3522
+#: class-ml-slider-lightbox.php:3535 class-ml-slider-lightbox.php:3616
+#: class-ml-slider-lightbox.php:3633
 msgid "Background Hover"
 msgstr "背景悬停"
 
-#: class-ml-slider-lightbox.php:3531
+#: class-ml-slider-lightbox.php:3552
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "设置画廊背景的透明度 (0 = 透明, 1 = 不透明)。"
 
-#: class-ml-slider-lightbox.php:3540
+#: class-ml-slider-lightbox.php:3561
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "在自动播放幻灯片放映期间显示的进度条颜色。"
 
-#: class-ml-slider-lightbox.php:3546
+#: class-ml-slider-lightbox.php:3567
 msgid "Border"
 msgstr "边框"
 
-#: class-ml-slider-lightbox.php:3547
+#: class-ml-slider-lightbox.php:3568
 msgid "Border Active and Hover"
 msgstr "边框激活和悬停"
 
-#: class-ml-slider-lightbox.php:3559
+#: class-ml-slider-lightbox.php:3580
 msgid "Show navigation arrows in gallery"
 msgstr "在画廊中显示导航箭头"
 
-#: class-ml-slider-lightbox.php:3560
+#: class-ml-slider-lightbox.php:3581
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
 "galleries."
 msgstr "显示用于导航的左/右箭头。还启用键盘导航（← → 键，ESC 关闭）。这适用于幻灯片和图像库。"
 
-#: class-ml-slider-lightbox.php:3569
+#: class-ml-slider-lightbox.php:3590
 msgid "Customize the gallery background and overlay appearance."
 msgstr "自定义画廊背景和覆盖层外观。"
 
-#: class-ml-slider-lightbox.php:3574
+#: class-ml-slider-lightbox.php:3595
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr "自定义画廊的导航图标（关闭、上一个、下一个箭头）。"
 
-#: class-ml-slider-lightbox.php:3579
+#: class-ml-slider-lightbox.php:3600
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
 msgstr "自定义可以添加到幻灯片、图像、画廊和视频的 \"在画廊中打开\" 按钮。"
 
-#: class-ml-slider-lightbox.php:3592
+#: class-ml-slider-lightbox.php:3613
 msgid "Text"
 msgstr "文本"
 
-#: class-ml-slider-lightbox.php:3593
+#: class-ml-slider-lightbox.php:3614
 msgid "Text Hover"
 msgstr "文本悬停"
 
-#: class-ml-slider-lightbox.php:3618
+#: class-ml-slider-lightbox.php:3639
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
 msgstr "配置适用于所有 MetaSlider 画廊的导航和控制选项。"
 
-#: class-ml-slider-lightbox.php:3628
+#: class-ml-slider-lightbox.php:3649
 msgid "Show thumbnails"
 msgstr "显示缩略图"
 
-#: class-ml-slider-lightbox.php:3629
+#: class-ml-slider-lightbox.php:3650
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
 msgstr "在画廊底部显示缩略图，以便于导航。这适用于幻灯片放映和图像画廊。"
 
-#: class-ml-slider-lightbox.php:3642
+#: class-ml-slider-lightbox.php:3663
 msgid "How visitors open images"
 msgstr "访客如何打开图像"
 
-#: class-ml-slider-lightbox.php:3663
+#: class-ml-slider-lightbox.php:3684
 msgid "Show captions"
 msgstr "显示标题"
 
-#: class-ml-slider-lightbox.php:3664
+#: class-ml-slider-lightbox.php:3685
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
 msgstr "启用时，在画廊窗口中显示标题。这适用于幻灯片放映、图像和图像画廊。"
 
-#: class-ml-slider-lightbox.php:3671
+#: class-ml-slider-lightbox.php:3692
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr "高级 Lightbox 功能通过 MetaSlider Gallery Pro 提供。"
 
-#: class-ml-slider-lightbox.php:3673
+#: class-ml-slider-lightbox.php:3694
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr "获取 MetaSlider Gallery Pro 中可用的高级功能的预览。"
 
-#: class-ml-slider-lightbox.php:3676
+#: class-ml-slider-lightbox.php:3697
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
 msgstr "这些高级 LightGallery.js 插件在 Pro 版本中可用，具有额外的自定义选项。"
 
-#: class-ml-slider-lightbox.php:3704 class-ml-slider-lightbox.php:3705
+#: class-ml-slider-lightbox.php:3725 class-ml-slider-lightbox.php:3726
 msgid "specific Pages"
 msgstr "特定页面"
 
-#: class-ml-slider-lightbox.php:3707
+#: class-ml-slider-lightbox.php:3728
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr "选择应禁用图库的页面。显示最多100个最近的页面。输入进行搜索。"
 
-#: class-ml-slider-lightbox.php:3707 class-ml-slider-lightbox.php:3708
+#: class-ml-slider-lightbox.php:3728 class-ml-slider-lightbox.php:3729
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr "选择应启用图库的页面。显示最多100个最近的页面。输入进行搜索。"
 
-#: class-ml-slider-lightbox.php:3752 class-ml-slider-lightbox.php:3753
+#: class-ml-slider-lightbox.php:3773 class-ml-slider-lightbox.php:3774
 msgid "specific Posts"
 msgstr "特定帖子"
 
-#: class-ml-slider-lightbox.php:3755
+#: class-ml-slider-lightbox.php:3776
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
 msgstr "选择应禁用图库的帖子。显示最多100个最近的帖子。输入进行搜索。"
 
-#: class-ml-slider-lightbox.php:3755 class-ml-slider-lightbox.php:3756
+#: class-ml-slider-lightbox.php:3776 class-ml-slider-lightbox.php:3777
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
 msgstr "选择应启用图库的帖子。显示最多100个最近的帖子。输入进行搜索。"
 
-#: class-ml-slider-lightbox.php:3783
+#: class-ml-slider-lightbox.php:3804
 msgid "include"
 msgstr "包含"
 
-#: class-ml-slider-lightbox.php:3783
+#: class-ml-slider-lightbox.php:3804
 msgid "exclude"
 msgstr "排除"
 
-#: class-ml-slider-lightbox.php:3823
+#: class-ml-slider-lightbox.php:3844
 #, php-format
 msgid "specific %s"
 msgstr "特定 %s"
 
-#: class-ml-slider-lightbox.php:3824
+#: class-ml-slider-lightbox.php:3845
 #, php-format
 msgid "%s specific %s"
 msgstr "%s 特定 %s"
 
-#: class-ml-slider-lightbox.php:3826 class-ml-slider-lightbox.php:3827
+#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:3848
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "显示最多 100 个最近的 %s。输入以搜索。"
 
-#: class-ml-slider-lightbox.php:3875 class-ml-slider-lightbox.php:3876
+#: class-ml-slider-lightbox.php:3896 class-ml-slider-lightbox.php:3897
 msgid "specific post types"
 msgstr "特定帖子类型"
 
-#: class-ml-slider-lightbox.php:3878
+#: class-ml-slider-lightbox.php:3899
 msgid "Select post types where gallery should be disabled entirely."
 msgstr "选择应完全禁用图库的帖子类型。"
 
-#: class-ml-slider-lightbox.php:3878 class-ml-slider-lightbox.php:3879
+#: class-ml-slider-lightbox.php:3899 class-ml-slider-lightbox.php:3900
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "选择应完全启用图库的帖子类型。"
 
-#: class-ml-slider-lightbox.php:3913
+#: class-ml-slider-lightbox.php:3934
 msgid "Exclude by CSS selector"
 msgstr "按 CSS 选择器排除"
 
-#: class-ml-slider-lightbox.php:3916
+#: class-ml-slider-lightbox.php:3937
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2014,336 +2038,336 @@ msgstr ""
 "要从图库窗口中排除的元素的CSS选择器（每行一个）。示例：<br>.no-lightbox<br>.custom-gallery "
 "img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:3939
+#: class-ml-slider-lightbox.php:3960
 msgid "Minimum Image Width"
 msgstr "最小图像宽度"
 
-#: class-ml-slider-lightbox.php:3942
+#: class-ml-slider-lightbox.php:3963
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
 "badges, and buttons."
 msgstr "跳过宽度小于此值（以像素为单位）的图像。使用显示的宽度，而不是实际的图像文件大小。这有助于排除小图标、徽章和按钮。"
 
-#: class-ml-slider-lightbox.php:3965
+#: class-ml-slider-lightbox.php:3986
 msgid "Minimum Image Height"
 msgstr "最小图像高度"
 
-#: class-ml-slider-lightbox.php:3968
+#: class-ml-slider-lightbox.php:3989
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
 "icons, badges, and buttons."
 msgstr "跳过高度小于此值（以像素为单位）的图像。使用显示的高度，而不是实际的图像文件大小。这有助于排除小图标、徽章和按钮。"
 
-#: class-ml-slider-lightbox.php:3984 class-ml-slider-lightbox.php:4141
+#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
 msgstr "专业画廊的增强媒体处理和视频播放功能。"
 
-#: class-ml-slider-lightbox.php:3991
+#: class-ml-slider-lightbox.php:4012
 msgid "Advanced features for professional lightbox implementations."
 msgstr "专业 Lightbox 实现的高级功能。"
 
-#: class-ml-slider-lightbox.php:4002 class-ml-slider-lightbox.php:4214
+#: class-ml-slider-lightbox.php:4023 class-ml-slider-lightbox.php:4235
 msgid "Enable Zoom"
 msgstr "启用缩放"
 
-#: class-ml-slider-lightbox.php:4003
+#: class-ml-slider-lightbox.php:4024
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
 msgstr "双击以缩放，缩放控件，鼠标滚轮缩放，以及适合缩放选项。"
 
-#: class-ml-slider-lightbox.php:4013 class-ml-slider-lightbox.php:4221
+#: class-ml-slider-lightbox.php:4034 class-ml-slider-lightbox.php:4242
 msgid "Enable Fullscreen"
 msgstr "启用全屏"
 
-#: class-ml-slider-lightbox.php:4014
+#: class-ml-slider-lightbox.php:4035
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
 msgstr "原生 HTML5 全屏支持，带键盘快捷键（F 键）以获得沉浸式观看体验。"
 
-#: class-ml-slider-lightbox.php:4024 class-ml-slider-lightbox.php:4228
+#: class-ml-slider-lightbox.php:4045 class-ml-slider-lightbox.php:4249
 msgid "Enable Rotate"
 msgstr "启用旋转"
 
-#: class-ml-slider-lightbox.php:4025
+#: class-ml-slider-lightbox.php:4046
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
 msgstr "顺时针/逆时针旋转图像，水平/垂直翻转，带工具栏控件。"
 
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4056
 msgid "Enable Video"
 msgstr "启用视频"
 
-#: class-ml-slider-lightbox.php:4036
+#: class-ml-slider-lightbox.php:4057
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
 msgstr "增强对 YouTube、Vimeo、HTML5 视频的支持，支持自动播放和质量控制。"
 
-#: class-ml-slider-lightbox.php:4046 class-ml-slider-lightbox.php:4263
-#: class-ml-slider-lightbox.php:4410
+#: class-ml-slider-lightbox.php:4067 class-ml-slider-lightbox.php:4284
+#: class-ml-slider-lightbox.php:4431
 msgid "Enable Unique Image URLs"
 msgstr "启用唯一图像 URL"
 
-#: class-ml-slider-lightbox.php:4047
+#: class-ml-slider-lightbox.php:4068
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
 msgstr "每个画廊图像的唯一 URL，支持浏览器前进/后退导航。"
 
-#: class-ml-slider-lightbox.php:4057 class-ml-slider-lightbox.php:4270
+#: class-ml-slider-lightbox.php:4078 class-ml-slider-lightbox.php:4291
 msgid "Enable Autoplay"
 msgstr "启用自动播放"
 
-#: class-ml-slider-lightbox.php:4058
+#: class-ml-slider-lightbox.php:4079
 msgid "Automatically advance through images in the gallery."
 msgstr "自动在图库中的图像之间切换。"
 
-#: class-ml-slider-lightbox.php:4068 class-ml-slider-lightbox.php:4242
+#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4263
 msgid "Enable Share"
 msgstr "启用分享"
 
-#: class-ml-slider-lightbox.php:4069
+#: class-ml-slider-lightbox.php:4090
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
 msgstr "适用于 Facebook、Twitter、Pinterest 的社交媒体分享按钮，以及直接 URL 分享。"
 
-#: class-ml-slider-lightbox.php:4079 class-ml-slider-lightbox.php:4249
+#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4270
 msgid "Enable Pager"
 msgstr "启用分页器"
 
-#: class-ml-slider-lightbox.php:4080
+#: class-ml-slider-lightbox.php:4101
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "简洁的分页点，便于无缩略图预览的导航。"
 
-#: class-ml-slider-lightbox.php:4136 class-ml-slider-lightbox.php:4210
+#: class-ml-slider-lightbox.php:4157 class-ml-slider-lightbox.php:4231
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
 msgstr "专业的缩放和图像互动控制，以增强用户体验。"
 
-#: class-ml-slider-lightbox.php:4146 class-ml-slider-lightbox.php:4238
+#: class-ml-slider-lightbox.php:4167 class-ml-slider-lightbox.php:4259
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "社交分享和导航增强功能，以增加用户互动。"
 
-#: class-ml-slider-lightbox.php:4151 class-ml-slider-lightbox.php:4259
+#: class-ml-slider-lightbox.php:4172 class-ml-slider-lightbox.php:4280
 msgid "Advanced functionality including URL management and automation features."
 msgstr "包括 URL 管理和自动化功能的高级功能。"
 
-#: class-ml-slider-lightbox.php:4163
+#: class-ml-slider-lightbox.php:4184
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "此功能在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4215 class-ml-slider-lightbox.php:4379
+#: class-ml-slider-lightbox.php:4236 class-ml-slider-lightbox.php:4400
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
 msgstr "允许用户通过双击、鼠标滚轮和缩放控制进行放大和缩小。"
 
-#: class-ml-slider-lightbox.php:4217
+#: class-ml-slider-lightbox.php:4238
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "缩放控制在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4222
+#: class-ml-slider-lightbox.php:4243
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "原生 HTML5 全屏模式，带来沉浸式图像观看体验。"
 
-#: class-ml-slider-lightbox.php:4224
+#: class-ml-slider-lightbox.php:4245
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "全屏模式在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4229 class-ml-slider-lightbox.php:4395
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4416
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr "顺时针/逆时针旋转图像，并水平/垂直翻转。"
 
-#: class-ml-slider-lightbox.php:4231
+#: class-ml-slider-lightbox.php:4252
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "图像旋转在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4243
+#: class-ml-slider-lightbox.php:4264
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "内置社交媒体分享功能，适用于 Facebook、Twitter 和 Pinterest。"
 
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4266
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "社交分享在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4427
+#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4448
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "使用最小的分页点而不是缩略图，以获得更清晰的界面。"
 
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4273
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "Pager 分页在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4264 class-ml-slider-lightbox.php:4411
+#: class-ml-slider-lightbox.php:4285 class-ml-slider-lightbox.php:4432
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
 msgstr "为每个画廊图像生成唯一的 URL，并支持浏览器的前进/后退导航。"
 
-#: class-ml-slider-lightbox.php:4266
+#: class-ml-slider-lightbox.php:4287
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "唯一的图像 URL 在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4419
+#: class-ml-slider-lightbox.php:4292 class-ml-slider-lightbox.php:4440
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "自动幻灯片放映，带有定时控制和进度条。"
 
-#: class-ml-slider-lightbox.php:4273
+#: class-ml-slider-lightbox.php:4294
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "自动播放在 MetaSlider Gallery Pro 中可用"
 
-#: class-ml-slider-lightbox.php:4277
+#: class-ml-slider-lightbox.php:4298
 msgid "Enable Image Protection"
 msgstr "启用图像保护"
 
-#: class-ml-slider-lightbox.php:4280
+#: class-ml-slider-lightbox.php:4301
 msgid "Image protection is available in MetaSlider Gallery Pro"
 msgstr "图像保护在MetaSlider Gallery Pro中可用"
 
-#: class-ml-slider-lightbox.php:4297
+#: class-ml-slider-lightbox.php:4318
 msgid "Features"
 msgstr "功能"
 
-#: class-ml-slider-lightbox.php:4298
+#: class-ml-slider-lightbox.php:4319
 msgid "Free"
 msgstr "免费"
 
-#: class-ml-slider-lightbox.php:4299
+#: class-ml-slider-lightbox.php:4320
 msgid "Pro"
 msgstr "专业版"
 
-#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4444
+#: class-ml-slider-lightbox.php:4326 class-ml-slider-lightbox.php:4465
 msgid "Installed"
 msgstr "已安装"
 
-#: class-ml-slider-lightbox.php:4308 class-ml-slider-lightbox.php:4447
+#: class-ml-slider-lightbox.php:4329 class-ml-slider-lightbox.php:4468
 msgid "Upgrade now"
 msgstr "立即升级"
 
-#: class-ml-slider-lightbox.php:4314
+#: class-ml-slider-lightbox.php:4335
 msgid "Automatic lightbox for images"
 msgstr "图像的自动灯箱"
 
-#: class-ml-slider-lightbox.php:4315
+#: class-ml-slider-lightbox.php:4336
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "自动为您网站上的所有图像启用灯箱。"
 
-#: class-ml-slider-lightbox.php:4322
+#: class-ml-slider-lightbox.php:4343
 msgid "MetaSlider integration"
 msgstr "MetaSlider 集成"
 
-#: class-ml-slider-lightbox.php:4323
+#: class-ml-slider-lightbox.php:4344
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "与 MetaSlider 幻灯片的无缝集成。"
 
-#: class-ml-slider-lightbox.php:4330
+#: class-ml-slider-lightbox.php:4351
 msgid "WordPress gallery support"
 msgstr "WordPress 画廊支持"
 
-#: class-ml-slider-lightbox.php:4331
+#: class-ml-slider-lightbox.php:4352
 msgid "Support for WordPress native galleries and blocks."
 msgstr "支持 WordPress 原生画廊和区块。"
 
-#: class-ml-slider-lightbox.php:4338
+#: class-ml-slider-lightbox.php:4359
 msgid "Appearance customization"
 msgstr "外观自定义"
 
-#: class-ml-slider-lightbox.php:4339
+#: class-ml-slider-lightbox.php:4360
 msgid "Customize colors, opacity, and button styles."
 msgstr "自定义颜色、透明度和按钮样式。"
 
-#: class-ml-slider-lightbox.php:4346
+#: class-ml-slider-lightbox.php:4367
 msgid "Gallery builder &amp; layouts"
 msgstr "图库构建器和布局"
 
-#: class-ml-slider-lightbox.php:4347
+#: class-ml-slider-lightbox.php:4368
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
 msgstr "使用网格、砖石、对齐、轮播和展示布局构建图库。"
 
-#: class-ml-slider-lightbox.php:4354
+#: class-ml-slider-lightbox.php:4375
 msgid "Responsive columns"
 msgstr "响应式列"
 
-#: class-ml-slider-lightbox.php:4355
+#: class-ml-slider-lightbox.php:4376
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr "设置桌面和移动设备的列数，并可调节间距。"
 
-#: class-ml-slider-lightbox.php:4362
+#: class-ml-slider-lightbox.php:4383
 msgid "Image captions"
 msgstr "图像标题"
 
-#: class-ml-slider-lightbox.php:4363
+#: class-ml-slider-lightbox.php:4384
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "在图库网格和图库窗口中显示图像标题。"
 
-#: class-ml-slider-lightbox.php:4370
+#: class-ml-slider-lightbox.php:4391
 msgid "Thumbnail navigation"
 msgstr "缩略图导航"
 
-#: class-ml-slider-lightbox.php:4371
+#: class-ml-slider-lightbox.php:4392
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "显示一排缩略图，以便快速在图像之间导航。"
 
-#: class-ml-slider-lightbox.php:4378
+#: class-ml-slider-lightbox.php:4399
 msgid "Zoom controls"
 msgstr "缩放控制"
 
-#: class-ml-slider-lightbox.php:4386
+#: class-ml-slider-lightbox.php:4407
 msgid "Fullscreen mode"
 msgstr "全屏模式"
 
-#: class-ml-slider-lightbox.php:4387
+#: class-ml-slider-lightbox.php:4408
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "原生 HTML5 全屏以便沉浸式图像查看。"
 
-#: class-ml-slider-lightbox.php:4394
+#: class-ml-slider-lightbox.php:4415
 msgid "Rotate and flip images"
 msgstr "旋转和翻转图像"
 
-#: class-ml-slider-lightbox.php:4402
+#: class-ml-slider-lightbox.php:4423
 msgid "Social media sharing"
 msgstr "社交媒体分享"
 
-#: class-ml-slider-lightbox.php:4403
+#: class-ml-slider-lightbox.php:4424
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "内置分享功能，支持 Facebook、Twitter 和 Pinterest。"
 
-#: class-ml-slider-lightbox.php:4418
+#: class-ml-slider-lightbox.php:4439
 msgid "Autoplay slideshow"
 msgstr "自动播放幻灯片"
 
-#: class-ml-slider-lightbox.php:4426
+#: class-ml-slider-lightbox.php:4447
 msgid "Pager navigation"
 msgstr "分页导航"
 
-#: class-ml-slider-lightbox.php:4434
+#: class-ml-slider-lightbox.php:4455
 msgid "Premium support"
 msgstr "高级支持"
 
-#: class-ml-slider-lightbox.php:4435
+#: class-ml-slider-lightbox.php:4456
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "让我们的专家直接解答您的具体问题。"
 
-#: class-ml-slider-lightbox.php:6222
+#: class-ml-slider-lightbox.php:6243
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr "配置 Lightbox 与 WordPress 内置功能的交互方式。"
 
-#: class-ml-slider-lightbox.php:6237
+#: class-ml-slider-lightbox.php:6258
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "覆盖 WordPress \"点击放大\" 设置"
 
-#: class-ml-slider-lightbox.php:6238
+#: class-ml-slider-lightbox.php:6259
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2352,11 +2376,11 @@ msgstr ""
 "启用时，禁用 WordPress 内置画廊窗口，并使用 MetaSlider 画廊显示设置为 \"点击放大\" 的图片。禁用时，遵循 "
 "WordPress 设置，并跳过设置为 \"点击放大\" 的图片。"
 
-#: class-ml-slider-lightbox.php:6254
+#: class-ml-slider-lightbox.php:6275
 msgid "Override \"Link to Image File\" Setting"
 msgstr "覆盖 \"链接到图像文件\" 设置"
 
-#: class-ml-slider-lightbox.php:6255
+#: class-ml-slider-lightbox.php:6276
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2365,11 +2389,11 @@ msgstr ""
 "启用时，使用 MetaSlider 画廊显示链接到其全尺寸图片文件的图片（通常通过块编辑器中的 \"链接到图片文件\" "
 "设置）。禁用时，遵循原始链接行为。"
 
-#: class-ml-slider-lightbox.php:6286
+#: class-ml-slider-lightbox.php:6307
 msgid "Exclude Post Types from Manual Processing"
 msgstr "从手动处理排除帖子类型"
 
-#: class-ml-slider-lightbox.php:6289
+#: class-ml-slider-lightbox.php:6310
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2378,95 +2402,95 @@ msgstr ""
 "选择手动选项不应起作用的帖子类型。例如，选择 \"产品（product）\" 以在 WooCommerce "
 "产品页面上禁用画廊，同时在其他地方保持其活动。"
 
-#: class-ml-slider-lightbox.php:6313
+#: class-ml-slider-lightbox.php:6334
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "如何使用：WordPress \"点击放大\""
 
-#: class-ml-slider-lightbox.php:6315
+#: class-ml-slider-lightbox.php:6336
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
 msgstr "WordPress 有一个内置的 \"点击放大\" 功能用于图像。以下是启用它的方法："
 
-#: class-ml-slider-lightbox.php:6317 class-ml-slider-lightbox.php:6330
+#: class-ml-slider-lightbox.php:6338 class-ml-slider-lightbox.php:6351
 msgid "Select an image in the block editor."
 msgstr "在块编辑器中选择一张图像。"
 
-#: class-ml-slider-lightbox.php:6318 class-ml-slider-lightbox.php:6331
+#: class-ml-slider-lightbox.php:6339 class-ml-slider-lightbox.php:6352
 msgid "In the block toolbar, click on the Link icon."
 msgstr "在块工具栏中，点击链接图标。"
 
-#: class-ml-slider-lightbox.php:6319
+#: class-ml-slider-lightbox.php:6340
 msgid "Select \"Enlarge on click\"."
 msgstr "选择 \"点击放大\"。"
 
-#: class-ml-slider-lightbox.php:6325
+#: class-ml-slider-lightbox.php:6346
 msgid "How to use: \"Link to Image File\""
 msgstr "使用方法：\"链接到图像文件\""
 
-#: class-ml-slider-lightbox.php:6327
+#: class-ml-slider-lightbox.php:6348
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr "您可以将图像直接链接到其全尺寸媒体文件。以下是操作方法："
 
-#: class-ml-slider-lightbox.php:6328
+#: class-ml-slider-lightbox.php:6349
 msgid "For the Block Editor:"
 msgstr "对于块编辑器："
 
-#: class-ml-slider-lightbox.php:6332
+#: class-ml-slider-lightbox.php:6353
 msgid "Choose \"Link to image file\"."
 msgstr "选择 \"链接到图像文件\"。"
 
-#: class-ml-slider-lightbox.php:6334
+#: class-ml-slider-lightbox.php:6355
 msgid "For the Classic Editor:"
 msgstr "对于经典编辑器："
 
-#: class-ml-slider-lightbox.php:6336
+#: class-ml-slider-lightbox.php:6357
 msgid "Select an image."
 msgstr "选择一张图像。"
 
-#: class-ml-slider-lightbox.php:6337
+#: class-ml-slider-lightbox.php:6358
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "在图像工具栏中，点击编辑图标。"
 
-#: class-ml-slider-lightbox.php:6338
+#: class-ml-slider-lightbox.php:6359
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "在 \"链接到\" 下拉菜单中选择 \"媒体文件\"。"
 
-#: class-ml-slider-lightbox.php:6344
+#: class-ml-slider-lightbox.php:6365
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "使用方法：CSS类方法（高级）"
 
-#: class-ml-slider-lightbox.php:6346
+#: class-ml-slider-lightbox.php:6367
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
 msgstr "针对开发者：将 <code>ml-lightbox-enabled</code> 类添加到包含图片的任何元素以启用 MetaSlider 画廊。"
 
-#: class-ml-slider-lightbox.php:6347
+#: class-ml-slider-lightbox.php:6368
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "方法1：块编辑器附加CSS类"
 
-#: class-ml-slider-lightbox.php:6349
+#: class-ml-slider-lightbox.php:6370
 msgid "Select an image or gallery block."
 msgstr "选择一张图像或画廊块。"
 
-#: class-ml-slider-lightbox.php:6350
+#: class-ml-slider-lightbox.php:6371
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "在块设置侧边栏中，滚动到 \"高级\"。"
 
-#: class-ml-slider-lightbox.php:6351
+#: class-ml-slider-lightbox.php:6372
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "将 <code>ml-lightbox-enabled</code> 添加到 \"附加CSS类\"。"
 
-#: class-ml-slider-lightbox.php:6353
+#: class-ml-slider-lightbox.php:6374
 msgid "Method 2: HTML/Code"
 msgstr "方法2：HTML/代码"
 
-#: class-ml-slider-lightbox.php:6354
+#: class-ml-slider-lightbox.php:6375
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "对于自定义HTML或主题开发者，直接添加类："
 
-#: class-ml-slider-lightbox.php:1258
+#: class-ml-slider-lightbox.php:1279
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"

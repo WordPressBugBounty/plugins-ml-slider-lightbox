@@ -1,6 +1,15 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+[2.36.0] - 4 Aug, 2026
+
+- ADDED: Frame Border setting for the Carousel layout, so the frame stays visible when the carousel background matches the page, #550;
+- FIXED: Captions never displayed on the Carousel layout, #592;
+- FIXED: Noticeable lag when switching between photos on the Carousel layout, #542;
+- FIXED: Custom slide links from the MetaSlider Links tab were overridden by the gallery, #395;
+- FIXED: Rounded corners clipped the "Open in Gallery" button, icon and captions, #544;
+- FIXED: Grid and Masonry tiles downloaded far larger images than they display, #512;
+
 [2.35.0] - 29 Jul, 2026
 
 - ADDED: Live preview for the gallery editor with a Preview / Arrange toggle and a Desktop / Mobile viewport switch, #455;

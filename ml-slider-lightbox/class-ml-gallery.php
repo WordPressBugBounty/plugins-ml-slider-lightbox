@@ -176,6 +176,9 @@ class MetaSliderLightboxGallery {
             // Appearance panel.
             'bg_color'      => $a . '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>' . $z,
             'bg_opacity'                  => $a . '<circle cx="9" cy="9" r="7"/><circle cx="15" cy="15" r="7"/>' . $z,
+            'frame_border_width'          => $a . '<rect width="18" height="18" x="3" y="3" rx="2"/>' . $z,
+            'frame_border_style'          => $a . '<path d="M5 3a2 2 0 0 0-2 2"/><path d="M19 3a2 2 0 0 1 2 2"/><path d="M21 19a2 2 0 0 1-2 2"/><path d="M5 21a2 2 0 0 1-2-2"/><path d="M9 3h1"/><path d="M14 3h1"/><path d="M9 21h1"/><path d="M14 21h1"/><path d="M3 9v1"/><path d="M21 9v1"/><path d="M3 14v1"/><path d="M21 14v1"/>' . $z,
+            'frame_border_color'          => $a . '<circle cx="13.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor" stroke="none"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor" stroke="none"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor" stroke="none"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>' . $z,
             'arrow_color'                 => $a . '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>' . $z,
             'arrow_bg_color'              => $a . '<rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 12h8"/><path d="m12 8 4 4-4 4"/>' . $z,
             'close_color'                 => $a . '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>' . $z,
@@ -518,6 +521,9 @@ class MetaSliderLightboxGallery {
         return array(
             'bg_color'               => '#000000',
             'bg_opacity'             => '0.9',
+            'frame_border_width'     => 0,
+            'frame_border_style'     => 'solid',
+            'frame_border_color'     => '#dddddd',
             'arrow_color'            => '#ffffff',
             'arrow_bg_color'         => '#000000',
             'close_color'            => '#ffffff',
@@ -671,6 +677,7 @@ class MetaSliderLightboxGallery {
         $radius = max( 0, (int) $styles['corner_radius'] );
         if ( $radius > 0 ) {
             $frame_decl[] = "border-radius:{$radius}px";
+            $css         .= "\n#ml-gallery-{$gallery_id}{--ml-corner-radius:{$radius}px;}";
         }
 
         $bw = max( 0, (int) $styles['border_width'] );
@@ -1865,6 +1872,44 @@ class MetaSliderLightboxGallery {
                                        class="ml-gallery-range widefat">
                             </div>
 
+                            <?php $hide_frame_border = 'carousel' !== $lg_settings['layout']; ?>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col ml-carousel-frame-row<?php echo $hide_frame_border ? ' is-hidden' : ''; ?>">
+                                <label for="ml_gallery_frame_border_width" class="ml-tipsy" title="<?php esc_attr_e( 'Border width in pixels around the carousel (0 = no border)', 'ml-slider-lightbox' ); ?>">
+                                    <?php echo $this->settingIcon( 'frame_border_width' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><?php esc_html_e( 'Frame Border Width', 'ml-slider-lightbox' ); ?>
+                                    <span class="ml-gallery-range-value"><?php echo esc_html( (string) (int) $appearance['frame_border_width'] ); ?>px</span>
+                                </label>
+                                <input type="range" min="0" max="50" step="1"
+                                       id="ml_gallery_frame_border_width"
+                                       name="ml_gallery_appearance[frame_border_width]"
+                                       value="<?php echo esc_attr( (string) (int) $appearance['frame_border_width'] ); ?>"
+                                       class="ml-gallery-range widefat">
+                            </div>
+
+                            <div class="ml-gallery-setting ml-carousel-frame-row<?php echo $hide_frame_border ? ' is-hidden' : ''; ?>">
+                                <label for="ml_gallery_frame_border_style" class="ml-tipsy" title="<?php esc_attr_e( 'Line style used for the carousel border', 'ml-slider-lightbox' ); ?>"><?php echo $this->settingIcon( 'frame_border_style' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><?php esc_html_e( 'Frame Border Style', 'ml-slider-lightbox' ); ?></label>
+                                <select id="ml_gallery_frame_border_style" name="ml_gallery_appearance[frame_border_style]">
+                                    <?php foreach ( array(
+                                        'solid'  => __( 'Solid', 'ml-slider-lightbox' ),
+                                        'dashed' => __( 'Dashed', 'ml-slider-lightbox' ),
+                                        'dotted' => __( 'Dotted', 'ml-slider-lightbox' ),
+                                        'double' => __( 'Double', 'ml-slider-lightbox' ),
+                                    ) as $value => $label ) : ?>
+                                        <option value="<?php echo esc_attr( $value ); ?>" <?php selected( $appearance['frame_border_style'], $value ); ?>><?php echo esc_html( $label ); ?></option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <div class="ml-gallery-setting ml-gallery-setting--col ml-carousel-frame-row<?php echo $hide_frame_border ? ' is-hidden' : ''; ?>">
+                                <label for="ml_gallery_frame_border_color" class="ml-tipsy" title="<?php esc_attr_e( 'Color of the border around the carousel', 'ml-slider-lightbox' ); ?>"><?php echo $this->settingIcon( 'frame_border_color' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><?php esc_html_e( 'Frame Border Color', 'ml-slider-lightbox' ); ?></label>
+                                <input type="text"
+                                       id="ml_gallery_frame_border_color"
+                                       name="ml_gallery_appearance[frame_border_color]"
+                                       value="<?php echo esc_attr( $appearance['frame_border_color'] ); ?>"
+                                       class="ml-gallery-color-picker"
+                                       data-default-color="#dddddd">
+                            </div>
+
                             <div class="ml-gallery-setting ml-gallery-setting--col">
                                 <label for="ml_gallery_arrow_color" class="ml-tipsy" title="<?php esc_attr_e( 'Color of the next and previous navigation arrows', 'ml-slider-lightbox' ); ?>"><?php echo $this->settingIcon( 'arrow_color' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><?php esc_html_e( 'Arrow Color', 'ml-slider-lightbox' ); ?></label>
                                 <input type="text"
@@ -2290,10 +2335,14 @@ class MetaSliderLightboxGallery {
             $app_raw       = isset( $_POST['ml_gallery_appearance'] ) && is_array( $_POST['ml_gallery_appearance'] )
                 ? array_map( 'sanitize_text_field', wp_unslash( $_POST['ml_gallery_appearance'] ) )
                 : array();
-            $bg_opacity = isset( $app_raw['bg_opacity'] ) ? $this->clampOpacity( $app_raw['bg_opacity'] ) : 0.9;
+            $bg_opacity      = isset( $app_raw['bg_opacity'] ) ? $this->clampOpacity( $app_raw['bg_opacity'] ) : 0.9;
+            $raw_frame_style = isset( $app_raw['frame_border_style'] ) ? sanitize_key( $app_raw['frame_border_style'] ) : 'solid';
             update_post_meta( $gallery_id, '_ml_gallery_appearance', array(
                 'bg_color'               => $this->sanitizeColorValue( $app_raw['bg_color'] ?? '', '#000000' ),
                 'bg_opacity'             => (string) $bg_opacity,
+                'frame_border_width'     => min( 50, max( 0, (int) ( $app_raw['frame_border_width'] ?? 0 ) ) ),
+                'frame_border_style'     => in_array( $raw_frame_style, array( 'solid', 'dashed', 'dotted', 'double' ), true ) ? $raw_frame_style : 'solid',
+                'frame_border_color'     => $this->sanitizeColorValue( $app_raw['frame_border_color'] ?? '', '#dddddd' ),
                 'arrow_color'            => $this->sanitizeColorValue( $app_raw['arrow_color'] ?? '', '#ffffff' ),
                 'arrow_bg_color'         => $this->sanitizeColorValue( $app_raw['arrow_bg_color'] ?? '', '#000000' ),
                 'close_color'            => $this->sanitizeColorValue( $app_raw['close_color'] ?? '', '#ffffff' ),
@@ -3025,6 +3074,24 @@ class MetaSliderLightboxGallery {
         $columns = min( 6, max( 2, (int) $lg['columns'] ) );
         $gap     = min( 32, max( 0, (int) $lg['gap'] ) );
 
+        $frame_width = min( 50, max( 0, (int) ( $appearance['frame_border_width'] ?? 0 ) ) );
+        if ( 'carousel' === $layout && $frame_width > 0 ) {
+            $frame_style = in_array( $appearance['frame_border_style'] ?? '', array( 'solid', 'dashed', 'dotted', 'double' ), true )
+                ? $appearance['frame_border_style'] : 'solid';
+            $frame_color = esc_html( $this->sanitizeColorValue( $appearance['frame_border_color'] ?? '', '#dddddd' ) );
+            self::$queued_css[ $gallery_id ] .= "\n#ml-gallery-{$gallery_id}{border:{$frame_width}px {$frame_style} {$frame_color};box-sizing:border-box;}";
+        }
+
+        $img_sizes_attr = '';
+        if ( in_array( $layout, array( 'grid', 'masonry' ), true ) ) {
+            $columns_mobile = min( 6, max( 1, (int) ( $lg['columns_mobile'] ?? 1 ) ) );
+            $img_sizes_attr = sprintf(
+                '(max-width: 768px) %dvw, %dvw',
+                (int) ceil( 100 / $columns_mobile ),
+                (int) ceil( 100 / $columns )
+            );
+        }
+
         // data-sub-html feeds the popup lightbox (grid/masonry/justified) or the
         // inline carousel view. For inline layouts (carousel/showcase) the caption
         // is a gallery-surface concept offered only as Hidden / Gallery Only, so the
@@ -3064,10 +3131,11 @@ class MetaSliderLightboxGallery {
         // the default .ml-lightbox-button (top-right) regardless of stylesheet order,
         // and so multiple galleries on one page each keep their own position.
         if ( $show_gallery_button && 'top-right' !== $button_position ) {
+            $off       = 'calc(10px + var(--ml-corner-inset, 0px))';
             $pos_rules = array(
-                'top-left'     => 'top:10px;bottom:auto;left:10px;right:auto;',
-                'bottom-right' => 'top:auto;bottom:10px;left:auto;right:10px;',
-                'bottom-left'  => 'top:auto;bottom:10px;left:10px;right:auto;',
+                'top-left'     => "top:{$off};bottom:auto;left:{$off};right:auto;",
+                'bottom-right' => "top:auto;bottom:{$off};left:auto;right:{$off};",
+                'bottom-left'  => "top:auto;bottom:{$off};left:{$off};right:auto;",
                 'center'       => 'top:50%;bottom:auto;left:50%;right:auto;transform:translate(-50%,-50%);',
             );
             if ( isset( $pos_rules[ $button_position ] ) ) {
@@ -3136,6 +3204,10 @@ class MetaSliderLightboxGallery {
                 $full_url  = wp_get_attachment_image_url( $image_id, $lightbox_size );
                 $thumb_url = wp_get_attachment_image_url( $image_id, 'medium' );
                 $alt     = (string) get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+                $img_attr = array( 'alt' => $alt );
+                if ( '' !== $img_sizes_attr ) {
+                    $img_attr['sizes'] = $img_sizes_attr;
+                }
                 $manual  = isset( $gallery_captions[ $image_id ] ) ? (string) $gallery_captions[ $image_id ] : '';
                 $caption = $this->resolveItemCaption( $image_id, $manual, $lg['caption_source'] ?? 'manual' );
 
@@ -3154,7 +3226,7 @@ class MetaSliderLightboxGallery {
                          // Do NOT embed markup (e.g. a wrapper <span>) here: wptexturize mangles quotes
                          // around tags inside attributes. The .ml-caption-text wrapper for the caption
                          // transition is added client-side in applyMlCaptionTransition(). ?>>
-                    <?php echo wp_get_attachment_image( $image_id, $lightbox_size, false, array( 'alt' => $alt ) ); ?>
+                    <?php echo wp_get_attachment_image( $image_id, $lightbox_size, false, $img_attr ); ?>
                     <?php if ( $caption ) : ?>
                         <span class="ml-gallery-caption"><?php echo wp_kses_post( $caption ); ?></span>
                     <?php endif; ?>

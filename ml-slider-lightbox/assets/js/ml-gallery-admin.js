@@ -1034,7 +1034,7 @@ function collectGalleryState() {
 
 		$( document ).on( 'input', '.ml-gallery-range', function () {
 			const $val   = $( this ).closest( '.ml-gallery-setting' ).find( '.ml-gallery-range-value' );
-			const isPx   = $( this ).is( '#ml_gallery_gap, #ml_gallery_height, #ml_gallery_caption_text_size, #ml_gallery_corner_radius, #ml_gallery_border_width' );
+			const isPx   = $( this ).is( '#ml_gallery_gap, #ml_gallery_height, #ml_gallery_caption_text_size, #ml_gallery_corner_radius, #ml_gallery_border_width, #ml_gallery_frame_border_width' );
 			const isMs   = $( this ).is( '#ml_gallery_autoplay_interval, #ml_gallery_pro_autoplay_interval' );
 			const isPct  = $( this ).is( '#ml_gallery_opacity' );
 			const suffix = isPx ? 'px' : ( isMs ? 'ms' : ( isPct ? '%' : '' ) );
@@ -1068,6 +1068,7 @@ function collectGalleryState() {
 			$( '.ml-gallery-height-row' ).toggleClass( 'is-hidden', hideHeight );
 			$( '.ml-gallery-gap-row' ).toggleClass( 'is-hidden', hideGap );
 			$( '.ml-show-in-modal-row' ).toggleClass( 'is-hidden', hideModal );
+			$( '.ml-carousel-frame-row' ).toggleClass( 'is-hidden', layout !== 'carousel' );
 		}
 
 		// Lightbox caption options ("Lightbox + Gallery", "Lightbox Only") only
