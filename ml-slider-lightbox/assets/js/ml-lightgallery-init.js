@@ -46,7 +46,6 @@
         }
     };
 
-    // Set by initMetaSliderButtonMode so getButtonText() picks up the per-slider icon setting
     var _metasliderButtonSliderId = null;
 
     function escapeHtml(str) {
@@ -78,7 +77,6 @@
             'tabindex': '0'
         });
 
-        // Add keyboard support (Enter and Space keys)
         $overlay.on('keydown', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
@@ -98,7 +96,6 @@
         var altText = $img.attr('alt') || '';
         var ariaLabel = 'View image' + (altText ? ': ' + altText : '');
 
-        // Only add aria-label if link doesn't already have accessible text
         if (!$link.attr('aria-label') && !$link.text().trim()) {
             $link.attr('aria-label', ariaLabel);
         }
@@ -115,7 +112,6 @@
     }
 
     $(document).ready(function() {
-        // Create screen reader live region for announcements
         if ($('#ml-lightbox-sr-live').length === 0) {
             $('<div id="ml-lightbox-sr-live" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>')
                 .appendTo('body');
@@ -125,11 +121,9 @@
         removeConflictingAttributes();
         ensureAccessibleNames();
 
-        // Add lightGallery event listeners for screen reader announcements
         $(document).on('lgAfterOpen.lg', function(event) {
             var $lgContainer = $(event.target).find('.lg-container');
 
-            // Add accessible name to dialog
             if ($lgContainer.length > 0) {
                 var totalItems = $(event.target).find('[data-lg-item-id]').length;
                 var ariaLabel = totalItems > 1
@@ -158,11 +152,6 @@
             }
         });
 
-        // Caption transitions are CSS-driven (keyed to lightGallery's .lg-current
-        // state, like the official caption-animation demo). The mode is applied as
-        // an ml-cap-* class on .lg-container and the caption text is wrapped in
-        // .ml-caption-text at init — see applyGallerySettings / wrapMlCaptionText.
-
         $(document).on('lgBeforeClose.lg', function() {
             announceToScreenReader('Gallery closed');
         });
@@ -176,7 +165,6 @@
         var $liveRegion = $('#ml-lightbox-sr-live');
         if ($liveRegion.length > 0) {
             $liveRegion.text(message);
-            // Clear after a delay to allow for new announcements
             setTimeout(function() {
                 $liveRegion.text('');
             }, 1000);
@@ -204,36 +192,29 @@
      * Adds aria-label to links without accessible text
      */
     function ensureAccessibleNames() {
-        // Add aria-labels to all ml-lightbox-enabled links that wrap images
         $('.ml-lightbox-enabled').each(function() {
             var $link = $(this);
 
-            // Skip if link already has accessible text or aria-label
             if ($link.attr('aria-label') || $link.text().trim()) {
                 return;
             }
 
-            // Find image inside the link
             var $img = $link.find('img').first();
             if ($img.length > 0) {
-                // Ensure image has alt attribute
                 ensureImageAltAttribute($img);
                 addAccessibleNameToLink($link, $img);
             }
         });
 
-        // Also handle any links with data-src that might be lightbox links
         $('a[data-src]').each(function() {
             var $link = $(this);
 
-            // Skip if already processed or has accessible text
             if ($link.attr('aria-label') || $link.text().trim()) {
                 return;
             }
 
             var $img = $link.find('img').first();
             if ($img.length > 0) {
-                // Ensure image has alt attribute
                 ensureImageAltAttribute($img);
                 addAccessibleNameToLink($link, $img);
             }
@@ -246,20 +227,17 @@
      */
     function ensureImageAltAttribute($img) {
         if (typeof $img.attr('alt') === 'undefined') {
-            // Try to infer alt text from image filename
             var src = $img.attr('src') || '';
             var filename = src.split('/').pop().split('?')[0];
             var altText = '';
 
             if (filename) {
-                // Remove extension and convert dashes/underscores to spaces
                 altText = filename
                     .replace(/\.(jpg|jpeg|png|gif|webp|svg)$/i, '')
                     .replace(/[-_]/g, ' ')
                     .trim();
             }
 
-            // Set alt attribute (empty if we couldn't infer)
             $img.attr('alt', altText);
         }
     }
@@ -617,10 +595,6 @@
             });
         }
 
-        // Initialize [ml_gallery] shortcode containers.
-        // Uses getLightboxSettings(true) so gallery-specific options (counter,
-        // thumbnails strip, etc.) apply. Respects useButtonsForManual for
-        // consistent button/no-button behaviour across the plugin.
         // Note: pageExcluded does NOT gate gallery init — galleries are explicitly
         // placed by the user and are unaffected by Automatic Mode content filtering.
         {
@@ -643,10 +617,6 @@
                 var lgClass = $container.data('lg-class') || '';
                 if (lgClass) { settings.addClass = lgClass; }
 
-                // Caption transition (CSS state-driven, per the official demo):
-                // append the caption inside each slide item so .lg-current can
-                // scope it, pass the mode as an ml-cap-* class, and delay slides
-                // so the animation can play.
                 var captionTransition = $container.data('lg-caption-transition');
                 if (captionTransition && captionTransition !== 'none') {
                     settings.appendSubHtmlTo = '.lg-item';
@@ -665,7 +635,6 @@
                     settings.getCaptionFromTitleOrAlt = false;
                 }
 
-                // Thumbnails
                 var wantThumbs = !!parseInt($container.data('lg-thumbnails'), 10);
                 if (typeof lgThumbnail !== 'undefined') {
                     if (wantThumbs) {
@@ -683,7 +652,6 @@
                     settings.exThumbImage = 'data-thumb';
                 }
 
-                // Plugin toggles
                 if (!!parseInt($container.data('lg-zoom'), 10) && typeof lgZoom !== 'undefined') {
                     if (settings.plugins.indexOf(lgZoom) === -1) { settings.plugins.push(lgZoom); }
                 } else if (typeof lgZoom !== 'undefined') {
@@ -718,7 +686,6 @@
                     if (settings.plugins.indexOf(lgHash) === -1) { settings.plugins.push(lgHash); }
                 }
 
-                // Built-in behaviour
                 settings.swipeToClose = !!parseInt($container.data('lg-swipe-close'), 10);
                 settings.mousewheel   = !!parseInt($container.data('lg-mousewheel'), 10);
                 settings.keyPress     = !!parseInt($container.data('lg-keyboard'), 10);
@@ -770,7 +737,7 @@
                             plugins         : inlineLayoutPlugins[ mlLayout ],
                             hash            : false,
                             closable        : false,
-                            showMaximizeIcon: true,
+                            showMaximizeIcon: !!parseInt($container.data('lg-expand'), 10),
                             appendSubHtmlTo : '.lg-item',
                         }, $container);
 
@@ -799,46 +766,51 @@
                     var perIcon = $container.attr('data-ml-button-icon') === '1';
                     var perText = $container.attr('data-ml-button-text') || '';
 
-                    $container.find('a[data-src]').each(function() {
-                        var $a      = $(this);
-                        var dataSrc = $a.attr('data-src');
-                        var $img    = $a.find('img').first();
-                        var imgSrc  = $img.attr('src') || dataSrc;
-                        var alt     = $img.attr('alt') || '';
+                    // Re-runnable: processed anchors lose data-src, so a later call
+                    // only picks up items the Load More reveal just unhid.
+                    var ensureButtons = function() {
+                        // .not('.ml-lightbox-button'): the injected buttons are themselves
+                        // a[data-src], so a re-run would nest a button inside every button.
+                        $container.find('a[data-src]').not('.ml-item-hidden').not('.ml-lightbox-button').each(function() {
+                            var $a      = $(this);
+                            var dataSrc = $a.attr('data-src');
+                            var $img    = $a.find('img').first();
+                            var imgSrc  = $img.attr('src') || dataSrc;
+                            var alt     = $img.attr('alt') || '';
 
-                        var btnLabel;
-                        if (perIcon) {
-                            btnLabel = '<svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-                        } else {
-                            btnLabel = perText || 'Open in Gallery';
-                        }
+                            var btnLabel;
+                            if (perIcon) {
+                                btnLabel = '<svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+                            } else {
+                                btnLabel = perText || 'Open in Gallery';
+                            }
 
-                        var $btn = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-gallery" href="#">' + btnLabel + '</a>');
-                        $btn.attr({
-                            'data-src'  : dataSrc,
-                            'data-thumb': $a.attr('data-thumb') || imgSrc,
-                            'aria-label': mlLightboxSettings.view_image_label + (alt ? ': ' + alt : ''),
+                            var $btn = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-gallery" href="#">' + btnLabel + '</a>');
+                            $btn.attr({
+                                'data-src'  : dataSrc,
+                                'data-thumb': $a.attr('data-thumb') || imgSrc,
+                                'aria-label': mlLightboxSettings.view_image_label + (alt ? ': ' + alt : ''),
+                            });
+                            // The button becomes lightGallery's slide source (selector below),
+                            // so carry the caption over or it would be dropped.
+                            var subHtml = $a.attr('data-sub-html');
+                            if (subHtml) {
+                                $btn.attr('data-sub-html', subHtml);
+                            }
+                            $a.css('position', 'relative').append($btn);
+
+                            // Strip the wrapper link's own attributes so clicking the
+                            // image itself doesn't navigate to the image URL.
+                            $a.removeAttr('href').removeAttr('data-src').removeAttr('data-thumb');
                         });
-                        // The button becomes lightGallery's slide source (selector below),
-                        // so carry the caption over or it would be dropped.
-                        var subHtml = $a.attr('data-sub-html');
-                        if (subHtml) {
-                            $btn.attr('data-sub-html', subHtml);
-                        }
-                        $a.css('position', 'relative').append($btn);
-
-                        // Button mode: only the button should open the lightbox.
-                        // Strip the wrapper link's own attributes so clicking the
-                        // image itself doesn't navigate to the image URL.
-                        $a.removeAttr('href').removeAttr('data-src').removeAttr('data-thumb');
-                    });
+                    };
+                    ensureButtons();
+                    $container[0]._mlEnsureButtons = ensureButtons;
                     settings.selector = '.ml-lightbox-button';
                 } else {
-                    settings.selector = 'a[data-src]';
+                    settings.selector = 'a[data-src]:not(.ml-item-hidden)';
                 }
 
-                // Wrap caption text so the caption transition animates the text,
-                // not the bar. Only when a transition is active.
                 var galleryCaptionTransition = $container.data('lg-caption-transition');
                 if (galleryCaptionTransition && galleryCaptionTransition !== 'none') {
                     $container.find('a[data-sub-html]').each(function() {
@@ -897,7 +869,6 @@
                             'data-thumb': src
                         });
 
-                        // Add accessibility attributes
                         var altText = $img.attr('alt') || '';
                         addOverlayAccessibility($overlay, 'image', altText);
 
@@ -1072,7 +1043,6 @@
                         $overlay.attr('data-sub-html', caption);
                     }
 
-                    // Add accessibility attributes
                     var altText = $img.attr('alt') || '';
                     addOverlayAccessibility($overlay, 'image', altText);
 
@@ -1305,13 +1275,12 @@
             closeOnTap: true,
             controls: !!metasliderOptions.show_arrows,
             plugins: [],
-            // Accessibility settings
-            escapeKey: true,  // Allow Escape key to close lightbox
-            keyPress: true,    // Enable keyboard navigation (arrows, Esc)
-            mousewheel: true,  // Allow mousewheel navigation
-            allowMediaOverlap: false,  // Prevent overlap for better screen reader support
-            ariaLabelledby: '',  // Will be set dynamically per image
-            ariaDescribedby: ''  // Will be set dynamically per image
+            escapeKey: true,
+            keyPress: true,
+            mousewheel: true,
+            allowMediaOverlap: false,
+            ariaLabelledby: '',
+            ariaDescribedby: ''
         };
 
         // Feed WordPress-translated labels into lightGallery's built-in UI
@@ -1462,7 +1431,6 @@
                     'data-thumb': src
                 });
 
-                // Add accessibility attributes
                 var altText = $img.attr('alt') || '';
                 addOverlayAccessibility($overlay, 'image', altText);
 
@@ -1559,7 +1527,6 @@
             $overlay.attr('data-sub-html', caption);
         }
 
-        // Add accessibility attributes
         var altText = $img.attr('alt') || '';
         addOverlayAccessibility($overlay, 'image', altText);
 
@@ -1774,7 +1741,6 @@
 
         if (!href || !imgSrc) return;
 
-        // Get alt text for accessible name
         var altText = $img.attr('alt') || '';
         var ariaLabel = 'View image' + (altText ? ': ' + altText : '');
 
@@ -1811,7 +1777,6 @@
 
         if (!href || !imgSrc) return;
 
-        // Get alt text for accessible name
         var altText = $img.attr('alt') || '';
         var ariaLabel = 'View image' + (altText ? ': ' + altText : '');
 
@@ -1828,7 +1793,6 @@
             $button.attr('data-sub-html', caption);
         }
 
-        // Add aria-label to link as well
         $link.attr('aria-label', ariaLabel);
 
         $link.css('position', 'relative').append($button);
@@ -2143,7 +2107,6 @@
                     var $overlay = $('<a href="#" class="' + overlayClass + '"></a>');
                     $overlay.attr(dataAttributes.attrs);
 
-                    // Add accessibility attributes
                     var $img = $slide.find('img').first();
                     var altText = $img.length > 0 ? ($img.attr('alt') || '') : '';
                     addOverlayAccessibility($overlay, contentType, altText);

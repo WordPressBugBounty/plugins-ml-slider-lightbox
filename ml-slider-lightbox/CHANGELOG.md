@@ -1,6 +1,22 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+[2.37.0] - 20 Aug, 2026
+
+- ADDED: Load More button for large galleries, with a configurable batch size, on the Grid, Masonry and Justified layouts, #513;
+- ADDED: Image Order setting to sort images by newest, oldest, filename A to Z / Z to A or random, instead of drag-and-drop only, #424;
+- ADDED: Separate Gallery and Window image sizes, each with custom width, height and crop, #372, #561, #552, #553;
+- ADDED: Column settings for laptop and tablet, so galleries follow the same four breakpoints as MetaSlider, #397;
+- ADDED: Caption Position, Align, Background Opacity and Reveal on Hover controls, #559, #546, #547;
+- ADDED: Schema.org ImageGallery markup for gallery SEO, with a global setting to turn it off, #515;
+- ADDED: Expand toggle to hide the maximize button on the Carousel layout, #548;
+- CHANGED: Register the gallery lightbox settings through the 'metaslider_default_parameters' filter, #600;
+- CHANGED: The gallery preview now sizes to the gallery on the Carousel and Showcase layouts, instead of being cut off, #603;
+- CHANGED: Added a Pro promo for the Download Sizes feature in the Toolbar panel, #605;
+- FIXED: Images looked blurry on first view — the "Full" image size was overridden by the responsive srcset, #622;
+- FIXED: Link options did not show in the caption editor, #620;
+- FIXED: White area when switching from Arrange to Preview on a gallery that had not been saved yet, #623;
+
 [2.36.0] - 4 Aug, 2026
 
 - ADDED: Frame Border setting for the Carousel layout, so the frame stays visible when the carousel background matches the page, #550;

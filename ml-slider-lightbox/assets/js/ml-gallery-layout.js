@@ -1,18 +1,34 @@
 /* ML Gallery — justified layout calculation */
+
+/**
+ * Strip .ml-item-hidden from the next `batch` still-hidden items.
+ * Pure DOM mutation, no side effects beyond the class change, so the reveal
+ * handler stays testable. Falls back to 12 for a missing or unusable batch.
+ */
+function revealNextBatch( container, batch ) {
+	var size = parseInt( batch, 10 );
+	if ( isNaN( size ) || size < 1 ) {
+		size = 12;
+	}
+	var hidden   = Array.prototype.slice.call( container.querySelectorAll( 'a.ml-item-hidden' ) );
+	var revealed = hidden.slice( 0, size );
+	revealed.forEach( function ( a ) {
+		a.classList.remove( 'ml-item-hidden' );
+	} );
+	return { revealed: revealed, remaining: hidden.length - revealed.length };
+}
+
 ( function () {
 	'use strict';
 
 	function justify( container ) {
 		var gap       = parseFloat( getComputedStyle( container ).getPropertyValue( '--ml-gap' ) ) || 8;
 		var rowHeight = parseFloat( getComputedStyle( container ).getPropertyValue( '--ml-row-height' ) ) || 220;
-		// A tile is an anchor wrapping a gallery image, not simply any anchor. With
-		// "open in" set to button each item also carries an .ml-lightbox-button, and a
-		// caption may contain a link; packed as tiles those take the 4:3 fallback
-		// below, consume row width that belongs to real images, and are handed an
-		// inline width they never use.
 		var items     = Array.prototype.slice.call( container.querySelectorAll( 'a' ) )
 			.filter( function ( a ) {
-				return ! a.classList.contains( 'ml-lightbox-button' ) && !! a.querySelector( 'img' );
+					return ! a.classList.contains( 'ml-lightbox-button' )
+					&& ! a.classList.contains( 'ml-item-hidden' )
+					&& !! a.querySelector( 'img' );
 			} );
 		if ( ! items.length ) return;
 
@@ -50,6 +66,76 @@
 		flushRow( row, sumBaseWidth );
 	}
 
+	function justifyWhenLoaded( container ) {
+		var images = Array.prototype.slice.call( container.querySelectorAll( 'a:not(.ml-item-hidden) img' ) );
+		var loaded = 0;
+		var total  = images.length;
+
+		function onLoad() {
+			loaded++;
+			if ( loaded >= total ) justify( container );
+		}
+
+		if ( total === 0 ) {
+			justify( container );
+			return;
+		}
+
+		images.forEach( function ( img ) {
+			if ( img.complete && img.naturalWidth ) {
+				onLoad();
+			} else {
+				img.addEventListener( 'load',  onLoad );
+				img.addEventListener( 'error', onLoad );
+			}
+		} );
+	}
+
+	function initLoadMore( button ) {
+		var container = document.getElementById( button.getAttribute( 'aria-controls' ) );
+		if ( ! container ) return;
+		var wrap   = button.parentNode;
+		var status = wrap.querySelector( '.ml-load-more-status' );
+
+		button.addEventListener( 'click', function () {
+			var result = revealNextBatch( container, button.getAttribute( 'data-ml-batch' ) );
+			if ( ! result.revealed.length ) return;
+
+			// Must run before refresh: this is what strips href/data-src from the
+			// wrapper anchors, so a revealed-but-unprocessed item would navigate
+			// to the raw image instead of opening the gallery window.
+			if ( typeof container._mlEnsureButtons === 'function' ) {
+				container._mlEnsureButtons();
+			}
+
+			if ( container.getAttribute( 'data-ml-layout' ) === 'justified' ) {
+				justifyWhenLoaded( container );
+			}
+
+			if ( container._mlLgInstance && typeof container._mlLgInstance.refresh === 'function' ) {
+				container._mlLgInstance.refresh();
+			}
+
+			if ( status ) {
+				var template = status.getAttribute( 'data-ml-status-template' ) || '%1$d more images loaded, %2$d remaining';
+				status.textContent = template
+					.replace( '%1$d', result.revealed.length )
+					.replace( '%2$d', result.remaining );
+			}
+
+			if ( ! result.remaining ) {
+				// Only the button goes — the status span has to survive to carry
+				// the final announcement to a screen reader.
+				wrap.removeChild( button );
+				var first = result.revealed[ 0 ];
+				if ( first ) {
+					first.setAttribute( 'tabindex', '-1' );
+					first.focus();
+				}
+			}
+		} );
+	}
+
 	function initShowcase( container ) {
 		var links        = Array.prototype.slice.call( container.querySelectorAll( 'a[data-src]' ) );
 		var showThumbs   = container.getAttribute( 'data-lg-thumbnails' ) === '1';
@@ -63,7 +149,6 @@
 		var slideMode         = container.getAttribute( 'data-lg-mode' ) || 'lg-fade';
 		var captionTransition = container.getAttribute( 'data-lg-caption-transition' ) || 'none';
 
-		// Stage
 		var stage    = document.createElement( 'div' );
 		stage.className = 'ml-showcase-stage';
 		var stageImg = document.createElement( 'img' );
@@ -71,9 +156,6 @@
 		stageImg.alt = '';
 		stage.appendChild( stageImg );
 
-		// Caption overlay on the stage, shown only when the gallery surface is
-		// enabled (container carries ml-has-thumb-captions). Populated per slide
-		// in goTo() from the source item's hidden .ml-gallery-caption span.
 		var showCaption = container.classList.contains( 'ml-has-thumb-captions' );
 		var captionEl   = null;
 		if ( showCaption ) {
@@ -92,7 +174,6 @@
 			}
 		}, true );
 
-		// Thumbnail strip (optional)
 		var thumbItems = [];
 		var thumbStrip = null;
 		if ( showThumbs ) {
@@ -113,7 +194,6 @@
 			} );
 		}
 
-		// Nav bar: arrows and/or slide counter (omitted entirely when both are off)
 		var nav       = null;
 		var prevBtn   = null;
 		var nextBtn   = null;
@@ -146,7 +226,6 @@
 			}
 		}
 
-		// Pager dots
 		var pagerEl   = null;
 		var pagerDots = [];
 		if ( showPager ) {
@@ -163,7 +242,6 @@
 			} );
 		}
 
-		// Insert: stage → thumbs (if any) → nav (if any) → pager (if any)
 		container.insertBefore( stage, container.firstChild );
 		var lastInserted = stage;
 		if ( thumbStrip ) {
@@ -178,8 +256,6 @@
 			container.insertBefore( pagerEl, lastInserted.nextSibling );
 		}
 
-		// Animate the image change, honoring the gallery Transition (mode) setting.
-		// The incoming image animates in over the current one, then becomes the base.
 		function animateImage( newSrc, newAlt, dir ) {
 			var stale = stage.querySelector( '.ml-showcase-incoming' );
 			if ( stale && stale.parentNode ) { stale.parentNode.removeChild( stale ); }
@@ -241,8 +317,6 @@
 				var capHtml    = srcCaption ? srcCaption.innerHTML : '';
 				captionEl.innerHTML     = capHtml;
 				captionEl.style.display = capHtml ? '' : 'none';
-				// Re-trigger the caption animation, honoring the Caption Transition
-				// setting. captionEl is stable here, so reflow re-trigger is reliable.
 				if ( capHtml && captionTransition !== 'none' ) {
 					captionEl.classList.remove( 'ml-showcase-cap-' + captionTransition );
 					void captionEl.offsetWidth;
@@ -256,39 +330,15 @@
 	}
 
 	function init() {
-		// Showcase layout
 		document.querySelectorAll( '.ml-layout-showcase[data-ml-layout]' ).forEach( initShowcase );
 
-		// Justified layout
+		document.querySelectorAll( '.ml-load-more' ).forEach( initLoadMore );
+
 		var containers = document.querySelectorAll( '.ml-layout-justified[data-ml-layout]' );
 		if ( ! containers.length ) return;
 
-		containers.forEach( function ( container ) {
-			var images  = Array.prototype.slice.call( container.querySelectorAll( 'img' ) );
-			var loaded  = 0;
-			var total   = images.length;
+		containers.forEach( justifyWhenLoaded );
 
-			function onLoad() {
-				loaded++;
-				if ( loaded >= total ) justify( container );
-			}
-
-			if ( total === 0 ) {
-				justify( container );
-				return;
-			}
-
-			images.forEach( function ( img ) {
-				if ( img.complete && img.naturalWidth ) {
-					onLoad();
-				} else {
-					img.addEventListener( 'load',  onLoad );
-					img.addEventListener( 'error', onLoad );
-				}
-			} );
-		} );
-
-		// Re-justify on resize, only when the rounded width actually changes.
 		if ( typeof ResizeObserver !== 'undefined' ) {
 			var scheduled = false;
 			var ro = new ResizeObserver( function ( entries ) {
@@ -314,3 +364,7 @@
 		init();
 	}
 } )();
+
+if ( typeof module !== 'undefined' && module.exports ) {
+	module.exports = { revealNextBatch: revealNextBatch };
+}

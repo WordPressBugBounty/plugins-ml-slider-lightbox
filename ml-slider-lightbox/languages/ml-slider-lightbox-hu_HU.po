@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-08-04 11:59+0000\n"
+"PO-Revision-Date: 2026-08-20 14:06+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -80,23 +80,23 @@ msgstr "A kért adat nem létezik."
 msgid "The attempt to update the option failed."
 msgstr "A lehetőség frissítésére tett kísérlet nem sikerült."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1247
-#: class-ml-gallery.php:3374 class-ml-slider-lightbox.php:2142
-#: class-ml-slider-lightbox.php:2285
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1441
+#: class-ml-gallery.php:3939 class-ml-slider-lightbox.php:2168
+#: class-ml-slider-lightbox.php:2311
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:222
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:228
 msgid "Dismiss"
 msgstr "Elvetés"
 
-#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1189
-#: class-ml-slider-lightbox.php:2322 class-ml-slider-lightbox.php:2337
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1380
+#: class-ml-slider-lightbox.php:2346 class-ml-slider-lightbox.php:2361
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Nincs elegendő jogosultsága az oldal megtekintéséhez."
 
-#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2283
-#: class-ml-gallery.php:2447
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2693
+#: class-ml-gallery.php:2877
 msgid "Security check failed."
 msgstr "A biztonsági ellenőrzés meghiúsult."
 
@@ -104,7 +104,7 @@ msgstr "A biztonsági ellenőrzés meghiúsult."
 msgid "Slideshow not found."
 msgstr "Az diavetítés nem található."
 
-#: class-ml-gallery-slideshow-convert.php:73
+#: class-ml-gallery-slideshow-convert.php:70
 msgid ""
 "This slideshow has no saved images to convert. Save the slideshow, then try "
 "again."
@@ -112,208 +112,292 @@ msgstr ""
 "Ennek a diavetítésnek nincsenek mentett képei a konvertáláshoz. Mentse el a "
 "diavetítést, majd próbálkozzon újra."
 
-#: class-ml-gallery-slideshow-convert.php:78
+#: class-ml-gallery-slideshow-convert.php:75
 msgid "Untitled Slideshow"
 msgstr "Cím nélküli diavetítés"
 
-#: class-ml-gallery.php:113
+#: class-ml-gallery.php:112
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "Ezek a funkciók a MetaSlider Gallery Pro-ban érhetők el"
 
-#: class-ml-gallery.php:222 class-ml-gallery.php:231 class-ml-gallery.php:615
+#: class-ml-gallery.php:126
+msgid "Thumbnail"
+msgstr "Miniatűr"
+
+#: class-ml-gallery.php:127 class-ml-gallery.php:2531
+msgid "Medium"
+msgstr "Közepes"
+
+#: class-ml-gallery.php:128
+msgid "Medium Large"
+msgstr "Közepesen Nagy"
+
+#: class-ml-gallery.php:129
+msgid "Large"
+msgstr "Nagy"
+
+#: class-ml-gallery.php:155
+msgid "Original"
+msgstr "Eredeti"
+
+#: class-ml-gallery.php:161
+msgid ""
+"Offer visitors a choice of image sizes when they download. Requires "
+"MetaSlider Gallery Pro."
+msgstr ""
+"Ajánljon a látogatóknak választási lehetőséget a képméretek között, amikor "
+"letöltik. A MetaSlider Gallery Pro szükséges."
+
+#: class-ml-gallery.php:162
+msgid "Download Sizes"
+msgstr "Letöltési méretek"
+
+#: class-ml-gallery.php:163
+msgid "Download sizes require MetaSlider Gallery Pro"
+msgstr "A letöltési méretekhez a MetaSlider Gallery Pro szükséges"
+
+#: class-ml-gallery.php:298 class-ml-gallery.php:307 class-ml-gallery.php:817
 msgid "Fade"
 msgstr "Elhalványítás"
 
-#: class-ml-gallery.php:223
+#: class-ml-gallery.php:299
 msgid "Slide"
 msgstr "Diavetítés"
 
-#: class-ml-gallery.php:224 class-ml-gallery.php:1838
+#: class-ml-gallery.php:300 class-ml-gallery.php:2249
 msgid "Zoom"
 msgstr "Nagyítás"
 
-#: class-ml-gallery.php:230 class-ml-gallery.php:607 class-ml-gallery.php:2119
-#: class-ml-gallery.php:2145 class-ml-gallery.php:2159
+#: class-ml-gallery.php:306 class-ml-gallery.php:809 class-ml-gallery.php:2529
+#: class-ml-gallery.php:2555 class-ml-gallery.php:2569
 msgid "None"
 msgstr "Nincs"
 
-#: class-ml-gallery.php:232
+#: class-ml-gallery.php:308
 msgid "Slide Up"
 msgstr "Feljebb csúsztatás"
 
-#: class-ml-gallery.php:233
+#: class-ml-gallery.php:309
 msgid "Slide Down"
 msgstr "Lent csúsztatás"
 
-#: class-ml-gallery.php:247
+#: class-ml-gallery.php:315
+msgid "Bottom"
+msgstr "Alul"
+
+#: class-ml-gallery.php:316
+msgid "Middle"
+msgstr "Középen"
+
+#: class-ml-gallery.php:317
+msgid "Top"
+msgstr "Felül"
+
+#: class-ml-gallery.php:323
+msgid "Left"
+msgstr "Balra"
+
+#: class-ml-gallery.php:324 class-ml-gallery.php:2069
+msgid "Center"
+msgstr "Középen"
+
+#: class-ml-gallery.php:325
+msgid "Right"
+msgstr "Jobbra"
+
+#: class-ml-gallery.php:339
 msgid "Hidden"
 msgstr "Rejtett"
 
-#: class-ml-gallery.php:248
+#: class-ml-gallery.php:340
 msgid "Gallery + Window"
 msgstr "Galéria + Ablak"
 
-#: class-ml-gallery.php:249
+#: class-ml-gallery.php:341
 msgid "Window Only"
 msgstr "Csak Ablak"
 
-#: class-ml-gallery.php:250
+#: class-ml-gallery.php:342
 msgid "Gallery Only"
 msgstr "Csak Galéria"
 
-#: class-ml-gallery.php:269 class-ml-gallery.php:2857
+#: class-ml-gallery.php:361 class-ml-gallery.php:3329
 msgid "Manual entry"
 msgstr "Kézi bevitel"
 
-#: class-ml-gallery.php:270 class-ml-gallery.php:2858
+#: class-ml-gallery.php:362 class-ml-gallery.php:3330
 msgid "Media caption"
 msgstr "Média felirat"
 
-#: class-ml-gallery.php:271 class-ml-gallery.php:2859
+#: class-ml-gallery.php:363 class-ml-gallery.php:3331
 msgid "Media description"
 msgstr "Média leírás"
 
-#: class-ml-gallery.php:608
+#: class-ml-gallery.php:639
+msgid "Drag-and-drop"
+msgstr "Húzás és ejtés"
+
+#: class-ml-gallery.php:640
+msgid "Newest First"
+msgstr "Legújabbak először"
+
+#: class-ml-gallery.php:641
+msgid "Oldest First"
+msgstr "Legrégebbiek először"
+
+#: class-ml-gallery.php:642
+msgid "A to Z (by filename)"
+msgstr "A-tól Z-ig (fájlnév szerint)"
+
+#: class-ml-gallery.php:643
+msgid "Z to A (by filename)"
+msgstr "Z-től A-ig (fájlnév szerint)"
+
+#: class-ml-gallery.php:644
+msgid "Random"
+msgstr "Véletlenszerű"
+
+#: class-ml-gallery.php:810
 msgid "Noir (B&W)"
 msgstr "Noir (Fekete & Fehér)"
 
-#: class-ml-gallery.php:609
+#: class-ml-gallery.php:811
 msgid "Silver (B&W)"
 msgstr "Ezüst (Fekete & Fehér)"
 
-#: class-ml-gallery.php:610, fuzzy
+#: class-ml-gallery.php:812, fuzzy
 msgid "Vintage"
 msgstr "Vintage"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:813
 msgid "Golden Hour"
 msgstr "Arany óra"
 
-#: class-ml-gallery.php:612
+#: class-ml-gallery.php:814
 msgid "Toaster"
 msgstr "Toast"
 
-#: class-ml-gallery.php:613
+#: class-ml-gallery.php:815
 msgid "Warm"
 msgstr "Meleg"
 
-#: class-ml-gallery.php:614
+#: class-ml-gallery.php:816
 msgid "Cool"
 msgstr "Hűvös"
 
-#: class-ml-gallery.php:616
+#: class-ml-gallery.php:818
 msgid "Matte"
 msgstr "Matt"
 
-#: class-ml-gallery.php:617
+#: class-ml-gallery.php:819
 msgid "Pastel"
 msgstr "Pasztell"
 
-#: class-ml-gallery.php:618
+#: class-ml-gallery.php:820
 msgid "Vivid"
 msgstr "Élénk"
 
-#: class-ml-gallery.php:619
+#: class-ml-gallery.php:821
 msgid "Crisp"
 msgstr "Éles"
 
-#: class-ml-gallery.php:620
+#: class-ml-gallery.php:822
 msgid "Dramatic"
 msgstr "Drámai"
 
-#: class-ml-gallery.php:621
+#: class-ml-gallery.php:823
 msgid "Negative"
 msgstr "Negatív"
 
-#: class-ml-gallery.php:734 class-ml-gallery.php:743 class-ml-gallery.php:1257
+#: class-ml-gallery.php:929 class-ml-gallery.php:938 class-ml-gallery.php:1451
 msgid "Galleries"
 msgstr "Galériák"
 
-#: class-ml-gallery.php:735 class-ml-gallery.php:884 class-ml-gallery.php:1588
-#: class-ml-slider-lightbox.php:2281
+#: class-ml-gallery.php:930 class-ml-gallery.php:1079 class-ml-gallery.php:1899
+#: class-ml-slider-lightbox.php:2307
 msgid "Gallery"
 msgstr "Galéria"
 
-#: class-ml-gallery.php:736 class-ml-gallery.php:737 class-ml-gallery.php:1222
-#: class-ml-gallery.php:3368
+#: class-ml-gallery.php:931 class-ml-gallery.php:932 class-ml-gallery.php:1416
+#: class-ml-gallery.php:3933
 msgid "Add New Gallery"
 msgstr "Új Galéria hozzáadása"
 
-#: class-ml-gallery.php:738 class-ml-gallery.php:1137 class-ml-gallery.php:1138
-#: class-ml-gallery.php:1223
+#: class-ml-gallery.php:933 class-ml-gallery.php:1328 class-ml-gallery.php:1329
+#: class-ml-gallery.php:1417
 msgid "Edit Gallery"
 msgstr "Galéria szerkesztése"
 
-#: class-ml-gallery.php:739 class-ml-gallery.php:1200 class-ml-gallery.php:2496
+#: class-ml-gallery.php:934 class-ml-gallery.php:1391 class-ml-gallery.php:2926
 msgid "New Gallery"
 msgstr "Új Galéria"
 
-#: class-ml-gallery.php:740
+#: class-ml-gallery.php:935
 msgid "Search Galleries"
 msgstr "Galériák keresése"
 
-#: class-ml-gallery.php:741
+#: class-ml-gallery.php:936
 msgid "No galleries found."
 msgstr "Nincsenek galériák."
 
-#: class-ml-gallery.php:742
+#: class-ml-gallery.php:937
 msgid "No galleries found in trash."
 msgstr "Nincsenek galériák a kukában."
 
-#: class-ml-gallery.php:891
+#: class-ml-gallery.php:1086
 msgid "All Galleries"
 msgstr "Minden galéria"
 
-#: class-ml-gallery.php:898
+#: class-ml-gallery.php:1093
 msgid "Create Gallery"
 msgstr "Galéria létrehozása"
 
-#: class-ml-gallery.php:908
+#: class-ml-gallery.php:1103
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "Szerkesztés &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:926
+#: class-ml-gallery.php:1134
 msgid "Invalid gallery ID."
 msgstr "Érvénytelen galériaazonosító."
 
-#: class-ml-gallery.php:1030 class-ml-slider-lightbox.php:1655
+#: class-ml-gallery.php:1211 class-ml-slider-lightbox.php:1681
 msgid "View image"
 msgstr "Kép megtekintése"
 
-#: class-ml-gallery.php:1197 class-ml-gallery.php:2452
+#: class-ml-gallery.php:1388 class-ml-gallery.php:2882
 msgid "Gallery not found."
 msgstr "Galéria nem található."
 
-#: class-ml-gallery.php:1225
+#: class-ml-gallery.php:1419
 msgid "Save Gallery"
 msgstr "Galéria mentése"
 
-#: class-ml-gallery.php:1226
+#: class-ml-gallery.php:1420
 msgid "Update Gallery"
 msgstr "Galéria frissítése"
 
-#: class-ml-gallery.php:1241 class-ml-gallery.php:1253
+#: class-ml-gallery.php:1435 class-ml-gallery.php:1447
 msgid "Back to Galleries"
 msgstr "Vissza a Galériákhoz"
 
-#: class-ml-gallery.php:1264
+#: class-ml-gallery.php:1458
 msgid "Create New Gallery"
 msgstr "Új galéria létrehozása"
 
-#: class-ml-gallery.php:1268
+#: class-ml-gallery.php:1462
 msgid "New"
 msgstr "Új"
 
-#: class-ml-gallery.php:1279
+#: class-ml-gallery.php:1473
 msgid "Duplicate"
 msgstr "Másolat"
 
-#: class-ml-gallery.php:1299
+#: class-ml-gallery.php:1494
 msgid "Gallery saved."
 msgstr "Galéria mentve."
 
-#: class-ml-gallery.php:1310
+#: class-ml-gallery.php:1510
 #, php-format
 msgid ""
 "Gallery created from the slideshow \"%s\". Review the settings below, then "
@@ -322,236 +406,309 @@ msgstr ""
 "Galéria létrehozva a \"%s\" diavetítésből. Ellenőrizze az alábbi "
 "beállításokat, majd mentse el."
 
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1514
 msgid "Gallery created from your slideshow. Review the settings below, then save."
 msgstr ""
 "Galéria létrehozva a diavetítéséből. Ellenőrizze az alábbi beállításokat, "
 "majd mentse el."
 
-#: class-ml-gallery.php:1328
+#: class-ml-gallery.php:1528
 msgid "Enter gallery title"
 msgstr "Adja meg a galéria címét"
 
-#: class-ml-gallery.php:1331 class-ml-gallery.php:3820
+#: class-ml-gallery.php:1531 class-ml-gallery.php:2075
+#: class-ml-gallery.php:4384
 msgid "Images"
 msgstr "Képek"
 
-#: class-ml-gallery.php:1341
+#: class-ml-gallery.php:1541
 msgid "Preview or arrange images"
 msgstr "Képek előnézete vagy rendezése"
 
-#: class-ml-gallery.php:1344 class-ml-gallery.php:3733
+#: class-ml-gallery.php:1544 class-ml-gallery.php:4297
 msgid "Preview"
 msgstr "Előnézet"
 
-#: class-ml-gallery.php:1348
+#: class-ml-gallery.php:1548
 msgid "Arrange"
 msgstr "Rendezés"
 
-#: class-ml-gallery.php:1351
-msgid "Preview at desktop or mobile width"
-msgstr "Előnézet asztali vagy mobil szélességnél"
-
-#: class-ml-gallery.php:1352
+#: class-ml-gallery.php:1555
 msgid "Desktop width"
 msgstr "Asztali szélesség"
 
-#: class-ml-gallery.php:1355
+#: class-ml-gallery.php:1559
+msgid "Laptop width"
+msgstr "Laptop szélesség"
+
+#: class-ml-gallery.php:1563
+msgid "Tablet width"
+msgstr "Tablet szélesség"
+
+#: class-ml-gallery.php:1567
 msgid "Mobile width"
 msgstr "Mobil szélesség"
 
-#: class-ml-gallery.php:1362
+#: class-ml-gallery.php:1571
+msgid "Preview at desktop, laptop, tablet or mobile width"
+msgstr "Előnézet asztali számítógépen, laptopon, táblagépen vagy mobil szélességen"
+
+#: class-ml-gallery.php:1584 class-ml-gallery.php:3324
+msgid "Order is randomised for each visitor."
+msgstr "A sorrend véletlenszerű minden látogató számára."
+
+#: class-ml-gallery.php:1588 class-ml-gallery.php:3323
+#, php-format
+msgid "Sorted %s — switch to Drag-and-drop to reorder."
+msgstr "Rendezve %s — váltson a Húzd és ejtsd módra a sorrend megváltoztatásához."
+
+#: class-ml-gallery.php:1596
 msgid "No images added yet"
 msgstr "Még nincs hozzáadva kép"
 
-#: class-ml-gallery.php:1385 class-ml-gallery.php:2851
+#: class-ml-gallery.php:1624 class-ml-gallery.php:3319
 msgid "Remove image"
 msgstr "Kép eltávolítása"
 
-#: class-ml-gallery.php:1390 class-ml-gallery.php:2852
+#: class-ml-gallery.php:1629 class-ml-gallery.php:3320
 msgid "Edit caption"
 msgstr "Felirat szerkesztése"
 
-#: class-ml-gallery.php:1390 class-ml-gallery.php:1392
-#: class-ml-gallery.php:2853
+#: class-ml-gallery.php:1629 class-ml-gallery.php:1631
+#: class-ml-gallery.php:3321
 msgid "Add caption"
 msgstr "Felirat hozzáadása"
 
-#: class-ml-gallery.php:1402
+#: class-ml-gallery.php:1641
 msgid "Gallery preview"
 msgstr "Galéria előnézete"
 
-#: class-ml-gallery.php:1408
+#: class-ml-gallery.php:1647
 msgid "Add Images"
 msgstr "Képek hozzáadása"
 
-#: class-ml-gallery.php:1412
+#: class-ml-gallery.php:1651
 msgid "More ways to add images"
 msgstr "További módok képek hozzáadására"
 
-#: class-ml-gallery.php:1418
+#: class-ml-gallery.php:1657
 msgid "Upload"
 msgstr "Feltöltés"
 
-#: class-ml-gallery.php:1423
+#: class-ml-gallery.php:1662
 msgid "Media Library"
 msgstr "Média könyvtár"
 
-#: class-ml-gallery.php:1428
+#: class-ml-gallery.php:1667
 msgid "Server Folder"
 msgstr "Szerver mappa"
 
-#: class-ml-gallery.php:1433, fuzzy
+#: class-ml-gallery.php:1672, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1439
+#: class-ml-gallery.php:1679
 msgid "Where to add new images"
 msgstr "Új képek hozzáadásának helye"
 
-#: class-ml-gallery.php:1440
+#: class-ml-gallery.php:1680
 msgid "Add new images at:"
 msgstr "Új képek hozzáadása itt:"
 
-#: class-ml-gallery.php:1444
+#: class-ml-gallery.php:1684
 msgid "Start"
 msgstr "Kezdés"
 
-#: class-ml-gallery.php:1449
+#: class-ml-gallery.php:1689
 msgid "End"
 msgstr "Befejezés"
 
-#: class-ml-gallery.php:1458
+#: class-ml-gallery.php:1696
+msgid ""
+"The order images appear in on your site. Random reshuffles for each "
+"visitor, which page caching can defeat."
+msgstr ""
+"A képek sorrendje, ahogyan megjelennek az oldaladon. Véletlenszerű "
+"átrendezés minden látogató számára, amit az oldal gyorsítótárazás "
+"felülírhat."
+
+#: class-ml-gallery.php:1696
+msgid "Image Order:"
+msgstr "Kép sorrend:"
+
+#: class-ml-gallery.php:1710
 msgid "Layout"
 msgstr "Elrendezés"
 
-#: class-ml-gallery.php:1461
+#: class-ml-gallery.php:1713
 msgid "Gallery layout"
 msgstr "Galéria elrendezés"
 
-#: class-ml-gallery.php:1463
+#: class-ml-gallery.php:1715
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "Egyenlő méretű képek, amelyek rögzített rácsban vannak elrendezve"
 
-#: class-ml-gallery.php:1473 class-ml-gallery.php:3736
+#: class-ml-gallery.php:1725 class-ml-gallery.php:4300
 msgid "Grid"
 msgstr "Rács"
 
-#: class-ml-gallery.php:1477
+#: class-ml-gallery.php:1729
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "A képek természetes magasságúak, téglafal módjára illeszkednek egymáshoz"
 
-#: class-ml-gallery.php:1487 class-ml-gallery.php:3735, fuzzy
+#: class-ml-gallery.php:1739 class-ml-gallery.php:4299, fuzzy
 msgid "Masonry"
 msgstr "Masonry"
 
-#: class-ml-gallery.php:1491
+#: class-ml-gallery.php:1743
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr "A képek méretezve, hogy minden sor széle szélén legyen, egységes magassággal"
 
-#: class-ml-gallery.php:1503 class-ml-gallery.php:3737
+#: class-ml-gallery.php:1755 class-ml-gallery.php:4301
 msgid "Justified"
 msgstr "Igazított"
 
-#: class-ml-gallery.php:1507
+#: class-ml-gallery.php:1759
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "A képek egyesével jelennek meg, egy görgethető diavetítésben"
 
-#: class-ml-gallery.php:1516
+#: class-ml-gallery.php:1768
 msgid "Carousel"
 msgstr "Körforgás"
 
-#: class-ml-gallery.php:1520
+#: class-ml-gallery.php:1772
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "Nagy fő kép görgethető miniatűr sávval alatta"
 
-#: class-ml-gallery.php:1530
+#: class-ml-gallery.php:1782
 msgid "Showcase"
 msgstr "Kiállítás"
 
-#: class-ml-gallery.php:1542
-msgid "Number of columns to show on desktop screens"
-msgstr "Osztályok száma, amelyeket a számítógépes képernyőkön meg kell jeleníteni"
+#: class-ml-gallery.php:1797
+msgid "Desktop"
+msgstr "Asztali számítógép"
 
-#: class-ml-gallery.php:1542
+#: class-ml-gallery.php:1798
+msgid "Number of columns on desktop screens (1440px and wider)"
+msgstr "Oszlopok száma asztali képernyőkön (1440px és szélesebbek)"
+
+#: class-ml-gallery.php:1804, fuzzy
+msgid "Laptop"
+msgstr "Laptop"
+
+#: class-ml-gallery.php:1805
+msgid "Number of columns on laptops (1024px to 1439px)"
+msgstr "Oszlopok száma laptopokon (1024px-től 1439px-ig)"
+
+#: class-ml-gallery.php:1811
+msgid "Tablet"
+msgstr "Táblagép"
+
+#: class-ml-gallery.php:1812
+msgid "Number of columns on tablets (768px to 1023px)"
+msgstr "Oszlopok száma táblagépeken (768px-től 1023px-ig)"
+
+#: class-ml-gallery.php:1818
+msgid "Mobile"
+msgstr "Mobil"
+
+#: class-ml-gallery.php:1819
+msgid "Number of columns on phones (up to 767px)"
+msgstr "Oszlopok száma telefonokon (767px-ig)"
+
+#: class-ml-gallery.php:1826
+msgid "Number of columns to show at each screen size"
+msgstr "Oszlopok száma, amelyeket minden képernyőméret esetén meg kell jeleníteni"
+
+#: class-ml-gallery.php:1826
 msgid "Columns"
 msgstr "Oszlopok"
 
-#: class-ml-gallery.php:1551
-msgid "Number of columns to show on phones and small screens"
-msgstr ""
-"Osztályok száma, amelyeket telefonokon és kis képernyőkön meg kell "
-"jeleníteni"
-
-#: class-ml-gallery.php:1551
-msgid "Columns (mobile)"
-msgstr "Osztályok (mobil)"
-
-#: class-ml-gallery.php:1560
+#: class-ml-gallery.php:1845
 msgid "Height of the gallery images, in pixels"
 msgstr "A galéria képeinek magassága, pixelben"
 
-#: class-ml-gallery.php:1561
+#: class-ml-gallery.php:1846
 msgid "Height"
 msgstr "Magasság"
 
-#: class-ml-gallery.php:1573
+#: class-ml-gallery.php:1858
 msgid "Space between images"
 msgstr "Tér a képek között"
 
-#: class-ml-gallery.php:1574
+#: class-ml-gallery.php:1859
 msgid "Gap"
 msgstr "Rés"
 
-#: class-ml-gallery.php:1592
+#: class-ml-gallery.php:1875
+msgid ""
+"Show only the first batch of images, with a button that reveals more. "
+"Applies to Grid, Masonry, and Justified layouts."
+msgstr ""
+"Csak az első képszettet jelenítse meg, egy gombbal, amely több képet tár "
+"fel. Érvényes a Rács, Tégla és Igazított elrendezésekre."
+
+#: class-ml-gallery.php:1875 class-ml-gallery.php:3782
+msgid "Load More"
+msgstr "Továbbiak betöltése"
+
+#: class-ml-gallery.php:1888
+msgid "How many images to show at first, and how many each press of the button adds"
+msgstr "Hány képet mutasson elsőként, és hányat ad hozzá a gomb minden megnyomása"
+
+#: class-ml-gallery.php:1888
+msgid "Images per batch"
+msgstr "Képek száma egy szettben"
+
+#: class-ml-gallery.php:1903
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "A zoom vezérlők a MetaSlider Gallery Pro-t igénylik"
 
-#: class-ml-gallery.php:1593
+#: class-ml-gallery.php:1904
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "A teljes képernyős mód a MetaSlider Gallery Pro-t igényli"
 
-#: class-ml-gallery.php:1594
+#: class-ml-gallery.php:1905
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "A kép forgatása a MetaSlider Gallery Pro-t igényli"
 
-#: class-ml-gallery.php:1595
+#: class-ml-gallery.php:1906
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "Az automatikus lejátszás a MetaSlider Gallery Pro-t igényli"
 
-#: class-ml-gallery.php:1596
+#: class-ml-gallery.php:1907
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "A közösségi megosztás a MetaSlider Gallery Pro-t igényli"
 
-#: class-ml-gallery.php:1597
+#: class-ml-gallery.php:1908
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "A Pager a MetaSlider Gallery Pro-t igényli"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:1909
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "Az egyedi kép URL-ek a MetaSlider Gallery Pro-t igénylik"
 
-#: class-ml-gallery.php:1599
+#: class-ml-gallery.php:1910
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "A képek védelméhez a MetaSlider Gallery Pro szükséges"
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:1914
 msgid "Show left and right navigation arrows"
 msgstr "Bal és jobb navigációs nyilak megjelenítése"
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:1915
 msgid "Display the current image number and total count"
 msgstr "Jelenlegi kép száma és összes szám megjelenítése"
 
-#: class-ml-gallery.php:1605
+#: class-ml-gallery.php:1916
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "Kis képek csíkjának megjelenítése a galéria alján"
 
-#: class-ml-gallery.php:1606
+#: class-ml-gallery.php:1917
 msgid "Show dot navigation area below each image."
 msgstr "Pont navigációs terület megjelenítése minden kép alatt."
 
-#: class-ml-gallery.php:1607
+#: class-ml-gallery.php:1918
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -560,11 +717,11 @@ msgstr ""
 "kicsinyítéséhez. A nagyítás vezérlő csak akkor jelenik meg, ha az eredeti "
 "méret nagyobb, mint a galéria mérete."
 
-#: class-ml-gallery.php:1608
+#: class-ml-gallery.php:1919
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "Bővítse a galéria ablakát, hogy kitöltse az egész képernyőt."
 
-#: class-ml-gallery.php:1609
+#: class-ml-gallery.php:1920
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
@@ -572,19 +729,19 @@ msgstr ""
 "A felhasználók balra vagy jobbra forgathatják a képeket, és függőlegesen "
 "vagy vízszintesen is megfordíthatják őket."
 
-#: class-ml-gallery.php:1610
+#: class-ml-gallery.php:1921
 msgid "Automatically advance through the images without the user clicking."
 msgstr ""
 "Automatikusan haladjon át a képeken anélkül, hogy a felhasználónak "
 "kattintania kellene."
 
-#: class-ml-gallery.php:1611
+#: class-ml-gallery.php:1922
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr ""
 "Engedje meg a felhasználóknak, hogy képeket osszanak meg a Facebookon, az "
 "X-en vagy a Pinteresten."
 
-#: class-ml-gallery.php:1612
+#: class-ml-gallery.php:1923
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
@@ -592,7 +749,7 @@ msgstr ""
 "Hozzon létre egyedi URL-t minden képhez, hogy lehetővé tegye a közvetlen "
 "hivatkozást a galérián belül."
 
-#: class-ml-gallery.php:1613 class-ml-slider-lightbox.php:4299
+#: class-ml-gallery.php:1924 class-ml-slider-lightbox.php:4360
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -600,27 +757,33 @@ msgstr ""
 "A véletlenszerű mentés megakadályozása érdekében tiltsa le a jobb "
 "kattintást, a húzást és a hosszú nyomást a galéria képein."
 
-#: class-ml-gallery.php:1614
+#: class-ml-gallery.php:1925
 msgid "Navigate images using left and right arrow keys"
 msgstr "Navigálj a képek között a bal és jobb nyíl billentyűk segítségével"
 
-#: class-ml-gallery.php:1615
+#: class-ml-gallery.php:1926
 msgid "Scroll through images using the mouse wheel"
 msgstr "Görgesd végig a képeket az egér görgőjével"
 
-#: class-ml-gallery.php:1616
+#: class-ml-gallery.php:1927
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "Fel és le húzva zárja be a galériát érintőképernyős eszközökön"
 
-#: class-ml-gallery.php:1617
+#: class-ml-gallery.php:1928
 msgid "Cycle back to the first image after reaching the last"
 msgstr "Térj vissza az első képre, miután elérted az utolsót"
 
-#: class-ml-gallery.php:1618
+#: class-ml-gallery.php:1929
 msgid "Show a download button for each image"
 msgstr "Letöltési gomb megjelenítése minden képhez"
 
-#: class-ml-gallery.php:1619
+#: class-ml-gallery.php:1930
+msgid "Show a button that expands the carousel to fill the browser window."
+msgstr ""
+"Mutasson egy gombot, amely kiterjeszti a karusszelt, hogy kitöltse a "
+"böngészőablakot."
+
+#: class-ml-gallery.php:1931
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
@@ -628,35 +791,72 @@ msgstr ""
 "Képek megnyitása egy ablak átfedésben, ha rákattintanak. A rács, a falazat "
 "és az igazított elrendezésekre vonatkozik."
 
-#: class-ml-gallery.php:1620
+#: class-ml-gallery.php:1932
 msgid "Show a button over the gallery that opens the gallery window when clicked."
 msgstr ""
 "Mutasson egy gombot a galéria felett, amely megnyitja a galéria ablakot, "
 "amikor rákattintanak."
 
-#: class-ml-gallery.php:1621
+#: class-ml-gallery.php:1933
 msgid "Show an icon on the button instead of text."
 msgstr "Mutasson egy ikont a gombon a szöveg helyett."
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1934
+msgid ""
+"Hide the caption until the image is hovered. Captions always show on "
+"devices without hover support."
+msgstr ""
+"Rejtsd el a feliratot, amíg a képre nem viszik az egeret. A feliratok "
+"mindig megjelennek azokban az eszközökben, amelyek nem támogatják az "
+"egérmutatót."
+
+#: class-ml-gallery.php:1979
 msgid "Full (original)"
 msgstr "Teljes (eredeti)"
 
-#: class-ml-gallery.php:1668
+#: class-ml-gallery.php:1980
+msgid "Custom…"
+msgstr "Egyedi…"
+
+#: class-ml-gallery.php:1995
+msgid "Width and height in pixels, between 50 and 4000"
+msgstr "Szélesség és magasság pixelben, 50 és 4000 között"
+
+#: class-ml-gallery.php:1995
+msgid "Custom Size"
+msgstr "Egyedi méret"
+
+#: class-ml-gallery.php:2001
+msgid "W"
+msgstr "Sz"
+
+#: class-ml-gallery.php:2002
+msgid "Custom width"
+msgstr "Egyedi szélesség"
+
+#: class-ml-gallery.php:2008
+msgid "H"
+msgstr "M"
+
+#: class-ml-gallery.php:2009
+msgid "Custom height"
+msgstr "Egyedi magasság"
+
+#: class-ml-gallery.php:2013
+msgid "Crop to fill the exact size instead of scaling to fit within it"
+msgstr ""
+"Vágás az pontos méret kitöltésére ahelyett, hogy méretezné a hozzá való "
+"illeszkedéshez"
+
+#: class-ml-gallery.php:2013
+msgid "Crop to exact size"
+msgstr "Vágás pontos méretre"
+
+#: class-ml-gallery.php:2028
 msgid "Show in Gallery Window"
 msgstr "Megjelenítés a Galéria Ablakban"
 
-#: class-ml-gallery.php:1671
-msgid "The size of the image shown when a visitor clicks to view it in full"
-msgstr ""
-"A kép mérete, amely akkor jelenik meg, amikor egy látogató rákattint, hogy "
-"teljes nézetben megtekintse"
-
-#: class-ml-gallery.php:1671
-msgid "Image Size"
-msgstr "Kép mérete"
-
-#: class-ml-gallery.php:1691
+#: class-ml-gallery.php:2041
 msgid ""
 "Choose how visitors open the gallery window: click the image, click an "
 "icon, or click a button."
@@ -664,112 +864,133 @@ msgstr ""
 "Válaszd ki, hogyan nyissák meg a látogatók a galéria ablakot: kattints a "
 "képre, kattints egy ikonra, vagy kattints egy gombra."
 
-#: class-ml-gallery.php:1691
+#: class-ml-gallery.php:2041
 msgid "Open with"
 msgstr "Megnyitás ezzel"
 
-#: class-ml-gallery.php:1703
+#: class-ml-gallery.php:2053
 msgid "Text shown on the button that opens the gallery window"
 msgstr "A gombon látható szöveg, amely megnyitja a galéria ablakot"
 
-#: class-ml-gallery.php:1703 class-ml-slider-lightbox.php:2747
+#: class-ml-gallery.php:2053 class-ml-slider-lightbox.php:2773
 msgid "Button Text"
 msgstr "Gomb szöveg"
 
-#: class-ml-gallery.php:1708 class-ml-slider-lightbox.php:1650
-#: class-ml-slider-lightbox.php:3347 class-ml-slider-lightbox.php:6488
-#: class-ml-slider-lightbox.php:6511
+#: class-ml-gallery.php:2058 class-ml-slider-lightbox.php:1676
+#: class-ml-slider-lightbox.php:3389 class-ml-slider-lightbox.php:6549
+#: class-ml-slider-lightbox.php:6572
 msgid "Open in Gallery"
 msgstr "Megnyitás a Galériában"
 
-#: class-ml-gallery.php:1713
+#: class-ml-gallery.php:2063
 msgid "Where the button or icon sits over the gallery"
 msgstr "A gomb vagy ikon helye a galéria felett"
 
-#: class-ml-gallery.php:1713 class-ml-slider-lightbox.php:2755
+#: class-ml-gallery.php:2063 class-ml-slider-lightbox.php:2781
 msgid "Button Position"
 msgstr "Gomb helyzete"
 
-#: class-ml-gallery.php:1715
+#: class-ml-gallery.php:2065
 msgid "Top Right"
 msgstr "Fent Jobbra"
 
-#: class-ml-gallery.php:1716 class-ml-slider-lightbox.php:3364
-#: class-ml-slider-lightbox.php:3390
+#: class-ml-gallery.php:2066 class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3432
 msgid "Top Left"
 msgstr "Fent Bal"
 
-#: class-ml-gallery.php:1717 class-ml-slider-lightbox.php:3365
-#: class-ml-slider-lightbox.php:3391
+#: class-ml-gallery.php:2067 class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3433
 msgid "Bottom Right"
 msgstr "Lent Jobb"
 
-#: class-ml-gallery.php:1718 class-ml-slider-lightbox.php:3366
-#: class-ml-slider-lightbox.php:3392
+#: class-ml-gallery.php:2068 class-ml-slider-lightbox.php:3408
+#: class-ml-slider-lightbox.php:3434
 msgid "Bottom Left"
 msgstr "Lent Bal"
 
-#: class-ml-gallery.php:1719
-msgid "Center"
-msgstr "Középen"
+#: class-ml-gallery.php:2082
+msgid "Gallery Image Size"
+msgstr "Galéria Kép Mérete"
 
-#: class-ml-gallery.php:1728
+#: class-ml-gallery.php:2083
+msgid ""
+"The size of the images shown in the gallery on the page. Carousel and "
+"Showcase use the Window Image Size for their main image."
+msgstr ""
+"A galériában megjelenített képek mérete az oldalon. A Karusszel és a "
+"Bemutató a Fő Kép Méretét használja."
+
+#: class-ml-gallery.php:2092
+msgid "Window Image Size"
+msgstr "Ablak Kép Mérete"
+
+#: class-ml-gallery.php:2093
+msgid ""
+"The size of the image shown when a visitor clicks to view it in full, and "
+"of the main image in the Carousel and Showcase layouts"
+msgstr ""
+"A képméret, amely akkor jelenik meg, amikor egy látogató rákattint, hogy "
+"teljes nézetben megtekintse, és a fő kép a Karusszel és a Bemutató "
+"elrendezésekben"
+
+#: class-ml-gallery.php:2102
 msgid "Protect images"
 msgstr "Képek védelme"
 
-#: class-ml-gallery.php:1734
+#: class-ml-gallery.php:2107
 msgid "Display"
 msgstr "Megjelenítés"
 
-#: class-ml-gallery.php:1736
+#: class-ml-gallery.php:2109
 msgid "Animation effect when moving between images"
 msgstr "Animációs effektus a képek közötti mozgáskor"
 
-#: class-ml-gallery.php:1736 class-ml-gallery.php:1821
+#: class-ml-gallery.php:2109 class-ml-gallery.php:2229
 msgid "Transition"
 msgstr "Átmenet"
 
-#: class-ml-gallery.php:1745 class-ml-slider-lightbox.php:2707
+#: class-ml-gallery.php:2118 class-ml-slider-lightbox.php:2733
 msgid "Arrows"
 msgstr "Nyilak"
 
-#: class-ml-gallery.php:1746
+#: class-ml-gallery.php:2119
 msgid "Slide Counter"
 msgstr "Diavetítő Számláló"
 
-#: class-ml-gallery.php:1747
+#: class-ml-gallery.php:2120
 msgid "Thumbnails"
 msgstr "Képek"
 
-#: class-ml-gallery.php:1749
+#: class-ml-gallery.php:2122
 msgid "Pager"
 msgstr "Oldalsáv"
 
-#: class-ml-gallery.php:1754 class-ml-slider-lightbox.php:2412
+#: class-ml-gallery.php:2127 class-ml-slider-lightbox.php:2436
 msgid "Navigation"
 msgstr "Navigáció"
 
-#: class-ml-gallery.php:1755
+#: class-ml-gallery.php:2128
 msgid "Loop"
 msgstr "Hurok"
 
-#: class-ml-gallery.php:1756
+#: class-ml-gallery.php:2129
 msgid "Keyboard"
 msgstr "Billentyűzet"
 
-#: class-ml-gallery.php:1757
+#: class-ml-gallery.php:2130
 msgid "Mouse wheel"
 msgstr "Egér görgő"
 
-#: class-ml-gallery.php:1758, fuzzy
+#: class-ml-gallery.php:2131, fuzzy
 msgid "Swipe to close"
 msgstr "Swipe to close"
 
-#: class-ml-gallery.php:1765 class-ml-gallery.php:1767
+#: class-ml-gallery.php:2138 class-ml-gallery.php:2140
 msgid "Captions"
 msgstr "Feliratok"
 
-#: class-ml-gallery.php:1767
+#: class-ml-gallery.php:2140
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -777,7 +998,7 @@ msgstr ""
 "Hol jelennek meg a feliratok: a galéria miniatűrjein, a galéria ablakában, "
 "vagy mindkettőben."
 
-#: class-ml-gallery.php:1779
+#: class-ml-gallery.php:2154
 msgid ""
 "Where each caption's text comes from: your typed caption, or the image's "
 "Media Library caption or description. Empty media fields fall back to your "
@@ -787,11 +1008,35 @@ msgstr ""
 "Média könyvtárának felirata vagy leírása. Az üres média mezők az általad "
 "beírt feliratra térnek vissza."
 
-#: class-ml-gallery.php:1779
+#: class-ml-gallery.php:2154
 msgid "Caption Content"
 msgstr "Felirat Tartalom"
 
-#: class-ml-gallery.php:1788
+#: class-ml-gallery.php:2163
+msgid ""
+"Where the caption sits on the image. Applies to gallery captions only — not "
+"the gallery window."
+msgstr ""
+"A felirat helye a képen. Csak a galéria felirataira vonatkozik — nem a "
+"galéria ablakra."
+
+#: class-ml-gallery.php:2163
+msgid "Position"
+msgstr "Helyzet"
+
+#: class-ml-gallery.php:2172
+msgid ""
+"How caption text lines up within the image. Applies to gallery captions "
+"only — not the gallery window."
+msgstr ""
+"Hogyan igazodik a felirat szöveg a képen belül. Csak a galéria felirataira "
+"vonatkozik — nem a galéria ablakra."
+
+#: class-ml-gallery.php:2172
+msgid "Align"
+msgstr "Igazítás"
+
+#: class-ml-gallery.php:2181
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -799,11 +1044,11 @@ msgstr ""
 "Felirat szövegmérete. Érvényes a galéria miniatűrjeire és a galéria "
 "ablakára is."
 
-#: class-ml-gallery.php:1789
+#: class-ml-gallery.php:2182
 msgid "Text Size"
 msgstr "Szöveg Méret"
 
-#: class-ml-gallery.php:1801
+#: class-ml-gallery.php:2194
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -811,11 +1056,11 @@ msgstr ""
 "Felirat szövegszíne. Érvényes a galéria miniatűrjeire és a galéria ablakára "
 "is."
 
-#: class-ml-gallery.php:1801
+#: class-ml-gallery.php:2194
 msgid "Text Color"
 msgstr "Szöveg Szín"
 
-#: class-ml-gallery.php:1811
+#: class-ml-gallery.php:2204
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -823,12 +1068,29 @@ msgstr ""
 "Felirat háttér. Érvényes a galéria miniatűrjeire és a galéria ablakára; a "
 "miniatűrök esetében átlátszóvá válik az olvashatóság érdekében."
 
-#: class-ml-gallery.php:1811 class-ml-gallery.php:1853
-#: class-ml-slider-lightbox.php:2675
+#: class-ml-gallery.php:2204 class-ml-gallery.php:2264
+#: class-ml-slider-lightbox.php:2701
 msgid "Background Color"
 msgstr "Háttér szín"
 
-#: class-ml-gallery.php:1821
+#: class-ml-gallery.php:2214
+msgid ""
+"How solid the caption background is. Lower values let more of the image "
+"show through; 0 leaves the text on the bare image."
+msgstr ""
+"Hogyan szilárd a felirat háttér. Alacsonyabb értékek több képet engednek "
+"átlátszani; 0 esetén a szöveg a csupasz képen marad."
+
+#: class-ml-gallery.php:2215 class-ml-gallery.php:2275
+#: class-ml-slider-lightbox.php:2709
+msgid "Background Opacity"
+msgstr "Háttér átlátszóság"
+
+#: class-ml-gallery.php:2226
+msgid "Reveal on Hover"
+msgstr "Felfedés lebegéskor"
+
+#: class-ml-gallery.php:2229
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -836,419 +1098,419 @@ msgstr ""
 "Hogyan animálódik be a felirat. Csak a galéria ablakára érvényes — nem a "
 "galéria miniatűr felirataira."
 
-#: class-ml-gallery.php:1831 class-ml-slider-lightbox.php:2723
+#: class-ml-gallery.php:2239 class-ml-slider-lightbox.php:2749
 msgid "Toolbar"
 msgstr "Eszköztár"
 
-#: class-ml-gallery.php:1832 class-ml-slider-lightbox.php:1664
+#: class-ml-gallery.php:2240 class-ml-slider-lightbox.php:1690
 msgid "Download"
 msgstr "Letöltés"
 
-#: class-ml-gallery.php:1834
+#: class-ml-gallery.php:2242
+msgid "Expand"
+msgstr "Kibővítés"
+
+#: class-ml-gallery.php:2245
 msgid "Share"
 msgstr "Megosztás"
 
-#: class-ml-gallery.php:1835
+#: class-ml-gallery.php:2246
 msgid "Autoplay"
 msgstr "Automatikus lejátszás"
 
-#: class-ml-gallery.php:1836
+#: class-ml-gallery.php:2247
 msgid "Rotate and Flip"
 msgstr "Forgatás és Tükrözés"
 
-#: class-ml-gallery.php:1837
+#: class-ml-gallery.php:2248
 msgid "Fullscreen"
 msgstr "Teljes képernyő"
 
-#: class-ml-gallery.php:1843
+#: class-ml-gallery.php:2254
 msgid "Unique Image URLs"
 msgstr "Egyedi kép URL-ek"
 
-#: class-ml-gallery.php:1850 class-ml-slider-lightbox.php:2345
-#: class-ml-slider-lightbox.php:2402
+#: class-ml-gallery.php:2261 class-ml-slider-lightbox.php:2369
+#: class-ml-slider-lightbox.php:2426
 msgid "Appearance"
 msgstr "Megjelenés"
 
-#: class-ml-gallery.php:1853
+#: class-ml-gallery.php:2264
 msgid "Background color of the gallery window"
 msgstr "A galéria ablak háttérszíne"
 
-#: class-ml-gallery.php:1863
+#: class-ml-gallery.php:2274
 msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
 msgstr "Hogy mennyire átlátszó a galéria ablak háttere (0 = átlátszó, 1 = szilárd)"
 
-#: class-ml-gallery.php:1864 class-ml-slider-lightbox.php:2683
-msgid "Background Opacity"
-msgstr "Háttér átlátszóság"
-
-#: class-ml-gallery.php:1878
+#: class-ml-gallery.php:2289
 msgid "Border width in pixels around the carousel (0 = no border)"
 msgstr "A karusszel körüli keret szélessége képpontokban (0 = nincs keret)"
 
-#: class-ml-gallery.php:1879
+#: class-ml-gallery.php:2290
 msgid "Frame Border Width"
 msgstr "Keret keret szélessége"
 
-#: class-ml-gallery.php:1890
+#: class-ml-gallery.php:2301
 msgid "Line style used for the carousel border"
 msgstr "A karusszel keretéhez használt vonalstílus"
 
-#: class-ml-gallery.php:1890
+#: class-ml-gallery.php:2301
 msgid "Frame Border Style"
 msgstr "Keret keret stílus"
 
-#: class-ml-gallery.php:1893 class-ml-gallery.php:2095
+#: class-ml-gallery.php:2304 class-ml-gallery.php:2505
 msgid "Solid"
 msgstr "Egységes"
 
-#: class-ml-gallery.php:1894 class-ml-gallery.php:2096
+#: class-ml-gallery.php:2305 class-ml-gallery.php:2506
 msgid "Dashed"
 msgstr "Szaggatott"
 
-#: class-ml-gallery.php:1895 class-ml-gallery.php:2097
+#: class-ml-gallery.php:2306 class-ml-gallery.php:2507
 msgid "Dotted"
 msgstr "Pontozott"
 
-#: class-ml-gallery.php:1896 class-ml-gallery.php:2098
+#: class-ml-gallery.php:2307 class-ml-gallery.php:2508
 msgid "Double"
 msgstr "Dupla"
 
-#: class-ml-gallery.php:1904
+#: class-ml-gallery.php:2315
 msgid "Color of the border around the carousel"
 msgstr "A karusszel körüli keret színe"
 
-#: class-ml-gallery.php:1904
+#: class-ml-gallery.php:2315
 msgid "Frame Border Color"
 msgstr "Keret keret színe"
 
-#: class-ml-gallery.php:1914
+#: class-ml-gallery.php:2325
 msgid "Color of the next and previous navigation arrows"
 msgstr "A következő és előző navigációs nyilak színe"
 
-#: class-ml-gallery.php:1914
+#: class-ml-gallery.php:2325
 msgid "Arrow Color"
 msgstr "Nyíl szín"
 
-#: class-ml-gallery.php:1924
+#: class-ml-gallery.php:2335
 msgid "Background color behind the navigation arrows"
 msgstr "A navigációs nyilak mögötti háttérszín"
 
-#: class-ml-gallery.php:1924
+#: class-ml-gallery.php:2335
 msgid "Arrow Background"
 msgstr "Nyíl háttér"
 
-#: class-ml-gallery.php:1934
+#: class-ml-gallery.php:2345
 msgid "Color of the close (X) icon"
 msgstr "A bezáró (X) ikon színe"
 
-#: class-ml-gallery.php:1934
+#: class-ml-gallery.php:2345
 msgid "Close Icon Color"
 msgstr "Bezárás ikon színe"
 
-#: class-ml-gallery.php:1944
+#: class-ml-gallery.php:2355
 msgid "Background color behind the close icon"
 msgstr "A bezáró ikon mögötti háttérszín"
 
-#: class-ml-gallery.php:1944
+#: class-ml-gallery.php:2355
 msgid "Close Background"
 msgstr "Bezárás háttér"
 
-#: class-ml-gallery.php:1954
+#: class-ml-gallery.php:2365
 msgid "Color of the toolbar icons"
 msgstr "A szerszámsor ikonok színe"
 
-#: class-ml-gallery.php:1954
+#: class-ml-gallery.php:2365
 msgid "Toolbar Icon Color"
 msgstr "Eszköztár ikon színe"
 
-#: class-ml-gallery.php:1964
+#: class-ml-gallery.php:2375
 msgid "Background color of the toolbar"
 msgstr "A szerszámsor háttérszíne"
 
-#: class-ml-gallery.php:1964
+#: class-ml-gallery.php:2375
 msgid "Toolbar Background"
 msgstr "Eszköztár háttér"
 
-#: class-ml-gallery.php:1974
+#: class-ml-gallery.php:2385
 msgid "Border color of the thumbnail strip images"
 msgstr "A miniatűr csík képeinek keretszíne"
 
-#: class-ml-gallery.php:1974 class-ml-slider-lightbox.php:2699
+#: class-ml-gallery.php:2385 class-ml-slider-lightbox.php:2725
 msgid "Thumbnail Border Color"
 msgstr "Képelőnézeti Keret Szín"
 
-#: class-ml-gallery.php:1984
+#: class-ml-gallery.php:2395
 msgid "Border color of the active and hovered thumbnail"
 msgstr "Az aktív és fölé vitt miniatűr keretszíne"
 
-#: class-ml-gallery.php:1984
+#: class-ml-gallery.php:2395
 msgid "Thumbnail Border Active and Hover"
 msgstr "Képelőnézeti Keret Aktív és Úszó"
 
-#: class-ml-gallery.php:2003
-msgid "Text color of the button that opens the gallery window"
-msgstr "A gomb szövegszíne, amely megnyitja a galéria ablakot"
+#: class-ml-gallery.php:2413
+msgid "Text color of the gallery buttons, including Load More"
+msgstr "A galéria gombok szövegszíne, beleértve a Továbbiak betöltése-t"
 
-#: class-ml-gallery.php:2003
+#: class-ml-gallery.php:2413
 msgid "Button Text Color"
 msgstr "Gomb Szöveg Szín"
 
-#: class-ml-gallery.php:2007
+#: class-ml-gallery.php:2417
 msgid "Button text color on hover"
 msgstr "A gomb szöveg színe fölé vitt állapotban"
 
-#: class-ml-gallery.php:2007
+#: class-ml-gallery.php:2417
 msgid "Button Text Hover"
 msgstr "Gomb Szöveg Fölé Vitt"
 
-#: class-ml-gallery.php:2011
-msgid "Background color of the button that opens the gallery window"
-msgstr "A gomb háttérszíne, amely megnyitja a galéria ablakot"
+#: class-ml-gallery.php:2421
+msgid "Background color of the gallery buttons, including Load More"
+msgstr "A galéria gombok háttérszíne, beleértve a Továbbiak betöltése-t"
 
-#: class-ml-gallery.php:2011
+#: class-ml-gallery.php:2421
 msgid "Button Background"
 msgstr "Gomb háttér"
 
-#: class-ml-gallery.php:2015
+#: class-ml-gallery.php:2425
 msgid "Button background color on hover"
 msgstr "Gomb háttérszíne lebegéskor"
 
-#: class-ml-gallery.php:2015
+#: class-ml-gallery.php:2425
 msgid "Button Background Hover"
 msgstr "Gomb háttér lebegéskor"
 
-#: class-ml-gallery.php:2022
+#: class-ml-gallery.php:2432
 msgid "Color of the icon that opens the gallery window"
 msgstr "A galéria ablakot megnyitó ikon színe"
 
-#: class-ml-gallery.php:2022
+#: class-ml-gallery.php:2432
 msgid "Icon Color"
 msgstr "Ikon színe"
 
-#: class-ml-gallery.php:2026
+#: class-ml-gallery.php:2436
 msgid "Icon color on hover"
 msgstr "Ikon színe lebegéskor"
 
-#: class-ml-gallery.php:2026
+#: class-ml-gallery.php:2436
 msgid "Icon Hover Color"
 msgstr "Ikon lebegés színe"
 
-#: class-ml-gallery.php:2030
+#: class-ml-gallery.php:2440
 msgid "Background color behind the icon"
 msgstr "Az ikon mögötti háttérszín"
 
-#: class-ml-gallery.php:2030
+#: class-ml-gallery.php:2440
 msgid "Icon Background"
 msgstr "Ikon háttér"
 
-#: class-ml-gallery.php:2034
+#: class-ml-gallery.php:2444
 msgid "Icon background color on hover"
 msgstr "Ikon háttérszíne lebegéskor"
 
-#: class-ml-gallery.php:2034
+#: class-ml-gallery.php:2444
 msgid "Icon Background Hover"
 msgstr "Ikon háttér lebegéskor"
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2451
 msgid "Color of the progress bar shown during autoplay"
 msgstr "A lejátszás során megjelenő előrehaladási sáv színe"
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2451
 msgid "Autoplay Progress Bar"
 msgstr "Automatikus lejátszás előrehaladási sáv"
 
-#: class-ml-gallery.php:2056
+#: class-ml-gallery.php:2466
 msgid "Image Styles"
 msgstr "Képstílusok"
 
-#: class-ml-gallery.php:2059
+#: class-ml-gallery.php:2469
 msgid "Apply a filter to every image in the gallery"
 msgstr "Szűrő alkalmazása minden képre a galériában"
 
-#: class-ml-gallery.php:2059
+#: class-ml-gallery.php:2469
 msgid "Filter"
 msgstr "Szűrő"
 
-#: class-ml-gallery.php:2068
+#: class-ml-gallery.php:2478
 msgid "Corner radius in pixels applied to every image"
 msgstr "Sarkok sugara képpixelben, amelyet minden képre alkalmazunk"
 
-#: class-ml-gallery.php:2069
+#: class-ml-gallery.php:2479
 msgid "Rounded Corners"
 msgstr "Lekerekített sarkok"
 
-#: class-ml-gallery.php:2080
+#: class-ml-gallery.php:2490
 msgid "Image border width in pixels (0 = no border)"
 msgstr "Képkeret szélessége képpixelben (0 = nincs keret)"
 
-#: class-ml-gallery.php:2081
+#: class-ml-gallery.php:2491
 msgid "Border Width"
 msgstr "Keret szélessége"
 
-#: class-ml-gallery.php:2092
+#: class-ml-gallery.php:2502
 msgid "Line style used for the image border"
 msgstr "Vonalstílus, amely a képkerethez használatos"
 
-#: class-ml-gallery.php:2092
+#: class-ml-gallery.php:2502
 msgid "Border Style"
 msgstr "Keret stílus"
 
-#: class-ml-gallery.php:2106
+#: class-ml-gallery.php:2516
 msgid "Color of the image border"
 msgstr "A kép keretének színe"
 
-#: class-ml-gallery.php:2106
+#: class-ml-gallery.php:2516
 msgid "Border Color"
 msgstr "Keret színe"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2526
 msgid "Drop shadow depth cast behind each image"
 msgstr "Lehullott árnyék mélysége, amely minden kép mögött van"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2526
 msgid "Box Shadow"
 msgstr "Doboz árnyék"
 
-#: class-ml-gallery.php:2120
+#: class-ml-gallery.php:2530
 msgid "Light"
 msgstr "Fény"
 
-#: class-ml-gallery.php:2121
-msgid "Medium"
-msgstr "Közepes"
-
-#: class-ml-gallery.php:2122
+#: class-ml-gallery.php:2532
 msgid "Heavy"
 msgstr "Nehéz"
 
-#: class-ml-gallery.php:2130
+#: class-ml-gallery.php:2540
 msgid "Image opacity as a percentage"
 msgstr "Kép átlátszóság százalékos arányban"
 
-#: class-ml-gallery.php:2131
+#: class-ml-gallery.php:2541
 msgid "Opacity"
 msgstr "Átlátszóság"
 
-#: class-ml-gallery.php:2142
+#: class-ml-gallery.php:2552
 msgid "Rotate every image by a fixed angle"
 msgstr "Minden képet egy rögzített szögben forgass el"
 
-#: class-ml-gallery.php:2142
+#: class-ml-gallery.php:2552
 msgid "Rotate"
 msgstr "Forgatás"
 
-#: class-ml-gallery.php:2156
+#: class-ml-gallery.php:2566
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "Minden képet tükrözz vízszintesen, függőlegesen vagy mindkettőt"
 
-#: class-ml-gallery.php:2156
+#: class-ml-gallery.php:2566
 msgid "Flip"
 msgstr "Tükrözés"
 
-#: class-ml-gallery.php:2160
+#: class-ml-gallery.php:2570
 msgid "Horizontal"
 msgstr "Vízszintes"
 
-#: class-ml-gallery.php:2161
+#: class-ml-gallery.php:2571
 msgid "Vertical"
 msgstr "Függőleges"
 
-#: class-ml-gallery.php:2162
+#: class-ml-gallery.php:2572
 msgid "Both"
 msgstr "Mindkettő"
 
-#: class-ml-gallery.php:2172 class-ml-gallery.php:3819
+#: class-ml-gallery.php:2582 class-ml-gallery.php:4383
 msgid "Shortcode"
 msgstr "Rövidkód"
 
-#: class-ml-gallery.php:2174 class-ml-gallery.php:3839
+#: class-ml-gallery.php:2584 class-ml-gallery.php:4403
 msgid "Click to copy shortcode."
 msgstr "Kattints a rövidkód másolásához."
 
-#: class-ml-gallery.php:2192
+#: class-ml-gallery.php:2602
 msgid "Edit Caption"
 msgstr "Felirat szerkesztése"
 
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:2604
 msgid "Previous image"
 msgstr "Előző kép"
 
-#: class-ml-gallery.php:2195
+#: class-ml-gallery.php:2605
 msgid "Next image"
 msgstr "Következő kép"
 
-#: class-ml-gallery.php:2197 class-ml-gallery.php:2239
-#: class-ml-gallery.php:2260 class-ml-gallery.php:3864
+#: class-ml-gallery.php:2607 class-ml-gallery.php:2649
+#: class-ml-gallery.php:2670 class-ml-gallery.php:4428
 msgid "Close"
 msgstr "Bezárás"
 
-#: class-ml-gallery.php:2218
+#: class-ml-gallery.php:2628
 msgid "Caption"
 msgstr "Felirat"
 
-#: class-ml-gallery.php:2228
+#: class-ml-gallery.php:2638
 msgid "Done"
 msgstr "Kész"
 
-#: class-ml-gallery.php:2238
+#: class-ml-gallery.php:2648
 msgid "Import from Server Folder"
 msgstr "Importálás a Szerver Mappából"
 
-#: class-ml-gallery.php:2247
+#: class-ml-gallery.php:2657
 msgid "Cancel"
 msgstr "Mégse"
 
-#: class-ml-gallery.php:2248
+#: class-ml-gallery.php:2658
 msgid "Import selected"
 msgstr "Kiválasztott importálása"
 
-#: class-ml-gallery.php:2259
+#: class-ml-gallery.php:2669
 msgid "Import from ZIP"
 msgstr "Importálás ZIP-ből"
 
-#: class-ml-gallery.php:2287
+#: class-ml-gallery.php:2697
 msgid "You do not have sufficient permissions."
 msgstr "Nincs elegendő jogosultsága."
 
-#: class-ml-gallery.php:2306
+#: class-ml-gallery.php:2716
 msgid "Could not update the gallery. Please try again."
 msgstr "Nem sikerült frissíteni a galériát. Kérjük, próbálja újra."
 
-#: class-ml-gallery.php:2457
+#: class-ml-gallery.php:2887
 msgid "(Copy)"
 msgstr "(Másolat)"
 
-#: class-ml-gallery.php:2463
+#: class-ml-gallery.php:2893
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "Nem sikerült megismételni a galériát. Kérlek próbáld újra."
 
-#: class-ml-gallery.php:2611 class-ml-gallery.php:2726
-#: class-ml-gallery.php:3984 class-ml-gallery.php:4137
-#: class-ml-gallery.php:4169
+#: class-ml-gallery.php:3041 class-ml-gallery.php:3156
+#: class-ml-gallery.php:3200 class-ml-gallery.php:4545
+#: class-ml-gallery.php:4696 class-ml-gallery.php:4728
 msgid "Permission denied."
 msgstr "Hozzáférés megtagadva."
 
-#: class-ml-gallery.php:2618
+#: class-ml-gallery.php:3048
 msgid "Folder not found."
 msgstr "A mappa nem található."
 
-#: class-ml-gallery.php:2627
+#: class-ml-gallery.php:3057
 msgid "Folder could not be read."
 msgstr "A mappa nem olvasható."
 
-#: class-ml-gallery.php:2664
+#: class-ml-gallery.php:3094
 msgid "Uploads"
 msgstr "Feltöltések"
 
-#: class-ml-gallery.php:2849
+#: class-ml-gallery.php:3212
+msgid "Invalid size."
+msgstr "Érvénytelen méret."
+
+#: class-ml-gallery.php:3317
 msgid "Select Gallery Images"
 msgstr "Válassza ki a galéria képeit"
 
-#: class-ml-gallery.php:2850
+#: class-ml-gallery.php:3318
 msgid "Add to Gallery"
 msgstr "Hozzáadás a galériához"
 
-#: class-ml-gallery.php:2861
+#: class-ml-gallery.php:3333
 msgid ""
 "Saved to this image in your Media Library — changes appear anywhere the "
 "image is used."
@@ -1256,100 +1518,121 @@ msgstr ""
 "Mentve erre a képre a Média könyvtárában - a változtatások mindenhol "
 "megjelennek, ahol a kép használatban van."
 
-#: class-ml-gallery.php:2862 class-ml-gallery.php:4186
+#: class-ml-gallery.php:3334 class-ml-gallery.php:4745
 msgid "You do not have permission to edit this image."
 msgstr "Nincs engedélyed a kép szerkesztésére."
 
-#: class-ml-gallery.php:2863 class-ml-gallery.php:4187
+#: class-ml-gallery.php:3335 class-ml-gallery.php:4746
 msgid "This caption source is read-only."
 msgstr "Ez a felirat forrás csak olvasásra alkalmas."
 
-#: class-ml-gallery.php:2864
+#: class-ml-gallery.php:3336
 msgid "Shown in this gallery"
 msgstr "Ezen a galérián látható"
 
-#: class-ml-gallery.php:2866
+#: class-ml-gallery.php:3340
+#, php-format
+msgid "Preparing image sizes… %1$d/%2$d"
+msgstr "Kép méretek előkészítése… %1$d/%2$d"
+
+#: class-ml-gallery.php:3341
+msgid "Image sizes ready."
+msgstr "A kép méretek készen állnak."
+
+#: class-ml-gallery.php:3343
+#, php-format
+msgid ""
+"Could not resize %d image(s) — they may be smaller than the size you asked "
+"for."
+msgstr "Nem lehet átméretezni %d képet — lehet, hogy kisebbek, mint a kért méret."
+
+#: class-ml-gallery.php:3345
 msgid "Loading…"
 msgstr "Betöltés…"
 
-#: class-ml-gallery.php:2867
+#: class-ml-gallery.php:3346
 msgid "No images in this folder."
 msgstr "Nincsenek képek ebben a mappában."
 
-#: class-ml-gallery.php:2868
+#: class-ml-gallery.php:3347
 msgid "Could not load this folder."
 msgstr "Ezt a mappát nem lehetett betölteni."
 
-#: class-ml-gallery.php:2869
+#: class-ml-gallery.php:3348
 msgid "Importing…"
 msgstr "Importálás…"
 
-#: class-ml-gallery.php:2870
+#: class-ml-gallery.php:3349
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr ""
 "Az első 200 kép megjelenítése — nyisson meg egy almappát a lista "
 "szűkítéséhez."
 
-#: class-ml-gallery.php:2871
+#: class-ml-gallery.php:3350
 msgid "Select at least one image."
 msgstr "Válasszon ki legalább egy képet."
 
-#: class-ml-gallery.php:2872 class-ml-gallery.php:2875
+#: class-ml-gallery.php:3351 class-ml-gallery.php:3354
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "Importált %1$d kép(ek); %2$d kép(ek) kihagyva."
 
-#: class-ml-gallery.php:2873
+#: class-ml-gallery.php:3352
 msgid "Uploading…"
 msgstr "Feltöltés…"
 
-#: class-ml-gallery.php:2874
+#: class-ml-gallery.php:3353
 msgid "Importing images…"
 msgstr "Képek importálása…"
 
-#: class-ml-gallery.php:2876
+#: class-ml-gallery.php:3355
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "Csak az első 200 kép (vagy 256 MB) lett importálva."
 
-#: class-ml-gallery.php:2877
+#: class-ml-gallery.php:3356
 msgid "The ZIP could not be imported."
 msgstr "A ZIP fájl nem importálható."
 
-#: class-ml-gallery.php:2878
+#: class-ml-gallery.php:3357
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr ""
 "A feltöltés elutasítva — a ZIP fájl nagyobb lehet, mint amit ez a szerver "
 "megenged."
 
-#: class-ml-gallery.php:2879
+#: class-ml-gallery.php:3358
 msgid "No images found in the ZIP."
 msgstr "Nincsenek képek a ZIP fájlban."
 
-#: class-ml-gallery.php:3450
+#: class-ml-gallery.php:3785
+#, php-format
+msgid "%1$d more images loaded, %2$d remaining"
+msgstr "%1$d további kép betöltve, %2$d hátra van"
+
+#: class-ml-gallery.php:4014
 msgid "Drag-and-drop building"
 msgstr "Húzd és ejtsd az építést"
 
-#: class-ml-gallery.php:3451
+#: class-ml-gallery.php:4015
 msgid "Responsive lightbox"
 msgstr "Reszponzív lightbox"
 
-#: class-ml-gallery.php:3452
+#: class-ml-gallery.php:4016
 msgid "Grid · Masonry · Justified"
 msgstr "Rács · Kőműves · Igazított"
 
-#: class-ml-gallery.php:3703
+#: class-ml-gallery.php:4267
 msgid "Get started"
 msgstr "Kezdjük"
 
-#: class-ml-gallery.php:3706
+#: class-ml-gallery.php:4270
 msgid "Your galleries"
 msgstr "A galériáid"
 
-#: class-ml-gallery.php:3706
+#: class-ml-gallery.php:4270
 msgid "live here."
 msgstr "itt élnek."
 
-#: class-ml-gallery.php:3708
+#: class-ml-gallery.php:4272
 msgid ""
 "Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
 "justified, no code required."
@@ -1357,74 +1640,74 @@ msgstr ""
 "Gyönyörű képgalériákat építhetsz lenyűgöző lightbox-szal. Rács, kőműves "
 "vagy igazított, kódra nincs szükség."
 
-#: class-ml-gallery.php:3710
+#: class-ml-gallery.php:4274
 msgid "Create your first gallery"
 msgstr "Hozd létre az első galériádat"
 
-#: class-ml-gallery.php:3723
+#: class-ml-gallery.php:4287
 #, php-format
 msgid "View Trash (%s)"
 msgid_plural "View Trash (%s)"
 msgstr[0] "Megtekintés a Kukában (%s)"
 msgstr[1] "Megtekintés a Kukában (%s)"
 
-#: class-ml-gallery.php:3734
+#: class-ml-gallery.php:4298
 msgid "Preview layout"
 msgstr "Előnézet elrendezés"
 
-#: class-ml-gallery.php:3821
+#: class-ml-gallery.php:4385
 msgid "Usage"
 msgstr "Használat"
 
-#: class-ml-gallery.php:3854
+#: class-ml-gallery.php:4418
 msgid "Not found."
 msgstr "Nem található."
 
-#: class-ml-gallery.php:3859
+#: class-ml-gallery.php:4423
 msgid "View Usage"
 msgstr "Használat megtekintése"
 
-#: class-ml-gallery.php:3865
+#: class-ml-gallery.php:4429
 msgid "Content Using This Gallery"
 msgstr "Tartalom, amely ezt a galériát használja"
 
-#: class-ml-gallery.php:3932
+#: class-ml-gallery.php:4493
 msgid "(no title)"
 msgstr "(nincs cím)"
 
-#: class-ml-gallery.php:3990 class-ml-gallery.php:3999
+#: class-ml-gallery.php:4551 class-ml-gallery.php:4560
 msgid "Please choose a valid .zip file."
 msgstr "Kérjük, válasszon egy érvényes .zip fájlt."
 
-#: class-ml-gallery.php:4005
+#: class-ml-gallery.php:4566
 msgid "Server cannot read ZIP files."
 msgstr "A szerver nem tudja olvasni a ZIP fájlokat."
 
-#: class-ml-gallery.php:4012
+#: class-ml-gallery.php:4573
 msgid "The ZIP could not be read."
 msgstr "A ZIP fájl nem olvasható."
 
-#: class-ml-gallery.php:4046
+#: class-ml-gallery.php:4607
 msgid "Could not prepare a temporary folder."
 msgstr "Nem sikerült előkészíteni egy ideiglenes mappát."
 
-#: class-ml-gallery.php:4144 class-ml-gallery.php:4180
+#: class-ml-gallery.php:4703 class-ml-gallery.php:4739
 msgid "Image not found."
 msgstr "Kép nem található."
 
-#: class-ml-gallery.php:4217
+#: class-ml-gallery.php:4775
 msgid "Unknown caption source."
 msgstr "Ismeretlen felirat forrás."
 
-#: class-ml-slider-lightbox.php:216
+#: class-ml-slider-lightbox.php:222
 msgid "👋 Thanks for installing MetaSlider Gallery!"
 msgstr "👋 Köszönjük, hogy telepítetted a MetaSlider Galériát!"
 
-#: class-ml-slider-lightbox.php:219
+#: class-ml-slider-lightbox.php:225
 msgid "You're all set. Create your first gallery to get started."
 msgstr "Minden készen áll. Hozd létre az első galériádat, hogy elkezdhessd."
 
-#: class-ml-slider-lightbox.php:1188
+#: class-ml-slider-lightbox.php:1216
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1432,11 +1715,11 @@ msgstr ""
 "A MetaSlider galéria telepített és aktivált MetaSlider-t és legalább egy "
 "másik támogatott lightbox bővítményt igényel."
 
-#: class-ml-slider-lightbox.php:1192
+#: class-ml-slider-lightbox.php:1220
 msgid "More info"
 msgstr "További információ"
 
-#: class-ml-slider-lightbox.php:1203
+#: class-ml-slider-lightbox.php:1231
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1444,31 +1727,31 @@ msgstr ""
 "Több mint egy lightbox bővítmény van aktiválva. Ez ütközéseket okozhat a "
 "MetaSlider galériával."
 
-#: class-ml-slider-lightbox.php:1263
+#: class-ml-slider-lightbox.php:1291
 msgid "Edit Global Settings"
 msgstr "Globális beállítások szerkesztése"
 
-#: class-ml-slider-lightbox.php:1274
+#: class-ml-slider-lightbox.php:1302
 msgid "Open In Gallery"
 msgstr "Megnyitás a galériában"
 
-#: class-ml-slider-lightbox.php:1288
+#: class-ml-slider-lightbox.php:1316
 msgid "Show Captions"
 msgstr "Feliratok megjelenítése"
 
-#: class-ml-slider-lightbox.php:1288
+#: class-ml-slider-lightbox.php:1316
 msgid "Show captions in the gallery for each slide."
 msgstr "Minden dián mutassa a feliratokat a galériában."
 
-#: class-ml-slider-lightbox.php:1289
+#: class-ml-slider-lightbox.php:1317
 msgid "Show Navigation Arrows"
 msgstr "Navigációs nyilak megjelenítése"
 
-#: class-ml-slider-lightbox.php:1289
+#: class-ml-slider-lightbox.php:1317
 msgid "Show previous/next arrows in the gallery."
 msgstr "Előző/következő nyilak megjelenítése a galériában."
 
-#: class-ml-slider-lightbox.php:1295
+#: class-ml-slider-lightbox.php:1323
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1477,157 +1760,157 @@ msgstr ""
 "A galéria engedélyezve van minden diavetítéshez a <a href=\"%s\">MetaSlider "
 "galéria beállításain</a> keresztül."
 
-#: class-ml-slider-lightbox.php:1660
+#: class-ml-slider-lightbox.php:1686
 msgid "Close gallery"
 msgstr "Galéria bezárása"
 
-#: class-ml-slider-lightbox.php:1661
+#: class-ml-slider-lightbox.php:1687
 msgid "Toggle maximize"
 msgstr "Maximalizálás váltása"
 
-#: class-ml-slider-lightbox.php:1662
+#: class-ml-slider-lightbox.php:1688
 msgid "Previous slide"
 msgstr "Előző dia"
 
-#: class-ml-slider-lightbox.php:1663
+#: class-ml-slider-lightbox.php:1689
 msgid "Next slide"
 msgstr "Következő dia"
 
-#: class-ml-slider-lightbox.php:1665
+#: class-ml-slider-lightbox.php:1691
 msgid "Play video"
 msgstr "Videó lejátszása"
 
-#: class-ml-slider-lightbox.php:1666
+#: class-ml-slider-lightbox.php:1692
 msgid "Oops... Failed to load content..."
 msgstr "Hoppá... Nem sikerült betölteni a tartalmat..."
 
-#: class-ml-slider-lightbox.php:1712 class-ml-slider-lightbox.php:1742
+#: class-ml-slider-lightbox.php:1738 class-ml-slider-lightbox.php:1768
 msgid "Global"
 msgstr "Globális"
 
-#: class-ml-slider-lightbox.php:1713
+#: class-ml-slider-lightbox.php:1739
 msgid "Yes"
 msgstr "Igen"
 
-#: class-ml-slider-lightbox.php:1714
+#: class-ml-slider-lightbox.php:1740
 msgid "No"
 msgstr "Nem"
 
-#: class-ml-slider-lightbox.php:1737
+#: class-ml-slider-lightbox.php:1763
 msgid "How Visitors Open Images"
 msgstr "Hogyan nyitják meg a látogatók a képeket"
 
-#: class-ml-slider-lightbox.php:1740 class-ml-slider-lightbox.php:3664
+#: class-ml-slider-lightbox.php:1766 class-ml-slider-lightbox.php:3725
 msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
 msgstr ""
 "Válaszd ki, hogy a kép, egy ikon vagy egy gomb megnyomása nyissa meg a "
 "galériát."
 
-#: class-ml-slider-lightbox.php:1743 class-ml-trigger-control.php:66
+#: class-ml-slider-lightbox.php:1769 class-ml-trigger-control.php:66
 msgid "Image"
 msgstr "Kép"
 
-#: class-ml-slider-lightbox.php:1744 class-ml-slider-lightbox.php:3506
-#: class-ml-slider-lightbox.php:3519 class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3630 class-ml-trigger-control.php:67
+#: class-ml-slider-lightbox.php:1770 class-ml-slider-lightbox.php:3548
+#: class-ml-slider-lightbox.php:3561 class-ml-slider-lightbox.php:3574
+#: class-ml-slider-lightbox.php:3672 class-ml-trigger-control.php:67
 msgid "Icon"
 msgstr "Ikon"
 
-#: class-ml-slider-lightbox.php:1745 class-ml-trigger-control.php:68
+#: class-ml-slider-lightbox.php:1771 class-ml-trigger-control.php:68
 msgid "Button"
 msgstr "Gomb"
 
-#: class-ml-slider-lightbox.php:2013
+#: class-ml-slider-lightbox.php:2039
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "A MetaSlider Gallery telepítve és aktiválva kell legyen."
 
-#: class-ml-slider-lightbox.php:2017
+#: class-ml-slider-lightbox.php:2043
 msgid "Install MetaSlider"
 msgstr "MetaSlider telepítése"
 
-#: class-ml-slider-lightbox.php:2140 class-ml-slider-lightbox.php:2284, fuzzy
+#: class-ml-slider-lightbox.php:2166 class-ml-slider-lightbox.php:2310, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2266
+#: class-ml-slider-lightbox.php:2292
 #, php-format
 msgid "Select pages to %s..."
 msgstr "Oldalak kiválasztása a %s... számára"
 
-#: class-ml-slider-lightbox.php:2267
+#: class-ml-slider-lightbox.php:2293
 #, php-format
 msgid "Select posts to %s..."
 msgstr "Bejegyzések kiválasztása a %s... számára"
 
-#: class-ml-slider-lightbox.php:2268
+#: class-ml-slider-lightbox.php:2294
 #, php-format
 msgid "Select post types to %s..."
 msgstr "Bejegyzéstípusok kiválasztása a %s... számára"
 
-#: class-ml-slider-lightbox.php:2269
+#: class-ml-slider-lightbox.php:2295
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "Kiválasztás %1$s-hez %2$s-ig..."
 
-#: class-ml-slider-lightbox.php:2270
+#: class-ml-slider-lightbox.php:2296
 msgid "Select post types to exclude"
 msgstr "Kizárt bejegyzéstípusok kiválasztása"
 
-#: class-ml-slider-lightbox.php:2271 class-ml-slider-lightbox.php:3713
-#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
+#: class-ml-slider-lightbox.php:2297 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
 msgid "Include"
 msgstr "Befoglalás"
 
-#: class-ml-slider-lightbox.php:2272 class-ml-slider-lightbox.php:3713
-#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
+#: class-ml-slider-lightbox.php:2298 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
 msgid "Exclude"
 msgstr "Kizárás"
 
-#: class-ml-slider-lightbox.php:2280, fuzzy
+#: class-ml-slider-lightbox.php:2306, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2300
+#: class-ml-slider-lightbox.php:2325
 msgid "Global Settings"
 msgstr "Globális beállítások"
 
-#: class-ml-slider-lightbox.php:2310
+#: class-ml-slider-lightbox.php:2334
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "Frissítés a MetaSlider Gallery Pro-ra"
 
-#: class-ml-slider-lightbox.php:2311
+#: class-ml-slider-lightbox.php:2335
 msgid "Upgrade to Pro"
 msgstr "Frissítés Pro-ra"
 
-#: class-ml-slider-lightbox.php:2343
+#: class-ml-slider-lightbox.php:2367
 msgid "Automatic Mode"
 msgstr "Automatikus mód"
 
-#: class-ml-slider-lightbox.php:2344
+#: class-ml-slider-lightbox.php:2368
 msgid "Manual Mode"
 msgstr "Manuális mód"
 
-#: class-ml-slider-lightbox.php:2346
+#: class-ml-slider-lightbox.php:2370
 msgid "Behavior"
 msgstr "Viselkedés"
 
-#: class-ml-slider-lightbox.php:2367
+#: class-ml-slider-lightbox.php:2391
 msgid "Settings saved successfully!"
 msgstr "A beállítások sikeresen elmentve!"
 
-#: class-ml-slider-lightbox.php:2377
+#: class-ml-slider-lightbox.php:2401
 msgid "Where to Enable Automatically"
 msgstr "Hol lehet automatikusan engedélyezni"
 
-#: class-ml-slider-lightbox.php:2384
+#: class-ml-slider-lightbox.php:2408
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider Diavetítők"
 
-#: class-ml-slider-lightbox.php:2391 class-ml-slider-lightbox.php:2588
+#: class-ml-slider-lightbox.php:2415 class-ml-slider-lightbox.php:2614
 msgid "Content Filtering"
 msgstr "Tartalom Szűrés"
 
-#: class-ml-slider-lightbox.php:2403
+#: class-ml-slider-lightbox.php:2427
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
@@ -1635,19 +1918,23 @@ msgstr ""
 "Személyre szabhatja a színeket, átlátszóságot és a vizuális stílust a "
 "galéria átfedéséhez és vezérlőihez."
 
-#: class-ml-slider-lightbox.php:2407 class-ml-slider-lightbox.php:2654
+#: class-ml-slider-lightbox.php:2431 class-ml-slider-lightbox.php:2680
 msgid "Background & Overlay"
 msgstr "Háttér & Fedőréteg"
 
-#: class-ml-slider-lightbox.php:2417
+#: class-ml-slider-lightbox.php:2441
 msgid "\"Open in Gallery\" Button"
 msgstr "\"Megnyitás a Galériában\" gomb"
 
-#: class-ml-slider-lightbox.php:2427 class-ml-slider-lightbox.php:2767
+#: class-ml-slider-lightbox.php:2451 class-ml-slider-lightbox.php:2793
 msgid "Navigation & Controls"
 msgstr "Navigáció & vezérlés"
 
-#: class-ml-slider-lightbox.php:2433
+#: class-ml-slider-lightbox.php:2454 class-ml-slider-lightbox.php:2832
+msgid "Search Engine Optimization"
+msgstr "Keresőoptimalizálás"
+
+#: class-ml-slider-lightbox.php:2460
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1658,27 +1945,27 @@ msgstr ""
 "MetaSliderre, de még mindig működni fognak a WordPress tartalom "
 "lightboxaival."
 
-#: class-ml-slider-lightbox.php:2440 class-ml-slider-lightbox.php:4230
+#: class-ml-slider-lightbox.php:2467 class-ml-slider-lightbox.php:4291
 msgid "Enhanced Zoom & Controls"
 msgstr "Fejlett zoom és vezérlés"
 
-#: class-ml-slider-lightbox.php:2448
+#: class-ml-slider-lightbox.php:2475
 msgid "Media & Video Enhancements"
 msgstr "Média & Videó Fejlesztések"
 
-#: class-ml-slider-lightbox.php:2456 class-ml-slider-lightbox.php:4258
+#: class-ml-slider-lightbox.php:2483 class-ml-slider-lightbox.php:4319
 msgid "Social & Navigation"
 msgstr "Közösségi & Navigáció"
 
-#: class-ml-slider-lightbox.php:2464 class-ml-slider-lightbox.php:4279
+#: class-ml-slider-lightbox.php:2491 class-ml-slider-lightbox.php:4340
 msgid "Advanced Features"
 msgstr "Fejlett funkciók"
 
-#: class-ml-slider-lightbox.php:2480
+#: class-ml-slider-lightbox.php:2506
 msgid "Manual Options"
 msgstr "Kézi beállítások"
 
-#: class-ml-slider-lightbox.php:2481
+#: class-ml-slider-lightbox.php:2507
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -1686,45 +1973,45 @@ msgstr ""
 "Kézi vezérlők és WordPress felülírások, amelyek függetlenül működnek az "
 "automatikus beállításoktól."
 
-#: class-ml-slider-lightbox.php:2661
+#: class-ml-slider-lightbox.php:2687
 msgid "Navigation Icons"
 msgstr "Navigációs Ikonok"
 
-#: class-ml-slider-lightbox.php:2668
+#: class-ml-slider-lightbox.php:2694
 msgid "Buttons"
 msgstr "Gombok"
 
-#: class-ml-slider-lightbox.php:2691
+#: class-ml-slider-lightbox.php:2717
 msgid "Autoplay Progress Bar Color"
 msgstr "Automatikus lejátszás előrehaladási sáv színe"
 
-#: class-ml-slider-lightbox.php:2715
+#: class-ml-slider-lightbox.php:2741
 msgid "Close Button"
 msgstr "Bezárás Gomb"
 
-#: class-ml-slider-lightbox.php:2731
+#: class-ml-slider-lightbox.php:2757
 msgid "Button Colors"
 msgstr "Gomb Színek"
 
-#: class-ml-slider-lightbox.php:2739
+#: class-ml-slider-lightbox.php:2765
 msgid "Icon Colors"
 msgstr "Ikon Színek"
 
-#: class-ml-slider-lightbox.php:3120
+#: class-ml-slider-lightbox.php:3162
 msgid "Configure general gallery settings that apply site-wide."
 msgstr ""
 "Általános galéria beállítások konfigurálása, amelyek az egész webhelyre "
 "vonatkoznak."
 
-#: class-ml-slider-lightbox.php:3125
+#: class-ml-slider-lightbox.php:3167
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "A MetaSlider Gallery funkcióra vonatkozó beállítások konfigurálása."
 
-#: class-ml-slider-lightbox.php:3130
+#: class-ml-slider-lightbox.php:3172
 msgid "Select where the gallery will be enabled automatically."
 msgstr "Válassza ki, hol lesz a galéria automatikusan engedélyezve."
 
-#: class-ml-slider-lightbox.php:3136
+#: class-ml-slider-lightbox.php:3178
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1733,31 +2020,31 @@ msgstr ""
 "határozza meg, mely oldalakat, bejegyzéseket vagy kiválasztókat kell "
 "belefoglalni vagy kizárni."
 
-#: class-ml-slider-lightbox.php:3152
+#: class-ml-slider-lightbox.php:3194
 msgid "Processing Mode"
 msgstr "Feldolgozási mód"
 
-#: class-ml-slider-lightbox.php:3155
+#: class-ml-slider-lightbox.php:3197
 msgid "Process all content EXCEPT the items specified below"
 msgstr "Feldolgozza az összes tartalmat, KIVÉVE az alább megadott elemeket"
 
-#: class-ml-slider-lightbox.php:3158
+#: class-ml-slider-lightbox.php:3200
 msgid "ONLY process the items specified below"
 msgstr "CSAK az alább megadott elemeket dolgozza fel"
 
-#: class-ml-slider-lightbox.php:3165
+#: class-ml-slider-lightbox.php:3207
 msgid "Inclusion Mode"
 msgstr "Beillesztési mód"
 
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3211
 msgid "Exclusion Mode"
 msgstr "Kizárási mód"
 
-#: class-ml-slider-lightbox.php:3189
+#: class-ml-slider-lightbox.php:3231
 msgid "Images in post content"
 msgstr "Képek a bejegyzés tartalmában"
 
-#: class-ml-slider-lightbox.php:3190
+#: class-ml-slider-lightbox.php:3232
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -1766,11 +2053,11 @@ msgstr ""
 "és oldalakon beállított \"Nagyítás kattintásra\" automatikusan megnyílnak a "
 "galériában."
 
-#: class-ml-slider-lightbox.php:3206
+#: class-ml-slider-lightbox.php:3248
 msgid "Images and videos in widgets and sidebars"
 msgstr "Képek és videók a widgetekben és az oldalsávokban"
 
-#: class-ml-slider-lightbox.php:3207
+#: class-ml-slider-lightbox.php:3249
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
@@ -1778,11 +2065,11 @@ msgstr ""
 "Ha engedélyezve van, a widget területeken található képek és videók "
 "automatikusan megnyílnak a galériában."
 
-#: class-ml-slider-lightbox.php:3223
+#: class-ml-slider-lightbox.php:3265
 msgid "Gallery shortcodes and blocks"
 msgstr "Galéria rövidkódok és blokkok"
 
-#: class-ml-slider-lightbox.php:3224
+#: class-ml-slider-lightbox.php:3266
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1791,11 +2078,11 @@ msgstr ""
 "Galéria blokkokban található képek automatikusan megnyílnak a galéria "
 "ablakában."
 
-#: class-ml-slider-lightbox.php:3240
+#: class-ml-slider-lightbox.php:3282
 msgid "Featured images"
 msgstr "Kiemelt képek"
 
-#: class-ml-slider-lightbox.php:3241
+#: class-ml-slider-lightbox.php:3283
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -1803,7 +2090,7 @@ msgstr ""
 "Ha engedélyezve van, a kiemelt képek (bejegyzés miniatűrök) automatikusan "
 "megnyílnak a galériában, ha rákattintanak."
 
-#: class-ml-slider-lightbox.php:3250
+#: class-ml-slider-lightbox.php:3292
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -1811,11 +2098,11 @@ msgstr ""
 "Minden MetaSlider diavetítést automatikusan megnyit a galériában, "
 "felülbírálva a diavetítésre vonatkozó beállítást."
 
-#: class-ml-slider-lightbox.php:3264
+#: class-ml-slider-lightbox.php:3306
 msgid "MetaSlider slideshows"
 msgstr "MetaSlider bemutatók"
 
-#: class-ml-slider-lightbox.php:3265
+#: class-ml-slider-lightbox.php:3307
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -1823,11 +2110,11 @@ msgstr ""
 "Ha engedélyezve van, az összes MetaSlider diavetítés a galéria ablakában "
 "nyitja meg a diát, felülbírálva a diavetítésre vonatkozó beállítást."
 
-#: class-ml-slider-lightbox.php:3281
+#: class-ml-slider-lightbox.php:3323
 msgid "Videos in post content"
 msgstr "Videók a bejegyzés tartalmában"
 
-#: class-ml-slider-lightbox.php:3282
+#: class-ml-slider-lightbox.php:3324
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1836,7 +2123,7 @@ msgstr ""
 "beágyazások, Vimeo beágyazások) a bejegyzés/oldal tartalmában automatikusan "
 "megnyílnak a galériában."
 
-#: class-ml-slider-lightbox.php:3317
+#: class-ml-slider-lightbox.php:3359
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
@@ -1844,7 +2131,7 @@ msgstr ""
 "Háttérszín a galéria átfedéséhez. Sötét színek a legjobbak a képek "
 "megtekintéséhez."
 
-#: class-ml-slider-lightbox.php:3322
+#: class-ml-slider-lightbox.php:3364
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
@@ -1852,7 +2139,7 @@ msgstr ""
 "Háttérszín a diákban, képekben és videókban megjelenő \"Megnyitás a "
 "Galériában\" gombokhoz."
 
-#: class-ml-slider-lightbox.php:3327
+#: class-ml-slider-lightbox.php:3369
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
@@ -1860,17 +2147,17 @@ msgstr ""
 "Szöveg színe a diákban, képekben és videókban megjelenő \"Megnyitás a "
 "Galériában\" gombokhoz."
 
-#: class-ml-slider-lightbox.php:3332
+#: class-ml-slider-lightbox.php:3374
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr ""
 "Háttérszín, amikor az egérmutatóval a \"Megnyitás a Galériában\" gombokra "
 "húz."
 
-#: class-ml-slider-lightbox.php:3337
+#: class-ml-slider-lightbox.php:3379
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "Szöveg színe, amikor a \"Megnyitás a galériában\" gombok fölé húzunk."
 
-#: class-ml-slider-lightbox.php:3350
+#: class-ml-slider-lightbox.php:3392
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -1878,15 +2165,15 @@ msgstr ""
 "Egyedi szöveg a galéria gombokhoz. Ez a szöveg megjelenik az összes "
 "\"Megnyitás a galériában\" gombon az oldalon."
 
-#: class-ml-slider-lightbox.php:3363 class-ml-slider-lightbox.php:3389
+#: class-ml-slider-lightbox.php:3405 class-ml-slider-lightbox.php:3431
 msgid "Top Right (Default)"
 msgstr "Fent Jobb (Alapértelmezett)"
 
-#: class-ml-slider-lightbox.php:3376
+#: class-ml-slider-lightbox.php:3418
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "Válaszd ki, hol helyezkedjen el a bezárás gomb (X) a galéria átfedésében."
 
-#: class-ml-slider-lightbox.php:3402
+#: class-ml-slider-lightbox.php:3444
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
@@ -1894,11 +2181,11 @@ msgstr ""
 "Válaszd ki, hol helyezkedjenek el a \"Megnyitás a galériában\" gombok a "
 "diákban, képekben, galériákban és videókban."
 
-#: class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3449
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "Szín az előző és következő navigációs nyilakhoz a galériában."
 
-#: class-ml-slider-lightbox.php:3412
+#: class-ml-slider-lightbox.php:3454
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -1906,11 +2193,11 @@ msgstr ""
 "Nyíl szín, amikor az egeret fölé viszik. Látványos visszajelzést ad, amikor "
 "a felhasználók az egerüket a navigációs nyilak fölé mozgatják."
 
-#: class-ml-slider-lightbox.php:3417
+#: class-ml-slider-lightbox.php:3459
 msgid "Color for the close button (X) in the gallery."
 msgstr "Szín a bezárás gombhoz (X) a galériában."
 
-#: class-ml-slider-lightbox.php:3422
+#: class-ml-slider-lightbox.php:3464
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -1918,7 +2205,7 @@ msgstr ""
 "Bezárás gomb szín, amikor az egeret fölé viszik. Látványos visszajelzést "
 "ad, amikor a felhasználók az egerüket a bezárás gomb fölé mozgatják."
 
-#: class-ml-slider-lightbox.php:3427
+#: class-ml-slider-lightbox.php:3469
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -1926,7 +2213,7 @@ msgstr ""
 "Szín a Lightbox eszköztár ikonok és a számláló szöveg számára. Hatással van "
 "a nagyító, teljes képernyős ikonokra (Pro) és a képszámláló megjelenítésére."
 
-#: class-ml-slider-lightbox.php:3432
+#: class-ml-slider-lightbox.php:3474
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -1935,11 +2222,11 @@ msgstr ""
 "ad, amikor a felhasználók az egeret az eszköztár ikonok és a számláló fölé "
 "mozgatják."
 
-#: class-ml-slider-lightbox.php:3437
+#: class-ml-slider-lightbox.php:3479
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "Háttérszín az előző és következő navigációs nyíl gombok számára."
 
-#: class-ml-slider-lightbox.php:3442
+#: class-ml-slider-lightbox.php:3484
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -1947,11 +2234,11 @@ msgstr ""
 "Háttérszín a nyíl gombok számára, amikor fölé viszik az egeret. Látványos "
 "visszajelzést ad, amikor a felhasználók az egeret a nyilak fölé mozgatják."
 
-#: class-ml-slider-lightbox.php:3447
+#: class-ml-slider-lightbox.php:3489
 msgid "Background color for the close button (X) in the gallery."
 msgstr "Háttérszín a bezárás gombhoz (X) a galériában."
 
-#: class-ml-slider-lightbox.php:3452
+#: class-ml-slider-lightbox.php:3494
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -1960,11 +2247,11 @@ msgstr ""
 "visszajelzést ad, amikor a felhasználók az egeret a bezáró gomb fölé "
 "mozgatják."
 
-#: class-ml-slider-lightbox.php:3457
+#: class-ml-slider-lightbox.php:3499
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "Háttérszín az eszköztár ikonok számára a Lightbox-ban."
 
-#: class-ml-slider-lightbox.php:3462
+#: class-ml-slider-lightbox.php:3504
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -1973,46 +2260,46 @@ msgstr ""
 "Látványos visszajelzést ad, amikor a felhasználók az egeret az eszköztár "
 "ikonok fölé mozgatják."
 
-#: class-ml-slider-lightbox.php:3507 class-ml-slider-lightbox.php:3520
-#: class-ml-slider-lightbox.php:3533 class-ml-slider-lightbox.php:3631
+#: class-ml-slider-lightbox.php:3549 class-ml-slider-lightbox.php:3562
+#: class-ml-slider-lightbox.php:3575 class-ml-slider-lightbox.php:3673
 msgid "Icon Hover"
 msgstr "Ikon Hover"
 
-#: class-ml-slider-lightbox.php:3508 class-ml-slider-lightbox.php:3521
-#: class-ml-slider-lightbox.php:3534 class-ml-slider-lightbox.php:3615
-#: class-ml-slider-lightbox.php:3632
+#: class-ml-slider-lightbox.php:3550 class-ml-slider-lightbox.php:3563
+#: class-ml-slider-lightbox.php:3576 class-ml-slider-lightbox.php:3657
+#: class-ml-slider-lightbox.php:3674
 msgid "Background"
 msgstr "Háttér"
 
-#: class-ml-slider-lightbox.php:3509 class-ml-slider-lightbox.php:3522
-#: class-ml-slider-lightbox.php:3535 class-ml-slider-lightbox.php:3616
-#: class-ml-slider-lightbox.php:3633
+#: class-ml-slider-lightbox.php:3551 class-ml-slider-lightbox.php:3564
+#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3658
+#: class-ml-slider-lightbox.php:3675
 msgid "Background Hover"
 msgstr "Háttér Hover"
 
-#: class-ml-slider-lightbox.php:3552
+#: class-ml-slider-lightbox.php:3594
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "Állítsd be a galéria háttér átlátszóságát (0 = átlátszó, 1 = átlátszatlan)."
 
-#: class-ml-slider-lightbox.php:3561
+#: class-ml-slider-lightbox.php:3603
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr ""
 "A fejléc színe, amely a automatikusan lejátszott diavetítések során jelenik "
 "meg."
 
-#: class-ml-slider-lightbox.php:3567
+#: class-ml-slider-lightbox.php:3609
 msgid "Border"
 msgstr "Keret"
 
-#: class-ml-slider-lightbox.php:3568
+#: class-ml-slider-lightbox.php:3610
 msgid "Border Active and Hover"
 msgstr "Keret Aktív és Hover"
 
-#: class-ml-slider-lightbox.php:3580
+#: class-ml-slider-lightbox.php:3622
 msgid "Show navigation arrows in gallery"
 msgstr "Navigációs nyilak megjelenítése a galériában"
 
-#: class-ml-slider-lightbox.php:3581
+#: class-ml-slider-lightbox.php:3623
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -2022,17 +2309,17 @@ msgstr ""
 "billentyűzetes navigációt (← → billentyűk, ESC a bezáráshoz). Ez elérhető "
 "diavetítések és képgalériák számára."
 
-#: class-ml-slider-lightbox.php:3590
+#: class-ml-slider-lightbox.php:3632
 msgid "Customize the gallery background and overlay appearance."
 msgstr "A galéria háttér és átfedés megjelenésének testreszabása."
 
-#: class-ml-slider-lightbox.php:3595
+#: class-ml-slider-lightbox.php:3637
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr ""
 "Navigációs ikonok (bezárás, előző, következő nyilak) testreszabása a "
 "galériához."
 
-#: class-ml-slider-lightbox.php:3600
+#: class-ml-slider-lightbox.php:3642
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -2040,15 +2327,15 @@ msgstr ""
 "A \"Megnyitás a galériában\" gombok testreszabása, amelyeket diákhoz, "
 "képekhez, galériákhoz és videókhoz lehet hozzáadni."
 
-#: class-ml-slider-lightbox.php:3613
+#: class-ml-slider-lightbox.php:3655
 msgid "Text"
 msgstr "Szöveg"
 
-#: class-ml-slider-lightbox.php:3614
+#: class-ml-slider-lightbox.php:3656
 msgid "Text Hover"
 msgstr "Szöveg Hover"
 
-#: class-ml-slider-lightbox.php:3639
+#: class-ml-slider-lightbox.php:3681
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
@@ -2056,11 +2343,29 @@ msgstr ""
 "Navigációs és vezérlési lehetőségek konfigurálása, amelyek minden "
 "MetaSlider galériára vonatkoznak."
 
-#: class-ml-slider-lightbox.php:3649
+#: class-ml-slider-lightbox.php:3686
+msgid "Help search engines understand the images in your galleries."
+msgstr "Segít a keresőmotoroknak megérteni a képeket a galériádban."
+
+#: class-ml-slider-lightbox.php:3697
+msgid "Output SEO structured data for galleries"
+msgstr "SEO strukturált adatok kimenete a galériákhoz"
+
+#: class-ml-slider-lightbox.php:3698
+msgid ""
+"Adds Schema.org ImageGallery markup so search engines can index your "
+"gallery images. Turn this off if your SEO plugin already outputs gallery "
+"structured data."
+msgstr ""
+"Hozzáadja a Schema.org ImageGallery címkét, így a keresőmotorok indexelni "
+"tudják a galéria képeit. Kapcsolja ki, ha az SEO bővítmény már kimeneti "
+"galéria strukturált adatokat."
+
+#: class-ml-slider-lightbox.php:3710
 msgid "Show thumbnails"
 msgstr "Miniatűrök megjelenítése"
 
-#: class-ml-slider-lightbox.php:3650
+#: class-ml-slider-lightbox.php:3711
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -2068,15 +2373,15 @@ msgstr ""
 "Miniatűr képek megjelenítése a galéria alján a könnyű navigáció érdekében. "
 "Ez elérhető diavetítésekhez és képgalériákhoz."
 
-#: class-ml-slider-lightbox.php:3663
+#: class-ml-slider-lightbox.php:3724
 msgid "How visitors open images"
 msgstr "Hogyan nyitják meg a látogatók a képeket"
 
-#: class-ml-slider-lightbox.php:3684
+#: class-ml-slider-lightbox.php:3745
 msgid "Show captions"
 msgstr "Feliratok megjelenítése"
 
-#: class-ml-slider-lightbox.php:3685
+#: class-ml-slider-lightbox.php:3746
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -2084,19 +2389,19 @@ msgstr ""
 "Ha engedélyezve van, feliratok megjelenítése a galéria ablakában. Ez "
 "elérhető diavetítésekhez, képekhez és képgalériákhoz."
 
-#: class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3753
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr ""
 "Az advanced lightbox funkciók a MetaSlider Gallery Pro-n keresztül érhetők "
 "el."
 
-#: class-ml-slider-lightbox.php:3694
+#: class-ml-slider-lightbox.php:3755
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr ""
 "Tekintse meg a MetaSlider Gallery Pro-ban elérhető fejlett funkciók "
 "előnézetét."
 
-#: class-ml-slider-lightbox.php:3697
+#: class-ml-slider-lightbox.php:3758
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -2104,11 +2409,11 @@ msgstr ""
 "Ezek az advanced LightGallery.js pluginok a Pro változatban elérhetők, "
 "további testreszabási lehetőségekkel."
 
-#: class-ml-slider-lightbox.php:3725 class-ml-slider-lightbox.php:3726
+#: class-ml-slider-lightbox.php:3786 class-ml-slider-lightbox.php:3787
 msgid "specific Pages"
 msgstr "specifikus oldalak"
 
-#: class-ml-slider-lightbox.php:3728
+#: class-ml-slider-lightbox.php:3789
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2116,7 +2421,7 @@ msgstr ""
 "Válassza ki azokat az oldalakat, ahol a galériának le kell tiltva lennie. "
 "Legfeljebb 100 legutóbbi oldal jelenik meg. Írjon a kereséshez."
 
-#: class-ml-slider-lightbox.php:3728 class-ml-slider-lightbox.php:3729
+#: class-ml-slider-lightbox.php:3789 class-ml-slider-lightbox.php:3790
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2124,11 +2429,11 @@ msgstr ""
 "Válassza ki azokat az oldalakat, ahol a galériának engedélyezve kell "
 "lennie. Legfeljebb 100 legutóbbi oldal jelenik meg. Írjon a kereséshez."
 
-#: class-ml-slider-lightbox.php:3773 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3834 class-ml-slider-lightbox.php:3835
 msgid "specific Posts"
 msgstr "specifikus bejegyzések"
 
-#: class-ml-slider-lightbox.php:3776
+#: class-ml-slider-lightbox.php:3837
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2136,7 +2441,7 @@ msgstr ""
 "Válassza ki azokat a bejegyzéseket, ahol a galériának le kell tiltva "
 "lennie. Legfeljebb 100 legutóbbi bejegyzés jelenik meg. Írjon a kereséshez."
 
-#: class-ml-slider-lightbox.php:3776 class-ml-slider-lightbox.php:3777
+#: class-ml-slider-lightbox.php:3837 class-ml-slider-lightbox.php:3838
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2144,50 +2449,50 @@ msgstr ""
 "Válassza ki azokat a bejegyzéseket, ahol a galériának engedélyezve kell "
 "lennie. Legfeljebb 100 legutóbbi bejegyzés jelenik meg. Írjon a kereséshez."
 
-#: class-ml-slider-lightbox.php:3804
+#: class-ml-slider-lightbox.php:3865
 msgid "include"
 msgstr "beillesztés"
 
-#: class-ml-slider-lightbox.php:3804
+#: class-ml-slider-lightbox.php:3865
 msgid "exclude"
 msgstr "kizárás"
 
-#: class-ml-slider-lightbox.php:3844
+#: class-ml-slider-lightbox.php:3905
 #, php-format
 msgid "specific %s"
 msgstr "specifikus %s"
 
-#: class-ml-slider-lightbox.php:3845
+#: class-ml-slider-lightbox.php:3906
 #, php-format
 msgid "%s specific %s"
 msgstr "%s speciális %s"
 
-#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:3848
+#: class-ml-slider-lightbox.php:3908 class-ml-slider-lightbox.php:3909
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "Legfeljebb 100 legutóbbi %s jelenik meg. Írj a kereséshez."
 
-#: class-ml-slider-lightbox.php:3896 class-ml-slider-lightbox.php:3897
+#: class-ml-slider-lightbox.php:3957 class-ml-slider-lightbox.php:3958
 msgid "specific post types"
 msgstr "specifikus bejegyzéstípusok"
 
-#: class-ml-slider-lightbox.php:3899
+#: class-ml-slider-lightbox.php:3960
 msgid "Select post types where gallery should be disabled entirely."
 msgstr ""
 "Válassza ki azokat a bejegyzéstípusokat, ahol a galériának teljesen le kell "
 "tiltva lennie."
 
-#: class-ml-slider-lightbox.php:3899 class-ml-slider-lightbox.php:3900
+#: class-ml-slider-lightbox.php:3960 class-ml-slider-lightbox.php:3961
 msgid "Select post types where gallery should be enabled entirely."
 msgstr ""
 "Válassza ki azokat a bejegyzéstípusokat, ahol a galériának teljesen "
 "engedélyezve kell lennie."
 
-#: class-ml-slider-lightbox.php:3934
+#: class-ml-slider-lightbox.php:3995
 msgid "Exclude by CSS selector"
 msgstr "Kizárás CSS szelektor alapján"
 
-#: class-ml-slider-lightbox.php:3937
+#: class-ml-slider-lightbox.php:3998
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2196,11 +2501,11 @@ msgstr ""
 "(soronként egy). Példák:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar "
 ".widget-area"
 
-#: class-ml-slider-lightbox.php:3960
+#: class-ml-slider-lightbox.php:4021
 msgid "Minimum Image Width"
 msgstr "Kép minimális szélessége"
 
-#: class-ml-slider-lightbox.php:3963
+#: class-ml-slider-lightbox.php:4024
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2210,11 +2515,11 @@ msgstr ""
 "(pixelben). A megjelenített szélességet használja, nem a tényleges képfájl "
 "méretét. Ez hasznos a kis ikonok, jelvények és gombok kizárásához."
 
-#: class-ml-slider-lightbox.php:3986
+#: class-ml-slider-lightbox.php:4047
 msgid "Minimum Image Height"
 msgstr "Kép minimális magassága"
 
-#: class-ml-slider-lightbox.php:3989
+#: class-ml-slider-lightbox.php:4050
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2224,7 +2529,7 @@ msgstr ""
 "A megjelenített magasságot használja, nem a tényleges képfájl méretét. Ez "
 "hasznos a kis ikonok, jelvények és gombok kizárásához."
 
-#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
+#: class-ml-slider-lightbox.php:4066 class-ml-slider-lightbox.php:4223
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
@@ -2232,15 +2537,15 @@ msgstr ""
 "Fejlettebb média kezelési és videolejátszási funkciók professzionális "
 "galériák számára."
 
-#: class-ml-slider-lightbox.php:4012
+#: class-ml-slider-lightbox.php:4073
 msgid "Advanced features for professional lightbox implementations."
 msgstr "Fejlett funkciók professzionális Lightbox megvalósításokhoz."
 
-#: class-ml-slider-lightbox.php:4023 class-ml-slider-lightbox.php:4235
+#: class-ml-slider-lightbox.php:4084 class-ml-slider-lightbox.php:4296
 msgid "Enable Zoom"
 msgstr "Zoom engedélyezése"
 
-#: class-ml-slider-lightbox.php:4024
+#: class-ml-slider-lightbox.php:4085
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -2248,11 +2553,11 @@ msgstr ""
 "Dupla kattintás a zoomhoz, zoom vezérlők, egérkerék zoom és "
 "zoom-hoz-illesztés lehetőségek."
 
-#: class-ml-slider-lightbox.php:4034 class-ml-slider-lightbox.php:4242
+#: class-ml-slider-lightbox.php:4095 class-ml-slider-lightbox.php:4303
 msgid "Enable Fullscreen"
 msgstr "Teljes képernyő engedélyezése"
 
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4096
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
@@ -2260,11 +2565,11 @@ msgstr ""
 "Natív HTML5 teljes képernyő támogatás billentyűparancsokkal (F billentyű) a "
 "magával ragadó megtekintéshez."
 
-#: class-ml-slider-lightbox.php:4045 class-ml-slider-lightbox.php:4249
+#: class-ml-slider-lightbox.php:4106 class-ml-slider-lightbox.php:4310
 msgid "Enable Rotate"
 msgstr "Forgatás engedélyezése"
 
-#: class-ml-slider-lightbox.php:4046
+#: class-ml-slider-lightbox.php:4107
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2272,11 +2577,11 @@ msgstr ""
 "Képek elforgatása óramutató járásával megegyezően/ellenkezőleg, "
 "vízszintes/függőleges megfordítás a szerszámkészlet vezérlőivel."
 
-#: class-ml-slider-lightbox.php:4056
+#: class-ml-slider-lightbox.php:4117
 msgid "Enable Video"
 msgstr "Videó engedélyezése"
 
-#: class-ml-slider-lightbox.php:4057
+#: class-ml-slider-lightbox.php:4118
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2284,12 +2589,12 @@ msgstr ""
 "Fejlett videótámogatás YouTube, Vimeo, HTML5 videókhoz automatikus "
 "lejátszással és minőségvezérléssel."
 
-#: class-ml-slider-lightbox.php:4067 class-ml-slider-lightbox.php:4284
-#: class-ml-slider-lightbox.php:4431
+#: class-ml-slider-lightbox.php:4128 class-ml-slider-lightbox.php:4345
+#: class-ml-slider-lightbox.php:4492
 msgid "Enable Unique Image URLs"
 msgstr "Egyedi képkénti URL-ek engedélyezése"
 
-#: class-ml-slider-lightbox.php:4068
+#: class-ml-slider-lightbox.php:4129
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -2297,19 +2602,19 @@ msgstr ""
 "Egyedi URL-ek minden galéria képhez, támogatva a böngésző vissza/előre "
 "navigációt."
 
-#: class-ml-slider-lightbox.php:4078 class-ml-slider-lightbox.php:4291
+#: class-ml-slider-lightbox.php:4139 class-ml-slider-lightbox.php:4352
 msgid "Enable Autoplay"
 msgstr "Automatikus lejátszás engedélyezése"
 
-#: class-ml-slider-lightbox.php:4079
+#: class-ml-slider-lightbox.php:4140
 msgid "Automatically advance through images in the gallery."
 msgstr "Automatikusan léptessen a galéria képei között."
 
-#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4263
+#: class-ml-slider-lightbox.php:4150 class-ml-slider-lightbox.php:4324
 msgid "Enable Share"
 msgstr "Megosztás engedélyezése"
 
-#: class-ml-slider-lightbox.php:4090
+#: class-ml-slider-lightbox.php:4151
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2317,15 +2622,15 @@ msgstr ""
 "Közösségi média megosztó gombok Facebookhoz, Twitterhez, Pinteresthez és "
 "közvetlen URL megosztáshoz."
 
-#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4270
+#: class-ml-slider-lightbox.php:4161 class-ml-slider-lightbox.php:4331
 msgid "Enable Pager"
 msgstr "Oldalirányító engedélyezése"
 
-#: class-ml-slider-lightbox.php:4101
+#: class-ml-slider-lightbox.php:4162
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "Minimalista lapozópontok a tiszta navigációhoz, előnézeti képek nélkül."
 
-#: class-ml-slider-lightbox.php:4157 class-ml-slider-lightbox.php:4231
+#: class-ml-slider-lightbox.php:4218 class-ml-slider-lightbox.php:4292
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
@@ -2333,21 +2638,21 @@ msgstr ""
 "Professzionális zoom és képkölcsönhatási vezérlők a jobb felhasználói "
 "élmény érdekében."
 
-#: class-ml-slider-lightbox.php:4167 class-ml-slider-lightbox.php:4259
+#: class-ml-slider-lightbox.php:4228 class-ml-slider-lightbox.php:4320
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr ""
 "Közösségi megosztás és navigációs fejlesztések a nagyobb elköteleződés "
 "érdekében."
 
-#: class-ml-slider-lightbox.php:4172 class-ml-slider-lightbox.php:4280
+#: class-ml-slider-lightbox.php:4233 class-ml-slider-lightbox.php:4341
 msgid "Advanced functionality including URL management and automation features."
 msgstr "Fejlett funkciók URL kezeléssel és automatizálási lehetőségekkel."
 
-#: class-ml-slider-lightbox.php:4184
+#: class-ml-slider-lightbox.php:4245
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "Ez a funkció elérhető a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4236 class-ml-slider-lightbox.php:4400
+#: class-ml-slider-lightbox.php:4297 class-ml-slider-lightbox.php:4461
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -2355,47 +2660,47 @@ msgstr ""
 "Engedélyezze a felhasználóknak a nagyítást és kicsinyítést dupla "
 "kattintással, egérkerékkel és zoom vezérlőkkel."
 
-#: class-ml-slider-lightbox.php:4238
+#: class-ml-slider-lightbox.php:4299
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "A zoom vezérlők elérhetők a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4243
+#: class-ml-slider-lightbox.php:4304
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "Natív HTML5 teljes képernyős mód az immerszív képkilátáshoz."
 
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4306
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "A teljes képernyős mód elérhető a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4416
+#: class-ml-slider-lightbox.php:4311 class-ml-slider-lightbox.php:4477
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr ""
 "Képek elforgatása óramutató járásával megegyezően/ellentétesen és "
 "vízszintes/függőleges tükrözés."
 
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4313
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "A képek elforgatása elérhető a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4264
+#: class-ml-slider-lightbox.php:4325
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "Beépített közösségi média megosztás Facebookhoz, Twitterhez és Pinteresthez."
 
-#: class-ml-slider-lightbox.php:4266
+#: class-ml-slider-lightbox.php:4327
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "A közösségi megosztás elérhető a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4448
+#: class-ml-slider-lightbox.php:4332 class-ml-slider-lightbox.php:4509
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr ""
 "Minimalista lapozási pontok a tisztább felület érdekében a miniaturák "
 "helyett."
 
-#: class-ml-slider-lightbox.php:4273
+#: class-ml-slider-lightbox.php:4334
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "A lapozó navigáció elérhető a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4285 class-ml-slider-lightbox.php:4432
+#: class-ml-slider-lightbox.php:4346 class-ml-slider-lightbox.php:4493
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
@@ -2403,83 +2708,83 @@ msgstr ""
 "Egyedi URL-ek generálása minden galéria képhez a böngésző vissza/előre "
 "navigációjával."
 
-#: class-ml-slider-lightbox.php:4287
+#: class-ml-slider-lightbox.php:4348
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "Egyedi kép URL-ek elérhetőek a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4292 class-ml-slider-lightbox.php:4440
+#: class-ml-slider-lightbox.php:4353 class-ml-slider-lightbox.php:4501
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "Automatikus diavetítés időzítési vezérlőkkel és előrehaladási sávval."
 
-#: class-ml-slider-lightbox.php:4294
+#: class-ml-slider-lightbox.php:4355
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "Automatikus lejátszás elérhető a MetaSlider Gallery Pro-ban"
 
-#: class-ml-slider-lightbox.php:4298
+#: class-ml-slider-lightbox.php:4359
 msgid "Enable Image Protection"
 msgstr "Képvédelem engedélyezése"
 
-#: class-ml-slider-lightbox.php:4301
+#: class-ml-slider-lightbox.php:4362
 msgid "Image protection is available in MetaSlider Gallery Pro"
 msgstr "A képvédelem a MetaSlider Gallery Pro-ban érhető el"
 
-#: class-ml-slider-lightbox.php:4318
+#: class-ml-slider-lightbox.php:4379
 msgid "Features"
 msgstr "Funkciók"
 
-#: class-ml-slider-lightbox.php:4319
+#: class-ml-slider-lightbox.php:4380
 msgid "Free"
 msgstr "Ingyenes"
 
-#: class-ml-slider-lightbox.php:4320, fuzzy
+#: class-ml-slider-lightbox.php:4381, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4326 class-ml-slider-lightbox.php:4465
+#: class-ml-slider-lightbox.php:4387 class-ml-slider-lightbox.php:4526
 msgid "Installed"
 msgstr "Telepítve"
 
-#: class-ml-slider-lightbox.php:4329 class-ml-slider-lightbox.php:4468
+#: class-ml-slider-lightbox.php:4390 class-ml-slider-lightbox.php:4529
 msgid "Upgrade now"
 msgstr "Frissíts most"
 
-#: class-ml-slider-lightbox.php:4335
+#: class-ml-slider-lightbox.php:4396
 msgid "Automatic lightbox for images"
 msgstr "Automatikus lightbox a képekhez"
 
-#: class-ml-slider-lightbox.php:4336
+#: class-ml-slider-lightbox.php:4397
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "Automatikusan engedélyezd a lightbox-ot az összes képedhez az oldaladon."
 
-#: class-ml-slider-lightbox.php:4343
+#: class-ml-slider-lightbox.php:4404
 msgid "MetaSlider integration"
 msgstr "MetaSlider integráció"
 
-#: class-ml-slider-lightbox.php:4344
+#: class-ml-slider-lightbox.php:4405
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "Zökkenőmentes integráció a MetaSlider diavetítésekkel."
 
-#: class-ml-slider-lightbox.php:4351
+#: class-ml-slider-lightbox.php:4412
 msgid "WordPress gallery support"
 msgstr "WordPress galéria támogatás"
 
-#: class-ml-slider-lightbox.php:4352
+#: class-ml-slider-lightbox.php:4413
 msgid "Support for WordPress native galleries and blocks."
 msgstr "Támogatás a WordPress natív galériákhoz és blokkokhoz."
 
-#: class-ml-slider-lightbox.php:4359
+#: class-ml-slider-lightbox.php:4420
 msgid "Appearance customization"
 msgstr "Megjelenés testreszabása"
 
-#: class-ml-slider-lightbox.php:4360
+#: class-ml-slider-lightbox.php:4421
 msgid "Customize colors, opacity, and button styles."
 msgstr "Színek, átlátszóság és gombstílusok testreszabása."
 
-#: class-ml-slider-lightbox.php:4367
+#: class-ml-slider-lightbox.php:4428
 msgid "Gallery builder &amp; layouts"
 msgstr "Galériaépítő &amp; elrendezések"
 
-#: class-ml-slider-lightbox.php:4368
+#: class-ml-slider-lightbox.php:4429
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
@@ -2487,83 +2792,83 @@ msgstr ""
 "Építsen galériákat Rács, Tégla, Igazított, Karusszel és Kiállítás "
 "elrendezésekkel."
 
-#: class-ml-slider-lightbox.php:4375
+#: class-ml-slider-lightbox.php:4436
 msgid "Responsive columns"
 msgstr "Reszponzív oszlopok"
 
-#: class-ml-slider-lightbox.php:4376
+#: class-ml-slider-lightbox.php:4437
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr ""
 "Állítsa be az oszlopok számát asztali és mobil nézetben, állítható "
 "távolsággal."
 
-#: class-ml-slider-lightbox.php:4383
+#: class-ml-slider-lightbox.php:4444
 msgid "Image captions"
 msgstr "Képfeliratok"
 
-#: class-ml-slider-lightbox.php:4384
+#: class-ml-slider-lightbox.php:4445
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "Jelenítse meg a képfeliratokat a galéria rácsában és a galéria ablakban."
 
-#: class-ml-slider-lightbox.php:4391
+#: class-ml-slider-lightbox.php:4452
 msgid "Thumbnail navigation"
 msgstr "Képminiatűr navigáció"
 
-#: class-ml-slider-lightbox.php:4392
+#: class-ml-slider-lightbox.php:4453
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "Jelenítsen meg egy miniatűrcsíkot a gyors navigációhoz a képek között."
 
-#: class-ml-slider-lightbox.php:4399
+#: class-ml-slider-lightbox.php:4460
 msgid "Zoom controls"
 msgstr "Zoom vezérlők"
 
-#: class-ml-slider-lightbox.php:4407
+#: class-ml-slider-lightbox.php:4468
 msgid "Fullscreen mode"
 msgstr "Teljes képernyős mód"
 
-#: class-ml-slider-lightbox.php:4408
+#: class-ml-slider-lightbox.php:4469
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "Natív HTML5 teljes képernyős nézet az immerszív képkészítéshez."
 
-#: class-ml-slider-lightbox.php:4415
+#: class-ml-slider-lightbox.php:4476
 msgid "Rotate and flip images"
 msgstr "Képek forgatása és tükrözése"
 
-#: class-ml-slider-lightbox.php:4423
+#: class-ml-slider-lightbox.php:4484
 msgid "Social media sharing"
 msgstr "Közösségi média megosztás"
 
-#: class-ml-slider-lightbox.php:4424
+#: class-ml-slider-lightbox.php:4485
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "Beépített megosztás a Facebook, Twitter és Pinterest számára."
 
-#: class-ml-slider-lightbox.php:4439
+#: class-ml-slider-lightbox.php:4500
 msgid "Autoplay slideshow"
 msgstr "Automatikus diavetítés"
 
-#: class-ml-slider-lightbox.php:4447
+#: class-ml-slider-lightbox.php:4508
 msgid "Pager navigation"
 msgstr "Oldal navigáció"
 
-#: class-ml-slider-lightbox.php:4455
+#: class-ml-slider-lightbox.php:4516
 msgid "Premium support"
 msgstr "Prémium támogatás"
 
-#: class-ml-slider-lightbox.php:4456
+#: class-ml-slider-lightbox.php:4517
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "Kérdéseit közvetlenül szakértőink címezzék meg."
 
-#: class-ml-slider-lightbox.php:6243
+#: class-ml-slider-lightbox.php:6304
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr ""
 "Állítsa be, hogyan lép kölcsönhatásba a lightbox a WordPress beépített "
 "funkcióival."
 
-#: class-ml-slider-lightbox.php:6258
+#: class-ml-slider-lightbox.php:6319
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "Felülírja a WordPress \"Kattintásra nagyítás\" beállítást"
 
-#: class-ml-slider-lightbox.php:6259
+#: class-ml-slider-lightbox.php:6320
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2575,11 +2880,11 @@ msgstr ""
 "beállítást, és kihagyja a \"Kattintásra nagyítás\" beállítással rendelkező "
 "képeket."
 
-#: class-ml-slider-lightbox.php:6275
+#: class-ml-slider-lightbox.php:6336
 msgid "Override \"Link to Image File\" Setting"
 msgstr "Felülírja a \"Link a képfájlhoz\" beállítást"
 
-#: class-ml-slider-lightbox.php:6276
+#: class-ml-slider-lightbox.php:6337
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2590,11 +2895,11 @@ msgstr ""
 "blokkszerkesztőben a \"Link a Képfájlhoz\" beállítással). Ha letiltva van, "
 "tiszteletben tartja az eredeti link viselkedését."
 
-#: class-ml-slider-lightbox.php:6307
+#: class-ml-slider-lightbox.php:6368
 msgid "Exclude Post Types from Manual Processing"
 msgstr "Kizárja a bejegyzéstípusokat a manuális feldolgozásból"
 
-#: class-ml-slider-lightbox.php:6310
+#: class-ml-slider-lightbox.php:6371
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2605,11 +2910,11 @@ msgstr ""
 "letiltsa a galériát a WooCommerce termékoldalakon, miközben másutt aktívan "
 "tartja."
 
-#: class-ml-slider-lightbox.php:6334
+#: class-ml-slider-lightbox.php:6395
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "Használati útmutató: WordPress \"Kattintásra nagyítás\""
 
-#: class-ml-slider-lightbox.php:6336
+#: class-ml-slider-lightbox.php:6397
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2617,57 +2922,57 @@ msgstr ""
 "A WordPress beépített \"Kattintásra nagyítás\" funkcióval rendelkezik a "
 "képekhez. Íme, hogyan engedélyezheti:"
 
-#: class-ml-slider-lightbox.php:6338 class-ml-slider-lightbox.php:6351
+#: class-ml-slider-lightbox.php:6399 class-ml-slider-lightbox.php:6412
 msgid "Select an image in the block editor."
 msgstr "Válasszon ki egy képet a blokk szerkesztőben."
 
-#: class-ml-slider-lightbox.php:6339 class-ml-slider-lightbox.php:6352
+#: class-ml-slider-lightbox.php:6400 class-ml-slider-lightbox.php:6413
 msgid "In the block toolbar, click on the Link icon."
 msgstr "A blokk eszköztáron kattintson a Link ikonra."
 
-#: class-ml-slider-lightbox.php:6340
+#: class-ml-slider-lightbox.php:6401
 msgid "Select \"Enlarge on click\"."
 msgstr "Válassza az \"Kattintásra nagyítás\" lehetőséget."
 
-#: class-ml-slider-lightbox.php:6346
+#: class-ml-slider-lightbox.php:6407
 msgid "How to use: \"Link to Image File\""
 msgstr "Használati útmutató: \"Link az Kép fájlhoz\""
 
-#: class-ml-slider-lightbox.php:6348
+#: class-ml-slider-lightbox.php:6409
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr ""
 "Képeket közvetlenül a teljes méretű médiafájljukhoz lehet linkelni. Íme, "
 "hogyan:"
 
-#: class-ml-slider-lightbox.php:6349
+#: class-ml-slider-lightbox.php:6410
 msgid "For the Block Editor:"
 msgstr "A Blokk Szerkesztő számára:"
 
-#: class-ml-slider-lightbox.php:6353
+#: class-ml-slider-lightbox.php:6414
 msgid "Choose \"Link to image file\"."
 msgstr "Válassza a \"Link a kép fájlhoz\" lehetőséget."
 
-#: class-ml-slider-lightbox.php:6355
+#: class-ml-slider-lightbox.php:6416
 msgid "For the Classic Editor:"
 msgstr "A Klasszikus Szerkesztő számára:"
 
-#: class-ml-slider-lightbox.php:6357
+#: class-ml-slider-lightbox.php:6418
 msgid "Select an image."
 msgstr "Válasszon ki egy képet."
 
-#: class-ml-slider-lightbox.php:6358
+#: class-ml-slider-lightbox.php:6419
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "A kép eszköztáron kattintson a Szerkesztés ikonra."
 
-#: class-ml-slider-lightbox.php:6359
+#: class-ml-slider-lightbox.php:6420
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "Válassza a \"Médiafájl\" lehetőséget a \"Link a\" legördülő menüből."
 
-#: class-ml-slider-lightbox.php:6365
+#: class-ml-slider-lightbox.php:6426
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "Használati útmutató: CSS Osztály Módszer (Haladó)"
 
-#: class-ml-slider-lightbox.php:6367
+#: class-ml-slider-lightbox.php:6428
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2676,35 +2981,35 @@ msgstr ""
 "bármely olyan elemhez, amely képeket tartalmaz, a MetaSlider Galéria "
 "engedélyezéséhez."
 
-#: class-ml-slider-lightbox.php:6368
+#: class-ml-slider-lightbox.php:6429
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "1. módszer: Blokk Szerkesztő További CSS Osztályok"
 
-#: class-ml-slider-lightbox.php:6370
+#: class-ml-slider-lightbox.php:6431
 msgid "Select an image or gallery block."
 msgstr "Válasszon ki egy képet vagy galéria blokkot."
 
-#: class-ml-slider-lightbox.php:6371
+#: class-ml-slider-lightbox.php:6432
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "A blokk beállítások oldalsávban görgessen le a \"Haladó\" részhez."
 
-#: class-ml-slider-lightbox.php:6372
+#: class-ml-slider-lightbox.php:6433
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr ""
 "Adja hozzá a <code>ml-lightbox-enabled</code> lehetőséget a \"További CSS "
 "osztály(ok)\" mezőhöz."
 
-#: class-ml-slider-lightbox.php:6374
+#: class-ml-slider-lightbox.php:6435
 msgid "Method 2: HTML/Code"
 msgstr "2. módszer: HTML/Kód"
 
-#: class-ml-slider-lightbox.php:6375
+#: class-ml-slider-lightbox.php:6436
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr ""
 "Egyedi HTML vagy téma fejlesztők számára, adja hozzá az osztályt "
 "közvetlenül:"
 
-#: class-ml-slider-lightbox.php:1279
+#: class-ml-slider-lightbox.php:1307
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"

@@ -232,13 +232,10 @@
             });
         }
 
-        // Initialize Tipsy tooltips (following MetaSlider pattern)
         if (typeof $.fn.tipsy !== 'undefined') {
             $('.tipsy-tooltip-top').tipsy({live: false, delayIn: 500, html: true, gravity: 's'});
         }
 
-        // "How visitors open images" segmented control (backed by the two hidden
-        // boolean options; the form save reads those hidden inputs).
         var triggerRoot = document.querySelector('.ml-trigger-mode');
         if (triggerRoot && window.mlLightboxTrigger) {
             window.mlLightboxTrigger.initTriggerMode(triggerRoot);

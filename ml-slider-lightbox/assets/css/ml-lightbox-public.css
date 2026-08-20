@@ -347,12 +347,6 @@
     margin: 0;
 }
 
-/* Caption text transitions — lightGallery state-driven, like the official
-   caption-animation demo. The mode is set per gallery via an ml-cap-* class on
-   .lg-container (see applyGallerySettings); the caption text is wrapped in
-   .ml-caption-text at init so the transition animates the text, not the
-   .lg-sub-html bar/background. Non-current slides keep the text hidden; the
-   active (.lg-current) slide reveals it once the slide settles. */
 .lg-container[class*="ml-cap-"] .lg-sub-html .ml-caption-text {
     display: inline-block;
     opacity: 0;
@@ -378,6 +372,12 @@
 }
 .lg-container .lg-item > .lg-sub-html:empty {
     display: none;
+}
+
+/* .lg-inner sets white-space: nowrap for its inline-block slides; captions
+   appended into .lg-item inherit it and run off the slide instead of wrapping. */
+.lg-container .lg-item > .lg-sub-html {
+    white-space: normal;
 }
 
 .lightbox-layer-wrapper {

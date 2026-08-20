@@ -9,13 +9,11 @@
 ( function ( root ) {
 	'use strict';
 
-	// The two stored booleans → one mode string.
 	function modeFromBooleans( showButton, useIcon ) {
 		if ( ! showButton ) { return 'image'; }
 		return useIcon ? 'icon' : 'button';
 	}
 
-	// One mode string → the two stored booleans.
 	function booleansFromMode( mode ) {
 		return {
 			showButton: mode === 'icon' || mode === 'button',
@@ -23,8 +21,6 @@
 		};
 	}
 
-	// Wire a rendered .ml-trigger-mode block. Changing the dropdown updates the
-	// two hidden inputs and invokes onChange(mode).
 	function initTriggerMode( rootEl, onChange ) {
 		if ( ! rootEl ) { return; }
 		var hiddenShow = rootEl.querySelector( '.ml-trigger-show' );

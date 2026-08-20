@@ -67,9 +67,6 @@ class MetaSliderLightboxSlideshowConverter {
         $slides = $this->slideshowSlides( $slideshow_id );
 
         if ( empty( $slides ) ) {
-            // Reads straight from the database, which only reflects a slideshow's
-            // slides/order once it's been saved — a slideshow edited but not yet
-            // saved (or one with no image-type slides) resolves to zero images here.
             wp_die( esc_html__( 'This slideshow has no saved images to convert. Save the slideshow, then try again.', 'ml-slider-lightbox' ) );
         }
 

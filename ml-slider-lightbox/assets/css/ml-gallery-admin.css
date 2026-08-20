@@ -164,14 +164,6 @@
 	border-bottom: 1px solid var(--ml-gray-200);
 }
 
-/*
- * Collapsible settings panels (accordion).
- *
- * ml-gallery-admin.js wraps each panel heading in a .ml-accordion-toggle button
- * and adds .is-accordion to the sidebar. The collapse rules below are scoped to
- * .is-accordion, so if that script never runs every panel stays expanded and no
- * setting is hidden.
- */
 .ml-gallery-sidebar-panel .ml-accordion-toggle {
 	display: flex;
 	align-items: center;
@@ -255,10 +247,16 @@
 .ml-gallery-add-bar {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	gap: 12px;
 	flex-wrap: wrap;
 	margin-top: 10px;
+}
+
+.ml-gallery-add-bar-options {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	margin-left: auto;
 }
 
 .ml-gallery-add-images-btn {
@@ -317,6 +315,61 @@
 .ml-add-position-option input:focus-visible + span {
 	outline: 2px solid var(--ml-orange, #dd6923);
 	outline-offset: 1px;
+}
+
+.ml-image-order {
+	display: inline-flex;
+	align-items: center;
+}
+
+.ml-add-position:not(.is-hidden) + .ml-image-order {
+	padding-left: 12px;
+	border-left: 1px solid var(--ml-gray-300, #c3c4c7);
+}
+
+.ml-image-order-label {
+	margin-right: 8px;
+	font-size: 12px;
+	color: var(--ml-gray-600, #50575e);
+}
+
+.ml-image-order select {
+	min-height: 0;
+	margin: 0;
+	padding: 4px 24px 4px 12px;
+	font-size: 12px;
+	line-height: 1.6;
+	border: 1px solid var(--ml-gray-300, #c3c4c7);
+	border-radius: 4px;
+	background-color: #fff;
+	color: var(--ml-gray-700, #3c434a);
+	box-shadow: none;
+}
+
+.ml-image-order select:hover {
+	border-color: var(--ml-orange, #dd6923);
+	color: var(--ml-gray-700, #3c434a);
+}
+
+.ml-image-order select:focus {
+	border-color: var(--ml-orange, #dd6923);
+	outline: 2px solid var(--ml-orange, #dd6923);
+	outline-offset: 1px;
+	box-shadow: none;
+}
+
+.ml-image-order-notice {
+	margin: 0 0 8px;
+	padding: 6px 10px;
+	font-size: 12px;
+	color: var(--ml-gray-700, #3c434a);
+	background: var(--ml-gray-100);
+	border-left: 3px solid var(--ml-orange);
+	border-radius: 3px;
+}
+
+#ml-gallery-preview.is-order-locked .ml-gallery-item {
+	cursor: default;
 }
 
 /* ── Add-images split button ─────────────────────────────────────────────── */
@@ -430,7 +483,8 @@
 }
 
 /* Front-end-matching glyph beside a setting's label (see settingIcon()). */
-.ml-gallery-setting label:has(.ml-setting-icon) {
+.ml-gallery-setting label:has(.ml-setting-icon),
+.ml-custom-size-label:has(.ml-setting-icon) {
 	display: inline-flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -451,14 +505,55 @@
 	height: 16px;
 }
 
-/* Range rows (label + value on one line): keep the value pushed to the right
-   when an icon precedes the label text. */
 .ml-gallery-setting--col label:has(.ml-setting-icon) .ml-gallery-range-value {
 	margin-left: auto;
 }
 
 .ml-gallery-setting select {
 	max-width: 120px;
+}
+
+/* Columns row: one cell per responsive band (desktop / laptop / tablet / mobile). */
+.ml-gallery-columns-row > label {
+	margin-bottom: 4px;
+}
+
+.ml-columns-devices {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 6px;
+	width: 100%;
+}
+
+.ml-columns-device {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.ml-gallery-setting .ml-columns-device label,
+.ml-gallery-setting--col .ml-columns-device label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+	width: auto;
+	cursor: pointer;
+}
+
+.ml-columns-device .ml-setting-icon,
+.ml-columns-device .ml-setting-icon svg {
+	width: 14px;
+	height: 14px;
+}
+
+.ml-gallery-setting .ml-columns-device select {
+	flex: 1 1 auto;
+	width: auto;
+	max-width: none;
+	min-width: 0;
+	padding-left: 6px;
+	padding-right: 18px;
 }
 
 /* Caption display labels ("Gallery + Window") need more room than the default. */
@@ -545,12 +640,15 @@
 }
 
 .ml-gallery-columns-row.is-hidden,
-.ml-gallery-mobile-columns-row.is-hidden,
 .ml-gallery-height-row.is-hidden,
 .ml-gallery-gap-row.is-hidden,
+.ml-gallery-load-more-row.is-hidden,
+.ml-gallery-load-more-batch-row.is-hidden,
 .ml-show-in-modal-row.is-hidden,
 .ml-carousel-frame-row.is-hidden,
+.ml-expand-row.is-hidden,
 .ml-autoplay-interval-row.is-hidden,
+.ml-download-sizes-promo.is-hidden,
 .ml-caption-style-field.is-hidden,
 .ml-lightbox-settings-group.is-hidden,
 .ml-lightbox-only-panel.is-hidden,
@@ -559,8 +657,43 @@
 .ml-button-text-row.is-hidden,
 .ml-button-position-row.is-hidden,
 .ml-button-colors-row.is-hidden,
-.ml-icon-colors-row.is-hidden {
+.ml-icon-colors-row.is-hidden,
+.ml-gallery-size-custom-row.is-hidden,
+.ml-lightbox-size-custom-row.is-hidden,
+.ml-window-size-group.is-hidden,
+.ml-size-gen-status.is-hidden,
+.ml-save-notice-text.is-hidden,
+.ml-add-position.is-hidden {
 	display: none;
+}
+
+.ml-size-gen-status {
+	display: inline-flex;
+	align-items: center;
+	gap: 2px;
+	margin-left: 6px;
+	color: var(--ml-gray-600);
+}
+
+.ml-save-notice.notice-info .ml-size-gen-status {
+	margin-left: 0;
+	color: var(--ml-gray-800);
+}
+
+.ml-size-gen-status.has-failures {
+	color: #b32d2e;
+}
+
+/* display, not visibility: an inactive spinner would leave a hole mid-sentence. */
+.ml-size-gen-spinner {
+	display: none;
+	float: none;
+	margin: 0;
+}
+
+.ml-size-gen-spinner.is-active {
+	display: inline-block;
+	visibility: visible;
 }
 
 /* ── Toggle switch (replaces default checkbox) ───────────────────────────── */
@@ -666,10 +799,6 @@
 	margin: 0;
 }
 
-/* Color pickers: compact swatch on the right of the label row, mirroring the
-   front-end toolbar (see mockup). The picker container stays full width so the
-   iris popup still opens below, but the result button is pulled out as a small
-   square at the top-right and the "Select Color" text is hidden. */
 .ml-gallery-setting--col:has(.ml-gallery-color-picker) {
 	position: relative;
 	gap: 0;
@@ -1052,7 +1181,6 @@
 	color: #1d2327;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .08);
 }
-/* Dot marks the source shown on the front end; the tooltip carries the words. */
 .ml-caption-tab-badge {
 	display: none;
 }
@@ -1140,6 +1268,22 @@
 	z-index: 160001 !important;
 }
 
+/* wplink renders its URL bar, the Link options dialog and the search results
+   into <body> at 100100-100110, also below the modal. Lift the whole set,
+   keeping core's relative order so they stack correctly against each other. */
+div.mce-inline-toolbar-grp,
+#wp-link-backdrop {
+	z-index: 160002 !important;
+}
+
+#wp-link-wrap {
+	z-index: 160003 !important;
+}
+
+.ui-autocomplete.wplink-autocomplete {
+	z-index: 160004 !important;
+}
+
 /* Prevent WP page scroll when modal is open */
 body.ml-modal-open {
 	overflow: hidden;
@@ -1207,6 +1351,41 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 	background-color: #feb123;
 	border-radius: 50%;
 	padding: 4px;
+}
+
+/* ── Locked Download Sizes preview ───────────────────────────────────────── */
+.ml-download-sizes-promo > label .ml-gallery-pro-lock {
+	margin-left: auto;
+}
+
+.ml-download-sizes-promo-list {
+	align-self: stretch;
+	margin: 0;
+	padding: 6px 8px;
+	max-height: 260px;
+	overflow-y: auto;
+	border: 1px solid var(--ml-gray-200);
+	border-radius: 4px;
+	background: #fff;
+}
+
+.ml-download-sizes-promo-list li {
+	margin: 0;
+}
+
+/* Two classes: `.ml-gallery-setting--col label` sets space-between and out-specifies one. */
+.ml-download-sizes-promo .ml-download-sizes-promo-size {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 6px;
+	padding: 3px 0;
+}
+
+.ml-download-sizes-promo-dims {
+	margin-left: auto;
+	color: var(--ml-gray-600);
+	font-size: 12px;
 }
 
 /* ── Click-to-copy shortcode ─────────────────────────────────────────────── */
@@ -1563,24 +1742,40 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 	border-radius: 6px;
 	background: #fff;
 }
-/* Default hidden states are set by data-mode; JS flips the class in Task 5. */
 .ml-gallery-preview-modes[data-mode="preview"] #ml-gallery-preview { display: none; }
+.ml-gallery-preview-modes[data-mode="preview"] .ml-image-order-notice { display: none; }
 .ml-gallery-preview-modes[data-mode="arrange"] .ml-gallery-preview-frame { display: none; }
 
-/* Desktop/Mobile viewport toggle — icon-only, only meaningful in Preview mode. */
+/* Viewport toggle — icon-only, only meaningful in Preview mode. */
 .ml-gallery-preview-modes[data-mode="arrange"] .ml-viewport-toggle { display: none; }
 .ml-viewport-btn {
-	padding: 5px 10px;
+	padding: 5px 8px;
 }
-/* Mobile viewport: clamp the iframe to phone width, centered, and keep it tall
-   (fills the pane, min a phone-ish height) so it reads as a phone screen. */
-.ml-gallery-preview-modes[data-viewport="mobile"] .ml-gallery-preview-frame {
-	width: 375px;
+.ml-gallery-preview-modes[data-viewport="mobile"] .ml-gallery-preview-frame,
+.ml-gallery-preview-modes[data-viewport="tablet"] .ml-gallery-preview-frame {
 	max-width: 100%;
 	flex: 1 1 auto;
-	min-height: 600px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.ml-gallery-preview-modes[data-viewport="mobile"] .ml-gallery-preview-frame {
+	width: 375px;
+	min-height: 600px;
+}
+
+.ml-gallery-preview-modes[data-viewport="tablet"] .ml-gallery-preview-frame {
+	width: 820px;
+	min-height: 600px;
+}
+
+.ml-gallery-preview-modes .ml-gallery-preview-frame.is-auto-height {
+	flex: 0 0 auto;
+	min-height: 0;
+}
+
+.ml-gallery-main.is-auto-height {
+	min-height: 0;
 }
 
 /* Preview/Arrange fills the full height of the main pane. */
@@ -1596,4 +1791,47 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 }
 .ml-gallery-preview-modes #ml-gallery-preview.is-empty {
 	align-content: center;
+}
+
+.ml-custom-size-label {
+	font-size: 14px;
+	color: var(--ml-gray-800);
+}
+
+.ml-window-size-group {
+	margin-bottom: 14px;
+}
+
+.ml-window-size-group .ml-gallery-setting:last-child {
+	padding-bottom: 7px;
+}
+
+.ml-custom-size-fields {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex: 0 0 auto;
+	gap: 6px;
+	width: 120px;
+}
+
+.ml-custom-size-fields input[type="number"] {
+	width: 52px;
+	min-width: 0;
+	margin: 0;
+	padding: 0 4px;
+	text-align: center;
+	-moz-appearance: textfield;
+}
+
+/* The spinners would eat enough width to clip a four-digit value. */
+.ml-custom-size-fields input[type="number"]::-webkit-outer-spin-button,
+.ml-custom-size-fields input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.ml-custom-size-x {
+	flex: 0 0 auto;
+	color: var(--ml-gray-600);
 }

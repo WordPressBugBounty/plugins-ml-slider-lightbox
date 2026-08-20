@@ -127,8 +127,6 @@
 	object-fit: cover;
 }
 
-/* Showcase stage caption overlay. Shares the thumbnail-caption custom-property
-   hooks so future per-gallery styling controls apply uniformly. */
 .ml-showcase-caption {
 	position: absolute;
 	left: 0;
@@ -144,10 +142,6 @@
 	background: var(--ml-thumb-caption-bg, linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)));
 }
 
-/* Showcase slide transitions — image change honors the gallery Transition
-   (mode) setting: fade / slide / zoom. The incoming image (inherits sizing from
-   .ml-showcase-stage .ml-showcase-img) animates in over the current base image,
-   then JS promotes it to the base and removes the overlay. */
 .ml-showcase-incoming {
 	position: absolute;
 	top: 0;
@@ -297,11 +291,9 @@
 	opacity: 1;
 }
 
-@media (max-width: 768px) {
-	/* Override the consuming properties directly. --ml-columns is set inline on
-	   the container, so reassigning it from a stylesheet rule has no effect
-	   (inline wins); target grid-template-columns / columns instead, both of
-	   which read the inline-provided --ml-columns-mobile. */
+/* Responsive column bands, matching MetaSlider's four displays. --ml-columns is
+   set inline on the container, so target the consuming properties, not the var. */
+@media (max-width: 767px) {
 	.ml-gallery-container.ml-layout-grid {
 		grid-template-columns: repeat(var(--ml-columns-mobile, 1), 1fr);
 	}
@@ -315,6 +307,26 @@
 	}
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+	.ml-gallery-container.ml-layout-grid {
+		grid-template-columns: repeat(var(--ml-columns-tablet, var(--ml-columns)), 1fr);
+	}
+
+	.ml-gallery-container.ml-layout-masonry {
+		columns: var(--ml-columns-tablet, var(--ml-columns));
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+	.ml-gallery-container.ml-layout-grid {
+		grid-template-columns: repeat(var(--ml-columns-laptop, var(--ml-columns)), 1fr);
+	}
+
+	.ml-gallery-container.ml-layout-masonry {
+		columns: var(--ml-columns-laptop, var(--ml-columns));
+	}
+}
+
 /* Block link navigation when lightbox is disabled */
 .ml-gallery-container[data-ml-lightbox="0"] a {
 	pointer-events: none;
@@ -323,8 +335,6 @@
 
 /* ── Thumbnail captions ─────────────────────────────────────────────────── */
 
-/* Off by default: rendered in markup but hidden unless the container opts in.
-   No layout impact (absolutely positioned) when shown. */
 .ml-gallery-caption {
 	display: none;
 }
@@ -352,4 +362,109 @@
 .ml-gallery-caption > *,
 .ml-showcase-caption > * {
 	margin: 0;
+}
+
+.ml-gallery-container.ml-caption-pos-top .ml-gallery-caption,
+.ml-gallery-container.ml-caption-pos-top .ml-showcase-caption,
+.ml-gallery-container.ml-caption-pos-top .lg-sub-html {
+	top: 0;
+	bottom: auto;
+}
+
+.ml-gallery-container.ml-caption-pos-top .ml-gallery-caption {
+	padding: calc(10px + var(--ml-corner-inset, 0px)) calc(12px + var(--ml-corner-inset, 0px)) 10px;
+}
+
+.ml-gallery-container.ml-layout-carousel.ml-caption-pos-top .lg-sub-html {
+	top: 47px;
+}
+
+.ml-gallery-container.ml-caption-pos-middle .ml-gallery-caption,
+.ml-gallery-container.ml-caption-pos-middle .ml-showcase-caption,
+.ml-gallery-container.ml-caption-pos-middle .lg-sub-html {
+	top: 50%;
+	bottom: auto;
+	transform: translateY(-50%);
+}
+
+.ml-gallery-container.ml-caption-pos-middle .ml-gallery-caption {
+	padding: 10px calc(12px + var(--ml-corner-inset, 0px));
+}
+
+.ml-gallery-container.ml-caption-pos-middle .ml-showcase-cap-slide-up,
+.ml-gallery-container.ml-caption-pos-middle .ml-showcase-cap-slide-down {
+	animation-name: ml-showcase-cap-fade;
+}
+
+@media (hover: hover) {
+	.ml-gallery-container.ml-caption-hover .ml-gallery-caption,
+	.ml-gallery-container.ml-caption-hover .ml-showcase-caption,
+	.ml-gallery-container.ml-caption-hover .lg-container .lg-outer .lg-sub-html {
+		opacity: 0;
+		transition: opacity .25s ease;
+	}
+
+	.ml-gallery-container.ml-caption-hover > a:hover .ml-gallery-caption,
+	.ml-gallery-container.ml-caption-hover > a:focus-visible .ml-gallery-caption,
+	.ml-gallery-container.ml-caption-hover .ml-showcase-stage:hover .ml-showcase-caption,
+	.ml-gallery-container.ml-caption-hover .lg-container:hover .lg-outer .lg-sub-html,
+	.ml-gallery-container.ml-caption-hover .lg-container:focus-within .lg-outer .lg-sub-html {
+		opacity: 1;
+	}
+
+	.ml-gallery-container.ml-caption-hover .ml-showcase-cap-fade,
+	.ml-gallery-container.ml-caption-hover .ml-showcase-cap-slide-up,
+	.ml-gallery-container.ml-caption-hover .ml-showcase-cap-slide-down {
+		animation: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ml-gallery-container.ml-caption-hover .ml-gallery-caption,
+	.ml-gallery-container.ml-caption-hover .ml-showcase-caption,
+	.ml-gallery-container.ml-caption-hover .lg-container .lg-outer .lg-sub-html {
+		transition: none;
+	}
+}
+
+/* ── Load More ──────────────────────────────────────────────────────────── */
+
+.ml-gallery-container > a.ml-item-hidden {
+	display: none;
+}
+
+.ml-load-more-wrap {
+	display: flex;
+	justify-content: center;
+	margin-top: var(--ml-gap, 8px);
+}
+
+.ml-load-more {
+	padding: 10px 22px;
+	border: 0;
+	border-radius: 4px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 1.4;
+	cursor: pointer;
+	transition: background-color .2s ease, color .2s ease;
+}
+
+.ml-load-more:hover,
+.ml-load-more:focus {
+	background-color: #f0f0f0;
+	color: #000000;
+}
+
+.ml-load-more-status {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
 }

@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-08-04 11:59+0000\n"
+"PO-Revision-Date: 2026-08-20 14:06+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -80,23 +80,23 @@ msgstr "Τα ζητούμενα δεδομένα δεν υπάρχουν."
 msgid "The attempt to update the option failed."
 msgstr "Η απόπειρα να ενημερωθεί η επιλογή απέτυχε."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1247
-#: class-ml-gallery.php:3374 class-ml-slider-lightbox.php:2142
-#: class-ml-slider-lightbox.php:2285
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1441
+#: class-ml-gallery.php:3939 class-ml-slider-lightbox.php:2168
+#: class-ml-slider-lightbox.php:2311
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:222
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:228
 msgid "Dismiss"
 msgstr "Απόρριψη"
 
-#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1189
-#: class-ml-slider-lightbox.php:2322 class-ml-slider-lightbox.php:2337
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1380
+#: class-ml-slider-lightbox.php:2346 class-ml-slider-lightbox.php:2361
 msgid "You do not have sufficient permissions to access this page."
 msgstr "Δεν έχετε επαρκή δικαιώματα για να αποκτήσετε πρόσβαση σε αυτή τη σελίδα."
 
-#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2283
-#: class-ml-gallery.php:2447
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2693
+#: class-ml-gallery.php:2877
 msgid "Security check failed."
 msgstr "Η έλεγχο ασφαλείας απέτυχε."
 
@@ -104,7 +104,7 @@ msgstr "Η έλεγχο ασφαλείας απέτυχε."
 msgid "Slideshow not found."
 msgstr "Η παρουσίαση διαφανειών δεν βρέθηκε."
 
-#: class-ml-gallery-slideshow-convert.php:73
+#: class-ml-gallery-slideshow-convert.php:70
 msgid ""
 "This slideshow has no saved images to convert. Save the slideshow, then try "
 "again."
@@ -112,210 +112,294 @@ msgstr ""
 "Αυτή η παρουσίαση διαφανειών δεν έχει αποθηκευμένες εικόνες για μετατροπή. "
 "Αποθηκεύστε την παρουσίαση διαφανειών και δοκιμάστε ξανά."
 
-#: class-ml-gallery-slideshow-convert.php:78
+#: class-ml-gallery-slideshow-convert.php:75
 msgid "Untitled Slideshow"
 msgstr "Αναγνώριστη Παρουσίαση Διαφανειών"
 
-#: class-ml-gallery.php:113
+#: class-ml-gallery.php:112
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr ""
 "Ορισμένα από αυτά τα χαρακτηριστικά είναι διαθέσιμα στο MetaSlider Gallery "
 "Pro"
 
-#: class-ml-gallery.php:222 class-ml-gallery.php:231 class-ml-gallery.php:615
+#: class-ml-gallery.php:126
+msgid "Thumbnail"
+msgstr "Μικρογραφία"
+
+#: class-ml-gallery.php:127 class-ml-gallery.php:2531
+msgid "Medium"
+msgstr "Μέτριο"
+
+#: class-ml-gallery.php:128
+msgid "Medium Large"
+msgstr "Μεσαία Μεγάλη"
+
+#: class-ml-gallery.php:129
+msgid "Large"
+msgstr "Μεγάλη"
+
+#: class-ml-gallery.php:155
+msgid "Original"
+msgstr "Πρωτότυπο"
+
+#: class-ml-gallery.php:161
+msgid ""
+"Offer visitors a choice of image sizes when they download. Requires "
+"MetaSlider Gallery Pro."
+msgstr ""
+"Προσφέρετε στους επισκέπτες μια επιλογή μεγεθών εικόνας όταν κατεβάζουν. "
+"Απαιτείται το MetaSlider Gallery Pro."
+
+#: class-ml-gallery.php:162
+msgid "Download Sizes"
+msgstr "Μεγέθη Λήψης"
+
+#: class-ml-gallery.php:163
+msgid "Download sizes require MetaSlider Gallery Pro"
+msgstr "Τα μεγέθη λήψης απαιτούν το MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:298 class-ml-gallery.php:307 class-ml-gallery.php:817
 msgid "Fade"
 msgstr "Εξασθένηση"
 
-#: class-ml-gallery.php:223
+#: class-ml-gallery.php:299
 msgid "Slide"
 msgstr "Δ滑"
 
-#: class-ml-gallery.php:224 class-ml-gallery.php:1838
+#: class-ml-gallery.php:300 class-ml-gallery.php:2249
 msgid "Zoom"
 msgstr "Ζουμ"
 
-#: class-ml-gallery.php:230 class-ml-gallery.php:607 class-ml-gallery.php:2119
-#: class-ml-gallery.php:2145 class-ml-gallery.php:2159
+#: class-ml-gallery.php:306 class-ml-gallery.php:809 class-ml-gallery.php:2529
+#: class-ml-gallery.php:2555 class-ml-gallery.php:2569
 msgid "None"
 msgstr "Κανένα"
 
-#: class-ml-gallery.php:232
+#: class-ml-gallery.php:308
 msgid "Slide Up"
 msgstr "Ολίσθηση Πάνω"
 
-#: class-ml-gallery.php:233
+#: class-ml-gallery.php:309
 msgid "Slide Down"
 msgstr "Ολίσθηση Κάτω"
 
-#: class-ml-gallery.php:247
+#: class-ml-gallery.php:315
+msgid "Bottom"
+msgstr "Κάτω"
+
+#: class-ml-gallery.php:316
+msgid "Middle"
+msgstr "Μέση"
+
+#: class-ml-gallery.php:317
+msgid "Top"
+msgstr "Επάνω"
+
+#: class-ml-gallery.php:323
+msgid "Left"
+msgstr "Αριστερά"
+
+#: class-ml-gallery.php:324 class-ml-gallery.php:2069
+msgid "Center"
+msgstr "Κέντρο"
+
+#: class-ml-gallery.php:325
+msgid "Right"
+msgstr "Δεξιά"
+
+#: class-ml-gallery.php:339
 msgid "Hidden"
 msgstr "Κρυφό"
 
-#: class-ml-gallery.php:248
+#: class-ml-gallery.php:340
 msgid "Gallery + Window"
 msgstr "Γκαλερί + Παράθυρο"
 
-#: class-ml-gallery.php:249
+#: class-ml-gallery.php:341
 msgid "Window Only"
 msgstr "Μόνο Παράθυρο"
 
-#: class-ml-gallery.php:250
+#: class-ml-gallery.php:342
 msgid "Gallery Only"
 msgstr "Μόνο Γκαλερί"
 
-#: class-ml-gallery.php:269 class-ml-gallery.php:2857
+#: class-ml-gallery.php:361 class-ml-gallery.php:3329
 msgid "Manual entry"
 msgstr "Χειροκίνητη καταχώριση"
 
-#: class-ml-gallery.php:270 class-ml-gallery.php:2858
+#: class-ml-gallery.php:362 class-ml-gallery.php:3330
 msgid "Media caption"
 msgstr "Λεζάντα μέσων"
 
-#: class-ml-gallery.php:271 class-ml-gallery.php:2859
+#: class-ml-gallery.php:363 class-ml-gallery.php:3331
 msgid "Media description"
 msgstr "Περιγραφή μέσων"
 
-#: class-ml-gallery.php:608
+#: class-ml-gallery.php:639
+msgid "Drag-and-drop"
+msgstr "Σύρετε και αποθέστε"
+
+#: class-ml-gallery.php:640
+msgid "Newest First"
+msgstr "Νεότερα Πρώτα"
+
+#: class-ml-gallery.php:641
+msgid "Oldest First"
+msgstr "Παλαιότερα Πρώτα"
+
+#: class-ml-gallery.php:642
+msgid "A to Z (by filename)"
+msgstr "Α προς Ζ (κατά όνομα αρχείου)"
+
+#: class-ml-gallery.php:643
+msgid "Z to A (by filename)"
+msgstr "Ζ προς Α (κατά όνομα αρχείου)"
+
+#: class-ml-gallery.php:644
+msgid "Random"
+msgstr "Τυχαία"
+
+#: class-ml-gallery.php:810
 msgid "Noir (B&W)"
 msgstr "Νοϊρ (Μ&Α)"
 
-#: class-ml-gallery.php:609
+#: class-ml-gallery.php:811
 msgid "Silver (B&W)"
 msgstr "Ασημί (Μ&Α)"
 
-#: class-ml-gallery.php:610
+#: class-ml-gallery.php:812
 msgid "Vintage"
 msgstr "Ρετρό"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:813
 msgid "Golden Hour"
 msgstr "Χρυσή Ώρα"
 
-#: class-ml-gallery.php:612
+#: class-ml-gallery.php:814
 msgid "Toaster"
 msgstr "Τοστιέρα"
 
-#: class-ml-gallery.php:613
+#: class-ml-gallery.php:815
 msgid "Warm"
 msgstr "Ζεστό"
 
-#: class-ml-gallery.php:614
+#: class-ml-gallery.php:816
 msgid "Cool"
 msgstr "Κρύο"
 
-#: class-ml-gallery.php:616
+#: class-ml-gallery.php:818
 msgid "Matte"
 msgstr "Ματ"
 
-#: class-ml-gallery.php:617
+#: class-ml-gallery.php:819
 msgid "Pastel"
 msgstr "Παραδοσιακό"
 
-#: class-ml-gallery.php:618
+#: class-ml-gallery.php:820
 msgid "Vivid"
 msgstr "Ζωντανό"
 
-#: class-ml-gallery.php:619
+#: class-ml-gallery.php:821
 msgid "Crisp"
 msgstr "Καθαρό"
 
-#: class-ml-gallery.php:620
+#: class-ml-gallery.php:822
 msgid "Dramatic"
 msgstr "Δραματικό"
 
-#: class-ml-gallery.php:621
+#: class-ml-gallery.php:823
 msgid "Negative"
 msgstr "Αρνητικό"
 
-#: class-ml-gallery.php:734 class-ml-gallery.php:743 class-ml-gallery.php:1257
+#: class-ml-gallery.php:929 class-ml-gallery.php:938 class-ml-gallery.php:1451
 msgid "Galleries"
 msgstr "Γκαλερί"
 
-#: class-ml-gallery.php:735 class-ml-gallery.php:884 class-ml-gallery.php:1588
-#: class-ml-slider-lightbox.php:2281
+#: class-ml-gallery.php:930 class-ml-gallery.php:1079 class-ml-gallery.php:1899
+#: class-ml-slider-lightbox.php:2307
 msgid "Gallery"
 msgstr "Γκαλερί"
 
-#: class-ml-gallery.php:736 class-ml-gallery.php:737 class-ml-gallery.php:1222
-#: class-ml-gallery.php:3368
+#: class-ml-gallery.php:931 class-ml-gallery.php:932 class-ml-gallery.php:1416
+#: class-ml-gallery.php:3933
 msgid "Add New Gallery"
 msgstr "Προσθήκη Νέας Γκαλερί"
 
-#: class-ml-gallery.php:738 class-ml-gallery.php:1137 class-ml-gallery.php:1138
-#: class-ml-gallery.php:1223
+#: class-ml-gallery.php:933 class-ml-gallery.php:1328 class-ml-gallery.php:1329
+#: class-ml-gallery.php:1417
 msgid "Edit Gallery"
 msgstr "Επεξεργασία Γκαλερί"
 
-#: class-ml-gallery.php:739 class-ml-gallery.php:1200 class-ml-gallery.php:2496
+#: class-ml-gallery.php:934 class-ml-gallery.php:1391 class-ml-gallery.php:2926
 msgid "New Gallery"
 msgstr "Νέα Γκαλερί"
 
-#: class-ml-gallery.php:740
+#: class-ml-gallery.php:935
 msgid "Search Galleries"
 msgstr "Αναζήτηση Γκαλερί"
 
-#: class-ml-gallery.php:741
+#: class-ml-gallery.php:936
 msgid "No galleries found."
 msgstr "Δεν βρέθηκαν γκαλερί."
 
-#: class-ml-gallery.php:742
+#: class-ml-gallery.php:937
 msgid "No galleries found in trash."
 msgstr "Δεν βρέθηκαν γκαλερί στον κάδο απορριμμάτων."
 
-#: class-ml-gallery.php:891
+#: class-ml-gallery.php:1086
 msgid "All Galleries"
 msgstr "Όλες οι Γκαλερί"
 
-#: class-ml-gallery.php:898
+#: class-ml-gallery.php:1093
 msgid "Create Gallery"
 msgstr "Δημιουργία Γκαλερί"
 
-#: class-ml-gallery.php:908
+#: class-ml-gallery.php:1103
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "Επεξεργασία &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:926
+#: class-ml-gallery.php:1134
 msgid "Invalid gallery ID."
 msgstr "Μη έγκυρο ID γκαλερί."
 
-#: class-ml-gallery.php:1030 class-ml-slider-lightbox.php:1655
+#: class-ml-gallery.php:1211 class-ml-slider-lightbox.php:1681
 msgid "View image"
 msgstr "Προβολή εικόνας"
 
-#: class-ml-gallery.php:1197 class-ml-gallery.php:2452
+#: class-ml-gallery.php:1388 class-ml-gallery.php:2882
 msgid "Gallery not found."
 msgstr "Δεν βρέθηκε γκαλερί."
 
-#: class-ml-gallery.php:1225
+#: class-ml-gallery.php:1419
 msgid "Save Gallery"
 msgstr "Αποθήκευση Γκαλερί"
 
-#: class-ml-gallery.php:1226
+#: class-ml-gallery.php:1420
 msgid "Update Gallery"
 msgstr "Ενημέρωση Γκαλερί"
 
-#: class-ml-gallery.php:1241 class-ml-gallery.php:1253
+#: class-ml-gallery.php:1435 class-ml-gallery.php:1447
 msgid "Back to Galleries"
 msgstr "Επιστροφή στις Γκαλερί"
 
-#: class-ml-gallery.php:1264
+#: class-ml-gallery.php:1458
 msgid "Create New Gallery"
 msgstr "Δημιουργία Νέας Γκαλερί"
 
-#: class-ml-gallery.php:1268
+#: class-ml-gallery.php:1462
 msgid "New"
 msgstr "Νέο"
 
-#: class-ml-gallery.php:1279
+#: class-ml-gallery.php:1473
 msgid "Duplicate"
 msgstr "Διπλότυπο"
 
-#: class-ml-gallery.php:1299
+#: class-ml-gallery.php:1494
 msgid "Gallery saved."
 msgstr "Η γκαλερί αποθηκεύτηκε."
 
-#: class-ml-gallery.php:1310
+#: class-ml-gallery.php:1510
 #, php-format
 msgid ""
 "Gallery created from the slideshow \"%s\". Review the settings below, then "
@@ -324,238 +408,314 @@ msgstr ""
 "Η γκαλερί δημιουργήθηκε από την παρουσίαση διαφανειών \"%s\". Ελέγξτε τις "
 "ρυθμίσεις παρακάτω και μετά αποθηκεύστε."
 
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1514
 msgid "Gallery created from your slideshow. Review the settings below, then save."
 msgstr ""
 "Η γκαλερί δημιουργήθηκε από την παρουσίασή σας. Ελέγξτε τις ρυθμίσεις "
 "παρακάτω και μετά αποθηκεύστε."
 
-#: class-ml-gallery.php:1328
+#: class-ml-gallery.php:1528
 msgid "Enter gallery title"
 msgstr "Εισάγετε τον τίτλο της γκαλερί"
 
-#: class-ml-gallery.php:1331 class-ml-gallery.php:3820
+#: class-ml-gallery.php:1531 class-ml-gallery.php:2075
+#: class-ml-gallery.php:4384
 msgid "Images"
 msgstr "Εικόνες"
 
-#: class-ml-gallery.php:1341
+#: class-ml-gallery.php:1541
 msgid "Preview or arrange images"
 msgstr "Προεπισκόπηση ή διάταξη εικόνων"
 
-#: class-ml-gallery.php:1344 class-ml-gallery.php:3733
+#: class-ml-gallery.php:1544 class-ml-gallery.php:4297
 msgid "Preview"
 msgstr "Προεπισκόπηση"
 
-#: class-ml-gallery.php:1348
+#: class-ml-gallery.php:1548
 msgid "Arrange"
 msgstr "Διάταξη"
 
-#: class-ml-gallery.php:1351
-msgid "Preview at desktop or mobile width"
-msgstr "Προεπισκόπηση σε πλάτος επιφάνειας εργασίας ή κινητού"
-
-#: class-ml-gallery.php:1352
+#: class-ml-gallery.php:1555
 msgid "Desktop width"
 msgstr "Πλάτος επιφάνειας εργασίας"
 
-#: class-ml-gallery.php:1355
+#: class-ml-gallery.php:1559
+msgid "Laptop width"
+msgstr "Πλάτος φορητού υπολογιστή"
+
+#: class-ml-gallery.php:1563
+msgid "Tablet width"
+msgstr "Πλάτος tablet"
+
+#: class-ml-gallery.php:1567
 msgid "Mobile width"
 msgstr "Πλάτος κινητού"
 
-#: class-ml-gallery.php:1362
+#: class-ml-gallery.php:1571
+msgid "Preview at desktop, laptop, tablet or mobile width"
+msgstr "Προεπισκόπηση σε υπολογιστή, φορητό υπολογιστή, ταμπλέτα ή κινητό"
+
+#: class-ml-gallery.php:1584 class-ml-gallery.php:3324
+msgid "Order is randomised for each visitor."
+msgstr "Η σειρά είναι τυχαία για κάθε επισκέπτη."
+
+#: class-ml-gallery.php:1588 class-ml-gallery.php:3323
+#, php-format
+msgid "Sorted %s — switch to Drag-and-drop to reorder."
+msgstr "Ταξινομημένα %s — εναλλαγή σε Σύρσιμο και Απόθεση για αναδιάταξη."
+
+#: class-ml-gallery.php:1596
 msgid "No images added yet"
 msgstr "Δεν έχουν προστεθεί εικόνες ακόμα"
 
-#: class-ml-gallery.php:1385 class-ml-gallery.php:2851
+#: class-ml-gallery.php:1624 class-ml-gallery.php:3319
 msgid "Remove image"
 msgstr "Αφαίρεση εικόνας"
 
-#: class-ml-gallery.php:1390 class-ml-gallery.php:2852
+#: class-ml-gallery.php:1629 class-ml-gallery.php:3320
 msgid "Edit caption"
 msgstr "Επεξεργασία λεζάντας"
 
-#: class-ml-gallery.php:1390 class-ml-gallery.php:1392
-#: class-ml-gallery.php:2853
+#: class-ml-gallery.php:1629 class-ml-gallery.php:1631
+#: class-ml-gallery.php:3321
 msgid "Add caption"
 msgstr "Προσθήκη λεζάντας"
 
-#: class-ml-gallery.php:1402
+#: class-ml-gallery.php:1641
 msgid "Gallery preview"
 msgstr "Προεπισκόπηση γκαλερί"
 
-#: class-ml-gallery.php:1408
+#: class-ml-gallery.php:1647
 msgid "Add Images"
 msgstr "Προσθήκη Εικόνων"
 
-#: class-ml-gallery.php:1412
+#: class-ml-gallery.php:1651
 msgid "More ways to add images"
 msgstr "Περισσότεροι τρόποι για να προσθέσετε εικόνες"
 
-#: class-ml-gallery.php:1418
+#: class-ml-gallery.php:1657
 msgid "Upload"
 msgstr "Ανέβασμα"
 
-#: class-ml-gallery.php:1423
+#: class-ml-gallery.php:1662
 msgid "Media Library"
 msgstr "Βιβλιοθήκη Μέσων"
 
-#: class-ml-gallery.php:1428
+#: class-ml-gallery.php:1667
 msgid "Server Folder"
 msgstr "Φάκελος Διακομιστή"
 
-#: class-ml-gallery.php:1433, fuzzy
+#: class-ml-gallery.php:1672, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1439
+#: class-ml-gallery.php:1679
 msgid "Where to add new images"
 msgstr "Πού να προσθέσετε νέες εικόνες"
 
-#: class-ml-gallery.php:1440
+#: class-ml-gallery.php:1680
 msgid "Add new images at:"
 msgstr "Προσθέστε νέες εικόνες σε:"
 
-#: class-ml-gallery.php:1444
+#: class-ml-gallery.php:1684
 msgid "Start"
 msgstr "Έναρξη"
 
-#: class-ml-gallery.php:1449
+#: class-ml-gallery.php:1689
 msgid "End"
 msgstr "Τέλος"
 
-#: class-ml-gallery.php:1458
+#: class-ml-gallery.php:1696
+msgid ""
+"The order images appear in on your site. Random reshuffles for each "
+"visitor, which page caching can defeat."
+msgstr ""
+"Η σειρά εμφάνισης των εικόνων στον ιστότοπό σας. Τυχαίοι ανακατατάξεις για "
+"κάθε επισκέπτη, που μπορεί να παρακαμφθούν από την προσωρινή μνήμη σελίδας."
+
+#: class-ml-gallery.php:1696
+msgid "Image Order:"
+msgstr "Σειρά Εικόνας:"
+
+#: class-ml-gallery.php:1710
 msgid "Layout"
 msgstr "Διάταξη"
 
-#: class-ml-gallery.php:1461
+#: class-ml-gallery.php:1713
 msgid "Gallery layout"
 msgstr "Διάταξη γκαλερί"
 
-#: class-ml-gallery.php:1463
+#: class-ml-gallery.php:1715
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "Εικόνες ίδιου μεγέθους τακτοποιημένες σε σταθερό πλέγμα"
 
-#: class-ml-gallery.php:1473 class-ml-gallery.php:3736
+#: class-ml-gallery.php:1725 class-ml-gallery.php:4300
 msgid "Grid"
 msgstr "Πλέγμα"
 
-#: class-ml-gallery.php:1477
+#: class-ml-gallery.php:1729
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "Εικόνες στις φυσικές τους ύψος, που ταιριάζουν όπως ένας τοίχος από τούβλα"
 
-#: class-ml-gallery.php:1487 class-ml-gallery.php:3735, fuzzy
+#: class-ml-gallery.php:1739 class-ml-gallery.php:4299, fuzzy
 msgid "Masonry"
 msgstr "Masonry"
 
-#: class-ml-gallery.php:1491
+#: class-ml-gallery.php:1743
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr ""
 "Εικόνες κλιμακωμένες για να γεμίσουν κάθε σειρά από άκρη σε άκρη με σταθερό "
 "ύψος"
 
-#: class-ml-gallery.php:1503 class-ml-gallery.php:3737
+#: class-ml-gallery.php:1755 class-ml-gallery.php:4301
 msgid "Justified"
 msgstr "Δικαιολογημένο"
 
-#: class-ml-gallery.php:1507
+#: class-ml-gallery.php:1759
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr ""
 "Εικόνες που εμφανίζονται μία τη φορά σε μια ανασυρόμενη παρουσίαση "
 "διαφανειών"
 
-#: class-ml-gallery.php:1516
+#: class-ml-gallery.php:1768
 msgid "Carousel"
 msgstr "Καρουσέλ"
 
-#: class-ml-gallery.php:1520
+#: class-ml-gallery.php:1772
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "Μεγάλη κύρια εικόνα με μια ανασυρόμενη ταινία μίνι εικόνων από κάτω"
 
-#: class-ml-gallery.php:1530
+#: class-ml-gallery.php:1782
 msgid "Showcase"
 msgstr "Προβολή"
 
-#: class-ml-gallery.php:1542
-msgid "Number of columns to show on desktop screens"
-msgstr "Αριθμός στηλών που θα εμφανίζονται σε οθόνες υπολογιστών"
+#: class-ml-gallery.php:1797
+msgid "Desktop"
+msgstr "Υπολογιστής"
 
-#: class-ml-gallery.php:1542
+#: class-ml-gallery.php:1798
+msgid "Number of columns on desktop screens (1440px and wider)"
+msgstr "Αριθμός στηλών σε οθόνες υπολογιστών (1440px και ευρύτερες)"
+
+#: class-ml-gallery.php:1804
+msgid "Laptop"
+msgstr "Φορητός υπολογιστής"
+
+#: class-ml-gallery.php:1805
+msgid "Number of columns on laptops (1024px to 1439px)"
+msgstr "Αριθμός στηλών σε φορητούς υπολογιστές (1024px έως 1439px)"
+
+#: class-ml-gallery.php:1811
+msgid "Tablet"
+msgstr "Ταμπλέτα"
+
+#: class-ml-gallery.php:1812
+msgid "Number of columns on tablets (768px to 1023px)"
+msgstr "Αριθμός στηλών σε ταμπλέτες (768px έως 1023px)"
+
+#: class-ml-gallery.php:1818
+msgid "Mobile"
+msgstr "Κινητό"
+
+#: class-ml-gallery.php:1819
+msgid "Number of columns on phones (up to 767px)"
+msgstr "Αριθμός στηλών σε τηλέφωνα (έως 767px)"
+
+#: class-ml-gallery.php:1826
+msgid "Number of columns to show at each screen size"
+msgstr "Αριθμός στηλών που θα εμφανίζονται σε κάθε μέγεθος οθόνης"
+
+#: class-ml-gallery.php:1826
 msgid "Columns"
 msgstr "Στήλες"
 
-#: class-ml-gallery.php:1551
-msgid "Number of columns to show on phones and small screens"
-msgstr "Αριθμός στηλών που θα εμφανίζονται σε τηλέφωνα και μικρές οθόνες"
-
-#: class-ml-gallery.php:1551
-msgid "Columns (mobile)"
-msgstr "Στήλες (κινητό)"
-
-#: class-ml-gallery.php:1560
+#: class-ml-gallery.php:1845
 msgid "Height of the gallery images, in pixels"
 msgstr "Ύψος των εικόνων της γκαλερί, σε εικονοστοιχεία"
 
-#: class-ml-gallery.php:1561
+#: class-ml-gallery.php:1846
 msgid "Height"
 msgstr "Ύψος"
 
-#: class-ml-gallery.php:1573
+#: class-ml-gallery.php:1858
 msgid "Space between images"
 msgstr "Διάστημα μεταξύ των εικόνων"
 
-#: class-ml-gallery.php:1574
+#: class-ml-gallery.php:1859
 msgid "Gap"
 msgstr "Κενό"
 
-#: class-ml-gallery.php:1592
+#: class-ml-gallery.php:1875
+msgid ""
+"Show only the first batch of images, with a button that reveals more. "
+"Applies to Grid, Masonry, and Justified layouts."
+msgstr ""
+"Εμφάνιση μόνο της πρώτης παρτίδας εικόνων, με ένα κουμπί που αποκαλύπτει "
+"περισσότερες. Ισχύει για διάταξη Πλέγμα, Μασονική και Δικαιολογημένη."
+
+#: class-ml-gallery.php:1875 class-ml-gallery.php:3782
+msgid "Load More"
+msgstr "Φόρτωση Περισσότερων"
+
+#: class-ml-gallery.php:1888
+msgid "How many images to show at first, and how many each press of the button adds"
+msgstr ""
+"Πόσες εικόνες να εμφανίζονται αρχικά, και πόσες προσθέτει κάθε πάτημα του "
+"κουμπιού"
+
+#: class-ml-gallery.php:1888
+msgid "Images per batch"
+msgstr "Εικόνες ανά παρτίδα"
+
+#: class-ml-gallery.php:1903
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "Οι ρυθμίσεις ζουμ απαιτούν MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1593
+#: class-ml-gallery.php:1904
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "Η λειτουργία πλήρους οθόνης απαιτεί MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1594
+#: class-ml-gallery.php:1905
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "Η περιστροφή εικόνας απαιτεί MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1595
+#: class-ml-gallery.php:1906
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "Η αυτόματη αναπαραγωγή απαιτεί MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1596
+#: class-ml-gallery.php:1907
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "Η κοινωνική κοινή χρήση απαιτεί MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1597
+#: class-ml-gallery.php:1908
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "Ο Pager απαιτεί το MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:1909
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "Τα μοναδικά URLs εικόνας απαιτούν MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1599
+#: class-ml-gallery.php:1910
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "Η προστασία εικόνας απαιτεί το MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:1914
 msgid "Show left and right navigation arrows"
 msgstr "Εμφάνιση αριστερών και δεξιών βελών πλοήγησης"
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:1915
 msgid "Display the current image number and total count"
 msgstr "Εμφάνιση του τρέχοντος αριθμού εικόνας και του συνολικού αριθμού"
 
-#: class-ml-gallery.php:1605
+#: class-ml-gallery.php:1916
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "Εμφάνιση μιας λωρίδας μικρογραφιών στο κάτω μέρος της γκαλερί"
 
-#: class-ml-gallery.php:1606
+#: class-ml-gallery.php:1917
 msgid "Show dot navigation area below each image."
 msgstr "Εμφάνιση της περιοχής πλοήγησης με κουκκίδες κάτω από κάθε εικόνα."
 
-#: class-ml-gallery.php:1607
+#: class-ml-gallery.php:1918
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -564,11 +724,11 @@ msgstr ""
 "έλεγχος ζουμ θα εμφανιστεί μόνο αν το αρχικό μέγεθος είναι μεγαλύτερο από "
 "το μέγεθος της γκαλερί."
 
-#: class-ml-gallery.php:1608
+#: class-ml-gallery.php:1919
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "Επέκταση του παραθύρου της γκαλερί για να καλύψει ολόκληρη την οθόνη."
 
-#: class-ml-gallery.php:1609
+#: class-ml-gallery.php:1920
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
@@ -576,17 +736,17 @@ msgstr ""
 "Οι χρήστες μπορούν να περιστρέφουν τις εικόνες αριστερά ή δεξιά, καθώς και "
 "να τις αναστρέφουν κατακόρυφα ή οριζόντια."
 
-#: class-ml-gallery.php:1610
+#: class-ml-gallery.php:1921
 msgid "Automatically advance through the images without the user clicking."
 msgstr "Αυτόματη προώθηση μέσω των εικόνων χωρίς να κάνει κλικ ο χρήστης."
 
-#: class-ml-gallery.php:1611
+#: class-ml-gallery.php:1922
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr ""
 "Δυνατότητα στους χρήστες να μοιράζονται εικόνες στο Facebook, X, ή "
 "Pinterest."
 
-#: class-ml-gallery.php:1612
+#: class-ml-gallery.php:1923
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
@@ -594,7 +754,7 @@ msgstr ""
 "Δημιουργία ενός μοναδικού URL για κάθε εικόνα για να επιτραπεί η άμεση "
 "σύνδεση μέσα σε μια γκαλερί."
 
-#: class-ml-gallery.php:1613 class-ml-slider-lightbox.php:4299
+#: class-ml-gallery.php:1924 class-ml-slider-lightbox.php:4360
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -602,29 +762,35 @@ msgstr ""
 "Αποθαρρύνετε την τυχαία αποθήκευση αποκλείοντας το δεξί κλικ, τη μεταφορά "
 "και την παρατεταμένη πίεση στις εικόνες της γκαλερί."
 
-#: class-ml-gallery.php:1614
+#: class-ml-gallery.php:1925
 msgid "Navigate images using left and right arrow keys"
 msgstr "Πλοήγηση στις εικόνες χρησιμοποιώντας τα πλήκτρα βέλους αριστερά και δεξιά"
 
-#: class-ml-gallery.php:1615
+#: class-ml-gallery.php:1926
 msgid "Scroll through images using the mouse wheel"
 msgstr "Κύλησε μέσα από τις εικόνες χρησιμοποιώντας τη ρόδα του ποντικιού"
 
-#: class-ml-gallery.php:1616
+#: class-ml-gallery.php:1927
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr ""
 "Σύρετε προς τα επάνω ή προς τα κάτω για να κλείσετε τη γκαλερί σε συσκευές "
 "αφής"
 
-#: class-ml-gallery.php:1617
+#: class-ml-gallery.php:1928
 msgid "Cycle back to the first image after reaching the last"
 msgstr "Γύρισε πίσω στην πρώτη εικόνα μετά την τελευταία"
 
-#: class-ml-gallery.php:1618
+#: class-ml-gallery.php:1929
 msgid "Show a download button for each image"
 msgstr "Εμφάνιση κουμπιού λήψης για κάθε εικόνα"
 
-#: class-ml-gallery.php:1619
+#: class-ml-gallery.php:1930
+msgid "Show a button that expands the carousel to fill the browser window."
+msgstr ""
+"Εμφάνιση ενός κουμπιού που επεκτείνει την καρουσέλ για να γεμίσει το "
+"παράθυρο του προγράμματος περιήγησης."
+
+#: class-ml-gallery.php:1931
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
@@ -632,35 +798,71 @@ msgstr ""
 "Άνοιγμα εικόνων σε ένα παράθυρο επικαλυπτόμενο όταν κάνετε κλικ. Ισχύει για "
 "διάταξεις Grid, Masonry, και Justified."
 
-#: class-ml-gallery.php:1620
+#: class-ml-gallery.php:1932
 msgid "Show a button over the gallery that opens the gallery window when clicked."
 msgstr ""
 "Εμφάνιση κουμπιού πάνω από τη γκαλερί που ανοίγει το παράθυρο γκαλερί όταν "
 "κάνετε κλικ."
 
-#: class-ml-gallery.php:1621
+#: class-ml-gallery.php:1933
 msgid "Show an icon on the button instead of text."
 msgstr "Εμφάνιση εικονιδίου στο κουμπί αντί για κείμενο."
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1934
+msgid ""
+"Hide the caption until the image is hovered. Captions always show on "
+"devices without hover support."
+msgstr ""
+"Απόκρυψη της λεζάντας μέχρι να περάσει το ποντίκι πάνω από την εικόνα. Οι "
+"λεζάντες εμφανίζονται πάντα σε συσκευές χωρίς υποστήριξη hover."
+
+#: class-ml-gallery.php:1979
 msgid "Full (original)"
 msgstr "Πλήρες (αρχικό)"
 
-#: class-ml-gallery.php:1668
+#: class-ml-gallery.php:1980
+msgid "Custom…"
+msgstr "Προσαρμοσμένο…"
+
+#: class-ml-gallery.php:1995
+msgid "Width and height in pixels, between 50 and 4000"
+msgstr "Πλάτος και ύψος σε pixel, μεταξύ 50 και 4000"
+
+#: class-ml-gallery.php:1995
+msgid "Custom Size"
+msgstr "Προσαρμοσμένο Μέγεθος"
+
+#: class-ml-gallery.php:2001
+msgid "W"
+msgstr "Π"
+
+#: class-ml-gallery.php:2002
+msgid "Custom width"
+msgstr "Προσαρμοσμένο πλάτος"
+
+#: class-ml-gallery.php:2008
+msgid "H"
+msgstr "Υ"
+
+#: class-ml-gallery.php:2009
+msgid "Custom height"
+msgstr "Προσαρμοσμένο ύψος"
+
+#: class-ml-gallery.php:2013
+msgid "Crop to fill the exact size instead of scaling to fit within it"
+msgstr ""
+"Κόψτε για να γεμίσει το ακριβές μέγεθος αντί να κλιμακωθεί για να ταιριάξει "
+"σε αυτό"
+
+#: class-ml-gallery.php:2013
+msgid "Crop to exact size"
+msgstr "Κόψτε σε ακριβές μέγεθος"
+
+#: class-ml-gallery.php:2028
 msgid "Show in Gallery Window"
 msgstr "Εμφάνιση στο Παράθυρο Γκαλερί"
 
-#: class-ml-gallery.php:1671
-msgid "The size of the image shown when a visitor clicks to view it in full"
-msgstr ""
-"Το μέγεθος της εικόνας που εμφανίζεται όταν ένας επισκέπτης κάνει κλικ για "
-"να τη δει πλήρως"
-
-#: class-ml-gallery.php:1671
-msgid "Image Size"
-msgstr "Μέγεθος Εικόνας"
-
-#: class-ml-gallery.php:1691
+#: class-ml-gallery.php:2041
 msgid ""
 "Choose how visitors open the gallery window: click the image, click an "
 "icon, or click a button."
@@ -668,112 +870,133 @@ msgstr ""
 "Επιλέξτε πώς οι επισκέπτες ανοίγουν το παράθυρο της γκαλερί: κάντε κλικ "
 "στην εικόνα, κάντε κλικ σε ένα εικονίδιο ή κάντε κλικ σε ένα κουμπί."
 
-#: class-ml-gallery.php:1691
+#: class-ml-gallery.php:2041
 msgid "Open with"
 msgstr "Άνοιγμα με"
 
-#: class-ml-gallery.php:1703
+#: class-ml-gallery.php:2053
 msgid "Text shown on the button that opens the gallery window"
 msgstr "Κείμενο που εμφανίζεται στο κουμπί που ανοίγει το παράθυρο της γκαλερί"
 
-#: class-ml-gallery.php:1703 class-ml-slider-lightbox.php:2747
+#: class-ml-gallery.php:2053 class-ml-slider-lightbox.php:2773
 msgid "Button Text"
 msgstr "Κείμενο κουμπιού"
 
-#: class-ml-gallery.php:1708 class-ml-slider-lightbox.php:1650
-#: class-ml-slider-lightbox.php:3347 class-ml-slider-lightbox.php:6488
-#: class-ml-slider-lightbox.php:6511
+#: class-ml-gallery.php:2058 class-ml-slider-lightbox.php:1676
+#: class-ml-slider-lightbox.php:3389 class-ml-slider-lightbox.php:6549
+#: class-ml-slider-lightbox.php:6572
 msgid "Open in Gallery"
 msgstr "Άνοιγμα στη Γκαλερί"
 
-#: class-ml-gallery.php:1713
+#: class-ml-gallery.php:2063
 msgid "Where the button or icon sits over the gallery"
 msgstr "Πού βρίσκεται το κουμπί ή το εικονίδιο πάνω από τη γκαλερί"
 
-#: class-ml-gallery.php:1713 class-ml-slider-lightbox.php:2755
+#: class-ml-gallery.php:2063 class-ml-slider-lightbox.php:2781
 msgid "Button Position"
 msgstr "Θέση κουμπιού"
 
-#: class-ml-gallery.php:1715
+#: class-ml-gallery.php:2065
 msgid "Top Right"
 msgstr "Επάνω Δεξιά"
 
-#: class-ml-gallery.php:1716 class-ml-slider-lightbox.php:3364
-#: class-ml-slider-lightbox.php:3390
+#: class-ml-gallery.php:2066 class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3432
 msgid "Top Left"
 msgstr "Επάνω Αριστερά"
 
-#: class-ml-gallery.php:1717 class-ml-slider-lightbox.php:3365
-#: class-ml-slider-lightbox.php:3391
+#: class-ml-gallery.php:2067 class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3433
 msgid "Bottom Right"
 msgstr "Κάτω Δεξιά"
 
-#: class-ml-gallery.php:1718 class-ml-slider-lightbox.php:3366
-#: class-ml-slider-lightbox.php:3392
+#: class-ml-gallery.php:2068 class-ml-slider-lightbox.php:3408
+#: class-ml-slider-lightbox.php:3434
 msgid "Bottom Left"
 msgstr "Κάτω Αριστερά"
 
-#: class-ml-gallery.php:1719
-msgid "Center"
-msgstr "Κέντρο"
+#: class-ml-gallery.php:2082
+msgid "Gallery Image Size"
+msgstr "Μέγεθος Εικόνας Γκαλερί"
 
-#: class-ml-gallery.php:1728
+#: class-ml-gallery.php:2083
+msgid ""
+"The size of the images shown in the gallery on the page. Carousel and "
+"Showcase use the Window Image Size for their main image."
+msgstr ""
+"Το μέγεθος των εικόνων που εμφανίζονται στη γκαλερί στη σελίδα. Το Carousel "
+"και το Showcase χρησιμοποιούν το Μέγεθος Εικόνας Παραθύρου για την κύρια "
+"εικόνα τους."
+
+#: class-ml-gallery.php:2092
+msgid "Window Image Size"
+msgstr "Μέγεθος Εικόνας Παραθύρου"
+
+#: class-ml-gallery.php:2093
+msgid ""
+"The size of the image shown when a visitor clicks to view it in full, and "
+"of the main image in the Carousel and Showcase layouts"
+msgstr ""
+"Το μέγεθος της εικόνας που εμφανίζεται όταν ένας επισκέπτης κάνει κλικ για "
+"να την δει πλήρη, και της κύριας εικόνας στα layouts Carousel και Showcase"
+
+#: class-ml-gallery.php:2102
 msgid "Protect images"
 msgstr "Προστασία εικόνων"
 
-#: class-ml-gallery.php:1734
+#: class-ml-gallery.php:2107
 msgid "Display"
 msgstr "Εμφάνιση"
 
-#: class-ml-gallery.php:1736
+#: class-ml-gallery.php:2109
 msgid "Animation effect when moving between images"
 msgstr "Εφέ κινούμενης εικόνας κατά τη μετάβαση ανάμεσα στις εικόνες"
 
-#: class-ml-gallery.php:1736 class-ml-gallery.php:1821
+#: class-ml-gallery.php:2109 class-ml-gallery.php:2229
 msgid "Transition"
 msgstr "Μετάβαση"
 
-#: class-ml-gallery.php:1745 class-ml-slider-lightbox.php:2707
+#: class-ml-gallery.php:2118 class-ml-slider-lightbox.php:2733
 msgid "Arrows"
 msgstr "Βέλη"
 
-#: class-ml-gallery.php:1746
+#: class-ml-gallery.php:2119
 msgid "Slide Counter"
 msgstr "Μετρητής διαφανειών"
 
-#: class-ml-gallery.php:1747
+#: class-ml-gallery.php:2120
 msgid "Thumbnails"
 msgstr "Μικρογραφίες"
 
-#: class-ml-gallery.php:1749
+#: class-ml-gallery.php:2122
 msgid "Pager"
 msgstr "Σελίδα"
 
-#: class-ml-gallery.php:1754 class-ml-slider-lightbox.php:2412
+#: class-ml-gallery.php:2127 class-ml-slider-lightbox.php:2436
 msgid "Navigation"
 msgstr "Πλοήγηση"
 
-#: class-ml-gallery.php:1755
+#: class-ml-gallery.php:2128
 msgid "Loop"
 msgstr "Επανάληψη"
 
-#: class-ml-gallery.php:1756
+#: class-ml-gallery.php:2129
 msgid "Keyboard"
 msgstr "Πληκτρολόγιο"
 
-#: class-ml-gallery.php:1757
+#: class-ml-gallery.php:2130
 msgid "Mouse wheel"
 msgstr "Ρόδα ποντικιού"
 
-#: class-ml-gallery.php:1758
+#: class-ml-gallery.php:2131
 msgid "Swipe to close"
 msgstr "Σύρετε για να κλείσετε"
 
-#: class-ml-gallery.php:1765 class-ml-gallery.php:1767
+#: class-ml-gallery.php:2138 class-ml-gallery.php:2140
 msgid "Captions"
 msgstr "Λεζάντες"
 
-#: class-ml-gallery.php:1767
+#: class-ml-gallery.php:2140
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -781,7 +1004,7 @@ msgstr ""
 "Πού εμφανίζονται οι λεζάντες: σε θραύσματα γκαλερί, στο παράθυρο γκαλερί ή "
 "και στα δύο."
 
-#: class-ml-gallery.php:1779
+#: class-ml-gallery.php:2154
 msgid ""
 "Where each caption's text comes from: your typed caption, or the image's "
 "Media Library caption or description. Empty media fields fall back to your "
@@ -791,11 +1014,35 @@ msgstr ""
 "ή η λεζάντα ή περιγραφή από τη Βιβλιοθήκη Πολυμέσων της εικόνας. Τα κενά "
 "πεδία πολυμέσων επιστρέφουν στη λεζάντα που πληκτρολογήσατε."
 
-#: class-ml-gallery.php:1779
+#: class-ml-gallery.php:2154
 msgid "Caption Content"
 msgstr "Περιεχόμενο Λεζάντας"
 
-#: class-ml-gallery.php:1788
+#: class-ml-gallery.php:2163
+msgid ""
+"Where the caption sits on the image. Applies to gallery captions only — not "
+"the gallery window."
+msgstr ""
+"Πού βρίσκεται η λεζάντα στην εικόνα. Ισχύει μόνο για τις λεζάντες της "
+"γκαλερί — όχι για το παράθυρο της γκαλερί."
+
+#: class-ml-gallery.php:2163
+msgid "Position"
+msgstr "Θέση"
+
+#: class-ml-gallery.php:2172
+msgid ""
+"How caption text lines up within the image. Applies to gallery captions "
+"only — not the gallery window."
+msgstr ""
+"Πώς ευθυγραμμίζεται το κείμενο της λεζάντας μέσα στην εικόνα. Ισχύει μόνο "
+"για τις λεζάντες της γκαλερί — όχι για το παράθυρο της γκαλερί."
+
+#: class-ml-gallery.php:2172
+msgid "Align"
+msgstr "Ευθυγράμμιση"
+
+#: class-ml-gallery.php:2181
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -803,11 +1050,11 @@ msgstr ""
 "Μέγεθος κειμένου λεζάντας. Ισχύει και για τα θραύσματα γκαλερί και για το "
 "παράθυρο γκαλερί."
 
-#: class-ml-gallery.php:1789
+#: class-ml-gallery.php:2182
 msgid "Text Size"
 msgstr "Μέγεθος Κειμένου"
 
-#: class-ml-gallery.php:1801
+#: class-ml-gallery.php:2194
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
@@ -815,11 +1062,11 @@ msgstr ""
 "Χρώμα κειμένου λεζάντας. Ισχύει και για τα θραύσματα γκαλερί και για το "
 "παράθυρο γκαλερί."
 
-#: class-ml-gallery.php:1801
+#: class-ml-gallery.php:2194
 msgid "Text Color"
 msgstr "Χρώμα Κειμένου"
 
-#: class-ml-gallery.php:1811
+#: class-ml-gallery.php:2204
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -827,12 +1074,29 @@ msgstr ""
 "Φόντο λεζάντας. Ισχύει και για τα θραύσματα γκαλερί και για το παράθυρο "
 "γκαλερί; στα θραύσματα, αυτό εξασθενεί σε διαφάνεια για αναγνωσιμότητα."
 
-#: class-ml-gallery.php:1811 class-ml-gallery.php:1853
-#: class-ml-slider-lightbox.php:2675
+#: class-ml-gallery.php:2204 class-ml-gallery.php:2264
+#: class-ml-slider-lightbox.php:2701
 msgid "Background Color"
 msgstr "Χρώμα φόντου"
 
-#: class-ml-gallery.php:1821
+#: class-ml-gallery.php:2214
+msgid ""
+"How solid the caption background is. Lower values let more of the image "
+"show through; 0 leaves the text on the bare image."
+msgstr ""
+"Πόσο συμπαγές είναι το φόντο της λεζάντας. Χαμηλότερες τιμές αφήνουν "
+"περισσότερη εικόνα να φανεί; 0 αφήνει το κείμενο στην γυμνή εικόνα."
+
+#: class-ml-gallery.php:2215 class-ml-gallery.php:2275
+#: class-ml-slider-lightbox.php:2709
+msgid "Background Opacity"
+msgstr "Αδιαφάνεια φόντου"
+
+#: class-ml-gallery.php:2226
+msgid "Reveal on Hover"
+msgstr "Αποκάλυψη με Hover"
+
+#: class-ml-gallery.php:2229
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -840,423 +1104,427 @@ msgstr ""
 "Πώς εισέρχεται η λεζάντα με animation. Ισχύει μόνο για το παράθυρο γκαλερί "
 "- όχι για τις λεζάντες θραυσμάτων γκαλερί."
 
-#: class-ml-gallery.php:1831 class-ml-slider-lightbox.php:2723
+#: class-ml-gallery.php:2239 class-ml-slider-lightbox.php:2749
 msgid "Toolbar"
 msgstr "Γραμμή εργαλείων"
 
-#: class-ml-gallery.php:1832 class-ml-slider-lightbox.php:1664
+#: class-ml-gallery.php:2240 class-ml-slider-lightbox.php:1690
 msgid "Download"
 msgstr "Λήψη"
 
-#: class-ml-gallery.php:1834
+#: class-ml-gallery.php:2242
+msgid "Expand"
+msgstr "Επέκταση"
+
+#: class-ml-gallery.php:2245
 msgid "Share"
 msgstr "Κοινή χρήση"
 
-#: class-ml-gallery.php:1835
+#: class-ml-gallery.php:2246
 msgid "Autoplay"
 msgstr "Αυτόματη αναπαραγωγή"
 
-#: class-ml-gallery.php:1836
+#: class-ml-gallery.php:2247
 msgid "Rotate and Flip"
 msgstr "Περιστροφή και Αναστροφή"
 
-#: class-ml-gallery.php:1837
+#: class-ml-gallery.php:2248
 msgid "Fullscreen"
 msgstr "Πλήρης οθόνη"
 
-#: class-ml-gallery.php:1843
+#: class-ml-gallery.php:2254
 msgid "Unique Image URLs"
 msgstr "Μοναδικά URLs εικόνας"
 
-#: class-ml-gallery.php:1850 class-ml-slider-lightbox.php:2345
-#: class-ml-slider-lightbox.php:2402
+#: class-ml-gallery.php:2261 class-ml-slider-lightbox.php:2369
+#: class-ml-slider-lightbox.php:2426
 msgid "Appearance"
 msgstr "Εμφάνιση"
 
-#: class-ml-gallery.php:1853
+#: class-ml-gallery.php:2264
 msgid "Background color of the gallery window"
 msgstr "Χρώμα φόντου του παραθύρου της γκαλερί"
 
-#: class-ml-gallery.php:1863
+#: class-ml-gallery.php:2274
 msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
 msgstr ""
 "Πόσο αδιαφανές είναι το φόντο του παραθύρου της γκαλερί (0 = διαφανές, 1 = "
 "συμπαγές)"
 
-#: class-ml-gallery.php:1864 class-ml-slider-lightbox.php:2683
-msgid "Background Opacity"
-msgstr "Αδιαφάνεια φόντου"
-
-#: class-ml-gallery.php:1878
+#: class-ml-gallery.php:2289
 msgid "Border width in pixels around the carousel (0 = no border)"
 msgstr "Πλάτος περιγράμματος σε πίξελ γύρω από το καρουσέλ (0 = χωρίς περίγραμμα)"
 
-#: class-ml-gallery.php:1879
+#: class-ml-gallery.php:2290
 msgid "Frame Border Width"
 msgstr "Πλάτος περιγράμματος πλαισίου"
 
-#: class-ml-gallery.php:1890
+#: class-ml-gallery.php:2301
 msgid "Line style used for the carousel border"
 msgstr "Στυλ γραμμής που χρησιμοποιείται για το περίγραμμα του καρουσέλ"
 
-#: class-ml-gallery.php:1890
+#: class-ml-gallery.php:2301
 msgid "Frame Border Style"
 msgstr "Στυλ περιγράμματος πλαισίου"
 
-#: class-ml-gallery.php:1893 class-ml-gallery.php:2095
+#: class-ml-gallery.php:2304 class-ml-gallery.php:2505
 msgid "Solid"
 msgstr "Στερεό"
 
-#: class-ml-gallery.php:1894 class-ml-gallery.php:2096
+#: class-ml-gallery.php:2305 class-ml-gallery.php:2506
 msgid "Dashed"
 msgstr "Διακεκομμένο"
 
-#: class-ml-gallery.php:1895 class-ml-gallery.php:2097
+#: class-ml-gallery.php:2306 class-ml-gallery.php:2507
 msgid "Dotted"
 msgstr "Τελεία"
 
-#: class-ml-gallery.php:1896 class-ml-gallery.php:2098
+#: class-ml-gallery.php:2307 class-ml-gallery.php:2508
 msgid "Double"
 msgstr "Διπλό"
 
-#: class-ml-gallery.php:1904
+#: class-ml-gallery.php:2315
 msgid "Color of the border around the carousel"
 msgstr "Χρώμα του περιγράμματος γύρω από το καρουσέλ"
 
-#: class-ml-gallery.php:1904
+#: class-ml-gallery.php:2315
 msgid "Frame Border Color"
 msgstr "Χρώμα περιγράμματος πλαισίου"
 
-#: class-ml-gallery.php:1914
+#: class-ml-gallery.php:2325
 msgid "Color of the next and previous navigation arrows"
 msgstr "Χρώμα των βελών πλοήγησης επόμενου και προηγούμενου"
 
-#: class-ml-gallery.php:1914
+#: class-ml-gallery.php:2325
 msgid "Arrow Color"
 msgstr "Χρώμα βέλους"
 
-#: class-ml-gallery.php:1924
+#: class-ml-gallery.php:2335
 msgid "Background color behind the navigation arrows"
 msgstr "Χρώμα φόντου πίσω από τα βέλη πλοήγησης"
 
-#: class-ml-gallery.php:1924
+#: class-ml-gallery.php:2335
 msgid "Arrow Background"
 msgstr "Φόντο Βέλους"
 
-#: class-ml-gallery.php:1934
+#: class-ml-gallery.php:2345
 msgid "Color of the close (X) icon"
 msgstr "Χρώμα του εικονιδίου κλεισίματος (Χ)"
 
-#: class-ml-gallery.php:1934
+#: class-ml-gallery.php:2345
 msgid "Close Icon Color"
 msgstr "Χρώμα Εικονιδίου Κλεισίματος"
 
-#: class-ml-gallery.php:1944
+#: class-ml-gallery.php:2355
 msgid "Background color behind the close icon"
 msgstr "Χρώμα φόντου πίσω από το εικονίδιο κλεισίματος"
 
-#: class-ml-gallery.php:1944
+#: class-ml-gallery.php:2355
 msgid "Close Background"
 msgstr "Φόντο Κλεισίματος"
 
-#: class-ml-gallery.php:1954
+#: class-ml-gallery.php:2365
 msgid "Color of the toolbar icons"
 msgstr "Χρώμα των εικονιδίων της γραμμής εργαλείων"
 
-#: class-ml-gallery.php:1954
+#: class-ml-gallery.php:2365
 msgid "Toolbar Icon Color"
 msgstr "Χρώμα Εικονιδίου Γραμμής Εργαλείων"
 
-#: class-ml-gallery.php:1964
+#: class-ml-gallery.php:2375
 msgid "Background color of the toolbar"
 msgstr "Χρώμα φόντου της γραμμής εργαλείων"
 
-#: class-ml-gallery.php:1964
+#: class-ml-gallery.php:2375
 msgid "Toolbar Background"
 msgstr "Φόντο Γραμμής Εργαλείων"
 
-#: class-ml-gallery.php:1974
+#: class-ml-gallery.php:2385
 msgid "Border color of the thumbnail strip images"
 msgstr "Χρώμα περιγράμματος των εικόνων της ταινίας μικρογραφιών"
 
-#: class-ml-gallery.php:1974 class-ml-slider-lightbox.php:2699
+#: class-ml-gallery.php:2385 class-ml-slider-lightbox.php:2725
 msgid "Thumbnail Border Color"
 msgstr "Χρώμα Περιγράμματος Μικρογραφίας"
 
-#: class-ml-gallery.php:1984
+#: class-ml-gallery.php:2395
 msgid "Border color of the active and hovered thumbnail"
 msgstr "Χρώμα περιγράμματος της ενεργής και αιωρούμενης μικρογραφίας"
 
-#: class-ml-gallery.php:1984
+#: class-ml-gallery.php:2395
 msgid "Thumbnail Border Active and Hover"
 msgstr "Ενεργό και Hover Περιγράμματος Μικρογραφίας"
 
-#: class-ml-gallery.php:2003
-msgid "Text color of the button that opens the gallery window"
-msgstr "Χρώμα κειμένου του κουμπιού που ανοίγει το παράθυρο της γκαλερί"
+#: class-ml-gallery.php:2413
+msgid "Text color of the gallery buttons, including Load More"
+msgstr ""
+"Χρώμα κειμένου των κουμπιών της γκαλερί, συμπεριλαμβανομένου του Φόρτωσε "
+"Περισσότερα"
 
-#: class-ml-gallery.php:2003
+#: class-ml-gallery.php:2413
 msgid "Button Text Color"
 msgstr "Χρώμα Κειμένου Κουμπιού"
 
-#: class-ml-gallery.php:2007
+#: class-ml-gallery.php:2417
 msgid "Button text color on hover"
 msgstr "Χρώμα κειμένου κουμπιού όταν αιωρείται"
 
-#: class-ml-gallery.php:2007
+#: class-ml-gallery.php:2417
 msgid "Button Text Hover"
 msgstr "Κείμενο Κουμπιού Κατά την Αίωρηση"
 
-#: class-ml-gallery.php:2011
-msgid "Background color of the button that opens the gallery window"
-msgstr "Χρώμα φόντου του κουμπιού που ανοίγει το παράθυρο της γκαλερί"
+#: class-ml-gallery.php:2421
+msgid "Background color of the gallery buttons, including Load More"
+msgstr ""
+"Χρώμα φόντου των κουμπιών της γκαλερί, συμπεριλαμβανομένου του Φόρτωσε "
+"Περισσότερα"
 
-#: class-ml-gallery.php:2011
+#: class-ml-gallery.php:2421
 msgid "Button Background"
 msgstr "Φόντο Κουμπιού"
 
-#: class-ml-gallery.php:2015
+#: class-ml-gallery.php:2425
 msgid "Button background color on hover"
 msgstr "Χρώμα φόντου του κουμπιού όταν περνάς το ποντίκι από πάνω"
 
-#: class-ml-gallery.php:2015
+#: class-ml-gallery.php:2425
 msgid "Button Background Hover"
 msgstr "Φόντο Κουμπιού σε Hover"
 
-#: class-ml-gallery.php:2022
+#: class-ml-gallery.php:2432
 msgid "Color of the icon that opens the gallery window"
 msgstr "Χρώμα του εικονιδίου που ανοίγει το παράθυρο της γκαλερί"
 
-#: class-ml-gallery.php:2022
+#: class-ml-gallery.php:2432
 msgid "Icon Color"
 msgstr "Χρώμα Εικονιδίου"
 
-#: class-ml-gallery.php:2026
+#: class-ml-gallery.php:2436
 msgid "Icon color on hover"
 msgstr "Χρώμα του εικονιδίου όταν περνάς το ποντίκι από πάνω"
 
-#: class-ml-gallery.php:2026
+#: class-ml-gallery.php:2436
 msgid "Icon Hover Color"
 msgstr "Χρώμα Εικονιδίου σε Hover"
 
-#: class-ml-gallery.php:2030
+#: class-ml-gallery.php:2440
 msgid "Background color behind the icon"
 msgstr "Χρώμα φόντου πίσω από το εικονίδιο"
 
-#: class-ml-gallery.php:2030
+#: class-ml-gallery.php:2440
 msgid "Icon Background"
 msgstr "Φόντο Εικονιδίου"
 
-#: class-ml-gallery.php:2034
+#: class-ml-gallery.php:2444
 msgid "Icon background color on hover"
 msgstr "Χρώμα φόντου του εικονιδίου όταν περνάς το ποντίκι από πάνω"
 
-#: class-ml-gallery.php:2034
+#: class-ml-gallery.php:2444
 msgid "Icon Background Hover"
 msgstr "Φόντο Εικονιδίου σε Hover"
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2451
 msgid "Color of the progress bar shown during autoplay"
 msgstr ""
 "Χρώμα της γραμμής προόδου που εμφανίζεται κατά τη διάρκεια της αυτόματης "
 "αναπαραγωγής"
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2451
 msgid "Autoplay Progress Bar"
 msgstr "Γραμμή Προόδου Αυτόματης Αναπαραγωγής"
 
-#: class-ml-gallery.php:2056
+#: class-ml-gallery.php:2466
 msgid "Image Styles"
 msgstr "Στυλ Εικόνας"
 
-#: class-ml-gallery.php:2059
+#: class-ml-gallery.php:2469
 msgid "Apply a filter to every image in the gallery"
 msgstr "Εφαρμόστε ένα φίλτρο σε κάθε εικόνα στην γκαλερί"
 
-#: class-ml-gallery.php:2059
+#: class-ml-gallery.php:2469
 msgid "Filter"
 msgstr "Φίλτρο"
 
-#: class-ml-gallery.php:2068
+#: class-ml-gallery.php:2478
 msgid "Corner radius in pixels applied to every image"
 msgstr "Ακτίνα γωνίας σε pixels που εφαρμόζεται σε κάθε εικόνα"
 
-#: class-ml-gallery.php:2069
+#: class-ml-gallery.php:2479
 msgid "Rounded Corners"
 msgstr "Στρογγυλεμένες Γωνίες"
 
-#: class-ml-gallery.php:2080
+#: class-ml-gallery.php:2490
 msgid "Image border width in pixels (0 = no border)"
 msgstr "Πλάτος περιγράμματος σε pixels (0 = χωρίς περίγραμμα)"
 
-#: class-ml-gallery.php:2081
+#: class-ml-gallery.php:2491
 msgid "Border Width"
 msgstr "Πλάτος Περιγράμματος"
 
-#: class-ml-gallery.php:2092
+#: class-ml-gallery.php:2502
 msgid "Line style used for the image border"
 msgstr "Στυλ γραμμής που χρησιμοποιείται για το περίγραμμα της εικόνας"
 
-#: class-ml-gallery.php:2092
+#: class-ml-gallery.php:2502
 msgid "Border Style"
 msgstr "Στυλ Περιγράμματος"
 
-#: class-ml-gallery.php:2106
+#: class-ml-gallery.php:2516
 msgid "Color of the image border"
 msgstr "Χρώμα του περιγράμματος της εικόνας"
 
-#: class-ml-gallery.php:2106
+#: class-ml-gallery.php:2516
 msgid "Border Color"
 msgstr "Χρώμα Περιγράμματος"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2526
 msgid "Drop shadow depth cast behind each image"
 msgstr "Βάθος σκιάς που ρίχνεται πίσω από κάθε εικόνα"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2526
 msgid "Box Shadow"
 msgstr "Σκιά Κουτιού"
 
-#: class-ml-gallery.php:2120
+#: class-ml-gallery.php:2530
 msgid "Light"
 msgstr "Ελαφρύ"
 
-#: class-ml-gallery.php:2121
-msgid "Medium"
-msgstr "Μέτριο"
-
-#: class-ml-gallery.php:2122
+#: class-ml-gallery.php:2532
 msgid "Heavy"
 msgstr "Βαρύ"
 
-#: class-ml-gallery.php:2130
+#: class-ml-gallery.php:2540
 msgid "Image opacity as a percentage"
 msgstr "Διαφάνεια εικόνας ως ποσοστό"
 
-#: class-ml-gallery.php:2131
+#: class-ml-gallery.php:2541
 msgid "Opacity"
 msgstr "Διαφάνεια"
 
-#: class-ml-gallery.php:2142
+#: class-ml-gallery.php:2552
 msgid "Rotate every image by a fixed angle"
 msgstr "Ρύθμιση κάθε εικόνας κατά γωνία"
 
-#: class-ml-gallery.php:2142
+#: class-ml-gallery.php:2552
 msgid "Rotate"
 msgstr "Περιστροφή"
 
-#: class-ml-gallery.php:2156
+#: class-ml-gallery.php:2566
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "Αντανάκλαση κάθε εικόνας οριζόντια, κατακόρυφα ή και τα δύο"
 
-#: class-ml-gallery.php:2156
+#: class-ml-gallery.php:2566
 msgid "Flip"
 msgstr "Αναστροφή"
 
-#: class-ml-gallery.php:2160
+#: class-ml-gallery.php:2570
 msgid "Horizontal"
 msgstr "Οριζόντια"
 
-#: class-ml-gallery.php:2161
+#: class-ml-gallery.php:2571
 msgid "Vertical"
 msgstr "Κατακόρυφα"
 
-#: class-ml-gallery.php:2162
+#: class-ml-gallery.php:2572
 msgid "Both"
 msgstr "Και τα δύο"
 
-#: class-ml-gallery.php:2172 class-ml-gallery.php:3819
+#: class-ml-gallery.php:2582 class-ml-gallery.php:4383
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: class-ml-gallery.php:2174 class-ml-gallery.php:3839
+#: class-ml-gallery.php:2584 class-ml-gallery.php:4403
 msgid "Click to copy shortcode."
 msgstr "Κάντε κλικ για να αντιγράψετε το shortcode."
 
-#: class-ml-gallery.php:2192
+#: class-ml-gallery.php:2602
 msgid "Edit Caption"
 msgstr "Επεξεργασία Λεζάντας"
 
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:2604
 msgid "Previous image"
 msgstr "Προηγούμενη εικόνα"
 
-#: class-ml-gallery.php:2195
+#: class-ml-gallery.php:2605
 msgid "Next image"
 msgstr "Επόμενη εικόνα"
 
-#: class-ml-gallery.php:2197 class-ml-gallery.php:2239
-#: class-ml-gallery.php:2260 class-ml-gallery.php:3864
+#: class-ml-gallery.php:2607 class-ml-gallery.php:2649
+#: class-ml-gallery.php:2670 class-ml-gallery.php:4428
 msgid "Close"
 msgstr "Κλείσιμο"
 
-#: class-ml-gallery.php:2218
+#: class-ml-gallery.php:2628
 msgid "Caption"
 msgstr "Λεζάντα"
 
-#: class-ml-gallery.php:2228
+#: class-ml-gallery.php:2638
 msgid "Done"
 msgstr "Έγινε"
 
-#: class-ml-gallery.php:2238
+#: class-ml-gallery.php:2648
 msgid "Import from Server Folder"
 msgstr "Εισαγωγή από Φάκελο Διακομιστή"
 
-#: class-ml-gallery.php:2247
+#: class-ml-gallery.php:2657
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: class-ml-gallery.php:2248
+#: class-ml-gallery.php:2658
 msgid "Import selected"
 msgstr "Εισαγωγή επιλεγμένων"
 
-#: class-ml-gallery.php:2259
+#: class-ml-gallery.php:2669
 msgid "Import from ZIP"
 msgstr "Εισαγωγή από ZIP"
 
-#: class-ml-gallery.php:2287
+#: class-ml-gallery.php:2697
 msgid "You do not have sufficient permissions."
 msgstr "Δεν έχετε επαρκή δικαιώματα."
 
-#: class-ml-gallery.php:2306
+#: class-ml-gallery.php:2716
 msgid "Could not update the gallery. Please try again."
 msgstr "Δεν ήταν δυνατή η ενημέρωση της γκαλερί. Παρακαλώ προσπαθήστε ξανά."
 
-#: class-ml-gallery.php:2457
+#: class-ml-gallery.php:2887
 msgid "(Copy)"
 msgstr "(Αντιγραφή)"
 
-#: class-ml-gallery.php:2463
+#: class-ml-gallery.php:2893
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "Δεν ήταν δυνατή η αναπαραγωγή της γκαλερί. Παρακαλώ δοκιμάστε ξανά."
 
-#: class-ml-gallery.php:2611 class-ml-gallery.php:2726
-#: class-ml-gallery.php:3984 class-ml-gallery.php:4137
-#: class-ml-gallery.php:4169
+#: class-ml-gallery.php:3041 class-ml-gallery.php:3156
+#: class-ml-gallery.php:3200 class-ml-gallery.php:4545
+#: class-ml-gallery.php:4696 class-ml-gallery.php:4728
 msgid "Permission denied."
 msgstr "Αρνήθηκε η άδεια."
 
-#: class-ml-gallery.php:2618
+#: class-ml-gallery.php:3048
 msgid "Folder not found."
 msgstr "Ο φάκελος δεν βρέθηκε."
 
-#: class-ml-gallery.php:2627
+#: class-ml-gallery.php:3057
 msgid "Folder could not be read."
 msgstr "Ο φάκελος δεν μπορούσε να αναγνωστεί."
 
-#: class-ml-gallery.php:2664
+#: class-ml-gallery.php:3094
 msgid "Uploads"
 msgstr "Αναρτήσεις"
 
-#: class-ml-gallery.php:2849
+#: class-ml-gallery.php:3212
+msgid "Invalid size."
+msgstr "Μη έγκυρο μέγεθος."
+
+#: class-ml-gallery.php:3317
 msgid "Select Gallery Images"
 msgstr "Επιλέξτε Εικόνες Γκαλερί"
 
-#: class-ml-gallery.php:2850
+#: class-ml-gallery.php:3318
 msgid "Add to Gallery"
 msgstr "Προσθήκη στη Γκαλερί"
 
-#: class-ml-gallery.php:2861
+#: class-ml-gallery.php:3333
 msgid ""
 "Saved to this image in your Media Library — changes appear anywhere the "
 "image is used."
@@ -1264,100 +1532,123 @@ msgstr ""
 "Αποθηκεύτηκε σε αυτή την εικόνα στη Βιβλιοθήκη Μέσων σας - οι αλλαγές "
 "εμφανίζονται οπουδήποτε χρησιμοποιείται η εικόνα."
 
-#: class-ml-gallery.php:2862 class-ml-gallery.php:4186
+#: class-ml-gallery.php:3334 class-ml-gallery.php:4745
 msgid "You do not have permission to edit this image."
 msgstr "Δεν έχετε άδεια να επεξεργαστείτε αυτή την εικόνα."
 
-#: class-ml-gallery.php:2863 class-ml-gallery.php:4187
+#: class-ml-gallery.php:3335 class-ml-gallery.php:4746
 msgid "This caption source is read-only."
 msgstr "Αυτή η πηγή λεζάντας είναι μόνο για ανάγνωση."
 
-#: class-ml-gallery.php:2864
+#: class-ml-gallery.php:3336
 msgid "Shown in this gallery"
 msgstr "Εμφανίζεται σε αυτή τη γκαλερί"
 
-#: class-ml-gallery.php:2866
+#: class-ml-gallery.php:3340
+#, php-format
+msgid "Preparing image sizes… %1$d/%2$d"
+msgstr "Προετοιμασία μεγεθών εικόνας… %1$d/%2$d"
+
+#: class-ml-gallery.php:3341
+msgid "Image sizes ready."
+msgstr "Τα μεγέθη εικόνας είναι έτοιμα."
+
+#: class-ml-gallery.php:3343
+#, php-format
+msgid ""
+"Could not resize %d image(s) — they may be smaller than the size you asked "
+"for."
+msgstr ""
+"Δεν ήταν δυνατή η αλλαγή μεγέθους %d εικόνας(-ων) — μπορεί να είναι "
+"μικρότερες από το μέγεθος που ζητήσατε."
+
+#: class-ml-gallery.php:3345
 msgid "Loading…"
 msgstr "Φόρτωση…"
 
-#: class-ml-gallery.php:2867
+#: class-ml-gallery.php:3346
 msgid "No images in this folder."
 msgstr "Δεν υπάρχουν εικόνες σε αυτόν τον φάκελο."
 
-#: class-ml-gallery.php:2868
+#: class-ml-gallery.php:3347
 msgid "Could not load this folder."
 msgstr "Δεν ήταν δυνατή η φόρτωση αυτού του φακέλου."
 
-#: class-ml-gallery.php:2869
+#: class-ml-gallery.php:3348
 msgid "Importing…"
 msgstr "Εισαγωγή…"
 
-#: class-ml-gallery.php:2870
+#: class-ml-gallery.php:3349
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr ""
 "Εμφάνιση των πρώτων 200 εικόνων — ανοίξτε έναν υποφάκελο για να περιορίσετε "
 "τη λίστα."
 
-#: class-ml-gallery.php:2871
+#: class-ml-gallery.php:3350
 msgid "Select at least one image."
 msgstr "Επιλέξτε τουλάχιστον μία εικόνα."
 
-#: class-ml-gallery.php:2872 class-ml-gallery.php:2875
+#: class-ml-gallery.php:3351 class-ml-gallery.php:3354
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "Εισάγονται %1$d εικόνα(ες); %2$d εικόνα(ες) παραλείφθηκαν."
 
-#: class-ml-gallery.php:2873
+#: class-ml-gallery.php:3352
 msgid "Uploading…"
 msgstr "Ανάρτηση…"
 
-#: class-ml-gallery.php:2874
+#: class-ml-gallery.php:3353
 msgid "Importing images…"
 msgstr "Εισαγωγή εικόνων…"
 
-#: class-ml-gallery.php:2876
+#: class-ml-gallery.php:3355
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "Μόνο οι πρώτες 200 εικόνες (ή 256 MB) εισήχθησαν."
 
-#: class-ml-gallery.php:2877
+#: class-ml-gallery.php:3356
 msgid "The ZIP could not be imported."
 msgstr "Το ZIP δεν μπορούσε να εισαχθεί."
 
-#: class-ml-gallery.php:2878
+#: class-ml-gallery.php:3357
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr ""
 "Η ανάρτηση απορρίφθηκε — το ZIP μπορεί να είναι μεγαλύτερο από αυτό που "
 "επιτρέπει αυτός ο διακομιστής."
 
-#: class-ml-gallery.php:2879
+#: class-ml-gallery.php:3358
 msgid "No images found in the ZIP."
 msgstr "Δεν βρέθηκαν εικόνες στο ZIP."
 
-#: class-ml-gallery.php:3450
+#: class-ml-gallery.php:3785
+#, php-format
+msgid "%1$d more images loaded, %2$d remaining"
+msgstr "%1$d περισσότερες εικόνες φορτώθηκαν, %2$d απομένουν"
+
+#: class-ml-gallery.php:4014
 msgid "Drag-and-drop building"
 msgstr "Δημιουργία με μεταφορά και απόθεση"
 
-#: class-ml-gallery.php:3451
+#: class-ml-gallery.php:4015
 msgid "Responsive lightbox"
 msgstr "Ανταγωνιστική lightbox"
 
-#: class-ml-gallery.php:3452
+#: class-ml-gallery.php:4016
 msgid "Grid · Masonry · Justified"
 msgstr "Πλέγμα · Μηχανική · Δικαιολογημένη"
 
-#: class-ml-gallery.php:3703
+#: class-ml-gallery.php:4267
 msgid "Get started"
 msgstr "Ξεκινήστε"
 
-#: class-ml-gallery.php:3706
+#: class-ml-gallery.php:4270
 msgid "Your galleries"
 msgstr "Οι γκαλερί σας"
 
-#: class-ml-gallery.php:3706
+#: class-ml-gallery.php:4270
 msgid "live here."
 msgstr "ζουν εδώ."
 
-#: class-ml-gallery.php:3708
+#: class-ml-gallery.php:4272
 msgid ""
 "Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
 "justified, no code required."
@@ -1365,74 +1656,74 @@ msgstr ""
 "Δημιουργήστε όμορφες γκαλερί εικόνων με μια εντυπωσιακή lightbox. Πλέγμα, "
 "μηχανική ή δικαιολογημένη, χωρίς απαίτηση κώδικα."
 
-#: class-ml-gallery.php:3710
+#: class-ml-gallery.php:4274
 msgid "Create your first gallery"
 msgstr "Δημιουργήστε την πρώτη σας γκαλερί"
 
-#: class-ml-gallery.php:3723
+#: class-ml-gallery.php:4287
 #, php-format
 msgid "View Trash (%s)"
 msgid_plural "View Trash (%s)"
 msgstr[0] "Προβολή Κάδου (%s)"
 msgstr[1] "Προβολή Κάδου (%s)"
 
-#: class-ml-gallery.php:3734
+#: class-ml-gallery.php:4298
 msgid "Preview layout"
 msgstr "Προεπισκόπηση διάταξης"
 
-#: class-ml-gallery.php:3821
+#: class-ml-gallery.php:4385
 msgid "Usage"
 msgstr "Χρήση"
 
-#: class-ml-gallery.php:3854
+#: class-ml-gallery.php:4418
 msgid "Not found."
 msgstr "Δεν βρέθηκε."
 
-#: class-ml-gallery.php:3859
+#: class-ml-gallery.php:4423
 msgid "View Usage"
 msgstr "Προβολή Χρήσης"
 
-#: class-ml-gallery.php:3865
+#: class-ml-gallery.php:4429
 msgid "Content Using This Gallery"
 msgstr "Περιεχόμενο που χρησιμοποιεί αυτήν τη γκαλερί"
 
-#: class-ml-gallery.php:3932
+#: class-ml-gallery.php:4493
 msgid "(no title)"
 msgstr "(χωρίς τίτλο)"
 
-#: class-ml-gallery.php:3990 class-ml-gallery.php:3999
+#: class-ml-gallery.php:4551 class-ml-gallery.php:4560
 msgid "Please choose a valid .zip file."
 msgstr "Παρακαλώ επιλέξτε ένα έγκυρο .zip αρχείο."
 
-#: class-ml-gallery.php:4005
+#: class-ml-gallery.php:4566
 msgid "Server cannot read ZIP files."
 msgstr "Ο διακομιστής δεν μπορεί να διαβάσει αρχεία ZIP."
 
-#: class-ml-gallery.php:4012
+#: class-ml-gallery.php:4573
 msgid "The ZIP could not be read."
 msgstr "Το ZIP δεν μπορούσε να διαβαστεί."
 
-#: class-ml-gallery.php:4046
+#: class-ml-gallery.php:4607
 msgid "Could not prepare a temporary folder."
 msgstr "Δεν ήταν δυνατή η προετοιμασία ενός προσωρινού φακέλου."
 
-#: class-ml-gallery.php:4144 class-ml-gallery.php:4180
+#: class-ml-gallery.php:4703 class-ml-gallery.php:4739
 msgid "Image not found."
 msgstr "Η εικόνα δεν βρέθηκε."
 
-#: class-ml-gallery.php:4217
+#: class-ml-gallery.php:4775
 msgid "Unknown caption source."
 msgstr "Άγνωστη πηγή λεζάντας."
 
-#: class-ml-slider-lightbox.php:216
+#: class-ml-slider-lightbox.php:222
 msgid "👋 Thanks for installing MetaSlider Gallery!"
 msgstr "👋 Ευχαριστούμε που εγκαταστήσατε το MetaSlider Gallery!"
 
-#: class-ml-slider-lightbox.php:219
+#: class-ml-slider-lightbox.php:225
 msgid "You're all set. Create your first gallery to get started."
 msgstr "Είστε έτοιμοι. Δημιουργήστε την πρώτη σας γκαλερί για να ξεκινήσετε."
 
-#: class-ml-slider-lightbox.php:1188
+#: class-ml-slider-lightbox.php:1216
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1440,11 +1731,11 @@ msgstr ""
 "Η γκαλερί MetaSlider απαιτεί την εγκατάσταση και ενεργοποίηση του "
 "MetaSlider και τουλάχιστον ενός άλλου υποστηριζόμενου plugin lightbox."
 
-#: class-ml-slider-lightbox.php:1192
+#: class-ml-slider-lightbox.php:1220
 msgid "More info"
 msgstr "Περισσότερες πληροφορίες"
 
-#: class-ml-slider-lightbox.php:1203
+#: class-ml-slider-lightbox.php:1231
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1452,31 +1743,31 @@ msgstr ""
 "Υπάρχουν περισσότερα από ένα ενεργοποιημένα plugins lightbox. Αυτό μπορεί "
 "να προκαλέσει συγκρούσεις με τη γκαλερί MetaSlider"
 
-#: class-ml-slider-lightbox.php:1263
+#: class-ml-slider-lightbox.php:1291
 msgid "Edit Global Settings"
 msgstr "Επεξεργασία Παγκόσμιων Ρυθμίσεων"
 
-#: class-ml-slider-lightbox.php:1274
+#: class-ml-slider-lightbox.php:1302
 msgid "Open In Gallery"
 msgstr "Άνοιγμα στη Γκαλερί"
 
-#: class-ml-slider-lightbox.php:1288
+#: class-ml-slider-lightbox.php:1316
 msgid "Show Captions"
 msgstr "Εμφάνιση Λεζαντών"
 
-#: class-ml-slider-lightbox.php:1288
+#: class-ml-slider-lightbox.php:1316
 msgid "Show captions in the gallery for each slide."
 msgstr "Εμφάνιση λεζαντών στη γκαλερί για κάθε διαφάνεια."
 
-#: class-ml-slider-lightbox.php:1289
+#: class-ml-slider-lightbox.php:1317
 msgid "Show Navigation Arrows"
 msgstr "Εμφάνιση Βελών Πλοήγησης"
 
-#: class-ml-slider-lightbox.php:1289
+#: class-ml-slider-lightbox.php:1317
 msgid "Show previous/next arrows in the gallery."
 msgstr "Εμφάνιση προηγούμενων/επόμενων βελών στη γκαλερί."
 
-#: class-ml-slider-lightbox.php:1295
+#: class-ml-slider-lightbox.php:1323
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1485,159 +1776,159 @@ msgstr ""
 "Η γκαλερί είναι ενεργοποιημένη για όλες τις παρουσίες μέσω των <a "
 "href=\"%s\">ρυθμίσεων γκαλερί MetaSlider</a>."
 
-#: class-ml-slider-lightbox.php:1660
+#: class-ml-slider-lightbox.php:1686
 msgid "Close gallery"
 msgstr "Κλείσιμο γκαλερί"
 
-#: class-ml-slider-lightbox.php:1661
+#: class-ml-slider-lightbox.php:1687
 msgid "Toggle maximize"
 msgstr "Εναλλαγή μεγέθυνσης"
 
-#: class-ml-slider-lightbox.php:1662
+#: class-ml-slider-lightbox.php:1688
 msgid "Previous slide"
 msgstr "Προηγούμενη διαφάνεια"
 
-#: class-ml-slider-lightbox.php:1663
+#: class-ml-slider-lightbox.php:1689
 msgid "Next slide"
 msgstr "Επόμενη διαφάνεια"
 
-#: class-ml-slider-lightbox.php:1665
+#: class-ml-slider-lightbox.php:1691
 msgid "Play video"
 msgstr "Αναπαραγωγή βίντεο"
 
-#: class-ml-slider-lightbox.php:1666
+#: class-ml-slider-lightbox.php:1692
 msgid "Oops... Failed to load content..."
 msgstr "Ουπς... Απέτυχε η φόρτωση περιεχομένου..."
 
-#: class-ml-slider-lightbox.php:1712 class-ml-slider-lightbox.php:1742
+#: class-ml-slider-lightbox.php:1738 class-ml-slider-lightbox.php:1768
 msgid "Global"
 msgstr "Παγκόσμια"
 
-#: class-ml-slider-lightbox.php:1713
+#: class-ml-slider-lightbox.php:1739
 msgid "Yes"
 msgstr "Ναι"
 
-#: class-ml-slider-lightbox.php:1714
+#: class-ml-slider-lightbox.php:1740
 msgid "No"
 msgstr "Όχι"
 
-#: class-ml-slider-lightbox.php:1737
+#: class-ml-slider-lightbox.php:1763
 msgid "How Visitors Open Images"
 msgstr "Πώς οι επισκέπτες ανοίγουν εικόνες"
 
-#: class-ml-slider-lightbox.php:1740 class-ml-slider-lightbox.php:3664
+#: class-ml-slider-lightbox.php:1766 class-ml-slider-lightbox.php:3725
 msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
 msgstr ""
 "Επιλέξτε αν το κλικ στην εικόνα, ένα εικονίδιο ή ένα κουμπί ανοίγει τη "
 "γκαλερί."
 
-#: class-ml-slider-lightbox.php:1743 class-ml-trigger-control.php:66
+#: class-ml-slider-lightbox.php:1769 class-ml-trigger-control.php:66
 msgid "Image"
 msgstr "Εικόνα"
 
-#: class-ml-slider-lightbox.php:1744 class-ml-slider-lightbox.php:3506
-#: class-ml-slider-lightbox.php:3519 class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3630 class-ml-trigger-control.php:67
+#: class-ml-slider-lightbox.php:1770 class-ml-slider-lightbox.php:3548
+#: class-ml-slider-lightbox.php:3561 class-ml-slider-lightbox.php:3574
+#: class-ml-slider-lightbox.php:3672 class-ml-trigger-control.php:67
 msgid "Icon"
 msgstr "Εικονίδιο"
 
-#: class-ml-slider-lightbox.php:1745 class-ml-trigger-control.php:68
+#: class-ml-slider-lightbox.php:1771 class-ml-trigger-control.php:68
 msgid "Button"
 msgstr "Κουμπί"
 
-#: class-ml-slider-lightbox.php:2013
+#: class-ml-slider-lightbox.php:2039
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr ""
 "Η MetaSlider Gallery απαιτεί να είναι εγκατεστημένο και ενεργοποιημένο το "
 "MetaSlider."
 
-#: class-ml-slider-lightbox.php:2017
+#: class-ml-slider-lightbox.php:2043
 msgid "Install MetaSlider"
 msgstr "Εγκατάσταση MetaSlider"
 
-#: class-ml-slider-lightbox.php:2140 class-ml-slider-lightbox.php:2284, fuzzy
+#: class-ml-slider-lightbox.php:2166 class-ml-slider-lightbox.php:2310, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2266
+#: class-ml-slider-lightbox.php:2292
 #, php-format
 msgid "Select pages to %s..."
 msgstr "Επιλέξτε σελίδες για %s..."
 
-#: class-ml-slider-lightbox.php:2267
+#: class-ml-slider-lightbox.php:2293
 #, php-format
 msgid "Select posts to %s..."
 msgstr "Επιλέξτε αναρτήσεις για %s..."
 
-#: class-ml-slider-lightbox.php:2268
+#: class-ml-slider-lightbox.php:2294
 #, php-format
 msgid "Select post types to %s..."
 msgstr "Επιλέξτε τύπους αναρτήσεων για %s..."
 
-#: class-ml-slider-lightbox.php:2269
+#: class-ml-slider-lightbox.php:2295
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "Επιλέξτε %1$s για %2$s..."
 
-#: class-ml-slider-lightbox.php:2270
+#: class-ml-slider-lightbox.php:2296
 msgid "Select post types to exclude"
 msgstr "Επιλέξτε τύπους αναρτήσεων προς εξαίρεση"
 
-#: class-ml-slider-lightbox.php:2271 class-ml-slider-lightbox.php:3713
-#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
+#: class-ml-slider-lightbox.php:2297 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
 msgid "Include"
 msgstr "Συμπερίληψη"
 
-#: class-ml-slider-lightbox.php:2272 class-ml-slider-lightbox.php:3713
-#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
+#: class-ml-slider-lightbox.php:2298 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
 msgid "Exclude"
 msgstr "Εξαίρεση"
 
-#: class-ml-slider-lightbox.php:2280, fuzzy
+#: class-ml-slider-lightbox.php:2306, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2300
+#: class-ml-slider-lightbox.php:2325
 msgid "Global Settings"
 msgstr "Παγκόσμιες Ρυθμίσεις"
 
-#: class-ml-slider-lightbox.php:2310
+#: class-ml-slider-lightbox.php:2334
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "Αναβάθμιση σε MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2311
+#: class-ml-slider-lightbox.php:2335
 msgid "Upgrade to Pro"
 msgstr "Αναβάθμιση σε Pro"
 
-#: class-ml-slider-lightbox.php:2343
+#: class-ml-slider-lightbox.php:2367
 msgid "Automatic Mode"
 msgstr "Αυτόματη Λειτουργία"
 
-#: class-ml-slider-lightbox.php:2344
+#: class-ml-slider-lightbox.php:2368
 msgid "Manual Mode"
 msgstr "Χειροκίνητη Λειτουργία"
 
-#: class-ml-slider-lightbox.php:2346
+#: class-ml-slider-lightbox.php:2370
 msgid "Behavior"
 msgstr "Συμπεριφορά"
 
-#: class-ml-slider-lightbox.php:2367
+#: class-ml-slider-lightbox.php:2391
 msgid "Settings saved successfully!"
 msgstr "Οι ρυθμίσεις αποθηκεύτηκαν με επιτυχία!"
 
-#: class-ml-slider-lightbox.php:2377
+#: class-ml-slider-lightbox.php:2401
 msgid "Where to Enable Automatically"
 msgstr "Πού να ενεργοποιήσετε αυτόματα"
 
-#: class-ml-slider-lightbox.php:2384, fuzzy
+#: class-ml-slider-lightbox.php:2408, fuzzy
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider Slideshows"
 
-#: class-ml-slider-lightbox.php:2391 class-ml-slider-lightbox.php:2588
+#: class-ml-slider-lightbox.php:2415 class-ml-slider-lightbox.php:2614
 msgid "Content Filtering"
 msgstr "Φιλτράρισμα περιεχομένου"
 
-#: class-ml-slider-lightbox.php:2403
+#: class-ml-slider-lightbox.php:2427
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
@@ -1645,19 +1936,23 @@ msgstr ""
 "Προσαρμόστε τα χρώματα, τη διαφάνεια και το οπτικό στυλ για την επικάλυψη "
 "της γκαλερί και τους ελέγχους."
 
-#: class-ml-slider-lightbox.php:2407 class-ml-slider-lightbox.php:2654
+#: class-ml-slider-lightbox.php:2431 class-ml-slider-lightbox.php:2680
 msgid "Background & Overlay"
 msgstr "Φόντο & Επικάλυψη"
 
-#: class-ml-slider-lightbox.php:2417
+#: class-ml-slider-lightbox.php:2441
 msgid "\"Open in Gallery\" Button"
 msgstr "\"Άνοιγμα στη Γκαλερί\" Κουμπί"
 
-#: class-ml-slider-lightbox.php:2427 class-ml-slider-lightbox.php:2767
+#: class-ml-slider-lightbox.php:2451 class-ml-slider-lightbox.php:2793
 msgid "Navigation & Controls"
 msgstr "Πλοήγηση & Έλεγχοι"
 
-#: class-ml-slider-lightbox.php:2433
+#: class-ml-slider-lightbox.php:2454 class-ml-slider-lightbox.php:2832
+msgid "Search Engine Optimization"
+msgstr "Βελτιστοποίηση Μηχανών Αναζήτησης"
+
+#: class-ml-slider-lightbox.php:2460
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1668,27 +1963,27 @@ msgstr ""
 "MetaSlider αλλά θα λειτουργούν για τις επικάλυψεις περιεχομένου του "
 "WordPress."
 
-#: class-ml-slider-lightbox.php:2440 class-ml-slider-lightbox.php:4230
+#: class-ml-slider-lightbox.php:2467 class-ml-slider-lightbox.php:4291
 msgid "Enhanced Zoom & Controls"
 msgstr "Βελτιωμένος Ζουμ & Έλεγχοι"
 
-#: class-ml-slider-lightbox.php:2448
+#: class-ml-slider-lightbox.php:2475
 msgid "Media & Video Enhancements"
 msgstr "Μέσα & Βίντεο Βελτιώσεις"
 
-#: class-ml-slider-lightbox.php:2456 class-ml-slider-lightbox.php:4258
+#: class-ml-slider-lightbox.php:2483 class-ml-slider-lightbox.php:4319
 msgid "Social & Navigation"
 msgstr "Κοινωνικά & Πλοήγηση"
 
-#: class-ml-slider-lightbox.php:2464 class-ml-slider-lightbox.php:4279
+#: class-ml-slider-lightbox.php:2491 class-ml-slider-lightbox.php:4340
 msgid "Advanced Features"
 msgstr "Προχωρημένα Χαρακτηριστικά"
 
-#: class-ml-slider-lightbox.php:2480
+#: class-ml-slider-lightbox.php:2506
 msgid "Manual Options"
 msgstr "Μηχανισμός Ρυθμίσεων"
 
-#: class-ml-slider-lightbox.php:2481
+#: class-ml-slider-lightbox.php:2507
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -1696,45 +1991,45 @@ msgstr ""
 "Χειροκίνητοι έλεγχοι και παρακάμψεις WordPress που λειτουργούν ανεξάρτητα "
 "από τις αυτόματες ρυθμίσεις."
 
-#: class-ml-slider-lightbox.php:2661
+#: class-ml-slider-lightbox.php:2687
 msgid "Navigation Icons"
 msgstr "Εικονίδια Πλοήγησης"
 
-#: class-ml-slider-lightbox.php:2668
+#: class-ml-slider-lightbox.php:2694
 msgid "Buttons"
 msgstr "Κουμπιά"
 
-#: class-ml-slider-lightbox.php:2691
+#: class-ml-slider-lightbox.php:2717
 msgid "Autoplay Progress Bar Color"
 msgstr "Χρώμα Γραμμής Προόδου Αυτόματης Αναπαραγωγής"
 
-#: class-ml-slider-lightbox.php:2715
+#: class-ml-slider-lightbox.php:2741
 msgid "Close Button"
 msgstr "Κουμπί Κλεισίματος"
 
-#: class-ml-slider-lightbox.php:2731
+#: class-ml-slider-lightbox.php:2757
 msgid "Button Colors"
 msgstr "Χρώματα Κουμπιών"
 
-#: class-ml-slider-lightbox.php:2739
+#: class-ml-slider-lightbox.php:2765
 msgid "Icon Colors"
 msgstr "Χρώματα Εικονιδίων"
 
-#: class-ml-slider-lightbox.php:3120
+#: class-ml-slider-lightbox.php:3162
 msgid "Configure general gallery settings that apply site-wide."
 msgstr "Ρυθμίστε τις γενικές ρυθμίσεις της γκαλερί που ισχύουν σε όλο το site."
 
-#: class-ml-slider-lightbox.php:3125
+#: class-ml-slider-lightbox.php:3167
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr ""
 "Ρυθμίστε τις ρυθμίσεις που αφορούν τη λειτουργικότητα της MetaSlider "
 "Gallery."
 
-#: class-ml-slider-lightbox.php:3130
+#: class-ml-slider-lightbox.php:3172
 msgid "Select where the gallery will be enabled automatically."
 msgstr "Επιλέξτε πού θα επιτρέπεται αυτόματα η γκαλερί."
 
-#: class-ml-slider-lightbox.php:3136
+#: class-ml-slider-lightbox.php:3178
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1743,33 +2038,33 @@ msgstr ""
 "και καθορίστε ποιες σελίδες, αναρτήσεις ή επιλογείς να συμπεριληφθούν ή να "
 "αποκλειστούν."
 
-#: class-ml-slider-lightbox.php:3152
+#: class-ml-slider-lightbox.php:3194
 msgid "Processing Mode"
 msgstr "Λειτουργία επεξεργασίας"
 
-#: class-ml-slider-lightbox.php:3155
+#: class-ml-slider-lightbox.php:3197
 msgid "Process all content EXCEPT the items specified below"
 msgstr ""
 "Επεξεργαστείτε όλο το περιεχόμενο ΕΚΤΟΣ από τα στοιχεία που καθορίζονται "
 "παρακάτω"
 
-#: class-ml-slider-lightbox.php:3158
+#: class-ml-slider-lightbox.php:3200
 msgid "ONLY process the items specified below"
 msgstr "ΜΟΝΟ επεξεργαστείτε τα στοιχεία που καθορίζονται παρακάτω"
 
-#: class-ml-slider-lightbox.php:3165
+#: class-ml-slider-lightbox.php:3207
 msgid "Inclusion Mode"
 msgstr "Λειτουργία συμπερίληψης"
 
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3211
 msgid "Exclusion Mode"
 msgstr "Λειτουργία εξαίρεσης"
 
-#: class-ml-slider-lightbox.php:3189
+#: class-ml-slider-lightbox.php:3231
 msgid "Images in post content"
 msgstr "Εικόνες στο περιεχόμενο της δημοσίευσης"
 
-#: class-ml-slider-lightbox.php:3190
+#: class-ml-slider-lightbox.php:3232
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -1778,11 +2073,11 @@ msgstr ""
 "ρύθμιση \"Μεγέθυνση με Κλικ\" σε αναρτήσεις και σελίδες θα ανοίγουν "
 "αυτόματα στη γκαλερί."
 
-#: class-ml-slider-lightbox.php:3206
+#: class-ml-slider-lightbox.php:3248
 msgid "Images and videos in widgets and sidebars"
 msgstr "Εικόνες και βίντεο σε widgets και πλαϊνές μπάστες"
 
-#: class-ml-slider-lightbox.php:3207
+#: class-ml-slider-lightbox.php:3249
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
@@ -1790,11 +2085,11 @@ msgstr ""
 "Όταν είναι ενεργοποιημένο, οι εικόνες και τα βίντεο στις περιοχές widget θα "
 "ανοίγουν αυτόματα στη γκαλερί."
 
-#: class-ml-slider-lightbox.php:3223
+#: class-ml-slider-lightbox.php:3265
 msgid "Gallery shortcodes and blocks"
 msgstr "Shortcodes και μπλοκ γκαλερί"
 
-#: class-ml-slider-lightbox.php:3224
+#: class-ml-slider-lightbox.php:3266
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1803,11 +2098,11 @@ msgstr ""
 "WordPress και στα μπλοκ Γκαλερί του Gutenberg θα ανοίγουν αυτόματα στο "
 "παράθυρο της γκαλερί."
 
-#: class-ml-slider-lightbox.php:3240
+#: class-ml-slider-lightbox.php:3282
 msgid "Featured images"
 msgstr "Επιλεγμένες εικόνες"
 
-#: class-ml-slider-lightbox.php:3241
+#: class-ml-slider-lightbox.php:3283
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -1815,7 +2110,7 @@ msgstr ""
 "Όταν είναι ενεργοποιημένο, οι εικόνες προβολής (μικρογραφίες αναρτήσεων) θα "
 "ανοίγουν αυτόματα στη γκαλερί όταν κλικάρονται."
 
-#: class-ml-slider-lightbox.php:3250
+#: class-ml-slider-lightbox.php:3292
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -1823,11 +2118,11 @@ msgstr ""
 "Άνοιγμα όλων των slideshow του MetaSlider αυτόματα στη γκαλερί, "
 "παρακάμπτοντας τη ρύθμιση ανά slider."
 
-#: class-ml-slider-lightbox.php:3264
+#: class-ml-slider-lightbox.php:3306
 msgid "MetaSlider slideshows"
 msgstr "Δημοσιεύσεις MetaSlider"
 
-#: class-ml-slider-lightbox.php:3265
+#: class-ml-slider-lightbox.php:3307
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -1835,11 +2130,11 @@ msgstr ""
 "Όταν είναι ενεργοποιημένο, όλα τα slideshow του MetaSlider θα ανοίγουν "
 "διαφάνειες στο παράθυρο της γκαλερί, παρακάμπτοντας τη ρύθμιση ανά slider."
 
-#: class-ml-slider-lightbox.php:3281
+#: class-ml-slider-lightbox.php:3323
 msgid "Videos in post content"
 msgstr "Βίντεο στο περιεχόμενο της ανάρτησης"
 
-#: class-ml-slider-lightbox.php:3282
+#: class-ml-slider-lightbox.php:3324
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1848,7 +2143,7 @@ msgstr ""
 "ενσωματώσεις YouTube, ενσωματώσεις Vimeo) στο περιεχόμενο "
 "αναρτήσεων/σελίδων θα ανοίγουν αυτόματα στη γκαλερί."
 
-#: class-ml-slider-lightbox.php:3317
+#: class-ml-slider-lightbox.php:3359
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
@@ -1856,7 +2151,7 @@ msgstr ""
 "Χρώμα φόντου για την επικάλυψη της γκαλερί. Οι σκούρες αποχρώσεις "
 "λειτουργούν καλύτερα για την προβολή εικόνας."
 
-#: class-ml-slider-lightbox.php:3322
+#: class-ml-slider-lightbox.php:3364
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
@@ -1864,7 +2159,7 @@ msgstr ""
 "Χρώμα φόντου για τα κουμπιά \"Άνοιγμα στη Γκαλερί\" που εμφανίζονται σε "
 "διαφάνειες, εικόνες και βίντεο."
 
-#: class-ml-slider-lightbox.php:3327
+#: class-ml-slider-lightbox.php:3369
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
@@ -1872,19 +2167,19 @@ msgstr ""
 "Χρώμα κειμένου για τα κουμπιά \"Άνοιγμα στη Γκαλερί\" που εμφανίζονται σε "
 "διαφάνειες, εικόνες και βίντεο."
 
-#: class-ml-slider-lightbox.php:3332
+#: class-ml-slider-lightbox.php:3374
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr ""
 "Χρώμα φόντου όταν περνάτε το ποντίκι πάνω από τα κουμπιά \"Άνοιγμα στη "
 "Γκαλερί\"."
 
-#: class-ml-slider-lightbox.php:3337
+#: class-ml-slider-lightbox.php:3379
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr ""
 "Χρώμα κειμένου όταν περνάτε το ποντίκι πάνω από τα κουμπιά \"Άνοιγμα στη "
 "Γκαλερί\"."
 
-#: class-ml-slider-lightbox.php:3350
+#: class-ml-slider-lightbox.php:3392
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -1892,17 +2187,17 @@ msgstr ""
 "Προσαρμοσμένο κείμενο για τα κουμπιά γκαλερί. Αυτό το κείμενο θα "
 "εμφανίζεται σε όλα τα κουμπιά \"Άνοιγμα στη Γκαλερί\" σε όλο το site."
 
-#: class-ml-slider-lightbox.php:3363 class-ml-slider-lightbox.php:3389
+#: class-ml-slider-lightbox.php:3405 class-ml-slider-lightbox.php:3431
 msgid "Top Right (Default)"
 msgstr "Επάνω Δεξιά (Προκαθορισμένο)"
 
-#: class-ml-slider-lightbox.php:3376
+#: class-ml-slider-lightbox.php:3418
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr ""
 "Επιλέξτε πού να τοποθετήσετε το κουμπί κλεισίματος (X) στην επικάλυψη "
 "γκαλερί."
 
-#: class-ml-slider-lightbox.php:3402
+#: class-ml-slider-lightbox.php:3444
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
@@ -1910,11 +2205,11 @@ msgstr ""
 "Επιλέξτε πού να τοποθετήσετε τα κουμπιά \"Άνοιγμα στη Γκαλερί\" εντός των "
 "διαφανειών, εικόνων, γκαλερί και βίντεο."
 
-#: class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3449
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "Χρώμα για τα βέλη πλοήγησης προηγουμένου και επόμενου στην γκαλερί."
 
-#: class-ml-slider-lightbox.php:3412
+#: class-ml-slider-lightbox.php:3454
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -1922,11 +2217,11 @@ msgstr ""
 "Χρώμα βέλους όταν περνάτε το ποντίκι. Δημιουργεί οπτική ανατροφοδότηση όταν "
 "οι χρήστες μετακινούν το ποντίκι τους πάνω από τα βέλη πλοήγησης."
 
-#: class-ml-slider-lightbox.php:3417
+#: class-ml-slider-lightbox.php:3459
 msgid "Color for the close button (X) in the gallery."
 msgstr "Χρώμα για το κουμπί κλεισίματος (X) στην γκαλερί."
 
-#: class-ml-slider-lightbox.php:3422
+#: class-ml-slider-lightbox.php:3464
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -1935,7 +2230,7 @@ msgstr ""
 "ανατροφοδότηση όταν οι χρήστες μετακινούν το ποντίκι τους πάνω από το "
 "κουμπί κλεισίματος."
 
-#: class-ml-slider-lightbox.php:3427
+#: class-ml-slider-lightbox.php:3469
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -1944,7 +2239,7 @@ msgstr ""
 "Lightbox. Επηρεάζει τα εικονίδια ζουμ, πλήρους οθόνης (Pro) και την "
 "εμφάνιση του μετρητή εικόνας."
 
-#: class-ml-slider-lightbox.php:3432
+#: class-ml-slider-lightbox.php:3474
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -1953,11 +2248,11 @@ msgstr ""
 "οπτική ανατροφοδότηση όταν οι χρήστες μετακινούν το ποντίκι τους πάνω από "
 "τα εικονίδια της γραμμής εργαλείων και τον μετρητή."
 
-#: class-ml-slider-lightbox.php:3437
+#: class-ml-slider-lightbox.php:3479
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "Χρώμα φόντου για τα κουμπιά πλοήγησης προηγούμενου και επόμενου βέλους."
 
-#: class-ml-slider-lightbox.php:3442
+#: class-ml-slider-lightbox.php:3484
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -1966,11 +2261,11 @@ msgstr ""
 "οπτική ανατροφοδότηση όταν οι χρήστες μετακινούν το ποντίκι τους πάνω από "
 "τα βέλη."
 
-#: class-ml-slider-lightbox.php:3447
+#: class-ml-slider-lightbox.php:3489
 msgid "Background color for the close button (X) in the gallery."
 msgstr "Χρώμα φόντου για το κουμπί κλεισίματος (X) στην γκαλερί."
 
-#: class-ml-slider-lightbox.php:3452
+#: class-ml-slider-lightbox.php:3494
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -1979,11 +2274,11 @@ msgstr ""
 "οπτική ανατροφοδότηση όταν οι χρήστες μετακινούν το ποντίκι τους πάνω από "
 "το κουμπί κλεισίματος."
 
-#: class-ml-slider-lightbox.php:3457
+#: class-ml-slider-lightbox.php:3499
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "Χρώμα φόντου για τα εικονίδια της γραμμής εργαλείων στο Lightbox."
 
-#: class-ml-slider-lightbox.php:3462
+#: class-ml-slider-lightbox.php:3504
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -1992,46 +2287,46 @@ msgstr ""
 "ποντίκι. Δημιουργεί οπτική ανατροφοδότηση όταν οι χρήστες μετακινούν το "
 "ποντίκι τους πάνω από τα εικονίδια της γραμμής εργαλείων."
 
-#: class-ml-slider-lightbox.php:3507 class-ml-slider-lightbox.php:3520
-#: class-ml-slider-lightbox.php:3533 class-ml-slider-lightbox.php:3631
+#: class-ml-slider-lightbox.php:3549 class-ml-slider-lightbox.php:3562
+#: class-ml-slider-lightbox.php:3575 class-ml-slider-lightbox.php:3673
 msgid "Icon Hover"
 msgstr "Εικονίδιο Όταν Περνάει το Ποντίκι"
 
-#: class-ml-slider-lightbox.php:3508 class-ml-slider-lightbox.php:3521
-#: class-ml-slider-lightbox.php:3534 class-ml-slider-lightbox.php:3615
-#: class-ml-slider-lightbox.php:3632
+#: class-ml-slider-lightbox.php:3550 class-ml-slider-lightbox.php:3563
+#: class-ml-slider-lightbox.php:3576 class-ml-slider-lightbox.php:3657
+#: class-ml-slider-lightbox.php:3674
 msgid "Background"
 msgstr "Φόντο"
 
-#: class-ml-slider-lightbox.php:3509 class-ml-slider-lightbox.php:3522
-#: class-ml-slider-lightbox.php:3535 class-ml-slider-lightbox.php:3616
-#: class-ml-slider-lightbox.php:3633
+#: class-ml-slider-lightbox.php:3551 class-ml-slider-lightbox.php:3564
+#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3658
+#: class-ml-slider-lightbox.php:3675
 msgid "Background Hover"
 msgstr "Φόντο Όταν Περνάει το Ποντίκι"
 
-#: class-ml-slider-lightbox.php:3552
+#: class-ml-slider-lightbox.php:3594
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "Ρυθμίστε την αδιαφάνεια του φόντου γκαλερί (0 = διαφανές, 1 = αδιαφανές)."
 
-#: class-ml-slider-lightbox.php:3561
+#: class-ml-slider-lightbox.php:3603
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr ""
 "Χρώμα της γραμμής προόδου που εμφανίζεται κατά την αυτόματη αναπαραγωγή "
 "διαφανειών."
 
-#: class-ml-slider-lightbox.php:3567
+#: class-ml-slider-lightbox.php:3609
 msgid "Border"
 msgstr "Περίγραμμα"
 
-#: class-ml-slider-lightbox.php:3568
+#: class-ml-slider-lightbox.php:3610
 msgid "Border Active and Hover"
 msgstr "Ενεργό περίγραμμα και Hover"
 
-#: class-ml-slider-lightbox.php:3580
+#: class-ml-slider-lightbox.php:3622
 msgid "Show navigation arrows in gallery"
 msgstr "Εμφάνιση βελών πλοήγησης στην γκαλερί"
 
-#: class-ml-slider-lightbox.php:3581
+#: class-ml-slider-lightbox.php:3623
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -2041,17 +2336,17 @@ msgstr ""
 "πλοήγηση μέσω πληκτρολογίου (← → πλήκτρα, ESC για κλείσιμο). Αυτό είναι "
 "διαθέσιμο για διαφάνειες και γκαλερί εικόνας."
 
-#: class-ml-slider-lightbox.php:3590
+#: class-ml-slider-lightbox.php:3632
 msgid "Customize the gallery background and overlay appearance."
 msgstr "Προσαρμόστε την εμφάνιση του φόντου και της επικάλυψης της γκαλερί."
 
-#: class-ml-slider-lightbox.php:3595
+#: class-ml-slider-lightbox.php:3637
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr ""
 "Προσαρμόστε τα εικονίδια πλοήγησης (κλείσιμο, προηγούμενο, επόμενο βέλη) "
 "για την γκαλερί."
 
-#: class-ml-slider-lightbox.php:3600
+#: class-ml-slider-lightbox.php:3642
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -2059,15 +2354,15 @@ msgstr ""
 "Προσαρμόστε τα κουμπιά \"Άνοιγμα στη Γκαλερί\" που μπορούν να προστεθούν σε "
 "διαφάνειες, εικόνες, γκαλερί και βίντεο."
 
-#: class-ml-slider-lightbox.php:3613
+#: class-ml-slider-lightbox.php:3655
 msgid "Text"
 msgstr "Κείμενο"
 
-#: class-ml-slider-lightbox.php:3614
+#: class-ml-slider-lightbox.php:3656
 msgid "Text Hover"
 msgstr "Κείμενο Όταν Περνάει το Ποντίκι"
 
-#: class-ml-slider-lightbox.php:3639
+#: class-ml-slider-lightbox.php:3681
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
@@ -2075,11 +2370,29 @@ msgstr ""
 "Ρυθμίστε τις επιλογές πλοήγησης και ελέγχου που ισχύουν για όλες τις "
 "γκαλερί MetaSlider."
 
-#: class-ml-slider-lightbox.php:3649
+#: class-ml-slider-lightbox.php:3686
+msgid "Help search engines understand the images in your galleries."
+msgstr "Βοηθήστε τις μηχανές αναζήτησης να κατανοήσουν τις εικόνες στις γκαλερί σας."
+
+#: class-ml-slider-lightbox.php:3697
+msgid "Output SEO structured data for galleries"
+msgstr "Εξαγωγή δομημένων δεδομένων SEO για γκαλερί"
+
+#: class-ml-slider-lightbox.php:3698
+msgid ""
+"Adds Schema.org ImageGallery markup so search engines can index your "
+"gallery images. Turn this off if your SEO plugin already outputs gallery "
+"structured data."
+msgstr ""
+"Προσθέτει σήμανση ImageGallery Schema.org ώστε οι μηχανές αναζήτησης να "
+"μπορούν να ευρετηριάσουν τις εικόνες της γκαλερί σας. Απενεργοποιήστε το "
+"αυτό αν το plugin SEO σας ήδη εξάγει δομημένα δεδομένα γκαλερί."
+
+#: class-ml-slider-lightbox.php:3710
 msgid "Show thumbnails"
 msgstr "Εμφάνιση μικρογραφιών"
 
-#: class-ml-slider-lightbox.php:3650
+#: class-ml-slider-lightbox.php:3711
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -2087,15 +2400,15 @@ msgstr ""
 "Εμφάνιση μικρογραφιών εικόνων στο κάτω μέρος της γκαλερί για εύκολη "
 "πλοήγηση. Αυτό είναι διαθέσιμο για διαφάνειες και γκαλερί εικόνων."
 
-#: class-ml-slider-lightbox.php:3663
+#: class-ml-slider-lightbox.php:3724
 msgid "How visitors open images"
 msgstr "Πώς οι επισκέπτες ανοίγουν εικόνες"
 
-#: class-ml-slider-lightbox.php:3684
+#: class-ml-slider-lightbox.php:3745
 msgid "Show captions"
 msgstr "Εμφάνιση λεζαντών"
 
-#: class-ml-slider-lightbox.php:3685
+#: class-ml-slider-lightbox.php:3746
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -2103,19 +2416,19 @@ msgstr ""
 "Όταν είναι ενεργοποιημένο, εμφανίζει λεζάντες στο παράθυρο της γκαλερί. "
 "Αυτό είναι διαθέσιμο για διαφάνειες, εικόνες και γκαλερί εικόνων."
 
-#: class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3753
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr ""
 "Οι προηγμένες δυνατότητες lightbox είναι διαθέσιμες μέσω του MetaSlider "
 "Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3694
+#: class-ml-slider-lightbox.php:3755
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr ""
 "Λάβετε μια προεπισκόπηση των προηγμένων χαρακτηριστικών που είναι διαθέσιμα "
 "στο MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3697
+#: class-ml-slider-lightbox.php:3758
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -2123,11 +2436,11 @@ msgstr ""
 "Αυτά τα προηγμένα plugins LightGallery.js είναι διαθέσιμα στην Pro έκδοση "
 "με επιπλέον επιλογές προσαρμογής."
 
-#: class-ml-slider-lightbox.php:3725 class-ml-slider-lightbox.php:3726
+#: class-ml-slider-lightbox.php:3786 class-ml-slider-lightbox.php:3787
 msgid "specific Pages"
 msgstr "συγκεκριμένες Σελίδες"
 
-#: class-ml-slider-lightbox.php:3728
+#: class-ml-slider-lightbox.php:3789
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2135,7 +2448,7 @@ msgstr ""
 "Επιλέξτε σελίδες όπου η γκαλερί θα πρέπει να απενεργοποιηθεί. Εμφανίζει έως "
 "100 πιο πρόσφατες σελίδες. Πληκτρολογήστε για αναζήτηση."
 
-#: class-ml-slider-lightbox.php:3728 class-ml-slider-lightbox.php:3729
+#: class-ml-slider-lightbox.php:3789 class-ml-slider-lightbox.php:3790
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2143,11 +2456,11 @@ msgstr ""
 "Επιλέξτε σελίδες όπου η γκαλερί θα πρέπει να ενεργοποιηθεί. Εμφανίζει έως "
 "100 πιο πρόσφατες σελίδες. Πληκτρολογήστε για αναζήτηση."
 
-#: class-ml-slider-lightbox.php:3773 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3834 class-ml-slider-lightbox.php:3835
 msgid "specific Posts"
 msgstr "συγκεκριμένες Αναρτήσεις"
 
-#: class-ml-slider-lightbox.php:3776
+#: class-ml-slider-lightbox.php:3837
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2155,7 +2468,7 @@ msgstr ""
 "Επιλέξτε αναρτήσεις όπου η γκαλερί θα πρέπει να απενεργοποιηθεί. Εμφανίζει "
 "έως 100 πιο πρόσφατες αναρτήσεις. Πληκτρολογήστε για αναζήτηση."
 
-#: class-ml-slider-lightbox.php:3776 class-ml-slider-lightbox.php:3777
+#: class-ml-slider-lightbox.php:3837 class-ml-slider-lightbox.php:3838
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2163,50 +2476,50 @@ msgstr ""
 "Επιλέξτε αναρτήσεις όπου η γκαλερί θα πρέπει να ενεργοποιηθεί. Εμφανίζει "
 "έως 100 πιο πρόσφατες αναρτήσεις. Πληκτρολογήστε για αναζήτηση."
 
-#: class-ml-slider-lightbox.php:3804
+#: class-ml-slider-lightbox.php:3865
 msgid "include"
 msgstr "συμπερίληψη"
 
-#: class-ml-slider-lightbox.php:3804
+#: class-ml-slider-lightbox.php:3865
 msgid "exclude"
 msgstr "εξαίρεση"
 
-#: class-ml-slider-lightbox.php:3844
+#: class-ml-slider-lightbox.php:3905
 #, php-format
 msgid "specific %s"
 msgstr "συγκεκριμένο %s"
 
-#: class-ml-slider-lightbox.php:3845
+#: class-ml-slider-lightbox.php:3906
 #, fuzzy, php-format
 msgid "%s specific %s"
 msgstr "%s specific %s"
 
-#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:3848
+#: class-ml-slider-lightbox.php:3908 class-ml-slider-lightbox.php:3909
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "Εμφανίζει μέχρι 100 πιο πρόσφατα %s. Πληκτρολογήστε για αναζήτηση."
 
-#: class-ml-slider-lightbox.php:3896 class-ml-slider-lightbox.php:3897
+#: class-ml-slider-lightbox.php:3957 class-ml-slider-lightbox.php:3958
 msgid "specific post types"
 msgstr "συγκεκριμένοι τύποι αναρτήσεων"
 
-#: class-ml-slider-lightbox.php:3899
+#: class-ml-slider-lightbox.php:3960
 msgid "Select post types where gallery should be disabled entirely."
 msgstr ""
 "Επιλέξτε τύπους αναρτήσεων όπου η γκαλερί θα πρέπει να απενεργοποιηθεί "
 "εντελώς."
 
-#: class-ml-slider-lightbox.php:3899 class-ml-slider-lightbox.php:3900
+#: class-ml-slider-lightbox.php:3960 class-ml-slider-lightbox.php:3961
 msgid "Select post types where gallery should be enabled entirely."
 msgstr ""
 "Επιλέξτε τύπους αναρτήσεων όπου η γκαλερί θα πρέπει να ενεργοποιηθεί "
 "εντελώς."
 
-#: class-ml-slider-lightbox.php:3934
+#: class-ml-slider-lightbox.php:3995
 msgid "Exclude by CSS selector"
 msgstr "Αποκλεισμός με CSS selector"
 
-#: class-ml-slider-lightbox.php:3937
+#: class-ml-slider-lightbox.php:3998
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2215,11 +2528,11 @@ msgstr ""
 "(ένα ανά γραμμή). Παραδείγματα:<br>.no-lightbox<br>.custom-gallery "
 "img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:3960
+#: class-ml-slider-lightbox.php:4021
 msgid "Minimum Image Width"
 msgstr "Ελάχιστο Πλάτος Εικόνας"
 
-#: class-ml-slider-lightbox.php:3963
+#: class-ml-slider-lightbox.php:4024
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2230,11 +2543,11 @@ msgstr ""
 "εικόνας. Αυτό είναι χρήσιμο για την εξαίρεση μικρών εικονιδίων, εμβλημάτων "
 "και κουμπιών."
 
-#: class-ml-slider-lightbox.php:3986
+#: class-ml-slider-lightbox.php:4047
 msgid "Minimum Image Height"
 msgstr "Ελάχιστο Ύψος Εικόνας"
 
-#: class-ml-slider-lightbox.php:3989
+#: class-ml-slider-lightbox.php:4050
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2245,7 +2558,7 @@ msgstr ""
 "εικόνας. Αυτό είναι χρήσιμο για την εξαίρεση μικρών εικονιδίων, εμβλημάτων "
 "και κουμπιών."
 
-#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
+#: class-ml-slider-lightbox.php:4066 class-ml-slider-lightbox.php:4223
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
@@ -2253,15 +2566,15 @@ msgstr ""
 "Ενισχυμένη διαχείριση πολυμέσων και δυνατότητες αναπαραγωγής βίντεο για "
 "επαγγελματικές γκαλερί."
 
-#: class-ml-slider-lightbox.php:4012
+#: class-ml-slider-lightbox.php:4073
 msgid "Advanced features for professional lightbox implementations."
 msgstr "Προηγμένες δυνατότητες για επαγγελματικές υλοποιήσεις Lightbox."
 
-#: class-ml-slider-lightbox.php:4023 class-ml-slider-lightbox.php:4235
+#: class-ml-slider-lightbox.php:4084 class-ml-slider-lightbox.php:4296
 msgid "Enable Zoom"
 msgstr "Ενεργοποίηση Zoom"
 
-#: class-ml-slider-lightbox.php:4024
+#: class-ml-slider-lightbox.php:4085
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -2269,11 +2582,11 @@ msgstr ""
 "Διπλό κλικ για zoom, έλεγχοι zoom, zoom με τροχό ποντικιού και επιλογές "
 "zoom για προσαρμογή."
 
-#: class-ml-slider-lightbox.php:4034 class-ml-slider-lightbox.php:4242
+#: class-ml-slider-lightbox.php:4095 class-ml-slider-lightbox.php:4303
 msgid "Enable Fullscreen"
 msgstr "Ενεργοποίηση Πλήρους Οθόνης"
 
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4096
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
@@ -2281,11 +2594,11 @@ msgstr ""
 "Εγγενής υποστήριξη πλήρους οθόνης HTML5 με συντομεύσεις πληκτρολογίου "
 "(κουμπί F) για καθηλωτική προβολή."
 
-#: class-ml-slider-lightbox.php:4045 class-ml-slider-lightbox.php:4249
+#: class-ml-slider-lightbox.php:4106 class-ml-slider-lightbox.php:4310
 msgid "Enable Rotate"
 msgstr "Ενεργοποίηση Περιστροφής"
 
-#: class-ml-slider-lightbox.php:4046
+#: class-ml-slider-lightbox.php:4107
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2293,11 +2606,11 @@ msgstr ""
 "Περιστροφή εικόνων με τη φορά των δεικτών του ρολογιού/αντίθετα, αναστροφή "
 "οριζόντια/κάθετα με ελέγχους εργαλείων."
 
-#: class-ml-slider-lightbox.php:4056
+#: class-ml-slider-lightbox.php:4117
 msgid "Enable Video"
 msgstr "Ενεργοποίηση Βίντεο"
 
-#: class-ml-slider-lightbox.php:4057
+#: class-ml-slider-lightbox.php:4118
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2305,12 +2618,12 @@ msgstr ""
 "Ενισχυμένη υποστήριξη βίντεο για YouTube, Vimeo, HTML5 βίντεο με αυτόματη "
 "αναπαραγωγή και ρυθμίσεις ποιότητας."
 
-#: class-ml-slider-lightbox.php:4067 class-ml-slider-lightbox.php:4284
-#: class-ml-slider-lightbox.php:4431
+#: class-ml-slider-lightbox.php:4128 class-ml-slider-lightbox.php:4345
+#: class-ml-slider-lightbox.php:4492
 msgid "Enable Unique Image URLs"
 msgstr "Ενεργοποίηση μοναδικών URL εικόνας"
 
-#: class-ml-slider-lightbox.php:4068
+#: class-ml-slider-lightbox.php:4129
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -2318,19 +2631,19 @@ msgstr ""
 "Μοναδικά URL για κάθε εικόνα γκαλερί με υποστήριξη πλοήγησης πίσω/μπροστά "
 "στον περιηγητή."
 
-#: class-ml-slider-lightbox.php:4078 class-ml-slider-lightbox.php:4291
+#: class-ml-slider-lightbox.php:4139 class-ml-slider-lightbox.php:4352
 msgid "Enable Autoplay"
 msgstr "Ενεργοποίηση αυτόματης αναπαραγωγής"
 
-#: class-ml-slider-lightbox.php:4079
+#: class-ml-slider-lightbox.php:4140
 msgid "Automatically advance through images in the gallery."
 msgstr "Αυτόματη προώθηση μέσω εικόνων στη γκαλερί."
 
-#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4263
+#: class-ml-slider-lightbox.php:4150 class-ml-slider-lightbox.php:4324
 msgid "Enable Share"
 msgstr "Ενεργοποίηση κοινοποίησης"
 
-#: class-ml-slider-lightbox.php:4090
+#: class-ml-slider-lightbox.php:4151
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2338,17 +2651,17 @@ msgstr ""
 "Κουμπιά κοινοποίησης στα κοινωνικά δίκτυα για Facebook, Twitter, Pinterest "
 "και άμεση κοινοποίηση URL."
 
-#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4270
+#: class-ml-slider-lightbox.php:4161 class-ml-slider-lightbox.php:4331
 msgid "Enable Pager"
 msgstr "Ενεργοποίηση σελίδας"
 
-#: class-ml-slider-lightbox.php:4101
+#: class-ml-slider-lightbox.php:4162
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr ""
 "Ελάχιστες τελείες σελίδας για καθαρή πλοήγηση χωρίς προεπισκοπήσεις "
 "μικρογραφιών."
 
-#: class-ml-slider-lightbox.php:4157 class-ml-slider-lightbox.php:4231
+#: class-ml-slider-lightbox.php:4218 class-ml-slider-lightbox.php:4292
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
@@ -2356,21 +2669,21 @@ msgstr ""
 "Επαγγελματικοί έλεγχοι ζουμ και αλληλεπίδρασης εικόνας για βελτιωμένη "
 "εμπειρία χρήστη."
 
-#: class-ml-slider-lightbox.php:4167 class-ml-slider-lightbox.php:4259
+#: class-ml-slider-lightbox.php:4228 class-ml-slider-lightbox.php:4320
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "Βελτιώσεις κοινοποίησης και πλοήγησης για αύξηση της εμπλοκής."
 
-#: class-ml-slider-lightbox.php:4172 class-ml-slider-lightbox.php:4280
+#: class-ml-slider-lightbox.php:4233 class-ml-slider-lightbox.php:4341
 msgid "Advanced functionality including URL management and automation features."
 msgstr ""
 "Προηγμένη λειτουργικότητα που περιλαμβάνει διαχείριση URL και δυνατότητες "
 "αυτοματοποίησης."
 
-#: class-ml-slider-lightbox.php:4184
+#: class-ml-slider-lightbox.php:4245
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "Αυτή η δυνατότητα είναι διαθέσιμη στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4236 class-ml-slider-lightbox.php:4400
+#: class-ml-slider-lightbox.php:4297 class-ml-slider-lightbox.php:4461
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -2378,49 +2691,49 @@ msgstr ""
 "Επιτρέψτε στους χρήστες να ζουμάρουν με διπλό κλικ, τροχό ποντικιού και "
 "ελέγχους ζουμ."
 
-#: class-ml-slider-lightbox.php:4238
+#: class-ml-slider-lightbox.php:4299
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "Οι έλεγχοι ζουμ είναι διαθέσιμοι στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4243
+#: class-ml-slider-lightbox.php:4304
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "Εγγενής λειτουργία πλήρους οθόνης HTML5 για εντυπωσιακή προβολή εικόνας."
 
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4306
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "Η λειτουργία πλήρους οθόνης είναι διαθέσιμη στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4416
+#: class-ml-slider-lightbox.php:4311 class-ml-slider-lightbox.php:4477
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr ""
 "Περιστροφή εικόνων δεξιόστροφα/αριστερόστροφα και αναστροφή "
 "οριζόντια/κατακόρυφα."
 
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4313
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "Η περιστροφή εικόνας είναι διαθέσιμη στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4264
+#: class-ml-slider-lightbox.php:4325
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr ""
 "Ενσωματωμένη κοινοποίηση κοινωνικών μέσων για Facebook, Twitter και "
 "Pinterest."
 
-#: class-ml-slider-lightbox.php:4266
+#: class-ml-slider-lightbox.php:4327
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "Η κοινωνική κοινοποίηση είναι διαθέσιμη στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4448
+#: class-ml-slider-lightbox.php:4332 class-ml-slider-lightbox.php:4509
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr ""
 "Ελάχιστα κουκκίδες σελιδοποίησης αντί για μικρογραφίες για μια πιο καθαρή "
 "διεπαφή."
 
-#: class-ml-slider-lightbox.php:4273
+#: class-ml-slider-lightbox.php:4334
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "Η σελιδοποίηση Pager είναι διαθέσιμη στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4285 class-ml-slider-lightbox.php:4432
+#: class-ml-slider-lightbox.php:4346 class-ml-slider-lightbox.php:4493
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
@@ -2428,83 +2741,83 @@ msgstr ""
 "Δημιουργήστε μοναδικά URLs για κάθε εικόνα της γκαλερί με πλοήγηση "
 "πίσω/μπροστά στον φυλλομετρητή."
 
-#: class-ml-slider-lightbox.php:4287
+#: class-ml-slider-lightbox.php:4348
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "Μοναδικά URLs εικόνας είναι διαθέσιμα στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4292 class-ml-slider-lightbox.php:4440
+#: class-ml-slider-lightbox.php:4353 class-ml-slider-lightbox.php:4501
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "Αυτόματη παρουσίαση διαφανειών με ρυθμίσεις χρόνου και μπάρα προόδου."
 
-#: class-ml-slider-lightbox.php:4294
+#: class-ml-slider-lightbox.php:4355
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "Η αυτόματη αναπαραγωγή είναι διαθέσιμη στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4298
+#: class-ml-slider-lightbox.php:4359
 msgid "Enable Image Protection"
 msgstr "Ενεργοποίηση Προστασίας Εικόνας"
 
-#: class-ml-slider-lightbox.php:4301
+#: class-ml-slider-lightbox.php:4362
 msgid "Image protection is available in MetaSlider Gallery Pro"
 msgstr "Η προστασία εικόνας είναι διαθέσιμη στο MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4318
+#: class-ml-slider-lightbox.php:4379
 msgid "Features"
 msgstr "Χαρακτηριστικά"
 
-#: class-ml-slider-lightbox.php:4319
+#: class-ml-slider-lightbox.php:4380
 msgid "Free"
 msgstr "Δωρεάν"
 
-#: class-ml-slider-lightbox.php:4320, fuzzy
+#: class-ml-slider-lightbox.php:4381, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4326 class-ml-slider-lightbox.php:4465
+#: class-ml-slider-lightbox.php:4387 class-ml-slider-lightbox.php:4526
 msgid "Installed"
 msgstr "Εγκατεστημένο"
 
-#: class-ml-slider-lightbox.php:4329 class-ml-slider-lightbox.php:4468
+#: class-ml-slider-lightbox.php:4390 class-ml-slider-lightbox.php:4529
 msgid "Upgrade now"
 msgstr "Αναβάθμιση τώρα"
 
-#: class-ml-slider-lightbox.php:4335
+#: class-ml-slider-lightbox.php:4396
 msgid "Automatic lightbox for images"
 msgstr "Αυτόματο lightbox για εικόνες"
 
-#: class-ml-slider-lightbox.php:4336
+#: class-ml-slider-lightbox.php:4397
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "Ενεργοποιήστε αυτόματα το lightbox για όλες τις εικόνες στον ιστότοπό σας."
 
-#: class-ml-slider-lightbox.php:4343
+#: class-ml-slider-lightbox.php:4404
 msgid "MetaSlider integration"
 msgstr "Ενσωμάτωση MetaSlider"
 
-#: class-ml-slider-lightbox.php:4344
+#: class-ml-slider-lightbox.php:4405
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "Αρμονική ενσωμάτωση με τις παρουσιάσεις διαφανειών του MetaSlider."
 
-#: class-ml-slider-lightbox.php:4351
+#: class-ml-slider-lightbox.php:4412
 msgid "WordPress gallery support"
 msgstr "Υποστήριξη γκαλερί WordPress"
 
-#: class-ml-slider-lightbox.php:4352
+#: class-ml-slider-lightbox.php:4413
 msgid "Support for WordPress native galleries and blocks."
 msgstr "Υποστήριξη για τις εγγενείς γκαλερί και μπλοκ του WordPress."
 
-#: class-ml-slider-lightbox.php:4359
+#: class-ml-slider-lightbox.php:4420
 msgid "Appearance customization"
 msgstr "Προσαρμογή εμφάνισης"
 
-#: class-ml-slider-lightbox.php:4360
+#: class-ml-slider-lightbox.php:4421
 msgid "Customize colors, opacity, and button styles."
 msgstr "Προσαρμόστε χρώματα, διαφάνεια και στυλ κουμπιών."
 
-#: class-ml-slider-lightbox.php:4367
+#: class-ml-slider-lightbox.php:4428
 msgid "Gallery builder &amp; layouts"
 msgstr "Κατασκευαστής γκαλερί &amp; διατάξεις"
 
-#: class-ml-slider-lightbox.php:4368
+#: class-ml-slider-lightbox.php:4429
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
@@ -2512,83 +2825,83 @@ msgstr ""
 "Δημιουργήστε γκαλερί με διατάξεις Grid, Masonry, Justified, Carousel και "
 "Showcase."
 
-#: class-ml-slider-lightbox.php:4375
+#: class-ml-slider-lightbox.php:4436
 msgid "Responsive columns"
 msgstr "Ανταγωνιστικοί στήλες"
 
-#: class-ml-slider-lightbox.php:4376
+#: class-ml-slider-lightbox.php:4437
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr ""
 "Ορίστε τον αριθμό των στηλών για υπολογιστές και κινητά, με ρυθμιζόμενο "
 "διάστημα."
 
-#: class-ml-slider-lightbox.php:4383
+#: class-ml-slider-lightbox.php:4444
 msgid "Image captions"
 msgstr "Λεζάντες εικόνας"
 
-#: class-ml-slider-lightbox.php:4384
+#: class-ml-slider-lightbox.php:4445
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "Εμφάνιση λεζαντών εικόνας στο πλέγμα γκαλερί και στο παράθυρο γκαλερί."
 
-#: class-ml-slider-lightbox.php:4391
+#: class-ml-slider-lightbox.php:4452
 msgid "Thumbnail navigation"
 msgstr "Πλοήγηση με μικρογραφίες"
 
-#: class-ml-slider-lightbox.php:4392
+#: class-ml-slider-lightbox.php:4453
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "Εμφάνιση μιας λωρίδας μικρογραφιών για γρήγορη πλοήγηση μεταξύ των εικόνων."
 
-#: class-ml-slider-lightbox.php:4399
+#: class-ml-slider-lightbox.php:4460
 msgid "Zoom controls"
 msgstr "Έλεγχοι ζουμ"
 
-#: class-ml-slider-lightbox.php:4407
+#: class-ml-slider-lightbox.php:4468
 msgid "Fullscreen mode"
 msgstr "Λειτουργία πλήρους οθόνης"
 
-#: class-ml-slider-lightbox.php:4408
+#: class-ml-slider-lightbox.php:4469
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "Εγγενής πλήρης οθόνη HTML5 για καθηλωτική προβολή εικόνας."
 
-#: class-ml-slider-lightbox.php:4415
+#: class-ml-slider-lightbox.php:4476
 msgid "Rotate and flip images"
 msgstr "Ροή και ανατροπή εικόνων"
 
-#: class-ml-slider-lightbox.php:4423
+#: class-ml-slider-lightbox.php:4484
 msgid "Social media sharing"
 msgstr "Κοινή χρήση στα κοινωνικά δίκτυα"
 
-#: class-ml-slider-lightbox.php:4424
+#: class-ml-slider-lightbox.php:4485
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "Ενσωματωμένη κοινή χρήση για Facebook, Twitter και Pinterest."
 
-#: class-ml-slider-lightbox.php:4439
+#: class-ml-slider-lightbox.php:4500
 msgid "Autoplay slideshow"
 msgstr "Αυτόματη παρουσίαση διαφανειών"
 
-#: class-ml-slider-lightbox.php:4447
+#: class-ml-slider-lightbox.php:4508
 msgid "Pager navigation"
 msgstr "Πλοήγηση σε σελίδες"
 
-#: class-ml-slider-lightbox.php:4455
+#: class-ml-slider-lightbox.php:4516
 msgid "Premium support"
 msgstr "Προνομιακή υποστήριξη"
 
-#: class-ml-slider-lightbox.php:4456
+#: class-ml-slider-lightbox.php:4517
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "Απευθύνετε τις συγκεκριμένες ερωτήσεις σας απευθείας στους ειδικούς μας."
 
-#: class-ml-slider-lightbox.php:6243
+#: class-ml-slider-lightbox.php:6304
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr ""
 "Ρυθμίστε πώς η lightbox αλληλεπιδρά με τις ενσωματωμένες δυνατότητες του "
 "WordPress."
 
-#: class-ml-slider-lightbox.php:6258
+#: class-ml-slider-lightbox.php:6319
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "Αναίρεση ρύθμισης \"Μεγέθυνση με κλικ\" του WordPress"
 
-#: class-ml-slider-lightbox.php:6259
+#: class-ml-slider-lightbox.php:6320
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2600,11 +2913,11 @@ msgstr ""
 "σέβεται την ρύθμιση του WordPress και παραλείπει τις εικόνες που έχουν "
 "ρυθμιστεί σε \"Μεγέθυνση με Κλικ\"."
 
-#: class-ml-slider-lightbox.php:6275
+#: class-ml-slider-lightbox.php:6336
 msgid "Override \"Link to Image File\" Setting"
 msgstr "Αναίρεση ρύθμισης \"Σύνδεσμος σε αρχείο εικόνας\""
 
-#: class-ml-slider-lightbox.php:6276
+#: class-ml-slider-lightbox.php:6337
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2616,11 +2929,11 @@ msgstr ""
 "μπλοκ). Όταν είναι απενεργοποιημένο, σέβεται τη συμπεριφορά του αρχικού "
 "συνδέσμου."
 
-#: class-ml-slider-lightbox.php:6307
+#: class-ml-slider-lightbox.php:6368
 msgid "Exclude Post Types from Manual Processing"
 msgstr "Εξαίρεση τύπων δημοσιεύσεων από χειροκίνητη επεξεργασία"
 
-#: class-ml-slider-lightbox.php:6310
+#: class-ml-slider-lightbox.php:6371
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2631,11 +2944,11 @@ msgstr ""
 "απενεργοποιήσετε τη γκαλερί στις σελίδες προϊόντων WooCommerce ενώ τη "
 "διατηρείτε ενεργή αλλού."
 
-#: class-ml-slider-lightbox.php:6334
+#: class-ml-slider-lightbox.php:6395
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "Πώς να χρησιμοποιήσετε: \"Μεγέθυνση με κλικ\" του WordPress"
 
-#: class-ml-slider-lightbox.php:6336
+#: class-ml-slider-lightbox.php:6397
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2643,57 +2956,57 @@ msgstr ""
 "Το WordPress έχει μια ενσωματωμένη δυνατότητα \"Μεγέθυνση με κλικ\" για "
 "εικόνες. Ορίστε πώς να την ενεργοποιήσετε:"
 
-#: class-ml-slider-lightbox.php:6338 class-ml-slider-lightbox.php:6351
+#: class-ml-slider-lightbox.php:6399 class-ml-slider-lightbox.php:6412
 msgid "Select an image in the block editor."
 msgstr "Επιλέξτε μια εικόνα στον επεξεργαστή μπλοκ."
 
-#: class-ml-slider-lightbox.php:6339 class-ml-slider-lightbox.php:6352
+#: class-ml-slider-lightbox.php:6400 class-ml-slider-lightbox.php:6413
 msgid "In the block toolbar, click on the Link icon."
 msgstr "Στη γραμμή εργαλείων μπλοκ, κάντε κλικ στο εικονίδιο Σύνδεσμος."
 
-#: class-ml-slider-lightbox.php:6340
+#: class-ml-slider-lightbox.php:6401
 msgid "Select \"Enlarge on click\"."
 msgstr "Επιλέξτε \"Μεγέθυνση με κλικ\"."
 
-#: class-ml-slider-lightbox.php:6346
+#: class-ml-slider-lightbox.php:6407
 msgid "How to use: \"Link to Image File\""
 msgstr "Πώς να χρησιμοποιήσετε: \"Σύνδεσμος σε αρχείο εικόνας\""
 
-#: class-ml-slider-lightbox.php:6348
+#: class-ml-slider-lightbox.php:6409
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr ""
 "Μπορείτε να συνδέσετε εικόνες απευθείας στο αρχείο πολυμέσων πλήρους "
 "μεγέθους τους. Να πώς:"
 
-#: class-ml-slider-lightbox.php:6349
+#: class-ml-slider-lightbox.php:6410
 msgid "For the Block Editor:"
 msgstr "Για τον Επεξεργαστή Μπλοκ:"
 
-#: class-ml-slider-lightbox.php:6353
+#: class-ml-slider-lightbox.php:6414
 msgid "Choose \"Link to image file\"."
 msgstr "Επιλέξτε \"Σύνδεσμος σε αρχείο εικόνας\"."
 
-#: class-ml-slider-lightbox.php:6355
+#: class-ml-slider-lightbox.php:6416
 msgid "For the Classic Editor:"
 msgstr "Για τον Κλασικό Επεξεργαστή:"
 
-#: class-ml-slider-lightbox.php:6357
+#: class-ml-slider-lightbox.php:6418
 msgid "Select an image."
 msgstr "Επιλέξτε μια εικόνα."
 
-#: class-ml-slider-lightbox.php:6358
+#: class-ml-slider-lightbox.php:6419
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "Στη γραμμή εργαλείων εικόνας, κάντε κλικ στο εικονίδιο Επεξεργασία."
 
-#: class-ml-slider-lightbox.php:6359
+#: class-ml-slider-lightbox.php:6420
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "Επιλέξτε \"Αρχείο Πολυμέσων\" από το αναπτυσσόμενο μενού \"Σύνδεσμος σε\"."
 
-#: class-ml-slider-lightbox.php:6365
+#: class-ml-slider-lightbox.php:6426
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "Πώς να χρησιμοποιήσετε: Μέθοδος CSS Class (Προχωρημένα)"
 
-#: class-ml-slider-lightbox.php:6367
+#: class-ml-slider-lightbox.php:6428
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2702,35 +3015,35 @@ msgstr ""
 "για να ενεργοποιήσετε τη Γκαλερί MetaSlider σε οποιοδήποτε στοιχείο που "
 "περιέχει εικόνες."
 
-#: class-ml-slider-lightbox.php:6368
+#: class-ml-slider-lightbox.php:6429
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "Μέθοδος 1: Πρόσθετες Κλάσεις CSS για τον Επεξεργαστή Μπλοκ"
 
-#: class-ml-slider-lightbox.php:6370
+#: class-ml-slider-lightbox.php:6431
 msgid "Select an image or gallery block."
 msgstr "Επιλέξτε ένα μπλοκ εικόνας ή γκαλερί."
 
-#: class-ml-slider-lightbox.php:6371
+#: class-ml-slider-lightbox.php:6432
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr ""
 "Στις ρυθμίσεις του μπλοκ, μετακινηθείτε προς τα κάτω στην επιλογή "
 "\"Προχωρημένα\"."
 
-#: class-ml-slider-lightbox.php:6372
+#: class-ml-slider-lightbox.php:6433
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "Προσθέστε <code>ml-lightbox-enabled</code> στις \"Πρόσθετες κλάσεις CSS\"."
 
-#: class-ml-slider-lightbox.php:6374
+#: class-ml-slider-lightbox.php:6435
 msgid "Method 2: HTML/Code"
 msgstr "Μέθοδος 2: HTML/Κώδικας"
 
-#: class-ml-slider-lightbox.php:6375
+#: class-ml-slider-lightbox.php:6436
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr ""
 "Για προσαρμοσμένο HTML ή προγραμματιστές θεμάτων, προσθέστε την κλάση "
 "απευθείας:"
 
-#: class-ml-slider-lightbox.php:1279
+#: class-ml-slider-lightbox.php:1307
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"

@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-08-04 11:59+0000\n"
+"PO-Revision-Date: 2026-08-20 14:06+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -74,23 +74,23 @@ msgstr "ข้อมูลที่ร้องขอไม่มีอยู่
 msgid "The attempt to update the option failed."
 msgstr "การพยายามอัปเดตตัวเลือกล้มเหลว."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1247
-#: class-ml-gallery.php:3374 class-ml-slider-lightbox.php:2142
-#: class-ml-slider-lightbox.php:2285
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1441
+#: class-ml-gallery.php:3939 class-ml-slider-lightbox.php:2168
+#: class-ml-slider-lightbox.php:2311
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:222
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:228
 msgid "Dismiss"
 msgstr "ปฏิเสธ"
 
-#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1189
-#: class-ml-slider-lightbox.php:2322 class-ml-slider-lightbox.php:2337
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1380
+#: class-ml-slider-lightbox.php:2346 class-ml-slider-lightbox.php:2361
 msgid "You do not have sufficient permissions to access this page."
 msgstr "คุณไม่มีสิทธิ์เข้าถึงหน้านี้."
 
-#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2283
-#: class-ml-gallery.php:2447
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2693
+#: class-ml-gallery.php:2877
 msgid "Security check failed."
 msgstr "การตรวจสอบความปลอดภัยล้มเหลว."
 
@@ -98,446 +98,604 @@ msgstr "การตรวจสอบความปลอดภัยล้ม
 msgid "Slideshow not found."
 msgstr "ไม่พบสไลด์โชว์"
 
-#: class-ml-gallery-slideshow-convert.php:73
+#: class-ml-gallery-slideshow-convert.php:70
 msgid ""
 "This slideshow has no saved images to convert. Save the slideshow, then try "
 "again."
 msgstr "สไลด์โชว์นี้ไม่มีรูปภาพที่บันทึกไว้เพื่อแปลง บันทึกสไลด์โชว์แล้วลองอีกครั้ง"
 
-#: class-ml-gallery-slideshow-convert.php:78
+#: class-ml-gallery-slideshow-convert.php:75
 msgid "Untitled Slideshow"
 msgstr "สไลด์โชว์ที่ไม่มีชื่อ"
 
-#: class-ml-gallery.php:113
+#: class-ml-gallery.php:112
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "ฟีเจอร์บางอย่างมีให้ใน MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:222 class-ml-gallery.php:231 class-ml-gallery.php:615
+#: class-ml-gallery.php:126
+msgid "Thumbnail"
+msgstr "ภาพขนาดย่อ"
+
+#: class-ml-gallery.php:127 class-ml-gallery.php:2531
+msgid "Medium"
+msgstr "กลาง"
+
+#: class-ml-gallery.php:128
+msgid "Medium Large"
+msgstr "ขนาดกลางใหญ่"
+
+#: class-ml-gallery.php:129
+msgid "Large"
+msgstr "ขนาดใหญ่"
+
+#: class-ml-gallery.php:155
+msgid "Original"
+msgstr "ต้นฉบับ"
+
+#: class-ml-gallery.php:161
+msgid ""
+"Offer visitors a choice of image sizes when they download. Requires "
+"MetaSlider Gallery Pro."
+msgstr ""
+"เสนอทางเลือกขนาดภาพให้กับผู้เข้าชมเมื่อพวกเขาดาวน์โหลด ต้องใช้ MetaSlider "
+"Gallery Pro."
+
+#: class-ml-gallery.php:162
+msgid "Download Sizes"
+msgstr "ขนาดที่ดาวน์โหลด"
+
+#: class-ml-gallery.php:163
+msgid "Download sizes require MetaSlider Gallery Pro"
+msgstr "ขนาดที่ดาวน์โหลดต้องใช้ MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:298 class-ml-gallery.php:307 class-ml-gallery.php:817
 msgid "Fade"
 msgstr "จาง"
 
-#: class-ml-gallery.php:223
+#: class-ml-gallery.php:299
 msgid "Slide"
 msgstr "เลื่อน"
 
-#: class-ml-gallery.php:224 class-ml-gallery.php:1838
+#: class-ml-gallery.php:300 class-ml-gallery.php:2249
 msgid "Zoom"
 msgstr "ซูม"
 
-#: class-ml-gallery.php:230 class-ml-gallery.php:607 class-ml-gallery.php:2119
-#: class-ml-gallery.php:2145 class-ml-gallery.php:2159
+#: class-ml-gallery.php:306 class-ml-gallery.php:809 class-ml-gallery.php:2529
+#: class-ml-gallery.php:2555 class-ml-gallery.php:2569
 msgid "None"
 msgstr "ไม่มี"
 
-#: class-ml-gallery.php:232
+#: class-ml-gallery.php:308
 msgid "Slide Up"
 msgstr "เลื่อนขึ้น"
 
-#: class-ml-gallery.php:233
+#: class-ml-gallery.php:309
 msgid "Slide Down"
 msgstr "เลื่อนลง"
 
-#: class-ml-gallery.php:247
+#: class-ml-gallery.php:315
+msgid "Bottom"
+msgstr "ล่าง"
+
+#: class-ml-gallery.php:316
+msgid "Middle"
+msgstr "กลาง"
+
+#: class-ml-gallery.php:317
+msgid "Top"
+msgstr "บน"
+
+#: class-ml-gallery.php:323
+msgid "Left"
+msgstr "ซ้าย"
+
+#: class-ml-gallery.php:324 class-ml-gallery.php:2069
+msgid "Center"
+msgstr "กลาง"
+
+#: class-ml-gallery.php:325
+msgid "Right"
+msgstr "ขวา"
+
+#: class-ml-gallery.php:339
 msgid "Hidden"
 msgstr "ซ่อน"
 
-#: class-ml-gallery.php:248
+#: class-ml-gallery.php:340
 msgid "Gallery + Window"
 msgstr "Gallery + หน้าต่าง"
 
-#: class-ml-gallery.php:249
+#: class-ml-gallery.php:341
 msgid "Window Only"
 msgstr "เฉพาะหน้าต่าง"
 
-#: class-ml-gallery.php:250
+#: class-ml-gallery.php:342
 msgid "Gallery Only"
 msgstr "เฉพาะ Gallery"
 
-#: class-ml-gallery.php:269 class-ml-gallery.php:2857
+#: class-ml-gallery.php:361 class-ml-gallery.php:3329
 msgid "Manual entry"
 msgstr "การป้อนข้อมูลด้วยตนเอง"
 
-#: class-ml-gallery.php:270 class-ml-gallery.php:2858
+#: class-ml-gallery.php:362 class-ml-gallery.php:3330
 msgid "Media caption"
 msgstr "คำบรรยายสื่อ"
 
-#: class-ml-gallery.php:271 class-ml-gallery.php:2859
+#: class-ml-gallery.php:363 class-ml-gallery.php:3331
 msgid "Media description"
 msgstr "คำอธิบายสื่อ"
 
-#: class-ml-gallery.php:608
+#: class-ml-gallery.php:639
+msgid "Drag-and-drop"
+msgstr "ลากและวาง"
+
+#: class-ml-gallery.php:640
+msgid "Newest First"
+msgstr "ใหม่ที่สุดก่อน"
+
+#: class-ml-gallery.php:641
+msgid "Oldest First"
+msgstr "เก่าที่สุดก่อน"
+
+#: class-ml-gallery.php:642
+msgid "A to Z (by filename)"
+msgstr "A ถึง Z (ตามชื่อไฟล์)"
+
+#: class-ml-gallery.php:643
+msgid "Z to A (by filename)"
+msgstr "Z ถึง A (ตามชื่อไฟล์)"
+
+#: class-ml-gallery.php:644
+msgid "Random"
+msgstr "สุ่ม"
+
+#: class-ml-gallery.php:810
 msgid "Noir (B&W)"
 msgstr "ดำ (ขาวดำ)"
 
-#: class-ml-gallery.php:609
+#: class-ml-gallery.php:811
 msgid "Silver (B&W)"
 msgstr "เงิน (ขาวดำ)"
 
-#: class-ml-gallery.php:610
+#: class-ml-gallery.php:812
 msgid "Vintage"
 msgstr "ย้อนยุค"
 
-#: class-ml-gallery.php:611
+#: class-ml-gallery.php:813
 msgid "Golden Hour"
 msgstr "ชั่วโมงทอง"
 
-#: class-ml-gallery.php:612
+#: class-ml-gallery.php:814
 msgid "Toaster"
 msgstr "เครื่องปิ้งขนมปัง"
 
-#: class-ml-gallery.php:613
+#: class-ml-gallery.php:815
 msgid "Warm"
 msgstr "อบอุ่น"
 
-#: class-ml-gallery.php:614
+#: class-ml-gallery.php:816
 msgid "Cool"
 msgstr "เย็น"
 
-#: class-ml-gallery.php:616
+#: class-ml-gallery.php:818
 msgid "Matte"
 msgstr "ด้าน"
 
-#: class-ml-gallery.php:617
+#: class-ml-gallery.php:819
 msgid "Pastel"
 msgstr "พาสเทล"
 
-#: class-ml-gallery.php:618
+#: class-ml-gallery.php:820
 msgid "Vivid"
 msgstr "สดใส"
 
-#: class-ml-gallery.php:619
+#: class-ml-gallery.php:821
 msgid "Crisp"
 msgstr "คมชัด"
 
-#: class-ml-gallery.php:620
+#: class-ml-gallery.php:822
 msgid "Dramatic"
 msgstr "ดราม่า"
 
-#: class-ml-gallery.php:621
+#: class-ml-gallery.php:823
 msgid "Negative"
 msgstr "ลบ"
 
-#: class-ml-gallery.php:734 class-ml-gallery.php:743 class-ml-gallery.php:1257
+#: class-ml-gallery.php:929 class-ml-gallery.php:938 class-ml-gallery.php:1451
 msgid "Galleries"
 msgstr "แกลเลอรี"
 
-#: class-ml-gallery.php:735 class-ml-gallery.php:884 class-ml-gallery.php:1588
-#: class-ml-slider-lightbox.php:2281
+#: class-ml-gallery.php:930 class-ml-gallery.php:1079 class-ml-gallery.php:1899
+#: class-ml-slider-lightbox.php:2307
 msgid "Gallery"
 msgstr "แกลเลอรี"
 
-#: class-ml-gallery.php:736 class-ml-gallery.php:737 class-ml-gallery.php:1222
-#: class-ml-gallery.php:3368
+#: class-ml-gallery.php:931 class-ml-gallery.php:932 class-ml-gallery.php:1416
+#: class-ml-gallery.php:3933
 msgid "Add New Gallery"
 msgstr "เพิ่มแกลเลอรีใหม่"
 
-#: class-ml-gallery.php:738 class-ml-gallery.php:1137 class-ml-gallery.php:1138
-#: class-ml-gallery.php:1223
+#: class-ml-gallery.php:933 class-ml-gallery.php:1328 class-ml-gallery.php:1329
+#: class-ml-gallery.php:1417
 msgid "Edit Gallery"
 msgstr "แก้ไขแกลเลอรี"
 
-#: class-ml-gallery.php:739 class-ml-gallery.php:1200 class-ml-gallery.php:2496
+#: class-ml-gallery.php:934 class-ml-gallery.php:1391 class-ml-gallery.php:2926
 msgid "New Gallery"
 msgstr "แกลเลอรีใหม่"
 
-#: class-ml-gallery.php:740
+#: class-ml-gallery.php:935
 msgid "Search Galleries"
 msgstr "ค้นหาแกลเลอรี"
 
-#: class-ml-gallery.php:741
+#: class-ml-gallery.php:936
 msgid "No galleries found."
 msgstr "ไม่พบแกลเลอรี."
 
-#: class-ml-gallery.php:742
+#: class-ml-gallery.php:937
 msgid "No galleries found in trash."
 msgstr "ไม่พบแกลเลอรีในถังขยะ."
 
-#: class-ml-gallery.php:891
+#: class-ml-gallery.php:1086
 msgid "All Galleries"
 msgstr "ทุกแกลเลอรี"
 
-#: class-ml-gallery.php:898
+#: class-ml-gallery.php:1093
 msgid "Create Gallery"
 msgstr "สร้างแกลเลอรี"
 
-#: class-ml-gallery.php:908
+#: class-ml-gallery.php:1103
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "แก้ไข &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:926
+#: class-ml-gallery.php:1134
 msgid "Invalid gallery ID."
 msgstr "รหัสแกลเลอรีไม่ถูกต้อง"
 
-#: class-ml-gallery.php:1030 class-ml-slider-lightbox.php:1655
+#: class-ml-gallery.php:1211 class-ml-slider-lightbox.php:1681
 msgid "View image"
 msgstr "ดูภาพ"
 
-#: class-ml-gallery.php:1197 class-ml-gallery.php:2452
+#: class-ml-gallery.php:1388 class-ml-gallery.php:2882
 msgid "Gallery not found."
 msgstr "ไม่พบแกลเลอรี."
 
-#: class-ml-gallery.php:1225
+#: class-ml-gallery.php:1419
 msgid "Save Gallery"
 msgstr "บันทึกแกลเลอรี"
 
-#: class-ml-gallery.php:1226
+#: class-ml-gallery.php:1420
 msgid "Update Gallery"
 msgstr "อัปเดตแกลเลอรี"
 
-#: class-ml-gallery.php:1241 class-ml-gallery.php:1253
+#: class-ml-gallery.php:1435 class-ml-gallery.php:1447
 msgid "Back to Galleries"
 msgstr "กลับไปที่แกลเลอรี"
 
-#: class-ml-gallery.php:1264
+#: class-ml-gallery.php:1458
 msgid "Create New Gallery"
 msgstr "สร้างแกลเลอรีใหม่"
 
-#: class-ml-gallery.php:1268
+#: class-ml-gallery.php:1462
 msgid "New"
 msgstr "ใหม่"
 
-#: class-ml-gallery.php:1279
+#: class-ml-gallery.php:1473
 msgid "Duplicate"
 msgstr "ซ้ำ"
 
-#: class-ml-gallery.php:1299
+#: class-ml-gallery.php:1494
 msgid "Gallery saved."
 msgstr "แกลเลอรีบันทึกแล้ว."
 
-#: class-ml-gallery.php:1310
+#: class-ml-gallery.php:1510
 #, php-format
 msgid ""
 "Gallery created from the slideshow \"%s\". Review the settings below, then "
 "save."
 msgstr "สร้างแกลเลอรีจากสไลด์โชว์ \"%s\" ตรวจสอบการตั้งค่าด้านล่างแล้วบันทึก"
 
-#: class-ml-gallery.php:1314
+#: class-ml-gallery.php:1514
 msgid "Gallery created from your slideshow. Review the settings below, then save."
 msgstr "สร้างแกลเลอรีจากสไลด์โชว์ของคุณ ตรวจสอบการตั้งค่าด้านล่างแล้วบันทึก"
 
-#: class-ml-gallery.php:1328
+#: class-ml-gallery.php:1528
 msgid "Enter gallery title"
 msgstr "กรุณาใส่ชื่อแกลเลอรี"
 
-#: class-ml-gallery.php:1331 class-ml-gallery.php:3820
+#: class-ml-gallery.php:1531 class-ml-gallery.php:2075
+#: class-ml-gallery.php:4384
 msgid "Images"
 msgstr "รูปภาพ"
 
-#: class-ml-gallery.php:1341
+#: class-ml-gallery.php:1541
 msgid "Preview or arrange images"
 msgstr "ดูตัวอย่างหรือจัดเรียงรูปภาพ"
 
-#: class-ml-gallery.php:1344 class-ml-gallery.php:3733
+#: class-ml-gallery.php:1544 class-ml-gallery.php:4297
 msgid "Preview"
 msgstr "ดูตัวอย่าง"
 
-#: class-ml-gallery.php:1348
+#: class-ml-gallery.php:1548
 msgid "Arrange"
 msgstr "จัดเรียง"
 
-#: class-ml-gallery.php:1351
-msgid "Preview at desktop or mobile width"
-msgstr "ดูตัวอย่างที่ความกว้างของเดสก์ท็อปหรือมือถือ"
-
-#: class-ml-gallery.php:1352
+#: class-ml-gallery.php:1555
 msgid "Desktop width"
 msgstr "ความกว้างของเดสก์ท็อป"
 
-#: class-ml-gallery.php:1355
+#: class-ml-gallery.php:1559
+msgid "Laptop width"
+msgstr "ความกว้างของแล็ปท็อป"
+
+#: class-ml-gallery.php:1563
+msgid "Tablet width"
+msgstr "ความกว้างของแท็บเล็ต"
+
+#: class-ml-gallery.php:1567
 msgid "Mobile width"
 msgstr "ความกว้างของมือถือ"
 
-#: class-ml-gallery.php:1362
+#: class-ml-gallery.php:1571
+msgid "Preview at desktop, laptop, tablet or mobile width"
+msgstr "ดูตัวอย่างที่เดสก์ท็อป แล็ปท็อป แท็บเล็ต หรือความกว้างของมือถือ"
+
+#: class-ml-gallery.php:1584 class-ml-gallery.php:3324
+msgid "Order is randomised for each visitor."
+msgstr "การจัดเรียงเป็นแบบสุ่มสำหรับผู้เข้าชมแต่ละคน."
+
+#: class-ml-gallery.php:1588 class-ml-gallery.php:3323
+#, php-format
+msgid "Sorted %s — switch to Drag-and-drop to reorder."
+msgstr "เรียง %s — เปลี่ยนไปใช้การลากและวางเพื่อจัดเรียงใหม่."
+
+#: class-ml-gallery.php:1596
 msgid "No images added yet"
 msgstr "ยังไม่มีรูปภาพที่เพิ่มเข้ามา"
 
-#: class-ml-gallery.php:1385 class-ml-gallery.php:2851
+#: class-ml-gallery.php:1624 class-ml-gallery.php:3319
 msgid "Remove image"
 msgstr "ลบรูปภาพ"
 
-#: class-ml-gallery.php:1390 class-ml-gallery.php:2852
+#: class-ml-gallery.php:1629 class-ml-gallery.php:3320
 msgid "Edit caption"
 msgstr "แก้ไขคำบรรยาย"
 
-#: class-ml-gallery.php:1390 class-ml-gallery.php:1392
-#: class-ml-gallery.php:2853
+#: class-ml-gallery.php:1629 class-ml-gallery.php:1631
+#: class-ml-gallery.php:3321
 msgid "Add caption"
 msgstr "เพิ่มคำบรรยาย"
 
-#: class-ml-gallery.php:1402
+#: class-ml-gallery.php:1641
 msgid "Gallery preview"
 msgstr "ดูตัวอย่างแกลเลอรี"
 
-#: class-ml-gallery.php:1408
+#: class-ml-gallery.php:1647
 msgid "Add Images"
 msgstr "เพิ่มรูปภาพ"
 
-#: class-ml-gallery.php:1412
+#: class-ml-gallery.php:1651
 msgid "More ways to add images"
 msgstr "วิธีเพิ่มเติมในการเพิ่มภาพ"
 
-#: class-ml-gallery.php:1418
+#: class-ml-gallery.php:1657
 msgid "Upload"
 msgstr "อัปโหลด"
 
-#: class-ml-gallery.php:1423
+#: class-ml-gallery.php:1662
 msgid "Media Library"
 msgstr "ห้องสมุดสื่อ"
 
-#: class-ml-gallery.php:1428
+#: class-ml-gallery.php:1667
 msgid "Server Folder"
 msgstr "โฟลเดอร์เซิร์ฟเวอร์"
 
-#: class-ml-gallery.php:1433, fuzzy
+#: class-ml-gallery.php:1672, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1439
+#: class-ml-gallery.php:1679
 msgid "Where to add new images"
 msgstr "เพิ่มภาพใหม่ที่ไหน"
 
-#: class-ml-gallery.php:1440
+#: class-ml-gallery.php:1680
 msgid "Add new images at:"
 msgstr "เพิ่มภาพใหม่ที่:"
 
-#: class-ml-gallery.php:1444
+#: class-ml-gallery.php:1684
 msgid "Start"
 msgstr "เริ่มต้น"
 
-#: class-ml-gallery.php:1449
+#: class-ml-gallery.php:1689
 msgid "End"
 msgstr "สิ้นสุด"
 
-#: class-ml-gallery.php:1458
+#: class-ml-gallery.php:1696
+msgid ""
+"The order images appear in on your site. Random reshuffles for each "
+"visitor, which page caching can defeat."
+msgstr ""
+"ลำดับที่ภาพปรากฏในเว็บไซต์ของคุณ การสุ่มจัดเรียงใหม่สำหรับผู้เข้าชมแต่ละคน "
+"ซึ่งการแคชหน้าเว็บอาจทำให้ไม่สามารถทำงานได้."
+
+#: class-ml-gallery.php:1696
+msgid "Image Order:"
+msgstr "ลำดับภาพ:"
+
+#: class-ml-gallery.php:1710
 msgid "Layout"
 msgstr "เลย์เอาต์"
 
-#: class-ml-gallery.php:1461
+#: class-ml-gallery.php:1713
 msgid "Gallery layout"
 msgstr "เลย์เอาต์แกลเลอรี"
 
-#: class-ml-gallery.php:1463
+#: class-ml-gallery.php:1715
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "ภาพขนาดเท่ากันจัดเรียงในกริดที่คงที่"
 
-#: class-ml-gallery.php:1473 class-ml-gallery.php:3736
+#: class-ml-gallery.php:1725 class-ml-gallery.php:4300
 msgid "Grid"
 msgstr "กริด"
 
-#: class-ml-gallery.php:1477
+#: class-ml-gallery.php:1729
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "ภาพตามความสูงตามธรรมชาติของพวกเขา ฟิตเข้าด้วยกันเหมือนกำแพงอิฐ"
 
-#: class-ml-gallery.php:1487 class-ml-gallery.php:3735
+#: class-ml-gallery.php:1739 class-ml-gallery.php:4299
 msgid "Masonry"
 msgstr "อิฐและปูน"
 
-#: class-ml-gallery.php:1491
+#: class-ml-gallery.php:1743
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr "ภาพที่ปรับขนาดเพื่อเติมเต็มขอบแต่ละแถวสุดขอบด้วยความสูงที่สม่ำเสมอ"
 
-#: class-ml-gallery.php:1503 class-ml-gallery.php:3737
+#: class-ml-gallery.php:1755 class-ml-gallery.php:4301
 msgid "Justified"
 msgstr "จัดเรียง"
 
-#: class-ml-gallery.php:1507
+#: class-ml-gallery.php:1759
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "ภาพแสดงทีละภาพในสไลด์โชว์ที่เลื่อนดูได้"
 
-#: class-ml-gallery.php:1516, fuzzy
+#: class-ml-gallery.php:1768, fuzzy
 msgid "Carousel"
 msgstr "Carousel"
 
-#: class-ml-gallery.php:1520
+#: class-ml-gallery.php:1772
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "ภาพหลักขนาดใหญ่พร้อมแถบภาพขนาดย่อที่เลื่อนดูได้ด้านล่าง"
 
-#: class-ml-gallery.php:1530
+#: class-ml-gallery.php:1782
 msgid "Showcase"
 msgstr "การแสดงผลงาน"
 
-#: class-ml-gallery.php:1542
-msgid "Number of columns to show on desktop screens"
-msgstr "จำนวนคอลัมน์ที่จะแสดงบนหน้าจอเดสก์ท็อป"
+#: class-ml-gallery.php:1797
+msgid "Desktop"
+msgstr "เดสก์ท็อป"
 
-#: class-ml-gallery.php:1542
+#: class-ml-gallery.php:1798
+msgid "Number of columns on desktop screens (1440px and wider)"
+msgstr "จำนวนคอลัมน์บนหน้าจอเดสก์ท็อป (1440px ขึ้นไป)"
+
+#: class-ml-gallery.php:1804
+msgid "Laptop"
+msgstr "แล็ปท็อป"
+
+#: class-ml-gallery.php:1805
+msgid "Number of columns on laptops (1024px to 1439px)"
+msgstr "จำนวนคอลัมน์บนแล็ปท็อป (1024px ถึง 1439px)"
+
+#: class-ml-gallery.php:1811
+msgid "Tablet"
+msgstr "แท็บเล็ต"
+
+#: class-ml-gallery.php:1812
+msgid "Number of columns on tablets (768px to 1023px)"
+msgstr "จำนวนคอลัมน์บนแท็บเล็ต (768px ถึง 1023px)"
+
+#: class-ml-gallery.php:1818
+msgid "Mobile"
+msgstr "มือถือ"
+
+#: class-ml-gallery.php:1819
+msgid "Number of columns on phones (up to 767px)"
+msgstr "จำนวนคอลัมน์บนโทรศัพท์ (สูงสุด 767px)"
+
+#: class-ml-gallery.php:1826
+msgid "Number of columns to show at each screen size"
+msgstr "จำนวนคอลัมน์ที่จะแสดงที่ขนาดหน้าจอแต่ละขนาด"
+
+#: class-ml-gallery.php:1826
 msgid "Columns"
 msgstr "คอลัมน์"
 
-#: class-ml-gallery.php:1551
-msgid "Number of columns to show on phones and small screens"
-msgstr "จำนวนคอลัมน์ที่จะแสดงบนโทรศัพท์และหน้าจอขนาดเล็ก"
-
-#: class-ml-gallery.php:1551
-msgid "Columns (mobile)"
-msgstr "คอลัมน์ (มือถือ)"
-
-#: class-ml-gallery.php:1560
+#: class-ml-gallery.php:1845
 msgid "Height of the gallery images, in pixels"
 msgstr "ความสูงของภาพในแกลเลอรี เป็นพิกเซล"
 
-#: class-ml-gallery.php:1561
+#: class-ml-gallery.php:1846
 msgid "Height"
 msgstr "ความสูง"
 
-#: class-ml-gallery.php:1573
+#: class-ml-gallery.php:1858
 msgid "Space between images"
 msgstr "ช่องว่างระหว่างภาพ"
 
-#: class-ml-gallery.php:1574
+#: class-ml-gallery.php:1859
 msgid "Gap"
 msgstr "ช่องว่าง"
 
-#: class-ml-gallery.php:1592
+#: class-ml-gallery.php:1875
+msgid ""
+"Show only the first batch of images, with a button that reveals more. "
+"Applies to Grid, Masonry, and Justified layouts."
+msgstr ""
+"แสดงเฉพาะชุดแรกของภาพ พร้อมปุ่มที่แสดงภาพเพิ่มเติม ใช้ได้กับรูปแบบกริด, "
+"เมสซอนรี, และจัดเรียงแบบยุติธรรม."
+
+#: class-ml-gallery.php:1875 class-ml-gallery.php:3782
+msgid "Load More"
+msgstr "โหลดเพิ่มเติม"
+
+#: class-ml-gallery.php:1888
+msgid "How many images to show at first, and how many each press of the button adds"
+msgstr "จำนวนภาพที่จะโชว์ในตอนแรก และจำนวนที่เพิ่มเมื่อกดปุ่มแต่ละครั้ง"
+
+#: class-ml-gallery.php:1888
+msgid "Images per batch"
+msgstr "ภาพต่อชุด"
+
+#: class-ml-gallery.php:1903
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "การควบคุมการซูมต้องการ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1593
+#: class-ml-gallery.php:1904
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "โหมดเต็มจอเรียกร้องให้ใช้ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1594
+#: class-ml-gallery.php:1905
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "การหมุนภาพต้องการ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1595
+#: class-ml-gallery.php:1906
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "การเล่นอัตโนมัติต้องการ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1596
+#: class-ml-gallery.php:1907
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "การแชร์ทางสังคมต้องการ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1597
+#: class-ml-gallery.php:1908
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "Pager ต้องการ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1598
+#: class-ml-gallery.php:1909
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "ลิงก์ภาพที่ไม่ซ้ำกันต้องการ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1599
+#: class-ml-gallery.php:1910
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "การป้องกันภาพต้องการ MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1603
+#: class-ml-gallery.php:1914
 msgid "Show left and right navigation arrows"
 msgstr "แสดงลูกศรนำทางซ้ายและขวา"
 
-#: class-ml-gallery.php:1604
+#: class-ml-gallery.php:1915
 msgid "Display the current image number and total count"
 msgstr "แสดงหมายเลขภาพปัจจุบันและจำนวนทั้งหมด"
 
-#: class-ml-gallery.php:1605
+#: class-ml-gallery.php:1916
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "แสดงแถบภาพขนาดย่อที่ด้านล่างของแกลเลอรี"
 
-#: class-ml-gallery.php:1606
+#: class-ml-gallery.php:1917
 msgid "Show dot navigation area below each image."
 msgstr "แสดงพื้นที่นำทางจุดด้านล่างแต่ละภาพ"
 
-#: class-ml-gallery.php:1607
+#: class-ml-gallery.php:1918
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -545,25 +703,25 @@ msgstr ""
 "บีบหรือเลื่อนเพื่อซูมเข้าและออกจากภาพในแกลเลอรี "
 "โดยการควบคุมซูมจะปรากฏเฉพาะเมื่อขนาดต้นฉบับใหญ่กว่าขนาดแกลเลอรี"
 
-#: class-ml-gallery.php:1608
+#: class-ml-gallery.php:1919
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "ขยายหน้าต่างแกลเลอรีให้เต็มหน้าจอ"
 
-#: class-ml-gallery.php:1609
+#: class-ml-gallery.php:1920
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
 msgstr "ผู้ใช้สามารถหมุนภาพไปทางซ้ายหรือขวา รวมทั้งพลิกภาพแนวตั้งหรือแนวนอน"
 
-#: class-ml-gallery.php:1610
+#: class-ml-gallery.php:1921
 msgid "Automatically advance through the images without the user clicking."
 msgstr "เลื่อนภาพโดยอัตโนมัติโดยไม่ต้องให้ผู้ใช้คลิก"
 
-#: class-ml-gallery.php:1611
+#: class-ml-gallery.php:1922
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr "เปิดให้ผู้ใช้แชร์ภาพบน Facebook, X หรือ Pinterest"
 
-#: class-ml-gallery.php:1612
+#: class-ml-gallery.php:1923
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
@@ -571,7 +729,7 @@ msgstr ""
 "สร้าง URL "
 "ที่ไม่ซ้ำกันสำหรับแต่ละภาพเพื่อเปิดใช้งานการเชื่อมโยงโดยตรงในแกลเลอรี"
 
-#: class-ml-gallery.php:1613 class-ml-slider-lightbox.php:4299
+#: class-ml-gallery.php:1924 class-ml-slider-lightbox.php:4360
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -579,57 +737,97 @@ msgstr ""
 "ป้องกันการบันทึกแบบทั่วไปโดยการบล็อกการคลิกขวา, การลาก, "
 "และการกดค้างบนภาพในแกลเลอรี."
 
-#: class-ml-gallery.php:1614
+#: class-ml-gallery.php:1925
 msgid "Navigate images using left and right arrow keys"
 msgstr "นำทางภาพโดยใช้ปุ่มลูกศรซ้ายและขวา"
 
-#: class-ml-gallery.php:1615
+#: class-ml-gallery.php:1926
 msgid "Scroll through images using the mouse wheel"
 msgstr "เลื่อนดูภาพโดยใช้ล้อเมาส์"
 
-#: class-ml-gallery.php:1616
+#: class-ml-gallery.php:1927
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "ปัดขึ้นหรือลงเพื่อปิดแกลเลอรีบนอุปกรณ์สัมผัส"
 
-#: class-ml-gallery.php:1617
+#: class-ml-gallery.php:1928
 msgid "Cycle back to the first image after reaching the last"
 msgstr "กลับไปที่ภาพแรกหลังจากถึงภาพสุดท้าย"
 
-#: class-ml-gallery.php:1618
+#: class-ml-gallery.php:1929
 msgid "Show a download button for each image"
 msgstr "แสดงปุ่มดาวน์โหลดสำหรับแต่ละภาพ"
 
-#: class-ml-gallery.php:1619
+#: class-ml-gallery.php:1930
+msgid "Show a button that expands the carousel to fill the browser window."
+msgstr "แสดงปุ่มที่ขยายคารูเซลให้เต็มหน้าต่างเบราว์เซอร์."
+
+#: class-ml-gallery.php:1931
 msgid ""
 "Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
 "Justified layouts."
 msgstr "เปิดภาพในหน้าต่างทับเมื่อคลิก ใช้ได้กับรูปแบบกริด มอสนี่ และรูปแบบที่จัดแนว"
 
-#: class-ml-gallery.php:1620
+#: class-ml-gallery.php:1932
 msgid "Show a button over the gallery that opens the gallery window when clicked."
 msgstr "แสดงปุ่มเหนือแกลเลอรีที่เปิดหน้าต่างแกลเลอรีเมื่อคลิก"
 
-#: class-ml-gallery.php:1621
+#: class-ml-gallery.php:1933
 msgid "Show an icon on the button instead of text."
 msgstr "แสดงไอคอนบนปุ่มแทนข้อความ"
 
-#: class-ml-gallery.php:1664
+#: class-ml-gallery.php:1934
+msgid ""
+"Hide the caption until the image is hovered. Captions always show on "
+"devices without hover support."
+msgstr ""
+"ซ่อนคำบรรยายจนกว่าภาพจะถูกชี้ "
+"โดนคำบรรยายจะแสดงเสมอบนอุปกรณ์ที่ไม่มีการสนับสนุนการชี้."
+
+#: class-ml-gallery.php:1979
 msgid "Full (original)"
 msgstr "เต็ม (ต้นฉบับ)"
 
-#: class-ml-gallery.php:1668
+#: class-ml-gallery.php:1980
+msgid "Custom…"
+msgstr "กำหนดเอง…"
+
+#: class-ml-gallery.php:1995
+msgid "Width and height in pixels, between 50 and 4000"
+msgstr "ความกว้างและความสูงเป็นพิกเซล ระหว่าง 50 ถึง 4000"
+
+#: class-ml-gallery.php:1995
+msgid "Custom Size"
+msgstr "ขนาดที่กำหนดเอง"
+
+#: class-ml-gallery.php:2001
+msgid "W"
+msgstr "ก"
+
+#: class-ml-gallery.php:2002
+msgid "Custom width"
+msgstr "ความกว้างที่กำหนดเอง"
+
+#: class-ml-gallery.php:2008
+msgid "H"
+msgstr "ส"
+
+#: class-ml-gallery.php:2009
+msgid "Custom height"
+msgstr "ความสูงที่กำหนดเอง"
+
+#: class-ml-gallery.php:2013
+msgid "Crop to fill the exact size instead of scaling to fit within it"
+msgstr "ตัดให้พอดีกับขนาดที่แน่นอนแทนที่จะปรับขนาดให้พอดีในนั้น"
+
+#: class-ml-gallery.php:2013
+msgid "Crop to exact size"
+msgstr "ตัดให้พอดีกับขนาดที่แน่นอน"
+
+#: class-ml-gallery.php:2028
 msgid "Show in Gallery Window"
 msgstr "แสดงในหน้าต่างแกลเลอรี"
 
-#: class-ml-gallery.php:1671
-msgid "The size of the image shown when a visitor clicks to view it in full"
-msgstr "ขนาดของภาพที่แสดงเมื่อผู้เยี่ยมชมคลิกเพื่อดูให้เต็ม"
-
-#: class-ml-gallery.php:1671
-msgid "Image Size"
-msgstr "ขนาดภาพ"
-
-#: class-ml-gallery.php:1691
+#: class-ml-gallery.php:2041
 msgid ""
 "Choose how visitors open the gallery window: click the image, click an "
 "icon, or click a button."
@@ -637,112 +835,132 @@ msgstr ""
 "เลือกวิธีที่ผู้เข้าชมเปิดหน้าต่างแกลเลอรี: คลิกที่ภาพ, คลิกที่ไอคอน, "
 "หรือคลิกที่ปุ่ม."
 
-#: class-ml-gallery.php:1691
+#: class-ml-gallery.php:2041
 msgid "Open with"
 msgstr "เปิดด้วย"
 
-#: class-ml-gallery.php:1703
+#: class-ml-gallery.php:2053
 msgid "Text shown on the button that opens the gallery window"
 msgstr "ข้อความที่แสดงบนปุ่มที่เปิดหน้าต่างแกลเลอรี"
 
-#: class-ml-gallery.php:1703 class-ml-slider-lightbox.php:2747
+#: class-ml-gallery.php:2053 class-ml-slider-lightbox.php:2773
 msgid "Button Text"
 msgstr "ข้อความปุ่ม"
 
-#: class-ml-gallery.php:1708 class-ml-slider-lightbox.php:1650
-#: class-ml-slider-lightbox.php:3347 class-ml-slider-lightbox.php:6488
-#: class-ml-slider-lightbox.php:6511
+#: class-ml-gallery.php:2058 class-ml-slider-lightbox.php:1676
+#: class-ml-slider-lightbox.php:3389 class-ml-slider-lightbox.php:6549
+#: class-ml-slider-lightbox.php:6572
 msgid "Open in Gallery"
 msgstr "เปิดในแกลเลอรี"
 
-#: class-ml-gallery.php:1713
+#: class-ml-gallery.php:2063
 msgid "Where the button or icon sits over the gallery"
 msgstr "ตำแหน่งของปุ่มหรือไอคอนที่อยู่เหนือแกลเลอรี"
 
-#: class-ml-gallery.php:1713 class-ml-slider-lightbox.php:2755
+#: class-ml-gallery.php:2063 class-ml-slider-lightbox.php:2781
 msgid "Button Position"
 msgstr "ตำแหน่งปุ่ม"
 
-#: class-ml-gallery.php:1715
+#: class-ml-gallery.php:2065
 msgid "Top Right"
 msgstr "มุมขวาบน"
 
-#: class-ml-gallery.php:1716 class-ml-slider-lightbox.php:3364
-#: class-ml-slider-lightbox.php:3390
+#: class-ml-gallery.php:2066 class-ml-slider-lightbox.php:3406
+#: class-ml-slider-lightbox.php:3432
 msgid "Top Left"
 msgstr "มุมซ้ายบน"
 
-#: class-ml-gallery.php:1717 class-ml-slider-lightbox.php:3365
-#: class-ml-slider-lightbox.php:3391
+#: class-ml-gallery.php:2067 class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3433
 msgid "Bottom Right"
 msgstr "มุมขวาล่าง"
 
-#: class-ml-gallery.php:1718 class-ml-slider-lightbox.php:3366
-#: class-ml-slider-lightbox.php:3392
+#: class-ml-gallery.php:2068 class-ml-slider-lightbox.php:3408
+#: class-ml-slider-lightbox.php:3434
 msgid "Bottom Left"
 msgstr "มุมซ้ายล่าง"
 
-#: class-ml-gallery.php:1719
-msgid "Center"
-msgstr "กลาง"
+#: class-ml-gallery.php:2082
+msgid "Gallery Image Size"
+msgstr "ขนาดภาพในแกลเลอรี"
 
-#: class-ml-gallery.php:1728
+#: class-ml-gallery.php:2083
+msgid ""
+"The size of the images shown in the gallery on the page. Carousel and "
+"Showcase use the Window Image Size for their main image."
+msgstr ""
+"ขนาดของภาพที่แสดงในแกลเลอรีบนหน้า เว็บ Carousel และ Showcase "
+"ใช้ขนาดภาพหน้าต่างสำหรับภาพหลักของพวกเขา"
+
+#: class-ml-gallery.php:2092
+msgid "Window Image Size"
+msgstr "ขนาดภาพหน้าต่าง"
+
+#: class-ml-gallery.php:2093
+msgid ""
+"The size of the image shown when a visitor clicks to view it in full, and "
+"of the main image in the Carousel and Showcase layouts"
+msgstr ""
+"ขนาดของภาพที่แสดงเมื่อผู้เยี่ยมชมคลิกเพื่อดูแบบเต็ม "
+"และของภาพหลักในเลย์เอาต์ Carousel และ Showcase"
+
+#: class-ml-gallery.php:2102
 msgid "Protect images"
 msgstr "ปกป้องภาพ"
 
-#: class-ml-gallery.php:1734
+#: class-ml-gallery.php:2107
 msgid "Display"
 msgstr "แสดง"
 
-#: class-ml-gallery.php:1736
+#: class-ml-gallery.php:2109
 msgid "Animation effect when moving between images"
 msgstr "เอฟเฟกต์การเคลื่อนไหวเมื่อเปลี่ยนภาพ"
 
-#: class-ml-gallery.php:1736 class-ml-gallery.php:1821
+#: class-ml-gallery.php:2109 class-ml-gallery.php:2229
 msgid "Transition"
 msgstr "การเปลี่ยนภาพ"
 
-#: class-ml-gallery.php:1745 class-ml-slider-lightbox.php:2707
+#: class-ml-gallery.php:2118 class-ml-slider-lightbox.php:2733
 msgid "Arrows"
 msgstr "ลูกศร"
 
-#: class-ml-gallery.php:1746
+#: class-ml-gallery.php:2119
 msgid "Slide Counter"
 msgstr "เคาน์เตอร์สไลด์"
 
-#: class-ml-gallery.php:1747
+#: class-ml-gallery.php:2120
 msgid "Thumbnails"
 msgstr "ภาพขนาดย่อ"
 
-#: class-ml-gallery.php:1749
+#: class-ml-gallery.php:2122
 msgid "Pager"
 msgstr "เพจเจอร์"
 
-#: class-ml-gallery.php:1754 class-ml-slider-lightbox.php:2412
+#: class-ml-gallery.php:2127 class-ml-slider-lightbox.php:2436
 msgid "Navigation"
 msgstr "การนำทาง"
 
-#: class-ml-gallery.php:1755
+#: class-ml-gallery.php:2128
 msgid "Loop"
 msgstr "วนซ้ำ"
 
-#: class-ml-gallery.php:1756
+#: class-ml-gallery.php:2129
 msgid "Keyboard"
 msgstr "แป้นพิมพ์"
 
-#: class-ml-gallery.php:1757
+#: class-ml-gallery.php:2130
 msgid "Mouse wheel"
 msgstr "ล้อเมาส์"
 
-#: class-ml-gallery.php:1758
+#: class-ml-gallery.php:2131
 msgid "Swipe to close"
 msgstr "ปัดเพื่อปิด"
 
-#: class-ml-gallery.php:1765 class-ml-gallery.php:1767
+#: class-ml-gallery.php:2138 class-ml-gallery.php:2140
 msgid "Captions"
 msgstr "คำบรรยาย"
 
-#: class-ml-gallery.php:1767
+#: class-ml-gallery.php:2140
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -750,7 +968,7 @@ msgstr ""
 "ที่ที่คำบรรยายปรากฏ: บนภาพขนาดย่อในแกลเลอรี่, ในหน้าต่างแกลเลอรี่, "
 "หรือทั้งสองอย่าง."
 
-#: class-ml-gallery.php:1779
+#: class-ml-gallery.php:2154
 msgid ""
 "Where each caption's text comes from: your typed caption, or the image's "
 "Media Library caption or description. Empty media fields fall back to your "
@@ -760,31 +978,55 @@ msgstr ""
 "หรือคำบรรยายหรือคำอธิบายของภาพในห้องสมุดสื่อ. "
 "ฟิลด์สื่อที่ว่างเปล่าจะใช้คำบรรยายที่คุณพิมพ์แทน."
 
-#: class-ml-gallery.php:1779
+#: class-ml-gallery.php:2154
 msgid "Caption Content"
 msgstr "เนื้อหาคำบรรยาย"
 
-#: class-ml-gallery.php:1788
+#: class-ml-gallery.php:2163
+msgid ""
+"Where the caption sits on the image. Applies to gallery captions only — not "
+"the gallery window."
+msgstr ""
+"ตำแหน่งที่คำบรรยายอยู่บนภาพ ใช้กับคำบรรยายแกลเลอรีเท่านั้น — "
+"ไม่ใช่หน้าต่างแกลเลอรี"
+
+#: class-ml-gallery.php:2163
+msgid "Position"
+msgstr "ตำแหน่ง"
+
+#: class-ml-gallery.php:2172
+msgid ""
+"How caption text lines up within the image. Applies to gallery captions "
+"only — not the gallery window."
+msgstr ""
+"วิธีการจัดเรียงข้อความคำบรรยายภายในภาพ ใช้กับคำบรรยายแกลเลอรีเท่านั้น — "
+"ไม่ใช่หน้าต่างแกลเลอรี"
+
+#: class-ml-gallery.php:2172
+msgid "Align"
+msgstr "จัดแนว"
+
+#: class-ml-gallery.php:2181
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "ขนาดข้อความคำบรรยาย. ใช้ได้กับทั้งภาพขนาดย่อในแกลเลอรี่และหน้าต่างแกลเลอรี่."
 
-#: class-ml-gallery.php:1789
+#: class-ml-gallery.php:2182
 msgid "Text Size"
 msgstr "ขนาดข้อความ"
 
-#: class-ml-gallery.php:1801
+#: class-ml-gallery.php:2194
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "สีข้อความคำบรรยาย. ใช้ได้กับทั้งภาพขนาดย่อในแกลเลอรี่และหน้าต่างแกลเลอรี่."
 
-#: class-ml-gallery.php:1801
+#: class-ml-gallery.php:2194
 msgid "Text Color"
 msgstr "สีข้อความ"
 
-#: class-ml-gallery.php:1811
+#: class-ml-gallery.php:2204
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -792,12 +1034,29 @@ msgstr ""
 "พื้นหลังคำบรรยาย. ใช้ได้กับทั้งภาพขนาดย่อในแกลเลอรี่และหน้าต่างแกลเลอรี่; "
 "บนภาพขนาดย่อจะจางลงเป็นโปร่งใสเพื่อความอ่านง่าย."
 
-#: class-ml-gallery.php:1811 class-ml-gallery.php:1853
-#: class-ml-slider-lightbox.php:2675
+#: class-ml-gallery.php:2204 class-ml-gallery.php:2264
+#: class-ml-slider-lightbox.php:2701
 msgid "Background Color"
 msgstr "สีพื้นหลัง"
 
-#: class-ml-gallery.php:1821
+#: class-ml-gallery.php:2214
+msgid ""
+"How solid the caption background is. Lower values let more of the image "
+"show through; 0 leaves the text on the bare image."
+msgstr ""
+"ความแข็งแรงของพื้นหลังคำบรรยาย "
+"ค่าที่ต่ำกว่าจะทำให้มีภาพมากขึ้นปรากฏให้เห็น; 0 จะทำให้ข้อความอยู่บนภาพเปล่า"
+
+#: class-ml-gallery.php:2215 class-ml-gallery.php:2275
+#: class-ml-slider-lightbox.php:2709
+msgid "Background Opacity"
+msgstr "ความโปร่งใสของพื้นหลัง"
+
+#: class-ml-gallery.php:2226
+msgid "Reveal on Hover"
+msgstr "แสดงเมื่อชี้เมาส์"
+
+#: class-ml-gallery.php:2229
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -805,419 +1064,419 @@ msgstr ""
 "วิธีที่คำบรรยายแอนิเมตเข้ามา. ใช้ได้กับหน้าต่างแกลเลอรี่เท่านั้น — "
 "ไม่ใช้กับคำบรรยายภาพขนาดย่อในแกลเลอรี่."
 
-#: class-ml-gallery.php:1831 class-ml-slider-lightbox.php:2723
+#: class-ml-gallery.php:2239 class-ml-slider-lightbox.php:2749
 msgid "Toolbar"
 msgstr "แถบเครื่องมือ"
 
-#: class-ml-gallery.php:1832 class-ml-slider-lightbox.php:1664
+#: class-ml-gallery.php:2240 class-ml-slider-lightbox.php:1690
 msgid "Download"
 msgstr "ดาวน์โหลด"
 
-#: class-ml-gallery.php:1834
+#: class-ml-gallery.php:2242
+msgid "Expand"
+msgstr "ขยาย"
+
+#: class-ml-gallery.php:2245
 msgid "Share"
 msgstr "แชร์"
 
-#: class-ml-gallery.php:1835
+#: class-ml-gallery.php:2246
 msgid "Autoplay"
 msgstr "เล่นอัตโนมัติ"
 
-#: class-ml-gallery.php:1836
+#: class-ml-gallery.php:2247
 msgid "Rotate and Flip"
 msgstr "หมุนและพลิก"
 
-#: class-ml-gallery.php:1837
+#: class-ml-gallery.php:2248
 msgid "Fullscreen"
 msgstr "เต็มหน้าจอ"
 
-#: class-ml-gallery.php:1843
+#: class-ml-gallery.php:2254
 msgid "Unique Image URLs"
 msgstr "ลิงก์ภาพที่ไม่ซ้ำกัน"
 
-#: class-ml-gallery.php:1850 class-ml-slider-lightbox.php:2345
-#: class-ml-slider-lightbox.php:2402
+#: class-ml-gallery.php:2261 class-ml-slider-lightbox.php:2369
+#: class-ml-slider-lightbox.php:2426
 msgid "Appearance"
 msgstr "การปรากฏ"
 
-#: class-ml-gallery.php:1853
+#: class-ml-gallery.php:2264
 msgid "Background color of the gallery window"
 msgstr "สีพื้นหลังของหน้าต่างแกลเลอรี"
 
-#: class-ml-gallery.php:1863
+#: class-ml-gallery.php:2274
 msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
 msgstr "ความทึบของพื้นหลังหน้าต่างแกลเลอรี (0 = โปร่งใส, 1 = ทึบ)"
 
-#: class-ml-gallery.php:1864 class-ml-slider-lightbox.php:2683
-msgid "Background Opacity"
-msgstr "ความโปร่งใสของพื้นหลัง"
-
-#: class-ml-gallery.php:1878
+#: class-ml-gallery.php:2289
 msgid "Border width in pixels around the carousel (0 = no border)"
 msgstr "ความกว้างของกรอบในพิกเซลรอบๆ คารูเซล (0 = ไม่มีกรอบ)"
 
-#: class-ml-gallery.php:1879
+#: class-ml-gallery.php:2290
 msgid "Frame Border Width"
 msgstr "ความกว้างกรอบเฟรม"
 
-#: class-ml-gallery.php:1890
+#: class-ml-gallery.php:2301
 msgid "Line style used for the carousel border"
 msgstr "สไตล์เส้นที่ใช้สำหรับกรอบคารูเซล"
 
-#: class-ml-gallery.php:1890
+#: class-ml-gallery.php:2301
 msgid "Frame Border Style"
 msgstr "สไตล์กรอบเฟรม"
 
-#: class-ml-gallery.php:1893 class-ml-gallery.php:2095
+#: class-ml-gallery.php:2304 class-ml-gallery.php:2505
 msgid "Solid"
 msgstr "ทึบ"
 
-#: class-ml-gallery.php:1894 class-ml-gallery.php:2096
+#: class-ml-gallery.php:2305 class-ml-gallery.php:2506
 msgid "Dashed"
 msgstr "เป็นเส้นประ"
 
-#: class-ml-gallery.php:1895 class-ml-gallery.php:2097
+#: class-ml-gallery.php:2306 class-ml-gallery.php:2507
 msgid "Dotted"
 msgstr "เป็นจุด"
 
-#: class-ml-gallery.php:1896 class-ml-gallery.php:2098
+#: class-ml-gallery.php:2307 class-ml-gallery.php:2508
 msgid "Double"
 msgstr "สองชั้น"
 
-#: class-ml-gallery.php:1904
+#: class-ml-gallery.php:2315
 msgid "Color of the border around the carousel"
 msgstr "สีของกรอบรอบๆ คารูเซล"
 
-#: class-ml-gallery.php:1904
+#: class-ml-gallery.php:2315
 msgid "Frame Border Color"
 msgstr "สีกรอบเฟรม"
 
-#: class-ml-gallery.php:1914
+#: class-ml-gallery.php:2325
 msgid "Color of the next and previous navigation arrows"
 msgstr "สีของลูกศรนำทางถัดไปและก่อนหน้า"
 
-#: class-ml-gallery.php:1914
+#: class-ml-gallery.php:2325
 msgid "Arrow Color"
 msgstr "สีลูกศร"
 
-#: class-ml-gallery.php:1924
+#: class-ml-gallery.php:2335
 msgid "Background color behind the navigation arrows"
 msgstr "สีพื้นหลังด้านหลังลูกศรนำทาง"
 
-#: class-ml-gallery.php:1924
+#: class-ml-gallery.php:2335
 msgid "Arrow Background"
 msgstr "พื้นหลังลูกศร"
 
-#: class-ml-gallery.php:1934
+#: class-ml-gallery.php:2345
 msgid "Color of the close (X) icon"
 msgstr "สีของไอคอนปิด (X)"
 
-#: class-ml-gallery.php:1934
+#: class-ml-gallery.php:2345
 msgid "Close Icon Color"
 msgstr "สีไอคอนปิด"
 
-#: class-ml-gallery.php:1944
+#: class-ml-gallery.php:2355
 msgid "Background color behind the close icon"
 msgstr "สีพื้นหลังด้านหลังไอคอนปิด"
 
-#: class-ml-gallery.php:1944
+#: class-ml-gallery.php:2355
 msgid "Close Background"
 msgstr "พื้นหลังปิด"
 
-#: class-ml-gallery.php:1954
+#: class-ml-gallery.php:2365
 msgid "Color of the toolbar icons"
 msgstr "สีของไอคอนในแถบเครื่องมือ"
 
-#: class-ml-gallery.php:1954
+#: class-ml-gallery.php:2365
 msgid "Toolbar Icon Color"
 msgstr "สีไอคอนแถบเครื่องมือ"
 
-#: class-ml-gallery.php:1964
+#: class-ml-gallery.php:2375
 msgid "Background color of the toolbar"
 msgstr "สีพื้นหลังของแถบเครื่องมือ"
 
-#: class-ml-gallery.php:1964
+#: class-ml-gallery.php:2375
 msgid "Toolbar Background"
 msgstr "พื้นหลังแถบเครื่องมือ"
 
-#: class-ml-gallery.php:1974
+#: class-ml-gallery.php:2385
 msgid "Border color of the thumbnail strip images"
 msgstr "สีขอบของภาพย่อ"
 
-#: class-ml-gallery.php:1974 class-ml-slider-lightbox.php:2699
+#: class-ml-gallery.php:2385 class-ml-slider-lightbox.php:2725
 msgid "Thumbnail Border Color"
 msgstr "สีขอบภาพขนาดย่อ"
 
-#: class-ml-gallery.php:1984
+#: class-ml-gallery.php:2395
 msgid "Border color of the active and hovered thumbnail"
 msgstr "สีขอบของภาพย่อที่ใช้งานอยู่และที่ชี้เมาส์"
 
-#: class-ml-gallery.php:1984
+#: class-ml-gallery.php:2395
 msgid "Thumbnail Border Active and Hover"
 msgstr "ขอบภาพขนาดย่อที่ใช้งานและเมื่อชี้"
 
-#: class-ml-gallery.php:2003
-msgid "Text color of the button that opens the gallery window"
-msgstr "สีข้อความของปุ่มที่เปิดหน้าต่างแกลเลอรี"
+#: class-ml-gallery.php:2413
+msgid "Text color of the gallery buttons, including Load More"
+msgstr "สีของข้อความของปุ่มแกลเลอรี รวมถึงโหลดเพิ่มเติม"
 
-#: class-ml-gallery.php:2003
+#: class-ml-gallery.php:2413
 msgid "Button Text Color"
 msgstr "สีข้อความปุ่ม"
 
-#: class-ml-gallery.php:2007
+#: class-ml-gallery.php:2417
 msgid "Button text color on hover"
 msgstr "สีข้อความปุ่มเมื่อชี้เมาส์"
 
-#: class-ml-gallery.php:2007
+#: class-ml-gallery.php:2417
 msgid "Button Text Hover"
 msgstr "ข้อความปุ่มเมื่อชี้เมาส์"
 
-#: class-ml-gallery.php:2011
-msgid "Background color of the button that opens the gallery window"
-msgstr "สีพื้นหลังของปุ่มที่เปิดหน้าต่างแกลเลอรี"
+#: class-ml-gallery.php:2421
+msgid "Background color of the gallery buttons, including Load More"
+msgstr "สีพื้นหลังของปุ่มแกลเลอรี รวมถึงโหลดเพิ่มเติม"
 
-#: class-ml-gallery.php:2011
+#: class-ml-gallery.php:2421
 msgid "Button Background"
 msgstr "พื้นหลังปุ่ม"
 
-#: class-ml-gallery.php:2015
+#: class-ml-gallery.php:2425
 msgid "Button background color on hover"
 msgstr "สีพื้นหลังปุ่มเมื่อชี้เมาส์ไป"
 
-#: class-ml-gallery.php:2015
+#: class-ml-gallery.php:2425
 msgid "Button Background Hover"
 msgstr "พื้นหลังปุ่มเมื่อชี้เมาส์ไป"
 
-#: class-ml-gallery.php:2022
+#: class-ml-gallery.php:2432
 msgid "Color of the icon that opens the gallery window"
 msgstr "สีของไอคอนที่เปิดหน้าต่างแกลเลอรี"
 
-#: class-ml-gallery.php:2022
+#: class-ml-gallery.php:2432
 msgid "Icon Color"
 msgstr "สีไอคอน"
 
-#: class-ml-gallery.php:2026
+#: class-ml-gallery.php:2436
 msgid "Icon color on hover"
 msgstr "สีไอคอนเมื่อชี้เมาส์ไป"
 
-#: class-ml-gallery.php:2026
+#: class-ml-gallery.php:2436
 msgid "Icon Hover Color"
 msgstr "สีไอคอนเมื่อชี้เมาส์ไป"
 
-#: class-ml-gallery.php:2030
+#: class-ml-gallery.php:2440
 msgid "Background color behind the icon"
 msgstr "สีพื้นหลังหลังไอคอน"
 
-#: class-ml-gallery.php:2030
+#: class-ml-gallery.php:2440
 msgid "Icon Background"
 msgstr "พื้นหลังไอคอน"
 
-#: class-ml-gallery.php:2034
+#: class-ml-gallery.php:2444
 msgid "Icon background color on hover"
 msgstr "สีพื้นหลังไอคอนเมื่อชี้เมาส์ไป"
 
-#: class-ml-gallery.php:2034
+#: class-ml-gallery.php:2444
 msgid "Icon Background Hover"
 msgstr "พื้นหลังไอคอนเมื่อชี้เมาส์ไป"
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2451
 msgid "Color of the progress bar shown during autoplay"
 msgstr "สีของแถบความก้าวหน้าที่แสดงระหว่างเล่นอัตโนมัติ"
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2451
 msgid "Autoplay Progress Bar"
 msgstr "แถบความก้าวหน้าเล่นอัตโนมัติ"
 
-#: class-ml-gallery.php:2056
+#: class-ml-gallery.php:2466
 msgid "Image Styles"
 msgstr "รูปแบบภาพ"
 
-#: class-ml-gallery.php:2059
+#: class-ml-gallery.php:2469
 msgid "Apply a filter to every image in the gallery"
 msgstr "ใช้ฟิลเตอร์กับภาพทุกภาพในแกลเลอรี"
 
-#: class-ml-gallery.php:2059
+#: class-ml-gallery.php:2469
 msgid "Filter"
 msgstr "ฟิลเตอร์"
 
-#: class-ml-gallery.php:2068
+#: class-ml-gallery.php:2478
 msgid "Corner radius in pixels applied to every image"
 msgstr "รัศมีมุมในพิกเซลที่ใช้กับภาพทุกภาพ"
 
-#: class-ml-gallery.php:2069
+#: class-ml-gallery.php:2479
 msgid "Rounded Corners"
 msgstr "มุมโค้ง"
 
-#: class-ml-gallery.php:2080
+#: class-ml-gallery.php:2490
 msgid "Image border width in pixels (0 = no border)"
 msgstr "ความกว้างของกรอบภาพในพิกเซล (0 = ไม่มีกรอบ)"
 
-#: class-ml-gallery.php:2081
+#: class-ml-gallery.php:2491
 msgid "Border Width"
 msgstr "ความกว้างกรอบ"
 
-#: class-ml-gallery.php:2092
+#: class-ml-gallery.php:2502
 msgid "Line style used for the image border"
 msgstr "รูปแบบเส้นที่ใช้สำหรับกรอบภาพ"
 
-#: class-ml-gallery.php:2092
+#: class-ml-gallery.php:2502
 msgid "Border Style"
 msgstr "รูปแบบกรอบ"
 
-#: class-ml-gallery.php:2106
+#: class-ml-gallery.php:2516
 msgid "Color of the image border"
 msgstr "สีของขอบภาพ"
 
-#: class-ml-gallery.php:2106
+#: class-ml-gallery.php:2516
 msgid "Border Color"
 msgstr "สีกรอบ"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2526
 msgid "Drop shadow depth cast behind each image"
 msgstr "ความลึกของเงาที่ถูกสร้างขึ้นด้านหลังแต่ละภาพ"
 
-#: class-ml-gallery.php:2116
+#: class-ml-gallery.php:2526
 msgid "Box Shadow"
 msgstr "เงากล่อง"
 
-#: class-ml-gallery.php:2120
+#: class-ml-gallery.php:2530
 msgid "Light"
 msgstr "เบา"
 
-#: class-ml-gallery.php:2121
-msgid "Medium"
-msgstr "กลาง"
-
-#: class-ml-gallery.php:2122
+#: class-ml-gallery.php:2532
 msgid "Heavy"
 msgstr "หนัก"
 
-#: class-ml-gallery.php:2130
+#: class-ml-gallery.php:2540
 msgid "Image opacity as a percentage"
 msgstr "ความโปร่งใสของภาพในรูปเปอร์เซ็นต์"
 
-#: class-ml-gallery.php:2131
+#: class-ml-gallery.php:2541
 msgid "Opacity"
 msgstr "ความโปร่งใส"
 
-#: class-ml-gallery.php:2142
+#: class-ml-gallery.php:2552
 msgid "Rotate every image by a fixed angle"
 msgstr "หมุนภาพแต่ละภาพด้วยมุมที่กำหนด"
 
-#: class-ml-gallery.php:2142
+#: class-ml-gallery.php:2552
 msgid "Rotate"
 msgstr "หมุน"
 
-#: class-ml-gallery.php:2156
+#: class-ml-gallery.php:2566
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "สะท้อนภาพแต่ละภาพในแนวนอน แนวตั้ง หรือทั้งสองอย่าง"
 
-#: class-ml-gallery.php:2156
+#: class-ml-gallery.php:2566
 msgid "Flip"
 msgstr "พลิก"
 
-#: class-ml-gallery.php:2160
+#: class-ml-gallery.php:2570
 msgid "Horizontal"
 msgstr "แนวนอน"
 
-#: class-ml-gallery.php:2161
+#: class-ml-gallery.php:2571
 msgid "Vertical"
 msgstr "แนวตั้ง"
 
-#: class-ml-gallery.php:2162
+#: class-ml-gallery.php:2572
 msgid "Both"
 msgstr "ทั้งสองอย่าง"
 
-#: class-ml-gallery.php:2172 class-ml-gallery.php:3819
+#: class-ml-gallery.php:2582 class-ml-gallery.php:4383
 msgid "Shortcode"
 msgstr "ชอร์ตโค้ด"
 
-#: class-ml-gallery.php:2174 class-ml-gallery.php:3839
+#: class-ml-gallery.php:2584 class-ml-gallery.php:4403
 msgid "Click to copy shortcode."
 msgstr "คลิกเพื่อคัดลอกชอร์ตโค้ด"
 
-#: class-ml-gallery.php:2192
+#: class-ml-gallery.php:2602
 msgid "Edit Caption"
 msgstr "แก้ไขคำบรรยาย"
 
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:2604
 msgid "Previous image"
 msgstr "ภาพก่อนหน้า"
 
-#: class-ml-gallery.php:2195
+#: class-ml-gallery.php:2605
 msgid "Next image"
 msgstr "ภาพถัดไป"
 
-#: class-ml-gallery.php:2197 class-ml-gallery.php:2239
-#: class-ml-gallery.php:2260 class-ml-gallery.php:3864
+#: class-ml-gallery.php:2607 class-ml-gallery.php:2649
+#: class-ml-gallery.php:2670 class-ml-gallery.php:4428
 msgid "Close"
 msgstr "ปิด"
 
-#: class-ml-gallery.php:2218
+#: class-ml-gallery.php:2628
 msgid "Caption"
 msgstr "คำบรรยาย"
 
-#: class-ml-gallery.php:2228
+#: class-ml-gallery.php:2638
 msgid "Done"
 msgstr "เสร็จสิ้น"
 
-#: class-ml-gallery.php:2238
+#: class-ml-gallery.php:2648
 msgid "Import from Server Folder"
 msgstr "นำเข้าจากโฟลเดอร์เซิร์ฟเวอร์"
 
-#: class-ml-gallery.php:2247
+#: class-ml-gallery.php:2657
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: class-ml-gallery.php:2248
+#: class-ml-gallery.php:2658
 msgid "Import selected"
 msgstr "นำเข้าที่เลือก"
 
-#: class-ml-gallery.php:2259
+#: class-ml-gallery.php:2669
 msgid "Import from ZIP"
 msgstr "นำเข้าจาก ZIP"
 
-#: class-ml-gallery.php:2287
+#: class-ml-gallery.php:2697
 msgid "You do not have sufficient permissions."
 msgstr "คุณไม่มีสิทธิ์เพียงพอ."
 
-#: class-ml-gallery.php:2306
+#: class-ml-gallery.php:2716
 msgid "Could not update the gallery. Please try again."
 msgstr "ไม่สามารถอัปเดตแกลเลอรีได้ โปรดลองอีกครั้ง."
 
-#: class-ml-gallery.php:2457
+#: class-ml-gallery.php:2887
 msgid "(Copy)"
 msgstr "(คัดลอก)"
 
-#: class-ml-gallery.php:2463
+#: class-ml-gallery.php:2893
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "ไม่สามารถทำสำเนาแกลเลอรีได้ กรุณาลองอีกครั้ง."
 
-#: class-ml-gallery.php:2611 class-ml-gallery.php:2726
-#: class-ml-gallery.php:3984 class-ml-gallery.php:4137
-#: class-ml-gallery.php:4169
+#: class-ml-gallery.php:3041 class-ml-gallery.php:3156
+#: class-ml-gallery.php:3200 class-ml-gallery.php:4545
+#: class-ml-gallery.php:4696 class-ml-gallery.php:4728
 msgid "Permission denied."
 msgstr "ถูกปฏิเสธการอนุญาต."
 
-#: class-ml-gallery.php:2618
+#: class-ml-gallery.php:3048
 msgid "Folder not found."
 msgstr "ไม่พบโฟลเดอร์."
 
-#: class-ml-gallery.php:2627
+#: class-ml-gallery.php:3057
 msgid "Folder could not be read."
 msgstr "ไม่สามารถอ่านโฟลเดอร์ได้."
 
-#: class-ml-gallery.php:2664
+#: class-ml-gallery.php:3094
 msgid "Uploads"
 msgstr "การอัปโหลด"
 
-#: class-ml-gallery.php:2849
+#: class-ml-gallery.php:3212
+msgid "Invalid size."
+msgstr "ขนาดไม่ถูกต้อง"
+
+#: class-ml-gallery.php:3317
 msgid "Select Gallery Images"
 msgstr "เลือกภาพในแกลเลอรี"
 
-#: class-ml-gallery.php:2850
+#: class-ml-gallery.php:3318
 msgid "Add to Gallery"
 msgstr "เพิ่มไปยังแกลเลอรี"
 
-#: class-ml-gallery.php:2861
+#: class-ml-gallery.php:3333
 msgid ""
 "Saved to this image in your Media Library — changes appear anywhere the "
 "image is used."
@@ -1225,96 +1484,117 @@ msgstr ""
 "บันทึกไปยังภาพนี้ในห้องสมุดสื่อของคุณ — "
 "การเปลี่ยนแปลงจะแสดงที่ใดก็ตามที่ภาพนี้ถูกใช้งาน."
 
-#: class-ml-gallery.php:2862 class-ml-gallery.php:4186
+#: class-ml-gallery.php:3334 class-ml-gallery.php:4745
 msgid "You do not have permission to edit this image."
 msgstr "คุณไม่มีสิทธิ์แก้ไขภาพนี้."
 
-#: class-ml-gallery.php:2863 class-ml-gallery.php:4187
+#: class-ml-gallery.php:3335 class-ml-gallery.php:4746
 msgid "This caption source is read-only."
 msgstr "แหล่งที่มาของคำบรรยายนี้เป็นแบบอ่านอย่างเดียว."
 
-#: class-ml-gallery.php:2864
+#: class-ml-gallery.php:3336
 msgid "Shown in this gallery"
 msgstr "แสดงในแกลเลอรี่นี้"
 
-#: class-ml-gallery.php:2866
+#: class-ml-gallery.php:3340
+#, php-format
+msgid "Preparing image sizes… %1$d/%2$d"
+msgstr "กำลังเตรียมขนาดภาพ… %1$d/%2$d"
+
+#: class-ml-gallery.php:3341
+msgid "Image sizes ready."
+msgstr "ขนาดภาพพร้อมแล้ว"
+
+#: class-ml-gallery.php:3343
+#, php-format
+msgid ""
+"Could not resize %d image(s) — they may be smaller than the size you asked "
+"for."
+msgstr "ไม่สามารถเปลี่ยนขนาดภาพ %d ภาพ — อาจมีขนาดเล็กกว่าขนาดที่คุณร้องขอ"
+
+#: class-ml-gallery.php:3345
 msgid "Loading…"
 msgstr "กำลังโหลด…"
 
-#: class-ml-gallery.php:2867
+#: class-ml-gallery.php:3346
 msgid "No images in this folder."
 msgstr "ไม่มีภาพในโฟลเดอร์นี้."
 
-#: class-ml-gallery.php:2868
+#: class-ml-gallery.php:3347
 msgid "Could not load this folder."
 msgstr "ไม่สามารถโหลดโฟลเดอร์นี้ได้."
 
-#: class-ml-gallery.php:2869
+#: class-ml-gallery.php:3348
 msgid "Importing…"
 msgstr "กำลังนำเข้า…"
 
-#: class-ml-gallery.php:2870
+#: class-ml-gallery.php:3349
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr "แสดงภาพ 200 ภาพแรก — เปิดโฟลเดอร์ย่อยเพื่อลดขนาดรายการ."
 
-#: class-ml-gallery.php:2871
+#: class-ml-gallery.php:3350
 msgid "Select at least one image."
 msgstr "โปรดเลือกภาพอย่างน้อย 1 ภาพ."
 
-#: class-ml-gallery.php:2872 class-ml-gallery.php:2875
+#: class-ml-gallery.php:3351 class-ml-gallery.php:3354
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "นำเข้าภาพ %1$d ภาพ; ข้าม %2$d ภาพ."
 
-#: class-ml-gallery.php:2873
+#: class-ml-gallery.php:3352
 msgid "Uploading…"
 msgstr "กำลังอัปโหลด…"
 
-#: class-ml-gallery.php:2874
+#: class-ml-gallery.php:3353
 msgid "Importing images…"
 msgstr "กำลังนำเข้าภาพ…"
 
-#: class-ml-gallery.php:2876
+#: class-ml-gallery.php:3355
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "นำเข้าเฉพาะ 200 ภาพแรก (หรือ 256 MB) เท่านั้น."
 
-#: class-ml-gallery.php:2877
+#: class-ml-gallery.php:3356
 msgid "The ZIP could not be imported."
 msgstr "ไม่สามารถนำเข้า ZIP ได้."
 
-#: class-ml-gallery.php:2878
+#: class-ml-gallery.php:3357
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr "การอัปโหลดถูกปฏิเสธ — ZIP อาจมีขนาดใหญ่เกินกว่าที่เซิร์ฟเวอร์นี้อนุญาต."
 
-#: class-ml-gallery.php:2879
+#: class-ml-gallery.php:3358
 msgid "No images found in the ZIP."
 msgstr "ไม่พบภาพใน ZIP."
 
-#: class-ml-gallery.php:3450
+#: class-ml-gallery.php:3785
+#, php-format
+msgid "%1$d more images loaded, %2$d remaining"
+msgstr "%1$d ภาพเพิ่มเติมถูกโหลดแล้ว, %2$d ภาพที่เหลือ"
+
+#: class-ml-gallery.php:4014
 msgid "Drag-and-drop building"
 msgstr "การสร้างแบบลากและวาง"
 
-#: class-ml-gallery.php:3451
+#: class-ml-gallery.php:4015
 msgid "Responsive lightbox"
 msgstr "ไลท์บ็อกซ์ที่ตอบสนอง"
 
-#: class-ml-gallery.php:3452
+#: class-ml-gallery.php:4016
 msgid "Grid · Masonry · Justified"
 msgstr "กริด · มัสสันรี · ถูกจัดเรียง"
 
-#: class-ml-gallery.php:3703
+#: class-ml-gallery.php:4267
 msgid "Get started"
 msgstr "เริ่มต้น"
 
-#: class-ml-gallery.php:3706
+#: class-ml-gallery.php:4270
 msgid "Your galleries"
 msgstr "แกลเลอรี่ของคุณ"
 
-#: class-ml-gallery.php:3706
+#: class-ml-gallery.php:4270
 msgid "live here."
 msgstr "มีอยู่ที่นี่."
 
-#: class-ml-gallery.php:3708
+#: class-ml-gallery.php:4272
 msgid ""
 "Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
 "justified, no code required."
@@ -1322,73 +1602,73 @@ msgstr ""
 "สร้างแกลเลอรีภาพที่สวยงามด้วยไลท์บ็อกซ์ที่น่าทึ่ง กริด มัสสันรี "
 "หรือถูกจัดเรียง ไม่ต้องใช้โค้ด."
 
-#: class-ml-gallery.php:3710
+#: class-ml-gallery.php:4274
 msgid "Create your first gallery"
 msgstr "สร้างแกลเลอรี่แรกของคุณ"
 
-#: class-ml-gallery.php:3723
+#: class-ml-gallery.php:4287
 #, php-format
 msgid "View Trash (%s)"
 msgid_plural "View Trash (%s)"
 msgstr[0] "ดูถังขยะ (%s)"
 
-#: class-ml-gallery.php:3734
+#: class-ml-gallery.php:4298
 msgid "Preview layout"
 msgstr "ดูตัวอย่างเลย์เอาต์"
 
-#: class-ml-gallery.php:3821
+#: class-ml-gallery.php:4385
 msgid "Usage"
 msgstr "การใช้งาน"
 
-#: class-ml-gallery.php:3854
+#: class-ml-gallery.php:4418
 msgid "Not found."
 msgstr "ไม่พบ."
 
-#: class-ml-gallery.php:3859
+#: class-ml-gallery.php:4423
 msgid "View Usage"
 msgstr "ดูการใช้งาน"
 
-#: class-ml-gallery.php:3865
+#: class-ml-gallery.php:4429
 msgid "Content Using This Gallery"
 msgstr "เนื้อหาที่ใช้แกลเลอรี่นี้"
 
-#: class-ml-gallery.php:3932
+#: class-ml-gallery.php:4493
 msgid "(no title)"
 msgstr "(ไม่มีชื่อ)"
 
-#: class-ml-gallery.php:3990 class-ml-gallery.php:3999
+#: class-ml-gallery.php:4551 class-ml-gallery.php:4560
 msgid "Please choose a valid .zip file."
 msgstr "กรุณาเลือกไฟล์ .zip ที่ถูกต้อง"
 
-#: class-ml-gallery.php:4005
+#: class-ml-gallery.php:4566
 msgid "Server cannot read ZIP files."
 msgstr "เซิร์ฟเวอร์ไม่สามารถอ่านไฟล์ ZIP ได้"
 
-#: class-ml-gallery.php:4012
+#: class-ml-gallery.php:4573
 msgid "The ZIP could not be read."
 msgstr "ไม่สามารถอ่าน ZIP ได้"
 
-#: class-ml-gallery.php:4046
+#: class-ml-gallery.php:4607
 msgid "Could not prepare a temporary folder."
 msgstr "ไม่สามารถเตรียมโฟลเดอร์ชั่วคราวได้"
 
-#: class-ml-gallery.php:4144 class-ml-gallery.php:4180
+#: class-ml-gallery.php:4703 class-ml-gallery.php:4739
 msgid "Image not found."
 msgstr "ไม่พบภาพ."
 
-#: class-ml-gallery.php:4217
+#: class-ml-gallery.php:4775
 msgid "Unknown caption source."
 msgstr "แหล่งที่มาของคำบรรยายไม่รู้จัก."
 
-#: class-ml-slider-lightbox.php:216
+#: class-ml-slider-lightbox.php:222
 msgid "👋 Thanks for installing MetaSlider Gallery!"
 msgstr "👋 ขอบคุณที่ติดตั้ง MetaSlider Gallery!"
 
-#: class-ml-slider-lightbox.php:219
+#: class-ml-slider-lightbox.php:225
 msgid "You're all set. Create your first gallery to get started."
 msgstr "คุณพร้อมแล้ว สร้างแกลเลอรี่แรกของคุณเพื่อเริ่มต้น."
 
-#: class-ml-slider-lightbox.php:1188
+#: class-ml-slider-lightbox.php:1216
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1396,11 +1676,11 @@ msgstr ""
 "แกลเลอรีของ MetaSlider ต้องการให้ติดตั้งและเปิดใช้งาน MetaSlider "
 "และปลั๊กอิน lightbox ที่รองรับอย่างน้อยหนึ่งตัว."
 
-#: class-ml-slider-lightbox.php:1192
+#: class-ml-slider-lightbox.php:1220
 msgid "More info"
 msgstr "ข้อมูลเพิ่มเติม"
 
-#: class-ml-slider-lightbox.php:1203
+#: class-ml-slider-lightbox.php:1231
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1408,31 +1688,31 @@ msgstr ""
 "มีปลั๊กอิน lightbox ที่เปิดใช้งานมากกว่าหนึ่งตัว "
 "ซึ่งอาจทำให้เกิดความขัดแย้งกับแกลเลอรีของ MetaSlider"
 
-#: class-ml-slider-lightbox.php:1263
+#: class-ml-slider-lightbox.php:1291
 msgid "Edit Global Settings"
 msgstr "แก้ไขการตั้งค่าทั่วไป"
 
-#: class-ml-slider-lightbox.php:1274
+#: class-ml-slider-lightbox.php:1302
 msgid "Open In Gallery"
 msgstr "เปิดในแกลเลอรี"
 
-#: class-ml-slider-lightbox.php:1288
+#: class-ml-slider-lightbox.php:1316
 msgid "Show Captions"
 msgstr "แสดงคำบรรยาย"
 
-#: class-ml-slider-lightbox.php:1288
+#: class-ml-slider-lightbox.php:1316
 msgid "Show captions in the gallery for each slide."
 msgstr "แสดงคำบรรยายในแกลเลอรีสำหรับแต่ละสไลด์"
 
-#: class-ml-slider-lightbox.php:1289
+#: class-ml-slider-lightbox.php:1317
 msgid "Show Navigation Arrows"
 msgstr "แสดงลูกศรนำทาง"
 
-#: class-ml-slider-lightbox.php:1289
+#: class-ml-slider-lightbox.php:1317
 msgid "Show previous/next arrows in the gallery."
 msgstr "แสดงลูกศรก่อนหน้า/ถัดไปในแกลเลอรี"
 
-#: class-ml-slider-lightbox.php:1295
+#: class-ml-slider-lightbox.php:1323
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1441,155 +1721,155 @@ msgstr ""
 "แกลเลอรีเปิดใช้งานสำหรับสไลด์โชว์ทั้งหมดผ่าน <a "
 "href=\"%s\">การตั้งค่าแกลเลอรี MetaSlider</a>"
 
-#: class-ml-slider-lightbox.php:1660
+#: class-ml-slider-lightbox.php:1686
 msgid "Close gallery"
 msgstr "ปิดแกลเลอรี"
 
-#: class-ml-slider-lightbox.php:1661
+#: class-ml-slider-lightbox.php:1687
 msgid "Toggle maximize"
 msgstr "สลับการขยาย"
 
-#: class-ml-slider-lightbox.php:1662
+#: class-ml-slider-lightbox.php:1688
 msgid "Previous slide"
 msgstr "สไลด์ก่อนหน้า"
 
-#: class-ml-slider-lightbox.php:1663
+#: class-ml-slider-lightbox.php:1689
 msgid "Next slide"
 msgstr "สไลด์ถัดไป"
 
-#: class-ml-slider-lightbox.php:1665
+#: class-ml-slider-lightbox.php:1691
 msgid "Play video"
 msgstr "เล่นวิดีโอ"
 
-#: class-ml-slider-lightbox.php:1666
+#: class-ml-slider-lightbox.php:1692
 msgid "Oops... Failed to load content..."
 msgstr "อุ๊ปส์... ไม่สามารถโหลดเนื้อหาได้..."
 
-#: class-ml-slider-lightbox.php:1712 class-ml-slider-lightbox.php:1742
+#: class-ml-slider-lightbox.php:1738 class-ml-slider-lightbox.php:1768
 msgid "Global"
 msgstr "ทั่วโลก"
 
-#: class-ml-slider-lightbox.php:1713
+#: class-ml-slider-lightbox.php:1739
 msgid "Yes"
 msgstr "ใช่"
 
-#: class-ml-slider-lightbox.php:1714
+#: class-ml-slider-lightbox.php:1740
 msgid "No"
 msgstr "ไม่"
 
-#: class-ml-slider-lightbox.php:1737
+#: class-ml-slider-lightbox.php:1763
 msgid "How Visitors Open Images"
 msgstr "วิธีที่ผู้เข้าชมเปิดภาพ"
 
-#: class-ml-slider-lightbox.php:1740 class-ml-slider-lightbox.php:3664
+#: class-ml-slider-lightbox.php:1766 class-ml-slider-lightbox.php:3725
 msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
 msgstr "เลือกว่าการคลิกที่ภาพ ไอคอน หรือปุ่มจะเปิดแกลเลอรี่."
 
-#: class-ml-slider-lightbox.php:1743 class-ml-trigger-control.php:66
+#: class-ml-slider-lightbox.php:1769 class-ml-trigger-control.php:66
 msgid "Image"
 msgstr "ภาพ"
 
-#: class-ml-slider-lightbox.php:1744 class-ml-slider-lightbox.php:3506
-#: class-ml-slider-lightbox.php:3519 class-ml-slider-lightbox.php:3532
-#: class-ml-slider-lightbox.php:3630 class-ml-trigger-control.php:67
+#: class-ml-slider-lightbox.php:1770 class-ml-slider-lightbox.php:3548
+#: class-ml-slider-lightbox.php:3561 class-ml-slider-lightbox.php:3574
+#: class-ml-slider-lightbox.php:3672 class-ml-trigger-control.php:67
 msgid "Icon"
 msgstr "ไอคอน"
 
-#: class-ml-slider-lightbox.php:1745 class-ml-trigger-control.php:68
+#: class-ml-slider-lightbox.php:1771 class-ml-trigger-control.php:68
 msgid "Button"
 msgstr "ปุ่ม"
 
-#: class-ml-slider-lightbox.php:2013
+#: class-ml-slider-lightbox.php:2039
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Gallery ต้องการให้ติดตั้งและเปิดใช้งาน MetaSlider."
 
-#: class-ml-slider-lightbox.php:2017
+#: class-ml-slider-lightbox.php:2043
 msgid "Install MetaSlider"
 msgstr "ติดตั้ง MetaSlider"
 
-#: class-ml-slider-lightbox.php:2140 class-ml-slider-lightbox.php:2284, fuzzy
+#: class-ml-slider-lightbox.php:2166 class-ml-slider-lightbox.php:2310, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2266
+#: class-ml-slider-lightbox.php:2292
 #, php-format
 msgid "Select pages to %s..."
 msgstr "เลือกหน้าเพื่อ %s..."
 
-#: class-ml-slider-lightbox.php:2267
+#: class-ml-slider-lightbox.php:2293
 #, php-format
 msgid "Select posts to %s..."
 msgstr "เลือกโพสต์เพื่อ %s..."
 
-#: class-ml-slider-lightbox.php:2268
+#: class-ml-slider-lightbox.php:2294
 #, php-format
 msgid "Select post types to %s..."
 msgstr "เลือกประเภทโพสต์เพื่อ %s..."
 
-#: class-ml-slider-lightbox.php:2269
+#: class-ml-slider-lightbox.php:2295
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "เลือก %1$s เพื่อ %2$s..."
 
-#: class-ml-slider-lightbox.php:2270
+#: class-ml-slider-lightbox.php:2296
 msgid "Select post types to exclude"
 msgstr "เลือกประเภทโพสต์ที่ต้องการยกเว้น"
 
-#: class-ml-slider-lightbox.php:2271 class-ml-slider-lightbox.php:3713
-#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
+#: class-ml-slider-lightbox.php:2297 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
 msgid "Include"
 msgstr "รวม"
 
-#: class-ml-slider-lightbox.php:2272 class-ml-slider-lightbox.php:3713
-#: class-ml-slider-lightbox.php:3760 class-ml-slider-lightbox.php:3882
+#: class-ml-slider-lightbox.php:2298 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
 msgid "Exclude"
 msgstr "ยกเว้น"
 
-#: class-ml-slider-lightbox.php:2280, fuzzy
+#: class-ml-slider-lightbox.php:2306, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2300
+#: class-ml-slider-lightbox.php:2325
 msgid "Global Settings"
 msgstr "การตั้งค่าทั่วไป"
 
-#: class-ml-slider-lightbox.php:2310
+#: class-ml-slider-lightbox.php:2334
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "อัปเกรดเป็น MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2311
+#: class-ml-slider-lightbox.php:2335
 msgid "Upgrade to Pro"
 msgstr "อัปเกรดเป็น Pro"
 
-#: class-ml-slider-lightbox.php:2343
+#: class-ml-slider-lightbox.php:2367
 msgid "Automatic Mode"
 msgstr "โหมดอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:2344
+#: class-ml-slider-lightbox.php:2368
 msgid "Manual Mode"
 msgstr "โหมดแมนนวล"
 
-#: class-ml-slider-lightbox.php:2346
+#: class-ml-slider-lightbox.php:2370
 msgid "Behavior"
 msgstr "พฤติกรรม"
 
-#: class-ml-slider-lightbox.php:2367
+#: class-ml-slider-lightbox.php:2391
 msgid "Settings saved successfully!"
 msgstr "บันทึกการตั้งค่าเรียบร้อยแล้ว!"
 
-#: class-ml-slider-lightbox.php:2377
+#: class-ml-slider-lightbox.php:2401
 msgid "Where to Enable Automatically"
 msgstr "เปิดใช้งานโดยอัตโนมัติที่ไหน"
 
-#: class-ml-slider-lightbox.php:2384
+#: class-ml-slider-lightbox.php:2408
 msgid "MetaSlider Slideshows"
 msgstr "MetaSlider สไลด์โชว์"
 
-#: class-ml-slider-lightbox.php:2391 class-ml-slider-lightbox.php:2588
+#: class-ml-slider-lightbox.php:2415 class-ml-slider-lightbox.php:2614
 msgid "Content Filtering"
 msgstr "การกรองเนื้อหา"
 
-#: class-ml-slider-lightbox.php:2403
+#: class-ml-slider-lightbox.php:2427
 msgid ""
 "Customize colors, opacity, and visual styling for the gallery overlay and "
 "controls."
@@ -1597,19 +1877,23 @@ msgstr ""
 "ปรับแต่งสี ความโปร่งใส "
 "และรูปแบบการแสดงผลสำหรับเลเยอร์ของแกลเลอรีและการควบคุม"
 
-#: class-ml-slider-lightbox.php:2407 class-ml-slider-lightbox.php:2654
+#: class-ml-slider-lightbox.php:2431 class-ml-slider-lightbox.php:2680
 msgid "Background & Overlay"
 msgstr "พื้นหลัง & ทับซ้อน"
 
-#: class-ml-slider-lightbox.php:2417
+#: class-ml-slider-lightbox.php:2441
 msgid "\"Open in Gallery\" Button"
 msgstr "\"เปิดในแกลเลอรี\" ปุ่ม"
 
-#: class-ml-slider-lightbox.php:2427 class-ml-slider-lightbox.php:2767
+#: class-ml-slider-lightbox.php:2451 class-ml-slider-lightbox.php:2793
 msgid "Navigation & Controls"
 msgstr "การนำทาง & การควบคุม"
 
-#: class-ml-slider-lightbox.php:2433
+#: class-ml-slider-lightbox.php:2454 class-ml-slider-lightbox.php:2832
+msgid "Search Engine Optimization"
+msgstr "การเพิ่มประสิทธิภาพเครื่องมือค้นหา"
+
+#: class-ml-slider-lightbox.php:2460
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1619,27 +1903,27 @@ msgstr ""
 "ของบุคคลที่สามกำลังทำงานอยู่ การตั้งค่าเหล่านี้อาจไม่สามารถใช้ได้กับ "
 "MetaSlider แต่จะยังทำงานสำหรับ Lightbox ของเนื้อหา WordPress."
 
-#: class-ml-slider-lightbox.php:2440 class-ml-slider-lightbox.php:4230
+#: class-ml-slider-lightbox.php:2467 class-ml-slider-lightbox.php:4291
 msgid "Enhanced Zoom & Controls"
 msgstr "การซูมและควบคุมที่พัฒนาขึ้น"
 
-#: class-ml-slider-lightbox.php:2448
+#: class-ml-slider-lightbox.php:2475
 msgid "Media & Video Enhancements"
 msgstr "การปรับปรุงสื่อ & วิดีโอ"
 
-#: class-ml-slider-lightbox.php:2456 class-ml-slider-lightbox.php:4258
+#: class-ml-slider-lightbox.php:2483 class-ml-slider-lightbox.php:4319
 msgid "Social & Navigation"
 msgstr "สังคม & การนำทาง"
 
-#: class-ml-slider-lightbox.php:2464 class-ml-slider-lightbox.php:4279
+#: class-ml-slider-lightbox.php:2491 class-ml-slider-lightbox.php:4340
 msgid "Advanced Features"
 msgstr "ฟีเจอร์ขั้นสูง"
 
-#: class-ml-slider-lightbox.php:2480
+#: class-ml-slider-lightbox.php:2506
 msgid "Manual Options"
 msgstr "ตัวเลือกแบบแมนนวล"
 
-#: class-ml-slider-lightbox.php:2481
+#: class-ml-slider-lightbox.php:2507
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
@@ -1647,43 +1931,43 @@ msgstr ""
 "การควบคุมแบบแมนนวลและการเขียนทับของ WordPress "
 "ที่ทำงานโดยอิสระจากการตั้งค่าอัตโนมัติ."
 
-#: class-ml-slider-lightbox.php:2661
+#: class-ml-slider-lightbox.php:2687
 msgid "Navigation Icons"
 msgstr "ไอคอนการนำทาง"
 
-#: class-ml-slider-lightbox.php:2668
+#: class-ml-slider-lightbox.php:2694
 msgid "Buttons"
 msgstr "ปุ่ม"
 
-#: class-ml-slider-lightbox.php:2691
+#: class-ml-slider-lightbox.php:2717
 msgid "Autoplay Progress Bar Color"
 msgstr "สีแถบความก้าวหน้าของการเล่นอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:2715
+#: class-ml-slider-lightbox.php:2741
 msgid "Close Button"
 msgstr "ปุ่มปิด"
 
-#: class-ml-slider-lightbox.php:2731
+#: class-ml-slider-lightbox.php:2757
 msgid "Button Colors"
 msgstr "สีปุ่ม"
 
-#: class-ml-slider-lightbox.php:2739
+#: class-ml-slider-lightbox.php:2765
 msgid "Icon Colors"
 msgstr "สีไอคอน"
 
-#: class-ml-slider-lightbox.php:3120
+#: class-ml-slider-lightbox.php:3162
 msgid "Configure general gallery settings that apply site-wide."
 msgstr "กำหนดการตั้งค่าทั่วไปของแกลเลอรีที่ใช้ได้ทั่วทั้งไซต์"
 
-#: class-ml-slider-lightbox.php:3125
+#: class-ml-slider-lightbox.php:3167
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "กำหนดการตั้งค่าที่เฉพาะเจาะจงสำหรับฟังก์ชันการทำงานของ MetaSlider Gallery"
 
-#: class-ml-slider-lightbox.php:3130
+#: class-ml-slider-lightbox.php:3172
 msgid "Select where the gallery will be enabled automatically."
 msgstr "เลือกว่าจะเปิดใช้งานแกลเลอรีที่ไหนโดยอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:3136
+#: class-ml-slider-lightbox.php:3178
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1691,31 +1975,31 @@ msgstr ""
 "เลือกวิธีการกรองเนื้อหาสำหรับการประมวลผลแกลเลอรีและระบุว่าหน้า โพสต์ "
 "หรือเซเลคเตอร์ใดที่ต้องการรวมหรือยกเว้น"
 
-#: class-ml-slider-lightbox.php:3152
+#: class-ml-slider-lightbox.php:3194
 msgid "Processing Mode"
 msgstr "โหมดการประมวลผล"
 
-#: class-ml-slider-lightbox.php:3155
+#: class-ml-slider-lightbox.php:3197
 msgid "Process all content EXCEPT the items specified below"
 msgstr "ประมวลผลเนื้อหาทั้งหมด ยกเว้นรายการที่ระบุด้านล่าง"
 
-#: class-ml-slider-lightbox.php:3158
+#: class-ml-slider-lightbox.php:3200
 msgid "ONLY process the items specified below"
 msgstr "ประมวลผลเฉพาะรายการที่ระบุด้านล่าง"
 
-#: class-ml-slider-lightbox.php:3165
+#: class-ml-slider-lightbox.php:3207
 msgid "Inclusion Mode"
 msgstr "โหมดการรวม"
 
-#: class-ml-slider-lightbox.php:3169
+#: class-ml-slider-lightbox.php:3211
 msgid "Exclusion Mode"
 msgstr "โหมดการยกเว้น"
 
-#: class-ml-slider-lightbox.php:3189
+#: class-ml-slider-lightbox.php:3231
 msgid "Images in post content"
 msgstr "ภาพในเนื้อหาของโพสต์"
 
-#: class-ml-slider-lightbox.php:3190
+#: class-ml-slider-lightbox.php:3232
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -1723,21 +2007,21 @@ msgstr ""
 "เมื่อเปิดใช้งาน ภาพแต่ละภาพที่ไม่มีลิงก์และ \"ขยายเพื่อคลิก\" "
 "ที่ตั้งไว้ในโพสต์และหน้า จะเปิดในแกลเลอรีโดยอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:3206
+#: class-ml-slider-lightbox.php:3248
 msgid "Images and videos in widgets and sidebars"
 msgstr "ภาพและวิดีโอใน widget และ sidebar"
 
-#: class-ml-slider-lightbox.php:3207
+#: class-ml-slider-lightbox.php:3249
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
 msgstr "เมื่อเปิดใช้งาน ภาพและวิดีโอในพื้นที่ widget จะเปิดในแกลเลอรีโดยอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:3223
+#: class-ml-slider-lightbox.php:3265
 msgid "Gallery shortcodes and blocks"
 msgstr "รหัสสั้นของแกลเลอรีและบล็อก"
 
-#: class-ml-slider-lightbox.php:3224
+#: class-ml-slider-lightbox.php:3266
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -1745,11 +2029,11 @@ msgstr ""
 "เมื่อเปิดใช้งาน ภาพในรหัสย่อ [gallery] ของ WordPress และบล็อกแกลเลอรีของ "
 "Gutenberg จะเปิดในหน้าต่างแกลเลอรีโดยอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:3240
+#: class-ml-slider-lightbox.php:3282
 msgid "Featured images"
 msgstr "ภาพเด่น"
 
-#: class-ml-slider-lightbox.php:3241
+#: class-ml-slider-lightbox.php:3283
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -1757,7 +2041,7 @@ msgstr ""
 "เมื่อเปิดใช้งาน ภาพเด่น (ภาพย่อของโพสต์) "
 "จะเปิดในแกลเลอรีโดยอัตโนมัติเมื่อถูกคลิก"
 
-#: class-ml-slider-lightbox.php:3250
+#: class-ml-slider-lightbox.php:3292
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -1765,11 +2049,11 @@ msgstr ""
 "เปิดการแสดงสไลด์โชว์ของ MetaSlider ทั้งหมดในแกลเลอรีโดยอัตโนมัติ "
 "โดยไม่สนใจการตั้งค่าต่อสไลด์"
 
-#: class-ml-slider-lightbox.php:3264
+#: class-ml-slider-lightbox.php:3306
 msgid "MetaSlider slideshows"
 msgstr "MetaSlider สไลด์โชว์"
 
-#: class-ml-slider-lightbox.php:3265
+#: class-ml-slider-lightbox.php:3307
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -1777,11 +2061,11 @@ msgstr ""
 "เมื่อเปิดใช้งาน สไลด์โชว์ของ MetaSlider "
 "ทั้งหมดจะเปิดสไลด์ในหน้าต่างแกลเลอรี โดยไม่สนใจการตั้งค่าต่อสไลด์"
 
-#: class-ml-slider-lightbox.php:3281
+#: class-ml-slider-lightbox.php:3323
 msgid "Videos in post content"
 msgstr "วิดีโอในเนื้อหาบทความ"
 
-#: class-ml-slider-lightbox.php:3282
+#: class-ml-slider-lightbox.php:3324
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -1789,33 +2073,33 @@ msgstr ""
 "เมื่อเปิดใช้งาน บล็อกวิดีโอแยก (วิดีโอ HTML5, การฝัง YouTube, การฝัง Vimeo) "
 "ในเนื้อหาโพสต์/หน้า จะเปิดในแกลเลอรีโดยอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:3317
+#: class-ml-slider-lightbox.php:3359
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
 msgstr "สีพื้นหลังสำหรับเลเยอร์ของแกลเลอรี สีเข้มจะเหมาะที่สุดสำหรับการดูภาพ"
 
-#: class-ml-slider-lightbox.php:3322
+#: class-ml-slider-lightbox.php:3364
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
 msgstr "สีพื้นหลังสำหรับปุ่ม \"เปิดในแกลเลอรี\" ที่ปรากฏบนสไลด์ ภาพ และวิดีโอ"
 
-#: class-ml-slider-lightbox.php:3327
+#: class-ml-slider-lightbox.php:3369
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
 msgstr "สีข้อความสำหรับปุ่ม \"เปิดในแกลเลอรี\" ที่ปรากฏบนสไลด์ ภาพ และวิดีโอ"
 
-#: class-ml-slider-lightbox.php:3332
+#: class-ml-slider-lightbox.php:3374
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "สีพื้นหลังเมื่อชี้เมาส์ไปที่ปุ่ม \"เปิดในแกลเลอรี\""
 
-#: class-ml-slider-lightbox.php:3337
+#: class-ml-slider-lightbox.php:3379
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "สีของข้อความเมื่อชี้เมาส์ไปที่ปุ่ม \"เปิดในแกลเลอรี\"."
 
-#: class-ml-slider-lightbox.php:3350
+#: class-ml-slider-lightbox.php:3392
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -1823,15 +2107,15 @@ msgstr ""
 "ข้อความที่กำหนดเองสำหรับปุ่มแกลเลอรี ข้อความนี้จะแสดงบนปุ่ม "
 "\"เปิดในแกลเลอรี\" ทุกปุ่มทั่วทั้งเว็บไซต์."
 
-#: class-ml-slider-lightbox.php:3363 class-ml-slider-lightbox.php:3389
+#: class-ml-slider-lightbox.php:3405 class-ml-slider-lightbox.php:3431
 msgid "Top Right (Default)"
 msgstr "มุมขวาบน (ค่าเริ่มต้น)"
 
-#: class-ml-slider-lightbox.php:3376
+#: class-ml-slider-lightbox.php:3418
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "เลือกตำแหน่งที่จะวางปุ่มปิด (X) ในการซ้อนทับแกลเลอรี."
 
-#: class-ml-slider-lightbox.php:3402
+#: class-ml-slider-lightbox.php:3444
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
@@ -1839,11 +2123,11 @@ msgstr ""
 "เลือกตำแหน่งที่จะวางปุ่ม \"เปิดในแกลเลอรี\" ภายในสไลด์ ภาพ แกลเลอรี "
 "และวิดีโอ."
 
-#: class-ml-slider-lightbox.php:3407
+#: class-ml-slider-lightbox.php:3449
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "สีของลูกศรนำทางก่อนหน้าและถัดไปในแกลเลอรี."
 
-#: class-ml-slider-lightbox.php:3412
+#: class-ml-slider-lightbox.php:3454
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -1851,11 +2135,11 @@ msgstr ""
 "สีลูกศรเมื่อวางเมาส์ "
 "สร้างการตอบสนองทางสายตาเมื่อผู้ใช้ย้ายเมาส์ไปยังลูกศรนำทาง"
 
-#: class-ml-slider-lightbox.php:3417
+#: class-ml-slider-lightbox.php:3459
 msgid "Color for the close button (X) in the gallery."
 msgstr "สีของปุ่มปิด (X) ในแกลเลอรี."
 
-#: class-ml-slider-lightbox.php:3422
+#: class-ml-slider-lightbox.php:3464
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -1863,7 +2147,7 @@ msgstr ""
 "สีปุ่มปิดเมื่อวางเมาส์ "
 "สร้างการตอบสนองทางสายตาเมื่อผู้ใช้ย้ายเมาส์ไปยังปุ่มปิด"
 
-#: class-ml-slider-lightbox.php:3427
+#: class-ml-slider-lightbox.php:3469
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -1871,7 +2155,7 @@ msgstr ""
 "สีสำหรับไอคอนแถบเครื่องมือและข้อความนับใน Lightbox ส่งผลต่อการซูม "
 "ไอคอนเต็มหน้าจอ (Pro) และการแสดงผลนับภาพ"
 
-#: class-ml-slider-lightbox.php:3432
+#: class-ml-slider-lightbox.php:3474
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -1880,11 +2164,11 @@ msgstr ""
 "สร้างการตอบสนองทางสายตาเมื่อผู้ใช้เคลื่อนเมาส์ไปที่ไอคอนแถบเครื่องมือและการน"
 "ับ"
 
-#: class-ml-slider-lightbox.php:3437
+#: class-ml-slider-lightbox.php:3479
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "สีพื้นหลังสำหรับปุ่มลูกศรนำทางก่อนหน้าและถัดไป"
 
-#: class-ml-slider-lightbox.php:3442
+#: class-ml-slider-lightbox.php:3484
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -1892,11 +2176,11 @@ msgstr ""
 "สีพื้นหลังสำหรับปุ่มลูกศรเมื่อเลื่อนเมาส์เหนือ "
 "สร้างการตอบสนองทางสายตาเมื่อผู้ใช้เคลื่อนเมาส์ไปที่ลูกศร"
 
-#: class-ml-slider-lightbox.php:3447
+#: class-ml-slider-lightbox.php:3489
 msgid "Background color for the close button (X) in the gallery."
 msgstr "สีพื้นหลังสำหรับปุ่มปิด (X) ในแกลเลอรี."
 
-#: class-ml-slider-lightbox.php:3452
+#: class-ml-slider-lightbox.php:3494
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -1904,11 +2188,11 @@ msgstr ""
 "สีพื้นหลังสำหรับปุ่มปิดเมื่อเลื่อนเมาส์เหนือ "
 "สร้างการตอบสนองทางสายตาเมื่อผู้ใช้เคลื่อนเมาส์ไปที่ปุ่มปิด"
 
-#: class-ml-slider-lightbox.php:3457
+#: class-ml-slider-lightbox.php:3499
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "สีพื้นหลังสำหรับไอคอนแถบเครื่องมือใน Lightbox"
 
-#: class-ml-slider-lightbox.php:3462
+#: class-ml-slider-lightbox.php:3504
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -1916,44 +2200,44 @@ msgstr ""
 "สีพื้นหลังสำหรับไอคอนแถบเครื่องมือเมื่อเลื่อนเมาส์เหนือ "
 "สร้างการตอบสนองทางสายตาเมื่อผู้ใช้เคลื่อนเมาส์ไปที่ไอคอนแถบเครื่องมือ"
 
-#: class-ml-slider-lightbox.php:3507 class-ml-slider-lightbox.php:3520
-#: class-ml-slider-lightbox.php:3533 class-ml-slider-lightbox.php:3631
+#: class-ml-slider-lightbox.php:3549 class-ml-slider-lightbox.php:3562
+#: class-ml-slider-lightbox.php:3575 class-ml-slider-lightbox.php:3673
 msgid "Icon Hover"
 msgstr "ไอคอนเลื่อนเมาส์เหนือ"
 
-#: class-ml-slider-lightbox.php:3508 class-ml-slider-lightbox.php:3521
-#: class-ml-slider-lightbox.php:3534 class-ml-slider-lightbox.php:3615
-#: class-ml-slider-lightbox.php:3632
+#: class-ml-slider-lightbox.php:3550 class-ml-slider-lightbox.php:3563
+#: class-ml-slider-lightbox.php:3576 class-ml-slider-lightbox.php:3657
+#: class-ml-slider-lightbox.php:3674
 msgid "Background"
 msgstr "พื้นหลัง"
 
-#: class-ml-slider-lightbox.php:3509 class-ml-slider-lightbox.php:3522
-#: class-ml-slider-lightbox.php:3535 class-ml-slider-lightbox.php:3616
-#: class-ml-slider-lightbox.php:3633
+#: class-ml-slider-lightbox.php:3551 class-ml-slider-lightbox.php:3564
+#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3658
+#: class-ml-slider-lightbox.php:3675
 msgid "Background Hover"
 msgstr "พื้นหลังเลื่อนเมาส์เหนือ"
 
-#: class-ml-slider-lightbox.php:3552
+#: class-ml-slider-lightbox.php:3594
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "ตั้งค่าความโปร่งใสของพื้นหลังแกลเลอรี (0 = โปร่งใส, 1 = ทึบ)."
 
-#: class-ml-slider-lightbox.php:3561
+#: class-ml-slider-lightbox.php:3603
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "สีของแถบความก้าวหน้าที่แสดงในระหว่างการเล่นสไลด์โชว์อัตโนมัติ."
 
-#: class-ml-slider-lightbox.php:3567
+#: class-ml-slider-lightbox.php:3609
 msgid "Border"
 msgstr "ขอบ"
 
-#: class-ml-slider-lightbox.php:3568
+#: class-ml-slider-lightbox.php:3610
 msgid "Border Active and Hover"
 msgstr "ขอบที่ใช้งานอยู่และเมื่อชี้เมาส์"
 
-#: class-ml-slider-lightbox.php:3580
+#: class-ml-slider-lightbox.php:3622
 msgid "Show navigation arrows in gallery"
 msgstr "แสดงลูกศรนำทางในแกลเลอรี"
 
-#: class-ml-slider-lightbox.php:3581
+#: class-ml-slider-lightbox.php:3623
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -1962,15 +2246,15 @@ msgstr ""
 "แสดงลูกศรซ้าย/ขวาสำหรับการนำทาง นอกจากนี้ยังเปิดใช้งานการนำทางด้วยคีย์บอร์ด "
 "(← → คีย์, ESC เพื่อปิด) ซึ่งมีให้สำหรับสไลด์โชว์และแกลเลอรีภาพ"
 
-#: class-ml-slider-lightbox.php:3590
+#: class-ml-slider-lightbox.php:3632
 msgid "Customize the gallery background and overlay appearance."
 msgstr "ปรับแต่งพื้นหลังของแกลเลอรีและการแสดงผลของการซ้อนทับ."
 
-#: class-ml-slider-lightbox.php:3595
+#: class-ml-slider-lightbox.php:3637
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr "ปรับแต่งไอคอนนำทาง (ปิด ลูกศรก่อนหน้า ลูกศรถัดไป) สำหรับแกลเลอรี."
 
-#: class-ml-slider-lightbox.php:3600
+#: class-ml-slider-lightbox.php:3642
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -1978,25 +2262,44 @@ msgstr ""
 "ปรับแต่งปุ่ม \"เปิดในแกลเลอรี\" ที่สามารถเพิ่มลงในสไลด์ ภาพ แกลเลอรี "
 "และวิดีโอ."
 
-#: class-ml-slider-lightbox.php:3613
+#: class-ml-slider-lightbox.php:3655
 msgid "Text"
 msgstr "ข้อความ"
 
-#: class-ml-slider-lightbox.php:3614
+#: class-ml-slider-lightbox.php:3656
 msgid "Text Hover"
 msgstr "เลื่อนเมาส์เหนือข้อความ"
 
-#: class-ml-slider-lightbox.php:3639
+#: class-ml-slider-lightbox.php:3681
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
 msgstr "กำหนดค่าตัวเลือกการนำทางและควบคุมที่ใช้กับแกลเลอรี MetaSlider ทั้งหมด."
 
-#: class-ml-slider-lightbox.php:3649
+#: class-ml-slider-lightbox.php:3686
+msgid "Help search engines understand the images in your galleries."
+msgstr "ช่วยให้เครื่องมือค้นหาเข้าใจภาพในแกลเลอรีของคุณ"
+
+#: class-ml-slider-lightbox.php:3697
+msgid "Output SEO structured data for galleries"
+msgstr "ส่งออกข้อมูลที่มีโครงสร้าง SEO สำหรับแกลเลอรี"
+
+#: class-ml-slider-lightbox.php:3698
+msgid ""
+"Adds Schema.org ImageGallery markup so search engines can index your "
+"gallery images. Turn this off if your SEO plugin already outputs gallery "
+"structured data."
+msgstr ""
+"เพิ่ม Schema.org ImageGallery markup "
+"เพื่อให้เครื่องมือค้นหาสามารถจัดทำดัชนีภาพในแกลเลอรีของคุณได้ "
+"ปิดการใช้งานนี้หากปลั๊กอิน SEO "
+"ของคุณส่งออกข้อมูลที่มีโครงสร้างสำหรับแกลเลอรีอยู่แล้ว"
+
+#: class-ml-slider-lightbox.php:3710
 msgid "Show thumbnails"
 msgstr "แสดงภาพขนาดย่อ"
 
-#: class-ml-slider-lightbox.php:3650
+#: class-ml-slider-lightbox.php:3711
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -2004,15 +2307,15 @@ msgstr ""
 "แสดงภาพขนาดย่อที่ด้านล่างของแกลเลอรีเพื่อการนำทางที่ง่าย "
 "นี่มีให้สำหรับสไลด์โชว์และแกลเลอรีภาพ."
 
-#: class-ml-slider-lightbox.php:3663
+#: class-ml-slider-lightbox.php:3724
 msgid "How visitors open images"
 msgstr "วิธีที่ผู้เข้าชมเปิดภาพ"
 
-#: class-ml-slider-lightbox.php:3684
+#: class-ml-slider-lightbox.php:3745
 msgid "Show captions"
 msgstr "แสดงคำบรรยาย"
 
-#: class-ml-slider-lightbox.php:3685
+#: class-ml-slider-lightbox.php:3746
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -2020,15 +2323,15 @@ msgstr ""
 "เมื่อเปิดใช้งาน แสดงคำบรรยายในหน้าต่างแกลเลอรี นี่มีให้สำหรับสไลด์โชว์ ภาพ "
 "และแกลเลอรีภาพ."
 
-#: class-ml-slider-lightbox.php:3692
+#: class-ml-slider-lightbox.php:3753
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr "ฟีเจอร์ Lightbox ขั้นสูงสามารถใช้ได้ผ่าน MetaSlider Gallery Pro。"
 
-#: class-ml-slider-lightbox.php:3694
+#: class-ml-slider-lightbox.php:3755
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr "ดูตัวอย่างฟีเจอร์ขั้นสูงที่มีใน MetaSlider Gallery Pro。"
 
-#: class-ml-slider-lightbox.php:3697
+#: class-ml-slider-lightbox.php:3758
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
@@ -2036,11 +2339,11 @@ msgstr ""
 "ปลั๊กอิน LightGallery.js ขั้นสูงเหล่านี้มีให้ในเวอร์ชัน Pro "
 "พร้อมตัวเลือกการปรับแต่งเพิ่มเติม。"
 
-#: class-ml-slider-lightbox.php:3725 class-ml-slider-lightbox.php:3726
+#: class-ml-slider-lightbox.php:3786 class-ml-slider-lightbox.php:3787
 msgid "specific Pages"
 msgstr "หน้าเฉพาะ"
 
-#: class-ml-slider-lightbox.php:3728
+#: class-ml-slider-lightbox.php:3789
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2048,7 +2351,7 @@ msgstr ""
 "เลือกหน้าที่ควรปิดการใช้งานแกลเลอรี แสดงสูงสุด 100 หน้าล่าสุด "
 "พิมพ์เพื่อค้นหา."
 
-#: class-ml-slider-lightbox.php:3728 class-ml-slider-lightbox.php:3729
+#: class-ml-slider-lightbox.php:3789 class-ml-slider-lightbox.php:3790
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2056,11 +2359,11 @@ msgstr ""
 "เลือกหน้าที่ควรเปิดการใช้งานแกลเลอรี แสดงสูงสุด 100 หน้าล่าสุด "
 "พิมพ์เพื่อค้นหา."
 
-#: class-ml-slider-lightbox.php:3773 class-ml-slider-lightbox.php:3774
+#: class-ml-slider-lightbox.php:3834 class-ml-slider-lightbox.php:3835
 msgid "specific Posts"
 msgstr "โพสต์เฉพาะ"
 
-#: class-ml-slider-lightbox.php:3776
+#: class-ml-slider-lightbox.php:3837
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2068,7 +2371,7 @@ msgstr ""
 "เลือกโพสต์ที่ควรปิดการใช้งานแกลเลอรี แสดงสูงสุด 100 โพสต์ล่าสุด "
 "พิมพ์เพื่อค้นหา."
 
-#: class-ml-slider-lightbox.php:3776 class-ml-slider-lightbox.php:3777
+#: class-ml-slider-lightbox.php:3837 class-ml-slider-lightbox.php:3838
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2076,46 +2379,46 @@ msgstr ""
 "เลือกโพสต์ที่ควรเปิดการใช้งานแกลเลอรี แสดงสูงสุด 100 โพสต์ล่าสุด "
 "พิมพ์เพื่อค้นหา."
 
-#: class-ml-slider-lightbox.php:3804
+#: class-ml-slider-lightbox.php:3865
 msgid "include"
 msgstr "รวม"
 
-#: class-ml-slider-lightbox.php:3804
+#: class-ml-slider-lightbox.php:3865
 msgid "exclude"
 msgstr "ยกเว้น"
 
-#: class-ml-slider-lightbox.php:3844
+#: class-ml-slider-lightbox.php:3905
 #, php-format
 msgid "specific %s"
 msgstr "เฉพาะ %s"
 
-#: class-ml-slider-lightbox.php:3845
+#: class-ml-slider-lightbox.php:3906
 #, fuzzy, php-format
 msgid "%s specific %s"
 msgstr "%s specific %s"
 
-#: class-ml-slider-lightbox.php:3847 class-ml-slider-lightbox.php:3848
+#: class-ml-slider-lightbox.php:3908 class-ml-slider-lightbox.php:3909
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "แสดง %s ล่าสุดสูงสุด 100 รายการ พิมพ์เพื่อค้นหา."
 
-#: class-ml-slider-lightbox.php:3896 class-ml-slider-lightbox.php:3897
+#: class-ml-slider-lightbox.php:3957 class-ml-slider-lightbox.php:3958
 msgid "specific post types"
 msgstr "ประเภทโพสต์เฉพาะ"
 
-#: class-ml-slider-lightbox.php:3899
+#: class-ml-slider-lightbox.php:3960
 msgid "Select post types where gallery should be disabled entirely."
 msgstr "เลือกประเภทโพสต์ที่ควรปิดการใช้งานแกลเลอรีทั้งหมด."
 
-#: class-ml-slider-lightbox.php:3899 class-ml-slider-lightbox.php:3900
+#: class-ml-slider-lightbox.php:3960 class-ml-slider-lightbox.php:3961
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "เลือกประเภทโพสต์ที่ควรเปิดการใช้งานแกลเลอรีทั้งหมด."
 
-#: class-ml-slider-lightbox.php:3934
+#: class-ml-slider-lightbox.php:3995
 msgid "Exclude by CSS selector"
 msgstr "ไม่รวมโดย CSS selector"
 
-#: class-ml-slider-lightbox.php:3937
+#: class-ml-slider-lightbox.php:3998
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2123,11 +2426,11 @@ msgstr ""
 "CSS selectors สำหรับองค์ประกอบที่ไม่รวมในหน้าต่างแกลเลอรี (หนึ่งต่อบรรทัด). "
 "ตัวอย่าง:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:3960
+#: class-ml-slider-lightbox.php:4021
 msgid "Minimum Image Width"
 msgstr "ความกว้างของภาพขั้นต่ำ"
 
-#: class-ml-slider-lightbox.php:3963
+#: class-ml-slider-lightbox.php:4024
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2137,11 +2440,11 @@ msgstr ""
 "ไม่ใช่ขนาดไฟล์ภาพจริง. นี่มีประโยชน์สำหรับการไม่รวมไอคอน ขนาดเล็ก ป้าย "
 "และปุ่ม."
 
-#: class-ml-slider-lightbox.php:3986
+#: class-ml-slider-lightbox.php:4047
 msgid "Minimum Image Height"
 msgstr "ความสูงของภาพขั้นต่ำ"
 
-#: class-ml-slider-lightbox.php:3989
+#: class-ml-slider-lightbox.php:4050
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2151,21 +2454,21 @@ msgstr ""
 "ไม่ใช่ขนาดไฟล์ภาพจริง. นี่มีประโยชน์สำหรับการไม่รวมไอคอน ขนาดเล็ก ป้าย "
 "และปุ่ม."
 
-#: class-ml-slider-lightbox.php:4005 class-ml-slider-lightbox.php:4162
+#: class-ml-slider-lightbox.php:4066 class-ml-slider-lightbox.php:4223
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
 msgstr "การจัดการสื่อและฟีเจอร์การเล่นวิดีโอที่พัฒนาขึ้นสำหรับหอศิลป์มืออาชีพ."
 
-#: class-ml-slider-lightbox.php:4012
+#: class-ml-slider-lightbox.php:4073
 msgid "Advanced features for professional lightbox implementations."
 msgstr "ฟีเจอร์ขั้นสูงสำหรับการใช้งาน Lightbox มืออาชีพ."
 
-#: class-ml-slider-lightbox.php:4023 class-ml-slider-lightbox.php:4235
+#: class-ml-slider-lightbox.php:4084 class-ml-slider-lightbox.php:4296
 msgid "Enable Zoom"
 msgstr "เปิดใช้งานการซูม"
 
-#: class-ml-slider-lightbox.php:4024
+#: class-ml-slider-lightbox.php:4085
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
@@ -2173,11 +2476,11 @@ msgstr ""
 "ดับเบิ้ลคลิกเพื่อซูม, ควบคุมการซูม, ซูมด้วยล้อเมาส์, "
 "และตัวเลือกการซูมให้พอดี."
 
-#: class-ml-slider-lightbox.php:4034 class-ml-slider-lightbox.php:4242
+#: class-ml-slider-lightbox.php:4095 class-ml-slider-lightbox.php:4303
 msgid "Enable Fullscreen"
 msgstr "เปิดใช้งานเต็มหน้าจอ"
 
-#: class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4096
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
@@ -2185,11 +2488,11 @@ msgstr ""
 "สนับสนุนเต็มหน้าจอ HTML5 แบบเนทีฟพร้อมทางลัดแป้นพิมพ์ (ปุ่ม F) "
 "สำหรับการดูแบบเต็มรูปแบบ."
 
-#: class-ml-slider-lightbox.php:4045 class-ml-slider-lightbox.php:4249
+#: class-ml-slider-lightbox.php:4106 class-ml-slider-lightbox.php:4310
 msgid "Enable Rotate"
 msgstr "เปิดใช้งานการหมุน"
 
-#: class-ml-slider-lightbox.php:4046
+#: class-ml-slider-lightbox.php:4107
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2197,11 +2500,11 @@ msgstr ""
 "หมุนภาพตามเข็มนาฬิกา/ทวนเข็มนาฬิกา, "
 "พลิกแนวนอน/แนวตั้งด้วยการควบคุมในแถบเครื่องมือ."
 
-#: class-ml-slider-lightbox.php:4056
+#: class-ml-slider-lightbox.php:4117
 msgid "Enable Video"
 msgstr "เปิดใช้งานวิดีโอ"
 
-#: class-ml-slider-lightbox.php:4057
+#: class-ml-slider-lightbox.php:4118
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2209,12 +2512,12 @@ msgstr ""
 "การสนับสนุนวิดีโอที่พัฒนาแล้วสำหรับ YouTube, Vimeo, วิดีโอ HTML5 "
 "ที่มีการเล่นอัตโนมัติและการควบคุมคุณภาพ."
 
-#: class-ml-slider-lightbox.php:4067 class-ml-slider-lightbox.php:4284
-#: class-ml-slider-lightbox.php:4431
+#: class-ml-slider-lightbox.php:4128 class-ml-slider-lightbox.php:4345
+#: class-ml-slider-lightbox.php:4492
 msgid "Enable Unique Image URLs"
 msgstr "เปิดใช้งาน URL รูปภาพที่ไม่ซ้ำกัน"
 
-#: class-ml-slider-lightbox.php:4068
+#: class-ml-slider-lightbox.php:4129
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
@@ -2223,19 +2526,19 @@ msgstr ""
 "ที่ไม่ซ้ำกันสำหรับภาพในแต่ละแกลเลอรีพร้อมการสนับสนุนการนำทางย้อนกลับ/"
 "ไปข้างหน้าในเบราว์เซอร์."
 
-#: class-ml-slider-lightbox.php:4078 class-ml-slider-lightbox.php:4291
+#: class-ml-slider-lightbox.php:4139 class-ml-slider-lightbox.php:4352
 msgid "Enable Autoplay"
 msgstr "เปิดใช้งานการเล่นอัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:4079
+#: class-ml-slider-lightbox.php:4140
 msgid "Automatically advance through images in the gallery."
 msgstr "เลื่อนภาพในแกลเลอรีโดยอัตโนมัติ."
 
-#: class-ml-slider-lightbox.php:4089 class-ml-slider-lightbox.php:4263
+#: class-ml-slider-lightbox.php:4150 class-ml-slider-lightbox.php:4324
 msgid "Enable Share"
 msgstr "เปิดใช้งานการแชร์"
 
-#: class-ml-slider-lightbox.php:4090
+#: class-ml-slider-lightbox.php:4151
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2243,15 +2546,15 @@ msgstr ""
 "ปุ่มแชร์โซเชียลมีเดียสำหรับ Facebook, Twitter, Pinterest และการแชร์ URL "
 "โดยตรง."
 
-#: class-ml-slider-lightbox.php:4100 class-ml-slider-lightbox.php:4270
+#: class-ml-slider-lightbox.php:4161 class-ml-slider-lightbox.php:4331
 msgid "Enable Pager"
 msgstr "เปิดใช้งานเพจเจอร์"
 
-#: class-ml-slider-lightbox.php:4101
+#: class-ml-slider-lightbox.php:4162
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "จุดเพจเจอร์ขั้นต่ำสำหรับการนำทางที่สะอาดโดยไม่มีภาพขนาดย่อ."
 
-#: class-ml-slider-lightbox.php:4157 class-ml-slider-lightbox.php:4231
+#: class-ml-slider-lightbox.php:4218 class-ml-slider-lightbox.php:4292
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
@@ -2259,19 +2562,19 @@ msgstr ""
 "การควบคุมการซูมและการโต้ตอบกับภาพอย่างมืออาชีพเพื่อประสบการณ์ผู้ใช้ที่ดียิ่ง"
 "ขึ้น."
 
-#: class-ml-slider-lightbox.php:4167 class-ml-slider-lightbox.php:4259
+#: class-ml-slider-lightbox.php:4228 class-ml-slider-lightbox.php:4320
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "การแชร์โซเชียลและการปรับปรุงการนำทางเพื่อเพิ่มการมีส่วนร่วม."
 
-#: class-ml-slider-lightbox.php:4172 class-ml-slider-lightbox.php:4280
+#: class-ml-slider-lightbox.php:4233 class-ml-slider-lightbox.php:4341
 msgid "Advanced functionality including URL management and automation features."
 msgstr "ฟังก์ชันการทำงานขั้นสูงรวมถึงการจัดการ URL และฟีเจอร์การทำงานอัตโนมัติ."
 
-#: class-ml-slider-lightbox.php:4184
+#: class-ml-slider-lightbox.php:4245
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "ฟีเจอร์นี้มีอยู่ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4236 class-ml-slider-lightbox.php:4400
+#: class-ml-slider-lightbox.php:4297 class-ml-slider-lightbox.php:4461
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
@@ -2279,43 +2582,43 @@ msgstr ""
 "อนุญาตให้ผู้ใช้ซูมเข้าและออกด้วยการดับเบิลคลิก, ล้อเมาส์, "
 "และการควบคุมการซูม."
 
-#: class-ml-slider-lightbox.php:4238
+#: class-ml-slider-lightbox.php:4299
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "การควบคุมการซูมมีอยู่ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4243
+#: class-ml-slider-lightbox.php:4304
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "โหมดเต็มหน้าจอ HTML5 ดั้งเดิมสำหรับการดูภาพที่สมจริง."
 
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4306
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "โหมดเต็มหน้าจอมีอยู่ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4416
+#: class-ml-slider-lightbox.php:4311 class-ml-slider-lightbox.php:4477
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr "หมุนภาพตามเข็มนาฬิกา/ทวนเข็มนาฬิกาและพลิกแนวนอน/แนวตั้ง."
 
-#: class-ml-slider-lightbox.php:4252
+#: class-ml-slider-lightbox.php:4313
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "การหมุนภาพมีอยู่ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4264
+#: class-ml-slider-lightbox.php:4325
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "การแชร์โซเชียลมีเดียในตัวสำหรับ Facebook, Twitter และ Pinterest."
 
-#: class-ml-slider-lightbox.php:4266
+#: class-ml-slider-lightbox.php:4327
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "การแชร์สังคมสามารถใช้ได้ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4271 class-ml-slider-lightbox.php:4448
+#: class-ml-slider-lightbox.php:4332 class-ml-slider-lightbox.php:4509
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "จุดการแบ่งหน้าแบบขั้นต่ำแทนที่ภาพย่อสำหรับอินเตอร์เฟซที่สะอาดขึ้น."
 
-#: class-ml-slider-lightbox.php:4273
+#: class-ml-slider-lightbox.php:4334
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "การแบ่งหน้าแบบ Pager สามารถใช้ได้ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4285 class-ml-slider-lightbox.php:4432
+#: class-ml-slider-lightbox.php:4346 class-ml-slider-lightbox.php:4493
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
@@ -2324,161 +2627,161 @@ msgstr ""
 "ที่ไม่ซ้ำกันสำหรับแต่ละภาพในแกลเลอรี่ด้วยการนำทางกลับ/"
 "ไปข้างหน้าของเบราว์เซอร์."
 
-#: class-ml-slider-lightbox.php:4287
+#: class-ml-slider-lightbox.php:4348
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "URL ภาพที่ไม่ซ้ำกันสามารถใช้ได้ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4292 class-ml-slider-lightbox.php:4440
+#: class-ml-slider-lightbox.php:4353 class-ml-slider-lightbox.php:4501
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "สไลด์โชว์อัตโนมัติพร้อมการควบคุมเวลาและแถบความก้าวหน้า."
 
-#: class-ml-slider-lightbox.php:4294
+#: class-ml-slider-lightbox.php:4355
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "การเล่นอัตโนมัติสามารถใช้ได้ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4298
+#: class-ml-slider-lightbox.php:4359
 msgid "Enable Image Protection"
 msgstr "เปิดใช้งานการปกป้องภาพ"
 
-#: class-ml-slider-lightbox.php:4301
+#: class-ml-slider-lightbox.php:4362
 msgid "Image protection is available in MetaSlider Gallery Pro"
 msgstr "การปกป้องภาพมีให้ใน MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4318
+#: class-ml-slider-lightbox.php:4379
 msgid "Features"
 msgstr "ฟีเจอร์"
 
-#: class-ml-slider-lightbox.php:4319
+#: class-ml-slider-lightbox.php:4380
 msgid "Free"
 msgstr "ฟรี"
 
-#: class-ml-slider-lightbox.php:4320
+#: class-ml-slider-lightbox.php:4381
 msgid "Pro"
 msgstr "โปร"
 
-#: class-ml-slider-lightbox.php:4326 class-ml-slider-lightbox.php:4465
+#: class-ml-slider-lightbox.php:4387 class-ml-slider-lightbox.php:4526
 msgid "Installed"
 msgstr "ติดตั้งแล้ว"
 
-#: class-ml-slider-lightbox.php:4329 class-ml-slider-lightbox.php:4468
+#: class-ml-slider-lightbox.php:4390 class-ml-slider-lightbox.php:4529
 msgid "Upgrade now"
 msgstr "อัปเกรดตอนนี้"
 
-#: class-ml-slider-lightbox.php:4335
+#: class-ml-slider-lightbox.php:4396
 msgid "Automatic lightbox for images"
 msgstr "Lightbox อัตโนมัติสำหรับภาพ"
 
-#: class-ml-slider-lightbox.php:4336
+#: class-ml-slider-lightbox.php:4397
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "เปิดใช้งาน lightbox อัตโนมัติสำหรับภาพทั้งหมดในเว็บไซต์ของคุณ."
 
-#: class-ml-slider-lightbox.php:4343
+#: class-ml-slider-lightbox.php:4404
 msgid "MetaSlider integration"
 msgstr "การรวม MetaSlider"
 
-#: class-ml-slider-lightbox.php:4344
+#: class-ml-slider-lightbox.php:4405
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "การรวมที่ไร้รอยต่อกับสไลด์โชว์ของ MetaSlider."
 
-#: class-ml-slider-lightbox.php:4351
+#: class-ml-slider-lightbox.php:4412
 msgid "WordPress gallery support"
 msgstr "การสนับสนุนแกลเลอรี่ WordPress"
 
-#: class-ml-slider-lightbox.php:4352
+#: class-ml-slider-lightbox.php:4413
 msgid "Support for WordPress native galleries and blocks."
 msgstr "การสนับสนุนสำหรับแกลเลอรี่และบล็อกพื้นเมืองของ WordPress."
 
-#: class-ml-slider-lightbox.php:4359
+#: class-ml-slider-lightbox.php:4420
 msgid "Appearance customization"
 msgstr "การปรับแต่งรูปลักษณ์"
 
-#: class-ml-slider-lightbox.php:4360
+#: class-ml-slider-lightbox.php:4421
 msgid "Customize colors, opacity, and button styles."
 msgstr "ปรับแต่งสี ความโปร่งใส และสไตล์ปุ่ม."
 
-#: class-ml-slider-lightbox.php:4367
+#: class-ml-slider-lightbox.php:4428
 msgid "Gallery builder &amp; layouts"
 msgstr "ตัวสร้างแกลเลอรี &amp; รูปแบบ"
 
-#: class-ml-slider-lightbox.php:4368
+#: class-ml-slider-lightbox.php:4429
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
 msgstr "สร้างแกลเลอรีด้วยรูปแบบ Grid, Masonry, Justified, Carousel, และ Showcase."
 
-#: class-ml-slider-lightbox.php:4375
+#: class-ml-slider-lightbox.php:4436
 msgid "Responsive columns"
 msgstr "คอลัมน์ตอบสนอง"
 
-#: class-ml-slider-lightbox.php:4376
+#: class-ml-slider-lightbox.php:4437
 msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
 msgstr "ตั้งค่าจำนวนคอลัมน์สำหรับเดสก์ท็อปและมือถือ พร้อมระยะห่างที่ปรับได้."
 
-#: class-ml-slider-lightbox.php:4383
+#: class-ml-slider-lightbox.php:4444
 msgid "Image captions"
 msgstr "คำบรรยายภาพ"
 
-#: class-ml-slider-lightbox.php:4384
+#: class-ml-slider-lightbox.php:4445
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "แสดงคำบรรยายภาพในกริดแกลเลอรีและหน้าต่างแกลเลอรี."
 
-#: class-ml-slider-lightbox.php:4391
+#: class-ml-slider-lightbox.php:4452
 msgid "Thumbnail navigation"
 msgstr "การนำทางภาพขนาดย่อ"
 
-#: class-ml-slider-lightbox.php:4392
+#: class-ml-slider-lightbox.php:4453
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "แสดงแถบของภาพขนาดย่อสำหรับการนำทางอย่างรวดเร็วระหว่างภาพ."
 
-#: class-ml-slider-lightbox.php:4399
+#: class-ml-slider-lightbox.php:4460
 msgid "Zoom controls"
 msgstr "การควบคุมซูม"
 
-#: class-ml-slider-lightbox.php:4407
+#: class-ml-slider-lightbox.php:4468
 msgid "Fullscreen mode"
 msgstr "โหมดเต็มหน้าจอ"
 
-#: class-ml-slider-lightbox.php:4408
+#: class-ml-slider-lightbox.php:4469
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "โหมดเต็มหน้าจอ HTML5 ดั้งเดิมสำหรับการดูภาพที่ดื่มด่ำ."
 
-#: class-ml-slider-lightbox.php:4415
+#: class-ml-slider-lightbox.php:4476
 msgid "Rotate and flip images"
 msgstr "หมุนและพลิกภาพ"
 
-#: class-ml-slider-lightbox.php:4423
+#: class-ml-slider-lightbox.php:4484
 msgid "Social media sharing"
 msgstr "แชร์สื่อสังคม"
 
-#: class-ml-slider-lightbox.php:4424
+#: class-ml-slider-lightbox.php:4485
 msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
 msgstr "การแชร์ที่สร้างขึ้นใน Facebook, Twitter, และ Pinterest."
 
-#: class-ml-slider-lightbox.php:4439
+#: class-ml-slider-lightbox.php:4500
 msgid "Autoplay slideshow"
 msgstr "เล่นสไลด์โชว์อัตโนมัติ"
 
-#: class-ml-slider-lightbox.php:4447
+#: class-ml-slider-lightbox.php:4508
 msgid "Pager navigation"
 msgstr "การนำทางเพจ"
 
-#: class-ml-slider-lightbox.php:4455
+#: class-ml-slider-lightbox.php:4516
 msgid "Premium support"
 msgstr "การสนับสนุนพรีเมียม"
 
-#: class-ml-slider-lightbox.php:4456
+#: class-ml-slider-lightbox.php:4517
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "ให้ผู้เชี่ยวชาญของเราตอบคำถามเฉพาะของคุณโดยตรง."
 
-#: class-ml-slider-lightbox.php:6243
+#: class-ml-slider-lightbox.php:6304
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr "กำหนดค่าการโต้ตอบของ lightbox กับฟีเจอร์ที่มีใน WordPress."
 
-#: class-ml-slider-lightbox.php:6258
+#: class-ml-slider-lightbox.php:6319
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "เขียนทับการตั้งค่า \"ขยายเมื่อคลิก\" ของ WordPress"
 
-#: class-ml-slider-lightbox.php:6259
+#: class-ml-slider-lightbox.php:6320
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2488,11 +2791,11 @@ msgstr ""
 "MetaSlider สำหรับภาพที่ตั้งค่าเป็น \"ขยายเมื่อคลิก\". เมื่อปิดใช้งาน "
 "จะเคารพการตั้งค่า WordPress และข้ามภาพที่ตั้งค่าเป็น \"ขยายเมื่อคลิก\"."
 
-#: class-ml-slider-lightbox.php:6275
+#: class-ml-slider-lightbox.php:6336
 msgid "Override \"Link to Image File\" Setting"
 msgstr "เขียนทับการตั้งค่า \"ลิงก์ไปยังไฟล์ภาพ\""
 
-#: class-ml-slider-lightbox.php:6276
+#: class-ml-slider-lightbox.php:6337
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2503,11 +2806,11 @@ msgstr ""
 "\"เชื่อมโยงไปยังไฟล์ภาพ\" ในบล็อกแก้ไข). เมื่อปิดใช้งาน "
 "จะเคารพพฤติกรรมการเชื่อมโยงต้นฉบับ."
 
-#: class-ml-slider-lightbox.php:6307
+#: class-ml-slider-lightbox.php:6368
 msgid "Exclude Post Types from Manual Processing"
 msgstr "ไม่รวมประเภทโพสต์จากการประมวลผลด้วยมือ"
 
-#: class-ml-slider-lightbox.php:6310
+#: class-ml-slider-lightbox.php:6371
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2517,11 +2820,11 @@ msgstr ""
 "\"ผลิตภัณฑ์ (product)\" เพื่อปิดแกลเลอรีในหน้า WooCommerce "
 "ในขณะที่ยังคงเปิดใช้งานที่อื่น."
 
-#: class-ml-slider-lightbox.php:6334
+#: class-ml-slider-lightbox.php:6395
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "วิธีการใช้งาน: \"ขยายเมื่อคลิก\" ของ WordPress"
 
-#: class-ml-slider-lightbox.php:6336
+#: class-ml-slider-lightbox.php:6397
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2529,55 +2832,55 @@ msgstr ""
 "WordPress มีฟีเจอร์ \"ขยายเมื่อคลิก\" ที่มีในตัวสำหรับภาพ. "
 "นี่คือวิธีการเปิดใช้งาน:"
 
-#: class-ml-slider-lightbox.php:6338 class-ml-slider-lightbox.php:6351
+#: class-ml-slider-lightbox.php:6399 class-ml-slider-lightbox.php:6412
 msgid "Select an image in the block editor."
 msgstr "เลือกภาพในบล็อกเอดิเตอร์."
 
-#: class-ml-slider-lightbox.php:6339 class-ml-slider-lightbox.php:6352
+#: class-ml-slider-lightbox.php:6400 class-ml-slider-lightbox.php:6413
 msgid "In the block toolbar, click on the Link icon."
 msgstr "ในแถบเครื่องมือบล็อก คลิกที่ไอคอนลิงค์."
 
-#: class-ml-slider-lightbox.php:6340
+#: class-ml-slider-lightbox.php:6401
 msgid "Select \"Enlarge on click\"."
 msgstr "เลือก \"ขยายเมื่อคลิก\"."
 
-#: class-ml-slider-lightbox.php:6346
+#: class-ml-slider-lightbox.php:6407
 msgid "How to use: \"Link to Image File\""
 msgstr "วิธีการใช้งาน: \"ลิงค์ไปยังไฟล์ภาพ\""
 
-#: class-ml-slider-lightbox.php:6348
+#: class-ml-slider-lightbox.php:6409
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr "คุณสามารถลิงค์ภาพไปยังไฟล์สื่อขนาดเต็มได้โดยตรง นี่คือวิธีการ:"
 
-#: class-ml-slider-lightbox.php:6349
+#: class-ml-slider-lightbox.php:6410
 msgid "For the Block Editor:"
 msgstr "สำหรับบล็อกเอดิเตอร์:"
 
-#: class-ml-slider-lightbox.php:6353
+#: class-ml-slider-lightbox.php:6414
 msgid "Choose \"Link to image file\"."
 msgstr "เลือก \"ลิงค์ไปยังไฟล์ภาพ\"."
 
-#: class-ml-slider-lightbox.php:6355
+#: class-ml-slider-lightbox.php:6416
 msgid "For the Classic Editor:"
 msgstr "สำหรับคลาสสิกเอดิเตอร์:"
 
-#: class-ml-slider-lightbox.php:6357
+#: class-ml-slider-lightbox.php:6418
 msgid "Select an image."
 msgstr "เลือกภาพ."
 
-#: class-ml-slider-lightbox.php:6358
+#: class-ml-slider-lightbox.php:6419
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "ในแถบเครื่องมือภาพ คลิกที่ไอคอนแก้ไข."
 
-#: class-ml-slider-lightbox.php:6359
+#: class-ml-slider-lightbox.php:6420
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "เลือก \"ไฟล์มีเดีย\" จากเมนูแบบเลื่อน \"ลิงค์ไปที่\"."
 
-#: class-ml-slider-lightbox.php:6365
+#: class-ml-slider-lightbox.php:6426
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "วิธีการใช้งาน: วิธีการ CSS Class (ขั้นสูง)"
 
-#: class-ml-slider-lightbox.php:6367
+#: class-ml-slider-lightbox.php:6428
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2585,31 +2888,31 @@ msgstr ""
 "สำหรับนักพัฒนา: เพิ่มคลาส <code>ml-lightbox-enabled</code> "
 "เพื่อเปิดใช้งานแกลเลอรี MetaSlider บนทุกองค์ประกอบที่มีภาพ."
 
-#: class-ml-slider-lightbox.php:6368
+#: class-ml-slider-lightbox.php:6429
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "วิธีที่ 1: คลาส CSS เสริมสำหรับบล็อกเอดิเตอร์"
 
-#: class-ml-slider-lightbox.php:6370
+#: class-ml-slider-lightbox.php:6431
 msgid "Select an image or gallery block."
 msgstr "เลือกภาพหรือบล็อกแกลเลอรี."
 
-#: class-ml-slider-lightbox.php:6371
+#: class-ml-slider-lightbox.php:6432
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "ในแถบด้านข้างการตั้งค่าบล็อก เลื่อนลงไปที่ \"ขั้นสูง\"."
 
-#: class-ml-slider-lightbox.php:6372
+#: class-ml-slider-lightbox.php:6433
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "เพิ่ม <code>ml-lightbox-enabled</code> ไปยัง \"คลาส CSS เสริม\"."
 
-#: class-ml-slider-lightbox.php:6374
+#: class-ml-slider-lightbox.php:6435
 msgid "Method 2: HTML/Code"
 msgstr "วิธีที่ 2: HTML/โค้ด"
 
-#: class-ml-slider-lightbox.php:6375
+#: class-ml-slider-lightbox.php:6436
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "สำหรับนักพัฒนา HTML หรือธีมที่กำหนดเอง ให้เพิ่มคลาสโดยตรง:"
 
-#: class-ml-slider-lightbox.php:1279
+#: class-ml-slider-lightbox.php:1307
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"
