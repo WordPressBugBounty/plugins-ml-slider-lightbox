@@ -74,6 +74,8 @@ class MetaSliderLightboxGallery {
         add_action( 'wp_ajax_ml_gallery_browse_folder', array( $this, 'ajaxBrowseFolder' ) );
         add_action( 'wp_ajax_ml_gallery_import_folder', array( $this, 'ajaxImportFolder' ) );
         add_action( 'wp_ajax_ml_gallery_import_zip', array( $this, 'ajaxImportZip' ) );
+        add_action( 'wp_ajax_ml_gallery_add_livid', array( $this, 'ajaxAddLivid' ) );
+        add_action( 'wp_ajax_ml_gallery_video_poster', array( $this, 'ajaxVideoPoster' ) );
         add_action( 'wp_ajax_ml_get_caption_fields', array( $this, 'ajaxGetCaptionFields' ) );
         add_action( 'wp_ajax_ml_save_caption',       array( $this, 'ajaxSaveCaptionField' ) );
         add_action( 'wp_ajax_ml_gallery_generate_sizes', array( $this, 'ajaxGenerateSizes' ) );
@@ -113,6 +115,31 @@ class MetaSliderLightboxGallery {
         }
         return '<a class="dashicons dashicons-lock ml-gallery-pro-lock ml-tipsy" title="' .
             esc_attr( $text ) . '" href="https://www.metaslider.com/upgrade-gallery/" target="_blank" rel="noopener"></a>';
+    }
+
+    /**
+     * Locked Add-menu item shown where Pro renders a real one.
+     *
+     * @param string $label Menu item label.
+     * @return void
+     */
+    private function renderProMenuItemPromo( $label ) {
+        ?>
+        <li role="none" class="ml-gallery-add-menu-promo">
+            <button type="button" role="menuitem" disabled>
+                <?php echo esc_html( $label ); ?>
+            </button>
+            <?php
+            echo $this->renderProLockIcon( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                sprintf(
+                    /* translators: %s: name of the feature, e.g. "YouTube Video". */
+                    __( '%s requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                    $label
+                )
+            );
+            ?>
+        </li>
+        <?php
     }
 
     /**
@@ -214,6 +241,7 @@ class MetaSliderLightboxGallery {
             'button_text'          => $a . '<path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/>' . $z,
             'button_position'      => $a . '<path d="M12 2v20"/><path d="m15 5-3-3-3 3"/><path d="m15 19-3 3-3-3"/><path d="M2 12h20"/><path d="m5 9-3 3 3 3"/><path d="m19 9 3 3-3 3"/>' . $z,
             'image_protection'     => $a . '<path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>' . $z,
+            'watermark'            => $a . '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 16l3-8 3 8"/><path d="M9.5 13h3"/>' . $z,
             // Display panel.
             'mode'          => $a . '<path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/>' . $z,
             'gallery_size'  => $a . '<rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="1.8"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>' . $z,
@@ -224,6 +252,12 @@ class MetaSliderLightboxGallery {
             'counter'       => $a . '<circle cx="7" cy="8" r="1.4" fill="currentColor" stroke="none"/><path d="M16 5 8 19"/><circle cx="17" cy="16" r="1.4" fill="currentColor" stroke="none"/>' . $z,
             'thumbnails'    => $a . '<rect x="2.5" y="9" width="4.5" height="6" rx="1"/><rect x="9.75" y="9" width="4.5" height="6" rx="1"/><rect x="17" y="9" width="4.5" height="6" rx="1"/>' . $z,
             'pager'         => $a . '<circle cx="5" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.6" fill="currentColor" stroke="none"/>' . $z,
+            // Video playback.
+            'video_autoplay'      => $a . '<circle cx="12" cy="12" r="10"/><path d="M10 8.5 16 12l-6 3.5z"/>' . $z,
+            'video_autoplay_each' => $a . '<path d="M12 12H3"/><path d="M16 6H3"/><path d="M12 18H3"/><path d="m16 12 5 3-5 3z"/>' . $z,
+            'video_chain'         => $a . '<path d="M5 4 15 12 5 20z"/><path d="M19 5v14"/>' . $z,
+            'video_loop'          => $a . '<path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/>' . $z,
+            'video_muted'         => $a . '<path d="M11 5 6 9H2v6h4l5 4z"/><path d="m22 9-6 6"/><path d="m16 9 6 6"/>' . $z,
             // Navigation.
             'loop'          => $a . '<path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/>' . $z,
             'keyboard'      => $a . '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="M6 8h.01"/><path d="M10 8h.01"/><path d="M14 8h.01"/><path d="M18 8h.01"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/><path d="M7 16h10"/>' . $z,
@@ -232,6 +266,7 @@ class MetaSliderLightboxGallery {
             // Toolbar panel.
             'download'      => $a . '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/>' . $z,
             'share'         => $a . '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4"/><path d="m15.4 6.5-6.8 4"/>' . $z,
+            'likes'         => $a . '<path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>' . $z,
             'autoplay'      => '<svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z"/></svg>',
             'rotate'        => $a . '<path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/>' . $z,
             'fullscreen'    => $a . '<path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>' . $z,
@@ -249,6 +284,7 @@ class MetaSliderLightboxGallery {
             'caption_bg_opacity'   => $a . '<circle cx="9" cy="9" r="7"/><circle cx="15" cy="15" r="7"/>' . $z,
             'caption_hover_reveal' => $a . '<path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>' . $z,
             'caption_transition' => $a . '<path d="M9.94 15.5A2 2 0 0 0 8.5 14.06l-6.14-1.58a.5.5 0 0 1 0-.96L8.5 9.94A2 2 0 0 0 9.94 8.5l1.58-6.14a.5.5 0 0 1 .96 0L14.06 8.5A2 2 0 0 0 15.5 9.94l6.14 1.58a.5.5 0 0 1 0 .96L15.5 14.06a2 2 0 0 0-1.44 1.44l-1.58 6.14a.5.5 0 0 1-.96 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/>' . $z,
+            'photo_meta'         => $a . '<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/>' . $z,
             // Appearance panel.
             'bg_color'      => $a . '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/>' . $z,
             'bg_opacity'                  => $a . '<circle cx="9" cy="9" r="7"/><circle cx="15" cy="15" r="7"/>' . $z,
@@ -291,6 +327,32 @@ class MetaSliderLightboxGallery {
         }
 
         return '<span class="ml-setting-icon" aria-hidden="true">' . $icons[ $key ] . '</span>';
+    }
+
+    /**
+     * Whether any of the given attachments is a video.
+     *
+     * @param int[] $ids Attachment IDs.
+     * @return bool
+     */
+    private function hasVideoItem( array $ids ) {
+        foreach ( $ids as $id ) {
+            $id       = absint( $id );
+            $is_video = '' !== Livid::lividId( $id ) || wp_attachment_is( 'video', $id );
+
+            /**
+             * Whether one attachment should count as a video.
+             *
+             * @since 2.38.0
+             * @param bool $is_video Result of the built-in checks.
+             * @param int  $id       Attachment ID.
+             */
+            if ( apply_filters( 'ml_gallery_is_video_item', $is_video, $id ) ) {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private function allowedModes() {
@@ -389,6 +451,63 @@ class MetaSliderLightboxGallery {
     }
 
     /**
+     * Allowed HTML for a caption rendered inside the grid item's wrapping
+     * <a> (thumbnail overlay). Same as post content, minus <a>: a caption
+     * link there would nest an <a> inside the item's own <a>, which is
+     * invalid HTML and breaks the browser's parsing of the whole item.
+     *
+     * @since 2.38.0
+     * @return array<string,array> wp_kses() allowed tags.
+     */
+    private function thumbCaptionAllowedTags() {
+        $tags = wp_kses_allowed_html( 'post' );
+        unset( $tags['a'] );
+        return $tags;
+    }
+
+    /**
+     * Collect any markup an add-on wants to render inside a thumbnail caption.
+     *
+     * Buffered so the caller can skip the <span> when neither the caption nor
+     * a listener has anything to put in it.
+     *
+     * @since 2.38.0
+     * @param int    $image_id   Attachment ID.
+     * @param int    $gallery_id Gallery post id.
+     * @param string $caption    The item's resolved caption, empty when it has none.
+     * @param array  $settings   The settings this render is using.
+     * @return string Trimmed markup, empty when nothing is listening.
+     */
+    private function thumbCaptionAddon( $image_id, $gallery_id, $caption, $settings ) {
+        if ( ! has_action( 'ml_gallery_thumb_caption' ) ) {
+            return '';
+        }
+
+        ob_start();
+
+        /**
+         * Render extra markup inside a gallery thumbnail's caption overlay.
+         *
+         * Output lands inside .ml-gallery-caption, after the caption text. The
+         * overlay is absolutely positioned, so it does not affect the tile's
+         * size; the showcase layout copies it into its stage caption. The
+         * overlay stays hidden unless the gallery shows thumbnail captions.
+         *
+         * @since 2.38.0
+         *
+         * @param int    $image_id   Attachment ID.
+         * @param int    $gallery_id Gallery post id.
+         * @param string $caption    The item's resolved caption, empty when it has none.
+         * @param array  $settings   The settings this render is using, unsaved ones
+         *                           included. Read these rather than the saved meta,
+         *                           which a preview render has not written.
+         */
+        do_action( 'ml_gallery_thumb_caption', $image_id, $gallery_id, $caption, $settings );
+
+        return trim( (string) ob_get_clean() );
+    }
+
+    /**
      * Resolve the caption text for one gallery item from the chosen source.
      *
      * manual            → the typed caption, and only that; empty stays empty.
@@ -421,6 +540,31 @@ class MetaSliderLightboxGallery {
             default:
                 return $manual;
         }
+    }
+
+    /**
+     * Poster picker markup: a "Poster" button plus a clear button.
+     *
+     * Rendered on every video tile, and once more inside the caption modal,
+     * which is shared between items and so starts hidden with no known state.
+     *
+     * @since 2.38.0
+     * @param bool $hidden     Whether the control starts hidden (the shared modal does).
+     * @param bool $has_poster Whether this item already has a poster override to clear.
+     * @return string
+     */
+    private function posterControl( $hidden = false, $has_poster = false ) {
+        $pick  = __( 'Choose poster image', 'ml-slider-lightbox' );
+        $clear = __( 'Remove poster image', 'ml-slider-lightbox' );
+
+        return '<div class="ml-poster-control' . ( $hidden ? ' is-hidden' : '' ) . '">'
+            . '<button type="button" class="ml-gallery-poster-pick"'
+            . ' aria-label="' . esc_attr( $pick ) . '" title="' . esc_attr( $pick ) . '">'
+            . esc_html__( 'Poster', 'ml-slider-lightbox' )
+            . '</button>'
+            . '<button type="button" class="ml-gallery-poster-clear' . ( $has_poster ? '' : ' is-hidden' ) . '"'
+            . ' aria-label="' . esc_attr( $clear ) . '" title="' . esc_attr( $clear ) . '">&times;</button>'
+            . '</div>';
     }
 
     /**
@@ -620,6 +764,11 @@ class MetaSliderLightboxGallery {
             'button_icon'          => 0,
             'button_text'          => '',
             'button_position'      => 'top-right',
+            'video_autoplay'       => 1,
+            'video_autoplay_each'  => 0,
+            'video_chain'          => 1,
+            'video_loop'           => 0,
+            'video_muted'          => 0,
             // Pro-only settings (default off; rendered as locked for free users)
             'zoom'        => 0,
             'fullscreen'  => 0,
@@ -627,11 +776,95 @@ class MetaSliderLightboxGallery {
             'autoplay'    => 0,
             'share'       => 0,
             'image_protection' => 0,
+            'watermark'   => 0,
+            'photo_meta'  => 0,
+            'likes'       => 0,
         );
     }
 
-    private function allowedLayouts() {
+    private function builtinLayouts() {
         return array( 'grid', 'masonry', 'justified', 'carousel', 'showcase' );
+    }
+
+    private function allowedLayouts() {
+        return array_merge( $this->builtinLayouts(), array_keys( $this->addonLayouts() ) );
+    }
+
+    /**
+     * Layouts added by other plugins, keyed by slug.
+     *
+     * @return array slug => array( 'label' => string, 'description' => string, 'icon' => string, 'supports' => string[] )
+     */
+    private function addonLayouts() {
+        /**
+         * Filter the gallery layouts added by other plugins.
+         *
+         * An add-on layout manages itself: the editor hides the grid, lightbox, caption and
+         * image-order controls for it, and saving forces the lightbox off, the image order to
+         * manual and captions to hidden. A layout can keep a control by listing it in
+         * 'supports'; 'height' keeps the Height setting. Built-in layouts cannot be removed or
+         * replaced.
+         *
+         * @since 2.38.0
+         * @param array $layouts slug => array( 'label' => string, 'description' => string, 'icon' => string SVG markup,
+         *                       'supports' => string[] optional, currently only 'height' ).
+         */
+        $raw     = (array) apply_filters( 'ml_gallery_layouts', array() );
+        $layouts = array();
+
+        foreach ( $raw as $slug => $layout ) {
+            $slug = sanitize_key( $slug );
+            if ( '' === $slug || in_array( $slug, $this->builtinLayouts(), true ) || ! is_array( $layout ) || empty( $layout['label'] ) ) {
+                continue;
+            }
+            $layouts[ $slug ] = array(
+                'label'       => (string) $layout['label'],
+                'description' => isset( $layout['description'] ) ? (string) $layout['description'] : '',
+                'icon'        => isset( $layout['icon'] ) ? wp_kses( (string) $layout['icon'], $this->layoutIconAllowedTags() ) : '',
+                'supports'    => isset( $layout['supports'] )
+                    ? array_values( array_intersect( array_filter( (array) $layout['supports'], 'is_string' ), $this->addonLayoutFeatures() ) )
+                    : array(),
+            );
+        }
+
+        return $layouts;
+    }
+
+    private function isAddonLayout( $layout ) {
+        return array_key_exists( (string) $layout, $this->addonLayouts() );
+    }
+
+    // Controls an add-on layout may keep through 'supports'.
+    private function addonLayoutFeatures() {
+        return array( 'height' );
+    }
+
+    private function addonLayoutSupports( $layout, $feature ) {
+        $layouts = $this->addonLayouts();
+        return isset( $layouts[ $layout ] ) && in_array( $feature, $layouts[ $layout ]['supports'], true );
+    }
+
+    private function layoutIconAllowedTags() {
+        $shape = array(
+            'fill'            => true,
+            'stroke'          => true,
+            'stroke-width'    => true,
+            'stroke-linecap'  => true,
+            'stroke-linejoin' => true,
+            'opacity'         => true,
+            'transform'       => true,
+        );
+
+        return array(
+            'svg'      => array( 'viewbox' => true, 'xmlns' => true, 'fill' => true, 'stroke' => true, 'stroke-width' => true, 'aria-hidden' => true, 'focusable' => true ),
+            'g'        => $shape,
+            'path'     => $shape + array( 'd' => true ),
+            'rect'     => $shape + array( 'x' => true, 'y' => true, 'width' => true, 'height' => true, 'rx' => true, 'ry' => true ),
+            'circle'   => $shape + array( 'cx' => true, 'cy' => true, 'r' => true ),
+            'line'     => $shape + array( 'x1' => true, 'y1' => true, 'x2' => true, 'y2' => true ),
+            'polyline' => $shape + array( 'points' => true ),
+            'polygon'  => $shape + array( 'points' => true ),
+        );
     }
 
     private function imageOrderLabels() {
@@ -1142,6 +1375,9 @@ class MetaSliderLightboxGallery {
         }
 
         $is_carousel = strpos( $content, 'data-ml-layout="carousel"' ) !== false;
+        // Same content sniff the Pro feature gate below uses: only ship lg-video
+        // when the previewed markup actually holds a video anchor.
+        $has_video   = strpos( $content, 'ml-gallery-video' ) !== false;
 
         $plugin_url = plugin_dir_url( __FILE__ );
 
@@ -1150,6 +1386,9 @@ class MetaSliderLightboxGallery {
         $html .= '<style>*,*::before,*::after{box-sizing:border-box}body{margin:0;padding:8px;overflow-x:hidden}</style>';
         $html .= '<link rel="stylesheet" href="' . esc_url( $plugin_url . 'assets/css/lightgallery.min.css' ) . '">';
         $html .= '<link rel="stylesheet" href="' . esc_url( $plugin_url . 'assets/css/lg-thumbnail.css' ) . '">';
+        if ( $has_video ) {
+            $html .= '<link rel="stylesheet" href="' . esc_url( $plugin_url . 'assets/css/lg-video.css' ) . '">';
+        }
         $html .= '<link rel="stylesheet" href="' . esc_url( $plugin_url . 'assets/css/lg-transitions.min.css' ) . '">';
         $html .= '<link rel="stylesheet" href="' . esc_url( $plugin_url . 'assets/css/ml-lightbox-public.css' ) . '">';
         $gallery_css_ver = filemtime( plugin_dir_path( __FILE__ ) . 'assets/css/ml-gallery-public.css' ) ?: $this->version;
@@ -1174,6 +1413,9 @@ class MetaSliderLightboxGallery {
         $html .= '<script src="' . esc_url( includes_url( 'js/jquery/jquery.min.js' ) ) . '"></script>';
         $html .= '<script src="' . esc_url( $plugin_url . 'assets/js/lightgallery.min.js' ) . '"></script>';
         $html .= '<script src="' . esc_url( $plugin_url . 'assets/js/lg-thumbnail.min.js' ) . '"></script>';
+        if ( $has_video ) {
+            $html .= '<script src="' . esc_url( $plugin_url . 'assets/js/lg-video.min.js' ) . '"></script>';
+        }
         if ( $is_carousel || $interactive ) {
             // Each Pro feature maps: data attribute → mlLightboxSettings key + JS/CSS filenames.
             $pro_features = array(
@@ -1276,8 +1518,12 @@ class MetaSliderLightboxGallery {
         $settings['image_order']     = in_array( $settings['image_order'] ?? '', $this->allowedImageOrders(), true )
             ? $settings['image_order'] : 'manual';
 
-        if ( in_array( $settings['layout'] ?? 'grid', array( 'carousel', 'showcase' ), true ) ) {
-            $settings['open_in_lightbox'] = 1;
+        $settings['open_in_lightbox'] = empty( $settings['open_in_lightbox'] ) ? 0 : 1;
+
+        if ( $this->isAddonLayout( $settings['layout'] ?? 'grid' ) ) {
+            $settings['open_in_lightbox'] = 0;
+            $settings['image_order']      = 'manual';
+            $settings['caption_display']  = 'hidden';
         }
 
         $pro_in       = (array) $request->get_param( 'pro_settings' );
@@ -1411,6 +1657,8 @@ class MetaSliderLightboxGallery {
 
         $saved_captions = $post ? get_post_meta( $post->ID, '_ml_gallery_captions', true ) : array();
         $captions       = is_array( $saved_captions ) ? $saved_captions : array();
+
+        $poster_overrides = GalleryItems::posterOverrides( $post ? $post->ID : 0 );
 
         $page_heading = $is_new
             ? __( 'Add New Gallery', 'ml-slider-lightbox' )
@@ -1577,6 +1825,11 @@ class MetaSliderLightboxGallery {
                                 </div>
                             </div>
                         <?php
+                        // A layout whose add-on is no longer active shows as Grid, which is what saving would store.
+                        if ( ! in_array( $lg_settings['layout'] ?? 'grid', $this->allowedLayouts(), true ) ) {
+                            $lg_settings['layout'] = 'grid';
+                        }
+                        $is_addon_layout = $this->isAddonLayout( $lg_settings['layout'] );
                         $image_order  = in_array( $lg_settings['image_order'], $this->allowedImageOrders(), true )
                             ? $lg_settings['image_order'] : 'manual';
                         $order_notice = '';
@@ -1593,30 +1846,44 @@ class MetaSliderLightboxGallery {
                         <p class="ml-image-order-notice" aria-live="polite"<?php echo $order_notice ? '' : ' hidden'; ?>><?php echo esc_html( $order_notice ); ?></p>
                         <div id="ml-gallery-preview"
                              class="<?php echo empty( $image_ids ) ? 'is-empty' : ''; ?>"
-                             data-empty-label="<?php esc_attr_e( 'No images added yet', 'ml-slider-lightbox' ); ?>">
+                             data-empty-label="<?php esc_attr_e( 'No images or videos added yet', 'ml-slider-lightbox' ); ?>">
                             <?php
                             _prime_post_caches( $image_ids, false, true );
                             $arrange_order = in_array( $image_order, array( 'manual', 'random' ), true )
                                 ? 'manual' : $image_order;
                             $order_ranks   = 'manual' === $arrange_order
                                 ? array() : array_flip( $this->sortImageIds( $image_ids, $arrange_order ) );
+                            $editor_items  = GalleryItems::resolve( $image_ids, $post ? $post->ID : 0, $captions, 'editor' );
                             ?>
-                            <?php foreach ( $image_ids as $image_id ) : ?>
-                                <?php $img = wp_get_attachment_image( $image_id, 'medium' ); ?>
+                            <?php foreach ( $editor_items as $editor_item ) : ?>
+                                <?php
+                                $image_id = (int) $editor_item['key'];
+                                $is_video = 'video' === $editor_item['type'];
+                                // Only a video with no poster of any kind needs a frame grabbed from
+                                // it, and only a file we host can be read into a canvas — which rules
+                                // out the file-less attachments standing in for remote videos.
+                                $capture_src = ( $is_video && '' === $editor_item['poster'] && wp_attachment_is( 'video', $image_id ) )
+                                    ? (string) $editor_item['src'] : '';
+                                $img      = $is_video
+                                    ? '<img src="' . esc_url( $editor_item['thumb'] ) . '" alt="" />'
+                                    : wp_get_attachment_image( $image_id, 'medium' );
+                                ?>
                                 <?php if ( $img ) : ?>
                                     <?php
                                     $manual_caption  = $captions[ $image_id ] ?? '';
                                     $display_caption = $this->resolveItemCaption( $image_id, $manual_caption, $caption_source );
                                     $full_src = wp_get_attachment_image_url( $image_id, 'full' );
                                     ?>
-                                    <div class="ml-gallery-item<?php echo $display_caption ? ' has-caption' : ''; ?>"
+                                    <div class="ml-gallery-item<?php echo $display_caption ? ' has-caption' : ''; ?><?php echo $is_video ? ' ml-gallery-item--video' : ''; ?>"
                                          data-id="<?php echo esc_attr( $image_id ); ?>"
                                          data-full="<?php echo esc_url( $full_src ); ?>"
                                          data-date="<?php echo (int) $this->imageSortDate( $image_id ); ?>"
                                          data-filename="<?php echo esc_attr( $this->imageSortFilename( $image_id ) ); ?>"
+                                         <?php echo $capture_src ? 'data-video-src="' . esc_url( $capture_src ) . '"' : ''; ?>
                                          <?php echo isset( $order_ranks[ $image_id ] ) ? 'style="order:' . (int) $order_ranks[ $image_id ] . '"' : ''; ?>>
                                         <?php
-                                        // wp_get_attachment_image output is already escaped by WordPress core.
+                                        // Image markup is escaped by wp_get_attachment_image() (WordPress core);
+                                        // video markup is our own string, escaped above via esc_url().
                                         echo $img; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                         ?>
                                         <button type="button"
@@ -1634,6 +1901,28 @@ class MetaSliderLightboxGallery {
                                                class="ml-gallery-caption-input"
                                                name="ml_gallery_captions[<?php echo esc_attr( $image_id ); ?>]"
                                                value="<?php echo esc_attr( $manual_caption ); ?>">
+                                        <?php if ( $is_video ) : ?>
+                                            <input type="hidden"
+                                                   class="ml-gallery-poster-input"
+                                                   name="ml_gallery_posters[<?php echo esc_attr( $image_id ); ?>]"
+                                                   value="<?php echo esc_attr( $poster_overrides[ $image_id ] ?? '' ); ?>"
+                                                   data-fallback-thumb="<?php echo esc_url( GalleryItems::nativeThumb( $image_id ) ); ?>">
+                                            <?php echo $this->posterControl( false, ! empty( $poster_overrides[ $image_id ] ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+                                        <?php endif; ?>
+                                        <?php
+                                        // Carry the caption actually on screen, not the raw manual value.
+                                        $editor_item['caption'] = $display_caption;
+
+                                        /**
+                                         * Render Pro controls for one gallery item.
+                                         *
+                                         * @since 2.38.0
+                                         * @param array $editor_item Typed item record from GalleryItems::resolve(),
+                                         *                           with 'caption' set to the displayed caption.
+                                         * @param int   $gallery_id  Gallery post id.
+                                         */
+                                        do_action( 'ml_gallery_pro_item_controls', $editor_item, $post ? $post->ID : 0 );
+                                        ?>
                                     </div>
                                 <?php endif; ?>
                             <?php endforeach; ?>
@@ -1644,11 +1933,11 @@ class MetaSliderLightboxGallery {
                         <div class="ml-gallery-add-bar">
                             <div class="ml-gallery-add-split">
                                 <button type="button" id="ml-gallery-add-images" class="button button-primary ml-gallery-add-images-btn">
-                                    <?php esc_html_e( 'Add Images', 'ml-slider-lightbox' ); ?>
+                                    <?php esc_html_e( 'Add Images or Videos', 'ml-slider-lightbox' ); ?>
                                 </button>
                                 <button type="button" class="button button-primary ml-gallery-add-caret"
                                         aria-haspopup="true" aria-expanded="false"
-                                        aria-label="<?php esc_attr_e( 'More ways to add images', 'ml-slider-lightbox' ); ?>">
+                                        aria-label="<?php esc_attr_e( 'More ways to add images or videos', 'ml-slider-lightbox' ); ?>">
                                     <span class="ml-caret" aria-hidden="true">&#9662;</span>
                                 </button>
                                 <ul class="ml-gallery-add-menu" role="menu" hidden>
@@ -1672,6 +1961,24 @@ class MetaSliderLightboxGallery {
                                             <?php esc_html_e( 'ZIP', 'ml-slider-lightbox' ); ?>
                                         </button>
                                     </li>
+                                    <li role="none">
+                                        <button type="button" role="menuitem" data-method="livid">
+                                            <?php esc_html_e( 'Livid.com Video', 'ml-slider-lightbox' ); ?>
+                                        </button>
+                                    </li>
+                                    <?php if ( ! $this->is_pro ) : ?>
+                                        <?php $this->renderProMenuItemPromo( __( 'YouTube Video', 'ml-slider-lightbox' ) ); ?>
+                                        <?php $this->renderProMenuItemPromo( __( 'Vimeo Video', 'ml-slider-lightbox' ) ); ?>
+                                    <?php else : ?>
+                                        <?php
+                                        /**
+                                         * Render add-on entries in the Add menu.
+                                         *
+                                         * @since 2.38.0
+                                         */
+                                        do_action( 'ml_gallery_add_menu_items' );
+                                        ?>
+                                    <?php endif; ?>
                                 </ul>
                             </div>
 
@@ -1690,7 +1997,7 @@ class MetaSliderLightboxGallery {
                                     </label>
                                 </div>
 
-                                <div class="ml-image-order">
+                                <div class="ml-image-order<?php echo $is_addon_layout ? ' is-hidden' : ''; ?>">
                                     <label class="ml-image-order-label ml-tipsy-bottom"
                                            for="ml_gallery_image_order"
                                            title="<?php esc_attr_e( 'The order images appear in on your site. Random reshuffles for each visitor, which page caching can defeat.', 'ml-slider-lightbox' ); ?>"><?php esc_html_e( 'Image Order:', 'ml-slider-lightbox' ); ?></label>
@@ -1783,12 +2090,53 @@ class MetaSliderLightboxGallery {
                                         </span>
                                     </label>
 
+                                    <?php foreach ( $this->addonLayouts() as $addon_slug => $addon_layout ) : ?>
+                                    <label class="ml-layout-option ml-tipsy" title="<?php echo esc_attr( $addon_layout['description'] ); ?>">
+                                        <input type="radio" name="ml_gallery_settings[layout]" value="<?php echo esc_attr( $addon_slug ); ?>"
+                                               <?php checked( $lg_settings['layout'], $addon_slug ); ?>>
+                                        <span class="ml-layout-icon">
+                                            <?php echo $addon_layout['icon']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- wp_kses()'d in addonLayouts(). ?>
+                                            <span><?php echo esc_html( $addon_layout['label'] ); ?></span>
+                                        </span>
+                                    </label>
+                                    <?php endforeach; ?>
+
+                                    <?php if ( ! $this->is_pro ) : ?>
+                                    <?php // Mirrors the layout Pro registers in inc/class-before-after.php. ?>
+                                    <label class="ml-layout-option ml-layout-option--pro-locked ml-tipsy" title="<?php esc_attr_e( 'Two images with a divider visitors drag to compare', 'ml-slider-lightbox' ); ?>">
+                                        <input type="radio" disabled>
+                                        <span class="ml-layout-icon">
+                                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                                <rect x="2" y="3" width="9.5" height="18" rx="1"/>
+                                                <rect x="13.25" y="3.75" width="8" height="16.5" rx="0.75" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                                <rect x="11.5" y="1" width="1.5" height="22" rx="0.75"/>
+                                            </svg>
+                                            <span><?php esc_html_e( 'Before & After', 'ml-slider-lightbox' ); ?></span>
+                                        </span>
+                                        <?php echo $this->renderProLockIcon( __( 'The Before & After layout requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+                                    </label>
+                                    <?php endif; ?>
+
                                 </div>
                             </div>
 
                             <?php
-                            $hide_columns  = in_array( $lg_settings['layout'], array( 'justified', 'carousel', 'showcase' ), true );
-                            $hide_height   = in_array( $lg_settings['layout'], array( 'masonry', 'carousel', 'showcase' ), true );
+                            /**
+                             * Fires after the Layout picker, for options that belong to one layout.
+                             *
+                             * An add-on layout from ml_gallery_layouts renders its options here and
+                             * shows or hides them from the selected layout itself.
+                             *
+                             * @since 2.38.0
+                             * @param int   $gallery_id  Gallery post id.
+                             * @param array $lg_settings Saved gallery settings.
+                             */
+                            do_action( 'ml_gallery_layout_fields', $gallery_id, $lg_settings );
+                            ?>
+
+                            <?php
+                            $hide_columns  = $is_addon_layout || in_array( $lg_settings['layout'], array( 'justified', 'carousel', 'showcase' ), true );
+                            $hide_height   = ( $is_addon_layout && ! $this->addonLayoutSupports( $lg_settings['layout'], 'height' ) ) || in_array( $lg_settings['layout'], array( 'masonry', 'carousel', 'showcase' ), true );
                             ?>
                             <?php
                             $column_bands = array(
@@ -1854,7 +2202,7 @@ class MetaSliderLightboxGallery {
                                        class="ml-gallery-range widefat">
                             </div>
 
-                            <div class="ml-gallery-setting ml-gallery-setting--col ml-gallery-gap-row<?php echo in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true ) ? ' is-hidden' : ''; ?>">
+                            <div class="ml-gallery-setting ml-gallery-setting--col ml-gallery-gap-row<?php echo ( $is_addon_layout || in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true ) ) ? ' is-hidden' : ''; ?>">
                                 <label for="ml_gallery_gap" class="ml-tipsy" title="<?php esc_attr_e( 'Space between images', 'ml-slider-lightbox' ); ?>">
                                     <?php echo $this->settingIcon( 'gap' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><?php esc_html_e( 'Gap', 'ml-slider-lightbox' ); ?>
                                     <span class="ml-gallery-range-value"><?php echo absint( $lg_settings['gap'] ); ?>px</span>
@@ -1868,7 +2216,7 @@ class MetaSliderLightboxGallery {
                             </div>
 
                             <?php
-                            $hide_load_more = in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true );
+                            $hide_load_more = $is_addon_layout || in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true );
                             $load_more_on   = ! empty( $lg_settings['load_more'] );
                             ?>
                             <div class="ml-gallery-setting ml-gallery-load-more-row<?php echo $hide_load_more ? ' is-hidden' : ''; ?>">
@@ -1908,6 +2256,9 @@ class MetaSliderLightboxGallery {
                                 'pager'      => __( 'Pager requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                                 'hash'       => __( 'Unique Image URLs require MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                                 'image_protection' => __( 'Image protection requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                                'watermark'  => __( 'Watermarking requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                                'photo_meta' => __( 'Photo metadata requires MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
+                                'likes'      => __( 'Likes require MetaSlider Gallery Pro', 'ml-slider-lightbox' ),
                             );
 
                             $descriptions = array(
@@ -1922,16 +2273,24 @@ class MetaSliderLightboxGallery {
                                 'share'       => __( 'Enable users to share images on Facebook, X, or Pinterest.', 'ml-slider-lightbox' ),
                                 'hash'        => __( 'Create a unique URL for each image to enable direct linking inside a gallery.', 'ml-slider-lightbox' ),
                                 'image_protection' => __( 'Discourage casual saving by blocking right-click, drag, and long-press on gallery images.', 'ml-slider-lightbox' ),
+                                'watermark'   => __( 'Overlay your logo on gallery window images. This discourages casual copying; it does not prevent it.', 'ml-slider-lightbox' ),
+                                'photo_meta'  => __( 'Show the camera settings a photo was taken with — camera, lens, aperture, shutter speed and ISO — beneath its caption.', 'ml-slider-lightbox' ),
+                                'likes'       => __( 'Let visitors heart images. The count is shared across every gallery using the image.', 'ml-slider-lightbox' ),
                                 'keyboard'    => __( 'Navigate images using left and right arrow keys', 'ml-slider-lightbox' ),
                                 'mousewheel'  => __( 'Scroll through images using the mouse wheel', 'ml-slider-lightbox' ),
                                 'swipe_close' => __( 'Swipe up or down to close the gallery on touch devices', 'ml-slider-lightbox' ),
                                 'loop'             => __( 'Cycle back to the first image after reaching the last', 'ml-slider-lightbox' ),
                                 'download'         => __( 'Show a download button for each image', 'ml-slider-lightbox' ),
                                 'expand'           => __( 'Show a button that expands the carousel to fill the browser window.', 'ml-slider-lightbox' ),
-                                'open_in_lightbox' => __( 'Open images in a window overlay when clicked. Applies to Grid, Masonry, and Justified layouts.', 'ml-slider-lightbox' ),
+                                'open_in_lightbox' => __( 'Open images in a window overlay when clicked. Turn it off on Carousel or Showcase to keep the gallery on the page without the overlay.', 'ml-slider-lightbox' ),
                                 'show_lightbox_button' => __( 'Show a button over the gallery that opens the gallery window when clicked.', 'ml-slider-lightbox' ),
                                 'button_icon'          => __( 'Show an icon on the button instead of text.', 'ml-slider-lightbox' ),
                                 'caption_hover_reveal' => __( 'Hide the caption until the image is hovered. Captions always show on devices without hover support.', 'ml-slider-lightbox' ),
+                                'video_autoplay'      => __( 'Start playing as soon as the gallery opens on a video.', 'ml-slider-lightbox' ),
+                                'video_autoplay_each' => __( 'Start playing each video as the visitor reaches it, not just the first one.', 'ml-slider-lightbox' ),
+                                'video_chain'         => __( 'Move to the next item and keep playing when a video finishes.', 'ml-slider-lightbox' ),
+                                'video_loop'          => __( 'Restart each video automatically when it reaches the end.', 'ml-slider-lightbox' ),
+                                'video_muted'         => __( 'Play videos without sound.', 'ml-slider-lightbox' ),
                             );
 
                             $render_toggle = function( $key, $label, $extra_class = '', $source = 'settings' ) use ( $lg_settings, $appearance, $pro_tooltips, $descriptions ) {
@@ -2025,12 +2384,12 @@ class MetaSliderLightboxGallery {
                             };
                             ?>
 
-                            <?php $render_toggle( 'open_in_lightbox', __( 'Show in Gallery Window', 'ml-slider-lightbox' ), 'ml-show-in-modal-row' ); ?>
+                            <?php $render_toggle( 'open_in_lightbox', __( 'Show in Gallery Window', 'ml-slider-lightbox' ), 'ml-show-in-modal-row' . ( $is_addon_layout ? ' is-hidden' : '' ) ); ?>
 
                             <?php
                             $btn_position   = $lg_settings['button_position'] ?? 'top-right';
                             $btn_text       = $lg_settings['button_text'] ?? '';
-                            $hide_btn_panel = in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true ) || empty( $lg_settings['open_in_lightbox'] );
+                            $hide_btn_panel = $is_addon_layout || empty( $lg_settings['open_in_lightbox'] );
                             $trigger_mode   = TriggerControl::modeFromBooleans(
                                 ! empty( $lg_settings['show_lightbox_button'] ),
                                 ! empty( $lg_settings['button_icon'] )
@@ -2075,7 +2434,7 @@ class MetaSliderLightboxGallery {
                             <p class="ml-settings-section-label"><?php esc_html_e( 'Images', 'ml-slider-lightbox' ); ?></p>
 
                             <?php
-                            $hide_lightbox_sections = in_array( $lg_settings['layout'], array( 'grid', 'masonry', 'justified' ), true ) && empty( $lg_settings['open_in_lightbox'] );
+                            $hide_lightbox_sections = $is_addon_layout || ( in_array( $lg_settings['layout'], array( 'grid', 'masonry', 'justified' ), true ) && empty( $lg_settings['open_in_lightbox'] ) );
 
                             $render_size_row(
                                 'gallery_size',
@@ -2100,6 +2459,7 @@ class MetaSliderLightboxGallery {
                                 <?php do_action( 'ml_gallery_pro_gallery_fields', $gallery_id ); ?>
                             <?php else : ?>
                                 <?php $render_toggle( 'image_protection', __( 'Protect images', 'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'watermark', __( 'Watermark', 'ml-slider-lightbox' ) ); ?>
                             <?php endif; ?>
 
                             <div class="ml-lightbox-settings-group<?php echo $hide_lightbox_sections ? ' is-hidden' : ''; ?>">
@@ -2130,11 +2490,24 @@ class MetaSliderLightboxGallery {
                             <?php $render_toggle( 'mousewheel',  __( 'Mouse wheel',    'ml-slider-lightbox' ) ); ?>
                             <?php $render_toggle( 'swipe_close', __( 'Swipe to close', 'ml-slider-lightbox' ) ); ?>
 
+                            <?php // Rendered either way, so the editor JS can reveal it the moment a video is added. ?>
+                            <div class="ml-video-settings<?php echo $this->hasVideoItem( $image_ids ) ? '' : ' is-hidden'; ?>">
+                                <p class="ml-settings-section-label"><?php esc_html_e( 'Video', 'ml-slider-lightbox' ); ?></p>
+                                <?php $render_toggle( 'video_autoplay',      __( 'Play video on open',        'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'video_autoplay_each', __( 'Play every video',          'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'video_chain',         __( 'Play next when video ends', 'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'video_loop',          __( 'Loop video',                'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'video_muted',         __( 'Mute video',                'ml-slider-lightbox' ) ); ?>
+                                <p class="ml-gallery-setting-note ml-video-mute-note<?php echo ( empty( $lg_settings['video_autoplay'] ) && empty( $lg_settings['video_autoplay_each'] ) ) ? ' is-hidden' : ''; ?>">
+                                    <?php esc_html_e( 'Browsers only allow videos to start on their own when they are muted, so autoplaying videos play without sound.', 'ml-slider-lightbox' ); ?>
+                                </p>
+                            </div>
+
                             </div>
 
                         </div>
 
-                        <div class="ml-gallery-sidebar-panel">
+                        <div class="ml-gallery-sidebar-panel ml-captions-panel<?php echo $is_addon_layout ? ' is-hidden' : ''; ?>">
                             <h3><?php esc_html_e( 'Captions', 'ml-slider-lightbox' ); ?></h3>
                             <div class="ml-gallery-setting">
                                 <label for="ml_gallery_caption_display" class="ml-tipsy" title="<?php esc_attr_e( 'Where captions appear: on gallery thumbnails, in the gallery window, or both.', 'ml-slider-lightbox' ); ?>"><?php echo $this->settingIcon( 'caption_display' ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?><?php esc_html_e( 'Captions', 'ml-slider-lightbox' ); ?></label>
@@ -2233,6 +2606,12 @@ class MetaSliderLightboxGallery {
                                     <?php endforeach; ?>
                                 </select>
                             </div>
+
+                            <?php if ( ! $this->is_pro ) : ?>
+                                <?php $render_toggle( 'photo_meta', __( 'Photo Metadata', 'ml-slider-lightbox' ) ); ?>
+                            <?php else : ?>
+                                <?php do_action( 'ml_gallery_pro_caption_fields', $gallery_id, $hide_lightbox_sections ); ?>
+                            <?php endif; ?>
                         </div>
 
                         <div class="ml-gallery-sidebar-panel ml-lightbox-only-panel<?php echo $hide_lightbox_sections ? ' is-hidden' : ''; ?>">
@@ -2243,6 +2622,7 @@ class MetaSliderLightboxGallery {
                             <?php if ( ! $this->is_pro ) : ?>
                                 <?php $this->renderDownloadSizesPromo( ! empty( $lg_settings['download'] ) ); ?>
                                 <?php $render_toggle( 'share',      __( 'Share',           'ml-slider-lightbox' ) ); ?>
+                                <?php $render_toggle( 'likes',      __( 'Likes',           'ml-slider-lightbox' ) ); ?>
                                 <?php $render_toggle( 'autoplay',   __( 'Autoplay',         'ml-slider-lightbox' ) ); ?>
                                 <?php $render_toggle( 'rotate',     __( 'Rotate and Flip',  'ml-slider-lightbox' ) ); ?>
                                 <?php $render_toggle( 'fullscreen', __( 'Fullscreen',        'ml-slider-lightbox' ) ); ?>
@@ -2402,8 +2782,8 @@ class MetaSliderLightboxGallery {
                             </div>
 
                             <?php
-                            $is_grid_like      = ! in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true );
-                            $trigger_available = $is_grid_like && ! empty( $lg_settings['open_in_lightbox'] );
+                            $is_grid_like      = ! $is_addon_layout && ! in_array( $lg_settings['layout'], array( 'carousel', 'showcase' ), true );
+                            $trigger_available = ! $is_addon_layout && ! empty( $lg_settings['open_in_lightbox'] );
                             $show_btn_colors = ( $trigger_available && 'button' === $trigger_mode )
                                 || ( $is_grid_like && ! empty( $lg_settings['load_more'] ) );
                             $show_ico_colors = $trigger_available && 'icon' === $trigger_mode;
@@ -2610,6 +2990,21 @@ class MetaSliderLightboxGallery {
                             <div id="ml-caption-preview-wrap">
                                 <img id="ml-caption-preview-img" src="" alt="">
                                 <div id="ml-caption-preview-overlay" aria-hidden="true"></div>
+                                <?php // One shared modal, so this stays hidden until the JS says it is showing a video. ?>
+                                <?php echo $this->posterControl( true ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+                                <?php
+                                /**
+                                 * Render Pro controls beside the caption preview.
+                                 *
+                                 * The modal is one shared instance, so anything rendered here
+                                 * must key off the ml-gallery:caption-item event rather than
+                                 * assume a fixed item.
+                                 *
+                                 * @since 2.38.0
+                                 * @param int $gallery_id Gallery post id.
+                                 */
+                                do_action( 'ml_gallery_pro_caption_controls', $gallery_id );
+                                ?>
                             </div>
                             <div id="ml-caption-editor-col">
                                 <div id="ml-caption-tabs" role="tablist">
@@ -2671,6 +3066,26 @@ class MetaSliderLightboxGallery {
                         </div>
                         <div id="ml-zip-modal-body">
                             <p id="ml-zip-status" class="ml-zip-status"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="ml-livid-modal" role="dialog" aria-modal="true" aria-labelledby="ml-livid-modal-title">
+                    <div id="ml-livid-overlay" aria-hidden="true"></div>
+                    <div id="ml-livid-modal-inner">
+                        <div id="ml-livid-modal-header">
+                            <h2 id="ml-livid-modal-title"><?php esc_html_e( 'Add Livid.com Video', 'ml-slider-lightbox' ); ?></h2>
+                            <button type="button" id="ml-livid-close" aria-label="<?php esc_attr_e( 'Close', 'ml-slider-lightbox' ); ?>">&times;</button>
+                        </div>
+                        <div id="ml-livid-modal-body">
+                            <label for="ml-livid-url"><?php esc_html_e( 'Livid.com video link', 'ml-slider-lightbox' ); ?></label>
+                            <input type="text" inputmode="url" id="ml-livid-url" class="widefat" autocomplete="off"
+                                   placeholder="https://livid.com/watch/...">
+                            <p id="ml-livid-status" class="ml-zip-status" role="status" aria-live="polite"></p>
+                        </div>
+                        <div id="ml-livid-modal-footer">
+                            <button type="button" id="ml-livid-cancel" class="button"><?php esc_html_e( 'Cancel', 'ml-slider-lightbox' ); ?></button>
+                            <button type="button" id="ml-livid-add" class="button button-primary"><?php esc_html_e( 'Add Video', 'ml-slider-lightbox' ); ?></button>
                         </div>
                     </div>
                 </div>
@@ -2738,6 +3153,18 @@ class MetaSliderLightboxGallery {
             }
             update_post_meta( $gallery_id, '_ml_gallery_captions', $clean_captions );
 
+            $raw_posters   = isset( $_POST['ml_gallery_posters'] ) && is_array( $_POST['ml_gallery_posters'] )
+                ? array_map( 'absint', wp_unslash( $_POST['ml_gallery_posters'] ) )
+                : array();
+            $clean_posters = array();
+            foreach ( $raw_posters as $item_id => $poster_id ) {
+                $clean_id = absint( $item_id );
+                if ( $clean_id && $poster_id ) {
+                    $clean_posters[ $clean_id ] = $poster_id;
+                }
+            }
+            update_post_meta( $gallery_id, '_ml_gallery_posters', $clean_posters );
+
             $settings_raw  = isset( $_POST['ml_gallery_settings'] ) && is_array( $_POST['ml_gallery_settings'] )
                 ? array_map( 'sanitize_text_field', wp_unslash( $_POST['ml_gallery_settings'] ) )
                 : array();
@@ -2804,13 +3231,18 @@ class MetaSliderLightboxGallery {
                 'flip'          => in_array( $raw_flip, array( 'none', 'h', 'v', 'both' ), true ) ? $raw_flip : 'none',
             ) );
 
-            $raw_layout = isset( $settings_raw['layout'] ) ? sanitize_key( $settings_raw['layout'] ) : 'grid';
+            $raw_layout      = isset( $settings_raw['layout'] ) ? sanitize_key( $settings_raw['layout'] ) : 'grid';
+            $is_addon_layout = $this->isAddonLayout( $raw_layout );
 
             $caption_display = array_key_exists( $settings_raw['caption_display'] ?? '', $this->allowedCaptionDisplay() )
                 ? $settings_raw['caption_display'] : 'lightbox';
             if ( in_array( $caption_display, array( 'both', 'lightbox' ), true )
                 && in_array( $raw_layout, array( 'carousel', 'showcase' ), true ) ) {
                 $caption_display = 'gallery';
+            }
+            // An add-on layout manages itself: no lightbox, no captions, the Arrange order.
+            if ( $is_addon_layout ) {
+                $caption_display = 'hidden';
             }
 
             update_post_meta( $gallery_id, '_ml_gallery_settings', array(
@@ -2847,13 +3279,18 @@ class MetaSliderLightboxGallery {
                 'gallery_size_h'     => GalleryImageSize::sanitizeDimension( $settings_raw['gallery_size_h'] ?? 0 ),
                 'gallery_size_crop'  => ! empty( $settings_raw['gallery_size_crop'] ) ? 1 : 0,
                 'add_position'     => in_array( $settings_raw['add_position'] ?? '', array( 'start', 'end' ), true ) ? $settings_raw['add_position'] : 'end',
-                'image_order'      => in_array( $settings_raw['image_order'] ?? '', $this->allowedImageOrders(), true ) ? $settings_raw['image_order'] : 'manual',
-                'open_in_lightbox' => in_array( $raw_layout, array( 'carousel', 'showcase' ), true ) ? 1 : ( ! empty( $settings_raw['open_in_lightbox'] ) ? 1 : 0 ),
+                'image_order'      => ( ! $is_addon_layout && in_array( $settings_raw['image_order'] ?? '', $this->allowedImageOrders(), true ) ) ? $settings_raw['image_order'] : 'manual',
+                'open_in_lightbox' => ( ! $is_addon_layout && ! empty( $settings_raw['open_in_lightbox'] ) ) ? 1 : 0,
                 'show_lightbox_button' => ! empty( $settings_raw['show_lightbox_button'] ) ? 1 : 0,
                 'button_icon'          => ! empty( $settings_raw['button_icon'] ) ? 1 : 0,
                 'button_text'          => isset( $settings_raw['button_text'] ) ? sanitize_text_field( $settings_raw['button_text'] ) : '',
                 'button_position'      => in_array( $settings_raw['button_position'] ?? '', $this->allowedButtonPositions(), true )
                     ? $settings_raw['button_position'] : 'top-right',
+                'video_autoplay'       => ! empty( $settings_raw['video_autoplay'] ) ? 1 : 0,
+                'video_autoplay_each'  => ! empty( $settings_raw['video_autoplay_each'] ) ? 1 : 0,
+                'video_chain'          => ! empty( $settings_raw['video_chain'] ) ? 1 : 0,
+                'video_loop'           => ! empty( $settings_raw['video_loop'] ) ? 1 : 0,
+                'video_muted'          => ! empty( $settings_raw['video_muted'] ) ? 1 : 0,
             ) );
 
             do_action( 'ml_save_gallery_pro', $gallery_id );
@@ -2893,7 +3330,7 @@ class MetaSliderLightboxGallery {
             wp_die( esc_html__( 'Could not duplicate the gallery. Please try again.', 'ml-slider-lightbox' ) );
         }
 
-        foreach ( array( '_ml_gallery_images', '_ml_gallery_settings', '_ml_gallery_appearance', '_ml_gallery_captions' ) as $key ) {
+        foreach ( array( '_ml_gallery_images', '_ml_gallery_settings', '_ml_gallery_appearance', '_ml_gallery_captions', '_ml_gallery_posters' ) as $key ) {
             $value = get_post_meta( $gallery_id, $key, true );
             if ( '' !== $value ) {
                 update_post_meta( $new_id, $key, $value );
@@ -3031,6 +3468,104 @@ class MetaSliderLightboxGallery {
         $allowed = array( 'jpg', 'jpeg', 'png', 'gif', 'webp', 'avif' );
         $ext     = strtolower( pathinfo( $name, PATHINFO_EXTENSION ) );
         return in_array( $ext, $allowed, true );
+    }
+
+    /**
+     * AJAX: add a Livid video by URL, reusing its attachment when it already exists.
+     */
+    public function ajaxAddLivid() {
+        if ( ! check_ajax_referer( 'ml_gallery_folder', '_wpnonce', false ) || ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( array( 'message' => __( 'Permission denied.', 'ml-slider-lightbox' ) ), 403 );
+            return;
+        }
+
+        $url      = isset( $_POST['url'] ) ? esc_url_raw( wp_unslash( $_POST['url'] ) ) : '';
+        $livid_id = Livid::parseId( $url );
+        if ( '' === $livid_id ) {
+            wp_send_json_error( array( 'message' => __( "That isn't a Livid.com video link.", 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        $attachment_id = Livid::findAttachment( $livid_id );
+
+        if ( ! $attachment_id ) {
+            $oembed = Livid::fetchOembed( $livid_id );
+            if ( is_wp_error( $oembed ) ) {
+                if ( 'ml_livid_unavailable' === $oembed->get_error_code() ) {
+                    wp_send_json_error( array( 'message' => __( "That Livid.com video wasn't found, or it's private.", 'ml-slider-lightbox' ) ), 400 );
+                    return;
+                }
+                wp_send_json_error( array( 'message' => __( "Couldn't reach Livid.com. Please try again.", 'ml-slider-lightbox' ) ), 502 );
+                return;
+            }
+
+            $attachment_id = Livid::createAttachment( $livid_id, $oembed );
+            if ( ! $attachment_id ) {
+                wp_send_json_error( array( 'message' => __( 'The video could not be added.', 'ml-slider-lightbox' ) ), 500 );
+                return;
+            }
+        }
+
+        wp_send_json_success( wp_prepare_attachment_for_js( $attachment_id ) );
+    }
+
+    /**
+     * AJAX: store a frame the editor grabbed from a video as that video's poster.
+     */
+    public function ajaxVideoPoster() {
+        if ( ! check_ajax_referer( 'ml_gallery_folder', '_wpnonce', false ) || ! current_user_can( 'manage_options' ) ) {
+            wp_send_json_error( array( 'message' => __( 'Permission denied.', 'ml-slider-lightbox' ) ), 403 );
+            return;
+        }
+
+        $attachment_id = isset( $_POST['id'] ) ? absint( $_POST['id'] ) : 0;
+        if ( ! $attachment_id || ! wp_attachment_is( 'video', $attachment_id ) ) {
+            wp_send_json_error( array( 'message' => __( 'That attachment is not a video.', 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        // A poster may have been set while the browser was decoding the frame.
+        $existing = (int) get_post_thumbnail_id( $attachment_id );
+        if ( $existing ) {
+            wp_send_json_success( array( 'url' => (string) wp_get_attachment_image_url( $existing, 'large' ) ) );
+            return;
+        }
+
+        if ( empty( $_FILES['poster'] ) || ! isset( $_FILES['poster']['tmp_name'] )
+            || ! empty( $_FILES['poster']['error'] ) || ! is_uploaded_file( $_FILES['poster']['tmp_name'] ) ) {
+            wp_send_json_error( array( 'message' => __( 'No frame was uploaded.', 'ml-slider-lightbox' ) ), 400 );
+            return;
+        }
+
+        require_once ABSPATH . 'wp-admin/includes/file.php';
+        require_once ABSPATH . 'wp-admin/includes/media.php';
+        require_once ABSPATH . 'wp-admin/includes/image.php';
+
+        // The name rides in from the browser; ours keeps the extension honest, and
+        // the JPEG-only override makes wp_handle_upload verify the contents match.
+        $_FILES['poster']['name'] = 'video-' . $attachment_id . '-poster.jpg';
+
+        $poster_id = media_handle_upload(
+            'poster',
+            $attachment_id,
+            array(
+                /* translators: %s: the video's title. */
+                'post_title' => sprintf( __( '%s poster', 'ml-slider-lightbox' ), get_the_title( $attachment_id ) ),
+            ),
+            array(
+                'test_form' => false,
+                'mimes'     => array( 'jpg|jpeg' => 'image/jpeg' ),
+            )
+        );
+
+        if ( is_wp_error( $poster_id ) ) {
+            wp_send_json_error( array( 'message' => __( 'The frame could not be saved.', 'ml-slider-lightbox' ) ), 500 );
+            return;
+        }
+
+        set_post_thumbnail( $attachment_id, $poster_id );
+
+        wp_send_json_success( array( 'url' => (string) wp_get_attachment_image_url( $poster_id, 'large' ) ) );
     }
 
     /**
@@ -3314,9 +3849,12 @@ class MetaSliderLightboxGallery {
             'mlGalleryAdmin',
             array(
                 'galleryId'        => isset( $_GET['id'] ) ? absint( $_GET['id'] ) : 0,
-                'selectTitle'      => __( 'Select Gallery Images', 'ml-slider-lightbox' ),
+                'selectTitle'      => __( 'Select Gallery Images or Videos', 'ml-slider-lightbox' ),
                 'selectButton'     => __( 'Add to Gallery', 'ml-slider-lightbox' ),
                 'removeLabel'      => __( 'Remove image', 'ml-slider-lightbox' ),
+                'videoPlaceholder' => GalleryItems::placeholderUrl(),
+                'posterTitle'      => __( 'Choose Poster Image', 'ml-slider-lightbox' ),
+                'posterButton'     => __( 'Use as poster', 'ml-slider-lightbox' ),
                 'editCaptionLabel' => __( 'Edit caption', 'ml-slider-lightbox' ),
                 'addCaptionLabel'  => __( 'Add caption', 'ml-slider-lightbox' ),
                 /* translators: %s: the selected image order, e.g. "A to Z (by filename)". */
@@ -3336,6 +3874,8 @@ class MetaSliderLightboxGallery {
                 'captionShownBadge'     => __( 'Shown in this gallery', 'ml-slider-lightbox' ),
                 'sizesNonce'    => wp_create_nonce( 'ml_gallery_sizes' ),
                 'justSaved'     => ( isset( $_GET['saved'] ) && '1' === sanitize_key( wp_unslash( $_GET['saved'] ) ) ) ? 1 : 0,
+                'addonLayouts'  => array_keys( $this->addonLayouts() ),
+                'addonLayoutSupports' => wp_list_pluck( $this->addonLayouts(), 'supports' ),
                 /* translators: 1: images processed, 2: total images. */
                 'sizesProgress' => __( 'Preparing image sizes… %1$d/%2$d', 'ml-slider-lightbox' ),
                 'sizesDone'     => __( 'Image sizes ready.', 'ml-slider-lightbox' ),
@@ -3356,6 +3896,9 @@ class MetaSliderLightboxGallery {
                 'zipError'        => __( 'The ZIP could not be imported.', 'ml-slider-lightbox' ),
                 'zipRejected'     => __( 'The upload was rejected — the ZIP may be larger than this server allows.', 'ml-slider-lightbox' ),
                 'zipNone'         => __( 'No images found in the ZIP.', 'ml-slider-lightbox' ),
+                'lividAdding'     => __( 'Adding…', 'ml-slider-lightbox' ),
+                'lividInvalid'    => __( "That isn't a Livid.com video link.", 'ml-slider-lightbox' ),
+                'lividError'      => __( "Couldn't reach Livid.com. Please try again.", 'ml-slider-lightbox' ),
             )
         );
     }
@@ -3441,6 +3984,8 @@ class MetaSliderLightboxGallery {
         $gallery_captions = $state['captions'];
         $lg               = $state['settings'];
         $image_ids        = $this->sortImageIds( $state['image_ids'], $lg['image_order'] ?? 'manual' );
+        $gallery_items    = GalleryItems::resolve( $image_ids, $gallery_id, $gallery_captions, 'render', $lg );
+        $has_video_item   = in_array( 'video', array_column( $gallery_items, 'type' ), true );
         $appearance       = $state['appearance'];
         $image_styles     = $state['image_styles'];
 
@@ -3596,30 +4141,42 @@ class MetaSliderLightboxGallery {
          * Filter the extra data-* attributes placed on the gallery container.
          *
          * @since 2.35.0 Added the $pro_settings parameter.
+         * @since 2.38.0 Added the $settings parameter.
          *
          * @param array      $attrs        name => value pairs.
          * @param int        $gallery_id   Gallery post id.
          * @param array|null $pro_settings Unsaved ml_gallery_pro_settings[*] values during a
          *                                 live preview render, null for saved state.
+         * @param array      $settings     The settings this render is using, unsaved ones
+         *                                 included, with caption_display already resolved.
+         *                                 Read these rather than the saved meta, which a
+         *                                 preview render has not written.
          */
         $extra_attrs = (array) apply_filters(
             'ml_gallery_data_attributes',
             array(),
             $gallery_id,
-            isset( $state['pro_settings'] ) ? (array) $state['pro_settings'] : null
+            isset( $state['pro_settings'] ) ? (array) $state['pro_settings'] : null,
+            $lg
         );
 
         $show_gallery_button = ! empty( $lg['show_lightbox_button'] )
             && ! empty( $lg['open_in_lightbox'] )
             && in_array( $layout, array( 'grid', 'masonry', 'justified' ), true );
+        $show_stage_button   = ! empty( $lg['show_lightbox_button'] )
+            && ! empty( $lg['open_in_lightbox'] )
+            && in_array( $layout, array( 'carousel', 'showcase' ), true );
+        $show_any_button     = $show_gallery_button || $show_stage_button;
         $button_position     = $lg['button_position'] ?? 'top-right';
 
-        if ( $show_gallery_button && 'top-right' !== $button_position ) {
+        if ( $show_any_button && 'top-right' !== $button_position ) {
             $off       = 'calc(10px + var(--ml-corner-inset, 0px))';
+            $off_top   = 'calc(10px + var(--ml-corner-inset, 0px) + var(--ml-stage-inset-top, 0px))';
+            $off_bot   = 'calc(10px + var(--ml-corner-inset, 0px) + var(--ml-stage-inset-bottom, 0px))';
             $pos_rules = array(
-                'top-left'     => "top:{$off};bottom:auto;left:{$off};right:auto;",
-                'bottom-right' => "top:auto;bottom:{$off};left:auto;right:{$off};",
-                'bottom-left'  => "top:auto;bottom:{$off};left:{$off};right:auto;",
+                'top-left'     => "top:{$off_top};bottom:auto;left:{$off};right:auto;",
+                'bottom-right' => "top:auto;bottom:{$off_bot};left:auto;right:{$off};",
+                'bottom-left'  => "top:auto;bottom:{$off_bot};left:{$off};right:auto;",
                 'center'       => 'top:50%;bottom:auto;left:50%;right:auto;transform:translate(-50%,-50%);',
             );
             if ( isset( $pos_rules[ $button_position ] ) ) {
@@ -3628,7 +4185,7 @@ class MetaSliderLightboxGallery {
             }
         }
 
-        if ( $show_gallery_button ) {
+        if ( $show_any_button ) {
             $btn_text_color = esc_html( $this->sanitizeColorValue( $appearance['button_text_color'] ?? '', '#ffffff' ) );
             $btn_text_hover = esc_html( $this->sanitizeColorValue( $appearance['button_hover_text_color'] ?? '', '#000000' ) );
             $btn_bg         = esc_html( $this->sanitizeColorValue( $appearance['button_color'] ?? '', '#000000' ) );
@@ -3692,6 +4249,11 @@ class MetaSliderLightboxGallery {
              data-lg-swipe-close="<?php echo $lg['swipe_close'] ? '1' : '0'; ?>"
              data-lg-mousewheel="<?php echo $lg['mousewheel'] ? '1' : '0'; ?>"
              data-lg-keyboard="<?php echo $lg['keyboard'] ? '1' : '0'; ?>"
+             <?php if ( $has_video_item ) : ?>
+             data-lg-video-autoplay="<?php echo ! empty( $lg['video_autoplay'] ) ? '1' : '0'; ?>"
+             data-lg-video-autoplay-each="<?php echo ! empty( $lg['video_autoplay_each'] ) ? '1' : '0'; ?>"
+             data-lg-video-chain="<?php echo ! empty( $lg['video_chain'] ) ? '1' : '0'; ?>"
+             <?php endif; ?>
              <?php if ( $show_gallery_button ) : ?>
              data-ml-show-button="1"
              <?php if ( ! empty( $lg['button_icon'] ) ) : ?>data-ml-button-icon="1"<?php endif; ?>
@@ -3707,9 +4269,82 @@ class MetaSliderLightboxGallery {
             $emitted      = 0;
             $schema_items = array();
             ?>
-            <?php foreach ( $image_ids as $image_id ) : ?>
+            <?php foreach ( $gallery_items as $gallery_item ) : ?>
                 <?php
-                $image_id      = absint( $image_id );
+                $image_id = (int) $gallery_item['key'];
+
+                if ( 'video' === $gallery_item['type'] ) {
+                    // Caption may carry markup, so alt below strips it to plain text.
+                    $caption     = $this->resolveItemCaption( $image_id, $gallery_item['caption'], $lg['caption_source'] ?? 'manual' );
+                    $item_hidden   = $load_more && $emitted >= $load_more_batch;
+                    $caption_addon = $this->thumbCaptionAddon( $image_id, $gallery_id, $caption, $lg );
+                    ++$emitted;
+                    $is_livid      = 'livid' === ( $gallery_item['provider'] ?? '' );
+
+                    /**
+                     * Video mimes lightGallery embeds itself when handed the watch URL as
+                     * the slide src. Everything else is played from a file as HTML5 video.
+                     *
+                     * @since 2.38.0
+                     *
+                     * @param string[] $mimes Embeddable video mimes.
+                     */
+                    $embed_mimes = apply_filters(
+                        'ml_gallery_embeddable_video_mimes',
+                        array( 'video/youtube', 'video/vimeo', 'video/wistia' )
+                    );
+                    $is_embed    = in_array( $gallery_item['mime'] ?? '', $embed_mimes, true );
+                    $player_url  = GalleryItems::playerUrl( $gallery_item, $lg );
+
+                    $schema_items[] = array(
+                        'id'      => $image_id,
+                        'caption' => $caption,
+                    );
+                    ?>
+                    <a href="<?php echo esc_url( $is_livid ? $gallery_item['link'] : $gallery_item['src'] ); ?>"
+                       class="ml-gallery-video<?php echo $item_hidden ? ' ml-item-hidden' : ''; ?><?php echo '' !== $gallery_item['poster'] ? ' ml-gallery-video--poster' : ''; ?>"
+                       <?php if ( $is_livid ) : ?>
+                       data-src="<?php echo esc_url( GalleryItems::embedSrc( $gallery_item, $lg ) ); ?>"
+                       data-iframe="true"
+                       data-download-url="false"
+                       <?php elseif ( $is_embed ) : ?>
+                       <?php
+                        // lightGallery works out the provider from the slide src, so hand it
+                        // the watch URL and keep the poster on its own attribute. A data-video
+                        // payload here would blank the src and force the HTML5 player, which
+                        // cannot play a provider page URL.
+                       ?>
+                       data-src="<?php echo esc_url( $gallery_item['src'] ); ?>"
+                       <?php if ( '' !== $gallery_item['poster'] ) : ?>
+                       data-poster="<?php echo esc_url( $gallery_item['poster'] ); ?>"
+                       <?php endif; ?>
+                       data-download-url="false"
+                       <?php else : ?>
+                       data-video="<?php echo esc_attr( GalleryItems::videoData( $gallery_item, $lg ) ); ?>"
+                       <?php // A remote provider has no downloadable file; lightGallery hides the button on "false". ?>
+                       <?php if ( '' !== ( $gallery_item['provider'] ?? '' ) ) : ?>
+                       data-download-url="false"
+                       <?php endif; ?>
+                       <?php endif; ?>
+                       data-thumb="<?php echo esc_url( $gallery_item['thumb'] ); ?>"
+                       <?php if ( '' !== $player_url ) : ?>
+                       data-player="<?php echo esc_url( $player_url ); ?>"
+                       <?php endif; ?>
+                       <?php if ( $caption && $emit_sub_html ) : ?>
+                       data-sub-html="<?php echo esc_html( $caption ); ?>"
+                       <?php endif; ?>>
+                        <img src="<?php echo esc_url( $gallery_item['thumb'] ); ?>"
+                             width="<?php echo (int) $gallery_item['width']; ?>"
+                             height="<?php echo (int) $gallery_item['height']; ?>"
+                             alt="<?php echo esc_attr( wp_strip_all_tags( $caption ) ); ?>">
+                        <?php if ( $caption || '' !== $caption_addon ) : ?>
+                            <span class="ml-gallery-caption"><?php echo wp_kses_post( $caption ); ?><?php echo $caption_addon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+                        <?php endif; ?>
+                    </a>
+                    <?php
+                    continue;
+                }
+
                 $lightbox_size = GalleryImageSize::resolve(
                     $image_id,
                     $this->sanitizeImageSize( $lg['lightbox_size'] ?? 'full' ),
@@ -3739,7 +4374,8 @@ class MetaSliderLightboxGallery {
                     continue;
                 }
 
-                $item_hidden = $load_more && $emitted >= $load_more_batch;
+                $item_hidden   = $load_more && $emitted >= $load_more_batch;
+                $caption_addon = $this->thumbCaptionAddon( $image_id, $gallery_id, $caption, $lg );
                 ++$emitted;
 
                 $schema_items[] = array(
@@ -3766,11 +4402,24 @@ class MetaSliderLightboxGallery {
                     echo wp_get_attachment_image( $image_id, $gallery_size, false, $img_attr ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                     remove_filter( 'wp_get_attachment_image_attributes', array( $this, 'removeResponsiveImageAttributes' ) );
                     ?>
-                    <?php if ( $caption ) : ?>
-                        <span class="ml-gallery-caption"><?php echo wp_kses_post( $caption ); ?></span>
+                    <?php if ( $caption || '' !== $caption_addon ) : ?>
+                        <span class="ml-gallery-caption"><?php echo wp_kses( $caption, $this->thumbCaptionAllowedTags() ); ?><?php echo $caption_addon; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
                     <?php endif; ?>
                 </a>
             <?php endforeach; ?>
+
+            <?php if ( $show_stage_button ) : ?>
+                <?php $stage_button_label = '' !== ( $lg['button_text'] ?? '' ) ? $lg['button_text'] : __( 'Open in Gallery', 'ml-slider-lightbox' ); ?>
+                <button type="button"
+                        class="ml-lightbox-button ml-gallery-stage-button"
+                        aria-label="<?php echo esc_attr( $stage_button_label ); ?>">
+                    <?php if ( ! empty( $lg['button_icon'] ) ) : ?>
+                        <svg class="ml-lightbox-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 9V3H15M21 3L13 11M10 5H7.8C6.11984 5 5.27976 5 4.63803 5.32698C4.07354 5.6146 3.6146 6.07354 3.32698 6.63803C3 7.27976 3 8.11984 3 9.8V16.2C3 17.8802 3 18.7202 3.32698 19.362C3.6146 19.9265 4.07354 20.3854 4.63803 20.673C5.27976 21 6.11984 21 7.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7202 19 17.8802 19 16.2V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <?php else : ?>
+                        <?php echo esc_html( $stage_button_label ); ?>
+                    <?php endif; ?>
+                </button>
+            <?php endif; ?>
 
         </div>
         <?php if ( $load_more && $emitted > $load_more_batch ) : ?>
@@ -3801,6 +4450,104 @@ class MetaSliderLightboxGallery {
     public function removeResponsiveImageAttributes( $attr ) {
         unset( $attr['srcset'], $attr['sizes'] );
         return $attr;
+    }
+
+    /**
+     * Attachment IDs referenced by galleries on the current page.
+     *
+     * Shortcodes render during the_content, long after wp_enqueue_scripts, so the
+     * asset gate has to read the content rather than wait for a render.
+     *
+     * @since 2.38.0
+     * @return int[]
+     */
+    public static function pageGalleryImageIds() {
+        $post = get_post();
+        if ( ! $post || ! $post->post_content ) {
+            return array();
+        }
+
+        $gallery_ids = array();
+
+        if ( preg_match_all( '/\[ml_gallery\b[^\]]*\bid=["\']?(\d+)/i', $post->post_content, $matches ) ) {
+            $gallery_ids = array_map( 'absint', $matches[1] );
+        }
+
+        if ( has_block( 'ml-slider-lightbox/gallery', $post ) ) {
+            $blocks = self::collectBlocks( parse_blocks( $post->post_content ), 'ml-slider-lightbox/gallery' );
+            foreach ( $blocks as $block ) {
+                if ( ! empty( $block['attrs']['galleryId'] ) ) {
+                    $gallery_ids[] = absint( $block['attrs']['galleryId'] );
+                }
+            }
+        }
+
+        $gallery_ids = array_filter( array_unique( $gallery_ids ) );
+        if ( empty( $gallery_ids ) ) {
+            return array();
+        }
+
+        $image_ids = array();
+        foreach ( $gallery_ids as $gallery_id ) {
+            $ids = get_post_meta( $gallery_id, '_ml_gallery_images', true );
+            if ( is_array( $ids ) ) {
+                $image_ids = array_merge( $image_ids, array_map( 'absint', $ids ) );
+            }
+        }
+
+        return array_values( array_filter( array_unique( $image_ids ) ) );
+    }
+
+    /**
+     * Blocks of one type at any depth.
+     *
+     * parse_blocks() only returns the top level, so a gallery placed inside a
+     * Group, Columns or Cover block would otherwise go unseen.
+     *
+     * @since 2.38.0
+     * @param array  $blocks Parsed blocks.
+     * @param string $name   Block name to match.
+     * @return array<int,array>
+     */
+    private static function collectBlocks( array $blocks, $name ) {
+        $found = array();
+
+        foreach ( $blocks as $block ) {
+            if ( $name === ( $block['blockName'] ?? '' ) ) {
+                $found[] = $block;
+            }
+            if ( ! empty( $block['innerBlocks'] ) && is_array( $block['innerBlocks'] ) ) {
+                $found = array_merge( $found, self::collectBlocks( $block['innerBlocks'], $name ) );
+            }
+        }
+
+        return $found;
+    }
+
+    /**
+     * Whether any gallery on the current page contains a video item.
+     *
+     * @since 2.38.0
+     * @return bool
+     */
+    public static function pageHasGalleryVideo() {
+        $ids = self::pageGalleryImageIds();
+        if ( empty( $ids ) ) {
+            return false;
+        }
+
+        $found = get_posts(
+            array(
+                'post_type'      => 'attachment',
+                'post_status'    => 'inherit',
+                'post__in'       => $ids,
+                'post_mime_type' => 'video',
+                'fields'         => 'ids',
+                'numberposts'    => 1,
+            )
+        );
+
+        return ! empty( $found );
     }
 
     /**
@@ -4456,7 +5203,11 @@ class MetaSliderLightboxGallery {
         if ( null === $public_types ) {
             $public_types = array_values( get_post_types( array( 'public' => true ) ) );
         }
-        $placeholders = implode( ', ', array_fill( 0, count( $public_types ), '%s' ) );
+
+        if ( empty( $public_types ) ) {
+            wp_cache_set( $cache_key, false, 'ml_gallery', 5 * MINUTE_IN_SECONDS );
+            return false;
+        }
 
         // Shortcode: always written as [ml_gallery id="X"] by the plugin.
         $like_shortcode = '%' . $wpdb->esc_like( '[ml_gallery id="' . $id . '"' ) . '%';
@@ -4466,18 +5217,40 @@ class MetaSliderLightboxGallery {
         $like_block_comma = '%' . $wpdb->esc_like( '"galleryId":' . $id . ',' ) . '%';
         $like_block_brace = '%' . $wpdb->esc_like( '"galleryId":' . $id . '}' ) . '%';
 
-        // phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared -- $placeholders contains only %s literals
-        $posts = $wpdb->get_results(
-            $wpdb->prepare(
-                "SELECT ID, post_title, post_type FROM {$wpdb->posts}
-                 WHERE post_status = 'publish'
-                   AND post_type IN ({$placeholders})
-                   AND ( post_content LIKE %s
-                         OR post_content LIKE %s
-                         OR post_content LIKE %s )",
-                array_merge( $public_types, array( $like_shortcode, $like_block_comma, $like_block_brace ) )
+        $usage_where = static function ( $where, $query ) use ( $wpdb, $like_shortcode, $like_block_comma, $like_block_brace ) {
+            if ( ! $query->get( 'ml_gallery_usage_lookup' ) ) {
+                return $where;
+            }
+
+            return $where . $wpdb->prepare(
+                " AND ( {$wpdb->posts}.post_content LIKE %s
+                    OR {$wpdb->posts}.post_content LIKE %s
+                    OR {$wpdb->posts}.post_content LIKE %s )",
+                $like_shortcode,
+                $like_block_comma,
+                $like_block_brace
+            );
+        };
+
+        add_filter( 'posts_where', $usage_where, 10, 2 );
+
+        $query = new \WP_Query(
+            array(
+                'post_type'               => $public_types,
+                'post_status'             => 'publish',
+                'posts_per_page'          => -1,
+                'no_found_rows'           => true,
+                'ignore_sticky_posts'     => true,
+                'update_post_meta_cache'  => false,
+                'update_post_term_cache'  => false,
+                'suppress_filters'        => false,
+                'ml_gallery_usage_lookup' => true,
             )
         );
+
+        remove_filter( 'posts_where', $usage_where, 10 );
+
+        $posts = $query->posts;
 
         if ( empty( $posts ) ) {
             wp_cache_set( $cache_key, false, 'ml_gallery', 5 * MINUTE_IN_SECONDS );

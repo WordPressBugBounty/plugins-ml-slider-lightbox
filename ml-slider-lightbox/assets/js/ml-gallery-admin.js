@@ -150,6 +150,7 @@ function collectGalleryState() {
 	let mediaUploader;
 	let $editingItem = null;
 	let captionFields = null;   // fetched { source: {value, editable, reason} }
+	let captionRequest = 0;
 	let currentSource = 'manual';
 
 	/**
@@ -193,12 +194,16 @@ function collectGalleryState() {
 	 * @param {string} position   'start' to prepend, otherwise append.
 	 */
 	function addImageToPreview( attachment, position ) {
-		const id    = attachment.id;
-		const thumb = ( attachment.sizes && attachment.sizes.medium )
+		const id      = attachment.id;
+		const isVideo = attachment.type === 'video';
+		const videoArt = ( isVideo && attachment.image && attachment.image.src && attachment.image.src !== attachment.icon )
+			? attachment.image.src
+			: '';
+		const thumb   = ( attachment.sizes && attachment.sizes.medium )
 			? attachment.sizes.medium.url
 			: ( ( attachment.sizes && attachment.sizes.thumbnail )
 				? attachment.sizes.thumbnail.url
-				: attachment.url );
+				: ( isVideo ? ( videoArt || mlGalleryAdmin.videoPlaceholder ) : attachment.url ) );
 
 		if ( $( '#ml-gallery-preview [data-id="' + id + '"]' ).length ) {
 			return;
@@ -208,10 +213,13 @@ function collectGalleryState() {
 		const $item   = $( '<div>' ).addClass( 'ml-gallery-item' )
 			.attr( {
 				'data-id'      : id,
-				'data-full'    : attachment.url || thumb,
+				'data-full'    : isVideo ? '' : ( attachment.url || thumb ),
 				'data-date'    : keys.date,
 				'data-filename': keys.filename,
 			} );
+		if ( isVideo ) {
+			$item.addClass( 'ml-gallery-item--video' );
+		}
 		const $img    = $( '<img>' ).attr( { src: thumb, alt: '' } );
 
 		const $remove = $( '<button>' ).attr( {
@@ -234,6 +242,23 @@ function collectGalleryState() {
 		} ).addClass( 'ml-gallery-caption-input' ).val( '' );
 
 		$item.append( $img ).append( $remove ).append( $bar ).append( $captionInput );
+
+		// Videos added without a reload have no poster override yet; the input
+		// records the native art so the clear button can restore it. The picker
+		// is cloned from the modal's copy so the two never drift apart.
+		if ( isVideo ) {
+			$item.append( $( '<input>' ).attr( {
+				type                 : 'hidden',
+				name                 : 'ml_gallery_posters[' + id + ']',
+				'data-fallback-thumb': thumb,
+			} ).addClass( 'ml-gallery-poster-input' ).val( '' ) );
+
+			$item.append( $( '#ml-caption-modal .ml-poster-control' ).clone().removeClass( 'is-hidden' ) );
+
+			if ( ! videoArt && attachment.url ) {
+				$item.attr( 'data-video-src', attachment.url );
+			}
+		}
 
 		let initial = '';
 		if ( mlGalleryAdmin.captionSource === 'media_caption' ) {
@@ -269,7 +294,7 @@ function collectGalleryState() {
 				title   : mlGalleryAdmin.selectTitle,
 				button  : { text: mlGalleryAdmin.selectButton },
 				multiple: true,
-				library : { type: 'image' },
+				library : { type: [ 'image', 'video' ] },
 			} );
 
 			mediaUploader.on( 'select', function () {
@@ -330,7 +355,11 @@ function collectGalleryState() {
 			openFolderModal();
 		} else if ( 'zip' === method ) {
 			openZipPicker();
-		} else {
+		} else if ( 'livid' === method ) {
+			openLividModal();
+		} else if ( 'upload' === method || 'browse' === method ) {
+			// Only this plugin's own methods are media frame modes. Anything else
+			// was rendered by an add-on, and is left for the add-on to handle.
 			openMediaFrame( method );
 		}
 	} );
@@ -620,6 +649,83 @@ function collectGalleryState() {
 		syncHiddenField();
 	} );
 
+	// ── Livid video ───────────────────────────────────────────────────────── //
+
+	function openLividModal() {
+		$( '#ml-livid-status' ).text( '' );
+		$( '#ml-livid-modal' ).addClass( 'is-open' );
+		$( '#ml-livid-url' ).val( '' ).trigger( 'focus' );
+	}
+
+	function closeLividModal() {
+		$( '#ml-livid-modal' ).removeClass( 'is-open' );
+		$( '#ml-livid-url' ).val( '' );
+		$( '#ml-gallery-add-images' ).trigger( 'focus' );
+	}
+
+	$( document ).on( 'click', '#ml-livid-close, #ml-livid-cancel, #ml-livid-overlay', function () {
+		closeLividModal();
+	} );
+
+	$( document ).on( 'keydown', function ( e ) {
+		if ( 'Escape' === e.key && $( '#ml-livid-modal' ).hasClass( 'is-open' ) ) {
+			closeLividModal();
+		}
+	} );
+
+	$( document ).on( 'keydown', '#ml-livid-url', function ( e ) {
+		if ( 'Enter' === e.key ) {
+			e.preventDefault();
+			$( '#ml-livid-add' ).trigger( 'click' );
+		}
+	} );
+
+	$( document ).on( 'click', '#ml-livid-add', function () {
+		const url     = String( $( '#ml-livid-url' ).val() || '' ).trim();
+		const $status = $( '#ml-livid-status' );
+
+		if ( ! url ) {
+			$status.text( mlGalleryAdmin.lividInvalid );
+			return;
+		}
+
+		const $btn = $( this ).prop( 'disabled', true );
+		$status.text( mlGalleryAdmin.lividAdding );
+
+		$.post( ajaxurl, {
+			action  : 'ml_gallery_add_livid',
+			_wpnonce: mlGalleryAdmin.folderNonce,
+			url     : url,
+		} ).done( function ( res ) {
+			if ( res && res.success && res.data ) {
+				const position = $( 'input[name="ml_gallery_settings[add_position]"]:checked' ).val() || 'end';
+				addImageToPreview( res.data, position );
+				syncHiddenField();
+				closeLividModal();
+			} else {
+				$status.text( ( res && res.data && res.data.message ) || mlGalleryAdmin.lividError );
+			}
+		} ).fail( function ( xhr ) {
+			const data = xhr && xhr.responseJSON && xhr.responseJSON.data;
+			$status.text( ( data && data.message ) || mlGalleryAdmin.lividError );
+		} ).always( function () {
+			$btn.prop( 'disabled', false );
+		} );
+	} );
+
+	// ── Add-on items ──────────────────────────────────────────────────────── //
+
+	// Inbound counterpart to the events published above: an add-on hands us a
+	// prepared attachment and we build the tile with our own code path.
+	$( document ).on( 'ml-gallery:add-item', function ( e, attachment, position ) {
+		if ( ! attachment || ! attachment.id ) {
+			return;
+		}
+
+		addImageToPreview( attachment, position || 'end' );
+		syncHiddenField();
+	} );
+
 	// ── Caption modal ─────────────────────────────────────────────────────── //
 
 	/**
@@ -707,10 +813,17 @@ function collectGalleryState() {
 		return $item.attr( 'data-full' ) || $item.find( 'img' ).attr( 'src' );
 	}
 
+	// The caption modal is one shared instance, so add-ons rendering into it need
+	// to be told which item it is showing, on open and on every nav step.
+	function announceCaptionItem( $item ) {
+		$( document ).trigger( 'ml-gallery:caption-item', [ $item.data( 'id' ), $item ] );
+	}
+
 	function openCaptionModal( $item ) {
 		$editingItem      = $item;
 
 		$( '#ml-caption-preview-img' ).attr( 'src', captionPreviewSrc( $item ) );
+		announceCaptionItem( $item );
 		$( '#ml-caption-modal' ).addClass( 'is-open' );
 		$( 'body' ).addClass( 'ml-modal-open' );
 
@@ -720,6 +833,10 @@ function collectGalleryState() {
 		if ( wpEd && wpEd.remove ) {
 			wpEd.remove( EDITOR_ID );
 		}
+
+		// remove() flushes the outgoing caption back into the textarea, which is
+		// what initialize() below seeds the new editor from.
+		setEditorContent( '' );
 
 		setTimeout( function () {
 			if ( wpEd && wpEd.initialize ) {
@@ -751,14 +868,7 @@ function collectGalleryState() {
 					} );
 				}
 
-				currentSource = mlGalleryAdmin.captionSource || 'manual';
-				const id = $editingItem.data( 'id' );
-				captionFields = null;
-				fetchCaptionFields( id ).done( function ( res ) {
-					captionFields = ( res && res.data && res.data.fields ) || null;
-					renderCaptionTabs();
-					const field = ( captionFields && captionFields[ currentSource ] ) || { value: '' };
-					setEditorContent( field.value );
+				applyCaptionFields( $editingItem ).done( function () {
 					if ( ed ) { ed.focus(); }
 				} );
 			}, 300 );
@@ -832,17 +942,29 @@ function collectGalleryState() {
 		$( '#ml-caption-next' ).toggle( ! single ).prop( 'disabled', index >= total - 1 );
 	}
 
-	function loadCaptionItem( $item ) {
-		$editingItem = $item;
-		$( '#ml-caption-preview-img' ).attr( 'src', captionPreviewSrc( $item ) );
+	// Stepping through images outruns the fetch, so blank the editor up front and
+	// only paint a response while it is still the one we asked for.
+	function applyCaptionFields( $item ) {
 		currentSource = mlGalleryAdmin.captionSource || 'manual';
 		captionFields = null;
-		fetchCaptionFields( $item.data( 'id' ) ).done( function ( res ) {
+		setEditorContent( '' );
+
+		const token = ++captionRequest;
+
+		return fetchCaptionFields( $item.data( 'id' ) ).done( function ( res ) {
+			if ( token !== captionRequest ) { return; }
 			captionFields = ( res && res.data && res.data.fields ) || null;
 			renderCaptionTabs();
 			const field = ( captionFields && captionFields[ currentSource ] ) || { value: '' };
 			setEditorContent( field.value );
 		} );
+	}
+
+	function loadCaptionItem( $item ) {
+		$editingItem = $item;
+		$( '#ml-caption-preview-img' ).attr( 'src', captionPreviewSrc( $item ) );
+		announceCaptionItem( $item );
+		applyCaptionFields( $item );
 		updateCaptionNav();
 	}
 
@@ -1025,7 +1147,8 @@ function collectGalleryState() {
 			const isPx   = $( this ).is( '#ml_gallery_gap, #ml_gallery_height, #ml_gallery_caption_text_size, #ml_gallery_corner_radius, #ml_gallery_border_width, #ml_gallery_frame_border_width' );
 			const isMs   = $( this ).is( '#ml_gallery_autoplay_interval, #ml_gallery_pro_autoplay_interval' );
 			const isPct  = $( this ).is( '#ml_gallery_opacity' );
-			const suffix = isPx ? 'px' : ( isMs ? 'ms' : ( isPct ? '%' : '' ) );
+			const custom = this.getAttribute( 'data-ml-suffix' );
+			const suffix = null !== custom ? custom : ( isPx ? 'px' : ( isMs ? 'ms' : ( isPct ? '%' : '' ) ) );
 			$val.text( this.value + suffix );
 		} );
 
@@ -1052,11 +1175,13 @@ function collectGalleryState() {
 		} );
 
 		function toggleColumnsRow( layout ) {
-			var hideColumns = layout === 'justified' || layout === 'carousel' || layout === 'showcase';
-			var hideHeight  = layout === 'masonry' || layout === 'carousel' || layout === 'showcase';
-			var hideGap     = layout === 'carousel' || layout === 'showcase';
-			var hideModal   = layout === 'carousel' || layout === 'showcase';
-			var hideLoadMore = layout === 'carousel' || layout === 'showcase';
+			var addon       = isAddonLayout( layout );
+			var hideColumns = addon || layout === 'justified' || layout === 'carousel' || layout === 'showcase';
+			var hideHeight  = ( addon && ! addonLayoutSupports( layout, 'height' ) ) || layout === 'masonry' || layout === 'carousel' || layout === 'showcase';
+			var hideGap     = addon || layout === 'carousel' || layout === 'showcase';
+			var hideModal   = addon;
+			var hideLoadMore = addon || layout === 'carousel' || layout === 'showcase';
+			$( '.ml-captions-panel, .ml-image-order, .ml-image-order-notice' ).toggleClass( 'is-hidden', addon );
 			$( '.ml-gallery-columns-row' ).toggleClass( 'is-hidden', hideColumns );
 			$( '.ml-gallery-height-row' ).toggleClass( 'is-hidden', hideHeight );
 			$( '.ml-gallery-gap-row' ).toggleClass( 'is-hidden', hideGap );
@@ -1193,7 +1318,7 @@ function collectGalleryState() {
 		}
 
 		function toggleCaptionLightboxOptions( layout, openInLightbox ) {
-			var hide    = layout === 'carousel' || layout === 'showcase' || ! openInLightbox;
+			var hide    = isAddonLayout( layout ) || layout === 'carousel' || layout === 'showcase' || ! openInLightbox;
 			var $select = $( '#ml_gallery_caption_display' );
 			if ( ! $select.length ) {
 				return;
@@ -1206,7 +1331,7 @@ function collectGalleryState() {
 
 		function toggleLightboxSections( layout, openInLightbox ) {
 			var isInlineLayout = layout === 'carousel' || layout === 'showcase';
-			var hide = ! isInlineLayout && ! openInLightbox;
+			var hide = isAddonLayout( layout ) || ( ! isInlineLayout && ! openInLightbox );
 			$( '.ml-lightbox-settings-group, .ml-lightbox-only-panel, .ml-window-size-group' ).toggleClass( 'is-hidden', hide );
 			$( '[data-ml-size-select]' ).each( function () {
 				toggleCustomSizeRow( $( this ) );
@@ -1214,16 +1339,15 @@ function collectGalleryState() {
 		}
 
 		function toggleButtonSettingsPanel( layout, openInLightbox ) {
-			var isGridLike = layout !== 'carousel' && layout !== 'showcase';
-			var hide = ! isGridLike || ! openInLightbox;
+			var hide = isAddonLayout( layout ) || ! openInLightbox;
 			$( '.ml-button-settings-group' ).toggleClass( 'is-hidden', hide );
 		}
 
 		function toggleTriggerColorRows( modeOverride ) {
 			var layout = $( 'input[name="ml_gallery_settings[layout]"]:checked' ).val() || 'grid';
 			var openInLightbox = $( '#ml_gallery_open_in_lightbox' ).prop( 'checked' );
-			var isGridLike = layout !== 'carousel' && layout !== 'showcase';
-			var available = isGridLike && openInLightbox;
+			var isGridLike = ! isAddonLayout( layout ) && layout !== 'carousel' && layout !== 'showcase';
+			var available = ! isAddonLayout( layout ) && openInLightbox;
 			var loadMore = isGridLike && $( '#ml_gallery_load_more' ).prop( 'checked' );
 			var select = document.querySelector( '.ml-trigger-select' );
 			var mode = modeOverride || ( select ? select.value : 'image' );
@@ -1249,7 +1373,48 @@ function collectGalleryState() {
 			toggleCustomSizeRow( $( this ) );
 		} );
 
+		// Saving an add-on layout forces these three. Mirror that while one is selected, so
+		// Arrange and the preview agree, and put the user's values back if they leave unsaved.
+		var addonSnapshot = null;
+
+		function setSelect( $select, value ) {
+			if ( $select.val() !== value ) {
+				$select.val( value ).trigger( 'change' );
+			}
+		}
+
+		function enterAddonLayout() {
+			if ( ! addonSnapshot ) {
+				addonSnapshot = {
+					lightbox: $( '#ml_gallery_open_in_lightbox' ).prop( 'checked' ),
+					order:    $( '#ml_gallery_image_order' ).val(),
+					captions: $( '#ml_gallery_caption_display' ).val()
+				};
+			}
+			$( '#ml_gallery_open_in_lightbox' ).prop( 'checked', false );
+			setSelect( $( '#ml_gallery_image_order' ), 'manual' );
+			setSelect( $( '#ml_gallery_caption_display' ), 'hidden' );
+		}
+
+		function leaveAddonLayout() {
+			if ( ! addonSnapshot ) {
+				return;
+			}
+			var $captions = $( '#ml_gallery_caption_display' );
+			$( '#ml_gallery_open_in_lightbox' ).prop( 'checked', addonSnapshot.lightbox );
+			setSelect( $( '#ml_gallery_image_order' ), addonSnapshot.order );
+			// The add-on layout disabled these options, and .val() reads a disabled selection as null.
+			$captions.find( 'option' ).prop( { disabled: false, hidden: false } );
+			setSelect( $captions, addonSnapshot.captions );
+			addonSnapshot = null;
+		}
+
 		$( document ).on( 'change', 'input[name="ml_gallery_settings[layout]"]', function () {
+			if ( isAddonLayout( this.value ) ) {
+				enterAddonLayout();
+			} else {
+				leaveAddonLayout();
+			}
 			var openInLightbox = $( '#ml_gallery_open_in_lightbox' ).prop( 'checked' );
 			toggleColumnsRow( this.value );
 			toggleCaptionLightboxOptions( this.value, openInLightbox );
@@ -1367,6 +1532,20 @@ function collectGalleryState() {
 
 	// ── Image order ───────────────────────────────────────────────────────── //
 
+	// Add-on layouts (the ml_gallery_layouts filter) manage themselves: none of the grid,
+	// lightbox, caption or image-order controls apply to them.
+	function isAddonLayout( layout ) {
+		return 'undefined' !== typeof mlGalleryAdmin
+			&& Array.isArray( mlGalleryAdmin.addonLayouts )
+			&& -1 !== mlGalleryAdmin.addonLayouts.indexOf( layout );
+	}
+
+	// Controls an add-on layout keeps through 'supports' in the ml_gallery_layouts filter.
+	function addonLayoutSupports( layout, feature ) {
+		var map = 'undefined' !== typeof mlGalleryAdmin ? mlGalleryAdmin.addonLayoutSupports : null;
+		return !! ( map && Array.isArray( map[ layout ] ) && -1 !== map[ layout ].indexOf( feature ) );
+	}
+
 	const filenameCollator = new Intl.Collator( 'en', { numeric: true, sensitivity: 'base' } );
 
 	function applyImageOrder() {
@@ -1442,7 +1621,7 @@ function collectGalleryState() {
 
 		function isInlineLayout() {
 			const layout = $( 'input[name="ml_gallery_settings[layout]"]:checked' ).val() || 'grid';
-			return 'carousel' === layout || 'showcase' === layout;
+			return 'carousel' === layout || 'showcase' === layout || isAddonLayout( layout );
 		}
 
 		function clearAutoHeight() {
@@ -1603,6 +1782,293 @@ function collectGalleryState() {
 
 		setMode( $modes.attr( 'data-mode' ) );
 	} )();
+
+	// ── Video items ───────────────────────────────────────────────────────── //
+
+	// The video settings only mean anything once the gallery holds a video, and
+	// items are added client-side, so re-check whenever the item list changes.
+	function toggleVideoSettings() {
+		$( '.ml-video-settings' ).toggleClass( 'is-hidden', ! $( '.ml-gallery-item--video' ).length );
+	}
+
+	// Browsers block unmuted autoplay, so surface that as soon as either autoplay
+	// toggle is on rather than letting playback fail silently.
+	function toggleMuteNote() {
+		const autoplays = $( '#ml_gallery_video_autoplay' ).is( ':checked' )
+			|| $( '#ml_gallery_video_autoplay_each' ).is( ':checked' );
+
+		$( '.ml-video-mute-note' ).toggleClass( 'is-hidden', ! autoplays );
+	}
+
+	$( document ).on( 'change', '#ml_gallery_video_autoplay, #ml_gallery_video_autoplay_each', toggleMuteNote );
+	$( document ).on( 'ml-gallery:images-changed ml-gallery-image-added', toggleVideoSettings );
+
+	// Poster picker. Every video tile carries one, and the caption modal hosts a
+	// second copy for whichever item it is showing.
+	let posterFrame  = null;
+	let $posterItem  = null;
+	let $posterTarget = null;
+
+	// The modal's copy sits outside the grid, so it falls back to the item the
+	// modal is showing.
+	function posterItemFor( $button ) {
+		const $tile = $button.closest( '.ml-gallery-item' );
+
+		return $tile.length ? $tile : $posterItem;
+	}
+
+	function syncPosterControl() {
+		const $control = $( '#ml-caption-modal .ml-poster-control' );
+		const isVideo  = $posterItem && $posterItem.hasClass( 'ml-gallery-item--video' );
+
+		$control.toggleClass( 'is-hidden', ! isVideo );
+
+		if ( ! isVideo ) {
+			return;
+		}
+
+		const hasPoster = !! $posterItem.find( '.ml-gallery-poster-input' ).val();
+		$control.find( '.ml-gallery-poster-clear' ).toggleClass( 'is-hidden', ! hasPoster );
+	}
+
+	function syncPosterItem( $item ) {
+		const hasPoster = !! $item.find( '.ml-gallery-poster-input' ).val();
+
+		$item.find( '.ml-poster-control .ml-gallery-poster-clear' ).toggleClass( 'is-hidden', ! hasPoster );
+
+		if ( $posterItem && $item.is( $posterItem ) ) {
+			syncPosterControl();
+		}
+	}
+
+	$( document ).on( 'ml-gallery:caption-item', function ( event, id, $item ) {
+		$posterItem = $item && $item.length ? $item : null;
+		syncPosterControl();
+	} );
+
+	$( document ).on( 'click', '.ml-gallery-poster-pick', function ( event ) {
+		event.preventDefault();
+
+		$posterTarget = posterItemFor( $( this ) );
+
+		if ( ! $posterTarget || ! $posterTarget.length ) {
+			return;
+		}
+
+		if ( ! posterFrame ) {
+			posterFrame = wp.media( {
+				title   : mlGalleryAdmin.posterTitle,
+				button  : { text: mlGalleryAdmin.posterButton },
+				multiple: false,
+				library : { type: 'image' },
+			} );
+
+			posterFrame.on( 'select', function () {
+				if ( ! $posterTarget || ! $posterTarget.length ) {
+					return;
+				}
+
+				const attachment = posterFrame.state().get( 'selection' ).first().toJSON();
+				const thumb      = ( attachment.sizes && attachment.sizes.medium )
+					? attachment.sizes.medium.url
+					: attachment.url;
+
+				$posterTarget.find( '.ml-gallery-poster-input' ).val( attachment.id ).trigger( 'change' );
+				$posterTarget.find( '> img' ).attr( 'src', thumb );
+
+				if ( $posterItem && $posterTarget.is( $posterItem ) ) {
+					$( '#ml-caption-preview-img' ).attr( 'src', thumb );
+				}
+
+				syncPosterItem( $posterTarget );
+			} );
+		}
+
+		posterFrame.open();
+	} );
+
+	// Clearing empties the input, which the save path reads as "no override", so
+	// the item falls back to its own cover art.
+	$( document ).on( 'click', '.ml-gallery-poster-clear', function ( event ) {
+		event.preventDefault();
+
+		const $item = posterItemFor( $( this ) );
+
+		if ( ! $item || ! $item.length ) {
+			return;
+		}
+
+		const $input   = $item.find( '.ml-gallery-poster-input' );
+		const fallback = $input.attr( 'data-fallback-thumb' );
+
+		$input.val( '' ).trigger( 'change' );
+
+		if ( fallback ) {
+			$item.find( '> img' ).attr( 'src', fallback );
+
+			if ( $posterItem && $item.is( $posterItem ) ) {
+				$( '#ml-caption-preview-img' ).attr( 'src', fallback );
+			}
+		}
+
+		syncPosterItem( $item );
+	} );
+
+	// Videos usually arrive with no cover art, so the editor grabs a frame from the
+	// file itself and stores it as that video's poster. One at a time: decoding
+	// several videos at once stalls the page.
+	const frameQueue = [];
+	let frameBusy    = false;
+
+	function queueFrameCapture( $item ) {
+		const src = $item.attr( 'data-video-src' );
+
+		if ( ! src ) {
+			return;
+		}
+
+		// Dropping the attribute keeps a later scan from queueing the same item twice.
+		$item.removeAttr( 'data-video-src' );
+
+		// A canvas cannot read a frame from another origin, which also rules out the
+		// remote videos an add-on stores as a file-less attachment.
+		if ( new URL( src, window.location.href ).origin !== window.location.origin ) {
+			return;
+		}
+
+		frameQueue.push( { id: parseInt( $item.attr( 'data-id' ), 10 ), src: src, $item: $item } );
+		runFrameQueue();
+	}
+
+	function runFrameQueue() {
+		// Chrome will not load a video while its tab is hidden, so hold the queue
+		// until the editor is on screen rather than timing every capture out.
+		if ( frameBusy || ! frameQueue.length || document.hidden ) {
+			return;
+		}
+
+		frameBusy = true;
+		const job = frameQueue.shift();
+
+		grabFrame( job.src ).then( function ( blob ) {
+			return uploadFrame( job.id, blob );
+		} ).then( function ( url ) {
+			if ( url ) {
+				job.$item.find( 'img' ).attr( 'src', url );
+				job.$item.find( '.ml-gallery-poster-input' ).attr( 'data-fallback-thumb', url );
+			}
+		} ).catch( function () {
+			// A codec the browser cannot decode just keeps the placeholder.
+		} ).then( function () {
+			frameBusy = false;
+			runFrameQueue();
+		} );
+	}
+
+	function grabFrame( src ) {
+		return new Promise( function ( resolve, reject ) {
+			const video   = document.createElement( 'video' );
+			const giveUp  = setTimeout( function () {
+				done();
+				reject();
+			}, 30000 );
+
+			function done() {
+				clearTimeout( giveUp );
+				video.removeAttribute( 'src' );
+				video.load();
+			}
+
+			function capture() {
+				drawFrame( video ).then( resolve, reject );
+				done();
+			}
+
+			video.muted       = true;
+			video.playsInline = true;
+			video.preload     = 'auto';
+
+			video.addEventListener( 'loadeddata', function () {
+				// The opening frame of a video is very often black.
+				const duration = isFinite( video.duration ) ? video.duration : 0;
+				const target   = duration ? Math.min( 1, duration / 2 ) : 0;
+
+				if ( target > 0.01 ) {
+					video.currentTime = target;
+					return;
+				}
+
+				capture();
+			} );
+
+			video.addEventListener( 'seeked', capture );
+			video.addEventListener( 'error', function () {
+				done();
+				reject();
+			} );
+
+			video.src = src;
+			video.load();
+		} );
+	}
+
+	function drawFrame( video ) {
+		const width  = video.videoWidth || 0;
+		const height = video.videoHeight || 0;
+
+		if ( ! width || ! height ) {
+			return Promise.reject();
+		}
+
+		const scale   = Math.min( 1, 1280 / width );
+		const canvas  = document.createElement( 'canvas' );
+		canvas.width  = Math.round( width * scale );
+		canvas.height = Math.round( height * scale );
+
+		return new Promise( function ( resolve, reject ) {
+			canvas.getContext( '2d' ).drawImage( video, 0, 0, canvas.width, canvas.height );
+			canvas.toBlob( function ( blob ) {
+				if ( blob ) {
+					resolve( blob );
+				} else {
+					reject();
+				}
+			}, 'image/jpeg', 0.82 );
+		} );
+	}
+
+	function uploadFrame( id, blob ) {
+		const fd = new FormData();
+		fd.append( 'action', 'ml_gallery_video_poster' );
+		fd.append( '_wpnonce', mlGalleryAdmin.folderNonce );
+		fd.append( 'id', id );
+		fd.append( 'poster', blob, 'poster.jpg' );
+
+		return $.ajax( {
+			url        : ajaxurl,
+			method     : 'POST',
+			data       : fd,
+			processData: false,
+			contentType: false,
+		} ).then( function ( res ) {
+			return ( res && res.success && res.data ) ? res.data.url : '';
+		} );
+	}
+
+	function scanForFrameCaptures() {
+		$( '#ml-gallery-preview .ml-gallery-item[data-video-src]' ).each( function () {
+			queueFrameCapture( $( this ) );
+		} );
+	}
+
+	$( document ).on( 'ml-gallery-image-added', scanForFrameCaptures );
+	document.addEventListener( 'visibilitychange', runFrameQueue );
+
+	$( function () {
+		toggleVideoSettings();
+		toggleMuteNote();
+		scanForFrameCaptures();
+	} );
 
 } )( jQuery );
 

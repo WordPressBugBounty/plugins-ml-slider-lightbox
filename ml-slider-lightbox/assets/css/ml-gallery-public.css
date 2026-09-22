@@ -87,6 +87,21 @@
 .ml-gallery-container.ml-layout-carousel {
 	position: relative;
 	height: 500px;
+	z-index: 0;
+	--ml-stage-inset-top: 52px;
+}
+
+.ml-gallery-container.ml-layout-carousel[data-lg-thumbnails="1"] {
+	--ml-stage-inset-bottom: 90px;
+}
+
+.ml-gallery-container .ml-gallery-stage-button {
+	top: calc(10px + var(--ml-corner-inset, 0px) + var(--ml-stage-inset-top, 0px)) !important;
+	right: calc(10px + var(--ml-corner-inset, 0px)) !important;
+}
+
+.ml-gallery-container.ml-layout-carousel .ml-gallery-stage-button {
+	z-index: 100002;
 }
 
 /* Hide the raw <a> source items — lightGallery replaces them with its own UI */
@@ -125,6 +140,20 @@
 	width: 100%;
 	height: 420px;
 	object-fit: cover;
+}
+
+/* The rule above is an author style, so it outranks the browser's own [hidden]. */
+.ml-showcase-stage .ml-showcase-img[hidden] {
+	display: none;
+}
+
+.ml-showcase-stage .ml-showcase-player {
+	display: block;
+	width: 100%;
+	height: 420px;
+	border: 0;
+	background: #000;
+	object-fit: contain;
 }
 
 .ml-showcase-caption {
@@ -302,7 +331,8 @@
 		columns: var(--ml-columns-mobile, 1);
 	}
 
-	.ml-showcase-stage .ml-showcase-img {
+	.ml-showcase-stage .ml-showcase-img,
+	.ml-showcase-stage .ml-showcase-player {
 		height: 260px;
 	}
 }
@@ -331,6 +361,28 @@
 .ml-gallery-container[data-ml-lightbox="0"] a {
 	pointer-events: none;
 	cursor: default;
+}
+
+/* ── Video items ────────────────────────────────────────────────────────── */
+
+/* Positioning context for the play badge. Scoped to video anchors so image
+   anchors keep whatever positioning their layout gives them. */
+.ml-gallery-container > a.ml-gallery-video {
+	position: relative;
+}
+
+/* Play badge for videos with poster images. Posterless videos show a placeholder
+   SVG with its own play glyph, so the badge is omitted to avoid stacking. */
+.ml-gallery-video--poster::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	background: rgba( 0, 0, 0, 0.55 ) url( "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M9 7l9 5-9 5z'/%3E%3C/svg%3E" ) no-repeat center / 24px 24px;
+	pointer-events: none;
 }
 
 /* ── Thumbnail captions ─────────────────────────────────────────────────── */

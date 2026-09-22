@@ -1,6 +1,26 @@
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+[2.38.0] -  Sep 22, 2026
+
+- ADDED: Galleries can now contain uploaded videos, which play in the lightbox alongside images;
+- ADDED: Poster images for gallery videos, using the video's own cover art when it has one and a placeholder when it does not;
+- ADDED: A video with no cover art of its own now gets a poster taken from the video itself, saved to your Media Library as you add it to a gallery, #696;
+- ADDED: ml_gallery_items filter, ml_gallery_pro_item_controls action and ml_gallery_video_placeholder filter, so add-on plugins can extend gallery items;
+- ADDED: ml_gallery_layouts filter and ml_gallery_layout_fields action, so add-on plugins can add gallery layouts;
+- ADDED: Open with setting on the Carousel and Showcase layouts, so an image, icon or button click opens the gallery window, #669, #668;
+- ADDED: Locked Watermark, Photo Metadata and Likes rows in the gallery editor, and a locked Before & After tile in the layout picker, so free users can see what Gallery Pro adds, #675, #676, #677, #678;
+- FIXED: Video items were skipped by the Showcase layout;
+- FIXED: Videos did not play on the Showcase layout — Livid.com, YouTube, Vimeo and uploaded videos now play in the stage itself, #691;
+- CHANGED: Removed the unused video.js library, saving 633KB on pages that load video;
+- CHANGED: Refreshed the Free vs Pro table on the upgrade page — added the missing Pro features (Before & After layout, Likes, Download Sizes, Photo Metadata, Image Protection and Watermarking) and video galleries, and corrected the social sharing and responsive column descriptions, #664;
+- CHANGED: The email sign-up window now starts with the address on your WordPress account, so there is nothing to type, #694;
+- CHANGED: The Poster button now sits on the video itself in the gallery editor, instead of only inside the caption window, #698;
+- CHANGED: New square Gallery icon in the WordPress admin menu, to match MetaSlider Slideshow, #706;
+- CHANGED: Shorter, clearer wording in the email sign-up window, to match MetaSlider Slideshow, #705;
+- CHANGED: Livid videos are now labelled Livid.com in the gallery editor, so the service is easier to recognise, #708;
+- CHANGED: The empty gallery editor now says "No images or videos added yet", since galleries can hold videos too, #714;
+
 [2.37.0] - 20 Aug, 2026
 
 - ADDED: Load More button for large galleries, with a configurable batch size, on the Grid, Masonry and Justified layouts, #513;

@@ -12,7 +12,7 @@ if (!defined('ML_LIGHTGALLERY_LICENSE_KEY')) {
 
 class MetaSliderLightboxPlugin
 {
-    public $version = '2.37.0';
+    public $version = '2.38.0';
     protected static $instance = null;
     private $supported_plugins = array();
 
@@ -23,6 +23,8 @@ class MetaSliderLightboxPlugin
     private $schema;
 
     private $notices;
+
+    private $optin;
 
     /**
      * Static caches for performance optimization
@@ -46,6 +48,8 @@ class MetaSliderLightboxPlugin
 
     public function setup()
     {
+        require_once plugin_dir_path( __FILE__ ) . 'admin/EmailCollection.php';
+
         $this->supported_plugins = $this->getSupportedPlugins();
         $this->initializeDefaultOptions();
         $this->addSettings();
@@ -60,6 +64,9 @@ class MetaSliderLightboxPlugin
 
         require_once plugin_dir_path( __FILE__ ) . 'admin/Notices.php';
         $this->notices = new \MLSliderLightbox_Notices( $this->version, $this->isProPluginActive() );
+
+        require_once plugin_dir_path( __FILE__ ) . 'admin/Optin.php';
+        $this->optin = new \MLSliderLightbox_Optin( $this->version );
     }
 
     public function __construct()
@@ -1594,28 +1601,10 @@ class MetaSliderLightboxPlugin
             );
         }
 
-        if ($needs_video) {
-            wp_enqueue_style(
-                'videojs-css',
-                plugin_dir_url(__FILE__) . 'assets/css/video-js.css',
-                array(),
-                $this->version
-            );
-
-            wp_enqueue_script(
-                'videojs',
-                plugin_dir_url(__FILE__) . 'assets/js/video.min.js',
-                array(),
-                $this->version,
-                true
-            );
-        }
-
         $js_dependencies = array('ml-lightgallery-js');
         if ($needs_video) {
             $js_dependencies[] = 'lightgallery-video';
             $js_dependencies[] = 'lightgallery-vimeo-thumbnail';
-            $js_dependencies[] = 'videojs';
         }
         if ($needs_thumbnails) {
             $js_dependencies[] = 'lightgallery-thumbnail';
@@ -2050,6 +2039,7 @@ class MetaSliderLightboxPlugin
     {
         if (is_admin()) {
             add_action('admin_menu', array($this, 'addAdminMenu'));
+            add_action('admin_head', array($this, 'printMenuIconStyle'));
             add_action('admin_enqueue_scripts', array($this, 'enqueueAdminAssets'));
             add_action('updated_option', array($this, 'handleOptionUpdate'), 10, 3);
             add_action('admin_init', array($this, 'registerSettings'));
@@ -2057,6 +2047,11 @@ class MetaSliderLightboxPlugin
             add_filter('custom_menu_order', '__return_true');
             add_filter('menu_order', array($this, 'positionAdminMenu'));
         }
+    }
+
+    public function printMenuIconStyle()
+    {
+        echo '<style>#adminmenu .toplevel_page_metaslider-lightbox .wp-menu-image.svg { background-size: 30px auto; }</style>';
     }
 
     public function positionAdminMenu($menu_order)
@@ -2316,7 +2311,7 @@ class MetaSliderLightboxPlugin
             'manage_options',
             'metaslider-lightbox',
             array($this, 'renderMainPage'),
-            'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyBmaWxsPSIjZmZmIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjU1LjggMjU1LjgiIHN0eWxlPSJmaWxsOiNmZmYiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPjxwYXRoIGQ9Ik0xMjcuOSwwQzU3LjMsMCwwLDU3LjMsMCwxMjcuOWMwLDcwLjYsNTcuMywxMjcuOSwxMjcuOSwxMjcuOWM3MC42LDAsMTI3LjktNTcuMywxMjcuOS0xMjcuOUMyNTUuOCw1Ny4zLDE5OC41LDAsMTI3LjksMHogTTE2LjQsMTc3LjFsOTIuNS0xMTcuNUwxMjQuMiw3OWwtNzcuMyw5OC4xSDE2LjR6IE0xNzAuNSwxNzcuMWwtMzguOS00OS40bDE1LjUtMTkuNmw1NC40LDY5SDE3MC41eiBNMjA4LjUsMTc3LjFMMTQ2LjksOTkgbC02MS42LDc4LjJoLTMxbDkyLjUtMTE3LjVsOTIuNSwxMTcuNUgyMDguNXoiLz48L2c+PC9zdmc+Cg=='
+            'data:image/svg+xml;base64,' . base64_encode(file_get_contents(ML_SLIDER_LIGHTBOX_PATH . 'assets/images/gallery-white.svg'))
         );
 
         add_submenu_page(
@@ -2390,7 +2385,12 @@ class MetaSliderLightboxPlugin
                 echo '<div class="notice notice-success is-dismissible ml-lightbox-notice-success">';
                 echo '<p>' . __('Settings saved successfully!', 'ml-slider-lightbox') . '</p>';
                 echo '</div>';
+                $this->renderOptinSaveNotice();
             }
+
+            // This page renders its own notices, so a rejected address would
+            // otherwise be dropped with nothing but "Settings saved" to show.
+            settings_errors(\MLSliderLightbox_EmailCollection::OPTION_EMAIL);
             ?>
             
             <?php if ($current_tab === 'detection') : ?>
@@ -2453,6 +2453,9 @@ class MetaSliderLightboxPlugin
 
                     <h2><?php echo esc_html(__('Search Engine Optimization', 'ml-slider-lightbox')); ?></h2>
                     <?php $this->renderSettingsSection('metaslider_lightbox_settings', 'metaslider_lightbox_behavior_seo'); ?>
+
+                    <h2><?php echo esc_html(__('Email Updates', 'ml-slider-lightbox')); ?></h2>
+                    <?php $this->renderSettingsSection('metaslider_lightbox_settings', 'metaslider_lightbox_behavior_email'); ?>
 
                     <?php if ($this->isMetasliderActive() && $this->shouldHideMetaSliderSettings()) : ?>
                         <!-- Show notice only when there's a third-party conflict with MetaSlider active -->
@@ -2549,6 +2552,16 @@ class MetaSliderLightboxPlugin
         register_setting('metaslider_lightbox_manual', 'metaslider_lightbox_manual_options', array($this, 'sanitizeManualOptions'));
         register_setting('metaslider_lightbox_appearance', 'metaslider_lightbox_appearance_options', array($this, 'sanitizeAppearanceOptions'));
         register_setting('metaslider_lightbox_settings', 'ml_lightbox_options', array($this, 'sanitizeMetasliderOptions'));
+        register_setting(
+            'metaslider_lightbox_settings',
+            \MLSliderLightbox_EmailCollection::OPTION_OPTIN,
+            array($this, 'sanitizeOptin')
+        );
+        register_setting(
+            'metaslider_lightbox_settings',
+            \MLSliderLightbox_EmailCollection::OPTION_EMAIL,
+            array($this, 'sanitizeOptinEmail')
+        );
 
         /**
          * CONTENT DETECTION TAB
@@ -2840,6 +2853,21 @@ class MetaSliderLightboxPlugin
             array($this, 'gallerySchemaCallback'),
             'metaslider_lightbox_settings',
             'metaslider_lightbox_behavior_seo'
+        );
+
+        add_settings_section(
+            'metaslider_lightbox_behavior_email',
+            __('Email Updates', 'ml-slider-lightbox'),
+            array($this, 'behaviorEmailCallback'),
+            'metaslider_lightbox_settings'
+        );
+
+        add_settings_field(
+            'optin',
+            '',
+            array($this, 'optinCallback'),
+            'metaslider_lightbox_settings',
+            'metaslider_lightbox_behavior_email'
         );
 
         if (!$this->isProPluginActive()) {
@@ -3699,6 +3727,122 @@ class MetaSliderLightboxPlugin
         );
     }
 
+    public function behaviorEmailCallback()
+    {
+        echo '<p>' . esc_html__(
+            'Hear about new features and security releases for MetaSlider Gallery.',
+            'ml-slider-lightbox'
+        ) . '</p>';
+    }
+
+    public function optinCallback()
+    {
+        $email_option = \MLSliderLightbox_EmailCollection::OPTION_EMAIL;
+
+        $this->renderToggleSwitch(
+            \MLSliderLightbox_EmailCollection::OPTION_OPTIN,
+            \MLSliderLightbox_EmailCollection::site_is_optin(),
+            __('Email me about updates', 'ml-slider-lightbox'),
+            __(
+                'Occasional emails about new features and security releases. Unsubscribe at any time.',
+                'ml-slider-lightbox'
+            )
+        );
+
+        echo '<p class="ml-optin-setting">';
+        echo '<label class="screen-reader-text" for="' . esc_attr($email_option) . '">';
+        echo esc_html__('Email address', 'ml-slider-lightbox');
+        echo '</label>';
+        echo '<input type="email" class="regular-text" id="' . esc_attr($email_option) . '"';
+        echo ' name="' . esc_attr($email_option) . '"';
+        echo ' value="' . esc_attr(get_option($email_option, '')) . '"';
+        echo ' placeholder="you@example.com" />';
+        echo '</p>';
+    }
+
+    /**
+     * Opting in without a usable address would leave the flag on with nothing
+     * to send, so the address decides whether the flag can be set at all.
+     *
+     * @param mixed $input Raw checkbox value, null when unchecked.
+     * @return string
+     */
+    public function sanitizeOptin($input)
+    {
+        if (empty($input)) {
+            return '';
+        }
+
+        $email_option = \MLSliderLightbox_EmailCollection::OPTION_EMAIL;
+
+        $email = isset($_POST[$email_option])
+            ? sanitize_email(wp_unslash($_POST[$email_option]))
+            : get_option($email_option, '');
+
+        return is_email($email) ? '1' : '';
+    }
+
+    /**
+     * @param mixed $input Raw address from the settings form.
+     * @return string
+     */
+    public function sanitizeOptinEmail($input)
+    {
+        $input = is_string($input) ? trim($input) : '';
+
+        if ('' === $input) {
+            return '';
+        }
+
+        $email = sanitize_email($input);
+
+        // sanitize_email() reduces garbage to an empty string, which would be
+        // stored and then fail validation on the way out.
+        if (!is_email($email)) {
+            add_settings_error(
+                \MLSliderLightbox_EmailCollection::OPTION_EMAIL,
+                'ml_lightbox_optin_email',
+                __('Please enter a valid email address to receive updates.', 'ml-slider-lightbox'),
+                'error'
+            );
+
+            return get_option(\MLSliderLightbox_EmailCollection::OPTION_EMAIL, '');
+        }
+
+        return $email;
+    }
+
+    /**
+     * Hands the address over after a settings save. Deduplicated by the
+     * collector, so only a new or changed address actually goes anywhere.
+     */
+    private function renderOptinSaveNotice()
+    {
+        if (!\MLSliderLightbox_EmailCollection::site_is_optin()) {
+            return;
+        }
+
+        $report = \MLSliderLightbox_EmailCollection::optin();
+
+        if ('subscribed' === $report['status']) {
+            echo '<div class="notice notice-success is-dismissible"><p>';
+            echo esc_html__('You are subscribed. Check your inbox to confirm.', 'ml-slider-lightbox');
+            echo '</p></div>';
+            return;
+        }
+
+        if ('duplicate' === $report['status']) {
+            return;
+        }
+
+        echo '<div class="notice notice-warning is-dismissible"><p>';
+        echo esc_html__(
+            'Your preference was saved, but we could not add your address to the mailing list. Please check it and save again.',
+            'ml-slider-lightbox'
+        );
+        echo '</p></div>';
+    }
+
     public function showThumbnailsCallback()
     {
         $options = $this->getCachedMetaSliderOptions();
@@ -4434,7 +4578,7 @@ class MetaSliderLightboxPlugin
                     <tr>
                         <td>
                             <h4><?php _e('Responsive columns', 'ml-slider-lightbox'); ?></h4>
-                            <p><?php _e('Set the number of columns for desktop and mobile, with adjustable spacing.', 'ml-slider-lightbox'); ?></p>
+                            <p><?php _e('Set the number of columns for desktop, laptop, tablet and mobile, with adjustable spacing.', 'ml-slider-lightbox'); ?></p>
                         </td>
                         <td><div class="ml-dot available"></div></td>
                         <td><div class="ml-dot available"></div></td>
@@ -4443,6 +4587,14 @@ class MetaSliderLightboxPlugin
                         <td>
                             <h4><?php _e('Image captions', 'ml-slider-lightbox'); ?></h4>
                             <p><?php _e('Show image captions in the gallery grid and the gallery window.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot available"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Video galleries', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Add uploaded videos and Livid.com links alongside images, with poster images and playback controls.', 'ml-slider-lightbox'); ?></p>
                         </td>
                         <td><div class="ml-dot available"></div></td>
                         <td><div class="ml-dot available"></div></td>
@@ -4482,7 +4634,7 @@ class MetaSliderLightboxPlugin
                     <tr>
                         <td>
                             <h4><?php _e('Social media sharing', 'ml-slider-lightbox'); ?></h4>
-                            <p><?php _e('Built-in sharing for Facebook, Twitter, and Pinterest.', 'ml-slider-lightbox'); ?></p>
+                            <p><?php _e('Built-in sharing for Facebook, Twitter / X, Pinterest, LinkedIn, email, or a copied link.', 'ml-slider-lightbox'); ?></p>
                         </td>
                         <td><div class="ml-dot unavailable"></div></td>
                         <td><div class="ml-dot available"></div></td>
@@ -4507,6 +4659,54 @@ class MetaSliderLightboxPlugin
                         <td>
                             <h4><?php _e('Pager navigation', 'ml-slider-lightbox'); ?></h4>
                             <p><?php _e('Minimal pagination dots instead of thumbnails for a cleaner interface.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot unavailable"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Before &amp; After layout', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Compare two images with a divider visitors drag, side by side or top and bottom.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot unavailable"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Likes', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Let visitors heart images, with the count shared across every gallery using that image.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot unavailable"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Download sizes', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Offer visitors a choice of image sizes to download.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot unavailable"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Photo metadata', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Show the camera settings a photo was taken with beneath its caption.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot unavailable"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Image protection', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Discourage casual saving by blocking right-click, drag, and long-press on gallery images.', 'ml-slider-lightbox'); ?></p>
+                        </td>
+                        <td><div class="ml-dot unavailable"></div></td>
+                        <td><div class="ml-dot available"></div></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><?php _e('Watermarking', 'ml-slider-lightbox'); ?></h4>
+                            <p><?php _e('Overlay your logo on lightbox images, with position, size and opacity controls.', 'ml-slider-lightbox'); ?></p>
                         </td>
                         <td><div class="ml-dot unavailable"></div></td>
                         <td><div class="ml-dot available"></div></td>
@@ -6742,6 +6942,10 @@ class MetaSliderLightboxPlugin
         global $post;
 
         if ($this->hasLightboxEnabledSliders()) {
+            return true;
+        }
+
+        if (MetaSliderLightboxGallery::pageHasGalleryVideo()) {
             return true;
         }
 

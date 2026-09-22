@@ -52,6 +52,58 @@
         return $('<div>').text(str).html();
     }
 
+    function isSafeCaptionUrl(url) {
+        var value = $.trim(url || '');
+
+        return value === '' ||
+            value.charAt(0) === '#' ||
+            value.charAt(0) === '/' ||
+            /^(https?:|mailto:|tel:)/i.test(value);
+    }
+
+    function sanitizeCaptionHtml(html) {
+        var allowedTags = {
+            a: ['href', 'title', 'target', 'rel'],
+            b: [],
+            br: [],
+            em: [],
+            i: [],
+            p: [],
+            span: [],
+            strong: []
+        };
+        var $root = $('<div>').html(html || '');
+
+        $root.find('*').each(function() {
+            var element = this;
+            var tag = element.nodeName.toLowerCase();
+
+            if (!Object.prototype.hasOwnProperty.call(allowedTags, tag)) {
+                $(element).replaceWith(document.createTextNode($(element).text()));
+                return;
+            }
+
+            $.each($.makeArray(element.attributes), function(index, attribute) {
+                var name = attribute.name.toLowerCase();
+
+                if (allowedTags[tag].indexOf(name) === -1) {
+                    element.removeAttribute(attribute.name);
+                    return;
+                }
+
+                if ('href' === name && !isSafeCaptionUrl(attribute.value)) {
+                    element.removeAttribute(attribute.name);
+                }
+            });
+
+            if ('a' === tag && '_blank' === (element.getAttribute('target') || '').toLowerCase()) {
+                element.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
+
+        return $.trim($root.html());
+    }
+
     function getButtonText(sliderId) {
         var id = sliderId !== undefined ? sliderId : _metasliderButtonSliderId;
         if (resolveSliderIcon(id)) {
@@ -607,10 +659,63 @@
             // (never in the PHP data-sub-html attribute — wptexturize mangles
             // markup inside attributes). Idempotent.
             function wrapMlCaptionText(sub) {
+                sub = sanitizeCaptionHtml(sub);
                 if (sub && sub.indexOf('ml-caption-text') === -1) {
                     return '<span class="ml-caption-text">' + sub + '</span>';
                 }
                 return sub;
+            }
+
+            function bindLividSlides(container) {
+                var autoplayFirst = container.getAttribute('data-lg-video-autoplay') === '1';
+                var autoplayEach  = container.getAttribute('data-lg-video-autoplay-each') === '1';
+                var openedAt      = -1;
+
+                var frameAt = function(index) {
+                    var inst  = container._mlLgInstance;
+                    var item  = inst ? document.getElementById('lg-item-' + inst.lgId + '-' + index) : null;
+                    var frame = item ? item.querySelector('iframe.lg-object') : null;
+                    var src   = frame ? (frame.getAttribute('data-ml-livid-src') || frame.getAttribute('src') || '') : '';
+                    return src.indexOf('https://livid.com/embed/') === 0 ? frame : null;
+                };
+
+                var load = function(index, autoplay, force) {
+                    var frame = frameAt(index);
+                    if (!frame) { return; }
+                    var base   = frame.getAttribute('data-ml-livid-src');
+                    if (!base) { return; }
+                    var target = autoplay ? base + (base.indexOf('?') === -1 ? '?' : '&') + 'autoplay=1' : base;
+                    if (force || frame.getAttribute('src') !== target) {
+                        frame.setAttribute('src', target);
+                    }
+                };
+
+                container.addEventListener('lgBeforeOpen', function() {
+                    openedAt = container._mlLgInstance ? container._mlLgInstance.index : -1;
+                });
+
+                container.addEventListener('lgAfterAppendSlide', function(e) {
+                    var frame = frameAt(e.detail.index);
+                    if (!frame || frame.hasAttribute('data-ml-livid-src')) { return; }
+                    frame.setAttribute('data-ml-livid-src', frame.getAttribute('src'));
+                    frame.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture; encrypted-media');
+                    var isCurrent = container._mlLgInstance.index === e.detail.index;
+                    var isOpening = autoplayFirst && openedAt === e.detail.index;
+                    if (isOpening) { openedAt = -1; }
+                    load(e.detail.index, isCurrent && (autoplayEach || isOpening), true);
+                });
+
+                container.addEventListener('lgBeforeSlide', function(e) {
+                    if (e.detail.prevIndex !== e.detail.index) {
+                        load(e.detail.prevIndex, false, true);
+                    }
+                });
+
+                container.addEventListener('lgAfterSlide', function(e) {
+                    if (autoplayEach && e.detail.prevIndex !== e.detail.index) {
+                        load(e.detail.index, true, false);
+                    }
+                });
             }
 
             function applyGallerySettings(settings, $container) {
@@ -630,9 +735,11 @@
                 settings.download = !!parseInt($container.data('lg-download'), 10);
                 settings.loop     = !!parseInt($container.data('lg-loop'), 10);
 
+                // Caption Content is the only source; never the image's alt/title.
+                settings.getCaptionFromTitleOrAlt = false;
+
                 if (!parseInt($container.data('lg-captions'), 10)) {
                     settings.subHtml = '';
-                    settings.getCaptionFromTitleOrAlt = false;
                 }
 
                 var wantThumbs = !!parseInt($container.data('lg-thumbnails'), 10);
@@ -690,7 +797,23 @@
                 settings.mousewheel   = !!parseInt($container.data('lg-mousewheel'), 10);
                 settings.keyPress     = !!parseInt($container.data('lg-keyboard'), 10);
 
-                return settings;
+                // Video playback. The attributes are only emitted for galleries that
+                // hold a video, and an absent one leaves lg-video's own default alone
+                // (autoplayFirstVideo and gotoNextSlideOnVideoEnd both default true).
+                var videoFlag = function(attr) {
+                    var raw = $container.attr(attr);
+                    return (typeof raw === 'undefined') ? null : !!parseInt(raw, 10);
+                };
+
+                var videoAutoplay     = videoFlag('data-lg-video-autoplay');
+                var videoAutoplayEach = videoFlag('data-lg-video-autoplay-each');
+                var videoChain        = videoFlag('data-lg-video-chain');
+
+                if (videoAutoplay !== null)     { settings.autoplayFirstVideo      = videoAutoplay; }
+                if (videoAutoplayEach !== null) { settings.autoplayVideoOnSlide    = videoAutoplayEach; }
+                if (videoChain !== null)        { settings.gotoNextSlideOnVideoEnd = videoChain; }
+
+                return applyMobileSettings(settings);
             }
 
             var inlineLayoutPlugins = {
@@ -712,48 +835,149 @@
                 }
             );
 
+            function bindInlineTrigger($container, inlineGallery, dynamicEl) {
+                var openModalAt = function(index) {
+                    var modal = $container[0]._mlModalInstance;
+                    if (!modal) {
+                        var host = document.createElement('div');
+                        host.className = 'ml-gallery-modal-host';
+                        $container[0].appendChild(host);
+
+                        var modalSettings = applyGallerySettings(getLightboxSettings(true), $container);
+                        modalSettings.dynamic   = true;
+                        modalSettings.dynamicEl = dynamicEl;
+                        modalSettings.selector  = '';
+                        modalSettings.hash      = false;
+
+                        modal = lightGallery(host, modalSettings);
+                        bindLividSlides(host);
+                        $container[0]._mlModalInstance = modal;
+                    }
+                    modal.openGallery(index);
+                };
+
+                var $stageButton = $container.find('.ml-gallery-stage-button');
+                if ($stageButton.length) {
+                    $stageButton.on('click', function(e) {
+                        e.preventDefault();
+                        openModalAt(inlineGallery.index || 0);
+                    });
+                    return;
+                }
+
+                // LG inline handles swipe, so only a press that did not drag counts as a click.
+                var downX = 0;
+                var downY = 0;
+                $container.on('pointerdown.mlTrigger', '.lg-object', function(e) {
+                    downX = e.clientX;
+                    downY = e.clientY;
+                });
+                $container.on('click.mlTrigger', '.lg-object', function(e) {
+                    if (Math.abs(e.clientX - downX) > 6 || Math.abs(e.clientY - downY) > 6) { return; }
+                    e.preventDefault();
+                    openModalAt(inlineGallery.index || 0);
+                });
+            }
+
             $('.ml-gallery-container[data-ml-gallery]').filter(function() {
-                return !$(this).hasClass('lg-initialized') && $(this).data('ml-lightbox') !== 0;
+                return !$(this).hasClass('lg-initialized');
             }).each(function() {
                 var $container = $(this);
 
                 var mlLayout = $container.data('ml-layout');
+                // An inline layout is the gallery itself, so it is built either way; the flag
+                // only decides whether clicking it opens the modal on top.
+                var lightboxOn = $container.data('ml-lightbox') !== 0;
 
                 if ( inlineLayoutPlugins.hasOwnProperty( mlLayout ) ) {
                     var dynamicEl = [];
-                    $container.find('a[data-src]').each(function () {
-                        var $a = $(this);
-                        var el = { src: $a.attr('data-src') };
+                    // Copy: inlineLayoutPlugins is shared, so per-container additions
+                    // (and applyGallerySettings' own pushes) must not leak to the next gallery.
+                    var inlinePlugins  = inlineLayoutPlugins[ mlLayout ].slice();
+                    var hasInlineVideo = false;
+
+                    $container.find('a[data-src], a[data-video]').each(function () {
+                        var $a        = $(this);
+                        var dataVideo = $a.attr('data-video');
+                        var el;
+
+                        if (dataVideo) {
+                            // lightGallery JSON.parses a string `video` prop. src must be
+                            // blank or it is treated as the slide source and video
+                            // detection fails — same convention as the DOM-selector paths.
+                            el = { src: '', video: dataVideo };
+                            hasInlineVideo = true;
+                        } else {
+                            el = { src: $a.attr('data-src') };
+                            if ($a.attr('data-iframe') === 'true') {
+                                el.iframe = true;
+                                el.downloadUrl = false;
+                            }
+                            if ($a.attr('data-download-url') === 'false') {
+                                el.downloadUrl = false;
+                            }
+                            // A provider video (YouTube, Vimeo) keeps its watch URL as the
+                            // src so lightGallery's own detection can embed it, and carries
+                            // the poster separately rather than inside a video payload.
+                            if ($a.attr('data-poster')) {
+                                el.poster = $a.attr('data-poster');
+                            }
+                            if ($a.hasClass('ml-gallery-video') && $a.attr('data-iframe') !== 'true') {
+                                hasInlineVideo = true;
+                            }
+                        }
+
                         if ($a.attr('data-thumb'))    { el.thumb   = $a.attr('data-thumb'); }
                         if ($a.attr('data-sub-html')) { el.subHtml = wrapMlCaptionText($a.attr('data-sub-html')); }
                         dynamicEl.push(el);
                     });
 
+                    // This path passes plugins explicitly, so lgVideo never arrives
+                    // via getBaseSettings(). Mirror it here when there is video to render.
+                    var inlineWantsVideo = hasInlineVideo && typeof lgVideo !== 'undefined';
+                    if (inlineWantsVideo && inlinePlugins.indexOf(lgVideo) === -1) {
+                        inlinePlugins.push(lgVideo);
+                    }
+
                     if (dynamicEl.length) {
-                        var inlineSettings = applyGallerySettings({
+                        var inlineBase = {
                             container       : $container[0],
                             dynamic         : true,
                             dynamicEl       : dynamicEl,
-                            plugins         : inlineLayoutPlugins[ mlLayout ],
+                            plugins         : inlinePlugins,
                             hash            : false,
                             closable        : false,
                             showMaximizeIcon: !!parseInt($container.data('lg-expand'), 10),
                             appendSubHtmlTo : '.lg-item',
-                        }, $container);
+                        };
+                        if (inlineWantsVideo) {
+                            inlineBase.videoMaxSize = '1280-720';
+                        }
+
+                        var inlineSettings = applyGallerySettings(inlineBase, $container);
 
                         try {
                             var inlineGallery = lightGallery($container[0], inlineSettings);
-                            inlineGallery.openGallery();
                             $container[0]._mlLgInstance = inlineGallery;
+                            bindLividSlides($container[0]);
+                            inlineGallery.openGallery();
                             $container.addClass('lg-initialized');
 
                             $container.on('click.mlInlineFs', '.lg-fullscreen', function() {
                                 $mlInlineFsGallery = $container;
                             });
+
+                            if (lightboxOn) {
+                                bindInlineTrigger($container, inlineGallery, dynamicEl);
+                            }
                         } catch (error) {
                             console.error('MetaSlider Lightbox: inline gallery init error:', error);
                         }
                     }
+                    return;
+                }
+
+                if (!lightboxOn) {
                     return;
                 }
 
@@ -771,12 +995,13 @@
                     var ensureButtons = function() {
                         // .not('.ml-lightbox-button'): the injected buttons are themselves
                         // a[data-src], so a re-run would nest a button inside every button.
-                        $container.find('a[data-src]').not('.ml-item-hidden').not('.ml-lightbox-button').each(function() {
-                            var $a      = $(this);
-                            var dataSrc = $a.attr('data-src');
-                            var $img    = $a.find('img').first();
-                            var imgSrc  = $img.attr('src') || dataSrc;
-                            var alt     = $img.attr('alt') || '';
+                        $container.find('a[data-src], a[data-video]').not('.ml-item-hidden').not('.ml-lightbox-button').each(function() {
+                            var $a        = $(this);
+                            var dataSrc   = $a.attr('data-src');
+                            var dataVideo = $a.attr('data-video');
+                            var $img      = $a.find('img').first();
+                            var imgSrc    = $img.attr('src') || dataSrc;
+                            var alt       = $img.attr('alt') || '';
 
                             var btnLabel;
                             if (perIcon) {
@@ -786,41 +1011,68 @@
                             }
 
                             var $btn = $('<a class="ml-lightbox-button ml-button-wordpress ml-button-wordpress-gallery" href="#">' + btnLabel + '</a>');
-                            $btn.attr({
-                                'data-src'  : dataSrc,
+                            var btnAttrs = {
                                 'data-thumb': $a.attr('data-thumb') || imgSrc,
                                 'aria-label': mlLightboxSettings.view_image_label + (alt ? ': ' + alt : ''),
-                            });
+                            };
+                            if (dataVideo) {
+                                // lightGallery maps both href and data-src onto the same
+                                // internal "src" key, last DOM attribute wins. The button's
+                                // own href="#" would otherwise be read as the slide src and
+                                // fail lightGallery's video-URL detection, so data-src must
+                                // be explicitly blanked (matches the pattern used for
+                                // content-embedded videos elsewhere in this file).
+                                btnAttrs['data-src'] = '';
+                                btnAttrs['data-video'] = dataVideo;
+                            } else {
+                                btnAttrs['data-src'] = dataSrc;
+                                if ($a.attr('data-iframe')) { btnAttrs['data-iframe'] = $a.attr('data-iframe'); }
+                                if ($a.attr('data-download-url')) { btnAttrs['data-download-url'] = $a.attr('data-download-url'); }
+                                // A provider video's poster lives on the anchor, so it has
+                                // to move onto the button that becomes the slide source.
+                                if ($a.attr('data-poster')) { btnAttrs['data-poster'] = $a.attr('data-poster'); }
+                            }
+                            $btn.attr(btnAttrs);
                             // The button becomes lightGallery's slide source (selector below),
                             // so carry the caption over or it would be dropped.
                             var subHtml = $a.attr('data-sub-html');
                             if (subHtml) {
-                                $btn.attr('data-sub-html', subHtml);
+                                $btn.attr('data-sub-html', sanitizeCaptionHtml(subHtml));
                             }
                             $a.css('position', 'relative').append($btn);
 
                             // Strip the wrapper link's own attributes so clicking the
                             // image itself doesn't navigate to the image URL.
-                            $a.removeAttr('href').removeAttr('data-src').removeAttr('data-thumb');
+                            $a.removeAttr('href').removeAttr('data-src').removeAttr('data-video').removeAttr('data-iframe').removeAttr('data-download-url').removeAttr('data-thumb').removeAttr('data-poster');
                         });
                     };
                     ensureButtons();
                     $container[0]._mlEnsureButtons = ensureButtons;
                     settings.selector = '.ml-lightbox-button';
                 } else {
-                    settings.selector = 'a[data-src]:not(.ml-item-hidden)';
+                    // Same href/data-src collision as ensureButtons above: the video
+                    // anchor's own href (the raw .mp4 URL) would otherwise be read as
+                    // the slide src and fail lightGallery's video-URL detection. Prep
+                    // every video anchor up front (including still-hidden ones so
+                    // Load More reveals need no extra wiring) — visibility is still
+                    // gated by the :not(.ml-item-hidden) selector below.
+                    $container.find('a[data-video]').attr('data-src', '');
+                    settings.selector = 'a[data-src]:not(.ml-item-hidden), a[data-video]:not(.ml-item-hidden)';
                 }
 
                 var galleryCaptionTransition = $container.data('lg-caption-transition');
-                if (galleryCaptionTransition && galleryCaptionTransition !== 'none') {
-                    $container.find('a[data-sub-html]').each(function() {
-                        var $a = $(this);
+                $container.find('a[data-sub-html]').each(function() {
+                    var $a = $(this);
+                    if (galleryCaptionTransition && galleryCaptionTransition !== 'none') {
                         $a.attr('data-sub-html', wrapMlCaptionText($a.attr('data-sub-html')));
-                    });
-                }
+                    } else {
+                        $a.attr('data-sub-html', sanitizeCaptionHtml($a.attr('data-sub-html')));
+                    }
+                });
 
                 try {
                     $container[0]._mlLgInstance = lightGallery($container[0], settings);
+                    bindLividSlides($container[0]);
                     $container.addClass('lg-initialized');
                 } catch (error) {
                     console.error('MetaSlider Lightbox: Error initializing gallery shortcode:', error);
@@ -1259,6 +1511,18 @@
         }
     }
 
+    // lightGallery's own mobileSettings default drops the close icon, the arrows
+    // and download on iOS/Android, overriding whatever was configured here.
+    function applyMobileSettings(settings) {
+        settings.mobileSettings = {
+            controls: settings.controls,
+            showCloseIcon: true,
+            download: settings.download
+        };
+
+        return settings;
+    }
+
     /**
      * Get LightGallery settings based on admin configuration
      */
@@ -1316,7 +1580,7 @@
             settings = window.MetaSliderLightboxPro.enhanceSettings(settings, null);
         }
 
-        return settings;
+        return applyMobileSettings(settings);
     }
 
     /**
@@ -2592,7 +2856,7 @@
         // global captions are off but a per-slider override enables them.
         // resolveSliderCaptions() is the final authority on removal.
         var $childLink = $element.find('a').first();
-        var childCaption = $childLink.length ? ($childLink.attr('data-sub-html') || '').trim() : '';
+        var childCaption = $childLink.length ? sanitizeCaptionHtml($childLink.attr('data-sub-html') || '') : '';
 
         if (!shouldShowCaptions()) {
             return childCaption;
@@ -2603,7 +2867,7 @@
 
         var $figcaption = $element.closest('figure').find('figcaption');
         if ($figcaption.length > 0) {
-            caption = $figcaption.html();
+            caption = sanitizeCaptionHtml($figcaption.html());
         }
 
         if (!caption) {
@@ -2615,7 +2879,7 @@
                 $captionWrap = $element.closest('.slide').find('.caption-wrap .caption');
             }
             if ($captionWrap.length > 0) {
-                caption = $captionWrap.html();
+                caption = sanitizeCaptionHtml($captionWrap.html());
             }
         }
 
@@ -2624,7 +2888,7 @@
         }
 
         if (!caption) {
-            caption = $element.attr('data-sub-html') || '';
+            caption = sanitizeCaptionHtml($element.attr('data-sub-html') || '');
         }
 
         if (!caption) {

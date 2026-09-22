@@ -639,6 +639,28 @@
 	color: var(--ml-orange);
 }
 
+.ml-layout-option--pro-locked {
+	position: relative;
+	cursor: default;
+}
+
+.ml-layout-option--pro-locked .ml-layout-icon {
+	opacity: .6;
+	cursor: default;
+}
+
+.ml-layout-option--pro-locked:hover .ml-layout-icon {
+	border-color: var(--ml-gray-300);
+	color: var(--ml-gray-600);
+}
+
+.ml-layout-option--pro-locked a.ml-gallery-pro-lock {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	font-size: 14px;
+}
+
 .ml-gallery-columns-row.is-hidden,
 .ml-gallery-height-row.is-hidden,
 .ml-gallery-gap-row.is-hidden,
@@ -663,8 +685,86 @@
 .ml-window-size-group.is-hidden,
 .ml-size-gen-status.is-hidden,
 .ml-save-notice-text.is-hidden,
-.ml-add-position.is-hidden {
+.ml-video-settings.is-hidden,
+.ml-video-mute-note.is-hidden,
+.ml-poster-control.is-hidden,
+.ml-poster-control .ml-gallery-poster-clear.is-hidden,
+.ml-add-position.is-hidden,
+.ml-image-order.is-hidden,
+.ml-image-order-notice.is-hidden,
+.ml-captions-panel.is-hidden {
 	display: none;
+}
+
+/* display: contents keeps the toggle rows laying out as direct children of the
+   settings group, exactly as they would without the wrapper. */
+.ml-video-settings {
+	display: contents;
+}
+
+.ml-gallery-setting-note {
+	margin: 0 0 12px;
+	font-size: 12px;
+	line-height: 1.5;
+	opacity: .75;
+}
+
+/* Poster picker, on each video tile and in the caption modal's preview pane.
+   Pinned top-left: the caption overlay owns the bottom of both. */
+.ml-poster-control {
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	z-index: 2;
+	display: flex;
+	gap: 4px;
+}
+
+.ml-poster-control button {
+	padding: 3px 9px;
+	border: 0;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, .65);
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.7;
+	cursor: pointer;
+}
+
+.ml-poster-control button:hover {
+	background: rgba(0, 0, 0, .85);
+}
+
+.ml-poster-control .ml-gallery-poster-clear {
+	padding: 3px 7px;
+	font-size: 12px;
+}
+
+/* On a tile the chip shares the square with the play badge and the caption bar,
+   so it rests faint like the caption bar does. */
+.ml-gallery-item .ml-poster-control {
+	top: 5px;
+	left: 5px;
+	opacity: .65;
+	transition: opacity .15s ease;
+}
+
+.ml-gallery-item:hover .ml-poster-control,
+.ml-gallery-item:focus-within .ml-poster-control {
+	opacity: 1;
+}
+
+.ml-gallery-item .ml-poster-control button {
+	font-size: 13px;
+}
+
+.ml-gallery-item .ml-poster-control .ml-gallery-poster-clear {
+	font-size: 14px;
+}
+
+.ml-poster-control button:focus-visible {
+	outline: 2px solid var(--ml-orange);
+	outline-offset: 1px;
 }
 
 .ml-size-gen-status {
@@ -872,8 +972,8 @@
 
 .ml-gallery-item {
 	position: relative;
-	width: 160px;
-	height: 160px;
+	width: 200px;
+	height: 200px;
 	cursor: move;
 }
 
@@ -888,6 +988,18 @@
 
 .ml-gallery-item.ui-sortable-helper {
 	box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+}
+
+.ml-gallery-item--video::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	margin: auto;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	background: rgba( 0, 0, 0, 0.55 ) url( "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M9 7l9 5-9 5z'/%3E%3C/svg%3E" ) no-repeat center / 18px 18px;
+	pointer-events: none;
 }
 
 .ml-gallery-remove {
@@ -1647,13 +1759,17 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 	box-shadow: 0 0 0 1px var(--ml-orange, #dd6923);
 }
 
-/* ── ZIP import modal ────────────────────────────────────────────────────── */
+/* ── ZIP import + Livid video modals ─────────────────────────────────────── */
 
-#ml-zip-modal { display: none; position: fixed; inset: 0; z-index: 100000; }
-#ml-zip-modal.is-open { display: block; }
-#ml-zip-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); }
+#ml-zip-modal,
+#ml-livid-modal { display: none; position: fixed; inset: 0; z-index: 100000; }
+#ml-zip-modal.is-open,
+#ml-livid-modal.is-open { display: block; }
+#ml-zip-overlay,
+#ml-livid-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.6); }
 
-#ml-zip-modal-inner {
+#ml-zip-modal-inner,
+#ml-livid-modal-inner {
 	position: relative;
 	z-index: 1;
 	width: 92%;
@@ -1664,7 +1780,8 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 	box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
 }
 
-#ml-zip-modal-header {
+#ml-zip-modal-header,
+#ml-livid-modal-header {
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -1672,9 +1789,11 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 	border-bottom: 1px solid var(--ml-gray-200, #e8e8e8);
 }
 
-#ml-zip-modal-header h2 { flex: 1; margin: 0; font-size: 16px; }
+#ml-zip-modal-header h2,
+#ml-livid-modal-header h2 { flex: 1; margin: 0; font-size: 16px; }
 
-#ml-zip-close {
+#ml-zip-close,
+#ml-livid-close {
 	border: 0;
 	background: none;
 	font-size: 24px;
@@ -1683,8 +1802,20 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 	color: var(--ml-gray-600, #50575e);
 }
 
-#ml-zip-modal-body { padding: 18px; }
+#ml-zip-modal-body,
+#ml-livid-modal-body { padding: 18px; }
 .ml-zip-status { margin: 0; font-size: 14px; color: var(--ml-gray-800, #3c434a); }
+
+#ml-livid-modal-body label { display: block; margin-bottom: 6px; font-weight: 600; }
+#ml-livid-status { margin-top: 10px; min-height: 1.4em; }
+
+#ml-livid-modal-footer {
+	display: flex;
+	justify-content: flex-end;
+	gap: 8px;
+	padding: 12px 18px;
+	border-top: 1px solid var(--ml-gray-200, #e8e8e8);
+}
 
 /* Live preview toolbar: mode toggle (left) + viewport toggle (right). */
 .ml-preview-toolbar {
@@ -1834,4 +1965,18 @@ a.ml-gallery-pro-lock.dashicons-lock::before {
 .ml-custom-size-x {
 	flex: 0 0 auto;
 	color: var(--ml-gray-600);
+}
+
+/* Locked Add-menu entry shown when Gallery Pro is inactive. */
+.ml-gallery-add-menu-promo {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 6px;
+	padding-right: 8px;
+}
+
+.ml-gallery-add-menu-promo button[disabled] {
+	opacity: 0.55;
+	cursor: default;
 }

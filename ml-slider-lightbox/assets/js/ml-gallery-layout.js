@@ -18,6 +18,60 @@ function revealNextBatch( container, batch ) {
 	return { revealed: revealed, remaining: hidden.length - revealed.length };
 }
 
+/**
+ * Showcase items: image anchors carry data-src, video anchors carry data-video.
+ */
+function showcaseLinks( container ) {
+	return Array.prototype.slice.call(
+		container.querySelectorAll( 'a[data-src], a[data-video]' )
+	);
+}
+
+/**
+ * Showcase stage image: data-src for images, the tile image for anything that
+ * plays, whose data-src is a player or watch URL rather than a picture.
+ */
+function showcaseStageSrc( link ) {
+	var img   = link.querySelector( 'img' );
+	var plays = link.hasAttribute( 'data-iframe' )
+		|| link.hasAttribute( 'data-player' )
+		|| link.hasAttribute( 'data-video' )
+		|| link.classList.contains( 'ml-gallery-video' );
+	var src   = plays ? '' : link.getAttribute( 'data-src' );
+	return src || ( img ? img.src : '' );
+}
+
+/**
+ * What the showcase stage should render for an item: its player when it has one,
+ * its own file when it is a self-hosted video, else the picture.
+ */
+function showcaseStageMedia( link ) {
+	var img    = link.querySelector( 'img' );
+	var poster = img ? img.src : '';
+	var player = link.getAttribute( 'data-player' );
+
+	if ( player ) {
+		return { kind: 'iframe', src: player, poster: poster };
+	}
+
+	var video = link.getAttribute( 'data-video' );
+	if ( video ) {
+		var parsed = null;
+		try {
+			parsed = JSON.parse( video );
+		} catch ( e ) {
+			parsed = null;
+		}
+		var source = parsed && parsed.source && parsed.source[ 0 ];
+		if ( source && source.src ) {
+			var attributes = ( parsed && parsed.attributes ) || {};
+			return { kind: 'video', src: source.src, poster: attributes.poster || poster };
+		}
+	}
+
+	return { kind: 'image', src: showcaseStageSrc( link ), poster: poster };
+}
+
 ( function () {
 	'use strict';
 
@@ -137,7 +191,7 @@ function revealNextBatch( container, batch ) {
 	}
 
 	function initShowcase( container ) {
-		var links        = Array.prototype.slice.call( container.querySelectorAll( 'a[data-src]' ) );
+		var links        = showcaseLinks( container );
 		var showThumbs   = container.getAttribute( 'data-lg-thumbnails' ) === '1';
 		var showControls = container.getAttribute( 'data-lg-controls' ) === '1';
 		var showCounter  = container.getAttribute( 'data-lg-counter' ) === '1';
@@ -164,15 +218,32 @@ function revealNextBatch( container, batch ) {
 			stage.appendChild( captionEl );
 		}
 
+		var stageButton = container.querySelector( '.ml-gallery-stage-button' );
+
 		// Capture phase fires before child handlers (e.g. ml-lightbox-wrapper),
 		// preventing the main plugin from opening a second single-image lightbox.
+		// The trigger button is exempt or it would never receive its own click.
 		stage.addEventListener( 'click', function ( e ) {
+			// The player owns its own clicks, or its controls would never respond.
+			if ( e.target.closest && e.target.closest( '.ml-lightbox-button, .ml-showcase-player' ) ) {
+				return;
+			}
 			e.stopImmediatePropagation();
 			e.preventDefault();
-			if ( container._mlLgInstance ) {
+			if ( ! stageButton && container._mlLgInstance ) {
 				container._mlLgInstance.openGallery( current );
 			}
 		}, true );
+
+		if ( stageButton ) {
+			stage.appendChild( stageButton );
+			stageButton.addEventListener( 'click', function ( e ) {
+				e.preventDefault();
+				if ( container._mlLgInstance ) {
+					container._mlLgInstance.openGallery( current );
+				}
+			} );
+		}
 
 		var thumbItems = [];
 		var thumbStrip = null;
@@ -289,18 +360,55 @@ function revealNextBatch( container, batch ) {
 			setTimeout( finalize, 600 );
 		}
 
+		// Removing the old player is what stops it playing, so this runs on every
+		// move, including back onto a picture.
+		function showPlayer( media ) {
+			var stale = stage.querySelector( '.ml-showcase-player' );
+			if ( stale ) { stage.removeChild( stale ); }
+
+			if ( 'image' === media.kind ) {
+				stageImg.hidden = false;
+				return;
+			}
+
+			var incoming = stage.querySelector( '.ml-showcase-incoming' );
+			if ( incoming ) { stage.removeChild( incoming ); }
+
+			var player;
+			if ( 'iframe' === media.kind ) {
+				player = document.createElement( 'iframe' );
+				player.setAttribute( 'allow', 'autoplay; fullscreen; picture-in-picture; encrypted-media' );
+				player.setAttribute( 'allowfullscreen', '' );
+				player.setAttribute( 'frameborder', '0' );
+			} else {
+				player = document.createElement( 'video' );
+				player.controls = true;
+				player.preload  = 'metadata';
+				if ( media.poster ) { player.poster = media.poster; }
+			}
+			player.className = 'ml-showcase-player';
+			player.src       = media.src;
+
+			stageImg.hidden = true;
+			stage.insertBefore( player, stageImg.nextSibling );
+		}
+
 		function goTo( index ) {
 			var prevIndex = current;
 			current = ( index + links.length ) % links.length;
 			var sourceImg = links[ current ].querySelector( 'img' );
-			var newSrc    = links[ current ].getAttribute( 'data-src' ) || ( sourceImg ? sourceImg.src : '' );
+			var media     = showcaseStageMedia( links[ current ] );
 			var newAlt    = sourceImg ? ( sourceImg.alt || '' ) : '';
 
-			if ( ! initialized ) {
-				stageImg.src = newSrc;
+			showPlayer( media );
+
+			if ( 'image' !== media.kind ) {
+				stageImg.alt = newAlt;
+			} else if ( ! initialized ) {
+				stageImg.src = media.src;
 				stageImg.alt = newAlt;
 			} else {
-				animateImage( newSrc, newAlt, current < prevIndex ? -1 : 1 );
+				animateImage( media.src, newAlt, current < prevIndex ? -1 : 1 );
 			}
 
 			if ( counterEl ) {
@@ -366,5 +474,10 @@ function revealNextBatch( container, batch ) {
 } )();
 
 if ( typeof module !== 'undefined' && module.exports ) {
-	module.exports = { revealNextBatch: revealNextBatch };
+	module.exports = {
+		revealNextBatch: revealNextBatch,
+		showcaseLinks: showcaseLinks,
+		showcaseStageSrc: showcaseStageSrc,
+		showcaseStageMedia: showcaseStageMedia,
+	};
 }

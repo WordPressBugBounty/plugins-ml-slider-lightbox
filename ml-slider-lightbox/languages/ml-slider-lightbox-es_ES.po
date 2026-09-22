@@ -18,1544 +18,3909 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 3.7\n"
 
-#: class-ml-gallery.php:70 class-ml-slider-lightbox.php:3949
-msgid "This feature is available in MetaSlider Gallery Pro"
-msgstr "Esta característica está disponible en MetaSlider Gallery Pro"
+#: admin/Notices.php:43
+msgid ""
+"Enjoying MetaSlider Gallery? Please help us with a 5-star review on "
+"WordPress.org."
+msgstr ""
+"¿Te gusta MetaSlider Gallery? Ayúdanos con una valoración de 5 estrellas en "
+"WordPress.org."
 
-#: class-ml-gallery.php:78
-msgid "Fade"
-msgstr "Fundido"
+#: admin/Notices.php:53
+msgid "Unlock zoom, fullscreen, sharing and more with MetaSlider Gallery Pro."
+msgstr ""
+"Desbloquea la ampliación, la pantalla completa, compartir y mucho más con "
+"MetaSlider Gallery Pro."
 
-#: class-ml-gallery.php:79
-msgid "Slide"
-msgstr "Diapositiva"
+#: admin/Notices.php:163
+msgid "Review MetaSlider Gallery &rarr;"
+msgstr "Valorar MetaSlider Gallery &rarr;"
 
-#: class-ml-gallery.php:80 class-ml-gallery.php:560
-msgid "Zoom"
-msgstr "Ampliar/acercar"
+#: admin/Notices.php:164
+msgid "Get Gallery Pro &rarr;"
+msgstr "Obtener Gallery Pro &rarr;"
 
-#: class-ml-gallery.php:139 class-ml-gallery.php:148 class-ml-gallery.php:295
-msgid "Galleries"
-msgstr "Galerías"
+#: admin/Notices.php:167
+msgid "Read more"
+msgstr "Leer más"
 
-#: class-ml-gallery.php:140 class-ml-slider-lightbox.php:1947
-msgid "Gallery"
-msgstr "Galería"
+#: admin/Notices.php:197
+msgid "The security check failed. Please refresh the page and try again."
+msgstr ""
+"La comprobación de seguridad ha fallado. Por favor, actualiza la página e "
+"inténtalo de nuevo."
 
-#: class-ml-gallery.php:141 class-ml-gallery.php:142 class-ml-gallery.php:263
-#: class-ml-gallery.php:1135
-msgid "Add New Gallery"
-msgstr "Añadir nueva galería"
+#: admin/Notices.php:203
+msgid "Access denied. Sorry, you do not have permission to complete this task."
+msgstr ""
+"Acceso denegado. Lo sentimos, no tienes permiso para completar esta tarea."
 
-#: class-ml-gallery.php:143 class-ml-gallery.php:184 class-ml-gallery.php:185
-#: class-ml-gallery.php:264
-msgid "Edit Gallery"
-msgstr "Editar galería"
+#: admin/Notices.php:209
+msgid "Bad request"
+msgstr "Solicitud incorrecta"
 
-#: class-ml-gallery.php:144 class-ml-gallery.php:247
-msgid "New Gallery"
-msgstr "Nueva galería"
+#: admin/Notices.php:217
+msgid "This item does not exist. Please refresh the page and try again."
+msgstr ""
+"Este elemento no existe. Por favor, actualiza la página e inténtalo de nuevo."
 
-#: class-ml-gallery.php:145
-msgid "Search Galleries"
-msgstr "Buscar galerías"
+#: admin/Notices.php:230
+msgid "The option was successfully updated"
+msgstr "La opción se ha actualizado correctamente"
 
-#: class-ml-gallery.php:146
-msgid "No galleries found."
-msgstr "No se han encontrado galerías."
+#: admin/Notices.php:241
+msgid "The requested data does not exist."
+msgstr "Los datos solicitados no existen."
 
-#: class-ml-gallery.php:147
-msgid "No galleries found in trash."
-msgstr "No se han encontrado galerías en la papelera."
+#: admin/Notices.php:253
+msgid "The attempt to update the option failed."
+msgstr "El intento de actualizar la opción ha fallado."
 
-#: class-ml-gallery.php:236 class-ml-slider-lightbox.php:1976
-msgid "You do not have sufficient permissions to access this page."
-msgstr "No tienes permisos suficientes para acceder a esta página."
+#: admin/Optin.php:95
+msgid ""
+"Your preference was saved, but we could not add your address to the mailing "
+"list. Please check it and try again."
+msgstr ""
+"Tu preferencia se ha guardado, pero no hemos podido añadir tu dirección a la "
+"lista de correo. Por favor, compruébala e inténtalo de nuevo."
 
-#: class-ml-gallery.php:244
-msgid "Gallery not found."
-msgstr "Galería no encontrada."
+#: admin/Optin.php:98
+msgid "We could not save your preference. Please try again."
+msgstr "No hemos podido guardar tu preferencia. Por favor, inténtalo de nuevo."
 
-#: class-ml-gallery.php:266
-msgid "Save Gallery"
-msgstr "Guardar galería"
+#: admin/Optin.php:121
+msgid "You do not have permission to do that."
+msgstr "No tienes permiso para hacer eso."
 
-#: class-ml-gallery.php:267
-msgid "Update Gallery"
-msgstr "Actualizar galería"
+#: admin/Optin.php:138
+msgid "Please enter a valid email address."
+msgstr "Por favor, introduce una dirección de correo electrónico válida."
 
-#: class-ml-gallery.php:280
-msgid "Back to Galleries"
-msgstr "Volver a las galerías"
-
-#: class-ml-gallery.php:286 class-ml-gallery.php:1141
-#: class-ml-slider-lightbox.php:1840 class-ml-slider-lightbox.php:1951
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1689
+#: class-ml-gallery.php:4686 class-ml-slider-lightbox.php:2163
+#: class-ml-slider-lightbox.php:2306
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: class-ml-gallery.php:314
-msgid "Gallery saved."
-msgstr "Galería guardada."
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:235
+msgid "Dismiss"
+msgstr "Descartar"
 
-#: class-ml-gallery.php:325
-msgid "Enter gallery title"
-msgstr "Introduce el título de la galería"
+#: admin/views/optin-modal.php:19 admin/views/optin-modal.php:24
+msgid "Thanks for using MetaSlider Gallery"
+msgstr "Gracias por usar MetaSlider Gallery"
 
-#: class-ml-gallery.php:328 class-ml-gallery.php:1163
-msgid "Images"
-msgstr "Imágenes"
+#: admin/views/optin-modal.php:20
+msgid "You are subscribed"
+msgstr "Te has suscrito"
 
-#: class-ml-gallery.php:336
-msgid "No images yet. Click \"Add Images\" below."
-msgstr "Aún no hay imágenes. Haz clic abajo en «Añadir imágenes»."
+#: admin/views/optin-modal.php:21
+msgid "We could not subscribe you"
+msgstr "No hemos podido suscribirte"
 
-#: class-ml-gallery.php:349 class-ml-gallery.php:903
-msgid "Remove image"
-msgstr "Eliminar imagen"
-
-#: class-ml-gallery.php:354 class-ml-gallery.php:904
-msgid "Edit caption"
-msgstr "Editar leyenda"
-
-#: class-ml-gallery.php:367
-msgid "Add Images"
-msgstr "Añadir imágenes"
-
-#: class-ml-gallery.php:374
-msgid "Layout"
-msgstr "Diseño"
-
-#: class-ml-gallery.php:377
-msgid "Gallery layout"
-msgstr "Diseño de la galería"
-
-#: class-ml-gallery.php:389
-msgid "Grid"
-msgstr "Cuadrícula"
-
-#: class-ml-gallery.php:403
-msgid "Masonry"
-msgstr "Mosaico"
-
-#: class-ml-gallery.php:419
-msgid "Justified"
-msgstr "Justificado"
-
-#: class-ml-gallery.php:432
-msgid "Carousel"
-msgstr "Carrusel"
-
-#: class-ml-gallery.php:441
-msgid "Columns"
-msgstr "Columnas"
-
-#: class-ml-gallery.php:451
-msgid "Gap"
-msgstr "Espacio"
-
-#: class-ml-gallery.php:465
-msgid "Lightbox Settings"
-msgstr "Ajustes de la caja de luz"
-
-#: class-ml-gallery.php:469
-msgid "Zoom controls require MetaSlider Gallery Pro"
-msgstr "Para utilizar los controles para ampliar/acercar es obligatorio instalar MetaSlider Gallery Pro"
-
-#: class-ml-gallery.php:470
-msgid "Fullscreen mode requires MetaSlider Gallery Pro"
-msgstr "Para utilizar el modo de pantalla completa es obligatorio instalar MetaSlider Gallery Pro"
-
-#: class-ml-gallery.php:471
-msgid "Autoplay requires MetaSlider Gallery Pro"
-msgstr "Para la reproducción automática es obligatorio instalar MetaSlider Gallery Pro"
-
-#: class-ml-gallery.php:472
-msgid "Image rotation requires MetaSlider Gallery Pro"
-msgstr "Para utilizar la rotación de imagen es obligatorio instalar MetaSlider Gallery Pro"
-
-#: class-ml-gallery.php:473
-msgid "Social sharing requires MetaSlider Gallery Pro"
-msgstr "Para compartir en medios sociales es obligatorio instalar MetaSlider Gallery Pro"
-
-#: class-ml-gallery.php:477
-msgid "Show left and right navigation arrows"
-msgstr "Mostrar las flechas de navegación izquierda y derecha"
-
-#: class-ml-gallery.php:478
-msgid "Cycle back to the first image after reaching the last"
-msgstr "Volver a la primera imagen tras llegar a la última"
-
-#: class-ml-gallery.php:479
-msgid "Navigate images using left and right arrow keys"
-msgstr "Navega por las imágenes con las teclas de flecha izquierda y derecha"
-
-#: class-ml-gallery.php:480
-msgid "Scroll through images using the mouse wheel"
-msgstr "Desplázate por las imágenes con la rueda del ratón"
-
-#: class-ml-gallery.php:481
-msgid "Swipe up or down to close the lightbox on touch devices"
+#: admin/views/optin-modal.php:31
+msgid ""
+"Get occasional emails about important MetaSlider Gallery security and "
+"feature updates."
 msgstr ""
-"Desliza el dedo hacia arriba o hacia abajo para cerrar la caja de luz en "
-"dispositivos táctiles"
+"Recibe correos electrónicos ocasionales sobre actualizaciones importantes de "
+"seguridad y características de MetaSlider Gallery."
 
-#: class-ml-gallery.php:482
-msgid "Display the current image number and total count"
-msgstr "Muestra el número de la imagen actual y el recuento total"
+#: admin/views/optin-modal.php:36
+msgid "You can unsubscribe at any time."
+msgstr "Puedes darte de baja en cualquier momento."
 
-#: class-ml-gallery.php:483
-msgid "Show a strip of thumbnail images at the bottom of the lightbox"
-msgstr "Mostrar una fila de miniaturas en la parte inferior de la caja de luz"
+#: admin/views/optin-modal.php:46
+#, php-format
+msgid "If this keeps happening, please %s."
+msgstr "Si esto sigue ocurriendo, por favor, %s."
 
-#: class-ml-gallery.php:484
-msgid "Display image captions in the lightbox"
-msgstr "Muestra las leyendas de las imágenes en la caja de luz"
+#: admin/views/optin-modal.php:48
+msgid "contact support"
+msgstr "contacta con soporte"
 
-#: class-ml-gallery.php:485
-msgid "Show a download button for each image"
-msgstr "Mostrar un botón de descarga para cada imagen"
+#: admin/views/optin-modal.php:60
+#, php-format
+msgid "%s has been added to our mailing list."
+msgstr "%s se ha añadido a nuestra lista de correo."
 
-#: class-ml-gallery.php:486
-msgid "Pinch and zoom into images"
-msgstr "Acerca y aleja las imágenes con los dedos"
+#: admin/views/optin-modal.php:69 class-ml-slider-lightbox.php:3754
+msgid "Email address"
+msgstr "Dirección de correo electrónico"
 
-#: class-ml-gallery.php:487
-msgid "Expand the lightbox to fill the entire screen"
-msgstr "Amplía la caja de luz para que ocupe toda la pantalla"
+#: admin/views/optin-modal.php:85
+#, php-format
+msgid "See our %s."
+msgstr "Consulta nuestra %s."
 
-#: class-ml-gallery.php:488
-msgid "Rotate images left and right"
-msgstr "Rotar imágenes hacia la izquierda y hacia la derecha"
+#: admin/views/optin-modal.php:87
+msgid "privacy policy"
+msgstr "política de privacidad"
 
-#: class-ml-gallery.php:489
-msgid "Automatically advance through images at a set interval"
-msgstr "Avanzar automáticamente por las imágenes a un intervalo establecido"
+#: admin/views/optin-modal.php:95
+msgid "Connection details"
+msgstr "Detalles de la conexión"
 
-#: class-ml-gallery.php:490
-msgid "Add social sharing buttons for each image"
-msgstr "Añade botones para compartir en redes sociales en cada imagen"
+#: admin/views/optin-modal.php:104
+msgid "No thanks"
+msgstr "No, gracias"
 
-#: class-ml-gallery.php:524 class-ml-slider-lightbox.php:2070
-#: class-ml-slider-lightbox.php:2396
-msgid "Navigation & Controls"
-msgstr "Navegación y controles"
+#: admin/views/optin-modal.php:107
+msgid "Agree and continue"
+msgstr "Aceptar y continuar"
 
-#: class-ml-gallery.php:526
-msgid "Animation effect when moving between images"
-msgstr "Efecto de animación al pasar de una imagen a otra"
+#: admin/views/optin-modal.php:108
+msgid "Sending…"
+msgstr "Enviando…"
 
-#: class-ml-gallery.php:526
-msgid "Transition"
-msgstr "Transición"
+#: admin/views/optin-modal.php:109
+msgid "Try again"
+msgstr "Inténtalo de nuevo"
 
-#: class-ml-gallery.php:535 class-ml-slider-lightbox.php:2336
-msgid "Arrows"
-msgstr "Flechas"
+#: admin/views/optin-modal.php:112
+msgid "Got it"
+msgstr "Entendido"
 
-#: class-ml-gallery.php:536
-msgid "Loop"
-msgstr "Bucle"
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1626
+#: class-ml-slider-lightbox.php:2341 class-ml-slider-lightbox.php:2356
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tienes permisos suficientes para acceder a esta página."
 
-#: class-ml-gallery.php:537
-msgid "Keyboard"
-msgstr "Teclado"
-
-#: class-ml-gallery.php:538
-msgid "Mouse wheel"
-msgstr "Rueda del ratón"
-
-#: class-ml-gallery.php:539
-msgid "Swipe to close"
-msgstr "Desliza para cerrar"
-
-#: class-ml-gallery.php:541
-msgid "Display"
-msgstr "Mostrar"
-
-#: class-ml-gallery.php:542
-msgid "Slide counter"
-msgstr "Contador de diapositivas"
-
-#: class-ml-gallery.php:543
-msgid "Thumbnail strip"
-msgstr "Banda de miniaturas"
-
-#: class-ml-gallery.php:544
-msgid "Captions"
-msgstr "Leyendas"
-
-#: class-ml-gallery.php:545
-msgid "Download"
-msgstr "Descargar"
-
-#: class-ml-gallery.php:548
-msgid "Pager"
-msgstr "Paginador"
-
-#: class-ml-gallery.php:554
-msgid "Pager pagination requires MetaSlider Gallery Pro"
-msgstr "Para la navegación por páginas es obligatorio MetaSlider Gallery Pro"
-
-#: class-ml-gallery.php:559 class-ml-slider-lightbox.php:2083
-#: class-ml-slider-lightbox.php:3995
-msgid "Enhanced Zoom & Controls"
-msgstr "Ampliación y controles mejorados"
-
-#: class-ml-gallery.php:561
-msgid "Fullscreen"
-msgstr "Pantalla completa"
-
-#: class-ml-gallery.php:562
-msgid "Rotate"
-msgstr "Rotar"
-
-#: class-ml-gallery.php:564 class-ml-slider-lightbox.php:2107
-#: class-ml-slider-lightbox.php:4044
-msgid "Advanced Features"
-msgstr "Características avanzadas"
-
-#: class-ml-gallery.php:565
-msgid "Autoplay"
-msgstr "Reproducción automática"
-
-#: class-ml-gallery.php:569
-msgid "Slide interval"
-msgstr "Intervalo de diapositivas"
-
-#: class-ml-gallery.php:580
-msgid "Share"
-msgstr "Compartir"
-
-#: class-ml-gallery.php:583
-msgid "Unique Image URLs"
-msgstr "URL únicas por las imágenes"
-
-#: class-ml-gallery.php:589
-msgid "Unique Image URLs require MetaSlider Gallery Pro"
-msgstr "Para utilizar las URL únicas por las imágenes es obligatorio instalar MetaSlider Gallery Pro"
-
-#: class-ml-gallery.php:597 class-ml-slider-lightbox.php:1984
-#: class-ml-slider-lightbox.php:2045
-msgid "Appearance"
-msgstr "Apariencia"
-
-#: class-ml-gallery.php:600 class-ml-slider-lightbox.php:2320
-msgid "Background Color"
-msgstr "Color de fondo"
-
-#: class-ml-gallery.php:611 class-ml-slider-lightbox.php:2328
-msgid "Background Opacity"
-msgstr "Opacidad del fondo"
-
-#: class-ml-gallery.php:623
-msgid "Arrow Color"
-msgstr "Color de la flecha"
-
-#: class-ml-gallery.php:633
-msgid "Arrow Background"
-msgstr "Fondo de la flecha"
-
-#: class-ml-gallery.php:643
-msgid "Close Icon Color"
-msgstr "Color del icono de cierre"
-
-#: class-ml-gallery.php:653
-msgid "Close Background"
-msgstr "Fondo del cierre"
-
-#: class-ml-gallery.php:663
-msgid "Toolbar Icon Color"
-msgstr "Color del icono de la barra de herramientas"
-
-#: class-ml-gallery.php:673
-msgid "Toolbar Background"
-msgstr "Fondo de la barra de herramientas"
-
-#: class-ml-gallery.php:686 class-ml-gallery.php:1162
-msgid "Shortcode"
-msgstr "Shortcode"
-
-#: class-ml-gallery.php:688
-msgid "Copy and paste into any post or page."
-msgstr "Copiar y pegar en cualquier entrada o página."
-
-#: class-ml-gallery.php:708
-msgid "Edit Caption"
-msgstr "Editar leyenda"
-
-#: class-ml-gallery.php:709
-msgid "Close"
-msgstr "Cerrar"
-
-#: class-ml-gallery.php:717
-msgid "Caption"
-msgstr "Leyenda"
-
-#: class-ml-gallery.php:724
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: class-ml-gallery.php:727
-msgid "Save Caption"
-msgstr "Guardar leyenda"
-
-#: class-ml-gallery.php:748
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:3108
+#: class-ml-gallery.php:3314
 msgid "Security check failed."
 msgstr "La comprobación de seguridad ha fallado."
 
-#: class-ml-gallery.php:752
-msgid "You do not have sufficient permissions."
-msgstr "No tienes permisos suficientes."
+#: class-ml-gallery-slideshow-convert.php:61
+msgid "Slideshow not found."
+msgstr "Pase de diapositivas no encontrado."
 
-#: class-ml-gallery.php:771
-msgid "Could not update the gallery. Please try again."
-msgstr "No se ha podido actualizar la galería. Por favor, inténtalo de nuevo."
-
-#: class-ml-gallery.php:901
-msgid "Select Gallery Images"
-msgstr "Selecciona las imágenes de la galería"
-
-#: class-ml-gallery.php:902
-msgid "Add to Gallery"
-msgstr "Añadir a la galería"
-
-#: class-ml-slider-lightbox.php:1056
+#: class-ml-gallery-slideshow-convert.php:70
 msgid ""
-"MetaSlider Gallery requires MetaSlider and at least one other supported "
-"lightbox plugin to be installed and activated."
-msgstr "MetaSlider Gallery requires MetaSlider and at least one other supported lightbox plugin to be installed and activated."
-
-#: class-ml-slider-lightbox.php:1060
-#: class-ml-slider-lightbox.php:380
-#: class-ml-slider-lightbox.php:436
-msgid "More info"
-msgstr "Más información"
-
-#: class-ml-slider-lightbox.php:1071
-msgid ""
-"There is more than one lightbox plugin activated. This may cause conflicts "
-"with MetaSlider Gallery"
-msgstr "Hay más de un plugin de caja de luz activado. Esto puede causar conflictos con MetaSlider Gallery"
-
-#: class-ml-slider-lightbox.php:1131
-#: class-ml-slider-lightbox.php:448
-msgid "Edit settings"
-msgstr "Editar ajustes"
-
-#: class-ml-slider-lightbox.php:1138
-#: class-ml-slider-lightbox.php:455
-msgid "Open in lightbox?"
-msgstr "¿Abrir en caja de luz?"
-
-#: class-ml-slider-lightbox.php:1143
-#: class-ml-slider-lightbox.php:460
-#, php-format
-msgctxt "Name of a plugin"
-msgid "All slides will open in a lightbox, using %s"
-msgstr "Todas las diapositivas se abrirán en una caja de luz, utilizando %s"
-
-#: class-ml-slider-lightbox.php:1150
-#, php-format
-msgid ""
-"Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
-"settings</a>."
+"This slideshow has no saved images to convert. Save the slideshow, then try "
+"again."
 msgstr ""
-"La caja de luz está activada para todas los pases de diapositivas a través "
-"de <a href=\"%s\">los ajustes del modo automático</a>."
+"Este pase de diapositivas no tiene imágenes guardadas para convertir. Guarda "
+"el pase de diapositivas e inténtalo de nuevo."
 
-#: class-ml-slider-lightbox.php:1480 class-ml-slider-lightbox.php:2981
-msgid "Open in Lightbox"
-msgstr "Abrir en caja de luz"
+#: class-ml-gallery-slideshow-convert.php:75
+msgid "Untitled Slideshow"
+msgstr "Pase de diapositivas sin título"
 
-#: class-ml-slider-lightbox.php:1486
+#: class-ml-gallery.php:114
+msgid "Some of these features are available in MetaSlider Gallery Pro"
+msgstr ""
+"Algunas de estas características están disponible en MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:136
+#, php-format
+msgid "%s requires MetaSlider Gallery Pro"
+msgstr "Para utilizar %s es obligatorio instalar MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:153
+msgid "Thumbnail"
+msgstr "Miniatura"
+
+#: class-ml-gallery.php:154 class-ml-gallery.php:2911
+msgid "Medium"
+msgstr "Mediano"
+
+#: class-ml-gallery.php:155
+msgid "Medium Large"
+msgstr "Mediano grande"
+
+#: class-ml-gallery.php:156
+msgid "Large"
+msgstr "Grande"
+
+#: class-ml-gallery.php:182
+msgid "Original"
+msgstr "Original"
+
+#: class-ml-gallery.php:188
+msgid ""
+"Offer visitors a choice of image sizes when they download. Requires "
+"MetaSlider Gallery Pro."
+msgstr ""
+"Ofrece a los visitantes una selección de tamaños de imagen al descargar. "
+"Requiere MetaSlider Gallery Pro."
+
+#: class-ml-gallery.php:189
+msgid "Download Sizes"
+msgstr "Tamaños de descarga"
+
+#: class-ml-gallery.php:190
+msgid "Download sizes require MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar los tamaños de descarga es obligatorio instalar MetaSlider "
+"Gallery Pro"
+
+#: class-ml-gallery.php:360 class-ml-gallery.php:369 class-ml-gallery.php:1050
+msgid "Fade"
+msgstr "Fundido"
+
+#: class-ml-gallery.php:361
+msgid "Slide"
+msgstr "Diapositiva"
+
+#: class-ml-gallery.php:362 class-ml-gallery.php:2629
+msgid "Zoom"
+msgstr "Ampliar/acercar"
+
+#: class-ml-gallery.php:368 class-ml-gallery.php:1042 class-ml-gallery.php:2909
+#: class-ml-gallery.php:2935 class-ml-gallery.php:2949
+msgid "None"
+msgstr "Ninguno"
+
+#: class-ml-gallery.php:370
+msgid "Slide Up"
+msgstr "Deslizar hacia arriba"
+
+#: class-ml-gallery.php:371
+msgid "Slide Down"
+msgstr "Deslizar hacia abajo"
+
+#: class-ml-gallery.php:377
+msgid "Bottom"
+msgstr "Abajo"
+
+#: class-ml-gallery.php:378
+msgid "Middle"
+msgstr "Centro"
+
+#: class-ml-gallery.php:379
+msgid "Top"
+msgstr "Arriba"
+
+#: class-ml-gallery.php:385
+msgid "Left"
+msgstr "Izquierda"
+
+#: class-ml-gallery.php:386 class-ml-gallery.php:2428
+msgid "Center"
+msgstr "Centro"
+
+#: class-ml-gallery.php:387
+msgid "Right"
+msgstr "Derecha"
+
+#: class-ml-gallery.php:401
+msgid "Hidden"
+msgstr "Oculto"
+
+#: class-ml-gallery.php:402
+msgid "Gallery + Window"
+msgstr "Galería + ventana"
+
+#: class-ml-gallery.php:403
+msgid "Window Only"
+msgstr "Solo ventana"
+
+#: class-ml-gallery.php:404
+msgid "Gallery Only"
+msgstr "Solo galería"
+
+#: class-ml-gallery.php:423 class-ml-gallery.php:3867
+msgid "Manual entry"
+msgstr "Entrada manual"
+
+#: class-ml-gallery.php:424 class-ml-gallery.php:3868
+msgid "Media caption"
+msgstr "Leyenda del medio"
+
+#: class-ml-gallery.php:425 class-ml-gallery.php:3869
+msgid "Media description"
+msgstr "Descripción del medio"
+
+#: class-ml-gallery.php:557
+msgid "Choose poster image"
+msgstr "Elegir imagen de póster"
+
+#: class-ml-gallery.php:558
+msgid "Remove poster image"
+msgstr "Eliminar imagen de póster"
+
+#: class-ml-gallery.php:563
+msgid "Poster"
+msgstr "Póster"
+
+#: class-ml-gallery.php:872
+msgid "Drag-and-drop"
+msgstr "Arrastrar y soltar"
+
+#: class-ml-gallery.php:873
+msgid "Newest First"
+msgstr "Más recientes primero"
+
+#: class-ml-gallery.php:874
+msgid "Oldest First"
+msgstr "Más antiguas primero"
+
+#: class-ml-gallery.php:875
+msgid "A to Z (by filename)"
+msgstr "De la A a la Z (por nombre de archivo)"
+
+#: class-ml-gallery.php:876
+msgid "Z to A (by filename)"
+msgstr "De la Z a la A (por nombre de archivo)"
+
+#: class-ml-gallery.php:877
+msgid "Random"
+msgstr "Aleatorio"
+
+#: class-ml-gallery.php:1043
+msgid "Noir (B&W)"
+msgstr "Noir (B/N)"
+
+#: class-ml-gallery.php:1044
+msgid "Silver (B&W)"
+msgstr "Plata (B/N)"
+
+#: class-ml-gallery.php:1045
+msgid "Vintage"
+msgstr "Vintage"
+
+#: class-ml-gallery.php:1046
+msgid "Golden Hour"
+msgstr "Hora dorada"
+
+#: class-ml-gallery.php:1047
+msgid "Toaster"
+msgstr "Tostadora"
+
+#: class-ml-gallery.php:1048
+msgid "Warm"
+msgstr "Cálido"
+
+#: class-ml-gallery.php:1049
+msgid "Cool"
+msgstr "Frío"
+
+#: class-ml-gallery.php:1051
+msgid "Matte"
+msgstr "Mate"
+
+#: class-ml-gallery.php:1052
+msgid "Pastel"
+msgstr "Pastel"
+
+#: class-ml-gallery.php:1053
+msgid "Vivid"
+msgstr "Vívido"
+
+#: class-ml-gallery.php:1054
+msgid "Crisp"
+msgstr "Nítido"
+
+#: class-ml-gallery.php:1055
+msgid "Dramatic"
+msgstr "Dramático"
+
+#: class-ml-gallery.php:1056
+msgid "Negative"
+msgstr "Negativo"
+
+#: class-ml-gallery.php:1162 class-ml-gallery.php:1171
+#: class-ml-gallery.php:1699
+msgid "Galleries"
+msgstr "Galerías"
+
+#: class-ml-gallery.php:1163 class-ml-gallery.php:1312
+#: class-ml-gallery.php:2247 class-ml-slider-lightbox.php:2302
+msgid "Gallery"
+msgstr "Galería"
+
+#: class-ml-gallery.php:1164 class-ml-gallery.php:1165
+#: class-ml-gallery.php:1664 class-ml-gallery.php:4680
+msgid "Add New Gallery"
+msgstr "Añadir nueva galería"
+
+#: class-ml-gallery.php:1166 class-ml-gallery.php:1574
+#: class-ml-gallery.php:1575 class-ml-gallery.php:1665
+msgid "Edit Gallery"
+msgstr "Editar galería"
+
+#: class-ml-gallery.php:1167 class-ml-gallery.php:1637
+#: class-ml-gallery.php:3363
+msgid "New Gallery"
+msgstr "Nueva galería"
+
+#: class-ml-gallery.php:1168
+msgid "Search Galleries"
+msgstr "Buscar galerías"
+
+#: class-ml-gallery.php:1169
+msgid "No galleries found."
+msgstr "No se han encontrado galerías."
+
+#: class-ml-gallery.php:1170
+msgid "No galleries found in trash."
+msgstr "No se han encontrado galerías en la papelera."
+
+#: class-ml-gallery.php:1319
+msgid "All Galleries"
+msgstr "Todas las galerías"
+
+#: class-ml-gallery.php:1326
+msgid "Create Gallery"
+msgstr "Crear galería"
+
+#: class-ml-gallery.php:1336
+#, php-format
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Editar &#8220;%s&#8221;"
+
+#: class-ml-gallery.php:1367
+msgid "Invalid gallery ID."
+msgstr "ID de galería no válido."
+
+#: class-ml-gallery.php:1453 class-ml-slider-lightbox.php:1670
 msgid "View image"
 msgstr "Mostrar imagen"
 
-#: class-ml-slider-lightbox.php:1734
-msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
-msgstr "Para utilizar MetaSlider Gallery es obligatorio instalar y activar MetaSlider."
+#: class-ml-gallery.php:1634 class-ml-gallery.php:3319
+msgid "Gallery not found."
+msgstr "Galería no encontrada."
 
-#: class-ml-slider-lightbox.php:1738
-msgid "Install MetaSlider"
-msgstr "Instalar MetaSlider"
+#: class-ml-gallery.php:1667
+msgid "Save Gallery"
+msgstr "Guardar galería"
 
-#: class-ml-slider-lightbox.php:1838 class-ml-slider-lightbox.php:1950 , fuzzy
-msgid "MetaSlider Gallery Pro"
-msgstr "MetaSlider Gallery Pro"
+#: class-ml-gallery.php:1668
+msgid "Update Gallery"
+msgstr "Actualizar galería"
 
-#: class-ml-slider-lightbox.php:1946
-msgid "Gallery Pro"
-msgstr "Galería Pro"
+#: class-ml-gallery.php:1683 class-ml-gallery.php:1695
+msgid "Back to Galleries"
+msgstr "Volver a las galerías"
 
-#: class-ml-slider-lightbox.php:1966
-msgid "Lightboxes"
-msgstr "Cajas de luz"
+#: class-ml-gallery.php:1706
+msgid "Create New Gallery"
+msgstr "Crear nueva galería"
 
-#: class-ml-slider-lightbox.php:1982
-msgid "Automatic Mode"
-msgstr "Modo automático"
+#: class-ml-gallery.php:1710
+msgid "New"
+msgstr "Nueva"
 
-#: class-ml-slider-lightbox.php:1983
-msgid "Manual Mode"
-msgstr "Modo manual"
+#: class-ml-gallery.php:1721
+msgid "Duplicate"
+msgstr "Duplicar"
 
-#: class-ml-slider-lightbox.php:1985
-msgid "Behavior"
-msgstr "Comportamiento"
+#: class-ml-gallery.php:1742
+msgid "Gallery saved."
+msgstr "Galería guardada."
 
-#: class-ml-slider-lightbox.php:1990
-msgid "Upgrade to Pro"
-msgstr "Mejorar a Pro"
-
-#: class-ml-slider-lightbox.php:2010
-msgid "Settings saved successfully!"
-msgstr "¡Ajustes guardados correctamente!"
-
-#: class-ml-slider-lightbox.php:2020
-msgid "Where to Enable Automatically"
-msgstr "Donde activar automáticamente"
-
-#: class-ml-slider-lightbox.php:2027
-msgid "MetaSlider Slideshows"
-msgstr "Pases de diapositivas de MetaSlider"
-
-#: class-ml-slider-lightbox.php:2034 class-ml-slider-lightbox.php:2233
-msgid "Content Filtering"
-msgstr "Filtrado de contenido"
-
-#: class-ml-slider-lightbox.php:2046
+#: class-ml-gallery.php:1758
+#, php-format
 msgid ""
-"Customize colors, opacity, and visual styling for the lightbox overlay and "
-"controls."
+"Gallery created from the slideshow \"%s\". Review the settings below, then "
+"save."
 msgstr ""
-"Personaliza los colores, la opacidad y el estilo visual de la superposición "
-"y los controles de la caja de luz."
+"Galería creada a partir del pase de diapositivas «%s». Revisa los ajustes de "
+"abajo y, a continuación, guarda."
 
-#: class-ml-slider-lightbox.php:2050 class-ml-slider-lightbox.php:2299
-msgid "Background & Overlay"
-msgstr "Fondo y superposición"
+#: class-ml-gallery.php:1762
+msgid ""
+"Gallery created from your slideshow. Review the settings below, then save."
+msgstr ""
+"Galería creada a partir de tu pase de diapositivas. Revisa los ajustes de "
+"abajo y, a continuación, guarda."
 
-#: class-ml-slider-lightbox.php:2055
+#: class-ml-gallery.php:1776
+msgid "Enter gallery title"
+msgstr "Introduce el título de la galería"
+
+#: class-ml-gallery.php:1779 class-ml-gallery.php:2434
+#: class-ml-gallery.php:5131
+msgid "Images"
+msgstr "Imágenes"
+
+#: class-ml-gallery.php:1789
+msgid "Preview or arrange images"
+msgstr "Previsualizar u ordenar imágenes"
+
+#: class-ml-gallery.php:1792 class-ml-gallery.php:5044
+msgid "Preview"
+msgstr "Vista previa"
+
+#: class-ml-gallery.php:1796
+msgid "Arrange"
+msgstr "Ordenar"
+
+#: class-ml-gallery.php:1803
+msgid "Desktop width"
+msgstr "Ancho de escritorio"
+
+#: class-ml-gallery.php:1807
+msgid "Laptop width"
+msgstr "Ancho de portátil"
+
+#: class-ml-gallery.php:1811
+msgid "Tablet width"
+msgstr "Ancho de tableta"
+
+#: class-ml-gallery.php:1815
+msgid "Mobile width"
+msgstr "Ancho de móvil"
+
+#: class-ml-gallery.php:1819
+msgid "Preview at desktop, laptop, tablet or mobile width"
+msgstr "Previsualizar con ancho de escritorio, portátil, tableta o móvil"
+
+#: class-ml-gallery.php:1837 class-ml-gallery.php:3862
+msgid "Order is randomised for each visitor."
+msgstr "El orden es aleatorio para cada visitante."
+
+#: class-ml-gallery.php:1841 class-ml-gallery.php:3861
+#, php-format
+msgid "Sorted %s — switch to Drag-and-drop to reorder."
+msgstr "Ordenado %s — cambia a Arrastrar y soltar para reordenar."
+
+#: class-ml-gallery.php:1849
+msgid "No images or videos added yet"
+msgstr "Aún no se han añadido imágenes ni vídeos"
+
+#: class-ml-gallery.php:1891 class-ml-gallery.php:3854
+msgid "Remove image"
+msgstr "Eliminar imagen"
+
+#: class-ml-gallery.php:1896 class-ml-gallery.php:3858
+msgid "Edit caption"
+msgstr "Editar leyenda"
+
+#: class-ml-gallery.php:1896 class-ml-gallery.php:1898
+#: class-ml-gallery.php:3859
+msgid "Add caption"
+msgstr "Añadir leyenda"
+
+#: class-ml-gallery.php:1930
+msgid "Gallery preview"
+msgstr "Vista previa de la galería"
+
+#: class-ml-gallery.php:1936
+msgid "Add Images or Videos"
+msgstr "Añadir imágenes o vídeos"
+
+#: class-ml-gallery.php:1940
+msgid "More ways to add images or videos"
+msgstr "Más formas de añadir imágenes o vídeos"
+
+#: class-ml-gallery.php:1946
+msgid "Upload"
+msgstr "Subir"
+
+#: class-ml-gallery.php:1951
+msgid "Media Library"
+msgstr "Biblioteca de medios"
+
+#: class-ml-gallery.php:1956
+msgid "Server Folder"
+msgstr "Carpeta del servidor"
+
+#: class-ml-gallery.php:1961
+msgid "ZIP"
+msgstr "ZIP"
+
+#: class-ml-gallery.php:1966
+msgid "Livid.com Video"
+msgstr "Vídeo de Livid.com"
+
+#: class-ml-gallery.php:1970
+msgid "YouTube Video"
+msgstr "Vídeo de YouTube"
+
+#: class-ml-gallery.php:1971
+msgid "Vimeo Video"
+msgstr "Vídeo de Vimeo"
+
+#: class-ml-gallery.php:1986
+msgid "Where to add new images"
+msgstr "Dónde añadir las nuevas imágenes"
+
+#: class-ml-gallery.php:1987
+msgid "Add new images at:"
+msgstr "Añadir nuevas imágenes al:"
+
+#: class-ml-gallery.php:1991
+msgid "Start"
+msgstr "Principio"
+
+#: class-ml-gallery.php:1996
+msgid "End"
+msgstr "Final"
+
+#: class-ml-gallery.php:2003
+msgid ""
+"The order images appear in on your site. Random reshuffles for each visitor, "
+"which page caching can defeat."
+msgstr ""
+"El orden en que aparecen las imágenes en tu sitio. Aleatorio las reordena "
+"para cada visitante, algo que la caché de página puede anular."
+
+#: class-ml-gallery.php:2003
+msgid "Image Order:"
+msgstr "Orden de las imágenes:"
+
+#: class-ml-gallery.php:2017
+msgid "Layout"
+msgstr "Diseño"
+
+#: class-ml-gallery.php:2020
+msgid "Gallery layout"
+msgstr "Diseño de la galería"
+
+#: class-ml-gallery.php:2022
+msgid "Evenly sized images arranged in a fixed grid"
+msgstr "Imágenes del mismo tamaño dispuestas en una cuadrícula fija"
+
+#: class-ml-gallery.php:2032 class-ml-gallery.php:5047
+msgid "Grid"
+msgstr "Cuadrícula"
+
+#: class-ml-gallery.php:2036
+msgid "Images at their natural heights, fitting together like a brick wall"
+msgstr "Imágenes a su altura natural, encajadas como una pared de ladrillos"
+
+#: class-ml-gallery.php:2046 class-ml-gallery.php:5046
+msgid "Masonry"
+msgstr "Mosaico"
+
+#: class-ml-gallery.php:2050
+msgid "Images scaled to fill each row edge-to-edge with a consistent height"
+msgstr ""
+"Imágenes escaladas para llenar cada fila de borde a borde con una altura "
+"uniforme"
+
+#: class-ml-gallery.php:2062 class-ml-gallery.php:5048
+msgid "Justified"
+msgstr "Justificado"
+
+#: class-ml-gallery.php:2066
+msgid "Images displayed one at a time in a scrollable slideshow"
+msgstr ""
+"Imágenes mostradas de una en una en un pase de diapositivas desplazable"
+
+#: class-ml-gallery.php:2075
+msgid "Carousel"
+msgstr "Carrusel"
+
+#: class-ml-gallery.php:2079
+msgid "Large main image with a scrollable thumbnail strip below"
+msgstr "Imagen principal grande con una tira de miniaturas desplazable debajo"
+
+#: class-ml-gallery.php:2089
+msgid "Showcase"
+msgstr "Escaparate"
+
+#: class-ml-gallery.php:2106
+msgid "Two images with a divider visitors drag to compare"
+msgstr ""
+"Dos imágenes con un divisor que los visitantes arrastran para compararlas"
+
+#: class-ml-gallery.php:2114
+msgid "Before & After"
+msgstr "Antes y después"
+
+#: class-ml-gallery.php:2116
+msgid "The Before & After layout requires MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar el diseño Antes y después es obligatorio instalar MetaSlider "
+"Gallery Pro"
+
+#: class-ml-gallery.php:2145
+msgid "Desktop"
+msgstr "Escritorio"
+
+#: class-ml-gallery.php:2146
+msgid "Number of columns on desktop screens (1440px and wider)"
+msgstr "Número de columnas en pantallas de escritorio (1440px o más)"
+
+#: class-ml-gallery.php:2152
+msgid "Laptop"
+msgstr "Portátil"
+
+#: class-ml-gallery.php:2153
+msgid "Number of columns on laptops (1024px to 1439px)"
+msgstr "Número de columnas en portátiles (de 1024px a 1439px)"
+
+#: class-ml-gallery.php:2159
+msgid "Tablet"
+msgstr "Tableta"
+
+#: class-ml-gallery.php:2160
+msgid "Number of columns on tablets (768px to 1023px)"
+msgstr "Número de columnas en tabletas (de 768px a 1023px)"
+
+#: class-ml-gallery.php:2166
+msgid "Mobile"
+msgstr "Móvil"
+
+#: class-ml-gallery.php:2167
+msgid "Number of columns on phones (up to 767px)"
+msgstr "Número de columnas en teléfonos (hasta 767px)"
+
+#: class-ml-gallery.php:2174
+msgid "Number of columns to show at each screen size"
+msgstr "Número de columnas que se muestran en cada tamaño de pantalla"
+
+#: class-ml-gallery.php:2174
+msgid "Columns"
+msgstr "Columnas"
+
+#: class-ml-gallery.php:2193
+msgid "Height of the gallery images, in pixels"
+msgstr "Altura de las imágenes de la galería, en píxeles"
+
+#: class-ml-gallery.php:2194
+msgid "Height"
+msgstr "Altura"
+
+#: class-ml-gallery.php:2206
+msgid "Space between images"
+msgstr "Espacio entre imágenes"
+
+#: class-ml-gallery.php:2207
+msgid "Gap"
+msgstr "Espacio"
+
+#: class-ml-gallery.php:2223
+msgid ""
+"Show only the first batch of images, with a button that reveals more. "
+"Applies to Grid, Masonry, and Justified layouts."
+msgstr ""
+"Muestra solo el primer lote de imágenes, con un botón que muestra más. Se "
+"aplica a los diseños Cuadrícula, Mosaico y Justificado."
+
+#: class-ml-gallery.php:2223 class-ml-gallery.php:4431
+msgid "Load More"
+msgstr "Cargar más"
+
+#: class-ml-gallery.php:2236
+msgid ""
+"How many images to show at first, and how many each press of the button adds"
+msgstr ""
+"Cuántas imágenes mostrar al principio y cuántas añade cada pulsación del "
+"botón"
+
+#: class-ml-gallery.php:2236
+msgid "Images per batch"
+msgstr "Imágenes por lote"
+
+#: class-ml-gallery.php:2251
+msgid "Zoom controls require MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar los controles para ampliar/acercar es obligatorio instalar "
+"MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2252
+msgid "Fullscreen mode requires MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar el modo de pantalla completa es obligatorio instalar "
+"MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2253
+msgid "Image rotation requires MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar la rotación de imagen es obligatorio instalar MetaSlider "
+"Gallery Pro"
+
+#: class-ml-gallery.php:2254
+msgid "Autoplay requires MetaSlider Gallery Pro"
+msgstr ""
+"Para la reproducción automática es obligatorio instalar MetaSlider Gallery "
+"Pro"
+
+#: class-ml-gallery.php:2255
+msgid "Social sharing requires MetaSlider Gallery Pro"
+msgstr ""
+"Para compartir en medios sociales es obligatorio instalar MetaSlider Gallery "
+"Pro"
+
+#: class-ml-gallery.php:2256
+msgid "Pager requires MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar el paginador es obligatorio instalar MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2257
+msgid "Unique Image URLs require MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar las URL únicas por las imágenes es obligatorio instalar "
+"MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2258
+msgid "Image protection requires MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar la protección de imágenes es obligatorio instalar MetaSlider "
+"Gallery Pro"
+
+#: class-ml-gallery.php:2259
+msgid "Watermarking requires MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar las marcas de agua es obligatorio instalar MetaSlider Gallery "
+"Pro"
+
+#: class-ml-gallery.php:2260
+msgid "Photo metadata requires MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar los metadatos de la foto es obligatorio instalar MetaSlider "
+"Gallery Pro"
+
+#: class-ml-gallery.php:2261
+msgid "Likes require MetaSlider Gallery Pro"
+msgstr ""
+"Para utilizar los «Me gusta» es obligatorio instalar MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2265
+msgid "Show left and right navigation arrows"
+msgstr "Mostrar las flechas de navegación izquierda y derecha"
+
+#: class-ml-gallery.php:2266
+msgid "Display the current image number and total count"
+msgstr "Muestra el número de la imagen actual y el recuento total"
+
+#: class-ml-gallery.php:2267
+msgid "Show a strip of thumbnail images at the bottom of the gallery"
+msgstr "Muestra una tira de miniaturas en la parte inferior de la galería"
+
+#: class-ml-gallery.php:2268
+msgid "Show dot navigation area below each image."
+msgstr "Muestra un área de navegación con puntos debajo de cada imagen."
+
+#: class-ml-gallery.php:2269
+msgid ""
+"Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
+"appear only if the original size is larger than the gallery size."
+msgstr ""
+"Pellizca o desplázate para ampliar y reducir las imágenes de la galería. El "
+"control de ampliación solo aparecerá si el tamaño original es mayor que el "
+"tamaño de la galería."
+
+#: class-ml-gallery.php:2270
+msgid "Expand the gallery window to fill the whole screen."
+msgstr "Amplía la ventana de la galería para que ocupe toda la pantalla."
+
+#: class-ml-gallery.php:2271
+msgid ""
+"Users can rotate images left or right, plus flip them vertically or "
+"horizontally."
+msgstr ""
+"Los usuarios pueden rotar las imágenes a la izquierda o a la derecha, y "
+"voltearlas vertical u horizontalmente."
+
+#: class-ml-gallery.php:2272
+msgid "Automatically advance through the images without the user clicking."
+msgstr "Avanza automáticamente por las imágenes sin que el usuario haga clic."
+
+#: class-ml-gallery.php:2273
+msgid "Enable users to share images on Facebook, X, or Pinterest."
+msgstr "Permite a los usuarios compartir imágenes en Facebook, X o Pinterest."
+
+#: class-ml-gallery.php:2274
+msgid ""
+"Create a unique URL for each image to enable direct linking inside a gallery."
+msgstr ""
+"Crea una URL única para cada imagen para permitir enlaces directos dentro de "
+"una galería."
+
+#: class-ml-gallery.php:2275 class-ml-slider-lightbox.php:4504
+#: class-ml-slider-lightbox.php:4701
+msgid ""
+"Discourage casual saving by blocking right-click, drag, and long-press on "
+"gallery images."
+msgstr ""
+"Disuade del guardado casual bloqueando el clic derecho, el arrastre y la "
+"pulsación larga en las imágenes de la galería."
+
+#: class-ml-gallery.php:2276
+msgid ""
+"Overlay your logo on gallery window images. This discourages casual copying; "
+"it does not prevent it."
+msgstr ""
+"Superpone tu logotipo en las imágenes de la ventana de la galería. Esto "
+"disuade de la copia casual, pero no la impide."
+
+#: class-ml-gallery.php:2277
+msgid ""
+"Show the camera settings a photo was taken with — camera, lens, aperture, "
+"shutter speed and ISO — beneath its caption."
+msgstr ""
+"Muestra los ajustes de cámara con los que se tomó una foto (cámara, "
+"objetivo, apertura, velocidad de obturación e ISO) debajo de su leyenda."
+
+#: class-ml-gallery.php:2278
+msgid ""
+"Let visitors heart images. The count is shared across every gallery using "
+"the image."
+msgstr ""
+"Permite a los visitantes marcar imágenes con un corazón. El recuento se "
+"comparte entre todas las galerías que usan la imagen."
+
+#: class-ml-gallery.php:2279
+msgid "Navigate images using left and right arrow keys"
+msgstr "Navega por las imágenes con las teclas de flecha izquierda y derecha"
+
+#: class-ml-gallery.php:2280
+msgid "Scroll through images using the mouse wheel"
+msgstr "Desplázate por las imágenes con la rueda del ratón"
+
+#: class-ml-gallery.php:2281
+msgid "Swipe up or down to close the gallery on touch devices"
+msgstr ""
+"Desliza hacia arriba o hacia abajo para cerrar la galería en dispositivos "
+"táctiles"
+
+#: class-ml-gallery.php:2282
+msgid "Cycle back to the first image after reaching the last"
+msgstr "Volver a la primera imagen tras llegar a la última"
+
+#: class-ml-gallery.php:2283
+msgid "Show a download button for each image"
+msgstr "Mostrar un botón de descarga para cada imagen"
+
+#: class-ml-gallery.php:2284
+msgid "Show a button that expands the carousel to fill the browser window."
+msgstr ""
+"Muestra un botón que amplía el carrusel para llenar la ventana del navegador."
+
+#: class-ml-gallery.php:2285
+msgid ""
+"Open images in a window overlay when clicked. Turn it off on Carousel or "
+"Showcase to keep the gallery on the page without the overlay."
+msgstr ""
+"Abre las imágenes en una ventana superpuesta al hacer clic. Desactívalo en "
+"Carrusel o Escaparate para mantener la galería en la página sin la "
+"superposición."
+
+#: class-ml-gallery.php:2286
+msgid ""
+"Show a button over the gallery that opens the gallery window when clicked."
+msgstr ""
+"Muestra un botón sobre la galería que abre la ventana de la galería al hacer "
+"clic."
+
+#: class-ml-gallery.php:2287
+msgid "Show an icon on the button instead of text."
+msgstr "Muestra un icono en el botón en lugar de texto."
+
+#: class-ml-gallery.php:2288
+msgid ""
+"Hide the caption until the image is hovered. Captions always show on devices "
+"without hover support."
+msgstr ""
+"Oculta la leyenda hasta que se pasa el cursor sobre la imagen. Las leyendas "
+"siempre se muestran en dispositivos sin soporte para pasar el cursor."
+
+#: class-ml-gallery.php:2289
+msgid "Start playing as soon as the gallery opens on a video."
+msgstr "Empieza a reproducir en cuanto la galería se abre en un vídeo."
+
+#: class-ml-gallery.php:2290
+msgid ""
+"Start playing each video as the visitor reaches it, not just the first one."
+msgstr ""
+"Empieza a reproducir cada vídeo cuando el visitante llega a él, no solo el "
+"primero."
+
+#: class-ml-gallery.php:2291
+msgid "Move to the next item and keep playing when a video finishes."
+msgstr ""
+"Pasa al siguiente elemento y sigue reproduciendo cuando termina un vídeo."
+
+#: class-ml-gallery.php:2292
+msgid "Restart each video automatically when it reaches the end."
+msgstr "Reinicia cada vídeo automáticamente cuando llega al final."
+
+#: class-ml-gallery.php:2293
+msgid "Play videos without sound."
+msgstr "Reproduce los vídeos sin sonido."
+
+#: class-ml-gallery.php:2338
+msgid "Full (original)"
+msgstr "Completo (original)"
+
+#: class-ml-gallery.php:2339
+msgid "Custom…"
+msgstr "Personalizado…"
+
+#: class-ml-gallery.php:2354
+msgid "Width and height in pixels, between 50 and 4000"
+msgstr "Ancho y alto en píxeles, entre 50 y 4000"
+
+#: class-ml-gallery.php:2354
+msgid "Custom Size"
+msgstr "Tamaño personalizado"
+
+#: class-ml-gallery.php:2360
+msgid "W"
+msgstr "An"
+
+#: class-ml-gallery.php:2361
+msgid "Custom width"
+msgstr "Ancho personalizado"
+
+#: class-ml-gallery.php:2367
+msgid "H"
+msgstr "Al"
+
+#: class-ml-gallery.php:2368
+msgid "Custom height"
+msgstr "Alto personalizado"
+
+#: class-ml-gallery.php:2372
+msgid "Crop to fill the exact size instead of scaling to fit within it"
+msgstr ""
+"Recorta para llenar el tamaño exacto en lugar de escalar para ajustarse a él"
+
+#: class-ml-gallery.php:2372
+msgid "Crop to exact size"
+msgstr "Recortar al tamaño exacto"
+
+#: class-ml-gallery.php:2387
+msgid "Show in Gallery Window"
+msgstr "Mostrar en la ventana de la galería"
+
+#: class-ml-gallery.php:2400
+msgid ""
+"Choose how visitors open the gallery window: click the image, click an icon, "
+"or click a button."
+msgstr ""
+"Elige cómo abren los visitantes la ventana de la galería: haciendo clic en "
+"la imagen, en un icono o en un botón."
+
+#: class-ml-gallery.php:2400
+msgid "Open with"
+msgstr "Abrir con"
+
+#: class-ml-gallery.php:2412
+msgid "Text shown on the button that opens the gallery window"
+msgstr "Texto que se muestra en el botón que abre la ventana de la galería"
+
+#: class-ml-gallery.php:2412 class-ml-slider-lightbox.php:2786
+msgid "Button Text"
+msgstr "Texto del botón"
+
+#: class-ml-gallery.php:2417 class-ml-gallery.php:4412
+#: class-ml-slider-lightbox.php:1665 class-ml-slider-lightbox.php:3417
+#: class-ml-slider-lightbox.php:6749 class-ml-slider-lightbox.php:6772
+msgid "Open in Gallery"
+msgstr "Abrir en la galería"
+
+#: class-ml-gallery.php:2422
+msgid "Where the button or icon sits over the gallery"
+msgstr "Dónde se sitúa el botón o el icono sobre la galería"
+
+#: class-ml-gallery.php:2422 class-ml-slider-lightbox.php:2794
+msgid "Button Position"
+msgstr "Posición del botón"
+
+#: class-ml-gallery.php:2424
+msgid "Top Right"
+msgstr "Arriba a la derecha"
+
+#: class-ml-gallery.php:2425 class-ml-slider-lightbox.php:3434
+#: class-ml-slider-lightbox.php:3460
+msgid "Top Left"
+msgstr "Arriba a la izquierda"
+
+#: class-ml-gallery.php:2426 class-ml-slider-lightbox.php:3435
+#: class-ml-slider-lightbox.php:3461
+msgid "Bottom Right"
+msgstr "Abajo a la derecha"
+
+#: class-ml-gallery.php:2427 class-ml-slider-lightbox.php:3436
+#: class-ml-slider-lightbox.php:3462
+msgid "Bottom Left"
+msgstr "Abajo a la izquierda"
+
+#: class-ml-gallery.php:2441
+msgid "Gallery Image Size"
+msgstr "Tamaño de imagen de la galería"
+
+#: class-ml-gallery.php:2442
+msgid ""
+"The size of the images shown in the gallery on the page. Carousel and "
+"Showcase use the Window Image Size for their main image."
+msgstr ""
+"El tamaño de las imágenes que se muestran en la galería de la página. "
+"Carrusel y Escaparate usan el tamaño de imagen de la ventana para su imagen "
+"principal."
+
+#: class-ml-gallery.php:2451
+msgid "Window Image Size"
+msgstr "Tamaño de imagen de la ventana"
+
+#: class-ml-gallery.php:2452
+msgid ""
+"The size of the image shown when a visitor clicks to view it in full, and of "
+"the main image in the Carousel and Showcase layouts"
+msgstr ""
+"El tamaño de la imagen que se muestra cuando un visitante hace clic para "
+"verla completa, y de la imagen principal en los diseños Carrusel y Escaparate"
+
+#: class-ml-gallery.php:2461
+msgid "Protect images"
+msgstr "Proteger imágenes"
+
+#: class-ml-gallery.php:2462
+msgid "Watermark"
+msgstr "Marca de agua"
+
+#: class-ml-gallery.php:2467
+msgid "Display"
+msgstr "Mostrar"
+
+#: class-ml-gallery.php:2469
+msgid "Animation effect when moving between images"
+msgstr "Efecto de animación al pasar de una imagen a otra"
+
+#: class-ml-gallery.php:2469 class-ml-gallery.php:2602
+msgid "Transition"
+msgstr "Transición"
+
+#: class-ml-gallery.php:2478 class-ml-slider-lightbox.php:2746
+msgid "Arrows"
+msgstr "Flechas"
+
+#: class-ml-gallery.php:2479
+msgid "Slide Counter"
+msgstr "Contador de diapositivas"
+
+#: class-ml-gallery.php:2480
+msgid "Thumbnails"
+msgstr "Miniaturas"
+
+#: class-ml-gallery.php:2482
+msgid "Pager"
+msgstr "Paginador"
+
+#: class-ml-gallery.php:2487 class-ml-slider-lightbox.php:2436
 msgid "Navigation"
 msgstr "Navegación"
 
-#: class-ml-slider-lightbox.php:2060
-msgid "\"Open in Lightbox\" Button"
-msgstr "Botón «Abrir en caja de luz»"
+#: class-ml-gallery.php:2488
+msgid "Loop"
+msgstr "Bucle"
 
-#: class-ml-slider-lightbox.php:2076
+#: class-ml-gallery.php:2489
+msgid "Keyboard"
+msgstr "Teclado"
+
+#: class-ml-gallery.php:2490
+msgid "Mouse wheel"
+msgstr "Rueda del ratón"
+
+#: class-ml-gallery.php:2491
+msgid "Swipe to close"
+msgstr "Desliza para cerrar"
+
+#: class-ml-gallery.php:2495
+msgid "Video"
+msgstr "Vídeo"
+
+#: class-ml-gallery.php:2496
+msgid "Play video on open"
+msgstr "Reproducir el vídeo al abrir"
+
+#: class-ml-gallery.php:2497
+msgid "Play every video"
+msgstr "Reproducir todos los vídeos"
+
+#: class-ml-gallery.php:2498
+msgid "Play next when video ends"
+msgstr "Reproducir el siguiente al terminar el vídeo"
+
+#: class-ml-gallery.php:2499
+msgid "Loop video"
+msgstr "Repetir el vídeo en bucle"
+
+#: class-ml-gallery.php:2500
+msgid "Mute video"
+msgstr "Silenciar el vídeo"
+
+#: class-ml-gallery.php:2502
+msgid ""
+"Browsers only allow videos to start on their own when they are muted, so "
+"autoplaying videos play without sound."
+msgstr ""
+"Los navegadores solo permiten que los vídeos se inicien por sí solos cuando "
+"están silenciados, por lo que los vídeos con reproducción automática se "
+"reproducen sin sonido."
+
+#: class-ml-gallery.php:2511 class-ml-gallery.php:2513
+msgid "Captions"
+msgstr "Leyendas"
+
+#: class-ml-gallery.php:2513
+msgid ""
+"Where captions appear: on gallery thumbnails, in the gallery window, or both."
+msgstr ""
+"Dónde aparecen las leyendas: en las miniaturas de la galería, en la ventana "
+"de la galería o en ambas."
+
+#: class-ml-gallery.php:2527
+msgid ""
+"Where each caption's text comes from: your typed caption, or the image's "
+"Media Library caption or description. Empty media fields fall back to your "
+"typed caption."
+msgstr ""
+"De dónde procede el texto de cada leyenda: la leyenda que escribes o la "
+"leyenda o descripción de la imagen en la biblioteca de medios. Si los campos "
+"del medio están vacíos, se usa la leyenda que has escrito."
+
+#: class-ml-gallery.php:2527
+msgid "Caption Content"
+msgstr "Contenido de la leyenda"
+
+#: class-ml-gallery.php:2536
+msgid ""
+"Where the caption sits on the image. Applies to gallery captions only — not "
+"the gallery window."
+msgstr ""
+"Dónde se sitúa la leyenda sobre la imagen. Solo se aplica a las leyendas de "
+"la galería, no a la ventana de la galería."
+
+#: class-ml-gallery.php:2536
+msgid "Position"
+msgstr "Posición"
+
+#: class-ml-gallery.php:2545
+msgid ""
+"How caption text lines up within the image. Applies to gallery captions only "
+"— not the gallery window."
+msgstr ""
+"Cómo se alinea el texto de la leyenda dentro de la imagen. Solo se aplica a "
+"las leyendas de la galería, no a la ventana de la galería."
+
+#: class-ml-gallery.php:2545
+msgid "Align"
+msgstr "Alinear"
+
+#: class-ml-gallery.php:2554
+msgid ""
+"Caption text size. Applies to both gallery thumbnails and the gallery window."
+msgstr ""
+"Tamaño del texto de la leyenda. Se aplica tanto a las miniaturas de la "
+"galería como a la ventana de la galería."
+
+#: class-ml-gallery.php:2555
+msgid "Text Size"
+msgstr "Tamaño del texto"
+
+#: class-ml-gallery.php:2567
+msgid ""
+"Caption text color. Applies to both gallery thumbnails and the gallery "
+"window."
+msgstr ""
+"Color del texto de la leyenda. Se aplica tanto a las miniaturas de la "
+"galería como a la ventana de la galería."
+
+#: class-ml-gallery.php:2567
+msgid "Text Color"
+msgstr "Color del texto"
+
+#: class-ml-gallery.php:2577
+msgid ""
+"Caption background. Applies to both gallery thumbnails and the gallery "
+"window; on thumbnails it fades to transparent for readability."
+msgstr ""
+"Fondo de la leyenda. Se aplica tanto a las miniaturas de la galería como a "
+"la ventana de la galería; en las miniaturas se difumina hasta transparente "
+"para mejorar la legibilidad."
+
+#: class-ml-gallery.php:2577 class-ml-gallery.php:2644
+#: class-ml-slider-lightbox.php:2714
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: class-ml-gallery.php:2587
+msgid ""
+"How solid the caption background is. Lower values let more of the image show "
+"through; 0 leaves the text on the bare image."
+msgstr ""
+"Grado de opacidad del fondo de la leyenda. Los valores más bajos dejan ver "
+"más la imagen; 0 deja el texto directamente sobre la imagen."
+
+#: class-ml-gallery.php:2588 class-ml-gallery.php:2655
+#: class-ml-slider-lightbox.php:2722
+msgid "Background Opacity"
+msgstr "Opacidad del fondo"
+
+#: class-ml-gallery.php:2599
+msgid "Reveal on Hover"
+msgstr "Mostrar al pasar el cursor"
+
+#: class-ml-gallery.php:2602
+msgid ""
+"How the caption animates in. Applies to the gallery window only — not to "
+"gallery thumbnail captions."
+msgstr ""
+"Cómo aparece animada la leyenda. Solo se aplica a la ventana de la galería, "
+"no a las leyendas de las miniaturas de la galería."
+
+#: class-ml-gallery.php:2611
+msgid "Photo Metadata"
+msgstr "Metadatos de la foto"
+
+#: class-ml-gallery.php:2618 class-ml-slider-lightbox.php:2762
+msgid "Toolbar"
+msgstr "Barra de herramientas"
+
+#: class-ml-gallery.php:2619 class-ml-slider-lightbox.php:1679
+msgid "Download"
+msgstr "Descargar"
+
+#: class-ml-gallery.php:2621
+msgid "Expand"
+msgstr "Expandir"
+
+#: class-ml-gallery.php:2624
+msgid "Share"
+msgstr "Compartir"
+
+#: class-ml-gallery.php:2625 class-ml-slider-lightbox.php:4676
+msgid "Likes"
+msgstr "Me gusta"
+
+#: class-ml-gallery.php:2626
+msgid "Autoplay"
+msgstr "Reproducción automática"
+
+#: class-ml-gallery.php:2627
+msgid "Rotate and Flip"
+msgstr "Rotar y voltear"
+
+#: class-ml-gallery.php:2628
+msgid "Fullscreen"
+msgstr "Pantalla completa"
+
+#: class-ml-gallery.php:2634
+msgid "Unique Image URLs"
+msgstr "URL únicas por las imágenes"
+
+#: class-ml-gallery.php:2641 class-ml-slider-lightbox.php:2364
+#: class-ml-slider-lightbox.php:2426
+msgid "Appearance"
+msgstr "Apariencia"
+
+#: class-ml-gallery.php:2644
+msgid "Background color of the gallery window"
+msgstr "Color de fondo de la ventana de la galería"
+
+#: class-ml-gallery.php:2654
+msgid ""
+"How opaque the gallery window background is (0 = transparent, 1 = solid)"
+msgstr ""
+"Grado de opacidad del fondo de la ventana de la galería (0 = transparente, 1 "
+"= sólido)"
+
+#: class-ml-gallery.php:2669
+msgid "Border width in pixels around the carousel (0 = no border)"
+msgstr "Ancho del borde en píxeles alrededor del carrusel (0 = sin borde)"
+
+#: class-ml-gallery.php:2670
+msgid "Frame Border Width"
+msgstr "Ancho del borde del marco"
+
+#: class-ml-gallery.php:2681
+msgid "Line style used for the carousel border"
+msgstr "Estilo de línea usado para el borde del carrusel"
+
+#: class-ml-gallery.php:2681
+msgid "Frame Border Style"
+msgstr "Estilo del borde del marco"
+
+#: class-ml-gallery.php:2684 class-ml-gallery.php:2885
+msgid "Solid"
+msgstr "Sólido"
+
+#: class-ml-gallery.php:2685 class-ml-gallery.php:2886
+msgid "Dashed"
+msgstr "Discontinuo"
+
+#: class-ml-gallery.php:2686 class-ml-gallery.php:2887
+msgid "Dotted"
+msgstr "Punteado"
+
+#: class-ml-gallery.php:2687 class-ml-gallery.php:2888
+msgid "Double"
+msgstr "Doble"
+
+#: class-ml-gallery.php:2695
+msgid "Color of the border around the carousel"
+msgstr "Color del borde alrededor del carrusel"
+
+#: class-ml-gallery.php:2695
+msgid "Frame Border Color"
+msgstr "Color del borde del marco"
+
+#: class-ml-gallery.php:2705
+msgid "Color of the next and previous navigation arrows"
+msgstr "Color de las flechas de navegación anterior y siguiente"
+
+#: class-ml-gallery.php:2705
+msgid "Arrow Color"
+msgstr "Color de la flecha"
+
+#: class-ml-gallery.php:2715
+msgid "Background color behind the navigation arrows"
+msgstr "Color de fondo detrás de las flechas de navegación"
+
+#: class-ml-gallery.php:2715
+msgid "Arrow Background"
+msgstr "Fondo de la flecha"
+
+#: class-ml-gallery.php:2725
+msgid "Color of the close (X) icon"
+msgstr "Color del icono de cierre (X)"
+
+#: class-ml-gallery.php:2725
+msgid "Close Icon Color"
+msgstr "Color del icono de cierre"
+
+#: class-ml-gallery.php:2735
+msgid "Background color behind the close icon"
+msgstr "Color de fondo detrás del icono de cierre"
+
+#: class-ml-gallery.php:2735
+msgid "Close Background"
+msgstr "Fondo del cierre"
+
+#: class-ml-gallery.php:2745
+msgid "Color of the toolbar icons"
+msgstr "Color de los iconos de la barra de herramientas"
+
+#: class-ml-gallery.php:2745
+msgid "Toolbar Icon Color"
+msgstr "Color del icono de la barra de herramientas"
+
+#: class-ml-gallery.php:2755
+msgid "Background color of the toolbar"
+msgstr "Color de fondo de la barra de herramientas"
+
+#: class-ml-gallery.php:2755
+msgid "Toolbar Background"
+msgstr "Fondo de la barra de herramientas"
+
+#: class-ml-gallery.php:2765
+msgid "Border color of the thumbnail strip images"
+msgstr "Color del borde de las imágenes de la tira de miniaturas"
+
+#: class-ml-gallery.php:2765 class-ml-slider-lightbox.php:2738
+msgid "Thumbnail Border Color"
+msgstr "Color del borde de las miniaturas"
+
+#: class-ml-gallery.php:2775
+msgid "Border color of the active and hovered thumbnail"
+msgstr "Color del borde de la miniatura activa y al pasar el cursor"
+
+#: class-ml-gallery.php:2775
+msgid "Thumbnail Border Active and Hover"
+msgstr "Borde de miniatura activa y al pasar el cursor"
+
+#: class-ml-gallery.php:2793
+msgid "Text color of the gallery buttons, including Load More"
+msgstr "Color del texto de los botones de la galería, incluido «Cargar más»"
+
+#: class-ml-gallery.php:2793
+msgid "Button Text Color"
+msgstr "Color del texto del botón"
+
+#: class-ml-gallery.php:2797
+msgid "Button text color on hover"
+msgstr "Color del texto del botón al pasar el cursor"
+
+#: class-ml-gallery.php:2797
+msgid "Button Text Hover"
+msgstr "Texto del botón al pasar el cursor"
+
+#: class-ml-gallery.php:2801
+msgid "Background color of the gallery buttons, including Load More"
+msgstr "Color de fondo de los botones de la galería, incluido «Cargar más»"
+
+#: class-ml-gallery.php:2801
+msgid "Button Background"
+msgstr "Fondo del botón"
+
+#: class-ml-gallery.php:2805
+msgid "Button background color on hover"
+msgstr "Color de fondo del botón al pasar el cursor"
+
+#: class-ml-gallery.php:2805
+msgid "Button Background Hover"
+msgstr "Fondo del botón al pasar el cursor"
+
+#: class-ml-gallery.php:2812
+msgid "Color of the icon that opens the gallery window"
+msgstr "Color del icono que abre la ventana de la galería"
+
+#: class-ml-gallery.php:2812
+msgid "Icon Color"
+msgstr "Color del icono"
+
+#: class-ml-gallery.php:2816
+msgid "Icon color on hover"
+msgstr "Color del icono al pasar el cursor"
+
+#: class-ml-gallery.php:2816
+msgid "Icon Hover Color"
+msgstr "Color del icono al pasar el cursor"
+
+#: class-ml-gallery.php:2820
+msgid "Background color behind the icon"
+msgstr "Color de fondo detrás del icono"
+
+#: class-ml-gallery.php:2820
+msgid "Icon Background"
+msgstr "Fondo del icono"
+
+#: class-ml-gallery.php:2824
+msgid "Icon background color on hover"
+msgstr "Color de fondo del icono al pasar el cursor"
+
+#: class-ml-gallery.php:2824
+msgid "Icon Background Hover"
+msgstr "Fondo del icono al pasar el cursor"
+
+#: class-ml-gallery.php:2831
+msgid "Color of the progress bar shown during autoplay"
+msgstr ""
+"Color de la barra de progreso que se muestra durante la reproducción "
+"automática"
+
+#: class-ml-gallery.php:2831
+msgid "Autoplay Progress Bar"
+msgstr "Barra de progreso de la reproducción automática"
+
+#: class-ml-gallery.php:2846
+msgid "Image Styles"
+msgstr "Estilos de imagen"
+
+#: class-ml-gallery.php:2849
+msgid "Apply a filter to every image in the gallery"
+msgstr "Aplica un filtro a todas las imágenes de la galería"
+
+#: class-ml-gallery.php:2849
+msgid "Filter"
+msgstr "Filtro"
+
+#: class-ml-gallery.php:2858
+msgid "Corner radius in pixels applied to every image"
+msgstr "Radio de las esquinas en píxeles aplicado a cada imagen"
+
+#: class-ml-gallery.php:2859
+msgid "Rounded Corners"
+msgstr "Esquinas redondeadas"
+
+#: class-ml-gallery.php:2870
+msgid "Image border width in pixels (0 = no border)"
+msgstr "Ancho del borde de la imagen en píxeles (0 = sin borde)"
+
+#: class-ml-gallery.php:2871
+msgid "Border Width"
+msgstr "Ancho del borde"
+
+#: class-ml-gallery.php:2882
+msgid "Line style used for the image border"
+msgstr "Estilo de línea utilizado para el borde de la imagen"
+
+#: class-ml-gallery.php:2882
+msgid "Border Style"
+msgstr "Estilo del borde"
+
+#: class-ml-gallery.php:2896
+msgid "Color of the image border"
+msgstr "Color del borde de la imagen"
+
+#: class-ml-gallery.php:2896
+msgid "Border Color"
+msgstr "Color del borde"
+
+#: class-ml-gallery.php:2906
+msgid "Drop shadow depth cast behind each image"
+msgstr "Profundidad de la sombra proyectada detrás de cada imagen"
+
+#: class-ml-gallery.php:2906
+msgid "Box Shadow"
+msgstr "Sombra de la caja"
+
+#: class-ml-gallery.php:2910
+msgid "Light"
+msgstr "Ligera"
+
+#: class-ml-gallery.php:2912
+msgid "Heavy"
+msgstr "Intensa"
+
+#: class-ml-gallery.php:2920
+msgid "Image opacity as a percentage"
+msgstr "Opacidad de la imagen en porcentaje"
+
+#: class-ml-gallery.php:2921
+msgid "Opacity"
+msgstr "Opacidad"
+
+#: class-ml-gallery.php:2932
+msgid "Rotate every image by a fixed angle"
+msgstr "Rota todas las imágenes con un ángulo fijo"
+
+#: class-ml-gallery.php:2932
+msgid "Rotate"
+msgstr "Rotar"
+
+#: class-ml-gallery.php:2946
+msgid "Mirror every image horizontally, vertically, or both"
+msgstr ""
+"Refleja todas las imágenes en horizontal, en vertical o en ambos sentidos"
+
+#: class-ml-gallery.php:2946
+msgid "Flip"
+msgstr "Voltear"
+
+#: class-ml-gallery.php:2950
+msgid "Horizontal"
+msgstr "Horizontal"
+
+#: class-ml-gallery.php:2951
+msgid "Vertical"
+msgstr "Vertical"
+
+#: class-ml-gallery.php:2952
+msgid "Both"
+msgstr "Ambos"
+
+#: class-ml-gallery.php:2962 class-ml-gallery.php:5130
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: class-ml-gallery.php:2964 class-ml-gallery.php:5150
+msgid "Click to copy shortcode."
+msgstr "Haz clic para copiar el shortcode."
+
+#: class-ml-gallery.php:2982
+msgid "Edit Caption"
+msgstr "Editar leyenda"
+
+#: class-ml-gallery.php:2984
+msgid "Previous image"
+msgstr "Imagen anterior"
+
+#: class-ml-gallery.php:2985
+msgid "Next image"
+msgstr "Imagen siguiente"
+
+#: class-ml-gallery.php:2987 class-ml-gallery.php:3044
+#: class-ml-gallery.php:3065 class-ml-gallery.php:3078
+#: class-ml-gallery.php:5175
+msgid "Close"
+msgstr "Cerrar"
+
+#: class-ml-gallery.php:3023
+msgid "Caption"
+msgstr "Leyenda"
+
+#: class-ml-gallery.php:3033
+msgid "Done"
+msgstr "Hecho"
+
+#: class-ml-gallery.php:3043
+msgid "Import from Server Folder"
+msgstr "Importar desde una carpeta del servidor"
+
+#: class-ml-gallery.php:3052 class-ml-gallery.php:3087
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: class-ml-gallery.php:3053
+msgid "Import selected"
+msgstr "Importar seleccionadas"
+
+#: class-ml-gallery.php:3064
+msgid "Import from ZIP"
+msgstr "Importar desde un ZIP"
+
+#: class-ml-gallery.php:3077
+msgid "Add Livid.com Video"
+msgstr "Añadir vídeo de Livid.com"
+
+#: class-ml-gallery.php:3081
+msgid "Livid.com video link"
+msgstr "Enlace del vídeo de Livid.com"
+
+#: class-ml-gallery.php:3088
+msgid "Add Video"
+msgstr "Añadir vídeo"
+
+#: class-ml-gallery.php:3112
+msgid "You do not have sufficient permissions."
+msgstr "No tienes permisos suficientes."
+
+#: class-ml-gallery.php:3131
+msgid "Could not update the gallery. Please try again."
+msgstr "No se ha podido actualizar la galería. Por favor, inténtalo de nuevo."
+
+#: class-ml-gallery.php:3324
+msgid "(Copy)"
+msgstr "(Copia)"
+
+#: class-ml-gallery.php:3330
+msgid "Could not duplicate the gallery. Please try again."
+msgstr "No se ha podido duplicar la galería. Por favor, inténtalo de nuevo."
+
+#: class-ml-gallery.php:3478 class-ml-gallery.php:3517
+#: class-ml-gallery.php:3576 class-ml-gallery.php:3691
+#: class-ml-gallery.php:3735 class-ml-gallery.php:5318
+#: class-ml-gallery.php:5469 class-ml-gallery.php:5501
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#: class-ml-gallery.php:3485 class-ml-gallery.php:3900
+msgid "That isn't a Livid.com video link."
+msgstr "Ese enlace no es un vídeo de Livid.com."
+
+#: class-ml-gallery.php:3495
+msgid "That Livid.com video wasn't found, or it's private."
+msgstr "No se ha encontrado ese vídeo de Livid.com o es privado."
+
+#: class-ml-gallery.php:3498 class-ml-gallery.php:3901
+msgid "Couldn't reach Livid.com. Please try again."
+msgstr "No se ha podido conectar con Livid.com. Por favor, inténtalo de nuevo."
+
+#: class-ml-gallery.php:3504
+msgid "The video could not be added."
+msgstr "No se ha podido añadir el vídeo."
+
+#: class-ml-gallery.php:3523
+msgid "That attachment is not a video."
+msgstr "Ese adjunto no es un vídeo."
+
+#: class-ml-gallery.php:3536
+msgid "No frame was uploaded."
+msgstr "No se ha subido ningún fotograma."
+
+#: class-ml-gallery.php:3553
+#, php-format
+msgid "%s poster"
+msgstr "Póster de %s"
+
+#: class-ml-gallery.php:3562
+msgid "The frame could not be saved."
+msgstr "No se ha podido guardar el fotograma."
+
+#: class-ml-gallery.php:3583
+msgid "Folder not found."
+msgstr "Carpeta no encontrada."
+
+#: class-ml-gallery.php:3592
+msgid "Folder could not be read."
+msgstr "No se ha podido leer la carpeta."
+
+#: class-ml-gallery.php:3629
+msgid "Uploads"
+msgstr "Subidas"
+
+#: class-ml-gallery.php:3747
+msgid "Invalid size."
+msgstr "Tamaño no válido."
+
+#: class-ml-gallery.php:3852
+msgid "Select Gallery Images or Videos"
+msgstr "Selecciona imágenes o vídeos para la galería"
+
+#: class-ml-gallery.php:3853
+msgid "Add to Gallery"
+msgstr "Añadir a la galería"
+
+#: class-ml-gallery.php:3856
+msgid "Choose Poster Image"
+msgstr "Elegir imagen de póster"
+
+#: class-ml-gallery.php:3857
+msgid "Use as poster"
+msgstr "Usar como póster"
+
+#: class-ml-gallery.php:3871
+msgid ""
+"Saved to this image in your Media Library — changes appear anywhere the "
+"image is used."
+msgstr ""
+"Se guarda en esta imagen de tu biblioteca de medios: los cambios aparecen en "
+"todos los lugares donde se usa la imagen."
+
+#: class-ml-gallery.php:3872 class-ml-gallery.php:5518
+msgid "You do not have permission to edit this image."
+msgstr "No tienes permiso para editar esta imagen."
+
+#: class-ml-gallery.php:3873 class-ml-gallery.php:5519
+msgid "This caption source is read-only."
+msgstr "Esta fuente de leyendas es de solo lectura."
+
+#: class-ml-gallery.php:3874
+msgid "Shown in this gallery"
+msgstr "Se muestra en esta galería"
+
+#: class-ml-gallery.php:3880
+#, php-format
+msgid "Preparing image sizes… %1$d/%2$d"
+msgstr "Preparando los tamaños de imagen… %1$d/%2$d"
+
+#: class-ml-gallery.php:3881
+msgid "Image sizes ready."
+msgstr "Tamaños de imagen listos."
+
+#: class-ml-gallery.php:3883
+#, php-format
+msgid ""
+"Could not resize %d image(s) — they may be smaller than the size you asked "
+"for."
+msgstr ""
+"No se han podido redimensionar %d imagen(es); puede que sean más pequeñas "
+"que el tamaño solicitado."
+
+#: class-ml-gallery.php:3885
+msgid "Loading…"
+msgstr "Cargando…"
+
+#: class-ml-gallery.php:3886
+msgid "No images in this folder."
+msgstr "No hay imágenes en esta carpeta."
+
+#: class-ml-gallery.php:3887
+msgid "Could not load this folder."
+msgstr "No se ha podido cargar esta carpeta."
+
+#: class-ml-gallery.php:3888
+msgid "Importing…"
+msgstr "Importando…"
+
+#: class-ml-gallery.php:3889
+msgid "Showing the first 200 images — open a subfolder to narrow the list."
+msgstr ""
+"Se muestran las primeras 200 imágenes. Abre una subcarpeta para acotar la "
+"lista."
+
+#: class-ml-gallery.php:3890
+msgid "Select at least one image."
+msgstr "Selecciona al menos una imagen."
+
+#: class-ml-gallery.php:3891 class-ml-gallery.php:3894
+#, php-format
+msgid "Imported %1$d image(s); %2$d image(s) skipped."
+msgstr "Se han importado %1$d imagen(es); se han omitido %2$d imagen(es)."
+
+#: class-ml-gallery.php:3892
+msgid "Uploading…"
+msgstr "Subiendo…"
+
+#: class-ml-gallery.php:3893
+msgid "Importing images…"
+msgstr "Importando imágenes…"
+
+#: class-ml-gallery.php:3895
+msgid "Only the first 200 images (or 256 MB) were imported."
+msgstr "Solo se han importado las primeras 200 imágenes (o 256 MB)."
+
+#: class-ml-gallery.php:3896
+msgid "The ZIP could not be imported."
+msgstr "No se ha podido importar el ZIP."
+
+#: class-ml-gallery.php:3897
+msgid ""
+"The upload was rejected — the ZIP may be larger than this server allows."
+msgstr ""
+"Se ha rechazado la subida: puede que el ZIP supere el tamaño permitido por "
+"este servidor."
+
+#: class-ml-gallery.php:3898
+msgid "No images found in the ZIP."
+msgstr "No se han encontrado imágenes en el ZIP."
+
+#: class-ml-gallery.php:3899
+msgid "Adding…"
+msgstr "Añadiendo…"
+
+#: class-ml-gallery.php:4434
+#, php-format
+msgid "%1$d more images loaded, %2$d remaining"
+msgstr "%1$d imágenes más cargadas, quedan %2$d"
+
+#: class-ml-gallery.php:4761
+msgid "Drag-and-drop building"
+msgstr "Creación con arrastrar y soltar"
+
+#: class-ml-gallery.php:4762
+msgid "Responsive lightbox"
+msgstr "Caja de luz adaptable"
+
+#: class-ml-gallery.php:4763
+msgid "Grid · Masonry · Justified"
+msgstr "Cuadrícula · Mosaico · Justificado"
+
+#: class-ml-gallery.php:5014
+msgid "Get started"
+msgstr "Comenzar"
+
+#: class-ml-gallery.php:5017
+msgid "Your galleries"
+msgstr "Tus galerías"
+
+#: class-ml-gallery.php:5017
+msgid "live here."
+msgstr "están aquí."
+
+#: class-ml-gallery.php:5019
+msgid ""
+"Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
+"justified, no code required."
+msgstr ""
+"Crea preciosas galerías de imágenes con una impresionante caja de luz. En "
+"cuadrícula, mosaico o justificado, sin necesidad de código."
+
+#: class-ml-gallery.php:5021
+msgid "Create your first gallery"
+msgstr "Crea tu primera galería"
+
+#: class-ml-gallery.php:5034
+#, php-format
+msgid "View Trash (%s)"
+msgid_plural "View Trash (%s)"
+msgstr[0] "Ver papelera (%s)"
+msgstr[1] "Ver papelera (%s)"
+
+#: class-ml-gallery.php:5045
+msgid "Preview layout"
+msgstr "Vista previa del diseño"
+
+#: class-ml-gallery.php:5132
+msgid "Usage"
+msgstr "Uso"
+
+#: class-ml-gallery.php:5165
+msgid "Not found."
+msgstr "No encontrado."
+
+#: class-ml-gallery.php:5170
+msgid "View Usage"
+msgstr "Ver uso"
+
+#: class-ml-gallery.php:5176
+msgid "Content Using This Gallery"
+msgstr "Contenido que usa esta galería"
+
+#: class-ml-gallery.php:5266
+msgid "(no title)"
+msgstr "(sin título)"
+
+#: class-ml-gallery.php:5324 class-ml-gallery.php:5333
+msgid "Please choose a valid .zip file."
+msgstr "Por favor, elige un archivo .zip válido."
+
+#: class-ml-gallery.php:5339
+msgid "Server cannot read ZIP files."
+msgstr "El servidor no puede leer archivos ZIP."
+
+#: class-ml-gallery.php:5346
+msgid "The ZIP could not be read."
+msgstr "No se ha podido leer el ZIP."
+
+#: class-ml-gallery.php:5380
+msgid "Could not prepare a temporary folder."
+msgstr "No se ha podido preparar una carpeta temporal."
+
+#: class-ml-gallery.php:5476 class-ml-gallery.php:5512
+msgid "Image not found."
+msgstr "Imagen no encontrada."
+
+#: class-ml-gallery.php:5548
+msgid "Unknown caption source."
+msgstr "Fuente de leyendas desconocida."
+
+#: class-ml-slider-lightbox.php:229
+msgid "👋 Thanks for installing MetaSlider Gallery!"
+msgstr "👋 ¡Gracias por instalar MetaSlider Gallery!"
+
+#: class-ml-slider-lightbox.php:232
+msgid "You're all set. Create your first gallery to get started."
+msgstr "Ya está todo listo. Crea tu primera galería para empezar."
+
+#: class-ml-slider-lightbox.php:1223
+msgid ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+msgstr ""
+"MetaSlider Gallery requires MetaSlider and at least one other supported "
+"lightbox plugin to be installed and activated."
+
+#: class-ml-slider-lightbox.php:1227
+msgid "More info"
+msgstr "Más información"
+
+#: class-ml-slider-lightbox.php:1238
+msgid ""
+"There is more than one lightbox plugin activated. This may cause conflicts "
+"with MetaSlider Gallery"
+msgstr ""
+"Hay más de un plugin de caja de luz activado. Esto puede causar conflictos "
+"con MetaSlider Gallery"
+
+#: class-ml-slider-lightbox.php:1298
+msgid "Edit Global Settings"
+msgstr "Editar ajustes globales"
+
+#: class-ml-slider-lightbox.php:1309
+msgid "Open In Gallery"
+msgstr "Abrir en la galería"
+
+#: class-ml-slider-lightbox.php:1314
+#, php-format
+msgctxt "Name of a plugin"
+msgid "All slides will open in a gallery, using %s"
+msgstr "Todas las diapositivas se abrirán en una galería, usando %s"
+
+#: class-ml-slider-lightbox.php:1323
+msgid "Show Captions"
+msgstr "Mostrar leyendas"
+
+#: class-ml-slider-lightbox.php:1323
+msgid "Show captions in the gallery for each slide."
+msgstr "Muestra leyendas en la galería para cada diapositiva."
+
+#: class-ml-slider-lightbox.php:1324
+msgid "Show Navigation Arrows"
+msgstr "Mostrar flechas de navegación"
+
+#: class-ml-slider-lightbox.php:1324
+msgid "Show previous/next arrows in the gallery."
+msgstr "Muestra las flechas anterior/siguiente en la galería."
+
+#: class-ml-slider-lightbox.php:1330
+#, php-format
+msgid ""
+"Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
+"Gallery settings</a>."
+msgstr ""
+"La galería está activada para todos los pases de diapositivas mediante los "
+"<a href=\"%s\">ajustes de MetaSlider Gallery</a>."
+
+#: class-ml-slider-lightbox.php:1675
+msgid "Close gallery"
+msgstr "Cerrar galería"
+
+#: class-ml-slider-lightbox.php:1676
+msgid "Toggle maximize"
+msgstr "Alternar maximizar"
+
+#: class-ml-slider-lightbox.php:1677
+msgid "Previous slide"
+msgstr "Diapositiva anterior"
+
+#: class-ml-slider-lightbox.php:1678
+msgid "Next slide"
+msgstr "Diapositiva siguiente"
+
+#: class-ml-slider-lightbox.php:1680
+msgid "Play video"
+msgstr "Reproducir vídeo"
+
+#: class-ml-slider-lightbox.php:1681
+msgid "Oops... Failed to load content..."
+msgstr "Vaya... No se ha podido cargar el contenido..."
+
+#: class-ml-slider-lightbox.php:1727 class-ml-slider-lightbox.php:1757
+msgid "Global"
+msgstr "Global"
+
+#: class-ml-slider-lightbox.php:1728
+msgid "Yes"
+msgstr "Sí"
+
+#: class-ml-slider-lightbox.php:1729
+msgid "No"
+msgstr "No"
+
+#: class-ml-slider-lightbox.php:1752
+msgid "How Visitors Open Images"
+msgstr "Cómo abren las imágenes los visitantes"
+
+#: class-ml-slider-lightbox.php:1755 class-ml-slider-lightbox.php:3869
+msgid ""
+"Choose whether clicking the image, an icon, or a button opens the gallery."
+msgstr ""
+"Elige si la galería se abre al hacer clic en la imagen, en un icono o en un "
+"botón."
+
+#: class-ml-slider-lightbox.php:1758 class-ml-trigger-control.php:66
+msgid "Image"
+msgstr "Imagen"
+
+#: class-ml-slider-lightbox.php:1759 class-ml-slider-lightbox.php:3576
+#: class-ml-slider-lightbox.php:3589 class-ml-slider-lightbox.php:3602
+#: class-ml-slider-lightbox.php:3700 class-ml-trigger-control.php:67
+msgid "Icon"
+msgstr "Icono"
+
+#: class-ml-slider-lightbox.php:1760 class-ml-trigger-control.php:68
+msgid "Button"
+msgstr "Botón"
+
+#: class-ml-slider-lightbox.php:2028
+msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
+msgstr ""
+"Para utilizar MetaSlider Gallery es obligatorio instalar y activar "
+"MetaSlider."
+
+#: class-ml-slider-lightbox.php:2032
+msgid "Install MetaSlider"
+msgstr "Instalar MetaSlider"
+
+#: class-ml-slider-lightbox.php:2161 class-ml-slider-lightbox.php:2305
+msgid "MetaSlider Gallery Pro"
+msgstr "MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2287
+#, php-format
+msgid "Select pages to %s..."
+msgstr "Selecciona las páginas a %s..."
+
+#: class-ml-slider-lightbox.php:2288
+#, php-format
+msgid "Select posts to %s..."
+msgstr "Selecciona las entradas a %s..."
+
+#: class-ml-slider-lightbox.php:2289
+#, php-format
+msgid "Select post types to %s..."
+msgstr "Selecciona los tipos de contenido a %s..."
+
+#: class-ml-slider-lightbox.php:2290
+#, php-format
+msgid "Select %1$s to %2$s..."
+msgstr "Selecciona %1$s a %2$s..."
+
+#: class-ml-slider-lightbox.php:2291
+msgid "Select post types to exclude"
+msgstr "Selecciona los tipos de contenido a excluir"
+
+#: class-ml-slider-lightbox.php:2292 class-ml-slider-lightbox.php:3918
+#: class-ml-slider-lightbox.php:3965 class-ml-slider-lightbox.php:4087
+msgid "Include"
+msgstr "Incluir"
+
+#: class-ml-slider-lightbox.php:2293 class-ml-slider-lightbox.php:3918
+#: class-ml-slider-lightbox.php:3965 class-ml-slider-lightbox.php:4087
+msgid "Exclude"
+msgstr "Excluir"
+
+#: class-ml-slider-lightbox.php:2301
+msgid "Gallery Pro"
+msgstr "Galería Pro"
+
+#: class-ml-slider-lightbox.php:2320
+msgid "Global Settings"
+msgstr "Ajustes globales"
+
+#: class-ml-slider-lightbox.php:2329
+msgid "Upgrade to MetaSlider Gallery Pro"
+msgstr "Mejorar a MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:2330
+msgid "Upgrade to Pro"
+msgstr "Mejorar a Pro"
+
+#: class-ml-slider-lightbox.php:2362
+msgid "Automatic Mode"
+msgstr "Modo automático"
+
+#: class-ml-slider-lightbox.php:2363
+msgid "Manual Mode"
+msgstr "Modo manual"
+
+#: class-ml-slider-lightbox.php:2365
+msgid "Behavior"
+msgstr "Comportamiento"
+
+#: class-ml-slider-lightbox.php:2386
+msgid "Settings saved successfully!"
+msgstr "¡Ajustes guardados correctamente!"
+
+#: class-ml-slider-lightbox.php:2401
+msgid "Where to Enable Automatically"
+msgstr "Donde activar automáticamente"
+
+#: class-ml-slider-lightbox.php:2408
+msgid "MetaSlider Slideshows"
+msgstr "Pases de diapositivas de MetaSlider"
+
+#: class-ml-slider-lightbox.php:2415 class-ml-slider-lightbox.php:2627
+msgid "Content Filtering"
+msgstr "Filtrado de contenido"
+
+#: class-ml-slider-lightbox.php:2427
+msgid ""
+"Customize colors, opacity, and visual styling for the gallery overlay and "
+"controls."
+msgstr ""
+"Personaliza los colores, la opacidad y el estilo visual de la superposición "
+"y los controles de la galería."
+
+#: class-ml-slider-lightbox.php:2431 class-ml-slider-lightbox.php:2693
+msgid "Background & Overlay"
+msgstr "Fondo y superposición"
+
+#: class-ml-slider-lightbox.php:2441
+msgid "\"Open in Gallery\" Button"
+msgstr "Botón «Abrir en la galería»"
+
+#: class-ml-slider-lightbox.php:2451 class-ml-slider-lightbox.php:2806
+msgid "Navigation & Controls"
+msgstr "Navegación y controles"
+
+#: class-ml-slider-lightbox.php:2454 class-ml-slider-lightbox.php:2845
+msgid "Search Engine Optimization"
+msgstr "Optimización para motores de búsqueda"
+
+#: class-ml-slider-lightbox.php:2457 class-ml-slider-lightbox.php:2860
+msgid "Email Updates"
+msgstr "Actualizaciones por correo electrónico"
+
+#: class-ml-slider-lightbox.php:2463
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
 "for WordPress content lightboxes."
-msgstr "<strong>Se ha detectado un plugin de terceros:</strong> Hay un plugin de caja de luz de terceros activo. Es posible que estos ajustes no se apliquen a MetaSlider, pero seguirán funcionando para las cajas de luz de contenido de WordPress."
+msgstr ""
+"<strong>Se ha detectado un plugin de terceros:</strong> Hay un plugin de "
+"caja de luz de terceros activo. Es posible que estos ajustes no se apliquen "
+"a MetaSlider, pero seguirán funcionando para las cajas de luz de contenido "
+"de WordPress."
 
-#: class-ml-slider-lightbox.php:2091
+#: class-ml-slider-lightbox.php:2470 class-ml-slider-lightbox.php:4435
+msgid "Enhanced Zoom & Controls"
+msgstr "Ampliación y controles mejorados"
+
+#: class-ml-slider-lightbox.php:2478
 msgid "Media & Video Enhancements"
 msgstr "Mejoras en medios y vídeo"
 
-#: class-ml-slider-lightbox.php:2099 class-ml-slider-lightbox.php:4023
+#: class-ml-slider-lightbox.php:2486 class-ml-slider-lightbox.php:4463
 msgid "Social & Navigation"
 msgstr "Social y navegación"
 
-#: class-ml-slider-lightbox.php:2123
-msgid "Manual Lightbox Options"
-msgstr "Opciones manuales de caja de luz"
+#: class-ml-slider-lightbox.php:2494 class-ml-slider-lightbox.php:4484
+msgid "Advanced Features"
+msgstr "Características avanzadas"
 
-#: class-ml-slider-lightbox.php:2124
+#: class-ml-slider-lightbox.php:2509
+msgid "Manual Options"
+msgstr "Opciones manuales"
+
+#: class-ml-slider-lightbox.php:2510
 msgid ""
 "Manual controls and WordPress overrides that work independently of automatic "
 "settings."
-msgstr "Controles manuales y anulaciones de WordPress que funcionan independientemente de los ajustes automáticos."
+msgstr ""
+"Controles manuales y anulaciones de WordPress que funcionan "
+"independientemente de los ajustes automáticos."
 
-#: class-ml-slider-lightbox.php:2306
+#: class-ml-slider-lightbox.php:2700
 msgid "Navigation Icons"
 msgstr "Iconos de navegación"
 
-#: class-ml-slider-lightbox.php:2313
+#: class-ml-slider-lightbox.php:2707
 msgid "Buttons"
 msgstr "Botones"
 
-#: class-ml-slider-lightbox.php:2344
+#: class-ml-slider-lightbox.php:2730
+msgid "Autoplay Progress Bar Color"
+msgstr "Color de la barra de progreso de la reproducción automática"
+
+#: class-ml-slider-lightbox.php:2754
 msgid "Close Button"
 msgstr "Botón de cierre"
 
-#: class-ml-slider-lightbox.php:2352
-msgid "Lightbox Toolbar"
-msgstr "Barra de herramientas de caja de luz"
-
-#: class-ml-slider-lightbox.php:2360
+#: class-ml-slider-lightbox.php:2770
 msgid "Button Colors"
 msgstr "Colores del botón"
 
-#: class-ml-slider-lightbox.php:2368
+#: class-ml-slider-lightbox.php:2778
 msgid "Icon Colors"
 msgstr "Colores del icono"
 
-#: class-ml-slider-lightbox.php:2376
-msgid "Button Text"
-msgstr "Texto del botón"
-
-#: class-ml-slider-lightbox.php:2384
-msgid "Button Position"
-msgstr "Posición del botón"
-
-#: class-ml-slider-lightbox.php:2742
-msgid "Configure general lightbox settings that apply site-wide."
+#: class-ml-slider-lightbox.php:3190
+msgid "Configure general gallery settings that apply site-wide."
 msgstr ""
-"Configura los ajustes generales de la caja de luz que se aplican a todo el "
-"sitio."
+"Configura los ajustes generales de la galería que se aplican a todo el sitio."
 
-#: class-ml-slider-lightbox.php:2747
-msgid "Configure settings specific to MetaSlider lightbox functionality."
+#: class-ml-slider-lightbox.php:3195
+msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr ""
-"Configura los ajustes específicos de la funcionalidad de la caja de luz "
-"MetaSlider."
+"Configura los ajustes específicos de la funcionalidad de MetaSlider Gallery."
 
-#: class-ml-slider-lightbox.php:2752
-msgid "Select where the lightbox will be enabled automatically."
-msgstr "Selecciona dónde se activará automáticamente la caja de luz."
+#: class-ml-slider-lightbox.php:3200
+msgid "Select where the gallery will be enabled automatically."
+msgstr "Selecciona dónde se activará la galería automáticamente."
 
-#: class-ml-slider-lightbox.php:2758
+#: class-ml-slider-lightbox.php:3206
 msgid ""
-"Choose how to filter content for lightbox processing and specify which "
-"pages, posts, or selectors to include or exclude."
+"Choose how to filter content for gallery processing and specify which pages, "
+"posts, or selectors to include or exclude."
 msgstr ""
-"Elige cómo filtrar el contenido para el procesamiento de la caja de luz y "
+"Elige cómo filtrar el contenido para el procesamiento de la galería y "
 "especifica qué páginas, entradas o selectores incluir o excluir."
 
-#: class-ml-slider-lightbox.php:2774
+#: class-ml-slider-lightbox.php:3222
 msgid "Processing Mode"
 msgstr "Modo de procesamiento"
 
-#: class-ml-slider-lightbox.php:2777
+#: class-ml-slider-lightbox.php:3225
 msgid "Process all content EXCEPT the items specified below"
-msgstr "Procesar todo el contenido excepto los elementos especificados a continuación"
+msgstr ""
+"Procesar todo el contenido excepto los elementos especificados a continuación"
 
-#: class-ml-slider-lightbox.php:2780
+#: class-ml-slider-lightbox.php:3228
 msgid "ONLY process the items specified below"
 msgstr "Procesar solo los elementos especificados a continuación"
 
-#: class-ml-slider-lightbox.php:2787
+#: class-ml-slider-lightbox.php:3235
 msgid "Inclusion Mode"
 msgstr "Modo inclusión"
 
-#: class-ml-slider-lightbox.php:2791
+#: class-ml-slider-lightbox.php:3239
 msgid "Exclusion Mode"
 msgstr "Modo de exclusión"
 
-#: class-ml-slider-lightbox.php:2811
+#: class-ml-slider-lightbox.php:3259
 msgid "Images in post content"
 msgstr "Imágenes en el contenido de las entradas"
 
-#: class-ml-slider-lightbox.php:2812
+#: class-ml-slider-lightbox.php:3260
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
-"in posts and pages will automatically open in the lightbox."
+"in posts and pages will automatically open in the gallery."
 msgstr ""
-"Cuando está activado, las imágenes individuales sin enlaces y con la opción "
-"«Agrandar al hacer clic» configurada en las entradas y páginas se abrirán "
-"automáticamente en la caja de luz."
+"Si está activado, las imágenes individuales sin enlaces y con «Agrandar al "
+"hacer clic» en entradas y páginas se abrirán automáticamente en la galería."
 
-#: class-ml-slider-lightbox.php:2828
+#: class-ml-slider-lightbox.php:3276
 msgid "Images and videos in widgets and sidebars"
 msgstr "Imágenes y vídeos en widgets y barras laterales"
 
-#: class-ml-slider-lightbox.php:2829
+#: class-ml-slider-lightbox.php:3277
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
-"the lightbox."
+"the gallery."
 msgstr ""
-"Cuando está activado, las imágenes y los vídeos de las áreas de widgets se "
-"abrirán automáticamente en la caja de luz."
+"Si está activado, las imágenes y los vídeos de las áreas de widgets se "
+"abrirán automáticamente en la galería."
 
-#: class-ml-slider-lightbox.php:2845
+#: class-ml-slider-lightbox.php:3293
 msgid "Gallery shortcodes and blocks"
 msgstr "Shortcodes y bloques de galería"
 
-#: class-ml-slider-lightbox.php:2846
+#: class-ml-slider-lightbox.php:3294
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg Gallery "
-"blocks will automatically open in the lightbox."
+"blocks will automatically open in the gallery window."
 msgstr ""
-"Cuando está activado, las imágenes de los shortcodes [gallery] de WordPress "
-"y los bloques de galería de Gutenberg se abrirán automáticamente en la caja "
-"de luz."
+"Si está activado, las imágenes de los shortcodes [gallery] de WordPress y de "
+"los bloques Galería de Gutenberg se abrirán automáticamente en la ventana de "
+"la galería."
 
-#: class-ml-slider-lightbox.php:2862
+#: class-ml-slider-lightbox.php:3310
 msgid "Featured images"
 msgstr "Imágenes destacadas"
 
-#: class-ml-slider-lightbox.php:2863
+#: class-ml-slider-lightbox.php:3311
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
-"the lightbox when clicked."
+"the gallery when clicked."
 msgstr ""
-"Cuando está activado, las imágenes destacadas (miniaturas de entradas) se "
-"abrirán automáticamente en la caja de luz al hacer clic sobre ellas."
+"Si está activado, las imágenes destacadas (miniaturas de las entradas) se "
+"abrirán automáticamente en la galería al hacer clic en ellas."
 
-#: class-ml-slider-lightbox.php:2872
+#: class-ml-slider-lightbox.php:3320
 msgid ""
-"Automatically enable the lightbox on all MetaSlider slideshows, overriding "
-"the per-slider setting."
+"Automatically open all MetaSlider slideshows in the gallery, overriding the "
+"per-slider setting."
 msgstr ""
-"Activa automáticamente la caja de luz para todas los pases de diapositivas "
-"de MetaSlider, anulando el ajuste por carrusel."
+"Abre automáticamente todos los pases de diapositivas de MetaSlider en la "
+"galería, anulando el ajuste de cada pase."
 
-#: class-ml-slider-lightbox.php:2886
+#: class-ml-slider-lightbox.php:3334
 msgid "MetaSlider slideshows"
 msgstr "Pases de diapositivas de MetaSlider"
 
-#: class-ml-slider-lightbox.php:2887
+#: class-ml-slider-lightbox.php:3335
 msgid ""
-"When enabled, all MetaSlider slideshows will open slides in the lightbox, "
-"overriding the per-slider setting."
+"When enabled, all MetaSlider slideshows will open slides in the gallery "
+"window, overriding the per-slider setting."
 msgstr ""
-"Cuando está activado, todos los pases de diapositivas de MetaSlider abrirán "
-"las diapositivas en la caja de luz, anulando el ajuste de cada carrusel."
+"Si está activado, todos los pases de diapositivas de MetaSlider abrirán las "
+"diapositivas en la ventana de la galería, anulando el ajuste de cada pase."
 
-#: class-ml-slider-lightbox.php:2903
+#: class-ml-slider-lightbox.php:3351
 msgid "Videos in post content"
 msgstr "Vídeos en el contenido de la entrada"
 
-#: class-ml-slider-lightbox.php:2904
+#: class-ml-slider-lightbox.php:3352
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
-"embeds) in post/page content will automatically open in the lightbox."
+"embeds) in post/page content will automatically open in the gallery."
 msgstr ""
-"Cuando está activado, los bloques de vídeo independientes (vídeos HTML5, "
-"vídeos incrustados de YouTube, vídeos incrustados de Vimeo) en el contenido "
-"de las entradas/páginas se abrirán automáticamente en la caja de luz."
+"Si está activado, los bloques de vídeo independientes (vídeos HTML5, vídeos "
+"incrustados de YouTube y de Vimeo) del contenido de entradas/páginas se "
+"abrirán automáticamente en la galería."
 
-#: class-ml-slider-lightbox.php:2919
+#: class-ml-slider-lightbox.php:3387
 msgid ""
-"Background color for the lightbox overlay. Dark colors work best for image "
+"Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
 msgstr ""
-"Color de fondo para la superposición de la caja de luz. Los colores oscuros "
-"son los más adecuados para la visualización de imágenes."
+"Color de fondo para la superposición de la galería. Los colores oscuros "
+"funcionan mejor para ver imágenes."
 
-#: class-ml-slider-lightbox.php:2932
+#: class-ml-slider-lightbox.php:3392
 msgid ""
-"Background color for \"Open in Lightbox\" buttons that appear on slides, "
+"Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
 msgstr ""
-"Color de fondo para los botones «Abrir en Lightbox» que aparecen en "
+"Color de fondo para los botones «Abrir en la galería» que aparecen en "
 "diapositivas, imágenes y vídeos."
 
-#: class-ml-slider-lightbox.php:2945
+#: class-ml-slider-lightbox.php:3397
 msgid ""
-"Text color for \"Open in Lightbox\" buttons that appear on slides, images "
-"and videos."
+"Text color for \"Open in Gallery\" buttons that appear on slides, images and "
+"videos."
 msgstr ""
-"Color del texto de los botones «Abrir en Lightbox» que aparecen en "
+"Color del texto para los botones «Abrir en la galería» que aparecen en "
 "diapositivas, imágenes y vídeos."
 
-#: class-ml-slider-lightbox.php:2958
-msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+#: class-ml-slider-lightbox.php:3402
+msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr ""
-"Color de fondo para al pasar el cursor sobre los botones «Abrir en caja de "
-"luz»."
+"Color de fondo al pasar el cursor sobre los botones «Abrir en la galería»."
 
-#: class-ml-slider-lightbox.php:2971
-msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+#: class-ml-slider-lightbox.php:3407
+msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr ""
-"Color del texto al pasar el cursor sobre los botones «Abrir en Lightbox»."
+"Color del texto al pasar el cursor sobre los botones «Abrir en la galería»."
 
-#: class-ml-slider-lightbox.php:2984
+#: class-ml-slider-lightbox.php:3420
 msgid ""
-"Custom text for lightbox buttons. This text will appear on all \"Open in "
-"Lightbox\" buttons throughout the site."
+"Custom text for gallery buttons. This text will appear on all \"Open in "
+"Gallery\" buttons throughout the site."
 msgstr ""
-"Texto personalizado para los botones de la caja de luz. Este texto aparecerá "
-"en todos los botones «Abrir en Lightbox» del sitio."
+"Texto personalizado para los botones de la galería. Este texto aparecerá en "
+"todos los botones «Abrir en la galería» del sitio."
 
-#: class-ml-slider-lightbox.php:2997 class-ml-slider-lightbox.php:3023
+#: class-ml-slider-lightbox.php:3433 class-ml-slider-lightbox.php:3459
 msgid "Top Right (Default)"
 msgstr "Arriba a la derecha (por defecto)"
 
-#: class-ml-slider-lightbox.php:2998 class-ml-slider-lightbox.php:3024
-msgid "Top Left"
-msgstr "Arriba a la izquierda"
-
-#: class-ml-slider-lightbox.php:2999 class-ml-slider-lightbox.php:3025
-msgid "Bottom Right"
-msgstr "Abajo a la derecha"
-
-#: class-ml-slider-lightbox.php:3000 class-ml-slider-lightbox.php:3026
-msgid "Bottom Left"
-msgstr "Abajo a la izquierda"
-
-#: class-ml-slider-lightbox.php:3010
-msgid "Choose where to position the close button (X) in the lightbox overlay."
+#: class-ml-slider-lightbox.php:3446
+msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr ""
-"Elige donde posicionar el botón de cierre (X) en la superposición de la caja "
-"de luz."
+"Elige dónde colocar el botón de cierre (X) en la superposición de la galería."
 
-#: class-ml-slider-lightbox.php:3036
+#: class-ml-slider-lightbox.php:3472
 msgid ""
-"Choose where to position \"Open in Lightbox\" buttons within slides, images, "
+"Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
 msgstr ""
-"Elige donde colocar los botones «Abrir en caja de luz» dentro de las "
+"Elige dónde colocar los botones «Abrir en la galería» dentro de "
 "diapositivas, imágenes, galerías y vídeos."
 
-#: class-ml-slider-lightbox.php:3049
-msgid "Color for previous and next navigation arrows in the lightbox."
-msgstr ""
-"Color para las flechas de navegación anterior y siguiente en la caja de luz."
+#: class-ml-slider-lightbox.php:3477
+msgid "Color for previous and next navigation arrows in the gallery."
+msgstr "Color de las flechas de navegación anterior y siguiente en la galería."
 
-#: class-ml-slider-lightbox.php:3062
+#: class-ml-slider-lightbox.php:3482
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
-msgstr "Color de la flecha al pasar el cursor. Crea una respuesta visual cuando los usuarios mueven el ratón sobre las flechas de navegación."
+msgstr ""
+"Color de la flecha al pasar el cursor. Crea una respuesta visual cuando los "
+"usuarios mueven el ratón sobre las flechas de navegación."
 
-#: class-ml-slider-lightbox.php:3075
-msgid "Color for the close button (X) in the lightbox."
-msgstr "Color del botón de cierre (X) en la caja de luz."
+#: class-ml-slider-lightbox.php:3487
+msgid "Color for the close button (X) in the gallery."
+msgstr "Color del botón de cierre (X) en la galería."
 
-#: class-ml-slider-lightbox.php:3088
+#: class-ml-slider-lightbox.php:3492
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
-msgstr "Color del botón de cierre al pasar el cursor. Crea una respuesta visual cuando los usuarios mueven el ratón sobre el botón de cierre."
+msgstr ""
+"Color del botón de cierre al pasar el cursor. Crea una respuesta visual "
+"cuando los usuarios mueven el ratón sobre el botón de cierre."
 
-#: class-ml-slider-lightbox.php:3101
+#: class-ml-slider-lightbox.php:3497
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
-msgstr "Color de los iconos de la barra de herramientas y del texto del contador en la caja de luz. Afecta al acercamiento, a los iconos de pantalla completa (Pro) y a la visualización del contador de imágenes."
+msgstr ""
+"Color de los iconos de la barra de herramientas y del texto del contador en "
+"la caja de luz. Afecta al acercamiento, a los iconos de pantalla completa "
+"(Pro) y a la visualización del contador de imágenes."
 
-#: class-ml-slider-lightbox.php:3114
+#: class-ml-slider-lightbox.php:3502
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
-msgstr "Color del icono de la barra de herramientas al pasar el cursor. Crea una respuesta visual cuando los usuarios mueven el ratón sobre los iconos de la barra de herramientas y el contador."
+msgstr ""
+"Color del icono de la barra de herramientas al pasar el cursor. Crea una "
+"respuesta visual cuando los usuarios mueven el ratón sobre los iconos de la "
+"barra de herramientas y el contador."
 
-#: class-ml-slider-lightbox.php:3127
+#: class-ml-slider-lightbox.php:3507
 msgid "Background color for previous and next navigation arrow buttons."
-msgstr "Color de fondo para los botones de flecha de navegación anterior y siguiente."
+msgstr ""
+"Color de fondo para los botones de flecha de navegación anterior y siguiente."
 
-#: class-ml-slider-lightbox.php:3140
+#: class-ml-slider-lightbox.php:3512
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
-msgstr "Color de fondo para los botones de flecha al pasar el cursor. Crea una respuesta visual cuando los usuarios mueven el ratón sobre las flechas."
+msgstr ""
+"Color de fondo para los botones de flecha al pasar el cursor. Crea una "
+"respuesta visual cuando los usuarios mueven el ratón sobre las flechas."
 
-#: class-ml-slider-lightbox.php:3153
-msgid "Background color for the close button (X) in the lightbox."
-msgstr "Color de fondo para el botón de cierre (X) en la caja de luz."
+#: class-ml-slider-lightbox.php:3517
+msgid "Background color for the close button (X) in the gallery."
+msgstr "Color de fondo para el botón de cierre (X) en la galería."
 
-#: class-ml-slider-lightbox.php:3166
+#: class-ml-slider-lightbox.php:3522
 msgid ""
 "Background color for the close button when hovering. Creates visual feedback "
 "when users move their mouse over the close button."
-msgstr "Color de fondo para el botón de cierre al pasar el cursor. Crea una respuesta visual cuando los usuarios mueven el ratón sobre el botón de cierre."
+msgstr ""
+"Color de fondo para el botón de cierre al pasar el cursor. Crea una "
+"respuesta visual cuando los usuarios mueven el ratón sobre el botón de "
+"cierre."
 
-#: class-ml-slider-lightbox.php:3179
+#: class-ml-slider-lightbox.php:3527
 msgid "Background color for toolbar icons in the lightbox."
-msgstr "Color de fondo para los iconos de la barra de herramientas en la caja de luz."
+msgstr ""
+"Color de fondo para los iconos de la barra de herramientas en la caja de luz."
 
-#: class-ml-slider-lightbox.php:3192
+#: class-ml-slider-lightbox.php:3532
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
-msgstr "Color de fondo para los iconos de la barra de herramientas al pasar el cursor. Crea una respuesta visual cuando los usuarios mueven el ratón sobre los iconos de la barra de herramientas."
+msgstr ""
+"Color de fondo para los iconos de la barra de herramientas al pasar el "
+"cursor. Crea una respuesta visual cuando los usuarios mueven el ratón sobre "
+"los iconos de la barra de herramientas."
 
-#: class-ml-slider-lightbox.php:3212 class-ml-slider-lightbox.php:3244
-#: class-ml-slider-lightbox.php:3276 class-ml-slider-lightbox.php:3387
-msgid "Icon"
-msgstr "Icono"
-
-#: class-ml-slider-lightbox.php:3215 class-ml-slider-lightbox.php:3247
-#: class-ml-slider-lightbox.php:3279 class-ml-slider-lightbox.php:3390
+#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3590
+#: class-ml-slider-lightbox.php:3603 class-ml-slider-lightbox.php:3701
 msgid "Icon Hover"
 msgstr "Icono al pasar el cursor"
 
-#: class-ml-slider-lightbox.php:3218 class-ml-slider-lightbox.php:3250
-#: class-ml-slider-lightbox.php:3282 class-ml-slider-lightbox.php:3361
-#: class-ml-slider-lightbox.php:3393
+#: class-ml-slider-lightbox.php:3578 class-ml-slider-lightbox.php:3591
+#: class-ml-slider-lightbox.php:3604 class-ml-slider-lightbox.php:3685
+#: class-ml-slider-lightbox.php:3702
 msgid "Background"
 msgstr "Fondo"
 
-#: class-ml-slider-lightbox.php:3221 class-ml-slider-lightbox.php:3253
-#: class-ml-slider-lightbox.php:3285 class-ml-slider-lightbox.php:3364
-#: class-ml-slider-lightbox.php:3396
+#: class-ml-slider-lightbox.php:3579 class-ml-slider-lightbox.php:3592
+#: class-ml-slider-lightbox.php:3605 class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:3703
 msgid "Background Hover"
 msgstr "Fondo para al pasar el cursor."
 
-#: class-ml-slider-lightbox.php:3304
+#: class-ml-slider-lightbox.php:3622
 msgid ""
-"Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+"Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr ""
-"Establece la opacidad del fondo de la caja de luz (0 = transparente, 1 = "
-"opaco)."
+"Establece la opacidad del fondo de la galería (0 = transparente, 1 = opaco)."
 
-#: class-ml-slider-lightbox.php:3315
-msgid "Show navigation arrows in lightbox"
-msgstr "Muestra las flechas de navegación en la caja de luz"
+#: class-ml-slider-lightbox.php:3631
+msgid "Color of the progress bar shown during autoplay slideshows."
+msgstr ""
+"Color de la barra de progreso que se muestra durante los pases de "
+"diapositivas con reproducción automática."
 
-#: class-ml-slider-lightbox.php:3316
+#: class-ml-slider-lightbox.php:3637
+msgid "Border"
+msgstr "Borde"
+
+#: class-ml-slider-lightbox.php:3638
+msgid "Border Active and Hover"
+msgstr "Borde activo y al pasar el cursor"
+
+#: class-ml-slider-lightbox.php:3650
+msgid "Show navigation arrows in gallery"
+msgstr "Mostrar flechas de navegación en la galería"
+
+#: class-ml-slider-lightbox.php:3651
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
 "galleries."
-msgstr "Muestra las flechas Izquierda/derecha para la navegación. También activa la navegación con el teclado (teclas ← →, ESC para cerrar). Esta opción está disponible para pase de diapositivas y galerías de imágenes."
-
-#: class-ml-slider-lightbox.php:3325
-msgid "Customize the lightbox background and overlay appearance."
 msgstr ""
-"Personaliza el fondo de la caja de luz y la apariencia de la superposición."
+"Muestra las flechas Izquierda/derecha para la navegación. También activa la "
+"navegación con el teclado (teclas ← →, ESC para cerrar). Esta opción está "
+"disponible para pase de diapositivas y galerías de imágenes."
 
-#: class-ml-slider-lightbox.php:3330
-msgid ""
-"Customize navigation icons (close, previous, next arrows) for lightboxes."
+#: class-ml-slider-lightbox.php:3660
+msgid "Customize the gallery background and overlay appearance."
+msgstr ""
+"Personaliza el fondo y la apariencia de la superposición de la galería."
+
+#: class-ml-slider-lightbox.php:3665
+msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr ""
 "Personaliza los iconos de navegación (cerrar, flechas anterior y siguiente) "
-"para la caja de luz."
+"de la galería."
 
-#: class-ml-slider-lightbox.php:3335
+#: class-ml-slider-lightbox.php:3670
 msgid ""
-"Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+"Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
 msgstr ""
-"Personaliza los botones «Abrir en caja de luz» que puedes añadir a las "
+"Personaliza los botones «Abrir en la galería» que se pueden añadir a "
 "diapositivas, imágenes, galerías y vídeos."
 
-#: class-ml-slider-lightbox.php:3355
+#: class-ml-slider-lightbox.php:3683
 msgid "Text"
 msgstr "Texto"
 
-#: class-ml-slider-lightbox.php:3358
+#: class-ml-slider-lightbox.php:3684
 msgid "Text Hover"
 msgstr "Texto al pasar el cursor"
 
-#: class-ml-slider-lightbox.php:3404
-msgid "Configure navigation and control options that apply to all lightboxes."
+#: class-ml-slider-lightbox.php:3709
+msgid ""
+"Configure navigation and control options that apply to all MetaSlider "
+"galleries."
 msgstr ""
-"Configure las opciones de navegación y control que se aplican a todas las "
-"cajas de luz."
+"Configura las opciones de navegación y control que se aplican a todas las "
+"galerías de MetaSlider."
 
-#: class-ml-slider-lightbox.php:3414
+#: class-ml-slider-lightbox.php:3714
+msgid "Help search engines understand the images in your galleries."
+msgstr ""
+"Ayuda a los motores de búsqueda a entender las imágenes de tus galerías."
+
+#: class-ml-slider-lightbox.php:3725
+msgid "Output SEO structured data for galleries"
+msgstr "Generar datos estructurados SEO para las galerías"
+
+#: class-ml-slider-lightbox.php:3726
+msgid ""
+"Adds Schema.org ImageGallery markup so search engines can index your gallery "
+"images. Turn this off if your SEO plugin already outputs gallery structured "
+"data."
+msgstr ""
+"Añade el marcado ImageGallery de Schema.org para que los motores de búsqueda "
+"puedan indexar las imágenes de tu galería. Desactívalo si tu plugin de SEO "
+"ya genera datos estructurados de galerías."
+
+#: class-ml-slider-lightbox.php:3733
+msgid "Hear about new features and security releases for MetaSlider Gallery."
+msgstr ""
+"Entérate de las nuevas características y versiones de seguridad de "
+"MetaSlider Gallery."
+
+#: class-ml-slider-lightbox.php:3745
+msgid "Email me about updates"
+msgstr "Enviarme correos sobre actualizaciones"
+
+#: class-ml-slider-lightbox.php:3747
+msgid ""
+"Occasional emails about new features and security releases. Unsubscribe at "
+"any time."
+msgstr ""
+"Correos ocasionales sobre nuevas características y versiones de seguridad. "
+"Puedes darte de baja en cualquier momento."
+
+#: class-ml-slider-lightbox.php:3805
+msgid "Please enter a valid email address to receive updates."
+msgstr ""
+"Por favor, introduce una dirección de correo electrónico válida para recibir "
+"actualizaciones."
+
+#: class-ml-slider-lightbox.php:3829
+msgid "You are subscribed. Check your inbox to confirm."
+msgstr "Te has suscrito. Revisa tu bandeja de entrada para confirmarlo."
+
+#: class-ml-slider-lightbox.php:3840
+msgid ""
+"Your preference was saved, but we could not add your address to the mailing "
+"list. Please check it and save again."
+msgstr ""
+"Se ha guardado tu preferencia, pero no hemos podido añadir tu dirección a la "
+"lista de correo. Por favor, revísala y vuelve a guardar."
+
+#: class-ml-slider-lightbox.php:3854
 msgid "Show thumbnails"
 msgstr "Muestra miniaturas"
 
-#: class-ml-slider-lightbox.php:3415
+#: class-ml-slider-lightbox.php:3855
 msgid ""
-"Display thumbnail images at the bottom of the lightbox for easy navigation. "
+"Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
 msgstr ""
-"Muestra imágenes en miniatura en la parte inferior de la caja de luz para "
-"facilitar la navegación. Esta opción está disponible para pase de "
+"Muestra imágenes en miniatura en la parte inferior de la galería para "
+"facilitar la navegación. Esta opción está disponible para pases de "
 "diapositivas y galerías de imágenes."
 
-#: class-ml-slider-lightbox.php:3427
-msgid "Show \"Open in Lightbox\" button"
-msgstr "Muestra el botón «Abrir en caja de luz»"
+#: class-ml-slider-lightbox.php:3868
+msgid "How visitors open images"
+msgstr "Cómo abren las imágenes los visitantes"
 
-#: class-ml-slider-lightbox.php:3428
-msgid ""
-"When enabled, shows a button to open the lightbox. When disabled, clicking "
-"the slide, image, or video directly opens the lightbox."
-msgstr ""
-"Cuando está activado, muestra un botón para abrir la caja de luz. Cuando "
-"está desactivado, al hacer clic en la diapositiva, imagen o vídeo se abre "
-"directamente la caja de luz."
-
-#: class-ml-slider-lightbox.php:3445
-msgid "Show an icon instead of button"
-msgstr "Muestra un icono en lugar del botón"
-
-#: class-ml-slider-lightbox.php:3446
-msgid "When enabled, displays a small icon instead of the full button text."
-msgstr "Cuando está activado, muestra un pequeño icono en lugar del botón de texto completo."
-
-#: class-ml-slider-lightbox.php:3460
+#: class-ml-slider-lightbox.php:3889
 msgid "Show captions"
 msgstr "Mostrar leyendas"
 
-#: class-ml-slider-lightbox.php:3461
+#: class-ml-slider-lightbox.php:3890
 msgid ""
-"When enabled, display captions in the lightbox. This is available for "
+"When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
 msgstr ""
-"Cuando está activado, muestra las leyendas en la caja de luz. Esta opción "
-"está disponible para pase de diapositivas, imágenes y galerías de imágenes."
+"Si está activado, muestra las leyendas en la ventana de la galería. Esta "
+"opción está disponible para pases de diapositivas, imágenes y galerías de "
+"imágenes."
 
-#: class-ml-slider-lightbox.php:3468
+#: class-ml-slider-lightbox.php:3897
 msgid ""
 "Advanced lightbox features are available through MetaSlider Gallery Pro."
-msgstr "Las características avanzadas de caja de luz están disponible a través de MetaSlider Gallery Pro."
+msgstr ""
+"Las características avanzadas de caja de luz están disponible a través de "
+"MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3470
+#: class-ml-slider-lightbox.php:3899
 msgid ""
 "Get a preview of the advanced features available in MetaSlider Gallery Pro."
-msgstr "Obtén una vista previa de las características avanzadas disponibles en MetaSlider Gallery Pro."
+msgstr ""
+"Obtén una vista previa de las características avanzadas disponibles en "
+"MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3473
+#: class-ml-slider-lightbox.php:3902
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version with "
 "additional customization options."
-msgstr "Estos plugins avanzados de LightGallery.js están disponibles en la versión Pro con opciones de personalización adicionales."
+msgstr ""
+"Estos plugins avanzados de LightGallery.js están disponibles en la versión "
+"Pro con opciones de personalización adicionales."
 
-#: class-ml-slider-lightbox.php:3499
-msgid "Include specific Pages"
-msgstr "Incluir páginas específicas"
+#: class-ml-slider-lightbox.php:3930 class-ml-slider-lightbox.php:3931
+msgid "specific Pages"
+msgstr "páginas específicas"
 
-#: class-ml-slider-lightbox.php:3501
+#: class-ml-slider-lightbox.php:3933
 msgid ""
-"Select pages where lightbox should be disabled. Shows up to 100 most recent "
+"Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr ""
-"Selecciona las páginas en las que se debe desactivar la caja de luz. Muestra "
-"hasta las 100 páginas más recientes. Escribe para buscar."
+"Selecciona las páginas en las que se debe desactivar la galería. Muestra "
+"hasta 100 páginas más recientes. Escribe para buscar."
 
-#: class-ml-slider-lightbox.php:3501 class-ml-slider-lightbox.php:3502
+#: class-ml-slider-lightbox.php:3933 class-ml-slider-lightbox.php:3934
 msgid ""
-"Select pages where lightbox should be enabled. Shows up to 100 most recent "
+"Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
 msgstr ""
-"Selecciona las páginas en las que se debe activar la caja de luz. Muestra "
-"hasta las 100 páginas más recientes. Escribe para buscar."
+"Selecciona las páginas en las que se debe activar la galería. Muestra hasta "
+"100 páginas más recientes. Escribe para buscar."
 
-#: class-ml-slider-lightbox.php:3544
-msgid "Include specific Posts"
-msgstr "Incluir entradas específicas"
+#: class-ml-slider-lightbox.php:3978 class-ml-slider-lightbox.php:3979
+msgid "specific Posts"
+msgstr "entradas específicas"
 
-#: class-ml-slider-lightbox.php:3546
+#: class-ml-slider-lightbox.php:3981
 msgid ""
-"Select posts where lightbox should be disabled. Shows up to 100 most recent "
+"Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
 msgstr ""
-"Selecciona las entradas en las que se debe desactivar la caja de luz. "
-"Muestra hasta las 100 entradas más recientes. Escribe para buscar."
+"Selecciona las entradas en las que se debe desactivar la galería. Muestra "
+"hasta 100 entradas más recientes. Escribe para buscar."
 
-#: class-ml-slider-lightbox.php:3546 class-ml-slider-lightbox.php:3547
+#: class-ml-slider-lightbox.php:3981 class-ml-slider-lightbox.php:3982
 msgid ""
-"Select posts where lightbox should be enabled. Shows up to 100 most recent "
+"Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
 msgstr ""
-"Selecciona las entradas en las que se debe activar la caja de luz. Muestra "
-"hasta las 100 entradas más recientes. Escribe para buscar."
+"Selecciona las entradas en las que se debe activar la galería. Muestra hasta "
+"100 entradas más recientes. Escribe para buscar."
 
-#: class-ml-slider-lightbox.php:3613
+#: class-ml-slider-lightbox.php:4009
+msgid "include"
+msgstr "incluir"
+
+#: class-ml-slider-lightbox.php:4009
+msgid "exclude"
+msgstr "excluir"
+
+#: class-ml-slider-lightbox.php:4049
+#, php-format
+msgid "specific %s"
+msgstr "%s específicos"
+
+#: class-ml-slider-lightbox.php:4050
 #, php-format
 msgid "%s specific %s"
 msgstr "%s específico %s"
 
-#: class-ml-slider-lightbox.php:3615 class-ml-slider-lightbox.php:3616
+#: class-ml-slider-lightbox.php:4052 class-ml-slider-lightbox.php:4053
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "Muestra hasta 100 %s más recientes. Escribe para buscar."
 
-#: class-ml-slider-lightbox.php:3662
-msgid "Include specific post types"
-msgstr "Incluir tipos de contenido específicos"
+#: class-ml-slider-lightbox.php:4101 class-ml-slider-lightbox.php:4102
+msgid "specific post types"
+msgstr "tipos de contenido específicos"
 
-#: class-ml-slider-lightbox.php:3664
-msgid "Select post types where lightbox should be disabled entirely."
+#: class-ml-slider-lightbox.php:4104
+msgid "Select post types where gallery should be disabled entirely."
 msgstr ""
-"Selecciona los tipos de contenido en los que se debe desactivar la caja de "
-"luz completamente."
+"Selecciona los tipos de contenido en los que se debe desactivar la galería "
+"por completo."
 
-#: class-ml-slider-lightbox.php:3664 class-ml-slider-lightbox.php:3665
-msgid "Select post types where lightbox should be enabled entirely."
+#: class-ml-slider-lightbox.php:4104 class-ml-slider-lightbox.php:4105
+msgid "Select post types where gallery should be enabled entirely."
 msgstr ""
-"Selecciona los tipos de contenido en los que se debe activar la caja de luz "
-"completamente."
+"Selecciona los tipos de contenido en los que se debe activar la galería por "
+"completo."
 
-#: class-ml-slider-lightbox.php:3699
+#: class-ml-slider-lightbox.php:4139
 msgid "Exclude by CSS selector"
 msgstr "Excluir por selector CSS"
 
-#: class-ml-slider-lightbox.php:3702
+#: class-ml-slider-lightbox.php:4142
 msgid ""
-"CSS selectors for elements to exclude from lightbox (one per line). Examples:"
-"<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+"CSS selectors for elements to exclude from gallery window (one per line). "
+"Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
 msgstr ""
-"Selectores CSS para elementos que se deben excluir de la caja de luz (uno "
-"por línea). Ejemplos:<br>.no-lightbox<br>.custom-gallery "
+"Selectores CSS de los elementos que se excluirán de la ventana de la galería "
+"(uno por línea). Ejemplos:<br>.no-lightbox<br>.custom-gallery "
 "img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:3725
+#: class-ml-slider-lightbox.php:4165
 msgid "Minimum Image Width"
 msgstr "Anchura mínima de la imagen"
 
-#: class-ml-slider-lightbox.php:3728
+#: class-ml-slider-lightbox.php:4168
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
 "badges, and buttons."
-msgstr "Omite las imágenes más estrechas que este ancho (en píxeles). Utiliza el ancho mostrado, no el tamaño real del archivo de imagen. Útil para excluir iconos pequeños, insignias y botones."
+msgstr ""
+"Omite las imágenes más estrechas que este ancho (en píxeles). Utiliza el "
+"ancho mostrado, no el tamaño real del archivo de imagen. Útil para excluir "
+"iconos pequeños, insignias y botones."
 
-#: class-ml-slider-lightbox.php:3751
+#: class-ml-slider-lightbox.php:4191
 msgid "Minimum Image Height"
 msgstr "Altura mínima de la imagen"
 
-#: class-ml-slider-lightbox.php:3754
+#: class-ml-slider-lightbox.php:4194
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed height, "
 "not the actual image file size. This is helpful for excluding small icons, "
 "badges, and buttons."
-msgstr "Omite las imágenes que tengan una altura más corta de esta altura (en píxeles). Utiliza la altura mostrada, no el tamaño real del archivo de imagen. Útil para excluir iconos pequeños, insignias y botones."
+msgstr ""
+"Omite las imágenes que tengan una altura más corta de esta altura (en "
+"píxeles). Utiliza la altura mostrada, no el tamaño real del archivo de "
+"imagen. Útil para excluir iconos pequeños, insignias y botones."
 
-#: class-ml-slider-lightbox.php:3770 class-ml-slider-lightbox.php:3927
+#: class-ml-slider-lightbox.php:4210 class-ml-slider-lightbox.php:4367
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
-msgstr "Características mejoradas de gestión de medios y reproducción de vídeo para galerías profesionales."
+msgstr ""
+"Características mejoradas de gestión de medios y reproducción de vídeo para "
+"galerías profesionales."
 
-#: class-ml-slider-lightbox.php:3777
+#: class-ml-slider-lightbox.php:4217
 msgid "Advanced features for professional lightbox implementations."
-msgstr "Características avanzadas para implementaciones de caja de luz profesionales."
+msgstr ""
+"Características avanzadas para implementaciones de caja de luz profesionales."
 
-#: class-ml-slider-lightbox.php:3788 class-ml-slider-lightbox.php:4000
+#: class-ml-slider-lightbox.php:4228 class-ml-slider-lightbox.php:4440
 msgid "Enable Zoom"
 msgstr "Activar ampliar"
 
-#: class-ml-slider-lightbox.php:3789
+#: class-ml-slider-lightbox.php:4229
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
-msgstr "Haz doble clic para ampliar, controles de ampliación, ampliación con la rueda del ratón y opciones de ampliación para ajustar."
+msgstr ""
+"Haz doble clic para ampliar, controles de ampliación, ampliación con la "
+"rueda del ratón y opciones de ampliación para ajustar."
 
-#: class-ml-slider-lightbox.php:3799 class-ml-slider-lightbox.php:4007
+#: class-ml-slider-lightbox.php:4239 class-ml-slider-lightbox.php:4447
 msgid "Enable Fullscreen"
 msgstr "Activar pantalla completa"
 
-#: class-ml-slider-lightbox.php:3800
+#: class-ml-slider-lightbox.php:4240
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
-msgstr "Compatibilidad nativa con HTML5 a pantalla completa con atajos de teclado (tecla F) para una visualización inmersiva."
+msgstr ""
+"Compatibilidad nativa con HTML5 a pantalla completa con atajos de teclado "
+"(tecla F) para una visualización inmersiva."
 
-#: class-ml-slider-lightbox.php:3810 class-ml-slider-lightbox.php:4014
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4454
 msgid "Enable Rotate"
 msgstr "Activar la rotación"
 
-#: class-ml-slider-lightbox.php:3811
+#: class-ml-slider-lightbox.php:4251
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with toolbar "
 "controls."
-msgstr "Rotar imágenes en sentido horario/antihorario, voltear horizontal/vertical con los controles de la barra de herramientas."
+msgstr ""
+"Rotar imágenes en sentido horario/antihorario, voltear horizontal/vertical "
+"con los controles de la barra de herramientas."
 
-#: class-ml-slider-lightbox.php:3821
+#: class-ml-slider-lightbox.php:4261
 msgid "Enable Video"
 msgstr "Activar vídeo"
 
-#: class-ml-slider-lightbox.php:3822
+#: class-ml-slider-lightbox.php:4262
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
-msgstr "Compatibilidad mejorada con vídeos de YouTube, Vimeo y HTML5 con reproducción automática y controles de calidad."
+msgstr ""
+"Compatibilidad mejorada con vídeos de YouTube, Vimeo y HTML5 con "
+"reproducción automática y controles de calidad."
 
-#: class-ml-slider-lightbox.php:3832 class-ml-slider-lightbox.php:4049
-#: class-ml-slider-lightbox.php:4157
+#: class-ml-slider-lightbox.php:4272 class-ml-slider-lightbox.php:4489
+#: class-ml-slider-lightbox.php:4644
 msgid "Enable Unique Image URLs"
 msgstr "Activar las URLs únicas por las imágenes"
 
-#: class-ml-slider-lightbox.php:3833
+#: class-ml-slider-lightbox.php:4273
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
-msgstr "URL únicas para cada imagen de la galería con soporte para navegación hacia atrás/adelante en el navegador."
+msgstr ""
+"URL únicas para cada imagen de la galería con soporte para navegación hacia "
+"atrás/adelante en el navegador."
 
-#: class-ml-slider-lightbox.php:3843 class-ml-slider-lightbox.php:4056
+#: class-ml-slider-lightbox.php:4283 class-ml-slider-lightbox.php:4496
 msgid "Enable Autoplay"
 msgstr "Activar reproducción automática"
 
-#: class-ml-slider-lightbox.php:3844
-msgid "Automatically advance through images in the lightbox."
-msgstr "Pasar automáticamente de una imagen a otra en la caja de luz."
+#: class-ml-slider-lightbox.php:4284
+msgid "Automatically advance through images in the gallery."
+msgstr "Avanza automáticamente por las imágenes de la galería."
 
-#: class-ml-slider-lightbox.php:3854 class-ml-slider-lightbox.php:4028
+#: class-ml-slider-lightbox.php:4294 class-ml-slider-lightbox.php:4468
 msgid "Enable Share"
 msgstr "Activar compartir"
 
-#: class-ml-slider-lightbox.php:3855
+#: class-ml-slider-lightbox.php:4295
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
-msgstr "Botones para compartir en redes sociales como Facebook, Twitter, Pinterest y compartir URL directamente."
+msgstr ""
+"Botones para compartir en redes sociales como Facebook, Twitter, Pinterest y "
+"compartir URL directamente."
 
-#: class-ml-slider-lightbox.php:3865 class-ml-slider-lightbox.php:4035
+#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4475
 msgid "Enable Pager"
 msgstr "Activar la paginación"
 
-#: class-ml-slider-lightbox.php:3866
+#: class-ml-slider-lightbox.php:4306
 msgid ""
 "Minimal pagination dots for clean navigation without thumbnail previews."
-msgstr "Puntos de paginación mínimos para una navegación limpia sin vistas previas en miniatura."
+msgstr ""
+"Puntos de paginación mínimos para una navegación limpia sin vistas previas "
+"en miniatura."
 
-#: class-ml-slider-lightbox.php:3922 class-ml-slider-lightbox.php:3996
+#: class-ml-slider-lightbox.php:4362 class-ml-slider-lightbox.php:4436
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
-msgstr "Controles profesionales de ampliación e interacción con la imagen para mejorar la experiencia del usuario."
+msgstr ""
+"Controles profesionales de ampliación e interacción con la imagen para "
+"mejorar la experiencia del usuario."
 
-#: class-ml-slider-lightbox.php:3932 class-ml-slider-lightbox.php:4024
+#: class-ml-slider-lightbox.php:4372 class-ml-slider-lightbox.php:4464
 msgid "Social sharing and navigation enhancements to increase engagement."
-msgstr "Mejoras en la navegación y el compartimiento social para aumentar la participación."
+msgstr ""
+"Mejoras en la navegación y el compartimiento social para aumentar la "
+"participación."
 
-#: class-ml-slider-lightbox.php:3937 class-ml-slider-lightbox.php:4045
+#: class-ml-slider-lightbox.php:4377 class-ml-slider-lightbox.php:4485
 msgid ""
 "Advanced functionality including URL management and automation features."
-msgstr "Funcionalidad avanzada que incluye gestión de URL y características de automatización."
+msgstr ""
+"Funcionalidad avanzada que incluye gestión de URL y características de "
+"automatización."
 
-#: class-ml-slider-lightbox.php:4001 class-ml-slider-lightbox.php:4126
+#: class-ml-slider-lightbox.php:4389
+msgid "This feature is available in MetaSlider Gallery Pro"
+msgstr "Esta característica está disponible en MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4441 class-ml-slider-lightbox.php:4613
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
-msgstr "Permite a los usuarios ampliar/acercar la imagen con un doble clic, la rueda del ratón y los controles para ampliar/acercar."
+msgstr ""
+"Permite a los usuarios ampliar/acercar la imagen con un doble clic, la rueda "
+"del ratón y los controles para ampliar/acercar."
 
-#: class-ml-slider-lightbox.php:4003
+#: class-ml-slider-lightbox.php:4443
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
-msgstr "Los controles para ampliar/acercar están disponible en MetaSlider Gallery Pro"
+msgstr ""
+"Los controles para ampliar/acercar están disponible en MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4008
+#: class-ml-slider-lightbox.php:4448
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
-msgstr "Modo HTML5 nativo a pantalla completa para una visualización inmersiva de la imagen."
+msgstr ""
+"Modo HTML5 nativo a pantalla completa para una visualización inmersiva de la "
+"imagen."
 
-#: class-ml-slider-lightbox.php:4010
+#: class-ml-slider-lightbox.php:4450
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "El modo de pantalla completa está disponible en MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4015 class-ml-slider-lightbox.php:4142
+#: class-ml-slider-lightbox.php:4455 class-ml-slider-lightbox.php:4629
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
-msgstr "Rotar imágenes en sentido horario/antihorario y voltear horizontal/vertical."
+msgstr ""
+"Rotar imágenes en sentido horario/antihorario y voltear horizontal/vertical."
 
-#: class-ml-slider-lightbox.php:4017
+#: class-ml-slider-lightbox.php:4457
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "La rotación de imagen está disponible en MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4029
+#: class-ml-slider-lightbox.php:4469
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
-msgstr "Compartir en medios sociales integrado para Facebook, Twitter y Pinterest."
+msgstr ""
+"Compartir en medios sociales integrado para Facebook, Twitter y Pinterest."
 
-#: class-ml-slider-lightbox.php:4031
+#: class-ml-slider-lightbox.php:4471
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "Compartir en medios sociales está disponible en MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4036 class-ml-slider-lightbox.php:4174
+#: class-ml-slider-lightbox.php:4476 class-ml-slider-lightbox.php:4661
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
-msgstr "Puntos de paginación mínimos en lugar de miniaturas para una interfaz más limpia."
+msgstr ""
+"Puntos de paginación mínimos en lugar de miniaturas para una interfaz más "
+"limpia."
 
-#: class-ml-slider-lightbox.php:4038
+#: class-ml-slider-lightbox.php:4478
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "La navegación por páginas está disponible en MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4050 class-ml-slider-lightbox.php:4158
+#: class-ml-slider-lightbox.php:4490 class-ml-slider-lightbox.php:4645
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
-msgstr "Genera URL únicas para cada imagen de la galería con navegación hacia atrás/adelante del navegador."
+msgstr ""
+"Genera URL únicas para cada imagen de la galería con navegación hacia atrás/"
+"adelante del navegador."
 
-#: class-ml-slider-lightbox.php:4052
+#: class-ml-slider-lightbox.php:4492
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
-msgstr "Las URL únicas por las imágenes están disponible en MetaSlider Gallery Pro"
+msgstr ""
+"Las URL únicas por las imágenes están disponible en MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4057 class-ml-slider-lightbox.php:4166
+#: class-ml-slider-lightbox.php:4497 class-ml-slider-lightbox.php:4653
 msgid "Automatic slideshow with timing controls and progress bar."
-msgstr "Pase de diapositivas automático con controles de tiempo de duración y barra de progreso."
+msgstr ""
+"Pase de diapositivas automático con controles de tiempo de duración y barra "
+"de progreso."
 
-#: class-ml-slider-lightbox.php:4059
+#: class-ml-slider-lightbox.php:4499
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "La reproducción automática está disponible en MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4076
+#: class-ml-slider-lightbox.php:4503
+msgid "Enable Image Protection"
+msgstr "Activar la protección de imágenes"
+
+#: class-ml-slider-lightbox.php:4506
+msgid "Image protection is available in MetaSlider Gallery Pro"
+msgstr "La protección de imágenes está disponible en MetaSlider Gallery Pro"
+
+#: class-ml-slider-lightbox.php:4523
 msgid "Features"
 msgstr "Características"
 
-#: class-ml-slider-lightbox.php:4077
+#: class-ml-slider-lightbox.php:4524
 msgid "Free"
 msgstr "Gratis"
 
-#: class-ml-slider-lightbox.php:4078 , fuzzy
+#: class-ml-slider-lightbox.php:4525
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4084 class-ml-slider-lightbox.php:4191
+#: class-ml-slider-lightbox.php:4531 class-ml-slider-lightbox.php:4726
 msgid "Installed"
 msgstr "Instalado"
 
-#: class-ml-slider-lightbox.php:4087 class-ml-slider-lightbox.php:4194
+#: class-ml-slider-lightbox.php:4534 class-ml-slider-lightbox.php:4729
 msgid "Upgrade now"
 msgstr "Actualizar ahora"
 
-#: class-ml-slider-lightbox.php:4093
+#: class-ml-slider-lightbox.php:4540
 msgid "Automatic lightbox for images"
 msgstr "Caja de luz automática para las imágenes"
 
-#: class-ml-slider-lightbox.php:4094
+#: class-ml-slider-lightbox.php:4541
 msgid "Automatically enable lightbox for all images on your site."
-msgstr "Activa automáticamente la caja de luz para todas las imágenes de tu sitio."
+msgstr ""
+"Activa automáticamente la caja de luz para todas las imágenes de tu sitio."
 
-#: class-ml-slider-lightbox.php:4101
+#: class-ml-slider-lightbox.php:4548
 msgid "MetaSlider integration"
 msgstr "Integración con MetaSlider"
 
-#: class-ml-slider-lightbox.php:4102
+#: class-ml-slider-lightbox.php:4549
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "Integración perfecta con los pases de diapositivas de MetaSlider."
 
-#: class-ml-slider-lightbox.php:4109
+#: class-ml-slider-lightbox.php:4556
 msgid "WordPress gallery support"
 msgstr "Compatibilidad con galerías de WordPress"
 
-#: class-ml-slider-lightbox.php:4110
+#: class-ml-slider-lightbox.php:4557
 msgid "Support for WordPress native galleries and blocks."
 msgstr "Compatibilidad con galerías y bloques nativos de WordPress."
 
-#: class-ml-slider-lightbox.php:4117
+#: class-ml-slider-lightbox.php:4564
 msgid "Appearance customization"
 msgstr "Personalización de la apariencia"
 
-#: class-ml-slider-lightbox.php:4118
+#: class-ml-slider-lightbox.php:4565
 msgid "Customize colors, opacity, and button styles."
 msgstr "Personaliza los colores, la opacidad y el estilo de los botones."
 
-#: class-ml-slider-lightbox.php:4125
+#: class-ml-slider-lightbox.php:4572
+msgid "Gallery builder &amp; layouts"
+msgstr "Creador de galerías y diseños"
+
+#: class-ml-slider-lightbox.php:4573
+msgid ""
+"Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
+"layouts."
+msgstr ""
+"Crea galerías con diseños en cuadrícula, mosaico, justificado, carrusel y "
+"escaparate."
+
+#: class-ml-slider-lightbox.php:4580
+msgid "Responsive columns"
+msgstr "Columnas adaptables"
+
+#: class-ml-slider-lightbox.php:4581
+msgid ""
+"Set the number of columns for desktop, laptop, tablet and mobile, with "
+"adjustable spacing."
+msgstr ""
+"Establece el número de columnas para ordenador, portátil, tableta y móvil, "
+"con espaciado ajustable."
+
+#: class-ml-slider-lightbox.php:4588
+msgid "Image captions"
+msgstr "Leyendas de imagen"
+
+#: class-ml-slider-lightbox.php:4589
+msgid "Show image captions in the gallery grid and the gallery window."
+msgstr ""
+"Muestra las leyendas de las imágenes en la cuadrícula de la galería y en la "
+"ventana de la galería."
+
+#: class-ml-slider-lightbox.php:4596
+msgid "Video galleries"
+msgstr "Galerías de vídeo"
+
+#: class-ml-slider-lightbox.php:4597
+msgid ""
+"Add uploaded videos and Livid.com links alongside images, with poster images "
+"and playback controls."
+msgstr ""
+"Añade vídeos subidos y enlaces de Livid.com junto a las imágenes, con "
+"imágenes de póster y controles de reproducción."
+
+#: class-ml-slider-lightbox.php:4604
+msgid "Thumbnail navigation"
+msgstr "Navegación con miniaturas"
+
+#: class-ml-slider-lightbox.php:4605
+msgid "Display a strip of thumbnails for quick navigation between images."
+msgstr ""
+"Muestra una tira de miniaturas para navegar rápidamente entre imágenes."
+
+#: class-ml-slider-lightbox.php:4612
 msgid "Zoom controls"
 msgstr "Controles para ampliar/acercar"
 
-#: class-ml-slider-lightbox.php:4133
+#: class-ml-slider-lightbox.php:4620
 msgid "Fullscreen mode"
 msgstr "Modo de pantalla completa"
 
-#: class-ml-slider-lightbox.php:4134
+#: class-ml-slider-lightbox.php:4621
 msgid "Native HTML5 fullscreen for immersive image viewing."
-msgstr "HTML5 nativo a pantalla completa para una visualización inmersiva de la imagen."
+msgstr ""
+"HTML5 nativo a pantalla completa para una visualización inmersiva de la "
+"imagen."
 
-#: class-ml-slider-lightbox.php:4141
+#: class-ml-slider-lightbox.php:4628
 msgid "Rotate and flip images"
 msgstr "Rotear y voltear imágenes"
 
-#: class-ml-slider-lightbox.php:4149
+#: class-ml-slider-lightbox.php:4636
 msgid "Social media sharing"
 msgstr "Compartir en medios sociales"
 
-#: class-ml-slider-lightbox.php:4150
-msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
-msgstr "Compartir integrado para Facebook, Twitter y Pinterest."
+#: class-ml-slider-lightbox.php:4637
+msgid ""
+"Built-in sharing for Facebook, Twitter / X, Pinterest, LinkedIn, email, or a "
+"copied link."
+msgstr ""
+"Compartir integrado para Facebook, Twitter / X, Pinterest, LinkedIn, correo "
+"electrónico o un enlace copiado."
 
-#: class-ml-slider-lightbox.php:4165
+#: class-ml-slider-lightbox.php:4652
 msgid "Autoplay slideshow"
 msgstr "Reproducción automática del pase de diapositivas"
 
-#: class-ml-slider-lightbox.php:4173
+#: class-ml-slider-lightbox.php:4660
 msgid "Pager navigation"
 msgstr "Navegación por páginas"
 
-#: class-ml-slider-lightbox.php:4181
+#: class-ml-slider-lightbox.php:4668
+msgid "Before &amp; After layout"
+msgstr "Diseño Antes y después"
+
+#: class-ml-slider-lightbox.php:4669
+msgid ""
+"Compare two images with a divider visitors drag, side by side or top and "
+"bottom."
+msgstr ""
+"Compara dos imágenes con un divisor que los visitantes arrastran, una al "
+"lado de la otra o arriba y abajo."
+
+#: class-ml-slider-lightbox.php:4677
+msgid ""
+"Let visitors heart images, with the count shared across every gallery using "
+"that image."
+msgstr ""
+"Permite a los visitantes dar un corazón a las imágenes, con el recuento "
+"compartido en todas las galerías que usan esa imagen."
+
+#: class-ml-slider-lightbox.php:4684
+msgid "Download sizes"
+msgstr "Tamaños de descarga"
+
+#: class-ml-slider-lightbox.php:4685
+msgid "Offer visitors a choice of image sizes to download."
+msgstr ""
+"Ofrece a los visitantes la posibilidad de elegir entre varios tamaños de "
+"imagen para descargar."
+
+#: class-ml-slider-lightbox.php:4692
+msgid "Photo metadata"
+msgstr "Metadatos de la foto"
+
+#: class-ml-slider-lightbox.php:4693
+msgid "Show the camera settings a photo was taken with beneath its caption."
+msgstr ""
+"Muestra los ajustes de la cámara con los que se tomó una foto debajo de su "
+"leyenda."
+
+#: class-ml-slider-lightbox.php:4700
+msgid "Image protection"
+msgstr "Protección de imágenes"
+
+#: class-ml-slider-lightbox.php:4708
+msgid "Watermarking"
+msgstr "Marca de agua"
+
+#: class-ml-slider-lightbox.php:4709
+msgid ""
+"Overlay your logo on lightbox images, with position, size and opacity "
+"controls."
+msgstr ""
+"Superpone tu logotipo en las imágenes de la caja de luz, con controles de "
+"posición, tamaño y opacidad."
+
+#: class-ml-slider-lightbox.php:4716
 msgid "Premium support"
 msgstr "Soporte Premium"
 
-#: class-ml-slider-lightbox.php:4182
+#: class-ml-slider-lightbox.php:4717
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "Haz tus preguntas específicas directamente a nuestros expertos."
 
-#: class-ml-slider-lightbox.php:5993
+#: class-ml-slider-lightbox.php:6504
 msgid "Configure how the lightbox interacts with WordPress built-in features."
-msgstr "Configura cómo interactúa la caja de luz con las características integradas de WordPress."
+msgstr ""
+"Configura cómo interactúa la caja de luz con las características integradas "
+"de WordPress."
 
-#: class-ml-slider-lightbox.php:6008
+#: class-ml-slider-lightbox.php:6519
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "Sobrescribir el ajuste «Agrandar al hacer clic»"
 
-#: class-ml-slider-lightbox.php:6009
+#: class-ml-slider-lightbox.php:6520
 msgid ""
-"When enabled, disables WordPress built-in lightbox and uses our lightbox for "
-"images set to \"Enlarge on Click\". When disabled, respects WordPress "
-"setting and skips images set to \"Enlarge on Click\"."
+"When enabled, disables WordPress built-in gallery window and uses MetaSlider "
+"Gallery for images set to \"Enlarge on Click\". When disabled, respects "
+"WordPress setting and skips images set to \"Enlarge on Click\"."
 msgstr ""
-"Cuando está activado, desactiva la caja de luz integrada en WordPress y "
-"utiliza nuestra caja de luz para las imágenes establecidas en «Agrandar al "
-"hacer clic». Cuando está desactivado, respeta el ajuste de WordPress y omite "
-"las imágenes establecidas en «Agrandar al hacer clic»."
+"Si está activado, desactiva la ventana de galería integrada de WordPress y "
+"usa MetaSlider Gallery para las imágenes configuradas con «Agrandar al hacer "
+"clic». Si está desactivado, respeta el ajuste de WordPress y omite las "
+"imágenes configuradas con «Agrandar al hacer clic»."
 
-#: class-ml-slider-lightbox.php:6025
+#: class-ml-slider-lightbox.php:6536
 msgid "Override \"Link to Image File\" Setting"
 msgstr "Sobrescribir el ajuste «Enlazar al archivo de imagen»"
 
-#: class-ml-slider-lightbox.php:6026
+#: class-ml-slider-lightbox.php:6537
 msgid ""
-"When enabled, uses our lightbox for images linked to their full-size image "
-"file (commonly set via \"Link to Image File\" in the block editor). When "
-"disabled, respects the original link behavior."
+"When enabled, uses MetaSlider Gallery for images linked to their full-size "
+"image file (commonly set via \"Link to Image File\" in the block editor). "
+"When disabled, respects the original link behavior."
 msgstr ""
-"Cuando está activado, utiliza nuestra caja de luz para las imágenes "
-"vinculadas a su archivo de imagen a tamaño completo (normalmente configurado "
-"mediante «Enlazar al archivo de imagen» en el editor de bloques). Cuando "
-"está desactivado, respeta el comportamiento original del enlace."
+"Si está activado, usa MetaSlider Gallery para las imágenes enlazadas a su "
+"archivo de imagen a tamaño completo (normalmente configurado mediante "
+"«Enlazar al archivo de imagen» en el editor de bloques). Si está "
+"desactivado, respeta el comportamiento original del enlace."
 
-#: class-ml-slider-lightbox.php:6057
+#: class-ml-slider-lightbox.php:6568
 msgid "Exclude Post Types from Manual Processing"
 msgstr "Excluir tipos de contenido del procesamiento manual"
 
-#: class-ml-slider-lightbox.php:6060
+#: class-ml-slider-lightbox.php:6571
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
-"\"Products (product)\" to disable Manual lightbox on WooCommerce product "
-"pages while keeping it active elsewhere."
+"\"Products (product)\" to disable the gallery on WooCommerce product pages "
+"while keeping it active elsewhere."
 msgstr ""
-"Selecciona los tipos de contenido en los que las opciones manuales no deben "
-"funcionar. Por ejemplo, selecciona «Productos (producto)» para desactivar la "
-"caja de luz manual en las páginas de productos de WooCommerce, manteniéndola "
-"activa en otro sitios."
+"Selecciona los tipos de contenido en los que las opciones manuales NO deben "
+"funcionar. Por ejemplo, selecciona «Products (product)» para desactivar la "
+"galería en las páginas de producto de WooCommerce y mantenerla activa en el "
+"resto del sitio."
 
-#: class-ml-slider-lightbox.php:6084
+#: class-ml-slider-lightbox.php:6595
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "Cómo se usa: «Agrandar al hacer clic» de WordPress"
 
-#: class-ml-slider-lightbox.php:6086
+#: class-ml-slider-lightbox.php:6597
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's how "
 "to enable it:"
-msgstr "WordPress tiene una característica integrada llamada «Agrandar al hacer clic» para las imágenes. Aquí está cómo activarla:"
+msgstr ""
+"WordPress tiene una característica integrada llamada «Agrandar al hacer "
+"clic» para las imágenes. Aquí está cómo activarla:"
 
-#: class-ml-slider-lightbox.php:6088 class-ml-slider-lightbox.php:6101
+#: class-ml-slider-lightbox.php:6599 class-ml-slider-lightbox.php:6612
 msgid "Select an image in the block editor."
 msgstr "Selecciona una imagen en el editor de bloques."
 
-#: class-ml-slider-lightbox.php:6089 class-ml-slider-lightbox.php:6102
+#: class-ml-slider-lightbox.php:6600 class-ml-slider-lightbox.php:6613
 msgid "In the block toolbar, click on the Link icon."
 msgstr "En la barra de herramientas del bloque, haz clic en el icono «Enlace»."
 
-#: class-ml-slider-lightbox.php:6090
+#: class-ml-slider-lightbox.php:6601
 msgid "Select \"Enlarge on click\"."
 msgstr "Seleccionar «Agrandar al hacer clic»."
 
-#: class-ml-slider-lightbox.php:6096
+#: class-ml-slider-lightbox.php:6607
 msgid "How to use: \"Link to Image File\""
 msgstr "Cómo se usa: «Enlazar al archivo de imagen»"
 
-#: class-ml-slider-lightbox.php:6098
+#: class-ml-slider-lightbox.php:6609
 msgid "You can link images directly to their full-size media file. Here's how:"
-msgstr "Puedes enlazar imágenes directamente a su archivo de medios a tamaño completo. Aquí está cómo:"
+msgstr ""
+"Puedes enlazar imágenes directamente a su archivo de medios a tamaño "
+"completo. Aquí está cómo:"
 
-#: class-ml-slider-lightbox.php:6099
+#: class-ml-slider-lightbox.php:6610
 msgid "For the Block Editor:"
 msgstr "Para el editor de bloques:"
 
-#: class-ml-slider-lightbox.php:6103
+#: class-ml-slider-lightbox.php:6614
 msgid "Choose \"Link to image file\"."
 msgstr "Elige «Enlazar al archivo de imagen»."
 
-#: class-ml-slider-lightbox.php:6105
+#: class-ml-slider-lightbox.php:6616
 msgid "For the Classic Editor:"
 msgstr "Para el editor clásico:"
 
-#: class-ml-slider-lightbox.php:6107
+#: class-ml-slider-lightbox.php:6618
 msgid "Select an image."
 msgstr "Selecciona una imagen."
 
-#: class-ml-slider-lightbox.php:6108
+#: class-ml-slider-lightbox.php:6619
 msgid "In the image toolbar, click on the Edit icon."
-msgstr "En la barra de herramientas de la imagen, haz clic en el icono «Editar»."
+msgstr ""
+"En la barra de herramientas de la imagen, haz clic en el icono «Editar»."
 
-#: class-ml-slider-lightbox.php:6109
+#: class-ml-slider-lightbox.php:6620
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "Elige «Archivo de medios» en el desplegable «Enlazar a»."
 
-#: class-ml-slider-lightbox.php:6115
+#: class-ml-slider-lightbox.php:6626
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "Cómo se usa: Método de clase CSS (avanzado)"
 
-#: class-ml-slider-lightbox.php:6117
+#: class-ml-slider-lightbox.php:6628
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
-"lightbox on any element containing images."
+"MetaSlider Gallery on any element containing images."
 msgstr ""
-"Para los desarrolladores: Añadir la clase <code>ml-lightbox-enabled</code> "
-"para activar la caja de luz en cualquier elemento que contenga imágenes."
+"Para desarrolladores: añade la clase <code>ml-lightbox-enabled</code> para "
+"activar MetaSlider Gallery en cualquier elemento que contenga imágenes."
 
-#: class-ml-slider-lightbox.php:6118
+#: class-ml-slider-lightbox.php:6629
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "Método 1: Clases CSS adicionales del editor de bloques"
 
-#: class-ml-slider-lightbox.php:6120
+#: class-ml-slider-lightbox.php:6631
 msgid "Select an image or gallery block."
 msgstr "Selecciona un bloque de imagen o galería."
 
-#: class-ml-slider-lightbox.php:6121
+#: class-ml-slider-lightbox.php:6632
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
-msgstr "En la barra lateral de ajustes del bloque, desplázate hasta «Avanzado»."
+msgstr ""
+"En la barra lateral de ajustes del bloque, desplázate hasta «Avanzado»."
 
-#: class-ml-slider-lightbox.php:6122
+#: class-ml-slider-lightbox.php:6633
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "Añadir <code>ml-lightbox-enabled</code> a «Clases CSS adicionales»."
 
-#: class-ml-slider-lightbox.php:6124
+#: class-ml-slider-lightbox.php:6635
 msgid "Method 2: HTML/Code"
 msgstr "Método 2: HTML/Código"
 
-#: class-ml-slider-lightbox.php:6125
+#: class-ml-slider-lightbox.php:6636
 msgid "For custom HTML or theme developers, add the class directly:"
-msgstr "Para desarrolladores de HTML personalizado o temas, añadir la clase directamente:"
-
-#: class-ml-slider-lightbox.php:376
-msgid ""
-"MetaSlider Lightbox requires MetaSlider and at least one other supported "
-"lightbox plugin to be installed and activated."
 msgstr ""
-"Para utilizar MetaSlider Lightbox es obligatorio que MetaSlider y al menos "
-"otro plugin de caja de luz compatible esté instalado y activado."
+"Para desarrolladores de HTML personalizado o temas, añadir la clase "
+"directamente:"
 
-#: class-ml-slider-lightbox.php:394
-msgid ""
-"There is more than one lightbox plugin activated. This may cause conflicts "
-"with MetaSlider Lightbox"
-msgstr ""
-"Hay más de un plugin de caja de luz activado. Esto puede causar conflictos "
-"con MetaSlider Lightbox"
+#~ msgid "No images yet. Click \"Add Images\" below."
+#~ msgstr "Aún no hay imágenes. Haz clic abajo en «Añadir imágenes»."
 
-#: class-ml-slider-lightbox.php:433
-msgid ""
-"Warning: MetaSlider Lightbox is installed but no supported lightbox plugin "
-"is active."
-msgstr ""
-"Advertencia: MetaSlider Lightbox está instalado pero no hay un plugin de "
-"caja de luz compatible activo."
+#~ msgid "Add Images"
+#~ msgstr "Añadir imágenes"
 
-#~ msgid "Some of these features are available in MetaSlider Gallery Pro"
+#~ msgid "Lightbox Settings"
+#~ msgstr "Ajustes de la caja de luz"
+
+#~ msgid "Swipe up or down to close the lightbox on touch devices"
 #~ msgstr ""
-#~ "Algunas de estas características están disponible en MetaSlider Gallery "
-#~ "Pro"
+#~ "Desliza el dedo hacia arriba o hacia abajo para cerrar la caja de luz en "
+#~ "dispositivos táctiles"
+
+#~ msgid "Show a strip of thumbnail images at the bottom of the lightbox"
+#~ msgstr ""
+#~ "Mostrar una fila de miniaturas en la parte inferior de la caja de luz"
+
+#~ msgid "Display image captions in the lightbox"
+#~ msgstr "Muestra las leyendas de las imágenes en la caja de luz"
+
+#~ msgid "Pinch and zoom into images"
+#~ msgstr "Acerca y aleja las imágenes con los dedos"
+
+#~ msgid "Expand the lightbox to fill the entire screen"
+#~ msgstr "Amplía la caja de luz para que ocupe toda la pantalla"
+
+#~ msgid "Rotate images left and right"
+#~ msgstr "Rotar imágenes hacia la izquierda y hacia la derecha"
+
+#~ msgid "Automatically advance through images at a set interval"
+#~ msgstr "Avanzar automáticamente por las imágenes a un intervalo establecido"
+
+#~ msgid "Add social sharing buttons for each image"
+#~ msgstr "Añade botones para compartir en redes sociales en cada imagen"
+
+#~ msgid "Slide counter"
+#~ msgstr "Contador de diapositivas"
+
+#~ msgid "Thumbnail strip"
+#~ msgstr "Banda de miniaturas"
+
+#~ msgid "Pager pagination requires MetaSlider Gallery Pro"
+#~ msgstr ""
+#~ "Para la navegación por páginas es obligatorio MetaSlider Gallery Pro"
+
+#~ msgid "Slide interval"
+#~ msgstr "Intervalo de diapositivas"
+
+#~ msgid "Copy and paste into any post or page."
+#~ msgstr "Copiar y pegar en cualquier entrada o página."
+
+#~ msgid "Save Caption"
+#~ msgstr "Guardar leyenda"
+
+#~ msgid "Select Gallery Images"
+#~ msgstr "Selecciona las imágenes de la galería"
+
+#~ msgid "Edit settings"
+#~ msgstr "Editar ajustes"
+
+#~ msgid "Open in lightbox?"
+#~ msgstr "¿Abrir en caja de luz?"
+
+#, php-format
+#~ msgctxt "Name of a plugin"
+#~ msgid "All slides will open in a lightbox, using %s"
+#~ msgstr "Todas las diapositivas se abrirán en una caja de luz, utilizando %s"
+
+#, php-format
+#~ msgid ""
+#~ "Lightbox is enabled for all slideshows via <a href=\"%s\">Automatic Mode "
+#~ "settings</a>."
+#~ msgstr ""
+#~ "La caja de luz está activada para todas los pases de diapositivas a "
+#~ "través de <a href=\"%s\">los ajustes del modo automático</a>."
+
+#~ msgid "Open in Lightbox"
+#~ msgstr "Abrir en caja de luz"
+
+#~ msgid "Lightboxes"
+#~ msgstr "Cajas de luz"
+
+#~ msgid ""
+#~ "Customize colors, opacity, and visual styling for the lightbox overlay "
+#~ "and controls."
+#~ msgstr ""
+#~ "Personaliza los colores, la opacidad y el estilo visual de la "
+#~ "superposición y los controles de la caja de luz."
+
+#~ msgid "\"Open in Lightbox\" Button"
+#~ msgstr "Botón «Abrir en caja de luz»"
+
+#~ msgid "Manual Lightbox Options"
+#~ msgstr "Opciones manuales de caja de luz"
+
+#~ msgid "Lightbox Toolbar"
+#~ msgstr "Barra de herramientas de caja de luz"
+
+#~ msgid "Configure general lightbox settings that apply site-wide."
+#~ msgstr ""
+#~ "Configura los ajustes generales de la caja de luz que se aplican a todo "
+#~ "el sitio."
+
+#~ msgid "Configure settings specific to MetaSlider lightbox functionality."
+#~ msgstr ""
+#~ "Configura los ajustes específicos de la funcionalidad de la caja de luz "
+#~ "MetaSlider."
+
+#~ msgid "Select where the lightbox will be enabled automatically."
+#~ msgstr "Selecciona dónde se activará automáticamente la caja de luz."
+
+#~ msgid ""
+#~ "Choose how to filter content for lightbox processing and specify which "
+#~ "pages, posts, or selectors to include or exclude."
+#~ msgstr ""
+#~ "Elige cómo filtrar el contenido para el procesamiento de la caja de luz y "
+#~ "especifica qué páginas, entradas o selectores incluir o excluir."
+
+#~ msgid ""
+#~ "When enabled, individual images without links and \"Enlarge to Click\" "
+#~ "set in posts and pages will automatically open in the lightbox."
+#~ msgstr ""
+#~ "Cuando está activado, las imágenes individuales sin enlaces y con la "
+#~ "opción «Agrandar al hacer clic» configurada en las entradas y páginas se "
+#~ "abrirán automáticamente en la caja de luz."
+
+#~ msgid ""
+#~ "When enabled, images and videos in widget areas will automatically open "
+#~ "in the lightbox."
+#~ msgstr ""
+#~ "Cuando está activado, las imágenes y los vídeos de las áreas de widgets "
+#~ "se abrirán automáticamente en la caja de luz."
+
+#~ msgid ""
+#~ "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
+#~ "Gallery blocks will automatically open in the lightbox."
+#~ msgstr ""
+#~ "Cuando está activado, las imágenes de los shortcodes [gallery] de "
+#~ "WordPress y los bloques de galería de Gutenberg se abrirán "
+#~ "automáticamente en la caja de luz."
+
+#~ msgid ""
+#~ "When enabled, featured images (post thumbnails) will automatically open "
+#~ "in the lightbox when clicked."
+#~ msgstr ""
+#~ "Cuando está activado, las imágenes destacadas (miniaturas de entradas) se "
+#~ "abrirán automáticamente en la caja de luz al hacer clic sobre ellas."
+
+#~ msgid ""
+#~ "Automatically enable the lightbox on all MetaSlider slideshows, "
+#~ "overriding the per-slider setting."
+#~ msgstr ""
+#~ "Activa automáticamente la caja de luz para todas los pases de "
+#~ "diapositivas de MetaSlider, anulando el ajuste por carrusel."
+
+#~ msgid ""
+#~ "When enabled, all MetaSlider slideshows will open slides in the lightbox, "
+#~ "overriding the per-slider setting."
+#~ msgstr ""
+#~ "Cuando está activado, todos los pases de diapositivas de MetaSlider "
+#~ "abrirán las diapositivas en la caja de luz, anulando el ajuste de cada "
+#~ "carrusel."
+
+#~ msgid ""
+#~ "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, "
+#~ "Vimeo embeds) in post/page content will automatically open in the "
+#~ "lightbox."
+#~ msgstr ""
+#~ "Cuando está activado, los bloques de vídeo independientes (vídeos HTML5, "
+#~ "vídeos incrustados de YouTube, vídeos incrustados de Vimeo) en el "
+#~ "contenido de las entradas/páginas se abrirán automáticamente en la caja "
+#~ "de luz."
+
+#~ msgid ""
+#~ "Background color for the lightbox overlay. Dark colors work best for "
+#~ "image viewing."
+#~ msgstr ""
+#~ "Color de fondo para la superposición de la caja de luz. Los colores "
+#~ "oscuros son los más adecuados para la visualización de imágenes."
+
+#~ msgid ""
+#~ "Background color for \"Open in Lightbox\" buttons that appear on slides, "
+#~ "images and videos."
+#~ msgstr ""
+#~ "Color de fondo para los botones «Abrir en Lightbox» que aparecen en "
+#~ "diapositivas, imágenes y vídeos."
+
+#~ msgid ""
+#~ "Text color for \"Open in Lightbox\" buttons that appear on slides, images "
+#~ "and videos."
+#~ msgstr ""
+#~ "Color del texto de los botones «Abrir en Lightbox» que aparecen en "
+#~ "diapositivas, imágenes y vídeos."
+
+#~ msgid "Background color when hovering over \"Open in Lightbox\" buttons."
+#~ msgstr ""
+#~ "Color de fondo para al pasar el cursor sobre los botones «Abrir en caja "
+#~ "de luz»."
+
+#~ msgid "Text color when hovering over \"Open in Lightbox\" buttons."
+#~ msgstr ""
+#~ "Color del texto al pasar el cursor sobre los botones «Abrir en Lightbox»."
+
+#~ msgid ""
+#~ "Custom text for lightbox buttons. This text will appear on all \"Open in "
+#~ "Lightbox\" buttons throughout the site."
+#~ msgstr ""
+#~ "Texto personalizado para los botones de la caja de luz. Este texto "
+#~ "aparecerá en todos los botones «Abrir en Lightbox» del sitio."
+
+#~ msgid ""
+#~ "Choose where to position the close button (X) in the lightbox overlay."
+#~ msgstr ""
+#~ "Elige donde posicionar el botón de cierre (X) en la superposición de la "
+#~ "caja de luz."
+
+#~ msgid ""
+#~ "Choose where to position \"Open in Lightbox\" buttons within slides, "
+#~ "images, galleries, and videos."
+#~ msgstr ""
+#~ "Elige donde colocar los botones «Abrir en caja de luz» dentro de las "
+#~ "diapositivas, imágenes, galerías y vídeos."
+
+#~ msgid "Color for previous and next navigation arrows in the lightbox."
+#~ msgstr ""
+#~ "Color para las flechas de navegación anterior y siguiente en la caja de "
+#~ "luz."
+
+#~ msgid "Color for the close button (X) in the lightbox."
+#~ msgstr "Color del botón de cierre (X) en la caja de luz."
+
+#~ msgid "Background color for the close button (X) in the lightbox."
+#~ msgstr "Color de fondo para el botón de cierre (X) en la caja de luz."
+
+#~ msgid ""
+#~ "Set the opacity of the lightbox background (0 = transparent, 1 = opaque)."
+#~ msgstr ""
+#~ "Establece la opacidad del fondo de la caja de luz (0 = transparente, 1 = "
+#~ "opaco)."
+
+#~ msgid "Show navigation arrows in lightbox"
+#~ msgstr "Muestra las flechas de navegación en la caja de luz"
+
+#~ msgid "Customize the lightbox background and overlay appearance."
+#~ msgstr ""
+#~ "Personaliza el fondo de la caja de luz y la apariencia de la "
+#~ "superposición."
+
+#~ msgid ""
+#~ "Customize navigation icons (close, previous, next arrows) for lightboxes."
+#~ msgstr ""
+#~ "Personaliza los iconos de navegación (cerrar, flechas anterior y "
+#~ "siguiente) para la caja de luz."
+
+#~ msgid ""
+#~ "Customize the \"Open in Lightbox\" buttons that can be added to slides, "
+#~ "images, galleries, and videos."
+#~ msgstr ""
+#~ "Personaliza los botones «Abrir en caja de luz» que puedes añadir a las "
+#~ "diapositivas, imágenes, galerías y vídeos."
+
+#~ msgid ""
+#~ "Configure navigation and control options that apply to all lightboxes."
+#~ msgstr ""
+#~ "Configure las opciones de navegación y control que se aplican a todas las "
+#~ "cajas de luz."
+
+#~ msgid ""
+#~ "Display thumbnail images at the bottom of the lightbox for easy "
+#~ "navigation. This is available for slideshows and image galleries."
+#~ msgstr ""
+#~ "Muestra imágenes en miniatura en la parte inferior de la caja de luz para "
+#~ "facilitar la navegación. Esta opción está disponible para pase de "
+#~ "diapositivas y galerías de imágenes."
+
+#~ msgid "Show \"Open in Lightbox\" button"
+#~ msgstr "Muestra el botón «Abrir en caja de luz»"
+
+#~ msgid ""
+#~ "When enabled, shows a button to open the lightbox. When disabled, "
+#~ "clicking the slide, image, or video directly opens the lightbox."
+#~ msgstr ""
+#~ "Cuando está activado, muestra un botón para abrir la caja de luz. Cuando "
+#~ "está desactivado, al hacer clic en la diapositiva, imagen o vídeo se abre "
+#~ "directamente la caja de luz."
+
+#~ msgid "Show an icon instead of button"
+#~ msgstr "Muestra un icono en lugar del botón"
+
+#~ msgid "When enabled, displays a small icon instead of the full button text."
+#~ msgstr ""
+#~ "Cuando está activado, muestra un pequeño icono en lugar del botón de "
+#~ "texto completo."
+
+#~ msgid ""
+#~ "When enabled, display captions in the lightbox. This is available for "
+#~ "slideshows, images, and image galleries."
+#~ msgstr ""
+#~ "Cuando está activado, muestra las leyendas en la caja de luz. Esta opción "
+#~ "está disponible para pase de diapositivas, imágenes y galerías de "
+#~ "imágenes."
+
+#~ msgid "Include specific Pages"
+#~ msgstr "Incluir páginas específicas"
+
+#~ msgid ""
+#~ "Select pages where lightbox should be disabled. Shows up to 100 most "
+#~ "recent pages. Type to search."
+#~ msgstr ""
+#~ "Selecciona las páginas en las que se debe desactivar la caja de luz. "
+#~ "Muestra hasta las 100 páginas más recientes. Escribe para buscar."
+
+#~ msgid ""
+#~ "Select pages where lightbox should be enabled. Shows up to 100 most "
+#~ "recent pages. Type to search."
+#~ msgstr ""
+#~ "Selecciona las páginas en las que se debe activar la caja de luz. Muestra "
+#~ "hasta las 100 páginas más recientes. Escribe para buscar."
+
+#~ msgid "Include specific Posts"
+#~ msgstr "Incluir entradas específicas"
+
+#~ msgid ""
+#~ "Select posts where lightbox should be disabled. Shows up to 100 most "
+#~ "recent posts. Type to search."
+#~ msgstr ""
+#~ "Selecciona las entradas en las que se debe desactivar la caja de luz. "
+#~ "Muestra hasta las 100 entradas más recientes. Escribe para buscar."
+
+#~ msgid ""
+#~ "Select posts where lightbox should be enabled. Shows up to 100 most "
+#~ "recent posts. Type to search."
+#~ msgstr ""
+#~ "Selecciona las entradas en las que se debe activar la caja de luz. "
+#~ "Muestra hasta las 100 entradas más recientes. Escribe para buscar."
+
+#~ msgid "Include specific post types"
+#~ msgstr "Incluir tipos de contenido específicos"
+
+#~ msgid "Select post types where lightbox should be disabled entirely."
+#~ msgstr ""
+#~ "Selecciona los tipos de contenido en los que se debe desactivar la caja "
+#~ "de luz completamente."
+
+#~ msgid "Select post types where lightbox should be enabled entirely."
+#~ msgstr ""
+#~ "Selecciona los tipos de contenido en los que se debe activar la caja de "
+#~ "luz completamente."
+
+#~ msgid ""
+#~ "CSS selectors for elements to exclude from lightbox (one per line). "
+#~ "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
+#~ msgstr ""
+#~ "Selectores CSS para elementos que se deben excluir de la caja de luz (uno "
+#~ "por línea). Ejemplos:<br>.no-lightbox<br>.custom-gallery "
+#~ "img<br>#sidebar .widget-area"
+
+#~ msgid "Automatically advance through images in the lightbox."
+#~ msgstr "Pasar automáticamente de una imagen a otra en la caja de luz."
+
+#~ msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
+#~ msgstr "Compartir integrado para Facebook, Twitter y Pinterest."
+
+#~ msgid ""
+#~ "When enabled, disables WordPress built-in lightbox and uses our lightbox "
+#~ "for images set to \"Enlarge on Click\". When disabled, respects WordPress "
+#~ "setting and skips images set to \"Enlarge on Click\"."
+#~ msgstr ""
+#~ "Cuando está activado, desactiva la caja de luz integrada en WordPress y "
+#~ "utiliza nuestra caja de luz para las imágenes establecidas en «Agrandar "
+#~ "al hacer clic». Cuando está desactivado, respeta el ajuste de WordPress y "
+#~ "omite las imágenes establecidas en «Agrandar al hacer clic»."
+
+#~ msgid ""
+#~ "When enabled, uses our lightbox for images linked to their full-size "
+#~ "image file (commonly set via \"Link to Image File\" in the block editor). "
+#~ "When disabled, respects the original link behavior."
+#~ msgstr ""
+#~ "Cuando está activado, utiliza nuestra caja de luz para las imágenes "
+#~ "vinculadas a su archivo de imagen a tamaño completo (normalmente "
+#~ "configurado mediante «Enlazar al archivo de imagen» en el editor de "
+#~ "bloques). Cuando está desactivado, respeta el comportamiento original del "
+#~ "enlace."
+
+#~ msgid ""
+#~ "Select post types where Manual options should NOT work. For example, "
+#~ "select \"Products (product)\" to disable Manual lightbox on WooCommerce "
+#~ "product pages while keeping it active elsewhere."
+#~ msgstr ""
+#~ "Selecciona los tipos de contenido en los que las opciones manuales no "
+#~ "deben funcionar. Por ejemplo, selecciona «Productos (producto)» para "
+#~ "desactivar la caja de luz manual en las páginas de productos de "
+#~ "WooCommerce, manteniéndola activa en otro sitios."
+
+#~ msgid ""
+#~ "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
+#~ "lightbox on any element containing images."
+#~ msgstr ""
+#~ "Para los desarrolladores: Añadir la clase <code>ml-lightbox-enabled</"
+#~ "code> para activar la caja de luz en cualquier elemento que contenga "
+#~ "imágenes."
+
+#~ msgid ""
+#~ "MetaSlider Lightbox requires MetaSlider and at least one other supported "
+#~ "lightbox plugin to be installed and activated."
+#~ msgstr ""
+#~ "Para utilizar MetaSlider Lightbox es obligatorio que MetaSlider y al "
+#~ "menos otro plugin de caja de luz compatible esté instalado y activado."
+
+#~ msgid ""
+#~ "There is more than one lightbox plugin activated. This may cause "
+#~ "conflicts with MetaSlider Lightbox"
+#~ msgstr ""
+#~ "Hay más de un plugin de caja de luz activado. Esto puede causar "
+#~ "conflictos con MetaSlider Lightbox"
+
+#~ msgid ""
+#~ "Warning: MetaSlider Lightbox is installed but no supported lightbox "
+#~ "plugin is active."
+#~ msgstr ""
+#~ "Advertencia: MetaSlider Lightbox está instalado pero no hay un plugin de "
+#~ "caja de luz compatible activo."
 
 #~ msgid "No images added yet"
 #~ msgstr "Aún no hay imágenes"
-
-#, php-format
-#~ msgid "Select pages to %s..."
-#~ msgstr "Selecciona las páginas a %s..."
-
-#, php-format
-#~ msgid "Select posts to %s..."
-#~ msgstr "Selecciona las entradas a %s..."
-
-#, php-format
-#~ msgid "Select post types to %s..."
-#~ msgstr "Selecciona los tipos de contenido a %s..."
-
-#, php-format
-#~ msgid "Select %1$s to %2$s..."
-#~ msgstr "Selecciona %1$s a %2$s..."
-
-#~ msgid "Select post types to exclude"
-#~ msgstr "Selecciona los tipos de contenido a excluir"
-
-#~ msgid "Include"
-#~ msgstr "Incluir"
-
-#~ msgid "Exclude"
-#~ msgstr "Excluir"
-
-#~ msgid "include"
-#~ msgstr "incluir"
-
-#~ msgid "exclude"
-#~ msgstr "excluir"
 
 #~ msgid "Gallery Details"
 #~ msgstr "Detalles de la galería"
@@ -1586,8 +3951,3 @@ msgstr ""
 
 #~ msgid "https://www.metaslider.com"
 #~ msgstr "https://www.metaslider.com"
-
-#: class-ml-gallery.php:1616
-#: class-ml-gallery.php:2638
-msgid "Click to copy shortcode."
-msgstr "Haz clic para copiar el shortcode."

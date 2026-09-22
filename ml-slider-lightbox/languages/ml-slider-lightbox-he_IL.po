@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: MetaSlider Gallery\n"
 "Report-Msgid-Bugs-To: https://www.metaslider.com/contact/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2026-08-20 14:06+0000\n"
+"PO-Revision-Date: 2026-09-21 15:47+0000\n"
 "Last-Translator: \n"
 "Language-Team: Team Updraft\n"
 "MIME-Version: 1.0\n"
@@ -77,23 +77,116 @@ msgstr "הנתונים המבוקשים אינם קיימים."
 msgid "The attempt to update the option failed."
 msgstr "הניסיון לעדכן את האפשרות נכשל."
 
-#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1441
-#: class-ml-gallery.php:3939 class-ml-slider-lightbox.php:2168
-#: class-ml-slider-lightbox.php:2311
+#: admin/Optin.php:95
+msgid ""
+"Your preference was saved, but we could not add your address to the mailing "
+"list. Please check it and try again."
+msgstr ""
+"ההעדפה שלך נשמרה, אך לא הצלחנו להוסיף את הכתובת שלך לרשימת התפוצה. אנא בדוק "
+"אותה ונסה שוב."
+
+#: admin/Optin.php:98
+msgid "We could not save your preference. Please try again."
+msgstr "לא הצלחנו לשמור את ההעדפה שלך. אנא נסה שוב."
+
+#: admin/Optin.php:121
+msgid "You do not have permission to do that."
+msgstr "אין לך הרשאה לעשות זאת."
+
+#: admin/Optin.php:138
+msgid "Please enter a valid email address."
+msgstr "אנא הכנס כתובת אימייל תקפה."
+
+#: admin/views/notices/header-notice.php:8 class-ml-gallery.php:1689
+#: class-ml-gallery.php:4686 class-ml-slider-lightbox.php:2163
+#: class-ml-slider-lightbox.php:2306
 msgid "MetaSlider Gallery"
 msgstr "MetaSlider Gallery"
 
-#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:228
+#: admin/views/notices/header-notice.php:23 class-ml-slider-lightbox.php:235
 msgid "Dismiss"
 msgstr "סגור"
 
-#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1380
-#: class-ml-slider-lightbox.php:2346 class-ml-slider-lightbox.php:2361
+#: admin/views/optin-modal.php:19 admin/views/optin-modal.php:24
+msgid "Thanks for using MetaSlider Gallery"
+msgstr "תודה שהשתמשת ב- MetaSlider Gallery"
+
+#: admin/views/optin-modal.php:20
+msgid "You are subscribed"
+msgstr "אתה מנוי"
+
+#: admin/views/optin-modal.php:21
+msgid "We could not subscribe you"
+msgstr "לא הצלחנו לרשום אותך"
+
+#: admin/views/optin-modal.php:31
+msgid ""
+"Get occasional emails about important MetaSlider Gallery security and "
+"feature updates."
+msgstr "קבל מיילים מדי פעם על עדכוני אבטחה ותכונות חשובים של MetaSlider Gallery."
+
+#: admin/views/optin-modal.php:36
+msgid "You can unsubscribe at any time."
+msgstr "אתה יכול לבטל את המנוי בכל עת."
+
+#: admin/views/optin-modal.php:46
+#, php-format
+msgid "If this keeps happening, please %s."
+msgstr "אם זה ממשיך לקרות, אנא %s."
+
+#: admin/views/optin-modal.php:48
+msgid "contact support"
+msgstr "צור קשר עם התמיכה"
+
+#: admin/views/optin-modal.php:60
+#, php-format
+msgid "%s has been added to our mailing list."
+msgstr "%s נוסף לרשימת התפוצה שלנו."
+
+#: admin/views/optin-modal.php:69 class-ml-slider-lightbox.php:3754
+msgid "Email address"
+msgstr "כתובת אימייל"
+
+#: admin/views/optin-modal.php:85
+#, php-format
+msgid "See our %s."
+msgstr "ראה את ה-%s שלנו."
+
+#: admin/views/optin-modal.php:87
+msgid "privacy policy"
+msgstr "מדיניות הפרטיות"
+
+#: admin/views/optin-modal.php:95
+msgid "Connection details"
+msgstr "פרטי חיבור"
+
+#: admin/views/optin-modal.php:104
+msgid "No thanks"
+msgstr "לא תודה"
+
+#: admin/views/optin-modal.php:107
+msgid "Agree and continue"
+msgstr "מסכים וממשיך"
+
+#: admin/views/optin-modal.php:108
+msgid "Sending…"
+msgstr "שולח…"
+
+#: admin/views/optin-modal.php:109
+msgid "Try again"
+msgstr "נסה שוב"
+
+#: admin/views/optin-modal.php:112
+msgid "Got it"
+msgstr "הבנתי"
+
+#: class-ml-gallery-slideshow-convert.php:49 class-ml-gallery.php:1626
+#: class-ml-slider-lightbox.php:2341 class-ml-slider-lightbox.php:2356
 msgid "You do not have sufficient permissions to access this page."
 msgstr "אין לך הרשאות מספקות לגשת לדף זה."
 
-#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:2693
-#: class-ml-gallery.php:2877
+#: class-ml-gallery-slideshow-convert.php:56 class-ml-gallery.php:3108
+#: class-ml-gallery.php:3314
 msgid "Security check failed."
 msgstr "בדיקת אבטחה נכשלה."
 
@@ -111,31 +204,36 @@ msgstr "למצגת זו אין תמונות שמורות להמיר. שמור א
 msgid "Untitled Slideshow"
 msgstr "מצגת ללא שם"
 
-#: class-ml-gallery.php:112
+#: class-ml-gallery.php:114
 msgid "Some of these features are available in MetaSlider Gallery Pro"
 msgstr "חלק מהתכונות הללו זמינות ב- MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:126
+#: class-ml-gallery.php:136
+#, php-format
+msgid "%s requires MetaSlider Gallery Pro"
+msgstr "%s דורש את MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:153
 msgid "Thumbnail"
 msgstr "תמונה ממוזערת"
 
-#: class-ml-gallery.php:127 class-ml-gallery.php:2531
+#: class-ml-gallery.php:154 class-ml-gallery.php:2911
 msgid "Medium"
 msgstr "בינוני"
 
-#: class-ml-gallery.php:128
+#: class-ml-gallery.php:155
 msgid "Medium Large"
 msgstr "בינוני גדול"
 
-#: class-ml-gallery.php:129
+#: class-ml-gallery.php:156
 msgid "Large"
 msgstr "גדול"
 
-#: class-ml-gallery.php:155
+#: class-ml-gallery.php:182
 msgid "Original"
 msgstr "מקורי"
 
-#: class-ml-gallery.php:161
+#: class-ml-gallery.php:188
 msgid ""
 "Offer visitors a choice of image sizes when they download. Requires "
 "MetaSlider Gallery Pro."
@@ -143,378 +241,404 @@ msgstr ""
 "הצע למבקרים בחירה של גדלי תמונות כאשר הם מורידים. דרוש MetaSlider Gallery "
 "Pro."
 
-#: class-ml-gallery.php:162
+#: class-ml-gallery.php:189
 msgid "Download Sizes"
 msgstr "גדלי הורדה"
 
-#: class-ml-gallery.php:163
+#: class-ml-gallery.php:190
 msgid "Download sizes require MetaSlider Gallery Pro"
 msgstr "גדלי הורדה דורשים MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:298 class-ml-gallery.php:307 class-ml-gallery.php:817
+#: class-ml-gallery.php:360 class-ml-gallery.php:369 class-ml-gallery.php:1050
 msgid "Fade"
 msgstr "העלמות"
 
-#: class-ml-gallery.php:299
+#: class-ml-gallery.php:361
 msgid "Slide"
 msgstr "שקף"
 
-#: class-ml-gallery.php:300 class-ml-gallery.php:2249
+#: class-ml-gallery.php:362 class-ml-gallery.php:2629
 msgid "Zoom"
 msgstr "זום"
 
-#: class-ml-gallery.php:306 class-ml-gallery.php:809 class-ml-gallery.php:2529
-#: class-ml-gallery.php:2555 class-ml-gallery.php:2569
+#: class-ml-gallery.php:368 class-ml-gallery.php:1042 class-ml-gallery.php:2909
+#: class-ml-gallery.php:2935 class-ml-gallery.php:2949
 msgid "None"
 msgstr "אין"
 
-#: class-ml-gallery.php:308
+#: class-ml-gallery.php:370
 msgid "Slide Up"
 msgstr "החלק למעלה"
 
-#: class-ml-gallery.php:309
+#: class-ml-gallery.php:371
 msgid "Slide Down"
 msgstr "החלק למטה"
 
-#: class-ml-gallery.php:315
+#: class-ml-gallery.php:377
 msgid "Bottom"
 msgstr "תחתון"
 
-#: class-ml-gallery.php:316
+#: class-ml-gallery.php:378
 msgid "Middle"
 msgstr "אמצע"
 
-#: class-ml-gallery.php:317
+#: class-ml-gallery.php:379
 msgid "Top"
 msgstr "עליון"
 
-#: class-ml-gallery.php:323
+#: class-ml-gallery.php:385
 msgid "Left"
 msgstr "שמאל"
 
-#: class-ml-gallery.php:324 class-ml-gallery.php:2069
+#: class-ml-gallery.php:386 class-ml-gallery.php:2428
 msgid "Center"
 msgstr "מרכז"
 
-#: class-ml-gallery.php:325
+#: class-ml-gallery.php:387
 msgid "Right"
 msgstr "ימין"
 
-#: class-ml-gallery.php:339
+#: class-ml-gallery.php:401
 msgid "Hidden"
 msgstr "מוסתר"
 
-#: class-ml-gallery.php:340
+#: class-ml-gallery.php:402
 msgid "Gallery + Window"
 msgstr "גלריה + חלון"
 
-#: class-ml-gallery.php:341
+#: class-ml-gallery.php:403
 msgid "Window Only"
 msgstr "חלון בלבד"
 
-#: class-ml-gallery.php:342
+#: class-ml-gallery.php:404
 msgid "Gallery Only"
 msgstr "גלריה בלבד"
 
-#: class-ml-gallery.php:361 class-ml-gallery.php:3329
+#: class-ml-gallery.php:423 class-ml-gallery.php:3867
 msgid "Manual entry"
 msgstr "הזנה ידנית"
 
-#: class-ml-gallery.php:362 class-ml-gallery.php:3330
+#: class-ml-gallery.php:424 class-ml-gallery.php:3868
 msgid "Media caption"
 msgstr "כיתוב מדיה"
 
-#: class-ml-gallery.php:363 class-ml-gallery.php:3331
+#: class-ml-gallery.php:425 class-ml-gallery.php:3869
 msgid "Media description"
 msgstr "תיאור מדיה"
 
-#: class-ml-gallery.php:639
+#: class-ml-gallery.php:557
+msgid "Choose poster image"
+msgstr "בחר תמונת פוסטר"
+
+#: class-ml-gallery.php:558
+msgid "Remove poster image"
+msgstr "הסר תמונת פוסטר"
+
+#: class-ml-gallery.php:563
+msgid "Poster"
+msgstr "פוסטר"
+
+#: class-ml-gallery.php:872
 msgid "Drag-and-drop"
 msgstr "גרור ושחרר"
 
-#: class-ml-gallery.php:640
+#: class-ml-gallery.php:873
 msgid "Newest First"
 msgstr "החדש ביותר קודם"
 
-#: class-ml-gallery.php:641
+#: class-ml-gallery.php:874
 msgid "Oldest First"
 msgstr "הישן ביותר קודם"
 
-#: class-ml-gallery.php:642
+#: class-ml-gallery.php:875
 msgid "A to Z (by filename)"
 msgstr "א' עד ת' (לפי שם קובץ)"
 
-#: class-ml-gallery.php:643
+#: class-ml-gallery.php:876
 msgid "Z to A (by filename)"
 msgstr "ת' עד א' (לפי שם קובץ)"
 
-#: class-ml-gallery.php:644
+#: class-ml-gallery.php:877
 msgid "Random"
 msgstr "אקראי"
 
-#: class-ml-gallery.php:810
+#: class-ml-gallery.php:1043
 msgid "Noir (B&W)"
 msgstr "נואר (שחור ולבן)"
 
-#: class-ml-gallery.php:811
+#: class-ml-gallery.php:1044
 msgid "Silver (B&W)"
 msgstr "כסף (שחור ולבן)"
 
-#: class-ml-gallery.php:812
+#: class-ml-gallery.php:1045
 msgid "Vintage"
 msgstr "וינטאג'"
 
-#: class-ml-gallery.php:813
+#: class-ml-gallery.php:1046
 msgid "Golden Hour"
 msgstr "שעת הזהב"
 
-#: class-ml-gallery.php:814
+#: class-ml-gallery.php:1047
 msgid "Toaster"
 msgstr "טוסטר"
 
-#: class-ml-gallery.php:815
+#: class-ml-gallery.php:1048
 msgid "Warm"
 msgstr "חם"
 
-#: class-ml-gallery.php:816
+#: class-ml-gallery.php:1049
 msgid "Cool"
 msgstr "קר"
 
-#: class-ml-gallery.php:818
+#: class-ml-gallery.php:1051
 msgid "Matte"
 msgstr "מט"
 
-#: class-ml-gallery.php:819
+#: class-ml-gallery.php:1052
 msgid "Pastel"
 msgstr "פסטל"
 
-#: class-ml-gallery.php:820
+#: class-ml-gallery.php:1053
 msgid "Vivid"
 msgstr "חי"
 
-#: class-ml-gallery.php:821
+#: class-ml-gallery.php:1054
 msgid "Crisp"
 msgstr "בהיר"
 
-#: class-ml-gallery.php:822
+#: class-ml-gallery.php:1055
 msgid "Dramatic"
 msgstr "דרמטי"
 
-#: class-ml-gallery.php:823
+#: class-ml-gallery.php:1056
 msgid "Negative"
 msgstr "שלילי"
 
-#: class-ml-gallery.php:929 class-ml-gallery.php:938 class-ml-gallery.php:1451
+#: class-ml-gallery.php:1162 class-ml-gallery.php:1171
+#: class-ml-gallery.php:1699
 msgid "Galleries"
 msgstr "גלריות"
 
-#: class-ml-gallery.php:930 class-ml-gallery.php:1079 class-ml-gallery.php:1899
-#: class-ml-slider-lightbox.php:2307
+#: class-ml-gallery.php:1163 class-ml-gallery.php:1312
+#: class-ml-gallery.php:2247 class-ml-slider-lightbox.php:2302
 msgid "Gallery"
 msgstr "גלריה"
 
-#: class-ml-gallery.php:931 class-ml-gallery.php:932 class-ml-gallery.php:1416
-#: class-ml-gallery.php:3933
+#: class-ml-gallery.php:1164 class-ml-gallery.php:1165
+#: class-ml-gallery.php:1664 class-ml-gallery.php:4680
 msgid "Add New Gallery"
 msgstr "הוסף גלריה חדשה"
 
-#: class-ml-gallery.php:933 class-ml-gallery.php:1328 class-ml-gallery.php:1329
-#: class-ml-gallery.php:1417
+#: class-ml-gallery.php:1166 class-ml-gallery.php:1574
+#: class-ml-gallery.php:1575 class-ml-gallery.php:1665
 msgid "Edit Gallery"
 msgstr "ערוך גלריה"
 
-#: class-ml-gallery.php:934 class-ml-gallery.php:1391 class-ml-gallery.php:2926
+#: class-ml-gallery.php:1167 class-ml-gallery.php:1637
+#: class-ml-gallery.php:3363
 msgid "New Gallery"
 msgstr "גלריה חדשה"
 
-#: class-ml-gallery.php:935
+#: class-ml-gallery.php:1168
 msgid "Search Galleries"
 msgstr "חפש גלריות"
 
-#: class-ml-gallery.php:936
+#: class-ml-gallery.php:1169
 msgid "No galleries found."
 msgstr "לא נמצאו גלריות."
 
-#: class-ml-gallery.php:937
+#: class-ml-gallery.php:1170
 msgid "No galleries found in trash."
 msgstr "לא נמצאו גלריות במיחזור."
 
-#: class-ml-gallery.php:1086
+#: class-ml-gallery.php:1319
 msgid "All Galleries"
 msgstr "כל הגלריות"
 
-#: class-ml-gallery.php:1093
+#: class-ml-gallery.php:1326
 msgid "Create Gallery"
 msgstr "צור גלריה"
 
-#: class-ml-gallery.php:1103
+#: class-ml-gallery.php:1336
 #, php-format
 msgid "Edit &#8220;%s&#8221;"
 msgstr "ערוך &#8220;%s&#8221;"
 
-#: class-ml-gallery.php:1134
+#: class-ml-gallery.php:1367
 msgid "Invalid gallery ID."
 msgstr "זיהוי גלריה לא תקין."
 
-#: class-ml-gallery.php:1211 class-ml-slider-lightbox.php:1681
+#: class-ml-gallery.php:1453 class-ml-slider-lightbox.php:1670
 msgid "View image"
 msgstr "צפה בתמונה"
 
-#: class-ml-gallery.php:1388 class-ml-gallery.php:2882
+#: class-ml-gallery.php:1634 class-ml-gallery.php:3319
 msgid "Gallery not found."
 msgstr "הגלריה לא נמצאה."
 
-#: class-ml-gallery.php:1419
+#: class-ml-gallery.php:1667
 msgid "Save Gallery"
 msgstr "שמור גלריה"
 
-#: class-ml-gallery.php:1420
+#: class-ml-gallery.php:1668
 msgid "Update Gallery"
 msgstr "עדכן גלריה"
 
-#: class-ml-gallery.php:1435 class-ml-gallery.php:1447
+#: class-ml-gallery.php:1683 class-ml-gallery.php:1695
 msgid "Back to Galleries"
 msgstr "חזור לגלריות"
 
-#: class-ml-gallery.php:1458
+#: class-ml-gallery.php:1706
 msgid "Create New Gallery"
 msgstr "צור גלריה חדשה"
 
-#: class-ml-gallery.php:1462
+#: class-ml-gallery.php:1710
 msgid "New"
 msgstr "חדש"
 
-#: class-ml-gallery.php:1473
+#: class-ml-gallery.php:1721
 msgid "Duplicate"
 msgstr "שכפול"
 
-#: class-ml-gallery.php:1494
+#: class-ml-gallery.php:1742
 msgid "Gallery saved."
 msgstr "הגלריה נשמרה."
 
-#: class-ml-gallery.php:1510
+#: class-ml-gallery.php:1758
 #, php-format
 msgid ""
 "Gallery created from the slideshow \"%s\". Review the settings below, then "
 "save."
 msgstr "גלריה שנוצרה מהמצגת \"%s\". עיין בהגדרות למטה, ואז שמור."
 
-#: class-ml-gallery.php:1514
+#: class-ml-gallery.php:1762
 msgid "Gallery created from your slideshow. Review the settings below, then save."
 msgstr "גלריה שנוצרה מהמצגת שלך. עיין בהגדרות למטה, ואז שמור."
 
-#: class-ml-gallery.php:1528
+#: class-ml-gallery.php:1776
 msgid "Enter gallery title"
 msgstr "הזן את כותרת הגלריה"
 
-#: class-ml-gallery.php:1531 class-ml-gallery.php:2075
-#: class-ml-gallery.php:4384
+#: class-ml-gallery.php:1779 class-ml-gallery.php:2434
+#: class-ml-gallery.php:5131
 msgid "Images"
 msgstr "תמונות"
 
-#: class-ml-gallery.php:1541
+#: class-ml-gallery.php:1789
 msgid "Preview or arrange images"
 msgstr "תצוגה מקדימה או סדר תמונות"
 
-#: class-ml-gallery.php:1544 class-ml-gallery.php:4297
+#: class-ml-gallery.php:1792 class-ml-gallery.php:5044
 msgid "Preview"
 msgstr "תצוגה מקדימה"
 
-#: class-ml-gallery.php:1548
+#: class-ml-gallery.php:1796
 msgid "Arrange"
 msgstr "סדר"
 
-#: class-ml-gallery.php:1555
+#: class-ml-gallery.php:1803
 msgid "Desktop width"
 msgstr "רוחב דסקטופ"
 
-#: class-ml-gallery.php:1559
+#: class-ml-gallery.php:1807
 msgid "Laptop width"
 msgstr "רוחב מחשב נייד"
 
-#: class-ml-gallery.php:1563
+#: class-ml-gallery.php:1811
 msgid "Tablet width"
 msgstr "רוחב טאבלט"
 
-#: class-ml-gallery.php:1567
+#: class-ml-gallery.php:1815
 msgid "Mobile width"
 msgstr "רוחב מובייל"
 
-#: class-ml-gallery.php:1571
+#: class-ml-gallery.php:1819
 msgid "Preview at desktop, laptop, tablet or mobile width"
 msgstr "תצוגה מקדימה במחשב שולחני, נייד, טאבלט או רוחב נייד"
 
-#: class-ml-gallery.php:1584 class-ml-gallery.php:3324
+#: class-ml-gallery.php:1837 class-ml-gallery.php:3862
 msgid "Order is randomised for each visitor."
 msgstr "הסדר הוא אקראי לכל מבקר."
 
-#: class-ml-gallery.php:1588 class-ml-gallery.php:3323
+#: class-ml-gallery.php:1841 class-ml-gallery.php:3861
 #, php-format
 msgid "Sorted %s — switch to Drag-and-drop to reorder."
 msgstr "ממויין %s — העבר למצב גרירה ושחרור כדי לשנות את הסדר."
 
-#: class-ml-gallery.php:1596
-msgid "No images added yet"
-msgstr "עדיין לא נוספו תמונות"
+#: class-ml-gallery.php:1849
+msgid "No images or videos added yet"
+msgstr "עדיין לא נוספו תמונות או סרטונים"
 
-#: class-ml-gallery.php:1624 class-ml-gallery.php:3319
+#: class-ml-gallery.php:1891 class-ml-gallery.php:3854
 msgid "Remove image"
 msgstr "הסר תמונה"
 
-#: class-ml-gallery.php:1629 class-ml-gallery.php:3320
+#: class-ml-gallery.php:1896 class-ml-gallery.php:3858
 msgid "Edit caption"
 msgstr "ערוך כיתוב"
 
-#: class-ml-gallery.php:1629 class-ml-gallery.php:1631
-#: class-ml-gallery.php:3321
+#: class-ml-gallery.php:1896 class-ml-gallery.php:1898
+#: class-ml-gallery.php:3859
 msgid "Add caption"
 msgstr "הוסף כיתוב"
 
-#: class-ml-gallery.php:1641
+#: class-ml-gallery.php:1930
 msgid "Gallery preview"
 msgstr "תצוגה מקדימה של גלריה"
 
-#: class-ml-gallery.php:1647
-msgid "Add Images"
-msgstr "הוסף תמונות"
+#: class-ml-gallery.php:1936
+msgid "Add Images or Videos"
+msgstr "הוסף תמונות או סרטונים"
 
-#: class-ml-gallery.php:1651
-msgid "More ways to add images"
-msgstr "דרכים נוספות להוסיף תמונות"
+#: class-ml-gallery.php:1940
+msgid "More ways to add images or videos"
+msgstr "דרכים נוספות להוסיף תמונות או סרטונים"
 
-#: class-ml-gallery.php:1657
+#: class-ml-gallery.php:1946
 msgid "Upload"
 msgstr "העלאה"
 
-#: class-ml-gallery.php:1662
+#: class-ml-gallery.php:1951
 msgid "Media Library"
 msgstr "ספריית מדיה"
 
-#: class-ml-gallery.php:1667
+#: class-ml-gallery.php:1956
 msgid "Server Folder"
 msgstr "תיקיית שרת"
 
-#: class-ml-gallery.php:1672, fuzzy
+#: class-ml-gallery.php:1961, fuzzy
 msgid "ZIP"
 msgstr "ZIP"
 
-#: class-ml-gallery.php:1679
+#: class-ml-gallery.php:1966
+msgid "Livid.com Video"
+msgstr "וידאו מ-Livid.com"
+
+#: class-ml-gallery.php:1970
+msgid "YouTube Video"
+msgstr "וידאו מ-YouTube"
+
+#: class-ml-gallery.php:1971
+msgid "Vimeo Video"
+msgstr "וידאו מ-Vimeo"
+
+#: class-ml-gallery.php:1986
 msgid "Where to add new images"
 msgstr "איפה להוסיף תמונות חדשות"
 
-#: class-ml-gallery.php:1680
+#: class-ml-gallery.php:1987
 msgid "Add new images at:"
 msgstr "הוסף תמונות חדשות ב:"
 
-#: class-ml-gallery.php:1684
+#: class-ml-gallery.php:1991
 msgid "Start"
 msgstr "התחל"
 
-#: class-ml-gallery.php:1689
+#: class-ml-gallery.php:1996
 msgid "End"
 msgstr "סיים"
 
-#: class-ml-gallery.php:1696
+#: class-ml-gallery.php:2003
 msgid ""
 "The order images appear in on your site. Random reshuffles for each "
 "visitor, which page caching can defeat."
@@ -522,115 +646,127 @@ msgstr ""
 "הסדר שבו התמונות מופיעות באתר שלך. ערבוב אקראי לכל מבקר, שזיכרון מטמון של "
 "עמודים יכול להפר."
 
-#: class-ml-gallery.php:1696
+#: class-ml-gallery.php:2003
 msgid "Image Order:"
 msgstr "סדר התמונות:"
 
-#: class-ml-gallery.php:1710
+#: class-ml-gallery.php:2017
 msgid "Layout"
 msgstr "פריסה"
 
-#: class-ml-gallery.php:1713
+#: class-ml-gallery.php:2020
 msgid "Gallery layout"
 msgstr "פריסת גלריה"
 
-#: class-ml-gallery.php:1715
+#: class-ml-gallery.php:2022
 msgid "Evenly sized images arranged in a fixed grid"
 msgstr "תמונות בגודל אחיד מסודרות ברשת קבועה"
 
-#: class-ml-gallery.php:1725 class-ml-gallery.php:4300
+#: class-ml-gallery.php:2032 class-ml-gallery.php:5047
 msgid "Grid"
 msgstr "רשת"
 
-#: class-ml-gallery.php:1729
+#: class-ml-gallery.php:2036
 msgid "Images at their natural heights, fitting together like a brick wall"
 msgstr "תמונות בגובהן הטבעי, מתאימות אחת לשנייה כמו קיר לבנים"
 
-#: class-ml-gallery.php:1739 class-ml-gallery.php:4299
+#: class-ml-gallery.php:2046 class-ml-gallery.php:5046
 msgid "Masonry"
 msgstr "מסדניית"
 
-#: class-ml-gallery.php:1743
+#: class-ml-gallery.php:2050
 msgid "Images scaled to fill each row edge-to-edge with a consistent height"
 msgstr "תמונות מוקטנות כדי למלא כל שורה מהקצה לקצה עם גובה אחיד"
 
-#: class-ml-gallery.php:1755 class-ml-gallery.php:4301
+#: class-ml-gallery.php:2062 class-ml-gallery.php:5048
 msgid "Justified"
 msgstr "מוצדק"
 
-#: class-ml-gallery.php:1759
+#: class-ml-gallery.php:2066
 msgid "Images displayed one at a time in a scrollable slideshow"
 msgstr "תמונות מוצגות אחת אחת במצגת שניתן לגלול"
 
-#: class-ml-gallery.php:1768
+#: class-ml-gallery.php:2075
 msgid "Carousel"
 msgstr "קרוסלה"
 
-#: class-ml-gallery.php:1772
+#: class-ml-gallery.php:2079
 msgid "Large main image with a scrollable thumbnail strip below"
 msgstr "תמונה גדולה ראשית עם רצועת תמונות ממוזערות שניתן לגלול מתחת"
 
-#: class-ml-gallery.php:1782
+#: class-ml-gallery.php:2089
 msgid "Showcase"
 msgstr "תצוגה"
 
-#: class-ml-gallery.php:1797
+#: class-ml-gallery.php:2106
+msgid "Two images with a divider visitors drag to compare"
+msgstr "שתי תמונות עם מחיצה שהמבקרים גוררים להשוואה"
+
+#: class-ml-gallery.php:2114
+msgid "Before & After"
+msgstr "לפני & אחרי"
+
+#: class-ml-gallery.php:2116
+msgid "The Before & After layout requires MetaSlider Gallery Pro"
+msgstr "עיצוב לפני & אחרי דורש את MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2145
 msgid "Desktop"
 msgstr "מחשב שולחני"
 
-#: class-ml-gallery.php:1798
+#: class-ml-gallery.php:2146
 msgid "Number of columns on desktop screens (1440px and wider)"
 msgstr "מספר העמודות במסכי מחשב שולחני (1440px ורוחב יותר)"
 
-#: class-ml-gallery.php:1804
+#: class-ml-gallery.php:2152
 msgid "Laptop"
 msgstr "נייד"
 
-#: class-ml-gallery.php:1805
+#: class-ml-gallery.php:2153
 msgid "Number of columns on laptops (1024px to 1439px)"
 msgstr "מספר העמודות בניידים (1024px עד 1439px)"
 
-#: class-ml-gallery.php:1811
+#: class-ml-gallery.php:2159
 msgid "Tablet"
 msgstr "טאבלט"
 
-#: class-ml-gallery.php:1812
+#: class-ml-gallery.php:2160
 msgid "Number of columns on tablets (768px to 1023px)"
 msgstr "מספר העמודות בטאבלטים (768px עד 1023px)"
 
-#: class-ml-gallery.php:1818
+#: class-ml-gallery.php:2166
 msgid "Mobile"
 msgstr "נייד"
 
-#: class-ml-gallery.php:1819
+#: class-ml-gallery.php:2167
 msgid "Number of columns on phones (up to 767px)"
 msgstr "מספר העמודות בטלפונים (עד 767px)"
 
-#: class-ml-gallery.php:1826
+#: class-ml-gallery.php:2174
 msgid "Number of columns to show at each screen size"
 msgstr "מספר העמודות להציג בכל גודל מסך"
 
-#: class-ml-gallery.php:1826
+#: class-ml-gallery.php:2174
 msgid "Columns"
 msgstr "עמודות"
 
-#: class-ml-gallery.php:1845
+#: class-ml-gallery.php:2193
 msgid "Height of the gallery images, in pixels"
 msgstr "גובה התמונות בגלריה, בפיקסלים"
 
-#: class-ml-gallery.php:1846
+#: class-ml-gallery.php:2194
 msgid "Height"
 msgstr "גובה"
 
-#: class-ml-gallery.php:1858
+#: class-ml-gallery.php:2206
 msgid "Space between images"
 msgstr "מרווח בין תמונות"
 
-#: class-ml-gallery.php:1859
+#: class-ml-gallery.php:2207
 msgid "Gap"
 msgstr "מרווח"
 
-#: class-ml-gallery.php:1875
+#: class-ml-gallery.php:2223
 msgid ""
 "Show only the first batch of images, with a button that reveals more. "
 "Applies to Grid, Masonry, and Justified layouts."
@@ -638,67 +774,79 @@ msgstr ""
 "הצג רק את הקבוצה הראשונה של תמונות, עם כפתור שמגלה יותר. חל על פריסות רשת, "
 "מסה ופריסות מוצדקות."
 
-#: class-ml-gallery.php:1875 class-ml-gallery.php:3782
+#: class-ml-gallery.php:2223 class-ml-gallery.php:4431
 msgid "Load More"
 msgstr "טען עוד"
 
-#: class-ml-gallery.php:1888
+#: class-ml-gallery.php:2236
 msgid "How many images to show at first, and how many each press of the button adds"
 msgstr "כמה תמונות להציג בהתחלה, וכמה כל לחיצה על הכפתור מוסיפה"
 
-#: class-ml-gallery.php:1888
+#: class-ml-gallery.php:2236
 msgid "Images per batch"
 msgstr "תמונות לכל קבוצה"
 
-#: class-ml-gallery.php:1903
+#: class-ml-gallery.php:2251
 msgid "Zoom controls require MetaSlider Gallery Pro"
 msgstr "בקרות זום דורשות MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1904
+#: class-ml-gallery.php:2252
 msgid "Fullscreen mode requires MetaSlider Gallery Pro"
 msgstr "מצב מסך מלא דורש MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1905
+#: class-ml-gallery.php:2253
 msgid "Image rotation requires MetaSlider Gallery Pro"
 msgstr "סיבוב תמונה דורש MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1906
+#: class-ml-gallery.php:2254
 msgid "Autoplay requires MetaSlider Gallery Pro"
 msgstr "נגן אוטומטי דורש MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1907
+#: class-ml-gallery.php:2255
 msgid "Social sharing requires MetaSlider Gallery Pro"
 msgstr "שיתוף חברתי דורש MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1908
+#: class-ml-gallery.php:2256
 msgid "Pager requires MetaSlider Gallery Pro"
 msgstr "Pager דורש MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1909
+#: class-ml-gallery.php:2257
 msgid "Unique Image URLs require MetaSlider Gallery Pro"
 msgstr "כתובות URL ייחודיות לתמונות דורשות MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1910
+#: class-ml-gallery.php:2258
 msgid "Image protection requires MetaSlider Gallery Pro"
 msgstr "הגנה על תמונות דורשת את MetaSlider Gallery Pro"
 
-#: class-ml-gallery.php:1914
+#: class-ml-gallery.php:2259
+msgid "Watermarking requires MetaSlider Gallery Pro"
+msgstr "סימון מים דורש את MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2260
+msgid "Photo metadata requires MetaSlider Gallery Pro"
+msgstr "מטאדאטה של תמונה דורש את MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2261
+msgid "Likes require MetaSlider Gallery Pro"
+msgstr "לייקים דורשים את MetaSlider Gallery Pro"
+
+#: class-ml-gallery.php:2265
 msgid "Show left and right navigation arrows"
 msgstr "הצג חיצי ניווט ימינה ושמאלה"
 
-#: class-ml-gallery.php:1915
+#: class-ml-gallery.php:2266
 msgid "Display the current image number and total count"
 msgstr "הצג את מספר התמונה הנוכחית ואת הסך הכולל"
 
-#: class-ml-gallery.php:1916
+#: class-ml-gallery.php:2267
 msgid "Show a strip of thumbnail images at the bottom of the gallery"
 msgstr "הצג רצועת תמונות ממוזערות בתחתית הגלריה"
 
-#: class-ml-gallery.php:1917
+#: class-ml-gallery.php:2268
 msgid "Show dot navigation area below each image."
 msgstr "הצג אזור ניווט עם נקודות מתחת לכל תמונה."
 
-#: class-ml-gallery.php:1918
+#: class-ml-gallery.php:2269
 msgid ""
 "Pinch or scroll to zoom in and out of gallery images. The Zoom control will "
 "appear only if the original size is larger than the gallery size."
@@ -706,11 +854,11 @@ msgstr ""
 "צמצם או גלול כדי לזום פנימה והחוצה מתמונות הגלריה. בקרת הזום תופיע רק אם "
 "גודל המקור גדול מגודל הגלריה."
 
-#: class-ml-gallery.php:1919
+#: class-ml-gallery.php:2270
 msgid "Expand the gallery window to fill the whole screen."
 msgstr "הרחב את חלון הגלריה כדי למלא את כל המסך."
 
-#: class-ml-gallery.php:1920
+#: class-ml-gallery.php:2271
 msgid ""
 "Users can rotate images left or right, plus flip them vertically or "
 "horizontally."
@@ -718,21 +866,22 @@ msgstr ""
 "משתמשים יכולים לסובב תמונות שמאלה או ימינה, בנוסף להפוך אותן אנכית או "
 "אופקית."
 
-#: class-ml-gallery.php:1921
+#: class-ml-gallery.php:2272
 msgid "Automatically advance through the images without the user clicking."
 msgstr "קדימה אוטומטית דרך התמונות ללא לחיצה מצד המשתמש."
 
-#: class-ml-gallery.php:1922
+#: class-ml-gallery.php:2273
 msgid "Enable users to share images on Facebook, X, or Pinterest."
 msgstr "אפשר למשתמשים לשתף תמונות בפייסבוק, X או פיןטרסט."
 
-#: class-ml-gallery.php:1923
+#: class-ml-gallery.php:2274
 msgid ""
 "Create a unique URL for each image to enable direct linking inside a "
 "gallery."
 msgstr "צור URL ייחודי לכל תמונה כדי לאפשר קישור ישיר בתוך גלריה."
 
-#: class-ml-gallery.php:1924 class-ml-slider-lightbox.php:4360
+#: class-ml-gallery.php:2275 class-ml-slider-lightbox.php:4504
+#: class-ml-slider-lightbox.php:4701
 msgid ""
 "Discourage casual saving by blocking right-click, drag, and long-press on "
 "gallery images."
@@ -740,45 +889,69 @@ msgstr ""
 "מנע שמירה לא רצינית על ידי חסימת לחצן ימין, גרירה, ולחיצה ממושכת על תמונות "
 "הגלריה."
 
-#: class-ml-gallery.php:1925
+#: class-ml-gallery.php:2276
+msgid ""
+"Overlay your logo on gallery window images. This discourages casual "
+"copying; it does not prevent it."
+msgstr ""
+"שכבת את הלוגו שלך על תמונות חלון הגלריה. זה מפחית העתקות מזדמנות; זה לא "
+"מונע את זה."
+
+#: class-ml-gallery.php:2277
+msgid ""
+"Show the camera settings a photo was taken with — camera, lens, aperture, "
+"shutter speed and ISO — beneath its caption."
+msgstr ""
+"הראה את הגדרות המצלמה שבהן צולמה התמונה — מצלמה, עדשה, צמצם, מהירות סגר "
+"ו-ISO — מתחת לכיתוב שלה."
+
+#: class-ml-gallery.php:2278
+msgid ""
+"Let visitors heart images. The count is shared across every gallery using "
+"the image."
+msgstr "תן למבקרים לאהוב תמונות. הספירה משותפת בכל גלריה המשתמשת בתמונה."
+
+#: class-ml-gallery.php:2279
 msgid "Navigate images using left and right arrow keys"
 msgstr "ניווט בין תמונות באמצעות מקשי חץ שמאלה וימינה"
 
-#: class-ml-gallery.php:1926
+#: class-ml-gallery.php:2280
 msgid "Scroll through images using the mouse wheel"
 msgstr "גלול בין תמונות באמצעות גלגל העכבר"
 
-#: class-ml-gallery.php:1927
+#: class-ml-gallery.php:2281
 msgid "Swipe up or down to close the gallery on touch devices"
 msgstr "גרור למעלה או למטה כדי לסגור את הגלריה במכשירים ניידים"
 
-#: class-ml-gallery.php:1928
+#: class-ml-gallery.php:2282
 msgid "Cycle back to the first image after reaching the last"
 msgstr "חזור לתמונה הראשונה לאחר הגעה לאחרונה"
 
-#: class-ml-gallery.php:1929
+#: class-ml-gallery.php:2283
 msgid "Show a download button for each image"
 msgstr "הצג כפתור הורדה לכל תמונה"
 
-#: class-ml-gallery.php:1930
+#: class-ml-gallery.php:2284
 msgid "Show a button that expands the carousel to fill the browser window."
 msgstr "הצג כפתור המרחיב את הקרוסלה למילוי חלון הדפדפן."
 
-#: class-ml-gallery.php:1931
+#: class-ml-gallery.php:2285
 msgid ""
-"Open images in a window overlay when clicked. Applies to Grid, Masonry, and "
-"Justified layouts."
-msgstr "פתח תמונות בחלון עליון כאשר נלחץ. חל על פריסות רשת, בנייה ומיושר."
+"Open images in a window overlay when clicked. Turn it off on Carousel or "
+"Showcase to keep the gallery on the page without the overlay."
+msgstr ""
+"פתח תמונות בחלון חפיפה כשנלחץ. כבה זאת על Carousel או Showcase כדי לשמור את "
+"הגלריה בדף ללא חפיפה."
 
-#: class-ml-gallery.php:1932
+#: class-ml-gallery.php:2286
 msgid "Show a button over the gallery that opens the gallery window when clicked."
 msgstr "הצג כפתור מעל הגלריה שמפתח את חלון הגלריה כאשר לוחצים עליו."
 
-#: class-ml-gallery.php:1933
+#: class-ml-gallery.php:2287
 msgid "Show an icon on the button instead of text."
 msgstr "הצג אייקון על הכפתור במקום טקסט."
 
-#: class-ml-gallery.php:1934
+#: class-ml-gallery.php:2288
 msgid ""
 "Hide the caption until the image is hovered. Captions always show on "
 "devices without hover support."
@@ -786,51 +959,71 @@ msgstr ""
 "הסתיר את הכיתוב עד שהתמונה תהיה מרחפת. כיתובים תמיד מופיעים במכשירים ללא "
 "תמיכה במצב ריחוף."
 
-#: class-ml-gallery.php:1979
+#: class-ml-gallery.php:2289
+msgid "Start playing as soon as the gallery opens on a video."
+msgstr "התחל לנגן ברגע שהגלריה נפתחת על סרטון."
+
+#: class-ml-gallery.php:2290
+msgid "Start playing each video as the visitor reaches it, not just the first one."
+msgstr "התחל לנגן כל סרטון כשמגיעים אליו, לא רק הראשון."
+
+#: class-ml-gallery.php:2291
+msgid "Move to the next item and keep playing when a video finishes."
+msgstr "עבור לפריט הבא והמשך לנגן כשסרטון מסתיים."
+
+#: class-ml-gallery.php:2292
+msgid "Restart each video automatically when it reaches the end."
+msgstr "התחל כל סרטון מחדש באופן אוטומטי כשמגיע לסוף."
+
+#: class-ml-gallery.php:2293
+msgid "Play videos without sound."
+msgstr "נגן סרטונים ללא קול."
+
+#: class-ml-gallery.php:2338
 msgid "Full (original)"
 msgstr "מלא (מקורי)"
 
-#: class-ml-gallery.php:1980
+#: class-ml-gallery.php:2339
 msgid "Custom…"
 msgstr "מותאם אישית…"
 
-#: class-ml-gallery.php:1995
+#: class-ml-gallery.php:2354
 msgid "Width and height in pixels, between 50 and 4000"
 msgstr "רוחב וגובה בפיקסלים, בין 50 ל-4000"
 
-#: class-ml-gallery.php:1995
+#: class-ml-gallery.php:2354
 msgid "Custom Size"
 msgstr "גודל מותאם אישית"
 
-#: class-ml-gallery.php:2001
+#: class-ml-gallery.php:2360
 msgid "W"
 msgstr "ר"
 
-#: class-ml-gallery.php:2002
+#: class-ml-gallery.php:2361
 msgid "Custom width"
 msgstr "רוחב מותאם אישית"
 
-#: class-ml-gallery.php:2008
+#: class-ml-gallery.php:2367
 msgid "H"
 msgstr "ג"
 
-#: class-ml-gallery.php:2009
+#: class-ml-gallery.php:2368
 msgid "Custom height"
 msgstr "גובה מותאם אישית"
 
-#: class-ml-gallery.php:2013
+#: class-ml-gallery.php:2372
 msgid "Crop to fill the exact size instead of scaling to fit within it"
 msgstr "גזירה כדי למלא את הגודל המדויק במקום להקטין כדי להתאים אליו"
 
-#: class-ml-gallery.php:2013
+#: class-ml-gallery.php:2372
 msgid "Crop to exact size"
 msgstr "גזירה לגודל מדויק"
 
-#: class-ml-gallery.php:2028
+#: class-ml-gallery.php:2387
 msgid "Show in Gallery Window"
 msgstr "הצג בחלון גלריה"
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2400
 msgid ""
 "Choose how visitors open the gallery window: click the image, click an "
 "icon, or click a button."
@@ -838,56 +1031,56 @@ msgstr ""
 "בחר כיצד המבקרים פותחים את חלון הגלריה: לחץ על התמונה, לחץ על אייקון, או "
 "לחץ על כפתור."
 
-#: class-ml-gallery.php:2041
+#: class-ml-gallery.php:2400
 msgid "Open with"
 msgstr "פתח עם"
 
-#: class-ml-gallery.php:2053
+#: class-ml-gallery.php:2412
 msgid "Text shown on the button that opens the gallery window"
 msgstr "טקסט המוצג על הכפתור שפותח את חלון הגלריה"
 
-#: class-ml-gallery.php:2053 class-ml-slider-lightbox.php:2773
+#: class-ml-gallery.php:2412 class-ml-slider-lightbox.php:2786
 msgid "Button Text"
 msgstr "טקסט כפתור"
 
-#: class-ml-gallery.php:2058 class-ml-slider-lightbox.php:1676
-#: class-ml-slider-lightbox.php:3389 class-ml-slider-lightbox.php:6549
-#: class-ml-slider-lightbox.php:6572
+#: class-ml-gallery.php:2417 class-ml-gallery.php:4412
+#: class-ml-slider-lightbox.php:1665 class-ml-slider-lightbox.php:3417
+#: class-ml-slider-lightbox.php:6749 class-ml-slider-lightbox.php:6772
 msgid "Open in Gallery"
 msgstr "פתח בגלריה"
 
-#: class-ml-gallery.php:2063
+#: class-ml-gallery.php:2422
 msgid "Where the button or icon sits over the gallery"
 msgstr "איפה נמצא הכפתור או האייקון מעל הגלריה"
 
-#: class-ml-gallery.php:2063 class-ml-slider-lightbox.php:2781
+#: class-ml-gallery.php:2422 class-ml-slider-lightbox.php:2794
 msgid "Button Position"
 msgstr "מיקום כפתור"
 
-#: class-ml-gallery.php:2065
+#: class-ml-gallery.php:2424
 msgid "Top Right"
 msgstr "למעלה מימין"
 
-#: class-ml-gallery.php:2066 class-ml-slider-lightbox.php:3406
-#: class-ml-slider-lightbox.php:3432
+#: class-ml-gallery.php:2425 class-ml-slider-lightbox.php:3434
+#: class-ml-slider-lightbox.php:3460
 msgid "Top Left"
 msgstr "שמאל למעלה"
 
-#: class-ml-gallery.php:2067 class-ml-slider-lightbox.php:3407
-#: class-ml-slider-lightbox.php:3433
+#: class-ml-gallery.php:2426 class-ml-slider-lightbox.php:3435
+#: class-ml-slider-lightbox.php:3461
 msgid "Bottom Right"
 msgstr "ימין למטה"
 
-#: class-ml-gallery.php:2068 class-ml-slider-lightbox.php:3408
-#: class-ml-slider-lightbox.php:3434
+#: class-ml-gallery.php:2427 class-ml-slider-lightbox.php:3436
+#: class-ml-slider-lightbox.php:3462
 msgid "Bottom Left"
 msgstr "שמאל למטה"
 
-#: class-ml-gallery.php:2082
+#: class-ml-gallery.php:2441
 msgid "Gallery Image Size"
 msgstr "גודל תמונת גלריה"
 
-#: class-ml-gallery.php:2083
+#: class-ml-gallery.php:2442
 msgid ""
 "The size of the images shown in the gallery on the page. Carousel and "
 "Showcase use the Window Image Size for their main image."
@@ -895,11 +1088,11 @@ msgstr ""
 "גודל התמונות המוצגות בגלריה בדף. קרוסלה ותצוגת תצוגה משתמשות בגודל תמונת "
 "החלון עבור התמונה העיקרית שלהן."
 
-#: class-ml-gallery.php:2092
+#: class-ml-gallery.php:2451
 msgid "Window Image Size"
 msgstr "גודל תמונת חלון"
 
-#: class-ml-gallery.php:2093
+#: class-ml-gallery.php:2452
 msgid ""
 "The size of the image shown when a visitor clicks to view it in full, and "
 "of the main image in the Carousel and Showcase layouts"
@@ -907,63 +1100,99 @@ msgstr ""
 "גודל התמונה המוצגת כאשר מבקר לוחץ כדי לראות אותה במלואה, וגודל התמונה "
 "העיקרית בתצוגות קרוסלה ותצוגת תצוגה"
 
-#: class-ml-gallery.php:2102
+#: class-ml-gallery.php:2461
 msgid "Protect images"
 msgstr "הגן על תמונות"
 
-#: class-ml-gallery.php:2107
+#: class-ml-gallery.php:2462
+msgid "Watermark"
+msgstr "סימן מים"
+
+#: class-ml-gallery.php:2467
 msgid "Display"
 msgstr "הצג"
 
-#: class-ml-gallery.php:2109
+#: class-ml-gallery.php:2469
 msgid "Animation effect when moving between images"
 msgstr "אפקט אנימציה בעת מעבר בין תמונות"
 
-#: class-ml-gallery.php:2109 class-ml-gallery.php:2229
+#: class-ml-gallery.php:2469 class-ml-gallery.php:2602
 msgid "Transition"
 msgstr "מעבר"
 
-#: class-ml-gallery.php:2118 class-ml-slider-lightbox.php:2733
+#: class-ml-gallery.php:2478 class-ml-slider-lightbox.php:2746
 msgid "Arrows"
 msgstr "חיצים"
 
-#: class-ml-gallery.php:2119
+#: class-ml-gallery.php:2479
 msgid "Slide Counter"
 msgstr "ספירת שקפים"
 
-#: class-ml-gallery.php:2120
+#: class-ml-gallery.php:2480
 msgid "Thumbnails"
 msgstr "תמונות ממוזערות"
 
-#: class-ml-gallery.php:2122
+#: class-ml-gallery.php:2482
 msgid "Pager"
 msgstr "עמוד"
 
-#: class-ml-gallery.php:2127 class-ml-slider-lightbox.php:2436
+#: class-ml-gallery.php:2487 class-ml-slider-lightbox.php:2436
 msgid "Navigation"
 msgstr "ניווט"
 
-#: class-ml-gallery.php:2128
+#: class-ml-gallery.php:2488
 msgid "Loop"
 msgstr "לולאה"
 
-#: class-ml-gallery.php:2129
+#: class-ml-gallery.php:2489
 msgid "Keyboard"
 msgstr "מקלדת"
 
-#: class-ml-gallery.php:2130
+#: class-ml-gallery.php:2490
 msgid "Mouse wheel"
 msgstr "גלגל העכבר"
 
-#: class-ml-gallery.php:2131
+#: class-ml-gallery.php:2491
 msgid "Swipe to close"
 msgstr "גרור לסגור"
 
-#: class-ml-gallery.php:2138 class-ml-gallery.php:2140
+#: class-ml-gallery.php:2495
+msgid "Video"
+msgstr "סרטון"
+
+#: class-ml-gallery.php:2496
+msgid "Play video on open"
+msgstr "נגן סרטון כשנפתח"
+
+#: class-ml-gallery.php:2497
+msgid "Play every video"
+msgstr "נגן כל סרטון"
+
+#: class-ml-gallery.php:2498
+msgid "Play next when video ends"
+msgstr "נגן הבא כשסרטון מסתיים"
+
+#: class-ml-gallery.php:2499
+msgid "Loop video"
+msgstr "חזור על הסרטון"
+
+#: class-ml-gallery.php:2500
+msgid "Mute video"
+msgstr "השתק סרטון"
+
+#: class-ml-gallery.php:2502
+msgid ""
+"Browsers only allow videos to start on their own when they are muted, so "
+"autoplaying videos play without sound."
+msgstr ""
+"דפדפנים מאפשרים רק לסרטונים להתחיל בעצמם כאשר הם מושתקים, לכן סרטונים "
+"שמתנגנים אוטומטית מנוגנים ללא קול."
+
+#: class-ml-gallery.php:2511 class-ml-gallery.php:2513
 msgid "Captions"
 msgstr "כיתובים"
 
-#: class-ml-gallery.php:2140
+#: class-ml-gallery.php:2513
 msgid ""
 "Where captions appear: on gallery thumbnails, in the gallery window, or "
 "both."
@@ -971,7 +1200,7 @@ msgstr ""
 "איפה מופיעים הכיתובים: על תמונות ממוזערות של הגלריה, בחלון הגלריה, או "
 "בשניהם."
 
-#: class-ml-gallery.php:2154
+#: class-ml-gallery.php:2527
 msgid ""
 "Where each caption's text comes from: your typed caption, or the image's "
 "Media Library caption or description. Empty media fields fall back to your "
@@ -980,21 +1209,21 @@ msgstr ""
 "מאיפה מגיע הטקסט של כל כיתוב: הכיתוב שלך, או הכיתוב או התיאור של התמונה "
 "בספריית המדיה. שדות מדיה ריקים יחזרו לכיתוב שלך."
 
-#: class-ml-gallery.php:2154
+#: class-ml-gallery.php:2527
 msgid "Caption Content"
 msgstr "תוכן כיתוב"
 
-#: class-ml-gallery.php:2163
+#: class-ml-gallery.php:2536
 msgid ""
 "Where the caption sits on the image. Applies to gallery captions only — not "
 "the gallery window."
 msgstr "היכן שהכיתוב ממוקם על התמונה. חל על כיתובים בגלריה בלבד — לא על חלון הגלריה."
 
-#: class-ml-gallery.php:2163
+#: class-ml-gallery.php:2536
 msgid "Position"
 msgstr "מיקום"
 
-#: class-ml-gallery.php:2172
+#: class-ml-gallery.php:2545
 msgid ""
 "How caption text lines up within the image. Applies to gallery captions "
 "only — not the gallery window."
@@ -1002,31 +1231,31 @@ msgstr ""
 "איך טקסט הכיתוב מתיישר בתוך התמונה. חל על כיתובים בגלריה בלבד — לא על חלון "
 "הגלריה."
 
-#: class-ml-gallery.php:2172
+#: class-ml-gallery.php:2545
 msgid "Align"
 msgstr "יישור"
 
-#: class-ml-gallery.php:2181
+#: class-ml-gallery.php:2554
 msgid ""
 "Caption text size. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "גודל טקסט הכיתוב. חל על תמונות ממוזערות של הגלריה ו על חלון הגלריה."
 
-#: class-ml-gallery.php:2182
+#: class-ml-gallery.php:2555
 msgid "Text Size"
 msgstr "גודל טקסט"
 
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:2567
 msgid ""
 "Caption text color. Applies to both gallery thumbnails and the gallery "
 "window."
 msgstr "צבע טקסט הכיתוב. חל על תמונות ממוזערות של הגלריה ו על חלון הגלריה."
 
-#: class-ml-gallery.php:2194
+#: class-ml-gallery.php:2567
 msgid "Text Color"
 msgstr "צבע טקסט"
 
-#: class-ml-gallery.php:2204
+#: class-ml-gallery.php:2577
 msgid ""
 "Caption background. Applies to both gallery thumbnails and the gallery "
 "window; on thumbnails it fades to transparent for readability."
@@ -1034,12 +1263,12 @@ msgstr ""
 "רקע הכיתוב. חל על תמונות ממוזערות של הגלריה ו על חלון הגלריה; על התמונות "
 "הממוזערות הוא מתמוסס לשקיפות לקריאות."
 
-#: class-ml-gallery.php:2204 class-ml-gallery.php:2264
-#: class-ml-slider-lightbox.php:2701
+#: class-ml-gallery.php:2577 class-ml-gallery.php:2644
+#: class-ml-slider-lightbox.php:2714
 msgid "Background Color"
 msgstr "צבע רקע"
 
-#: class-ml-gallery.php:2214
+#: class-ml-gallery.php:2587
 msgid ""
 "How solid the caption background is. Lower values let more of the image "
 "show through; 0 leaves the text on the bare image."
@@ -1047,16 +1276,16 @@ msgstr ""
 "כמה מוצק הרקע של הכיתוב. ערכים נמוכים מאפשרים יותר מהתמונה להיראות; 0 משאיר "
 "את הטקסט על התמונה החשופה."
 
-#: class-ml-gallery.php:2215 class-ml-gallery.php:2275
-#: class-ml-slider-lightbox.php:2709
+#: class-ml-gallery.php:2588 class-ml-gallery.php:2655
+#: class-ml-slider-lightbox.php:2722
 msgid "Background Opacity"
 msgstr "שקיפות רקע"
 
-#: class-ml-gallery.php:2226
+#: class-ml-gallery.php:2599
 msgid "Reveal on Hover"
 msgstr "חשוף בהעברה"
 
-#: class-ml-gallery.php:2229
+#: class-ml-gallery.php:2602
 msgid ""
 "How the caption animates in. Applies to the gallery window only — not to "
 "gallery thumbnail captions."
@@ -1064,419 +1293,482 @@ msgstr ""
 "איך הכיתוב מת animates in. חל רק על חלון הגלריה — לא על כיתובי תמונות "
 "ממוזערות של הגלריה."
 
-#: class-ml-gallery.php:2239 class-ml-slider-lightbox.php:2749
+#: class-ml-gallery.php:2611
+msgid "Photo Metadata"
+msgstr "מטא נתונים של תמונה"
+
+#: class-ml-gallery.php:2618 class-ml-slider-lightbox.php:2762
 msgid "Toolbar"
 msgstr "סרגל כלים"
 
-#: class-ml-gallery.php:2240 class-ml-slider-lightbox.php:1690
+#: class-ml-gallery.php:2619 class-ml-slider-lightbox.php:1679
 msgid "Download"
 msgstr "הורד"
 
-#: class-ml-gallery.php:2242
+#: class-ml-gallery.php:2621
 msgid "Expand"
 msgstr "הרחב"
 
-#: class-ml-gallery.php:2245
+#: class-ml-gallery.php:2624
 msgid "Share"
 msgstr "שתף"
 
-#: class-ml-gallery.php:2246
+#: class-ml-gallery.php:2625 class-ml-slider-lightbox.php:4676
+msgid "Likes"
+msgstr "לייקים"
+
+#: class-ml-gallery.php:2626
 msgid "Autoplay"
 msgstr "ניגון אוטומטי"
 
-#: class-ml-gallery.php:2247
+#: class-ml-gallery.php:2627
 msgid "Rotate and Flip"
 msgstr "סובב והפך"
 
-#: class-ml-gallery.php:2248
+#: class-ml-gallery.php:2628
 msgid "Fullscreen"
 msgstr "מסך מלא"
 
-#: class-ml-gallery.php:2254
+#: class-ml-gallery.php:2634
 msgid "Unique Image URLs"
 msgstr "כתובות URL ייחודיות לתמונות"
 
-#: class-ml-gallery.php:2261 class-ml-slider-lightbox.php:2369
+#: class-ml-gallery.php:2641 class-ml-slider-lightbox.php:2364
 #: class-ml-slider-lightbox.php:2426
 msgid "Appearance"
 msgstr "מראה"
 
-#: class-ml-gallery.php:2264
+#: class-ml-gallery.php:2644
 msgid "Background color of the gallery window"
 msgstr "צבע הרקע של חלון הגלריה"
 
-#: class-ml-gallery.php:2274
+#: class-ml-gallery.php:2654
 msgid "How opaque the gallery window background is (0 = transparent, 1 = solid)"
 msgstr "כמה אטום רקע חלון הגלריה (0 = שקוף, 1 = מלא)"
 
-#: class-ml-gallery.php:2289
+#: class-ml-gallery.php:2669
 msgid "Border width in pixels around the carousel (0 = no border)"
 msgstr "רוחב גבול בפיקסלים סביב הקרוסלה (0 = ללא גבול)"
 
-#: class-ml-gallery.php:2290
+#: class-ml-gallery.php:2670
 msgid "Frame Border Width"
 msgstr "רוחב גבול המסגרת"
 
-#: class-ml-gallery.php:2301
+#: class-ml-gallery.php:2681
 msgid "Line style used for the carousel border"
 msgstr "סגנון הקו המשמש לגבול הקרוסלה"
 
-#: class-ml-gallery.php:2301
+#: class-ml-gallery.php:2681
 msgid "Frame Border Style"
 msgstr "סגנון גבול המסגרת"
 
-#: class-ml-gallery.php:2304 class-ml-gallery.php:2505
+#: class-ml-gallery.php:2684 class-ml-gallery.php:2885
 msgid "Solid"
 msgstr "מוצק"
 
-#: class-ml-gallery.php:2305 class-ml-gallery.php:2506
+#: class-ml-gallery.php:2685 class-ml-gallery.php:2886
 msgid "Dashed"
 msgstr "מנוקד"
 
-#: class-ml-gallery.php:2306 class-ml-gallery.php:2507
+#: class-ml-gallery.php:2686 class-ml-gallery.php:2887
 msgid "Dotted"
 msgstr "קו מקווקו"
 
-#: class-ml-gallery.php:2307 class-ml-gallery.php:2508
+#: class-ml-gallery.php:2687 class-ml-gallery.php:2888
 msgid "Double"
 msgstr "כפול"
 
-#: class-ml-gallery.php:2315
+#: class-ml-gallery.php:2695
 msgid "Color of the border around the carousel"
 msgstr "צבע הגבול סביב הקרוסלה"
 
-#: class-ml-gallery.php:2315
+#: class-ml-gallery.php:2695
 msgid "Frame Border Color"
 msgstr "צבע גבול המסגרת"
 
-#: class-ml-gallery.php:2325
+#: class-ml-gallery.php:2705
 msgid "Color of the next and previous navigation arrows"
 msgstr "צבע החצים המנווטים קדימה ואחורה"
 
-#: class-ml-gallery.php:2325
+#: class-ml-gallery.php:2705
 msgid "Arrow Color"
 msgstr "צבע חץ"
 
-#: class-ml-gallery.php:2335
+#: class-ml-gallery.php:2715
 msgid "Background color behind the navigation arrows"
 msgstr "צבע הרקע מאחורי החצים המנווטים"
 
-#: class-ml-gallery.php:2335
+#: class-ml-gallery.php:2715
 msgid "Arrow Background"
 msgstr "רקע חץ"
 
-#: class-ml-gallery.php:2345
+#: class-ml-gallery.php:2725
 msgid "Color of the close (X) icon"
 msgstr "צבע אייקון הסגירה (X)"
 
-#: class-ml-gallery.php:2345
+#: class-ml-gallery.php:2725
 msgid "Close Icon Color"
 msgstr "צבע אייקון סגירה"
 
-#: class-ml-gallery.php:2355
+#: class-ml-gallery.php:2735
 msgid "Background color behind the close icon"
 msgstr "צבע הרקע מאחורי אייקון הסגירה"
 
-#: class-ml-gallery.php:2355
+#: class-ml-gallery.php:2735
 msgid "Close Background"
 msgstr "רקע סגירה"
 
-#: class-ml-gallery.php:2365
+#: class-ml-gallery.php:2745
 msgid "Color of the toolbar icons"
 msgstr "צבע אייקוני הפאנל הכלים"
 
-#: class-ml-gallery.php:2365
+#: class-ml-gallery.php:2745
 msgid "Toolbar Icon Color"
 msgstr "צבע אייקון סרגל הכלים"
 
-#: class-ml-gallery.php:2375
+#: class-ml-gallery.php:2755
 msgid "Background color of the toolbar"
 msgstr "צבע הרקע של הפאנל הכלים"
 
-#: class-ml-gallery.php:2375
+#: class-ml-gallery.php:2755
 msgid "Toolbar Background"
 msgstr "רקע סרגל הכלים"
 
-#: class-ml-gallery.php:2385
+#: class-ml-gallery.php:2765
 msgid "Border color of the thumbnail strip images"
 msgstr "צבע הגבול של תמונות רצועת התמונה הממוזערת"
 
-#: class-ml-gallery.php:2385 class-ml-slider-lightbox.php:2725
+#: class-ml-gallery.php:2765 class-ml-slider-lightbox.php:2738
 msgid "Thumbnail Border Color"
 msgstr "צבע גבול תמונה ממוזערת"
 
-#: class-ml-gallery.php:2395
+#: class-ml-gallery.php:2775
 msgid "Border color of the active and hovered thumbnail"
 msgstr "צבע הגבול של התמונה הממוזערת הפעילה והמוצגת"
 
-#: class-ml-gallery.php:2395
+#: class-ml-gallery.php:2775
 msgid "Thumbnail Border Active and Hover"
 msgstr "גבול תמונה ממוזערת פעיל ועובר"
 
-#: class-ml-gallery.php:2413
+#: class-ml-gallery.php:2793
 msgid "Text color of the gallery buttons, including Load More"
 msgstr "צבע הטקסט של כפתורי הגלריה, כולל טען עוד"
 
-#: class-ml-gallery.php:2413
+#: class-ml-gallery.php:2793
 msgid "Button Text Color"
 msgstr "צבע טקסט הכפתור"
 
-#: class-ml-gallery.php:2417
+#: class-ml-gallery.php:2797
 msgid "Button text color on hover"
 msgstr "צבע טקסט הכפתור בעת ריחוף"
 
-#: class-ml-gallery.php:2417
+#: class-ml-gallery.php:2797
 msgid "Button Text Hover"
 msgstr "טקסט כפתור ריחוף"
 
-#: class-ml-gallery.php:2421
+#: class-ml-gallery.php:2801
 msgid "Background color of the gallery buttons, including Load More"
 msgstr "צבע הרקע של כפתורי הגלריה, כולל טען עוד"
 
-#: class-ml-gallery.php:2421
+#: class-ml-gallery.php:2801
 msgid "Button Background"
 msgstr "רקע הכפתור"
 
-#: class-ml-gallery.php:2425
+#: class-ml-gallery.php:2805
 msgid "Button background color on hover"
 msgstr "צבע הרקע של הכפתור כאשר הוא מרחף"
 
-#: class-ml-gallery.php:2425
+#: class-ml-gallery.php:2805
 msgid "Button Background Hover"
 msgstr "רקע הכפתור במעבר עכבר"
 
-#: class-ml-gallery.php:2432
+#: class-ml-gallery.php:2812
 msgid "Color of the icon that opens the gallery window"
 msgstr "צבע האייקון שמפתח את חלון הגלריה"
 
-#: class-ml-gallery.php:2432
+#: class-ml-gallery.php:2812
 msgid "Icon Color"
 msgstr "צבע האייקון"
 
-#: class-ml-gallery.php:2436
+#: class-ml-gallery.php:2816
 msgid "Icon color on hover"
 msgstr "צבע האייקון כאשר הוא מרחף"
 
-#: class-ml-gallery.php:2436
+#: class-ml-gallery.php:2816
 msgid "Icon Hover Color"
 msgstr "צבע האייקון במעבר עכבר"
 
-#: class-ml-gallery.php:2440
+#: class-ml-gallery.php:2820
 msgid "Background color behind the icon"
 msgstr "צבע הרקע מאחורי האייקון"
 
-#: class-ml-gallery.php:2440
+#: class-ml-gallery.php:2820
 msgid "Icon Background"
 msgstr "רקע האייקון"
 
-#: class-ml-gallery.php:2444
+#: class-ml-gallery.php:2824
 msgid "Icon background color on hover"
 msgstr "צבע הרקע של האייקון כאשר הוא מרחף"
 
-#: class-ml-gallery.php:2444
+#: class-ml-gallery.php:2824
 msgid "Icon Background Hover"
 msgstr "רקע האייקון במעבר עכבר"
 
-#: class-ml-gallery.php:2451
+#: class-ml-gallery.php:2831
 msgid "Color of the progress bar shown during autoplay"
 msgstr "צבע פס ההתקדמות שמוצג במהלך הפעלת אוטומטית"
 
-#: class-ml-gallery.php:2451
+#: class-ml-gallery.php:2831
 msgid "Autoplay Progress Bar"
 msgstr "פס התקדמות הפעלה אוטומטית"
 
-#: class-ml-gallery.php:2466
+#: class-ml-gallery.php:2846
 msgid "Image Styles"
 msgstr "סגנונות תמונה"
 
-#: class-ml-gallery.php:2469
+#: class-ml-gallery.php:2849
 msgid "Apply a filter to every image in the gallery"
 msgstr "החל פילטר על כל תמונה בגלריה"
 
-#: class-ml-gallery.php:2469
+#: class-ml-gallery.php:2849
 msgid "Filter"
 msgstr "פילטר"
 
-#: class-ml-gallery.php:2478
+#: class-ml-gallery.php:2858
 msgid "Corner radius in pixels applied to every image"
 msgstr "רדיוס פינה בפיקסלים המוחל על כל תמונה"
 
-#: class-ml-gallery.php:2479
+#: class-ml-gallery.php:2859
 msgid "Rounded Corners"
 msgstr "פינות מעוגלות"
 
-#: class-ml-gallery.php:2490
+#: class-ml-gallery.php:2870
 msgid "Image border width in pixels (0 = no border)"
 msgstr "רוחב גבול בתמונה בפיקסלים (0 = ללא גבול)"
 
-#: class-ml-gallery.php:2491
+#: class-ml-gallery.php:2871
 msgid "Border Width"
 msgstr "רוחב גבול"
 
-#: class-ml-gallery.php:2502
+#: class-ml-gallery.php:2882
 msgid "Line style used for the image border"
 msgstr "סגנון קו המשמש לגבול התמונה"
 
-#: class-ml-gallery.php:2502
+#: class-ml-gallery.php:2882
 msgid "Border Style"
 msgstr "סגנון גבול"
 
-#: class-ml-gallery.php:2516
+#: class-ml-gallery.php:2896
 msgid "Color of the image border"
 msgstr "צבע גבול התמונה"
 
-#: class-ml-gallery.php:2516
+#: class-ml-gallery.php:2896
 msgid "Border Color"
 msgstr "צבע גבול"
 
-#: class-ml-gallery.php:2526
+#: class-ml-gallery.php:2906
 msgid "Drop shadow depth cast behind each image"
 msgstr "עומק צל שנופל מאחורי כל תמונה"
 
-#: class-ml-gallery.php:2526
+#: class-ml-gallery.php:2906
 msgid "Box Shadow"
 msgstr "צל קופסה"
 
-#: class-ml-gallery.php:2530
+#: class-ml-gallery.php:2910
 msgid "Light"
 msgstr "קל"
 
-#: class-ml-gallery.php:2532
+#: class-ml-gallery.php:2912
 msgid "Heavy"
 msgstr "כבד"
 
-#: class-ml-gallery.php:2540
+#: class-ml-gallery.php:2920
 msgid "Image opacity as a percentage"
 msgstr "שקיפות התמונה כאחוז"
 
-#: class-ml-gallery.php:2541
+#: class-ml-gallery.php:2921
 msgid "Opacity"
 msgstr "שקיפות"
 
-#: class-ml-gallery.php:2552
+#: class-ml-gallery.php:2932
 msgid "Rotate every image by a fixed angle"
 msgstr "סובב כל תמונה בזווית קבועה"
 
-#: class-ml-gallery.php:2552
+#: class-ml-gallery.php:2932
 msgid "Rotate"
 msgstr "סובב"
 
-#: class-ml-gallery.php:2566
+#: class-ml-gallery.php:2946
 msgid "Mirror every image horizontally, vertically, or both"
 msgstr "שקף כל תמונה אופקית, אנכית, או גם וגם"
 
-#: class-ml-gallery.php:2566
+#: class-ml-gallery.php:2946
 msgid "Flip"
 msgstr "הפוך"
 
-#: class-ml-gallery.php:2570
+#: class-ml-gallery.php:2950
 msgid "Horizontal"
 msgstr "אופקי"
 
-#: class-ml-gallery.php:2571
+#: class-ml-gallery.php:2951
 msgid "Vertical"
 msgstr "אנכי"
 
-#: class-ml-gallery.php:2572
+#: class-ml-gallery.php:2952
 msgid "Both"
 msgstr "שניהם"
 
-#: class-ml-gallery.php:2582 class-ml-gallery.php:4383
+#: class-ml-gallery.php:2962 class-ml-gallery.php:5130
 msgid "Shortcode"
 msgstr "שורטקוד"
 
-#: class-ml-gallery.php:2584 class-ml-gallery.php:4403
+#: class-ml-gallery.php:2964 class-ml-gallery.php:5150
 msgid "Click to copy shortcode."
 msgstr "לחץ כדי להעתיק שורטקוד."
 
-#: class-ml-gallery.php:2602
+#: class-ml-gallery.php:2982
 msgid "Edit Caption"
 msgstr "ערוך כיתוב"
 
-#: class-ml-gallery.php:2604
+#: class-ml-gallery.php:2984
 msgid "Previous image"
 msgstr "תמונה קודמת"
 
-#: class-ml-gallery.php:2605
+#: class-ml-gallery.php:2985
 msgid "Next image"
 msgstr "תמונה הבאה"
 
-#: class-ml-gallery.php:2607 class-ml-gallery.php:2649
-#: class-ml-gallery.php:2670 class-ml-gallery.php:4428
+#: class-ml-gallery.php:2987 class-ml-gallery.php:3044
+#: class-ml-gallery.php:3065 class-ml-gallery.php:3078
+#: class-ml-gallery.php:5175
 msgid "Close"
 msgstr "סגור"
 
-#: class-ml-gallery.php:2628
+#: class-ml-gallery.php:3023
 msgid "Caption"
 msgstr "כיתוב"
 
-#: class-ml-gallery.php:2638
+#: class-ml-gallery.php:3033
 msgid "Done"
 msgstr "בוצע"
 
-#: class-ml-gallery.php:2648
+#: class-ml-gallery.php:3043
 msgid "Import from Server Folder"
 msgstr "ייבוא מתיקיית שרת"
 
-#: class-ml-gallery.php:2657
+#: class-ml-gallery.php:3052 class-ml-gallery.php:3087
 msgid "Cancel"
 msgstr "ביטול"
 
-#: class-ml-gallery.php:2658
+#: class-ml-gallery.php:3053
 msgid "Import selected"
 msgstr "ייבוא נבחר"
 
-#: class-ml-gallery.php:2669
+#: class-ml-gallery.php:3064
 msgid "Import from ZIP"
 msgstr "ייבוא מ-ZIP"
 
-#: class-ml-gallery.php:2697
+#: class-ml-gallery.php:3077
+msgid "Add Livid.com Video"
+msgstr "הוסף סרטון מ-Livid.com"
+
+#: class-ml-gallery.php:3081
+msgid "Livid.com video link"
+msgstr "קישור סרטון מ-Livid.com"
+
+#: class-ml-gallery.php:3088
+msgid "Add Video"
+msgstr "הוסף סרטון"
+
+#: class-ml-gallery.php:3112
 msgid "You do not have sufficient permissions."
 msgstr "אין לך הרשאות מספיקות."
 
-#: class-ml-gallery.php:2716
+#: class-ml-gallery.php:3131
 msgid "Could not update the gallery. Please try again."
 msgstr "לא ניתן לעדכן את הגלריה. אנא נסה שוב."
 
-#: class-ml-gallery.php:2887
+#: class-ml-gallery.php:3324
 msgid "(Copy)"
 msgstr "(העתק)"
 
-#: class-ml-gallery.php:2893
+#: class-ml-gallery.php:3330
 msgid "Could not duplicate the gallery. Please try again."
 msgstr "לא ניתן לשכפל את הגלריה. אנא נסה שוב."
 
-#: class-ml-gallery.php:3041 class-ml-gallery.php:3156
-#: class-ml-gallery.php:3200 class-ml-gallery.php:4545
-#: class-ml-gallery.php:4696 class-ml-gallery.php:4728
+#: class-ml-gallery.php:3478 class-ml-gallery.php:3517
+#: class-ml-gallery.php:3576 class-ml-gallery.php:3691
+#: class-ml-gallery.php:3735 class-ml-gallery.php:5318
+#: class-ml-gallery.php:5469 class-ml-gallery.php:5501
 msgid "Permission denied."
 msgstr "הגישה נדחתה."
 
-#: class-ml-gallery.php:3048
+#: class-ml-gallery.php:3485 class-ml-gallery.php:3900
+msgid "That isn't a Livid.com video link."
+msgstr "זה לא קישור סרטון מ-Livid.com."
+
+#: class-ml-gallery.php:3495
+msgid "That Livid.com video wasn't found, or it's private."
+msgstr "הוידאו של Livid.com לא נמצא, או שהוא פרטי."
+
+#: class-ml-gallery.php:3498 class-ml-gallery.php:3901
+msgid "Couldn't reach Livid.com. Please try again."
+msgstr "לא ניתן היה להתחבר ל-Livid.com. אנא נסה שוב."
+
+#: class-ml-gallery.php:3504
+msgid "The video could not be added."
+msgstr "לא ניתן היה להוסיף את הוידאו."
+
+#: class-ml-gallery.php:3523
+msgid "That attachment is not a video."
+msgstr "הקובץ המצורף אינו וידאו."
+
+#: class-ml-gallery.php:3536
+msgid "No frame was uploaded."
+msgstr "לא הועלה שום פריים."
+
+#: class-ml-gallery.php:3553
+#, php-format
+msgid "%s poster"
+msgstr "%s פוסטר"
+
+#: class-ml-gallery.php:3562
+msgid "The frame could not be saved."
+msgstr "לא ניתן היה לשמור את הפריים."
+
+#: class-ml-gallery.php:3583
 msgid "Folder not found."
 msgstr "לא נמצא תיקייה."
 
-#: class-ml-gallery.php:3057
+#: class-ml-gallery.php:3592
 msgid "Folder could not be read."
 msgstr "לא ניתן לקרוא את התיקייה."
 
-#: class-ml-gallery.php:3094
+#: class-ml-gallery.php:3629
 msgid "Uploads"
 msgstr "העלאות"
 
-#: class-ml-gallery.php:3212
+#: class-ml-gallery.php:3747
 msgid "Invalid size."
 msgstr "גודל לא תקין."
 
-#: class-ml-gallery.php:3317
-msgid "Select Gallery Images"
-msgstr "בחר תמונות גלריה"
+#: class-ml-gallery.php:3852
+msgid "Select Gallery Images or Videos"
+msgstr "בחר תמונות או וידאו מהגלריה"
 
-#: class-ml-gallery.php:3318
+#: class-ml-gallery.php:3853
 msgid "Add to Gallery"
 msgstr "הוסף לגלריה"
 
-#: class-ml-gallery.php:3333
+#: class-ml-gallery.php:3856
+msgid "Choose Poster Image"
+msgstr "בחר תמונת פוסטר"
+
+#: class-ml-gallery.php:3857
+msgid "Use as poster"
+msgstr "השתמש כמשתנה פוסטר"
+
+#: class-ml-gallery.php:3871
 msgid ""
 "Saved to this image in your Media Library — changes appear anywhere the "
 "image is used."
@@ -1484,117 +1776,121 @@ msgstr ""
 "נשמר לתמונה זו במאגר המדיה שלך — השינויים מופיעים בכל מקום שבו התמונה "
 "בשימוש."
 
-#: class-ml-gallery.php:3334 class-ml-gallery.php:4745
+#: class-ml-gallery.php:3872 class-ml-gallery.php:5518
 msgid "You do not have permission to edit this image."
 msgstr "אין לך הרשאה לערוך תמונה זו."
 
-#: class-ml-gallery.php:3335 class-ml-gallery.php:4746
+#: class-ml-gallery.php:3873 class-ml-gallery.php:5519
 msgid "This caption source is read-only."
 msgstr "מקור הכיתוב הזה הוא רק לקריאה."
 
-#: class-ml-gallery.php:3336
+#: class-ml-gallery.php:3874
 msgid "Shown in this gallery"
 msgstr "מוצג בגלריה זו"
 
-#: class-ml-gallery.php:3340
+#: class-ml-gallery.php:3880
 #, php-format
 msgid "Preparing image sizes… %1$d/%2$d"
 msgstr "מכין את גדלי התמונות… %1$d/%2$d"
 
-#: class-ml-gallery.php:3341
+#: class-ml-gallery.php:3881
 msgid "Image sizes ready."
 msgstr "גדלי התמונות מוכנים."
 
-#: class-ml-gallery.php:3343
+#: class-ml-gallery.php:3883
 #, php-format
 msgid ""
 "Could not resize %d image(s) — they may be smaller than the size you asked "
 "for."
 msgstr "לא ניתן לשנות גודל ל-%d תמונה(ות) — ייתכן שהן קטנות יותר מהגודל שביקשת."
 
-#: class-ml-gallery.php:3345
+#: class-ml-gallery.php:3885
 msgid "Loading…"
 msgstr "טוען…"
 
-#: class-ml-gallery.php:3346
+#: class-ml-gallery.php:3886
 msgid "No images in this folder."
 msgstr "אין תמונות בתיקייה זו."
 
-#: class-ml-gallery.php:3347
+#: class-ml-gallery.php:3887
 msgid "Could not load this folder."
 msgstr "לא ניתן לטעון את התיקייה הזו."
 
-#: class-ml-gallery.php:3348
+#: class-ml-gallery.php:3888
 msgid "Importing…"
 msgstr "מייבא…"
 
-#: class-ml-gallery.php:3349
+#: class-ml-gallery.php:3889
 msgid "Showing the first 200 images — open a subfolder to narrow the list."
 msgstr "מציג את 200 התמונות הראשונות — פתח תיקיית משנה כדי לצמצם את הרשימה."
 
-#: class-ml-gallery.php:3350
+#: class-ml-gallery.php:3890
 msgid "Select at least one image."
 msgstr "בחר לפחות תמונה אחת."
 
-#: class-ml-gallery.php:3351 class-ml-gallery.php:3354
+#: class-ml-gallery.php:3891 class-ml-gallery.php:3894
 #, php-format
 msgid "Imported %1$d image(s); %2$d image(s) skipped."
 msgstr "יובא %1$d תמונה(ות); %2$d תמונה(ות) הוחמצה."
 
-#: class-ml-gallery.php:3352
+#: class-ml-gallery.php:3892
 msgid "Uploading…"
 msgstr "מעלה…"
 
-#: class-ml-gallery.php:3353
+#: class-ml-gallery.php:3893
 msgid "Importing images…"
 msgstr "מייבא תמונות…"
 
-#: class-ml-gallery.php:3355
+#: class-ml-gallery.php:3895
 msgid "Only the first 200 images (or 256 MB) were imported."
 msgstr "רק 200 התמונות הראשונות (או 256 MB) יובאו."
 
-#: class-ml-gallery.php:3356
+#: class-ml-gallery.php:3896
 msgid "The ZIP could not be imported."
 msgstr "לא ניתן היה לייבא את ה-ZIP."
 
-#: class-ml-gallery.php:3357
+#: class-ml-gallery.php:3897
 msgid "The upload was rejected — the ZIP may be larger than this server allows."
 msgstr "ההעלאה נדחתה — ה-ZIP עשוי להיות גדול יותר ממה שהשרת הזה מאפשר."
 
-#: class-ml-gallery.php:3358
+#: class-ml-gallery.php:3898
 msgid "No images found in the ZIP."
 msgstr "לא נמצאו תמונות ב-ZIP."
 
-#: class-ml-gallery.php:3785
+#: class-ml-gallery.php:3899
+msgid "Adding…"
+msgstr "מתווסף…"
+
+#: class-ml-gallery.php:4434
 #, php-format
 msgid "%1$d more images loaded, %2$d remaining"
 msgstr "%1$d תמונות נוספות טוענות, %2$d נשארות"
 
-#: class-ml-gallery.php:4014
+#: class-ml-gallery.php:4761
 msgid "Drag-and-drop building"
 msgstr "בנייה באמצעות גרירה ושחרור"
 
-#: class-ml-gallery.php:4015
+#: class-ml-gallery.php:4762
 msgid "Responsive lightbox"
 msgstr "לייטבוקס רספונסיבי"
 
-#: class-ml-gallery.php:4016
+#: class-ml-gallery.php:4763
 msgid "Grid · Masonry · Justified"
 msgstr "רשת · בניין אבן · מוצדק"
 
-#: class-ml-gallery.php:4267
+#: class-ml-gallery.php:5014
 msgid "Get started"
 msgstr "התחל"
 
-#: class-ml-gallery.php:4270
+#: class-ml-gallery.php:5017
 msgid "Your galleries"
 msgstr "הגלריות שלך"
 
-#: class-ml-gallery.php:4270
+#: class-ml-gallery.php:5017
 msgid "live here."
 msgstr "חי כאן."
 
-#: class-ml-gallery.php:4272
+#: class-ml-gallery.php:5019
 msgid ""
 "Build beautiful image galleries with a stunning lightbox. Grid, masonry or "
 "justified, no code required."
@@ -1602,11 +1898,11 @@ msgstr ""
 "בנה גלריות תמונות יפות עם לייטבוקס מרהיב. רשת, בניין אבן או מוצדק, ללא צורך "
 "בקוד."
 
-#: class-ml-gallery.php:4274
+#: class-ml-gallery.php:5021
 msgid "Create your first gallery"
 msgstr "צור את הגלריה הראשונה שלך"
 
-#: class-ml-gallery.php:4287
+#: class-ml-gallery.php:5034
 #, php-format
 msgid "View Trash (%s)"
 msgid_plural "View Trash (%s)"
@@ -1615,63 +1911,63 @@ msgstr[1] "צפה בפח (%s)"
 msgstr[2] ""
 msgstr[3] ""
 
-#: class-ml-gallery.php:4298
+#: class-ml-gallery.php:5045
 msgid "Preview layout"
 msgstr "הצגת תצוגה מקדימה"
 
-#: class-ml-gallery.php:4385
+#: class-ml-gallery.php:5132
 msgid "Usage"
 msgstr "שימוש"
 
-#: class-ml-gallery.php:4418
+#: class-ml-gallery.php:5165
 msgid "Not found."
 msgstr "לא נמצא."
 
-#: class-ml-gallery.php:4423
+#: class-ml-gallery.php:5170
 msgid "View Usage"
 msgstr "צפה בשימוש"
 
-#: class-ml-gallery.php:4429
+#: class-ml-gallery.php:5176
 msgid "Content Using This Gallery"
 msgstr "תוכן שמשתמש בגלריה זו"
 
-#: class-ml-gallery.php:4493
+#: class-ml-gallery.php:5266
 msgid "(no title)"
 msgstr "(אין כותרת)"
 
-#: class-ml-gallery.php:4551 class-ml-gallery.php:4560
+#: class-ml-gallery.php:5324 class-ml-gallery.php:5333
 msgid "Please choose a valid .zip file."
 msgstr "אנא בחר קובץ .zip תקף."
 
-#: class-ml-gallery.php:4566
+#: class-ml-gallery.php:5339
 msgid "Server cannot read ZIP files."
 msgstr "השרת אינו יכול לקרוא קבצי ZIP."
 
-#: class-ml-gallery.php:4573
+#: class-ml-gallery.php:5346
 msgid "The ZIP could not be read."
 msgstr "לא ניתן לקרוא את ה-ZIP."
 
-#: class-ml-gallery.php:4607
+#: class-ml-gallery.php:5380
 msgid "Could not prepare a temporary folder."
 msgstr "לא ניתן להכין תיקייה זמנית."
 
-#: class-ml-gallery.php:4703 class-ml-gallery.php:4739
+#: class-ml-gallery.php:5476 class-ml-gallery.php:5512
 msgid "Image not found."
 msgstr "התמונה לא נמצאה."
 
-#: class-ml-gallery.php:4775
+#: class-ml-gallery.php:5548
 msgid "Unknown caption source."
 msgstr "מקור כיתוב לא ידוע."
 
-#: class-ml-slider-lightbox.php:222
+#: class-ml-slider-lightbox.php:229
 msgid "👋 Thanks for installing MetaSlider Gallery!"
 msgstr "👋 תודה על התקנת גלריית MetaSlider!"
 
-#: class-ml-slider-lightbox.php:225
+#: class-ml-slider-lightbox.php:232
 msgid "You're all set. Create your first gallery to get started."
 msgstr "אתה מוכן. צור את הגלריה הראשונה שלך כדי להתחיל."
 
-#: class-ml-slider-lightbox.php:1216
+#: class-ml-slider-lightbox.php:1223
 msgid ""
 "MetaSlider Gallery requires MetaSlider and at least one other supported "
 "lightbox plugin to be installed and activated."
@@ -1679,11 +1975,11 @@ msgstr ""
 "גלריית MetaSlider דורשת התקנה והפעלה של MetaSlider ופלאגין lightbox נתמך "
 "נוסף לפחות."
 
-#: class-ml-slider-lightbox.php:1220
+#: class-ml-slider-lightbox.php:1227
 msgid "More info"
 msgstr "מידע נוסף"
 
-#: class-ml-slider-lightbox.php:1231
+#: class-ml-slider-lightbox.php:1238
 msgid ""
 "There is more than one lightbox plugin activated. This may cause conflicts "
 "with MetaSlider Gallery"
@@ -1691,31 +1987,31 @@ msgstr ""
 "יש יותר מפלאגין lightbox אחד מופעל. זה עשוי לגרום לבעיות עם גלריית "
 "MetaSlider"
 
-#: class-ml-slider-lightbox.php:1291
+#: class-ml-slider-lightbox.php:1298
 msgid "Edit Global Settings"
 msgstr "ערוך הגדרות גלובליות"
 
-#: class-ml-slider-lightbox.php:1302
+#: class-ml-slider-lightbox.php:1309
 msgid "Open In Gallery"
 msgstr "פתח בגלריה"
 
-#: class-ml-slider-lightbox.php:1316
+#: class-ml-slider-lightbox.php:1323
 msgid "Show Captions"
 msgstr "הצג כיתובים"
 
-#: class-ml-slider-lightbox.php:1316
+#: class-ml-slider-lightbox.php:1323
 msgid "Show captions in the gallery for each slide."
 msgstr "הצג כיתובים בגלריה עבור כל שקף."
 
-#: class-ml-slider-lightbox.php:1317
+#: class-ml-slider-lightbox.php:1324
 msgid "Show Navigation Arrows"
 msgstr "הצג חיצי ניווט"
 
-#: class-ml-slider-lightbox.php:1317
+#: class-ml-slider-lightbox.php:1324
 msgid "Show previous/next arrows in the gallery."
 msgstr "הצג חיצים קודמים/באים בגלריה."
 
-#: class-ml-slider-lightbox.php:1323
+#: class-ml-slider-lightbox.php:1330
 #, php-format
 msgid ""
 "Gallery is enabled for all slideshows via the <a href=\"%s\">MetaSlider "
@@ -1724,139 +2020,139 @@ msgstr ""
 "הגלריה מופעלת עבור כל המצגות דרך הגדרות הגלריה של <a "
 "href=\"%s\">MetaSlider</a>."
 
-#: class-ml-slider-lightbox.php:1686
+#: class-ml-slider-lightbox.php:1675
 msgid "Close gallery"
 msgstr "סגור גלריה"
 
-#: class-ml-slider-lightbox.php:1687
+#: class-ml-slider-lightbox.php:1676
 msgid "Toggle maximize"
 msgstr "החלף למקסם"
 
-#: class-ml-slider-lightbox.php:1688
+#: class-ml-slider-lightbox.php:1677
 msgid "Previous slide"
 msgstr "שקף קודם"
 
-#: class-ml-slider-lightbox.php:1689
+#: class-ml-slider-lightbox.php:1678
 msgid "Next slide"
 msgstr "שקף הבא"
 
-#: class-ml-slider-lightbox.php:1691
+#: class-ml-slider-lightbox.php:1680
 msgid "Play video"
 msgstr "נגן וידאו"
 
-#: class-ml-slider-lightbox.php:1692
+#: class-ml-slider-lightbox.php:1681
 msgid "Oops... Failed to load content..."
 msgstr "אופס... נכשל בטעינת התוכן..."
 
-#: class-ml-slider-lightbox.php:1738 class-ml-slider-lightbox.php:1768
+#: class-ml-slider-lightbox.php:1727 class-ml-slider-lightbox.php:1757
 msgid "Global"
 msgstr "גלובלי"
 
-#: class-ml-slider-lightbox.php:1739
+#: class-ml-slider-lightbox.php:1728
 msgid "Yes"
 msgstr "כן"
 
-#: class-ml-slider-lightbox.php:1740
+#: class-ml-slider-lightbox.php:1729
 msgid "No"
 msgstr "לא"
 
-#: class-ml-slider-lightbox.php:1763
+#: class-ml-slider-lightbox.php:1752
 msgid "How Visitors Open Images"
 msgstr "איך מבקרים פותחים תמונות"
 
-#: class-ml-slider-lightbox.php:1766 class-ml-slider-lightbox.php:3725
+#: class-ml-slider-lightbox.php:1755 class-ml-slider-lightbox.php:3869
 msgid "Choose whether clicking the image, an icon, or a button opens the gallery."
 msgstr "בחר אם לחיצה על התמונה, על אייקון, או על כפתור פותחת את הגלריה."
 
-#: class-ml-slider-lightbox.php:1769 class-ml-trigger-control.php:66
+#: class-ml-slider-lightbox.php:1758 class-ml-trigger-control.php:66
 msgid "Image"
 msgstr "תמונה"
 
-#: class-ml-slider-lightbox.php:1770 class-ml-slider-lightbox.php:3548
-#: class-ml-slider-lightbox.php:3561 class-ml-slider-lightbox.php:3574
-#: class-ml-slider-lightbox.php:3672 class-ml-trigger-control.php:67
+#: class-ml-slider-lightbox.php:1759 class-ml-slider-lightbox.php:3576
+#: class-ml-slider-lightbox.php:3589 class-ml-slider-lightbox.php:3602
+#: class-ml-slider-lightbox.php:3700 class-ml-trigger-control.php:67
 msgid "Icon"
 msgstr "סמל"
 
-#: class-ml-slider-lightbox.php:1771 class-ml-trigger-control.php:68
+#: class-ml-slider-lightbox.php:1760 class-ml-trigger-control.php:68
 msgid "Button"
 msgstr "כפתור"
 
-#: class-ml-slider-lightbox.php:2039
+#: class-ml-slider-lightbox.php:2028
 msgid "MetaSlider Gallery requires MetaSlider to be installed and activated."
 msgstr "MetaSlider Gallery דורש ש-MetaSlider יהיה מותקן ומופעל."
 
-#: class-ml-slider-lightbox.php:2043
+#: class-ml-slider-lightbox.php:2032
 msgid "Install MetaSlider"
 msgstr "התקן את MetaSlider"
 
-#: class-ml-slider-lightbox.php:2166 class-ml-slider-lightbox.php:2310, fuzzy
+#: class-ml-slider-lightbox.php:2161 class-ml-slider-lightbox.php:2305, fuzzy
 msgid "MetaSlider Gallery Pro"
 msgstr "MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2292
+#: class-ml-slider-lightbox.php:2287
 #, php-format
 msgid "Select pages to %s..."
 msgstr "בחר דפים עבור %s..."
 
-#: class-ml-slider-lightbox.php:2293
+#: class-ml-slider-lightbox.php:2288
 #, php-format
 msgid "Select posts to %s..."
 msgstr "בחר פוסטים עבור %s..."
 
-#: class-ml-slider-lightbox.php:2294
+#: class-ml-slider-lightbox.php:2289
 #, php-format
 msgid "Select post types to %s..."
 msgstr "בחר סוגי פוסטים עבור %s..."
 
-#: class-ml-slider-lightbox.php:2295
+#: class-ml-slider-lightbox.php:2290
 #, php-format
 msgid "Select %1$s to %2$s..."
 msgstr "בחר %1$s עבור %2$s..."
 
-#: class-ml-slider-lightbox.php:2296
+#: class-ml-slider-lightbox.php:2291
 msgid "Select post types to exclude"
 msgstr "בחר סוגי פוסטים להחריג"
 
-#: class-ml-slider-lightbox.php:2297 class-ml-slider-lightbox.php:3774
-#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
+#: class-ml-slider-lightbox.php:2292 class-ml-slider-lightbox.php:3918
+#: class-ml-slider-lightbox.php:3965 class-ml-slider-lightbox.php:4087
 msgid "Include"
 msgstr "כלול"
 
-#: class-ml-slider-lightbox.php:2298 class-ml-slider-lightbox.php:3774
-#: class-ml-slider-lightbox.php:3821 class-ml-slider-lightbox.php:3943
+#: class-ml-slider-lightbox.php:2293 class-ml-slider-lightbox.php:3918
+#: class-ml-slider-lightbox.php:3965 class-ml-slider-lightbox.php:4087
 msgid "Exclude"
 msgstr "החרג"
 
-#: class-ml-slider-lightbox.php:2306, fuzzy
+#: class-ml-slider-lightbox.php:2301, fuzzy
 msgid "Gallery Pro"
 msgstr "Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2325
+#: class-ml-slider-lightbox.php:2320
 msgid "Global Settings"
 msgstr "הגדרות גלובליות"
 
-#: class-ml-slider-lightbox.php:2334
+#: class-ml-slider-lightbox.php:2329
 msgid "Upgrade to MetaSlider Gallery Pro"
 msgstr "שדרג ל- MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:2335
+#: class-ml-slider-lightbox.php:2330
 msgid "Upgrade to Pro"
 msgstr "שדרג לגרסה מקצועית"
 
-#: class-ml-slider-lightbox.php:2367
+#: class-ml-slider-lightbox.php:2362
 msgid "Automatic Mode"
 msgstr "מצב אוטומטי"
 
-#: class-ml-slider-lightbox.php:2368
+#: class-ml-slider-lightbox.php:2363
 msgid "Manual Mode"
 msgstr "מצב ידני"
 
-#: class-ml-slider-lightbox.php:2370
+#: class-ml-slider-lightbox.php:2365
 msgid "Behavior"
 msgstr "התנהגות"
 
-#: class-ml-slider-lightbox.php:2391
+#: class-ml-slider-lightbox.php:2386
 msgid "Settings saved successfully!"
 msgstr "הגדרות נשמרו בהצלחה!"
 
@@ -1868,7 +2164,7 @@ msgstr "איפה להפעיל אוטומטית"
 msgid "MetaSlider Slideshows"
 msgstr "מצגות MetaSlider"
 
-#: class-ml-slider-lightbox.php:2415 class-ml-slider-lightbox.php:2614
+#: class-ml-slider-lightbox.php:2415 class-ml-slider-lightbox.php:2627
 msgid "Content Filtering"
 msgstr "סינון תוכן"
 
@@ -1878,7 +2174,7 @@ msgid ""
 "controls."
 msgstr "התאם אישית צבעים, שקיפות וסגנון חזותי עבור כיסוי הגלריה והבקרים."
 
-#: class-ml-slider-lightbox.php:2431 class-ml-slider-lightbox.php:2680
+#: class-ml-slider-lightbox.php:2431 class-ml-slider-lightbox.php:2693
 msgid "Background & Overlay"
 msgstr "רקע וכיסוי"
 
@@ -1886,15 +2182,19 @@ msgstr "רקע וכיסוי"
 msgid "\"Open in Gallery\" Button"
 msgstr "\"פתח בגלריה\" כפתור"
 
-#: class-ml-slider-lightbox.php:2451 class-ml-slider-lightbox.php:2793
+#: class-ml-slider-lightbox.php:2451 class-ml-slider-lightbox.php:2806
 msgid "Navigation & Controls"
 msgstr "ניווט & שליטה"
 
-#: class-ml-slider-lightbox.php:2454 class-ml-slider-lightbox.php:2832
+#: class-ml-slider-lightbox.php:2454 class-ml-slider-lightbox.php:2845
 msgid "Search Engine Optimization"
 msgstr "אופטימיזציה למנועי חיפוש"
 
-#: class-ml-slider-lightbox.php:2460
+#: class-ml-slider-lightbox.php:2457 class-ml-slider-lightbox.php:2860
+msgid "Email Updates"
+msgstr "עדכוני דוא\"ל"
+
+#: class-ml-slider-lightbox.php:2463
 msgid ""
 "<strong>Third-Party Plugin Detected:</strong> A third-party lightbox plugin "
 "is active. These settings may not apply to MetaSlider but will still work "
@@ -1904,69 +2204,69 @@ msgstr ""
 "עשויות שלא לחול על MetaSlider אך עדיין יעבדו עבור lightboxes של תוכן "
 "WordPress."
 
-#: class-ml-slider-lightbox.php:2467 class-ml-slider-lightbox.php:4291
+#: class-ml-slider-lightbox.php:2470 class-ml-slider-lightbox.php:4435
 msgid "Enhanced Zoom & Controls"
 msgstr "זום משופר & controls"
 
-#: class-ml-slider-lightbox.php:2475
+#: class-ml-slider-lightbox.php:2478
 msgid "Media & Video Enhancements"
 msgstr "שיפורי מדיה ווידאו"
 
-#: class-ml-slider-lightbox.php:2483 class-ml-slider-lightbox.php:4319
+#: class-ml-slider-lightbox.php:2486 class-ml-slider-lightbox.php:4463
 msgid "Social & Navigation"
 msgstr "מדיה וניווט"
 
-#: class-ml-slider-lightbox.php:2491 class-ml-slider-lightbox.php:4340
+#: class-ml-slider-lightbox.php:2494 class-ml-slider-lightbox.php:4484
 msgid "Advanced Features"
 msgstr "תכונות מתקדמות"
 
-#: class-ml-slider-lightbox.php:2506
+#: class-ml-slider-lightbox.php:2509
 msgid "Manual Options"
 msgstr "אפשרויות ידניות"
 
-#: class-ml-slider-lightbox.php:2507
+#: class-ml-slider-lightbox.php:2510
 msgid ""
 "Manual controls and WordPress overrides that work independently of "
 "automatic settings."
 msgstr "בקרות ידניות והגדרות WordPress שעובדות באופן עצמאי מהגדרות אוטומטיות."
 
-#: class-ml-slider-lightbox.php:2687
+#: class-ml-slider-lightbox.php:2700
 msgid "Navigation Icons"
 msgstr "אייקוני ניווט"
 
-#: class-ml-slider-lightbox.php:2694
+#: class-ml-slider-lightbox.php:2707
 msgid "Buttons"
 msgstr "כפתורים"
 
-#: class-ml-slider-lightbox.php:2717
+#: class-ml-slider-lightbox.php:2730
 msgid "Autoplay Progress Bar Color"
 msgstr "צבע פס ההתקדמות של ההפעלה אוטומטית"
 
-#: class-ml-slider-lightbox.php:2741
+#: class-ml-slider-lightbox.php:2754
 msgid "Close Button"
 msgstr "כפתור סגירה"
 
-#: class-ml-slider-lightbox.php:2757
+#: class-ml-slider-lightbox.php:2770
 msgid "Button Colors"
 msgstr "צבעי כפתורים"
 
-#: class-ml-slider-lightbox.php:2765
+#: class-ml-slider-lightbox.php:2778
 msgid "Icon Colors"
 msgstr "צבעי אייקונים"
 
-#: class-ml-slider-lightbox.php:3162
+#: class-ml-slider-lightbox.php:3190
 msgid "Configure general gallery settings that apply site-wide."
 msgstr "הגדר הגדרות גלריה כלליות החלות על כל האתר."
 
-#: class-ml-slider-lightbox.php:3167
+#: class-ml-slider-lightbox.php:3195
 msgid "Configure settings specific to MetaSlider Gallery functionality."
 msgstr "הגדר הגדרות ספציפיות לפונקציונליות של MetaSlider Gallery."
 
-#: class-ml-slider-lightbox.php:3172
+#: class-ml-slider-lightbox.php:3200
 msgid "Select where the gallery will be enabled automatically."
 msgstr "בחר היכן שהגלריה תופעל אוטומטית."
 
-#: class-ml-slider-lightbox.php:3178
+#: class-ml-slider-lightbox.php:3206
 msgid ""
 "Choose how to filter content for gallery processing and specify which "
 "pages, posts, or selectors to include or exclude."
@@ -1974,31 +2274,31 @@ msgstr ""
 "בחר כיצד לסנן תוכן לעיבוד בגלריה וציין אילו דפים, פוסטים או בוחרים לכלול או "
 "excluir."
 
-#: class-ml-slider-lightbox.php:3194
+#: class-ml-slider-lightbox.php:3222
 msgid "Processing Mode"
 msgstr "מצב עיבוד"
 
-#: class-ml-slider-lightbox.php:3197
+#: class-ml-slider-lightbox.php:3225
 msgid "Process all content EXCEPT the items specified below"
 msgstr "עבד את כל התוכן מלבד הפריטים המצוינים למטה"
 
-#: class-ml-slider-lightbox.php:3200
+#: class-ml-slider-lightbox.php:3228
 msgid "ONLY process the items specified below"
 msgstr "עבד רק את הפריטים המצוינים למטה"
 
-#: class-ml-slider-lightbox.php:3207
+#: class-ml-slider-lightbox.php:3235
 msgid "Inclusion Mode"
 msgstr "מצב הכללה"
 
-#: class-ml-slider-lightbox.php:3211
+#: class-ml-slider-lightbox.php:3239
 msgid "Exclusion Mode"
 msgstr "מצב החרגה"
 
-#: class-ml-slider-lightbox.php:3231
+#: class-ml-slider-lightbox.php:3259
 msgid "Images in post content"
 msgstr "תמונות בתוכן הפוסט"
 
-#: class-ml-slider-lightbox.php:3232
+#: class-ml-slider-lightbox.php:3260
 msgid ""
 "When enabled, individual images without links and \"Enlarge to Click\" set "
 "in posts and pages will automatically open in the gallery."
@@ -2006,21 +2306,21 @@ msgstr ""
 "כאשר מופעל, תמונות בודדות ללא קישורים ו-\"הגדל כדי ללחוץ\" שהוגדרו בפוסטים "
 "ודפים ייפתחו אוטומטית בגלריה."
 
-#: class-ml-slider-lightbox.php:3248
+#: class-ml-slider-lightbox.php:3276
 msgid "Images and videos in widgets and sidebars"
 msgstr "תמונות ווידאו בווידג'טים וברים צדדיים"
 
-#: class-ml-slider-lightbox.php:3249
+#: class-ml-slider-lightbox.php:3277
 msgid ""
 "When enabled, images and videos in widget areas will automatically open in "
 "the gallery."
 msgstr "כאשר מופעל, תמונות ווידאו באזורים של ווידג'טים ייפתחו אוטומטית בגלריה."
 
-#: class-ml-slider-lightbox.php:3265
+#: class-ml-slider-lightbox.php:3293
 msgid "Gallery shortcodes and blocks"
 msgstr "שלטי גלריה וקוביות"
 
-#: class-ml-slider-lightbox.php:3266
+#: class-ml-slider-lightbox.php:3294
 msgid ""
 "When enabled, images in WordPress [gallery] shortcodes and Gutenberg "
 "Gallery blocks will automatically open in the gallery window."
@@ -2028,11 +2328,11 @@ msgstr ""
 "כאשר מופעל, תמונות בקוד הקצר [gallery] של WordPress וחסימות גלריה של "
 "Gutenberg ייפתחו אוטומטית בחלון הגלריה."
 
-#: class-ml-slider-lightbox.php:3282
+#: class-ml-slider-lightbox.php:3310
 msgid "Featured images"
 msgstr "תמונות בולטות"
 
-#: class-ml-slider-lightbox.php:3283
+#: class-ml-slider-lightbox.php:3311
 msgid ""
 "When enabled, featured images (post thumbnails) will automatically open in "
 "the gallery when clicked."
@@ -2040,7 +2340,7 @@ msgstr ""
 "כאשר מופעל, תמונות מוצגות (תמונות ממוזערות של פוסטים) ייפתחו אוטומטית "
 "בגלריה כאשר לוחצים עליהן."
 
-#: class-ml-slider-lightbox.php:3292
+#: class-ml-slider-lightbox.php:3320
 msgid ""
 "Automatically open all MetaSlider slideshows in the gallery, overriding the "
 "per-slider setting."
@@ -2048,11 +2348,11 @@ msgstr ""
 "פתח אוטומטית את כל המצגות של MetaSlider בגלריה, תוך חזרה על ההגדרות לפי "
 "מצגת."
 
-#: class-ml-slider-lightbox.php:3306
+#: class-ml-slider-lightbox.php:3334
 msgid "MetaSlider slideshows"
 msgstr "מצגות MetaSlider"
 
-#: class-ml-slider-lightbox.php:3307
+#: class-ml-slider-lightbox.php:3335
 msgid ""
 "When enabled, all MetaSlider slideshows will open slides in the gallery "
 "window, overriding the per-slider setting."
@@ -2060,11 +2360,11 @@ msgstr ""
 "כאשר מופעל, כל המצגות של MetaSlider יפתחו שקפים בחלון הגלריה, תוך חזרה על "
 "ההגדרות לפי מצגת."
 
-#: class-ml-slider-lightbox.php:3323
+#: class-ml-slider-lightbox.php:3351
 msgid "Videos in post content"
 msgstr "וידאו בתוכן הפוסט"
 
-#: class-ml-slider-lightbox.php:3324
+#: class-ml-slider-lightbox.php:3352
 msgid ""
 "When enabled, standalone video blocks (HTML5 videos, YouTube embeds, Vimeo "
 "embeds) in post/page content will automatically open in the gallery."
@@ -2072,33 +2372,33 @@ msgstr ""
 "כאשר מופעל, בלוקים של ווידאו עצמאי (וידאו של HTML5, הטמעות של YouTube, "
 "הטמעות של Vimeo) בתוכן פוסט/דף ייפתחו אוטומטית בגלריה."
 
-#: class-ml-slider-lightbox.php:3359
+#: class-ml-slider-lightbox.php:3387
 msgid ""
 "Background color for the gallery overlay. Dark colors work best for image "
 "viewing."
 msgstr "צבע רקע עבור כיסוי הגלריה. צבעים כהים עובדים הכי טוב לצפייה בתמונות."
 
-#: class-ml-slider-lightbox.php:3364
+#: class-ml-slider-lightbox.php:3392
 msgid ""
 "Background color for \"Open in Gallery\" buttons that appear on slides, "
 "images and videos."
 msgstr "צבע רקע עבור כפתורי \"פתח בגלריה\" המופיעים על שקפים, תמונות ווידאו."
 
-#: class-ml-slider-lightbox.php:3369
+#: class-ml-slider-lightbox.php:3397
 msgid ""
 "Text color for \"Open in Gallery\" buttons that appear on slides, images "
 "and videos."
 msgstr "צבע טקסט עבור כפתורי \"פתח בגלריה\" המופיעים על שקפים, תמונות ווידאו."
 
-#: class-ml-slider-lightbox.php:3374
+#: class-ml-slider-lightbox.php:3402
 msgid "Background color when hovering over \"Open in Gallery\" buttons."
 msgstr "צבע רקע כאשר מרחפים מעל כפתורי \"פתח בגלריה\"."
 
-#: class-ml-slider-lightbox.php:3379
+#: class-ml-slider-lightbox.php:3407
 msgid "Text color when hovering over \"Open in Gallery\" buttons."
 msgstr "צבע טקסט כשעוברים עם העכבר על כפתורי \"פתח בגלריה\"."
 
-#: class-ml-slider-lightbox.php:3392
+#: class-ml-slider-lightbox.php:3420
 msgid ""
 "Custom text for gallery buttons. This text will appear on all \"Open in "
 "Gallery\" buttons throughout the site."
@@ -2106,25 +2406,25 @@ msgstr ""
 "טקסט מותאם אישית לכפתורי הגלריה. טקסט זה יופיע על כל כפתורי \"פתח בגלריה\" "
 "באתר."
 
-#: class-ml-slider-lightbox.php:3405 class-ml-slider-lightbox.php:3431
+#: class-ml-slider-lightbox.php:3433 class-ml-slider-lightbox.php:3459
 msgid "Top Right (Default)"
 msgstr "ימין למעלה (ברירת מחדל)"
 
-#: class-ml-slider-lightbox.php:3418
+#: class-ml-slider-lightbox.php:3446
 msgid "Choose where to position the close button (X) in the gallery overlay."
 msgstr "בחר היכן למקם את כפתור הסגירה (X) בחפיפת הגלריה."
 
-#: class-ml-slider-lightbox.php:3444
+#: class-ml-slider-lightbox.php:3472
 msgid ""
 "Choose where to position \"Open in Gallery\" buttons within slides, images, "
 "galleries, and videos."
 msgstr "בחר היכן למקם את כפתורי \"פתח בגלריה\" בתוך שקופיות, תמונות, גלריות ווידאו."
 
-#: class-ml-slider-lightbox.php:3449
+#: class-ml-slider-lightbox.php:3477
 msgid "Color for previous and next navigation arrows in the gallery."
 msgstr "צבע לחצים הקודמים והבאים בניווט בגלריה."
 
-#: class-ml-slider-lightbox.php:3454
+#: class-ml-slider-lightbox.php:3482
 msgid ""
 "Arrow color when hovering. Creates visual feedback when users move their "
 "mouse over the navigation arrows."
@@ -2132,11 +2432,11 @@ msgstr ""
 "צבע החץ כאשר עובר מעל. יוצר משוב חזותי כאשר משתמשים מעבירים את העכבר מעל "
 "חיצי הניווט."
 
-#: class-ml-slider-lightbox.php:3459
+#: class-ml-slider-lightbox.php:3487
 msgid "Color for the close button (X) in the gallery."
 msgstr "צבע כפתור הסגירה (X) בגלריה."
 
-#: class-ml-slider-lightbox.php:3464
+#: class-ml-slider-lightbox.php:3492
 msgid ""
 "Close button color when hovering. Creates visual feedback when users move "
 "their mouse over the close button."
@@ -2144,7 +2444,7 @@ msgstr ""
 "צבע כפתור הסגירה כאשר עובר מעל. יוצר משוב חזותי כאשר משתמשים מעבירים את "
 "העכבר מעל כפתור הסגירה."
 
-#: class-ml-slider-lightbox.php:3469
+#: class-ml-slider-lightbox.php:3497
 msgid ""
 "Color for toolbar icons and counter text in the lightbox. Affects zoom, "
 "fullscreen icons (Pro), and image counter display."
@@ -2152,7 +2452,7 @@ msgstr ""
 "צבע עבור סמלי הכלים וטקסט המונה ב-Lightbox. משפיע על סמלי זום, מסך מלא "
 "(פרו), ותצוגת המונה של התמונות."
 
-#: class-ml-slider-lightbox.php:3474
+#: class-ml-slider-lightbox.php:3502
 msgid ""
 "Toolbar icon color when hovering. Creates visual feedback when users move "
 "their mouse over toolbar icons and counter."
@@ -2160,11 +2460,11 @@ msgstr ""
 "צבע סמל הכלים כאשר עולים עליו עם העכבר. יוצר משוב חזותי כאשר המשתמשים "
 "מעבירים את העכבר שלהם על סמלי הכלים והמונה."
 
-#: class-ml-slider-lightbox.php:3479
+#: class-ml-slider-lightbox.php:3507
 msgid "Background color for previous and next navigation arrow buttons."
 msgstr "צבע הרקע עבור כפתורי חיצים הקודמים והבאים."
 
-#: class-ml-slider-lightbox.php:3484
+#: class-ml-slider-lightbox.php:3512
 msgid ""
 "Background color for arrow buttons when hovering. Creates visual feedback "
 "when users move their mouse over the arrows."
@@ -2172,11 +2472,11 @@ msgstr ""
 "צבע הרקע עבור כפתורי חיצים כאשר עולים עליהם עם העכבר. יוצר משוב חזותי כאשר "
 "המשתמשים מעבירים את העכבר שלהם על החיצים."
 
-#: class-ml-slider-lightbox.php:3489
+#: class-ml-slider-lightbox.php:3517
 msgid "Background color for the close button (X) in the gallery."
 msgstr "צבע רקע עבור כפתור הסגירה (X) בגלריה."
 
-#: class-ml-slider-lightbox.php:3494
+#: class-ml-slider-lightbox.php:3522
 msgid ""
 "Background color for the close button when hovering. Creates visual "
 "feedback when users move their mouse over the close button."
@@ -2184,11 +2484,11 @@ msgstr ""
 "צבע הרקע עבור כפתור הסגירה כאשר עולים עליו עם העכבר. יוצר משוב חזותי כאשר "
 "המשתמשים מעבירים את העכבר שלהם על כפתור הסגירה."
 
-#: class-ml-slider-lightbox.php:3499
+#: class-ml-slider-lightbox.php:3527
 msgid "Background color for toolbar icons in the lightbox."
 msgstr "צבע הרקע עבור סמלי הכלים ב-Lightbox."
 
-#: class-ml-slider-lightbox.php:3504
+#: class-ml-slider-lightbox.php:3532
 msgid ""
 "Background color for toolbar icons when hovering. Creates visual feedback "
 "when users move their mouse over toolbar icons."
@@ -2196,44 +2496,44 @@ msgstr ""
 "צבע הרקע עבור סמלי הכלים כאשר עולים עליהם עם העכבר. יוצר משוב חזותי כאשר "
 "המשתמשים מעבירים את העכבר שלהם על סמלי הכלים."
 
-#: class-ml-slider-lightbox.php:3549 class-ml-slider-lightbox.php:3562
-#: class-ml-slider-lightbox.php:3575 class-ml-slider-lightbox.php:3673
+#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3590
+#: class-ml-slider-lightbox.php:3603 class-ml-slider-lightbox.php:3701
 msgid "Icon Hover"
 msgstr "סמל כשעולים עליו עם העכבר"
 
-#: class-ml-slider-lightbox.php:3550 class-ml-slider-lightbox.php:3563
-#: class-ml-slider-lightbox.php:3576 class-ml-slider-lightbox.php:3657
-#: class-ml-slider-lightbox.php:3674
+#: class-ml-slider-lightbox.php:3578 class-ml-slider-lightbox.php:3591
+#: class-ml-slider-lightbox.php:3604 class-ml-slider-lightbox.php:3685
+#: class-ml-slider-lightbox.php:3702
 msgid "Background"
 msgstr "רקע"
 
-#: class-ml-slider-lightbox.php:3551 class-ml-slider-lightbox.php:3564
-#: class-ml-slider-lightbox.php:3577 class-ml-slider-lightbox.php:3658
-#: class-ml-slider-lightbox.php:3675
+#: class-ml-slider-lightbox.php:3579 class-ml-slider-lightbox.php:3592
+#: class-ml-slider-lightbox.php:3605 class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:3703
 msgid "Background Hover"
 msgstr "רקע כשעולים עליו עם העכבר"
 
-#: class-ml-slider-lightbox.php:3594
+#: class-ml-slider-lightbox.php:3622
 msgid "Set the opacity of the gallery background (0 = transparent, 1 = opaque)."
 msgstr "קבע את שקיפות רקע הגלריה (0 = שקוף, 1 = אטום)."
 
-#: class-ml-slider-lightbox.php:3603
+#: class-ml-slider-lightbox.php:3631
 msgid "Color of the progress bar shown during autoplay slideshows."
 msgstr "צבע פס ההתקדמות המוצג במהלך מצגות אוטומטיות."
 
-#: class-ml-slider-lightbox.php:3609
+#: class-ml-slider-lightbox.php:3637
 msgid "Border"
 msgstr "גבול"
 
-#: class-ml-slider-lightbox.php:3610
+#: class-ml-slider-lightbox.php:3638
 msgid "Border Active and Hover"
 msgstr "גבול פעיל ועובר"
 
-#: class-ml-slider-lightbox.php:3622
+#: class-ml-slider-lightbox.php:3650
 msgid "Show navigation arrows in gallery"
 msgstr "הצג חיצים בניווט בגלריה"
 
-#: class-ml-slider-lightbox.php:3623
+#: class-ml-slider-lightbox.php:3651
 msgid ""
 "Display left/right arrows for navigation. Also enables keyboard navigation "
 "(← → keys, ESC to close). This is available for slideshows and image "
@@ -2242,15 +2542,15 @@ msgstr ""
 "הצג חיצים שמאלה/ימינה לניווט. גם מאפשר ניווט באמצעות מקלדת (← → מקשים, ESC "
 "לסגירה). זה זמין עבור מצגות וגלריות תמונות."
 
-#: class-ml-slider-lightbox.php:3632
+#: class-ml-slider-lightbox.php:3660
 msgid "Customize the gallery background and overlay appearance."
 msgstr "התאם אישית את רקע הגלריה ואת מראה החפיפה."
 
-#: class-ml-slider-lightbox.php:3637
+#: class-ml-slider-lightbox.php:3665
 msgid "Customize navigation icons (close, previous, next arrows) for gallery."
 msgstr "התאם אישית את סמלי הניווט (סגירה, חצים קודמים ובאים) עבור הגלריה."
 
-#: class-ml-slider-lightbox.php:3642
+#: class-ml-slider-lightbox.php:3670
 msgid ""
 "Customize the \"Open in Gallery\" buttons that can be added to slides, "
 "images, galleries, and videos."
@@ -2258,29 +2558,29 @@ msgstr ""
 "התאם אישית את כפתורי \"פתח בגלריה\" שניתן להוסיף לשקופיות, תמונות, גלריות "
 "ווידאו."
 
-#: class-ml-slider-lightbox.php:3655
+#: class-ml-slider-lightbox.php:3683
 msgid "Text"
 msgstr "טקסט"
 
-#: class-ml-slider-lightbox.php:3656
+#: class-ml-slider-lightbox.php:3684
 msgid "Text Hover"
 msgstr "טקסט כשעולים עליו עם העכבר"
 
-#: class-ml-slider-lightbox.php:3681
+#: class-ml-slider-lightbox.php:3709
 msgid ""
 "Configure navigation and control options that apply to all MetaSlider "
 "galleries."
 msgstr "הגדר אפשרויות ניווט ושליטה החלות על כל הגלריות של MetaSlider."
 
-#: class-ml-slider-lightbox.php:3686
+#: class-ml-slider-lightbox.php:3714
 msgid "Help search engines understand the images in your galleries."
 msgstr "עזור למנועי חיפוש להבין את התמונות בגלריות שלך."
 
-#: class-ml-slider-lightbox.php:3697
+#: class-ml-slider-lightbox.php:3725
 msgid "Output SEO structured data for galleries"
 msgstr "פלט נתוני SEO מובנים עבור גלריות"
 
-#: class-ml-slider-lightbox.php:3698
+#: class-ml-slider-lightbox.php:3726
 msgid ""
 "Adds Schema.org ImageGallery markup so search engines can index your "
 "gallery images. Turn this off if your SEO plugin already outputs gallery "
@@ -2289,11 +2589,45 @@ msgstr ""
 "מוסיף תגי Schema.org ImageGallery כך שמנועי חיפוש יוכלו לאנדקס את תמונות "
 "הגלריה שלך. כבה זאת אם תוסף ה-SEO שלך כבר מפיק נתוני גלריה מובנים."
 
-#: class-ml-slider-lightbox.php:3710
+#: class-ml-slider-lightbox.php:3733
+msgid "Hear about new features and security releases for MetaSlider Gallery."
+msgstr "שמע על תכונות חדשות ושחרורי אבטחה עבור גלריית MetaSlider."
+
+#: class-ml-slider-lightbox.php:3745
+msgid "Email me about updates"
+msgstr "שלח לי עדכונים בדוא\"ל"
+
+#: class-ml-slider-lightbox.php:3747
+msgid ""
+"Occasional emails about new features and security releases. Unsubscribe at "
+"any time."
+msgstr "מיילים מדי פעם על תכונות חדשות ושחרורי אבטחה. תוכל לבטל רישום בכל עת."
+
+#: class-ml-slider-lightbox.php:3759, fuzzy
+msgid "you@example.com"
+msgstr "you@example.com"
+
+#: class-ml-slider-lightbox.php:3805
+msgid "Please enter a valid email address to receive updates."
+msgstr "אנא הזן כתובת דוא\"ל תקפה כדי לקבל עדכונים."
+
+#: class-ml-slider-lightbox.php:3829
+msgid "You are subscribed. Check your inbox to confirm."
+msgstr "אתה רשום. בדוק את תיבת הדואר שלך לאישור."
+
+#: class-ml-slider-lightbox.php:3840
+msgid ""
+"Your preference was saved, but we could not add your address to the mailing "
+"list. Please check it and save again."
+msgstr ""
+"העדפה שלך נשמרה, אך לא הצלחנו להוסיף את הכתובת שלך לרשימת התפוצה. אנא בדוק "
+"אותה ושמור שוב."
+
+#: class-ml-slider-lightbox.php:3854
 msgid "Show thumbnails"
 msgstr "הראה תמונות מוקדמות"
 
-#: class-ml-slider-lightbox.php:3711
+#: class-ml-slider-lightbox.php:3855
 msgid ""
 "Display thumbnail images at the bottom of the gallery for easy navigation. "
 "This is available for slideshows and image galleries."
@@ -2301,15 +2635,15 @@ msgstr ""
 "הצג תמונות ממוזערות בתחתית הגלריה לנavigation קל. זה זמין עבור מצגות "
 "ותמונות בגלריות."
 
-#: class-ml-slider-lightbox.php:3724
+#: class-ml-slider-lightbox.php:3868
 msgid "How visitors open images"
 msgstr "איך מבקרים פותחים תמונות"
 
-#: class-ml-slider-lightbox.php:3745
+#: class-ml-slider-lightbox.php:3889
 msgid "Show captions"
 msgstr "הראה כיתובים"
 
-#: class-ml-slider-lightbox.php:3746
+#: class-ml-slider-lightbox.php:3890
 msgid ""
 "When enabled, display captions in the gallery window. This is available for "
 "slideshows, images, and image galleries."
@@ -2317,25 +2651,25 @@ msgstr ""
 "כשזה מופעל, הצג כיתובים בחלון הגלריה. זה זמין עבור מצגות, תמונות וגלריות "
 "תמונה."
 
-#: class-ml-slider-lightbox.php:3753
+#: class-ml-slider-lightbox.php:3897
 msgid "Advanced lightbox features are available through MetaSlider Gallery Pro."
 msgstr "תכונות מתקדמות של lightbox זמינות דרך MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3755
+#: class-ml-slider-lightbox.php:3899
 msgid "Get a preview of the advanced features available in MetaSlider Gallery Pro."
 msgstr "קבל תצוגה מקדימה של התכונות המתקדמות הזמינות ב-MetaSlider Gallery Pro."
 
-#: class-ml-slider-lightbox.php:3758
+#: class-ml-slider-lightbox.php:3902
 msgid ""
 "These advanced LightGallery.js plugins are available in the Pro version "
 "with additional customization options."
 msgstr "תוספים מתקדמים של LightGallery.js זמינים בגרסה Pro עם אפשרויות התאמה נוספות."
 
-#: class-ml-slider-lightbox.php:3786 class-ml-slider-lightbox.php:3787
+#: class-ml-slider-lightbox.php:3930 class-ml-slider-lightbox.php:3931
 msgid "specific Pages"
 msgstr "דפים ספציפיים"
 
-#: class-ml-slider-lightbox.php:3789
+#: class-ml-slider-lightbox.php:3933
 msgid ""
 "Select pages where gallery should be disabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2343,7 +2677,7 @@ msgstr ""
 "בחר דפים שבהם הגלריה צריכה להיות מושבתת. מציג עד 100 הדפים האחרונים. הקלד "
 "כדי לחפש."
 
-#: class-ml-slider-lightbox.php:3789 class-ml-slider-lightbox.php:3790
+#: class-ml-slider-lightbox.php:3933 class-ml-slider-lightbox.php:3934
 msgid ""
 "Select pages where gallery should be enabled. Shows up to 100 most recent "
 "pages. Type to search."
@@ -2351,11 +2685,11 @@ msgstr ""
 "בחר דפים שבהם הגלריה צריכה להיות מופעלת. מציג עד 100 הדפים האחרונים. הקלד "
 "כדי לחפש."
 
-#: class-ml-slider-lightbox.php:3834 class-ml-slider-lightbox.php:3835
+#: class-ml-slider-lightbox.php:3978 class-ml-slider-lightbox.php:3979
 msgid "specific Posts"
 msgstr "פוסטים ספציפיים"
 
-#: class-ml-slider-lightbox.php:3837
+#: class-ml-slider-lightbox.php:3981
 msgid ""
 "Select posts where gallery should be disabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2363,7 +2697,7 @@ msgstr ""
 "בחר פוסטים שבהם הגלריה צריכה להיות מושבתת. מציג עד 100 הפוסטים האחרונים. "
 "הקלד כדי לחפש."
 
-#: class-ml-slider-lightbox.php:3837 class-ml-slider-lightbox.php:3838
+#: class-ml-slider-lightbox.php:3981 class-ml-slider-lightbox.php:3982
 msgid ""
 "Select posts where gallery should be enabled. Shows up to 100 most recent "
 "posts. Type to search."
@@ -2371,46 +2705,46 @@ msgstr ""
 "בחר פוסטים שבהם הגלריה צריכה להיות מופעלת. מציג עד 100 הפוסטים האחרונים. "
 "הקלד כדי לחפש."
 
-#: class-ml-slider-lightbox.php:3865
+#: class-ml-slider-lightbox.php:4009
 msgid "include"
 msgstr "כולל"
 
-#: class-ml-slider-lightbox.php:3865
+#: class-ml-slider-lightbox.php:4009
 msgid "exclude"
 msgstr "מוציא"
 
-#: class-ml-slider-lightbox.php:3905
+#: class-ml-slider-lightbox.php:4049
 #, php-format
 msgid "specific %s"
 msgstr "ספציפי %s"
 
-#: class-ml-slider-lightbox.php:3906
+#: class-ml-slider-lightbox.php:4050
 #, php-format
 msgid "%s specific %s"
 msgstr "%s ספציפי %s"
 
-#: class-ml-slider-lightbox.php:3908 class-ml-slider-lightbox.php:3909
+#: class-ml-slider-lightbox.php:4052 class-ml-slider-lightbox.php:4053
 #, php-format
 msgid "Shows up to 100 most recent %s. Type to search."
 msgstr "מציג עד 100 %s האחרונים ביותר. הקלד לחיפוש."
 
-#: class-ml-slider-lightbox.php:3957 class-ml-slider-lightbox.php:3958
+#: class-ml-slider-lightbox.php:4101 class-ml-slider-lightbox.php:4102
 msgid "specific post types"
 msgstr "סוגי פוסטים ספציפיים"
 
-#: class-ml-slider-lightbox.php:3960
+#: class-ml-slider-lightbox.php:4104
 msgid "Select post types where gallery should be disabled entirely."
 msgstr "בחר סוגי פוסטים שבהם הגלריה צריכה להיות מושבתת לחלוטין."
 
-#: class-ml-slider-lightbox.php:3960 class-ml-slider-lightbox.php:3961
+#: class-ml-slider-lightbox.php:4104 class-ml-slider-lightbox.php:4105
 msgid "Select post types where gallery should be enabled entirely."
 msgstr "בחר סוגי פוסטים שבהם הגלריה צריכה להיות מופעלת לחלוטין."
 
-#: class-ml-slider-lightbox.php:3995
+#: class-ml-slider-lightbox.php:4139
 msgid "Exclude by CSS selector"
 msgstr "החרג לפי סלקטור CSS"
 
-#: class-ml-slider-lightbox.php:3998
+#: class-ml-slider-lightbox.php:4142
 msgid ""
 "CSS selectors for elements to exclude from gallery window (one per line). "
 "Examples:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
@@ -2418,11 +2752,11 @@ msgstr ""
 "סלקטורים CSS עבור אלמנטים שיש להחריג מחלון הגלריה (אחד בכל שורה). "
 "דוגמאות:<br>.no-lightbox<br>.custom-gallery img<br>#sidebar .widget-area"
 
-#: class-ml-slider-lightbox.php:4021
+#: class-ml-slider-lightbox.php:4165
 msgid "Minimum Image Width"
 msgstr "רוחב תמונה מינימלי"
 
-#: class-ml-slider-lightbox.php:4024
+#: class-ml-slider-lightbox.php:4168
 msgid ""
 "Skip images narrower than this width (in pixels). Uses the displayed width, "
 "not the actual image file size. This is helpful for excluding small icons, "
@@ -2431,11 +2765,11 @@ msgstr ""
 "דלג על תמונות שהן צרות יותר מרוחב זה (בפיקסלים). משתמש ברוחב המוצג, לא "
 "בגודל הקובץ של התמונה בפועל. זה מועיל להחרגת אייקונים קטנים, תגיות וכפתורים."
 
-#: class-ml-slider-lightbox.php:4047
+#: class-ml-slider-lightbox.php:4191
 msgid "Minimum Image Height"
 msgstr "גובה תמונה מינימלי"
 
-#: class-ml-slider-lightbox.php:4050
+#: class-ml-slider-lightbox.php:4194
 msgid ""
 "Skip images shorter than this height (in pixels). Uses the displayed "
 "height, not the actual image file size. This is helpful for excluding small "
@@ -2444,41 +2778,41 @@ msgstr ""
 "דלג על תמונות שהן נמוכות יותר מגובה זה (בפיקסלים). משתמש בגובה המוצג, לא "
 "בגודל הקובץ של התמונה בפועל. זה מועיל להחרגת אייקונים קטנים, תגיות וכפתורים."
 
-#: class-ml-slider-lightbox.php:4066 class-ml-slider-lightbox.php:4223
+#: class-ml-slider-lightbox.php:4210 class-ml-slider-lightbox.php:4367
 msgid ""
 "Enhanced media handling and video playback features for professional "
 "galleries."
 msgstr "טיפול משופר במדיה ותכונות הפעלת וידאו עבור גלריות מקצועיות."
 
-#: class-ml-slider-lightbox.php:4073
+#: class-ml-slider-lightbox.php:4217
 msgid "Advanced features for professional lightbox implementations."
 msgstr "תכונות מתקדמות עבור יישומים מקצועיים של Lightbox."
 
-#: class-ml-slider-lightbox.php:4084 class-ml-slider-lightbox.php:4296
+#: class-ml-slider-lightbox.php:4228 class-ml-slider-lightbox.php:4440
 msgid "Enable Zoom"
 msgstr "אפשר זום"
 
-#: class-ml-slider-lightbox.php:4085
+#: class-ml-slider-lightbox.php:4229
 msgid ""
 "Double-click to zoom, zoom controls, mouse wheel zoom, and zoom-to-fit "
 "options."
 msgstr "לחץ פעמיים כדי למזער, בקרות זום, זום בגלגל עכבר, ואפשרויות זום להתאמה."
 
-#: class-ml-slider-lightbox.php:4095 class-ml-slider-lightbox.php:4303
+#: class-ml-slider-lightbox.php:4239 class-ml-slider-lightbox.php:4447
 msgid "Enable Fullscreen"
 msgstr "אפשר מצב מסך מלא"
 
-#: class-ml-slider-lightbox.php:4096
+#: class-ml-slider-lightbox.php:4240
 msgid ""
 "Native HTML5 fullscreen support with keyboard shortcuts (F key) for "
 "immersive viewing."
 msgstr "תמיכה מקומית במסך מלא HTML5 עם קיצורי מקלדת (מקש F) לצפייה מעמיקה."
 
-#: class-ml-slider-lightbox.php:4106 class-ml-slider-lightbox.php:4310
+#: class-ml-slider-lightbox.php:4250 class-ml-slider-lightbox.php:4454
 msgid "Enable Rotate"
 msgstr "אפשר סיבוב"
 
-#: class-ml-slider-lightbox.php:4107
+#: class-ml-slider-lightbox.php:4251
 msgid ""
 "Rotate images clockwise/anticlockwise, flip horizontal/vertical with "
 "toolbar controls."
@@ -2486,11 +2820,11 @@ msgstr ""
 "סובב תמונות בכיוון השעון/נגד כיוון השעון, הפוך אופקית/אנכית עם בקרות של "
 "סרגל הכלים."
 
-#: class-ml-slider-lightbox.php:4117
+#: class-ml-slider-lightbox.php:4261
 msgid "Enable Video"
 msgstr "אפשר וידאו"
 
-#: class-ml-slider-lightbox.php:4118
+#: class-ml-slider-lightbox.php:4262
 msgid ""
 "Enhanced video support for YouTube, Vimeo, HTML5 videos with autoplay and "
 "quality controls."
@@ -2498,30 +2832,30 @@ msgstr ""
 "תמיכה משופרת בווידאו עבור YouTube, Vimeo, ווידאו ב-HTML5 עם הפעלה אוטומטית "
 "ובקרות איכות."
 
-#: class-ml-slider-lightbox.php:4128 class-ml-slider-lightbox.php:4345
-#: class-ml-slider-lightbox.php:4492
+#: class-ml-slider-lightbox.php:4272 class-ml-slider-lightbox.php:4489
+#: class-ml-slider-lightbox.php:4644
 msgid "Enable Unique Image URLs"
 msgstr "אפשר כתובות URL ייחודיות לתמונות"
 
-#: class-ml-slider-lightbox.php:4129
+#: class-ml-slider-lightbox.php:4273
 msgid ""
 "Unique URLs for each gallery image with browser back/forward navigation "
 "support."
 msgstr "כתובות URL ייחודיות עבור כל תמונה בגלריה עם תמיכה בניווט אחורה/קדימה בדפדפן."
 
-#: class-ml-slider-lightbox.php:4139 class-ml-slider-lightbox.php:4352
+#: class-ml-slider-lightbox.php:4283 class-ml-slider-lightbox.php:4496
 msgid "Enable Autoplay"
 msgstr "אפשר הפעלה אוטומטית"
 
-#: class-ml-slider-lightbox.php:4140
+#: class-ml-slider-lightbox.php:4284
 msgid "Automatically advance through images in the gallery."
 msgstr "קדימה אוטומטית בין התמונות בגלריה."
 
-#: class-ml-slider-lightbox.php:4150 class-ml-slider-lightbox.php:4324
+#: class-ml-slider-lightbox.php:4294 class-ml-slider-lightbox.php:4468
 msgid "Enable Share"
 msgstr "אפשר שיתוף"
 
-#: class-ml-slider-lightbox.php:4151
+#: class-ml-slider-lightbox.php:4295
 msgid ""
 "Social media sharing buttons for Facebook, Twitter, Pinterest, and direct "
 "URL sharing."
@@ -2529,237 +2863,303 @@ msgstr ""
 "כפתורי שיתוף ברשתות חברתיות עבור Facebook, Twitter, Pinterest, ושיתוף כתובת "
 "URL ישירה."
 
-#: class-ml-slider-lightbox.php:4161 class-ml-slider-lightbox.php:4331
+#: class-ml-slider-lightbox.php:4305 class-ml-slider-lightbox.php:4475
 msgid "Enable Pager"
 msgstr "אפשר Pager"
 
-#: class-ml-slider-lightbox.php:4162
+#: class-ml-slider-lightbox.php:4306
 msgid "Minimal pagination dots for clean navigation without thumbnail previews."
 msgstr "נקודות דפדוף מינימליות לניהול נקי ללא תצוגות תצוגה מקדימה של תמונות."
 
-#: class-ml-slider-lightbox.php:4218 class-ml-slider-lightbox.php:4292
+#: class-ml-slider-lightbox.php:4362 class-ml-slider-lightbox.php:4436
 msgid ""
 "Professional zoom and image interaction controls for enhanced user "
 "experience."
 msgstr "בקרות זום אינטראקטיביות מקצועיות לתמונות לשיפור חוויית המשתמש."
 
-#: class-ml-slider-lightbox.php:4228 class-ml-slider-lightbox.php:4320
+#: class-ml-slider-lightbox.php:4372 class-ml-slider-lightbox.php:4464
 msgid "Social sharing and navigation enhancements to increase engagement."
 msgstr "שיפורים בשיתוף חברתי וניווט להגברת המעורבות."
 
-#: class-ml-slider-lightbox.php:4233 class-ml-slider-lightbox.php:4341
+#: class-ml-slider-lightbox.php:4377 class-ml-slider-lightbox.php:4485
 msgid "Advanced functionality including URL management and automation features."
 msgstr "פונקציות מתקדמות כולל ניהול URL ופיצ'רים של אוטומציה."
 
-#: class-ml-slider-lightbox.php:4245
+#: class-ml-slider-lightbox.php:4389
 msgid "This feature is available in MetaSlider Gallery Pro"
 msgstr "תכונה זו זמינה ב-MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4297 class-ml-slider-lightbox.php:4461
+#: class-ml-slider-lightbox.php:4441 class-ml-slider-lightbox.php:4613
 msgid ""
 "Allow users to zoom in and out with double-click, mouse wheel, and zoom "
 "controls."
 msgstr "אפשר למשתמשים להגדיל ולהקטין עם לחיצה כפולה, גלגל עכבר, ובקרות זום."
 
-#: class-ml-slider-lightbox.php:4299
+#: class-ml-slider-lightbox.php:4443
 msgid "Zoom controls are available in MetaSlider Gallery Pro"
 msgstr "בקרות זום זמינות ב-MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4304
+#: class-ml-slider-lightbox.php:4448
 msgid "Native HTML5 fullscreen mode for immersive image viewing."
 msgstr "מצב מסך מלא ב-HTML5 לצפייה עמוקה בתמונות."
 
-#: class-ml-slider-lightbox.php:4306
+#: class-ml-slider-lightbox.php:4450
 msgid "Fullscreen mode is available in MetaSlider Gallery Pro"
 msgstr "מצב מסך מלא זמין ב-MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4311 class-ml-slider-lightbox.php:4477
+#: class-ml-slider-lightbox.php:4455 class-ml-slider-lightbox.php:4629
 msgid "Rotate images clockwise/anticlockwise and flip horizontal/vertical."
 msgstr "סובב תמונות בכיוון השעון/נגד כיוון השעון והפוך אופקית/אנכית."
 
-#: class-ml-slider-lightbox.php:4313
+#: class-ml-slider-lightbox.php:4457
 msgid "Image rotation is available in MetaSlider Gallery Pro"
 msgstr "סיבוב תמונות זמין ב-MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4325
+#: class-ml-slider-lightbox.php:4469
 msgid "Built-in social media sharing for Facebook, Twitter, and Pinterest."
 msgstr "שיתוף ברשתות חברתיות מובנה עבור Facebook, Twitter, ו-Pinterest."
 
-#: class-ml-slider-lightbox.php:4327
+#: class-ml-slider-lightbox.php:4471
 msgid "Social sharing is available in MetaSlider Gallery Pro"
 msgstr "שיתוף חברתי זמין ב- MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4332 class-ml-slider-lightbox.php:4509
+#: class-ml-slider-lightbox.php:4476 class-ml-slider-lightbox.php:4661
 msgid "Minimal pagination dots instead of thumbnails for a cleaner interface."
 msgstr "נקודות דפדוף מינימליות במקום תמונות מיניאטוריות לממשק נקי יותר."
 
-#: class-ml-slider-lightbox.php:4334
+#: class-ml-slider-lightbox.php:4478
 msgid "Pager pagination is available in MetaSlider Gallery Pro"
 msgstr "דפדוף בעמודים זמין ב- MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4346 class-ml-slider-lightbox.php:4493
+#: class-ml-slider-lightbox.php:4490 class-ml-slider-lightbox.php:4645
 msgid ""
 "Generate unique URLs for each gallery image with browser back/forward "
 "navigation."
 msgstr "צור URL ייחודיים לכל תמונה בגלריה עם ניווט אחורה/קדימה בדפדפן."
 
-#: class-ml-slider-lightbox.php:4348
+#: class-ml-slider-lightbox.php:4492
 msgid "Unique Image URLs are available in MetaSlider Gallery Pro"
 msgstr "URLs ייחודיים לתמונות זמינים ב- MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4353 class-ml-slider-lightbox.php:4501
+#: class-ml-slider-lightbox.php:4497 class-ml-slider-lightbox.php:4653
 msgid "Automatic slideshow with timing controls and progress bar."
 msgstr "מצגת אוטומטית עם בקרות זמן וסרגל התקדמות."
 
-#: class-ml-slider-lightbox.php:4355
+#: class-ml-slider-lightbox.php:4499
 msgid "Autoplay is available in MetaSlider Gallery Pro"
 msgstr "ניגון אוטומטי זמין ב- MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4359
+#: class-ml-slider-lightbox.php:4503
 msgid "Enable Image Protection"
 msgstr "אפשר הגנת תמונה"
 
-#: class-ml-slider-lightbox.php:4362
+#: class-ml-slider-lightbox.php:4506
 msgid "Image protection is available in MetaSlider Gallery Pro"
 msgstr "הגנת תמונה זמינה ב-MetaSlider Gallery Pro"
 
-#: class-ml-slider-lightbox.php:4379
+#: class-ml-slider-lightbox.php:4523
 msgid "Features"
 msgstr "תכונות"
 
-#: class-ml-slider-lightbox.php:4380
+#: class-ml-slider-lightbox.php:4524
 msgid "Free"
 msgstr "חינם"
 
-#: class-ml-slider-lightbox.php:4381, fuzzy
+#: class-ml-slider-lightbox.php:4525, fuzzy
 msgid "Pro"
 msgstr "Pro"
 
-#: class-ml-slider-lightbox.php:4387 class-ml-slider-lightbox.php:4526
+#: class-ml-slider-lightbox.php:4531 class-ml-slider-lightbox.php:4726
 msgid "Installed"
 msgstr "הותקן"
 
-#: class-ml-slider-lightbox.php:4390 class-ml-slider-lightbox.php:4529
+#: class-ml-slider-lightbox.php:4534 class-ml-slider-lightbox.php:4729
 msgid "Upgrade now"
 msgstr "שדרג עכשיו"
 
-#: class-ml-slider-lightbox.php:4396
+#: class-ml-slider-lightbox.php:4540
 msgid "Automatic lightbox for images"
 msgstr "Lightbox אוטומטי לתמונות"
 
-#: class-ml-slider-lightbox.php:4397
+#: class-ml-slider-lightbox.php:4541
 msgid "Automatically enable lightbox for all images on your site."
 msgstr "אפשר אוטומטית Lightbox לכל התמונות באתר שלך."
 
-#: class-ml-slider-lightbox.php:4404
+#: class-ml-slider-lightbox.php:4548
 msgid "MetaSlider integration"
 msgstr "אינטגרציה עם MetaSlider"
 
-#: class-ml-slider-lightbox.php:4405
+#: class-ml-slider-lightbox.php:4549
 msgid "Seamless integration with MetaSlider slideshows."
 msgstr "אינטגרציה חלקה עם מצגות MetaSlider."
 
-#: class-ml-slider-lightbox.php:4412
+#: class-ml-slider-lightbox.php:4556
 msgid "WordPress gallery support"
 msgstr "תמיכה בגלריות WordPress"
 
-#: class-ml-slider-lightbox.php:4413
+#: class-ml-slider-lightbox.php:4557
 msgid "Support for WordPress native galleries and blocks."
 msgstr "תמיכה בגלריות ובחסימות מקוריות של WordPress."
 
-#: class-ml-slider-lightbox.php:4420
+#: class-ml-slider-lightbox.php:4564
 msgid "Appearance customization"
 msgstr "התאמת מראה"
 
-#: class-ml-slider-lightbox.php:4421
+#: class-ml-slider-lightbox.php:4565
 msgid "Customize colors, opacity, and button styles."
 msgstr "התאם צבעים, שקיפות וסגנונות כפתורים."
 
-#: class-ml-slider-lightbox.php:4428
+#: class-ml-slider-lightbox.php:4572
 msgid "Gallery builder &amp; layouts"
 msgstr "בונה גלריות &amp; תבניות"
 
-#: class-ml-slider-lightbox.php:4429
+#: class-ml-slider-lightbox.php:4573
 msgid ""
 "Build galleries with Grid, Masonry, Justified, Carousel, and Showcase "
 "layouts."
 msgstr "בנה גלריות עם תבניות רשת, מסדרון, מוצדק, קרוסלה ותצוגה."
 
-#: class-ml-slider-lightbox.php:4436
+#: class-ml-slider-lightbox.php:4580
 msgid "Responsive columns"
 msgstr "עמודות רספונסיביות"
 
-#: class-ml-slider-lightbox.php:4437
-msgid "Set the number of columns for desktop and mobile, with adjustable spacing."
+#: class-ml-slider-lightbox.php:4581
+msgid ""
+"Set the number of columns for desktop, laptop, tablet and mobile, with "
+"adjustable spacing."
 msgstr ""
-"קבע את מספר העמודות עבור מחשבים שולחניים ומכשירים ניידים, עם רווחים שניתן "
-"להתאים."
+"קבע את מספר העמודות עבור שולחן עבודה, מחשב נייד, טאבלט ומכשירים ניידים, עם "
+"רווחים ניתנים להתאמה."
 
-#: class-ml-slider-lightbox.php:4444
+#: class-ml-slider-lightbox.php:4588
 msgid "Image captions"
 msgstr "כותרות תמונות"
 
-#: class-ml-slider-lightbox.php:4445
+#: class-ml-slider-lightbox.php:4589
 msgid "Show image captions in the gallery grid and the gallery window."
 msgstr "הצג כותרות תמונות ברשת הגלריה ובחלון הגלריה."
 
-#: class-ml-slider-lightbox.php:4452
+#: class-ml-slider-lightbox.php:4596
+msgid "Video galleries"
+msgstr "גלריות וידאו"
+
+#: class-ml-slider-lightbox.php:4597
+msgid ""
+"Add uploaded videos and Livid.com links alongside images, with poster "
+"images and playback controls."
+msgstr ""
+"הוסף סרטונים שהועלו וקישורים מ-Livid.com לצד תמונות, עם תמונות פוסטר ופקדי "
+"השמעה."
+
+#: class-ml-slider-lightbox.php:4604
 msgid "Thumbnail navigation"
 msgstr "ניווט בתמונות ממוזערות"
 
-#: class-ml-slider-lightbox.php:4453
+#: class-ml-slider-lightbox.php:4605
 msgid "Display a strip of thumbnails for quick navigation between images."
 msgstr "הצג רצועת תמונות ממוזערות לניווט מהיר בין התמונות."
 
-#: class-ml-slider-lightbox.php:4460
+#: class-ml-slider-lightbox.php:4612
 msgid "Zoom controls"
 msgstr "בקרות זום"
 
-#: class-ml-slider-lightbox.php:4468
+#: class-ml-slider-lightbox.php:4620
 msgid "Fullscreen mode"
 msgstr "מצב מסך מלא"
 
-#: class-ml-slider-lightbox.php:4469
+#: class-ml-slider-lightbox.php:4621
 msgid "Native HTML5 fullscreen for immersive image viewing."
 msgstr "מסך מלא HTML5 מקורי לצפייה סוחפת בתמונות."
 
-#: class-ml-slider-lightbox.php:4476
+#: class-ml-slider-lightbox.php:4628
 msgid "Rotate and flip images"
 msgstr "סובב והפוך תמונות"
 
-#: class-ml-slider-lightbox.php:4484
+#: class-ml-slider-lightbox.php:4636
 msgid "Social media sharing"
 msgstr "שיתוף ברשתות חברתיות"
 
-#: class-ml-slider-lightbox.php:4485
-msgid "Built-in sharing for Facebook, Twitter, and Pinterest."
-msgstr "שיתוף מובנה עבור Facebook, Twitter, ו-Pinterest."
+#: class-ml-slider-lightbox.php:4637
+msgid ""
+"Built-in sharing for Facebook, Twitter / X, Pinterest, LinkedIn, email, or "
+"a copied link."
+msgstr ""
+"שיתוף מובנה לפייסבוק, טוויטר / X, פינטרסט, לינקדאין, דוא\"ל, או קישור "
+"שהועתק."
 
-#: class-ml-slider-lightbox.php:4500
+#: class-ml-slider-lightbox.php:4652
 msgid "Autoplay slideshow"
 msgstr "הצגת מצגת אוטומטית"
 
-#: class-ml-slider-lightbox.php:4508
+#: class-ml-slider-lightbox.php:4660
 msgid "Pager navigation"
 msgstr "ניווט בעמודים"
 
-#: class-ml-slider-lightbox.php:4516
+#: class-ml-slider-lightbox.php:4668
+msgid "Before &amp; After layout"
+msgstr "עיצוב לפני &amp; אחרי"
+
+#: class-ml-slider-lightbox.php:4669
+msgid ""
+"Compare two images with a divider visitors drag, side by side or top and "
+"bottom."
+msgstr ""
+"השווה בין שתי תמונות עם מחיצה שגולשים יכולים לגרור, זו לצד זו או למעלה "
+"ולמטה."
+
+#: class-ml-slider-lightbox.php:4677
+msgid ""
+"Let visitors heart images, with the count shared across every gallery using "
+"that image."
+msgstr "אפשר לגולשים לאהוב תמונות, עם ספירה המשותפת בכל גלריה שמשתמשת בתמונה הזו."
+
+#: class-ml-slider-lightbox.php:4684
+msgid "Download sizes"
+msgstr "גדלי הורדה"
+
+#: class-ml-slider-lightbox.php:4685
+msgid "Offer visitors a choice of image sizes to download."
+msgstr "הצע לגולשים בחירה בין גדלי תמונות להורדה."
+
+#: class-ml-slider-lightbox.php:4692
+msgid "Photo metadata"
+msgstr "מטא-דאטה של תמונה"
+
+#: class-ml-slider-lightbox.php:4693
+msgid "Show the camera settings a photo was taken with beneath its caption."
+msgstr "הצג את הגדרות המצלמה בהן צולמה התמונה מתחת לכותרת שלה."
+
+#: class-ml-slider-lightbox.php:4700
+msgid "Image protection"
+msgstr "הגנת תמונה"
+
+#: class-ml-slider-lightbox.php:4708
+msgid "Watermarking"
+msgstr "סימון מים"
+
+#: class-ml-slider-lightbox.php:4709
+msgid ""
+"Overlay your logo on lightbox images, with position, size and opacity "
+"controls."
+msgstr "הנח את הלוגו שלך על תמונות ב-lightbox, עם פקדי מיקום, גודל ושקיפות."
+
+#: class-ml-slider-lightbox.php:4716
 msgid "Premium support"
 msgstr "תמיכה פרימיום"
 
-#: class-ml-slider-lightbox.php:4517
+#: class-ml-slider-lightbox.php:4717
 msgid "Have your specific queries addressed directly by our experts."
 msgstr "שאלות ספציפיות שלך יטופלו ישירות על ידי המומחים שלנו."
 
-#: class-ml-slider-lightbox.php:6304
+#: class-ml-slider-lightbox.php:6504
 msgid "Configure how the lightbox interacts with WordPress built-in features."
 msgstr "הגדר כיצד ה-Lightbox אינטראקציה עם תכונות מובנות של WordPress."
 
-#: class-ml-slider-lightbox.php:6319
+#: class-ml-slider-lightbox.php:6519
 msgid "Override WordPress \"Enlarge on Click\" Setting"
 msgstr "עקוף את הגדרת \"להגדיל בלחיצה\" של WordPress"
 
-#: class-ml-slider-lightbox.php:6320
+#: class-ml-slider-lightbox.php:6520
 msgid ""
 "When enabled, disables WordPress built-in gallery window and uses "
 "MetaSlider Gallery for images set to \"Enlarge on Click\". When disabled, "
@@ -2770,11 +3170,11 @@ msgstr ""
 "מבוטלת, היא מכבדת את ההגדרה של WordPress ומדלגת על תמונות שהוגדרו ל "
 "\"להגדיל בלחיצה\"."
 
-#: class-ml-slider-lightbox.php:6336
+#: class-ml-slider-lightbox.php:6536
 msgid "Override \"Link to Image File\" Setting"
 msgstr "עקוף את הגדרת \"קישור לקובץ תמונה\""
 
-#: class-ml-slider-lightbox.php:6337
+#: class-ml-slider-lightbox.php:6537
 msgid ""
 "When enabled, uses MetaSlider Gallery for images linked to their full-size "
 "image file (commonly set via \"Link to Image File\" in the block editor). "
@@ -2785,11 +3185,11 @@ msgstr ""
 "בעורך הבלוקים). כאשר האפשרות מבוטלת, היא מכבדת את ההתנהגות המקורית של "
 "הקישור."
 
-#: class-ml-slider-lightbox.php:6368
+#: class-ml-slider-lightbox.php:6568
 msgid "Exclude Post Types from Manual Processing"
 msgstr "למעט סוגי פוסטים מעיבוד ידני"
 
-#: class-ml-slider-lightbox.php:6371
+#: class-ml-slider-lightbox.php:6571
 msgid ""
 "Select post types where Manual options should NOT work. For example, select "
 "\"Products (product)\" to disable the gallery on WooCommerce product pages "
@@ -2799,11 +3199,11 @@ msgstr ""
 "(מוצר)\" כדי לבטל את הגלריה בדפי מוצר של WooCommerce תוך שמירה על פעילותה "
 "במקומות אחרים."
 
-#: class-ml-slider-lightbox.php:6395
+#: class-ml-slider-lightbox.php:6595
 msgid "How to use: WordPress \"Enlarge on Click\""
 msgstr "כיצד להשתמש: \"להגדיל בלחיצה\" של WordPress"
 
-#: class-ml-slider-lightbox.php:6397
+#: class-ml-slider-lightbox.php:6597
 msgid ""
 "WordPress has a built-in \"Enlarge on Click\" feature for images. Here's "
 "how to enable it:"
@@ -2811,55 +3211,55 @@ msgstr ""
 "ל-WordPress יש תכונה מובנית \"להגדיל בלחיצה\" עבור תמונות. כך תוכלו להפעיל "
 "אותה:"
 
-#: class-ml-slider-lightbox.php:6399 class-ml-slider-lightbox.php:6412
+#: class-ml-slider-lightbox.php:6599 class-ml-slider-lightbox.php:6612
 msgid "Select an image in the block editor."
 msgstr "בחר תמונה בעורך הבלוק."
 
-#: class-ml-slider-lightbox.php:6400 class-ml-slider-lightbox.php:6413
+#: class-ml-slider-lightbox.php:6600 class-ml-slider-lightbox.php:6613
 msgid "In the block toolbar, click on the Link icon."
 msgstr "בסרגל הכלים של הבלוק, לחץ על סמל הקישור."
 
-#: class-ml-slider-lightbox.php:6401
+#: class-ml-slider-lightbox.php:6601
 msgid "Select \"Enlarge on click\"."
 msgstr "בחר \"הגדל בלחיצה\"."
 
-#: class-ml-slider-lightbox.php:6407
+#: class-ml-slider-lightbox.php:6607
 msgid "How to use: \"Link to Image File\""
 msgstr "איך להשתמש: \"קישור לקובץ תמונה\""
 
-#: class-ml-slider-lightbox.php:6409
+#: class-ml-slider-lightbox.php:6609
 msgid "You can link images directly to their full-size media file. Here's how:"
 msgstr "אתה יכול לקשר תמונות ישירות לקובץ המדיה בגודל מלא שלהן. הנה איך:"
 
-#: class-ml-slider-lightbox.php:6410
+#: class-ml-slider-lightbox.php:6610
 msgid "For the Block Editor:"
 msgstr "עבור עורך הבלוקים:"
 
-#: class-ml-slider-lightbox.php:6414
+#: class-ml-slider-lightbox.php:6614
 msgid "Choose \"Link to image file\"."
 msgstr "בחר \"קישור לקובץ תמונה\"."
 
-#: class-ml-slider-lightbox.php:6416
+#: class-ml-slider-lightbox.php:6616
 msgid "For the Classic Editor:"
 msgstr "עבור העורך הקלאסי:"
 
-#: class-ml-slider-lightbox.php:6418
+#: class-ml-slider-lightbox.php:6618
 msgid "Select an image."
 msgstr "בחר תמונה."
 
-#: class-ml-slider-lightbox.php:6419
+#: class-ml-slider-lightbox.php:6619
 msgid "In the image toolbar, click on the Edit icon."
 msgstr "בסרגל הכלים של התמונה, לחץ על סמל העריכה."
 
-#: class-ml-slider-lightbox.php:6420
+#: class-ml-slider-lightbox.php:6620
 msgid "Choose \"Media File\" on the \"Link To\" dropdown."
 msgstr "בחר \"קובץ מדיה\" בתפריט הנפתח \"קישור ל\"."
 
-#: class-ml-slider-lightbox.php:6426
+#: class-ml-slider-lightbox.php:6626
 msgid "How to use: CSS Class Method (Advanced)"
 msgstr "איך להשתמש: שיטת מחלקת CSS (מתקדמת)"
 
-#: class-ml-slider-lightbox.php:6428
+#: class-ml-slider-lightbox.php:6628
 msgid ""
 "For developers: Add the <code>ml-lightbox-enabled</code> class to enable "
 "MetaSlider Gallery on any element containing images."
@@ -2867,31 +3267,31 @@ msgstr ""
 "למפתחים: הוסף את ה<code>ml-lightbox-enabled</code> כדי להפעיל את גלריית "
 "MetaSlider על כל אלמנט המכיל תמונות."
 
-#: class-ml-slider-lightbox.php:6429
+#: class-ml-slider-lightbox.php:6629
 msgid "Method 1: Block Editor Additional CSS Classes"
 msgstr "שיטה 1: מחלקות CSS נוספות בעורך הבלוקים"
 
-#: class-ml-slider-lightbox.php:6431
+#: class-ml-slider-lightbox.php:6631
 msgid "Select an image or gallery block."
 msgstr "בחר בלוק תמונה או גלריה."
 
-#: class-ml-slider-lightbox.php:6432
+#: class-ml-slider-lightbox.php:6632
 msgid "In the block settings sidebar, scroll to \"Advanced\"."
 msgstr "בצד ההגדרות של הבלוק, גלול ל-\"מתקדם\"."
 
-#: class-ml-slider-lightbox.php:6433
+#: class-ml-slider-lightbox.php:6633
 msgid "Add <code>ml-lightbox-enabled</code> to \"Additional CSS class(es)\"."
 msgstr "הוסף <code>ml-lightbox-enabled</code> ל-\"מחלקות CSS נוספות\"."
 
-#: class-ml-slider-lightbox.php:6435
+#: class-ml-slider-lightbox.php:6635
 msgid "Method 2: HTML/Code"
 msgstr "שיטה 2: HTML/קוד"
 
-#: class-ml-slider-lightbox.php:6436
+#: class-ml-slider-lightbox.php:6636
 msgid "For custom HTML or theme developers, add the class directly:"
 msgstr "לעורכי HTML מותאם אישית או תבניות, הוסף את המחלקה ישירות:"
 
-#: class-ml-slider-lightbox.php:1307
+#: class-ml-slider-lightbox.php:1314
 #, php-format
 msgctxt "Name of a plugin"
 msgid "All slides will open in a gallery, using %s"
